@@ -58,6 +58,13 @@ def query_prefix(url_prefix: str, *, collapse: str = "urlkey") -> Iterator[CdxRo
 
     url_prefix should already include the trailing '*' if a wildcard match is
     wanted, e.g. 'brewtoad.com/recipes/*'.
+
+    Pagination requires explicitly requesting `showResumeKey=true` - without
+    it the API silently truncates at `limit` with no marker at all (verified
+    directly against the live endpoint; this is not documented behavior you
+    can infer from a single un-paginated response). When present, a truncated
+    response ends with two extra rows: an empty `[]` separator followed by a
+    single-element `["<resume_key>"]` row.
     """
     resume_key = None
     while True:
@@ -67,6 +74,7 @@ def query_prefix(url_prefix: str, *, collapse: str = "urlkey") -> Iterator[CdxRo
             "output": "json",
             "collapse": collapse,
             "limit": PAGE_LIMIT,
+            "showResumeKey": "true",
         }
         # CDX wants the '*' stripped from the url param itself when matchType=prefix
         if params["url"].endswith("*"):
@@ -83,13 +91,12 @@ def query_prefix(url_prefix: str, *, collapse: str = "urlkey") -> Iterator[CdxRo
             return
 
         header, *data_rows = rows
-        # resumeKey pagination surfaces as a trailing row: ['', '<key>']
-        # (undocumented but observed behavior of the CDX server-side impl)
+        resume_key = None
         if data_rows and len(data_rows[-1]) == 1:
-            resume_key = data_rows[-1][0]
+            resume_key = data_rows[-1][0] or None
             data_rows = data_rows[:-1]
-        else:
-            resume_key = None
+            if data_rows and len(data_rows[-1]) == 0:
+                data_rows = data_rows[:-1]
 
         for row in data_rows:
             yield CdxRow(*row)
