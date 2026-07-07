@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Dispatcher for /etc/libvirt/hooks/qemu.
+#
+# Install: copy this whole configs/systemd/libvirt-hooks/ directory's
+# intent onto the host as:
+#   sudo install -Dm755 configs/systemd/libvirt-hooks/qemu /etc/libvirt/hooks/qemu
+#   sudo install -Dm755 scripts/vfio/single-gpu-hook.sh /etc/libvirt/hooks/qemu.d/single-gpu-hook.sh
+#
+# This file just forwards libvirt's hook call to the real logic in
+# scripts/vfio/single-gpu-hook.sh (only used on the single-GPU path - see
+# inventory/gpu-decision.md). If you're on the dual-GPU static-bind path,
+# this hook is not needed at all; don't install it.
+
+set -euo pipefail
+exec /etc/libvirt/hooks/qemu.d/single-gpu-hook.sh "$@"

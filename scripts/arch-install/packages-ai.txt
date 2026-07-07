@@ -1,0 +1,12 @@
+# Install with: sudo pacman -S --needed $(cat packages-ai.txt)
+# python-pytorch-cuda pulls in a compatible cuda/cudnn version as a dependency;
+# add the standalone cuda/cudnn packages too if you need the toolkit for
+# building other GPU software outside of PyTorch's bundled runtime.
+nvidia-open
+nvidia-utils
+nvidia-container-toolkit
+cuda
+cudnn
+python
+python-pip
+python-pytorch-cuda

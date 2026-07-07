@@ -1,0 +1,16 @@
+base
+base-devel
+linux
+linux-firmware
+linux-headers
+networkmanager
+sudo
+vim
+git
+openssh
+qemu-full
+libvirt
+virt-manager
+edk2-ovmf
+dnsmasq
+bridge-utils

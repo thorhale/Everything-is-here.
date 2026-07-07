@@ -1,0 +1,68 @@
+<!--
+  Windows gaming VM domain template with GPU passthrough.
+  Fill in placeholders before defining:
+    - <!-- FILL: --> comments mark values to replace.
+    - PCI bus IDs come from inventory/gpu-decision.md.
+    - Disk path assumes the VM image lives at
+      /var/lib/libvirt/images/winvm.qcow2 (create it first with qemu-img).
+
+  Define with: virsh define win-gaming-vm.xml
+  Start with:  virsh start winvm
+-->
+<domain type="kvm">
+  <name>winvm</name>
+  <memory unit="GiB">16</memory> <!-- FILL: adjust to available host RAM -->
+  <vcpu placement="static">8</vcpu> <!-- FILL: adjust to available host cores -->
+  <os>
+    <type arch="x86_64" machine="q35">hvm</type>
+    <loader readonly="yes" type="pflash">/usr/share/edk2/x64/OVMF_CODE.4m.fd</loader>
+    <nvram template="/usr/share/edk2/x64/OVMF_VARS.4m.fd">/var/lib/libvirt/qemu/nvram/winvm_VARS.fd</nvram>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <hyperv>
+      <relaxed state="on"/>
+      <vapic state="on"/>
+      <spinlocks state="on" retries="8191"/>
+    </hyperv>
+    <kvm>
+      <hidden state="on"/> <!-- hide KVM from guest, helps with some anti-cheat/driver detection -->
+    </kvm>
+  </features>
+  <cpu mode="host-passthrough" check="none"/>
+  <devices>
+    <disk type="file" device="disk">
+      <driver name="qemu" type="qcow2"/>
+      <source file="/var/lib/libvirt/images/winvm.qcow2"/>
+      <target dev="vda" bus="virtio"/>
+    </disk>
+    <disk type="file" device="cdrom">
+      <driver name="qemu" type="raw"/>
+      <source file="/path/to/Win11.iso"/> <!-- FILL: Windows installer ISO path -->
+      <target dev="sda" bus="sata"/>
+      <readonly/>
+    </disk>
+    <interface type="network">
+      <source network="default"/>
+      <model type="virtio"/>
+    </interface>
+
+    <!-- FILL: PCI bus IDs from inventory/gpu-decision.md (passthrough GPU) -->
+    <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x01" slot="0x00" function="0x0"/>
+      </source>
+    </hostdev>
+    <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x01" slot="0x00" function="0x1"/>
+      </source>
+    </hostdev>
+
+    <graphics type="none"/> <!-- no spice/vnc display - the passed-through GPU drives the monitor directly -->
+    <video>
+      <model type="none"/>
+    </video>
+  </devices>
+</domain>

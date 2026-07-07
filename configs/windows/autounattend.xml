@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Unattended Windows Setup answer file - skips OOBE bloat prompts.
+  Place at the root of the install media as autounattend.xml.
+
+  FILL IN before use:
+    - <ComputerName> (currently WORKER-NODE)
+    - Local account name/password in the UserAccounts section
+    - Time zone / locale if not US English
+
+  This does not install/remove any software itself - it only controls Setup
+  behavior. Run the debloat pass in phase3-debloat.md after first boot.
+-->
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+  <settings pass="windowsPE">
+    <component name="Microsoft-Windows-Setup" processorArchitecture="amd64"
+               publicKeyToken="31bf3856ad364e35" language="neutral"
+               versionScope="nonSxS"
+               xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+      <UserData>
+        <AcceptEula>true</AcceptEula>
+      </UserData>
+    </component>
+  </settings>
+  <settings pass="oobeSystem">
+    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64"
+               publicKeyToken="31bf3856ad364e35" language="neutral"
+               versionScope="nonSxS"
+               xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+      <OOBE>
+        <HideEULAPage>true</HideEULAPage>
+        <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+        <HideOnlineAccountScreens>true</HideOnlineAccountScreens> <!-- skip Microsoft account nudge -->
+        <HideWirelessSetupInOOBE>false</HideWirelessSetupInOOBE>
+        <ProtectYourPC>3</ProtectYourPC> <!-- minimal telemetry/express-settings prompt -->
+      </OOBE>
+      <UserAccounts>
+        <LocalAccounts>
+          <LocalAccount wcm:action="add">
+            <Name>worker</Name> <!-- FILL: desired local username -->
+            <Group>Administrators</Group>
+            <Password>
+              <Value>CHANGE-ME</Value> <!-- FILL: set a real password before use -->
+              <PlainText>true</PlainText>
+            </Password>
+          </LocalAccount>
+        </LocalAccounts>
+      </UserAccounts>
+      <ComputerName>WORKER-NODE</ComputerName> <!-- FILL: desired hostname -->
+    </component>
+  </settings>
+</unattend>
