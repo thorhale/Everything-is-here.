@@ -172,7 +172,7 @@ def _parse_extended_stats(soup: BeautifulSoup, recipe: ParsedRecipe) -> None:
         if not small:
             continue
         label = _text(small)
-        value = li.get_text(" ", strip=True)
+        value = _text(li) or ""
         value = value.replace(label or "", "", 1).strip() if label else value
         if label == "Batch Size":
             recipe.batch_size_display = value
