@@ -12,3 +12,4 @@ node_modules/
 !/data/cdx/.gitkeep
 !/data/raw/.gitkeep
 /data/*.log
+/data/parsed/recipes_full.jsonl
