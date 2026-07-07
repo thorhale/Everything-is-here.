@@ -11,14 +11,22 @@ import json
 import re
 from dataclasses import dataclass
 
-RECIPE_HTML_RE = re.compile(r"^com,brewtoad\)/recipes/([^/]+)$")
-RECIPE_XML_RE = re.compile(r"^com,brewtoad\)/recipes/([^/]+)\.xml$")
+RECIPE_HTML_RE = re.compile(r'^com,brewtoad\)/recipes/([^/?"\']+)$')
+RECIPE_XML_RE = re.compile(r'^com,brewtoad\)/recipes/([^/?"\']+)\.xml$')
 
 # Prefer snapshots on/before this timestamp (the known good mass-crawl window
 # ran through mid-to-late December 2018); still accept snapshots after this
 # if it's all that's available for a given recipe.
 PREFERRED_WINDOW_START = "20181201000000"
 PREFERRED_WINDOW_END = "20181231235959"
+
+# Hard cutoff: brewtoad.com shut down 2018-12-31 and the domain was later
+# squatted/parked, which the Wayback crawler still occasionally re-visits
+# (observed captures as late as 2025) - those are parking-page content, not
+# real recipes, so they must never be selectable as a "best" snapshot even
+# as a last-resort fallback. Generous grace period past shutdown in case a
+# CDN edge served real content into early 2019.
+MAX_VALID_TIMESTAMP = "20190601000000"
 
 
 @dataclass
@@ -31,7 +39,10 @@ class RecipeManifestEntry:
 
 
 def _best_row(rows: list[dict]) -> dict | None:
-    ok_rows = [r for r in rows if r["statuscode"] == "200"]
+    ok_rows = [
+        r for r in rows
+        if r["statuscode"] == "200" and r["timestamp"] <= MAX_VALID_TIMESTAMP
+    ]
     if not ok_rows:
         return None
     in_window = [
@@ -74,4 +85,8 @@ def build_manifest(cdx_jsonl_paths: list[str]) -> list[RecipeManifestEntry]:
                 xml_timestamp=best_xml["timestamp"] if best_xml else None,
             )
         )
+    # Most-recent-first: prioritizes richer/more-final snapshots (the Dec
+    # 2018 mass-crawl) and means a partial/interrupted run still covers the
+    # most complete data first rather than an arbitrary alphabetical slice.
+    manifest.sort(key=lambda e: e.html_timestamp or "", reverse=True)
     return manifest

@@ -61,6 +61,27 @@ def _fetch_and_parse_one(fetcher: RateLimitedFetcher, entry: RecipeManifestEntry
     }
 
 
+def load_done_slugs(out_path: str) -> set[str]:
+    """Slugs already successfully written to a prior (possibly interrupted)
+    run's output file - used to resume without re-parsing (fetches are also
+    cached, but re-parsing 300k+ records on every restart wastes real time).
+    """
+    done: set[str] = set()
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    done.add(json.loads(line)["slug"])
+                except (json.JSONDecodeError, KeyError):
+                    continue  # tolerate a truncated last line from a killed process
+    except FileNotFoundError:
+        pass
+    return done
+
+
 def fetch_and_parse_manifest(
     manifest: list[RecipeManifestEntry],
     fetcher: RateLimitedFetcher,
@@ -68,18 +89,30 @@ def fetch_and_parse_manifest(
     *,
     workers: int = 1,
     progress_every: int = 25,
+    resume: bool = True,
 ) -> dict:
     """Fetch+parse every entry in `manifest`, writing ok records to `out_path`
     as JSONL. Returns a summary dict of counts. Safe to call with workers>1:
     result records are collected then written from the main thread to avoid
     interleaved/corrupt JSONL lines.
+
+    When resume=True (default), entries whose slug is already present in
+    out_path are skipped and new records are appended rather than
+    overwriting - this environment restarts frequently mid-run, so every
+    fetch_and_parse_manifest call needs to pick up where a prior, killed
+    invocation left off rather than starting the output file over.
     """
+    done_slugs = load_done_slugs(out_path) if resume else set()
+    if done_slugs:
+        print(f"      resuming: {len(done_slugs)} recipes already done, skipping them")
+    todo = [e for e in manifest if e.slug not in done_slugs]
+
     counts = {"ok": 0, "error_page": 0, "fetch_failed": 0}
     confidences: list[float] = []
     write_lock = threading.Lock()
     n_done = 0
 
-    with open(out_path, "w", encoding="utf-8") as out_f:
+    with open(out_path, "a", encoding="utf-8") as out_f:
 
         def handle_result(record: dict | None) -> None:
             nonlocal n_done
@@ -90,22 +123,29 @@ def fetch_and_parse_manifest(
             if record["status"] == "ok":
                 with write_lock:
                     out_f.write(json.dumps(record) + "\n")
+                    out_f.flush()
                 confidences.append(record["parse_confidence"])
             if n_done % progress_every == 0:
-                print(f"      ... {n_done}/{len(manifest)} processed")
+                print(f"      ... {n_done}/{len(todo)} processed this run "
+                      f"({len(done_slugs) + n_done}/{len(manifest)} total)")
 
         if workers <= 1:
-            for entry in manifest:
+            for entry in todo:
                 handle_result(_fetch_and_parse_one(fetcher, entry))
         else:
             with ThreadPoolExecutor(max_workers=workers) as pool:
                 futures = {
                     pool.submit(_fetch_and_parse_one, fetcher, entry): entry
-                    for entry in manifest
+                    for entry in todo
                 }
                 for future in as_completed(futures):
                     handle_result(future.result())
 
     avg_conf = sum(confidences) / len(confidences) if confidences else 0.0
     low_conf = sum(1 for c in confidences if c < 0.7)
-    return {**counts, "avg_parse_confidence": avg_conf, "low_confidence_count": low_conf}
+    return {
+        **counts,
+        "avg_parse_confidence": avg_conf,
+        "low_confidence_count": low_conf,
+        "already_done_before_this_run": len(done_slugs),
+    }
