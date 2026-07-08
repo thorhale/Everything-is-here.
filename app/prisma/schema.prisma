@@ -1,0 +1,207 @@
+// Data model for the BrewToad Archive. Mirrors docs/data-model.md - keep
+// both in sync. Loaded from scraper output (data/parsed) via a one-time/
+// periodic import script (app/prisma/import.ts), never fetched live from
+// Wayback at request time.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Brewer {
+  id               String   @id @default(cuid())
+  originalUsername String   @unique
+  profileUrl       String?
+  sourceTimestamp  String?
+  createdAt        DateTime @default(now())
+
+  recipes          Recipe[]
+  takedownRequests TakedownRequest[]
+
+  @@index([originalUsername])
+}
+
+model Recipe {
+  id                String   @id @default(cuid())
+  slug              String   @unique
+
+  title             String?
+  styleName         String?
+
+  // BrewToad's own computed "Anticipated" stats, as displayed on the
+  // archived page - not recomputed from ingredients at parse time (that
+  // recomputation happens separately as a QA cross-check, see
+  // scraper/validate_calculator.py and lib/calculator).
+  og                Float?
+  fg                Float?
+  ibu               Float?
+  srm               Float?
+  abv               Float?
+  ibuFormula        String?
+
+  batchSizeDisplay   String?
+  boilTimeDisplay    String?
+  efficiencyDisplay  String?
+  notesText          String?
+
+  brewerId          String?
+  brewer            Brewer?  @relation(fields: [brewerId], references: [id])
+
+  // Wayback provenance - displayed publicly ("Archived from brewtoad.com on
+  // [date] via Wayback Machine") and doubles as the citation a takedown
+  // claimant points at.
+  sourceUrl         String
+  sourceTimestamp   String
+  sourceDigest      String?
+  parseSource       String   // "html" | "xml" | "html+xml_crossvalidated"
+  parseConfidence   Float
+
+  // Set by an approved takedown request; suppresses public visibility
+  // without hard-deleting the row (audit trail preserved).
+  isHidden          Boolean  @default(false)
+  takedownStatus    String?  // null | "pending" | "approved" | "rejected"
+
+  scrapedAt         DateTime @default(now())
+
+  fermentables      RecipeFermentable[]
+  hops              RecipeHop[]
+  yeasts            RecipeYeast[]
+  miscs             RecipeMisc[]
+  comments          RecipeComment[]
+  takedownRequests  TakedownRequest[]
+
+  @@index([styleName])
+  @@index([abv])
+  @@index([ibu])
+  @@index([brewerId])
+}
+
+model RecipeFermentable {
+  id            String  @id @default(cuid())
+  recipeId      String
+  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  name          String
+  amountDisplay String?
+  amountLb      Float?  // normalized to lb regardless of source display unit
+  percent       String?
+  maltster      String?
+  use           String?
+  ppg           Float?
+  colorLovibond Float?
+  refUrl        String? // links to FermentableRef.externalId when resolvable
+  sortOrder     Int     @default(0)
+
+  @@index([recipeId])
+}
+
+model RecipeHop {
+  id            String  @id @default(cuid())
+  recipeId      String
+  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  name          String
+  amountDisplay String?
+  amountOz      Float?  // normalized to oz regardless of source display unit
+  timeDisplay   String?
+  timeMinutes   Float?
+  use           String?
+  form          String?
+  alphaAcidPct  Float?
+  refUrl        String?
+  sortOrder     Int     @default(0)
+
+  @@index([recipeId])
+}
+
+model RecipeYeast {
+  id             String  @id @default(cuid())
+  recipeId       String
+  recipe         Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  name           String
+  labProduct     String?
+  attenuationPct Float?
+  refUrl         String?
+
+  @@index([recipeId])
+}
+
+model RecipeMisc {
+  id       String  @id @default(cuid())
+  recipeId String
+  recipe   Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  name     String
+  amount   String?
+  use      String?
+  time     String?
+
+  @@index([recipeId])
+}
+
+model RecipeComment {
+  id                  String  @id @default(cuid())
+  recipeId            String
+  recipe              Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  originalCommentId   String? // BrewToad's own comment id, e.g. "18811"
+  commenter           String?
+  commenterProfileUrl String?
+  timestampDisplay    String?
+  text                String
+  parentCommentId     String? // preserves thread structure (flattened list)
+
+  @@index([recipeId])
+}
+
+// Ingredient reference database scraped from /generic-fermentables,
+// /hops, /yeasts - powers the calculator's ingredient picker (M6) and
+// backfills missing per-recipe properties.
+model FermentableRef {
+  id            String  @id @default(cuid())
+  externalId    String  @unique // numeric id from /generic-fermentables/<id>
+  name          String
+  ppg           Float?
+  colorLovibond Float?
+  type          String?
+  origin        String?
+}
+
+model HopRef {
+  id           String  @id @default(cuid())
+  externalId   String  @unique // numeric id from /hops/<id>
+  name         String
+  alphaAcidPct Float?
+}
+
+model YeastRef {
+  id             String  @id @default(cuid())
+  externalId     String  @unique // numeric id from /yeasts/<id>
+  name           String
+  lab            String?
+  attenuationPct Float?
+}
+
+model TakedownRequest {
+  id             String    @id @default(cuid())
+  recipeId       String?
+  recipe         Recipe?   @relation(fields: [recipeId], references: [id])
+  brewerId       String?
+  brewer         Brewer?   @relation(fields: [brewerId], references: [id])
+
+  requesterName  String
+  requesterEmail String
+  requestReason  String
+  status         String    @default("pending") // pending | approved | rejected | completed
+  submittedAt    DateTime  @default(now())
+  resolvedAt     DateTime?
+  resolvedBy     String?
+  notes          String?
+
+  @@index([status])
+}
