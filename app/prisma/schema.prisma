@@ -1,4 +1,4 @@
-// Data model for the BrewToad Archive. Mirrors docs/data-model.md - keep
+// Data model for WortHogg. Mirrors docs/data-model.md - keep
 // both in sync. Loaded from scraper output (data/parsed) via a one-time/
 // periodic import script (app/prisma/import.ts), never fetched live from
 // Wayback at request time.

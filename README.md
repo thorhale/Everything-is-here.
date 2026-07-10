@@ -1,4 +1,4 @@
-# BrewToad Archive (unofficial, unaffiliated)
+# WortHogg (unofficial, unaffiliated BrewToad archive)
 
 A community effort to recover the recipe database and recipe calculator from
 [BrewToad](http://www.brewtoad.com/) (shut down 2018-12-31) from the Internet

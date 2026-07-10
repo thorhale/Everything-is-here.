@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "BrewToad Archive",
+  title: "WortHogg",
   description:
-    "An unofficial, community-recovered archive of BrewToad's homebrew recipes and calculator, recovered from the Internet Archive Wayback Machine.",
+    "WortHogg is an unofficial, community-recovered archive of BrewToad's homebrew recipes and calculator, recovered from the Internet Archive Wayback Machine.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,8 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             textAlign: "center",
           }}
         >
-          Unofficial, unaffiliated historical archive. Recipes were recovered from the
-          Internet Archive after the original BrewToad site shut down in 2018.{" "}
+          WortHogg is an unofficial, unaffiliated historical archive. Recipes were recovered
+          from the Internet Archive after the original BrewToad site shut down in 2018.{" "}
           <Link href="/takedown" style={{ color: "#f5e9d8", textDecoration: "underline" }}>
             Request removal
           </Link>
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         >
           <Link href="/" style={{ fontWeight: 700, fontSize: "1.25rem", color: "#1a1a1a", textDecoration: "none" }}>
-            🐸 BrewToad Archive
+            🐗 WortHogg
           </Link>
           <nav style={{ display: "flex", gap: "1rem" }}>
             <Link href="/recipes">Recipes</Link>

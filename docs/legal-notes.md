@@ -19,10 +19,10 @@ Mitigations built into the plan:
 ## "BrewToad" name/branding
 
 The name is likely still trademarked (or at least associated in the community's
-mind) with the original site's owners, even though it's defunct. Recommendation:
-present this project under a clearly differentiated name (e.g. "BrewToad
-Archive") with a conspicuous "unofficial, unaffiliated historical archive"
-disclaimer on every page — not as the original site reborn under the same brand.
+mind) with the original site's owners, even though it's defunct. Resolved:
+the project is branded **WortHogg**, a clearly differentiated name, with a
+conspicuous "unofficial, unaffiliated historical archive" disclaimer on every
+page — not presented as the original site reborn under the same brand.
 
 ## Wayback Machine usage
 

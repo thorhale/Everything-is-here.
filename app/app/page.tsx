@@ -7,11 +7,12 @@ export default async function HomePage() {
 
   return (
     <div>
-      <h1>BrewToad Archive</h1>
+      <h1>WortHogg</h1>
       <p>
         BrewToad was a free homebrew recipe calculator and recipe-sharing site that shut down
-        on December 31, 2018. This is a community effort to recover its recipes and calculator
-        from the Internet Archive Wayback Machine and make them available again for free.
+        on December 31, 2018. WortHogg is a community effort to recover its recipes and
+        calculator from the Internet Archive Wayback Machine and make them available again for
+        free.
       </p>
       <p>
         <strong>{recipeCount.toLocaleString()}</strong> recipes recovered so far from{" "}
