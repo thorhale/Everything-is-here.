@@ -30,7 +30,11 @@ else
 fi
 
 # --- Scraper ---
-if pgrep -f "run_m2.py" > /dev/null; then
+# data/PAUSE_SCRAPER pauses the Wayback scraper (e.g. while bulk WARC
+# processing supersedes it); delete the file to resume auto-restarts.
+if [[ -f data/PAUSE_SCRAPER ]]; then
+  echo "scraper: paused (data/PAUSE_SCRAPER present)"
+elif pgrep -f "run_m2.py" > /dev/null; then
   echo "scraper: already running"
 else
   nohup python3 scraper/run_m2.py 4 > data/m2_run.log 2>&1 &
