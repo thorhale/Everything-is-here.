@@ -13,3 +13,4 @@ node_modules/
 !/data/raw/.gitkeep
 /data/*.log
 /data/parsed/recipes_full.jsonl
+/data/manifest_recipes.jsonl

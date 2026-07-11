@@ -17,6 +17,8 @@ Usage:
 """
 from __future__ import annotations
 
+import dataclasses
+import json
 import os
 import sys
 import time
@@ -25,7 +27,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from cdx.enumerate import enumerate_to_jsonl  # noqa: E402
 from fetch.fetcher import RateLimitedFetcher  # noqa: E402
-from manifest.select import build_manifest  # noqa: E402
+from manifest.select import RecipeManifestEntry, build_manifest  # noqa: E402
 from pipeline import fetch_and_parse_manifest  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -63,9 +65,24 @@ def main() -> None:
         cdx_paths.append(out_path)
 
     print("[2/3] Building recipe snapshot-selection manifest ...")
-    recipe_cdx_paths = [p for p in cdx_paths if "recipes.jsonl" in p]
-    manifest = build_manifest(recipe_cdx_paths)
-    print(f"      {len(manifest)} distinct recipes discovered")
+    # The manifest is deterministic given the CDX data, but rebuilding it
+    # parses ~650MB of JSONL (30-60s + a >1GB memory spike). This container
+    # restarts frequently and the scraper is relaunched each time, so cache
+    # the manifest to disk and reload it on subsequent runs.
+    manifest_cache = os.path.join(DATA_DIR, "manifest_recipes.jsonl")
+    if os.path.exists(manifest_cache):
+        manifest = []
+        with open(manifest_cache, encoding="utf-8") as f:
+            for line in f:
+                manifest.append(RecipeManifestEntry(**json.loads(line)))
+        print(f"      {len(manifest)} recipes loaded from cache ({manifest_cache})")
+    else:
+        recipe_cdx_paths = [p for p in cdx_paths if "recipes.jsonl" in p]
+        manifest = build_manifest(recipe_cdx_paths)
+        with open(manifest_cache, "w", encoding="utf-8") as f:
+            for entry in manifest:
+                f.write(json.dumps(dataclasses.asdict(entry)) + "\n")
+        print(f"      {len(manifest)} distinct recipes discovered (cached to {manifest_cache})")
 
     raw_cache_dir = os.path.join(DATA_DIR, "raw")
     fetcher = RateLimitedFetcher(raw_cache_dir)

@@ -200,8 +200,17 @@ async function main(): Promise<void> {
   const path = process.argv[2] ?? "../data/parsed/recipes_full.jsonl";
   const rl = createInterface({ input: createReadStream(path), crlfDelay: Infinity });
 
+  // Re-syncs run every few minutes against a growing file where almost every
+  // record is already imported. One bulk slug query up front turns those
+  // re-runs into new-records-only work instead of ~20k+ no-op upserts.
+  const existing = new Set(
+    (await prisma.recipe.findMany({ select: { slug: true } })).map((r) => r.slug),
+  );
+  console.log(`${existing.size} recipes already in database`);
+
   let imported = 0;
   let skipped = 0;
+  let alreadyPresent = 0;
   for await (const line of rl) {
     const trimmed = line.trim();
     if (!trimmed) continue;
@@ -216,6 +225,10 @@ async function main(): Promise<void> {
       skipped++;
       continue;
     }
+    if (existing.has(rec.slug)) {
+      alreadyPresent++;
+      continue;
+    }
     try {
       await importRecord(rec);
       imported++;
@@ -227,7 +240,7 @@ async function main(): Promise<void> {
       console.log(`  ... ${imported} imported, ${skipped} skipped`);
     }
   }
-  console.log(`done: ${imported} imported, ${skipped} skipped`);
+  console.log(`done: ${imported} imported, ${alreadyPresent} already present, ${skipped} skipped`);
 }
 
 main()
