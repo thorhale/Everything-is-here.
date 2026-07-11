@@ -2,6 +2,7 @@
 
 import { useId, useMemo, useState } from "react";
 import { computeStats, type CalcFermentable, type CalcHop } from "@/lib/calculator/formulas";
+import { StatBars, srmClass } from "@/components/StatBars";
 
 interface FermentableRow {
   key: string;
@@ -75,13 +76,13 @@ export default function CalculatorForm() {
 
   return (
     <div>
-      <div style={{ display: "flex", gap: "1.5rem", margin: "1rem 0 1.5rem", flexWrap: "wrap" }}>
-        <Stat label="OG" value={stats.og.toFixed(3)} />
-        <Stat label="FG" value={stats.fg.toFixed(3)} />
-        <Stat label="ABV" value={`${stats.abv.toFixed(1)}%`} />
-        <Stat label="IBU" value={stats.ibu.toFixed(0)} />
-        <Stat label="SRM" value={stats.srm.toFixed(1)} />
+      <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginTop: "1rem" }}>
+        <span className={`swatch ${srmClass(stats.srm)}`} style={{ width: 28, height: 28 }} />
+        <span style={{ color: "var(--wh-text-light)", fontSize: "0.85rem" }}>
+          Estimated beer color
+        </span>
       </div>
+      <StatBars og={stats.og} fg={stats.fg} ibu={stats.ibu} srm={stats.srm} abv={stats.abv} />
 
       <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
         <Field label="Batch size (gal)" id={`${formId}-batch`} value={batchSizeGal} onChange={setBatchSizeGal} />
@@ -251,15 +252,6 @@ function removeRow<T extends { key: string }>(
   key: string,
 ): void {
   setRows((rows) => rows.filter((r) => r.key !== key));
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{value}</div>
-      <div style={{ fontSize: "0.75rem", color: "#999", textTransform: "uppercase" }}>{label}</div>
-    </div>
-  );
 }
 
 function Field({

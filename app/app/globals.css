@@ -1,0 +1,236 @@
+/* WortHogg global styles - design language recreated from BrewToad's
+ * archived application.css (Wayback snapshot 20181101151411 of
+ * bt-prod-assets.s3.amazonaws.com/assets/application.css).
+ * Original palette: accent #b55002, links #325f86, deep red #670f01,
+ * warm bg #f1ece9, text #4f4c4d, borders #d3d2d3. Original face was
+ * proxima-nova (Typekit, licensed) - substituted with a similar free
+ * humanist sans stack. The .srm0-.srm40 beer-color swatch palette and
+ * .horizontal-bar-graph structure are ported verbatim.
+ */
+
+:root {
+  --wh-accent: #b55002;
+  --wh-link: #325f86;
+  --wh-deep-red: #670f01;
+  --wh-bg-warm: #f1ece9;
+  --wh-bg-soft: #f5f5f0;
+  --wh-text: #4f4c4d;
+  --wh-text-light: #918f90;
+  --wh-border: #d3d2d3;
+  --wh-border-light: #deddde;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--wh-text);
+  background: var(--wh-bg-soft);
+  line-height: 1.4;
+}
+
+a { color: var(--wh-link); }
+a:hover { color: var(--wh-accent); }
+
+h1, h2, h3 { color: #3d3a3b; line-height: 1.2; }
+
+table { width: 100%; border-collapse: collapse; }
+th {
+  text-align: left;
+  border-bottom: 1px solid var(--wh-border);
+  padding: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--wh-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+td { padding: 0.35rem; border-bottom: 1px solid #eee; }
+
+.wh-disclaimer {
+  background: var(--wh-deep-red);
+  color: #f5e9d8;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.wh-disclaimer a { color: #f5e9d8; }
+
+.wh-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--wh-bg-warm);
+  border-bottom: 1px solid var(--wh-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.wh-logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--wh-deep-red);
+  text-decoration: none;
+}
+.wh-header nav { display: flex; gap: 1.1rem; }
+.wh-header nav a {
+  color: var(--wh-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.wh-header nav a:hover {
+  color: var(--wh-accent);
+  border-bottom-color: var(--wh-accent);
+}
+
+main.wh-main {
+  padding: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 70vh;
+  border-left: 1px solid var(--wh-border-light);
+  border-right: 1px solid var(--wh-border-light);
+}
+
+button, .wh-btn {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: 1px solid var(--wh-accent);
+  background: var(--wh-accent);
+  color: #fff;
+  transition: box-shadow 0.15s, color 0.15s, border 0.15s;
+}
+button:hover, .wh-btn:hover { box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.08); }
+.wh-btn-secondary { background: #fff; color: var(--wh-text); border-color: var(--wh-border); }
+
+input, textarea, select {
+  padding: 0.45rem;
+  border: 1px solid var(--wh-border);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--wh-text);
+}
+
+/* --- Horizontal stat bar graphs (ported from the original) --- */
+.horizontal-bar-graph {
+  width: 100%;
+  height: 22px;
+  position: relative;
+  margin-bottom: 12px;
+}
+.horizontal-bar-graph .bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  right: 0;
+  background: #ededed;
+  border: 1px solid #dedede;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05), 1px 1px 0 white;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0;
+}
+.horizontal-bar-graph .range {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--wh-accent);
+  opacity: 0.2;
+  transition: all 0.25s;
+}
+.horizontal-bar-graph .marker {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid black;
+  position: absolute;
+  top: 0;
+  margin-left: -7px;
+}
+.horizontal-bar-graph .value {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 22px;
+}
+.horizontal-bar-graph .label {
+  position: absolute;
+  left: 66px;
+  width: 50px;
+  line-height: 22px;
+  font-size: 0.8rem;
+  color: var(--wh-text-light);
+  text-transform: uppercase;
+}
+
+/* --- SRM beer-color swatches (verbatim palette from the original) --- */
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  vertical-align: -2px;
+  margin-right: 6px;
+}
+.srm0 { background: #fff8dc; }
+.srm1 { background: #fee799; }
+.srm2 { background: #fdd978; }
+.srm3 { background: #fdcb5a; }
+.srm4 { background: #fcc143; }
+.srm5 { background: #f7b324; }
+.srm6 { background: #f5a800; }
+.srm7 { background: #ee9e00; }
+.srm8 { background: #e69100; }
+.srm9 { background: #e38901; }
+.srm10 { background: #da7e01; }
+.srm11 { background: #d37400; }
+.srm12 { background: #cb6c00; }
+.srm13 { background: #c66401; }
+.srm14 { background: #bf5c01; }
+.srm15 { background: #b65300; }
+.srm16 { background: #b04f00; }
+.srm17 { background: #ac4701; }
+.srm18 { background: #a24001; }
+.srm19 { background: #9c3900; }
+.srm20 { background: #963500; }
+.srm21 { background: #912f00; }
+.srm22 { background: #8c2d01; }
+.srm23 { background: #832501; }
+.srm24 { background: #7e1f01; }
+.srm25 { background: #771c01; }
+.srm26 { background: #721b00; }
+.srm27 { background: #6c1501; }
+.srm28 { background: #670f01; }
+.srm29 { background: #620f01; }
+.srm30 { background: #5b0d01; }
+.srm31 { background: #560c03; }
+.srm32 { background: #5d0a02; }
+.srm33 { background: #500a08; }
+.srm34 { background: #4a0605; }
+.srm35 { background: #440706; }
+.srm36 { background: #420807; }
+.srm37 { background: #3c0908; }
+.srm38 { background: #390708; }
+.srm39 { background: #39080b; }
+.srm40 { background: #35090a; }
+
+.wh-style-chip {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  background: #eee;
+  color: #333;
+  text-decoration: none;
+}
+.wh-style-chip.active { background: var(--wh-deep-red); color: #fff; }
