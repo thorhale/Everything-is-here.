@@ -54,6 +54,27 @@ if [[ "${1:-}" == "--sync" || "${2:-}" == "--sync" ]]; then
   (cd app && npx tsx prisma/import.ts ../data/parsed/recipes_full.jsonl | tail -3)
 fi
 
+# --- Snapshot (opt-in): commit a gzipped copy of the parsed data as
+# insurance against this ephemeral container being reclaimed. Only when
+# it has grown by >2000 recipes since the last snapshot, to keep git
+# history from bloating with near-identical 7MB+ blobs every check-in.
+if [[ "${1:-}" == "--snapshot" || "${2:-}" == "--snapshot" || "${3:-}" == "--snapshot" ]]; then
+  mkdir -p data/snapshots
+  current=$(wc -l < data/parsed/recipes_full.jsonl 2>/dev/null || echo 0)
+  last=$(zcat data/snapshots/recipes_full.jsonl.gz 2>/dev/null | wc -l || echo 0)
+  if (( current - last > 2000 )); then
+    gzip -c data/parsed/recipes_full.jsonl > data/snapshots/recipes_full.jsonl.gz
+    git add data/snapshots/recipes_full.jsonl.gz
+    git commit -q -m "Snapshot parsed recipe data at ${current} recipes
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_015xuUYdkBo5VfiLYUqQKNsL"
+    git push -q origin claude/brew-toad-recreation-idpvrb && echo "snapshot: committed at ${current} recipes" || echo "snapshot: commit ok, push FAILED" >&2
+  else
+    echo "snapshot: skipped (only $((current - last)) new since last)"
+  fi
+fi
+
 # --- Status summary ---
 scraped=$(wc -l < data/parsed/recipes_full.jsonl 2>/dev/null || echo 0)
 echo "progress: ${scraped}/354608 recipes scraped"

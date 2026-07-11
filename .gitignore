@@ -14,3 +14,4 @@ node_modules/
 /data/*.log
 /data/parsed/recipes_full.jsonl
 /data/manifest_recipes.jsonl
+!/data/snapshots/
