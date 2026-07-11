@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.next/
+.env
+.env.local
+
+# Pipeline artifacts - large, regenerable from web.archive.org, not source
+/data/raw/
+/data/cdx/
+!/data/cdx/.gitkeep
+!/data/raw/.gitkeep
+/data/*.log
+/data/parsed/recipes_full.jsonl
+/data/manifest_recipes.jsonl
