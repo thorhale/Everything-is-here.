@@ -1,5 +1,8 @@
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import { prisma } from "@/lib/db";
+import { srmClass } from "@/components/StatBars";
 
 const PAGE_SIZE = 25;
 
@@ -53,11 +56,9 @@ export default async function RecipesPage({ searchParams }: Props) {
           name="q"
           defaultValue={q}
           placeholder="Search by name or style..."
-          style={{ flex: 1, padding: "0.5rem" }}
+          style={{ flex: 1 }}
         />
-        <button type="submit" style={{ padding: "0.5rem 1rem" }}>
-          Search
-        </button>
+        <button type="submit">Search</button>
       </form>
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem", marginBottom: "1rem" }}>
@@ -65,32 +66,23 @@ export default async function RecipesPage({ searchParams }: Props) {
           <Link
             key={s.styleName}
             href={`/recipes?style=${encodeURIComponent(s.styleName ?? "")}`}
-            style={{
-              fontSize: "0.8rem",
-              padding: "0.2rem 0.6rem",
-              borderRadius: 12,
-              background: style === s.styleName ? "#3a2a1a" : "#eee",
-              color: style === s.styleName ? "#fff" : "#333",
-              textDecoration: "none",
-            }}
+            className={`wh-style-chip${style === s.styleName ? " active" : ""}`}
           >
             {s.styleName} ({s._count})
           </Link>
         ))}
       </div>
 
-      <p style={{ color: "#666" }}>{total.toLocaleString()} recipes found</p>
+      <p style={{ color: "var(--wh-text-light)" }}>{total.toLocaleString()} recipes found</p>
 
       <ul style={{ listStyle: "none", padding: 0 }}>
         {recipes.map((r) => (
-          <li
-            key={r.id}
-            style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}
-          >
+          <li key={r.id} style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}>
+            <span className={`swatch ${srmClass(r.srm)}`} />
             <Link href={`/recipes/${r.slug}`} style={{ fontWeight: 600 }}>
               {r.title ?? r.slug}
             </Link>
-            <div style={{ fontSize: "0.85rem", color: "#666" }}>
+            <div style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginLeft: 20 }}>
               {r.styleName ?? "Unknown style"}
               {r.abv ? ` · ${r.abv}% ABV` : ""}
               {r.ibu ? ` · ${r.ibu} IBU` : ""}
@@ -102,15 +94,19 @@ export default async function RecipesPage({ searchParams }: Props) {
 
       <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
         {page > 1 && (
-          <Link href={`/recipes?${new URLSearchParams({ ...(q ? { q } : {}), ...(style ? { style } : {}), page: String(page - 1) })}`}>
+          <Link
+            href={`/recipes?${new URLSearchParams({ ...(q ? { q } : {}), ...(style ? { style } : {}), page: String(page - 1) })}`}
+          >
             ← Previous
           </Link>
         )}
-        <span style={{ color: "#666" }}>
+        <span style={{ color: "var(--wh-text-light)" }}>
           Page {page} of {totalPages.toLocaleString()}
         </span>
         {page < totalPages && (
-          <Link href={`/recipes?${new URLSearchParams({ ...(q ? { q } : {}), ...(style ? { style } : {}), page: String(page + 1) })}`}>
+          <Link
+            href={`/recipes?${new URLSearchParams({ ...(q ? { q } : {}), ...(style ? { style } : {}), page: String(page + 1) })}`}
+          >
             Next →
           </Link>
         )}

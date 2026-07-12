@@ -14,3 +14,7 @@ node_modules/
 /data/*.log
 /data/parsed/recipes_full.jsonl
 /data/manifest_recipes.jsonl
+!/data/snapshots/
+/data/warcs/
+/data/PAUSE_SCRAPER
+/data/parsed/warc_xml_staged.jsonl

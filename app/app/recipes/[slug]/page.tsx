@@ -1,6 +1,9 @@
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
+import { StatBars, srmClass } from "@/components/StatBars";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -31,8 +34,11 @@ export default async function RecipeDetailPage({ params }: Props) {
 
   return (
     <div>
-      <h1>{recipe.title ?? recipe.slug}</h1>
-      <p style={{ color: "#666" }}>
+      <h1 style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+        <span className={`swatch ${srmClass(recipe.srm)}`} style={{ width: 22, height: 22 }} />
+        {recipe.title ?? recipe.slug}
+      </h1>
+      <p style={{ color: "var(--wh-text-light)" }}>
         {recipe.styleName}
         {recipe.brewer && (
           <>
@@ -42,67 +48,108 @@ export default async function RecipeDetailPage({ params }: Props) {
         )}
       </p>
 
-      <div style={{ display: "flex", gap: "1.5rem", margin: "1rem 0", flexWrap: "wrap" }}>
-        {recipe.og != null && <Stat label="OG" value={recipe.og.toFixed(3)} />}
-        {recipe.fg != null && <Stat label="FG" value={recipe.fg.toFixed(3)} />}
-        {recipe.abv != null && <Stat label="ABV" value={`${recipe.abv}%`} />}
-        {recipe.ibu != null && <Stat label="IBU" value={String(recipe.ibu)} />}
-        {recipe.srm != null && <Stat label="SRM" value={String(recipe.srm)} />}
-      </div>
+      <StatBars og={recipe.og} fg={recipe.fg} ibu={recipe.ibu} srm={recipe.srm} abv={recipe.abv} />
 
-      <div style={{ fontSize: "0.85rem", color: "#666", marginBottom: "1rem" }}>
+      <div style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginBottom: "1rem" }}>
         {recipe.batchSizeDisplay && <>Batch size: {recipe.batchSizeDisplay} · </>}
         {recipe.boilTimeDisplay && <>Boil time: {recipe.boilTimeDisplay} · </>}
         {recipe.efficiencyDisplay && <>Efficiency: {recipe.efficiencyDisplay}</>}
+        {recipe.ibuFormula && <> · IBU formula: {recipe.ibuFormula}</>}
       </div>
 
       <section>
         <h2>Fermentables</h2>
-        <IngredientTable
-          headers={["Amount", "Name", "Use", "PPG", "Color"]}
-          rows={recipe.fermentables.map((f) => [
-            f.amountDisplay ?? "",
-            f.name,
-            f.use ?? "",
-            f.ppg != null ? String(f.ppg) : "",
-            f.colorLovibond != null ? `${f.colorLovibond} °L` : "",
-          ])}
-        />
+        {recipe.fermentables.length === 0 ? (
+          <p style={{ color: "var(--wh-text-light)" }}>None listed.</p>
+        ) : (
+          <table>
+            <thead>
+              <tr>
+                <th>Amount</th>
+                <th>Fermentable</th>
+                <th>Use</th>
+                <th>PPG</th>
+                <th>Color</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recipe.fermentables.map((f) => (
+                <tr key={f.id}>
+                  <td style={{ whiteSpace: "nowrap" }}>{f.amountDisplay}</td>
+                  <td>
+                    <span className={`swatch ${srmClass(f.colorLovibond)}`} />
+                    {f.name}
+                  </td>
+                  <td>{f.use}</td>
+                  <td>{f.ppg ?? ""}</td>
+                  <td>{f.colorLovibond != null ? `${f.colorLovibond} °L` : ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </section>
 
       <section>
         <h2>Hops</h2>
-        <IngredientTable
-          headers={["Amount", "Name", "Time", "Use", "Form", "AA%"]}
-          rows={recipe.hops.map((h) => [
-            h.amountDisplay ?? "",
-            h.name,
-            h.timeDisplay ?? "",
-            h.use ?? "",
-            h.form ?? "",
-            h.alphaAcidPct != null ? `${h.alphaAcidPct}%` : "",
-          ])}
-        />
+        {recipe.hops.length === 0 ? (
+          <p style={{ color: "var(--wh-text-light)" }}>None listed.</p>
+        ) : (
+          <table>
+            <thead>
+              <tr>
+                <th>Amount</th>
+                <th>Hop</th>
+                <th>Time</th>
+                <th>Use</th>
+                <th>Form</th>
+                <th>AA</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recipe.hops.map((h) => (
+                <tr key={h.id}>
+                  <td style={{ whiteSpace: "nowrap" }}>{h.amountDisplay}</td>
+                  <td>{h.name}</td>
+                  <td>{h.timeDisplay}</td>
+                  <td>{h.use}</td>
+                  <td>{h.form}</td>
+                  <td>{h.alphaAcidPct != null ? `${h.alphaAcidPct}%` : ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </section>
 
       {recipe.yeasts.length > 0 && (
         <section>
-          <h2>Yeast</h2>
-          <IngredientTable
-            headers={["Name", "Lab/Product", "Attenuation"]}
-            rows={recipe.yeasts.map((y) => [
-              y.name,
-              y.labProduct ?? "",
-              y.attenuationPct != null ? `${y.attenuationPct}%` : "",
-            ])}
-          />
+          <h2>Yeasts</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Lab/Product</th>
+                <th>Attenuation</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recipe.yeasts.map((y) => (
+                <tr key={y.id}>
+                  <td>{y.name}</td>
+                  <td>{y.labProduct}</td>
+                  <td>{y.attenuationPct != null ? `${y.attenuationPct}%` : ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </section>
       )}
 
       {recipe.notesText && (
         <section>
           <h2>Notes</h2>
-          <p style={{ whiteSpace: "pre-wrap", color: "#333" }}>{recipe.notesText}</p>
+          <p style={{ whiteSpace: "pre-wrap" }}>{recipe.notesText}</p>
         </section>
       )}
 
@@ -113,7 +160,9 @@ export default async function RecipeDetailPage({ params }: Props) {
             {recipe.comments.map((c) => (
               <li key={c.id} style={{ padding: "0.5rem 0", borderBottom: "1px solid #eee" }}>
                 <strong>{c.commenter ?? "anonymous"}</strong>{" "}
-                <span style={{ color: "#999", fontSize: "0.8rem" }}>{c.timestampDisplay}</span>
+                <span style={{ color: "var(--wh-text-light)", fontSize: "0.8rem" }}>
+                  {c.timestampDisplay}
+                </span>
                 <p style={{ margin: "0.25rem 0 0" }}>{c.text}</p>
               </li>
             ))}
@@ -121,7 +170,7 @@ export default async function RecipeDetailPage({ params }: Props) {
         </section>
       )}
 
-      <p style={{ fontSize: "0.8rem", color: "#999", marginTop: "2rem" }}>
+      <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         Archived from brewtoad.com on {recipe.sourceTimestamp} via the{" "}
         <a href={waybackUrl(recipe.sourceUrl, recipe.sourceTimestamp)} target="_blank" rel="noreferrer">
           Wayback Machine
@@ -129,42 +178,5 @@ export default async function RecipeDetailPage({ params }: Props) {
         . <Link href={`/takedown?recipe=${recipe.slug}`}>Request removal</Link>
       </p>
     </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div style={{ fontSize: "1.25rem", fontWeight: 700 }}>{value}</div>
-      <div style={{ fontSize: "0.75rem", color: "#999", textTransform: "uppercase" }}>{label}</div>
-    </div>
-  );
-}
-
-function IngredientTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
-  if (rows.length === 0) return <p style={{ color: "#999" }}>None listed.</p>;
-  return (
-    <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "1rem" }}>
-      <thead>
-        <tr>
-          {headers.map((h) => (
-            <th key={h} style={{ textAlign: "left", borderBottom: "1px solid #ccc", padding: "0.3rem" }}>
-              {h}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row, i) => (
-          <tr key={i}>
-            {row.map((cell, j) => (
-              <td key={j} style={{ padding: "0.3rem", borderBottom: "1px solid #f0f0f0" }}>
-                {cell}
-              </td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
   );
 }
