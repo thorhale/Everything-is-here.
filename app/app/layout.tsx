@@ -19,7 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <header className="wh-header">
           <Link href="/" className="wh-logo">
-            🐗 WortHogg
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/mascot-64.png" alt="" className="wh-logo-mark" />
+            WortHogg
           </Link>
           <nav>
             <Link href="/recipes">Recipes</Link>

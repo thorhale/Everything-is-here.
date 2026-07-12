@@ -7,7 +7,14 @@ export default async function HomePage() {
 
   return (
     <div>
-      <h1>WortHogg</h1>
+      <div style={{ textAlign: "center", marginBottom: "1rem" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/brand/worthogg-logo.png"
+          alt="WortHogg"
+          style={{ maxWidth: "min(360px, 80%)", height: "auto" }}
+        />
+      </div>
       <p>
         BrewToad was a free homebrew recipe calculator and recipe-sharing site that shut down
         on December 31, 2018. WortHogg is a community effort to recover its recipes and

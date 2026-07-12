@@ -66,10 +66,18 @@ td { padding: 0.35rem; border-bottom: 1px solid #eee; }
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 .wh-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 700;
   font-size: 1.3rem;
   color: var(--wh-deep-red);
   text-decoration: none;
+}
+.wh-logo-mark {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 .wh-header nav { display: flex; gap: 1.1rem; }
 .wh-header nav a {
