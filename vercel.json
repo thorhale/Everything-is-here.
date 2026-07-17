@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [{ "src": "app/package.json", "use": "@vercel/next" }],
   "routes": [
-    { "src": "/", "dest": "/app/index" },
-    { "src": "/(.*)", "dest": "/app/$1" }
+    { "src": "/", "dest": "/app/index", "check": true },
+    { "src": "/(.*)", "dest": "/app/$1", "check": true }
   ]
 }
