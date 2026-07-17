@@ -60,7 +60,7 @@ export function StatBar({
             }}
           />
         )}
-        <div className="marker" style={{ left: `${pct}%` }} />
+        <div className="marker" style={{ "--marker-left": `${pct}%` } as React.CSSProperties} />
       </div>
       <div className="value" title={stat === "balance" ? balanceTitle(value) : undefined}>
         {scale.format(value)}
