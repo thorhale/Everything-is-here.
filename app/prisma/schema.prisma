@@ -206,3 +206,62 @@ model TakedownRequest {
 
   @@index([status])
 }
+
+// --- Competition style guidelines archive (BJCP / BA(WBC+GABF) / AWS) ---
+
+model GuidelineEdition {
+  id          String              @id // e.g. "bjcp-2021", "ba-2019", "aws-2025"
+  system      String // BJCP | BA | AWS
+  year        Int
+  title       String
+  sourceUrl   String
+  attribution String
+  categories  GuidelineCategory[]
+
+  @@unique([system, year])
+}
+
+model GuidelineCategory {
+  id        String           @id
+  editionId String
+  edition   GuidelineEdition @relation(fields: [editionId], references: [id], onDelete: Cascade)
+  code      String?
+  name      String
+  sortOrder Int
+  styles    GuidelineStyle[]
+
+  @@index([editionId])
+}
+
+model GuidelineStyle {
+  id          String            @id
+  categoryId  String
+  category    GuidelineCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  code        String?
+  name        String
+  sortOrder   Int
+  ogMin       Float?
+  ogMax       Float?
+  fgMin       Float?
+  fgMax       Float?
+  ibuMin      Float?
+  ibuMax      Float?
+  srmMin      Float?
+  srmMax      Float?
+  abvMin      Float?
+  abvMax      Float?
+  impression  String?
+  aroma       String?
+  appearance  String?
+  flavor      String?
+  mouthfeel   String?
+  comments    String?
+  history     String?
+  ingredients String?
+  comparison  String?
+  examples    String?
+  tags        String?
+
+  @@index([categoryId])
+  @@index([name])
+}
