@@ -18,3 +18,4 @@ node_modules/
 /data/warcs/
 /data/PAUSE_SCRAPER
 /data/parsed/warc_xml_staged.jsonl
+data/guidelines/raw/

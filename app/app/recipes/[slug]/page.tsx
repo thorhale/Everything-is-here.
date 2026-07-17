@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
+import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
 import { PintGlass } from "@/components/PintGlass";
 
 interface Props {
@@ -35,6 +36,7 @@ export default async function RecipeDetailPage({ params }: Props) {
   }
 
   const ranges = recipe.styleName ? await getStyleRanges(recipe.styleName) : null;
+  const guideline = recipe.styleName ? await matchGuidelineForStyleName(recipe.styleName) : null;
 
   return (
     <div>
@@ -67,6 +69,14 @@ export default async function RecipeDetailPage({ params }: Props) {
                   </Link>
                 </strong>
               </span>
+            )}
+            {guideline && (
+              <>
+                {" · "}
+                <Link href={styleHref(guideline.category.edition.id, guideline)}>
+                  Style guidelines
+                </Link>
+              </>
             )}
           </p>
         </div>
