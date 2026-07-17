@@ -78,6 +78,7 @@ model Recipe {
   @@index([abv])
   @@index([ibu])
   @@index([brewerId])
+  @@index([isHidden, scrapedAt])
 }
 
 model RecipeFermentable {

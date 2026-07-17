@@ -1,11 +1,25 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/db";
 
+// These full-table counts run on every homepage hit otherwise; the numbers
+// only change when new data loads, so a 5-minute cache is plenty fresh.
+const getCounts = unstable_cache(
+  async () => {
+    const [recipeCount, brewerCount] = await Promise.all([
+      prisma.recipe.count({ where: { isHidden: false } }),
+      prisma.brewer.count(),
+    ]);
+    return { recipeCount, brewerCount };
+  },
+  ["home-counts"],
+  { revalidate: 300 }
+);
+
 export default async function HomePage() {
-  const recipeCount = await prisma.recipe.count({ where: { isHidden: false } });
-  const brewerCount = await prisma.brewer.count();
+  const { recipeCount, brewerCount } = await getCounts();
 
   return (
     <div>

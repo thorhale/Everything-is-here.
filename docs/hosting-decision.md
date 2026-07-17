@@ -52,3 +52,34 @@ That single number eliminates most of the famous free tiers:
    live scrape file isn't at hand).
 5. Before announcing publicly: replace the ADMIN_TOKEN query-string gate with
    real auth (flagged in app/app/admin/takedowns/page.tsx).
+
+## Loading data into production (Neon)
+
+The sandbox blocks outbound port 5432, so `prisma migrate`/`psql` can't reach
+Neon directly. Instead, `app/load-neon.mjs` loads data over HTTPS using
+`@neondatabase/serverless` (SQL over port 443). It is secretless (reads the
+connection string from the `NEON_URL` env var), resume-safe (skips slugs
+already in the database and reuses existing brewers), and applies the Prisma
+schema itself on first run.
+
+Initial launch load (curated: only recipes with OG, ABV, fermentables, and
+hops all present), 40k recipes:
+
+```bash
+cd app
+export NEON_URL="<neon pooler connection string>"
+CAP=40000 node load-neon.mjs
+```
+
+To top up to the full ~350k archive later (safe to re-run; it resumes):
+
+```bash
+CAP=400000 node load-neon.mjs
+```
+
+After any bulk load, the loader can be re-run at any time - inserts use
+`ON CONFLICT DO NOTHING` so duplicates are impossible.
+
+**Post-load security step:** the Neon password used during setup was shared
+in chat, so reset it in the Neon console (Dashboard -> your branch ->
+Reset password) and update `DATABASE_URL` in Vercel afterwards.

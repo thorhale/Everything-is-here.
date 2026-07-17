@@ -2,8 +2,13 @@
 
 import { prisma } from "@/lib/db";
 import { revalidatePath } from "next/cache";
+import { requireAdmin } from "@/lib/admin-auth";
 
 export async function approveTakedown(requestId: string): Promise<void> {
+  // Server actions are publicly-invokable POST endpoints - each one must
+  // enforce auth itself; the page-level gate protects nothing.
+  await requireAdmin();
+
   const req = await prisma.takedownRequest.update({
     where: { id: requestId },
     data: { status: "approved", resolvedAt: new Date() },
@@ -27,6 +32,8 @@ export async function approveTakedown(requestId: string): Promise<void> {
 }
 
 export async function rejectTakedown(requestId: string): Promise<void> {
+  await requireAdmin();
+
   await prisma.takedownRequest.update({
     where: { id: requestId },
     data: { status: "rejected", resolvedAt: new Date() },

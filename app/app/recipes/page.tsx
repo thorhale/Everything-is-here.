@@ -1,10 +1,27 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/db";
 import { srmClass } from "@/components/StatBars";
 
 const PAGE_SIZE = 25;
+
+// The style-chip facet is a full-table groupBy; it barely changes, so cache
+// it for 5 minutes instead of recomputing per request. The recipe list and
+// search results themselves stay live.
+const getTopStyles = unstable_cache(
+  async () =>
+    prisma.recipe.groupBy({
+      by: ["styleName"],
+      where: { isHidden: false, styleName: { not: null } },
+      _count: true,
+      orderBy: { _count: { styleName: "desc" } },
+      take: 20,
+    }),
+  ["top-styles"],
+  { revalidate: 300 }
+);
 
 interface Props {
   searchParams: Promise<{ q?: string; style?: string; page?: string }>;
@@ -36,13 +53,7 @@ export default async function RecipesPage({ searchParams }: Props) {
       include: { brewer: true },
     }),
     prisma.recipe.count({ where }),
-    prisma.recipe.groupBy({
-      by: ["styleName"],
-      where: { isHidden: false, styleName: { not: null } },
-      _count: true,
-      orderBy: { _count: { styleName: "desc" } },
-      take: 20,
-    }),
+    getTopStyles(),
   ]);
 
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
