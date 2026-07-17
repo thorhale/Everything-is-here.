@@ -28,6 +28,7 @@ body {
   color: var(--wh-text);
   background: var(--wh-bg-soft);
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 a { color: var(--wh-link); }
@@ -79,9 +80,14 @@ td { padding: 0.35rem; border-bottom: 1px solid #eee; }
   width: auto;
   display: block;
 }
-.wh-search { display: flex; gap: 0.4rem; margin-left: auto; }
-.wh-search input { width: 200px; }
-.wh-search button { padding: 0.45rem 0.9rem; font-size: 0.85rem; }
+.wh-header { flex-wrap: wrap; }
+.wh-search { display: flex; gap: 0.4rem; margin-left: auto; flex: 0 1 auto; min-width: 0; }
+.wh-search input { width: 200px; max-width: 100%; min-width: 0; flex: 1 1 auto; }
+.wh-search button { padding: 0.45rem 0.9rem; font-size: 0.85rem; flex-shrink: 0; }
+@media (max-width: 560px) {
+  .wh-search { flex: 1 1 100%; margin-left: 0; }
+  .wh-search input { width: auto; }
+}
 
 /* --- Site nav: the original's dark dropdown menu bar --- */
 .site-nav {
@@ -90,10 +96,14 @@ td { padding: 0.35rem; border-bottom: 1px solid #eee; }
 }
 .site-nav > ul {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
   max-width: 960px;
   list-style: none;
+}
+@media (max-width: 560px) {
+  .site-nav > ul > li > a { padding: 0.6rem 0.7rem; font-size: 0.85rem; }
 }
 .site-nav > ul > li { position: relative; }
 .site-nav > ul > li > a {
@@ -199,6 +209,10 @@ input, textarea, select {
   position: absolute;
   top: 0;
   margin-left: -7px;
+  /* off-scale values (e.g. a 23% ABV monster) pin to the edge instead of
+     poking out of the bar */
+  max-width: 100%;
+  left: clamp(7px, var(--marker-left, 0%), calc(100% - 7px)) !important;
 }
 .horizontal-bar-graph .value {
   position: absolute;
@@ -316,6 +330,9 @@ input, textarea, select {
 .nowrap { white-space: nowrap; }
 @media (max-width: 760px) {
   .hide-mobile { display: none; }
+  /* wide ingredient tables scroll inside their own box instead of
+     stretching the page */
+  table { display: block; overflow-x: auto; }
 }
 
 /* --- Site footer: the original's column layout --- */
