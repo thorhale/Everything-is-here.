@@ -1,15 +1,21 @@
 import { submitTakedownRequest } from "./actions";
 
 interface Props {
-  searchParams: Promise<{ recipe?: string }>;
+  searchParams: Promise<{ recipe?: string; error?: string }>;
 }
 
 export default async function TakedownPage({ searchParams }: Props) {
-  const { recipe } = await searchParams;
+  const { recipe, error } = await searchParams;
 
   return (
     <div>
       <h1>Request Removal</h1>
+      {error && (
+        <p style={{ color: "#670f01", background: "#f7e8e4", padding: "0.6rem 0.8rem", borderRadius: 4, maxWidth: 480 }}>
+          Something was missing or didn&apos;t look right - please check your name, a valid
+          email address, and the reason, then submit again.
+        </p>
+      )}
       <p style={{ color: "#666" }}>
         If you&apos;re the original author of a recipe (or brewed under a username shown here)
         and would like it removed from this archive, submit a request below. We&apos;ll review
@@ -17,6 +23,13 @@ export default async function TakedownPage({ searchParams }: Props) {
         about it.
       </p>
       <form action={submitTakedownRequest} style={{ display: "flex", flexDirection: "column", gap: "0.75rem", maxWidth: 480 }}>
+        {/* Honeypot - hidden from real users, bots fill it and get filtered */}
+        <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+          <label>
+            Website
+            <input name="website" tabIndex={-1} autoComplete="off" />
+          </label>
+        </div>
         <label>
           Recipe URL slug (optional - leave blank to request removal of everything under your
           username)

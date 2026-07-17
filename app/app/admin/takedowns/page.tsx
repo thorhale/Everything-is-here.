@@ -1,27 +1,17 @@
 export const dynamic = "force-dynamic";
 
 import { prisma } from "@/lib/db";
+import { isAdmin } from "@/lib/admin-auth";
 import { approveTakedown, rejectTakedown } from "./actions";
 
-interface Props {
-  searchParams: Promise<{ token?: string }>;
-}
-
-// NOTE: this is a minimal shared-token gate, not real authentication.
-// Before any public launch, replace with proper admin auth (e.g. NextAuth
-// with an allowlisted admin account) - a query-string token is only
-// acceptable for internal/dev use.
-export default async function AdminTakedownsPage({ searchParams }: Props) {
-  const { token } = await searchParams;
-  const adminToken = process.env.ADMIN_TOKEN;
-
-  if (!adminToken || token !== adminToken) {
+export default async function AdminTakedownsPage() {
+  if (!(await isAdmin())) {
     return (
       <div>
         <h1>Unauthorized</h1>
         <p style={{ color: "#666" }}>
-          This page requires an admin token (<code>?token=...</code>). Set{" "}
-          <code>ADMIN_TOKEN</code> in the environment to enable admin access.
+          This page is for the site administrator.{" "}
+          <a href="/admin/login">Sign in</a> to review takedown requests.
         </p>
       </div>
     );
