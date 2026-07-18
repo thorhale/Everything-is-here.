@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
+import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
 import { PintGlass } from "@/components/PintGlass";
 import { isAdmin } from "@/lib/admin-auth";
 import RecipePitching, { type SavedProtocol } from "./RecipePitching";
@@ -65,6 +66,7 @@ export default async function RecipeDetailPage({ params }: Props) {
   }
 
   const ranges = recipe.styleName ? await getStyleRanges(recipe.styleName) : null;
+  const guideline = recipe.styleName ? await matchGuidelineForStyleName(recipe.styleName) : null;
   const admin = await isAdmin();
 
   const batch = parseBatchSize(recipe.batchSizeDisplay);
@@ -109,6 +111,14 @@ export default async function RecipeDetailPage({ params }: Props) {
                   </Link>
                 </strong>
               </span>
+            )}
+            {guideline && (
+              <>
+                {" · "}
+                <Link href={styleHref(guideline.category.edition.id, guideline)}>
+                  Style guidelines
+                </Link>
+              </>
             )}
           </p>
         </div>
