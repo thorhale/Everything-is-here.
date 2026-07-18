@@ -6,6 +6,10 @@ import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
 import { PintGlass } from "@/components/PintGlass";
+import { isAdmin } from "@/lib/admin-auth";
+import RecipePitching, { type SavedProtocol } from "./RecipePitching";
+import type { PitchingFormInitial } from "@/app/pitching/PitchingForm";
+import type { PitchRateKey } from "@/lib/pitching/formulas";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -13,6 +17,31 @@ interface Props {
 
 function waybackUrl(url: string, timestamp: string): string {
   return `https://web.archive.org/web/${timestamp}/${url}`;
+}
+
+// Parse a free-text batch size like "5 gal", "5.5 gallons", or "20 L" into a
+// value + unit for the pitching calculator. Defaults to 5 gal when unknown.
+function parseBatchSize(display: string | null): { volume: string; unit: "gal" | "L" } {
+  if (display) {
+    const match = display.match(/([\d.]+)\s*(l\b|liter|litre|gal|gallon)/i);
+    if (match) {
+      const unit = /^(l|liter|litre)/i.test(match[2]) ? "L" : "gal";
+      return { volume: match[1], unit };
+    }
+  }
+  return { volume: "5", unit: "gal" };
+}
+
+// Lagers want a much higher pitch rate; pick a sensible default from the style.
+function pitchTypeForStyle(styleName: string | null): PitchRateKey {
+  const s = (styleName ?? "").toLowerCase();
+  if (/lager|pilsner|pils|bock|schwarz|dunkel|helles|märzen|marzen|oktoberfest/.test(s)) {
+    return "lager";
+  }
+  if (/kölsch|kolsch|altbier|california common|steam|cream ale/.test(s)) {
+    return "hybrid";
+  }
+  return "ale";
 }
 
 export default async function RecipeDetailPage({ params }: Props) {
@@ -27,6 +56,7 @@ export default async function RecipeDetailPage({ params }: Props) {
       yeasts: true,
       miscs: true,
       comments: true,
+      pitchingProtocol: true,
     },
   });
 
@@ -35,6 +65,18 @@ export default async function RecipeDetailPage({ params }: Props) {
   }
 
   const ranges = recipe.styleName ? await getStyleRanges(recipe.styleName) : null;
+  const admin = await isAdmin();
+
+  const batch = parseBatchSize(recipe.batchSizeDisplay);
+  const pitchingDefaults: PitchingFormInitial = {
+    volume: batch.volume,
+    volumeUnit: batch.unit,
+    og: recipe.og != null ? recipe.og.toFixed(3) : undefined,
+    pitchType: pitchTypeForStyle(recipe.styleName),
+  };
+  const savedProtocol: SavedProtocol | null = recipe.pitchingProtocol
+    ? { ...recipe.pitchingProtocol, updatedAt: recipe.pitchingProtocol.updatedAt.toISOString() }
+    : null;
 
   return (
     <div>
@@ -219,12 +261,23 @@ export default async function RecipeDetailPage({ params }: Props) {
         </aside>
       </div>
 
+      <RecipePitching
+        recipeSlug={recipe.slug}
+        defaults={pitchingDefaults}
+        saved={savedProtocol}
+        yeastName={recipe.yeasts[0]?.name}
+        canEdit={admin}
+      />
+
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         Archived from brewtoad.com on {recipe.sourceTimestamp} via the{" "}
         <a href={waybackUrl(recipe.sourceUrl, recipe.sourceTimestamp)} target="_blank" rel="noreferrer">
           Wayback Machine
         </a>
         . <Link href={`/takedown?recipe=${recipe.slug}`}>Request removal</Link>
+        {recipe.cloneCount > 0 && (
+          <> · Consolidated from {recipe.cloneCount} identical clone{recipe.cloneCount === 1 ? "" : "s"} archived separately.</>
+        )}
       </p>
     </div>
   );

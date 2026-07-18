@@ -59,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/calculator">Tools &amp; Calculators</Link>
               <ul>
                 <li><Link href="/calculator">Recipe Calculator</Link></li>
+                <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
               </ul>
             </li>
           </ul>
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ul>
               <li>Tools &amp; Calculators</li>
               <li><Link href="/calculator">Recipe Calculator</Link></li>
+              <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
             </ul>
           </div>
           <div className="footer-col">

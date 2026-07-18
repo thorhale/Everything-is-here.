@@ -9,7 +9,8 @@
     "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "import": "tsx prisma/import.ts"
+    "import": "tsx prisma/import.ts",
+    "dedupe": "tsx prisma/dedupe.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",

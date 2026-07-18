@@ -65,6 +65,12 @@ model Recipe {
   isHidden          Boolean  @default(false)
   takedownStatus    String?  // null | "pending" | "approved" | "rejected"
 
+  // BrewToad's "make a clone" feature spawned independent recipes that are
+  // byte-identical copies. prisma/dedupe.ts consolidates each set of clones
+  // into one canonical row; cloneCount records how many identical copies were
+  // folded in (0 = never had duplicates).
+  cloneCount        Int      @default(0)
+
   scrapedAt         DateTime @default(now())
 
   fermentables      RecipeFermentable[]
@@ -73,6 +79,7 @@ model Recipe {
   miscs             RecipeMisc[]
   comments          RecipeComment[]
   takedownRequests  TakedownRequest[]
+  pitchingProtocol  RecipePitchingProtocol?
 
   @@index([styleName])
   @@index([abv])
@@ -130,6 +137,40 @@ model RecipeYeast {
   refUrl         String?
 
   @@index([recipeId])
+}
+
+// A recipe's chosen yeast pitching + propagation protocol, made a permanent
+// part of the recipe. One-to-one with Recipe. Stores the raw calculator
+// inputs (see lib/pitching/formulas.ts) so the embedded calculator on the
+// recipe page can reproduce the exact plan; results are recomputed, never
+// stored. Populated via the admin-gated save action, not the Wayback import.
+model RecipePitchingProtocol {
+  id               String   @id @default(cuid())
+  recipeId         String   @unique
+  recipe           Recipe   @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+
+  // Batch target
+  volume           Float
+  volumeUnit       String   // "gal" | "L"
+  og               Float
+  pitchType        String   // "ale" | "hybrid" | "lager"
+
+  // Yeast source
+  source           String   // "liquid" | "dry" | "slurry"
+  packs            Float?
+  grams            Float?
+  slurryMl         Float?
+  yeastFractionPct Float?
+  ageDays          Float?
+  decayModel       String   // classic | optimistic | whiteLabs | wyeast
+
+  // Starter / propagation
+  starterType      String   // none | simple | simpleO2 | shaking | aeration | stirPlate
+  starterMl        Float?
+
+  notes            String?
+  updatedAt        DateTime @updatedAt
+  updatedBy        String?
 }
 
 model RecipeMisc {
