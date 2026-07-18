@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Recipe" ADD COLUMN "cloneCount" INTEGER NOT NULL DEFAULT 0;
