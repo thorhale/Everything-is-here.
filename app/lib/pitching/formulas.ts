@@ -195,7 +195,9 @@ export const STARTER_LABELS: Record<StarterType, string> = {
 // conservative low end of the published 180-360 range). Airlocked and
 // O2-at-start are set below shaking, consistent with the article's note
 // that stirring gives a "10- to 15-fold" larger cell count than an
-// airlocked starter. These densities are what distinguish the methods.
+// airlocked starter. These densities are what distinguish the methods. The
+// same figures are published as structured data in lib/propagation-guidance.ts
+// (STARTER_METHODS), which the /yeasts/propagation page renders.
 export const STARTER_MAX_DENSITY: Record<StarterType, number> = {
   none: 0,
   simple: 20,

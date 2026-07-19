@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PitchingForm from "./PitchingForm";
 import { getStrainPickerList, getStrain } from "@/lib/yeasts-curated";
 
@@ -29,7 +30,9 @@ export default async function PitchingPage({ searchParams }: Props) {
         How many healthy cells does your batch need, and how do you get there
         from a vial, a dry pack, or last batch&apos;s slurry? Enter your batch
         details and yeast source below. A reconstruction of the classic Mr Malty
-        calculator — see the note at the bottom for how the numbers are derived.
+        calculator — see the note at the bottom for how the numbers are derived,
+        or the <Link href="/yeasts/propagation">propagation guide</Link> for the
+        starter-density and pitch-rate reference data.
       </p>
       <PitchingForm strains={strains} initialStrainId={strainId} initial={initial} />
 
