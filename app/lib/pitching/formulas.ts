@@ -115,6 +115,7 @@ export interface LiquidSourceInput {
   packs: number;
   ageDays: number;
   decayModel: DecayModelKey;
+  cellsPerPack?: number; // override the 100B default (e.g. from a chosen strain)
 }
 
 export interface DrySourceInput {
@@ -122,6 +123,7 @@ export interface DrySourceInput {
   grams: number;
   ageDays: number;
   decayModel: DecayModelKey;
+  cellsPerGram?: number; // override the 20B/g default
 }
 
 export interface SlurrySourceInput {
@@ -139,18 +141,18 @@ export function cellsFromSource(input: SourceInput): number {
   switch (input.source) {
     case "liquid": {
       const packs = Math.max(0, input.packs);
-      return (
-        packs * CELLS_PER_LIQUID_PACK * viabilityAtAge(input.ageDays, input.decayModel)
-      );
+      const perPack = input.cellsPerPack && input.cellsPerPack > 0 ? input.cellsPerPack : CELLS_PER_LIQUID_PACK;
+      return packs * perPack * viabilityAtAge(input.ageDays, input.decayModel);
     }
     case "dry": {
       // Dry yeast decays much more slowly; the age model is applied at a
       // heavily reduced rate (dry yeast keeps well for a year+).
       const grams = Math.max(0, input.grams);
+      const perGram = input.cellsPerGram && input.cellsPerGram > 0 ? input.cellsPerGram : CELLS_PER_GRAM_DRY;
       const dryViability = clamp01(
         1 - (1 - viabilityAtAge(input.ageDays, input.decayModel)) * 0.15,
       );
-      return grams * CELLS_PER_GRAM_DRY * dryViability;
+      return grams * perGram * dryViability;
     }
     case "slurry": {
       const ml = Math.max(0, input.slurryMl);

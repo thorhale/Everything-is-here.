@@ -11,8 +11,22 @@ export default async function YeastsPage() {
   return (
     <div>
       <h1>Yeasts</h1>
+      <div
+        style={{
+          background: "var(--wh-bg-warm)",
+          border: "1px solid var(--wh-border)",
+          borderRadius: 8,
+          padding: "0.9rem 1.1rem",
+          margin: "0.75rem 0 1.25rem",
+        }}
+      >
+        <strong>New: the Yeast Database.</strong> A sourced catalog of brewing, wine, mead,
+        cider, and distilling strains with attenuation, temperature, and pitch specs — searchable
+        by use case and style.{" "}
+        <Link href="/yeasts/db">Browse the full yeast database →</Link>
+      </div>
       <p style={{ color: "var(--wh-text-light)" }}>
-        Every yeast used in the archive&apos;s recipes, with labs/products and typical
+        Below: every yeast used in the archive&apos;s recipes, with labs/products and typical
         attenuation as brewers entered it.
       </p>
       <table>

@@ -1,0 +1,63 @@
+{
+  "lab": {
+    "id": "wild-heritage",
+    "name": "Wild & Heritage Species",
+    "country": null,
+    "url": null,
+    "description": "Non-Saccharomyces and wild alcohol-producing microbes, catalogued at the species level. These entries describe the organism and its fermentation behaviour rather than a single commercial product; specs are ranges from research/literature and are null where no reliable figure exists.",
+    "sortOrder": 90
+  },
+  "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs.",
+  "strains": [
+    {
+      "id": "wild-brettanomyces-bruxellensis", "productCode": null, "name": "Brettanomyces bruxellensis (species)",
+      "form": "culture", "species": "Brettanomyces bruxellensis", "uses": ["beer", "wine", "wild"],
+      "recommendedStyles": ["Lambic", "Gueuze", "Flanders Red", "Brett Saison", "Wild Ale"],
+      "styleTags": ["brett", "funky", "wild", "super-attenuating"],
+      "attenuationMin": 85, "attenuationMax": 100, "tempMinF": 60, "tempMaxF": 85, "tempMinC": 16, "tempMaxC": 29,
+      "flocculation": "low", "alcoholToleranceMax": 12,
+      "description": "The classic 'Brett' of Belgian sour/wild ales and faulty wines. Slowly ferments dextrins Saccharomyces leaves behind, driving very high attenuation over months and producing barnyard/leather/tropical phenols and esters.",
+      "flavorNotes": "Horse blanket, leather, pineapple, smoke.", "sourceUrl": "https://en.wikipedia.org/wiki/Brettanomyces"
+    },
+    {
+      "id": "wild-lachancea-thermotolerans", "productCode": null, "name": "Lachancea thermotolerans (species)",
+      "form": "culture", "species": "Lachancea thermotolerans", "uses": ["beer", "wine", "wild"],
+      "recommendedStyles": ["Kettle-free Sour", "Berliner Weisse", "Sour IPA", "Lower-alcohol Wine"],
+      "styleTags": ["sour", "lactic", "one-step", "acidifying"],
+      "attenuationMin": 70, "attenuationMax": 82, "tempMinF": 63, "tempMaxF": 82, "tempMinC": 17, "tempMaxC": 28,
+      "flocculation": "medium", "alcoholToleranceMax": 10,
+      "description": "A yeast that produces both lactic acid and ethanol, souring and fermenting in one step without bacteria. Increasingly used in wine to lower pH and in beer for bacteria-free sours (e.g. commercially as WildBrew Philly Sour).",
+      "flavorNotes": "Clean lactic tartness, stone fruit.", "sourceUrl": "https://en.wikipedia.org/wiki/Lachancea_thermotolerans"
+    },
+    {
+      "id": "wild-torulaspora-delbrueckii", "productCode": null, "name": "Torulaspora delbrueckii (species)",
+      "form": "culture", "species": "Torulaspora delbrueckii", "uses": ["beer", "wine", "wild"],
+      "recommendedStyles": ["Saison", "Sparkling Wine", "Low-alcohol Beer", "Wheat Beer"],
+      "styleTags": ["non-sacch", "aromatic", "low-off-flavor"],
+      "attenuationMin": 60, "attenuationMax": 78, "tempMinF": 64, "tempMaxF": 82, "tempMinC": 18, "tempMaxC": 28,
+      "flocculation": "medium", "alcoholToleranceMax": 9,
+      "description": "A non-Saccharomyces yeast valued for clean, aromatic fermentation with low volatile acidity; used in co-fermentation for wine complexity and in saison/low-alcohol beer.",
+      "flavorNotes": "Fruity, spicy, low off-flavor.", "sourceUrl": "https://en.wikipedia.org/wiki/Torulaspora_delbrueckii"
+    },
+    {
+      "id": "wild-kluyveromyces-marxianus", "productCode": null, "name": "Kluyveromyces marxianus (species)",
+      "form": "culture", "species": "Kluyveromyces marxianus", "uses": ["wine", "wild", "moonshine"],
+      "recommendedStyles": ["Whey/Lactose Ferment", "Fruit Wine", "Bioethanol"],
+      "styleTags": ["non-sacch", "lactose-fermenting", "thermotolerant", "high-temp"],
+      "attenuationMin": null, "attenuationMax": null, "tempMinF": 86, "tempMaxF": 113, "tempMinC": 30, "tempMaxC": 45,
+      "flocculation": null, "alcoholToleranceMax": 10,
+      "description": "A fast-growing, highly thermotolerant yeast that can ferment lactose (unlike most brewing yeast), making it useful for whey/dairy-based and fruit ferments and high-temperature ethanol. Produces fruity esters; being explored for novel beverages.",
+      "flavorNotes": "Fruity, ester-rich; can ferment milk sugar.", "sourceUrl": "https://en.wikipedia.org/wiki/Kluyveromyces_marxianus"
+    },
+    {
+      "id": "wild-saccharomycodes-ludwigii", "productCode": null, "name": "Saccharomycodes ludwigii (species)",
+      "form": "culture", "species": "Saccharomycodes ludwigii", "uses": ["beer", "wine", "wild"],
+      "recommendedStyles": ["Non-alcoholic / Low-alcohol Beer", "Maltose-negative Ferment"],
+      "styleTags": ["non-sacch", "maltose-negative", "low-alcohol"],
+      "attenuationMin": null, "attenuationMax": null, "tempMinF": 64, "tempMaxF": 77, "tempMinC": 18, "tempMaxC": 25,
+      "flocculation": null, "alcoholToleranceMax": 6,
+      "description": "A maltose- and maltotriose-negative yeast that leaves most wort sugars unfermented — used to make low- and non-alcoholic beer with a fermented aroma but minimal alcohol.",
+      "flavorNotes": "Fruity aroma, very low alcohol.", "sourceUrl": "https://en.wikipedia.org/wiki/Saccharomycodes"
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 import CalculatorForm from "./CalculatorForm";
+import { getStrainPickerList } from "@/lib/yeasts-curated";
 
-export default function CalculatorPage() {
+export const dynamic = "force-dynamic";
+
+export default async function CalculatorPage() {
+  const strains = await getStrainPickerList();
   return (
     <div>
       <h1>Recipe Calculator</h1>
@@ -9,7 +13,7 @@ export default function CalculatorPage() {
         IBU, Morey color, and ABV formulas extracted from the archived site (see{" "}
         <code>docs/calculator-formulas.md</code>). Stats update live as you edit ingredients.
       </p>
-      <CalculatorForm />
+      <CalculatorForm strains={strains} />
     </div>
   );
 }

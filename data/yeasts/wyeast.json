@@ -1,0 +1,126 @@
+{
+  "lab": {
+    "id": "wyeast",
+    "name": "Wyeast Laboratories",
+    "country": "United States",
+    "region": "Odell, OR",
+    "url": "https://wyeastlab.com",
+    "description": "Pioneer of liquid brewing yeast (Activator smack-packs, ~100 billion cells). Extensive beer range plus wild/blend cultures.",
+    "sortOrder": 13
+  },
+  "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells.",
+  "strains": [
+    {
+      "id": "wyeast-1056", "productCode": "1056", "name": "American Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["American Pale Ale", "American IPA", "American Amber", "American Stout"],
+      "styleTags": ["american", "clean", "chico", "ipa"],
+      "attenuationMin": 73, "attenuationMax": 77, "tempMinF": 60, "tempMaxF": 72, "tempMinC": 16, "tempMaxC": 22,
+      "flocculation": "low", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "The Chico American ale strain; clean, well-balanced, low fruitiness. Slightly hazy (low floc).",
+      "flavorNotes": "Clean, faint citrus.", "sourceUrl": "https://wyeastlab.com/strain/american-ale/"
+    },
+    {
+      "id": "wyeast-1084", "productCode": "1084", "name": "Irish Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Irish Dry Stout", "Irish Red Ale", "Porter", "Brown Ale"],
+      "styleTags": ["irish", "stout", "dry-stout", "guinness-lineage"],
+      "attenuationMin": 71, "attenuationMax": 75, "tempMinF": 62, "tempMaxF": 72, "tempMinC": 16, "tempMaxC": 22,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Classic Irish stout strain in the Guinness/dry-stout tradition (not Guinness's proprietary culture). Slight tartness and roast-friendly esters; the go-to for Irish dry stout.",
+      "flavorNotes": "Soft diacetyl, mild tart complexity.", "sourceUrl": "https://wyeastlab.com/strain/irish-ale/"
+    },
+    {
+      "id": "wyeast-1272", "productCode": "1272", "name": "American Ale II",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["American Pale Ale", "American Amber", "American Brown"],
+      "styleTags": ["american", "nutty", "high-floc"],
+      "attenuationMin": 72, "attenuationMax": 76, "tempMinF": 60, "tempMaxF": 72, "tempMinC": 16, "tempMaxC": 22,
+      "flocculation": "high", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Fruitier, nuttier, more flocculant American strain than 1056; slight tartness.",
+      "flavorNotes": "Nutty, light fruit.", "sourceUrl": "https://wyeastlab.com/strain/american-ale-ii/"
+    },
+    {
+      "id": "wyeast-1318", "productCode": "1318", "name": "London Ale III",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hazy IPA", "New England IPA", "English Bitter", "Pale Ale"],
+      "styleTags": ["hazy", "neipa", "estery", "juicy"],
+      "attenuationMin": 71, "attenuationMax": 75, "tempMinF": 64, "tempMaxF": 74, "tempMinC": 18, "tempMaxC": 23,
+      "flocculation": "high", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "The NEIPA darling; fruity, leaves body and soft mouthfeel, drops bright despite haze potential.",
+      "flavorNotes": "Peach/citrus esters, soft.", "sourceUrl": "https://wyeastlab.com/strain/london-ale-iii/"
+    },
+    {
+      "id": "wyeast-1968", "productCode": "1968", "name": "London ESB Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["ESB", "English Bitter", "English IPA", "Porter"],
+      "styleTags": ["english", "esb", "malty", "very-high-floc"],
+      "attenuationMin": 67, "attenuationMax": 71, "tempMinF": 64, "tempMaxF": 72, "tempMinC": 18, "tempMaxC": 22,
+      "flocculation": "very high", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Fuller's ESB strain; malty, fruity, so flocculant it may need rousing to finish.",
+      "flavorNotes": "Malty, ripe fruit.", "sourceUrl": "https://wyeastlab.com/strain/london-esb-ale/"
+    },
+    {
+      "id": "wyeast-2124", "productCode": "2124", "name": "Bohemian Lager",
+      "form": "liquid", "species": "Saccharomyces pastorianus", "uses": ["beer"],
+      "recommendedStyles": ["Bohemian Pilsner", "Czech Lager", "Helles", "Märzen"],
+      "styleTags": ["lager", "clean", "workhorse"],
+      "attenuationMin": 69, "attenuationMax": 73, "tempMinF": 46, "tempMaxF": 58, "tempMinC": 8, "tempMaxC": 14,
+      "flocculation": "medium", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Weihenstephan 34/70-type lager strain; clean and malty, ferments cold well.",
+      "flavorNotes": "Clean, balanced.", "sourceUrl": "https://wyeastlab.com/strain/bohemian-lager/"
+    },
+    {
+      "id": "wyeast-3068", "productCode": "3068", "name": "Weihenstephan Weizen",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hefeweizen", "Weissbier", "Dunkelweizen"],
+      "styleTags": ["wheat", "weizen", "banana", "clove"],
+      "attenuationMin": 73, "attenuationMax": 77, "tempMinF": 64, "tempMaxF": 75, "tempMinC": 18, "tempMaxC": 24,
+      "flocculation": "low", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "The benchmark German weizen strain; banana/clove tunable by temp and pitch. Low floc, needs a blow-off.",
+      "flavorNotes": "Banana + clove, vanilla hints.", "sourceUrl": "https://wyeastlab.com/strain/weihenstephan-weizen/"
+    },
+    {
+      "id": "wyeast-3711", "productCode": "3711", "name": "French Saison",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale", "Grisette"],
+      "styleTags": ["saison", "very-dry", "fast", "reliable"],
+      "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 65, "tempMaxF": 77, "tempMinC": 18, "tempMaxC": 25,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Reliable, fast, super-dry saison strain (can exceed listed attenuation); far less finicky than Dupont-type.",
+      "flavorNotes": "Peppery, citrus, bone dry.", "sourceUrl": "https://wyeastlab.com/strain/french-saison/"
+    },
+    {
+      "id": "wyeast-3724", "productCode": "3724", "name": "Belgian Saison",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale"],
+      "styleTags": ["saison", "dupont", "phenolic", "slow", "stall-prone"],
+      "attenuationMin": 76, "attenuationMax": 80, "tempMinF": 70, "tempMaxF": 95, "tempMinC": 21, "tempMaxC": 35,
+      "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "The authentic Dupont saison strain; classic spicy character but famous for stalling — hold it warm (upper 80s–90s°F) to finish.",
+      "flavorNotes": "Spicy, peppery, citrus.", "sourceUrl": "https://wyeastlab.com/strain/belgian-saison/"
+    },
+    {
+      "id": "wyeast-3787", "productCode": "3787", "name": "Trappist High Gravity",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Belgian Dubbel", "Belgian Tripel", "Belgian Strong Ale", "Quadrupel"],
+      "styleTags": ["belgian", "trappist", "high-gravity", "phenolic"],
+      "attenuationMin": 74, "attenuationMax": 78, "tempMinF": 64, "tempMaxF": 78, "tempMinC": 18, "tempMaxC": 26,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Westmalle-type Trappist strain; robust for big Belgians, rich esters and spice, alcohol-tolerant.",
+      "flavorNotes": "Dark fruit, clove, warming.", "sourceUrl": "https://wyeastlab.com/strain/trappist-high-gravity/"
+    },
+    {
+      "id": "wyeast-3278", "productCode": "3278", "name": "Belgian Lambic Blend",
+      "form": "liquid", "species": "Saccharomyces cerevisiae (blend)", "uses": ["beer", "wild"],
+      "recommendedStyles": ["Lambic", "Gueuze", "Flanders Red", "Wild Ale"],
+      "styleTags": ["blend", "lambic", "brett", "sour-program"],
+      "attenuationMin": 65, "attenuationMax": 75, "tempMinF": 63, "tempMaxF": 75, "tempMinC": 17, "tempMaxC": 24,
+      "flocculation": "medium", "alcoholToleranceMax": 12,
+      "isBlend": true, "blendComponents": ["Saccharomyces cerevisiae", "Brettanomyces bruxellensis", "Brettanomyces lambicus", "Lactobacillus", "Pediococcus"],
+      "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Traditional lambic blend of Saccharomyces, two Brett species, and souring bacteria; develops complex funk/sour over months.",
+      "flavorNotes": "Barnyard, citrus, lactic tartness over time.", "sourceUrl": "https://wyeastlab.com/strain/belgian-lambic-blend/"
+    }
+  ]
+}
