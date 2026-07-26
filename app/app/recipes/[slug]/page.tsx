@@ -6,6 +6,8 @@ import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
+import { matchStrainsForStyle, matchStrainForName, strainHref } from "@/lib/yeasts-curated";
+import { StrainGrid } from "@/components/StrainCard";
 import { PintGlass } from "@/components/PintGlass";
 import { isAdmin } from "@/lib/admin-auth";
 import RecipePitching, { type SavedProtocol } from "./RecipePitching";
@@ -68,6 +70,20 @@ export default async function RecipeDetailPage({ params }: Props) {
   const ranges = recipe.styleName ? await getStyleRanges(recipe.styleName) : null;
   const guideline = recipe.styleName ? await matchGuidelineForStyleName(recipe.styleName) : null;
   const admin = await isAdmin();
+
+  // Yeast recommendations for this recipe's style, and a link from each of the
+  // recipe's own yeast rows to its matched catalog strain.
+  const suggestedYeasts = recipe.styleName
+    ? await matchStrainsForStyle(recipe.styleName, { use: "beer", limit: 4 })
+    : [];
+  const yeastStrainLinks: Record<string, string | null> = Object.fromEntries(
+    await Promise.all(
+      recipe.yeasts.map(async (y): Promise<[string, string | null]> => {
+        const match = await matchStrainForName(y.name);
+        return [y.id, match ? strainHref(match.id) : null];
+      }),
+    ),
+  );
 
   const batch = parseBatchSize(recipe.batchSizeDisplay);
   const pitchingDefaults: PitchingFormInitial = {
@@ -220,6 +236,17 @@ export default async function RecipeDetailPage({ params }: Props) {
                     <tr key={y.id}>
                       <td className="nowrap">
                         <Link href={`/yeasts/${encodeURIComponent(y.name)}`}>{y.name}</Link>
+                        {yeastStrainLinks[y.id] && (
+                          <>
+                            {" "}
+                            <Link
+                              href={yeastStrainLinks[y.id]!}
+                              style={{ fontSize: "0.75rem", color: "var(--wh-text-light)" }}
+                            >
+                              (specs)
+                            </Link>
+                          </>
+                        )}
                       </td>
                       <td>{y.labProduct}</td>
                       <td className="hide-mobile">
@@ -270,6 +297,19 @@ export default async function RecipeDetailPage({ params }: Props) {
           />
         </aside>
       </div>
+
+      {suggestedYeasts.length > 0 && (
+        <section style={{ marginTop: "2rem" }}>
+          <h3>Suggested yeasts for {recipe.styleName}</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+            Strains recommended for this style.{" "}
+            <Link href={`/yeasts/db?style=${encodeURIComponent(recipe.styleName ?? "")}`}>
+              See all in the yeast database →
+            </Link>
+          </p>
+          <StrainGrid strains={suggestedYeasts} />
+        </section>
+      )}
 
       <RecipePitching
         recipeSlug={recipe.slug}

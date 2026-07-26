@@ -41,11 +41,19 @@ function toNum(s: string): number {
   return Number.isFinite(v) ? v : 0;
 }
 
-export default function CalculatorForm() {
+export interface StrainPick {
+  id: string;
+  name: string;
+  lab: string;
+  attenuation: number | null;
+}
+
+export default function CalculatorForm({ strains }: { strains?: StrainPick[] }) {
   const formId = useId();
   const [batchSizeGal, setBatchSizeGal] = useState("5");
   const [efficiencyPct, setEfficiencyPct] = useState("75");
   const [attenuationPct, setAttenuationPct] = useState("75");
+  const [strainId, setStrainId] = useState("");
   const [fermentables, setFermentables] = useState<FermentableRow[]>(DEFAULT_FERMENTABLES);
   const [hops, setHops] = useState<HopRow[]>(DEFAULT_HOPS);
 
@@ -84,10 +92,33 @@ export default function CalculatorForm() {
       </div>
       <StatBars og={stats.og} fg={stats.fg} ibu={stats.ibu} srm={stats.srm} abv={stats.abv} />
 
-      <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem", flexWrap: "wrap", alignItems: "flex-end" }}>
         <Field label="Batch size (gal)" id={`${formId}-batch`} value={batchSizeGal} onChange={setBatchSizeGal} />
         <Field label="Efficiency (%)" id={`${formId}-eff`} value={efficiencyPct} onChange={setEfficiencyPct} />
         <Field label="Yeast attenuation (%)" id={`${formId}-atten`} value={attenuationPct} onChange={setAttenuationPct} />
+        {strains && strains.length > 0 && (
+          <label htmlFor={`${formId}-strain`} style={{ display: "flex", flexDirection: "column", fontSize: "0.85rem", gap: "0.25rem" }}>
+            Yeast (fills attenuation)
+            <select
+              id={`${formId}-strain`}
+              value={strainId}
+              onChange={(e) => {
+                const sid = e.target.value;
+                setStrainId(sid);
+                const st = strains.find((s) => s.id === sid);
+                if (st?.attenuation != null) setAttenuationPct(String(st.attenuation));
+              }}
+              style={{ padding: "0.3rem", border: "1px solid #ccc", borderRadius: 4, minWidth: 200 }}
+            >
+              <option value="">— choose a strain —</option>
+              {strains.map((s) => (
+                <option key={s.id} value={s.id}>
+                  {s.name} ({s.lab}){s.attenuation != null ? ` · ${s.attenuation}%` : ""}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
       </div>
 
       <section>

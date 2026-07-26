@@ -1,0 +1,53 @@
+{
+  "lab": {
+    "id": "red-star",
+    "name": "Red Star (Lesaffre)",
+    "country": "United States",
+    "url": "https://redstaryeast.com",
+    "description": "Long-standing wine and distilling dry-yeast brand (Lesaffre), widely used for country wine, mead, cider, and sugar washes.",
+    "sortOrder": 21
+  },
+  "attribution": "Specs transcribed from Red Star published product information (redstaryeast.com).",
+  "strains": [
+    {
+      "id": "red-star-premier-blanc", "productCode": "Premier Blanc", "name": "Red Star Premier Blanc (Champagne)",
+      "form": "dry", "species": "Saccharomyces cerevisiae bayanus", "uses": ["wine", "cider", "mead"],
+      "recommendedStyles": ["Sparkling Wine", "Dry White", "Dry Cider", "Dry Mead"],
+      "styleTags": ["champagne", "neutral", "high-tolerance"],
+      "tempMinF": 59, "tempMaxF": 86, "tempMinC": 15, "tempMaxC": 30,
+      "flocculation": "low", "alcoholToleranceMin": 13, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Neutral bayanus champagne strain; ferments dry and clean, good for sparkling wine, cider, and priming.",
+      "flavorNotes": "Neutral, crisp, dry.", "sourceUrl": "https://redstaryeast.com/yeast-strains/premier-blanc/"
+    },
+    {
+      "id": "red-star-premier-cuvee", "productCode": "Premier Cuvee", "name": "Red Star Premier Cuvée",
+      "form": "dry", "species": "Saccharomyces cerevisiae bayanus", "uses": ["wine", "cider", "mead"],
+      "recommendedStyles": ["Sparkling Wine", "Dry Wine", "Restart Stuck Ferment"],
+      "styleTags": ["champagne", "robust", "high-tolerance", "workhorse"],
+      "tempMinF": 59, "tempMaxF": 86, "tempMinC": 15, "tempMaxC": 30,
+      "flocculation": "low", "alcoholToleranceMin": 16, "alcoholToleranceMax": 18, "unitLabel": "g",
+      "description": "Fast, robust, very alcohol-tolerant strain; a top choice for restarting stuck fermentations and high-ABV meads.",
+      "flavorNotes": "Clean, neutral, bone dry.", "sourceUrl": "https://redstaryeast.com/yeast-strains/premier-cuvee/"
+    },
+    {
+      "id": "red-star-cote-des-blancs", "productCode": "Cote des Blancs", "name": "Red Star Côte des Blancs",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine", "cider", "mead"],
+      "recommendedStyles": ["White Wine", "Fruit Wine", "Semi-sweet Mead", "Cider"],
+      "styleTags": ["white-wine", "aromatic", "low-temp", "fruity"],
+      "tempMinF": 55, "tempMaxF": 77, "tempMinC": 13, "tempMaxC": 25,
+      "flocculation": "medium", "alcoholToleranceMin": 12, "alcoholToleranceMax": 14, "unitLabel": "g",
+      "description": "Aromatic strain; slow, low-temperature ferment preserves fruit and can leave residual sweetness in meads and fruit wines.",
+      "flavorNotes": "Fruity, floral, can finish sweet.", "sourceUrl": "https://redstaryeast.com/yeast-strains/cote-des-blancs/"
+    },
+    {
+      "id": "red-star-premier-rouge", "productCode": "Premier Rouge", "name": "Red Star Premier Rouge",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine"],
+      "recommendedStyles": ["Red Wine", "Full-bodied Red"],
+      "styleTags": ["red-wine", "color-stable", "full-body"],
+      "tempMinF": 64, "tempMaxF": 86, "tempMinC": 18, "tempMaxC": 30,
+      "flocculation": "medium", "alcoholToleranceMin": 14, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Red wine strain promoting color extraction and body; good for full-bodied reds.",
+      "flavorNotes": "Robust red fruit, structured.", "sourceUrl": "https://redstaryeast.com/yeast-strains/premier-rouge/"
+    }
+  ]
+}

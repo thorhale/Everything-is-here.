@@ -65,16 +65,35 @@ function fmt(n: number, digits = 0): string {
   });
 }
 
+export interface StrainPick {
+  id: string;
+  name: string;
+  lab: string;
+  form: string;
+  uses: string[];
+  attenuation: number | null;
+  cellsPerUnit: number | null;
+  unitLabel: string | null;
+}
+
 export default function PitchingForm({
   initial,
   compact = false,
   footer,
+  strains,
+  initialStrainId,
 }: {
   initial?: PitchingFormInitial;
   compact?: boolean;
   footer?: (state: PitchingFormState, result: PitchingResult) => ReactNode;
+  strains?: StrainPick[];
+  initialStrainId?: string;
 }) {
   const id = useId();
+
+  // Selected catalog strain (optional): drives source form + cell-count preset.
+  const [strainId, setStrainId] = useState(initialStrainId ?? "");
+  const selectedStrain = strains?.find((s) => s.id === strainId) ?? null;
 
   // Batch
   const [volume, setVolume] = useState(initial?.volume ?? "5");
@@ -83,7 +102,9 @@ export default function PitchingForm({
   const [pitchType, setPitchType] = useState<PitchRateKey>(initial?.pitchType ?? "ale");
 
   // Source
-  const [source, setSource] = useState<YeastSource>(initial?.source ?? "liquid");
+  const [source, setSource] = useState<YeastSource>(
+    initial?.source ?? (strains?.find((s) => s.id === (initialStrainId ?? ""))?.form === "dry" ? "dry" : "liquid"),
+  );
   const [decayModel, setDecayModel] = useState<DecayModelKey>(initial?.decayModel ?? "classic");
   const [ageDays, setAgeDays] = useState(initial?.ageDays ?? "30");
   const [packs, setPacks] = useState(initial?.packs ?? "1");
@@ -99,11 +120,17 @@ export default function PitchingForm({
     const volumeMl =
       toNum(volume) * (volumeUnit === "gal" ? ML_PER_GALLON : ML_PER_LITER);
 
+    // A chosen strain with a matching form supplies a per-product cell count.
+    const strainCells =
+      selectedStrain && selectedStrain.cellsPerUnit && selectedStrain.form === source
+        ? selectedStrain.cellsPerUnit
+        : undefined;
+
     let sourceInput: SourceInput;
     if (source === "liquid") {
-      sourceInput = { source: "liquid", packs: toNum(packs), ageDays: toNum(ageDays), decayModel };
+      sourceInput = { source: "liquid", packs: toNum(packs), ageDays: toNum(ageDays), decayModel, cellsPerPack: strainCells };
     } else if (source === "dry") {
-      sourceInput = { source: "dry", grams: toNum(grams), ageDays: toNum(ageDays), decayModel };
+      sourceInput = { source: "dry", grams: toNum(grams), ageDays: toNum(ageDays), decayModel, cellsPerGram: strainCells };
     } else {
       sourceInput = {
         source: "slurry",
@@ -135,6 +162,7 @@ export default function PitchingForm({
     yeastFractionPct,
     starterType,
     starterMl,
+    selectedStrain,
   ]);
 
   const ratioPct = result.cellsNeeded > 0 ? result.ratio * 100 : 0;
@@ -205,6 +233,39 @@ export default function PitchingForm({
           />
         </div>
       </section>
+
+      {/* Optional: pick a catalog strain to preset form + cell count */}
+      {strains && strains.length > 0 && (
+        <section style={{ marginTop: "1.25rem" }}>
+          <label htmlFor={`${id}-strain`} style={labelStyle}>
+            Yeast strain (optional — presets form &amp; cell count)
+            <select
+              id={`${id}-strain`}
+              value={strainId}
+              onChange={(e) => {
+                const sid = e.target.value;
+                setStrainId(sid);
+                const st = strains.find((s) => s.id === sid);
+                if (st) setSource(st.form === "dry" ? "dry" : "liquid");
+              }}
+              style={{ ...inputStyle, minWidth: 260 }}
+            >
+              <option value="">— none —</option>
+              {strains.map((s) => (
+                <option key={s.id} value={s.id}>
+                  {s.name} ({s.lab})
+                </option>
+              ))}
+            </select>
+          </label>
+          {selectedStrain?.cellsPerUnit && (
+            <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
+              Using {selectedStrain.cellsPerUnit} B cells per {selectedStrain.unitLabel ?? "unit"} from
+              the catalog.
+            </p>
+          )}
+        </section>
+      )}
 
       {/* Yeast source */}
       <section style={{ marginTop: "1.5rem" }}>

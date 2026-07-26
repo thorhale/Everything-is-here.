@@ -1,0 +1,74 @@
+{
+  "lab": {
+    "id": "omega",
+    "name": "Omega Yeast Labs",
+    "country": "United States",
+    "region": "Chicago, IL",
+    "url": "https://omegayeast.com",
+    "description": "Modern US liquid lab known for kveik, thiolized (Cosmic Punch) strains, and pitch-ready pouches.",
+    "sortOrder": 14
+  },
+  "attribution": "Specs transcribed from Omega Yeast published strain pages (omegayeast.com).",
+  "strains": [
+    {
+      "id": "omega-oyl-004", "productCode": "OYL-004", "name": "West Coast Ale I",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["American Pale Ale", "American IPA", "West Coast IPA"],
+      "styleTags": ["american", "clean", "chico", "ipa"],
+      "attenuationMin": 73, "attenuationMax": 80, "tempMinF": 60, "tempMaxF": 72, "tempMinC": 16, "tempMaxC": 22,
+      "flocculation": "medium", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Omega's Chico American ale strain; clean, hop-forward workhorse.",
+      "flavorNotes": "Clean, neutral.", "sourceUrl": "https://omegayeast.com/yeast/ales/west-coast-ale-i"
+    },
+    {
+      "id": "omega-oyl-057", "productCode": "OYL-057", "name": "HotHead Kveik",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Kveik Ale", "Pale Ale", "IPA", "Farmhouse Ale"],
+      "styleTags": ["kveik", "hot-ferment", "fast", "clean"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 98, "tempMinC": 20, "tempMaxC": 37,
+      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Clean kveik that ferments to ~98°F without off-flavors; fast turnaround, no temp control needed.",
+      "flavorNotes": "Clean, faint fruit when hot.", "sourceUrl": "https://omegayeast.com/yeast/ales/hothead-ale"
+    },
+    {
+      "id": "omega-oyl-061", "productCode": "OYL-061", "name": "Voss Kveik",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Kveik Ale", "Farmhouse Ale", "Pale Ale", "IPA"],
+      "styleTags": ["kveik", "orange", "hot-ferment"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 95, "tempMinC": 20, "tempMaxC": 35,
+      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Traditional Norwegian Voss kveik; orange-citrus esters at high temps, super fast.",
+      "flavorNotes": "Orange, citrus esters.", "sourceUrl": "https://omegayeast.com/yeast/ales/voss-kveik"
+    },
+    {
+      "id": "omega-oyl-071", "productCode": "OYL-071", "name": "Lutra Kveik",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Clean Ale", "Pseudo-lager", "Hard Seltzer", "Pale Ale"],
+      "styleTags": ["kveik", "clean", "pseudo-lager", "fast"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 95, "tempMinC": 20, "tempMaxC": 35,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Ultra-clean kveik for fast lager-like beers and neutral seltzer bases.",
+      "flavorNotes": "Extremely clean.", "sourceUrl": "https://omegayeast.com/yeast/ales/lutra-kveik"
+    },
+    {
+      "id": "omega-oyl-218", "productCode": "OYL-218", "name": "Cosmic Punch",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hazy IPA", "New England IPA", "Fruited Ale"],
+      "styleTags": ["thiolized", "hazy", "biotransformation", "tropical"],
+      "attenuationMin": 73, "attenuationMax": 80, "tempMinF": 65, "tempMaxF": 72, "tempMinC": 18, "tempMaxC": 22,
+      "flocculation": "medium", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Thiolized strain that releases tropical thiols (passionfruit/guava) from hops and malt; boosts hazy IPAs.",
+      "flavorNotes": "Passionfruit, guava, tropical thiols.", "sourceUrl": "https://omegayeast.com/yeast/ales/cosmic-punch-ale-yeast"
+    },
+    {
+      "id": "omega-oyl-500", "productCode": "OYL-500", "name": "Saisonstein's Monster",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale"],
+      "styleTags": ["saison", "reliable", "dry", "non-diastatic"],
+      "attenuationMin": 80, "attenuationMax": 88, "tempMinF": 68, "tempMaxF": 85, "tempMinC": 20, "tempMaxC": 29,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "A saison hybrid that attenuates like a diastatic strain without being STA1+; reliable and dry.",
+      "flavorNotes": "Peppery, fruity, dry.", "sourceUrl": "https://omegayeast.com/yeast/ales/saisonstein-monster"
+    }
+  ]
+}

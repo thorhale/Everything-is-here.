@@ -1,0 +1,66 @@
+{
+  "lab": {
+    "id": "angel-yeast",
+    "name": "Angel Yeast Co.",
+    "country": "China",
+    "region": "Yichang, Hubei",
+    "url": "https://en.angelyeast.com",
+    "description": "One of the world's largest yeast producers; dominant in distilling/ethanol and Chinese baijiu, with growing fruit-wine, mead, and beer lines. Many high-temperature, high-alcohol-tolerance distilling strains.",
+    "sortOrder": 20
+  },
+  "attribution": "Specs transcribed from Angel Yeast published product data (en.angelyeast.com). Distilling strains sold as bulk active dry yeast.",
+  "strains": [
+    {
+      "id": "angel-super-alcohol", "productCode": "Super Alcohol ADY", "name": "Angel Super Alcohol Active Dry Yeast",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["moonshine", "neutral", "whiskey"],
+      "recommendedStyles": ["Grain Neutral Spirit", "Sugar Wash", "Moonshine"],
+      "styleTags": ["distilling", "high-alcohol", "high-temp", "neutral"],
+      "attenuationMin": null, "attenuationMax": null, "tempMinF": 82, "tempMaxF": 104, "tempMinC": 28, "tempMaxC": 40,
+      "flocculation": null, "alcoholToleranceMin": 15, "alcoholToleranceMax": 18, "cellsPerUnit": null, "unitLabel": "g",
+      "description": "High-performance distilling strain for grain and sugar washes; tolerates high temperature and pushes to 15–18% ABV. A staple for neutral spirit and moonshine production worldwide.",
+      "flavorNotes": "Neutral; efficient ethanol yield.", "sourceUrl": "https://en.angelyeast.com/products/distillers-yeast.html"
+    },
+    {
+      "id": "angel-whiskey", "productCode": "Angel Whisky", "name": "Angel Whisky Active Dry Yeast",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["whiskey", "moonshine"],
+      "recommendedStyles": ["Grain Whisky", "Malt Whisky"],
+      "styleTags": ["distilling", "whiskey", "grain"],
+      "tempMinF": 82, "tempMaxF": 99, "tempMinC": 28, "tempMaxC": 37,
+      "alcoholToleranceMin": 12, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Whisky distilling strain producing grain- and malt-forward congeners for pot- and column-still whisky.",
+      "flavorNotes": "Grain, cereal, light fruit congeners.", "sourceUrl": "https://en.angelyeast.com/products/distillers-yeast.html"
+    },
+    {
+      "id": "angel-rum", "productCode": "Angel Rum", "name": "Angel Rum Active Dry Yeast",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["rum", "moonshine"],
+      "recommendedStyles": ["Rum", "Cane Spirit"],
+      "styleTags": ["distilling", "rum", "cane", "estery"],
+      "tempMinF": 82, "tempMaxF": 99, "tempMinC": 28, "tempMaxC": 37,
+      "alcoholToleranceMin": 12, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Rum distilling strain for molasses and cane-juice washes; ester-forward for aromatic rum.",
+      "flavorNotes": "Cane, tropical rum esters.", "sourceUrl": "https://en.angelyeast.com/products/distillers-yeast.html"
+    },
+    {
+      "id": "angel-fruit-wine-sy", "productCode": "SY", "name": "Angel Fruit Wine Yeast SY",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine", "cider", "mead"],
+      "recommendedStyles": ["Fruit Wine", "Cider", "Country Wine"],
+      "styleTags": ["fruit-wine", "aromatic"],
+      "tempMinF": 59, "tempMaxF": 86, "tempMinC": 15, "tempMaxC": 30,
+      "alcoholToleranceMin": 14, "alcoholToleranceMax": 16, "unitLabel": "g",
+      "description": "Fruit-wine strain selected to preserve and enhance fruit aromatics in grape, berry, and pome ferments.",
+      "flavorNotes": "Fresh, fruity, aromatic.", "sourceUrl": "https://en.angelyeast.com/products/wine-yeast.html"
+    },
+    {
+      "id": "angel-baijiu-daqu", "productCode": "Baijiu Daqu", "name": "Angel Baijiu / Sorghum Yeast",
+      "form": "dry", "species": "Saccharomyces cerevisiae (with molds/blend)", "uses": ["moonshine", "whiskey"],
+      "recommendedStyles": ["Baijiu", "Sorghum Spirit"],
+      "styleTags": ["distilling", "baijiu", "sorghum", "solid-state", "blend"],
+      "tempMinF": 77, "tempMaxF": 95, "tempMinC": 25, "tempMaxC": 35,
+      "alcoholToleranceMin": 10, "alcoholToleranceMax": 14,
+      "isBlend": true, "blendComponents": ["Saccharomyces cerevisiae", "Rhizopus", "Aspergillus"],
+      "unitLabel": "g",
+      "description": "Culture for Chinese baijiu / sorghum spirit, combining yeast with saccharifying molds for solid-state fermentation.",
+      "flavorNotes": "Complex baijiu aromatics (fruity/earthy/fermented).", "sourceUrl": "https://en.angelyeast.com/products/distillers-yeast.html"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "lab": {
+    "id": "white-labs",
+    "name": "White Labs",
+    "country": "United States",
+    "region": "San Diego, CA",
+    "url": "https://www.whitelabs.com",
+    "description": "Major US liquid yeast supplier (WLP series, PurePitch pouches). Broad beer, wine, cider, and Brett/wild range.",
+    "sortOrder": 12
+  },
+  "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells.",
+  "strains": [
+    {
+      "id": "white-labs-wlp001", "productCode": "WLP001", "name": "California Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["American Pale Ale", "American IPA", "American Amber", "American Stout"],
+      "styleTags": ["american", "clean", "chico", "ipa"],
+      "attenuationMin": 73, "attenuationMax": 80, "tempMinF": 68, "tempMaxF": 73, "tempMinC": 20, "tempMaxC": 23,
+      "flocculation": "medium", "alcoholToleranceMax": 13, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "The quintessential American ale strain (Chico); clean, accentuates hops, very versatile.",
+      "flavorNotes": "Clean, neutral, faint citrus.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=27"
+    },
+    {
+      "id": "white-labs-wlp002", "productCode": "WLP002", "name": "English Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["English Bitter", "ESB", "Mild", "English IPA", "Porter"],
+      "styleTags": ["english", "malty", "very-high-floc"],
+      "attenuationMin": 63, "attenuationMax": 70, "tempMinF": 65, "tempMaxF": 68, "tempMinC": 18, "tempMaxC": 20,
+      "flocculation": "very high", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Classic English (Fuller's-type) strain; extremely flocculant, leaves residual sweetness/body.",
+      "flavorNotes": "Malty, fruity English character.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=28"
+    },
+    {
+      "id": "white-labs-wlp004", "productCode": "WLP004", "name": "Irish Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Irish Dry Stout", "Irish Red Ale", "Porter", "Brown Ale"],
+      "styleTags": ["irish", "stout", "dry-stout", "guinness-lineage"],
+      "attenuationMin": 69, "attenuationMax": 74, "tempMinF": 65, "tempMaxF": 68, "tempMinC": 18, "tempMaxC": 20,
+      "flocculation": "medium", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Classic Irish ale strain in the Guinness/dry-stout tradition (not Guinness's proprietary culture). Slight tartness that suits roasty dry stouts and Irish reds.",
+      "flavorNotes": "Subtle diacetyl/tartness, complements roast.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=30"
+    },
+    {
+      "id": "white-labs-wlp007", "productCode": "WLP007", "name": "Dry English Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["English IPA", "English Bitter", "Brown Ale", "Porter"],
+      "styleTags": ["english", "dry", "high-floc"],
+      "attenuationMin": 70, "attenuationMax": 80, "tempMinF": 65, "tempMaxF": 70, "tempMinC": 18, "tempMaxC": 21,
+      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Drier, more attenuative English strain than WLP002; clean and highly flocculant.",
+      "flavorNotes": "Malty but finishes dry.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=33"
+    },
+    {
+      "id": "white-labs-wlp029", "productCode": "WLP029", "name": "German Ale / Kölsch",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Kölsch", "Altbier", "Blonde Ale", "Cream Ale"],
+      "styleTags": ["german", "kolsch", "clean", "hybrid"],
+      "attenuationMin": 72, "attenuationMax": 78, "tempMinF": 65, "tempMaxF": 69, "tempMinC": 18, "tempMaxC": 21,
+      "flocculation": "medium", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Kölsch/alt strain; ferments clean with a slight sulfur that clears with lagering.",
+      "flavorNotes": "Clean, slightly winey.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=41"
+    },
+    {
+      "id": "white-labs-wlp300", "productCode": "WLP300", "name": "Hefeweizen Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hefeweizen", "Weissbier", "Dunkelweizen"],
+      "styleTags": ["wheat", "weizen", "banana", "clove"],
+      "attenuationMin": 72, "attenuationMax": 76, "tempMinF": 68, "tempMaxF": 72, "tempMinC": 20, "tempMaxC": 22,
+      "flocculation": "low", "alcoholToleranceMax": 10, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Classic Bavarian weizen strain; banana/clove balance shifts with temperature and pitch rate.",
+      "flavorNotes": "Banana ester + clove phenol.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=57"
+    },
+    {
+      "id": "white-labs-wlp565", "productCode": "WLP565", "name": "Belgian Saison Ale I",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale"],
+      "styleTags": ["saison", "belgian", "phenolic", "slow"],
+      "attenuationMin": 65, "attenuationMax": 75, "tempMinF": 68, "tempMaxF": 75, "tempMinC": 20, "tempMaxC": 24,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Dupont-type saison strain; earthy, spicy, notoriously slow — finish warm to fully attenuate.",
+      "flavorNotes": "Earthy, peppery, citrus.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=82"
+    },
+    {
+      "id": "white-labs-wlp800", "productCode": "WLP800", "name": "Pilsner Lager",
+      "form": "liquid", "species": "Saccharomyces pastorianus", "uses": ["beer"],
+      "recommendedStyles": ["Bohemian Pilsner", "Czech Lager", "European Lager"],
+      "styleTags": ["lager", "pilsner", "malty"],
+      "attenuationMin": 72, "attenuationMax": 77, "tempMinF": 50, "tempMaxF": 55, "tempMinC": 10, "tempMaxC": 13,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Czech Pilsner Urquell-type lager strain; malty, dry finish.",
+      "flavorNotes": "Malty, clean, slight fruit.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=99"
+    },
+    {
+      "id": "white-labs-wlp830", "productCode": "WLP830", "name": "German Lager",
+      "form": "liquid", "species": "Saccharomyces pastorianus", "uses": ["beer"],
+      "recommendedStyles": ["German Pilsner", "Helles", "Märzen", "Oktoberfest"],
+      "styleTags": ["lager", "german", "clean"],
+      "attenuationMin": 74, "attenuationMax": 79, "tempMinF": 50, "tempMaxF": 55, "tempMinC": 10, "tempMaxC": 13,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "One of the most popular German lager strains; crisp, clean, well-balanced.",
+      "flavorNotes": "Clean, dry, malt-balanced.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=108"
+    },
+    {
+      "id": "white-labs-wlp650", "productCode": "WLP650", "name": "Brettanomyces bruxellensis",
+      "form": "liquid", "species": "Brettanomyces bruxellensis", "uses": ["beer", "wild"],
+      "recommendedStyles": ["Lambic", "Flanders Red", "Brett Saison", "Wild Ale"],
+      "styleTags": ["brett", "funky", "wild", "sour-program"],
+      "attenuationMin": 80, "attenuationMax": 90, "tempMinF": 68, "tempMaxF": 75, "tempMinC": 20, "tempMaxC": 24,
+      "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Classic Brettanomyces bruxellensis; barnyard/horse-blanket funk. Slow, super-attenuating; usually a secondary/co-culture.",
+      "flavorNotes": "Barnyard, leather, stone fruit.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=88"
+    },
+    {
+      "id": "white-labs-wlp715", "productCode": "WLP715", "name": "Champagne Yeast",
+      "form": "liquid", "species": "Saccharomyces cerevisiae bayanus", "uses": ["wine", "mead", "cider"],
+      "recommendedStyles": ["Sparkling Wine", "Dry Cider", "Dry Mead", "Bottle Conditioning"],
+      "styleTags": ["champagne", "neutral", "high-tolerance"],
+      "tempMinF": 70, "tempMaxF": 75, "tempMinC": 21, "tempMaxC": 24,
+      "flocculation": "low", "alcoholToleranceMin": 16, "alcoholToleranceMax": 17, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Neutral high-tolerance champagne strain for dry wines, ciders, meads, and priming.",
+      "flavorNotes": "Neutral, crisp, dry.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=94"
+    }
+  ]
+}

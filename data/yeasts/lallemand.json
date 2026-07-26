@@ -1,0 +1,204 @@
+{
+  "lab": {
+    "id": "lallemand",
+    "name": "Lallemand",
+    "country": "Canada",
+    "region": "Montreal",
+    "url": "https://www.lallemandbrewing.com",
+    "description": "Global yeast producer. Brands: LalBrew (beer), Lalvin (wine/mead/cider), DistilaMax (spirits), WildBrew (non-conventional).",
+    "sortOrder": 11
+  },
+  "attribution": "Specs transcribed from Lallemand Brewing, Lalvin, and DistilaMax published product data sheets.",
+  "strains": [
+    {
+      "id": "lallemand-nottingham", "productCode": "Nottingham", "name": "LalBrew Nottingham",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["English Bitter", "Porter", "Brown Ale", "Amber Ale", "Pseudo-lager"],
+      "styleTags": ["english", "neutral", "high-floc", "workhorse"],
+      "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 50, "tempMaxF": 72, "tempMinC": 10, "tempMaxC": 22,
+      "flocculation": "high", "alcoholToleranceMax": 14, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Neutral, versatile English ale strain; ferments cool and clean, popular as a low-cost workhorse.",
+      "flavorNotes": "Clean, low ester.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-nottingham/"
+    },
+    {
+      "id": "lallemand-windsor", "productCode": "Windsor", "name": "LalBrew Windsor",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["English Ale", "Mild", "Brown Ale", "Stout"],
+      "styleTags": ["english", "malty", "low-attenuation"],
+      "attenuationMin": 67, "attenuationMax": 73, "tempMinF": 59, "tempMaxF": 72, "tempMinC": 15, "tempMaxC": 22,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Fruity, malt-forward English strain; low attenuation leaves a full body.",
+      "flavorNotes": "Fruity English esters, malty.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-windsor/"
+    },
+    {
+      "id": "lallemand-bry-97", "productCode": "BRY-97", "name": "LalBrew BRY-97 West Coast Ale",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["American Pale Ale", "American IPA", "West Coast IPA", "American Amber"],
+      "styleTags": ["american", "ipa", "clean", "high-floc"],
+      "attenuationMin": 78, "attenuationMax": 84, "tempMinF": 59, "tempMaxF": 72, "tempMinC": 15, "tempMaxC": 22,
+      "flocculation": "high", "alcoholToleranceMax": 13, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "American West Coast ale strain; clean and highly flocculant, great for hoppy beers.",
+      "flavorNotes": "Clean, lets hops dominate.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-bry-97-american-west-coast-ale-yeast/"
+    },
+    {
+      "id": "lallemand-verdant-ipa", "productCode": "Verdant IPA", "name": "LalBrew Verdant IPA",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hazy IPA", "New England IPA", "English Bitter", "Pale Ale"],
+      "styleTags": ["hazy", "neipa", "estery", "biotransformation"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 64, "tempMaxF": 72, "tempMinC": 18, "tempMaxC": 22,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Fruity English-derived strain licensed from Verdant Brewing; a hazy/NEIPA favorite.",
+      "flavorNotes": "Stone fruit, moderate esters, enhances hop biotransformation.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-verdant-ipa/"
+    },
+    {
+      "id": "lallemand-voss", "productCode": "Voss", "name": "LalBrew Voss Kveik",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Kveik Ale", "Farmhouse Ale", "Pale Ale", "IPA"],
+      "styleTags": ["kveik", "farmhouse", "hot-ferment", "fast"],
+      "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 77, "tempMaxF": 104, "tempMinC": 25, "tempMaxC": 40,
+      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Norwegian Voss kveik; ferments extremely fast and hot (up to 40°C) while staying clean.",
+      "flavorNotes": "Orange/citrus esters when warm; clean at higher pitch.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-voss-kveik-ale-yeast/"
+    },
+    {
+      "id": "lallemand-lutra", "productCode": "Lutra", "name": "LalBrew Lutra Kveik",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Clean Ale", "Pseudo-lager", "Pale Ale", "Hard Seltzer"],
+      "styleTags": ["kveik", "clean", "fast", "pseudo-lager"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 95, "tempMinC": 20, "tempMaxC": 35,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Exceptionally clean kveik; makes fast pseudo-lagers and neutral bases at warm temps.",
+      "flavorNotes": "Very clean, minimal ester.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-lutra-kveik/"
+    },
+    {
+      "id": "lallemand-koln", "productCode": "Köln", "name": "LalBrew Köln Kölsch",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Kölsch", "Blonde Ale", "Cream Ale"],
+      "styleTags": ["kolsch", "clean", "hybrid"],
+      "attenuationMin": 76, "attenuationMax": 82, "tempMinF": 55, "tempMaxF": 68, "tempMinC": 13, "tempMaxC": 20,
+      "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Kölsch-style ale strain; subtle fruit, crisp and clean for hybrid lagers.",
+      "flavorNotes": "Subtle vinous fruit, crisp.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-koln-kolsch-style-ale-yeast/"
+    },
+    {
+      "id": "lallemand-munich-classic", "productCode": "Munich Classic", "name": "LalBrew Munich Classic",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Hefeweizen", "Weissbier", "Wheat Ale"],
+      "styleTags": ["wheat", "weizen", "banana", "clove"],
+      "attenuationMin": 70, "attenuationMax": 76, "tempMinF": 62, "tempMaxF": 72, "tempMinC": 17, "tempMaxC": 22,
+      "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Bavarian wheat strain; classic banana-and-clove weizen profile.",
+      "flavorNotes": "Banana ester, clove phenol.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-munich-classic-wheat-beer-yeast/"
+    },
+    {
+      "id": "lallemand-belle-saison", "productCode": "Belle Saison", "name": "LalBrew Belle Saison",
+      "form": "dry", "species": "Saccharomyces cerevisiae var. diastaticus", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale"],
+      "styleTags": ["saison", "diastaticus", "very-dry", "spicy"],
+      "attenuationMin": 85, "attenuationMax": 95, "tempMinF": 63, "tempMaxF": 86, "tempMinC": 17, "tempMaxC": 30,
+      "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Saison strain (diastaticus); very high attenuation, dry and spicy. Diastatic — segregate equipment.",
+      "flavorNotes": "Peppery, citrusy, bone dry.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-belle-saison-ale-yeast/"
+    },
+    {
+      "id": "lallemand-diamond", "productCode": "Diamond", "name": "LalBrew Diamond Lager",
+      "form": "dry", "species": "Saccharomyces pastorianus", "uses": ["beer"],
+      "recommendedStyles": ["German Pilsner", "Helles", "Märzen", "American Lager"],
+      "styleTags": ["lager", "clean"],
+      "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 50, "tempMaxF": 59, "tempMinC": 10, "tempMaxC": 15,
+      "flocculation": "high", "alcoholToleranceMax": 13, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Clean, versatile lager strain of German origin; strong performer across lager styles.",
+      "flavorNotes": "Clean, neutral.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-diamond-lager-yeast/"
+    },
+    {
+      "id": "lallemand-novalager", "productCode": "NovaLager", "name": "LalBrew NovaLager",
+      "form": "dry", "species": "Saccharomyces pastorianus", "uses": ["beer"],
+      "recommendedStyles": ["Lager", "Pilsner", "Helles", "Cold IPA"],
+      "styleTags": ["lager", "warm-ferment", "clean"],
+      "attenuationMin": 80, "attenuationMax": 86, "tempMinF": 50, "tempMaxF": 68, "tempMinC": 10, "tempMaxC": 20,
+      "flocculation": "high", "alcoholToleranceMax": 13, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Next-gen lager strain fermenting clean even at ale temperatures; fast lager turnaround.",
+      "flavorNotes": "Clean, sulfur-light even warm.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-novalager-yeast/"
+    },
+    {
+      "id": "lallemand-philly-sour", "productCode": "Philly Sour", "name": "WildBrew Philly Sour",
+      "form": "dry", "species": "Lachancea thermotolerans", "uses": ["beer"],
+      "recommendedStyles": ["Kettle-free Sour", "Berliner Weisse", "Sour IPA", "Fruited Sour"],
+      "styleTags": ["sour", "lachancea", "lactic", "one-step"],
+      "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 77, "tempMinC": 20, "tempMaxC": 25,
+      "flocculation": "medium", "alcoholToleranceMax": 8, "cellsPerUnit": 20, "unitLabel": "g",
+      "description": "Lachancea thermotolerans strain that produces lactic acid AND ethanol — souring and fermentation in one step, no bacteria.",
+      "flavorNotes": "Clean lactic tartness, stone fruit.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/wildbrew-philly-sour/"
+    },
+    {
+      "id": "lalvin-ec-1118", "productCode": "EC-1118", "name": "Lalvin EC-1118",
+      "form": "dry", "species": "Saccharomyces cerevisiae bayanus", "uses": ["wine", "mead", "cider"],
+      "recommendedStyles": ["Sparkling Wine", "Champagne", "Dry Cider", "Dry Mead", "Restart Stuck Ferment"],
+      "styleTags": ["champagne", "neutral", "high-tolerance", "workhorse"],
+      "attenuationMin": null, "attenuationMax": null, "tempMinF": 50, "tempMaxF": 86, "tempMinC": 10, "tempMaxC": 30,
+      "flocculation": "high", "alcoholToleranceMin": 16, "alcoholToleranceMax": 18, "cellsPerUnit": null, "unitLabel": "g",
+      "description": "The champagne workhorse; ferments dry, very high alcohol tolerance, fast, low foaming, great for restarting stuck ferments.",
+      "flavorNotes": "Neutral; lets fruit/honey character show.", "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/34/lalvin-ec-1118/"
+    },
+    {
+      "id": "lalvin-71b", "productCode": "71B", "name": "Lalvin 71B-1122",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine", "mead", "cider"],
+      "recommendedStyles": ["Fruit Wine", "Young Red", "Nouveau", "Semi-sweet Mead", "Country Wine"],
+      "styleTags": ["fruit-wine", "malic-reduction", "smooth"],
+      "tempMinF": 59, "tempMaxF": 86, "tempMinC": 15, "tempMaxC": 30,
+      "flocculation": "medium", "alcoholToleranceMin": 14, "alcoholToleranceMax": 14, "unitLabel": "g",
+      "description": "Metabolizes 20–40% of malic acid, softening high-acid fruit wines and meads; produces esters that soften young wines.",
+      "flavorNotes": "Fruity esters; rounds sharp acidity.", "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/40/lalvin-71b/"
+    },
+    {
+      "id": "lalvin-d47", "productCode": "D47", "name": "Lalvin ICV-D47",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine", "mead", "cider"],
+      "recommendedStyles": ["White Wine", "Rosé", "Traditional Mead", "Cider"],
+      "styleTags": ["white-wine", "mead-favorite", "full-body"],
+      "tempMinF": 59, "tempMaxF": 68, "tempMinC": 15, "tempMaxC": 20,
+      "flocculation": "high", "alcoholToleranceMin": 14, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Côtes-du-Rhône strain; a mead-maker favorite for full mouthfeel and floral aromatics. Keep in tight temp range to avoid fusel/H2S.",
+      "flavorNotes": "Floral, tropical, rounded body.", "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/36/lalvin-icv-d47/"
+    },
+    {
+      "id": "lalvin-k1v-1116", "productCode": "K1V-1116", "name": "Lalvin K1V-1116",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine", "mead", "cider"],
+      "recommendedStyles": ["Aromatic White", "Fruit Wine", "Mead", "Restart Stuck Ferment"],
+      "styleTags": ["aromatic", "killer", "high-tolerance", "robust"],
+      "tempMinF": 50, "tempMaxF": 95, "tempMinC": 10, "tempMaxC": 35,
+      "flocculation": "medium", "alcoholToleranceMin": 18, "alcoholToleranceMax": 18, "unitLabel": "g",
+      "description": "Fast, robust 'killer' strain tolerant of low nutrients and wide temps; good for aromatic whites and difficult musts.",
+      "flavorNotes": "Enhances aromatics; low foam.", "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/38/lalvin-k1v-1116/"
+    },
+    {
+      "id": "lalvin-rc212", "productCode": "RC212", "name": "Lalvin RC212",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["wine"],
+      "recommendedStyles": ["Red Wine", "Pinot Noir", "Burgundy"],
+      "styleTags": ["red-wine", "burgundy", "color-stable"],
+      "tempMinF": 68, "tempMaxF": 86, "tempMinC": 20, "tempMaxC": 30,
+      "flocculation": "medium", "alcoholToleranceMin": 14, "alcoholToleranceMax": 16, "unitLabel": "g",
+      "description": "Burgundy red strain; preserves color and fruit, good for lighter reds. High nutrient demand.",
+      "flavorNotes": "Bright red fruit, structured tannin.", "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/42/lalvin-rc212/"
+    },
+    {
+      "id": "distilamax-rm", "productCode": "DistilaMax RM", "name": "DistilaMax RM",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["rum", "moonshine"],
+      "recommendedStyles": ["Rum", "Cane Spirit"],
+      "styleTags": ["rum", "cane", "distilling"],
+      "tempMinF": 86, "tempMaxF": 95, "tempMinC": 30, "tempMaxC": 35,
+      "alcoholToleranceMin": 12, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Rum distilling strain selected for cane/molasses washes; heat tolerant, ester-forward.",
+      "flavorNotes": "Rich rum esters.", "sourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/"
+    },
+    {
+      "id": "distilamax-mw", "productCode": "DistilaMax MW", "name": "DistilaMax MW",
+      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["whiskey", "moonshine"],
+      "recommendedStyles": ["Malt Whisky"],
+      "styleTags": ["whiskey", "malt", "distilling"],
+      "tempMinF": 86, "tempMaxF": 95, "tempMinC": 30, "tempMaxC": 35,
+      "alcoholToleranceMin": 12, "alcoholToleranceMax": 15, "unitLabel": "g",
+      "description": "Malt whisky distilling strain; fruity/estery congener profile for pot-still malt.",
+      "flavorNotes": "Fruity malt-whisky congeners.", "sourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/"
+    }
+  ]
+}

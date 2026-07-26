@@ -306,3 +306,70 @@ model GuidelineStyle {
   @@index([categoryId])
   @@index([name])
 }
+
+// --- Yeast / culture database (beer, wine, mead, cider, spirits, wild) ---
+// A curated, sourced catalog of alcohol-producing microbes and their brewing
+// specs. Populated from data/yeasts/*.json via load-yeasts.mjs (prod, Neon
+// HTTPS) / prisma/import-yeasts.ts (local), NOT from the Wayback import. Every
+// strain records a sourceUrl; specs are transcribed from makers' spec sheets,
+// never invented. Distinct from the thin per-recipe RecipeYeast rows.
+
+model YeastLab {
+  id          String        @id // e.g. "lallemand", "white-labs", "angel-yeast"
+  name        String
+  country     String?
+  region      String?
+  url         String?
+  description String?
+  sortOrder   Int           @default(0)
+  strains     YeastStrain[]
+
+  @@index([country])
+}
+
+model YeastStrain {
+  id          String   @id // e.g. "fermentis-us-05", "wyeast-1084"
+  labId       String
+  lab         YeastLab @relation(fields: [labId], references: [id], onDelete: Cascade)
+
+  productCode String? // "US-05", "WLP001", "1056"
+  name        String
+  aliases     String[] @default([])
+
+  form        String // dry | liquid | slurry | culture
+  species     String // scientific, e.g. "Saccharomyces cerevisiae", "Brettanomyces bruxellensis"
+
+  // What you can make with it, and which styles the maker recommends.
+  uses             String[] @default([]) // beer | wine | mead | cider | rum | whiskey | moonshine | neutral | sake | wild
+  recommendedStyles String[] @default([]) // maker's listed styles, normalized names
+  styleTags        String[] @default([]) // coarse tags: stout, ipa, saison, hazy, kveik...
+
+  // Brewing-calculator specs (nullable - sparse sources null-fill).
+  attenuationMin      Float?
+  attenuationMax      Float?
+  tempMinF            Float?
+  tempMaxF            Float?
+  tempMinC            Float?
+  tempMaxC            Float?
+  flocculation        String? // low | medium | medium-high | high | very high
+  alcoholToleranceMin Float?
+  alcoholToleranceMax Float?
+
+  // Pitching-calculator inputs.
+  cellsPerUnit Float? // billion viable cells per unit
+  unitLabel    String? // pack | vial | g
+  optimalPitchNote String?
+
+  isBlend         Boolean  @default(false)
+  blendComponents String[] @default([])
+
+  description String?
+  flavorNotes String?
+  sourceUrl   String
+  attribution String?
+  sortOrder   Int      @default(0)
+
+  @@index([labId])
+  @@index([name])
+  @@index([species])
+}

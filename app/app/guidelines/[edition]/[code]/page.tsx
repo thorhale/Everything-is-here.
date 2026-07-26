@@ -3,6 +3,8 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findStyle } from "@/lib/guidelines";
+import { matchStrainsForStyle } from "@/lib/yeasts-curated";
+import { StrainGrid } from "@/components/StrainCard";
 import { srmClass } from "@/components/StatBars";
 
 interface Props {
@@ -53,6 +55,7 @@ export default async function GuidelineStylePage({ params }: Props) {
   const style = await findStyle(editionId, code);
   if (!style) notFound();
   const edition = style.category.edition;
+  const suggestedYeasts = await matchStrainsForStyle(style.name, { limit: 6 });
 
   const srmMid = style.srmMin != null && style.srmMax != null ? (style.srmMin + style.srmMax) / 2 : null;
 
@@ -93,7 +96,18 @@ export default async function GuidelineStylePage({ params }: Props) {
         );
       })}
 
-      <p>
+      {suggestedYeasts.length > 0 && (
+        <section>
+          <h3>Suggested yeasts</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+            Strains whose makers recommend them for this style.{" "}
+            <Link href={`/yeasts/db?style=${encodeURIComponent(style.name)}`}>See all →</Link>
+          </p>
+          <StrainGrid strains={suggestedYeasts} />
+        </section>
+      )}
+
+      <p style={{ marginTop: "1.25rem" }}>
         <Link href={`/recipes?style=${encodeURIComponent(style.name)}`}>
           Browse archived {style.name} recipes →
         </Link>

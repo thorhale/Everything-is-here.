@@ -10,6 +10,7 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "import": "tsx prisma/import.ts",
+    "import-yeasts": "tsx prisma/import-yeasts.ts",
     "dedupe": "tsx prisma/dedupe.ts"
   },
   "dependencies": {
