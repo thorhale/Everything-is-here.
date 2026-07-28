@@ -1,0 +1,370 @@
+{
+  "system": "SAKE",
+  "year": 2024,
+  "title": "Sake (Seishu): Legal Classification & Production Designations",
+  "sourceUrl": "https://www.nta.go.jp/taxes/sake/hyoji/seishu/index.htm",
+  "attribution": "Sake has no judging style guidelines in the BJCP sense, but it has something stricter: a labelling standard with the force of tax law. This edition follows Japan's Liquor Tax Act definition of seishu and the National Tax Agency's Standard for Manufacturing Methods and Quality Labelling of Sake (清酒の製法品質表示基準), which defines the eight tokutei meishōshu — 'special designation' — grades by rice polishing ratio (seimaibuai), koji proportion and whether brewer's alcohol is added. Alongside those it collects the production-method and treatment terms (kimoto, yamahai, namazake, genshu, nigori) that are separately regulated or conventionally defined, and the geographical indications. Figures are legal thresholds, not sensory targets. Nihonshu-do (Sake Meter Value) and san-do (acidity) are given as typical commercial ranges for calculator reference, not as requirements. Check the current NTA notification before relying on any of this commercially.",
+  "categories": [
+    {
+      "code": "K0",
+      "name": "The Legal Base Definition",
+      "styles": [
+        {
+          "code": "K0A",
+          "name": "Seishu (清酒) — Refined Sake",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 13, "abvMax": 22,
+          "impression": "The statutory category that everything below sits inside: rice, koji and water, fermented and then filtered.",
+          "ingredients": "Rice, rice koji and water; optionally sake lees and, within limits, distilled alcohol and other permitted materials whose combined weight must not exceed the weight of the rice used.",
+          "comments": "Japan's Liquor Tax Act (酒税法) defines seishu as an alcoholic beverage of not more than 22% ABV made by fermenting rice, rice koji and water and then filtering (漉す) the resulting mash. The filtration requirement is decisive: an unfiltered rice ferment is legally doburoku, taxed as 'other brewed liquor', not as seishu — which is why nigorizake must be coarsely strained rather than left whole. Commercial seishu is typically 15–16% ABV after dilution; genshu (undiluted) runs 17–20%. Brewing sake at home is illegal in Japan under the same Act, a restriction with no equivalent for beer or wine in most other countries.",
+          "history": "The filtration clause dates from the Meiji-era tax reforms that made sake excise a pillar of state revenue — by some accounts approaching a third of national tax income in the 1890s.",
+          "examples": "All commercial Japanese sake",
+          "tags": "japan, statute, base-definition, taxation"
+        },
+        {
+          "code": "K0B",
+          "name": "Futsūshu (普通酒) — Ordinary Sake",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 13, "abvMax": 16,
+          "impression": "Everything that does not qualify for a special designation — roughly two-thirds of all sake made.",
+          "ingredients": "Rice, koji, water, and distilled alcohol in quantities above the tokutei meishōshu limit; sugars, acidulants and amino acids (glutamate) are permitted within the statutory cap.",
+          "comments": "Futsūshu is a residual category, not a quality claim: it covers sake that fails any tokutei meishōshu requirement, most often because the polishing ratio is above 70% or because alcohol addition exceeds 10% of the white-rice weight. The total weight of added materials may not exceed 50% of the rice weight. Much of it is perfectly sound everyday drinking, and some sanzōshu-derived styles are historically important, but the label carries no minimum.",
+          "history": "Sanzōshu ('triple-multiplied sake'), heavily extended with alcohol and sugar, was a wartime and post-war rice-shortage expedient whose reputation still shadows the category.",
+          "examples": "Most cup sake, table sake and much of what is served warm in restaurants",
+          "tags": "japan, ordinary, residual-category"
+        }
+      ]
+    },
+    {
+      "code": "K1",
+      "name": "Tokutei Meishōshu — Junmai (No Added Alcohol)",
+      "styles": [
+        {
+          "code": "K1A",
+          "name": "Junmai-shu (純米酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Rice, koji, water. Nothing added — typically fuller, more savoury and more acidic than its alcohol-added counterpart.",
+          "ingredients": "Rice, rice koji and water only. Koji rice must be at least 15% of the total rice weight. No minimum polishing ratio applies, but the seimaibuai must be stated on the label.",
+          "comments": "Until 2004 junmai required a polishing ratio of 70% or better; that floor was removed and replaced with a disclosure requirement, so a modern junmai may be milled to any degree provided the figure is declared. Typical Sake Meter Value −2 to +5, acidity 1.4–1.8 — generally higher acidity and more umami than aruten (alcohol-added) sake at the same grade, because ethanol addition selectively extracts lighter aromatics and dilutes acidity.",
+          "history": "The junmai revival from the 1970s onward, led by producers rejecting post-war alcohol extension, created the modern premium market.",
+          "examples": "Widely produced by essentially every kura",
+          "tags": "japan, junmai, no-added-alcohol, tokutei-meishoshu"
+        },
+        {
+          "code": "K1B",
+          "name": "Tokubetsu Junmai-shu (特別純米酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Junmai with a declared special something — usually a 60% polish, sometimes a named rice or method.",
+          "ingredients": "Rice, rice koji and water; koji rice at least 15%; seimaibuai of 60% or better, OR a special production method that must be described on the label.",
+          "comments": "'Tokubetsu' (special) is the standard's one genuinely open-ended term. A brewery may claim it by milling to 60% — which would also qualify the sake as junmai ginjo — or by some other declared distinction such as an all-Yamada Nishiki grist, extended low-temperature fermentation, or a particular water source. Producers often choose tokubetsu junmai over junmai ginjo for a 60%-milled sake whose character is fuller and less aromatic than the ginjo archetype, since the ginjo name carries a flavour expectation the sake would not meet.",
+          "history": "Introduced with the 1990 designation system as a bridge between the plain and ginjo tiers.",
+          "examples": "Common in the mid-premium tier",
+          "tags": "japan, junmai, special-designation, tokutei-meishoshu"
+        },
+        {
+          "code": "K1C",
+          "name": "Junmai Ginjo-shu (純米吟醸酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Aromatic, refined, fruit-forward sake made without added alcohol — melon, pear, banana, white flowers.",
+          "ingredients": "Rice, rice koji and water; koji rice at least 15%; seimaibuai 60% or better; produced by ginjo-zukuri.",
+          "comments": "Ginjo-zukuri is defined in the standard as careful brewing at low temperature to produce a distinctive aroma and clean flavour — deliberately qualitative language covering a real technical practice: fermentation held around 8–12 °C for four to five weeks, with yeasts selected for ginjo-ka. The characteristic esters are ethyl caproate (apple, melon) and isoamyl acetate (banana, pear); their balance is largely a yeast choice, with Association No. 9 (Kumamoto) and No. 1801 among the classic aromatic strains. Typical SMV −1 to +5, acidity 1.2–1.6.",
+          "history": "Ginjo brewing was refined through 20th-century national appraisal competitions (Zenkoku Shinshu Kanpyōkai) before reaching the commercial market in the 1980s.",
+          "examples": "The backbone of the export premium market",
+          "tags": "japan, junmai, ginjo, aromatic, tokutei-meishoshu"
+        },
+        {
+          "code": "K1D",
+          "name": "Junmai Daiginjo-shu (純米大吟醸酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "The top of the junmai ladder: at least half the rice grain milled away, no added alcohol, maximum aromatic refinement.",
+          "ingredients": "Rice, rice koji and water; koji rice at least 15%; seimaibuai 50% or better; ginjo-zukuri.",
+          "comments": "The 50% threshold is a floor, not a target — competition sake is routinely milled to 40%, 35% or beyond, and a handful of releases go under 20%, at which point most of the purchased rice has become animal feed and rice flour. Milling removes the outer layers rich in protein, fat and minerals, leaving the starchy shinpaku core; the result is cleaner and more aromatic but also less structured, which is why more milling is not straightforwardly better. Sake rice varieties bred for a large central shinpaku — Yamada Nishiki, Omachi, Gohyakumangoku, Miyama Nishiki — tolerate deep polishing without shattering.",
+          "history": "Yamada Nishiki, crossed in 1923 and named in 1936, remains the benchmark rice for this tier.",
+          "examples": "Flagship bottlings and competition entries",
+          "tags": "japan, junmai, daiginjo, premium, tokutei-meishoshu"
+        }
+      ]
+    },
+    {
+      "code": "K2",
+      "name": "Tokutei Meishōshu — Aruten (Brewer's Alcohol Added)",
+      "styles": [
+        {
+          "code": "K2A",
+          "name": "Honjozo-shu (本醸造酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Lighter, drier and crisper than junmai at the same price — a small alcohol addition used as a technique, not an extender.",
+          "ingredients": "Rice, rice koji, water and distilled alcohol; koji rice at least 15%; seimaibuai 70% or better; added alcohol limited to 10% of the weight of the polished white rice.",
+          "comments": "The 10% cap is what separates honjozo from futsūshu, and the distinction matters: added at the end of fermentation, a small quantity of neutral distillate lifts aroma compounds out of the lees during pressing, lightens the body and improves stability. It is a legitimate brewing tool with a long pre-war history, not dilution — the sanzōshu practice that gave alcohol addition a bad name involved several times this quantity plus sugar. Honjozo is the classic warming sake; typical SMV +2 to +7.",
+          "history": "The technique descends from Edo-period 'hashira-jōchū', in which shōchū was added to the mash to prevent spoilage.",
+          "examples": "The traditional everyday premium grade in Japan",
+          "tags": "japan, honjozo, added-alcohol, tokutei-meishoshu"
+        },
+        {
+          "code": "K2B",
+          "name": "Tokubetsu Honjozo-shu (特別本醸造酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Honjozo with a declared distinction — normally a 60% polish.",
+          "ingredients": "As honjozo, but seimaibuai 60% or better, OR a special production method described on the label. Added alcohol still capped at 10% of white-rice weight.",
+          "comments": "Mirrors tokubetsu junmai exactly, one tier over. Chosen where a 60%-milled aruten sake is built for structure and drinkability rather than for ginjo aromatics.",
+          "history": "Introduced with the 1990 designation system.",
+          "examples": "Mid-premium aruten bottlings",
+          "tags": "japan, honjozo, special-designation, tokutei-meishoshu"
+        },
+        {
+          "code": "K2C",
+          "name": "Ginjo-shu (吟醸酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 17,
+          "impression": "Aromatic ginjo with a small alcohol addition — often more overtly fragrant than its junmai equivalent.",
+          "ingredients": "Rice, rice koji, water, distilled alcohol; koji rice at least 15%; seimaibuai 60% or better; ginjo-zukuri; alcohol capped at 10% of white-rice weight.",
+          "comments": "Because ginjo esters are more soluble in ethanol than in water, the alcohol addition pulls aroma out of the pressed lees and into the bottle. A brewer chasing maximum fragrance for a competition will often make an alcohol-added daiginjo rather than a junmai one, which is why the top prizes at the national appraisal are frequently taken by aruten sake.",
+          "history": "Ginjo without the junmai qualifier was the original competition format.",
+          "examples": "Widely produced; common in national appraisal entries",
+          "tags": "japan, ginjo, added-alcohol, aromatic, tokutei-meishoshu"
+        },
+        {
+          "code": "K2D",
+          "name": "Daiginjo-shu (大吟醸酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 17,
+          "impression": "The most technically demanding grade in the standard: 50% polish, ginjo method, small alcohol addition.",
+          "ingredients": "Rice, rice koji, water, distilled alcohol; koji rice at least 15%; seimaibuai 50% or better; ginjo-zukuri; alcohol capped at 10% of white-rice weight.",
+          "comments": "The showpiece grade. Fermented cold and slow in small tanks, often pressed by fukurozuri — hanging the mash in bags and collecting the free-run drip without pressure — for the shizuku fraction reserved for competition. Typical SMV +3 to +5, acidity 1.1–1.4.",
+          "history": "Yamada Nishiki milled to 35–40% has dominated the Zenkoku Shinshu Kanpyōkai gold awards for decades.",
+          "examples": "Competition and flagship bottlings",
+          "tags": "japan, daiginjo, added-alcohol, premium, tokutei-meishoshu"
+        }
+      ]
+    },
+    {
+      "code": "K3",
+      "name": "Starter (Shubo) Methods",
+      "styles": [
+        {
+          "code": "K3A",
+          "name": "Sokujō-moto (速醸酛) — Fast Starter",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The modern default: lactic acid added directly to the starter, ready in about two weeks.",
+          "ingredients": "Steamed rice, koji, water, cultured yeast, and food-grade lactic acid added at the outset.",
+          "comments": "Around 90% of all sake made today uses sokujō. Adding lactic acid up front drops the starter's pH immediately, suppressing wild organisms and letting the pitched yeast take over without the long competitive succession the traditional methods require. Clean, reproducible, and neutral in flavour contribution. Not a labelling designation — its absence is implied when neither kimoto nor yamahai is stated.",
+          "history": "Developed by Kinichiro Eda at the National Research Institute of Brewing around 1909 and adopted rapidly.",
+          "examples": "The overwhelming majority of commercial sake",
+          "tags": "japan, shubo, modern, method"
+        },
+        {
+          "code": "K3B",
+          "name": "Kimoto (生酛)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 18,
+          "impression": "The traditional starter, built by hand and by microbial succession — richer, more acidic, more savoury sake.",
+          "ingredients": "Steamed rice, koji, water and ambient microflora; no added lactic acid, no pitched yeast at the outset.",
+          "comments": "The rice and koji are ground to a paste with wooden poles (yama-oroshi, a labour of several hours repeated over days) to accelerate saccharification. Nitrate-reducing bacteria, then wild lactic acid bacteria, then finally yeast take the starter in succession over roughly four weeks; the accumulating lactic acid selects for alcohol-tolerant yeast. The resulting sake carries higher acidity and amino acid content, and often more lactic, nutty and gamey character. It also tends to be more robust when warmed and better suited to ageing.",
+          "history": "Standardised at the Nada breweries in the 17th century; nearly extinct by the late 20th, now a deliberate revival.",
+          "examples": "Widely used by producers pursuing a traditional or food-friendly profile",
+          "tags": "japan, shubo, traditional, high-acid, method"
+        },
+        {
+          "code": "K3C",
+          "name": "Yamahai (山廃)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 18,
+          "impression": "Kimoto without the pole-grinding — the same wild succession, a fraction of the labour.",
+          "ingredients": "As kimoto; no added lactic acid.",
+          "comments": "Short for yamaoroshi haishi — 'discontinuing the yamaoroshi'. Research at the turn of the 20th century established that the koji enzymes dissolve the rice perfectly well without mechanical mashing if the water and temperature regime is managed, making the grinding step redundant. Yamahai retains the natural lactic succession and delivers a broadly kimoto-like profile: fuller, higher acid, more umami, sometimes with a distinct earthiness. Often the choice for sake intended to be served warm.",
+          "history": "Developed around 1909, contemporaneously with sokujō, at the same national research institute.",
+          "examples": "A signature of several Ishikawa and Fukushima producers",
+          "tags": "japan, shubo, traditional, high-acid, method"
+        },
+        {
+          "code": "K3D",
+          "name": "Bodaimoto / Mizumoto (菩提酛・水酛)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 13, "abvMax": 17,
+          "impression": "The oldest surviving starter method: a deliberately soured raw-rice water, made in summer.",
+          "ingredients": "Raw and steamed rice, water and koji; souring achieved by steeping raw rice in water until lactic bacteria acidify it (soyashi-mizu), which is then used as the brewing liquor.",
+          "comments": "Predates kimoto. Raw rice is steeped in water for several days at ambient summer temperature; lactic acid bacteria naturally present acidify the water sharply, and that acidified water becomes the base for the starter. The result is high acidity and a distinctly tart, sometimes yoghurt-like profile. Revived from the 1990s by a consortium of Nara brewers working from temple records.",
+          "history": "Documented at Shōryakuji temple in Nara in the Muromachi period; the temple is often called the birthplace of clear sake.",
+          "examples": "Nara-region revival bottlings",
+          "tags": "japan, shubo, historical, high-acid, revival, method"
+        },
+        {
+          "code": "K3E",
+          "name": "Kijōshu (貴醸酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 18,
+          "impression": "Sake brewed with sake instead of water — dense, sweet, amber, dessert-scaled.",
+          "ingredients": "Rice, koji, and finished sake substituted for part of the brewing water at the final mash addition.",
+          "comments": "Replacing water with sake at the last of the three staged mash additions raises the alcohol early, arresting fermentation and leaving very high residual sugar — SMV commonly −20 to −40. The result is viscous, honeyed and often deliberately aged to amber. Legally still seishu, but the substitution is a defined production style rather than a designation grade, and it is expensive because the input sake is itself a finished product.",
+          "history": "Developed at the National Research Institute of Brewing in 1973, reconstructing a technique described in the 10th-century Engishiki.",
+          "examples": "Dessert and aged bottlings from a small number of producers",
+          "tags": "japan, sweet, dessert, method, specialty"
+        }
+      ]
+    },
+    {
+      "code": "K4",
+      "name": "Treatment & Presentation Designations",
+      "styles": [
+        {
+          "code": "K4A",
+          "name": "Namazake (生酒) — Unpasteurised",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 14, "abvMax": 18,
+          "impression": "Never heated — fresher, livelier, sometimes faintly spritzy, and perishable.",
+          "comments": "Standard sake is pasteurised twice (hi-ire): once before storage and once at bottling. Namazake skips both and must be kept refrigerated throughout; left warm it develops namahine-ka, a stewed, cabbage-like off-character. Related partial designations: nama-chozo (unpasteurised in storage, pasteurised at bottling) and nama-zume (pasteurised before storage, bottled without a second heating). Any grade may be nama.",
+          "ingredients": "As per the underlying grade.",
+          "history": "Only became commercially widespread once cold-chain distribution made it practical in the 1980s.",
+          "examples": "Seasonal shiboritate and spring nama releases",
+          "tags": "japan, unpasteurised, fresh, cold-chain, treatment"
+        },
+        {
+          "code": "K4B",
+          "name": "Genshu (原酒) — Undiluted",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 17, "abvMax": 20,
+          "impression": "Bottled at full fermentation strength, without the customary water addition.",
+          "comments": "Most sake finishes fermentation near 18–20% ABV — among the highest of any naturally fermented beverage, achieved by multiple parallel fermentation, in which koji enzymes saccharify starch at the same rate the yeast consumes the sugar — and is then cut with water to about 15–16%. Genshu omits that cut. Denser, warmer, more intense; often served over ice (on-za-rokku), which is one of the few sanctioned uses of dilution at the table.",
+          "ingredients": "As per the underlying grade.",
+          "history": "The dilution convention arose partly from tax structure and partly from the palate expectations of the domestic market.",
+          "examples": "Common in nama genshu seasonal releases",
+          "tags": "japan, undiluted, high-strength, treatment"
+        },
+        {
+          "code": "K4C",
+          "name": "Nigorizake (にごり酒) — Cloudy",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 12, "abvMax": 17,
+          "impression": "Coarsely strained rather than clarified — white, textural, frequently sweet.",
+          "comments": "The legal requirement is that the mash be strained through *something*; the mesh may be coarse enough to leave substantial rice solids. That is the line between nigorizake, which is seishu, and doburoku, which is not strained at all and falls into a different tax class. Ranges from a light haze (usu-nigori) to a thick, spoonable suspension. If bottled active it may continue to ferment and build pressure — several producers ship deliberately sparkling nigori, and the bottles need careful opening.",
+          "ingredients": "As per the underlying grade.",
+          "history": "The visual ancestor of all sake; clear sake is the later refinement.",
+          "examples": "Widely produced across all grades",
+          "tags": "japan, cloudy, unfiltered, texture, treatment"
+        },
+        {
+          "code": "K4D",
+          "name": "Muroka (無濾過) — No Charcoal Filtration",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 19,
+          "impression": "Skips the activated-carbon polish, keeping colour and flavour that filtration would strip.",
+          "comments": "Conventional practice passes pressed sake over activated charcoal to remove colour and soften rough aromatics. Muroka omits it, leaving a faintly golden or greenish tint and a fuller, more assertive flavour. Frequently combined as muroka nama genshu — unfiltered, unpasteurised, undiluted — which is about as unmediated as commercial sake gets and is a hallmark of the modern jizake movement.",
+          "ingredients": "As per the underlying grade.",
+          "history": "Charcoal filtration became standard in the 20th century for cosmetic consistency; muroka is a deliberate reversal.",
+          "examples": "Muroka nama genshu releases",
+          "tags": "japan, unfiltered, full-flavoured, treatment"
+        },
+        {
+          "code": "K4E",
+          "name": "Koshu / Jukusei-shu (古酒・熟成酒) — Aged Sake",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 15, "abvMax": 20,
+          "impression": "Deliberately matured — amber to brown, with sherry, mushroom, caramel and soy notes.",
+          "comments": "There is no statutory minimum age for the term, though the Long-Term Aged Sake Producers Association applies a three-year convention for jukusei koshu. Ageing drives Maillard chemistry between amino acids and sugars, darkening the sake and building umami; warm-aged examples develop quickly and heavily, cold-aged ones more slowly and delicately. Junmai and kijōshu age best because they carry the amino acid load to work with. Sake is otherwise conventionally treated as a fresh product with a stated brewing year (BY) rather than a vintage.",
+          "ingredients": "As per the underlying grade.",
+          "history": "Aged sake was recorded in the Edo period, disappeared under the Meiji tax regime that charged duty at production, and returned from the 1970s.",
+          "examples": "Jukusei koshu from specialist producers",
+          "tags": "japan, aged, oxidative, umami, treatment"
+        },
+        {
+          "code": "K4F",
+          "name": "Sparkling Sake / Awasake (スパークリング清酒)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 16,
+          "impression": "Carbonated sake, from lightly petillant nigori to bottle-fermented and disgorged.",
+          "comments": "Not a tax-law designation. The awasake Association applies a voluntary standard for the premium end: bottle-refermented, no added carbon dioxide, clear after disgorgement or fine filtration, minimum pressure, and made only from rice, koji and water. Below that sits a large market of low-alcohol force-carbonated products around 5–8% ABV. Bottle-conditioned nigori sits in between and is often actively fermenting in the bottle.",
+          "ingredients": "As per the underlying grade; secondary fermentation from residual or added sugar.",
+          "history": "The premium bottle-fermented category dates to the 2010s and the awasake standard to 2016.",
+          "examples": "Bottle-fermented awasake and commodity sparkling sake",
+          "tags": "japan, sparkling, carbonation, modern"
+        }
+      ]
+    },
+    {
+      "code": "K5",
+      "name": "Geographical Indications & Adjacent Categories",
+      "styles": [
+        {
+          "code": "K5A",
+          "name": "GI Nihonshu (日本酒) — 'Japanese Sake'",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": 22,
+          "impression": "A national geographical indication: only sake made in Japan from Japanese rice may be called nihonshu.",
+          "ingredients": "Rice grown in Japan, rice koji made from Japanese rice, and water; the entire production — fermentation, pressing, filtration and bottling — carried out in Japan.",
+          "comments": "Designated by the National Tax Agency in December 2015. Sake brewed outside Japan, of which there is now a substantial quantity in the United States, Canada, France, Norway and elsewhere, remains legally seishu-equivalent in its own jurisdiction but cannot be labelled nihonshu for markets recognising the GI. The designation protects the word, not the method — a foreign brewer may use identical rice varieties, koji and technique.",
+          "history": "Part of a broader Japanese push to secure GI protection for its agricultural and beverage exports.",
+          "examples": "All Japan-produced sake meeting the conditions",
+          "tags": "japan, GI, protected-name, national"
+        },
+        {
+          "code": "K5B",
+          "name": "Regional Sake GIs (Yamagata, Hakusan, Nada, Harima…)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "Prefectural and sub-regional designations, each with its own production specification and tasting panel.",
+          "ingredients": "Set by each individual GI specification — typically prescribing local water, permitted rice, production within the delimited area, and a sensory approval step.",
+          "comments": "GI Hakusan (Ishikawa, 2005) was the first, followed by GI Yamagata (2016) — the first covering an entire prefecture — and subsequently Nada Gogo (Hyogo), Harima, Mie, Nagano, Toyama, Saga, Yamanashi and others. Specifications commonly require that the rice and water be local, that the sake be brewed and bottled within the area, and that it pass an organoleptic assessment before the designation may be used. Because each is distinct, the GI on a label tells you the sake met a regional committee's standard, not that it belongs to a defined flavour category.",
+          "history": "Modelled on European wine appellation practice and administered by the National Tax Agency.",
+          "examples": "GI Yamagata, GI Hakusan, GI Nada Gogo",
+          "tags": "japan, GI, regional, protected-name"
+        },
+        {
+          "code": "K5C",
+          "name": "Doburoku (どぶろく) — Unstrained Rice Brew",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 17,
+          "impression": "The unstrained ancestor of sake — thick, porridge-like, actively fermenting, and legally not sake at all.",
+          "ingredients": "Rice, rice koji and water, fermented and consumed without pressing or straining.",
+          "comments": "Because it is never filtered it falls outside the seishu definition and is taxed as 'other brewed liquor' (その他の醸造酒). Home production remains illegal in Japan, but designated doburoku tokku — special deregulation zones established from 2002 — allow licensed farm and inn producers to make and sell it, which has driven a rural revival. Typically served fresh, sweet-sour and lightly effervescent.",
+          "history": "The pre-modern village and shrine brew; suppressed as home brewing was criminalised under the Meiji tax regime.",
+          "examples": "Farm-inn doburoku from deregulation zones; shrine festival brews",
+          "tags": "japan, unstrained, rustic, other-brewed-liquor"
+        },
+        {
+          "code": "K5D",
+          "name": "Amazake (甘酒) — Non-Alcoholic Koji Drink",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 0, "abvMax": 1,
+          "impression": "Saccharified rice without fermentation — sweet, thick, and useful to brewers as a koji reference point.",
+          "ingredients": "Rice and rice koji held warm (around 55–60 °C) until amylases convert the starch to glucose; or, in the cheaper version, sake lees plus sugar and water.",
+          "comments": "Included here because it isolates the enzymatic half of sake production. Holding koji at 55–60 °C runs saccharification without yeast — the mash goes sweet and stops. It demonstrates why sake reaches such high alcohol: in the real mash the same enzymes run continuously alongside the yeast, feeding it sugar slowly enough that it is never osmotically shocked. The koji-only version is alcohol-free; the sake-lees version carries residual alcohol, typically under 1%.",
+          "history": "Recorded in the Nihon Shoki as amanotamuzake; a traditional summer restorative and New Year drink.",
+          "examples": "Koji amazake, sakekasu amazake",
+          "tags": "japan, non-alcoholic, koji, reference"
+        }
+      ]
+    }
+  ]
+}

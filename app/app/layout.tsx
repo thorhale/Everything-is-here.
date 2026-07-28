@@ -112,6 +112,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="footer-col">
             <ul>
               <li>Archive</li>
+              <li><Link href="/archive">Archive Insights</Link></li>
+              <li><Link href="/data-download">Download the data</Link></li>
               <li><Link href="/takedown">Request removal</Link></li>
               <li>
                 <a href="https://web.archive.org" target="_blank" rel="noreferrer">
