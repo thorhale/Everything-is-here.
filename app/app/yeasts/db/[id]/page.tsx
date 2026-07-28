@@ -4,9 +4,53 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getStrain } from "@/lib/yeasts-curated";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
+import { getYeastSubstitutes } from "@/lib/substitutions";
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+async function YeastSubs({ strainId }: { strainId: string }) {
+  const { lineage, sameStrain, similar } = await getYeastSubstitutes(strainId);
+  if (sameStrain.length === 0 && similar.length === 0) return null;
+
+  const Row = ({ s, note }: { s: { id: string; name: string; form: string; attenuationMin: number | null; attenuationMax: number | null }; note?: string }) => (
+    <li key={s.id} style={{ padding: "0.4rem 0", borderBottom: "1px solid var(--wh-border-light)" }}>
+      <Link href={`/yeasts/db/${encodeURIComponent(s.id)}`} style={{ fontWeight: 600 }}>{s.name}</Link>
+      <div style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+        {s.form}
+        {s.attenuationMin != null && s.attenuationMax != null && ` · ${s.attenuationMin}–${s.attenuationMax}% attenuation`}
+        {note ? ` · ${note}` : ""}
+      </div>
+    </li>
+  );
+
+  return (
+    <>
+      <h3>If you can&apos;t get it</h3>
+      {sameStrain.length > 0 && (
+        <>
+          <p style={{ fontSize: "0.85rem", marginBottom: "0.3rem" }}>
+            <strong>Same culture, different label.</strong>{" "}
+            {lineage ? lineage.note : "Widely documented as the same or functionally identical strain."}
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, marginTop: 0 }}>
+            {sameStrain.map((s) => <Row key={s.id} s={s} />)}
+          </ul>
+        </>
+      )}
+      {similar.length > 0 && (
+        <>
+          <p style={{ fontSize: "0.85rem", marginBottom: "0.3rem", marginTop: "0.8rem" }}>
+            <strong>Comparable strains</strong> — same species, similar attenuation.
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, marginTop: 0 }}>
+            {similar.map((s) => <Row key={s.id} s={s} />)}
+          </ul>
+        </>
+      )}
+    </>
+  );
 }
 
 function range(min: number | null, max: number | null, unit: string): string | null {
@@ -99,6 +143,8 @@ export default async function StrainPage({ params }: Props) {
           </div>
         </>
       )}
+
+      <YeastSubs strainId={strain.id} />
 
       <p style={{ marginTop: "1.5rem" }}>
         <Link href={`/pitching?${pitchQuery}`} className="wh-btn" style={{ textDecoration: "none" }}>

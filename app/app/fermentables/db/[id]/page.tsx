@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getFermentable } from "@/lib/ingredients-curated";
 import { srmClass } from "@/components/StatBars";
 import { SUCROSE_PPG } from "@/lib/fermentable-math";
+import { getFermentableSubstitutes } from "@/lib/substitutions";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -101,11 +102,43 @@ PPG            = ${SUCROSE_PPG} x ${((f.totalCarbG! - (f.fiberG ?? 0)) / f.servi
         </>
       )}
 
+      <FermentableSubs id={f.id} />
+
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {f.attribution ?? ""}{" "}
         <a href={f.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
         <Link href="/fermentables/db">← Back to the fermentable database</Link>
       </p>
     </div>
+  );
+}
+
+async function FermentableSubs({ id }: { id: string }) {
+  const subs = await getFermentableSubstitutes(id);
+  if (subs.length === 0) return null;
+  return (
+    <>
+      <h3>If you can&apos;t get it</h3>
+      <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+        Comparable products — same category, similar colour. Maltsters sell the same thing under
+        different names.
+      </p>
+      <ul style={{ listStyle: "none", padding: 0 }}>
+        {subs.map((s) => (
+          <li key={s.item.id} style={{ padding: "0.4rem 0", borderBottom: "1px solid var(--wh-border-light)" }}>
+            <Link href={`/fermentables/db/${encodeURIComponent(s.item.id)}`} style={{ fontWeight: 600 }}>
+              {s.item.name}
+            </Link>
+            {s.item.brand && (
+              <span style={{ color: "var(--wh-text-light)", fontSize: "0.8rem" }}> · {s.item.brand}</span>
+            )}
+            <div style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+              {s.reason}
+              {s.item.ppg != null && ` · ${s.item.ppg} PPG`}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

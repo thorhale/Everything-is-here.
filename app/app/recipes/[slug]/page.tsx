@@ -356,6 +356,28 @@ export default async function RecipeDetailPage({ params }: Props) {
         canEdit={admin}
       />
 
+      <section style={{ marginTop: "2rem" }}>
+        <h3>Export</h3>
+        <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+          Download as BeerXML to open in BeerSmith, Brewfather, Brewer&apos;s Friend or any other
+          brewing app — optionally rescaled to your batch size.
+        </p>
+        <p style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+          <a href={`/recipes/${recipe.slug}/beerxml`} className="wh-btn" style={{ textDecoration: "none" }}>
+            BeerXML (as archived)
+          </a>
+          <a href={`/recipes/${recipe.slug}/beerxml?gal=5`} className="wh-btn-secondary" style={{ textDecoration: "none" }}>
+            scaled to 5 gal
+          </a>
+          <a href={`/recipes/${recipe.slug}/beerxml?gal=10`} className="wh-btn-secondary" style={{ textDecoration: "none" }}>
+            10 gal
+          </a>
+          <a href={`/recipes/${recipe.slug}/beerxml?litres=20`} className="wh-btn-secondary" style={{ textDecoration: "none" }}>
+            20 L
+          </a>
+        </p>
+      </section>
+
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         Archived from brewtoad.com on {recipe.sourceTimestamp} via the{" "}
         <a href={waybackUrl(recipe.sourceUrl, recipe.sourceTimestamp)} target="_blank" rel="noreferrer">

@@ -3,9 +3,51 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getHop } from "@/lib/ingredients-curated";
+import { getHopSubstitutes } from "@/lib/substitutions";
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+const STRENGTH_LABEL: Record<string, string> = {
+  same: "direct swap",
+  close: "close",
+  similar: "similar",
+};
+
+async function SubstituteSection({ hopId, rawList }: { hopId: string; rawList: string[] }) {
+  const subs = await getHopSubstitutes(hopId);
+  if (subs.length === 0 && rawList.length === 0) return null;
+  return (
+    <>
+      <h3>If you can&apos;t get it</h3>
+      {subs.length > 0 ? (
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          {subs.map((s) => (
+            <li key={s.item.id} style={{ padding: "0.4rem 0", borderBottom: "1px solid var(--wh-border-light)" }}>
+              <Link href={`/hops/db/${encodeURIComponent(s.item.id)}`} style={{ fontWeight: 600 }}>
+                {s.item.name}
+              </Link>
+              <span className="wh-style-chip" style={{ marginLeft: "0.5rem", fontSize: "0.7rem" }}>
+                {STRENGTH_LABEL[s.strength]}
+              </span>
+              <div style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+                {s.reason}
+                {s.item.alphaMin != null && s.item.alphaMax != null && ` · ${s.item.alphaMin}–${s.item.alphaMax}% AA`}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>{rawList.join(", ")}</p>
+      )}
+      <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)" }}>
+        Match bitterness by alpha acid, not by weight — if you swap a 14% AA hop for a 5% one,
+        scale the charge up accordingly. The <Link href="/calculator">recipe calculator</Link> will
+        show you the new IBU.
+      </p>
+    </>
+  );
 }
 
 function range(min: number | null, max: number | null, unit: string): string | null {
@@ -79,12 +121,7 @@ export default async function HopDetailPage({ params }: Props) {
         generally means a smoother bitter charge.
       </p>
 
-      {h.substitutes.length > 0 && (
-        <>
-          <h3>Substitutes</h3>
-          <p>{h.substitutes.join(", ")}</p>
-        </>
-      )}
+      <SubstituteSection hopId={h.id} rawList={h.substitutes} />
 
       {h.usageNotes && (
         <>

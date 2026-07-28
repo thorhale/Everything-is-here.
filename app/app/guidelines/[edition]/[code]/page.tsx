@@ -7,6 +7,10 @@ import { matchStrainsForStyle } from "@/lib/yeasts-curated";
 import { StrainGrid } from "@/components/StrainCard";
 import { srmClass } from "@/components/StatBars";
 import { getFermentableCatalog, getHopCatalog } from "@/lib/ingredients-curated";
+import {
+  resolveArchiveStyle, getStyleStats, getStyleFermentables, getStyleHops, getStyleYeasts, conformancePct,
+} from "@/lib/archive-stats";
+import { ArchiveStatBands, IngredientUsageList } from "@/components/ArchiveStats";
 import { buildRecipeSkeleton } from "@/lib/recipe-builder";
 import { getWaterProfile, suggestWaterTargetId } from "@/lib/water";
 
@@ -77,6 +81,20 @@ export default async function GuidelineStylePage({ params }: Props) {
     ? await getWaterProfile(suggestWaterTargetId(skeleton.targets.srm, style.name))
     : null;
 
+  // What the archive's brewers actually did for this style.
+  const archiveStyle = await resolveArchiveStyle(style.name);
+  const archiveStats = archiveStyle ? await getStyleStats(archiveStyle) : null;
+  const [archMalts, archHops, archYeasts, ogConform] = archiveStyle
+    ? await Promise.all([
+        getStyleFermentables(archiveStyle, 8),
+        getStyleHops(archiveStyle, 8),
+        getStyleYeasts(archiveStyle, 6),
+        style.ogMin != null && style.ogMax != null
+          ? conformancePct(archiveStyle, "og", style.ogMin, style.ogMax)
+          : Promise.resolve(null),
+      ])
+    : [[], [], [], null];
+
   const srmMid = style.srmMin != null && style.srmMax != null ? (style.srmMin + style.srmMax) / 2 : null;
 
   return (
@@ -115,6 +133,52 @@ export default async function GuidelineStylePage({ params }: Props) {
           </section>
         );
       })}
+
+      {archiveStats && archiveStats.recipes >= 5 && (
+        <section>
+          <h3>What brewers actually did</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+            {archiveStats.recipes.toLocaleString()} archived{" "}
+            <Link href={`/recipes?style=${encodeURIComponent(archiveStyle!)}`}>{archiveStyle}</Link>{" "}
+            recipes, measured against this guideline&apos;s published range.
+            {ogConform != null && (
+              <> <strong>{ogConform}%</strong> of them fall inside the spec OG range.</>
+            )}
+          </p>
+
+          <ArchiveStatBands
+            stats={archiveStats}
+            spec={{
+              ogMin: style.ogMin, ogMax: style.ogMax,
+              fgMin: style.fgMin, fgMax: style.fgMax,
+              ibuMin: style.ibuMin, ibuMax: style.ibuMax,
+              srmMin: style.srmMin, srmMax: style.srmMax,
+              abvMin: style.abvMin, abvMax: style.abvMax,
+            }}
+          />
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1rem", marginTop: "1rem" }}>
+            {archMalts.length > 0 && (
+              <div>
+                <h4 style={{ fontSize: "0.9rem", marginBottom: "0.4rem" }}>Most-used fermentables</h4>
+                <IngredientUsageList items={archMalts} unit="lb avg" />
+              </div>
+            )}
+            {archHops.length > 0 && (
+              <div>
+                <h4 style={{ fontSize: "0.9rem", marginBottom: "0.4rem" }}>Most-used hops</h4>
+                <IngredientUsageList items={archHops} unit="oz avg" linkBase={(n) => `/hops/${encodeURIComponent(n)}`} />
+              </div>
+            )}
+            {archYeasts.length > 0 && (
+              <div>
+                <h4 style={{ fontSize: "0.9rem", marginBottom: "0.4rem" }}>Most-used yeasts</h4>
+                <IngredientUsageList items={archYeasts} linkBase={(n) => `/yeasts/${encodeURIComponent(n)}`} />
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {skeleton.buildable && (
         <section>
@@ -194,8 +258,15 @@ export default async function GuidelineStylePage({ params }: Props) {
               — <Link href="/water/builder">build it →</Link>
             </p>
           )}
-          <p style={{ fontSize: "0.85rem" }}>
-            <Link href="/calculator" className="wh-btn" style={{ textDecoration: "none" }}>
+          <p style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", fontSize: "0.85rem" }}>
+            <a
+              href={`/guidelines/${edition.id}/${encodeURIComponent(style.code ?? style.id.slice(edition.id.length + 1))}/beerxml`}
+              className="wh-btn"
+              style={{ textDecoration: "none" }}
+            >
+              Download as BeerXML
+            </a>
+            <Link href="/calculator" className="wh-btn-secondary" style={{ textDecoration: "none" }}>
               Open the recipe calculator →
             </Link>
           </p>
