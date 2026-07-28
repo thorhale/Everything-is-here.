@@ -373,3 +373,119 @@ model YeastStrain {
   @@index([name])
   @@index([species])
 }
+
+// --- Fermentable & hop database ------------------------------------------
+// Curated from maltster/grower spec sheets, and - for the long tail of
+// adjuncts that have no brewing datasheet (rice, cereal, candy, fruit, juice,
+// palm sugar) - derived from Nutrition Facts panels via lib/fermentable-math.ts.
+// The nutrition inputs are stored alongside the derived PPG so the figure is
+// auditable rather than asserted. Loaded from data/fermentables/*.json and
+// data/hops/*.json; distinct from the thin scraped RecipeFermentable/RecipeHop.
+
+model Fermentable {
+  id       String  @id // e.g. "weyermann-pilsner", "adjunct-arborio-rice"
+  name     String
+  aliases  String[] @default([])
+  brand    String? // maltster / producer, null for generic commodity items
+  category String // base-malt | specialty-malt | adjunct-grain | sugar | syrup | fruit | juice | cereal | extract | other
+  type     String // grain | extract | sugar | fruit | adjunct
+  origin   String?
+
+  // Extract & colour
+  ppg           Float? // points per pound per gallon
+  yieldPct      Float? // extract as % of sucrose
+  colorLovibond Float?
+
+  // How it behaves in the brewhouse
+  requiresConversion   Boolean @default(false) // starch needing mash/enzymes
+  requiresGelatinization Boolean @default(false) // cereal mash / pre-boil
+  diastaticPowerLintner Float?
+  fermentabilityPct    Float? // how much of the extract yeast can take
+  maxBatchPct          Float? // recommended ceiling as % of grist
+
+  // Provenance of the PPG figure, and the nutrition inputs when derived.
+  ppgBasis      String? // maltster | nutrition | literature | measured
+  servingSizeG  Float?
+  totalCarbG    Float?
+  fiberG        Float?
+
+  uses        String[] @default([]) // beer | wine | mead | cider | whiskey | rum | moonshine
+  styleTags   String[] @default([])
+  description String?
+  flavorNotes String?
+  usageNotes  String?
+  sourceUrl   String
+  attribution String?
+  sortOrder   Int      @default(0)
+
+  @@index([category])
+  @@index([name])
+  @@index([brand])
+}
+
+model Hop {
+  id      String   @id // e.g. "citra", "hallertau-mittelfrueh"
+  name    String
+  aliases String[] @default([])
+  country String?
+  purpose String? // aroma | bittering | dual
+
+  alphaMin      Float?
+  alphaMax      Float?
+  betaMin       Float?
+  betaMax       Float?
+  cohumuloneMin Float?
+  cohumuloneMax Float?
+
+  totalOilMin      Float? // mL per 100 g
+  totalOilMax      Float?
+  myrcenePct       Float?
+  humulenePct      Float?
+  caryophyllenePct Float?
+  farnescenePct    Float?
+
+  aromaDescriptors String[] @default([])
+  substitutes      String[] @default([])
+  styleTags        String[] @default([])
+
+  breeder      String?
+  yearReleased Int?
+  description  String?
+  usageNotes   String?
+  sourceUrl    String
+  attribution  String?
+  sortOrder    Int      @default(0)
+
+  @@index([country])
+  @@index([name])
+  @@index([purpose])
+}
+
+// --- Water profile database ----------------------------------------------
+// Historic brewing-city water and modern target profiles, in ppm (mg/L). The
+// six brewing ions are stored; residual alkalinity and the sulfate:chloride
+// balance are derived in lib/water.ts. Loaded from data/water/*.json.
+model WaterProfile {
+  id       String  @id // e.g. "burton-upon-trent", "target-yellow-balanced"
+  name     String
+  kind     String // classic-city | modern-city | style-target
+  country  String?
+  region   String?
+
+  calcium     Float? // Ca2+ ppm
+  magnesium   Float? // Mg2+ ppm
+  sodium      Float? // Na+ ppm
+  chloride    Float? // Cl- ppm
+  sulfate     Float? // SO4 2- ppm
+  bicarbonate Float? // HCO3- ppm
+
+  description  String?
+  bestForStyles String[] @default([])
+  styleTags    String[] @default([])
+  sourceUrl    String
+  attribution  String?
+  sortOrder    Int      @default(0)
+
+  @@index([kind])
+  @@index([name])
+}

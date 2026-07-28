@@ -52,16 +52,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/styles">Styles</Link></li>
                 <li><Link href="/guidelines">Style Guidelines</Link></li>
                 <li><Link href="/fermentables">Fermentables</Link></li>
+                <li><Link href="/fermentables/db">Fermentable Database</Link></li>
                 <li><Link href="/hops">Hops</Link></li>
+                <li><Link href="/hops/db">Hop Database</Link></li>
                 <li><Link href="/yeasts">Yeasts</Link></li>
                 <li><Link href="/yeasts/db">Yeast Database</Link></li>
+                <li><Link href="/water">Water Profiles</Link></li>
               </ul>
             </li>
             <li>
               <Link href="/calculator">Tools &amp; Calculators</Link>
               <ul>
                 <li><Link href="/calculator">Recipe Calculator</Link></li>
+                <li><Link href="/tools">Brewer&apos;s Toolbox</Link></li>
                 <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
+                <li><Link href="/water/builder">Water / Salt Calculator</Link></li>
                 <li><Link href="/yeasts/propagation">Propagation Guide</Link></li>
               </ul>
             </li>
@@ -84,17 +89,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ul>
               <li>Styles &amp; Ingredients</li>
               <li><Link href="/guidelines">Style Guidelines</Link></li>
-              <li><Link href="/fermentables">Fermentables</Link></li>
-              <li><Link href="/hops">Hops</Link></li>
-              <li><Link href="/yeasts">Yeasts</Link></li>
+              <li><Link href="/fermentables/db">Fermentable Database</Link></li>
+              <li><Link href="/hops/db">Hop Database</Link></li>
               <li><Link href="/yeasts/db">Yeast Database</Link></li>
+              <li><Link href="/water">Water Profiles</Link></li>
+              <li><Link href="/yeasts">Yeasts (archive)</Link></li>
             </ul>
           </div>
           <div className="footer-col">
             <ul>
               <li>Tools &amp; Calculators</li>
               <li><Link href="/calculator">Recipe Calculator</Link></li>
+              <li><Link href="/tools">Brewer&apos;s Toolbox</Link></li>
               <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
+              <li><Link href="/water/builder">Water / Salt Calculator</Link></li>
               <li><Link href="/yeasts/propagation">Propagation Guide</Link></li>
             </ul>
           </div>

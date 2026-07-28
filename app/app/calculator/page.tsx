@@ -1,10 +1,15 @@
 import CalculatorForm from "./CalculatorForm";
 import { getStrainPickerList } from "@/lib/yeasts-curated";
+import { getFermentablePickerList, getHopPickerList } from "@/lib/ingredients-curated";
 
 export const dynamic = "force-dynamic";
 
 export default async function CalculatorPage() {
-  const strains = await getStrainPickerList();
+  const [strains, fermentables, hops] = await Promise.all([
+    getStrainPickerList(),
+    getFermentablePickerList(),
+    getHopPickerList(),
+  ]);
   return (
     <div>
       <h1>Recipe Calculator</h1>
@@ -13,7 +18,7 @@ export default async function CalculatorPage() {
         IBU, Morey color, and ABV formulas extracted from the archived site (see{" "}
         <code>docs/calculator-formulas.md</code>). Stats update live as you edit ingredients.
       </p>
-      <CalculatorForm strains={strains} />
+      <CalculatorForm strains={strains} fermentableOptions={fermentables} hopOptions={hops} />
     </div>
   );
 }

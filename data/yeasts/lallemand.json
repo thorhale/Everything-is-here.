@@ -97,8 +97,10 @@
       "styleTags": ["saison", "diastaticus", "very-dry", "spicy"],
       "attenuationMin": 85, "attenuationMax": 95, "tempMinF": 63, "tempMaxF": 86, "tempMinC": 17, "tempMaxC": 30,
       "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Saison strain (diastaticus); very high attenuation, dry and spicy. Diastatic — segregate equipment.",
-      "flavorNotes": "Peppery, citrusy, bone dry.", "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-belle-saison-ale-yeast/"
+      "description": "Saison strain (diastaticus); a stupid-reliable fermenter that crashes everything to terminal gravity. Diastatic — segregate equipment from other styles.",
+      "flavorNotes": "Light spicy phenols — mostly black pepper — with some light banana esters; bone dry.",
+      "sourceUrl": "https://www.lallemandbrewing.com/en/global/products/lalbrew-belle-saison-ale-yeast/",
+      "attribution": "Strain specs from Lallemand; character notes from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
     },
     {
       "id": "lallemand-diamond", "productCode": "Diamond", "name": "LalBrew Diamond Lager",

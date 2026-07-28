@@ -11,8 +11,14 @@ export default async function FermentablesPage() {
   return (
     <div>
       <h1>Fermentables</h1>
+      <div style={{ background: "var(--wh-bg-warm)", border: "1px solid var(--wh-border)", borderRadius: 8, padding: "0.9rem 1.1rem", margin: "0.75rem 0 1.25rem" }}>
+        <strong>New: the Fermentable Database.</strong> Malts, adjunct grains, sugars, fruit,
+        juice — and the novelty end of the shelf — with extract (PPG), colour, and mash
+        requirements. Adjuncts with no brewing datasheet get their PPG derived from the nutrition
+        label. <Link href="/fermentables/db">Browse the fermentable database →</Link>
+      </div>
       <p style={{ color: "var(--wh-text-light)" }}>
-        Every malt, extract, sugar, and adjunct used in the archive&apos;s recipes, with the
+        Below: every malt, extract, sugar, and adjunct used in the archive&apos;s recipes, with the
         maltsters that produced them.
       </p>
 
