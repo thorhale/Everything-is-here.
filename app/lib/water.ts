@@ -74,3 +74,17 @@ export async function getWaterByKind(): Promise<Record<string, WaterProfile[]>> 
   for (const w of all) (out[w.kind] ??= []).push(w);
   return out;
 }
+
+// Suggest a style-target water profile for a beer from its colour (SRM) and
+// style name. Hop-forward and hazy styles override the colour-based default.
+export function suggestWaterTargetId(srm: number | null, styleName: string | null): string {
+  const s = (styleName ?? "").toLowerCase();
+  if (/hazy|new england|neipa|juicy/.test(s)) return "target-hazy-juicy";
+  if (/ipa|pale ale|west coast|bitter/.test(s)) return "target-yellow-hoppy";
+  if (/dry stout|irish stout|foreign extra/.test(s)) return "target-black-roasty-bitter";
+  const c = srm ?? 5;
+  if (c < 8) return "target-yellow-balanced";
+  if (c < 17) return "target-amber-balanced";
+  if (c < 30) return "target-brown-balanced";
+  return "target-black-balanced";
+}

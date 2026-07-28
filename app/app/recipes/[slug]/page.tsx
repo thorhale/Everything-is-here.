@@ -7,6 +7,8 @@ import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
 import { matchStrainsForStyle, matchStrainForName, strainHref } from "@/lib/yeasts-curated";
+import { getWaterProfile, suggestWaterTargetId, residualAlkalinity, sulfateChloride } from "@/lib/water";
+import { targetResidualAlkalinity } from "@/lib/mash-ph";
 import { StrainGrid } from "@/components/StrainCard";
 import { PintGlass } from "@/components/PintGlass";
 import { isAdmin } from "@/lib/admin-auth";
@@ -84,6 +86,10 @@ export default async function RecipeDetailPage({ params }: Props) {
       }),
     ),
   );
+
+  // Water + mash-pH analysis from the recipe's own colour and style.
+  const waterTarget = await getWaterProfile(suggestWaterTargetId(recipe.srm, recipe.styleName));
+  const targetRa = recipe.srm != null ? targetResidualAlkalinity(recipe.srm) : null;
 
   const batch = parseBatchSize(recipe.batchSizeDisplay);
   const pitchingDefaults: PitchingFormInitial = {
@@ -308,6 +314,37 @@ export default async function RecipeDetailPage({ params }: Props) {
             </Link>
           </p>
           <StrainGrid strains={suggestedYeasts} />
+        </section>
+      )}
+
+      {waterTarget && (
+        <section style={{ marginTop: "2rem" }}>
+          <h3>Water &amp; mash pH</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+            {recipe.srm != null ? (
+              <>
+                At <strong>{recipe.srm.toFixed(0)} SRM</strong>, this beer wants a residual
+                alkalinity around <strong>{targetRa} ppm</strong> (Palmer). A good target water is{" "}
+                <Link href={`/water/${waterTarget.id}`}>{waterTarget.name}</Link>
+                {(() => {
+                  const sc = sulfateChloride(waterTarget);
+                  const ra = residualAlkalinity(waterTarget);
+                  return (
+                    <>
+                      {" "}(RA {ra ?? "—"} ppm, {sc.balance}).
+                    </>
+                  );
+                })()}{" "}
+                <Link href="/water/builder">Build it from your water →</Link>
+              </>
+            ) : (
+              <>
+                Suggested target water for this style:{" "}
+                <Link href={`/water/${waterTarget.id}`}>{waterTarget.name}</Link>.{" "}
+                <Link href="/water/builder">Water calculator →</Link>
+              </>
+            )}
+          </p>
         </section>
       )}
 
