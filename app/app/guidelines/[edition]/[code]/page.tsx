@@ -6,6 +6,9 @@ import { findStyle } from "@/lib/guidelines";
 import { matchStrainsForStyle } from "@/lib/yeasts-curated";
 import { StrainGrid } from "@/components/StrainCard";
 import { srmClass } from "@/components/StatBars";
+import { getFermentableCatalog, getHopCatalog } from "@/lib/ingredients-curated";
+import { buildRecipeSkeleton } from "@/lib/recipe-builder";
+import { getWaterProfile, suggestWaterTargetId } from "@/lib/water";
 
 interface Props {
   params: Promise<{ edition: string; code: string }>;
@@ -57,6 +60,23 @@ export default async function GuidelineStylePage({ params }: Props) {
   const edition = style.category.edition;
   const suggestedYeasts = await matchStrainsForStyle(style.name, { limit: 6 });
 
+  // Auto-generated starting recipe from the style's own published targets.
+  const [fermCat, hopCat] = await Promise.all([getFermentableCatalog(), getHopCatalog()]);
+  const skeleton = buildRecipeSkeleton(
+    {
+      name: style.name,
+      categoryName: style.category.name,
+      ogMin: style.ogMin, ogMax: style.ogMax, fgMin: style.fgMin, fgMax: style.fgMax,
+      ibuMin: style.ibuMin, ibuMax: style.ibuMax, srmMin: style.srmMin, srmMax: style.srmMax,
+      abvMin: style.abvMin, abvMax: style.abvMax,
+    },
+    fermCat.map((f) => ({ id: f.id, name: f.name, ppg: f.ppg, colorLovibond: f.colorLovibond, type: f.type, requiresConversion: f.requiresConversion })),
+    hopCat.map((h) => ({ id: h.id, name: h.name, alphaMin: h.alphaMin, alphaMax: h.alphaMax, purpose: h.purpose, styleTags: h.styleTags, country: h.country })),
+  );
+  const skeletonWater = skeleton.buildable
+    ? await getWaterProfile(suggestWaterTargetId(skeleton.targets.srm, style.name))
+    : null;
+
   const srmMid = style.srmMin != null && style.srmMax != null ? (style.srmMin + style.srmMax) / 2 : null;
 
   return (
@@ -95,6 +115,92 @@ export default async function GuidelineStylePage({ params }: Props) {
           </section>
         );
       })}
+
+      {skeleton.buildable && (
+        <section>
+          <h3>Starting recipe</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
+            Auto-generated from this style&apos;s own published targets — a {skeleton.family} skeleton
+            for {skeleton.batchSizeGal} gal at {skeleton.efficiencyPct}% efficiency. A starting
+            point to adjust, not a finished recipe.
+          </p>
+
+          <div style={{ overflowX: "auto" }}>
+            <table>
+              <thead>
+                <tr><th>Grain bill</th><th>Amount</th><th>%</th></tr>
+              </thead>
+              <tbody>
+                {skeleton.fermentables.map((f) => (
+                  <tr key={f.id}>
+                    <td><Link href={`/fermentables/db/${encodeURIComponent(f.id)}`}>{f.name}</Link></td>
+                    <td className="nowrap">{f.amountLb.toFixed(2)} lb</td>
+                    <td className="nowrap">{f.percent}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {skeleton.hops.length > 0 && (
+            <div style={{ overflowX: "auto", marginTop: "0.75rem" }}>
+              <table>
+                <thead>
+                  <tr><th>Hops</th><th>Amount</th><th>Alpha</th><th>Time</th></tr>
+                </thead>
+                <tbody>
+                  {skeleton.hops.map((h, i) => (
+                    <tr key={`${h.id}-${i}`}>
+                      <td><Link href={`/hops/db/${encodeURIComponent(h.id)}`}>{h.name}</Link></td>
+                      <td className="nowrap">{h.amountOz.toFixed(2)} oz</td>
+                      <td className="nowrap">{h.alphaPct}%</td>
+                      <td className="nowrap">{h.timeMin} min</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          <div style={{ overflowX: "auto", marginTop: "0.75rem" }}>
+            <table>
+              <thead>
+                <tr><th>Lands at</th><th>OG</th><th>FG</th><th>IBU</th><th>SRM</th><th>ABV</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ color: "var(--wh-text-light)" }}>this recipe</td>
+                  <td className="nowrap"><strong>{skeleton.computed.og.toFixed(3)}</strong></td>
+                  <td className="nowrap">{skeleton.computed.fg.toFixed(3)}</td>
+                  <td className="nowrap">{skeleton.computed.ibu.toFixed(0)}</td>
+                  <td className="nowrap">{skeleton.computed.srm.toFixed(1)}</td>
+                  <td className="nowrap">{skeleton.computed.abv.toFixed(1)}%</td>
+                </tr>
+                <tr style={{ color: "var(--wh-text-light)" }}>
+                  <td>style range</td>
+                  <td className="nowrap">{style.ogMin != null ? `${style.ogMin.toFixed(3)}–${style.ogMax?.toFixed(3)}` : "—"}</td>
+                  <td className="nowrap">{style.fgMin != null ? `${style.fgMin.toFixed(3)}–${style.fgMax?.toFixed(3)}` : "—"}</td>
+                  <td className="nowrap">{style.ibuMin != null ? `${style.ibuMin}–${style.ibuMax}` : "—"}</td>
+                  <td className="nowrap">{style.srmMin != null ? `${style.srmMin}–${style.srmMax}` : "—"}</td>
+                  <td className="nowrap">{style.abvMin != null ? `${style.abvMin}–${style.abvMax}%` : "—"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {skeletonWater && (
+            <p style={{ fontSize: "0.85rem", marginTop: "0.6rem" }}>
+              Suggested water: <Link href={`/water/${skeletonWater.id}`}>{skeletonWater.name}</Link>{" "}
+              — <Link href="/water/builder">build it →</Link>
+            </p>
+          )}
+          <p style={{ fontSize: "0.85rem" }}>
+            <Link href="/calculator" className="wh-btn" style={{ textDecoration: "none" }}>
+              Open the recipe calculator →
+            </Link>
+          </p>
+        </section>
+      )}
 
       {suggestedYeasts.length > 0 && (
         <section>
