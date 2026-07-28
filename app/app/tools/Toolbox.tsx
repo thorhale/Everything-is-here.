@@ -2,6 +2,7 @@
 
 import { useState, type ReactNode } from "react";
 import * as calc from "@/lib/brewing-calcs";
+import { residualAlkalinity, mashPhAdvice } from "@/lib/mash-ph";
 
 function n(s: string): number {
   const v = parseFloat(s);
@@ -24,6 +25,7 @@ export default function Toolbox() {
       <DilutionCard />
       <StrikeCard />
       <InfusionCard />
+      <MashPhCard />
       <ColorCard />
     </div>
   );
@@ -199,6 +201,36 @@ function InfusionCard() {
       <Row label="Grain (lb)"><input style={inp} value={grain} onChange={(e) => setGrain(e.target.value)} /></Row>
       <Row label="Mash water (qt)"><input style={inp} value={water} onChange={(e) => setWater(e.target.value)} /></Row>
       <Out label="Add boiling water" value={`${f(calc.infusionVolume(n(target), n(current), n(grain), n(water)))} qt`} />
+    </Card>
+  );
+}
+
+function MashPhCard() {
+  const [srm, setSrm] = useState("6");
+  const [ca, setCa] = useState("50");
+  const [mg, setMg] = useState("8");
+  const [hco3, setHco3] = useState("40");
+  const ra = residualAlkalinity(n(ca), n(mg), n(hco3));
+  const a = mashPhAdvice(n(srm), ra);
+  const color = a.verdict === "on target" ? "#3f7d3f" : "#b55002";
+  return (
+    <Card title="Mash pH / alkalinity">
+      <Row label="Beer colour (SRM)"><input style={inp} value={srm} onChange={(e) => setSrm(e.target.value)} /></Row>
+      <Row label="Water Ca (ppm)"><input style={inp} value={ca} onChange={(e) => setCa(e.target.value)} /></Row>
+      <Row label="Water Mg (ppm)"><input style={inp} value={mg} onChange={(e) => setMg(e.target.value)} /></Row>
+      <Row label="Water HCO₃ (ppm)"><input style={inp} value={hco3} onChange={(e) => setHco3(e.target.value)} /></Row>
+      <Out label="Residual alkalinity" value={`${a.actualRa} ppm`} />
+      <Out label="Target RA (for colour)" value={`${a.targetRa} ppm`} />
+      <Out label="Estimated mash pH" value={`~${f(a.estimatedPh, 2)}`} />
+      <div style={{ fontSize: "0.85rem", fontWeight: 600, color, padding: "0.3rem 0" }}>
+        {a.verdict === "on target" && "Water suits this grist."}
+        {a.verdict === "too alkaline" && `Too alkaline — add ~${a.acidMaltPct}% acidulated malt, or ~${a.lacticMlPerGal} mL 88% lactic acid per gallon of mash water (or dilute with RO).`}
+        {a.verdict === "too soft" && "Too soft for this dark a grist — add alkalinity (baking soda / chalk) to avoid a too-low mash pH."}
+      </div>
+      <p style={{ fontSize: "0.72rem", color: "var(--wh-text-light)", margin: "0.2rem 0 0" }}>
+        Estimate only — confirm with a calibrated pH meter. Based on Palmer&apos;s colour↔RA
+        relationship.
+      </p>
     </Card>
   );
 }
