@@ -1,0 +1,84 @@
+export const dynamic = "force-dynamic";
+
+import Link from "next/link";
+import { getWaterByKind, residualAlkalinity, sulfateChloride } from "@/lib/water";
+import type { WaterProfile } from "@/lib/water";
+
+export const metadata = {
+  title: "Water Profiles — WortHogg",
+  description:
+    "Classic and modern brewing-city water profiles (Burton, Dublin, Munich, Pilsen, Chico, San Diego) plus style targets, with the six brewing ions and derived residual alkalinity and sulfate:chloride balance.",
+};
+
+const KIND_LABELS: Record<string, string> = {
+  "classic-city": "Classic brewing cities",
+  "modern-city": "Modern brewing centers",
+  "style-target": "Style targets",
+};
+const KIND_ORDER = ["classic-city", "modern-city", "style-target"];
+
+function num(v: number | null): string {
+  return v == null ? "—" : String(Math.round(v));
+}
+
+export default async function WaterPage() {
+  const byKind = await getWaterByKind();
+
+  return (
+    <div>
+      <h1>Water Profiles</h1>
+      <p style={{ color: "var(--wh-text-light)" }}>
+        The water made the beer. Historic brewing-city profiles and modern targets, in ppm (mg/L),
+        with the two numbers that matter derived for you: <strong>residual alkalinity</strong> (how
+        hard the water pushes mash pH up — high-RA cities became dark-beer cities) and the{" "}
+        <strong>sulfate:chloride balance</strong> (hoppy-and-dry vs malty-and-full).
+      </p>
+
+      {KIND_ORDER.filter((k) => byKind[k]?.length).map((kind) => (
+        <section key={kind} style={{ marginTop: "1.5rem" }}>
+          <h2 style={{ fontSize: "1.15rem" }}>{KIND_LABELS[kind]}</h2>
+          <div style={{ overflowX: "auto" }}>
+            <table>
+              <thead>
+                <tr>
+                  <th>Profile</th>
+                  <th title="Calcium">Ca</th>
+                  <th title="Magnesium">Mg</th>
+                  <th title="Sodium">Na</th>
+                  <th title="Chloride">Cl</th>
+                  <th title="Sulfate">SO₄</th>
+                  <th title="Bicarbonate">HCO₃</th>
+                  <th title="Residual alkalinity">RA</th>
+                  <th className="hide-mobile">SO₄:Cl</th>
+                </tr>
+              </thead>
+              <tbody>
+                {byKind[kind].map((w: WaterProfile) => {
+                  const sc = sulfateChloride(w);
+                  return (
+                    <tr key={w.id}>
+                      <td className="nowrap"><Link href={`/water/${encodeURIComponent(w.id)}`}>{w.name}</Link></td>
+                      <td>{num(w.calcium)}</td>
+                      <td>{num(w.magnesium)}</td>
+                      <td>{num(w.sodium)}</td>
+                      <td>{num(w.chloride)}</td>
+                      <td>{num(w.sulfate)}</td>
+                      <td>{num(w.bicarbonate)}</td>
+                      <td>{num(residualAlkalinity(w))}</td>
+                      <td className="hide-mobile" style={{ fontSize: "0.8rem" }}>{sc.balance}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))}
+
+      <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
+        All values ppm (mg/L). Municipal water varies seasonally and with treatment — these are the
+        historical/representative profiles brewers target, not a live tap analysis.
+      </p>
+    </div>
+  );
+}

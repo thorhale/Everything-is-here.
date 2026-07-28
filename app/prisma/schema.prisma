@@ -460,3 +460,32 @@ model Hop {
   @@index([name])
   @@index([purpose])
 }
+
+// --- Water profile database ----------------------------------------------
+// Historic brewing-city water and modern target profiles, in ppm (mg/L). The
+// six brewing ions are stored; residual alkalinity and the sulfate:chloride
+// balance are derived in lib/water.ts. Loaded from data/water/*.json.
+model WaterProfile {
+  id       String  @id // e.g. "burton-upon-trent", "target-yellow-balanced"
+  name     String
+  kind     String // classic-city | modern-city | style-target
+  country  String?
+  region   String?
+
+  calcium     Float? // Ca2+ ppm
+  magnesium   Float? // Mg2+ ppm
+  sodium      Float? // Na+ ppm
+  chloride    Float? // Cl- ppm
+  sulfate     Float? // SO4 2- ppm
+  bicarbonate Float? // HCO3- ppm
+
+  description  String?
+  bestForStyles String[] @default([])
+  styleTags    String[] @default([])
+  sourceUrl    String
+  attribution  String?
+  sortOrder    Int      @default(0)
+
+  @@index([kind])
+  @@index([name])
+}
