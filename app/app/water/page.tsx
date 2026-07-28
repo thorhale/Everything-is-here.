@@ -33,6 +33,14 @@ export default async function WaterPage() {
         hard the water pushes mash pH up — high-RA cities became dark-beer cities) and the{" "}
         <strong>sulfate:chloride balance</strong> (hoppy-and-dry vs malty-and-full).
       </p>
+      <p>
+        <Link href="/water/builder" className="wh-btn" style={{ textDecoration: "none" }}>
+          Open the water / salt calculator →
+        </Link>{" "}
+        <span style={{ fontSize: "0.85rem", color: "var(--wh-text-light)" }}>
+          build any of these profiles from your own water.
+        </span>
+      </p>
 
       {KIND_ORDER.filter((k) => byKind[k]?.length).map((kind) => (
         <section key={kind} style={{ marginTop: "1.5rem" }}>
