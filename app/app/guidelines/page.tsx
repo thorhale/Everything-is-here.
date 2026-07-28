@@ -9,6 +9,8 @@ const SYSTEM_LABELS: Record<string, string> = {
   BJCP: "BJCP Style Guidelines",
   BA: "World Beer Cup / GABF (Brewers Association)",
   AWS: "Wine (American Wine Society)",
+  SPIRITS: "Spirits — Legal Definitions & Standards of Identity",
+  FERMENTED: "Fortified, Aromatised & Traditional Fermented",
 };
 
 const SYSTEM_BLURBS: Record<string, string> = {
@@ -18,6 +20,10 @@ const SYSTEM_BLURBS: Record<string, string> = {
     "The Brewers Association publishes one guideline set per year - it is the judging basis for both the World Beer Cup® and the Great American Beer Festival®.",
   AWS:
     "The American Wine Society's national amateur competition wine classes, judged on the UC Davis 20-point system.",
+  SPIRITS:
+    "Distilled spirits have no judging guidelines - but they do have binding legal definitions. These are the actual statutory standards of identity: the Scotch Whisky Regulations, US 27 CFR, EU 2019/787, Mexico's NOM standards and the AOC decrees.",
+  FERMENTED:
+    "Fortified and aromatised wines under their protected designations, plus traditional fermented beverages - sake, huangjiu, pulque, palm wine, tej - that fall outside every Western judging guideline.",
 };
 
 export default async function GuidelinesPage() {
@@ -32,11 +38,12 @@ export default async function GuidelinesPage() {
     <div>
       <h1>Style Guidelines Archive</h1>
       <p style={{ color: "var(--wh-text-light)" }}>
-        Competition style guidelines across iterations - pick a system and an edition to browse
-        its categories, vital statistics, and full style descriptions. Beer, mead, cider, and
-        wine are all covered.
+        Pick a system and an edition to browse its categories, vital statistics, and full style
+        descriptions. Beer, mead, cider and wine are covered by judging guidelines; spirits and
+        traditional fermented drinks, which have none, are covered by their legal standards of
+        identity instead.
       </p>
-      {["BJCP", "BA", "AWS"].map((sys) => {
+      {["BJCP", "BA", "AWS", "SPIRITS", "FERMENTED"].map((sys) => {
         const eds = bySystem.get(sys) ?? [];
         if (!eds.length) return null;
         return (
