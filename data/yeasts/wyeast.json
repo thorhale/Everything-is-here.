@@ -87,8 +87,10 @@
       "styleTags": ["saison", "very-dry", "fast", "reliable"],
       "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 65, "tempMaxF": 77, "tempMinC": 18, "tempMaxC": 25,
       "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
-      "description": "Reliable, fast, super-dry saison strain (can exceed listed attenuation); far less finicky than Dupont-type.",
-      "flavorNotes": "Peppery, citrus, bone dry.", "sourceUrl": "https://wyeastlab.com/strain/french-saison/"
+      "description": "Reliable, fast, super-dry saison strain — an \"absolute reliable monster attenuator\" that routinely exceeds its listed range. Far less finicky than the Dupont-type strains; a good pick for hoppy saisons, though less traditional in profile.",
+      "flavorNotes": "Leathery, big fruity nose, spicy — black pepper and cardamom.",
+      "sourceUrl": "https://wyeastlab.com/strain/french-saison/",
+      "attribution": "Strain specs from Wyeast; character notes from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
     },
     {
       "id": "wyeast-3724", "productCode": "3724", "name": "Belgian Saison",
@@ -97,8 +99,24 @@
       "styleTags": ["saison", "dupont", "phenolic", "slow", "stall-prone"],
       "attenuationMin": 76, "attenuationMax": 80, "tempMinF": 70, "tempMaxF": 95, "tempMinC": 21, "tempMaxC": 35,
       "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
-      "description": "The authentic Dupont saison strain; classic spicy character but famous for stalling — hold it warm (upper 80s–90s°F) to finish.",
-      "flavorNotes": "Spicy, peppery, citrus.", "sourceUrl": "https://wyeastlab.com/strain/belgian-saison/"
+      "description": "The authentic Dupont saison strain; phenols and fruit in balance, finishing beautifully dry. Famously stall-prone — the Maltose Falcons saison guide attributes this to backpressure sensitivity: ferment under sanitized foil rather than an airlock, and hold it warm to finish.",
+      "flavorNotes": "Phenolic, peppery, fruit in balance, very dry.",
+      "optimalPitchNote": "Chill wort to 62–64°F, hold at 65°F for ~3 days, then let it free-rise. Use sanitized foil instead of an airlock — backpressure is a major cause of stalls with this strain.",
+      "sourceUrl": "https://wyeastlab.com/strain/belgian-saison/",
+      "attribution": "Strain specs from Wyeast; fermentation guidance from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
+    },
+    {
+      "id": "wyeast-3726", "productCode": "3726", "name": "Farmhouse Ale",
+      "form": "liquid", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
+      "recommendedStyles": ["Saison", "Belgian Farmhouse Ale", "Grisette"],
+      "styleTags": ["saison", "farmhouse", "tropical", "estery"],
+      "attenuationMin": 74, "attenuationMax": 79, "tempMinF": 70, "tempMaxF": 84, "tempMinC": 21, "tempMaxC": 29,
+      "flocculation": "low", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
+      "description": "Farmhouse/saison strain with a distinctly tropical fruit character; attenuates well and finishes dry without the stalling reputation of the Dupont strain.",
+      "flavorNotes": "Tropical front nose — pineapple with cinnamon and clove; ginger on the finish.",
+      "optimalPitchNote": "Like other saison strains, ferment under sanitized foil rather than an airlock to avoid backpressure-related stalls.",
+      "sourceUrl": "https://wyeastlab.com/strain/farmhouse-ale/",
+      "attribution": "Strain specs from Wyeast; character notes from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
     },
     {
       "id": "wyeast-3787", "productCode": "3787", "name": "Trappist High Gravity",

@@ -48,7 +48,33 @@ export interface StrainPick {
   attenuation: number | null;
 }
 
-export default function CalculatorForm({ strains }: { strains?: StrainPick[] }) {
+export interface FermentablePick {
+  id: string;
+  name: string;
+  brand: string | null;
+  category: string;
+  ppg: number | null;
+  colorLovibond: number | null;
+  isGrain: boolean;
+}
+
+export interface HopPick {
+  id: string;
+  name: string;
+  alpha: number | null;
+  purpose: string | null;
+  country: string | null;
+}
+
+export default function CalculatorForm({
+  strains,
+  fermentableOptions,
+  hopOptions,
+}: {
+  strains?: StrainPick[];
+  fermentableOptions?: FermentablePick[];
+  hopOptions?: HopPick[];
+}) {
   const formId = useId();
   const [batchSizeGal, setBatchSizeGal] = useState("5");
   const [efficiencyPct, setEfficiencyPct] = useState("75");
@@ -142,6 +168,30 @@ export default function CalculatorForm({ strains }: { strains?: StrainPick[] }) 
                     onChange={(e) => updateRow(setFermentables, row.key, { name: e.target.value })}
                     style={inputStyle}
                   />
+                  {fermentableOptions && fermentableOptions.length > 0 && (
+                    <select
+                      aria-label="Pick a fermentable from the database"
+                      value=""
+                      onChange={(e) => {
+                        const pick = fermentableOptions.find((f) => f.id === e.target.value);
+                        if (!pick) return;
+                        updateRow(setFermentables, row.key, {
+                          name: pick.name,
+                          ppg: pick.ppg != null ? String(pick.ppg) : "",
+                          colorLovibond: pick.colorLovibond != null ? String(pick.colorLovibond) : "",
+                          isGrain: pick.isGrain,
+                        });
+                      }}
+                      style={{ ...inputStyle, marginTop: 2, fontSize: "0.75rem" }}
+                    >
+                      <option value="">↧ from database…</option>
+                      {fermentableOptions.map((f) => (
+                        <option key={f.id} value={f.id}>
+                          {f.name}{f.brand ? ` (${f.brand})` : ""}
+                        </option>
+                      ))}
+                    </select>
+                  )}
                 </td>
                 <td style={{ padding: "0.2rem" }}>
                   <input
@@ -215,6 +265,28 @@ export default function CalculatorForm({ strains }: { strains?: StrainPick[] }) 
                     onChange={(e) => updateRow(setHops, row.key, { name: e.target.value })}
                     style={inputStyle}
                   />
+                  {hopOptions && hopOptions.length > 0 && (
+                    <select
+                      aria-label="Pick a hop from the database"
+                      value=""
+                      onChange={(e) => {
+                        const pick = hopOptions.find((h) => h.id === e.target.value);
+                        if (!pick) return;
+                        updateRow(setHops, row.key, {
+                          name: pick.name,
+                          alphaPct: pick.alpha != null ? String(pick.alpha) : "",
+                        });
+                      }}
+                      style={{ ...inputStyle, marginTop: 2, fontSize: "0.75rem" }}
+                    >
+                      <option value="">↧ from database…</option>
+                      {hopOptions.map((h) => (
+                        <option key={h.id} value={h.id}>
+                          {h.name}{h.alpha != null ? ` · ${h.alpha}%` : ""}
+                        </option>
+                      ))}
+                    </select>
+                  )}
                 </td>
                 <td style={{ padding: "0.2rem" }}>
                   <input

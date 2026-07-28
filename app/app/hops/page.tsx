@@ -11,8 +11,13 @@ export default async function HopsPage() {
   return (
     <div>
       <h1>Hops</h1>
+      <div style={{ background: "var(--wh-bg-warm)", border: "1px solid var(--wh-border)", borderRadius: 8, padding: "0.9rem 1.1rem", margin: "0.75rem 0 1.25rem" }}>
+        <strong>New: the Hop Database.</strong> Varieties with alpha/beta acids, cohumulone, oil
+        composition, aroma descriptors, and substitutes.{" "}
+        <Link href="/hops/db">Browse the hop database →</Link>
+      </div>
       <p style={{ color: "var(--wh-text-light)" }}>
-        Every hop varietal used in the archive&apos;s recipes, with typical alpha acid as
+        Below: every hop varietal used in the archive&apos;s recipes, with typical alpha acid as
         brewers actually entered it.
       </p>
       <table>

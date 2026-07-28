@@ -77,8 +77,11 @@
       "styleTags": ["saison", "belgian", "phenolic", "slow"],
       "attenuationMin": 65, "attenuationMax": 75, "tempMinF": 68, "tempMaxF": 75, "tempMinC": 20, "tempMaxC": 24,
       "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
-      "description": "Dupont-type saison strain; earthy, spicy, notoriously slow — finish warm to fully attenuate.",
-      "flavorNotes": "Earthy, peppery, citrus.", "sourceUrl": "https://www.whitelabs.com/yeast-single?id=82"
+      "description": "Dupont-type saison strain; earthy, spicy, notoriously slow. Its character swings hard with temperature: fermented hot (~85°F) it turns deeply dry and peppery, while cooler fermentation keeps it fruit-forward and balanced.",
+      "flavorNotes": "Hot (~85°F): deep dry spice, black pepper, bone dry, slightly medicinal. Cooler: fruit and cherries with subdued spice.",
+      "optimalPitchNote": "Chill wort to 62–64°F, hold at 65°F for ~3 days, then ramp. Ferment under sanitized foil rather than an airlock — these strains are backpressure sensitive, a common cause of stalls.",
+      "sourceUrl": "https://www.whitelabs.com/yeast-single?id=82",
+      "attribution": "Strain specs from White Labs; temperature/character and anti-stall guidance from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
     },
     {
       "id": "white-labs-wlp800", "productCode": "WLP800", "name": "Pilsner Lager",
