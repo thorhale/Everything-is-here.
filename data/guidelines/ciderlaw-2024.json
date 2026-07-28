@@ -1,0 +1,273 @@
+{
+  "system": "CIDERLAW",
+  "year": 2024,
+  "title": "Cider & Perry: Appellations, Legal Standards & Traditional Methods",
+  "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+  "attribution": "Cider is the beverage where the gap between the legal definition and the traditional product is widest: a UK 'cider' need only be 35% juice, while a French AOC cider must be 100% juice from named varieties, keeved and bottle-conditioned. This edition compiles the binding standards — the French AOC/AOP decrees for Pays d'Auge, Cornouaille and Domfront, the Spanish DOP for Asturias and Euskal Sagardoa, UK duty law and the West Country and Three Counties PGIs, US TTB 27 CFR Part 24 and the hard-cider tax class, and Quebec's ice cider and fire cider PGIs — alongside the traditional methods (keeving, sidra natural, cryoconcentration) that those standards exist to protect. Numbers are legal thresholds, not judging targets. Cider gravities are given in specific gravity for calculator use; where a standard is written in grams per litre of sugar or in Brix, both are noted. Check the current instrument before relying on any of this commercially.",
+  "categories": [
+    {
+      "code": "D1",
+      "name": "France — AOC / AOP Cider & Perry",
+      "styles": [
+        {
+          "code": "D1A",
+          "name": "AOC Cidre Pays d'Auge",
+          "ogMin": 1.055, "ogMax": 1.075, "fgMin": 1.015, "fgMax": 1.035,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 4.5, "abvMax": 6,
+          "impression": "The benchmark Normandy cider: 100% juice, keeved, naturally sweet, bottle-conditioned, tannic and orchard-fruited.",
+          "ingredients": "Apples of the approved bittersweet and bittersharp cider varieties grown within the delimited Pays d'Auge zone in Calvados and Orne. No added sugar, no added water, no concentrate, no added yeast in the traditional practice.",
+          "comments": "The specification requires the juice to be fermented by its indigenous yeast and, characteristically, keeved (défécation) — a slow clarification in which pectin, calcium and low nitrogen combine to form a brown gel cap (chapeau brun) that is drawn off, stripping the juice of the nutrients the yeast needs. The starved fermentation stalls with substantial residual sugar, which then produces the natural carbonation in bottle. Sweetness classes are set by residual sugar: doux above roughly 42 g/L, demi-sec around 28–42 g/L, brut below about 28 g/L. Minimum orchard density and pressing standards also apply.",
+          "history": "AOC granted in 1996. The Pays d'Auge is the same delimited terroir that gives Calvados Pays d'Auge its own superior appellation and double distillation requirement.",
+          "examples": "Traditional bottle-conditioned Normandy ciders",
+          "tags": "france, AOC, keeved, bottle-conditioned, tannic, protected-name"
+        },
+        {
+          "code": "D1B",
+          "name": "AOP Cidre de Cornouaille",
+          "ogMin": 1.05, "ogMax": 1.07, "fgMin": 1.012, "fgMax": 1.03,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 4, "abvMax": 6,
+          "impression": "Brittany's protected cider: amber, bittersweet, cloudy-bright, from Breton varieties on Breton soil.",
+          "ingredients": "Approved Cornouaille-zone apple varieties, predominantly bittersweet; whole-juice fermentation with indigenous yeast; no sugar, water, concentrate or artificial carbonation.",
+          "comments": "AOC in 1996, converted to AOP under the EU scheme. As with Pays d'Auge, the method centres on keeving and bottle refermentation, and the finished cider is naturally sweet. Breton cider apple varieties — Kermerrien, Douce Moën, Guillevic, Marie Ménard — give a different balance from the Normandy set, generally a touch more austere and phenolic.",
+          "history": "Brittany's cider tradition is at least as old as Normandy's, and Guillevic-based Cidre de Bretagne IGP sits alongside the tighter Cornouaille appellation.",
+          "examples": "Bottle-conditioned Cornouaille ciders",
+          "tags": "france, AOP, brittany, keeved, bottle-conditioned, protected-name"
+        },
+        {
+          "code": "D1C",
+          "name": "AOC Poiré Domfront",
+          "ogMin": 1.045, "ogMax": 1.065, "fgMin": 1.015, "fgMax": 1.035,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 3.5, "abvMax": 5.5,
+          "impression": "Protected perry from ancient standard pear trees — delicate, floral, gently tannic, lower in alcohol than cider.",
+          "ingredients": "At least 40% Plant de Blanc pears, with the remainder from approved perry pear varieties, grown on high-standard trees within the Domfront zone in Orne.",
+          "comments": "AOC granted in 2002. The specification protects the tall standard perry pear trees of the Domfrontais, many over a century old and taking decades to come into full bearing — the economic reason perry orchards were being grubbed out before the appellation. Perry pears contain sorbitol, which is not fermentable by yeast and leaves a persistent sweetness independent of residual sugar; they also carry higher citric acid than apples. Keeved and bottle-conditioned like the ciders.",
+          "history": "One of very few legally protected perries anywhere; the Three Counties PGI in England is the other principal one.",
+          "examples": "Domfront poiré from the Orne bocage",
+          "tags": "france, AOC, perry, pear, keeved, protected-name"
+        },
+        {
+          "code": "D1D",
+          "name": "IGP Cidre de Normandie & Cidre de Bretagne",
+          "ogMin": 1.04, "ogMax": 1.07, "fgMin": 1.005, "fgMax": 1.035,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 2, "abvMax": 6,
+          "impression": "The broader regional tier: real regional fruit, but more latitude on method than the AOCs above.",
+          "ingredients": "Cider apples from the respective delimited regions; the specification permits some practices the AOCs forbid, and juice from concentrate is restricted rather than banned outright.",
+          "comments": "The IGP tier exists to give regional producers a protected name without the full AOC constraint on keeving, variety and yield. Practically, an IGP Normandy cider may be filtered, force-carbonated and pasteurised where an AOC Pays d'Auge may not. Also registered: Cidre Cotentin AOP, and the Calvados appellations (Calvados, Calvados Pays d'Auge, Calvados Domfrontais) which govern the distilled product made from these ciders — see the Spirits edition.",
+          "history": "France protected the wider regional names as cider production industrialised in the later 20th century.",
+          "examples": "Commercial regional French cider",
+          "tags": "france, IGP, regional, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "D2",
+      "name": "Spain & Basque Country",
+      "styles": [
+        {
+          "code": "D2A",
+          "name": "DOP Sidra de Asturias",
+          "ogMin": 1.045, "ogMax": 1.065, "fgMin": 0.998, "fgMax": 1.005,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 8,
+          "impression": "Bone-dry, still, funky, high-acid Asturian cider — the one that must be poured from a height to work at all.",
+          "ingredients": "Apples of the 76 approved Asturian varieties, classed as sweet, sharp, bittersharp, bittersweet and bitter, grown and pressed within Asturias. No added sugar or water.",
+          "comments": "DOP registered in 2005. Fermented dry by indigenous yeast in chestnut or stainless tanks and bottled flat, without added carbonation and usually without filtration — malolactic conversion is normal and contributes much of the character. The escanciado pour, from arm's length above the glass into a wide vessel, aerates the cider and briefly raises a spritz that the still bottle otherwise lacks; only a few centilitres are poured at a time and the last of the glass is discarded. Expect high volatile acidity and ethyl acetate relative to any other cider tradition — sought, not faulted, within limits. A separate sidra espumosa (sparkling) category exists within the DOP.",
+          "history": "Asturias claims the oldest continuous cider culture in Spain; the llagar and the sidrería are cultural institutions, and the tradition was inscribed on UNESCO's intangible heritage list in 2024.",
+          "examples": "Sidra natural from Asturian llagares",
+          "tags": "spain, DOP, dry, still, wild-fermented, high-acid, protected-name"
+        },
+        {
+          "code": "D2B",
+          "name": "DOP Euskal Sagardoa (Basque Cider)",
+          "ogMin": 1.045, "ogMax": 1.06, "fgMin": 0.997, "fgMax": 1.004,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 7,
+          "impression": "The Basque counterpart: dry, sharp, lightly funky, drunk straight from the barrel at the sagardotegi.",
+          "ingredients": "Apples of approved Basque varieties — Errezil, Txalaka, Goikoetxea, Moko and others — grown in the Basque Autonomous Community.",
+          "comments": "DOP registered in 2016. Requires 100% Basque fruit and production within the territory; sagardoa is fermented dry, unfiltered and still. The txotx ritual — the barrel tap opened and cider caught in the glass on a thin jet — serves the same aerating purpose as the Asturian escanciado. Higher malic acid than most cider traditions, with the tart, mineral, slightly acetic profile that pairs with the fixed sagardotegi menu of cod omelette, cod with peppers, and chuleta.",
+          "history": "Basque cider provisioned the whaling and cod fleets of the North Atlantic; the vitamin C in unpasteurised cider is credited with holding scurvy off on long voyages.",
+          "examples": "Sagardoa from Gipuzkoa sagardotegiak",
+          "tags": "spain, basque, DOP, dry, still, wild-fermented, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "D3",
+      "name": "United Kingdom & Ireland",
+      "styles": [
+        {
+          "code": "D3A",
+          "name": "UK 'Cider' for Duty Purposes",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 1.2, "abvMax": 8.5,
+          "impression": "The legal floor almost nobody expects: 35% juice, and the rest can be water and sugar.",
+          "ingredients": "Fermented apple or pear juice, from fresh juice or concentrate, at a minimum of 35% of the finished volume. Sugar, water, colouring within limits, and permitted additives make up the rest.",
+          "comments": "Under the Alcoholic Liquor Duties Act 1979 and HMRC Notice 162, a product below 35% juice is taxed as made-wine rather than cider — the 35% figure was set in 2010 to stop the lowest-juice products claiming the favourable cider rate. Cider duty applies between 1.2% and 8.5% ABV; above 8.5% the product is charged as made-wine. This is the reason a great deal of British supermarket cider sits at exactly 4.5% and contains a minority of apple. It is also why 'fruit ciders' with added flavouring frequently fall outside the cider class altogether. None of this constrains a producer making full-juice cider; it simply means the word alone tells the drinker very little.",
+          "history": "The 35% threshold and the 8.5% ceiling were both introduced as anti-avoidance measures rather than as quality standards.",
+          "examples": "Mainstream UK commercial cider",
+          "tags": "uk, taxation, minimum-juice, HMRC, reference"
+        },
+        {
+          "code": "D3B",
+          "name": "PGI West Country Traditional Cider / Perry",
+          "ogMin": 1.045, "ogMax": 1.07, "fgMin": 0.998, "fgMax": 1.02,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 3.5, "abvMax": 8.5,
+          "impression": "Full-juice West Country cider from true cider varieties — tannic, farmhouse, a world away from the duty minimum.",
+          "ingredients": "Fresh apple juice from cider apple varieties grown in the defined West Country counties, at a far higher juice content than the duty floor — the PGI specification sets a 90% minimum — with no concentrate.",
+          "comments": "The PGI protects the traditional product against the low-juice mainstream that shares its name. Fermentation is by indigenous or pitched yeast, often slow and cool, in oak or in tank; the defining flavour contribution is the tannin of true cider apples (Dabinett, Yarlington Mill, Kingston Black, Michelin, Somerset Redstreak) which are astringent and largely inedible fresh. Sold still or lightly sparkling, dry to medium. A parallel Three Counties registration covers Herefordshire, Gloucestershire and Worcestershire cider and perry.",
+          "history": "Registered under the EU quality schemes and retained in the UK scheme after 2021.",
+          "examples": "West Country farmhouse cider and traditional perry",
+          "tags": "uk, PGI, full-juice, tannic, farmhouse, protected-name"
+        },
+        {
+          "code": "D3C",
+          "name": "Traditional Scrumpy / Farmhouse Cider",
+          "ogMin": 1.05, "ogMax": 1.075, "fgMin": 0.996, "fgMax": 1.005,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5.5, "abvMax": 8.5,
+          "impression": "Still, cloudy, dry and rough-edged — the unprotected traditional product the PGIs were written around.",
+          "ingredients": "Whole-juice cider apples, wild-fermented, unfiltered, unpasteurised, no added sugar or water.",
+          "comments": "'Scrumpy' has no legal definition at all; it is a West Country word for rough farm cider. Characteristically fermented to complete dryness by the orchard's own yeast, left unfiltered, and sold still from the barrel. Expect noticeable acetic and phenolic character, occasional mousiness from Brettanomyces or lactic bacteria, and considerable batch variation. Farmgate producers below the 70 hL annual threshold have historically been exempt from cider duty registration in the UK — the exemption underpinning the small-scale tradition, though it has been subject to repeated review.",
+          "history": "The medieval and early-modern default drink of the cider counties, paid partly as agricultural wages until the truck system was outlawed.",
+          "examples": "Farmgate cider across Somerset, Devon, Herefordshire",
+          "tags": "uk, traditional, wild-fermented, dry, unfiltered, no-legal-definition"
+        },
+        {
+          "code": "D3D",
+          "name": "Irish Cider",
+          "ogMin": 1.045, "ogMax": 1.06, "fgMin": 1.0, "fgMax": 1.015,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 4, "abvMax": 6,
+          "impression": "Regulated by strength and duty like the UK, dominated commercially by a single large-scale style.",
+          "ingredients": "Fermented apple juice; concentrate and sugar permitted.",
+          "comments": "Irish Revenue charges cider and perry by ABV band with no compositional minimum comparable to the UK's 35% juice rule written into the duty definition in the same terms. The commercial category is defined in practice by Tipperary-grown dessert and culinary fruit rather than by tannic cider varieties, producing a sweeter, lower-tannin, higher-acid cider served over ice. A small full-juice artisan sector works with traditional varieties.",
+          "history": "Commercial Irish cider scaled rapidly from the 1930s around a single dominant producer.",
+          "examples": "Irish commercial and artisan cider",
+          "tags": "ireland, taxation, commercial, reference"
+        }
+      ]
+    },
+    {
+      "code": "D4",
+      "name": "North America",
+      "styles": [
+        {
+          "code": "D4A",
+          "name": "US 'Hard Cider' Tax Class (26 U.S.C. §5041)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 0.5, "abvMax": 8.5,
+          "impression": "A narrow tax box: apples and pears only, low carbonation, under 8.5% — step outside any one of those and it is taxed as wine.",
+          "ingredients": "Derived primarily from apples, apple juice concentrate, pears or pear juice concentrate and water. No fruit other than apple or pear, and no fruit flavouring other than apple or pear.",
+          "comments": "The hard cider tax rate applies to products of at least 0.5% and less than 8.5% ABV containing no more than 0.64 grams of carbon dioxide per 100 millilitres. The CO2 ceiling was raised from 0.392 g/100 mL by the PATH Act of 2015, which had until then pushed many naturally-conditioned ciders into the sparkling-wine rate — a tax cliff of several dollars per gallon that materially shaped what American cideries could afford to make. Add cherries, hops or spice and the product leaves the hard cider class for the wine rates. Production is regulated under 27 CFR Part 24 as a winery operation, not a brewery, so cideries hold winery permits.",
+          "history": "The 2015 amendment is the single most consequential piece of US cider legislation of the modern era.",
+          "examples": "US commercial hard cider",
+          "tags": "usa, TTB, taxation, carbonation-limit, reference"
+        },
+        {
+          "code": "D4B",
+          "name": "US Cider Labelling & Standards of Fill (27 CFR Part 24)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The labelling half: which ciders need federal label approval, and what they may claim.",
+          "ingredients": "Not prescribed.",
+          "comments": "Ciders at 7% ABV or above fall under the Federal Alcohol Administration Act and require a Certificate of Label Approval from the TTB; those below 7% are regulated for labelling by the FDA instead, which requires an ingredient list and nutrition labelling that TTB-regulated products do not — one reason many American ciders sit at exactly 6.9% or jump to 7%. Amelioration rules limit the addition of water and sugar; a cider ameliorated beyond the permitted limit cannot carry a varietal or appellation claim. State law adds a further layer, with several states defining cider separately for retail-licence purposes.",
+          "history": "The split jurisdiction at 7% is an artefact of the FAA Act's definition of 'wine' rather than a deliberate cider policy.",
+          "examples": "COLA-approved US ciders",
+          "tags": "usa, labelling, TTB, FDA, reference"
+        },
+        {
+          "code": "D4C",
+          "name": "PGI Cidre de Glace du Québec (Ice Cider)",
+          "ogMin": 1.13, "ogMax": 1.19, "fgMin": 1.05, "fgMax": 1.08,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 9, "abvMax": 13,
+          "impression": "Cold-concentrated apple juice fermented to a dense, sweet, high-acid dessert cider — Quebec's signature contribution.",
+          "ingredients": "Quebec-grown apples only. Concentration achieved solely by natural cold, by either cryoconcentration (juice pressed in autumn, then frozen outdoors over winter and the concentrate drawn off) or cryoextraction (apples left on the tree to freeze and pressed while frozen). No added sugar, water, alcohol, colouring or flavouring.",
+          "comments": "PGI granted 30 December 2014. The specification requires apples pressed within the harvest window running to 1 March, a pre-fermentation sugar concentration reached only through natural freezing — in practice around 30 °Brix or more — a finished alcohol of 9% to 13% ABV derived entirely from the apple's own sugars, and a residual sugar minimum of 130 g/L. Total acidity is high, typically 8–12 g/L as malic, which is what keeps a wine of that sweetness from cloying. Certification is audited by an independent body under CARTV.",
+          "history": "Developed in Quebec from the late 1980s in conscious analogy to ice wine, and now the province's most exported artisanal product.",
+          "examples": "Quebec ice cider from certified producers",
+          "tags": "canada, quebec, PGI, ice-cider, dessert, cryoconcentration, protected-name"
+        },
+        {
+          "code": "D4D",
+          "name": "PGI Cidre de Feu du Québec (Fire Cider)",
+          "ogMin": 1.11, "ogMax": 1.17, "fgMin": 1.04, "fgMax": 1.075,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 9, "abvMax": 13,
+          "impression": "The mirror image of ice cider — juice concentrated by heat rather than cold, giving caramel and cooked-fruit depth.",
+          "ingredients": "Quebec-grown apples; juice concentrated by evaporation over heat before fermentation. No added sugar, water or flavouring.",
+          "comments": "Recognised as a PGI in 2021, making Quebec the only jurisdiction with protected designations for both directions of natural concentration. Heat concentration drives Maillard and caramelisation reactions the freezing route cannot, so fire cider tends toward toffee, baked apple and dried fruit where ice cider stays fresh and bright. Alcohol and residual sugar thresholds parallel the ice cider standard.",
+          "history": "Adapted from the maple-syrup evaporator tradition already embedded in Quebec agriculture.",
+          "examples": "Quebec fire cider from certified producers",
+          "tags": "canada, quebec, PGI, dessert, thermal-concentration, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "D5",
+      "name": "Central Europe & Traditional Methods",
+      "styles": [
+        {
+          "code": "D5A",
+          "name": "Hessischer Apfelwein (PGI)",
+          "ogMin": 1.045, "ogMax": 1.055, "fgMin": 0.996, "fgMax": 1.002,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 7,
+          "impression": "Frankfurt's dry, sharp, still apple wine — served from the Bembel into the ribbed Geripptes glass.",
+          "ingredients": "Apples from the Hessen region, predominantly sharp culinary and traditional varieties rather than tannic cider apples; fermented fully dry. Historically Speierling (service tree) fruit was added for tannin and clarification.",
+          "comments": "Registered as a Protected Geographical Indication. German Apfelwein is defined in food law as a fermented apple product and is conventionally dry, still and pale, with high malic acid and very little tannin — closer to Asturian sidra in acidity than to English cider in structure, but without the funk. Sold as sauergespritzter (cut with sparkling water) or süßgespritzter (cut with lemonade) as a matter of course. Related registered names include Bayerischer Apfelwein and Schwäbischer Most.",
+          "history": "Frankfurt's apple wine culture is documented from the 16th century; the Sachsenhausen taverns are its centre.",
+          "examples": "Frankfurt Apfelwein from Sachsenhausen and the Hessen orchards",
+          "tags": "germany, PGI, dry, still, high-acid, protected-name"
+        },
+        {
+          "code": "D5B",
+          "name": "Austrian Most / Mostviertel Birnenmost",
+          "ogMin": 1.04, "ogMax": 1.055, "fgMin": 0.996, "fgMax": 1.004,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 4, "abvMax": 7,
+          "impression": "Lower Austria's farmhouse pear and apple most — dry, tart, lightly tannic, from vast standard-tree orchards.",
+          "ingredients": "Perry pears (Speckbirne, Dorschbirne, Landlbirne) and apples from the Mostviertel and Steiermark standard orchards.",
+          "comments": "'Most' in Austria and southern Germany denotes both unfermented juice and the fermented product depending on region and context, which causes endless confusion; Austrian Birnenmost is fermented. The Mostviertel holds one of Europe's largest concentrations of standard perry pear trees, and Mostbarone producer certification applies quality criteria above the legal minimum. Typically drier and more tannic than German Apfelwein.",
+          "history": "The Mostviertel takes its name from the drink; the Moststraße links the producing farms.",
+          "examples": "Mostviertel Birnenmost and Apfelmost",
+          "tags": "austria, perry, pear, dry, farmhouse, regional"
+        },
+        {
+          "code": "D5C",
+          "name": "Keeving / Défécation (Méthode Ancestrale)",
+          "ogMin": 1.05, "ogMax": 1.07, "fgMin": 1.015, "fgMax": 1.035,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 3, "abvMax": 6,
+          "impression": "The technique behind every naturally sweet French cider: starve the yeast, stall the ferment, condition in bottle.",
+          "ingredients": "Low-nitrogen juice from tannic cider apples; calcium (naturally present or added as calcium chloride) and pectin methylesterase, either endogenous or added, to form the gel.",
+          "comments": "Pectin methylesterase de-esterifies the juice's pectin; the freed carboxyl groups bind calcium and form a gel that floats on carbon dioxide from the earliest fermentation, carrying the nitrogenous nutrients and suspended solids into a brown cap. Racking the clear juice from beneath it leaves a fermentation so nutrient-poor it stalls with 30–50 g/L of sugar remaining, which then produces natural bottle carbonation without dosage. Requires genuinely low-nitrogen fruit — orchard fertilisation defeats it — and is temperature-sensitive, generally needing 4–10 °C. This is not a legal designation but it is the practice several of the appellations above require, and the reason a true AOC cider is sweet without any sugar being added.",
+          "history": "A Norman and Breton practice of long standing, adopted by English producers from the late 20th century.",
+          "examples": "AOC Pays d'Auge, AOP Cornouaille, keeved English ciders",
+          "tags": "method, keeving, naturally-sweet, bottle-conditioned, technique"
+        },
+        {
+          "code": "D5D",
+          "name": "Sidra Natural (Still, Wild, Unfiltered)",
+          "ogMin": 1.045, "ogMax": 1.06, "fgMin": 0.996, "fgMax": 1.003,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 5, "abvMax": 7,
+          "impression": "The Atlantic method: ferment dry, leave it alone, pour it hard.",
+          "ingredients": "Whole apple juice, indigenous yeast, no additions, no filtration, no forced carbonation.",
+          "comments": "The shared technical description behind Asturian sidra natural, Basque sagardoa and their Latin American descendants. Fermentation runs to complete dryness, malolactic conversion follows and softens the malic acid into lactic, and the cider is bottled flat and unfiltered. The high-pour serving ritual is functional: aeration volatilises esters and briefly raises a foam that carries aroma, and the cider flattens again within a minute, which is why only a small measure is poured at a time. Volatile acidity is higher than any other tradition would tolerate.",
+          "history": "Carried to Argentina, Chile and Mexico by Asturian and Basque emigration, where the tradition persists.",
+          "examples": "Asturian and Basque sidra natural; South American Asturian-diaspora cider",
+          "tags": "method, dry, still, wild-fermented, unfiltered, technique"
+        }
+      ]
+    }
+  ]
+}

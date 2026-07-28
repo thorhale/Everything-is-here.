@@ -1,0 +1,388 @@
+{
+  "system": "BEERLAW",
+  "year": 2024,
+  "title": "Beer: Legal Definitions, Purity Laws & Protected Designations",
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012R1151",
+  "attribution": "Competition style guidelines describe how a beer should taste. Beer *law* describes what may legally be called beer, and in some places dictates the recipe outright. This edition compiles binding legal texts rather than sensory targets: Germany's Vorläufiges Biergesetz (the modern Reinheitsgebot), the Kölsch Konvention, EU PDO/PGI/TSG registrations (Münchner Bier, Bayerisches Bier, České pivo, Oude Geuze, Kriek), Belgian royal decrees on lambic, US 26 U.S.C. §5052 and 27 CFR Parts 7 and 25, Japan's Liquor Tax Act as amended in 2018, Brazil's Decreto 6.871 and Mexico's NOM-199-SCFI. Numeric ranges are legal minima/maxima or the gravity bands used for taxation — not judging ranges — so a beer can be legal and still taste nothing like the archetype. Always check the current instrument for the jurisdiction you brew in; these are summaries, not legal advice.",
+  "categories": [
+    {
+      "code": "L1",
+      "name": "Germany — Purity Law & Tax Classes",
+      "styles": [
+        {
+          "code": "L1A",
+          "name": "Reinheitsgebot (Bavarian Purity Law, 1516)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The historical ancestor of every purity law: beer may contain only barley, hops and water.",
+          "ingredients": "Barley (Gerste), hops (Hopfen), water (Wasser). Yeast is absent from the text — Pasteur's work was three and a half centuries away, and fermentation was understood as spontaneous.",
+          "comments": "Promulgated by Duke Wilhelm IV of Bavaria at Ingolstadt on 23 April 1516, primarily as a price-fixing and food-security measure: restricting brewers to barley reserved wheat and rye for bread. It also capped the price of beer by the Mass. It applied only to Bavaria; the rest of what became Germany brewed with gruit, wheat, oats, spices and fruit for centuries afterwards. Wheat beer survived in Bavaria only as a ducal monopoly licensed outside the law.",
+          "history": "Extended nationally as a condition of Bavaria joining the German Empire in 1871 and the Weimar Republic in 1919; struck down as a trade barrier for imports by the European Court of Justice in 1987 (Case 178/84), which held Germany could not bar lawfully-produced beer from other member states. Domestic German brewers remained bound by the successor statute.",
+          "examples": "Cited on the label of most German breweries as a marketing claim (\"gebraut nach dem Reinheitsgebot\") rather than as the operative law, which is the 1993 statute below.",
+          "tags": "germany, historical, purity-law, superseded"
+        },
+        {
+          "code": "L1B",
+          "name": "Vorläufiges Biergesetz — Bottom-Fermented Beer",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The operative modern German purity law for lagers: malted grain, hops, yeast, water. Nothing else.",
+          "ingredients": "Malted barley (or other malted grain), hops, yeast and water only. Hop products (extract, pellets, isomerised extract) and technical processing aids that are removed are permitted; unmalted adjuncts and sugar are not.",
+          "comments": "Vorläufiges Biergesetz of 29 July 1993, §9(1). Because the statute reaches only bottom-fermented beer here, a German lager cannot legally contain rice, maize, sugar or unmalted barley for the domestic market. Filtration aids, water treatment salts, and gases are governed separately and do not count as ingredients.",
+          "history": "Succeeded the 1906 Biersteuergesetz, itself the national extension of the Bavarian 1516 order. The 'vorläufig' (provisional) in the title has outlived thirty years of provisionality.",
+          "examples": "Every domestically-sold German Pils, Helles, Märzen, Bock, Schwarzbier",
+          "tags": "germany, purity-law, bottom-fermented, in-force"
+        },
+        {
+          "code": "L1C",
+          "name": "Vorläufiges Biergesetz — Top-Fermented Beer",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The looser branch of the German purity law, which is why Weissbier, Kölsch and Berliner Weisse are lawful.",
+          "ingredients": "Malted grain of any kind (barley, wheat, rye, spelt, oats), hops, yeast, water — plus technically pure cane, beet or invert sugar, glucose, and colourings derived from those sugars.",
+          "comments": "Vorläufiges Biergesetz §9(2). The sugar allowance for top-fermented beer is what permits candi-style sugars and the colour adjustment used in some dark wheat beers. Unmalted grain remains prohibited, so a German-brewed witbier with raw wheat cannot be sold domestically as 'Bier' without the special permit below.",
+          "history": "The distinction dates to the 1906 imperial law, which took a pragmatic view of the northern German top-fermenting tradition that Bavaria's order had never covered.",
+          "examples": "Weissbier, Kölsch, Altbier, Berliner Weisse, Gose (by special permit)",
+          "tags": "germany, purity-law, top-fermented, in-force"
+        },
+        {
+          "code": "L1D",
+          "name": "Besondere Biere (§9(7) Special Permit)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The escape hatch: a case-by-case exemption allowing beers that would otherwise breach the purity law.",
+          "ingredients": "Whatever the granting state authority approves — historically fruit, spices, salt, coriander, herbs, and unmalted grain.",
+          "comments": "Vorläufiges Biergesetz §9(7)–(8) lets the competent Land authority permit 'besondere Biere' (special beers) and beers brewed for export or experiment. This is the legal basis on which Leipziger Gose and Berliner Weisse with additions, and the modern German craft sector's fruited and spiced beers, are produced. Beers made for export need not comply at all — German breweries routinely brew adjunct lagers for foreign markets.",
+          "history": "Formalised the ad-hoc dispensations that had kept Gose and other regional oddities alive through the 20th century.",
+          "examples": "Leipziger Gose, German-brewed craft fruit and spice beers",
+          "tags": "germany, exemption, specialty"
+        },
+        {
+          "code": "L1E",
+          "name": "German Beer Tax Classes by Stammwürze",
+          "ogMin": 1.008, "ogMax": 1.085, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "Not a style, but the gravity bands that decide German beer tax — and the reason 'Bock' means a number, not a flavour.",
+          "comments": "Biersteuergesetz bands by original gravity (Stammwürze, °P): Einfachbier 2.0–5.5 °P; Schankbier 7.0–11.0 °P; Vollbier 11.0–16.0 °P; Starkbier (which includes every legal Bock and Doppelbock) 16.0 °P and above. The 5.5–7.0 °P gap is a genuine discontinuity in the statute. Tax is assessed per hectolitre per degree Plato. This is why a German brewer calling a beer 'Bock' is making a claim about gravity that carries legal weight, unlike an American brewer using the same word.",
+          "history": "The Plato-based structure dates to the 19th-century Bavarian Malzaufschlag (malt levy) and survived the shift to a finished-beer excise.",
+          "ingredients": "1.008–1.085 in the OG columns is the approximate specific-gravity span of the bands (2 °P to ~20 °P), given for calculator convenience only.",
+          "tags": "germany, taxation, gravity-bands, reference"
+        },
+        {
+          "code": "L1F",
+          "name": "Kölsch (Kölsch-Konvention & PGI)",
+          "ogMin": 1.044, "ogMax": 1.05, "fgMin": 1.007, "fgMax": 1.011,
+          "ibuMin": 18, "ibuMax": 30, "srmMin": 3, "srmMax": 5,
+          "abvMin": 4.4, "abvMax": 5.2,
+          "impression": "A pale, bright, hop-accented, top-fermented Vollbier — legally definable only if brewed in and around Cologne.",
+          "ingredients": "Compliant with the Vorläufiges Biergesetz top-fermented rules; in practice Pilsner malt, sometimes a small wheat portion, German hops, and a top-fermenting yeast fermented cool and lagered.",
+          "comments": "The Kölsch-Konvention of 6 March 1986 is a private agreement among Cologne brewers, given teeth by registration as a Protected Geographical Indication in 1997. It requires the beer to be top-fermented, pale, filtered bright (blank), hop-accentuated, of Vollbier strength, and brewed within the defined Cologne region. Serving in the 0.2 L Stange is convention, not law. A beer brewed elsewhere may be described as 'Kölsch-style' but may not be sold as Kölsch in the EU/UK.",
+          "history": "The Konvention was drafted to stop the name being used by brewers outside the city after Kölsch's post-war revival; it named an initial closed list of signatory breweries.",
+          "examples": "Früh, Gaffel, Reissdorf, Sion, Päffgen",
+          "tags": "germany, PGI, cologne, top-fermented, protected-name"
+        },
+        {
+          "code": "L1G",
+          "name": "Münchner Bier & Bayerisches Bier (PGI)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "Geography as an ingredient: these names attach to place of brewing, not to a recipe.",
+          "ingredients": "Purity-law compliant; Münchner Bier additionally requires brewing water drawn from Munich's own deep wells within the city boundary.",
+          "comments": "Münchner Bier was registered as a Protected Geographical Indication in 1998 and covers the full range brewed by the qualifying Munich breweries — Helles, Hell Export, Weissbier, Märzen/Oktoberfestbier, Dunkel, Bock and Doppelbock — so long as the entire brewing process takes place in Munich. Bayerisches Bier (PGI, 2001) is the wider Bavarian equivalent. Related registrations include Bremer Bier, Dortmunder Bier, Kulmbacher Bier, Hofer Bier and Mainfranken Bier. Only the six Munich breweries within the boundary may pour at Oktoberfest.",
+          "history": "Registered under what is now Regulation (EU) No 1151/2012 on quality schemes for agricultural products and foodstuffs.",
+          "examples": "Augustiner, Hacker-Pschorr, Hofbräu, Löwenbräu, Paulaner, Spaten",
+          "tags": "germany, PGI, munich, bavaria, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "L2",
+      "name": "Czechia & Central Europe",
+      "styles": [
+        {
+          "code": "L2A",
+          "name": "České pivo (Czech Beer, PGI)",
+          "ogMin": 1.03, "ogMax": 1.062, "fgMin": 1.008, "fgMax": 1.019,
+          "ibuMin": 16, "ibuMax": 45, "srmMin": 3, "srmMax": 16,
+          "abvMin": 3, "abvMax": 6.2,
+          "impression": "The only major protected designation that prescribes not just place and ingredients but analytical outcomes — including a permitted diacetyl level.",
+          "ingredients": "Czech-grown barley malt of listed varieties, Czech hop varieties from the Žatec, Úštěk and Tršice regions (Saaz and its descendants), Czech brewing water, and bottom-fermenting yeast. Decoction mashing and open or traditional fermentation are part of the specification.",
+          "comments": "Registered as a Protected Geographical Indication in 2008 after a long negotiation with the European Commission. The specification is unusually quantitative: it fixes ranges for original gravity, apparent attenuation (notably *lower* than international lagers, leaving residual sweetness), bitterness, colour, polyphenol content and pH, and it permits a measurable diacetyl concentration that most brewing traditions would treat as a defect. The ranges above span the covered light and dark sub-types rather than describing one beer.",
+          "history": "Sought after EU accession to protect the domestic character of Czech lager against pressure to converge on international adjunct lager.",
+          "examples": "Pilsner Urquell, Budvar, Kozel, Bernard, Svijany",
+          "tags": "czechia, PGI, lager, decoction, protected-name"
+        },
+        {
+          "code": "L2B",
+          "name": "Czech Gravity Classes (Výčepní / Ležák / Speciál)",
+          "ogMin": 1.028, "ogMax": 1.06, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 2.5, "abvMax": 6.5,
+          "impression": "The Czech shorthand every pub uses: beers are named by their degrees, not their style.",
+          "comments": "Czech regulation classifies beer by original gravity in degrees Plato: lehké (light) under 8 °P; výčepní (draught/tap) 8–10 °P; ležák (lager) 11–12 °P; speciál 13 °P and above; plus porter at 18 °P or more. The familiar '10°' and '12°' on a Czech tap handle are these classes, not ABV. A '12' is the flagship pale lager of most breweries; a '10' is the everyday session beer. The class is a labelling requirement, so it is legally meaningful in a way that the English word 'lager' is not.",
+          "history": "Carries over from the Austro-Hungarian gravity-based malt taxation that also shaped the German bands.",
+          "ingredients": "No ingredient restriction attaches to the class itself; České pivo PGI status is separate.",
+          "examples": "Desítka (10°), Dvanáctka (12°)",
+          "tags": "czechia, gravity-bands, labelling, reference"
+        },
+        {
+          "code": "L2C",
+          "name": "Žatecký chmel (Saaz Hops, PDO)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "An ingredient with its own protected designation — the reason 'Saaz' on a hop packet is a claim about a valley, not a plant.",
+          "ingredients": "Hops of the Saaz (Žatecký poloraný červeňák) landrace grown in the delimited Žatec hop-growing region of north-west Bohemia.",
+          "comments": "Registered as a Protected Designation of Origin. Hops of the same genetic variety grown in the United States are lawfully sold as 'Saaz' or 'US Saaz' outside the EU but cannot carry the protected Czech designation, and analytically differ — usually higher alpha and cohumulone, different oil profile. Brewers substituting one for the other should expect a perceptible difference, which is why the substitution tables in this site treat them as related but distinct.",
+          "history": "The Žatec growing region's reputation predates the modern designation by several centuries; sealing and provenance marks were used from the 1880s.",
+          "examples": "Saaz used in Pilsner Urquell, Budvar",
+          "tags": "czechia, PDO, hops, ingredient, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "L3",
+      "name": "Belgium — Trappist, Abbey & Lambic",
+      "styles": [
+        {
+          "code": "L3A",
+          "name": "Authentic Trappist Product",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "Not a style at all — a certification about who brews, where, and what happens to the money.",
+          "ingredients": "Unrestricted. The Trappist designation says nothing about recipe; certified breweries make everything from 4.8% table beer to 12% quadrupels, and the label also covers cheese, bread and cosmetics.",
+          "comments": "The hexagonal Authentic Trappist Product logo is awarded by the International Trappist Association on three criteria: the beer is brewed within the walls of a Trappist abbey; production is carried out by or under the supervision of the monastic community; and the proceeds are directed to the community's needs and to social work, not to shareholder profit. Certification is withdrawn when a monastery ceases to meet them — as has happened more than once — so the roster changes over time and any list should be checked against the ITA's current one.",
+          "history": "The mark was introduced in 1997 after commercial brewers began using 'Trappist' as a descriptor; a Belgian court had earlier found the term protectable.",
+          "examples": "Historically Westmalle, Westvleteren, Rochefort, Orval, Chimay, Achel, La Trappe, Zundert, Tre Fontane, Spencer, Tynt Meadow, Mont des Cats and others — the certified list is not static",
+          "tags": "belgium, certification, monastic, protected-mark"
+        },
+        {
+          "code": "L3B",
+          "name": "Certified Belgian Abbey Beer",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "The commercial tier below Trappist: a real monastic link, but the beer is brewed by a business.",
+          "ingredients": "Unrestricted.",
+          "comments": "Administered by the Belgian Brewers federation. Requires a genuine link to an existing or historical abbey — a licence from the monastic body, or a documented historical connection — with the abbey retaining a say in marketing and receiving royalties that support it or its charitable works. It does not require monastic supervision of brewing, and the beer may be contract-brewed. 'Abbey-style' beers with no such link may use the flavour descriptor but not the certification mark.",
+          "history": "Created in 1999 to give commercial abbey brands a defensible standard after the Trappist mark closed off the stronger claim.",
+          "examples": "Leffe, Grimbergen, Affligem, Maredsous, St. Bernardus",
+          "tags": "belgium, certification, abbey, protected-mark"
+        },
+        {
+          "code": "L3C",
+          "name": "Lambic (Belgian Royal Decree)",
+          "ogMin": 1.044, "ogMax": 1.054, "fgMin": 1.0, "fgMax": 1.01,
+          "ibuMin": 0, "ibuMax": 10, "srmMin": 3, "srmMax": 7,
+          "abvMin": 5, "abvMax": 6.5,
+          "impression": "The rare case where spontaneous fermentation is written into statute.",
+          "ingredients": "At least 30% unmalted wheat alongside barley malt; aged hops used for their preservative effect rather than bitterness; no cultured yeast pitched — fermentation proceeds from the ambient microflora.",
+          "comments": "Belgian royal decree (1965, revised 1993) defines lambic as a spontaneously-fermented beer produced by the traditional method, sets the minimum unmalted wheat proportion at 30%, and requires maturation in wood. Measured IBU is near meaningless: aged hops contribute little isomerised bitterness, so the figures above reflect analysis rather than perceived bitterness, and the acidity comes from Brettanomyces, Pediococcus and Lactobacillus rather than from hops.",
+          "history": "Codified a Pajottenland and Zenne valley practice already centuries old; the decree was a defensive measure as sweetened and blended commercial products spread.",
+          "examples": "Cantillon, Boon, Girardin, Lindemans, De Troch (unblended lambic is rarely bottled)",
+          "tags": "belgium, spontaneous, wheat, wood-aged, sour, statute"
+        },
+        {
+          "code": "L3D",
+          "name": "Oude Geuze & Oude Kriek (TSG)",
+          "ogMin": 1.044, "ogMax": 1.054, "fgMin": 0.998, "fgMax": 1.006,
+          "ibuMin": 0, "ibuMax": 10, "srmMin": 4, "srmMax": 12,
+          "abvMin": 5, "abvMax": 8,
+          "impression": "Blended, bottle-refermented lambic — protected as a Traditional Speciality Guaranteed, where the word 'Oude' is the operative legal term.",
+          "ingredients": "Lambic only, of differing ages, blended; for Oude Kriek, sour cherries macerated in lambic. No sweetening, no artificial colour or flavour, no post-blend pasteurisation.",
+          "comments": "Registered as Traditional Specialities Guaranteed in 1997 for Gueuze/Geuze, Oude Geuze, Kriek and Oude Kriek. The specification requires a blend of lambics including a proportion of at least three years old, refermented in the bottle, and — critically — reserves 'Oude'/'Vieille' for the unsweetened traditional product. A bottle labelled simply 'Geuze' or 'Kriek' without 'Oude' may be sweetened, filtered and pasteurised, which is why the adjective is the single most useful word on a Belgian sour label. The HORAL producers' association applies further criteria to its members.",
+          "history": "The TSG scheme protects a method rather than a place, which suits a product defined by blending and ageing practice.",
+          "examples": "Oude Geuze Boon, 3 Fonteinen Oude Geuze, Cantillon Kriek",
+          "tags": "belgium, TSG, blended, bottle-conditioned, sour, protected-name"
+        }
+      ]
+    },
+    {
+      "code": "L4",
+      "name": "United Kingdom & Ireland",
+      "styles": [
+        {
+          "code": "L4A",
+          "name": "UK 'Beer' for Duty Purposes",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 1.2, "abvMax": null,
+          "impression": "No purity law, no recipe rules — Britain regulates beer almost entirely through alcoholic strength and tax.",
+          "ingredients": "Unrestricted. Sugar, maize, torrefied wheat, flaked barley and brewing syrups have been normal British practice since the mid-19th century, when the malt tax gave way to a beer duty and invert sugar became lawful.",
+          "comments": "Under the Alcoholic Liquor Duties Act 1979, and now the Alcohol Duty regime introduced in August 2023, beer is charged by strength: products at or below 1.2% ABV fall outside alcohol duty entirely, with banded rates above that and Draught Relief for qualifying containers of 20 litres or more. Small Producer Relief replaced Small Brewers Relief. There is no ingredient restriction and no protected recipe — 'IPA', 'stout' and 'bitter' carry no legal meaning in the UK.",
+          "history": "The Free Mash-Tun Act of 1880 abolished the malt tax and shifted duty to the wort's gravity, legalising sugar and adjuncts and shaping British brewing for a century.",
+          "examples": "Every UK-brewed beer",
+          "tags": "uk, taxation, no-purity-law, reference"
+        },
+        {
+          "code": "L4B",
+          "name": "Real Ale (CAMRA Definition)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "A private definition with more cultural force than most statutes: beer that finishes fermenting in the vessel it is served from.",
+          "ingredients": "Unrestricted, though finings (traditionally isinglass) are conventional; unfined and vegan-friendly cask beer is now common.",
+          "comments": "The Campaign for Real Ale defines real ale as beer brewed from traditional ingredients, matured by secondary fermentation in the container from which it is dispensed, and served without the use of extraneous carbon dioxide. Cask breathers — which blanket the beer with CO2 at atmospheric pressure to exclude oxygen — were long excluded and are now accepted by CAMRA. 'Real ale in a bottle' is the bottle-conditioned equivalent. None of this is law: it is a consumer organisation's standard that the trade adopted.",
+          "history": "CAMRA was founded in 1971 in reaction to keg bitter and national brewery consolidation; the definition is the campaign's central instrument.",
+          "examples": "Cask-conditioned bitter, mild, porter served by handpump or gravity",
+          "tags": "uk, cask, secondary-fermentation, consumer-standard"
+        },
+        {
+          "code": "L4C",
+          "name": "Irish Beer Excise & Descriptive Practice",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 0.5, "abvMax": null,
+          "impression": "Like Britain: strength-based duty, no compositional rules, and a national style protected only by reputation.",
+          "ingredients": "Unrestricted. Irish stout's characteristic grist — pale malt, flaked barley and roasted unmalted barley — is convention, not requirement, and the roasted barley portion is what distinguishes it from an English stout built on black malt.",
+          "comments": "Beer duty is charged by Revenue on alcohol content, with a relief scheme for small independent producers. There is no PGI for Irish stout or Irish red ale; 'Irish Whiskey' by contrast is tightly protected by a technical file (see the Spirits edition). A brewer anywhere in the world may lawfully label a beer 'Irish stout'.",
+          "history": "Ireland's excise structure descends from the same 19th-century UK gravity-based system, diverging after independence.",
+          "examples": "Guinness, Murphy's, Beamish, O'Hara's",
+          "tags": "ireland, taxation, no-purity-law, reference"
+        }
+      ]
+    },
+    {
+      "code": "L5",
+      "name": "United States",
+      "styles": [
+        {
+          "code": "L5A",
+          "name": "Beer (26 U.S.C. §5052 / 27 CFR 25.11)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 0.5, "abvMax": null,
+          "impression": "The federal tax definition: fermented from malt, or from a malt substitute, with hops, at half a percent or more.",
+          "ingredients": "Malt, or a substitute for malt, plus hops or hop products, water and yeast. 27 CFR 25.15 permits a broad range of adjuncts and processing materials.",
+          "comments": "For excise purposes beer is 'beer, ale, porter, stout, and other similar fermented beverages of any name or description containing one-half of one percent or more of alcohol by volume, brewed or produced from malt, wholly or in part, or from any substitute therefor.' A beer that contains no malted barley, or no hops — a sorghum ale, a gruit — falls outside the TTB's labelling authority under the Federal Alcohol Administration Act and is regulated by the FDA instead, which is why some gluten-free and unhopped products carry FDA nutrition labels. Federal law does not cap beer ABV, but several states do, and state definitions of 'beer' frequently diverge from the federal one.",
+          "history": "The 0.5% threshold is a direct survival of the Volstead Act's definition of an intoxicating beverage.",
+          "examples": "Every US-brewed beer sold interstate",
+          "tags": "usa, taxation, TTB, statute, reference"
+        },
+        {
+          "code": "L5B",
+          "name": "Malt Beverage Labelling (27 CFR Part 7)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "What a US label may and may not say — the closest thing America has to a style rulebook, and it barely mentions styles.",
+          "ingredients": "Not prescribed; the rules govern statements, not composition.",
+          "comments": "Part 7 requires a Certificate of Label Approval for most malt beverages, governs brand names and geographic claims, restricts health-related statements, and controls strength statements. Geographic terms that have become generic in the US — 'pilsner', 'india pale ale' — may be used freely; terms recognised as distinctive to a place may not be used misleadingly. There is no federal definition of 'IPA', 'craft', or 'session'. The Alcohol Facts / Serving Facts statement is optional but increasingly used. The Brewers Association's 'independent craft' seal is a trade-association mark with no legal force.",
+          "history": "Enacted under the Federal Alcohol Administration Act of 1935 as part of the post-Prohibition regulatory settlement.",
+          "examples": "COLA-approved US beer labels",
+          "tags": "usa, labelling, TTB, reference"
+        }
+      ]
+    },
+    {
+      "code": "L6",
+      "name": "Asia & Latin America",
+      "styles": [
+        {
+          "code": "L6A",
+          "name": "Japan — 'Beer' (Liquor Tax Act, as amended 2018)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": 20,
+          "impression": "A malt-percentage definition, loosened in 2018 — the change that made Japanese craft beer with fruit and spices legally 'beer'.",
+          "ingredients": "Malt exceeding 50% of the grist (lowered from the previous 67%), water and hops as principal ingredients, with permitted secondary ingredients — historically rice, maize, sorghum, potato, starch and sugar, extended in 2018 to fruit, spices, herbs and flowers — capped at 5% of the weight of the malt.",
+          "comments": "Before April 2018 a Japanese beer flavoured with orange peel or coriander was legally happōshu and taxed differently; the reform brought such beers into the 'beer' class and is the single most consequential legal change for Japanese craft brewing. The two-thirds malt threshold had also driven the industry to invent low-malt categories purely for tax reasons.",
+          "history": "The 1994 reduction of the minimum annual production volume for a brewing licence from 2,000 kL to 60 kL created the ji-biru (local beer) sector; the 2018 ingredient reform completed the opening.",
+          "examples": "Japanese-brewed pale lager, and post-2018 fruited and spiced craft beer",
+          "tags": "japan, taxation, malt-ratio, statute"
+        },
+        {
+          "code": "L6B",
+          "name": "Japan — Happōshu & 'New Genre' (Third Beer)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "Two entire product categories that exist for no reason other than tax arbitrage.",
+          "ingredients": "Happōshu: malt below the 'beer' threshold, or beer-like beverages using ingredients outside the permitted list. New genre: either no malt at all — pea protein, soy peptide and other bases — or happōshu blended with a distilled spirit.",
+          "comments": "Because Japanese excise was assessed by malt content, brewers engineered products just below each threshold. Happōshu (sparkling liquor) came first in the 1990s; 'third beer' or new genre followed when happōshu itself was taxed up. Japan is now unifying the rates for beer, happōshu and new genre in staged steps, which removes the incentive and is expected to shrink the low-malt categories.",
+          "history": "Suntory's Hop's (1994) is generally credited as the first modern happōshu.",
+          "examples": "Kirin Tanrei, Asahi Style Free, Suntory Kinmugi, Sapporo Mugi to Hop",
+          "tags": "japan, taxation, low-malt, category"
+        },
+        {
+          "code": "L6C",
+          "name": "Brazil — Cerveja (Decreto 6.871/2009)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "A malt-majority rule with a generous adjunct allowance — written for a market built on maize and rice.",
+          "ingredients": "Barley malt must constitute at least 55% of the extract; up to 45% may come from unmalted cereals (maize, rice, wheat, sorghum) and sugars. Hops or hop products, water, yeast.",
+          "comments": "Decreto nº 6.871/2009 implementing Lei 8.918/1994 sets the classification of beer by extract, colour and fermentation type, and requires labelling of the beer's classification. Beers using more than the permitted adjunct proportion must be labelled and sold under a different designation. The 2019 Belo Horizonte methanol-free contamination episodes prompted tighter supervision of brewery quality controls.",
+          "history": "Brazil's classification system predates its craft boom and has been repeatedly amended to accommodate it.",
+          "examples": "Brazilian-brewed pilsen, and the growing craft sector",
+          "tags": "brazil, statute, malt-ratio, adjunct"
+        },
+        {
+          "code": "L6D",
+          "name": "Mexico — Cerveza (NOM-199-SCFI)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 2, "abvMax": 12,
+          "impression": "A national standard covering composition, labelling and the alcohol range a product may claim.",
+          "ingredients": "Malted cereals — barley malt principally — with permitted adjuncts including maize and rice, hops or hop extracts, water and yeast.",
+          "comments": "NOM-199-SCFI-2017 sets out the specifications and test methods for alcoholic beverages including beer, covering denomination, alcohol content declaration, and labelling. The Mexican adjunct lager tradition, built on maize, is the product of a market shaped by Central European immigrant brewers working with local grain rather than of any legal constraint.",
+          "history": "Mexican brewing carries a strong Austro-Bavarian inheritance from the 19th-century Habsburg period and later German immigration, adapted to maize.",
+          "examples": "Mexican-brewed lager and the domestic craft sector",
+          "tags": "mexico, NOM, statute, reference"
+        }
+      ]
+    },
+    {
+      "code": "L7",
+      "name": "Cross-Cutting Claims",
+      "styles": [
+        {
+          "code": "L7A",
+          "name": "Gluten-Free Beer (Codex / FDA / EU 20 ppm)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "A claim with a hard number behind it — and a regulatory split over enzyme-treated barley beer that matters to coeliac drinkers.",
+          "ingredients": "Either naturally gluten-free bases (sorghum, millet, rice, buckwheat, maize) or barley beer treated with a prolyl endopeptidase to hydrolyse gluten peptides.",
+          "comments": "Codex Alimentarius, EU Regulation 828/2014 and the US FDA all set 20 mg/kg (20 ppm) as the ceiling for a gluten-free claim. The dispute is over measurement: the standard R5 ELISA does not reliably quantify the *fragments* left by enzyme treatment, so a treated barley beer may test below 20 ppm while still containing immunoreactive peptides. The FDA therefore does not permit an unqualified 'gluten-free' claim for beers made from gluten-containing grain and treated to remove it; such beers are labelled 'crafted to remove gluten' in the US, while the EU and Australia have taken different positions. Homebrewers should not treat an enzyme-treated beer as safe for a coeliac drinker.",
+          "history": "Clarilex/Brewers Clarex-type enzymes were adopted for haze reduction; the gluten-reduction effect was a by-product that outran the analytical methods.",
+          "examples": "Sorghum-based gluten-free beers; 'crafted to remove gluten' barley beers",
+          "tags": "labelling, gluten, health-claim, cross-jurisdiction"
+        },
+        {
+          "code": "L7B",
+          "name": "Non-Alcoholic & Low-Alcohol Thresholds",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": 0, "abvMax": 1.2,
+          "impression": "The same bottle can be 'non-alcoholic' in one country and 'low-alcohol' in the next.",
+          "ingredients": "Unrestricted; produced by arrested fermentation, vacuum distillation, reverse osmosis, or maltose-negative yeasts such as Saccharomycodes ludwigii.",
+          "comments": "The US permits 'non-alcoholic' for malt beverages below 0.5% ABV but reserves 'alcohol-free' for 0.0%; the UK's guidance sets alcohol-free at 0.05% or below, de-alcoholised at 0.5% or below, and low-alcohol at 1.2% or below; Germany allows 'alkoholfrei' up to 0.5%; Spain and several other EU states use 1.0%. Because ordinary bread, kombucha and fruit juice can exceed 0.5%, the thresholds are pragmatic rather than absolute. Brewers should note that residual fermentables in a de-alcoholised beer make it microbiologically fragile and usually require pasteurisation or sterile filtration.",
+          "history": "The category was a Prohibition-era survival before its modern commercial revival.",
+          "examples": "Athletic Brewing, Erdinger Alkoholfrei, Guinness 0.0, Lucky Saint",
+          "tags": "labelling, non-alcoholic, cross-jurisdiction, threshold"
+        },
+        {
+          "code": "L7C",
+          "name": "Organic Beer (NOP / EU 2018/848)",
+          "ogMin": null, "ogMax": null, "fgMin": null, "fgMax": null,
+          "ibuMin": null, "ibuMax": null, "srmMin": null, "srmMax": null,
+          "abvMin": null, "abvMax": null,
+          "impression": "A supply-chain certification rather than a recipe rule — and hops are the usual sticking point.",
+          "ingredients": "Certified organic malt, hops and adjuncts; permitted processing aids only.",
+          "comments": "Under the USDA National Organic Program, '100% organic' requires all ingredients certified; 'organic' requires at least 95% by weight, with the remainder from the National List; 'made with organic ingredients' requires at least 70%. EU Regulation 2018/848 operates comparably. Organic hops were on the US National List as a permitted non-organic exception until 2013, after which organic beer required organic hops — a change that materially constrained the category, since organic hop acreage is small and variety choice limited.",
+          "history": "The 2013 removal of the hop exception is the defining event in US organic brewing.",
+          "examples": "Certified organic beers under NOP or EU marks",
+          "tags": "labelling, organic, certification, cross-jurisdiction"
+        }
+      ]
+    }
+  ]
+}

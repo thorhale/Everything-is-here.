@@ -33,6 +33,8 @@ export interface CatalogHop {
 export interface StyleTargets {
   name: string;
   categoryName?: string;
+  /** Guideline tags, if any — used to spot entries that aren't brewable styles. */
+  tags?: string | null;
   ogMin: number | null;
   ogMax: number | null;
   fgMin: number | null;
@@ -72,6 +74,33 @@ export interface RecipeSkeleton {
   hops: BuiltHop[];
   targets: { og: number | null; fg: number | null; ibu: number | null; srm: number | null; abv: number | null };
   computed: { og: number; fg: number; ibu: number; srm: number; abv: number };
+}
+
+// Entries whose fermentable is fruit, honey, rice or cane rather than malt, and
+// entries that are reference material rather than a style at all. Braggot is
+// deliberately absent — it really is part malt.
+const NON_MALT: [RegExp, string][] = [
+  [/\bcider|\bperry\b|sidra|sagardo|apfelwein|poir[ée]|apple ?wine|scrumpy|keev/i, "cider or perry"],
+  [/\bmead\b|melomel|cyser|pyment|metheglin|hydromel|kij[oō]|honey wine|\btej\b/i, "honey wine"],
+  [/sake|seishu|junmai|ginjo|honjozo|doburoku|amazake|nihonshu|makgeolli|huangjiu|\bsoju\b/i, "a rice ferment"],
+  [/whisk|bourbon|\brum\b|rhum|cacha[çc]a|tequila|mezcal|brandy|cognac|armagnac|calvados|\bgin\b|vodka|absinthe|aquavit|liqueur|baijiu|shochu|moonshine|eau-de-vie|grappa|pisco|raicilla|bacanora|arrack/i, "a distilled spirit"],
+  [/\bwine\b|vinifera|riesling|chardonnay|cabernet|merlot|pinot|syrah|zinfandel|muscat|port\b|sherry|madeira|marsala|vermouth|ros[ée]\b/i, "wine"],
+  [/pulque|tepache|palm wine|kumis|airag/i, "a traditional ferment"],
+];
+
+/** Returns a reason string when a grain bill would be meaningless, else null. */
+function classifyNonMalt(style: StyleTargets): string | null {
+  const tags = style.tags ?? "";
+  if (/\breference\b/.test(tags)) {
+    return "This entry is reference material — a tax band, a labelling rule, a protected designation — rather than a brewable style, so there is nothing to size a grain bill against.";
+  }
+  const s = `${style.name} ${style.categoryName ?? ""}`;
+  for (const [re, what] of NON_MALT) {
+    if (re.test(s)) {
+      return `This is ${what}, not a malt beverage — the gravity comes from fruit, honey, rice or cane rather than from a mash, so the grain-bill builder doesn't apply.`;
+    }
+  }
+  return null;
 }
 
 const mid = (a: number | null, b: number | null): number | null => {
@@ -222,6 +251,14 @@ export function buildRecipeSkeleton(
   if (og == null || og <= 1) {
     return { ...empty, reason: "This guideline doesn't publish a numeric gravity target for this style, so a grain bill can't be sized automatically." };
   }
+
+  // Several editions carry entries that have a real gravity range but are not
+  // brewed from malt at all — BJCP's cider categories, the sake designations,
+  // the cider appellations — and a few that are reference material rather than
+  // a style (tax bands, labelling rules). A malt grist and a hop schedule would
+  // be nonsense for any of them, so bail before the template lookup.
+  const nonMalt = classifyNonMalt(style);
+  if (nonMalt) return { ...empty, reason: nonMalt };
 
   const template = detectTemplate(style, srm);
   empty.family = template.family;

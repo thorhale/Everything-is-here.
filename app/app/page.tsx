@@ -79,15 +79,18 @@ export default async function HomePage() {
             ["Fermentables", "/fermentables/db"],
             ["Hops", "/hops/db"],
             ["Water", "/water"],
+            ["Download it all", "/data-download"],
           ]}
         />
         <Card
           title="Style guidelines"
           href="/guidelines"
-          blurb="BJCP, World Beer Cup/GABF and wine guidelines — plus the legal standards of identity for spirits, because Scotch and bourbon have statutes rather than style sheets. Every style generates a starting recipe."
+          blurb="BJCP, World Beer Cup/GABF and wine guidelines — plus the law, because Scotch, sake and AOC cider have statutes rather than style sheets, and German beer has both. Every brewable style generates a starting recipe."
           links={[
             ["All guidelines", "/guidelines"],
             ["Spirits law", "/guidelines/spirits-2024"],
+            ["Beer law", "/guidelines/beerlaw-2024"],
+            ["Sake", "/guidelines/sake-2024"],
           ]}
         />
         <Card
