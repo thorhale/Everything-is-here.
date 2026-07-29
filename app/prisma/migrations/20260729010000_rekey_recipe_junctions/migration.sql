@@ -22,7 +22,7 @@ BEGIN
   IF EXISTS (SELECT 1 FROM pg_constraint
              WHERE conname = 'RecipeFermentable_pkey'
                AND conrelid = '"RecipeFermentable"'::regclass
-               AND (SELECT array_agg(attname ORDER BY attnum)
+               AND (SELECT array_agg(attname::text ORDER BY attnum)
                     FROM pg_attribute
                     WHERE attrelid = conrelid AND attnum = ANY(conkey)) = ARRAY['id']) THEN
     ALTER TABLE "RecipeFermentable" DROP CONSTRAINT "RecipeFermentable_pkey";
@@ -35,7 +35,7 @@ BEGIN
   IF EXISTS (SELECT 1 FROM pg_constraint
              WHERE conname = 'RecipeHop_pkey'
                AND conrelid = '"RecipeHop"'::regclass
-               AND (SELECT array_agg(attname ORDER BY attnum)
+               AND (SELECT array_agg(attname::text ORDER BY attnum)
                     FROM pg_attribute
                     WHERE attrelid = conrelid AND attnum = ANY(conkey)) = ARRAY['id']) THEN
     ALTER TABLE "RecipeHop" DROP CONSTRAINT "RecipeHop_pkey";
