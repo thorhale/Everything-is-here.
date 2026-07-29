@@ -18,8 +18,8 @@
   "hops": 99,
   "waterProfiles": 44,
   "additives": 72,
-  "legalStandardEditions": 5,
-  "legalStandardEntries": 118
+  "legalStandardEditions": 14,
+  "legalStandardEntries": 166
  },
  "yeastLabs": [
   {
@@ -20723,9 +20723,191 @@
  ],
  "legalStandards": [
   {
+   "system": "AFRICA",
+   "year": 2023,
+   "title": "Africa: Indigenous Grain Beers, Honey Wine & Palm Wine",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Umqombothi",
+   "attribution": "Africa's indigenous ferments — sorghum and millet opaque beers, Ethiopian honey wine, palm wine — predate and stand apart from European brewing traditions. Most have no statutory definition; a few (Ethiopian tej, industrial sorghum beer) are commercially produced. Documented from ethnographic and food-science sources; values are typical.",
+   "categories": [
+    {
+     "code": "AF1",
+     "name": "Sorghum & Millet Opaque Beers",
+     "beverage": "beer",
+     "styles": [
+      {
+       "code": "AF1A",
+       "name": "Umqombothi / Sorghum Beer",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 4,
+       "impression": "Southern Africa's traditional beer: thick, sour, opaque and still actively fermenting when drunk — pinkish-brown, gritty, and sipped from a shared clay pot.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Central to Xhosa and Zulu ritual — weddings, funerals, ancestral ceremonies. The lactic sourness and low alcohol are defining; it is as much food as drink. Industrially produced as 'Chibuku' shake-shake in cartons.",
+       "history": null,
+       "ingredients": "Maize meal and sorghum malt, soured by lactic fermentation then alcohol-fermented by wild yeast. Left unfiltered and drunk live.",
+       "comparison": null,
+       "examples": "Umqombothi, Chibuku, Utywala",
+       "tags": "africa, sorghum-beer, opaque, sour, traditional"
+      },
+      {
+       "code": "AF1B",
+       "name": "Pito / Burukutu / Dolo",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 5,
+       "impression": "West Africa's sorghum and millet beers — cloudy, tart and dark, brewed by (usually women) and sold fresh at markets.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Pito (Ghana, Nigeria), dolo (Burkina Faso), burukutu (Nigeria). Drunk warm and fresh from calabashes within a day or two.",
+       "history": null,
+       "ingredients": "Malted sorghum or millet, mashed, soured and fermented with wild yeast and a pitched portion of a previous brew.",
+       "comparison": null,
+       "examples": "Pito (Ghana), Dolo (Burkina Faso)",
+       "tags": "africa, sorghum, millet, pito, dolo, traditional"
+      },
+      {
+       "code": "AF1C",
+       "name": "Tella / Injera-Grain Beer (ጠላ)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 6,
+       "impression": "Ethiopia's homebrewed grain beer — smoky, tart and dark, flavoured with gesho (buckthorn) as the bittering agent in place of hops.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Gesho is Africa's closest analogue to hops — a bittering, preserving plant. Tella is the everyday house beer; a stronger, filtered version exists for guests.",
+       "history": null,
+       "ingredients": "Roasted barley, wheat or other grain with gesho (Rhamnus prinoides) leaves and twigs, fermented in a clay pot; the vessel is often smoked with olivewood.",
+       "comparison": null,
+       "examples": "Tella, Korefe",
+       "tags": "ethiopia, tella, gesho, grain-beer, traditional"
+      }
+     ]
+    },
+    {
+     "code": "AF2",
+     "name": "Honey Wine",
+     "beverage": "mead",
+     "styles": [
+      {
+       "code": "AF2A",
+       "name": "Tej / Berz (ጠጅ)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 7,
+       "abvMax": 14,
+       "impression": "Ethiopian and Eritrean honey wine — sweet, cloudy, deceptively strong, and bittered with gesho. The ancestral drink of the Ethiopian court.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Served in a rounded flask (berele). Strength varies wildly with fermentation time and honey ratio. A defining feature is the gesho bittering, which links it to tella.",
+       "history": null,
+       "ingredients": "Honey and water fermented with wild yeast, bittered with gesho (Rhamnus prinoides). Berz is the young, near-non-alcoholic stage.",
+       "comparison": null,
+       "examples": "Tej (served in tej bet houses)",
+       "tags": "ethiopia, tej, honey-wine, gesho, mead"
+      }
+     ]
+    },
+    {
+     "code": "AF3",
+     "name": "Palm Wine",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "AF3A",
+       "name": "Palm Wine (Emu / Nsafufuo / Matango)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 5,
+       "impression": "Tapped palm sap that ferments spontaneously into a sweet, effervescent, milky wine within hours — sweeter fresh, sourer and stronger as the day goes on.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Drunk across West and Central Africa (and the tropics worldwide). Central to ceremony — marriage, naming, libation. Distilled it becomes ogogoro / akpeteshie.",
+       "history": null,
+       "ingredients": "Sap of oil, raffia or coconut palms, collected from the felled or standing tree; wild yeast ferments it immediately.",
+       "comparison": null,
+       "examples": "Emu (Nigeria), Matango (Cameroon), Nsafufuo (Ghana)",
+       "tags": "africa, palm-wine, tapped, traditional"
+      },
+      {
+       "code": "AF3B",
+       "name": "Akpeteshie / Ogogoro (Distilled Palm Spirit)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 40,
+       "abvMax": 60,
+       "impression": "West Africa's distilled palm spirit — fiery, raw and potent, long outlawed under colonial rule and now a proud local spirit.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Akpeteshie (Ghana), ogogoro (Nigeria). Banned by colonial authorities protecting imported liquor; became a symbol of independence.",
+       "history": null,
+       "ingredients": "Fermented palm wine, pot-distilled.",
+       "comparison": null,
+       "examples": "Akpeteshie, Ogogoro",
+       "tags": "africa, palm-spirit, akpeteshie, ogogoro, distilled"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "system": "BEERLAW",
-   "year": 2024,
+   "year": 2023,
    "title": "Beer: Legal Definitions, Purity Laws & Protected Designations",
+   "sourceType": "legal-standard",
    "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012R1151",
    "attribution": "Competition style guidelines describe how a beer should taste. Beer *law* describes what may legally be called beer, and in some places dictates the recipe outright. This edition compiles binding legal texts rather than sensory targets: Germany's Vorläufiges Biergesetz (the modern Reinheitsgebot), the Kölsch Konvention, EU PDO/PGI/TSG registrations (Münchner Bier, Bayerisches Bier, České pivo, Oude Geuze, Kriek), Belgian royal decrees on lambic, US 26 U.S.C. §5052 and 27 CFR Parts 7 and 25, Japan's Liquor Tax Act as amended in 2018, Brazil's Decreto 6.871 and Mexico's NOM-199-SCFI. Numeric ranges are legal minima/maxima or the gravity bands used for taxation — not judging ranges — so a beer can be legal and still taste nothing like the archetype. Always check the current instrument for the jurisdiction you brew in; these are summaries, not legal advice.",
    "categories": [
@@ -20872,7 +21054,8 @@
        "examples": "Augustiner, Hacker-Pschorr, Hofbräu, Löwenbräu, Paulaner, Spaten",
        "tags": "germany, PGI, munich, bavaria, protected-name"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L2",
@@ -20938,7 +21121,8 @@
        "examples": "Saaz used in Pilsner Urquell, Budvar",
        "tags": "czechia, PDO, hops, ingredient, protected-name"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L3",
@@ -21024,7 +21208,8 @@
        "examples": "Oude Geuze Boon, 3 Fonteinen Oude Geuze, Cantillon Kriek",
        "tags": "belgium, TSG, blended, bottle-conditioned, sour, protected-name"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L4",
@@ -21090,7 +21275,8 @@
        "examples": "Guinness, Murphy's, Beamish, O'Hara's",
        "tags": "ireland, taxation, no-purity-law, reference"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L5",
@@ -21136,7 +21322,8 @@
        "examples": "COLA-approved US beer labels",
        "tags": "usa, labelling, TTB, reference"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L6",
@@ -21222,7 +21409,8 @@
        "examples": "Mexican-brewed lager and the domestic craft sector",
        "tags": "mexico, NOM, statute, reference"
       }
-     ]
+     ],
+     "beverage": "beer"
     },
     {
      "code": "L7",
@@ -21288,14 +21476,346 @@
        "examples": "Certified organic beers under NOP or EU marks",
        "tags": "labelling, organic, certification, cross-jurisdiction"
       }
+     ],
+     "beverage": "beer"
+    }
+   ]
+  },
+  {
+   "system": "CENTRALASIA",
+   "year": 2023,
+   "title": "Mongolia & Central Asia: Milk Ferments and Their Spirits",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Airag",
+   "attribution": "The steppe's defining drinks are fermented from mare's and other animal milk — a lineage unique among the world's alcohols. Documented from ethnographic and dairy-science sources; there is no judging guideline for any of them. Values are typical.",
+   "categories": [
+    {
+     "code": "CA1",
+     "name": "Fermented Milk",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "CA1A",
+       "name": "Airag / Kumis (айраг / кумыс)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 1,
+       "abvMax": 3,
+       "impression": "Fermented mare's milk — the national drink of Mongolia and the Central Asian steppe. Sour, fizzy, faintly alcoholic and thin, with a sharp dairy tang.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Both lactic-acid bacteria and yeast work at once, so it is simultaneously soured and lightly alcoholic. A pillar of nomadic nutrition; drunk in large quantities in summer. Kumis is the Turkic/Kazakh name, airag the Mongolian.",
+       "history": null,
+       "ingredients": "Raw mare's milk, fermented by a mixed lactic-and-yeast culture in a leather bag (khokhuur) or vat, churned thousands of times to aerate. Mare's milk is uniquely high in the lactose the yeast ferment.",
+       "comparison": null,
+       "examples": "Mongolian airag, Kazakh/Kyrgyz kymyz",
+       "tags": "mongolia, airag, kumis, mares-milk, steppe"
+      },
+      {
+       "code": "CA1B",
+       "name": "Tarasun / Milk-Whey Beers",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 5,
+       "impression": "Regional cow- or yak-milk ferments of Buryatia and the wider steppe, sometimes stronger than airag.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Where mares are scarce, other animals' milk is fermented similarly. Shubat (camel) is prized in Kazakhstan and Turkmenistan.",
+       "history": null,
+       "ingredients": "Cow, yak or camel milk fermented with mixed cultures; camel-milk shubat is the arid-zone equivalent.",
+       "comparison": null,
+       "examples": "Shubat (camel), Buryat tarasun",
+       "tags": "centralasia, milk-ferment, shubat, traditional"
+      }
+     ]
+    },
+    {
+     "code": "CA2",
+     "name": "Distilled Milk Liquor",
+     "beverage": "spirit",
+     "styles": [
+      {
+       "code": "CA2A",
+       "name": "Arkhi / Nermel (архи)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 10,
+       "abvMax": 20,
+       "impression": "Mongolia's distilled milk liquor — airag redistilled in a simple stovetop still into a clear, low-strength, faintly cheesy spirit.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "'Arkhi' is now the general Mongolian word for any liquor, but nermel arkhi ('distilled arkhi') specifically means the traditional milk distillate. Central to hospitality and ritual; the first drops are offered to the sky and hearth.",
+       "history": null,
+       "ingredients": "Airag (fermented milk), distilled in a household still (the shar arkhi apparatus) over the hearth, often several times.",
+       "comparison": null,
+       "examples": "Nermel arkhi (home-distilled), shimiin arkhi",
+       "tags": "mongolia, arkhi, milk-liquor, distilled, traditional"
+      }
+     ]
+    },
+    {
+     "code": "CA3",
+     "name": "Grain & Bread Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "CA3A",
+       "name": "Boza / Bozo",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 4,
+       "impression": "A thick, sweet-sour fermented cereal drink of Central Asia, the Caucasus and the Balkans — porridge-like, low in alcohol, drunk as food.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Ranges from essentially non-alcoholic (Turkish boza) to mildly alcoholic. One of the oldest cereal ferments, spanning a huge geography.",
+       "history": null,
+       "ingredients": "Millet, maize, wheat or other grain, cooked to a gruel and fermented with lactic bacteria and yeast.",
+       "comparison": null,
+       "examples": "Turkish boza, Central Asian bozo",
+       "tags": "centralasia, boza, cereal, low-alcohol, traditional"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "system": "CHINA",
+   "year": 2021,
+   "title": "China: Baijiu Aroma Types & Huangjiu (GB National Standards)",
+   "sourceType": "legal-standard",
+   "sourceUrl": "https://www.chinesestandard.net/",
+   "attribution": "China classifies its two great indigenous drink families by binding GB national standards. Baijiu — the world's most-consumed spirit by volume — is defined by GB/T 15109 (terminology) and a family of aroma-type standards (xiangxing) that key the spirit to its fermentation vessel, grain and qū (starter). Huangjiu, the ancient rice/millet wine, is defined by GB/T 13662 and, for Shaoxing, a protected geographical-indication standard. Figures are typical commercial values; the aroma-type definitions are the legally meaningful classification. Compiled from the GB standards and industry sources.",
+   "categories": [
+    {
+     "code": "CN1",
+     "name": "Baijiu — Major Aroma Types (香型)",
+     "beverage": "spirit",
+     "styles": [
+      {
+       "code": "CN1A",
+       "name": "Nongxiang / Strong Aroma (浓香型)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 38,
+       "abvMax": 68,
+       "impression": "The dominant baijiu style by volume: rich, sweet-savoury, pineapple-and-overripe-fruit esters over a mellow grain base.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "The mud-pit fermentation is continuous and the oldest pits are prized — some in use for centuries. Ethyl hexanoate is the marker compound. Luzhou Laojiao and Wuliangye are the archetypes.",
+       "history": null,
+       "ingredients": "Sorghum (and often a five-grain blend), fermented in aged mud pits (jiaochi) whose microbial community is the key to the ethyl caproate that defines the aroma. Medium-temperature Daqu wheat starter.",
+       "comparison": null,
+       "examples": "Wuliangye, Luzhou Laojiao, Jiannanchun",
+       "tags": "china, baijiu, strong-aroma, sorghum, GB-standard"
+      },
+      {
+       "code": "CN1B",
+       "name": "Jiangxiang / Sauce Aroma (酱香型)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 43,
+       "abvMax": 58,
+       "impression": "The most complex and expensive style: deep soy-sauce, umami, dried mushroom and toasted notes from an elaborate year-long process.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Kweichow Moutai is the national archetype and diplomatic gift. The high-temperature qū and repeated fermentation build hundreds of pyrazine and furan compounds.",
+       "history": null,
+       "ingredients": "Sorghum with high-temperature Daqu, fermented in stone pits, distilled across seven-to-eight rounds over a full year with multiple firings, then aged for years and blended.",
+       "comparison": null,
+       "examples": "Kweichow Moutai, Langjiu",
+       "tags": "china, baijiu, sauce-aroma, moutai, GB-standard"
+      },
+      {
+       "code": "CN1C",
+       "name": "Qingxiang / Light Aroma (清香型)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 40,
+       "abvMax": 65,
+       "impression": "Clean, dry, delicate and floral — the most restrained baijiu, with a crisp grain purity.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "The stone/ceramic vessel is what keeps it 'clean' — no mud microflora. Ethyl acetate and ethyl lactate dominate over the heavier caproate esters.",
+       "history": null,
+       "ingredients": "Sorghum fermented in stone or ceramic jars (not mud), keeping the ferment clean; low-temperature Daqu. Fen-jiu is the classic.",
+       "comparison": null,
+       "examples": "Fenjiu (Xinghuacun), Erguotou",
+       "tags": "china, baijiu, light-aroma, fenjiu, GB-standard"
+      },
+      {
+       "code": "CN1D",
+       "name": "Mixiang / Rice Aroma (米香型)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 18,
+       "abvMax": 57,
+       "impression": "Soft, mild, honeyed and slightly floral — distilled from rice rather than sorghum, the gentlest of the classic types.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Beta-phenylethanol gives a rose-honey top note. Sanhua Jiu of Guilin is the benchmark.",
+       "history": null,
+       "ingredients": "Rice, fermented with small Xiaoqu rice-cake starter, then distilled. Southern China, especially Guilin.",
+       "comparison": null,
+       "examples": "Guilin Sanhua Jiu",
+       "tags": "china, baijiu, rice-aroma, GB-standard"
+      },
+      {
+       "code": "CN1E",
+       "name": "Other Aroma Types (其他香型)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 38,
+       "abvMax": 65,
+       "impression": "The GB framework recognises further types — phoenix (fengxiang), sesame (zhimaxiang), mixed/jian, special, laobaigan, chi, and more — each tied to a region and technique.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Twelve aroma types are formally recognised. Fengxiang (Xifeng, Shaanxi) ages in wicker baskets lined with pig-blood paper; zhimaxiang shows a roasted-sesame note.",
+       "history": null,
+       "ingredients": null,
+       "comparison": null,
+       "examples": "Xifeng (phoenix), Baiyunbian (mixed), Jingzhi (sesame)",
+       "tags": "china, baijiu, aroma-types, GB-standard"
+      }
+     ]
+    },
+    {
+     "code": "CN2",
+     "name": "Huangjiu — Chinese Yellow Wine (GB/T 13662)",
+     "beverage": "sake",
+     "styles": [
+      {
+       "code": "CN2A",
+       "name": "Shaoxing Huangjiu (绍兴黄酒, GI)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 14,
+       "abvMax": 20,
+       "impression": "The benchmark rice wine: amber, warming, savoury-sweet with a nutty, umami depth. Drunk warmed, and the backbone of Chinese cooking wine.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "A protected GI. Sub-types by residual sugar: Yuanhong (dry), Jiafan (semi-dry), Shanniang (semi-sweet), Xiangxue (sweet). Nü'er Hong ('daughter red') was buried at a daughter's birth and unearthed for her wedding.",
+       "history": null,
+       "ingredients": "Glutinous rice and wheat qū, fermented with the soft water of Jian Lake, aged in earthenware. Multiple parallel fermentation like sake, but with a mixed-mould wheat starter rather than koji.",
+       "comparison": null,
+       "examples": "Guyuelongshan, Kuaijishan",
+       "tags": "china, huangjiu, rice-wine, shaoxing, GI"
+      },
+      {
+       "code": "CN2B",
+       "name": "Huangjiu by Sweetness Class",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 8,
+       "abvMax": 20,
+       "impression": "GB/T 13662 classes huangjiu by residual sugar: dry (≤15 g/L), semi-dry (15.1–40), semi-sweet (40.1–100) and sweet (>100 g/L).",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Distinct from sake in starter (mixed-culture wheat qū vs Aspergillus oryzae koji) and in being typically unfiltered-then-clarified and aged oxidatively.",
+       "history": null,
+       "ingredients": "Rice (glutinous, japonica or black), or millet in the north; wheat or rice qū.",
+       "comparison": null,
+       "examples": "Northern millet huangjiu (Jimo), black-rice huangjiu",
+       "tags": "china, huangjiu, GB-standard, sweetness-class"
+      }
      ]
     }
    ]
   },
   {
    "system": "CIDERLAW",
-   "year": 2024,
+   "year": 2021,
    "title": "Cider & Perry: Appellations, Legal Standards & Traditional Methods",
+   "sourceType": "legal-standard",
    "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
    "attribution": "Cider is the beverage where the gap between the legal definition and the traditional product is widest: a UK 'cider' need only be 35% juice, while a French AOC cider must be 100% juice from named varieties, keeved and bottle-conditioned. This edition compiles the binding standards — the French AOC/AOP decrees for Pays d'Auge, Cornouaille and Domfront, the Spanish DOP for Asturias and Euskal Sagardoa, UK duty law and the West Country and Three Counties PGIs, US TTB 27 CFR Part 24 and the hard-cider tax class, and Quebec's ice cider and fire cider PGIs — alongside the traditional methods (keeving, sidra natural, cryoconcentration) that those standards exist to protect. Numbers are legal thresholds, not judging targets. Cider gravities are given in specific gravity for calculator use; where a standard is written in grams per litre of sugar or in Brix, both are noted. Check the current instrument before relying on any of this commercially.",
    "categories": [
@@ -21383,7 +21903,8 @@
        "examples": "Commercial regional French cider",
        "tags": "france, IGP, regional, protected-name"
       }
-     ]
+     ],
+     "beverage": "cider"
     },
     {
      "code": "D2",
@@ -21429,7 +21950,8 @@
        "examples": "Sagardoa from Gipuzkoa sagardotegiak",
        "tags": "spain, basque, DOP, dry, still, wild-fermented, protected-name"
       }
-     ]
+     ],
+     "beverage": "cider"
     },
     {
      "code": "D3",
@@ -21515,7 +22037,8 @@
        "examples": "Irish commercial and artisan cider",
        "tags": "ireland, taxation, commercial, reference"
       }
-     ]
+     ],
+     "beverage": "cider"
     },
     {
      "code": "D4",
@@ -21601,7 +22124,8 @@
        "examples": "Quebec fire cider from certified producers",
        "tags": "canada, quebec, PGI, dessert, thermal-concentration, protected-name"
       }
-     ]
+     ],
+     "beverage": "cider"
     },
     {
      "code": "D5",
@@ -21687,14 +22211,264 @@
        "examples": "Asturian and Basque sidra natural; South American Asturian-diaspora cider",
        "tags": "method, dry, still, wild-fermented, unfiltered, technique"
       }
+     ],
+     "beverage": "cider"
+    }
+   ]
+  },
+  {
+   "system": "CULTURED",
+   "year": 2023,
+   "title": "Cultured & Low-Alcohol Ferments (SCOBY & Grain Cultures)",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Kombucha",
+   "attribution": "The symbiotic-culture ferments — kombucha, water and milk kefir, jun — sit at the boundary of alcoholic and soft drink: most finish under 1% ABV, but sealed or extended ferments cross into it, which is why several jurisdictions regulate high-ABV kombucha as an alcoholic beverage. Documented from producer and food-science sources; values are typical.",
+   "categories": [
+    {
+     "code": "CU1",
+     "name": "SCOBY Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "CU1A",
+       "name": "Kombucha",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 3,
+       "impression": "Fermented sweet tea — tart, vinegary, effervescent and faintly fruity, soured by a floating cellulose mat of bacteria and yeast.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Commercial kombucha is kept under 0.5% ABV to stay a soft drink; a sealed second fermentation ('hard kombucha') is deliberately pushed to 3–8% and regulated as alcohol. The SCOBY is the visible 'mother'.",
+       "history": null,
+       "ingredients": "Sweetened tea (Camellia sinensis) fermented by a SCOBY (symbiotic culture of Acetobacter and yeast). Yeast makes alcohol; bacteria convert most of it to acetic acid.",
+       "comparison": null,
+       "examples": "Commercial kombucha; hard kombucha",
+       "tags": "kombucha, scoby, tea, sour, low-alcohol"
+      },
+      {
+       "code": "CU1B",
+       "name": "Jun",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 2,
+       "impression": "A green-tea-and-honey cousin of kombucha — lighter, more delicate and wine-like, fermented by its own honey-adapted culture.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Often marketed with a Himalayan origin myth; more likely a modern honey-adapted kombucha. Ferments cooler and faster than kombucha.",
+       "history": null,
+       "ingredients": "Green tea sweetened with honey (not sugar), fermented by a jun SCOBY.",
+       "comparison": null,
+       "examples": "Jun tea",
+       "tags": "jun, scoby, honey, green-tea, low-alcohol"
+      }
+     ]
+    },
+    {
+     "code": "CU2",
+     "name": "Grain & Water Cultures",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "CU2A",
+       "name": "Water Kefir / Tibicos",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 2,
+       "impression": "A dairy-free fizzy ferment — light, lemonade-like and mildly tart — bubbled up by translucent 'grains' in sugar water.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Tibicos, water-kefir grains, California bees, ginger-beer plant — related SCOBY-like cultures. Finishes low in alcohol; sealed bottles build both fizz and a little more.",
+       "history": null,
+       "ingredients": "Sugar water (often with dried fruit and lemon) fermented by tibicos grains, a symbiotic community of lactic bacteria and yeast in a polysaccharide matrix.",
+       "comparison": null,
+       "examples": "Water kefir, Tibicos",
+       "tags": "water-kefir, tibicos, scoby, low-alcohol, dairy-free"
+      },
+      {
+       "code": "CU2B",
+       "name": "Milk Kefir",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.2,
+       "abvMax": 2,
+       "impression": "Cultured milk — tart, creamy, faintly yeasty and lightly effervescent, the Caucasus's contribution to the world's ferment shelf.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Originates in the North Caucasus. Usually treated as a food; extended or warm ferments raise the alcohol and carbonation noticeably.",
+       "history": null,
+       "ingredients": "Milk fermented by kefir grains, a symbiotic matrix of lactic bacteria and yeast. The yeast fraction makes it lightly alcoholic and fizzy, unlike yoghurt.",
+       "comparison": null,
+       "examples": "Milk kefir",
+       "tags": "milk-kefir, scoby, cultured-dairy, caucasus, low-alcohol"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "system": "EUROTRAD",
+   "year": 2023,
+   "title": "Europe: Farmhouse & Folk Ferments Beyond the Style Books",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Sahti",
+   "attribution": "Beyond the well-catalogued beer and wine traditions, Europe keeps a set of farmhouse and folk ferments — juniper-filtered Finnish sahti, Slavic bread kvass, honey medovukha — some now protected (sahti holds an EU TSG). Documented from producer and ethnographic sources; values are typical.",
+   "categories": [
+    {
+     "code": "EU1",
+     "name": "Farmhouse Grain Ferments",
+     "beverage": "beer",
+     "styles": [
+      {
+       "code": "EU1A",
+       "name": "Sahti (EU TSG)",
+       "ogMin": 1.07,
+       "ogMax": 1.11,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 6,
+       "abvMax": 9,
+       "impression": "Finland's ancient farmhouse ale — hazy, dense, banana-and-clove from farmhouse yeast, and unmistakably resinous from being filtered through juniper.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Holds an EU Traditional Speciality Guaranteed registration. Uncarbonated, cloudy, and drunk fresh — it does not keep. Rye and juniper define it more than hops.",
+       "history": null,
+       "ingredients": "Barley (and often rye) malt, mashed and lautered through a trough (kuurna) lined with juniper twigs and berries; hops minimal or absent; fermented with baker's or farmhouse yeast, usually unboiled.",
+       "comparison": null,
+       "examples": "Lammin Sahti",
+       "tags": "finland, sahti, farmhouse, juniper, TSG"
+      },
+      {
+       "code": "EU1B",
+       "name": "Gotlandsdricke / Koduõlu (Baltic Farmhouse Ale)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 5,
+       "abvMax": 8,
+       "impression": "The wider Nordic-Baltic farmhouse ale family — smoky, juniper-infused, rye-inflected country beers kept alive by home brewers.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Gotlandsdricke (Sweden), koduõlu (Estonia), maltøl (Norway). The Norwegian branch preserved the kveik yeasts now prized worldwide.",
+       "history": null,
+       "ingredients": "Barley and rye malt, often smoke-dried; juniper infusion; indigenous 'kveik'-type farmhouse yeasts.",
+       "comparison": null,
+       "examples": "Gotlandsdricke, Norwegian maltøl",
+       "tags": "nordic, baltic, farmhouse, kveik, juniper, traditional"
+      }
+     ]
+    },
+    {
+     "code": "EU2",
+     "name": "Bread & Honey Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "EU2A",
+       "name": "Kvass (квас)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 2.5,
+       "impression": "Slavic fermented rye-bread drink — dark, tangy, bready and barely alcoholic, drunk as a summer refresher and the base of cold soups.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Ubiquitous across Russia, Ukraine and Eastern Europe. Usually treated as a soft drink; the alcohol is incidental. Base of okroshka soup.",
+       "history": null,
+       "ingredients": "Stale rye (or barley) bread, water, sugar and often mint or raisins, fermented briefly by wild yeast and lactic bacteria.",
+       "comparison": null,
+       "examples": "Rye kvass",
+       "tags": "slavic, kvass, rye-bread, low-alcohol, traditional"
+      },
+      {
+       "code": "EU2B",
+       "name": "Medovukha & Lithuanian Midus (Honey)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 8,
+       "abvMax": 16,
+       "impression": "Slavic and Baltic honey ferments — the folk ancestors of mead, often spiced and historically boiled, ranging from light and quaffable to rich and strong.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Medovukha (Russia), midus (Lithuania, protected traditional recipes). Distinct in method from Western show mead — faster, spiced, sometimes hopped.",
+       "history": null,
+       "ingredients": "Honey and water, frequently with hops, spices or berries; medovukha was traditionally a quicker, sometimes-boiled brew than aged mead.",
+       "comparison": null,
+       "examples": "Medovukha, Lietuviškas midus",
+       "tags": "slavic, baltic, honey, medovukha, midus, traditional"
+      }
      ]
     }
    ]
   },
   {
    "system": "FERMENTED",
-   "year": 2024,
+   "year": 2014,
    "title": "Fortified, Aromatised & Traditional Fermented Beverages",
+   "sourceType": "legal-standard",
    "sourceUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0787",
    "attribution": "Legal definitions and protected-designation rules for fermented and fortified drinks that fall outside beer, mead and cider judging guidelines: EU Regulation 2019/787 and 251/2014 (aromatised wine products), Portuguese and Spanish DO/DOC statutes, Japan's Liquor Tax Act and the Seishu standard, and Mexico's NOM-070 family. Figures are legal limits, not sensory targets. Traditional beverages with no statutory definition are marked as such and described from ethnographic and industry sources.",
    "categories": [
@@ -21755,7 +22529,8 @@
        "comments": "EU Regulation 251/2014: an aromatised wine whose flavouring necessarily includes Artemisia species; wine content ≥75%; alcohol 14.5–22% ABV; may be sweetened and coloured. Vermouth di Torino holds a protected geographical indication requiring Italian wine and Artemisia grown in Piedmont where possible.",
        "tags": "vermouth, aromatised, artemisia"
       }
-     ]
+     ],
+     "beverage": "fortified"
     },
     {
      "code": "F2",
@@ -21793,7 +22568,8 @@
        "comments": "Korean Liquor Tax Act classes unrefined rice brews as takju; makgeolli is the common name. Typically 6–8% ABV, unfiltered, often still actively fermenting — traditionally served shaken to resuspend the sediment.",
        "tags": "makgeolli, nuruk, korea"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "F3",
@@ -21850,14 +22626,552 @@
        "comments": "No international standard; produced traditionally across Mongolia (airag), Kazakhstan and Kyrgyzstan. Brewing yeast cannot ferment lactose at all, which is precisely why this tradition depends on Kluyveromyces — the same species catalogued in the yeast database under wild and heritage strains.",
        "tags": "kumis, airag, mare milk, kluyveromyces, lactose"
       }
+     ],
+     "beverage": "spirit"
+    }
+   ]
+  },
+  {
+   "system": "INDIA",
+   "year": 2023,
+   "title": "India & South Asia: GI Spirits and Traditional Ferments",
+   "sourceType": "traditional",
+   "sourceUrl": "https://ipindia.gov.in/",
+   "attribution": "South Asia's drinks span a protected geographical indication (Goa's Feni) and a vast body of tribal and rural ferments with no statutory definition, documented from ethnographic and food-science sources. Feni figures follow the Goa GI specification; the traditional entries give typical values and are marked as customary rather than regulated.",
+   "categories": [
+    {
+     "code": "IN1",
+     "name": "Goa — Feni (GI)",
+     "beverage": "spirit",
+     "styles": [
+      {
+       "code": "IN1A",
+       "name": "Cashew Feni (काजू फेणी, GI)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 42,
+       "abvMax": 45,
+       "impression": "Goa's protected spirit: pungent, fruity and sulphurous, double-distilled from the fermented juice of the cashew apple.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Registered geographical indication (GI No. 120, 2009). Traditionally distilled in earthenware bhann pots. Urrak is a seasonal low-strength drink in its own right.",
+       "history": null,
+       "ingredients": "Cashew apples (the false fruit), crushed and fermented, then twice pot-distilled. First distillation gives urrak (~15%); the second gives feni.",
+       "comparison": null,
+       "examples": "Cazulo, Fenix",
+       "tags": "india, goa, feni, cashew, GI, spirit"
+      },
+      {
+       "code": "IN1B",
+       "name": "Coconut / Toddy Feni",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 40,
+       "abvMax": 43,
+       "impression": "The palm-sap version of feni: softer and more vegetal than cashew, distilled from fermented coconut toddy.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Also covered by the Goa GI. The older of the two feni traditions in coastal Goa.",
+       "history": null,
+       "ingredients": "Fermented coconut palm sap (toddy), double-distilled.",
+       "comparison": null,
+       "examples": "Coconut feni from South Goa",
+       "tags": "india, goa, feni, coconut, toddy, GI"
+      }
+     ]
+    },
+    {
+     "code": "IN2",
+     "name": "Palm & Flower Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "IN2A",
+       "name": "Toddy / Tadi / Kallu (ताड़ी)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 4,
+       "abvMax": 8,
+       "impression": "Fresh-tapped palm sap that ferments within hours — sweet and mild in the morning, sharp and sour by afternoon, mildly alcoholic and fizzy.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Drunk across South and coastal India and the world's palm belt. Distilled it becomes arrack. Unstable — consumed the day it is tapped.",
+       "history": null,
+       "ingredients": "Sap of coconut, palmyra or date palm, collected in pots on the tree; wild yeast begins fermenting immediately.",
+       "comparison": null,
+       "examples": "Kallu (South India), Neera (fresh, unfermented)",
+       "tags": "india, toddy, palm-wine, traditional"
+      },
+      {
+       "code": "IN2B",
+       "name": "Mahua (महुआ)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 20,
+       "abvMax": 40,
+       "impression": "A tribal spirit distilled from the sweet, heady flowers of the mahua tree — earthy, floral and fiery.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Central to Adivasi (tribal) culture across central India; long stigmatised and restricted, now being reframed as a heritage craft spirit. The flowers are also a food.",
+       "history": null,
+       "ingredients": "Dried mahua (Madhuca longifolia) flowers, fermented and pot-distilled.",
+       "comparison": null,
+       "examples": "Mahua from Madhya Pradesh, Odisha",
+       "tags": "india, mahua, tribal, flower-spirit"
+      }
+     ]
+    },
+    {
+     "code": "IN3",
+     "name": "Rice & Grain Beers of the Northeast & Himalaya",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "IN3A",
+       "name": "Handia / Apong (हंडिया / अपong)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 4,
+       "abvMax": 8,
+       "impression": "Tribal rice beer of eastern and northeastern India — cloudy, sour-sweet and lightly alcoholic, brewed with a herbal starter cake.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Handia among the Santal and other central tribes; apong among the Mising and other Assamese communities. Both social and ritual drinks.",
+       "history": null,
+       "ingredients": "Cooked rice mixed with a starter (ranu/bakhar/emao) of ground herbs and wild moulds/yeasts, fermented in earthen pots.",
+       "comparison": null,
+       "examples": "Handia (Jharkhand), Apong (Assam)",
+       "tags": "india, rice-beer, tribal, handia, apong"
+      },
+      {
+       "code": "IN3B",
+       "name": "Chhaang (छ्याङ)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 5,
+       "abvMax": 12,
+       "impression": "Himalayan fermented-grain beer, drunk warm in the cold — milky, sour and warming, sometimes sipped through a bamboo straw from the fermenting vessel.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Drunk across Nepal, Sikkim, Bhutan and Tibet. Tongba is the millet, straw-sipped variant.",
+       "history": null,
+       "ingredients": "Barley, millet or rice fermented with a starter; in the tongba form, hot water is repeatedly poured over fermented millet in a wooden vessel.",
+       "comparison": null,
+       "examples": "Tongba (millet), rice chhaang",
+       "tags": "himalaya, chhaang, tongba, millet, traditional"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "system": "KOREA",
+   "year": 2023,
+   "title": "Korea: Traditional Liquors under the Liquor Tax Act (주세법)",
+   "sourceType": "legal-standard",
+   "sourceUrl": "https://www.law.go.kr/",
+   "attribution": "Korea's Liquor Tax Act (주세법) defines its traditional drinks by production method and ingredient. The core split is between takju (unrefined, cloudy), yakju/cheongju (refined, clear) and soju (distilled), all built on the same nuruk-fermented rice base. Alongside the tax categories sit the government-designated Important Intangible Cultural Property folk liquors. Figures are typical commercial values; the category definitions are the legally meaningful part.",
+   "categories": [
+    {
+     "code": "KR1",
+     "name": "Rice Wines — Takju & Yakju",
+     "beverage": "sake",
+     "styles": [
+      {
+       "code": "KR1A",
+       "name": "Makgeolli / Takju (막걸리 / 濁酒)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 4,
+       "abvMax": 8,
+       "impression": "Milky, lightly sparkling, sweet-tart and cloudy — Korea's oldest and most democratic drink, traditionally the farmer's brew.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Takju means 'cloudy liquor'. Unfiltered and often bottled live, so it keeps fermenting — modern bottles vent CO2. A carbonated, slightly effervescent farmhouse drink.",
+       "history": null,
+       "ingredients": "Steamed rice fermented with nuruk (a wild wheat/rice starter cake carrying Aspergillus and wild yeast) and water, then roughly strained, leaving the solids in suspension.",
+       "comparison": null,
+       "examples": "Jangsu, Kooksoondang makgeolli",
+       "tags": "korea, makgeolli, takju, nuruk, rice"
+      },
+      {
+       "code": "KR1B",
+       "name": "Yakju / Cheongju (약주 / 청주)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 11,
+       "abvMax": 18,
+       "impression": "The clear, refined liquor drawn off the top of the same ferment — cleaner, stronger and more elegant than makgeolli.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Cheongju is the Korean cousin of sake, though nuruk gives an earthier, more rustic character than koji. Beopju of Gyeongju is a famed example.",
+       "history": null,
+       "ingredients": "Rice, nuruk and water; the clear supernatant is decanted (cheongju, 'clear liquor') rather than strained cloudy. Yakju ('medicine liquor') may include botanicals.",
+       "comparison": null,
+       "examples": "Gyeongju Gyodong Beopju, Baekseju",
+       "tags": "korea, yakju, cheongju, refined"
+      }
+     ]
+    },
+    {
+     "code": "KR2",
+     "name": "Soju — Distilled",
+     "beverage": "spirit",
+     "styles": [
+      {
+       "code": "KR2A",
+       "name": "Jeungnyu-sik Soju (증류식 소주, Traditional Distilled)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 25,
+       "abvMax": 45,
+       "impression": "Pot-distilled soju from a real grain ferment — rich, grainy and aromatic, the historical drink before dilution soju took over.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "A designated regional cultural product. Worlds apart from the cheap green-bottle soju: this is a craft grain spirit, sometimes aged.",
+       "history": null,
+       "ingredients": "Rice or other grain fermented with nuruk, then pot-distilled. Andong Soju is the protected regional archetype.",
+       "comparison": null,
+       "examples": "Andong Soju, Munbaeju",
+       "tags": "korea, soju, distilled, andong, cultural-property"
+      },
+      {
+       "code": "KR2B",
+       "name": "Huiseok-sik Soju (희석식 소주, Diluted)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 16,
+       "abvMax": 25,
+       "impression": "The ubiquitous green-bottle soju: neutral spirit cut with water and sweeteners, clean and near-flavourless by design.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Created as a rice-saving measure; rice-based distilling was banned 1965–1991. Now the best-selling spirit category on earth by bottles.",
+       "history": null,
+       "ingredients": "Highly-rectified neutral spirit (from tapioca, rice or other starch) diluted with water, with sweeteners and flavourings added.",
+       "comparison": null,
+       "examples": "Chamisul, Chum-Churum",
+       "tags": "korea, soju, diluted, neutral-spirit"
+      }
+     ]
+    },
+    {
+     "code": "KR3",
+     "name": "Fruit & Regional Folk Liquors",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "KR3A",
+       "name": "Bokbunja-ju (복분자주)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 15,
+       "abvMax": 19,
+       "impression": "Deep-purple Korean black raspberry wine — sweet, tart and fruity, a popular restaurant digestif.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Served at the 2005 APEC summit. Reputed traditionally as a tonic.",
+       "history": null,
+       "ingredients": "Korean black raspberry (Rubus coreanus) fermented, sometimes fortified.",
+       "comparison": null,
+       "examples": "Bohae Bokbunja",
+       "tags": "korea, fruit-wine, raspberry"
+      },
+      {
+       "code": "KR3B",
+       "name": "Munbaeju & Designated Folk Liquors (문배주)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 23,
+       "abvMax": 40,
+       "impression": "Government-designated Important Intangible Cultural Property liquors — regional recipes preserved by named holders.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Korea protects specific traditional liquors and their makers as living cultural heritage.",
+       "history": null,
+       "ingredients": "Varies: Munbaeju is a millet/sorghum distillate scented (despite no pear) of wild pear; Songjeol-ju, Sanseong soju and others each have protected methods.",
+       "comparison": null,
+       "examples": "Munbaeju, Songjeol-ju, Hansan Sogokju",
+       "tags": "korea, folk-liquor, cultural-property"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "system": "LATAM",
+   "year": 2023,
+   "title": "Latin America: Maize, Agave & Cane Ferments",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Chicha",
+   "attribution": "The Americas fermented maize and agave for millennia before contact. Chicha, pulque, tepache and their kin remain living traditions with deep pre-Columbian roots and little statutory definition. Documented from ethnographic and food-science sources; values are typical. (Distilled agave spirits — tequila, mezcal — are covered under their Mexican NOM standards in the Spirits edition.)",
+   "categories": [
+    {
+     "code": "LA1",
+     "name": "Maize Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "LA1A",
+       "name": "Chicha de Jora (Maize Beer)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 1,
+       "abvMax": 6,
+       "impression": "The Andes' ancestral maize beer — cloudy, golden-tan, tart and lightly alcoholic, brewed from sprouted maize and drunk fresh from the chichería.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "An Inca state and ritual drink, still central to Andean community life and reciprocal labour (minga). Served in a communal vessel; a red flag or balloon marks a chichería.",
+       "history": null,
+       "ingredients": "Jora (malted/germinated maize), boiled and fermented with wild yeast; traditionally some maize was chewed so salivary amylase converted the starch (chicha de muko).",
+       "comparison": null,
+       "examples": "Chicha de jora (Peru), Chicha (Bolivia, Ecuador)",
+       "tags": "andes, chicha, maize-beer, pre-columbian, traditional"
+      },
+      {
+       "code": "LA1B",
+       "name": "Tejuino",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 0.5,
+       "abvMax": 3,
+       "impression": "A cold, sour-sweet maize drink of western Mexico — fermented masa served over ice with lime, salt and often a scoop of lime sorbet.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Barely alcoholic; sold from street carts in Jalisco and the Pacific coast as a refresher rather than an intoxicant.",
+       "history": null,
+       "ingredients": "Masa (nixtamalised maize dough) and piloncillo, cooked, fermented briefly by wild lactic bacteria and yeast.",
+       "comparison": null,
+       "examples": "Tejuino (Jalisco, Colima)",
+       "tags": "mexico, tejuino, maize, low-alcohol, traditional"
+      },
+      {
+       "code": "LA1C",
+       "name": "Cauim / Chicha de Yuca",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 6,
+       "impression": "Amazonian and Brazilian indigenous manioc (or maize) beer, traditionally made by chewing the root to saccharify it, then fermenting.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Masato is the Amazonian manioc-chewing version across Peru, Ecuador and Brazil. A communal, ceremonial drink of many Amazonian peoples.",
+       "history": null,
+       "ingredients": "Cassava/manioc or maize, cooked and chewed (salivary amylase) or malted, then fermented in a canoe or trough.",
+       "comparison": null,
+       "examples": "Cauim (Brazil), Masato (Amazon)",
+       "tags": "amazon, cauim, masato, manioc, traditional"
+      }
+     ]
+    },
+    {
+     "code": "LA2",
+     "name": "Agave & Cane Ferments",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "LA2A",
+       "name": "Pulque (Octli)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 4,
+       "abvMax": 7,
+       "impression": "The sacred fermented sap of the maguey agave — viscous, milky-white, sour and yeasty-bready, with a slippery texture unlike any other drink.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Predates the Aztecs; hedged with religious ritual and reserved for elders and priests. Nearly killed by beer in the 20th century, now reviving in pulquerías. The viscosity comes from bacterial polysaccharides.",
+       "history": null,
+       "ingredients": "Aguamiel (the fresh sap of a mature maguey), fermented by a complex wild culture including Zymomonas mobilis bacteria — one of the few alcohols not primarily yeast-driven.",
+       "comparison": null,
+       "examples": "Pulque (Hidalgo, Tlaxcala); curados are fruit-flavoured",
+       "tags": "mexico, pulque, maguey, aguamiel, pre-columbian, traditional"
+      },
+      {
+       "code": "LA2B",
+       "name": "Tepache",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 1,
+       "abvMax": 3,
+       "impression": "A lightly fermented pineapple drink of Mexico — sweet-tart, fizzy and refreshing, sold from big glass jars on the street.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Once maize-based (its name is from Nahuatl tepiātl), now overwhelmingly pineapple. Barely alcoholic; a cousin of tepache is the border between soft drink and beer.",
+       "history": null,
+       "ingredients": "Pineapple (traditionally the rind), piloncillo and spices, fermented a few days by wild yeast.",
+       "comparison": null,
+       "examples": "Tepache de piña",
+       "tags": "mexico, tepache, pineapple, low-alcohol, traditional"
+      },
+      {
+       "code": "LA2C",
+       "name": "Guarapo / Cane Wine",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 3,
+       "abvMax": 8,
+       "impression": "Fermented sugarcane juice — sweet, grassy and lightly alcoholic — drunk across the Caribbean and Latin America.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "The fermented precursor to cane spirits like cachaça and aguardiente. Also the name for fresh, unfermented cane juice in some regions.",
+       "history": null,
+       "ingredients": "Fresh-pressed sugarcane juice fermented by wild yeast.",
+       "comparison": null,
+       "examples": "Guarapo (Cuba, Colombia)",
+       "tags": "latinamerica, guarapo, sugarcane, traditional"
+      }
      ]
     }
    ]
   },
   {
    "system": "SAKE",
-   "year": 2024,
+   "year": 1990,
    "title": "Sake (Seishu): Legal Classification & Production Designations",
+   "sourceType": "legal-standard",
    "sourceUrl": "https://www.nta.go.jp/taxes/sake/hyoji/seishu/index.htm",
    "attribution": "Sake has no judging style guidelines in the BJCP sense, but it has something stricter: a labelling standard with the force of tax law. This edition follows Japan's Liquor Tax Act definition of seishu and the National Tax Agency's Standard for Manufacturing Methods and Quality Labelling of Sake (清酒の製法品質表示基準), which defines the eight tokutei meishōshu — 'special designation' — grades by rice polishing ratio (seimaibuai), koji proportion and whether brewer's alcohol is added. Alongside those it collects the production-method and treatment terms (kimoto, yamahai, namazake, genshu, nigori) that are separately regulated or conventionally defined, and the geographical indications. Figures are legal thresholds, not sensory targets. Nihonshu-do (Sake Meter Value) and san-do (acidity) are given as typical commercial ranges for calculator reference, not as requirements. Check the current NTA notification before relying on any of this commercially.",
    "categories": [
@@ -21905,7 +23219,8 @@
        "examples": "Most cup sake, table sake and much of what is served warm in restaurants",
        "tags": "japan, ordinary, residual-category"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "K1",
@@ -21991,7 +23306,8 @@
        "examples": "Flagship bottlings and competition entries",
        "tags": "japan, junmai, daiginjo, premium, tokutei-meishoshu"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "K2",
@@ -22077,7 +23393,8 @@
        "examples": "Competition and flagship bottlings",
        "tags": "japan, daiginjo, added-alcohol, premium, tokutei-meishoshu"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "K3",
@@ -22183,7 +23500,8 @@
        "examples": "Dessert and aged bottlings from a small number of producers",
        "tags": "japan, sweet, dessert, method, specialty"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "K4",
@@ -22309,7 +23627,8 @@
        "examples": "Bottle-fermented awasake and commodity sparkling sake",
        "tags": "japan, sparkling, carbonation, modern"
       }
-     ]
+     ],
+     "beverage": "sake"
     },
     {
      "code": "K5",
@@ -22395,14 +23714,165 @@
        "examples": "Koji amazake, sakekasu amazake",
        "tags": "japan, non-alcoholic, koji, reference"
       }
+     ],
+     "beverage": "sake"
+    }
+   ]
+  },
+  {
+   "system": "SEASIA",
+   "year": 2023,
+   "title": "Southeast Asia: Rice Ferments, Palm Toddy & Their Spirits",
+   "sourceType": "traditional",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Tapai",
+   "attribution": "Southeast Asia ferments glutinous rice and palm sap with mixed-mould starter cakes (ragi/bubod/loog-pang) into a spectrum of sweet pastes, cloudy wines and clear distillates. Mostly traditional with little statutory definition; lambanog and some rice wines are commercially produced. Documented from ethnographic and food-science sources; values are typical.",
+   "categories": [
+    {
+     "code": "SEA1",
+     "name": "Rice Ferments (Ragi / Starter-Cake)",
+     "beverage": "sake",
+     "styles": [
+      {
+       "code": "SEA1A",
+       "name": "Tapai / Tapuy (Fermented Rice)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 3,
+       "abvMax": 10,
+       "impression": "Sweet, sour and lightly alcoholic fermented glutinous rice (or cassava) — eaten as a dessert paste or drunk as it liquefies into rice wine.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Tapai ubi (cassava) and tapai pulut (rice) across Malaysia/Indonesia; tapuy in the Philippines. The liquid that collects is the rice wine; the solids are eaten. A close analogue to the Chinese jiuniang.",
+       "history": null,
+       "ingredients": "Steamed glutinous rice (or cassava) inoculated with ragi/bubod — a starter cake of Amylomyces mould and yeast that saccharifies and ferments at once.",
+       "comparison": null,
+       "examples": "Tapai (Malaysia/Indonesia), Tapuy (Philippines)",
+       "tags": "seasia, tapai, tapuy, ragi, rice, traditional"
+      },
+      {
+       "code": "SEA1B",
+       "name": "Brem / Rice Wine (Bali)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 5,
+       "abvMax": 14,
+       "impression": "Balinese fermented glutinous (often black) rice wine — sweet, reddish-brown, low-to-moderate strength, used in offering and refreshment.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Brem Bali is bottled commercially. A solid brem cake is also sold as a snack.",
+       "history": null,
+       "ingredients": "Black or white glutinous rice fermented with ragi tapai starter; the liquid is aged.",
+       "comparison": null,
+       "examples": "Brem Bali",
+       "tags": "indonesia, brem, bali, black-rice, traditional"
+      },
+      {
+       "code": "SEA1C",
+       "name": "Sato / Lao Hai / Rice Wine of the Mekong",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 8,
+       "abvMax": 15,
+       "impression": "Thai and Lao fermented sticky-rice wine — sweet-sour and cloudy, the sipped 'jar wine' drunk communally through long reeds from a fermentation pot.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Sato is the Thai bottled version; lao hai is the communal jar. A parallel to Himalayan tongba and chhaang.",
+       "history": null,
+       "ingredients": "Steamed glutinous rice with loog-pang (Thai) or similar starter, fermented in a jar; water is added and the wine sipped through bamboo straws (lao hai).",
+       "comparison": null,
+       "examples": "Sato (Thailand), Lao hai (Laos)",
+       "tags": "thailand, laos, sato, rice-wine, jar-wine, traditional"
+      }
+     ]
+    },
+    {
+     "code": "SEA2",
+     "name": "Palm Toddy & Distillates",
+     "beverage": "traditional",
+     "styles": [
+      {
+       "code": "SEA2A",
+       "name": "Tuba (Palm Toddy)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 2,
+       "abvMax": 5,
+       "impression": "Philippine and Southeast Asian coconut palm toddy — sweet and fresh when tapped, souring through the day; sometimes reddened with barok (mangrove bark tannin).",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Widespread across the Philippines and the Pacific. Aged tuba becomes vinegar (suka); distilled it becomes lambanog.",
+       "history": null,
+       "ingredients": "Coconut palm sap, wild-fermented; barok bark may be added for colour, tannin and preservation.",
+       "comparison": null,
+       "examples": "Tuba (Philippines), Tuak (Indonesia/Malaysia)",
+       "tags": "philippines, tuba, palm-toddy, coconut, traditional"
+      },
+      {
+       "code": "SEA2B",
+       "name": "Lambanog (Coconut Arrack)",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": 40,
+       "abvMax": 45,
+       "impression": "The Philippine 'coconut vodka' — a clear, potent distillate of coconut toddy, smooth and neutral to fruity, now bottled in flavoured commercial lines.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "A regional craft spirit of Quezon province, increasingly exported. Traditionally sold in recycled bottles at rural markets.",
+       "history": null,
+       "ingredients": "Fermented coconut toddy (tuba), pot-distilled, sometimes twice.",
+       "comparison": null,
+       "examples": "Lambanog (Quezon)",
+       "tags": "philippines, lambanog, coconut, arrack, distilled"
+      }
      ]
     }
    ]
   },
   {
    "system": "SPIRITS",
-   "year": 2024,
+   "year": 2019,
    "title": "Spirits: Legal Definitions & Standards of Identity",
+   "sourceType": "legal-standard",
    "sourceUrl": "https://www.ttb.gov/spirits/spirits-standards-of-identity",
    "attribution": "Unlike beer, mead, and cider, distilled spirits have no judging style guidelines — but they do have binding legal definitions. This edition compiles the actual statutory standards of identity: the Scotch Whisky Regulations 2009 (UK), the Irish Whiskey Technical File, US 27 CFR Part 5 (TTB), EU Regulation 2019/787, Mexico's NOM-006/NOM-070, French AOC decrees, and equivalent national standards. Figures are the legal minima/maxima, not sensory targets. Compiled for reference; always check the current regulation for the jurisdiction you are producing in.",
    "categories": [
@@ -22443,7 +23913,8 @@
        "examples": "Johnnie Walker, Chivas Regal, Famous Grouse",
        "tags": "scotch, blend"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S2",
@@ -22493,7 +23964,8 @@
        "examples": "Yamazaki, Hakushu, Yoichi",
        "tags": "japanese, voluntary standard"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S3",
@@ -22566,7 +24038,8 @@
        "examples": "Westward, Balcones, Stranahan's",
        "tags": "single malt, american, 2024 standard"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S4",
@@ -22616,7 +24089,8 @@
        "examples": "Leblon, Ypióca, Novo Fogo",
        "tags": "cachaça, brazil, cane juice"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S5",
@@ -22654,7 +24128,8 @@
        "comments": "Bacanora (NOM-168, Sonora, from Agave angustifolia/pacífica) and Raicilla (DO granted 2019, Jalisco/Nayarit, from Agave maximiliana and others) were long produced informally — bacanora was outright prohibited in Sonora from 1915 to 1992 — and are now legally protected categories.",
        "tags": "raicilla, bacanora, regional"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S6",
@@ -22721,7 +24196,8 @@
        "examples": "Poire Williams, Kirschwasser, Slivovitz",
        "tags": "eau-de-vie, fruit, unaged"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S7",
@@ -22776,7 +24252,8 @@
        "comments": "EU 2019/787: minimum 100 g/L sugar (lower thresholds for cherry and gentian liqueurs); ≥15% ABV. US 27 CFR: 'cordial/liqueur' requires ≥2.5% sugar by weight and flavouring from natural materials; ≥30 proof (15% ABV). Crème de cassis requires ≥400 g/L sugar in the EU.",
        "tags": "liqueur, cordial, sweetened"
       }
-     ]
+     ],
+     "beverage": "spirit"
     },
     {
      "code": "S8",
@@ -22832,7 +24309,8 @@
        "examples": "Ole Smoky, Sugarlands (sold as corn whiskey or specialty)",
        "tags": "moonshine, white dog, unaged, corn whiskey"
       }
-     ]
+     ],
+     "beverage": "spirit"
     }
    ]
   }

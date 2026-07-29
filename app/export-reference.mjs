@@ -43,12 +43,16 @@ function readYeasts(dir) {
   return { labs, strains };
 }
 
-// Only the editions we compiled ourselves from primary legal sources travel in
-// the export. BJCP, Brewers Association and AWS guideline text is somebody
-// else's copyrighted work — we reproduce it on the site with attribution, but
-// we do not hand out a bulk copy of it, for the same reason the recipe archive
-// stays out.
-const OWN_GUIDELINE_SYSTEMS = new Set(["SPIRITS", "FERMENTED", "BEERLAW", "SAKE", "CIDERLAW"]);
+// Only the editions we compiled ourselves from primary legal/ethnographic
+// sources travel in the export. BJCP, Brewers Association, AWS and the Maltose
+// Falcons club guide are somebody else's work — we reproduce them on the site
+// with attribution, but we don't hand out a bulk copy, same as the recipe
+// archive. The international traditional editions are our own compilations and
+// are included.
+const OWN_GUIDELINE_SYSTEMS = new Set([
+  "SPIRITS", "FERMENTED", "BEERLAW", "SAKE", "CIDERLAW",
+  "CHINA", "KOREA", "INDIA", "CENTRALASIA", "AFRICA", "LATAM", "SEASIA", "EUROTRAD", "CULTURED",
+]);
 
 function readGuidelines(dir) {
   const out = [];

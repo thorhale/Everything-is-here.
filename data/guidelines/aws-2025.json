@@ -2,6 +2,7 @@
  "system": "AWS",
  "year": 2025,
  "title": "American Wine Society Amateur Competition Wine Classes (UC Davis 20-point system)",
+ "sourceType": "competition",
  "sourceUrl": "https://americanwinesociety.org/amateur-wine-competition/",
  "attribution": "© American Wine Society. Wine classification from the AWS National Amateur Wine Competition; wines judged on the UC Davis 20-point scale. Reproduced with attribution.",
  "categories": [
@@ -384,7 +385,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -840,7 +842,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1071,7 +1074,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1352,7 +1356,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1533,7 +1538,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1664,7 +1670,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1720,7 +1727,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -1826,7 +1834,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -2082,7 +2091,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   },
   {
    "code": null,
@@ -2163,7 +2173,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "fortified"
   },
   {
    "code": null,
@@ -2244,7 +2255,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "fortified"
   },
   {
    "code": null,
@@ -2400,7 +2412,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "mead"
   },
   {
    "code": null,
@@ -2431,7 +2444,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "wine"
   }
  ]
 }

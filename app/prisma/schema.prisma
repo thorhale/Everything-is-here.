@@ -267,9 +267,12 @@ model TakedownRequest {
 
 model GuidelineEdition {
   id          String              @id // e.g. "bjcp-2021", "ba-2019", "aws-2025"
-  system      String // BJCP | BA | AWS
+  system      String // BJCP | BA | AWS | SPIRITS | SAKE | MF | CHINA | KOREA ...
   year        Int
   title       String
+  // What kind of authority this is, so the UI can distinguish a judging
+  // guideline from a statute: competition | legal-standard | club | traditional
+  sourceType  String?
   sourceUrl   String
   attribution String
   categories  GuidelineCategory[]
@@ -283,10 +286,15 @@ model GuidelineCategory {
   edition   GuidelineEdition @relation(fields: [editionId], references: [id], onDelete: Cascade)
   code      String?
   name      String
+  // The beverage family this category belongs to (see lib/beverages.ts):
+  // beer | wine | cider | mead | sake | spirit | fortified | traditional.
+  // Category-level because one edition (BJCP, FERMENTED) can span several.
+  beverage  String?
   sortOrder Int
   styles    GuidelineStyle[]
 
   @@index([editionId])
+  @@index([beverage])
 }
 
 model GuidelineStyle {
