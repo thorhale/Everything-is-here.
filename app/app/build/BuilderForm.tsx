@@ -24,6 +24,9 @@ import {
   brixFromSg,
 } from "@/lib/must";
 import type { FermentablePick } from "@/lib/ingredients-curated";
+import type { WaterPick } from "@/lib/water";
+import { SALTS, suggestSalts, applySalts, zeroIons, IonKeys, type Ions } from "@/lib/water-salts";
+import { residualAlkalinity, mashPhAdvice } from "@/lib/mash-ph";
 
 export interface HopPick {
   id: string;
@@ -85,10 +88,12 @@ export default function BuilderForm({
   fermentables,
   hops,
   strains,
+  waters,
 }: {
   fermentables: FermentablePick[];
   hops: HopPick[];
   strains: StrainPick[];
+  waters: WaterPick[];
 }) {
   const [beverage, setBeverage] = useState<Beverage>("beer");
   const [volumeL, setVolumeL] = useState("20");
@@ -99,6 +104,10 @@ export default function BuilderForm({
   const [rows, setRows] = useState<Row[]>([]);
   const [hopRows, setHopRows] = useState<HopRow[]>([]);
   const [boilVolumeL, setBoilVolumeL] = useState("26");
+
+  // Water panel (beer only): source tap -> target profile -> salt additions.
+  const [sourceWaterId, setSourceWaterId] = useState(""); // "" = RO / distilled
+  const [targetWaterId, setTargetWaterId] = useState("");
 
   // Must-chemistry panel inputs
   const [measuredPh, setMeasuredPh] = useState("");
@@ -198,6 +207,37 @@ export default function BuilderForm({
   const vol = num(volumeL);
   const ph = measuredPh ? num(measuredPh) : engine.estimatedPh;
   const ta = measuredTa ? num(measuredTa) : engine.estimatedTaGPerL;
+
+  // --- water treatment (beer) ---------------------------------------------
+  // Salt volume is treated as the batch volume for a first pass — mash plus
+  // sparge is close enough to size the additions, and the panel says so.
+  const sourceWater = waters.find((w) => w.id === sourceWaterId) ?? null;
+  const targetWater = waters.find((w) => w.id === targetWaterId) ?? null;
+  const waterVol = vol > 0 ? vol : 20;
+  const water = useMemo(() => {
+    if (!targetWater) return null;
+    const source: Partial<Ions> = sourceWater ? pickIons(sourceWater) : {};
+    const target = pickIons(targetWater);
+    const plan = suggestSalts(source, target, waterVol);
+    const result = applySalts(source, plan.grams, waterVol);
+    const ra = residualAlkalinity(result.calcium, result.magnesium, result.bicarbonate);
+    const so4 = result.sulfate;
+    const cl = result.chloride;
+    const ratio = cl > 0 ? so4 / cl : so4 > 0 ? Infinity : null;
+    return { source, target, plan, result, ra, ratio };
+  }, [sourceWater, targetWater, waterVol]);
+  const phAdvice =
+    isBeer && water && engine.srm != null ? mashPhAdvice(engine.srm, water.ra) : null;
+  // Colour-based default target so the picker isn't a blank stare.
+  const suggestedTargetId = isBeer
+    ? engine.srm == null || engine.srm < 8
+      ? "target-yellow-balanced"
+      : engine.srm < 17
+        ? "target-amber-balanced"
+        : engine.srm < 30
+          ? "target-brown-balanced"
+          : "target-black-balanced"
+    : null;
 
   const so2 = ph != null && vol > 0 ? planSo2(ph, vol, 0, 0.8) : null;
   const nutrients = vol > 0 && engine.og.typical > 1.001
@@ -504,6 +544,131 @@ export default function BuilderForm({
         </fieldset>
       )}
 
+      {/* ------------------------------------------------- water & salts --- */}
+      {isBeer && (
+        <fieldset style={FS}>
+          <legend style={LEG}>Water &amp; salts</legend>
+          <div style={GRID}>
+            <label style={{ fontSize: "0.8rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
+              <span style={{ color: "var(--wh-text-light)" }}>Your source water</span>
+              <select value={sourceWaterId} onChange={(e) => setSourceWaterId(e.target.value)}>
+                <option value="">Distilled / RO (start clean)</option>
+                {["classic-city", "modern-city"].map((k) => (
+                  <optgroup key={k} label={k === "classic-city" ? "Classic brewing cities" : "Modern cities"}>
+                    {waters.filter((w) => w.kind === k).map((w) => (
+                      <option key={w.id} value={w.id}>{w.name}</option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+            </label>
+            <label style={{ fontSize: "0.8rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
+              <span style={{ color: "var(--wh-text-light)" }}>Target profile</span>
+              <select value={targetWaterId} onChange={(e) => setTargetWaterId(e.target.value)}>
+                <option value="">Pick a target…</option>
+                <optgroup label="Style targets">
+                  {waters.filter((w) => w.kind === "style-target").map((w) => (
+                    <option key={w.id} value={w.id}>{w.name}</option>
+                  ))}
+                </optgroup>
+                <optgroup label="Classic city water">
+                  {waters.filter((w) => w.kind === "classic-city").map((w) => (
+                    <option key={w.id} value={w.id}>{w.name}</option>
+                  ))}
+                </optgroup>
+              </select>
+            </label>
+            {suggestedTargetId && !targetWaterId && (
+              <button
+                type="button"
+                className="wh-style-chip"
+                style={{ cursor: "pointer", alignSelf: "end" }}
+                onClick={() => setTargetWaterId(suggestedTargetId)}
+              >
+                Use the target for this colour
+              </button>
+            )}
+          </div>
+
+          {water && (
+            <div style={{ overflowX: "auto", marginTop: "0.75rem" }}>
+              <table style={{ width: "100%", fontSize: "0.85rem" }}>
+                <thead>
+                  <tr>
+                    <th style={{ textAlign: "left" }}></th>
+                    <th>Ca</th><th>Mg</th><th>Na</th><th>Cl</th><th>SO₄</th><th>HCO₃</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Source</td>
+                    {IonKeys.map((k) => <td key={k} className="nowrap" style={{ textAlign: "center" }}>{Math.round((water.source[k] ?? 0))}</td>)}
+                  </tr>
+                  <tr style={{ color: "var(--wh-text-light)" }}>
+                    <td>Target</td>
+                    {IonKeys.map((k) => <td key={k} className="nowrap" style={{ textAlign: "center" }}>{Math.round((water.target[k] ?? 0))}</td>)}
+                  </tr>
+                  <tr style={{ fontWeight: 700 }}>
+                    <td>After salts</td>
+                    {IonKeys.map((k) => <td key={k} className="nowrap" style={{ textAlign: "center" }}>{Math.round(water.result[k])}</td>)}
+                  </tr>
+                </tbody>
+              </table>
+
+              <p style={{ fontSize: "0.85rem", margin: "0.6rem 0 0.3rem" }}>
+                <strong>Add per {waterVol.toFixed(0)} L</strong> of brewing water:
+              </p>
+              {Object.keys(water.plan.grams).length === 0 ? (
+                <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", margin: 0 }}>
+                  Nothing — your source water already meets or exceeds this target. To go lower, dilute with distilled or RO water.
+                </p>
+              ) : (
+                <ul style={{ fontSize: "0.85rem", margin: 0, paddingLeft: "1.1rem" }}>
+                  {SALTS.filter((s) => (water.plan.grams[s.key] ?? 0) > 0.01).map((s) => (
+                    <li key={s.key}>
+                      <strong>{water.plan.grams[s.key].toFixed(1)} g</strong> {s.name} <span style={{ color: "var(--wh-text-light)" }}>({s.formula})</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {water.plan.shortfalls.length > 0 && (
+                <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
+                  Couldn&apos;t reach by addition alone: {water.plan.shortfalls.join("; ")}.
+                </p>
+              )}
+
+              <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap", marginTop: "0.6rem", fontSize: "0.85rem" }}>
+                <span>
+                  SO₄:Cl <strong>{water.ratio == null ? "—" : water.ratio === Infinity ? "∞" : water.ratio.toFixed(2)}</strong>{" "}
+                  <span style={{ color: "var(--wh-text-light)" }}>({balanceLabel(water.ratio)})</span>
+                </span>
+                <span>Residual alkalinity <strong>{water.ra}</strong> ppm</span>
+              </div>
+
+              {phAdvice && (
+                <p style={NOTE}>
+                  Mash pH looks <strong>{phAdvice.verdict}</strong> for this colour (RA {phAdvice.actualRa} vs
+                  target {phAdvice.targetRa}).{" "}
+                  {phAdvice.verdict === "too alkaline" && phAdvice.acidMaltPct != null && (
+                    <>Bring it down with about <strong>{phAdvice.acidMaltPct}%</strong> acidulated malt, or ~
+                    {phAdvice.lacticMlPerGal} mL of 88% lactic acid per gallon of mash water. </>
+                  )}
+                  {phAdvice.verdict === "too soft" && (
+                    <>The grist is dark enough that this water is too soft — a pinch of baking soda (or chalk in the mash)
+                    lifts it into range. </>
+                  )}
+                  Estimated mash pH ≈ <strong>{phAdvice.estimatedPh.toFixed(2)}</strong> — confirm with a meter.
+                </p>
+              )}
+              <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
+                Additions are sized to the full batch volume as a first pass. For the mash/sparge split and acid
+                adjustment, take it into the <Link href="/water/builder">water &amp; salt builder →</Link>
+              </p>
+            </div>
+          )}
+        </fieldset>
+      )}
+
       {/* ----------------------------------------------------- results --- */}
       <fieldset style={{ ...FS, background: "var(--wh-bg-soft)" }}>
         <legend style={LEG}>Result</legend>
@@ -739,6 +904,26 @@ const PATH_LABELS: Record<SugarPath, string> = {
   "whole-fruit": "Whole, in the fermenter",
   juice: "Juice, as poured",
 };
+
+function pickIons(w: WaterPick): Ions {
+  return {
+    calcium: w.calcium,
+    magnesium: w.magnesium,
+    sodium: w.sodium,
+    chloride: w.chloride,
+    sulfate: w.sulfate,
+    bicarbonate: w.bicarbonate,
+  };
+}
+
+function balanceLabel(ratio: number | null): string {
+  if (ratio == null) return "—";
+  if (ratio === Infinity || ratio >= 2) return "hoppy / dry";
+  if (ratio >= 1.3) return "balanced-hoppy";
+  if (ratio >= 0.8) return "balanced";
+  if (ratio >= 0.5) return "balanced-malty";
+  return "malty / full";
+}
 
 function rowSugarLabel(r: Row): string {
   const p = r.pick;

@@ -89,7 +89,14 @@ model Recipe {
 }
 
 model RecipeFermentable {
-  id            String  @id @default(cuid())
+  // Kept as a plain column (still cuid-defaulted) so existing code that reads
+  // `f.id` — React list keys, lookup maps — keeps working untouched. It is no
+  // longer the primary key: the cuid PK was a 37 MB btree index that nothing
+  // ever queried by (every access is by recipeId). Identity is the composite
+  // below, which also serves as the recipeId lookup index, so the standalone
+  // @@index([recipeId]) is gone too. (recipeId, sortOrder) is unique across
+  // all 513k rows — verified before migrating.
+  id            String  @default(cuid())
   recipeId      String
   recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 
@@ -104,11 +111,14 @@ model RecipeFermentable {
   refUrl        String? // links to FermentableRef.externalId when resolvable
   sortOrder     Int     @default(0)
 
-  @@index([recipeId])
+  @@id([recipeId, sortOrder])
 }
 
 model RecipeHop {
-  id            String  @id @default(cuid())
+  // See RecipeFermentable: id demoted from primary key to a plain column to
+  // shed a 33 MB unused index. (recipeId, sortOrder) is unique across all
+  // 453k rows and is now both the identity and the recipeId lookup index.
+  id            String  @default(cuid())
   recipeId      String
   recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 
@@ -123,10 +133,15 @@ model RecipeHop {
   refUrl        String?
   sortOrder     Int     @default(0)
 
-  @@index([recipeId])
+  @@id([recipeId, sortOrder])
 }
 
 model RecipeYeast {
+  // Deliberately keeps its cuid primary key. Unlike the fermentable/hop
+  // junctions it has no sortOrder column and no naturally-unique combination
+  // (a recipe can list the same yeast twice), so re-keying it would mean a
+  // mass row-update to synthesise an ordinal — heap bloat we won't risk near
+  // the storage cap for the sake of only ~9 MB.
   id             String  @id @default(cuid())
   recipeId       String
   recipe         Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)

@@ -75,6 +75,38 @@ export async function getWaterByKind(): Promise<Record<string, WaterProfile[]>> 
   return out;
 }
 
+export interface WaterPick {
+  id: string;
+  name: string;
+  kind: string;
+  calcium: number;
+  magnesium: number;
+  sodium: number;
+  chloride: number;
+  sulfate: number;
+  bicarbonate: number;
+}
+
+// Compact list for the recipe builder's client-side water panel.
+export const getWaterPickerList = unstable_cache(
+  async (): Promise<WaterPick[]> => {
+    const all = await getWaterProfiles();
+    return all.map((w) => ({
+      id: w.id,
+      name: w.name,
+      kind: w.kind,
+      calcium: w.calcium ?? 0,
+      magnesium: w.magnesium ?? 0,
+      sodium: w.sodium ?? 0,
+      chloride: w.chloride ?? 0,
+      sulfate: w.sulfate ?? 0,
+      bicarbonate: w.bicarbonate ?? 0,
+    }));
+  },
+  ["water-picker-list"],
+  { revalidate: 3600 }
+);
+
 // Suggest a style-target water profile for a beer from its colour (SRM) and
 // style name. Hop-forward and hazy styles override the colour-based default.
 export function suggestWaterTargetId(srm: number | null, styleName: string | null): string {
