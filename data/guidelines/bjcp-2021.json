@@ -2,6 +2,7 @@
  "system": "BJCP",
  "year": 2021,
  "title": "BJCP 2021 Beer Style Guidelines",
+ "sourceType": "competition",
  "sourceUrl": "https://www.bjcp.org/style/2021/",
  "attribution": "© Beer Judge Certification Program. Reproduced for education and judging with attribution.",
  "categories": [
@@ -109,7 +110,8 @@
      "examples": "Bell’s Oberon, Boulevard Unfiltered Wheat Beer, GoodLife Sweet As! Pacific Ale, Goose Island 312 Urban Wheat Ale, Widmer Hefeweizen",
      "tags": "standard-strength, pale-color, any-fermentation, north-america, craft-style, wheat-beer-family, balanced"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "2",
@@ -190,7 +192,8 @@
      "examples": "Baltika #4 Original, Dixie Blackened Voodoo, Heineken Dark Lager, Saint Pauli Girl Special Dark, San Miguel Dark, Shiner Bock",
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, traditional-style, dark-lager-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "3",
@@ -296,7 +299,8 @@
      "examples": "Bernard černý ležák 12°, Budvar tmavý ležák, Herold lmavé silné pivo 13°, Kozel Dark , Krušovice  černé, Primátor dark lager, U Fleků Flekovský tmavý ležák 13°",
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, central-europe, traditional-style, dark-lager-family, balanced"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "4",
@@ -377,7 +381,8 @@
      "examples": "Altenmünster Maibock, Ayinger Maibock, Chuckanut Maibock, Einbecker Mai-Ur-Bock, Hofbräu Maibock, Mahr’s Heller Bock",
      "tags": "high-strength, pale-color, bottom-fermented, lagered, central-europe, traditional-style, bock-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "5",
@@ -483,7 +488,8 @@
      "examples": "ABK Pils Anno 1907, Jever Pilsener, König Pilsener, Paulaner Pils, Bierstadt Slow-Pour Pils, Rothaus Pils, Schönramer Pils, Trumer Pils",
      "tags": "standard-strength, pale-color, bottom-fermented, lagered, central-europe, traditional-style, pilsner-family, bitter, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "6",
@@ -564,7 +570,8 @@
      "examples": "Aass Bock, Einbecker Ur-Bock Dunkel, Kneitinger Bock, Lindeboom Bock, Schell’s Bock, Penn Brewery St. Nikolaus Bock",
      "tags": "high-strength, amber-color, bottom-fermented, lagered, central-europe, traditional-style, bock-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "7",
@@ -620,7 +627,8 @@
      "examples": "Bolten Alt, Diebels Alt, Füchschen Alt, Original Schlüssel Alt, Schlösser Alt, Schumacher Alt, Uerige Altbier",
      "tags": "standard-strength, amber-color, top-fermented, lagered, central-europe, traditional-style, amber-ale-family, bitter"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "8",
@@ -676,7 +684,8 @@
      "examples": "Chuckanut Schwarz Lager,Devils Backbone Schwartz Bier, Köstritzer Schwarzbier, Kulmbacher Mönchshof Schwarzbier, Nuezeller Original Badebier, pFriem Schwarzbier",
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, central-europe, traditional-style, balanced, dark-lager-family"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "9",
@@ -757,7 +766,8 @@
      "examples": "Aldaris Mežpils Porteris, Baltika 6 Porter, Devils Backbone Danzig, Okocim Mistrzowski Porter, Sinebrychoff Porter, Zywiec Porter",
      "tags": "high-strength, dark-color, any-fermentation, lagered, eastern-europe, traditional-style, porter-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "10",
@@ -838,7 +848,8 @@
      "examples": "Dark – Plank Bavarian Dunkler Weizenbock, Penn Weizenbock,Schalchner Weisser Bock, Schneider Weisse Aventinus; Pale –Ayinger Weizenbock, Distelhäuser Weizen Bock, Ladenburger Weizenbock Hell,Weihenstephaner Vitus",
      "tags": "high-strength, amber-color, pale-color, top-fermented, central-europe, traditional-style, wheat-beer-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "11",
@@ -919,7 +930,8 @@
      "examples": "Bass Ale, Bateman’s Triple XB, Robinsons Trooper, Samuel Smith’s Organic Pale Ale, Shepherd Neame Bishop's Finger, Summit Extra Pale Ale",
      "tags": "standard-strength, amber-color, top-fermented, british-isles, traditional-style, amber-ale-family, bitter"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "12",
@@ -1000,7 +1012,8 @@
      "examples": "Berkshire Lost Sailor IPA, Fuller's Bengal Lancer, Marston’s Old Empire IPA, Meantime London IPA, Thornbridge Jaipur, Worthington White Shield",
      "tags": "high-strength, pale-color, top-fermented, british-isles, traditional-style, ipa-family, bitter, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "13",
@@ -1081,7 +1094,8 @@
      "examples": "Bateman’s Salem Porter, Burton Bridge Burton Porter, Fuller's London Porter, Nethergate Old Growler Porter, RCH Old Slug Porter, Samuel Smith Taddy Porter",
      "tags": "standard-strength, dark-color, top-fermented, british-isles, traditional-style, porter-family, malty, roasty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "14",
@@ -1162,7 +1176,8 @@
      "examples": "Belhaven Scottish Ale, Broughton Wee Jock 80 Shilling, Caledonian Edinburgh Castle, McEwan’s 80/-, McEwan’s Export, Traquair Bear Ale",
      "tags": "standard-strength, amber-color, top-fermented, british-isles, traditional-style, amber-ale-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "15",
@@ -1243,7 +1258,8 @@
      "examples": "Guinness Extra Stout, O’Hara’s Leann Folláin, Porterhouse XXXX, Sheaf Stout",
      "tags": "high-strength, dark-color, top-fermented, british-isles, traditional-style, stout-family, bitter, roasty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "16",
@@ -1349,7 +1365,8 @@
      "examples": "Coopers Best Extra Stout, Guinness Foreign Extra Stout, The Kernel Export Stout London 1890, La Cumbre Malpais Stout, Pelican Tsunami Export Stout, Ridgeway Foreign Export Stout",
      "tags": "high-strength, dark-color, top-fermented, british-isles, traditional-style, stout-family, balanced, roasty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "17",
@@ -1455,7 +1472,8 @@
      "examples": "Burton Bridge Thomas Sykes Old Ale, Coniston No. 9 Barley Wine, Fuller’s Golden Pride, Hogs Back A over T, J.W. Lee’s Vintage Harvest Ale, Robinson’s Old Tom",
      "tags": "very-high-strength, amber-color, top-fermented, british-isles, traditional-style, strong-ale-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "18",
@@ -1511,7 +1529,8 @@
      "examples": "Deschutes Mirror Pond Pale Ale, Half Acre Daisy Cutter Pale Ale, Great Lakes Burning River, La Cumbre Acclimated APA, Sierra Nevada Pale Ale, Stone Pale Ale 2.0",
      "tags": "standard-strength, pale-color, top-fermented, north-america, craft-style, pale-ale-family, bitter, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "19",
@@ -1592,7 +1611,8 @@
      "examples": "Avery Ellie’s Brown Ale, Big Sky Moose Drool Brown Ale, Brooklyn Brown Ale, Bell’s Best Brown, Smuttynose Old Brown Dog Ale, Telluride Face Down Brown",
      "tags": "standard-strength, dark-color, top-fermented, north-america, craft-style, brown-ale-family, balanced, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "20",
@@ -1673,7 +1693,8 @@
      "examples": "American –Bell’s Expedition Stout, Great Divide Yeti Imperial Stout, North Coast Old Rasputin Imperial Stout, Oskar Blues Ten Fidy, Sierra Nevada Narwhal Imperial Stout; English – 2SP Brewing Co The Russian, Courage Imperial Russian Stout, Le Coq Imperial Extra Double Stout, Samuel Smith Imperial Stout, Thornbridge Saint Petersburg",
      "tags": "very-high-strength, dark-color, top-fermented, british-isles, north-america, traditional-style, craft-style, stout-family, malty, bitter, roasty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "21",
@@ -1754,7 +1775,8 @@
      "examples": "Belching Beaver Hazers Gonna Haze, Hill Farmstead Susan, Other Half Green Diamonds Double IPA, Pinthouse Electric Jellyfish, Tree House Julius, Trillium Congress Street, WeldWerks Juicy Bits",
      "tags": "high-strength, pale-color, top-fermented, north-america, craft-style, ipa-family, bitter, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "22",
@@ -1860,7 +1882,8 @@
      "examples": "The Bruery White Oak, Castelain Winter Ale, Perennial Heart of Gold, Two Brothers Bare Tree",
      "tags": "very-high-strength, amber-color, top-fermented, north-america, craft-style, strong-ale-family, wheat-beer-family, balanced, hoppy"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "23",
@@ -2041,7 +2064,8 @@
      "examples": "Anderson Valley Gose, Bayerisch Bahnhof Leipziger Gose, Original Ritterguts Gose, Westbrook Gose",
      "tags": "standard-strength, pale-color, top-fermented, central-europe, historical-style, wheat-beer-family, sour, spice"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "24",
@@ -2122,7 +2146,8 @@
      "examples": "Ch’Ti Blonde, Jenlain Ambrée, La Choulette Brune, Russian River Perdition,Saint Sylvestre 3 Monts Blonde, Two Brothers Domaine Dupage",
      "tags": "high-strength, pale-color, amber-color, any-fermentation, lagered, western-europe, traditional-style, amber-ale-family, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "25",
@@ -2203,7 +2228,8 @@
      "examples": "Brigand, Delirium Tremens, Duvel, Judas, Lucifer, Russian River Damnation",
      "tags": "very-high-strength, pale-color, top-fermented, western-europe, traditional-style, bitter"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "26",
@@ -2309,7 +2335,8 @@
      "examples": "Achel Extra Bruin, Boulevard The Sixth Glass, Chimay Blue, Rochefort 10, St. Bernardus Abt 12, Westvleteren 12",
      "tags": "very-high-strength, amber-color, top-fermented, western-europe, traditional-style, malty"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "28",
@@ -2415,7 +2442,8 @@
      "examples": "Rarely found, as this style is typically the base for other Specialty-Type Beers.",
      "tags": "pale-color, top-fermented, sour"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "29",
@@ -2521,7 +2549,8 @@
      "examples": "Montegioco Open Mind, Birrificio del Forte Il Tralcio, Luppolajo Mons Rubus, Firestone Walker Feral Vinifera, pFriem Family Brewers Druif, 4 Árvores Abbondanza",
      "tags": "specialty-beer, fruit"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "30",
@@ -2627,7 +2656,8 @@
      "examples": "New Belgium Honey Orange Tripel, Westbrook It’s Tiki Time",
      "tags": "specialty-beer, spice"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "31",
@@ -2683,7 +2713,8 @@
      "examples": "Bell’s Hopslam, Cervejaria Colorado Appia, Fifth Hammer Break of Jawn, Groundswell Piloncillo, Long Trail Harvest, New Glarus Cabin Fever",
      "tags": "specialty-beer"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "32",
@@ -2739,7 +2770,8 @@
      "examples": "Fat Head’s Up in Smoke, Ommegang Bourbon Barrel Vanilla Smoked Porter",
      "tags": "specialty-beer, smoke"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "34",
@@ -2820,7 +2852,8 @@
      "examples": "None",
      "tags": "specialty-beer"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "X",
@@ -2876,7 +2909,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "X",
@@ -2907,7 +2941,8 @@
      "examples": "Montegioco Open Mind, Birrificio Barley BB5-10, Birrificio del Forte Il Tralcio, Viess Beer al mosto di gewurtztraminer, CRAK IGA Cabernet, Birrificio Apuano Ninkasi, Luppolajo Mons Rubus",
      "tags": "Specialty-beer, FruitBrazilian Styles"
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "X",
@@ -2938,7 +2973,8 @@
      "examples": null,
      "tags": null
     }
-   ]
+   ],
+   "beverage": "beer"
   },
   {
    "code": "X",
@@ -2969,7 +3005,8 @@
      "examples": "Croucher New Zealand Pilsner, Emerson’s Pilsner, Liberty Halo Pilsner, Panhead Port Road Pilsner, Sawmill Pilsner, Tuatara Mot Eureka",
      "tags": "bitter, pale-color, standard-strength, bottom-fermented, hoppy, pilsner-family, lagered, craft-style, pacific"
     }
-   ]
+   ],
+   "beverage": "beer"
   }
  ]
 }

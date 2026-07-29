@@ -72,6 +72,7 @@ export default async function GuidelineStylePage({ params }: Props) {
       name: style.name,
       categoryName: style.category.name,
       tags: style.tags,
+      beverage: style.category.beverage,
       ogMin: style.ogMin, ogMax: style.ogMax, fgMin: style.fgMin, fgMax: style.fgMax,
       ibuMin: style.ibuMin, ibuMax: style.ibuMax, srmMin: style.srmMin, srmMax: style.srmMax,
       abvMin: style.abvMin, abvMax: style.abvMax,

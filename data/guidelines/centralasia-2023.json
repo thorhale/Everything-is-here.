@@ -1,0 +1,131 @@
+{
+ "system": "CENTRALASIA",
+ "year": 2023,
+ "title": "Mongolia & Central Asia: Milk Ferments and Their Spirits",
+ "sourceType": "traditional",
+ "sourceUrl": "https://en.wikipedia.org/wiki/Airag",
+ "attribution": "The steppe's defining drinks are fermented from mare's and other animal milk — a lineage unique among the world's alcohols. Documented from ethnographic and dairy-science sources; there is no judging guideline for any of them. Values are typical.",
+ "categories": [
+  {
+   "code": "CA1",
+   "name": "Fermented Milk",
+   "beverage": "traditional",
+   "styles": [
+    {
+     "code": "CA1A",
+     "name": "Airag / Kumis (айраг / кумыс)",
+     "ogMin": null,
+     "ogMax": null,
+     "fgMin": null,
+     "fgMax": null,
+     "ibuMin": null,
+     "ibuMax": null,
+     "srmMin": null,
+     "srmMax": null,
+     "abvMin": 1,
+     "abvMax": 3,
+     "impression": "Fermented mare's milk — the national drink of Mongolia and the Central Asian steppe. Sour, fizzy, faintly alcoholic and thin, with a sharp dairy tang.",
+     "aroma": null,
+     "appearance": null,
+     "flavor": null,
+     "mouthfeel": null,
+     "comments": "Both lactic-acid bacteria and yeast work at once, so it is simultaneously soured and lightly alcoholic. A pillar of nomadic nutrition; drunk in large quantities in summer. Kumis is the Turkic/Kazakh name, airag the Mongolian.",
+     "history": null,
+     "ingredients": "Raw mare's milk, fermented by a mixed lactic-and-yeast culture in a leather bag (khokhuur) or vat, churned thousands of times to aerate. Mare's milk is uniquely high in the lactose the yeast ferment.",
+     "comparison": null,
+     "examples": "Mongolian airag, Kazakh/Kyrgyz kymyz",
+     "tags": "mongolia, airag, kumis, mares-milk, steppe"
+    },
+    {
+     "code": "CA1B",
+     "name": "Tarasun / Milk-Whey Beers",
+     "ogMin": null,
+     "ogMax": null,
+     "fgMin": null,
+     "fgMax": null,
+     "ibuMin": null,
+     "ibuMax": null,
+     "srmMin": null,
+     "srmMax": null,
+     "abvMin": 2,
+     "abvMax": 5,
+     "impression": "Regional cow- or yak-milk ferments of Buryatia and the wider steppe, sometimes stronger than airag.",
+     "aroma": null,
+     "appearance": null,
+     "flavor": null,
+     "mouthfeel": null,
+     "comments": "Where mares are scarce, other animals' milk is fermented similarly. Shubat (camel) is prized in Kazakhstan and Turkmenistan.",
+     "history": null,
+     "ingredients": "Cow, yak or camel milk fermented with mixed cultures; camel-milk shubat is the arid-zone equivalent.",
+     "comparison": null,
+     "examples": "Shubat (camel), Buryat tarasun",
+     "tags": "centralasia, milk-ferment, shubat, traditional"
+    }
+   ]
+  },
+  {
+   "code": "CA2",
+   "name": "Distilled Milk Liquor",
+   "beverage": "spirit",
+   "styles": [
+    {
+     "code": "CA2A",
+     "name": "Arkhi / Nermel (архи)",
+     "ogMin": null,
+     "ogMax": null,
+     "fgMin": null,
+     "fgMax": null,
+     "ibuMin": null,
+     "ibuMax": null,
+     "srmMin": null,
+     "srmMax": null,
+     "abvMin": 10,
+     "abvMax": 20,
+     "impression": "Mongolia's distilled milk liquor — airag redistilled in a simple stovetop still into a clear, low-strength, faintly cheesy spirit.",
+     "aroma": null,
+     "appearance": null,
+     "flavor": null,
+     "mouthfeel": null,
+     "comments": "'Arkhi' is now the general Mongolian word for any liquor, but nermel arkhi ('distilled arkhi') specifically means the traditional milk distillate. Central to hospitality and ritual; the first drops are offered to the sky and hearth.",
+     "history": null,
+     "ingredients": "Airag (fermented milk), distilled in a household still (the shar arkhi apparatus) over the hearth, often several times.",
+     "comparison": null,
+     "examples": "Nermel arkhi (home-distilled), shimiin arkhi",
+     "tags": "mongolia, arkhi, milk-liquor, distilled, traditional"
+    }
+   ]
+  },
+  {
+   "code": "CA3",
+   "name": "Grain & Bread Ferments",
+   "beverage": "traditional",
+   "styles": [
+    {
+     "code": "CA3A",
+     "name": "Boza / Bozo",
+     "ogMin": null,
+     "ogMax": null,
+     "fgMin": null,
+     "fgMax": null,
+     "ibuMin": null,
+     "ibuMax": null,
+     "srmMin": null,
+     "srmMax": null,
+     "abvMin": 0.5,
+     "abvMax": 4,
+     "impression": "A thick, sweet-sour fermented cereal drink of Central Asia, the Caucasus and the Balkans — porridge-like, low in alcohol, drunk as food.",
+     "aroma": null,
+     "appearance": null,
+     "flavor": null,
+     "mouthfeel": null,
+     "comments": "Ranges from essentially non-alcoholic (Turkish boza) to mildly alcoholic. One of the oldest cereal ferments, spanning a huge geography.",
+     "history": null,
+     "ingredients": "Millet, maize, wheat or other grain, cooked to a gruel and fermented with lactic bacteria and yeast.",
+     "comparison": null,
+     "examples": "Turkish boza, Central Asian bozo",
+     "tags": "centralasia, boza, cereal, low-alcohol, traditional"
+    }
+   ]
+  }
+ ]
+}

@@ -35,6 +35,9 @@ export interface StyleTargets {
   categoryName?: string;
   /** Guideline tags, if any — used to spot entries that aren't brewable styles. */
   tags?: string | null;
+  /** Stored beverage family (lib/beverages.ts). When present it's authoritative
+   *  — only `beer` gets a grain bill — and beats the name-regex fallback. */
+  beverage?: string | null;
   ogMin: number | null;
   ogMax: number | null;
   fgMin: number | null;
@@ -88,12 +91,33 @@ const NON_MALT: [RegExp, string][] = [
   [/pulque|tepache|palm wine|kumis|airag/i, "a traditional ferment"],
 ];
 
+// Human labels for the non-beer beverage families, for the suppress message.
+const BEVERAGE_REASON: Record<string, string> = {
+  wine: "wine — the gravity comes from grape must, not a mash",
+  cider: "cider or perry — the gravity comes from fruit juice, not a mash",
+  mead: "a honey wine — the gravity comes from honey, not a mash",
+  sake: "a rice ferment — built on koji and rice rather than a malt mash",
+  spirit: "a distilled spirit, defined by a legal standard rather than a grain bill",
+  fortified: "a fortified or aromatised wine, not a malt beverage",
+  traditional: "a traditional ferment — its sugars come from fruit, sap, honey, milk or unmalted grain rather than a mash",
+};
+
 /** Returns a reason string when a grain bill would be meaningless, else null. */
 function classifyNonMalt(style: StyleTargets): string | null {
   const tags = style.tags ?? "";
   if (/\breference\b/.test(tags)) {
     return "This entry is reference material — a tax band, a labelling rule, a protected designation — rather than a brewable style, so there is nothing to size a grain bill against.";
   }
+  // The stored beverage classification is authoritative when present: only
+  // beer gets a grain bill. This is more robust than name-matching (a Tequila
+  // or Junmai page can't slip through) and it's why the guideline pages pass
+  // the category's beverage down.
+  if (style.beverage) {
+    if (style.beverage === "beer") return null;
+    const what = BEVERAGE_REASON[style.beverage] ?? "not a malt beverage";
+    return `This is ${what}, so the grain-bill builder doesn't apply.`;
+  }
+  // Fallback for entries without a stored beverage: infer from the name.
   const s = `${style.name} ${style.categoryName ?? ""}`;
   for (const [re, what] of NON_MALT) {
     if (re.test(s)) {

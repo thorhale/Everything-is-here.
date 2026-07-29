@@ -87,12 +87,12 @@ export default async function HomePage() {
         <Card
           title="Style guidelines"
           href="/guidelines"
-          blurb="BJCP, World Beer Cup/GABF and wine guidelines — plus the law, because Scotch, sake and AOC cider have statutes rather than style sheets, and German beer has both. Every brewable style generates a starting recipe."
+          blurb="Pick what you're fermenting — beer, wine, cider, mead, sake, spirits or the world's traditional ferments — and see every relevant guideline and legal standard, from BJCP and the Maltose Falcons to Chinese baijiu law and Mongolian milk liquor."
           links={[
             ["All guidelines", "/guidelines"],
-            ["Spirits law", "/guidelines/spirits-2024"],
-            ["Beer law", "/guidelines/beerlaw-2024"],
-            ["Sake", "/guidelines/sake-2024"],
+            ["Spirits", "/guidelines/b/spirit"],
+            ["Sake & rice wine", "/guidelines/b/sake"],
+            ["Traditional & regional", "/guidelines/b/traditional"],
           ]}
         />
         <Card
