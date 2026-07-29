@@ -6,6 +6,12 @@ node_modules/
 *.tsbuildinfo
 .env
 .env.local
+# Loader credentials. The data loaders read NEON_URL from a throwaway env file
+# written next to them and deleted afterwards; if a run ever dies between those
+# two steps, this line is what stops the connection string reaching a public
+# commit.
+.neon.env
+*.neon.env
 
 # Pipeline artifacts - large, regenerable from web.archive.org, not source
 /data/raw/
