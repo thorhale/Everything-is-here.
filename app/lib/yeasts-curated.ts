@@ -159,6 +159,7 @@ export interface StrainPick {
   attenuation: number | null; // midpoint %
   cellsPerUnit: number | null;
   unitLabel: string | null;
+  toleranceMax: number | null; // % ABV ceiling, for the builder's stall warning
 }
 
 // Compact list for the calculators (attenuation autofill + pitch presets).
@@ -180,8 +181,11 @@ export const getStrainPickerList = unstable_cache(
           : s.attenuationMax ?? s.attenuationMin ?? null,
       cellsPerUnit: s.cellsPerUnit,
       unitLabel: s.unitLabel,
+      // The unified builder needs this to warn when a must carries more sugar
+      // than the strain can finish — the usual surprise in a sweet mead.
+      toleranceMax: s.alcoholToleranceMax ?? s.alcoholToleranceMin ?? null,
     }));
   },
-  ["yeast-picker-list"],
+  ["yeast-picker-list-v2"],
   { revalidate: 3600 }
 );

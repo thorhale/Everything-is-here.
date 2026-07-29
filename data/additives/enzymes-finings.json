@@ -1,0 +1,343 @@
+{
+ "attribution": "Dose rates are typical manufacturer ranges; enzyme and fining products vary in activity between suppliers, so bench trials are the only reliable guide. Allergen status is noted where it applies — isinglass, gelatin, chitosan and lysozyme all carry declaration requirements in some markets.",
+ "additives": [
+  {
+   "id": "enzyme-pectic",
+   "name": "Pectic Enzyme",
+   "aliases": [
+    "Pectinase",
+    "Lallzyme",
+    "Rohapect"
+   ],
+   "category": "enzyme",
+   "subtype": "pectinase",
+   "uses": [
+    "wine",
+    "cider",
+    "mead",
+    "beer"
+   ],
+   "doseMinGPerL": 0.03,
+   "doseMaxGPerL": 0.15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Breaks down pectin, the structural polysaccharide that makes fruit musts cloudy, viscous and hard to press.",
+   "usageNotes": "Add to the crushed fruit before fermentation for both juice yield and clarity; 24 hours of contact before pressing typically lifts yield noticeably.",
+   "cautions": "Inhibited by high alcohol, so it works far better pre-fermentation than after. Sulphite at normal doses is tolerated.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 0
+  },
+  {
+   "id": "enzyme-amylase",
+   "name": "Alpha-Amylase",
+   "aliases": [
+    "Fungal amylase"
+   ],
+   "category": "enzyme",
+   "subtype": "amylase",
+   "uses": [
+    "beer",
+    "spirits",
+    "wine"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Cuts starch chains internally to dextrins. Used where the grist has more starch than the malt's own enzymes can convert.",
+   "usageNotes": "For starch hazes, unmalted-adjunct mashes, and rescuing a mash that failed conversion.",
+   "cautions": "Does not by itself produce a fully fermentable wort — it makes dextrins, not simple sugars.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 1
+  },
+  {
+   "id": "enzyme-glucoamylase",
+   "name": "Glucoamylase",
+   "aliases": [
+    "Amyloglucosidase",
+    "AMG"
+   ],
+   "category": "enzyme",
+   "subtype": "amylase",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.6,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Cleaves glucose from the ends of dextrin chains, converting essentially all remaining carbohydrate to fermentable sugar.",
+   "usageNotes": "The basis of Brut IPA and of most grain-based distilling washes. Also the enzyme in commercial 'light' beers.",
+   "cautions": "It does not denature at fermentation temperature and will keep working in the bottle — a bottled beer dosed with glucoamylase can ferment to dryness and over-pressurise. Pasteurise or keg.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 2
+  },
+  {
+   "id": "enzyme-beta-glucanase",
+   "name": "Beta-Glucanase",
+   "aliases": [],
+   "category": "enzyme",
+   "subtype": "glucanase",
+   "uses": [
+    "beer",
+    "wine"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Degrades beta-glucans, the gums from unmalted or under-modified grain that cause set mashes and slow runoff.",
+   "usageNotes": "Useful with high proportions of raw wheat, rye or oats, and for botrytised musts where the glucan load blocks filtration.",
+   "cautions": "Works best in the mash; less effective once the wort is hot.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 3
+  },
+  {
+   "id": "enzyme-lysozyme",
+   "name": "Lysozyme",
+   "aliases": [],
+   "category": "enzyme",
+   "subtype": "antimicrobial",
+   "uses": [
+    "wine",
+    "cider"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "An egg-white enzyme that lyses gram-positive bacteria — which means lactic acid bacteria, and so malolactic conversion.",
+   "usageNotes": "Suppresses lactic bacteria without sulphite, useful for delaying or preventing malolactic conversion in a low-sulphite wine.",
+   "cautions": "An egg-derived allergen requiring declaration in most markets. Does nothing against Brettanomyces or acetic bacteria, which are not gram-positive.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 4
+  },
+  {
+   "id": "fining-bentonite",
+   "name": "Bentonite",
+   "aliases": [
+    "Sodium bentonite",
+    "Calcium bentonite"
+   ],
+   "category": "fining",
+   "subtype": "protein",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.25,
+   "doseMaxGPerL": 1.5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "3-7 days",
+   "description": "A negatively-charged clay that binds and drops positively-charged proteins — the standard protection against heat-unstable protein haze in white wine.",
+   "usageNotes": "Hydrate in water for several hours before use. Bench-trial for the minimum effective dose.",
+   "cautions": "Strips aroma and colour along with the protein, and makes substantial lees — expect 3-5% volume loss.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 5
+  },
+  {
+   "id": "fining-isinglass",
+   "name": "Isinglass",
+   "aliases": [
+    "Fish bladder collagen"
+   ],
+   "category": "fining",
+   "subtype": "collagen",
+   "uses": [
+    "beer",
+    "wine",
+    "cider"
+   ],
+   "doseMinGPerL": 0.01,
+   "doseMaxGPerL": 0.1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "3-10 days",
+   "description": "Collagen from fish swim bladders, the traditional cask-ale fining. Drops yeast without stripping much flavour.",
+   "usageNotes": "The clarity mechanism behind bright cask beer. Works best cold and on already-flocculent yeast.",
+   "cautions": "Not vegan or vegetarian, and requires allergen declaration in some markets. Degrades if stored warm.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 6
+  },
+  {
+   "id": "fining-gelatin",
+   "name": "Gelatin",
+   "aliases": [],
+   "category": "fining",
+   "subtype": "collagen",
+   "uses": [
+    "beer",
+    "wine",
+    "cider"
+   ],
+   "doseMinGPerL": 0.02,
+   "doseMaxGPerL": 0.15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2-7 days",
+   "description": "A positively-charged protein fining that binds tannin and polyphenols, clarifying and softening astringency.",
+   "usageNotes": "Effective in cold beer and in over-tannic red wine. Dissolve in warm water, never boiling.",
+   "cautions": "Destroyed by the proteases in fresh pineapple, papaya and kiwi. Over-fining strips colour and body from red wine.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 7
+  },
+  {
+   "id": "fining-sparkolloid",
+   "name": "Sparkolloid",
+   "aliases": [
+    "Polysaccharide fining"
+   ],
+   "category": "fining",
+   "subtype": "polysaccharide",
+   "uses": [
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 0.3,
+   "doseMaxGPerL": 0.6,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "1-3 weeks",
+   "description": "A positively-charged polysaccharide fining that works where bentonite alone leaves a persistent pectin or polysaccharide haze.",
+   "usageNotes": "Boil in water before use. The go-to for stubborn fruit-wine and mead hazes.",
+   "cautions": "Produces light, fluffy lees that are easily disturbed — rack carefully.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 8
+  },
+  {
+   "id": "fining-kieselsol-chitosan",
+   "name": "Kieselsol & Chitosan",
+   "aliases": [
+    "Super-Kleer",
+    "Dual-stage fining"
+   ],
+   "category": "fining",
+   "subtype": "two-part",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 0.5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2-7 days",
+   "description": "A two-part system: negatively-charged silica sol followed by positively-charged chitosan, so each drops what the other leaves behind.",
+   "usageNotes": "Fast and effective — usually brilliant within 48 hours. The most common homebrew clearing kit.",
+   "cautions": "Chitosan is usually crustacean-derived and an allergen, though fungal-derived versions exist. Add in the stated order.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 9
+  },
+  {
+   "id": "fining-pvpp",
+   "name": "PVPP",
+   "aliases": [
+    "Polyvinylpolypyrrolidone",
+    "Polyclar"
+   ],
+   "category": "fining",
+   "subtype": "polyphenol",
+   "uses": [
+    "beer",
+    "wine",
+    "cider"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "1-3 days",
+   "description": "A synthetic polymer that selectively adsorbs polyphenols, removing browning precursors and harsh bitterness.",
+   "usageNotes": "Used for chill-haze prevention in beer and for pinking and bitterness in white wine.",
+   "cautions": "Insoluble and filtered out entirely, so nothing remains in the finished drink. Over-use strips desirable phenolics too.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 10
+  },
+  {
+   "id": "fining-irish-moss",
+   "name": "Irish Moss / Whirlfloc",
+   "aliases": [
+    "Carrageenan",
+    "Whirlfloc"
+   ],
+   "category": "fining",
+   "subtype": "kettle",
+   "uses": [
+    "beer"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "boil",
+   "description": "A seaweed-derived carrageenan added in the last 10-15 minutes of the boil to coagulate hot-break protein.",
+   "usageNotes": "One Whirlfloc tablet per 20 L is the standard homebrew dose.",
+   "cautions": "Does nothing for chill haze — it works on hot break only.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 11
+  },
+  {
+   "id": "fining-activated-carbon",
+   "name": "Activated Carbon",
+   "aliases": [
+    "Activated charcoal"
+   ],
+   "category": "fining",
+   "subtype": "adsorbent",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer",
+    "cider"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "1-3 days",
+   "description": "Non-selective adsorbent for colour and off-aromas. In distilling, the standard polish for neutral spirit.",
+   "usageNotes": "Different grades target colour or odour. In spirits, carbon filtration is what turns a rough sugar-wash distillate into vodka.",
+   "cautions": "Strips everything, good and bad. Bench-trial and use the minimum that works — this is the step where a spirit loses its character.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 12
+  }
+ ]
+}

@@ -61,10 +61,11 @@ export default async function HomePage() {
         />
         <Card
           title="Calculators"
-          href="/calculator"
-          blurb="The original recipe calculator rebuilt from BrewToad's own formulas, plus a yeast pitching calculator, a water/salt builder, and a toolbox of the classic utilities — every formula validated against known reference values."
+          href="/build"
+          blurb="One recipe builder for beer, cider, wine, mead and spirit washes — because underneath they are all sugar divided by volume. Plus pitching rate, water and salts, and the classic utilities, every formula validated against published reference values."
           links={[
-            ["Recipe calculator", "/calculator"],
+            ["Recipe builder", "/build"],
+            ["Beer calculator", "/calculator"],
             ["Brewer's toolbox", "/tools"],
             ["Pitching rate", "/pitching"],
             ["Water & salts", "/water/builder"],
@@ -72,13 +73,14 @@ export default async function HomePage() {
         />
         <Card
           title="Ingredient databases"
-          href="/yeasts/db"
-          blurb={`${c.strains} yeast strains, ${c.fermentables} fermentables, ${c.hops} hops and ${c.water} water profiles — every entry sourced to a manufacturer spec sheet or published standard, and wired into the calculators.`}
+          href="/ingredients"
+          blurb={`${c.strains} yeast strains, ${c.fermentables} fermentables, ${c.hops} hops and ${c.water} water profiles, plus the acids, nutrients, enzymes and oak — all in one place, every entry sourced, and all of it wired into the calculators.`}
           links={[
-            ["Yeast", "/yeasts/db"],
+            ["All ingredients", "/ingredients"],
             ["Fermentables", "/fermentables/db"],
+            ["Yeast", "/yeasts/db"],
             ["Hops", "/hops/db"],
-            ["Water", "/water"],
+            ["Additives", "/additives"],
             ["Download it all", "/data-download"],
           ]}
         />

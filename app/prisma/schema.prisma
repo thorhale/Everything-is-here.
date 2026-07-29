@@ -393,8 +393,38 @@ model Fermentable {
 
   // Extract & colour
   ppg           Float? // points per pound per gallon
+  ppgMin        Float? // fruit and honey vary too much for a single figure
+  ppgMax        Float?
   yieldPct      Float? // extract as % of sucrose
   colorLovibond Float?
+  pfundColorMm  Float? // honey grading scale, mm
+
+  // Sugar-mass model. Beer works from PPG and mash efficiency; wine, cider
+  // and mead work from the sugar actually present, which for real fruit is a
+  // range rather than a number. Both paths reduce to the same identity:
+  // PPG = 46 x sugar mass fraction.
+  sugarGPer100g    Float? // whole ingredient, as weighed
+  sugarGPer100gMin Float?
+  sugarGPer100gMax Float?
+  juiceBrix        Float? // degrees Brix of the pressed juice
+  juiceBrixMin     Float?
+  juiceBrixMax     Float?
+  juiceYieldPct    Float? // mass % of the whole fruit recoverable as juice
+  moisturePct      Float? // honey and syrups
+
+  // Must chemistry — what you have to correct before pitching.
+  titratableAcidityGPerL    Float?
+  titratableAcidityMinGPerL Float?
+  titratableAcidityMaxGPerL Float?
+  dominantAcid              String? // malic | citric | tartaric | mixed
+  phTypical                 Float?
+  phMin                     Float?
+  phMax                     Float?
+  pectinLevel               String? // low | medium | high | very high
+  tanninLevel               String?
+  fruitGroup                String? // pome | stone | berry | citrus | tropical | melon | grape | dried | other
+  species                   String? // Vitis vinifera, Hybrid, Vitis labrusca…
+  grapeColor                String? // red | white
 
   // How it behaves in the brewhouse
   requiresConversion   Boolean @default(false) // starch needing mash/enzymes
@@ -421,6 +451,40 @@ model Fermentable {
   @@index([category])
   @@index([name])
   @@index([brand])
+  @@index([fruitGroup])
+}
+
+// Everything that goes into a fermenter without contributing fermentable
+// sugar: acids, nutrients, enzymes, finings, tannins, wood, stabilisers and
+// botanicals. Curated in data/additives/*.json.
+model Additive {
+  id       String   @id // e.g. "acid-tartaric", "nutrient-fermaid-o"
+  name     String
+  aliases  String[] @default([])
+  category String // acid | deacidifier | nutrient | enzyme | fining | tannin | wood | stabiliser | botanical
+  subtype  String?
+  uses     String[] @default([]) // beer | wine | mead | cider | spirits
+
+  // Dosing, and what a gram of it actually does — this is what lets the
+  // calculator answer "how much do I add" rather than just listing products.
+  doseMinGPerL Float?
+  doseMaxGPerL Float?
+  doseUnit     String? // g/L | mL/L | tablet/gal
+
+  effectMetric          String? // TA | pH | YAN | SO2 | tannin
+  effectPerGramPerLitre Float? // signed: negative for deacidifiers
+  effectUnit            String?
+  contactTime           String?
+
+  description String
+  usageNotes  String?
+  cautions    String?
+  sourceUrl   String
+  attribution String?
+  sortOrder   Int     @default(0)
+
+  @@index([category])
+  @@index([name])
 }
 
 model Hop {

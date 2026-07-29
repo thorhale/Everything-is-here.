@@ -120,9 +120,25 @@ export interface FermentablePick {
   name: string;
   brand: string | null;
   category: string;
+  type: string;
   ppg: number | null;
   colorLovibond: number | null;
   isGrain: boolean; // efficiency-scaled in the calculator; sugars/extracts are not
+  // Everything below drives the unified builder's sugar-mass model, and the
+  // low/high figures are what let it show a gravity band for real fruit
+  // instead of a falsely precise single number.
+  ppgMin: number | null;
+  ppgMax: number | null;
+  sugarGPer100g: number | null;
+  sugarGPer100gMin: number | null;
+  sugarGPer100gMax: number | null;
+  juiceBrix: number | null;
+  juiceBrixMin: number | null;
+  juiceBrixMax: number | null;
+  juiceYieldPct: number | null;
+  titratableAcidityGPerL: number | null;
+  phTypical: number | null;
+  uses: string[];
 }
 
 export const getFermentablePickerList = unstable_cache(
@@ -133,14 +149,27 @@ export const getFermentablePickerList = unstable_cache(
       name: f.name,
       brand: f.brand,
       category: f.category,
+      type: f.type,
       ppg: f.ppg,
       colorLovibond: f.colorLovibond,
       // Sugars, syrups, extracts, juice and fruit go in at full yield; only
       // mashed grain is scaled by brewhouse efficiency.
       isGrain: f.type === "grain" || (f.type === "adjunct" && f.requiresConversion),
+      ppgMin: f.ppgMin,
+      ppgMax: f.ppgMax,
+      sugarGPer100g: f.sugarGPer100g,
+      sugarGPer100gMin: f.sugarGPer100gMin,
+      sugarGPer100gMax: f.sugarGPer100gMax,
+      juiceBrix: f.juiceBrix,
+      juiceBrixMin: f.juiceBrixMin,
+      juiceBrixMax: f.juiceBrixMax,
+      juiceYieldPct: f.juiceYieldPct,
+      titratableAcidityGPerL: f.titratableAcidityGPerL,
+      phTypical: f.phTypical,
+      uses: f.uses,
     }));
   },
-  ["fermentable-picker-list"],
+  ["fermentable-picker-list-v2"],
   { revalidate: 3600 }
 );
 

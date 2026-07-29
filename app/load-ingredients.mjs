@@ -9,6 +9,7 @@ import { join } from "node:path";
 const sql = neon(process.env.NEON_URL);
 const FERM_DIR = process.env.FERMENTABLES_DIR || "../data/fermentables";
 const HOPS_DIR = process.env.HOPS_DIR || "../data/hops";
+const ADD_DIR = process.env.ADDITIVES_DIR || "../data/additives";
 
 const lit = (v) => {
   if (v == null) return "NULL";
@@ -38,6 +39,36 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "Fermentable_category_idx" ON "Fermentable"("category")`,
   `CREATE INDEX IF NOT EXISTS "Fermentable_name_idx" ON "Fermentable"("name")`,
   `CREATE INDEX IF NOT EXISTS "Fermentable_brand_idx" ON "Fermentable"("brand")`,
+  // The sugar-mass columns arrived after the table did, so add them
+  // idempotently rather than requiring a migration to have run first.
+  ...[
+    ["ppgMin", "DOUBLE PRECISION"], ["ppgMax", "DOUBLE PRECISION"],
+    ["pfundColorMm", "DOUBLE PRECISION"],
+    ["sugarGPer100g", "DOUBLE PRECISION"], ["sugarGPer100gMin", "DOUBLE PRECISION"],
+    ["sugarGPer100gMax", "DOUBLE PRECISION"],
+    ["juiceBrix", "DOUBLE PRECISION"], ["juiceBrixMin", "DOUBLE PRECISION"],
+    ["juiceBrixMax", "DOUBLE PRECISION"], ["juiceYieldPct", "DOUBLE PRECISION"],
+    ["moisturePct", "DOUBLE PRECISION"],
+    ["titratableAcidityGPerL", "DOUBLE PRECISION"],
+    ["titratableAcidityMinGPerL", "DOUBLE PRECISION"],
+    ["titratableAcidityMaxGPerL", "DOUBLE PRECISION"],
+    ["dominantAcid", "TEXT"], ["phTypical", "DOUBLE PRECISION"],
+    ["phMin", "DOUBLE PRECISION"], ["phMax", "DOUBLE PRECISION"],
+    ["pectinLevel", "TEXT"], ["tanninLevel", "TEXT"], ["fruitGroup", "TEXT"],
+    ["species", "TEXT"], ["grapeColor", "TEXT"],
+  ].map(([col, type]) => `ALTER TABLE "Fermentable" ADD COLUMN IF NOT EXISTS "${col}" ${type}`),
+  `CREATE INDEX IF NOT EXISTS "Fermentable_fruitGroup_idx" ON "Fermentable"("fruitGroup")`,
+  `CREATE TABLE IF NOT EXISTS "Additive" (
+    "id" TEXT PRIMARY KEY, "name" TEXT NOT NULL,
+    "aliases" TEXT[] DEFAULT ARRAY[]::TEXT[],
+    "category" TEXT NOT NULL, "subtype" TEXT,
+    "uses" TEXT[] DEFAULT ARRAY[]::TEXT[],
+    "doseMinGPerL" DOUBLE PRECISION, "doseMaxGPerL" DOUBLE PRECISION, "doseUnit" TEXT,
+    "effectMetric" TEXT, "effectPerGramPerLitre" DOUBLE PRECISION, "effectUnit" TEXT,
+    "contactTime" TEXT, "description" TEXT NOT NULL, "usageNotes" TEXT, "cautions" TEXT,
+    "sourceUrl" TEXT NOT NULL, "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
+  `CREATE INDEX IF NOT EXISTS "Additive_category_idx" ON "Additive"("category")`,
+  `CREATE INDEX IF NOT EXISTS "Additive_name_idx" ON "Additive"("name")`,
   `CREATE TABLE IF NOT EXISTS "Hop" (
     "id" TEXT PRIMARY KEY, "name" TEXT NOT NULL,
     "aliases" TEXT[] DEFAULT ARRAY[]::TEXT[], "country" TEXT, "purpose" TEXT,
@@ -57,7 +88,10 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "Hop_purpose_idx" ON "Hop"("purpose")`,
 ];
 
-const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","attribution","sortOrder"];
+const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","attribution","sortOrder",
+  "ppgMin","ppgMax","pfundColorMm","sugarGPer100g","sugarGPer100gMin","sugarGPer100gMax","juiceBrix","juiceBrixMin","juiceBrixMax","juiceYieldPct","moisturePct","titratableAcidityGPerL","titratableAcidityMinGPerL","titratableAcidityMaxGPerL","dominantAcid","phTypical","phMin","phMax","pectinLevel","tanninLevel","fruitGroup","species","grapeColor"];
+
+const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","attribution","sortOrder"];
 
 const HOP_COLS = ["id","name","aliases","country","purpose","alphaMin","alphaMax","betaMin","betaMax","cohumuloneMin","cohumuloneMax","totalOilMin","totalOilMax","myrcenePct","humulenePct","caryophyllenePct","farnescenePct","aromaDescriptors","substitutes","styleTags","breeder","yearReleased","description","usageNotes","sourceUrl","attribution","sortOrder"];
 
@@ -70,6 +104,25 @@ function fermTuple(f, i, attribution) {
     lit(f.ppgBasis ?? null), lit(f.servingSizeG ?? null), lit(f.totalCarbG ?? null), lit(f.fiberG ?? null),
     litArr(f.uses), litArr(f.styleTags), lit(f.description ?? null), lit(f.flavorNotes ?? null),
     lit(f.usageNotes ?? null), lit(f.sourceUrl), lit(f.attribution ?? attribution ?? null), lit(f.sortOrder ?? i),
+    lit(f.ppgMin ?? null), lit(f.ppgMax ?? null), lit(f.pfundColorMm ?? null),
+    lit(f.sugarGPer100g ?? null), lit(f.sugarGPer100gMin ?? null), lit(f.sugarGPer100gMax ?? null),
+    lit(f.juiceBrix ?? null), lit(f.juiceBrixMin ?? null), lit(f.juiceBrixMax ?? null),
+    lit(f.juiceYieldPct ?? null), lit(f.moisturePct ?? null),
+    lit(f.titratableAcidityGPerL ?? null), lit(f.titratableAcidityMinGPerL ?? null),
+    lit(f.titratableAcidityMaxGPerL ?? null), lit(f.dominantAcid ?? null),
+    lit(f.phTypical ?? null), lit(f.phMin ?? null), lit(f.phMax ?? null),
+    lit(f.pectinLevel ?? null), lit(f.tanninLevel ?? null), lit(f.fruitGroup ?? null),
+    lit(f.species ?? null), lit(f.grapeColor ?? null),
+  ].join(",") + ")";
+}
+
+function addTuple(a, i, attribution) {
+  return "(" + [
+    lit(a.id), lit(a.name), litArr(a.aliases), lit(a.category), lit(a.subtype ?? null),
+    litArr(a.uses), lit(a.doseMinGPerL ?? null), lit(a.doseMaxGPerL ?? null), lit(a.doseUnit ?? null),
+    lit(a.effectMetric ?? null), lit(a.effectPerGramPerLitre ?? null), lit(a.effectUnit ?? null),
+    lit(a.contactTime ?? null), lit(a.description), lit(a.usageNotes ?? null), lit(a.cautions ?? null),
+    lit(a.sourceUrl), lit(a.attribution ?? attribution ?? null), lit(a.sortOrder ?? i),
   ].join(",") + ")";
 }
 
@@ -114,9 +167,36 @@ async function run() {
     console.log(`hops/${f}: ${doc.hops.length}`);
   }
 
+  for (const f of readdirSync(ADD_DIR).filter((x) => x.endsWith(".json")).sort()) {
+    const doc = JSON.parse(readFileSync(join(ADD_DIR, f), "utf8"));
+    const ids = doc.additives.map((x) => lit(x.id)).join(",");
+    await sql.query(`DELETE FROM "Additive" WHERE id IN (${ids})`);
+    await insertBatched("Additive", ADD_COLS, doc.additives.map((x, i) => addTuple(x, i, doc.attribution)));
+    console.log(`additives/${f}: ${doc.additives.length}`);
+  }
+
+  // Delete-and-reinsert only touches ids that are still in the files, so an
+  // id that gets renamed leaves an orphan row behind that no page will ever
+  // show and no file explains. Prune anything the data files no longer claim.
+  for (const [table, dir, key] of [
+    ["Fermentable", FERM_DIR, "fermentables"],
+    ["Hop", HOPS_DIR, "hops"],
+    ["Additive", ADD_DIR, "additives"],
+  ]) {
+    const known = readdirSync(dir)
+      .filter((x) => x.endsWith(".json"))
+      .flatMap((x) => JSON.parse(readFileSync(join(dir, x), "utf8"))[key].map((r) => lit(r.id)));
+    const orphans = await sql.query(`SELECT id FROM "${table}" WHERE id NOT IN (${known.join(",")})`);
+    if (orphans.length > 0) {
+      await sql.query(`DELETE FROM "${table}" WHERE id NOT IN (${known.join(",")})`);
+      console.log(`pruned ${orphans.length} stale ${table} row(s): ${orphans.map((o) => o.id).join(", ")}`);
+    }
+  }
+
   const [{ f }] = await sql.query(`SELECT count(*)::int AS f FROM "Fermentable"`);
   const [{ h }] = await sql.query(`SELECT count(*)::int AS h FROM "Hop"`);
-  console.log(`DONE. ${f} fermentables, ${h} hops in Neon.`);
+  const [{ a }] = await sql.query(`SELECT count(*)::int AS a FROM "Additive"`);
+  console.log(`DONE. ${f} fermentables, ${h} hops, ${a} additives in Neon.`);
 }
 
 run().catch((e) => {
