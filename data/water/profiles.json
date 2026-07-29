@@ -1,45 +1,1059 @@
 {
-  "set": "water-profiles",
-  "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework.",
-  "profiles": [
-    {"id":"burton-upon-trent","name":"Burton upon Trent","kind":"classic-city","country":"United Kingdom","region":"Staffordshire","calcium":275,"magnesium":40,"sodium":25,"chloride":35,"sulfate":610,"bicarbonate":270,"bestForStyles":["English IPA","Burton Ale","Pale Ale","ESB"],"styleTags":["hoppy","sulfate","gypsum"],"description":"The most famous brewing water on earth. Enormously high sulfate from the local gypsum accentuates hop bitterness into a crisp, dry, minerally snap — the 'Burton snap' — and made the town the historic capital of pale ale. So influential that adding gypsum to liquor is still called 'Burtonisation'.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"dublin","name":"Dublin","kind":"classic-city","country":"Ireland","region":"Leinster","calcium":118,"magnesium":4,"sodium":12,"chloride":19,"sulfate":54,"bicarbonate":319,"bestForStyles":["Irish Dry Stout","Porter","Irish Red Ale"],"styleTags":["dark","high-alkalinity","malty"],"description":"Very high bicarbonate alkalinity — the reason Dublin became a stout city. Only heavily roasted, acidic dark malts can balance the mash pH this water pushes up, which is exactly what Guinness-style dry stout is built from.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"munich","name":"Munich","kind":"classic-city","country":"Germany","region":"Bavaria","calcium":75,"magnesium":18,"sodium":10,"chloride":8,"sulfate":18,"bicarbonate":200,"bestForStyles":["Munich Dunkel","Märzen","Bock","Munich Helles"],"styleTags":["malty","moderate-alkalinity","amber"],"description":"Moderately alkaline, low in sulfate and chloride — a clean, malt-forward profile that suits amber and dark Bavarian lagers. The alkalinity is balanced by the darker malts in dunkel and bock; for pale Helles, brewers now dilute or acidify.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"pilsen","name":"Pilsen","kind":"classic-city","country":"Czech Republic","region":"Bohemia","calcium":7,"magnesium":2,"sodium":2,"chloride":5,"sulfate":5,"bicarbonate":3,"bestForStyles":["Bohemian Pilsner","Czech Lager"],"styleTags":["soft","very-low-mineral","delicate"],"description":"Astonishingly soft — almost distilled. This near-zero mineral content is what lets Bohemian Pilsner show its delicate Saaz hop and Pilsner malt character without any mineral interference. The template for every soft-water pale lager.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"london","name":"London","kind":"classic-city","country":"United Kingdom","region":"England","calcium":90,"magnesium":5,"sodium":15,"chloride":40,"sulfate":40,"bicarbonate":125,"bestForStyles":["English Porter","Brown Ale","Mild","English Bitter"],"styleTags":["balanced","moderate-alkalinity","dark"],"description":"Moderately hard and moderately alkaline, with chloride edging out sulfate for a rounder, maltier balance — well suited to the porters, milds, and browns that defined London brewing.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"dortmund","name":"Dortmund","kind":"classic-city","country":"Germany","region":"North Rhine-Westphalia","calcium":225,"magnesium":40,"sodium":60,"chloride":60,"sulfate":120,"bicarbonate":180,"bestForStyles":["Dortmunder Export","Helles"],"styleTags":["hard","balanced","export"],"description":"Very hard water with substantial sulfate AND alkalinity — a high-mineral profile that gives Dortmunder Export its firm, slightly minerally, hop-balanced character distinct from softer Munich Helles.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"edinburgh","name":"Edinburgh","kind":"classic-city","country":"United Kingdom","region":"Scotland","calcium":120,"magnesium":25,"sodium":55,"chloride":65,"sulfate":140,"bicarbonate":225,"bestForStyles":["Scotch Ale","Wee Heavy","Scottish Export"],"styleTags":["malty","hard","alkaline"],"description":"Hard, alkaline water that supported Edinburgh's malt-forward Scottish ales; the alkalinity and moderate sulfate suit rich, malty brews rather than aggressively hoppy ones.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"vienna","name":"Vienna","kind":"classic-city","country":"Austria","region":"Vienna","calcium":200,"magnesium":60,"sodium":8,"chloride":12,"sulfate":125,"bicarbonate":290,"bestForStyles":["Vienna Lager","Märzen"],"styleTags":["malty","hard","amber"],"description":"Hard and alkaline with moderate sulfate — a profile that shaped the amber, malty Vienna lager style.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"cologne","name":"Cologne (Köln)","kind":"classic-city","country":"Germany","region":"North Rhine-Westphalia","calcium":90,"magnesium":20,"sodium":40,"chloride":90,"sulfate":40,"bicarbonate":230,"bestForStyles":["Kölsch"],"styleTags":["balanced","chloride","delicate"],"description":"Moderate hardness with chloride well above sulfate, giving Kölsch its soft, rounded, subtly malty delicacy under a crisp finish.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"brussels","name":"Brussels","kind":"classic-city","country":"Belgium","region":"Brussels-Capital","calcium":90,"magnesium":11,"sodium":29,"chloride":33,"sulfate":54,"bicarbonate":230,"bestForStyles":["Lambic","Witbier","Belgian Ale"],"styleTags":["balanced","moderate-alkalinity","belgian"],"description":"Moderately hard, moderately alkaline water of the Senne valley — the historic water of lambic and Belgian wheat.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"tadcaster","name":"Tadcaster","kind":"classic-city","country":"United Kingdom","region":"North Yorkshire","calcium":220,"magnesium":60,"sodium":45,"chloride":60,"sulfate":390,"bicarbonate":210,"bestForStyles":["Yorkshire Bitter","Pale Ale"],"styleTags":["hoppy","hard","sulfate"],"description":"A hard, sulfate-rich Yorkshire brewing town (home of Samuel Smith's and John Smith's); a gentler cousin of Burton's water for firm, dry bitters.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"bohemia-soft","name":"Bohemia (soft supply)","kind":"classic-city","country":"Czech Republic","region":"Bohemia","calcium":10,"magnesium":3,"sodium":3,"chloride":6,"sulfate":8,"bicarbonate":15,"bestForStyles":["Czech Pale Lager","Pilsner"],"styleTags":["soft","low-mineral"],"description":"A representative soft Bohemian supply just above Pilsen's near-zero baseline; the template for delicate Czech pale lager.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"asheville","name":"Asheville, North Carolina","kind":"modern-city","country":"United States","region":"North Carolina","calcium":6,"magnesium":2,"sodium":4,"chloride":5,"sulfate":6,"bicarbonate":16,"bestForStyles":["Any (blank slate)"],"styleTags":["very-soft","modern-craft","blank-slate"],"description":"Very soft Appalachian mountain water; a blank slate that helped make Asheville a dense craft-brewing hub.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"bend","name":"Bend, Oregon","kind":"modern-city","country":"United States","region":"Oregon","calcium":8,"magnesium":2,"sodium":6,"chloride":4,"sulfate":8,"bicarbonate":30,"bestForStyles":["Pale Ale","IPA"],"styleTags":["very-soft","modern-craft"],"description":"Soft Cascade snowmelt behind Central Oregon's outsized brewery count.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"melbourne","name":"Melbourne","kind":"modern-city","country":"Australia","region":"Victoria","calcium":6,"magnesium":3,"sodium":8,"chloride":12,"sulfate":8,"bicarbonate":20,"bestForStyles":["Any (blank slate)"],"styleTags":["very-soft","modern-craft"],"description":"Soft protected-catchment water supplying one of the southern hemisphere's busiest craft scenes.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"bamberg","name":"Bamberg","kind":"classic-city","country":"Germany","region":"Bavaria","calcium":120,"magnesium":10,"sodium":8,"chloride":10,"sulfate":40,"bicarbonate":300,"bestForStyles":["Rauchbier","Märzen","Dunkel"],"styleTags":["malty","alkaline","smoke"],"description":"Hard, alkaline Franconian water behind Bamberg's smoked lagers and dark Franconian styles.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"tokyo","name":"Tokyo","kind":"modern-city","country":"Japan","region":"Kantō","calcium":18,"magnesium":6,"sodium":18,"chloride":30,"sulfate":22,"bicarbonate":55,"bestForStyles":["Rice Lager","Pale Ale"],"styleTags":["soft-moderate","modern-craft"],"description":"Moderately soft municipal water supplying Japan's dense Tokyo craft scene; a light, flexible base.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"copenhagen","name":"Copenhagen","kind":"modern-city","country":"Denmark","region":"Hovedstaden","calcium":110,"magnesium":18,"sodium":30,"chloride":55,"sulfate":55,"bicarbonate":250,"bestForStyles":["Lager","Pilsner"],"styleTags":["hard","alkaline","lager"],"description":"Hard, chalky Danish groundwater — historically the water of Carlsberg's lagers.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"portland-me","name":"Portland, Maine","kind":"modern-city","country":"United States","region":"Maine","calcium":5,"magnesium":1,"sodium":6,"chloride":8,"sulfate":5,"bicarbonate":14,"bestForStyles":["Hazy IPA","Pale Ale"],"styleTags":["very-soft","modern-craft","blank-slate"],"description":"Very soft Sebago Lake water behind the outsized New England hazy-IPA scene (Bissell Brothers, Foundation, etc.).","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"plzen-region","name":"Budweis (České Budějovice)","kind":"classic-city","country":"Czech Republic","region":"South Bohemia","calcium":30,"magnesium":8,"sodium":10,"chloride":15,"sulfate":15,"bicarbonate":80,"bestForStyles":["Czech Pale Lager","Bohemian Pilsner"],"styleTags":["soft","lager","malty"],"description":"Softer than most brewing centres but firmer than Pilsen — the water behind Budweiser Budvar's rounder, maltier take on Czech lager.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"dusseldorf","name":"Düsseldorf","kind":"classic-city","country":"Germany","region":"North Rhine-Westphalia","calcium":90,"magnesium":15,"sodium":45,"chloride":85,"sulfate":55,"bicarbonate":215,"bestForStyles":["Altbier"],"styleTags":["malty","chloride","alkaline"],"description":"Moderately hard, chloride-forward and alkaline — suits the malty, copper-coloured altbier the city is known for.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"antwerp","name":"Antwerp","kind":"classic-city","country":"Belgium","region":"Flanders","calcium":90,"magnesium":15,"sodium":45,"chloride":60,"sulfate":85,"bicarbonate":180,"bestForStyles":["Belgian Ale","Belgian Strong","De Koninck-style Ale"],"styleTags":["belgian","balanced","moderate"],"description":"Moderately hard Flemish water with balanced sulfate and chloride; the historic supply of Antwerp's ale breweries.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"tartu-baltic","name":"Baltic (typical hard groundwater)","kind":"classic-city","country":"Estonia","region":"Baltic states","calcium":110,"magnesium":25,"sodium":20,"chloride":30,"sulfate":60,"bicarbonate":290,"bestForStyles":["Baltic Porter","Dark Lager"],"styleTags":["hard","alkaline","dark","baltic"],"description":"Hard, alkaline Baltic limestone groundwater — well suited to the dark, malty Baltic porters of the region.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"sapporo","name":"Sapporo","kind":"modern-city","country":"Japan","region":"Hokkaidō","calcium":10,"magnesium":4,"sodium":8,"chloride":10,"sulfate":12,"bicarbonate":30,"bestForStyles":["Japanese Rice Lager","Pilsner"],"styleTags":["very-soft","lager","modern-craft"],"description":"Very soft Hokkaidō snowmelt; part of why Japanese lager reads so crisp and delicate.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"vancouver","name":"Vancouver","kind":"modern-city","country":"Canada","region":"British Columbia","calcium":3,"magnesium":1,"sodium":2,"chloride":3,"sulfate":3,"bicarbonate":6,"bestForStyles":["Any (blank slate)"],"styleTags":["very-soft","blank-slate","modern-craft"],"description":"Among the softest municipal supplies anywhere — coastal mountain reservoir water that is essentially RO out of the tap.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-hoppy-lager","name":"Target: Crisp Pale Lager","kind":"style-target","calcium":60,"magnesium":8,"sodium":8,"chloride":40,"sulfate":75,"bicarbonate":0,"bestForStyles":["German Pilsner","Dry-hopped Lager","Italian Pilsner"],"styleTags":["target","lager","crisp","sulfate"],"description":"For pale lagers that want a snappy, dry, hop-accented finish rather than a soft malty one — sulfate ahead of chloride, near-zero alkalinity.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-mineral-free","name":"Target: Ultra-soft (Pilsen-style)","kind":"style-target","calcium":25,"magnesium":5,"sodium":5,"chloride":20,"sulfate":25,"bicarbonate":0,"bestForStyles":["Bohemian Pilsner","Delicate Lager"],"styleTags":["target","soft","delicate"],"description":"A practical soft-water target: enough calcium for healthy mashing and yeast flocculation, but low enough overall to keep the beer delicate the way Pilsen does.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"chico","name":"Chico, California","kind":"modern-city","country":"United States","region":"California","calcium":12,"magnesium":1,"sodium":18,"chloride":12,"sulfate":15,"bicarbonate":48,"bestForStyles":["American Pale Ale","American IPA"],"styleTags":["soft","clean","modern-craft"],"description":"Soft, low-mineral water — the tap water behind Sierra Nevada and a big reason clean, hop-showcasing American pale ale developed here. A near-blank canvas that brewers build up with salts to taste.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"san-diego","name":"San Diego, California","kind":"modern-city","country":"United States","region":"California","calcium":58,"magnesium":18,"sodium":88,"chloride":90,"sulfate":120,"bicarbonate":190,"bestForStyles":["West Coast IPA","Double IPA"],"styleTags":["hoppy","moderate-hard","modern-craft"],"description":"Moderately hard, moderately alkaline Colorado River water with meaningful sulfate — heavily treated by the West Coast IPA breweries that made the city famous. Most SD brewers dilute with RO and rebuild toward a high-sulfate hoppy profile.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"portland","name":"Portland, Oregon","kind":"modern-city","country":"United States","region":"Oregon","calcium":2,"magnesium":1,"sodium":6,"chloride":5,"sulfate":3,"bicarbonate":9,"bestForStyles":["Any (blank slate)"],"styleTags":["very-soft","modern-craft","blank-slate"],"description":"Bull Run reservoir water is extraordinarily soft — nearly as clean as Pilsen. A blank slate the Oregon craft scene builds up for any style.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"denver","name":"Denver, Colorado","kind":"modern-city","country":"United States","region":"Colorado","calcium":30,"magnesium":8,"sodium":25,"chloride":20,"sulfate":50,"bicarbonate":90,"bestForStyles":["Amber Ale","Pale Ale"],"styleTags":["soft-moderate","modern-craft"],"description":"Soft-to-moderate Rocky Mountain snowmelt; a flexible, lightly mineralised base used across Colorado's large craft scene.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-yellow-balanced","name":"Target: Pale & Balanced","kind":"style-target","calcium":50,"magnesium":8,"sodium":10,"chloride":55,"sulfate":55,"bicarbonate":40,"bestForStyles":["Helles","Blonde Ale","Kölsch","Cream Ale"],"styleTags":["target","pale","balanced"],"description":"A general-purpose pale-beer target: enough calcium for healthy mashing and yeast, low alkalinity for a pale grist, and even sulfate/chloride for a balanced finish.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-yellow-hoppy","name":"Target: Pale & Hoppy","kind":"style-target","calcium":90,"magnesium":10,"sodium":10,"chloride":45,"sulfate":200,"bestForStyles":["American IPA","West Coast IPA","Pale Ale"],"bicarbonate":0,"styleTags":["target","pale","hoppy","high-sulfate"],"description":"The modern West Coast IPA target — high sulfate (150–250 ppm) over low chloride for a crisp, dry, assertively bitter finish. Effectively a controlled Burtonisation.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-hazy-juicy","name":"Target: Hazy & Juicy","kind":"style-target","calcium":100,"magnesium":10,"sodium":10,"chloride":150,"sulfate":75,"bicarbonate":0,"bestForStyles":["Hazy IPA","New England IPA"],"styleTags":["target","hazy","high-chloride","soft"],"description":"The NEIPA target: chloride pushed well above sulfate (often 2:1) for a soft, full, 'juicy' mouthfeel that rounds off hop bitterness rather than sharpening it.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-amber-balanced","name":"Target: Amber & Balanced","kind":"style-target","calcium":75,"magnesium":10,"sodium":20,"chloride":60,"sulfate":70,"bicarbonate":80,"bestForStyles":["Amber Ale","Märzen","ESB","Vienna Lager"],"styleTags":["target","amber","balanced"],"description":"A malt-leaning target for amber styles: some alkalinity to balance moderate crystal-malt acidity, with even sulfate/chloride.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-brown-balanced","name":"Target: Brown & Balanced","kind":"style-target","calcium":80,"magnesium":15,"sodium":30,"chloride":75,"sulfate":60,"bicarbonate":120,"bestForStyles":["Brown Ale","Porter","Dunkel"],"styleTags":["target","brown","malty"],"description":"For brown and dark-amber styles: enough alkalinity to offset roast acidity, chloride-forward for malt roundness.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-black-balanced","name":"Target: Black & Balanced","kind":"style-target","calcium":90,"magnesium":20,"sodium":40,"chloride":90,"sulfate":60,"bicarbonate":160,"bestForStyles":["Stout","Porter","Schwarzbier"],"styleTags":["target","dark","malty"],"description":"For stouts and porters: substantial alkalinity (100–200 ppm) to buffer heavy roasted malts, chloride-forward for a smooth, full body.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-black-roasty-bitter","name":"Target: Black & Roasty-Bitter","kind":"style-target","calcium":90,"magnesium":20,"sodium":20,"chloride":50,"sulfate":110,"bicarbonate":160,"bestForStyles":["Irish Dry Stout","Foreign Extra Stout"],"styleTags":["target","dark","dry","sulfate"],"description":"A Dublin-leaning dry-stout target: high alkalinity to support the roast, but sulfate over chloride to keep the finish dry and the roast bitterness crisp.","sourceUrl":"https://www.brunwater.com/"},
-    {"id":"target-ro","name":"Reverse Osmosis / Distilled","kind":"style-target","calcium":0,"magnesium":0,"sodium":0,"chloride":0,"sulfate":0,"bicarbonate":0,"bestForStyles":["Any (build from scratch)"],"styleTags":["target","blank-slate","zero"],"description":"Zero-ion blank slate. Many modern brewers start here and add salts precisely, rather than trying to correct an unknown or variable tap supply.","sourceUrl":"https://www.brunwater.com/"}
-  ]
+ "set": "water-profiles",
+ "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework.",
+ "profiles": [
+  {
+   "id": "burton-upon-trent",
+   "name": "Burton upon Trent",
+   "kind": "classic-city",
+   "country": "United Kingdom",
+   "region": "Staffordshire",
+   "calcium": 275,
+   "magnesium": 40,
+   "sodium": 25,
+   "chloride": 35,
+   "sulfate": 610,
+   "bicarbonate": 270,
+   "bestForStyles": [
+    "English IPA",
+    "Burton Ale",
+    "Pale Ale",
+    "ESB"
+   ],
+   "styleTags": [
+    "hoppy",
+    "sulfate",
+    "gypsum"
+   ],
+   "description": "The most famous brewing water on earth. Enormously high sulfate from the local gypsum accentuates hop bitterness into a crisp, dry, minerally snap — the 'Burton snap' — and made the town the historic capital of pale ale. So influential that adding gypsum to liquor is still called 'Burtonisation'.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "dublin",
+   "name": "Dublin",
+   "kind": "classic-city",
+   "country": "Ireland",
+   "region": "Leinster",
+   "calcium": 118,
+   "magnesium": 4,
+   "sodium": 12,
+   "chloride": 19,
+   "sulfate": 54,
+   "bicarbonate": 319,
+   "bestForStyles": [
+    "Irish Dry Stout",
+    "Porter",
+    "Irish Red Ale"
+   ],
+   "styleTags": [
+    "dark",
+    "high-alkalinity",
+    "malty"
+   ],
+   "description": "Very high bicarbonate alkalinity — the reason Dublin became a stout city. Only heavily roasted, acidic dark malts can balance the mash pH this water pushes up, which is exactly what Guinness-style dry stout is built from.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "munich",
+   "name": "Munich",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Bavaria",
+   "calcium": 75,
+   "magnesium": 18,
+   "sodium": 10,
+   "chloride": 8,
+   "sulfate": 18,
+   "bicarbonate": 200,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Märzen",
+    "Bock",
+    "Munich Helles"
+   ],
+   "styleTags": [
+    "malty",
+    "moderate-alkalinity",
+    "amber"
+   ],
+   "description": "Moderately alkaline, low in sulfate and chloride — a clean, malt-forward profile that suits amber and dark Bavarian lagers. The alkalinity is balanced by the darker malts in dunkel and bock; for pale Helles, brewers now dilute or acidify.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "pilsen",
+   "name": "Pilsen",
+   "kind": "classic-city",
+   "country": "Czech Republic",
+   "region": "Bohemia",
+   "calcium": 7,
+   "magnesium": 2,
+   "sodium": 2,
+   "chloride": 5,
+   "sulfate": 5,
+   "bicarbonate": 3,
+   "bestForStyles": [
+    "Bohemian Pilsner",
+    "Czech Lager"
+   ],
+   "styleTags": [
+    "soft",
+    "very-low-mineral",
+    "delicate"
+   ],
+   "description": "Astonishingly soft — almost distilled. This near-zero mineral content is what lets Bohemian Pilsner show its delicate Saaz hop and Pilsner malt character without any mineral interference. The template for every soft-water pale lager.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "london",
+   "name": "London",
+   "kind": "classic-city",
+   "country": "United Kingdom",
+   "region": "England",
+   "calcium": 90,
+   "magnesium": 5,
+   "sodium": 15,
+   "chloride": 40,
+   "sulfate": 40,
+   "bicarbonate": 125,
+   "bestForStyles": [
+    "English Porter",
+    "Brown Ale",
+    "Mild",
+    "English Bitter"
+   ],
+   "styleTags": [
+    "balanced",
+    "moderate-alkalinity",
+    "dark"
+   ],
+   "description": "Moderately hard and moderately alkaline, with chloride edging out sulfate for a rounder, maltier balance — well suited to the porters, milds, and browns that defined London brewing.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "dortmund",
+   "name": "Dortmund",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "North Rhine-Westphalia",
+   "calcium": 225,
+   "magnesium": 40,
+   "sodium": 60,
+   "chloride": 60,
+   "sulfate": 120,
+   "bicarbonate": 180,
+   "bestForStyles": [
+    "Dortmunder Export",
+    "Helles"
+   ],
+   "styleTags": [
+    "hard",
+    "balanced",
+    "export"
+   ],
+   "description": "Very hard water with substantial sulfate AND alkalinity — a high-mineral profile that gives Dortmunder Export its firm, slightly minerally, hop-balanced character distinct from softer Munich Helles.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "edinburgh",
+   "name": "Edinburgh",
+   "kind": "classic-city",
+   "country": "United Kingdom",
+   "region": "Scotland",
+   "calcium": 120,
+   "magnesium": 25,
+   "sodium": 55,
+   "chloride": 65,
+   "sulfate": 140,
+   "bicarbonate": 225,
+   "bestForStyles": [
+    "Scotch Ale",
+    "Wee Heavy",
+    "Scottish Export"
+   ],
+   "styleTags": [
+    "malty",
+    "hard",
+    "alkaline"
+   ],
+   "description": "Hard, alkaline water that supported Edinburgh's malt-forward Scottish ales; the alkalinity and moderate sulfate suit rich, malty brews rather than aggressively hoppy ones.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "vienna",
+   "name": "Vienna",
+   "kind": "classic-city",
+   "country": "Austria",
+   "region": "Vienna",
+   "calcium": 200,
+   "magnesium": 60,
+   "sodium": 8,
+   "chloride": 12,
+   "sulfate": 125,
+   "bicarbonate": 290,
+   "bestForStyles": [
+    "Vienna Lager",
+    "Märzen"
+   ],
+   "styleTags": [
+    "malty",
+    "hard",
+    "amber"
+   ],
+   "description": "Hard and alkaline with moderate sulfate — a profile that shaped the amber, malty Vienna lager style.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "cologne",
+   "name": "Cologne (Köln)",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "North Rhine-Westphalia",
+   "calcium": 90,
+   "magnesium": 20,
+   "sodium": 40,
+   "chloride": 90,
+   "sulfate": 40,
+   "bicarbonate": 230,
+   "bestForStyles": [
+    "Kölsch"
+   ],
+   "styleTags": [
+    "balanced",
+    "chloride",
+    "delicate"
+   ],
+   "description": "Moderate hardness with chloride well above sulfate, giving Kölsch its soft, rounded, subtly malty delicacy under a crisp finish.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "brussels",
+   "name": "Brussels",
+   "kind": "classic-city",
+   "country": "Belgium",
+   "region": "Brussels-Capital",
+   "calcium": 90,
+   "magnesium": 11,
+   "sodium": 29,
+   "chloride": 33,
+   "sulfate": 54,
+   "bicarbonate": 230,
+   "bestForStyles": [
+    "Lambic",
+    "Witbier",
+    "Belgian Ale"
+   ],
+   "styleTags": [
+    "balanced",
+    "moderate-alkalinity",
+    "belgian"
+   ],
+   "description": "Moderately hard, moderately alkaline water of the Senne valley — the historic water of lambic and Belgian wheat.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "tadcaster",
+   "name": "Tadcaster",
+   "kind": "classic-city",
+   "country": "United Kingdom",
+   "region": "North Yorkshire",
+   "calcium": 220,
+   "magnesium": 60,
+   "sodium": 45,
+   "chloride": 60,
+   "sulfate": 390,
+   "bicarbonate": 210,
+   "bestForStyles": [
+    "Yorkshire Bitter",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "hoppy",
+    "hard",
+    "sulfate"
+   ],
+   "description": "A hard, sulfate-rich Yorkshire brewing town (home of Samuel Smith's and John Smith's); a gentler cousin of Burton's water for firm, dry bitters.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "bohemia-soft",
+   "name": "Bohemia (soft supply)",
+   "kind": "classic-city",
+   "country": "Czech Republic",
+   "region": "Bohemia",
+   "calcium": 10,
+   "magnesium": 3,
+   "sodium": 3,
+   "chloride": 6,
+   "sulfate": 8,
+   "bicarbonate": 15,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "Pilsner"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral"
+   ],
+   "description": "A representative soft Bohemian supply just above Pilsen's near-zero baseline; the template for delicate Czech pale lager.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "asheville",
+   "name": "Asheville, North Carolina",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "North Carolina",
+   "calcium": 6,
+   "magnesium": 2,
+   "sodium": 4,
+   "chloride": 5,
+   "sulfate": 6,
+   "bicarbonate": 16,
+   "bestForStyles": [
+    "Any (blank slate)"
+   ],
+   "styleTags": [
+    "very-soft",
+    "modern-craft",
+    "blank-slate"
+   ],
+   "description": "Very soft Appalachian mountain water; a blank slate that helped make Asheville a dense craft-brewing hub.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "bend",
+   "name": "Bend, Oregon",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "Oregon",
+   "calcium": 8,
+   "magnesium": 2,
+   "sodium": 6,
+   "chloride": 4,
+   "sulfate": 8,
+   "bicarbonate": 30,
+   "bestForStyles": [
+    "Pale Ale",
+    "IPA"
+   ],
+   "styleTags": [
+    "very-soft",
+    "modern-craft"
+   ],
+   "description": "Soft Cascade snowmelt behind Central Oregon's outsized brewery count.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "melbourne",
+   "name": "Melbourne",
+   "kind": "modern-city",
+   "country": "Australia",
+   "region": "Victoria",
+   "calcium": 6,
+   "magnesium": 3,
+   "sodium": 8,
+   "chloride": 12,
+   "sulfate": 8,
+   "bicarbonate": 20,
+   "bestForStyles": [
+    "Any (blank slate)"
+   ],
+   "styleTags": [
+    "very-soft",
+    "modern-craft"
+   ],
+   "description": "Soft protected-catchment water supplying one of the southern hemisphere's busiest craft scenes.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "bamberg",
+   "name": "Bamberg",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Bavaria",
+   "calcium": 120,
+   "magnesium": 10,
+   "sodium": 8,
+   "chloride": 10,
+   "sulfate": 40,
+   "bicarbonate": 300,
+   "bestForStyles": [
+    "Rauchbier",
+    "Märzen",
+    "Dunkel"
+   ],
+   "styleTags": [
+    "malty",
+    "alkaline",
+    "smoke"
+   ],
+   "description": "Hard, alkaline Franconian water behind Bamberg's smoked lagers and dark Franconian styles.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "tokyo",
+   "name": "Tokyo",
+   "kind": "modern-city",
+   "country": "Japan",
+   "region": "Kantō",
+   "calcium": 18,
+   "magnesium": 6,
+   "sodium": 18,
+   "chloride": 30,
+   "sulfate": 22,
+   "bicarbonate": 55,
+   "bestForStyles": [
+    "Rice Lager",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "soft-moderate",
+    "modern-craft"
+   ],
+   "description": "Moderately soft municipal water supplying Japan's dense Tokyo craft scene; a light, flexible base.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "copenhagen",
+   "name": "Copenhagen",
+   "kind": "modern-city",
+   "country": "Denmark",
+   "region": "Hovedstaden",
+   "calcium": 110,
+   "magnesium": 18,
+   "sodium": 30,
+   "chloride": 55,
+   "sulfate": 55,
+   "bicarbonate": 250,
+   "bestForStyles": [
+    "Lager",
+    "Pilsner"
+   ],
+   "styleTags": [
+    "hard",
+    "alkaline",
+    "lager"
+   ],
+   "description": "Hard, chalky Danish groundwater — historically the water of Carlsberg's lagers.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "portland-me",
+   "name": "Portland, Maine",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "Maine",
+   "calcium": 5,
+   "magnesium": 1,
+   "sodium": 6,
+   "chloride": 8,
+   "sulfate": 5,
+   "bicarbonate": 14,
+   "bestForStyles": [
+    "Hazy IPA",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "very-soft",
+    "modern-craft",
+    "blank-slate"
+   ],
+   "description": "Very soft Sebago Lake water behind the outsized New England hazy-IPA scene (Bissell Brothers, Foundation, etc.).",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "plzen-region",
+   "name": "Budweis (České Budějovice)",
+   "kind": "classic-city",
+   "country": "Czech Republic",
+   "region": "South Bohemia",
+   "calcium": 30,
+   "magnesium": 8,
+   "sodium": 10,
+   "chloride": 15,
+   "sulfate": 15,
+   "bicarbonate": 80,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "Bohemian Pilsner"
+   ],
+   "styleTags": [
+    "soft",
+    "lager",
+    "malty"
+   ],
+   "description": "Softer than most brewing centres but firmer than Pilsen — the water behind Budweiser Budvar's rounder, maltier take on Czech lager.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "dusseldorf",
+   "name": "Düsseldorf",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "North Rhine-Westphalia",
+   "calcium": 90,
+   "magnesium": 15,
+   "sodium": 45,
+   "chloride": 85,
+   "sulfate": 55,
+   "bicarbonate": 215,
+   "bestForStyles": [
+    "Altbier"
+   ],
+   "styleTags": [
+    "malty",
+    "chloride",
+    "alkaline"
+   ],
+   "description": "Moderately hard, chloride-forward and alkaline — suits the malty, copper-coloured altbier the city is known for.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "antwerp",
+   "name": "Antwerp",
+   "kind": "classic-city",
+   "country": "Belgium",
+   "region": "Flanders",
+   "calcium": 90,
+   "magnesium": 15,
+   "sodium": 45,
+   "chloride": 60,
+   "sulfate": 85,
+   "bicarbonate": 180,
+   "bestForStyles": [
+    "Belgian Ale",
+    "Belgian Strong",
+    "De Koninck-style Ale"
+   ],
+   "styleTags": [
+    "belgian",
+    "balanced",
+    "moderate"
+   ],
+   "description": "Moderately hard Flemish water with balanced sulfate and chloride; the historic supply of Antwerp's ale breweries.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "tartu-baltic",
+   "name": "Baltic (typical hard groundwater)",
+   "kind": "classic-city",
+   "country": "Estonia",
+   "region": "Baltic states",
+   "calcium": 110,
+   "magnesium": 25,
+   "sodium": 20,
+   "chloride": 30,
+   "sulfate": 60,
+   "bicarbonate": 290,
+   "bestForStyles": [
+    "Baltic Porter",
+    "Dark Lager"
+   ],
+   "styleTags": [
+    "hard",
+    "alkaline",
+    "dark",
+    "baltic"
+   ],
+   "description": "Hard, alkaline Baltic limestone groundwater — well suited to the dark, malty Baltic porters of the region.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "sapporo",
+   "name": "Sapporo",
+   "kind": "modern-city",
+   "country": "Japan",
+   "region": "Hokkaidō",
+   "calcium": 10,
+   "magnesium": 4,
+   "sodium": 8,
+   "chloride": 10,
+   "sulfate": 12,
+   "bicarbonate": 30,
+   "bestForStyles": [
+    "Japanese Rice Lager",
+    "Pilsner"
+   ],
+   "styleTags": [
+    "very-soft",
+    "lager",
+    "modern-craft"
+   ],
+   "description": "Very soft Hokkaidō snowmelt; part of why Japanese lager reads so crisp and delicate.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "vancouver",
+   "name": "Vancouver",
+   "kind": "modern-city",
+   "country": "Canada",
+   "region": "British Columbia",
+   "calcium": 3,
+   "magnesium": 1,
+   "sodium": 2,
+   "chloride": 3,
+   "sulfate": 3,
+   "bicarbonate": 6,
+   "bestForStyles": [
+    "Any (blank slate)"
+   ],
+   "styleTags": [
+    "very-soft",
+    "blank-slate",
+    "modern-craft"
+   ],
+   "description": "Among the softest municipal supplies anywhere — coastal mountain reservoir water that is essentially RO out of the tap.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-hoppy-lager",
+   "name": "Target: Crisp Pale Lager",
+   "kind": "style-target",
+   "calcium": 60,
+   "magnesium": 8,
+   "sodium": 8,
+   "chloride": 40,
+   "sulfate": 75,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "German Pilsner",
+    "Dry-hopped Lager",
+    "Italian Pilsner"
+   ],
+   "styleTags": [
+    "target",
+    "lager",
+    "crisp",
+    "sulfate"
+   ],
+   "description": "For pale lagers that want a snappy, dry, hop-accented finish rather than a soft malty one — sulfate ahead of chloride, near-zero alkalinity.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-mineral-free",
+   "name": "Target: Ultra-soft (Pilsen-style)",
+   "kind": "style-target",
+   "calcium": 25,
+   "magnesium": 5,
+   "sodium": 5,
+   "chloride": 20,
+   "sulfate": 25,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "Bohemian Pilsner",
+    "Delicate Lager"
+   ],
+   "styleTags": [
+    "target",
+    "soft",
+    "delicate"
+   ],
+   "description": "A practical soft-water target: enough calcium for healthy mashing and yeast flocculation, but low enough overall to keep the beer delicate the way Pilsen does.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "chico",
+   "name": "Chico, California",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "California",
+   "calcium": 12,
+   "magnesium": 1,
+   "sodium": 18,
+   "chloride": 12,
+   "sulfate": 15,
+   "bicarbonate": 48,
+   "bestForStyles": [
+    "American Pale Ale",
+    "American IPA"
+   ],
+   "styleTags": [
+    "soft",
+    "clean",
+    "modern-craft"
+   ],
+   "description": "Soft, low-mineral water — the tap water behind Sierra Nevada and a big reason clean, hop-showcasing American pale ale developed here. A near-blank canvas that brewers build up with salts to taste.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "san-diego",
+   "name": "San Diego, California",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "California",
+   "calcium": 58,
+   "magnesium": 18,
+   "sodium": 88,
+   "chloride": 90,
+   "sulfate": 120,
+   "bicarbonate": 190,
+   "bestForStyles": [
+    "West Coast IPA",
+    "Double IPA"
+   ],
+   "styleTags": [
+    "hoppy",
+    "moderate-hard",
+    "modern-craft"
+   ],
+   "description": "Moderately hard, moderately alkaline Colorado River water with meaningful sulfate — heavily treated by the West Coast IPA breweries that made the city famous. Most SD brewers dilute with RO and rebuild toward a high-sulfate hoppy profile.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "portland",
+   "name": "Portland, Oregon",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "Oregon",
+   "calcium": 2,
+   "magnesium": 1,
+   "sodium": 6,
+   "chloride": 5,
+   "sulfate": 3,
+   "bicarbonate": 9,
+   "bestForStyles": [
+    "Any (blank slate)"
+   ],
+   "styleTags": [
+    "very-soft",
+    "modern-craft",
+    "blank-slate"
+   ],
+   "description": "Bull Run reservoir water is extraordinarily soft — nearly as clean as Pilsen. A blank slate the Oregon craft scene builds up for any style.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "denver",
+   "name": "Denver, Colorado",
+   "kind": "modern-city",
+   "country": "United States",
+   "region": "Colorado",
+   "calcium": 30,
+   "magnesium": 8,
+   "sodium": 25,
+   "chloride": 20,
+   "sulfate": 50,
+   "bicarbonate": 90,
+   "bestForStyles": [
+    "Amber Ale",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "soft-moderate",
+    "modern-craft"
+   ],
+   "description": "Soft-to-moderate Rocky Mountain snowmelt; a flexible, lightly mineralised base used across Colorado's large craft scene.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-yellow-balanced",
+   "name": "Target: Pale & Balanced",
+   "kind": "style-target",
+   "calcium": 50,
+   "magnesium": 8,
+   "sodium": 10,
+   "chloride": 55,
+   "sulfate": 55,
+   "bicarbonate": 40,
+   "bestForStyles": [
+    "Helles",
+    "Blonde Ale",
+    "Kölsch",
+    "Cream Ale"
+   ],
+   "styleTags": [
+    "target",
+    "pale",
+    "balanced"
+   ],
+   "description": "A general-purpose pale-beer target: enough calcium for healthy mashing and yeast, low alkalinity for a pale grist, and even sulfate/chloride for a balanced finish.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-yellow-hoppy",
+   "name": "Target: Pale & Hoppy",
+   "kind": "style-target",
+   "calcium": 90,
+   "magnesium": 10,
+   "sodium": 10,
+   "chloride": 45,
+   "sulfate": 200,
+   "bestForStyles": [
+    "American IPA",
+    "West Coast IPA",
+    "Pale Ale"
+   ],
+   "bicarbonate": 0,
+   "styleTags": [
+    "target",
+    "pale",
+    "hoppy",
+    "high-sulfate"
+   ],
+   "description": "The modern West Coast IPA target — high sulfate (150–250 ppm) over low chloride for a crisp, dry, assertively bitter finish. Effectively a controlled Burtonisation.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-hazy-juicy",
+   "name": "Target: Hazy & Juicy",
+   "kind": "style-target",
+   "calcium": 100,
+   "magnesium": 10,
+   "sodium": 10,
+   "chloride": 150,
+   "sulfate": 75,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "Hazy IPA",
+    "New England IPA"
+   ],
+   "styleTags": [
+    "target",
+    "hazy",
+    "high-chloride",
+    "soft"
+   ],
+   "description": "The NEIPA target: chloride pushed well above sulfate (often 2:1) for a soft, full, 'juicy' mouthfeel that rounds off hop bitterness rather than sharpening it.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-amber-balanced",
+   "name": "Target: Amber & Balanced",
+   "kind": "style-target",
+   "calcium": 75,
+   "magnesium": 10,
+   "sodium": 20,
+   "chloride": 60,
+   "sulfate": 70,
+   "bicarbonate": 80,
+   "bestForStyles": [
+    "Amber Ale",
+    "Märzen",
+    "ESB",
+    "Vienna Lager"
+   ],
+   "styleTags": [
+    "target",
+    "amber",
+    "balanced"
+   ],
+   "description": "A malt-leaning target for amber styles: some alkalinity to balance moderate crystal-malt acidity, with even sulfate/chloride.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-brown-balanced",
+   "name": "Target: Brown & Balanced",
+   "kind": "style-target",
+   "calcium": 80,
+   "magnesium": 15,
+   "sodium": 30,
+   "chloride": 75,
+   "sulfate": 60,
+   "bicarbonate": 120,
+   "bestForStyles": [
+    "Brown Ale",
+    "Porter",
+    "Dunkel"
+   ],
+   "styleTags": [
+    "target",
+    "brown",
+    "malty"
+   ],
+   "description": "For brown and dark-amber styles: enough alkalinity to offset roast acidity, chloride-forward for malt roundness.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-black-balanced",
+   "name": "Target: Black & Balanced",
+   "kind": "style-target",
+   "calcium": 90,
+   "magnesium": 20,
+   "sodium": 40,
+   "chloride": 90,
+   "sulfate": 60,
+   "bicarbonate": 160,
+   "bestForStyles": [
+    "Stout",
+    "Porter",
+    "Schwarzbier"
+   ],
+   "styleTags": [
+    "target",
+    "dark",
+    "malty"
+   ],
+   "description": "For stouts and porters: substantial alkalinity (100–200 ppm) to buffer heavy roasted malts, chloride-forward for a smooth, full body.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-black-roasty-bitter",
+   "name": "Target: Black & Roasty-Bitter",
+   "kind": "style-target",
+   "calcium": 90,
+   "magnesium": 20,
+   "sodium": 20,
+   "chloride": 50,
+   "sulfate": 110,
+   "bicarbonate": 160,
+   "bestForStyles": [
+    "Irish Dry Stout",
+    "Foreign Extra Stout"
+   ],
+   "styleTags": [
+    "target",
+    "dark",
+    "dry",
+    "sulfate"
+   ],
+   "description": "A Dublin-leaning dry-stout target: high alkalinity to support the roast, but sulfate over chloride to keep the finish dry and the roast bitterness crisp.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "target-ro",
+   "name": "Reverse Osmosis / Distilled",
+   "kind": "style-target",
+   "calcium": 0,
+   "magnesium": 0,
+   "sodium": 0,
+   "chloride": 0,
+   "sulfate": 0,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "Any (build from scratch)"
+   ],
+   "styleTags": [
+    "target",
+    "blank-slate",
+    "zero"
+   ],
+   "description": "Zero-ion blank slate. Many modern brewers start here and add salts precisely, rather than trying to correct an unknown or variable tap supply.",
+   "sourceUrl": "https://www.brunwater.com/"
+  },
+  {
+   "id": "berlin",
+   "name": "Berlin",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Brandenburg",
+   "calcium": 80,
+   "magnesium": 10,
+   "sodium": 25,
+   "chloride": 40,
+   "sulfate": 55,
+   "bicarbonate": 100,
+   "bestForStyles": [
+    "Berliner Weisse",
+    "German Pils"
+   ],
+   "styleTags": [
+    "soft",
+    "pale",
+    "sour"
+   ],
+   "description": "Moderately soft, low-alkalinity water. Low residual alkalinity suits the very pale grist of a Berliner Weisse and lets the lactic tartness stand clean without mineral clutter — the reason Berlin's 'Champagne of the North' stayed so delicate and dry.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 39
+  },
+  {
+   "id": "goslar",
+   "name": "Goslar",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Lower Saxony",
+   "calcium": 100,
+   "magnesium": 15,
+   "sodium": 120,
+   "chloride": 180,
+   "sulfate": 80,
+   "bicarbonate": 120,
+   "bestForStyles": [
+    "Gose",
+    "Leipzig Gose"
+   ],
+   "styleTags": [
+    "saline",
+    "sodium",
+    "chloride"
+   ],
+   "description": "The home of Gose, named for the Gose river whose naturally saline water gave the style its signature gentle salinity. Elevated sodium and chloride are the whole point — the faint brininess that balances the coriander and lactic sourness. Most modern brewers add salt to recreate it, but Goslar had it in the ground.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 40
+  },
+  {
+   "id": "san-francisco",
+   "name": "San Francisco",
+   "kind": "classic-city",
+   "country": "United States",
+   "region": "California",
+   "calcium": 8,
+   "magnesium": 2,
+   "sodium": 10,
+   "chloride": 8,
+   "sulfate": 5,
+   "bicarbonate": 20,
+   "bestForStyles": [
+    "California Common",
+    "Steam Beer"
+   ],
+   "styleTags": [
+    "very-soft",
+    "clean"
+   ],
+   "description": "Fed by the pristine Hetch Hetchy reservoir in the Sierra Nevada, San Francisco's water is exceptionally soft — near-distilled. That blank canvas is why Anchor Steam's toasty malt and woody Northern Brewer hops read so cleanly. Add whatever minerals the recipe wants; the base gets in the way of nothing.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 41
+  },
+  {
+   "id": "jever-frisia",
+   "name": "Jever (East Frisia)",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Lower Saxony",
+   "calcium": 25,
+   "magnesium": 5,
+   "sodium": 12,
+   "chloride": 18,
+   "sulfate": 35,
+   "bicarbonate": 30,
+   "bestForStyles": [
+    "German Pils",
+    "North German Pilsner"
+   ],
+   "styleTags": [
+    "soft",
+    "dry",
+    "bitter"
+   ],
+   "description": "Soft water with just enough sulfate to sharpen bitterness into the famously bone-dry, aggressively hoppy North German Pils. Low alkalinity keeps the pale grist crisp; the modest sulfate is why Jever Pilsener bites harder and finishes drier than its Bavarian cousins.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 42
+  },
+  {
+   "id": "kentucky-limestone",
+   "name": "Kentucky Limestone",
+   "kind": "classic-city",
+   "country": "United States",
+   "region": "Kentucky",
+   "calcium": 90,
+   "magnesium": 10,
+   "sodium": 15,
+   "chloride": 12,
+   "sulfate": 40,
+   "bicarbonate": 200,
+   "bestForStyles": [
+    "Bourbon mash water",
+    "Cream Ale"
+   ],
+   "styleTags": [
+    "hard",
+    "alkaline",
+    "iron-free",
+    "whiskey"
+   ],
+   "description": "The water that made bourbon country. Filtered through deep limestone, it is hard and alkaline but crucially iron-free — dissolved iron ruins fermentation and blackens whiskey, and the limestone strips it out while adding the calcium yeast love. Not a beer profile, but the reason Kentucky, not somewhere else, became the home of American whiskey.",
+   "sourceUrl": "https://www.ttb.gov/",
+   "sortOrder": 43
+  }
+ ]
 }

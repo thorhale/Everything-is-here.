@@ -16,7 +16,7 @@
   "yeastStrains": 90,
   "fermentables": 311,
   "hops": 99,
-  "waterProfiles": 39,
+  "waterProfiles": 44,
   "additives": 72,
   "legalStandardEditions": 5,
   "legalStandardEntries": 118
@@ -18640,6 +18640,136 @@
    ],
    "description": "Zero-ion blank slate. Many modern brewers start here and add salts precisely, rather than trying to correct an unknown or variable tap supply.",
    "sourceUrl": "https://www.brunwater.com/",
+   "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "berlin",
+   "name": "Berlin",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Brandenburg",
+   "calcium": 80,
+   "magnesium": 10,
+   "sodium": 25,
+   "chloride": 40,
+   "sulfate": 55,
+   "bicarbonate": 100,
+   "bestForStyles": [
+    "Berliner Weisse",
+    "German Pils"
+   ],
+   "styleTags": [
+    "soft",
+    "pale",
+    "sour"
+   ],
+   "description": "Moderately soft, low-alkalinity water. Low residual alkalinity suits the very pale grist of a Berliner Weisse and lets the lactic tartness stand clean without mineral clutter — the reason Berlin's 'Champagne of the North' stayed so delicate and dry.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 39,
+   "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "goslar",
+   "name": "Goslar",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Lower Saxony",
+   "calcium": 100,
+   "magnesium": 15,
+   "sodium": 120,
+   "chloride": 180,
+   "sulfate": 80,
+   "bicarbonate": 120,
+   "bestForStyles": [
+    "Gose",
+    "Leipzig Gose"
+   ],
+   "styleTags": [
+    "saline",
+    "sodium",
+    "chloride"
+   ],
+   "description": "The home of Gose, named for the Gose river whose naturally saline water gave the style its signature gentle salinity. Elevated sodium and chloride are the whole point — the faint brininess that balances the coriander and lactic sourness. Most modern brewers add salt to recreate it, but Goslar had it in the ground.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 40,
+   "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "san-francisco",
+   "name": "San Francisco",
+   "kind": "classic-city",
+   "country": "United States",
+   "region": "California",
+   "calcium": 8,
+   "magnesium": 2,
+   "sodium": 10,
+   "chloride": 8,
+   "sulfate": 5,
+   "bicarbonate": 20,
+   "bestForStyles": [
+    "California Common",
+    "Steam Beer"
+   ],
+   "styleTags": [
+    "very-soft",
+    "clean"
+   ],
+   "description": "Fed by the pristine Hetch Hetchy reservoir in the Sierra Nevada, San Francisco's water is exceptionally soft — near-distilled. That blank canvas is why Anchor Steam's toasty malt and woody Northern Brewer hops read so cleanly. Add whatever minerals the recipe wants; the base gets in the way of nothing.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 41,
+   "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "jever-frisia",
+   "name": "Jever (East Frisia)",
+   "kind": "classic-city",
+   "country": "Germany",
+   "region": "Lower Saxony",
+   "calcium": 25,
+   "magnesium": 5,
+   "sodium": 12,
+   "chloride": 18,
+   "sulfate": 35,
+   "bicarbonate": 30,
+   "bestForStyles": [
+    "German Pils",
+    "North German Pilsner"
+   ],
+   "styleTags": [
+    "soft",
+    "dry",
+    "bitter"
+   ],
+   "description": "Soft water with just enough sulfate to sharpen bitterness into the famously bone-dry, aggressively hoppy North German Pils. Low alkalinity keeps the pale grist crisp; the modest sulfate is why Jever Pilsener bites harder and finishes drier than its Bavarian cousins.",
+   "sourceUrl": "https://www.brunwater.com/",
+   "sortOrder": 42,
+   "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "kentucky-limestone",
+   "name": "Kentucky Limestone",
+   "kind": "classic-city",
+   "country": "United States",
+   "region": "Kentucky",
+   "calcium": 90,
+   "magnesium": 10,
+   "sodium": 15,
+   "chloride": 12,
+   "sulfate": 40,
+   "bicarbonate": 200,
+   "bestForStyles": [
+    "Bourbon mash water",
+    "Cream Ale"
+   ],
+   "styleTags": [
+    "hard",
+    "alkaline",
+    "iron-free",
+    "whiskey"
+   ],
+   "description": "The water that made bourbon country. Filtered through deep limestone, it is hard and alkaline but crucially iron-free — dissolved iron ruins fermentation and blackens whiskey, and the limestone strips it out while adding the calcium yeast love. Not a beer profile, but the reason Kentucky, not somewhere else, became the home of American whiskey.",
+   "sourceUrl": "https://www.ttb.gov/",
+   "sortOrder": 43,
    "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
   }
  ],

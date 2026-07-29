@@ -13,6 +13,7 @@ import {
 import { ArchiveStatBands, IngredientUsageList } from "@/components/ArchiveStats";
 import { buildRecipeSkeleton } from "@/lib/recipe-builder";
 import { getWaterProfile, suggestWaterTargetId } from "@/lib/water";
+import { matchClassicWaterForStyle } from "@/lib/style-water";
 
 interface Props {
   params: Promise<{ edition: string; code: string }>;
@@ -81,6 +82,11 @@ export default async function GuidelineStylePage({ params }: Props) {
   const skeletonWater = skeleton.buildable
     ? await getWaterProfile(suggestWaterTargetId(skeleton.targets.srm, style.name))
     : null;
+
+  // The classic water behind this style's BJCP commercial examples: the city
+  // and beer that define it, and why the water works.
+  const waterAnchor = matchClassicWaterForStyle(style.name);
+  const classicWater = waterAnchor ? await getWaterProfile(waterAnchor.classicCityId) : null;
 
   // What the archive's brewers actually did for this style.
   const archiveStyle = await resolveArchiveStyle(style.name);
@@ -253,7 +259,31 @@ export default async function GuidelineStylePage({ params }: Props) {
             </table>
           </div>
 
-          {skeletonWater && (
+          {waterAnchor && classicWater && (
+            <div
+              style={{
+                fontSize: "0.85rem",
+                marginTop: "0.75rem",
+                padding: "0.6rem 0.8rem",
+                border: "1px solid var(--wh-border)",
+                borderRadius: 8,
+                background: "var(--wh-bg-soft)",
+              }}
+            >
+              <strong>The classic water:</strong>{" "}
+              <Link href={`/water/${classicWater.id}`}>{classicWater.name}</Link> — the water behind{" "}
+              <em>{waterAnchor.example}</em> ({waterAnchor.brewery}, {waterAnchor.city}).
+              <div style={{ color: "var(--wh-text-light)", marginTop: "0.3rem" }}>{waterAnchor.why}</div>
+              {skeletonWater && (
+                <div style={{ marginTop: "0.4rem" }}>
+                  To brew it from your own tap, aim for the{" "}
+                  <Link href={`/water/${skeletonWater.id}`}>{skeletonWater.name}</Link> target —{" "}
+                  <Link href="/water/builder">work out the salts →</Link>
+                </div>
+              )}
+            </div>
+          )}
+          {!waterAnchor && skeletonWater && (
             <p style={{ fontSize: "0.85rem", marginTop: "0.6rem" }}>
               Suggested water: <Link href={`/water/${skeletonWater.id}`}>{skeletonWater.name}</Link>{" "}
               — <Link href="/water/builder">build it →</Link>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import BuilderForm from "./BuilderForm";
 import { getFermentablePickerList, getHopPickerList } from "@/lib/ingredients-curated";
 import { getStrainPickerList } from "@/lib/yeasts-curated";
+import { getWaterPickerList } from "@/lib/water";
 
 export const dynamic = "force-dynamic";
 
@@ -12,10 +13,11 @@ export const metadata = {
 };
 
 export default async function BuildPage() {
-  const [fermentables, hops, strains] = await Promise.all([
+  const [fermentables, hops, strains, waters] = await Promise.all([
     getFermentablePickerList(),
     getHopPickerList(),
     getStrainPickerList(),
+    getWaterPickerList(),
   ]);
 
   return (
@@ -34,7 +36,7 @@ export default async function BuildPage() {
         refractometer reading, entering it collapses the band to a point.
       </p>
 
-      <BuilderForm fermentables={fermentables} hops={hops} strains={strains} />
+      <BuilderForm fermentables={fermentables} hops={hops} strains={strains} waters={waters} />
 
       <p style={{ fontSize: "0.85rem" }}>
         Looking for the original BrewToad calculator, rebuilt from its own archived formulas? That is still at{" "}

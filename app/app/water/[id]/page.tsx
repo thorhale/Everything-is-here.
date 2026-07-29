@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getWaterProfile, residualAlkalinity, totalHardness, sulfateChloride } from "@/lib/water";
+import { anchorsForCity } from "@/lib/style-water";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -88,6 +89,22 @@ export default async function WaterDetailPage({ params }: Props) {
         <>
           <h3>Suits</h3>
           <p>{w.bestForStyles.join(", ")}</p>
+        </>
+      )}
+
+      {anchorsForCity(w.id).length > 0 && (
+        <>
+          <h3>The classic beers on this water</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)" }}>
+            Styles whose defining commercial examples were shaped by this water:
+          </p>
+          <ul style={{ fontSize: "0.9rem" }}>
+            {anchorsForCity(w.id).map((a) => (
+              <li key={a.example} style={{ marginBottom: "0.3rem" }}>
+                <strong>{a.example}</strong> — {a.brewery}. {a.why}
+              </li>
+            ))}
+          </ul>
         </>
       )}
 
