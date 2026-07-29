@@ -1,0 +1,341 @@
+{
+ "attribution": "Wood dose rates assume chips or cubes in a homebrew-scale vessel and are far higher per litre than a barrel's surface-to-volume ratio would give. Extraction rate depends on format, toast, temperature and alcohol — the ranges here are starting points for a tasting schedule, not endpoints.",
+ "additives": [
+  {
+   "id": "tannin-grape-red",
+   "name": "Grape Tannin (red)",
+   "aliases": [
+    "Oenological tannin",
+    "FT Rouge"
+   ],
+   "category": "tannin",
+   "subtype": "condensed",
+   "uses": [
+    "wine",
+    "cider",
+    "mead"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.4,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Condensed tannin from grape skins and seeds, used to build structure and stabilise colour.",
+   "usageNotes": "Added at crush it binds with anthocyanin to fix colour; added later it adds grip and mouthfeel.",
+   "cautions": "Easy to overshoot into bitterness. Bench-trial at 0.1 g/L increments.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 0
+  },
+  {
+   "id": "tannin-grape-white",
+   "name": "Grape Tannin (white)",
+   "aliases": [
+    "FT Blanc"
+   ],
+   "category": "tannin",
+   "subtype": "condensed",
+   "uses": [
+    "wine",
+    "cider",
+    "mead"
+   ],
+   "doseMinGPerL": 0.02,
+   "doseMaxGPerL": 0.2,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A gentler tannin preparation for whites and rosés, protecting against oxidation without adding perceptible astringency.",
+   "usageNotes": "Also used pre-fermentation to inhibit the laccase enzyme carried by botrytised fruit.",
+   "cautions": "Overdosing shows as a hard, drying finish rather than obvious bitterness.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 1
+  },
+  {
+   "id": "tannin-quebracho",
+   "name": "Quebracho Tannin",
+   "aliases": [],
+   "category": "tannin",
+   "subtype": "condensed",
+   "uses": [
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.3,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A robust, inexpensive condensed tannin from South American quebracho wood.",
+   "usageNotes": "Common in cider for adding the grip that dessert-apple juice lacks.",
+   "cautions": "Coarser than grape tannin — noticeable as woody astringency if overdone.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 2
+  },
+  {
+   "id": "tannin-oak-hydrolysable",
+   "name": "Oak Tannin (hydrolysable)",
+   "aliases": [
+    "Ellagitannin"
+   ],
+   "category": "tannin",
+   "subtype": "hydrolysable",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer",
+    "cider"
+   ],
+   "doseMinGPerL": 0.02,
+   "doseMaxGPerL": 0.2,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Ellagitannins extracted from oak, the compounds that give barrel-aged drinks their structure independent of any oak flavour.",
+   "usageNotes": "Adds the tannic contribution of a barrel without the vanillin and lactone flavours.",
+   "cautions": "Consumes oxygen readily, which is part of the point, but means it can mask a genuine oxidation problem.",
+   "sourceUrl": "https://scottlabs.com/",
+   "sortOrder": 3
+  },
+  {
+   "id": "tannin-tea",
+   "name": "Black Tea",
+   "aliases": [
+    "Strong brewed tea"
+   ],
+   "category": "tannin",
+   "subtype": "improvised",
+   "uses": [
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.5,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "The traditional country-wine tannin source: a cup of strong tea per gallon.",
+   "usageNotes": "Works, and costs nothing. Brings its own tea flavour, which suits some meads and country wines.",
+   "cautions": "Far less predictable than a measured oenological tannin.",
+   "sourceUrl": "https://www.gov.uk/",
+   "sortOrder": 4
+  },
+  {
+   "id": "wood-oak-french",
+   "name": "French Oak",
+   "aliases": [
+    "Quercus robur",
+    "Quercus petraea"
+   ],
+   "category": "wood",
+   "subtype": "oak",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer",
+    "cider"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 8,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2 weeks - 12 months",
+   "description": "Tight-grained European oak, air-dried for two to three years. Subtler and more tannic than American oak, with spice and cedar rather than sweet vanilla.",
+   "usageNotes": "Chips extract in days, cubes in weeks, staves and spirals in months, a barrel in years. Typical chip dose is 2-4 g/L.",
+   "cautions": "Chips give a flatter, faster extraction than cubes — more oak, less integration. Taste weekly and pull early.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 5
+  },
+  {
+   "id": "wood-oak-american",
+   "name": "American Oak",
+   "aliases": [
+    "Quercus alba"
+   ],
+   "category": "wood",
+   "subtype": "oak",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer",
+    "cider"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 8,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2 weeks - 12 months",
+   "description": "Higher in lactones than European oak, giving the coconut, vanilla and dill signature of bourbon and Rioja.",
+   "usageNotes": "By US law a straight whiskey must use a new charred oak container, which is why used bourbon barrels are cheap and plentiful for everyone else.",
+   "cautions": "The coconut lactone note is polarising and hard to remove once extracted.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 6
+  },
+  {
+   "id": "wood-oak-hungarian",
+   "name": "Hungarian Oak",
+   "aliases": [
+    "Quercus petraea (Zemplén)"
+   ],
+   "category": "wood",
+   "subtype": "oak",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 8,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2 weeks - 12 months",
+   "description": "Botanically the same species as much French oak, grown more slowly; often described as sitting between French and American in character.",
+   "usageNotes": "Historically much cheaper than French oak, which is most of its appeal.",
+   "cautions": "Quality varies more by cooper and seasoning than by origin.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 7
+  },
+  {
+   "id": "wood-oak-toast-levels",
+   "name": "Oak Toast Levels",
+   "aliases": [
+    "Light/Medium/Heavy toast"
+   ],
+   "category": "wood",
+   "subtype": "reference",
+   "uses": [
+    "wine",
+    "spirits",
+    "beer",
+    "cider"
+   ],
+   "doseMinGPerL": null,
+   "doseMaxGPerL": null,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Toasting thermally degrades the wood's lignin and hemicellulose, and the degree of toast changes the flavour more than the oak's origin does.",
+   "usageNotes": "Light toast keeps raw wood tannin and fresh sawn character. Medium develops vanillin, caramel and coconut. Heavy pushes into smoke, clove and coffee, and destroys much of the vanillin. Charring, a separate and more extreme process, creates a carbon layer that also strips sulphur compounds — the basis of bourbon maturation.",
+   "cautions": "Reference entry, not a dosable product.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 8
+  },
+  {
+   "id": "wood-cherry",
+   "name": "Cherry Wood",
+   "aliases": [],
+   "category": "wood",
+   "subtype": "alternative",
+   "uses": [
+    "beer",
+    "spirits",
+    "wine"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2 weeks - 6 months",
+   "description": "Softer and fruitier than oak, with almond and stone-fruit notes and much less tannin.",
+   "usageNotes": "Popular for sour beers and fruit spirits where oak tannin would dominate.",
+   "cautions": "Less structurally sound than oak for actual barrels; usually used as chips or spirals.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 9
+  },
+  {
+   "id": "wood-maple",
+   "name": "Maple Wood",
+   "aliases": [],
+   "category": "wood",
+   "subtype": "alternative",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "2 weeks - 6 months",
+   "description": "Mild and sweet with little tannin — contributes texture and a faint sweetness rather than structure.",
+   "usageNotes": "Sometimes used for finishing whiskies and for barrel-aged beers.",
+   "cautions": "Very low tannin, so it will not firm up a soft drink.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 10
+  },
+  {
+   "id": "wood-chestnut",
+   "name": "Chestnut Wood",
+   "aliases": [
+    "Castanea sativa"
+   ],
+   "category": "wood",
+   "subtype": "alternative",
+   "uses": [
+    "wine",
+    "spirits"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "1-12 months",
+   "description": "Very high in hydrolysable tannin — historically used across southern Europe where oak was scarce.",
+   "usageNotes": "Traditional for some Italian and Spanish wines and for Armagnac.",
+   "cautions": "Porous and tannic; extracts far faster and harder than oak.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 11
+  },
+  {
+   "id": "wood-mizunara",
+   "name": "Mizunara Oak",
+   "aliases": [
+    "Quercus crispula",
+    "Japanese oak"
+   ],
+   "category": "wood",
+   "subtype": "oak",
+   "uses": [
+    "spirits",
+    "beer"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": "3 months - 20 years",
+   "description": "Japanese oak, prized for a sandalwood, coconut and incense character that develops only over long maturation.",
+   "usageNotes": "The signature of Japanese whisky finishing.",
+   "cautions": "Notoriously porous and leaky as a barrel wood, and expensive. The character takes many years to emerge.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 12
+  }
+ ]
+}

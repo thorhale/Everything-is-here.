@@ -23,6 +23,8 @@ const CATEGORY_LABELS: Record<string, string> = {
   juice: "Juice",
   cereal: "Cereal & novelty",
   extract: "Extracts",
+  honey: "Honey",
+  "wine-grape": "Wine grapes",
   other: "Flavourings",
 };
 

@@ -1,0 +1,550 @@
+{
+ "attribution": "Dose ranges are typical homebrew and craft-distilling practice in grams per litre of finished volume, compiled from standard references. Botanicals vary enormously in potency by harvest, age and grind, so every range here is wide on purpose. Safety notes on wormwood, star anise, juniper species and elder are included because the distinctions genuinely matter.",
+ "additives": [
+  {
+   "id": "bot-juniper",
+   "name": "Juniper Berries",
+   "aliases": [
+    "Juniperus communis"
+   ],
+   "category": "botanical",
+   "subtype": "gin-botanical",
+   "uses": [
+    "spirits",
+    "beer"
+   ],
+   "doseMinGPerL": 5,
+   "doseMaxGPerL": 20,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "The defining gin botanical — by law, gin must taste predominantly of juniper. Piney, resinous and faintly citrus.",
+   "usageNotes": "Typically 60-80% of a gin botanical bill by weight. Also the traditional Finnish sahti flavouring, where juniper twigs form the lauter filter bed.",
+   "cautions": "Some Juniperus species are toxic. Use only J. communis.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-5",
+   "sortOrder": 0
+  },
+  {
+   "id": "bot-coriander",
+   "name": "Coriander Seed",
+   "aliases": [
+    "Cilantro seed"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Lemony and floral from linalool. The second botanical in nearly every gin and the classic witbier spice.",
+   "usageNotes": "Crush coarsely just before use — pre-ground loses its volatiles fast. Indian small-seeded coriander is more citrus, Moroccan more spicy.",
+   "cautions": "Over-dosing gives a soapy, perfumed character.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 1
+  },
+  {
+   "id": "bot-orange-peel-bitter",
+   "name": "Bitter Orange Peel",
+   "aliases": [
+    "Curaçao peel",
+    "Citrus aurantium"
+   ],
+   "category": "botanical",
+   "subtype": "citrus",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Dried Seville-type orange peel: aromatic oil plus real bitterness from the pith.",
+   "usageNotes": "The traditional witbier and gin citrus. Dried peel gives a very different, more marmalade-like character than fresh zest.",
+   "cautions": "Include too much pith and the bitterness turns coarse.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 2
+  },
+  {
+   "id": "bot-angelica",
+   "name": "Angelica Root",
+   "aliases": [
+    "Angelica archangelica"
+   ],
+   "category": "botanical",
+   "subtype": "gin-botanical",
+   "uses": [
+    "spirits"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 3,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Earthy, musky and dry. In gin it works as a fixative, binding the volatile citrus and floral notes together.",
+   "usageNotes": "Usually 5-10% of a gin botanical bill. Its structural role matters more than its own flavour.",
+   "cautions": "Phototoxic furanocoumarins are present; handle the fresh plant with care.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 3
+  },
+  {
+   "id": "bot-orris",
+   "name": "Orris Root",
+   "aliases": [
+    "Iris germanica"
+   ],
+   "category": "botanical",
+   "subtype": "gin-botanical",
+   "uses": [
+    "spirits"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Violet and powdery. Like angelica it is primarily a fixative rather than a flavour in its own right.",
+   "usageNotes": "Must be aged for two to three years after harvest before the irone that gives its violet character develops.",
+   "cautions": "Expensive because of the long ageing requirement.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 4
+  },
+  {
+   "id": "bot-grains-of-paradise",
+   "name": "Grains of Paradise",
+   "aliases": [
+    "Aframomum melegueta",
+    "Melegueta pepper"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A peppery, cardamom-like West African spice with a warming heat that is not capsaicin.",
+   "usageNotes": "A traditional saison and Belgian ale spice, and a common gin botanical.",
+   "cautions": "Assertive — a little is plenty.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 5
+  },
+  {
+   "id": "bot-cinnamon",
+   "name": "Cinnamon",
+   "aliases": [
+    "Cassia",
+    "Ceylon cinnamon"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "cider",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Warm and sweet. Ceylon cinnamon is delicate and citrusy; cassia, which is what most shops sell as cinnamon, is far stronger and more medicinal.",
+   "usageNotes": "The core metheglin and spiced-cider spice. Use sticks rather than ground — ground cinnamon never settles out.",
+   "cautions": "Cassia contains coumarin at levels that carry a tolerable-daily-intake limit in the EU. Ceylon has far less.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 6
+  },
+  {
+   "id": "bot-vanilla",
+   "name": "Vanilla Bean",
+   "aliases": [
+    "Vanilla planifolia"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "mead",
+    "wine",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "The single most recognisable flavouring there is. Also one of the compounds oak contributes, which is why vanilla and barrel character reinforce each other.",
+   "usageNotes": "Split and scrape, or steep in neutral spirit first and add the tincture to taste at packaging.",
+   "cautions": "Expensive and easy to overdose into confectionary. Madagascar bourbon is the standard; Tahitian is more floral, Mexican more spicy.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 7
+  },
+  {
+   "id": "bot-cardamom",
+   "name": "Cardamom",
+   "aliases": [
+    "Elettaria cardamomum"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "mead",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Intensely aromatic, eucalyptus and citrus over a resinous base.",
+   "usageNotes": "Crack the pods and use the seeds. Green cardamom is the aromatic one; black is smoky and much heavier.",
+   "cautions": "Dominates a blend very quickly.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 8
+  },
+  {
+   "id": "bot-star-anise",
+   "name": "Star Anise",
+   "aliases": [
+    "Illicium verum"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Powerfully liquorice-like from anethole. The louche in absinthe and pastis comes from anethole dropping out of solution when water is added.",
+   "usageNotes": "A common gin and absinthe botanical.",
+   "cautions": "Japanese star anise, Illicium anisatum, is neurotoxic and visually similar. Buy from a reputable source.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 9
+  },
+  {
+   "id": "bot-wormwood",
+   "name": "Wormwood",
+   "aliases": [
+    "Artemisia absinthium"
+   ],
+   "category": "botanical",
+   "subtype": "herb",
+   "uses": [
+    "spirits",
+    "wine",
+    "beer"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Intensely bitter, and the botanical that gives absinthe and vermouth their names — 'vermouth' descends from the German Wermut.",
+   "usageNotes": "Used in the maceration and again in the colouring step for traditional absinthe.",
+   "cautions": "Thujone content is regulated: the EU caps it at 35 mg/kg in bitter spirits and the US requires finished products to be thujone-free by its test method. The historical claims about thujone's effects are largely myth — absinthe's problem was that it was 70% alcohol.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 10
+  },
+  {
+   "id": "bot-hibiscus",
+   "name": "Hibiscus",
+   "aliases": [
+    "Roselle",
+    "Flor de Jamaica"
+   ],
+   "category": "botanical",
+   "subtype": "flower",
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 10,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Tart, cranberry-like and brilliantly magenta. Contributes real acidity as well as colour.",
+   "usageNotes": "Steep cold or briefly hot; long boiling turns the colour brown.",
+   "cautions": "The colour is anthocyanin and pH-sensitive — it shifts blue-purple as pH rises.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 11
+  },
+  {
+   "id": "bot-lavender",
+   "name": "Lavender",
+   "aliases": [
+    "Lavandula"
+   ],
+   "category": "botanical",
+   "subtype": "flower",
+   "uses": [
+    "beer",
+    "mead",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Floral and camphorous. Crosses into soap territory faster than any other common botanical.",
+   "usageNotes": "Use culinary lavender, added late and sparingly.",
+   "cautions": "The line between perfumed and soapy is roughly 1 g/L. Bench-trial.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 12
+  },
+  {
+   "id": "bot-chamomile",
+   "name": "Chamomile",
+   "aliases": [
+    "Matricaria"
+   ],
+   "category": "botanical",
+   "subtype": "flower",
+   "uses": [
+    "beer",
+    "mead",
+    "wine"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 3,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Soft, honeyed and faintly apple-like — a natural partner for mead.",
+   "usageNotes": "Steep like tea after fermentation. Boiling drives off the delicate esters.",
+   "cautions": "Related to ragweed; a recognised allergen for some.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 13
+  },
+  {
+   "id": "bot-elderflower",
+   "name": "Elderflower",
+   "aliases": [
+    "Sambucus nigra flowers"
+   ],
+   "category": "botanical",
+   "subtype": "flower",
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 8,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Muscat-like, floral and lychee-adjacent — one of the most attractive flowers to ferment with.",
+   "usageNotes": "The base of English elderflower wine and champagne-style country wines. Use the day they are picked.",
+   "cautions": "Strip the flowers from the green stems, which are bitter and contain the same cyanogenic compounds as the leaves.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 14
+  },
+  {
+   "id": "bot-rose-hips",
+   "name": "Rose Hips",
+   "aliases": [],
+   "category": "botanical",
+   "subtype": "fruit-botanical",
+   "uses": [
+    "beer",
+    "wine",
+    "mead"
+   ],
+   "doseMinGPerL": 2,
+   "doseMaxGPerL": 15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Mildly floral and fruity with high pectin and vitamin C.",
+   "usageNotes": "A traditional country-wine base and a gin botanical.",
+   "cautions": "The seed hairs are a potent irritant — strain thoroughly.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 15
+  },
+  {
+   "id": "bot-ginger",
+   "name": "Ginger",
+   "aliases": [
+    "Zingiber officinale"
+   ],
+   "category": "botanical",
+   "subtype": "root",
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "cider",
+    "spirits"
+   ],
+   "doseMinGPerL": 1,
+   "doseMaxGPerL": 15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Pungent heat from gingerol, which converts to the milder shogaol on drying and to zingerone on cooking.",
+   "usageNotes": "Fresh gives clean sharp heat, dried is warmer and rounder. The base of ginger beer, and the classic mead spice.",
+   "cautions": "Fresh ginger carries its own wild yeast and bacteria — the basis of a ginger bug, and a contamination risk if unwanted.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 16
+  },
+  {
+   "id": "bot-chili",
+   "name": "Chilli Pepper",
+   "aliases": [
+    "Capsicum"
+   ],
+   "category": "botanical",
+   "subtype": "spice",
+   "uses": [
+    "beer",
+    "mead",
+    "wine",
+    "spirits"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 5,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Capsaicin heat, which is oil-soluble and alcohol-soluble but not water-soluble — so it extracts progressively as alcohol rises.",
+   "usageNotes": "Add post-fermentation as a tincture so the heat can be dosed to taste. Roasting first adds depth.",
+   "cautions": "Heat continues to build for days after addition. Always under-dose and adjust; a tincture is far safer than adding chillies to the fermenter.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 17
+  },
+  {
+   "id": "bot-cacao-nibs",
+   "name": "Cacao Nibs",
+   "aliases": [
+    "Cocoa nibs"
+   ],
+   "category": "botanical",
+   "subtype": "roasted",
+   "uses": [
+    "beer",
+    "mead",
+    "spirits"
+   ],
+   "doseMinGPerL": 2,
+   "doseMaxGPerL": 15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Roasted, cracked cocoa beans. Give chocolate aroma and bitterness without the sugar or milk solids of chocolate.",
+   "usageNotes": "Steep in secondary for one to two weeks, or soak in neutral spirit and add the tincture.",
+   "cautions": "Cocoa butter destroys head retention in beer. Nibs are lower in fat than chocolate but not fat-free.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 18
+  },
+  {
+   "id": "bot-coffee",
+   "name": "Coffee",
+   "aliases": [
+    "Roasted coffee beans"
+   ],
+   "category": "botanical",
+   "subtype": "roasted",
+   "uses": [
+    "beer",
+    "mead",
+    "spirits"
+   ],
+   "doseMinGPerL": 2,
+   "doseMaxGPerL": 20,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Roast, acidity and bitterness. Overlaps heavily with dark malt character, which is why coffee stouts work so easily.",
+   "usageNotes": "Cold brew and add at packaging for clean coffee character; hot-steeped or added early it oxidises to a stale, ashy note within weeks.",
+   "cautions": "Coffee aroma fades fast in a finished beer — this is a drink-fresh addition.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 19
+  },
+  {
+   "id": "bot-lactose",
+   "name": "Lactose",
+   "aliases": [
+    "Milk sugar"
+   ],
+   "category": "botanical",
+   "subtype": "sweetener",
+   "uses": [
+    "beer"
+   ],
+   "doseMinGPerL": 10,
+   "doseMaxGPerL": 60,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A disaccharide brewing yeast cannot ferment, so it survives fermentation as residual sweetness and body.",
+   "usageNotes": "The defining ingredient of milk stout and of modern pastry and fruited sours. 200-500 g per 20 L is typical.",
+   "cautions": "Not vegan, and a genuine problem for lactose-intolerant drinkers — it must be declared. Some Brettanomyces and many bacteria can ferment it, so it is not stable in a mixed-culture beer.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 20
+  }
+ ]
+}

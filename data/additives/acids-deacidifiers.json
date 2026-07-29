@@ -1,0 +1,265 @@
+{
+ "attribution": "Acid and deacidification figures are the standard oenological approximations: 1 g/L of a monoprotic addition moves titratable acidity by roughly 1 g/L, expressed as tartaric. Real musts are buffered, so the pH change for a given TA change varies with potassium and the starting acid profile — always measure rather than assuming. Compiled from OIV oenological practice and standard winemaking references.",
+ "additives": [
+  {
+   "id": "acid-tartaric",
+   "name": "Tartaric Acid",
+   "aliases": [
+    "L(+)-tartaric"
+   ],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 4,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": 1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "The principal grape acid and the only common wine acid that resists metabolism by lactic bacteria. Adding 1 g/L raises titratable acidity by about 1 g/L and lowers pH, though how far depends on the must's buffering.",
+   "usageNotes": "The default acidulant for grape wine. Add before fermentation so the potassium bitartrate has time to precipitate out during cold stabilisation.",
+   "cautions": "Some of what you add will drop out as tartrate crystals, so the measured TA after cold stabilisation will be lower than the arithmetic predicts.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 0
+  },
+  {
+   "id": "acid-malic",
+   "name": "Malic Acid",
+   "aliases": [
+    "DL-malic"
+   ],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 4,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": 1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "The sharp green-apple acid of apples, stone fruit and unripe grapes. Tastes harsher than tartaric at the same titratable acidity.",
+   "usageNotes": "The natural acid of cider and most fruit. Use where a crisp, appley acidity is wanted.",
+   "cautions": "Lactic bacteria convert malic to lactic acid, softening the wine and releasing CO2 — a bottled wine with residual malic can referment.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 1
+  },
+  {
+   "id": "acid-citric",
+   "name": "Citric Acid",
+   "aliases": [],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.3,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": 1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "The citrus acid. Bright and immediate on the palate but the least stable of the three in wine.",
+   "usageNotes": "Common in fruit wines and meads, where its flavour fits. Also chelates iron and copper.",
+   "cautions": "Lactic bacteria metabolise citric acid to diacetyl and acetic acid — do not use it in a wine that will undergo malolactic conversion.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 2
+  },
+  {
+   "id": "acid-lactic",
+   "name": "Lactic Acid",
+   "aliases": [
+    "88% lactic solution"
+   ],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "beer",
+    "wine",
+    "cider",
+    "mead"
+   ],
+   "doseMinGPerL": 0.2,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": 1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "The softest-tasting of the common acids. Usually sold as an 88% solution rather than a powder.",
+   "usageNotes": "The standard mash pH adjustment in brewing, and a gentle finishing acid elsewhere.",
+   "cautions": "At 88% strength, 1 mL weighs about 1.2 g and delivers roughly 1.05 g of acid — dose by weight, not volume.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 3
+  },
+  {
+   "id": "acid-phosphoric",
+   "name": "Phosphoric Acid",
+   "aliases": [
+    "10% phosphoric",
+    "75% phosphoric"
+   ],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "beer",
+    "wine"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 1,
+   "doseUnit": "g/L",
+   "effectMetric": "pH",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A strong mineral acid that shifts pH sharply with very little flavour contribution.",
+   "usageNotes": "Preferred for mash and sparge water adjustment where any acid flavour would be unwelcome.",
+   "cautions": "Far stronger than the organic acids — a small overshoot is hard to undo. Add in small increments and remeasure.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 4
+  },
+  {
+   "id": "acid-blend",
+   "name": "Acid Blend",
+   "aliases": [
+    "Wine acid blend"
+   ],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 4,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": 1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "A packaged mixture, usually tartaric, malic and citric in roughly equal parts.",
+   "usageNotes": "Convenient for country wines where no single varietal acid profile is being targeted.",
+   "cautions": "The citric fraction makes it a poor choice ahead of malolactic conversion.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 5
+  },
+  {
+   "id": "acid-tannic",
+   "name": "Tannic Acid",
+   "aliases": [],
+   "category": "acid",
+   "subtype": "acidulant",
+   "uses": [
+    "wine",
+    "mead"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.3,
+   "doseUnit": "g/L",
+   "effectMetric": "tannin",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A hydrolysable tannin preparation, sold as an acid but functioning as an astringency addition.",
+   "usageNotes": "Use the purpose-made oenological tannins below in preference — they are better characterised.",
+   "cautions": "Easy to overdose into harsh astringency.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 6
+  },
+  {
+   "id": "deacid-potassium-bicarbonate",
+   "name": "Potassium Bicarbonate",
+   "aliases": [
+    "KHCO3"
+   ],
+   "category": "deacidifier",
+   "subtype": "deacidifier",
+   "uses": [
+    "wine",
+    "cider",
+    "mead"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 3,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": -1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "The standard wine deacidifier: roughly 1 g/L drops titratable acidity by about 1 g/L, precipitating the acid as potassium bitartrate.",
+   "usageNotes": "Add after fermentation, then cold stabilise so the tartrate actually drops out. Works on tartaric acid, not malic.",
+   "cautions": "Do not exceed about 3 g/L — beyond that the wine turns salty and flat, and the pH rise brings microbial risk. Effect only completes after cold stabilisation.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 7
+  },
+  {
+   "id": "deacid-calcium-carbonate",
+   "name": "Calcium Carbonate",
+   "aliases": [
+    "Chalk",
+    "Precipitated chalk",
+    "CaCO3"
+   ],
+   "category": "deacidifier",
+   "subtype": "deacidifier",
+   "uses": [
+    "wine",
+    "cider",
+    "mead",
+    "beer"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 2.5,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": -1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "A faster and cheaper deacidifier than potassium bicarbonate, but it leaves calcium behind.",
+   "usageNotes": "Use where a large acid reduction is needed and the wine will be given months to throw its calcium tartrate.",
+   "cautions": "Calcium tartrate precipitates slowly and unpredictably — sometimes in the bottle. Leaves a chalky character if overdone.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 8
+  },
+  {
+   "id": "deacid-potassium-carbonate",
+   "name": "Potassium Carbonate",
+   "aliases": [
+    "K2CO3"
+   ],
+   "category": "deacidifier",
+   "subtype": "deacidifier",
+   "uses": [
+    "wine",
+    "cider"
+   ],
+   "doseMinGPerL": 0.5,
+   "doseMaxGPerL": 2,
+   "doseUnit": "g/L",
+   "effectMetric": "TA",
+   "effectPerGramPerLitre": -1.1,
+   "effectUnit": "g/L TA",
+   "contactTime": null,
+   "description": "A stronger relative of potassium bicarbonate, slightly more effective per gram.",
+   "usageNotes": "Same handling as potassium bicarbonate; less commonly stocked.",
+   "cautions": "Raises pH faster than bicarbonate — overshoot is easier.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 9
+  }
+ ]
+}

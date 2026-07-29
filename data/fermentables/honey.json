@@ -1,0 +1,1446 @@
+{
+ "attribution": "Colour is given on the Pfund scale in millimetres, the standard honey grading measure, with an approximate Lovibond conversion for the recipe calculator. Moisture, pH and sugar content are typical values from apicultural composition literature and vary with floral source, season and processing. Flavour descriptions follow the National Honey Board varietal characterisations. Honey is 15-20% water: a pound of honey is not a pound of sugar, which is why the calculator works from the sugar fraction rather than the gross weight.",
+ "fermentables": [
+  {
+   "id": "honey-clover",
+   "name": "Clover Honey",
+   "aliases": [
+    "Trifolium"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "North America, New Zealand",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 2.3,
+   "pfundColorMm": 25,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Mild, sweet, faintly grassy — the reference point every other honey is described against.",
+   "usageNotes": "The default traditional mead honey. Its mildness is the point: it lets yeast character and any added fruit show through.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 0
+  },
+  {
+   "id": "honey-wildflower",
+   "name": "Wildflower Honey",
+   "aliases": [
+    "Polyfloral",
+    "Mixed floral"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Worldwide",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.4,
+   "pfundColorMm": 60,
+   "moisturePct": 17.2,
+   "sugarGPer100g": 81.9,
+   "sugarGPer100gMin": 79.9,
+   "sugarGPer100gMax": 83.9,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Whatever was in bloom — varies from light and floral to dark and robust between hives and seasons.",
+   "usageNotes": "Cheap and widely available, but no two batches match. Buy enough for the whole batch at once.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 1
+  },
+  {
+   "id": "honey-orange-blossom",
+   "name": "Orange Blossom Honey",
+   "aliases": [
+    "Citrus honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Florida, California, Spain, Mexico",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 3.6,
+   "pfundColorMm": 40,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.8,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Distinctly citrus and floral, with a clean orange-peel top note that carries into the finished mead.",
+   "usageNotes": "One of the few varietals whose character reliably survives fermentation. A classic for show meads.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 2
+  },
+  {
+   "id": "honey-buckwheat",
+   "name": "Buckwheat Honey",
+   "aliases": [
+    "Fagopyrum"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "New York, Pennsylvania, Eastern Europe",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 11.7,
+   "pfundColorMm": 130,
+   "moisturePct": 18.5,
+   "sugarGPer100g": 80.6,
+   "sugarGPer100gMin": 78.6,
+   "sugarGPer100gMax": 82.6,
+   "phTypical": 4.1,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Very dark and assertive: molasses, malt, leather and a barnyard edge.",
+   "usageNotes": "Overwhelms almost anything blended with it. Excellent in a braggot or a dark, aged mead; usually blended at under 30%.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 3
+  },
+  {
+   "id": "honey-tupelo",
+   "name": "Tupelo Honey",
+   "aliases": [
+    "Nyssa ogeche"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Florida panhandle, Georgia",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 2.3,
+   "pfundColorMm": 25,
+   "moisturePct": 18,
+   "sugarGPer100g": 81.1,
+   "sugarGPer100gMin": 79.1,
+   "sugarGPer100gMax": 83.1,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Delicate pear and green-fruit character with a buttery finish.",
+   "usageNotes": "Unusually high fructose-to-glucose ratio, so it resists crystallisation — and ferments a touch drier than most.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 4
+  },
+  {
+   "id": "honey-acacia",
+   "name": "Acacia Honey",
+   "aliases": [
+    "Black Locust",
+    "Robinia"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Hungary, Romania, Italy, China",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 0.9,
+   "pfundColorMm": 10,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Almost water-white, very delicate, with vanilla and light floral notes.",
+   "usageNotes": "The most neutral varietal here. A good base when the fruit or spice is meant to lead.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 5
+  },
+  {
+   "id": "honey-manuka",
+   "name": "Manuka Honey",
+   "aliases": [
+    "Leptospermum scoparium"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "New Zealand, Australia",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 10.8,
+   "pfundColorMm": 120,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.8,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Medicinal, herbal and mineral, with a distinctive damp-earth character.",
+   "usageNotes": "Expensive, and the antibacterial methylglyoxal it is sold for does not help a fermentation. Use as a flavour fraction, not a base.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 6
+  },
+  {
+   "id": "honey-avocado",
+   "name": "Avocado Honey",
+   "aliases": [
+    "Persea"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "California, Mexico",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 10.8,
+   "pfundColorMm": 120,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 4.3,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Dark, rich and buttery — molasses and burnt sugar, with no avocado character at all.",
+   "usageNotes": "Higher pH than most honeys. Suits dark and barrel-aged meads.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 7
+  },
+  {
+   "id": "honey-sourwood",
+   "name": "Sourwood Honey",
+   "aliases": [
+    "Oxydendrum arboreum"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Southern Appalachians",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 4.1,
+   "pfundColorMm": 45,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Spicy anise and caramel with a lingering, almost gingerbread finish.",
+   "usageNotes": "Highly prized and seasonal. Character holds up well through fermentation.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 8
+  },
+  {
+   "id": "honey-heather",
+   "name": "Heather Honey",
+   "aliases": [
+    "Calluna vulgaris"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Scotland, Northern England, Scandinavia",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 9,
+   "pfundColorMm": 100,
+   "moisturePct": 20,
+   "sugarGPer100g": 79.1,
+   "sugarGPer100gMin": 77.1,
+   "sugarGPer100gMax": 81.1,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Smoky, bitter, port-like and tannic — the most wine-like of the honeys.",
+   "usageNotes": "Thixotropic: a jelly at rest that liquefies when stirred, which makes it awkward to measure and press. Historically the honey of Scottish heather ale.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 9
+  },
+  {
+   "id": "honey-eucalyptus",
+   "name": "Eucalyptus Honey",
+   "aliases": [],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Australia, California, Spain",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 6.3,
+   "pfundColorMm": 70,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Herbal and faintly medicinal, with menthol and caramel notes.",
+   "usageNotes": "Robust enough to stand up to spices. Common and inexpensive in Australia.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 10
+  },
+  {
+   "id": "honey-linden",
+   "name": "Linden Honey",
+   "aliases": [
+    "Basswood",
+    "Lime tree"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Eastern Europe, Northeast USA",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 1.3,
+   "pfundColorMm": 15,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.8,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Fresh, minty and camphorous with a distinctive cool finish.",
+   "usageNotes": "Pale but far from neutral. The menthol note is unusual and divides opinion.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 11
+  },
+  {
+   "id": "honey-sage",
+   "name": "Sage Honey",
+   "aliases": [
+    "Salvia"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "California",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 2.7,
+   "pfundColorMm": 30,
+   "moisturePct": 16.5,
+   "sugarGPer100g": 82.6,
+   "sugarGPer100gMin": 80.6,
+   "sugarGPer100gMax": 84.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Mild, clover-like and slightly herbal, with a heavy, viscous body.",
+   "usageNotes": "Very slow to crystallise, which is why it is used to blend with faster-setting honeys.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 12
+  },
+  {
+   "id": "honey-alfalfa",
+   "name": "Alfalfa Honey",
+   "aliases": [
+    "Lucerne"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "North American plains",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 1.3,
+   "pfundColorMm": 15,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Mild with a beeswax note; light and unassuming.",
+   "usageNotes": "A workhorse base honey, often sold blended into generic wildflower.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 13
+  },
+  {
+   "id": "honey-blackberry",
+   "name": "Blackberry Blossom Honey",
+   "aliases": [
+    "Bramble"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Pacific Northwest, UK",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.4,
+   "pfundColorMm": 60,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Fruity and slightly tart, with a genuine berry echo.",
+   "usageNotes": "Pairs naturally with a berry melomel — reinforces rather than competes.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 14
+  },
+  {
+   "id": "honey-fireweed",
+   "name": "Fireweed Honey",
+   "aliases": [
+    "Chamerion angustifolium"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Alaska, Pacific Northwest, Canada",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 0.7,
+   "pfundColorMm": 8,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Water-white and extremely delicate, with a tea-like character.",
+   "usageNotes": "Among the palest honeys made. Seasonal and often expensive.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 15
+  },
+  {
+   "id": "honey-mesquite",
+   "name": "Mesquite Honey",
+   "aliases": [
+    "Prosopis"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Southwest USA, Mexico, Argentina",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.9,
+   "pfundColorMm": 65,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Smoky, earthy and slightly spicy.",
+   "usageNotes": "Suits smoked and chile meads. Sometimes crystallises very coarsely.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 16
+  },
+  {
+   "id": "honey-palmetto",
+   "name": "Saw Palmetto Honey",
+   "aliases": [],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Florida",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.4,
+   "pfundColorMm": 60,
+   "moisturePct": 18,
+   "sugarGPer100g": 81.1,
+   "sugarGPer100gMin": 79.1,
+   "sugarGPer100gMax": 83.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Buttery and smoky with a peppery finish.",
+   "usageNotes": "A regional Florida varietal, often blended with orange blossom.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 17
+  },
+  {
+   "id": "honey-starthistle",
+   "name": "Star Thistle Honey",
+   "aliases": [
+    "Yellow starthistle"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "California",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 3.6,
+   "pfundColorMm": 40,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Anise and cinnamon over a light body.",
+   "usageNotes": "From an invasive weed — abundant, cheap and better than its reputation suggests.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 18
+  },
+  {
+   "id": "honey-leatherwood",
+   "name": "Leatherwood Honey",
+   "aliases": [
+    "Eucryphia lucida"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Tasmania",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 8.1,
+   "pfundColorMm": 90,
+   "moisturePct": 18,
+   "sugarGPer100g": 81.1,
+   "sugarGPer100gMin": 79.1,
+   "sugarGPer100gMax": 83.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Intensely spicy, musky and floral — unlike any other honey.",
+   "usageNotes": "Polarising and unmistakable. Use where the honey is meant to be the whole point.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 19
+  },
+  {
+   "id": "honey-honeydew",
+   "name": "Honeydew Honey",
+   "aliases": [
+    "Forest honey",
+    "Pine honey",
+    "Fir honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Central Europe, Greece, Turkey, New Zealand",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 11.7,
+   "pfundColorMm": 130,
+   "moisturePct": 16.5,
+   "sugarGPer100g": 82.6,
+   "sugarGPer100gMin": 80.6,
+   "sugarGPer100gMax": 84.6,
+   "phTypical": 5,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Resinous, malty and only lightly sweet, with a savoury mineral depth.",
+   "usageNotes": "Not floral honey at all — bees collect aphid secretions from conifers. Much higher in minerals and pH, and lower in fructose, so it ferments differently. The higher pH is a real advantage for a stuck mead.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 20
+  },
+  {
+   "id": "honey-chestnut",
+   "name": "Chestnut Honey",
+   "aliases": [
+    "Castanea"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Italy, France, Spain, Balkans",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 9.9,
+   "pfundColorMm": 110,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 5.2,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Bitter, tannic and smoky, with a pronounced astringent finish.",
+   "usageNotes": "One of the very few honeys with real tannin. High pH — helpful in a must that would otherwise stall.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 21
+  },
+  {
+   "id": "honey-lavender",
+   "name": "Lavender Honey",
+   "aliases": [
+    "Miel de Lavande"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Provence, Spain",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 4.1,
+   "pfundColorMm": 45,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Floral and perfumed with a clear lavender echo.",
+   "usageNotes": "Protected in France as Miel de Provence IGP. The floral note survives fermentation reasonably well.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 22
+  },
+  {
+   "id": "honey-thyme",
+   "name": "Thyme Honey",
+   "aliases": [
+    "Greek thyme honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Greece, Sicily, New Zealand",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 8.1,
+   "pfundColorMm": 90,
+   "moisturePct": 16.5,
+   "sugarGPer100g": 82.6,
+   "sugarGPer100gMin": 80.6,
+   "sugarGPer100gMax": 84.6,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Herbal, warm and pungent with a long peppery finish.",
+   "usageNotes": "A traditional Mediterranean varietal, historically the honey of Greek and Roman mead.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 23
+  },
+  {
+   "id": "honey-jarrah",
+   "name": "Jarrah Honey",
+   "aliases": [
+    "Eucalyptus marginata"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Western Australia",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 10.8,
+   "pfundColorMm": 120,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 4.1,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Dark, malty and caramel-rich with low sweetness.",
+   "usageNotes": "Very low glucose, so it rarely crystallises and ferments unusually dry.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 24
+  },
+  {
+   "id": "honey-macadamia",
+   "name": "Macadamia Honey",
+   "aliases": [],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Hawaii, Australia",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 8.5,
+   "pfundColorMm": 95,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Nutty and buttery with a toffee finish.",
+   "usageNotes": "Suits dessert and dark meads.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 25
+  },
+  {
+   "id": "honey-blueberry",
+   "name": "Blueberry Blossom Honey",
+   "aliases": [],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Maine, Michigan, New Jersey",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.4,
+   "pfundColorMm": 60,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Full and fruity with a slight tang.",
+   "usageNotes": "A natural partner for a blueberry melomel.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 26
+  },
+  {
+   "id": "honey-cranberry",
+   "name": "Cranberry Blossom Honey",
+   "aliases": [],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Massachusetts, Wisconsin",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 6.3,
+   "pfundColorMm": 70,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.8,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Tart and fruity with a dry finish.",
+   "usageNotes": "Uncommon; usually a by-product of pollination contracts.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 27
+  },
+  {
+   "id": "honey-meadowfoam",
+   "name": "Meadowfoam Honey",
+   "aliases": [
+    "Limnanthes alba"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Oregon",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 3.6,
+   "pfundColorMm": 40,
+   "moisturePct": 17,
+   "sugarGPer100g": 82.1,
+   "sugarGPer100gMin": 80.1,
+   "sugarGPer100gMax": 84.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Vanilla, marshmallow and toasted marshmallow — startlingly confectionary.",
+   "usageNotes": "One of the most distinctive American varietals and a favourite for dessert meads.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 28
+  },
+  {
+   "id": "honey-sunflower",
+   "name": "Sunflower Honey",
+   "aliases": [
+    "Helianthus"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "France, Eastern Europe, Argentina",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 3.6,
+   "pfundColorMm": 40,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Bright, pollen-like and lightly fruity.",
+   "usageNotes": "Crystallises very quickly and very finely — warm gently to get it out of the pail.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 29
+  },
+  {
+   "id": "honey-rapeseed",
+   "name": "Rapeseed Honey",
+   "aliases": [
+    "Canola honey",
+    "Oilseed rape"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "UK, Northern Europe, Canada",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 0.9,
+   "pfundColorMm": 10,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Very pale, mild and slightly cabbage-like when fresh.",
+   "usageNotes": "Sets rock-solid within days of extraction — the fastest-crystallising common honey. Cheap and effective as a bulk base.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 30
+  },
+  {
+   "id": "honey-sidr",
+   "name": "Sidr Honey",
+   "aliases": [
+    "Jujube honey",
+    "Ziziphus"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Yemen, Pakistan, India",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 9.9,
+   "pfundColorMm": 110,
+   "moisturePct": 16,
+   "sugarGPer100g": 83.1,
+   "sugarGPer100gMin": 81.1,
+   "sugarGPer100gMax": 85.1,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Rich, buttery and complex with dried-fruit and caramel depth.",
+   "usageNotes": "Among the most expensive honeys in the world; usually a flavour fraction rather than a base.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 31
+  },
+  {
+   "id": "honey-ulmo",
+   "name": "Ulmo Honey",
+   "aliases": [
+    "Eucryphia cordifolia"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Southern Chile",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 2.7,
+   "pfundColorMm": 30,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Floral and jasmine-like with a light spice.",
+   "usageNotes": "A Patagonian varietal increasingly available internationally.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 32
+  },
+  {
+   "id": "honey-kiawe",
+   "name": "Kiawe Honey",
+   "aliases": [
+    "Hawaiian mesquite"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Hawaii",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 1.8,
+   "pfundColorMm": 20,
+   "moisturePct": 16,
+   "sugarGPer100g": 83.1,
+   "sugarGPer100gMin": 81.1,
+   "sugarGPer100gMax": 85.1,
+   "phTypical": 4,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "White, creamy and mild with a faint tropical note.",
+   "usageNotes": "Naturally crystallises to a smooth white spread. Rare outside Hawaii.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 33
+  },
+  {
+   "id": "honey-generic-raw",
+   "name": "Raw Honey (unfiltered)",
+   "aliases": [
+    "Unpasteurised honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Varies",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 5.4,
+   "pfundColorMm": 60,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Whatever the source flora gives; retains pollen, wax fragments and native yeast.",
+   "usageNotes": "Carries osmotolerant wild yeast and its own microflora. Fine for a wild ferment; sulphite or pasteurise if you want to control the outcome.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 34
+  },
+  {
+   "id": "honey-generic-commercial",
+   "name": "Commercial Blended Honey",
+   "aliases": [
+    "Table honey",
+    "Pasteurised honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Varies",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 4.5,
+   "pfundColorMm": 50,
+   "moisturePct": 17.5,
+   "sugarGPer100g": 81.6,
+   "sugarGPer100gMin": 79.6,
+   "sugarGPer100gMax": 83.6,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Blended and filtered to a consistent colour and flavour, and deliberately unremarkable.",
+   "usageNotes": "The economical choice for large or heavily-flavoured batches. Heat treatment has already driven off most volatile aroma.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 35
+  },
+  {
+   "id": "honey-bakers",
+   "name": "Baker's Honey",
+   "aliases": [
+    "Industrial honey"
+   ],
+   "category": "honey",
+   "type": "sugar",
+   "origin": "Varies",
+   "ppg": 35,
+   "ppgMin": 34,
+   "ppgMax": 37,
+   "ppgBasis": "literature",
+   "yieldPct": 76.1,
+   "colorLovibond": 9,
+   "pfundColorMm": 100,
+   "moisturePct": 19,
+   "sugarGPer100g": 80.1,
+   "sugarGPer100gMin": 78.1,
+   "sugarGPer100gMax": 82.1,
+   "phTypical": 3.9,
+   "fermentabilityPct": 98,
+   "requiresConversion": false,
+   "uses": [
+    "mead",
+    "beer",
+    "wine",
+    "cider",
+    "spirits"
+   ],
+   "styleTags": [
+    "mead",
+    "honey"
+   ],
+   "description": "Off-grade honey — overheated, fermented in the comb, or otherwise unfit for table sale.",
+   "usageNotes": "Sold cheaply for industrial use. Perfectly usable in mead if the off-character is one you can live with; check for HMF and fermentation taint.",
+   "sourceUrl": "https://honey.com/honey-industry/honey-varietals",
+   "sortOrder": 36
+  }
+ ]
+}

@@ -68,6 +68,7 @@ async function fromFiles() {
     fermentables: readSet("../data/fermentables", "fermentables"),
     hops: readSet("../data/hops", "hops"),
     waterProfiles: readSet("../data/water", "profiles"),
+    additives: readSet("../data/additives", "additives"),
     legalStandards: readGuidelines("../data/guidelines"),
   };
 }
@@ -75,12 +76,13 @@ async function fromFiles() {
 async function fromDb() {
   const { neon } = await import("@neondatabase/serverless");
   const sql = neon(process.env.NEON_URL);
-  const [yeastLabs, yeastStrains, fermentables, hops, waterProfiles] = await Promise.all([
+  const [yeastLabs, yeastStrains, fermentables, hops, waterProfiles, additives] = await Promise.all([
     sql.query(`SELECT * FROM "YeastLab" ORDER BY "sortOrder", name`),
     sql.query(`SELECT * FROM "YeastStrain" ORDER BY "labId", "sortOrder", name`),
     sql.query(`SELECT * FROM "Fermentable" ORDER BY category, "sortOrder", name`),
     sql.query(`SELECT * FROM "Hop" ORDER BY name`),
     sql.query(`SELECT * FROM "WaterProfile" ORDER BY kind, "sortOrder", name`),
+    sql.query(`SELECT * FROM "Additive" ORDER BY category, "sortOrder", name`),
   ]);
   // The guideline tables are normalised across three tables in Neon; the
   // curated JSON is already the shape we want to publish, so read it from disk
@@ -91,6 +93,7 @@ async function fromDb() {
     fermentables,
     hops,
     waterProfiles,
+    additives,
     legalStandards: readGuidelines("../data/guidelines"),
   };
 }
@@ -114,6 +117,11 @@ const payload = {
     hops: "Alpha/beta acids vary by crop year and lot — these are typical published ranges, not a lot analysis.",
     water: "All ion values are ppm (mg/L). Municipal supplies vary seasonally; these are historical/representative profiles.",
     yeast: "cellsPerUnit is billions of viable cells per pack/vial/gram.",
+    additives:
+      "effectPerGramPerLitre is what one gram per litre does to the named metric - signed, so " +
+      "deacidifiers are negative. Acids move titratable acidity roughly 1:1; DAP delivers 212 mg/L " +
+      "YAN per g/L by stoichiometry. Dose ranges are typical practice, not limits: check your own " +
+      "jurisdiction's legal maxima for sulphite and sorbate.",
     legalStandards:
       "Our own summaries of statutory and protected-designation standards (beer purity law, sake " +
       "classification, cider appellations, spirits standards of identity). Summaries, not legal " +
@@ -126,6 +134,7 @@ const payload = {
     fermentables: data.fermentables.length,
     hops: data.hops.length,
     waterProfiles: data.waterProfiles.length,
+    additives: data.additives.length,
     legalStandardEditions: data.legalStandards.length,
     legalStandardEntries: data.legalStandards.reduce(
       (n, d) => n + d.categories.reduce((m, c) => m + c.styles.length, 0),

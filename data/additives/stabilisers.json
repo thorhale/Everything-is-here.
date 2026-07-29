@@ -1,0 +1,187 @@
+{
+ "attribution": "Sulphite chemistry follows the standard molecular SO2 relationship, molecular = free / (1 + 10^(pH - 1.81)), where 1.81 is the first pKa of sulphurous acid. Legal total-SO2 and sorbate limits differ by jurisdiction and by product category — the figures cited are US TTB values for table wine and are not universal. Check your own regulator.",
+ "additives": [
+  {
+   "id": "stab-potassium-metabisulfite",
+   "name": "Potassium Metabisulfite",
+   "aliases": [
+    "KMS",
+    "K-meta",
+    "K2S2O5"
+   ],
+   "category": "stabiliser",
+   "subtype": "sulfite",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.3,
+   "doseUnit": "g/L",
+   "effectMetric": "SO2",
+   "effectPerGramPerLitre": 576,
+   "effectUnit": "mg/L total SO2",
+   "contactTime": null,
+   "description": "The workhorse antimicrobial and antioxidant of winemaking. About 57.6% SO2 by weight, so 1 g/L yields roughly 576 mg/L SO2 — in practice dosed in tens of milligrams per litre.",
+   "usageNotes": "What matters is not free SO2 but molecular SO2, which is pH-dependent: molecular = free / (1 + 10^(pH - 1.81)). Target around 0.5-0.8 mg/L molecular. At pH 3.2 that needs roughly 20 mg/L free; at pH 3.8 it needs over 80.",
+   "cautions": "Legal total-SO2 limits apply — 350 mg/L in the US for table wine, lower in the EU and lower again for organic. Some people are genuinely sulphite-sensitive; declaration is mandatory above 10 mg/L in most markets.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sortOrder": 0
+  },
+  {
+   "id": "stab-sodium-metabisulfite",
+   "name": "Sodium Metabisulfite",
+   "aliases": [
+    "SMS",
+    "Na2S2O5"
+   ],
+   "category": "stabiliser",
+   "subtype": "sulfite",
+   "uses": [
+    "wine",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.3,
+   "doseUnit": "g/L",
+   "effectMetric": "SO2",
+   "effectPerGramPerLitre": 674,
+   "effectUnit": "mg/L total SO2",
+   "contactTime": null,
+   "description": "Slightly higher SO2 yield per gram than the potassium salt, at about 67.4%, but it contributes sodium.",
+   "usageNotes": "More common in brewing sanitation and in cider than in wine.",
+   "cautions": "The sodium is cumulative and undesirable in wine, which is why potassium metabisulfite is preferred there.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sortOrder": 1
+  },
+  {
+   "id": "stab-campden",
+   "name": "Campden Tablet",
+   "aliases": [
+    "Sulphite tablet"
+   ],
+   "category": "stabiliser",
+   "subtype": "sulfite",
+   "uses": [
+    "wine",
+    "mead",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": null,
+   "doseMaxGPerL": null,
+   "doseUnit": "tablet/gal",
+   "effectMetric": "SO2",
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Pre-measured metabisulfite. A common 0.44 g potassium metabisulfite tablet delivers roughly 65 mg/L of SO2 in one US gallon.",
+   "usageNotes": "Convenient for small batches. One tablet per gallon is the standard pre-fermentation dose for fruit musts; wait 24 hours before pitching.",
+   "cautions": "Tablet mass and salt vary between brands — some are sodium metabisulfite, some are heavier or lighter. Check the packet rather than trusting any single ppm figure, including this one.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sortOrder": 2
+  },
+  {
+   "id": "stab-potassium-sorbate",
+   "name": "Potassium Sorbate",
+   "aliases": [
+    "Sorbate",
+    "Wine stabiliser"
+   ],
+   "category": "stabiliser",
+   "subtype": "sorbate",
+   "uses": [
+    "wine",
+    "mead",
+    "cider"
+   ],
+   "doseMinGPerL": 0.1,
+   "doseMaxGPerL": 0.25,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Prevents yeast from reproducing. It does not kill yeast and it does not stop an active fermentation — it stops a finished wine restarting when you sweeten it.",
+   "usageNotes": "The standard backsweetening partner: sorbate plus free SO2, added to a wine that has already finished and been racked clear.",
+   "cautions": "Without adequate free SO2, lactic bacteria metabolise sorbate into 2-ethoxyhexa-3,5-diene, which smells overwhelmingly of crushed geranium leaves and cannot be removed. Never sorbate a wine you intend to put through malolactic conversion. US limit is 300 mg/L.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sortOrder": 3
+  },
+  {
+   "id": "stab-ascorbic-acid",
+   "name": "Ascorbic Acid",
+   "aliases": [
+    "Vitamin C"
+   ],
+   "category": "stabiliser",
+   "subtype": "antioxidant",
+   "uses": [
+    "wine",
+    "cider",
+    "beer"
+   ],
+   "doseMinGPerL": 0.03,
+   "doseMaxGPerL": 0.15,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A fast-acting oxygen scavenger, used alongside sulphite rather than instead of it.",
+   "usageNotes": "Useful at bottling for white wines and ciders to protect colour.",
+   "cautions": "Without sufficient free SO2 present it turns pro-oxidant, producing hydrogen peroxide and accelerating browning — the exact opposite of the intent.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 4
+  },
+  {
+   "id": "stab-metatartaric",
+   "name": "Metatartaric Acid",
+   "aliases": [],
+   "category": "stabiliser",
+   "subtype": "tartrate",
+   "uses": [
+    "wine"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.1,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "Inhibits tartrate crystal formation, giving cold stability without cold stabilisation.",
+   "usageNotes": "Added at bottling. Effective for a year or two at cellar temperature.",
+   "cautions": "Hydrolyses over time and progressively loses effect — useless for a wine intended to age.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 5
+  },
+  {
+   "id": "stab-cmc",
+   "name": "Carboxymethylcellulose (CMC)",
+   "aliases": [
+    "Cellulose gum"
+   ],
+   "category": "stabiliser",
+   "subtype": "tartrate",
+   "uses": [
+    "wine"
+   ],
+   "doseMinGPerL": 0.05,
+   "doseMaxGPerL": 0.2,
+   "doseUnit": "g/L",
+   "effectMetric": null,
+   "effectPerGramPerLitre": null,
+   "effectUnit": null,
+   "contactTime": null,
+   "description": "A long-lasting tartrate stabiliser for white and sparkling wines.",
+   "usageNotes": "Add after final filtration. Far cheaper in energy terms than chilling a tank to -4 °C for a week.",
+   "cautions": "Can cause haze in red wines by interacting with anthocyanin — whites and rosés only.",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+   "sortOrder": 6
+  }
+ ]
+}
