@@ -1,34 +1,13 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { getEditions, getBeverageStyleCounts } from "@/lib/guidelines";
+import { getEditions, getBeverageStyleCounts, systemLabel } from "@/lib/guidelines";
 import { BEVERAGE_FAMILIES } from "@/lib/beverages";
 
 export const metadata = {
   title: "Style Guidelines — WortHogg",
   description:
     "Pick what you're fermenting — beer, wine, cider, mead, sake, spirits, fortified wine or the world's traditional ferments — and see every relevant style guideline and legal standard.",
-};
-
-const SYSTEM_LABELS: Record<string, string> = {
-  BJCP: "BJCP",
-  BA: "World Beer Cup / GABF (Brewers Association)",
-  MF: "Maltose Falcons (homebrew club)",
-  AWS: "American Wine Society",
-  SPIRITS: "Spirits — Standards of Identity",
-  FERMENTED: "Fortified, Aromatised & Traditional",
-  BEERLAW: "Beer Law — Purity Laws & Designations",
-  SAKE: "Sake — Legal Classification",
-  CIDERLAW: "Cider & Perry — Appellations & Law",
-  CHINA: "China — Baijiu & Huangjiu (GB standards)",
-  KOREA: "Korea — Liquor Tax Act traditions",
-  INDIA: "India & South Asia",
-  CENTRALASIA: "Mongolia & Central Asia",
-  AFRICA: "Africa — indigenous ferments",
-  LATAM: "Latin America — maize, agave & cane",
-  SEASIA: "Southeast Asia",
-  EUROTRAD: "Europe — farmhouse & folk ferments",
-  CULTURED: "Cultured & low-alcohol ferments",
 };
 
 const SYSTEM_ORDER = [
@@ -104,7 +83,7 @@ export default async function GuidelinesPage() {
           if (!eds.length) return null;
           return (
             <section key={sys} style={{ border: "1px solid var(--wh-border)", borderRadius: 8, padding: "0.7rem 0.85rem" }}>
-              <h3 style={{ fontSize: "0.95rem", margin: "0 0 0.4rem" }}>{SYSTEM_LABELS[sys] ?? sys}</h3>
+              <h3 style={{ fontSize: "0.95rem", margin: "0 0 0.4rem" }}>{systemLabel(sys)}</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
                 {eds.map((e) => (
                   <Link key={e.id} href={`/guidelines/${e.id}`} className="wh-style-chip" style={{ textDecoration: "none" }}>

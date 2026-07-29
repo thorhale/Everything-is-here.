@@ -1,6 +1,33 @@
 import { prisma } from "@/lib/db";
 import { unstable_cache } from "next/cache";
 
+// Human names for each organization (the edition `system`). Shared by the
+// guidelines landing and the beverage view so both read the same.
+export const SYSTEM_LABELS: Record<string, string> = {
+  BJCP: "BJCP",
+  BA: "World Beer Cup / GABF (Brewers Association)",
+  MF: "Maltose Falcons (homebrew club)",
+  AWS: "American Wine Society",
+  SPIRITS: "Spirits — Standards of Identity",
+  FERMENTED: "Fortified, Aromatised & Traditional",
+  BEERLAW: "Beer Law — Purity Laws & Designations",
+  SAKE: "Sake — Legal Classification",
+  CIDERLAW: "Cider & Perry — Appellations & Law",
+  CHINA: "China — Baijiu & Huangjiu (GB standards)",
+  KOREA: "Korea — Liquor Tax Act traditions",
+  INDIA: "India & South Asia",
+  CENTRALASIA: "Mongolia & Central Asia",
+  AFRICA: "Africa — indigenous ferments",
+  LATAM: "Latin America — maize, agave & cane",
+  SEASIA: "Southeast Asia",
+  EUROTRAD: "Europe — farmhouse & folk ferments",
+  CULTURED: "Cultured & low-alcohol ferments",
+};
+
+export function systemLabel(system: string): string {
+  return SYSTEM_LABELS[system] ?? system;
+}
+
 // Editions grouped for the picker. BA editions are the judging basis for
 // both the World Beer Cup and GABF, so they're presented under that label.
 export const getEditions = unstable_cache(
@@ -87,6 +114,49 @@ export const getStylesByBeverage = unstable_cache(
     );
   },
   ["guideline-styles-by-beverage-v1"],
+  { revalidate: 3600 }
+);
+
+export interface BeverageSystemGroup {
+  system: string;
+  sourceType: string | null;
+  /** Newest edition of this org — its styles are shown inline. */
+  primary: BeverageEditionGroup;
+  /** Older editions, newest-first, collapsed to year chips. */
+  otherEditions: { id: string; year: number }[];
+}
+
+// Same as getStylesByBeverage, but collapsed by organization: the Brewers
+// Association's dozen yearly editions become ONE group (newest shown, the rest
+// as year chips) instead of a dozen sections that bury BJCP and the club.
+export const getStylesByBeverageBySystem = unstable_cache(
+  async (beverage: string): Promise<BeverageSystemGroup[]> => {
+    const editionGroups = await getStylesByBeverage(beverage);
+    const bySystem = new Map<string, BeverageEditionGroup[]>();
+    for (const g of editionGroups) {
+      if (!bySystem.has(g.edition.system)) bySystem.set(g.edition.system, []);
+      bySystem.get(g.edition.system)!.push(g);
+    }
+    const groups: BeverageSystemGroup[] = [];
+    for (const eds of bySystem.values()) {
+      eds.sort((a, b) => b.edition.year - a.edition.year); // newest first
+      const [primary, ...rest] = eds;
+      groups.push({
+        system: primary.edition.system,
+        sourceType: primary.edition.sourceType,
+        primary,
+        otherEditions: rest.map((e) => ({ id: e.edition.id, year: e.edition.year })),
+      });
+    }
+    const rank = (t: string | null) => (t === "competition" ? 0 : t === "legal-standard" ? 1 : t === "club" ? 2 : 3);
+    return groups.sort(
+      (a, b) =>
+        rank(a.sourceType) - rank(b.sourceType) ||
+        b.primary.edition.year - a.primary.edition.year ||
+        a.system.localeCompare(b.system)
+    );
+  },
+  ["guideline-styles-by-beverage-by-system-v1"],
   { revalidate: 3600 }
 );
 

@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getStylesByBeverage, styleHref } from "@/lib/guidelines";
+import { getStylesByBeverageBySystem, styleHref, systemLabel } from "@/lib/guidelines";
 import { beverageFamily, BEVERAGE_FAMILIES } from "@/lib/beverages";
 
 type Props = { params: Promise<{ beverage: string }> };
@@ -26,8 +26,11 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
   const fam = beverageFamily(beverage);
   if (!fam) notFound();
 
-  const groups = await getStylesByBeverage(beverage);
-  const total = groups.reduce((n, g) => n + g.categories.reduce((m, c) => m + c.styles.length, 0), 0);
+  const groups = await getStylesByBeverageBySystem(beverage);
+  const total = groups.reduce(
+    (n, g) => n + g.primary.categories.reduce((m, c) => m + c.styles.length, 0),
+    0
+  );
 
   return (
     <div>
@@ -40,7 +43,8 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
       </h1>
       <p style={{ color: "var(--wh-text-light)", maxWidth: 720 }}>{fam.blurb}</p>
       <p style={{ color: "var(--wh-text-light)", fontSize: "0.85rem" }}>
-        {total.toLocaleString()} styles across {groups.length} {groups.length === 1 ? "source" : "sources"}.
+        {total.toLocaleString()} styles from {groups.length}{" "}
+        {groups.length === 1 ? "organization" : "organizations"}.
         {fam.buildable && (
           <> Building one? <Link href="/build">Open the recipe builder →</Link></>
         )}
@@ -67,12 +71,13 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
       {groups.length === 0 && <p>No styles catalogued for this family yet.</p>}
 
       {groups.map((g) => {
-        const badge = SOURCE_BADGE[g.edition.sourceType ?? "traditional"] ?? SOURCE_BADGE.traditional;
+        const badge = SOURCE_BADGE[g.sourceType ?? "traditional"] ?? SOURCE_BADGE.traditional;
+        const ed = g.primary.edition;
         return (
-          <section key={g.edition.id} style={{ marginBottom: "2rem" }}>
+          <section key={g.system} style={{ marginBottom: "2rem" }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: "0.5rem", flexWrap: "wrap" }}>
               <h2 style={{ fontSize: "1.1rem", margin: "0" }}>
-                <Link href={`/guidelines/${g.edition.id}`}>{g.edition.title}</Link>
+                <Link href={`/guidelines/${ed.id}`}>{systemLabel(g.system)}</Link>
               </h2>
               <span
                 style={{
@@ -88,10 +93,12 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
               >
                 {badge.label}
               </span>
-              <span style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>{g.edition.year}</span>
+              <span style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+                {g.otherEditions.length > 0 ? `${ed.year} edition` : ed.year}
+              </span>
             </div>
 
-            {g.categories.map((c) => (
+            {g.primary.categories.map((c) => (
               <div key={c.id} style={{ marginTop: "0.6rem" }}>
                 <h3 style={{ fontSize: "0.92rem", margin: "0 0 0.25rem", color: "var(--wh-text-light)" }}>
                   {c.code ? `${c.code}. ` : ""}{c.name}
@@ -100,7 +107,7 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
                   {c.styles.map((s) => (
                     <Link
                       key={s.id}
-                      href={styleHref(g.edition.id, s)}
+                      href={styleHref(ed.id, s)}
                       className="wh-style-chip"
                       style={{ textDecoration: "none" }}
                       title={s.abvMin != null && s.abvMax != null ? `${s.abvMin}–${s.abvMax}% ABV` : undefined}
@@ -111,6 +118,17 @@ export default async function BeverageGuidelinesPage({ params }: Props) {
                 </div>
               </div>
             ))}
+
+            {g.otherEditions.length > 0 && (
+              <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "0.7rem", display: "flex", flexWrap: "wrap", gap: "0.35rem", alignItems: "baseline" }}>
+                <span>Other editions:</span>
+                {g.otherEditions.map((o) => (
+                  <Link key={o.id} href={`/guidelines/${o.id}`} className="wh-style-chip" style={{ textDecoration: "none" }}>
+                    {o.year}
+                  </Link>
+                ))}
+              </p>
+            )}
           </section>
         );
       })}
