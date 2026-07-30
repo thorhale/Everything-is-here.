@@ -1,11 +1,30 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
+import InstallPrompt from "@/components/InstallPrompt";
 
 export const metadata: Metadata = {
   title: "WortHogg",
   description:
     "WortHogg is an unofficial, community-recovered archive of BrewToad's homebrew recipes and calculator, recovered from the Internet Archive Wayback Machine.",
+  applicationName: "WortHogg",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "WortHogg",
+    statusBarStyle: "default",
+  },
+  icons: {
+    apple: "/brand/apple-touch-icon.png",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#b55002",
+  // The calculators have wide tables; let people zoom rather than trapping
+  // them at 1x on a phone.
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -125,6 +144,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ul>
           </div>
         </footer>
+
+        <InstallPrompt />
       </body>
     </html>
   );
