@@ -1,4 +1,8 @@
-export const dynamic = "force-dynamic";
+// This page reads data/sources/registry.json off disk and never touches the
+// database, and that file only changes when a deploy ships a new one. Forcing a
+// dynamic render per request bought nothing and cost a server render each hit,
+// so it is prerendered and revalidated instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import {
