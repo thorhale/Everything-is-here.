@@ -50,6 +50,16 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "YeastStrain_labId_idx" ON "YeastStrain"("labId")`,
   `CREATE INDEX IF NOT EXISTS "YeastStrain_name_idx" ON "YeastStrain"("name")`,
   `CREATE INDEX IF NOT EXISTS "YeastStrain_species_idx" ON "YeastStrain"("species")`,
+  // Provenance, added after an audit found rows asserting full numeric specs on
+  // the strength of a Wikipedia page about the genus. specBasis says what KIND
+  // of evidence the numbers rest on, sourceId keys into
+  // data/sources/registry.json, and sourceNote records what the cited document
+  // does and does not actually support — so a null field can be read as
+  // "nobody published this" rather than "we forgot".
+  `ALTER TABLE "YeastStrain" ADD COLUMN IF NOT EXISTS "specBasis" TEXT`,
+  `ALTER TABLE "YeastStrain" ADD COLUMN IF NOT EXISTS "sourceId" TEXT`,
+  `ALTER TABLE "YeastStrain" ADD COLUMN IF NOT EXISTS "sourceNote" TEXT`,
+  `CREATE INDEX IF NOT EXISTS "YeastStrain_specBasis_idx" ON "YeastStrain"("specBasis")`,
 ];
 
 // Column order for the strain insert (must match the value tuple below).
@@ -60,6 +70,7 @@ const STRAIN_COLS = [
   "alcoholToleranceMin", "alcoholToleranceMax", "cellsPerUnit", "unitLabel",
   "optimalPitchNote", "isBlend", "blendComponents", "description", "flavorNotes",
   "sourceUrl", "attribution", "sortOrder",
+  "specBasis", "sourceId", "sourceNote",
 ];
 
 function strainTuple(s, labId, i, attribution) {
@@ -77,6 +88,7 @@ function strainTuple(s, labId, i, attribution) {
     litArr(s.blendComponents), lit(s.description ?? null),
     lit(s.flavorNotes ?? null), lit(s.sourceUrl),
     lit(s.attribution ?? attribution ?? null), lit(s.sortOrder ?? i),
+    lit(s.specBasis ?? null), lit(s.sourceId ?? null), lit(s.sourceNote ?? null),
   ].join(",") + ")";
 }
 
