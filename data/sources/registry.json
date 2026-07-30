@@ -1,0 +1,5799 @@
+{
+  "generated": "by app/build-sources.mjs — do not edit; edit data/sources/curated.json",
+  "reliabilityRules": {
+    "primary": "The organisation that measured or legislated the figure, publishing it itself: manufacturer technical data sheets, government standards and regulations, nutrition labels, peer-reviewed primary research, standards bodies.",
+    "secondary": "Competent parties reporting or synthesising others' measurements: review papers, extension services, trade associations, club guides, practitioner reference tools.",
+    "tertiary": "General reference works. Useful orientation, never adequate to support a numeric specification in this project."
+  },
+  "citationRules": {
+    "numericClaim": "A record carrying numeric specifications must cite at least one source with reliability primary or secondary AND deepLink true. A tertiary source, or a bare publisher homepage, can never support a number.",
+    "qualitativeClaim": "Descriptive text may rest on any source, including tertiary, provided the source is named.",
+    "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
+  },
+  "totals": {
+    "distinctSources": 226,
+    "citations": 648,
+    "numericCitations": 604,
+    "numericOnShallowLink": 347,
+    "numericOnTertiary": 0,
+    "fullTextVerified": 4,
+    "byReliability": {
+      "primary": 498,
+      "secondary": 144,
+      "tertiary": 6
+    }
+  },
+  "sources": [
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 130,
+      "numericCitations": 130,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json",
+        "data/fermentables/cereals-novelty.json",
+        "data/fermentables/fruits-juices.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-long-grain",
+        "adjunct-rice-sushi",
+        "adjunct-rice-arborio",
+        "adjunct-rice-jasmine",
+        "adjunct-rice-basmati",
+        "adjunct-rice-glutinous",
+        "adjunct-rice-brown",
+        "adjunct-rice-wild",
+        "adjunct-corn-grits",
+        "adjunct-cracked-corn",
+        "adjunct-quinoa",
+        "adjunct-millet"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://iv.ucdavis.edu/",
+      "host": "iv.ucdavis.edu",
+      "title": null,
+      "publisher": "UC Davis Integrated Viticulture",
+      "authors": null,
+      "year": null,
+      "kind": "extension-service",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 53,
+      "numericCitations": 53,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-cabernet-sauvignon",
+        "grape-merlot",
+        "grape-pinot-noir",
+        "grape-syrah",
+        "grape-zinfandel",
+        "grape-sangiovese",
+        "grape-nebbiolo",
+        "grape-tempranillo",
+        "grape-grenache",
+        "grape-malbec",
+        "grape-cabernet-franc",
+        "grape-petit-verdot"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.brunwater.com/",
+      "host": "www.brunwater.com",
+      "title": null,
+      "publisher": "Bru'n Water (Martin Brungard)",
+      "authors": null,
+      "year": null,
+      "kind": "practitioner-tool",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The de facto reference for homebrew water chemistry, but a practitioner spreadsheet rather than a measuring authority. Municipal ion figures should ideally cite the water utility's own published analysis.",
+      "citations": 43,
+      "numericCitations": 43,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "burton-upon-trent",
+        "dublin",
+        "munich",
+        "pilsen",
+        "london",
+        "dortmund",
+        "edinburgh",
+        "vienna",
+        "cologne",
+        "brussels",
+        "tadcaster",
+        "bohemia-soft"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.oiv.int/standards/international-code-of-oenological-practices",
+      "host": "www.oiv.int",
+      "title": null,
+      "publisher": "International Organisation of Vine and Wine (OIV)",
+      "authors": null,
+      "year": null,
+      "kind": "standards-body",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 42,
+      "numericCitations": 41,
+      "usedIn": [
+        "data/additives/acids-deacidifiers.json",
+        "data/additives/botanicals.json",
+        "data/additives/enzymes-finings.json",
+        "data/additives/stabilisers.json",
+        "data/additives/tannin-wood.json"
+      ],
+      "exampleRecords": [
+        "acid-tartaric",
+        "acid-malic",
+        "acid-citric",
+        "acid-lactic",
+        "acid-phosphoric",
+        "acid-blend",
+        "acid-tannic",
+        "deacid-potassium-bicarbonate",
+        "deacid-calcium-carbonate",
+        "deacid-potassium-carbonate",
+        "bot-coriander",
+        "bot-orange-peel-bitter"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://honey.com/honey-industry/honey-varietals",
+      "host": "honey.com",
+      "title": null,
+      "publisher": "National Honey Board",
+      "authors": null,
+      "year": null,
+      "kind": "trade-association",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 37,
+      "numericCitations": 37,
+      "usedIn": [
+        "data/fermentables/honey.json"
+      ],
+      "exampleRecords": [
+        "honey-clover",
+        "honey-wildflower",
+        "honey-orange-blossom",
+        "honey-buckwheat",
+        "honey-tupelo",
+        "honey-acacia",
+        "honey-manuka",
+        "honey-avocado",
+        "honey-sourwood",
+        "honey-heather",
+        "honey-eucalyptus",
+        "honey-linden"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.barthhaas.com/",
+      "host": "www.barthhaas.com",
+      "title": null,
+      "publisher": "BarthHaas",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 28,
+      "numericCitations": 28,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "hallertau-mittelfrueh",
+        "tettnanger",
+        "spalt",
+        "hersbrucker",
+        "perle",
+        "magnum-de",
+        "herkules",
+        "saphir",
+        "hallertau-blanc",
+        "huell-melon",
+        "mandarina-bavaria",
+        "lubelski"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlabs.com/",
+      "host": "scottlabs.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Scott Labs' annual fermentation handbook is the distributor's own compilation of supplier specs; cite the handbook PDF and its year.",
+      "citations": 24,
+      "numericCitations": 24,
+      "usedIn": [
+        "data/additives/enzymes-finings.json",
+        "data/additives/nutrients.json",
+        "data/additives/tannin-wood.json"
+      ],
+      "exampleRecords": [
+        "enzyme-pectic",
+        "enzyme-amylase",
+        "enzyme-glucoamylase",
+        "enzyme-beta-glucanase",
+        "fining-bentonite",
+        "fining-isinglass",
+        "fining-gelatin",
+        "fining-sparkolloid",
+        "fining-kieselsol-chitosan",
+        "fining-pvpp",
+        "fining-irish-moss",
+        "fining-activated-carbon"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.nzhops.co.nz/",
+      "host": "www.nzhops.co.nz",
+      "title": null,
+      "publisher": "New Zealand Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 11,
+      "numericCitations": 11,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "nelson-sauvin",
+        "motueka",
+        "riwaka",
+        "pacific-jade",
+        "wai-iti",
+        "nectaron",
+        "dr-rudi",
+        "wakatu",
+        "green-bullet",
+        "kohatu",
+        "cascade-nz"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 10,
+      "numericCitations": 10,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-maize",
+        "adjunct-flaked-rice",
+        "adjunct-flaked-oats",
+        "adjunct-flaked-barley",
+        "adjunct-flaked-wheat",
+        "adjunct-rice-hulls",
+        "sugar-lactose",
+        "sugar-maltodextrin",
+        "extract-dme-light",
+        "extract-lme-light"
+      ]
+    },
+    {
+      "id": "maltose-falcons-sour-wild",
+      "url": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+      "host": "www.maltosefalcons.com",
+      "title": "Brewing Sour and Wild Ales (incl. 'The Falcon Method For Fermenting Lambics', credited to MB Raines)",
+      "publisher": "Maltose Falcons Homebrew Club",
+      "authors": null,
+      "year": null,
+      "kind": "club-guide",
+      "reliability": "secondary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Brettanomyces species characters — B. claussenii/anomalus (English stock beer origin, softer, pineapple and mango), B. bruxellensis (Brussels, medium earthy funk), B. lambicus (every lambic, huge horsey character with fruitiness, smoky and sour). Lactobacillus delbrueckii: lactic acid for crisp dry acidity, primary character of Berliner Weisse, ferment very warm e.g. 98 °F. Pediococcus: large lactic production from glucose, no CO2, massive diacetyl charge in early ferment. Acetobacter as 'vinegar mother' converting ethanol to acetic acid. Enterobacter contributing bilious characters. Timeline: at least a month before cultures show character, optimally six months to a year. Named blends WLP655, Wyeast 3278, Wyeast 3763 Roeselare.",
+      "doesNotSupport": "Temperature ranges, attenuation, flocculation or alcohol tolerance for any of these organisms except the single 98 °F figure for L. delbrueckii.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 8,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/bacteria-cultures.json",
+        "data/yeasts/wild-heritage.json"
+      ],
+      "exampleRecords": [
+        "bact-pediococcus-damnosus",
+        "bact-acetobacter",
+        "bact-lambic-blend",
+        "bact-lactobacillus-delbrueckii",
+        "bact-brett-lambicus",
+        "bact-brett-claussenii",
+        "bact-brett-anomalus",
+        "wild-brettanomyces-bruxellensis"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.hops.com.au/",
+      "host": "www.hops.com.au",
+      "title": null,
+      "publisher": "Hop Products Australia",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 6,
+      "numericCitations": 6,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "galaxy",
+        "vic-secret",
+        "ella",
+        "enigma",
+        "topaz",
+        "pride-of-ringwood"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+      "host": "www.ecfr.gov",
+      "title": null,
+      "publisher": "Electronic Code of Federal Regulations (US)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 5,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/additives/stabilisers.json",
+        "data/guidelines/ciderlaw-2024.json"
+      ],
+      "exampleRecords": [
+        "stab-potassium-metabisulfite",
+        "stab-sodium-metabisulfite",
+        "stab-campden",
+        "stab-potassium-sorbate"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 5,
+      "numericCitations": 5,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json",
+        "data/fermentables/malts.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "adjunct-torrified-wheat",
+        "malt-marris-otter-crisp-extra-pale",
+        "malt-crisp-crystal-77",
+        "malt-crisp-chocolate",
+        "sugar-invert-no3"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 5,
+      "numericCitations": 5,
+      "usedIn": [
+        "data/hops/us.json",
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "zappa",
+        "contessa",
+        "triumph",
+        "palisade",
+        "tettnang-us"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.kelloggs.com/",
+      "host": "www.kelloggs.com",
+      "title": null,
+      "publisher": "Kellogg's (nutrition labelling)",
+      "authors": null,
+      "year": null,
+      "kind": "nutrition-label",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-froot-loops",
+        "cereal-corn-flakes",
+        "cereal-rice-krispies",
+        "cereal-frosted-flakes"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/caramel-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-20",
+        "malt-crystal-40",
+        "malt-crystal-60",
+        "malt-crystal-120"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.fawcett-maltsters.co.uk/",
+      "host": "www.fawcett-maltsters.co.uk",
+      "title": null,
+      "publisher": "Thomas Fawcett & Sons",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-brown",
+        "malt-amber",
+        "malt-oat-malt",
+        "malt-pale-chocolate"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.czhops.cz/",
+      "host": "www.czhops.cz",
+      "title": null,
+      "publisher": "Czech Hops (Hop Research Institute Žatec)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "saaz",
+        "sladek",
+        "kazbek",
+        "premiant"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://en.angelyeast.com/products/distillers-yeast.html",
+      "host": "en.angelyeast.com",
+      "title": null,
+      "publisher": "Angel Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/yeasts/angel-yeast.json"
+      ],
+      "exampleRecords": [
+        "angel-super-alcohol",
+        "angel-whiskey",
+        "angel-rum",
+        "angel-baijiu-daqu"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.generalmills.com/",
+      "host": "www.generalmills.com",
+      "title": null,
+      "publisher": "General Mills (nutrition labelling)",
+      "authors": null,
+      "year": null,
+      "kind": "nutrition-label",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-cinnamon-toast-crunch",
+        "cereal-lucky-charms",
+        "cereal-cheerios"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.castlemalting.com/",
+      "host": "www.castlemalting.com",
+      "title": null,
+      "publisher": "Castle Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-special-b",
+        "malt-vienna-castle",
+        "malt-cara-belge"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/spirits/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-safspirit-usw-6",
+        "fermentis-safspirit-m-1",
+        "fermentis-safspirit-c-70"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.postconsumerbrands.com/pebbles/",
+      "host": "www.postconsumerbrands.com",
+      "title": null,
+      "publisher": "Post Consumer Brands (nutrition labelling)",
+      "authors": null,
+      "year": null,
+      "kind": "nutrition-label",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-fruity-pebbles",
+        "cereal-cocoa-pebbles"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/brewers-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-2row-pale",
+        "malt-6row-pale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.dingemansmout.be/",
+      "host": "www.dingemansmout.be",
+      "title": null,
+      "publisher": "Dingemans Mout",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-biscuit",
+        "malt-aromatic"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carared/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carared",
+        "malt-crystal-rye"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://bestmalz.de/en/",
+      "host": "bestmalz.de",
+      "title": null,
+      "publisher": "BESTMALZ",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-heidelberg",
+        "malt-dextrapils"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.candisyrup.com/",
+      "host": "www.candisyrup.com",
+      "title": null,
+      "publisher": "Candi Syrup Inc.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-candi-clear",
+        "sugar-candi-syrup-d180"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbiofuels.com/products/distilamax/",
+      "host": "www.lallemandbiofuels.com",
+      "title": null,
+      "publisher": "Lallemand Biofuels & Distilled Spirits",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "distilamax-rm",
+        "distilamax-mw"
+      ]
+    },
+    {
+      "id": "michel-2016-non-saccharomyces",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jib.381",
+      "host": "onlinelibrary.wiley.com",
+      "title": "Review: Pure non-Saccharomyces starter cultures for beer fermentation with a focus on secondary metabolites and practical applications",
+      "publisher": "Journal of the Institute of Brewing 122:569-587",
+      "authors": [
+        "M. Michel",
+        "T. Meier-Dörnberg",
+        "F. Jacob",
+        "F. Schneiderbanger",
+        "M. Haselbeck",
+        "M. Zarnkow",
+        "M. Hutzler"
+      ],
+      "year": 2016,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "Saccharomycodes ludwigii does not ferment maltose or maltotriose and therefore yields low alcohol with desirable flavours; industrial production of alcohol-free beer with maltose-negative S. ludwigii; Torulaspora delbrueckii among non-Saccharomyces starters of brewing interest.",
+      "doesNotSupport": "Temperature ranges, attenuation or alcohol tolerance for these species. Verification is metadata-only.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/yeasts/wild-heritage.json"
+      ],
+      "exampleRecords": [
+        "wild-torulaspora-delbrueckii",
+        "wild-saccharomycodes-ludwigii"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-5",
+      "host": "www.ecfr.gov",
+      "title": null,
+      "publisher": "Electronic Code of Federal Regulations (US)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/additives/botanicals.json"
+      ],
+      "exampleRecords": [
+        "bot-juniper"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.gov.uk/",
+      "host": "www.gov.uk",
+      "title": null,
+      "publisher": "UK Government",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/additives/tannin-wood.json"
+      ],
+      "exampleRecords": [
+        "tannin-tea"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.quakeroats.com/",
+      "host": "www.quakeroats.com",
+      "title": null,
+      "publisher": "Quaker Oats (nutrition labelling)",
+      "authors": null,
+      "year": null,
+      "kind": "nutrition-label",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-capn-crunch"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/malts/finest-maris-otter-ale-malt/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-maris-otter"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.simpsonsmalt.co.uk/our-malts/golden-promise/",
+      "host": "www.simpsonsmalt.co.uk",
+      "title": null,
+      "publisher": "Simpsons Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-golden-promise"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/pilsner-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-pilsner"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/vienna-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-vienna"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/munich-malt-type-1/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-munich-light"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/munich-malt-type-2/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-munich-dark"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/pale-ale-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-pale-ale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/pale-wheat-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-wheat-pale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/dark-wheat-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-wheat-dark"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/rye-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-rye"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/acidulated-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-acidulated"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/carapils-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carapils"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/melanoidin-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-melanoidin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/victory-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-victory"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://gambrinusmalting.com/",
+      "host": "gambrinusmalting.com",
+      "title": null,
+      "publisher": "Gambrinus Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-honey"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/chocolate-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-chocolate"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/black-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-black-patent"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/roasted-barley",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-roasted-barley"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carafa-special-type-2/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carafa-ii"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/beech-smoked-barley-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-smoked-beech"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/malts/peated-malt/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-peated"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/chit-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-chit"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/caramunich-type-3/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-caramunich-iii"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carahell/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carahell"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carafa-special-type-1/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carafa-i"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/",
+      "host": "www.simpsonsmalt.co.uk",
+      "title": null,
+      "publisher": "Simpsons Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-golden-naked-oats"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/abbey-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-abbey"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/cherrywood-smoked-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-cherrywood-smoked"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://bestmalz.de/en/our-malts/best-pilsen/",
+      "host": "bestmalz.de",
+      "title": null,
+      "publisher": "BESTMALZ",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-pilsner-bestmalz"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/midnight-wheat-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-midnight-wheat"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/extra-special-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-extra-special"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/malts/brown-malt/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-brown-crisp"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrmalting.com/",
+      "host": "rahrmalting.com",
+      "title": null,
+      "publisher": "Rahr Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-lager-rahr"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carafoam/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carapils-weyermann"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/caraaroma/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-caraaroma"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carawheat/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-carawheat"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/sinamar/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-sinamar"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/chocolate-rye-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-chocolate-rye"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.simpsonsmalt.co.uk/",
+      "host": "www.simpsonsmalt.co.uk",
+      "title": null,
+      "publisher": "Simpsons Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-simpsons-double-roasted"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/bonlander-munich-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-briess-bonlander"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/special-roast-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-briess-special-roast"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/blackprinz-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-blackprinz"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/vienna-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-vienna-briess"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/spelt-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-spelt"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/emmer-malt/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-emmer"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Umqombothi",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/africa-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://americanwinesociety.org/amateur-wine-competition/",
+      "host": "americanwinesociety.org",
+      "title": null,
+      "publisher": "American Wine Society",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/aws-2025.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2017/04/2015-brewers-association-beer-style-guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2015.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2017/04/2016_BA_Beer_Style_Guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2016.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2017/05/2017-BA-Beer-Style-Guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2017.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2018/03/2018_BA_Beer_Style_Guidelines_Final.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2018.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://s3-us-west-2.amazonaws.com/brewersassoc/wp-content/uploads/2019/04/BA-style-guidelines-2019.pdf",
+      "host": "s3-us-west-2.amazonaws.com",
+      "title": null,
+      "publisher": "Object storage (publisher-hosted PDF)",
+      "authors": null,
+      "year": null,
+      "kind": "document-host",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Opaque host; the citation should name the publishing organisation in its title.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2019.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2020/03/BA-beer-style-guidelines-2020.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2020.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2021/02/22104023/2021_BA_Beer_Style_Guidelines_Final.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2021.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2022/02/25084047/2022_BA_Beer_Style_Guidelines_Final.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2022.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2023/07/10124402/2023_BA_Beer_Style_Guidelines-updated.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2024/12/12144941/2024_BA_Beer_Style_Guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2024.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2025/06/20143326/2025_BA_Beer_Style_Guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2025.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2025/12/12085737/2026_BA_Beer_Style_Guidelines.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": null,
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/ba-2026.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012R1151",
+      "host": "eur-lex.europa.eu",
+      "title": null,
+      "publisher": "EUR-Lex (European Union law)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/beerlaw-2024.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.bjcp.org/style/2008/",
+      "host": "www.bjcp.org",
+      "title": null,
+      "publisher": "Beer Judge Certification Program",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/bjcp-2008.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.bjcp.org/style/2015/",
+      "host": "www.bjcp.org",
+      "title": null,
+      "publisher": "Beer Judge Certification Program",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/bjcp-2015.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.bjcp.org/style/2021/",
+      "host": "www.bjcp.org",
+      "title": null,
+      "publisher": "Beer Judge Certification Program",
+      "authors": null,
+      "year": null,
+      "kind": "guideline-publisher",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/bjcp-2021.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Airag",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/centralasia-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.chinesestandard.net/",
+      "host": "www.chinesestandard.net",
+      "title": null,
+      "publisher": "Chinese National Standards (GB) reseller",
+      "authors": null,
+      "year": null,
+      "kind": "standards-reseller",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "A reseller of GB standards rather than the issuing body; the standard number is the durable identifier.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/china-2021.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Kombucha",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/cultured-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Sahti",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/europe-trad-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R0787",
+      "host": "eur-lex.europa.eu",
+      "title": null,
+      "publisher": "EUR-Lex (European Union law)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/fermented-2024.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://ipindia.gov.in/",
+      "host": "ipindia.gov.in",
+      "title": null,
+      "publisher": "Intellectual Property India (GI Registry)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/india-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.law.go.kr/",
+      "host": "www.law.go.kr",
+      "title": null,
+      "publisher": "Korea Ministry of Government Legislation",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/korea-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Chicha",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/latinamerica-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.maltosefalcons.com/pages/maltose-falcons-2017-style-guidelines",
+      "host": "www.maltosefalcons.com",
+      "title": null,
+      "publisher": "Maltose Falcons Homebrew Club",
+      "authors": null,
+      "year": null,
+      "kind": "club-guide",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/maltose-falcons-2017.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.nta.go.jp/taxes/sake/hyoji/seishu/index.htm",
+      "host": "www.nta.go.jp",
+      "title": null,
+      "publisher": "National Tax Agency (Japan)",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/sake-2024.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://en.wikipedia.org/wiki/Tapai",
+      "host": "en.wikipedia.org",
+      "title": null,
+      "publisher": "Wikipedia",
+      "authors": null,
+      "year": null,
+      "kind": "encyclopedia",
+      "reliability": "tertiary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Retained only where a record's claims are purely descriptive. Never adequate for a numeric specification — the audit fails any numeric record that rests on this host.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/seasia-2023.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.ttb.gov/spirits/spirits-standards-of-identity",
+      "host": "www.ttb.gov",
+      "title": null,
+      "publisher": "US Alcohol and Tobacco Tax and Trade Bureau",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/spirits-2024.json"
+      ],
+      "exampleRecords": []
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/cascade.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cascade"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/centennial.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "centennial"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/citra.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "citra"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/mosaic.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "mosaic"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/simcoe.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "simcoe"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/amarillo.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "amarillo"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/chinook.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "chinook"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/columbus.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "columbus"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/willamette.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "willamette"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/sabro.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "sabro"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/strata.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "strata"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/idaho-7.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "idaho-7"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/el-dorado.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "el-dorado"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/azacca.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "azacca"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/talus.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "talus"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/loral.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "loral"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/ekuanot.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "ekuanot"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/magnum.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "magnum-us"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/warrior.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "warrior"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/nugget.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "nugget"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/galena.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "galena"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/crystal.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "crystal"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/mt-hood.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "mount-hood"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/cluster.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cluster"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/comet.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "comet"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/cashmere.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cashmere"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/northern-brewer.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "northern-brewer-us"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/products/cryo-hops.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cryo-note"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/summit.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "summit"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/east-kent-golding/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "east-kent-goldings"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/fuggle/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "fuggle"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/challenger/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "challenger"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/target/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "target"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/bramling-cross/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "bramling-cross"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/first-gold/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "first-gold"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/jester/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "jester"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/sorachi-ace.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "sorachi-ace"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/northdown/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "northdown"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/progress/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "progress"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/sterling.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "saaz-us"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.yakimachief.com/commercial/hop-varieties/liberty.html",
+      "host": "www.yakimachief.com",
+      "title": null,
+      "publisher": "Yakima Chief Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "liberty"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/admiral/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "sussex"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/endeavour/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "endeavour"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/olicana/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "olicana"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop/harlequin/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "harlequin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.ttb.gov/",
+      "host": "www.ttb.gov",
+      "title": null,
+      "publisher": "US Alcohol and Tobacco Tax and Trade Bureau",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "kentucky-limestone"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://en.angelyeast.com/products/wine-yeast.html",
+      "host": "en.angelyeast.com",
+      "title": null,
+      "publisher": "Angel Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/angel-yeast.json"
+      ],
+      "exampleRecords": [
+        "angel-fruit-wine-sy"
+      ]
+    },
+    {
+      "id": "lallemand-tds-sour-pitch",
+      "url": "https://www.lallemandbrewing.com/docs/products/tds/TDS_WILDBREW_SOURPITCH_ENGLISH_DIGITAL.pdf",
+      "host": "www.lallemandbrewing.com",
+      "title": "WildBrew Sour Pitch — Technical Data Sheet",
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Lactobacillus plantarum, facultative hetero-fermentative; 30-40 °C (86-104 °F); final pH 3.2-3.5; dose 10 g/hL; >10^11 CFU/g; descriptors citrus, tangy, sour; unhopped wort; styles Berliner Weisse, Gose, lambic, American Wild, Sour IPA.",
+      "doesNotSupport": "Attenuation, alcohol tolerance, flocculation, or any IBU inhibition threshold.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/bacteria-cultures.json"
+      ],
+      "exampleRecords": [
+        "bact-lactobacillus-plantarum"
+      ]
+    },
+    {
+      "id": "vriesekoop-2012-bacteria-brewing",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jib.49",
+      "host": "onlinelibrary.wiley.com",
+      "title": "125th Anniversary Review: Bacteria in brewing — the good, the bad and the ugly",
+      "publisher": "Journal of the Institute of Brewing 118:335-345",
+      "authors": [
+        "F. Vriesekoop",
+        "M. Krahl",
+        "B. Hucker",
+        "G. Menz"
+      ],
+      "year": 2012,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "Lactobacillus brevis and Pediococcus damnosus as the lactic acid bacteria most commonly implicated in beer spoilage; L. brevis among the most hop-tolerant; hop iso-alpha-acids as ionophores impairing proton motive force; beer typically carrying 17-55 ppm iso-alpha-acids as an intrinsic antimicrobial hurdle.",
+      "doesNotSupport": "Species-level temperature ranges, alcohol tolerances or per-species IBU inhibition thresholds. Figures here were read from abstract and search summaries, not the full text — verification is metadata-only.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/yeasts/bacteria-cultures.json"
+      ],
+      "exampleRecords": [
+        "bact-lactobacillus-brevis"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-us-05/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-us-05"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-s-04/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-s-04"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-s-33/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-s-33"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-t-58/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-t-58"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-be-134/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-be-134"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-be-256/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-be-256"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-wb-06/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-wb-06"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/safale-k-97/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-k-97"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/saflager-w-34-70/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-w-3470"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/saflager-s-23/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-s-23"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/saflager-s-189/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "fermentis-s-189"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-nottingham/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-nottingham"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-windsor/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-windsor"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-bry-97-american-west-coast-ale-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-bry-97"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-verdant-ipa/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-verdant-ipa"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-voss-kveik-ale-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-voss"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-lutra-kveik/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-lutra"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-koln-kolsch-style-ale-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-koln"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-munich-classic-wheat-beer-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-munich-classic"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-belle-saison-ale-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-belle-saison"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-diamond-lager-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-diamond"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-novalager-yeast/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-novalager"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbrewing.com/en/global/products/wildbrew-philly-sour/",
+      "host": "www.lallemandbrewing.com",
+      "title": null,
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lallemand-philly-sour"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandwine.com/en/products/catalogue/lalvin/34/lalvin-ec-1118/",
+      "host": "www.lallemandwine.com",
+      "title": null,
+      "publisher": "Lallemand Oenology",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lalvin-ec-1118"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandwine.com/en/products/catalogue/lalvin/40/lalvin-71b/",
+      "host": "www.lallemandwine.com",
+      "title": null,
+      "publisher": "Lallemand Oenology",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lalvin-71b"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandwine.com/en/products/catalogue/lalvin/36/lalvin-icv-d47/",
+      "host": "www.lallemandwine.com",
+      "title": null,
+      "publisher": "Lallemand Oenology",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lalvin-d47"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandwine.com/en/products/catalogue/lalvin/38/lalvin-k1v-1116/",
+      "host": "www.lallemandwine.com",
+      "title": null,
+      "publisher": "Lallemand Oenology",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lalvin-k1v-1116"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandwine.com/en/products/catalogue/lalvin/42/lalvin-rc212/",
+      "host": "www.lallemandwine.com",
+      "title": null,
+      "publisher": "Lallemand Oenology",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "lalvin-rc212"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/craft-series-yeast-m44-us-west-coast",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-m44"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/craft-series-yeast-m36-liberty-bell-ale",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-m36"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/craft-series-yeast-m31-belgian-tripel",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-m31"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/craft-series-yeast-m84-bohemian-lager",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-m84"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/cider-yeast-m02",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-m02"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://mangrovejacks.com/products/whiskey-distillers-yeast",
+      "host": "mangrovejacks.com",
+      "title": null,
+      "publisher": "Mangrove Jack's",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/mangrove-jacks.json"
+      ],
+      "exampleRecords": [
+        "mangrove-jacks-whiskey"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/west-coast-ale-i",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-004"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/hothead-ale",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-057"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/voss-kveik",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-061"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/lutra-kveik",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-071"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/cosmic-punch-ale-yeast",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-218"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/saisonstein-monster",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "omega-oyl-500"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://redstaryeast.com/yeast-strains/premier-blanc/",
+      "host": "redstaryeast.com",
+      "title": null,
+      "publisher": "Red Star Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/red-star.json"
+      ],
+      "exampleRecords": [
+        "red-star-premier-blanc"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://redstaryeast.com/yeast-strains/premier-cuvee/",
+      "host": "redstaryeast.com",
+      "title": null,
+      "publisher": "Red Star Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/red-star.json"
+      ],
+      "exampleRecords": [
+        "red-star-premier-cuvee"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://redstaryeast.com/yeast-strains/cote-des-blancs/",
+      "host": "redstaryeast.com",
+      "title": null,
+      "publisher": "Red Star Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/red-star.json"
+      ],
+      "exampleRecords": [
+        "red-star-cote-des-blancs"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://redstaryeast.com/yeast-strains/premier-rouge/",
+      "host": "redstaryeast.com",
+      "title": null,
+      "publisher": "Red Star Yeast",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/red-star.json"
+      ],
+      "exampleRecords": [
+        "red-star-premier-rouge"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=27",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp001"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=28",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp002"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=30",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp004"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=33",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp007"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=41",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp029"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=57",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp300"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=82",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp565"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=99",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp800"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=108",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp830"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=88",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp650"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=94",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp715"
+      ]
+    },
+    {
+      "id": "lallemand-tds-philly-sour",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/Philly-Sour-TDS-ENG-A4-Print-WildBrew-3.pdf",
+      "host": "admin.lallemandbrewing.com",
+      "title": "WildBrew Philly Sour — Technical Data Sheet",
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Lachancea thermotolerans, pure active dried strain; attenuation 74-82%; 20-30 °C (68-86 °F), optimal 25-30 °C (77-86 °F); flocculation high; alcohol tolerance 9% ABV; pitching 50-150 g/hL; viability >=1x10^9 CFU/g; POF negative; diastaticus negative; killer negative; aroma sour, red apple, stone fruit, peach; fermentation completable in 10 days at 20 °C.",
+      "doesNotSupport": "Species-wide behaviour of L. thermotolerans outside this product; titratable acidity figures are quoted in Lallemand standard-conditions wort only.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wild-heritage.json"
+      ],
+      "exampleRecords": [
+        "wild-lachancea-thermotolerans"
+      ]
+    },
+    {
+      "id": "fonseca-2008-kluyveromyces",
+      "url": "https://doi.org/10.1007/s00253-008-1458-6",
+      "host": "doi.org",
+      "title": "The yeast Kluyveromyces marxianus and its biotechnological potential",
+      "publisher": "Applied Microbiology and Biotechnology 79:339-354",
+      "authors": [
+        "G. G. Fonseca",
+        "E. Heinzle",
+        "C. Wittmann",
+        "A. K. Gombert"
+      ],
+      "year": 2008,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Lactose assimilation and fermentation; thermotolerance with maximum growth temperature variously reported as 47 °C (Anderson et al. 1986), 49 °C (Hughes et al. 1984) and 52 °C (Banat et al. 1992); ethanol production above 40 °C; LOWER ethanol tolerance than S. cerevisiae, correlated with plasma-membrane ATPase activity (Rosa & Sá-Correia 1992); Crabtree-negative and facultatively fermentative; cannot grow under strictly anaerobic conditions, with ethanol formation almost exclusively linked to oxygen availability.",
+      "doesNotSupport": "Any single numeric alcohol tolerance for the species. The 10% v/v figure circulating for K. marxianus comes from strains after ~100 days of directed adaptive evolution and is not a native specification.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/yeasts/wild-heritage.json"
+      ],
+      "exampleRecords": [
+        "wild-kluyveromyces-marxianus"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/american-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1056"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/irish-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1084"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/american-ale-ii/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1272"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/london-ale-iii/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1318"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/london-esb-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1968"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/bohemian-lager/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-2124"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/weihenstephan-weizen/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3068"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/french-saison/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3711"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/belgian-saison/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3724"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/farmhouse-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3726"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/trappist-high-gravity/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3787"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/belgian-lambic-blend/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-3278"
+      ]
+    }
+  ]
+}
