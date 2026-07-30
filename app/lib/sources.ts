@@ -35,19 +35,35 @@ export interface Source {
   exampleRecords: string[];
 }
 
+/**
+ * A curated document that no dataset cites. Same fields as a Source minus the
+ * usage counts, because there is no usage. These are kept and displayed on
+ * purpose: a source that was read and rejected, or a conflicting figure that
+ * was deliberately not merged, is part of the provenance record, and dropping
+ * it would quietly erase the reasoning. See `background` in build-sources.mjs.
+ */
+export type BackgroundDocument = Omit<
+  Source,
+  "note" | "citations" | "numericCitations" | "usedIn" | "exampleRecords"
+>;
+
 export interface SourceRegistry {
   reliabilityRules: Record<Reliability, string>;
   citationRules: Record<string, string>;
   totals: {
     distinctSources: number;
+    backgroundDocuments: number;
     citations: number;
     numericCitations: number;
     numericOnShallowLink: number;
     numericOnTertiary: number;
     fullTextVerified: number;
+    backgroundFullTextVerified: number;
     byReliability: Partial<Record<Reliability, number>>;
   };
   sources: Source[];
+  /** Absent in registries generated before background documents were tracked. */
+  background?: BackgroundDocument[];
 }
 
 export const getSourceRegistry = unstable_cache(
@@ -91,6 +107,9 @@ export const KIND_LABEL: Record<string, string> = {
   "practitioner-tool": "Practitioner reference tool",
   "document-host": "Document host",
   encyclopedia: "Encyclopedia",
+  "trade-publication": "Brewing trade publication",
+  "enthusiast-blog": "Enthusiast blog",
+  "author-site": "Author's own site",
 };
 
 export function kindLabel(kind: string): string {
@@ -98,7 +117,7 @@ export function kindLabel(kind: string): string {
 }
 
 /** Cite a source the way a bibliography would, from whatever fields exist. */
-export function formatCitation(s: Source): string {
+export function formatCitation(s: Source | BackgroundDocument): string {
   const bits: string[] = [];
   if (s.authors?.length) {
     bits.push(s.authors.length > 3 ? `${s.authors[0]} et al.` : s.authors.join(", "));

@@ -9,6 +9,7 @@ import {
   kindLabel,
   RELIABILITY_LABEL,
   type Source,
+  type BackgroundDocument,
 } from "@/lib/sources";
 
 export const metadata = {
@@ -94,6 +95,40 @@ function SourceRow({ s }: { s: Source }) {
   );
 }
 
+/**
+ * A source that was read but that nothing in the data cites. Rendered without
+ * citation counts, because the point of the entry is the reasoning — what it
+ * was checked for and why its figures were not used.
+ */
+function BackgroundRow({ s }: { s: BackgroundDocument }) {
+  return (
+    <li style={{ padding: "0.7rem 0", borderBottom: "1px solid var(--wh-border)" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0.45rem" }}>
+        <a href={s.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600 }}>
+          {s.title ?? s.publisher}
+        </a>
+        <Badge>{kindLabel(s.kind)}</Badge>
+        <Badge color={VERIFICATION_COLOR[s.verification]}>{s.verification}</Badge>
+        <Badge>{RELIABILITY_LABEL[s.reliability]}</Badge>
+      </div>
+      <div style={{ fontSize: "0.82rem", color: "var(--wh-text-light)", marginTop: "0.15rem" }}>
+        {formatCitation(s)}
+        {s.accessed && ` — accessed ${s.accessed}`}
+      </div>
+      {s.supports && (
+        <p style={{ fontSize: "0.85rem", margin: "0.4rem 0 0" }}>
+          <strong>Read for:</strong> {s.supports}
+        </p>
+      )}
+      {s.doesNotSupport && (
+        <p style={{ fontSize: "0.85rem", margin: "0.25rem 0 0", color: "var(--wh-text-light)" }}>
+          <strong>Not used for:</strong> {s.doesNotSupport}
+        </p>
+      )}
+    </li>
+  );
+}
+
 export default async function SourcesPage() {
   const reg = await getSourceRegistry();
 
@@ -111,6 +146,7 @@ export default async function SourcesPage() {
   }
 
   const { totals } = reg;
+  const background = reg.background ?? [];
   const groups = groupByReliability(reg.sources);
   const weak = weakNumericCitations(reg.sources);
   const weakCount = weak.reduce((a, s) => a + s.numericCitations, 0);
@@ -239,6 +275,26 @@ export default async function SourcesPage() {
           </ul>
         </section>
       ))}
+
+      {/* Read-and-rejected sources. Kept visible so the reasoning survives. */}
+      {background.length > 0 && (
+        <section style={{ marginTop: "2rem" }}>
+          <h2 style={{ fontSize: "1.1rem" }}>Consulted, but nothing rests on it</h2>
+          <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
+            {background.length} document{background.length === 1 ? "" : "s"} that {background.length === 1 ? "was" : "were"}{" "}
+            read and registered but that no figure in the data cites. Some describe rather than
+            measure; some print a number this project declined to use, usually because a better
+            source disagreed. They are listed because a rejected source is part of the provenance
+            record — deleting it would erase the reason a figure is <em>not</em> in the data, which is
+            often the more useful half of the account.
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {background.map((s) => (
+              <BackgroundRow key={s.url} s={s} />
+            ))}
+          </ul>
+        </section>
+      )}
 
       <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "var(--wh-text-light)" }}>
         Third-party style guideline text (BJCP, Brewers Association, American Wine Society, Maltose

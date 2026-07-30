@@ -159,8 +159,44 @@ for (const e of [...byUrl.values()].sort((a, b) => b.citations - a.citations)) {
   });
 }
 
+// Curated documents that no dataset cites. Without this, a document entry that
+// nothing links to is dropped on the floor: its `supports` / `doesNotSupport`
+// notes never reach registry.json and never reach /sources, so the reasoning
+// for rejecting a source disappears silently. These are exactly the entries
+// worth keeping visible — a source consulted and found wanting, the conflicting
+// figure that was deliberately not merged, the bibliography a future check
+// would start from. Carried as `background` so they cannot be mistaken for
+// sources the data actually rests on.
+const background = [];
+for (const d of curated.documents) {
+  if (byUrl.has(d.url)) continue;
+  if (d.mirrorUrl && byUrl.has(d.mirrorUrl)) continue;
+  const host = hostOf(d.url);
+  if (!publishers.has(host)) {
+    problems.push(`UNCLASSIFIED HOST  ${host}  (curated document "${d.id}", cited by nothing)`);
+    continue;
+  }
+  background.push({
+    id: d.id,
+    url: d.url,
+    host,
+    title: d.title,
+    publisher: d.publisher ?? publishers.get(host).name,
+    authors: d.authors ?? null,
+    year: d.year ?? null,
+    kind: d.kind,
+    reliability: d.reliability,
+    verification: d.verification ?? "unverified",
+    deepLink: isDeepLink(d.url),
+    supports: d.supports ?? null,
+    doesNotSupport: d.doesNotSupport ?? null,
+    accessed: d.accessed ?? null,
+  });
+}
+
 const totals = {
   distinctSources: sources.length,
+  backgroundDocuments: background.length,
   citations: sources.reduce((a, s) => a + s.citations, 0),
   numericCitations: sources.reduce((a, s) => a + s.numericCitations, 0),
   // The debt figures. These are what the audit gates on.
@@ -169,6 +205,7 @@ const totals = {
   numericOnTertiary: sources.filter((s) => s.numericCitations > 0 && s.reliability === "tertiary")
     .reduce((a, s) => a + s.numericCitations, 0),
   fullTextVerified: sources.filter((s) => s.verification === "full-text").length,
+  backgroundFullTextVerified: background.filter((s) => s.verification === "full-text").length,
   byReliability: sources.reduce((a, s) => { a[s.reliability] = (a[s.reliability] ?? 0) + s.citations; return a; }, {}),
 };
 
@@ -188,6 +225,7 @@ writeFileSync(
       citationRules: curated.citationRules,
       totals,
       sources,
+      background,
     },
     null,
     2
@@ -199,4 +237,5 @@ console.log(`  by reliability: ${JSON.stringify(totals.byReliability)}`);
 console.log(`  full-text verified sources: ${totals.fullTextVerified}`);
 console.log(`  numeric claims on a shallow link: ${totals.numericOnShallowLink}`);
 console.log(`  numeric claims on a tertiary source: ${totals.numericOnTertiary}`);
+console.log(`  background documents (curated, cited by nothing): ${totals.backgroundDocuments}`);
 console.log(`  -> ${relative(ROOT, OUT)}`);
