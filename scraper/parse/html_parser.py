@@ -124,9 +124,25 @@ def _parse_title_style(soup: BeautifulSoup) -> tuple[str | None, str | None]:
         return None, None
     raw = title_el.get_text(strip=True)
     # e.g. "2 row vienna lager, a Vienna Lager homebrew beer recipe | Brewtoad"
-    m = re.match(r"^(.*?),\s*a\s+(.+?)\s+homebrew beer recipe\s*\|", raw)
+    #
+    # Some recipes carry a subtitle, which puts a SECOND ", a ..." in the title:
+    #   "Honey Saison, a Rosemary Saison Variant, a Saison homebrew beer recipe |"
+    # The old pattern was non-greedy from the left and only accepted "a", so it
+    # stopped at the first separator and swallowed the rest as the style —
+    # producing style names like "Rosemary Saison Variant, a Saison" and, via
+    # "an", "Mirac-ALE Overloaded, an American IPA". Six recipes in the archive
+    # were affected and each became its own bogus one-recipe "style".
+    #
+    # The style is always the FINAL ", a/an <Style>" segment and the title is
+    # everything before the first one, so split on every separator and take both
+    # ends rather than trying to express it in one greedy/non-greedy group.
+    m = re.match(r"^(.*?)\s+homebrew beer recipe\s*\|", raw)
     if m:
-        return m.group(1).strip(), m.group(2).strip()
+        head = m.group(1)
+        parts = re.split(r",\s*an?\s+", head)
+        if len(parts) >= 2:
+            return parts[0].strip() or None, parts[-1].strip() or None
+        return head.strip() or None, None
     return raw.split("|")[0].strip() or None, None
 
 
