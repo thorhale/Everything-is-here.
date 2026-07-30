@@ -10,6 +10,40 @@ interface Props {
   params: Promise<{ id: string }>;
 }
 
+// What kind of evidence a strain's numbers rest on. Ordered strongest first.
+// Kept in step with the tiers in data/sources/curated.json and surfaced at
+// /sources.
+const SPEC_BASIS: Record<string, { label: string; color: string; blurb: string }> = {
+  "vendor-tds": {
+    label: "Manufacturer datasheet",
+    color: "#1a7f37",
+    blurb: "The numbers above are the manufacturer's own published specification for this product.",
+  },
+  "peer-reviewed": {
+    label: "Peer-reviewed",
+    color: "#1a7f37",
+    blurb:
+      "Behaviour described from published research. Species-level papers rarely give brewing specs, so most numeric fields are deliberately blank.",
+  },
+  regulation: {
+    label: "Legal standard",
+    color: "#1a7f37",
+    blurb: "Taken from a published statute or standard of identity.",
+  },
+  "club-guide": {
+    label: "Club guide",
+    color: "#9a6700",
+    blurb:
+      "Described by an experienced homebrew club's published guide. Good practical detail, but it characterises organisms by flavour and process rather than by measured specs — hence the blank numeric fields.",
+  },
+  "vendor-web": {
+    label: "Manufacturer website",
+    color: "#9a6700",
+    blurb:
+      "From the manufacturer's product page rather than a formal datasheet, so figures may be rounded or abridged.",
+  },
+};
+
 async function YeastSubs({ strainId }: { strainId: string }) {
   const { lineage, sameStrain, similar } = await getYeastSubstitutes(strainId);
   if (sameStrain.length === 0 && similar.length === 0) return null;
@@ -152,12 +186,62 @@ export default async function StrainPage({ params }: Props) {
         </Link>
       </p>
 
-      <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
-        {strain.attribution ?? "Specs from the manufacturer's published data."}{" "}
-        <a href={strain.sourceUrl} target="_blank" rel="noreferrer">Manufacturer source</a>. Data is
-        transcribed for reference and may differ from the latest batch specs — always confirm on the
-        pack. <Link href="/yeasts/db">← Back to the yeast database</Link>
-      </p>
+      {/* Provenance. Shown as a block rather than a footnote because "where did
+          this number come from" is a fair question to ask of every figure above,
+          and a blank spec means nobody published one — not that we lost it. */}
+      <section
+        style={{
+          marginTop: "2rem",
+          border: "1px solid var(--wh-border)",
+          borderRadius: 8,
+          padding: "0.8rem 0.9rem",
+          background: "var(--wh-bg-soft)",
+          fontSize: "0.82rem",
+        }}
+      >
+        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0.5rem" }}>
+          <strong style={{ fontSize: "0.9rem" }}>Where these figures come from</strong>
+          {strain.specBasis && (
+            <span
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.03em",
+                color: SPEC_BASIS[strain.specBasis]?.color ?? "var(--wh-text-light)",
+                border: `1px solid ${SPEC_BASIS[strain.specBasis]?.color ?? "var(--wh-border)"}`,
+                borderRadius: 4,
+                padding: "0.05rem 0.35rem",
+              }}
+            >
+              {SPEC_BASIS[strain.specBasis]?.label ?? strain.specBasis}
+            </span>
+          )}
+        </div>
+
+        <p style={{ margin: "0.4rem 0 0" }}>
+          {strain.specBasis && SPEC_BASIS[strain.specBasis]?.blurb}{" "}
+          <a href={strain.sourceUrl} target="_blank" rel="noreferrer">
+            {strain.specBasis === "vendor-tds" ? "Manufacturer datasheet" : "Cited source"}
+          </a>
+          .
+        </p>
+
+        {strain.sourceNote && (
+          <p style={{ margin: "0.4rem 0 0", color: "var(--wh-text-light)" }}>{strain.sourceNote}</p>
+        )}
+
+        <p style={{ margin: "0.4rem 0 0", color: "var(--wh-text-light)" }}>
+          {strain.attribution}
+        </p>
+
+        <p style={{ margin: "0.5rem 0 0", color: "var(--wh-text-light)" }}>
+          Figures are transcribed for reference and may differ from the latest batch specs — always
+          confirm on the pack. A blank spec above means no cited source publishes that figure for
+          this strain. See <Link href="/sources">Sources &amp; provenance</Link> for how these tiers
+          work. <Link href="/yeasts/db">← Back to the yeast database</Link>
+        </p>
+      </section>
     </div>
   );
 }

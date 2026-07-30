@@ -392,9 +392,19 @@ model YeastStrain {
   attribution String?
   sortOrder   Int      @default(0)
 
+  // Provenance. specBasis is what kind of evidence the numeric fields above
+  // rest on (vendor-tds | peer-reviewed | club-guide | vendor-web | regulation);
+  // sourceId keys into data/sources/registry.json; sourceNote records what the
+  // cited document does and does not support, so a null spec reads as "nobody
+  // published this figure" rather than as an oversight.
+  specBasis  String?
+  sourceId   String?
+  sourceNote String?
+
   @@index([labId])
   @@index([name])
   @@index([species])
+  @@index([specBasis])
 }
 
 // --- Fermentable & hop database ------------------------------------------

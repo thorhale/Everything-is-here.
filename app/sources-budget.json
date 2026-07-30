@@ -1,0 +1,5 @@
+{
+  "numericOnShallowLink": 347,
+  "note": "Ratchet baseline for numeric claims citing a publisher homepage rather than a specific document. May only ever be lowered. Lower it by replacing homepage citations with deep links to the datasheet, standard or record the figure actually came from, then re-running with --update-budget.",
+  "updated": "2026-07-30"
+}
