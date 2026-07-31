@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { toBeerXml, scaleRecipe, xmlFilename, type XmlRecipe } from "@/lib/beerxml";
 
+// Varies by ?gal= / ?litres=, so every query string is a different file.
+// Must not be cached: a cached response would hand one scaling to a reader
+// who asked for another.
 export const dynamic = "force-dynamic";
 
 // Parse a free-text batch size ("5 gal", "20 L") into gallons.
