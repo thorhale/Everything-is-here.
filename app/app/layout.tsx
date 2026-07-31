@@ -48,6 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <input type="text" name="q" placeholder="Search recipes..." aria-label="Search recipes" />
             <button type="submit">Search</button>
           </form>
+          {/* A plain link, deliberately: reading the session here would opt
+              every page out of static rendering. /account handles auth state. */}
+          <Link href="/account" className="wh-account-link">Account</Link>
         </header>
 
         {/* Site nav: the original's dropdown menu structure */}
