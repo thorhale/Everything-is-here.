@@ -151,6 +151,11 @@ export default async function SourcesPage() {
 
   const { totals } = reg;
   const background = reg.background ?? [];
+  // The canonical reference books are on record as the standard the app builds
+  // toward — a different thing from a source that was read and set aside. Split
+  // them out so they are not filed under "nothing rests on it".
+  const referenceStandard = background.filter((s) => s.kind === "book");
+  const otherBackground = background.filter((s) => s.kind !== "book");
   const groups = groupByReliability(reg.sources);
   const weak = weakNumericCitations(reg.sources);
   const weakCount = weak.reduce((a, s) => a + s.numericCitations, 0);
@@ -280,20 +285,42 @@ export default async function SourcesPage() {
         </section>
       ))}
 
-      {/* Read-and-rejected sources. Kept visible so the reasoning survives. */}
-      {background.length > 0 && (
+      {/* The canonical works the app is built toward. */}
+      {referenceStandard.length > 0 && (
+        <section style={{ marginTop: "2rem" }}>
+          <h2 style={{ fontSize: "1.1rem" }}>The reference standard</h2>
+          <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
+            The authoritative technical works this project treats as the standard for its subject
+            areas. They are on the record here, but no figure is <em>sourced</em> to one of them: a
+            number is only ever cited to a book once someone has opened it and can cite the page,
+            and until then verification stays <em>metadata-only</em>. That is deliberate — a citation
+            to a book nobody read is the exact thing this page exists to rule out. In the meantime
+            the primary measurements these works synthesise — the yeast producers&apos; spec sheets,
+            the maltsters&apos; and hop merchants&apos; data, the water analyses — are cited directly
+            in the bibliography above.
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {referenceStandard.map((s) => (
+              <BackgroundRow key={s.url} s={s} />
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Read-and-set-aside sources. Kept visible so the reasoning survives. */}
+      {otherBackground.length > 0 && (
         <section style={{ marginTop: "2rem" }}>
           <h2 style={{ fontSize: "1.1rem" }}>Consulted, but nothing rests on it</h2>
           <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
-            {background.length} document{background.length === 1 ? "" : "s"} that {background.length === 1 ? "was" : "were"}{" "}
-            read and registered but that no figure in the data cites. Some describe rather than
-            measure; some print a number this project declined to use, usually because a better
-            source disagreed. They are listed because a rejected source is part of the provenance
-            record — deleting it would erase the reason a figure is <em>not</em> in the data, which is
-            often the more useful half of the account.
+            {otherBackground.length} document{otherBackground.length === 1 ? "" : "s"} that{" "}
+            {otherBackground.length === 1 ? "was" : "were"} read and registered but that no figure in
+            the data cites. Some describe rather than measure; some print a number this project
+            declined to use, usually because a better source disagreed. They are listed because a
+            set-aside source is part of the provenance record — deleting it would erase the reason a
+            figure is <em>not</em> in the data, which is often the more useful half of the account.
           </p>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {background.map((s) => (
+            {otherBackground.map((s) => (
               <BackgroundRow key={s.url} s={s} />
             ))}
           </ul>
