@@ -12,7 +12,7 @@
   },
   "totals": {
     "distinctSources": 227,
-    "backgroundDocuments": 4,
+    "backgroundDocuments": 8,
     "citations": 650,
     "numericCitations": 605,
     "numericOnShallowLink": 347,
@@ -5889,6 +5889,80 @@
       "supports": "That Horst Dornbusch authored 'Das große BRAUWELT Lexikon der Biersorten' (2017), an A-to-Z inventory of world beer styles from antiquity to the present covering classic styles, craft-era beers and the most significant historical styles, deliberately written with minimal brew-science vocabulary, and that the author explicitly claims no completeness.",
       "doesNotSupport": "The contents of any individual entry in that book, Dampfbier included. This is a review, not the text.",
       "accessed": "2026-07-30"
+    },
+    {
+      "id": "ba-yeast-white-zainasheff-2010",
+      "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
+      "host": "www.brewerspublications.com",
+      "title": "Yeast: The Practical Guide to Beer Fermentation",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "Chris White",
+        "Jamil Zainasheff"
+      ],
+      "year": 2010,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The canonical modern reference on brewing yeast and fermentation: pitch-rate theory, cell viability and vitality, starter propagation, yeast harvesting and repitching, fermentation temperature and health. ISBN-13 978-0-937381-96-0. This is the acknowledged literature basis, alongside the Maltose Falcons propagation guide, for this project's pitching-rate reconstruction in lib/pitching/formulas.ts.",
+      "doesNotSupport": "Any figure attributed to a specific page. The book's contents have not been opened in this environment — only its existence and bibliographic identity are confirmed — so verification is metadata-only and no numeric claim rests on it. The ISBN is the identifier a future page-level check would use. The numeric yeast specs this project ships are transcribed from the yeast producers' own spec sheets (White Labs, Wyeast, Lallemand, Omega, Fermentis), which are the primary measurements this book itself synthesises.",
+      "accessed": "2026-07-31"
+    },
+    {
+      "id": "ba-water-palmer-kaminski-2013",
+      "url": "https://www.brewerspublications.com/products/water-a-comprehensive-guide-for-brewers",
+      "host": "www.brewerspublications.com",
+      "title": "Water: A Comprehensive Guide for Brewers",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "John Palmer",
+        "Colin Kaminski"
+      ],
+      "year": 2013,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The comprehensive modern reference on brewing water: the function of each ion, residual alkalinity and its effect on mash pH, sulfate-to-chloride balance, source-water treatment, brewing-salt additions and sparge acidification. ISBN-13 978-0-937381-99-1. The framework behind this project's water-chemistry and mash-pH guidance (lib/water-salts.ts, lib/mash-ph.ts).",
+      "doesNotSupport": "Page-cited figures; contents not opened here, so verification is metadata-only and no number rests on it. ISBN is the durable identifier for a later check. Municipal water ion figures in this project cite the utilities' own published analyses (with Bru'n Water as a secondary aggregate), and salt ion contributions are derived from each salt's molar mass, not taken from this book.",
+      "accessed": "2026-07-31"
+    },
+    {
+      "id": "ba-malt-mallett-2014",
+      "url": "https://www.brewerspublications.com/products/malt-a-practical-guide-from-field-to-brewhouse",
+      "host": "www.brewerspublications.com",
+      "title": "Malt: A Practical Guide from Field to Brewhouse",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "John Mallett"
+      ],
+      "year": 2014,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The modern reference on malt: barley varieties, the malting and kilning process, and how a malt analysis reads — extract potential, colour, diastatic power, protein and moisture. ISBN-13 978-1-938469-12-1.",
+      "doesNotSupport": "Page-cited figures; not opened here, verification metadata-only, no number rests on it. The fermentable extract (PPG) and colour figures this project ships are transcribed from the maltsters' own technical data sheets (Briess, Weyermann, Crisp, Simpsons, Castle, and others), which are the primary source.",
+      "accessed": "2026-07-31"
+    },
+    {
+      "id": "ba-hops-hieronymus-2012",
+      "url": "https://www.brewerspublications.com/products/for-the-love-of-hops-the-practical-guide-to-aroma-bitterness-and-the-culture-of-hops",
+      "host": "www.brewerspublications.com",
+      "title": "For the Love of Hops: The Practical Guide to Aroma, Bitterness and the Culture of Hops",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "Stan Hieronymus"
+      ],
+      "year": 2012,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The modern reference on hops: alpha and beta acids and cohumulone, essential oils and the aroma compounds behind them, utilisation and bitterness, variety profiles and hopping technique. ISBN-13 978-1-938469-01-5.",
+      "doesNotSupport": "Page-cited figures; not opened here, verification metadata-only, no number rests on it. The hop alpha-acid and oil figures this project ships are transcribed from the hop merchants' and growers' own variety data sheets (BarthHaas, Yakima Chief, Charles Faram, NZ Hops, and others), which are the primary source.",
+      "accessed": "2026-07-31"
     }
   ]
 }

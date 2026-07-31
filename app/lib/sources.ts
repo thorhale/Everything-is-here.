@@ -110,6 +110,8 @@ export const KIND_LABEL: Record<string, string> = {
   "trade-publication": "Brewing trade publication",
   "enthusiast-blog": "Enthusiast blog",
   "author-site": "Author's own site",
+  book: "Book",
+  "book-publisher": "Book publisher",
 };
 
 export function kindLabel(kind: string): string {
