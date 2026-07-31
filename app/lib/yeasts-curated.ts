@@ -155,6 +155,7 @@ export interface StrainPick {
   name: string;
   lab: string;
   form: string;
+  species: string | null; // lets the pitching page guess ale vs lager offline
   uses: string[];
   attenuation: number | null; // midpoint %
   cellsPerUnit: number | null;
@@ -174,6 +175,7 @@ export const getStrainPickerList = unstable_cache(
       name: s.name,
       lab: s.lab.name,
       form: s.form,
+      species: s.species ?? null,
       uses: s.uses,
       attenuation:
         s.attenuationMin != null && s.attenuationMax != null

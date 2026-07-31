@@ -1,15 +1,9 @@
 import CalculatorForm from "./CalculatorForm";
-import { getStrainPickerList } from "@/lib/yeasts-curated";
-import { getFermentablePickerList, getHopPickerList } from "@/lib/ingredients-curated";
+// Picker lists are bundled at build time (build-picker-data.mjs) — no database,
+// so this page prerenders fully static and runs offline in the native shell.
+import { strainPicks as strains, fermentablePicks as fermentables, hopPicks as hops } from "@/lib/picker-data";
 
-export const dynamic = "force-dynamic";
-
-export default async function CalculatorPage() {
-  const [strains, fermentables, hops] = await Promise.all([
-    getStrainPickerList(),
-    getFermentablePickerList(),
-    getHopPickerList(),
-  ]);
+export default function CalculatorPage() {
   return (
     <div>
       <h1>Recipe Calculator</h1>

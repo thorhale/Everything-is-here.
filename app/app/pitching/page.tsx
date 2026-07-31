@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PitchingForm from "./PitchingForm";
-import { getStrainPickerList, getStrain } from "@/lib/yeasts-curated";
-
-export const dynamic = "force-dynamic";
+// Picker data is baked into the bundle (build-picker-data.mjs), so this reads
+// no database. The page stays dynamic only because it honours a ?strain= param.
+import { strainPicks } from "@/lib/picker-data";
 
 export const metadata: Metadata = {
   title: "Yeast Pitching Rate Calculator — WortHogg",
@@ -17,10 +17,10 @@ interface Props {
 
 export default async function PitchingPage({ searchParams }: Props) {
   const { strain: strainId } = await searchParams;
-  const strains = await getStrainPickerList();
-  const chosen = strainId ? await getStrain(strainId) : null;
+  const strains = strainPicks;
+  const chosen = strainId ? strainPicks.find((s) => s.id === strainId) ?? null : null;
   const initial = chosen?.uses.includes("beer")
-    ? { pitchType: chosen.species.toLowerCase().includes("pastorianus") ? ("lager" as const) : ("ale" as const) }
+    ? { pitchType: (chosen.species ?? "").toLowerCase().includes("pastorianus") ? ("lager" as const) : ("ale" as const) }
     : undefined;
 
   return (
