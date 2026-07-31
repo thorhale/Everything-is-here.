@@ -325,6 +325,9 @@ model GuidelineStyle {
   comparison  String?
   examples    String?
   tags        String?
+  // The document this style's figures were read out of, when it differs from
+  // the edition's. Traditional editions cite per style, not per edition.
+  sourceUrl   String?
 
   @@index([categoryId])
   @@index([name])

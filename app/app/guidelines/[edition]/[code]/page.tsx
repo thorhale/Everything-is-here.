@@ -323,10 +323,30 @@ export default async function GuidelineStylePage({ params }: Props) {
       </p>
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {edition.attribution}{" "}
-        <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
-          Original source
-        </a>
-        . <Link href="/takedown">Request removal</Link>
+        {/* A style may cite a different document than its edition — the norm in
+            the traditional editions, where each style carries its own source. */}
+        {style.sourceUrl && style.sourceUrl !== edition.sourceUrl ? (
+          <>
+            This style&apos;s figures were read out of{" "}
+            <a href={style.sourceUrl} target="_blank" rel="noreferrer">
+              its own cited source
+            </a>
+            ; see also the{" "}
+            <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
+              edition source
+            </a>
+            .
+          </>
+        ) : (
+          <>
+            <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
+              Original source
+            </a>
+            .
+          </>
+        )}{" "}
+        <Link href="/sources">How sources are graded</Link>.{" "}
+        <Link href="/takedown">Request removal</Link>
       </p>
     </div>
   );
