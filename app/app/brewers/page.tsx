@@ -1,7 +1,7 @@
-// Curated and archived data, rewritten only when a loader runs, so a render
-// per visit bought nothing and kept the Neon compute endpoint awake. Cached
-// and revalidated hourly instead.
-export const revalidate = 3600;
+// A static route, so `revalidate` would make Next prerender it at build time,
+// where there is no database. Rendered per request instead; the detail routes
+// that carry the real DB load are the ones cached.
+export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { prisma } from "@/lib/db";
