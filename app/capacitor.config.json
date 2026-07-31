@@ -1,0 +1,12 @@
+{
+  "appId": "com.worthogg.app",
+  "appName": "WortHogg",
+  "webDir": "public",
+  "server": {
+    "url": "https://REPLACE-WITH-LIVE-URL",
+    "cleartext": false,
+    "androidScheme": "https"
+  },
+  "ios": { "contentInset": "always", "limitsNavigationsToAppBoundDomains": true },
+  "android": { "allowMixedContent": false }
+}
