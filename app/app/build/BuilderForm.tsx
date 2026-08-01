@@ -27,11 +27,16 @@ import type { FermentablePick } from "@/lib/ingredients-curated";
 import type { WaterPick } from "@/lib/water";
 import { SALTS, suggestSalts, applySalts, zeroIons, IonKeys, type Ions } from "@/lib/water-salts";
 import { residualAlkalinity, mashPhAdvice } from "@/lib/mash-ph";
+import { adjustHops } from "@/lib/hop-adjust";
+import { rebalance, type BillItem, type RebalanceMethod } from "@/lib/color-balance";
+import ShopThisRecipe from "@/components/ShopThisRecipe";
+import type { BuyItem } from "@/lib/buy-links";
 
 export interface HopPick {
   id: string;
   name: string;
   alpha: number | null;
+  country?: string | null;
 }
 export interface StrainPick {
   id: string;
@@ -60,7 +65,9 @@ interface HopRow {
   key: string;
   name: string;
   amountG: string;
-  alphaPct: string;
+  alphaPct: string; // the ACTUAL alpha (editable); assumedAlpha holds the recipe's
+  assumedAlpha: number | null; // catalogue midpoint the addition was designed at
+  country: string | null; // growing region, for the buy list
   timeMin: string;
   isDryHop: boolean;
 }
@@ -104,6 +111,12 @@ export default function BuilderForm({
   const [rows, setRows] = useState<Row[]>([]);
   const [hopRows, setHopRows] = useState<HopRow[]>([]);
   const [boilVolumeL, setBoilVolumeL] = useState("26");
+  const [selectedStrainId, setSelectedStrainId] = useState("");
+
+  // Hop α-adjust + malt-colour rebalance controls
+  const [bitterThreshold, setBitterThreshold] = useState("60"); // min boil = "bittering"
+  const [targetSrm, setTargetSrm] = useState(""); // "" = no colour target set
+  const [colorNote, setColorNote] = useState("");
 
   // Water panel (beer only): source tap -> target profile -> salt additions.
   const [sourceWaterId, setSourceWaterId] = useState(""); // "" = RO / distilled
@@ -207,6 +220,80 @@ export default function BuilderForm({
   const vol = num(volumeL);
   const ph = measuredPh ? num(measuredPh) : engine.estimatedPh;
   const ta = measuredTa ? num(measuredTa) : engine.estimatedTaGPerL;
+
+  // --- hop bittering-weight adjustment ------------------------------------
+  const hopAdjust = useMemo(
+    () =>
+      adjustHops(
+        hopRows.map((h) => ({
+          name: h.name,
+          amountG: num(h.amountG),
+          assumedAlpha: h.assumedAlpha ?? num(h.alphaPct),
+          actualAlpha: num(h.alphaPct),
+          timeMin: num(h.timeMin),
+          isDryHop: h.isDryHop,
+        })),
+        num(bitterThreshold) || 60
+      ),
+    [hopRows, bitterThreshold]
+  );
+  const hasBitteringChange = hopAdjust.additions.some((a) => a.changed);
+
+  // --- malt-colour bill (grain rows) --------------------------------------
+  const colorBill: BillItem[] = useMemo(
+    () =>
+      rows
+        .filter((r) => r.pick && (r.pick.colorLovibond != null || r.type === "grain"))
+        .map((r) => ({
+          key: r.key,
+          name: r.name,
+          colorLovibond: r.pick?.colorLovibond ?? null,
+          massG: num(r.amount) * TO_GRAMS[r.amountUnit],
+          isBase: r.pick?.category === "base-malt",
+        })),
+    [rows]
+  );
+
+  // Write a rebalanced bill's masses back onto the ingredient rows.
+  function applyBill(bill: BillItem[]) {
+    setRows((rs) =>
+      rs.map((r) => {
+        const b = bill.find((x) => x.key === r.key);
+        if (!b) return r;
+        const amt = b.massG / TO_GRAMS[r.amountUnit];
+        return { ...r, amount: String(Math.round(amt * 100) / 100) };
+      })
+    );
+  }
+
+  function doRebalance(method: RebalanceMethod) {
+    const t = num(targetSrm);
+    if (!(t > 0)) {
+      setColorNote("Enter a target SRM first.");
+      return;
+    }
+    let opts: { lighterBaseKey?: string } | undefined;
+    if (method === "swap-base") {
+      const bases = colorBill.filter((b) => b.isBase);
+      const lightest = bases.length
+        ? bases.reduce((a, b) => ((b.colorLovibond ?? 0) < (a.colorLovibond ?? 0) ? b : a), bases[0])
+        : null;
+      opts = lightest ? { lighterBaseKey: lightest.key } : undefined;
+    }
+    const res = rebalance(colorBill, t, method, vol, opts);
+    if (method !== "inform" && method !== "custom") applyBill(res.bill);
+    setColorNote(res.note);
+  }
+
+  // --- "shop this recipe" list (dormant until a retailer is enabled) ------
+  const buyItems: BuyItem[] = useMemo(() => {
+    const items: BuyItem[] = [];
+    for (const r of rows) if (r.name) items.push({ cls: "fermentable", name: r.name, brand: r.pick?.brand ?? null });
+    for (const h of hopRows) if (h.name) items.push({ cls: "hop", name: h.name, country: h.country });
+    const strain = strains.find((s) => s.id === selectedStrainId);
+    if (strain) items.push({ cls: "yeast", name: strain.name, lab: strain.lab });
+    return items;
+  }, [rows, hopRows, strains, selectedStrainId]);
 
   // --- water treatment (beer) ---------------------------------------------
   // Salt volume is treated as the batch volume for a first pass — mash plus
@@ -314,8 +401,9 @@ export default function BuilderForm({
           <label style={{ fontSize: "0.8rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
             <span style={{ color: "var(--wh-text-light)" }}>Yeast</span>
             <select
-              value=""
+              value={selectedStrainId}
               onChange={(e) => {
+                setSelectedStrainId(e.target.value);
                 const s = relevantStrains.find((x) => x.id === e.target.value);
                 if (!s) return;
                 if (s.attenuation != null) setAttenuation(String(s.attenuation));
@@ -487,7 +575,16 @@ export default function BuilderForm({
               if (!h) return;
               setHopRows((r) => [
                 ...r,
-                { key: nextKey(), name: h.name, amountG: "28", alphaPct: String(h.alpha ?? 5), timeMin: "60", isDryHop: false },
+                {
+                  key: nextKey(),
+                  name: h.name,
+                  amountG: "28",
+                  alphaPct: String(h.alpha ?? 5),
+                  assumedAlpha: h.alpha ?? null,
+                  country: h.country ?? null,
+                  timeMin: "60",
+                  isDryHop: false,
+                },
               ]);
             }}
           >
@@ -539,6 +636,53 @@ export default function BuilderForm({
                   ))}
                 </tbody>
               </table>
+            </div>
+          )}
+          {hopRows.length > 0 && (
+            <div style={{ marginTop: "0.75rem", borderTop: "1px solid var(--wh-border)", paddingTop: "0.6rem" }}>
+              <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", flexWrap: "wrap" }}>
+                <strong style={{ fontSize: "0.85rem" }}>Buy the right amount for your actual hops</strong>
+                <label style={{ fontSize: "0.78rem", color: "var(--wh-text-light)" }}>
+                  bittering ≥{" "}
+                  <input
+                    type="number"
+                    value={bitterThreshold}
+                    style={{ width: "3.5rem" }}
+                    onChange={(e) => setBitterThreshold(e.target.value)}
+                  />{" "}
+                  min
+                </label>
+              </div>
+              <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.3rem 0" }}>
+                Put each hop&apos;s <em>actual</em> alpha (from the package) in the Alpha % field. Only
+                bittering additions are rescaled to hold the bitterness; aroma additions keep their
+                weight so the flavour and aroma you designed stay put.
+              </p>
+              <table style={{ width: "100%", fontSize: "0.82rem" }}>
+                <tbody>
+                  {hopAdjust.additions.map((a, i) => (
+                    <tr key={i} style={{ color: a.role === "aroma" ? "var(--wh-text-light)" : undefined }}>
+                      <td>{a.name}</td>
+                      <td className="nowrap">{a.role}</td>
+                      <td className="nowrap">
+                        {a.changed ? (
+                          <>
+                            <s>{a.originalG.toFixed(0)} g</s> → <strong>{a.suggestedG.toFixed(1)} g</strong>
+                          </>
+                        ) : (
+                          `${a.originalG.toFixed(0)} g`
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {hasBitteringChange && (
+                <div style={{ fontSize: "0.8rem", marginTop: "0.35rem" }}>
+                  <strong>Weigh out / buy:</strong>{" "}
+                  {hopAdjust.buyTotals.map((b) => `${b.name} ${b.grams} g`).join(" · ")}
+                </div>
+              )}
             </div>
           )}
         </fieldset>
@@ -730,6 +874,52 @@ export default function BuilderForm({
           </p>
         )}
       </fieldset>
+
+      {/* ------------------------------------------------ colour rebalance --- */}
+      {isBeer && colorBill.length > 0 && (
+        <fieldset style={FS}>
+          <legend style={LEG}>Colour &amp; malt bill</legend>
+          <div style={{ display: "flex", gap: "0.6rem", alignItems: "center", flexWrap: "wrap" }}>
+            <span style={{ fontSize: "0.85rem" }}>
+              Current <strong>{(engine.srm ?? 0).toFixed(1)} SRM</strong>
+            </span>
+            <label style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+              Target SRM{" "}
+              <input
+                type="number"
+                step="0.1"
+                value={targetSrm}
+                placeholder="e.g. 8"
+                style={{ width: "5rem" }}
+                onChange={(e) => {
+                  setTargetSrm(e.target.value);
+                  setColorNote("");
+                }}
+              />
+            </label>
+            {num(targetSrm) > 0 && engine.srm != null && (
+              <span style={{ fontSize: "0.8rem", color: "var(--wh-text-light)" }}>
+                Δ {(engine.srm - num(targetSrm)).toFixed(1)} SRM{" "}
+                {engine.srm > num(targetSrm) ? "too dark" : engine.srm < num(targetSrm) ? "too pale" : "on target"}
+              </span>
+            )}
+          </div>
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.35rem 0" }}>
+            A maltster swap can shift colour, because the same variety differs in kiln and roast between
+            producers. Set a target and choose how to rebalance — or just be told the shift.
+          </p>
+          <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap" }}>
+            <button type="button" onClick={() => doRebalance("specialty")}>Scale specialty / dark malts</button>
+            <button type="button" onClick={() => doRebalance("swap-base")}>Swap base for lighter</button>
+            <button type="button" onClick={() => doRebalance("inform")}>Just show the shift</button>
+            <button type="button" onClick={() => doRebalance("custom")}>Custom (edit by hand)</button>
+          </div>
+          {colorNote && <p style={{ fontSize: "0.8rem", marginTop: "0.4rem" }}>{colorNote}</p>}
+        </fieldset>
+      )}
+
+      {/* Shop this recipe — renders nothing until a retailer is enabled. */}
+      <ShopThisRecipe items={buyItems} />
 
       {/* ---------------------------------------------- must chemistry --- */}
       {!isBeer && (
