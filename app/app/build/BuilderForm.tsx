@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   computeRecipe,
@@ -144,6 +144,14 @@ export default function BuilderForm({
   const [bitterThreshold, setBitterThreshold] = useState("60"); // min boil = "bittering"
   const [targetSrm, setTargetSrm] = useState(""); // "" = no colour target set
   const [colorNote, setColorNote] = useState("");
+
+  // Honour ?beverage=… from the "what are you making today?" links on the home
+  // page. Read client-side on mount so /build stays statically rendered.
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search).get("beverage");
+    if (p && BEVERAGES.some((b) => b.id === p)) switchBeverage(p as Beverage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Water panel (beer only): source tap -> target profile -> salt additions.
   const [sourceWaterId, setSourceWaterId] = useState(""); // "" = RO / distilled

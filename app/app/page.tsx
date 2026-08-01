@@ -6,6 +6,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { unstable_cache } from "next/cache";
 import { prisma } from "@/lib/db";
+import { BEVERAGE_FAMILIES } from "@/lib/beverages";
 
 // Full-table counts run on every homepage hit otherwise; the numbers only
 // change when new data loads, so a 5-minute cache is plenty fresh.
@@ -41,13 +42,52 @@ export default async function HomePage() {
       </div>
 
       <p style={{ textAlign: "center", fontSize: "1.05rem", maxWidth: 640, margin: "0 auto 0.5rem" }}>
-        BrewToad shut down on December 31, 2018. WortHogg recovered its recipes from the Internet
-        Archive and rebuilt the calculator — then kept going.
+        Plan and calculate any ferment — beer, wine, cider, mead, sake, spirits and the world&apos;s
+        traditional drinks — with sourced ingredient data and honest math.
       </p>
 
+      {/* What are you making today? — the front door to the builder. */}
+      <h2 style={{ textAlign: "center", fontSize: "1.15rem", marginTop: "1.5rem" }}>
+        What are you making today?
+      </h2>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+          gap: "0.6rem",
+          maxWidth: 760,
+          margin: "0.5rem auto 0",
+        }}
+      >
+        {BEVERAGE_FAMILIES.map((f) => (
+          <Link
+            key={f.id}
+            href={f.buildable ? `/build?beverage=${f.id}` : `/guidelines/b/${f.id}`}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "0.2rem",
+              textAlign: "center",
+              padding: "0.85rem 0.5rem",
+              border: "1px solid var(--wh-border)",
+              borderRadius: 10,
+              background: "var(--wh-bg-soft)",
+              textDecoration: "none",
+            }}
+          >
+            <span style={{ fontSize: "1.8rem", lineHeight: 1 }}>{f.emoji}</span>
+            <span style={{ fontWeight: 700, fontSize: "0.9rem" }}>{f.label}</span>
+            <span style={{ fontSize: "0.72rem", color: "var(--wh-text-light)" }}>
+              {f.buildable ? "Build a recipe" : "Browse styles"}
+            </span>
+          </Link>
+        ))}
+      </div>
+
       {/* Headline numbers */}
-      <div style={{ display: "flex", justifyContent: "center", gap: "2.5rem", flexWrap: "wrap", margin: "1.5rem 0" }}>
-        <Stat n={c.recipes} label="recipes recovered" href="/recipes" />
+      <div style={{ display: "flex", justifyContent: "center", gap: "2.5rem", flexWrap: "wrap", margin: "2rem 0 1.5rem" }}>
+        <Stat n={c.recipes} label="recipes in the archive" href="/recipes" />
         <Stat n={c.brewers} label="brewers" href="/brewers" />
         <Stat n={c.styles} label="styles catalogued" href="/guidelines" />
       </div>
@@ -62,10 +102,9 @@ export default async function HomePage() {
         <Card
           title="Calculators"
           href="/build"
-          blurb="One recipe builder for beer, cider, wine, mead and spirit washes — because underneath they are all sugar divided by volume. Plus pitching rate, water and salts, and the classic utilities, every formula validated against published reference values."
+          blurb="One recipe builder for every ferment — beer, cider, wine, mead, spirit washes and more — because underneath they are all sugar divided by volume. Plus pitching rate, water and salts, and the classic utilities, every formula validated against published reference values."
           links={[
             ["Recipe builder", "/build"],
-            ["Beer calculator", "/calculator"],
             ["Brewer's toolbox", "/tools"],
             ["Pitching rate", "/pitching"],
             ["Water & salts", "/water/builder"],
