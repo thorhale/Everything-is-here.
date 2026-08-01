@@ -491,6 +491,8 @@ export default function BuilderForm({
           borderRadius: 8,
         }}
       >
+        {/* OG/FG/ABV are universal; the rest are what each drink actually cares
+            about — IBU/SRM for beer, starting Brix + acid + pH for a must. */}
         <StatMini label="OG" value={engine.og.typical.toFixed(3)} />
         <StatMini label="FG" value={engine.fg.typical.toFixed(3)} />
         <StatMini label="ABV" value={`${engine.abv.typical.toFixed(1)}%`} />
@@ -498,6 +500,9 @@ export default function BuilderForm({
         {isBeer && engine.srm != null && (
           <StatMini label="SRM" value={engine.srm.toFixed(1)} swatch={srmToHex(engine.srm)} />
         )}
+        {showMust && <StatMini label="°Bx" value={engine.brix.typical.toFixed(1)} />}
+        {showMust && ta != null && <StatMini label="TA g/L" value={ta.toFixed(1)} />}
+        {showMust && ph != null && <StatMini label="pH" value={ph.toFixed(2)} />}
       </div>
 
       {/* ------------------------------------------------------- batch --- */}
