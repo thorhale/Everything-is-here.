@@ -72,6 +72,32 @@ interface HopRow {
   isDryHop: boolean;
 }
 
+// Yeast is grouped by what it's FOR, not by the beverage you happen to be
+// building — a distiller can pitch a wine or ale yeast, a mead can take a
+// Champagne strain, and so on. You pick the use first, then the strain; "All
+// yeast" drops the filter entirely so nothing is off-limits.
+const YEAST_USE_GROUPS: { id: string; label: string; uses: string[] }[] = [
+  { id: "beer", label: "Beer (ale & lager)", uses: ["beer"] },
+  { id: "wine", label: "Wine", uses: ["wine"] },
+  { id: "cider", label: "Cider", uses: ["cider"] },
+  { id: "mead", label: "Mead", uses: ["mead"] },
+  { id: "distilling", label: "Distilling / spirits", uses: ["whiskey", "rum", "moonshine", "neutral"] },
+  { id: "wild", label: "Wild / mixed culture", uses: ["wild"] },
+];
+const DEFAULT_YEAST_USE: Record<Beverage, string> = {
+  beer: "beer",
+  cider: "cider",
+  wine: "wine",
+  mead: "mead",
+  spirit: "distilling",
+};
+function strainInGroup(uses: string[] | undefined, groupId: string): boolean {
+  if (!groupId) return true; // "" = all yeast
+  const g = YEAST_USE_GROUPS.find((x) => x.id === groupId);
+  if (!g) return true;
+  return (uses ?? []).some((u) => g.uses.includes(u));
+}
+
 let counter = 0;
 const nextKey = () => `r${++counter}`;
 
@@ -112,6 +138,7 @@ export default function BuilderForm({
   const [hopRows, setHopRows] = useState<HopRow[]>([]);
   const [boilVolumeL, setBoilVolumeL] = useState("26");
   const [selectedStrainId, setSelectedStrainId] = useState("");
+  const [yeastUse, setYeastUse] = useState<string>("beer"); // "" = all yeast
 
   // Hop α-adjust + malt-colour rebalance controls
   const [bitterThreshold, setBitterThreshold] = useState("60"); // min boil = "bittering"
@@ -141,6 +168,10 @@ export default function BuilderForm({
     setEfficiency(String(p.efficiency));
     setAttenuation(String(p.attenuation));
     setTolerance(String(p.tolerance));
+    // Default the yeast filter to this drink's usual family, but leave it free
+    // to change — the point is options, not a lock.
+    setYeastUse(DEFAULT_YEAST_USE[b]);
+    setSelectedStrainId("");
   }
 
   function addRow(id: string) {
@@ -361,9 +392,11 @@ export default function BuilderForm({
     return keys.map((k) => ({ category: k, items: byCat.get(k)! }));
   }, [fermentables, beverage]);
 
+  // Filtered by the chosen yeast use, NOT by the beverage — any yeast is fair
+  // game for any drink.
   const relevantStrains = useMemo(
-    () => strains.filter((s) => !s.uses?.length || s.uses.includes(beverage) || (beverage === "spirit" && s.uses.some((u) => ["whiskey", "rum", "moonshine", "neutral"].includes(u)))),
-    [strains, beverage]
+    () => strains.filter((s) => strainInGroup(s.uses, yeastUse)),
+    [strains, yeastUse]
   );
 
   return (
@@ -399,7 +432,24 @@ export default function BuilderForm({
           {isBeer && <Field label="Boil volume (L)" value={boilVolumeL} onChange={setBoilVolumeL} />}
           <Field label="Apparent attenuation (%)" value={attenuation} onChange={setAttenuation} />
           <label style={{ fontSize: "0.8rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
-            <span style={{ color: "var(--wh-text-light)" }}>Yeast</span>
+            <span style={{ color: "var(--wh-text-light)" }}>Yeast use</span>
+            <select
+              value={yeastUse}
+              onChange={(e) => {
+                setYeastUse(e.target.value);
+                setSelectedStrainId("");
+              }}
+            >
+              <option value="">All yeast</option>
+              {YEAST_USE_GROUPS.map((g) => (
+                <option key={g.id} value={g.id}>
+                  {g.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label style={{ fontSize: "0.8rem", display: "flex", flexDirection: "column", gap: "0.2rem" }}>
+            <span style={{ color: "var(--wh-text-light)" }}>Yeast strain</span>
             <select
               value={selectedStrainId}
               onChange={(e) => {
