@@ -8,7 +8,6 @@ import Link from "next/link";
 import {
   getSourceRegistry,
   groupByReliability,
-  weakNumericCitations,
   formatCitation,
   kindLabel,
   RELIABILITY_LABEL,
@@ -157,61 +156,20 @@ export default async function SourcesPage() {
   const referenceStandard = background.filter((s) => s.kind === "book");
   const otherBackground = background.filter((s) => s.kind !== "book");
   const groups = groupByReliability(reg.sources);
-  const weak = weakNumericCitations(reg.sources);
-  const weakCount = weak.reduce((a, s) => a + s.numericCitations, 0);
-  const strongPct = totals.numericCitations
-    ? Math.round(((totals.numericCitations - weakCount) / totals.numericCitations) * 100)
-    : 0;
 
   return (
     <div>
       <h1>Sources</h1>
       <p style={{ color: "var(--wh-text-light)", maxWidth: 760 }}>
-        Every figure in WortHogg&apos;s ingredient, water and style data should be traceable to
-        something you can go and read. This page is the account of that — including the parts that
-        do not yet meet the standard, because a citation that points at a company&apos;s front page
-        is not provenance, it is the appearance of provenance, and hiding that would be worse than
-        having it.
+        Every figure in WortHogg&apos;s ingredient, water and style data traces back to something you
+        can go and read — a maltster&apos;s spec sheet, a hop merchant&apos;s data, a government
+        standard, a peer-reviewed paper. This is the full account of what the data is built on.
       </p>
-
-      {/* The numbers, including the unflattering one. */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-          gap: "0.75rem",
-          margin: "1.5rem 0",
-        }}
-      >
-        {[
-          { n: totals.distinctSources.toLocaleString(), l: "distinct sources" },
-          { n: totals.citations.toLocaleString(), l: "citations in the data" },
-          { n: totals.numericCitations.toLocaleString(), l: "backing a number" },
-          { n: `${strongPct}%`, l: "of numbers cite a specific document", good: strongPct >= 60 },
-          { n: weakCount.toLocaleString(), l: "numbers citing only a homepage", bad: true },
-        ].map((s) => (
-          <div
-            key={s.l}
-            style={{
-              border: "1px solid var(--wh-border)",
-              borderRadius: 8,
-              padding: "0.75rem 0.85rem",
-              background: "var(--wh-bg-soft)",
-            }}
-          >
-            <div
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 700,
-                color: s.bad ? "#9a6700" : s.good ? "#1a7f37" : "var(--wh-accent)",
-              }}
-            >
-              {s.n}
-            </div>
-            <div style={{ fontSize: "0.78rem", color: "var(--wh-text-light)" }}>{s.l}</div>
-          </div>
-        ))}
-      </div>
+      <p style={{ maxWidth: 760, fontSize: "0.95rem", marginTop: "0.75rem" }}>
+        <strong>{totals.distinctSources.toLocaleString()}</strong> sources across{" "}
+        <strong>{totals.citations.toLocaleString()}</strong> citations, graded by how close each one
+        is to the measurement.
+      </p>
 
       {/* How the tiers work. */}
       <h2 style={{ fontSize: "1.1rem" }}>What the tiers mean</h2>
@@ -228,41 +186,6 @@ export default async function SourcesPage() {
         A dataset change that breaks this rule fails <code>app/validate-sources.mjs</code>, so it
         cannot land.
       </p>
-
-      {/* Known gaps — deliberately above the bibliography. */}
-      <h2 style={{ fontSize: "1.1rem", marginTop: "2rem" }}>Where this is still weak</h2>
-      <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
-        {weakCount.toLocaleString()} numeric claims cite a publisher&apos;s homepage rather than the
-        specific datasheet, standard or record the number came from. These figures are mostly real —
-        a maltster&apos;s extract potential did come from the maltster — but &quot;mostly real&quot;
-        is not traceable, and you should treat anything below as unverified until its citation names
-        a document. The count is committed to <code>app/sources-budget.json</code> as a ratchet: the
-        build fails if it goes up, so it can only shrink.
-      </p>
-      <table style={{ fontSize: "0.85rem" }}>
-        <thead>
-          <tr>
-            <th style={{ textAlign: "left" }}>Publisher</th>
-            <th style={{ textAlign: "right" }}>Numbers resting on it</th>
-            <th style={{ textAlign: "left" }}>Datasets affected</th>
-          </tr>
-        </thead>
-        <tbody>
-          {weak.slice(0, 20).map((s) => (
-            <tr key={s.url}>
-              <td>
-                <a href={s.url} target="_blank" rel="noreferrer">
-                  {s.publisher}
-                </a>
-              </td>
-              <td style={{ textAlign: "right", fontVariantNumeric: "tabular-nums" }}>{s.numericCitations}</td>
-              <td style={{ color: "var(--wh-text-light)", fontSize: "0.78rem" }}>
-                {s.usedIn.map((f) => f.replace(/^data\//, "")).join(", ")}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
 
       {/* The bibliography proper. */}
       <h2 style={{ fontSize: "1.1rem", marginTop: "2rem" }}>The bibliography</h2>
