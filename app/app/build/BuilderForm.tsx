@@ -472,6 +472,34 @@ export default function BuilderForm({
           : `A hybrid: ${selected.map((id) => BEVERAGES.find((b) => b.id === id)!.label).join(" + ")}. All their ingredients and stats are in play.`}
       </p>
 
+      {/* Always-visible live stats, Brewfather-style: they follow you down the
+          form and update as you edit. */}
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 5,
+          display: "flex",
+          gap: "1.4rem",
+          flexWrap: "wrap",
+          alignItems: "center",
+          padding: "0.55rem 0.75rem",
+          marginBottom: "0.85rem",
+          background: "var(--wh-bg-soft)",
+          border: "1px solid var(--wh-border)",
+          borderTop: "3px solid var(--wh-accent)",
+          borderRadius: 8,
+        }}
+      >
+        <StatMini label="OG" value={engine.og.typical.toFixed(3)} />
+        <StatMini label="FG" value={engine.fg.typical.toFixed(3)} />
+        <StatMini label="ABV" value={`${engine.abv.typical.toFixed(1)}%`} />
+        {isBeer && engine.ibu != null && <StatMini label="IBU" value={engine.ibu.toFixed(0)} />}
+        {isBeer && engine.srm != null && (
+          <StatMini label="SRM" value={engine.srm.toFixed(1)} swatch={srmToHex(engine.srm)} />
+        )}
+      </div>
+
       {/* ------------------------------------------------------- batch --- */}
       <fieldset style={FS}>
         <legend style={LEG}>Batch</legend>
@@ -1274,6 +1302,44 @@ function PlainStat({ label, value }: { label: string; value: string }) {
       <div style={{ fontSize: "1.35rem", fontWeight: 700, color: "var(--wh-accent)", lineHeight: 1.1 }}>{value}</div>
       <div style={{ fontSize: "0.72rem", color: "var(--wh-text-light)", textTransform: "uppercase", letterSpacing: "0.04em" }}>
         {label}
+      </div>
+    </div>
+  );
+}
+
+// Approximate SRM colour from the standard beer-colour chart (nearest stop).
+const SRM_HEX: [number, string][] = [
+  [1, "#FFE699"], [2, "#FFD878"], [3, "#FFCA5A"], [4, "#FFBF42"], [5, "#FBB123"],
+  [6, "#F8A600"], [8, "#EA8F00"], [10, "#DE7C00"], [13, "#C56600"], [16, "#A64C00"],
+  [20, "#8E2900"], [25, "#701400"], [30, "#600903"], [35, "#3D0708"], [40, "#240607"],
+];
+function srmToHex(srm: number): string {
+  let best = SRM_HEX[0];
+  for (const stop of SRM_HEX) if (Math.abs(stop[0] - srm) < Math.abs(best[0] - srm)) best = stop;
+  return best[1];
+}
+
+function StatMini({ label, value, swatch }: { label: string; value: string; swatch?: string }) {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+      {swatch && (
+        <span
+          style={{
+            width: 18,
+            height: 18,
+            borderRadius: 4,
+            background: swatch,
+            border: "1px solid rgba(0,0,0,0.25)",
+            display: "inline-block",
+            flexShrink: 0,
+          }}
+        />
+      )}
+      <div>
+        <div style={{ fontSize: "1.15rem", fontWeight: 700, lineHeight: 1 }}>{value}</div>
+        <div style={{ fontSize: "0.62rem", color: "var(--wh-text-light)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+          {label}
+        </div>
       </div>
     </div>
   );
