@@ -128,7 +128,11 @@ export default function BuilderForm({
   strains: StrainPick[];
   waters: WaterPick[];
 }) {
-  const [beverage, setBeverage] = useState<Beverage>("beer");
+  // Multi-select: which drinks' calculators are showing. An empty set means
+  // "show everything" — so not choosing a category gives you every calculator
+  // at once, one or two narrows it, and any combination (beer+mead = braggot)
+  // is a hybrid. The engine treats all of it as sugar over volume regardless.
+  const [selected, setSelected] = useState<Beverage[]>(["beer"]);
   const [volumeL, setVolumeL] = useState("20");
   const [efficiency, setEfficiency] = useState("72");
   const [attenuation, setAttenuation] = useState("75");
@@ -149,7 +153,10 @@ export default function BuilderForm({
   // page. Read client-side on mount so /build stays statically rendered.
   useEffect(() => {
     const p = new URLSearchParams(window.location.search).get("beverage");
-    if (p && BEVERAGES.some((b) => b.id === p)) switchBeverage(p as Beverage);
+    if (p && BEVERAGES.some((b) => b.id === p)) {
+      setSelected([p as Beverage]);
+      applyPreset(p as Beverage);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -169,17 +176,23 @@ export default function BuilderForm({
   const [collectionAbv, setCollectionAbv] = useState("60");
   const [targetProofAbv, setTargetProofAbv] = useState("40");
 
-  function switchBeverage(b: Beverage) {
-    setBeverage(b);
+  function applyPreset(b: Beverage) {
     const p = PRESETS[b];
     setVolumeL(String(p.volumeL));
     setEfficiency(String(p.efficiency));
     setAttenuation(String(p.attenuation));
     setTolerance(String(p.tolerance));
-    // Default the yeast filter to this drink's usual family, but leave it free
-    // to change — the point is options, not a lock.
+    // Default the yeast filter to this drink's usual family, but leave it free.
     setYeastUse(DEFAULT_YEAST_USE[b]);
     setSelectedStrainId("");
+  }
+
+  function toggleBeverage(b: Beverage) {
+    const next = selected.length === 0 ? [b] : selected.includes(b) ? selected.filter((x) => x !== b) : [...selected, b];
+    setSelected(next);
+    // Only stomp the batch presets when it collapses to a single drink; a
+    // hybrid or "everything" view leaves your numbers alone.
+    if (next.length === 1) applyPreset(next[0]);
   }
 
   function addRow(id: string) {
@@ -206,6 +219,17 @@ export default function BuilderForm({
 
   const updateRow = (key: string, patch: Partial<Row>) =>
     setRows((r) => r.map((x) => (x.key === key ? { ...x, ...patch } : x)));
+
+  // Section visibility derives from the selected set. Empty set = show all.
+  const showAll = selected.length === 0;
+  const has = (b: Beverage) => showAll || selected.includes(b);
+  const isBeer = has("beer");
+  const isSpirit = has("spirit");
+  const showMust = has("cider") || has("wine") || has("mead") || has("spirit");
+  const primary: Beverage = selected[0] ?? "beer";
+  // The engine wants one beverage: use beer whenever the beer sections show (so
+  // IBU/SRM compute), otherwise the primary selection (so must-chem fires).
+  const beverage: Beverage = isBeer ? "beer" : primary;
 
   const engine = useMemo(() => {
     const ingredients: EngineIngredient[] = rows.map((r) => {
@@ -254,8 +278,6 @@ export default function BuilderForm({
     });
   }, [beverage, volumeL, efficiency, attenuation, tolerance, useTolerance, rows, hopRows, boilVolumeL]);
 
-  const isBeer = beverage === "beer";
-  const isSpirit = beverage === "spirit";
   const vol = num(volumeL);
   const ph = measuredPh ? num(measuredPh) : engine.estimatedPh;
   const ta = measuredTa ? num(measuredTa) : engine.estimatedTaGPerL;
@@ -369,7 +391,7 @@ export default function BuilderForm({
   const nutrients = vol > 0 && engine.og.typical > 1.001
     ? planNutrients(brixFromSg(engine.og.typical), vol, 0, nitrogenDemand)
     : null;
-  const tosnaPlan = beverage === "mead" && vol > 0 && engine.og.typical > 1.001 ? tosna(vol, engine.og.typical) : null;
+  const tosnaPlan = has("mead") && vol > 0 && engine.og.typical > 1.001 ? tosna(vol, engine.og.typical) : null;
   const acidPlan = ta != null && vol > 0 ? adjustAcid(ta, num(targetTa), vol) : null;
   const chapt = targetSg && vol > 0 && engine.og.typical > 1 ? chaptalise(engine.og.typical, num(targetSg), vol) : null;
   const spirit = isSpirit && vol > 0
@@ -411,24 +433,43 @@ export default function BuilderForm({
     <div>
       {/* ---------------------------------------------------- beverage --- */}
       <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", marginBottom: "0.75rem" }}>
-        {BEVERAGES.map((b) => (
-          <button
-            key={b.id}
-            type="button"
-            onClick={() => switchBeverage(b.id)}
-            className="wh-style-chip"
-            style={{
-              cursor: "pointer",
-              border: beverage === b.id ? "2px solid var(--wh-accent)" : "1px solid var(--wh-border)",
-              fontWeight: beverage === b.id ? 700 : 400,
-            }}
-          >
-            {b.label}
-          </button>
-        ))}
+        {BEVERAGES.map((b) => {
+          const on = !showAll && selected.includes(b.id);
+          return (
+            <button
+              key={b.id}
+              type="button"
+              onClick={() => toggleBeverage(b.id)}
+              className="wh-style-chip"
+              style={{
+                cursor: "pointer",
+                border: on ? "2px solid var(--wh-accent)" : "1px solid var(--wh-border)",
+                fontWeight: on ? 700 : 400,
+              }}
+            >
+              {b.label}
+            </button>
+          );
+        })}
+        <button
+          type="button"
+          onClick={() => setSelected([])}
+          className="wh-style-chip"
+          style={{
+            cursor: "pointer",
+            border: showAll ? "2px solid var(--wh-accent)" : "1px solid var(--wh-border)",
+            fontWeight: showAll ? 700 : 400,
+          }}
+        >
+          Everything
+        </button>
       </div>
       <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: 0 }}>
-        {BEVERAGES.find((b) => b.id === beverage)!.blurb}
+        {showAll
+          ? "Every calculator at once. Tap a drink to focus, combine a few for a hybrid (beer + mead = braggot), or leave it open."
+          : selected.length === 1
+          ? BEVERAGES.find((b) => b.id === selected[0])!.blurb
+          : `A hybrid: ${selected.map((id) => BEVERAGES.find((b) => b.id === id)!.label).join(" + ")}. All their ingredients and stats are in play.`}
       </p>
 
       {/* ------------------------------------------------------- batch --- */}
@@ -493,7 +534,7 @@ export default function BuilderForm({
             </span>
           </label>
         </div>
-        {!isBeer && (
+        {showMust && !isBeer && (
           <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.5rem 0 0" }}>
             There is no mash and no brewhouse efficiency here — nothing is being converted from starch, so every gram of
             sugar in the ingredients is a gram of sugar in the fermenter.
@@ -980,7 +1021,7 @@ export default function BuilderForm({
       <ShopThisRecipe items={buyItems} />
 
       {/* ---------------------------------------------- must chemistry --- */}
-      {!isBeer && (
+      {showMust && (
         <fieldset style={FS}>
           <legend style={LEG}>Must chemistry</legend>
           <div style={GRID}>
