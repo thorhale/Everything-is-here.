@@ -577,7 +577,7 @@ export default function BuilderForm({
 
       {/* ------------------------------------------------- ingredients --- */}
       <fieldset style={FS}>
-        <legend style={LEG}>Fermentables</legend>
+        <legend style={LEG}>{isBeer ? "Fermentables" : "Sugars, fruit & juice"}</legend>
         <select value="" onChange={(e) => e.target.value && addRow(e.target.value)} style={{ maxWidth: "100%" }}>
           <option value="">Add from the ingredient database…</option>
           {grouped.map((g) => (
