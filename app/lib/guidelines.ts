@@ -21,6 +21,7 @@ export const SYSTEM_LABELS: Record<string, string> = {
   LATAM: "Latin America — maize, agave & cane",
   SEASIA: "Southeast Asia",
   EUROTRAD: "Europe — farmhouse & folk ferments",
+  NORTHAM: "North America — improvised & folk ferments",
   CULTURED: "Cultured & low-alcohol ferments",
 };
 

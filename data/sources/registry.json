@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 226,
-    "backgroundDocuments": 9,
-    "citations": 648,
+    "distinctSources": 227,
+    "backgroundDocuments": 8,
+    "citations": 650,
     "numericCitations": 604,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
     "fullTextVerified": 4,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 498,
+      "primary": 500,
       "secondary": 144,
       "tertiary": 6
     }
@@ -885,6 +885,31 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
+      ]
+    },
+    {
+      "id": "cdc-mmwr-2013-pruno-botulism",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
+      "host": "www.cdc.gov",
+      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
+      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
+      "authors": null,
+      "year": 2013,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
+      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "Pruno (Prison Wine)"
       ]
     },
     {
@@ -5799,22 +5824,6 @@
     }
   ],
   "background": [
-    {
-      "id": "cdc-mmwr-2013-pruno-botulism",
-      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
-      "host": "www.cdc.gov",
-      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
-      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
-      "authors": null,
-      "year": 2013,
-      "kind": "government-report",
-      "reliability": "primary",
-      "verification": "metadata-only",
-      "deepLink": true,
-      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
-      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
-      "accessed": "2026-07-30"
-    },
     {
       "id": "gradplato-dampfbier-bayerisch",
       "url": "https://gradplato.com/kategorien/how-to/dampfbier-bayerisch",
