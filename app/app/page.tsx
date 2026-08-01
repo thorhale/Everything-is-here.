@@ -57,10 +57,7 @@ export default async function HomePage() {
           title="The Archive"
           href="/recipes"
           blurb={`${c.recipes.toLocaleString()} real homebrew recipes. Search by name, style, ingredient, or by the numbers — ABV, IBU, colour, gravity. Export any of them as BeerXML straight into your brewing app.`}
-          links={[
-            ["Browse recipes", "/recipes"],
-            ["Archive insights", "/archive"],
-          ]}
+          links={[["Browse recipes", "/recipes"]]}
         />
         <Card
           title="Calculators"
@@ -106,12 +103,6 @@ export default async function HomePage() {
             ["Troubleshooting", "/troubleshooting"],
             ["Propagation guide", "/yeasts/propagation"],
           ]}
-        />
-        <Card
-          title="What brewers actually did"
-          href="/archive"
-          blurb="Guidelines say what a style should be. The archive shows what a hundred thousand people really brewed — median gravities, the hops and malts that actually turn up, and how closely real beer tracks the official ranges."
-          links={[["Archive insights", "/archive"]]}
         />
       </div>
 

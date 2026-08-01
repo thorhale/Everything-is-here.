@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 227,
-    "backgroundDocuments": 8,
-    "citations": 650,
-    "numericCitations": 605,
+    "distinctSources": 226,
+    "backgroundDocuments": 9,
+    "citations": 648,
+    "numericCitations": 604,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 5,
-    "backgroundFullTextVerified": 3,
+    "fullTextVerified": 4,
+    "backgroundFullTextVerified": 4,
     "byReliability": {
       "primary": 498,
-      "secondary": 146,
+      "secondary": 144,
       "tertiary": 6
     }
   },
@@ -885,33 +885,6 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
-      ]
-    },
-    {
-      "id": "gradplato-dampfbier-bayerisch",
-      "url": "https://gradplato.com/kategorien/how-to/dampfbier-bayerisch",
-      "host": "gradplato.com",
-      "title": "Dampfbier, Bayerisch",
-      "publisher": "GradPlato — Fachverlag Hans Carl GmbH, Nürnberg",
-      "authors": [
-        "Jule"
-      ],
-      "year": 2022,
-      "kind": "trade-publication",
-      "reliability": "secondary",
-      "verification": "full-text",
-      "deepLink": true,
-      "supports": "Historical Dampfbier as a top-fermented, medium-dark barley-malt beer of the Bayerischer Wald near the Bohemian border, popular toward the end of the 19th century and brewed predominantly in summer. Modern versions deep gold to light amber, medium body, hopped only very lightly to about 15 BE, low carbonation ('wenig Rezenz'), fermented fast and warm with ordinary Weissbier yeast at about 21 °C, giving a slightly phenolic and banana-like finish — 'quasi ein Weißbier ohne Weizen'. Name derived from the large foam bubbles thrown by a vigorous open-vessel primary fermentation, which looked as though the wort were giving off steam as each burst. May be filtered or unfiltered. One published recipe's targets: Stammwürze 12 °P, Restextrakt 2.5 °P, 14 BE, 10 EBC, 5.1 % alcohol by volume; Hallertauer Mittelfrüh at 4.25 % alpha for both bittering and aroma; infusion mash 67 °C/30 min, 72 °C/20 min, 76 °C for lautering; 60 min boil; ferment ~4 days at ~21 °C; krausen with reserved wort; spund at ~0.5 bar for a week, a further week under pressure, adjust to ~3.5 g/L CO2. Records that the Dampfbierbrauerei Zwiesel brews a Dampfbier to a historical recipe.",
-      "doesNotSupport": "Any style RANGE. Every figure above is a single formulation's target, not a measured minimum and maximum across the style, and no judging body catalogues Dampfbier for one to be taken from. Also does not support a malt bill: the page's percentage column is internally inconsistent — Pilsner 35 % / Münchner 1 25 % sums to 60 %, not the stated 100 %, while its kilogram column (2.71 + 1.16 = 3.87 kg) is self-consistent and implies roughly 70 % / 30 %. The percentages are therefore not transcribed into this project. The page is bylined 'Jule' and does NOT credit Horst Dornbusch; the shared publisher is circumstantial and is not treated as authorship.",
-      "accessed": "2026-07-30",
-      "note": "Editorial site of Fachverlag Hans Carl — the Nürnberg house that publishes BRAUWELT and BrewingScience, and that published Horst Dornbusch's two German beer-style books. Bylined articles carrying full recipe specifications. Secondary, not primary: it reports brewing practice rather than measuring it, and its recipe figures are one formulation's targets, not a measured range.",
-      "citations": 2,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/guidelines/germantrad-2026.json"
-      ],
-      "exampleRecords": [
-        "Dampfbier (Bayerisch)"
       ]
     },
     {
@@ -5840,6 +5813,24 @@
       "deepLink": true,
       "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
       "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
+      "accessed": "2026-07-30"
+    },
+    {
+      "id": "gradplato-dampfbier-bayerisch",
+      "url": "https://gradplato.com/kategorien/how-to/dampfbier-bayerisch",
+      "host": "gradplato.com",
+      "title": "Dampfbier, Bayerisch",
+      "publisher": "GradPlato — Fachverlag Hans Carl GmbH, Nürnberg",
+      "authors": [
+        "Jule"
+      ],
+      "year": 2022,
+      "kind": "trade-publication",
+      "reliability": "secondary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Historical Dampfbier as a top-fermented, medium-dark barley-malt beer of the Bayerischer Wald near the Bohemian border, popular toward the end of the 19th century and brewed predominantly in summer. Modern versions deep gold to light amber, medium body, hopped only very lightly to about 15 BE, low carbonation ('wenig Rezenz'), fermented fast and warm with ordinary Weissbier yeast at about 21 °C, giving a slightly phenolic and banana-like finish — 'quasi ein Weißbier ohne Weizen'. Name derived from the large foam bubbles thrown by a vigorous open-vessel primary fermentation, which looked as though the wort were giving off steam as each burst. May be filtered or unfiltered. One published recipe's targets: Stammwürze 12 °P, Restextrakt 2.5 °P, 14 BE, 10 EBC, 5.1 % alcohol by volume; Hallertauer Mittelfrüh at 4.25 % alpha for both bittering and aroma; infusion mash 67 °C/30 min, 72 °C/20 min, 76 °C for lautering; 60 min boil; ferment ~4 days at ~21 °C; krausen with reserved wort; spund at ~0.5 bar for a week, a further week under pressure, adjust to ~3.5 g/L CO2. Records that the Dampfbierbrauerei Zwiesel brews a Dampfbier to a historical recipe.",
+      "doesNotSupport": "Any style RANGE. Every figure above is a single formulation's target, not a measured minimum and maximum across the style, and no judging body catalogues Dampfbier for one to be taken from. Also does not support a malt bill: the page's percentage column is internally inconsistent — Pilsner 35 % / Münchner 1 25 % sums to 60 %, not the stated 100 %, while its kilogram column (2.71 + 1.16 = 3.87 kg) is self-consistent and implies roughly 70 % / 30 %. The percentages are therefore not transcribed into this project. The page is bylined 'Jule' and does NOT credit Horst Dornbusch; the shared publisher is circumstantial and is not treated as authorship.",
       "accessed": "2026-07-30"
     },
     {

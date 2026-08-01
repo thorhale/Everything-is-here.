@@ -113,8 +113,7 @@ export default async function RecipesPage({ searchParams }: Props) {
     <div>
       <h1>Recipes</h1>
       <p style={{ color: "var(--wh-text-light)", fontSize: "0.9rem" }}>
-        Search {total > 0 ? "" : "the "}archive by name, style, ingredient, or by the numbers.{" "}
-        <Link href="/archive">See what everyone actually brewed →</Link>
+        Search {total > 0 ? "" : "the "}archive by name, style, ingredient, or by the numbers.
       </p>
 
       <form method="get" style={{ margin: "1rem 0" }}>

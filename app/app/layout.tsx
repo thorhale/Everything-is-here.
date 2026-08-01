@@ -60,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/recipes">Recipes</Link>
               <ul>
                 <li><Link href="/recipes">All Recipes</Link></li>
-                <li><Link href="/archive">Archive Insights</Link></li>
               </ul>
             </li>
             <li>
@@ -73,7 +72,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/ingredients">Styles &amp; Ingredients</Link>
               <ul>
                 <li><Link href="/ingredients">All Ingredients</Link></li>
-                <li><Link href="/styles">Styles</Link></li>
                 <li><Link href="/guidelines">Style Guidelines</Link></li>
                 <li><Link href="/fermentables/db">Fermentable Database</Link></li>
                 <li><Link href="/hops/db">Hop Database</Link></li>
@@ -107,7 +105,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <li>Home</li>
               <li><Link href="/recipes">All Recipes</Link></li>
               <li><Link href="/brewers">Brewers</Link></li>
-              <li><Link href="/styles">Styles</Link></li>
             </ul>
           </div>
           <div className="footer-col">
@@ -138,7 +135,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="footer-col">
             <ul>
               <li>Archive</li>
-              <li><Link href="/archive">Archive Insights</Link></li>
               <li><Link href="/data-download">Download the data</Link></li>
               <li><Link href="/takedown">Request removal</Link></li>
               <li>
