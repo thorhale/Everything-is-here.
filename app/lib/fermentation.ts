@@ -34,3 +34,16 @@ export async function getArchetype(id: string): Promise<Archetype | null> {
   const all = await getArchetypes();
   return all.find((a) => a.id === id) ?? null;
 }
+
+// Resolve the fermentation archetype for a guideline category by the same key
+// the database uses (editionId + category code), via the static map generated
+// by build-archetype-usage.mjs. No DB column required.
+export async function getArchetypeForCategory(
+  editionId: string,
+  code: string | null | undefined
+): Promise<Archetype | null> {
+  if (!code) return null;
+  const { default: catMap } = await import("./generated/category-archetype.json");
+  const id = (catMap as Record<string, string>)[`${editionId}|${code}`];
+  return id ? getArchetype(id) : null;
+}
