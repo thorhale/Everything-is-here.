@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 233,
+    "distinctSources": 234,
     "backgroundDocuments": 7,
-    "citations": 662,
+    "citations": 664,
     "numericCitations": 605,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 5,
+    "fullTextVerified": 6,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 506,
+      "primary": 508,
       "secondary": 150,
       "tertiary": 6
     }
@@ -945,6 +945,37 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
+      ]
+    },
+    {
+      "id": "spitaels-lambic-microbiota-2014",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384",
+      "host": "journals.plos.org",
+      "title": "The Microbial Diversity of Traditional Spontaneously Fermented Lambic Beer",
+      "publisher": "PLOS ONE (peer-reviewed open-access)",
+      "authors": [
+        "Freek Spitaels",
+        "Anneleen D. Wieme",
+        "Maarten Janssens",
+        "et al."
+      ],
+      "year": 2014,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbiology of spontaneous lambic fermentation, from over 2000 isolates sampled over two years at a traditional Belgian lambic brewery. No yeast is pitched: cooled overnight in an open coolship, the wort is inoculated by the ambient microbiota of the Senne valley, then matures 1-3 years before bottling. A characteristic succession follows: Enterobacteriaceae dominate the first month (~3-40 days), replaced at ~2 months by Pediococcus damnosus with Saccharomyces cerevisiae and S. pastorianus, then from ~6 months onward by the acid- and ethanol-tolerant Dekkera bruxellensis alongside P. damnosus. DOI 10.1371/journal.pone.0095384. Underpins the beer-spontaneous fermentation archetype.",
+      "doesNotSupport": "Pitch rates (there is no pitch), or the microbiota of any other region's spontaneous ferment; it documents traditional Belgian lambic specifically.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed open-access literature; cited for the microbial succession of spontaneous lambic fermentation (Spitaels et al. 2014).",
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "beer-spontaneous",
+        "beer-spontaneous"
       ]
     },
     {

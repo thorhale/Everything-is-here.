@@ -68,10 +68,24 @@
       "family": "beer",
       "inoculation": "spontaneous",
       "saccharification": "malt-enzyme",
-      "organisms": ["ambient wild yeast and bacteria (Enterobacteria → Saccharomyces → Brettanomyces → Lactobacillus/Pediococcus succession)"],
+      "organisms": [
+        "Enterobacteriaceae (Escherichia coli, Enterobacter, Klebsiella pneumoniae, Hafnia alvei) in the first month",
+        "Pediococcus damnosus with Saccharomyces cerevisiae and S. pastorianus from ~2 months",
+        "Dekkera (Brettanomyces) bruxellensis dominant from ~6 months, coexisting with P. damnosus"
+      ],
       "approach": "No yeast is pitched. Cooled overnight in an open coolship, the wort is inoculated by ambient microbiota and matures in barrels over 1–3 years.",
-      "specialHandling": ["Seasonal (cool months); microbial succession over years; no controllable pitch."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "microbial succession, not a pitch rate",
+        "note": "Spitaels et al. (2014), from >2000 isolates over two years at a traditional Belgian lambic brewery: no yeast is pitched; ambient coolship inoculation drives a reproducible succession (Enterobacteriaceae → Pediococcus damnosus + Saccharomyces → Dekkera bruxellensis) over a 1–3 year maturation.",
+        "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384"
+      },
+      "specialHandling": [
+        "No pitch: hot wort cools overnight in an open coolship and is inoculated by the ambient microbiota of the Senne valley.",
+        "Characteristic succession — Enterobacteriaceae (first ~3–40 days) → Pediococcus damnosus + Saccharomyces (~2 months) → Dekkera bruxellensis (~6 months onward).",
+        "Matures in barrels 1–3 years before bottling; seasonal (cool months), with no controllable pitch rate."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384"
     },
     {
       "id": "beer-sorghum-trad",
