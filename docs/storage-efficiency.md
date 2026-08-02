@@ -34,6 +34,11 @@ Total estimate: **~119 MB of heap, about 32% of current usage.** Indexes on the
 narrowed columns shrink on top of that, and narrower rows pack more per 8 KB
 page, so the realised figure should be a little better.
 
+**Status: steps 1 and 2 are implemented — 75.4 MB, the two largest and safest.**
+Step 5 was investigated and withdrawn on evidence (see below). Steps 3 and 4
+remain, and step 4 deliberately waits until the migration has actually run,
+because it needs the headroom the migration creates.
+
 | Reclaimed | Change | Risk |
 |---|---|---|
 | 23.6 MB | `RecipeFermentable.refUrl` → `refId int4` | none — proven reconstructible |
@@ -142,11 +147,32 @@ without reordering them can convert the saving into alignment padding and gain
 nothing. Do this as part of a table rewrite that also orders columns widest
 fixed-width first, then narrower, then variable-length last.
 
-### 5. Derived columns — 7.4 MB
+### 5. Derived columns — 7.4 MB — **WITHDRAWN, do not do this**
 
-`Recipe.sourceUrl` is `https://www.brewtoad.com/recipes/` plus `slug`, which is
-already a column. `RecipeFermentable.percent` is computable from `amountLb`
-against the bill total. Both are display conveniences that cost storage per row.
+Both columns are arithmetically derivable, and both should stay anyway. The
+check that settled it is worth keeping on record.
+
+**`RecipeFermentable.percent` (2.7 MB) — recomputing would corrupt the
+archive.** The theory was that percent is just `amountLb` over the bill total.
+Measured against the parse sample, only **14%** of stored percentages come
+within 0.05 points of a recomputation, and 0.3% are off by more than a full
+percentage point — a stored `15.0%` against a computed `16.0%`, a `9.0%`
+against `10.0%`. BrewToad rounded its own displayed figures, mostly to whole
+numbers, and those are the figures the archive exists to preserve. The Recipe
+model already states this principle for `og`/`fg`/`ibu`: they are "BrewToad's
+own computed 'Anticipated' stats — not recomputed from ingredients". `percent`
+is the same kind of value. Dropping it would replace what BrewToad showed with
+what we calculate, on 86% of rows, invisibly.
+
+**`Recipe.sourceUrl` (4.7 MB) — derivable, but it is the takedown citation of
+record.** It is exactly `https://www.brewtoad.com/recipes/` plus `slug` in 100%
+of the sample, so nothing would be lost mechanically. But `schema.prisma` notes
+it "doubles as the citation a takedown claimant points at", and there is
+evidentiary value in storing the literal URL that was archived rather than
+recomputing it later from a column that could in principle be normalised. 4.7 MB
+is 1.3% of the database and does not outweigh that.
+
+Neither is a large saving, and the fidelity of the archive is the product.
 
 ## Ordering, and the one real constraint
 
