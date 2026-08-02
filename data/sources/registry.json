@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 249,
+    "distinctSources": 253,
     "backgroundDocuments": 7,
-    "citations": 692,
-    "numericCitations": 611,
+    "citations": 702,
+    "numericCitations": 615,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 21,
+    "fullTextVerified": 25,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 536,
+      "primary": 546,
       "secondary": 150,
       "tertiary": 6
     }
@@ -738,6 +738,33 @@
       ]
     },
     {
+      "id": "awri-yeast-rehydration",
+      "url": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/",
+      "host": "www.awri.com.au",
+      "title": "Active Dry Wine Yeast (ADWY) rehydration",
+      "publisher": "The Australian Wine Research Institute (AWRI)",
+      "authors": null,
+      "year": 2024,
+      "kind": "research-institute",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The professional wine-yeast inoculation standard: an inoculum of 0.25 g/L (25 g/hL) of active dry wine yeast to achieve a minimum 5×10^6 viable cells/mL; rehydrate by sprinkling over 5-10 times its weight of 38-40 C water and standing 10-15 minutes; up to about twice the dose for highly clarified, high-Brix or high-SO2 musts. Underpins the wine-cultured fermentation archetype.",
+      "doesNotSupport": "Beer/cider/mead pitch rates, or any wild-ferment figure. It is the wine active-dry-yeast standard specifically.",
+      "accessed": "2026-08-02",
+      "note": "National wine research body; its winemaking-resources pages are authoritative professional guidance. Source of the 25 g/hL active-dry-wine-yeast inoculation standard.",
+      "citations": 3,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "wine-cultured",
+        "spirit-from-wine",
+        "spirit-from-wine"
+      ]
+    },
+    {
       "id": "cdc-mmwr-2013-pruno-botulism",
       "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
       "host": "www.cdc.gov",
@@ -1361,6 +1388,122 @@
       "exampleRecords": [
         "baijiu-qu-ssf",
         "baijiu-qu-ssf"
+      ]
+    },
+    {
+      "id": "kumar-indigenous-dairy-2025",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1693995/full",
+      "host": "www.frontiersin.org",
+      "title": "Preserving edible biodiversity through indigenous dairy emulsions: valorization of traditional milk systems for a resilient future",
+      "publisher": "Frontiers",
+      "authors": [
+        "Kumar",
+        "et al."
+      ],
+      "year": 2025,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Traditional Mongolian fermented dairy and its distilled derivative. Tarag is a firm Mongolian yoghurt made by fermenting boiled and cooled cow's or goat's milk with Lactobacillus kefiranofaciens, giving a dense curd at pH 3.6-3.9, and it serves as the base for arkhi, a distilled alcoholic beverage derived from fermented milk. Airag (tsege) is a fermentate of horse or camel milk produced by vigorously agitating the milk in leather sacks or wooden containers for one to two days, which supports lactic acid bacteria such as Lactobacillus helveticus and Lactococcus lactis alongside native yeast activity, giving a slightly effervescent drink of 1-3% ethanol. DOI 10.3389/fnut.2025.1693995. Underpins the milk-distilled archetype.",
+      "doesNotSupport": "The details of the arkhi distillation itself — the paper mentions it only in passing — nor any pitch rate, since the culture is back-slopped.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "milk-distilled",
+        "milk-distilled"
+      ]
+    },
+    {
+      "id": "martuzzi-fermented-mare-milk-2024",
+      "url": "https://www.mdpi.com/2304-8158/13/3/493",
+      "host": "www.mdpi.com",
+      "title": "Fermented Mare Milk and Its Microorganisms for Human Consumption and Health",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "F. Martuzzi",
+        "et al."
+      ],
+      "year": 2024,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbiology and composition of fermented mare milk (koumiss/airag). Fermentation is a lactic-acid-bacteria and yeast interaction: LAB mainly acidify the milk while yeasts partly modify titratable acidity. It is started by back-slopping — fresh milk inoculated with a small quantity of already-fermented milk as a natural starter. Lactobacillus helveticus predominates among LAB (78.9% of sequences in one study) and Kluyveromyces marxianus and Saccharomyces cerevisiae are the most common yeasts. Koumiss generally contains about 2% alcohol, 0.5-1.5% lactic acid, 2-4% sugar and 2% fat, with Russian classification distinguishing weak (0.7-1% ethanol), normal (1-1.75%) and strong (1.75-2.5%). Published in Foods 13(3):493; DOI 10.3390/foods13030493. Underpins the milk-kefir archetype.",
+      "doesNotSupport": "Fermentation temperature or duration, and distillation into a spirit — the review states neither, so the arkhi distillation step is cited elsewhere.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "milk-kefir",
+        "milk-kefir"
+      ]
+    },
+    {
+      "id": "ojo-desmidt-kombucha-2023",
+      "url": "https://www.mdpi.com/2311-5637/9/5/472",
+      "host": "www.mdpi.com",
+      "title": "Microbial Composition, Bioactive Compounds, Potential Benefits and Risks Associated with Kombucha: A Concise Review",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "A. O. Ojo",
+        "O. de Smidt"
+      ],
+      "year": 2023,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The composition and method of kombucha fermentation. The SCOBY is a metabolically active symbiotic community of bacteria and yeast that forms a jelly-like cellulose pellicle (zooglea biofilm) at the liquid-air interface. Yeasts include Saccharomyces sp., Schizosaccharomyces pombe and Brettanomyces sp.; acetic acid bacteria include Acetobacter aceti, Komagataeibacter xylinum, Gluconobacter oxydans and Acetobacter pasteurianus. The symbiosis is reciprocal: ethanol produced by yeast helps the bacteria produce acetic acid, and that acetic acid stimulates further yeast ethanol production, which also excludes competing microbes. A representative protocol stirs 50 g sucrose into 1 L boiling water, steeps tea for 5 minutes, cools to 20 C, then inoculates with 24 g SCOBY plus 0.2 L of previously fermented kombucha to lower pH and inhibit unwanted organisms. Optimal fermentation runs 6-14 days. Published in Fermentation 9(5):472; DOI 10.3390/fermentation9050472. Underpins the scoby-symbiotic archetype.",
+      "doesNotSupport": "A yeast pitch rate in cells/mL — kombucha is inoculated with a physical pellicle and starter liquid — or the microbiology of any other back-slopped ferment.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "scoby-symbiotic",
+        "scoby-symbiotic"
+      ]
+    },
+    {
+      "id": "ashaolu-reale-lab-cereals-2020",
+      "url": "https://www.mdpi.com/2076-2607/8/8/1176",
+      "host": "www.mdpi.com",
+      "title": "A Holistic Review on Euro-Asian Lactic Acid Bacteria Fermented Cereals and Vegetables",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "T. J. Ashaolu",
+        "A. Reale"
+      ],
+      "year": 2020,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Kvass and related Euro-Asian lactic-fermented cereal beverages. Kvass is made from fermented barley and rye malt, rye flour and stale rye bread, produced mainly in Russia, Poland and the Baltic states. It undergoes a combined lactic and alcoholic fermentation on a natural mixed flora of Saccharomyces cerevisiae with lactic acid bacteria including Lactobacillus casei and Leuconostoc mesenteroides, and species composition varies considerably with fermentation technique and medium. It contains 1% alcohol or less and is not pasteurised, so live LAB remain in the finished drink. Published in Microorganisms 8(8):1176; DOI 10.3390/microorganisms8081176. Underpins the grain-wild-backslop archetype.",
+      "doesNotSupport": "A specific back-slopping protocol or inoculation quantity, and no claim about non-European folk grain ferments grouped under the same archetype.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "grain-wild-backslop",
+        "grain-wild-backslop"
       ]
     },
     {
@@ -2641,31 +2784,6 @@
       "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
       "citations": 1,
       "numericCitations": 0,
-      "usedIn": [
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "wine-cultured"
-      ]
-    },
-    {
-      "id": "awri-yeast-rehydration",
-      "url": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/",
-      "host": "www.awri.com.au",
-      "title": "Active Dry Wine Yeast (ADWY) rehydration",
-      "publisher": "The Australian Wine Research Institute (AWRI)",
-      "authors": null,
-      "year": 2024,
-      "kind": "research-institute",
-      "reliability": "primary",
-      "verification": "full-text",
-      "deepLink": true,
-      "supports": "The professional wine-yeast inoculation standard: an inoculum of 0.25 g/L (25 g/hL) of active dry wine yeast to achieve a minimum 5×10^6 viable cells/mL; rehydrate by sprinkling over 5-10 times its weight of 38-40 C water and standing 10-15 minutes; up to about twice the dose for highly clarified, high-Brix or high-SO2 musts. Underpins the wine-cultured fermentation archetype.",
-      "doesNotSupport": "Beer/cider/mead pitch rates, or any wild-ferment figure. It is the wine active-dry-yeast standard specifically.",
-      "accessed": "2026-08-02",
-      "note": "National wine research body; its winemaking-resources pages are authoritative professional guidance. Source of the 25 g/hL active-dry-wine-yeast inoculation standard.",
-      "citations": 1,
-      "numericCitations": 1,
       "usedIn": [
         "data/fermentation/archetypes.json"
       ],

@@ -451,8 +451,25 @@
       "saccharification": "none",
       "organisms": ["Saccharomyces cerevisiae (wine)"],
       "approach": "Grape and fruit brandies ferment as wine first (wine yeast, wine handling) and are then distilled; the fermentation archetype is the wine one, with distillation added.",
-      "specialHandling": ["Follow the wine-cultured approach; low-SO2 base wine for distillation."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "g active dry wine yeast per hectolitre of must",
+        "value": 25,
+        "rangeLow": 20,
+        "rangeHigh": 30,
+        "targetViableCellsPerMl": 5000000,
+        "rehydrateTempCLow": 38,
+        "rehydrateTempCHigh": 40,
+        "note": "The base is a wine, so the wine standard governs the fermentation: AWRI's 25 g/hL of active dry wine yeast to reach a minimum 5×10⁶ viable cells/mL, rehydrated in 5–10× the yeast weight of 38–40 °C water. What distinguishes this archetype is what happens after — the wine is distilled rather than bottled, and it is made as a distillation base rather than as a drinking wine.",
+        "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
+      },
+      "specialHandling": [
+        "Follow the wine-cultured approach — this is the wine model with a still on the end.",
+        "Base wines for distillation are conventionally made with minimal sulphite; treat that as practice rather than a sourced figure here.",
+        "A spontaneous base wine follows the wine-native succession instead."
+      ],
+      "comparison": "Same fermentation as wine-cultured; the difference is downstream, not in the ferment.",
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
     },
     {
       "id": "agave",
@@ -510,10 +527,23 @@
       "family": "spirit",
       "inoculation": "starter-culture",
       "saccharification": "none",
-      "organisms": ["kefir-type lactose-fermenting yeast + lactic acid bacteria"],
+      "organisms": [
+        "Lactic acid bacteria: Lactobacillus kefiranofaciens (tarag base), L. helveticus, Lactococcus lactis",
+        "Lactose-fermenting yeasts: Kluyveromyces marxianus, Saccharomyces cerevisiae"
+      ],
       "approach": "Central Asian milk liquor distils fermented mare's/cow's milk (airag/kumis): the lactose is fermented by a kefir-type yeast-and-bacteria culture, then distilled.",
-      "specialHandling": ["Back-slopped milk culture; lactose (not maltose/sucrose) is the sugar."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "fermented-milk base, then distilled; no pitch rate",
+        "note": "Kumar et al. (2025): arkhi is a distilled alcoholic beverage derived from fermented milk, with tarag — a firm Mongolian yoghurt made by fermenting boiled and cooled cow's or goat's milk with Lactobacillus kefiranofaciens, reaching pH 3.6–3.9 — as its base. The related airag is horse or camel milk agitated vigorously in leather sacks or wooden containers for one to two days on Lactobacillus helveticus, Lactococcus lactis and native yeasts, reaching 1–3% ethanol. Distillation concentrates that low-alcohol milk ferment; there is no pitch rate, the culture is carried over from a previous batch.",
+        "sourceUrl": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1693995/full"
+      },
+      "specialHandling": [
+        "Back-slopped milk culture; lactose (not maltose/sucrose) is the sugar.",
+        "The base ferment is weak (1–3% ABV), so distillation is what makes it a spirit at all.",
+        "Acidity is high going into the still — the tarag base sits at pH 3.6–3.9."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1693995/full"
     },
     {
       "id": "regional-traditional-spirit",
@@ -523,7 +553,11 @@
       "saccharification": "none",
       "organisms": ["varies by tradition (wild or local starter)"],
       "approach": "Feni, palm distillates and other regional spirits ferment on local wild flora or a regional starter before distillation; handled per style rather than one rule.",
-      "specialHandling": ["Map per style as primary sources are secured."],
+      "specialHandling": [
+        "Map per style as primary sources are secured.",
+        "This is deliberately a catch-all, not a technique: it groups unrelated traditions (Goan feni, Southeast Asian palm distillates, Korean regional liquors) that share only the fact of being distilled.",
+        "It stays marked pending on purpose — no single source can honestly describe all of them, and the right unit of sourcing is the individual style. Where a tradition is well documented it gets its own archetype instead."
+      ],
       "researchStatus": "pending"
     },
 
@@ -545,10 +579,25 @@
       "family": "traditional",
       "inoculation": "starter-culture",
       "saccharification": "none",
-      "organisms": ["symbiotic lactic acid bacteria + lactose-fermenting yeast (kefir-type)"],
+      "organisms": [
+        "Lactic acid bacteria: Lactobacillus helveticus (dominant), Lactococcus lactis, Leuconostoc mesenteroides",
+        "Lactose-fermenting yeasts: Kluyveromyces marxianus, Saccharomyces cerevisiae"
+      ],
       "approach": "Mildly alcoholic fermented milks are back-slopped from a living culture of lactic bacteria and yeast that ferment lactose — a starter culture, not a pitched pure strain.",
-      "specialHandling": ["Back-slopping maintains the culture; simultaneous souring and light alcohol."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "back-slopped mixed LAB + yeast ferment; % ethanol",
+        "rangeLow": 1,
+        "rangeHigh": 3,
+        "note": "Martuzzi et al. (2024): mare-milk fermentation is a bacteria–yeast interaction — LAB acidify the milk while the yeasts modify titratable acidity — and is started by back-slopping, inoculating fresh milk with a small quantity of already-fermented milk as the natural starter. Koumiss generally contains about 2% alcohol, 0.5–1.5% lactic acid, 2–4% sugar and 2% fat; Russian classification runs weak (0.7–1% ethanol), normal (1–1.75%) and strong (1.75–2.5%). Kumar et al. (2025) describe airag as horse or camel milk agitated vigorously in leather sacks or wooden containers for one to two days, giving a slightly effervescent drink at 1–3% ethanol.",
+        "sourceUrl": "https://www.mdpi.com/2304-8158/13/3/493"
+      },
+      "specialHandling": [
+        "Back-slopping maintains the culture; simultaneous souring and light alcohol.",
+        "The sugar is lactose, so the yeast has to be a lactose fermenter — Kluyveromyces marxianus, not a brewing strain.",
+        "Agitation is part of the method: vigorous stirring in a leather sack or wooden vessel aerates the milk and drives the ferment."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2304-8158/13/3/493"
     },
     {
       "id": "scoby-symbiotic",
@@ -556,10 +605,25 @@
       "family": "traditional",
       "inoculation": "starter-culture",
       "saccharification": "none",
-      "organisms": ["symbiotic culture of acetic acid bacteria and yeast (SCOBY)"],
+      "organisms": [
+        "Acetic acid bacteria: Acetobacter aceti, Komagataeibacter xylinum, Gluconobacter oxydans, Acetobacter pasteurianus",
+        "Yeasts: Brettanomyces/Dekkera, Zygosaccharomyces, Saccharomyces, Schizosaccharomyces pombe"
+      ],
       "approach": "Kombucha ferments sweetened tea with a SCOBY — a symbiotic pellicle of acetic-acid bacteria and yeast added from a previous batch (with starter liquid), not a measured yeast pitch.",
-      "specialHandling": ["Low alcohol; the bacteria oxidise ethanol to acid, giving the sour profile."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "back-slopped SCOBY plus starter liquid; days",
+        "rangeLow": 6,
+        "rangeHigh": 14,
+        "note": "Ojo & de Smidt (2023): the SCOBY is a metabolically active symbiotic community of bacteria and yeast that builds a jelly-like cellulose pellicle (zooglea biofilm) at the liquid–air interface. A representative protocol dissolves 50 g sucrose in 1 L boiling water, steeps tea for 5 minutes, cools to 20 °C, then inoculates with 24 g of SCOBY plus 0.2 L of previously fermented kombucha — the starter liquid lowers pH to shut out unwanted microbes. Optimal fermentation runs 6–14 days. The symbiosis is a loop: yeast ethanol lets the bacteria make acetic acid, and that acetic acid stimulates the yeast to make more ethanol.",
+        "sourceUrl": "https://www.mdpi.com/2311-5637/9/5/472"
+      },
+      "specialHandling": [
+        "Low alcohol; the bacteria oxidise ethanol to acid, giving the sour profile.",
+        "The back-slopped starter liquid matters as much as the pellicle — it acidifies the tea immediately and keeps contaminants out.",
+        "Composition varies with substrate, origin, climate and production conditions, so no two SCOBYs are the same culture."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2311-5637/9/5/472"
     },
     {
       "id": "grain-wild-backslop",
@@ -567,10 +631,25 @@
       "family": "traditional",
       "inoculation": "spontaneous",
       "saccharification": "malt-enzyme",
-      "organisms": ["wild yeast and lactic acid bacteria"],
+      "organisms": [
+        "Yeast: Saccharomyces cerevisiae",
+        "Lactic acid bacteria: Lactobacillus casei, Lacticaseibacillus paracasei, Leuconostoc mesenteroides",
+        "Acetic acid bacteria: Acetobacter pasteurianus (bread kvass)"
+      ],
       "approach": "Kvass, tesgüino and other folk grain ferments run on wild flora, often back-slopped, and are drunk young and lightly alcoholic. Handled per tradition.",
-      "specialHandling": ["Back-slopping; short, low-alcohol ferments."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "combined lactic and alcoholic fermentation; % ethanol",
+        "rangeHigh": 1,
+        "note": "Ashaolu & Reale (2020): kvass is made from fermented barley and rye malt, rye flour and stale rye bread, mainly in Russia, Poland and the Baltic states. It is a combined lactic and alcoholic fermentation on a natural mixed flora of Saccharomyces cerevisiae with lactic acid bacteria such as Lactobacillus casei and Leuconostoc mesenteroides — no pure culture is pitched, and species composition varies widely with technique and medium. It contains 1% alcohol or less, and because it is not pasteurised the live LAB remain in the finished drink.",
+        "sourceUrl": "https://www.mdpi.com/2076-2607/8/8/1176"
+      },
+      "specialHandling": [
+        "Back-slopping; short, low-alcohol ferments.",
+        "Lactic and alcoholic fermentation run together — the sourness is not a fault, it is half the process.",
+        "Species composition is genuinely variable between makers; this archetype describes a practice, not a fixed culture."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2076-2607/8/8/1176"
     },
     {
       "id": "none-improvised",

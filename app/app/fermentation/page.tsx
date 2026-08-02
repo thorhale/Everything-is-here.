@@ -144,8 +144,16 @@ export default async function FermentationPage() {
         Every numeric figure here is cited to world-class professional documentation — research
         institutes, industry bodies, peer-reviewed literature, manufacturer handbooks. Where that
         source has not yet been secured, the approach is described and the figure is marked{" "}
-        <em>pending</em> rather than guessed. {sourced} of {archetypes.length} archetypes are sourced
-        so far; the rest are mapped and in progress.
+        <em>pending</em> rather than guessed. {sourced} of {archetypes.length} archetypes are
+        sourced.
+        {archetypes.length - sourced > 0 && (
+          <>
+            {" "}
+            The {archetypes.length - sourced === 1 ? "one that is not" : "ones that are not"} stay
+            marked pending deliberately: they are catch-alls spanning unrelated traditions, where the
+            honest unit of sourcing is the individual style rather than the group.
+          </>
+        )}
       </p>
 
       {byFamily.map((g) => (
