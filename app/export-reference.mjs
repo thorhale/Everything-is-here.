@@ -57,6 +57,10 @@ const OWN_GUIDELINE_SYSTEMS = new Set([
   // reporting, so it travels like the other traditional editions. It was
   // missing here purely by oversight.
   "NORTHAM",
+  // WINETRAD (low-intervention and vessel wine traditions) is likewise our own,
+  // from UNESCO's heritage register, the Vin Methode Nature charter and the
+  // OIV code.
+  "WINETRAD",
 ]);
 
 // The fermentation archetypes — how yeast is handled for each family of drink,

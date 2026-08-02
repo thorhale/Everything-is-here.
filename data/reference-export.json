@@ -19,8 +19,8 @@
   "hops": 99,
   "waterProfiles": 44,
   "additives": 72,
-  "legalStandardEditions": 15,
-  "legalStandardEntries": 179,
+  "legalStandardEditions": 16,
+  "legalStandardEntries": 183,
   "fermentationArchetypes": 32,
   "fermentationArchetypesSourced": 31
  },
@@ -24836,6 +24836,144 @@
      ],
      "beverage": "spirit",
      "archetype": "regional-traditional-spirit"
+    }
+   ]
+  },
+  {
+   "system": "WINETRAD",
+   "year": 2024,
+   "title": "Wine: Low-Intervention & Vessel Traditions",
+   "sourceType": "traditional",
+   "sourceUrl": "https://ich.unesco.org/en/RL/ancient-georgian-traditional-qvevri-wine-making-method-00870",
+   "attribution": "Wine made with as little technology as possible: fermented in buried clay rather than steel, on the yeast that came in on the grapes, with nothing added and nothing stripped out. These are methods that predate oenology and, in the natural-wine case, ones deliberately written to exclude it. Sourced to UNESCO's Intangible Cultural Heritage register, the Vin Méthode Nature charter lodged with the French fraud-control authority, and the OIV's international code. Only what those documents state is recorded here — none of them publishes gravity or ABV targets, so none is asserted. Other clay-vessel traditions (Portuguese vinho de talha, Spanish tinaja) are deliberately absent: their official specifications could not be retrieved, and describing their rules from wine-magazine coverage would not meet this archive's sourcing standard.",
+   "categories": [
+    {
+     "code": "WT1",
+     "name": "Buried Clay & Skin-Fermented Wines",
+     "beverage": "wine",
+     "archetype": "wine-native",
+     "styles": [
+      {
+       "code": "WT1A",
+       "name": "Qvevri Wine (Georgia)",
+       "sourceUrl": "https://ich.unesco.org/en/RL/ancient-georgian-traditional-qvevri-wine-making-method-00870",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": null,
+       "abvMax": null,
+       "impression": "Wine fermented and aged in an egg-shaped earthenware vessel buried to its neck in the ground — the oldest continuously practised winemaking method still in commercial use, and the reference point for every modern amphora wine.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "The qvevri is sealed and buried so the wine ferments underground for five to six months. Burial is temperature control without machinery: the earth holds the vessel steady through fermentation. No gravity or ABV figures are given here because UNESCO publishes none — it documents a living practice, not a product specification.",
+       "history": "Inscribed in 2013 (8.COM) on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Knowledge of both qvevri manufacture and qvevri winemaking is passed down within families and between neighbours and friends, with children learning by watching the communal harvest. Wine is integral to Georgian secular and religious life.",
+       "ingredients": "Grapes — and specifically not just the juice. UNESCO records that after pressing, the juice, grape skins, stalks and pips all go into the qvevri together.",
+       "comparison": "The direct ancestor of modern skin-contact and amphora wine. Where a contemporary winery buys a terracotta vessel as a stylistic choice, here it is the whole technology.",
+       "examples": null,
+       "tags": "georgia, qvevri, kvevri, amphora, buried, skin-contact, unesco, intangible-heritage, low-intervention"
+      },
+      {
+       "code": "WT1B",
+       "name": "Skin-Contact (\"Orange\") White Wine",
+       "sourceUrl": "https://ich.unesco.org/en/RL/ancient-georgian-traditional-qvevri-wine-making-method-00870",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": null,
+       "abvMax": null,
+       "impression": "White grapes fermented on their skins like a red — giving tannin, grip and an amber-to-orange colour that white wine is not supposed to have.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Carries no separate numeric targets. Skin contact is a technique that spans many appellations and legal categories rather than a defined style with published specifications, and the length of contact — days to months — is the winemaker's choice, not a regulated figure.",
+       "history": "Not an invention of the modern natural-wine movement but the default before pressing-off became standard: the Georgian qvevri method, which UNESCO documents as fermenting juice together with skins, stalks and pips, is the same technique applied to white grapes.",
+       "ingredients": "White grapes fermented in contact with their own skins, and often stalks and pips.",
+       "comparison": "Made like a red wine from white grapes; the tannin comes from skin and pip contact, which is exactly what conventional white winemaking is designed to avoid.",
+       "examples": null,
+       "tags": "orange-wine, skin-contact, amber, tannic-white, low-intervention, qvevri-descended"
+      }
+     ]
+    },
+    {
+     "code": "WT2",
+     "name": "Minimal-Intervention & Natural Wine",
+     "beverage": "wine",
+     "archetype": "wine-native",
+     "styles": [
+      {
+       "code": "WT2A",
+       "name": "Vin Méthode Nature (France)",
+       "sourceUrl": "https://vinmethodenature.org/wp-content/uploads/VMN-Charter-of-Committment.pdf",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": null,
+       "abvMax": null,
+       "impression": "France's defined natural-wine label — the rare case where 'natural wine' means something checkable rather than a marketing adjective, because the rules are written down and lodged with the fraud-control authority.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "The charter is twelve numbered commitments, and the interesting ones are prohibitions: no inoculation of yeast or bacteria, no additives or processing aids, no voluntary modification of the structure of the grapes, and no interventionist physical techniques — reverse osmosis, filtration, thermovinification and centrifugation are named. A pied de cuve is the permitted way to start a ferment. Sulphites are the single exception, allowed only in small declared amounts in the finished wine and measured by the Frantz Paul method, with two logos distinguishing wines with no added sulphites from wines with an addition. The exact ceilings are deliberately not restated as a figure here: the published PDF does not extract its numerals reliably and the label's web page did not agree with it closely enough to assert one. No gravity or ABV is specified anywhere — the charter governs inputs and process, not the finished analysis.",
+       "history": "The Syndicat de défense des vins naturels lodged the charter with the DGCCRF, France's competition and fraud-control directorate, which validated it in 2020 — the first official French recognition of natural wine as a category. The text carried here is the English Charter of Commitment, updated January 2022.",
+       "ingredients": "100% certified organic grapes (Nature & Progrès, or in the third year of conversion), hand-harvested. Inoculation of yeast OR bacteria is prohibited outright — the charter does not merely prefer indigenous yeast, it forbids adding any culture. No oenological additives or processing aids.",
+       "comparison": "Organic and biodynamic certification cover the vineyard; this covers the cellar, which is the part they leave open.",
+       "examples": null,
+       "tags": "france, natural-wine, vin-methode-nature, no-inoculation, no-additives, low-sulphite, dgccrf, low-intervention"
+      }
+     ]
+    },
+    {
+     "code": "WT3",
+     "name": "Ancestral-Method Sparkling",
+     "beverage": "wine",
+     "archetype": "wine-cultured",
+     "styles": [
+      {
+       "code": "WT3A",
+       "name": "Pét-Nat / Méthode Ancestrale",
+       "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-i-definitions/special-wines",
+       "ogMin": null,
+       "ogMax": null,
+       "fgMin": null,
+       "fgMax": null,
+       "ibuMin": null,
+       "ibuMax": null,
+       "srmMin": null,
+       "srmMax": null,
+       "abvMin": null,
+       "abvMax": null,
+       "impression": "Sparkling wine made by bottling the wine before its first fermentation has finished, so the bubbles come from the original ferment completing under a crown cap — no tirage liqueur, no second fermentation, usually no disgorging.",
+       "aroma": null,
+       "appearance": null,
+       "flavor": null,
+       "mouthfeel": null,
+       "comments": "Notably, this method sits outside the international standard. The OIV's sparkling-wine definitions recognise two production routes — secondary fermentation in bottle and secondary fermentation in closed tank — and define no ancestral or single-fermentation method among them. OIV does set the general threshold: a sparkling wine's excess carbon-dioxide pressure must be at least 3.5 bar at 20 °C, from CO2 of exclusively endogenous origin. That figure is a category definition, not a target for this style.",
+       "history": "The older method, predating the traditional/Champagne route of deliberately restarting a finished wine. Its modern revival travels under the abbreviation pét-nat, for pétillant naturel.",
+       "ingredients": "Grapes and nothing else — the point of the method is that no sugar or yeast is added to make it sparkle.",
+       "comparison": "The traditional method adds sugar and yeast to a finished base wine to start a second fermentation; here there is only ever one fermentation, interrupted by bottling.",
+       "examples": null,
+       "tags": "pet-nat, methode-ancestrale, petillant-naturel, single-fermentation, low-intervention, oiv"
+      }
+     ]
     }
    ]
   }
