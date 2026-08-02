@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 253,
+    "distinctSources": 256,
     "backgroundDocuments": 7,
-    "citations": 702,
-    "numericCitations": 615,
+    "citations": 714,
+    "numericCitations": 623,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 25,
+    "fullTextVerified": 28,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 546,
+      "primary": 558,
       "secondary": 150,
       "tertiary": 6
     }
@@ -286,6 +286,42 @@
         "fining-pvpp",
         "fining-irish-moss",
         "fining-activated-carbon"
+      ]
+    },
+    {
+      "id": "uga-c717-winemaking-at-home",
+      "url": "https://fieldreport.caes.uga.edu/publications/C717/",
+      "host": "fieldreport.caes.uga.edu",
+      "title": "Winemaking at Home (Circular 717)",
+      "publisher": "University of Georgia Cooperative Extension (CAES Field Report)",
+      "authors": [
+        "William C. Hurst"
+      ],
+      "year": 2013,
+      "kind": "extension-service",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The land-grant extension method for American home country wine. Covers muscadine grapes (Hunt, Cowart, Scuppernong and Carlos cultivars) plus blackberry, blueberry, raspberry, strawberry, apple, crabapple, peach and plum. The sequence is: crush the fruit to release juice, sterilise with sulfites, adjust acid, tannin and sugar, add activated yeast, run a primary fermentation of 3-7 days with pulp contact for reds, strain, ferment out in sealed secondary vessels, and rack periodically off the sediment. It recommends a true wine yeast such as Montrachet No. 522 and accepts baker's yeast as an alternative. Storage is at 60-70 F and fermentation takes roughly one month. Sulfite dosing is 4 Campden tablets per batch for sterilisation, and one-eighth teaspoon of potassium metabisulfite or one Campden tablet per three gallons at racking and bottling. A must brought to 22% sugar targets approximately 11% alcohol by volume, which is the basis for the 10-12% ABV band on the country-wine entries.",
+      "doesNotSupport": "Dandelion, elderberry, rhubarb or vegetable wines — the bulletin does not cover them, so those entries carry no numeric targets — nor Concord/labrusca-specific figures beyond the shared method.",
+      "accessed": "2026-08-02",
+      "note": "Land-grant cooperative extension publications. Source of Circular 717, the home-winemaking bulletin underpinning the North American country-wine entries.",
+      "citations": 11,
+      "numericCitations": 8,
+      "usedIn": [
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "Blackberry Wine",
+        "Blueberry Wine",
+        "Raspberry Wine",
+        "Strawberry Wine",
+        "Peach Wine",
+        "Plum Wine",
+        "Apple & Crabapple Wine",
+        "Muscadine Wine",
+        "Concord & Fox Grape Wine",
+        "Garden & Root Wines"
       ]
     },
     {
@@ -762,33 +798,6 @@
         "wine-cultured",
         "spirit-from-wine",
         "spirit-from-wine"
-      ]
-    },
-    {
-      "id": "cdc-mmwr-2013-pruno-botulism",
-      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
-      "host": "www.cdc.gov",
-      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
-      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
-      "authors": null,
-      "year": 2013,
-      "kind": "government-report",
-      "reliability": "primary",
-      "verification": "metadata-only",
-      "deepLink": true,
-      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
-      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
-      "accessed": "2026-07-30",
-      "note": null,
-      "citations": 3,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/fermentation/archetypes.json",
-        "data/guidelines/northamerica-trad-2023.json"
-      ],
-      "exampleRecords": [
-        "none-improvised",
-        "Pruno (Prison Wine)"
       ]
     },
     {
@@ -1504,6 +1513,33 @@
       "exampleRecords": [
         "grain-wild-backslop",
         "grain-wild-backslop"
+      ]
+    },
+    {
+      "id": "cdc-mmwr-2013-pruno-botulism",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
+      "host": "www.cdc.gov",
+      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
+      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
+      "authors": null,
+      "year": 2013,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
+      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json",
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "none-improvised",
+        "Pruno (Prison Wine)"
       ]
     },
     {
@@ -2953,7 +2989,7 @@
       "kind": "guideline-publisher",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
@@ -3539,6 +3575,60 @@
         "data/guidelines/maltose-falcons-2017.json"
       ],
       "exampleRecords": []
+    },
+    {
+      "id": "ncsu-muscadine-home-garden",
+      "url": "https://content.ces.ncsu.edu/muscadine-grapes-in-the-home-garden",
+      "host": "content.ces.ncsu.edu",
+      "title": "Muscadine Grapes in the Home Garden",
+      "publisher": "NC State Extension",
+      "authors": [
+        "Barclay Poling",
+        "Connie Fisk",
+        "Mark Hoffmann"
+      ],
+      "year": 2006,
+      "kind": "extension-service",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Muscadine grape (Vitis rotundifolia) history and nomenclature. Native to the southeastern United States and cultivated for more than 400 years; Native Americans dried the grapes long before European settlement, and Spanish settlements in Florida were producing muscadine wine as early as 1565. The first recognised cultivar was found in North Carolina before 1760, known first as the Big White Grape and later named Scuppernong; the publication states explicitly that the name became generic for all bronze muscadines and that this is incorrect nomenclature, since Scuppernong is only one of many cultivars. Muscadines have a high tolerance of the pests and diseases that make bunch-grape production nearly impossible in eastern North Carolina, and are popular with native Southerners for wine, pies and jellies. Originally published 30 June 2006, reviewed and revised 11 August 2025.",
+      "doesNotSupport": "Any winemaking figures — it is a home-garden growing guide; the country-wine method and its targets are cited to UGA Circular 717.",
+      "accessed": "2026-08-02",
+      "note": "Land-grant cooperative extension publications; cited for muscadine grape history, cultivars and the scuppernong nomenclature correction.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "Scuppernong (Bronze Muscadine) Wine"
+      ]
+    },
+    {
+      "id": "illinois-dandelion",
+      "url": "https://extension.illinois.edu/blogs/good-growing/2017-04-11-dandelion-what-makes-weed-so-great",
+      "host": "extension.illinois.edu",
+      "title": "Dandelion: What makes this weed so great?",
+      "publisher": "University of Illinois Extension",
+      "authors": null,
+      "year": 2017,
+      "kind": "extension-service",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "That dandelions are not native to North America: Europeans brought them over in the 1600s deliberately as an edible and medicinal crop rather than as a weed, and the plant has been in continuous use as food and medicine for at least a thousand years, with winemaking among its uses. Context for the dandelion-wine entry.",
+      "doesNotSupport": "Any recipe, gravity or ABV for dandelion wine — none is published, which is why that entry asserts no numbers.",
+      "accessed": "2026-08-02",
+      "note": "Land-grant cooperative extension outreach; cited for the introduction history of dandelion to North America.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "Dandelion Wine"
+      ]
     },
     {
       "id": null,

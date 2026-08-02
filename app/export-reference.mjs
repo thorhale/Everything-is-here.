@@ -52,6 +52,11 @@ function readYeasts(dir) {
 const OWN_GUIDELINE_SYSTEMS = new Set([
   "SPIRITS", "FERMENTED", "BEERLAW", "SAKE", "CIDERLAW",
   "CHINA", "KOREA", "INDIA", "CENTRALASIA", "AFRICA", "LATAM", "SEASIA", "EUROTRAD", "CULTURED",
+  // NORTHAM (North American home, country and improvised ferments) is our own
+  // compilation from cooperative-extension bulletins and public-health
+  // reporting, so it travels like the other traditional editions. It was
+  // missing here purely by oversight.
+  "NORTHAM",
 ]);
 
 // The fermentation archetypes — how yeast is handled for each family of drink,

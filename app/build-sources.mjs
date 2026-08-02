@@ -91,6 +91,17 @@ function hostOf(u) {
 // A citation is a deep link if it names a document or record rather than an
 // organisation: two or more path segments, or a query string, or a file
 // extension. "https://briess.com/" is not provenance.
+//
+// The single-segment case needs care. A bare section name ("/products",
+// "/about") is still navigation, but slug-based publication sites put the whole
+// document at the root — NC State Extension serves a bulletin at
+// content.ces.ncsu.edu/muscadine-grapes-in-the-home-garden. Requiring two
+// segments would mark that shallow and force a real, fully-read document to
+// claim weaker verification than it deserves. So a single segment also counts
+// when it looks like a title slug: multi-word, hyphenated, and long enough that
+// it cannot be a section label.
+const TITLE_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+){2,}$/i;
+
 function isDeepLink(u) {
   let p;
   try { p = new globalThis.URL(u); } catch { return false; }
@@ -98,6 +109,7 @@ function isDeepLink(u) {
   if (p.search) return true;
   if (segs.length >= 2) return true;
   if (segs.length === 1 && /\.(pdf|htm|html|aspx|php|json|csv|xlsx?)$/i.test(segs[0])) return true;
+  if (segs.length === 1 && segs[0].length >= 20 && TITLE_SLUG.test(segs[0])) return true;
   return false;
 }
 
