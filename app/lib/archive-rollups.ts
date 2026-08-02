@@ -28,12 +28,32 @@ export interface ArchiveRollups {
   styleTotals: Record<string, number>;
   styles: Record<string, { f?: StyleRow[]; h?: StyleRow[]; y?: StyleRow[] }>;
   usedBy: Record<"hop" | "fermentable" | "yeast", Record<string, string[]>>;
+  nameStats: Record<"hop" | "fermentable" | "yeast", Record<string, NameStats>>;
+}
+
+/**
+ * Per-name aggregates for the ingredient detail pages. `uses` counts ingredient
+ * ROWS and `recipes` counts distinct recipes — they differ by up to 2.5x,
+ * because a recipe lists the same hop several times (bittering, flavour, aroma,
+ * dry hop). Print `recipes` when the label says "recipes".
+ */
+export interface NameStats {
+  uses: number;
+  recipes: number;
+  alpha?: number | null;
+  forms?: string | null;
+  attenuation?: number | null;
+  labs?: string | null;
+  ppg?: number | null;
+  color?: number | null;
+  maltsters?: string | null;
 }
 
 const EMPTY: ArchiveRollups = {
   generated: "", hopVarietals: [], yeastTypes: [], fermentables: [], maltsters: [],
   recipeCounts: { hop: {}, fermentable: {}, yeast: {} },
   styleTotals: {}, styles: {}, usedBy: { hop: {}, fermentable: {}, yeast: {} },
+  nameStats: { hop: {}, fermentable: {}, yeast: {} },
 };
 
 let cached: ArchiveRollups | null = null;
@@ -78,4 +98,13 @@ export async function recipeIdsUsing(
 ): Promise<string[]> {
   const r = await getRollups();
   return (r.usedBy[kind]?.[name] ?? []).slice(0, take);
+}
+
+/** Aggregates for one ingredient name, or null if the archive never used it. */
+export async function statsForName(
+  kind: "hop" | "fermentable" | "yeast",
+  name: string
+): Promise<NameStats | null> {
+  const r = await getRollups();
+  return r.nameStats[kind]?.[name] ?? null;
 }

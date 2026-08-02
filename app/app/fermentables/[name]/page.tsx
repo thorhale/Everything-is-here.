@@ -4,6 +4,7 @@
 export const revalidate = 3600;
 
 import Link from "next/link";
+import { statsForName } from "@/lib/archive-rollups";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
 import { recipesUsingFermentable } from "@/lib/ingredients";
@@ -17,27 +18,24 @@ export default async function FermentableDetailPage({ params }: Props) {
   const { name: raw } = await params;
   const name = decodeURIComponent(raw);
 
-  const stats = await prisma.$queryRaw<
-    { uses: number; ppg: number | null; color: number | null; maltsters: string | null }[]
-  >`
-    SELECT count(*)::int AS uses,
-           round(avg("ppg")::numeric, 0)::float AS ppg,
-           round(avg("colorLovibond")::numeric, 0)::float AS color,
-           string_agg(DISTINCT "maltster", ', ')
-             FILTER (WHERE "maltster" IS NOT NULL AND "maltster" <> 'Any') AS maltsters
-    FROM "RecipeFermentable" WHERE "name" = ${name}`;
-
-  if (!stats[0] || stats[0].uses === 0) notFound();
+  // From the precomputed rollups, not from a junction table — those tables
+  // have left Postgres (docs/storage-efficiency.md, tier 3).
+  const stats = await statsForName("fermentable", name);
+  if (!stats) notFound();
   const recipes = await recipesUsingFermentable(name);
 
   return (
     <div>
       <h1>{name}</h1>
       <p style={{ color: "var(--wh-text-light)" }}>
-        Used in {stats[0].uses.toLocaleString()} archived recipes
-        {stats[0].ppg != null && <> · typical PPG {stats[0].ppg}</>}
-        {stats[0].color != null && <> · typical color {stats[0].color} °L</>}
-        {stats[0].maltsters && <> · maltsters: {stats[0].maltsters}</>}
+        Used in {stats.recipes.toLocaleString()} archived recipe
+        {stats.recipes === 1 ? "" : "s"}
+        {/* `recipes` not `uses`: uses counts ingredient ROWS, and a recipe lists
+            the same hop several times (bittering, flavour, aroma, dry hop), so
+            the row count overstated this by up to 2.5x. */}
+        {stats.ppg != null && <> · typical PPG {stats.ppg}</>}
+        {stats.color != null && <> · colour {stats.color} °L</>}
+        {stats.maltsters && <> · maltsters: {stats.maltsters}</>}
       </p>
       <h3>Recent recipes using {name}</h3>
       <RecipeList recipes={recipes} />
