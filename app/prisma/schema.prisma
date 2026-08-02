@@ -73,10 +73,11 @@ model Recipe {
 
   scrapedAt         DateTime @default(now())
 
-  fermentables      RecipeFermentable[]
-  hops              RecipeHop[]
-  yeasts            RecipeYeast[]
-  miscs             RecipeMisc[]
+  // Ingredients are NOT rows here any more. They were 1,092,461 records across
+  // three junction tables costing 270 MB, of which only ~98 MB was actual data;
+  // the rest was per-row overhead and indexes. They now live as gzipped static
+  // shards read by lib/recipe-ingredients.ts, with cross-recipe aggregates
+  // precomputed into lib/archive-rollups.ts. See docs/storage-efficiency.md.
   comments          RecipeComment[]
   takedownRequests  TakedownRequest[]
   pitchingProtocol  RecipePitchingProtocol?
@@ -88,71 +89,8 @@ model Recipe {
   @@index([isHidden, scrapedAt])
 }
 
-model RecipeFermentable {
-  // Identity is (recipeId, sortOrder). The cuid PK went first — a 37 MB btree
-  // nothing ever queried by, since every access is by recipeId — and the cuid
-  // column itself followed once the only thing still reading it, a React list
-  // key, moved to sortOrder. That column was 13 MB of pure overhead.
-  // See docs/storage-efficiency.md.
-  recipeId      String
-  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 
-  name          String
-  amountDisplay String?
-  amountLb      Float?  // normalized to lb regardless of source display unit
-  percent       String?
-  maltster      String?
-  use           String?
-  ppg           Float?
-  colorLovibond Float?
-  // BrewToad's own ingredient id. Was a full Wayback URL; that string was
-  // reconstructible from this integer plus the parent recipe's
-  // sourceTimestamp, so it is stored as an int and rebuilt by
-  // lib/brewtoad-ref.ts. See docs/storage-efficiency.md.
-  refId         Int?
-  sortOrder     Int     @default(0)
 
-  @@id([recipeId, sortOrder])
-}
-
-model RecipeHop {
-  // See RecipeFermentable: the cuid PK shed a 33 MB unused index, and the
-  // leftover cuid column a further 11 MB. Identity is (recipeId, sortOrder),
-  // which is also the recipeId lookup index.
-  recipeId      String
-  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name          String
-  amountDisplay String?
-  amountOz      Float?  // normalized to oz regardless of source display unit
-  timeDisplay   String?
-  timeMinutes   Float?
-  use           String?
-  form          String?
-  alphaAcidPct  Float?
-  refId         Int?    // see RecipeFermentable.refId
-  sortOrder     Int     @default(0)
-
-  @@id([recipeId, sortOrder])
-}
-
-model RecipeYeast {
-  // Deliberately keeps its cuid primary key. Unlike the fermentable/hop
-  // junctions it has no sortOrder column and no naturally-unique combination
-  // (a recipe can list the same yeast twice), so re-keying it would mean a
-  // mass row-update to synthesise an ordinal — heap bloat we won't risk near
-  // the storage cap for the sake of only ~9 MB.
-  id             String  @id @default(cuid())
-  recipeId       String
-  recipe         Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name           String
-  labProduct     String?
-  attenuationPct Float?
-  refId          Int?    // see RecipeFermentable.refId
-
-  @@index([recipeId])
-}
 
 // A recipe's chosen yeast pitching + propagation protocol, made a permanent
 // part of the recipe. One-to-one with Recipe. Stores the raw calculator
@@ -188,18 +126,6 @@ model RecipePitchingProtocol {
   updatedBy        String?
 }
 
-model RecipeMisc {
-  id       String  @id @default(cuid())
-  recipeId String
-  recipe   Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name     String
-  amount   String?
-  use      String?
-  time     String?
-
-  @@index([recipeId])
-}
 
 model RecipeComment {
   id                  String  @id @default(cuid())

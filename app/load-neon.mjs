@@ -72,16 +72,13 @@ async function run() {
     const rvals = batch.map(r=>`(${lit(r.id)},${lit(r.slug)},${lit(r.title)},${lit(r.style)},${lit(r.og)},${lit(r.fg)},${lit(r.ibu)},${lit(r.srm)},${lit(r.abv)},${lit(r.ibuFormula)},${lit(r.batch)},${lit(r.boil)},${lit(r.eff)},${lit(r.notes)},${lit(r.brewer?brewerId.get(r.brewer):null)},${lit(r.sourceUrl)},${lit(r.sourceTs)},${lit(r.parseSource)},${lit(r.conf)})`);
     await sql.query(`INSERT INTO "Recipe" ("id","slug","title","styleName","og","fg","ibu","srm","abv","ibuFormula","batchSizeDisplay","boilTimeDisplay","efficiencyDisplay","notesText","brewerId","sourceUrl","sourceTimestamp","parseSource","parseConfidence") VALUES ${rvals.join(",")} ON CONFLICT ("slug") DO NOTHING`);
     // children
-    const ferm=[], hop=[], yst=[], com=[];
+    // Ingredients are not loaded into Postgres any more — they ship as gzipped
+    // static shards (export-recipe-ingredients.mjs --from-files). Only recipes,
+    // brewers and comments are rows now. See docs/storage-efficiency.md.
+    const com=[];
     for (const r of batch) {
-      r.ferms.forEach((f,i)=>ferm.push(`(${lit(r.id)},${lit(f.name)},${lit(f.amount_display)},${lit(wlb(f.amount_display))},${lit(f.percent)},${lit(f.maltster)},${lit(f.use)},${lit(num(f.ppg))},${lit(num(f.color_lovibond))},${lit(refId(f.ref_url))},${i})`));
-      r.hops.forEach((h,i)=>hop.push(`(${lit(r.id)},${lit(h.name)},${lit(h.amount_display)},${lit(woz(h.amount_display))},${lit(h.time_display)},${lit(num(h.time_display))},${lit(h.use)},${lit(h.form)},${lit(num(h.alpha_acid))},${lit(refId(h.ref_url))},${i})`));
-      r.ysts.forEach((y)=>yst.push(`(${lit("y"+randomUUID().replace(/-/g,""))},${lit(r.id)},${lit(y.name)},${lit(y.lab_product)},${lit(num(y.attenuation))},${lit(refId(y.ref_url))})`));
       r.coms.forEach((c)=>com.push(`(${lit("c"+randomUUID().replace(/-/g,""))},${lit(r.id)},${lit(c.comment_id)},${lit(c.commenter)},${lit(c.commenter_profile_url)},${lit(c.timestamp_display)},${lit(c.text)},${lit(c.parent_comment_id)})`));
     }
-    if (ferm.length) await sql.query(`INSERT INTO "RecipeFermentable" ("recipeId","name","amountDisplay","amountLb","percent","maltster","use","ppg","colorLovibond","refId","sortOrder") VALUES ${ferm.join(",")}`);
-    if (hop.length) await sql.query(`INSERT INTO "RecipeHop" ("recipeId","name","amountDisplay","amountOz","timeDisplay","timeMinutes","use","form","alphaAcidPct","refId","sortOrder") VALUES ${hop.join(",")}`);
-    if (yst.length) await sql.query(`INSERT INTO "RecipeYeast" ("id","recipeId","name","labProduct","attenuationPct","refId") VALUES ${yst.join(",")}`);
     if (com.length) await sql.query(`INSERT INTO "RecipeComment" ("id","recipeId","originalCommentId","commenter","commenterProfileUrl","timestampDisplay","text","parentCommentId") VALUES ${com.join(",")}`);
     loaded += batch.length;
     batch = [];
