@@ -108,7 +108,11 @@ model RecipeFermentable {
   use           String?
   ppg           Float?
   colorLovibond Float?
-  refUrl        String? // links to FermentableRef.externalId when resolvable
+  // BrewToad's own ingredient id. Was a full Wayback URL; that string was
+  // reconstructible from this integer plus the parent recipe's
+  // sourceTimestamp, so it is stored as an int and rebuilt by
+  // lib/brewtoad-ref.ts. See docs/storage-efficiency.md.
+  refId         Int?
   sortOrder     Int     @default(0)
 
   @@id([recipeId, sortOrder])
@@ -130,7 +134,7 @@ model RecipeHop {
   use           String?
   form          String?
   alphaAcidPct  Float?
-  refUrl        String?
+  refId         Int?    // see RecipeFermentable.refId
   sortOrder     Int     @default(0)
 
   @@id([recipeId, sortOrder])
@@ -149,7 +153,7 @@ model RecipeYeast {
   name           String
   labProduct     String?
   attenuationPct Float?
-  refUrl         String?
+  refId          Int?    // see RecipeFermentable.refId
 
   @@index([recipeId])
 }

@@ -50,7 +50,9 @@ page, so the realised figure should be a little better.
 | 2.7 MB | drop `RecipeFermentable.percent` (derived) | low |
 | ~10 MB | remaining dictionary columns (`use`, `form`, `maltster`, `timeDisplay`, yeast names) | low |
 
-### 1. `refUrl` → `refId` — 51.5 MB, and it loses nothing
+### 1. `refUrl` → `refId` — 51.5 MB, and it loses nothing — **IMPLEMENTED**
+
+Code is in place; the SQL has not been run (see "Running step 1" below).
 
 The single biggest win, and the safest, because the column is pure redundancy.
 
@@ -73,6 +75,36 @@ URL in the view layer from the parent recipe's timestamp plus the table's own
 path constant. Nothing is lost, and the reconstruction is exact.
 
 Do this one first.
+
+#### Running step 1
+
+`app/migrate-refid.mjs` does it, expand/contract so the app is never reading a
+column that does not exist:
+
+```
+cd app
+node --env-file=.neon.env migrate-refid.mjs expand     # add refId, backfill, verify
+#   ... deploy the app ...
+node --env-file=.neon.env migrate-refid.mjs contract   # drop refUrl, reclaim
+```
+
+`expand` only adds a column, so it is safe against the currently-live app. It
+refuses to continue if any non-null `refUrl` failed to parse, printing the
+offending values — so a production URL shape the sample did not show stops the
+migration rather than silently nulling data. `check` reports the current state
+of both columns without changing anything.
+
+Do not run `contract` before the deploy: the running app would be selecting a
+dropped column. Prisma tolerates the reverse (a column in the database it does
+not know about), which is what makes the expand phase safe.
+
+Two things are verified before this touches the database:
+
+- `lib/brewtoad-ref.test.ts` round-trips **every** `ref_url` in the parse
+  sample through parse → store int → rebuild, asserting byte-identical output.
+- The regex the migration hands to Postgres was checked against the tested
+  TypeScript parser across all 2,323 sample URLs: 100% agreement, zero
+  mismatches. The two code paths cannot disagree about what an id is.
 
 ### 2. Drop the orphaned cuid `id` columns — 23.9 MB
 
