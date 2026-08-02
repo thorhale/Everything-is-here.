@@ -35,19 +35,35 @@ export interface Source {
   exampleRecords: string[];
 }
 
+/**
+ * A curated document that no dataset cites. Same fields as a Source minus the
+ * usage counts, because there is no usage. These are kept and displayed on
+ * purpose: a source that was read and rejected, or a conflicting figure that
+ * was deliberately not merged, is part of the provenance record, and dropping
+ * it would quietly erase the reasoning. See `background` in build-sources.mjs.
+ */
+export type BackgroundDocument = Omit<
+  Source,
+  "note" | "citations" | "numericCitations" | "usedIn" | "exampleRecords"
+>;
+
 export interface SourceRegistry {
   reliabilityRules: Record<Reliability, string>;
   citationRules: Record<string, string>;
   totals: {
     distinctSources: number;
+    backgroundDocuments: number;
     citations: number;
     numericCitations: number;
     numericOnShallowLink: number;
     numericOnTertiary: number;
     fullTextVerified: number;
+    backgroundFullTextVerified: number;
     byReliability: Partial<Record<Reliability, number>>;
   };
   sources: Source[];
+  /** Absent in registries generated before background documents were tracked. */
+  background?: BackgroundDocument[];
 }
 
 export const getSourceRegistry = unstable_cache(
@@ -88,9 +104,15 @@ export const KIND_LABEL: Record<string, string> = {
   "club-guide": "Homebrew club guide",
   "trade-association": "Trade association",
   "extension-service": "University extension service",
+  "research-institute": "Research institute",
   "practitioner-tool": "Practitioner reference tool",
   "document-host": "Document host",
   encyclopedia: "Encyclopedia",
+  "trade-publication": "Brewing trade publication",
+  "enthusiast-blog": "Enthusiast blog",
+  "author-site": "Author's own site",
+  book: "Book",
+  "book-publisher": "Book publisher",
 };
 
 export function kindLabel(kind: string): string {
@@ -98,7 +120,7 @@ export function kindLabel(kind: string): string {
 }
 
 /** Cite a source the way a bibliography would, from whatever fields exist. */
-export function formatCitation(s: Source): string {
+export function formatCitation(s: Source | BackgroundDocument): string {
   const bits: string[] = [];
   if (s.authors?.length) {
     bits.push(s.authors.length > 3 ? `${s.authors[0]} et al.` : s.authors.join(", "));
@@ -129,4 +151,32 @@ export function weakNumericCitations(sources: Source[]): Source[] {
   return sources
     .filter((s) => s.numericCitations > 0 && !s.deepLink)
     .sort((a, b) => b.numericCitations - a.numericCitations);
+}
+
+/**
+ * Sources grouped by kind, heaviest-cited kind first. The reliability tier says
+ * how close a source is to the measurement; the kind says what it actually is,
+ * which is what someone scanning a 250-entry bibliography is really looking
+ * for. Within a kind, order by how much of the data leans on each source.
+ */
+export function groupByKind(sources: Source[]): {
+  kind: string;
+  label: string;
+  sources: Source[];
+  citations: number;
+}[] {
+  const byKind = new Map<string, Source[]>();
+  for (const s of sources) {
+    const k = s.kind ?? "other";
+    if (!byKind.has(k)) byKind.set(k, []);
+    byKind.get(k)!.push(s);
+  }
+  return [...byKind.entries()]
+    .map(([kind, list]) => ({
+      kind,
+      label: kindLabel(kind),
+      sources: list.sort((a, b) => b.citations - a.citations),
+      citations: list.reduce((n, s) => n + s.citations, 0),
+    }))
+    .sort((a, b) => b.citations - a.citations || a.label.localeCompare(b.label));
 }

@@ -71,6 +71,16 @@ export default async function DataDownloadPage() {
               <td className="nowrap">{c.legalStandardEntries}</td>
               <td className="hide-mobile">Our own summaries of beer purity law, sake classification, cider appellations and spirits standards of identity — {c.legalStandardEditions} editions</td>
             </tr>
+            <tr>
+              <td><Link href="/fermentation">Fermentation archetypes</Link></td>
+              <td className="nowrap">{c.fermentationArchetypes}</td>
+              <td className="hide-mobile">
+                How yeast is handled for every family of drink — cells/mL for beer, g/hL for wine
+                and cider, starter cultures for sake and baijiu, spontaneous or none for many
+                traditional drinks. {c.fermentationArchetypesSourced} of {c.fermentationArchetypes}{" "}
+                cited to professional documentation
+              </td>
+            </tr>
           </tbody>
         </table>
       )}

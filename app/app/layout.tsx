@@ -48,6 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <input type="text" name="q" placeholder="Search recipes..." aria-label="Search recipes" />
             <button type="submit">Search</button>
           </form>
+          {/* A plain link, deliberately: reading the session here would opt
+              every page out of static rendering. /account handles auth state. */}
+          <Link href="/account" className="wh-account-link">Account</Link>
         </header>
 
         {/* Site nav: the original's dropdown menu structure */}
@@ -57,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/recipes">Recipes</Link>
               <ul>
                 <li><Link href="/recipes">All Recipes</Link></li>
-                <li><Link href="/archive">Archive Insights</Link></li>
               </ul>
             </li>
             <li>
@@ -70,11 +72,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/ingredients">Styles &amp; Ingredients</Link>
               <ul>
                 <li><Link href="/ingredients">All Ingredients</Link></li>
-                <li><Link href="/styles">Styles</Link></li>
                 <li><Link href="/guidelines">Style Guidelines</Link></li>
                 <li><Link href="/fermentables/db">Fermentable Database</Link></li>
                 <li><Link href="/hops/db">Hop Database</Link></li>
                 <li><Link href="/yeasts/db">Yeast Database</Link></li>
+                <li><Link href="/fermentation">Fermentation &amp; Yeast Handling</Link></li>
                 <li><Link href="/additives">Additives</Link></li>
                 <li><Link href="/water">Water Profiles</Link></li>
                 <li><Link href="/sources">Sources &amp; Provenance</Link></li>
@@ -84,7 +86,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/build">Tools &amp; Calculators</Link>
               <ul>
                 <li><Link href="/build">Recipe Builder (all drinks)</Link></li>
-                <li><Link href="/calculator">Beer Recipe Calculator</Link></li>
                 <li><Link href="/tools">Brewer&apos;s Toolbox</Link></li>
                 <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
                 <li><Link href="/water/builder">Water / Salt Calculator</Link></li>
@@ -104,7 +105,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <li>Home</li>
               <li><Link href="/recipes">All Recipes</Link></li>
               <li><Link href="/brewers">Brewers</Link></li>
-              <li><Link href="/styles">Styles</Link></li>
             </ul>
           </div>
           <div className="footer-col">
@@ -124,7 +124,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ul>
               <li>Tools &amp; Calculators</li>
               <li><Link href="/build">Recipe Builder (all drinks)</Link></li>
-              <li><Link href="/calculator">Beer Recipe Calculator</Link></li>
               <li><Link href="/tools">Brewer&apos;s Toolbox</Link></li>
               <li><Link href="/pitching">Yeast Pitching Rate</Link></li>
               <li><Link href="/water/builder">Water / Salt Calculator</Link></li>
@@ -135,7 +134,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="footer-col">
             <ul>
               <li>Archive</li>
-              <li><Link href="/archive">Archive Insights</Link></li>
               <li><Link href="/data-download">Download the data</Link></li>
               <li><Link href="/takedown">Request removal</Link></li>
               <li>

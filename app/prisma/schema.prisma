@@ -73,10 +73,11 @@ model Recipe {
 
   scrapedAt         DateTime @default(now())
 
-  fermentables      RecipeFermentable[]
-  hops              RecipeHop[]
-  yeasts            RecipeYeast[]
-  miscs             RecipeMisc[]
+  // Ingredients are NOT rows here any more. They were 1,092,461 records across
+  // three junction tables costing 270 MB, of which only ~98 MB was actual data;
+  // the rest was per-row overhead and indexes. They now live as gzipped static
+  // shards read by lib/recipe-ingredients.ts, with cross-recipe aggregates
+  // precomputed into lib/archive-rollups.ts. See docs/storage-efficiency.md.
   comments          RecipeComment[]
   takedownRequests  TakedownRequest[]
   pitchingProtocol  RecipePitchingProtocol?
@@ -88,71 +89,8 @@ model Recipe {
   @@index([isHidden, scrapedAt])
 }
 
-model RecipeFermentable {
-  // Kept as a plain column (still cuid-defaulted) so existing code that reads
-  // `f.id` — React list keys, lookup maps — keeps working untouched. It is no
-  // longer the primary key: the cuid PK was a 37 MB btree index that nothing
-  // ever queried by (every access is by recipeId). Identity is the composite
-  // below, which also serves as the recipeId lookup index, so the standalone
-  // @@index([recipeId]) is gone too. (recipeId, sortOrder) is unique across
-  // all 513k rows — verified before migrating.
-  id            String  @default(cuid())
-  recipeId      String
-  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 
-  name          String
-  amountDisplay String?
-  amountLb      Float?  // normalized to lb regardless of source display unit
-  percent       String?
-  maltster      String?
-  use           String?
-  ppg           Float?
-  colorLovibond Float?
-  refUrl        String? // links to FermentableRef.externalId when resolvable
-  sortOrder     Int     @default(0)
 
-  @@id([recipeId, sortOrder])
-}
-
-model RecipeHop {
-  // See RecipeFermentable: id demoted from primary key to a plain column to
-  // shed a 33 MB unused index. (recipeId, sortOrder) is unique across all
-  // 453k rows and is now both the identity and the recipeId lookup index.
-  id            String  @default(cuid())
-  recipeId      String
-  recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name          String
-  amountDisplay String?
-  amountOz      Float?  // normalized to oz regardless of source display unit
-  timeDisplay   String?
-  timeMinutes   Float?
-  use           String?
-  form          String?
-  alphaAcidPct  Float?
-  refUrl        String?
-  sortOrder     Int     @default(0)
-
-  @@id([recipeId, sortOrder])
-}
-
-model RecipeYeast {
-  // Deliberately keeps its cuid primary key. Unlike the fermentable/hop
-  // junctions it has no sortOrder column and no naturally-unique combination
-  // (a recipe can list the same yeast twice), so re-keying it would mean a
-  // mass row-update to synthesise an ordinal — heap bloat we won't risk near
-  // the storage cap for the sake of only ~9 MB.
-  id             String  @id @default(cuid())
-  recipeId       String
-  recipe         Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name           String
-  labProduct     String?
-  attenuationPct Float?
-  refUrl         String?
-
-  @@index([recipeId])
-}
 
 // A recipe's chosen yeast pitching + propagation protocol, made a permanent
 // part of the recipe. One-to-one with Recipe. Stores the raw calculator
@@ -188,18 +126,6 @@ model RecipePitchingProtocol {
   updatedBy        String?
 }
 
-model RecipeMisc {
-  id       String  @id @default(cuid())
-  recipeId String
-  recipe   Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
-
-  name     String
-  amount   String?
-  use      String?
-  time     String?
-
-  @@index([recipeId])
-}
 
 model RecipeComment {
   id                  String  @id @default(cuid())
@@ -293,6 +219,14 @@ model GuidelineCategory {
   sortOrder Int
   styles    GuidelineStyle[]
 
+  // NOTE: the guideline files also carry a per-category `archetype` (how it
+  // ferments). load-guidelines.mjs writes it to Neon so the database and the
+  // export stay complete, but it is deliberately NOT a field here: the app
+  // resolves it from lib/generated/category-archetype.json instead, which is
+  // built from the same data, costs no query, and works offline. Adding it as
+  // a Prisma field would make every category query select a column that does
+  // not exist until the loader has run, 500ing the guideline pages on any
+  // deploy that got there first.
   @@index([editionId])
   @@index([beverage])
 }
@@ -325,6 +259,9 @@ model GuidelineStyle {
   comparison  String?
   examples    String?
   tags        String?
+  // The document this style's figures were read out of, when it differs from
+  // the edition's. Traditional editions cite per style, not per edition.
+  sourceUrl   String?
 
   @@index([categoryId])
   @@index([name])
@@ -585,4 +522,61 @@ model WaterProfile {
 
   @@index([kind])
   @@index([name])
+}
+
+// --- Accounts (Auth.js / NextAuth) ---------------------------------------
+// User records for the app's own login (Google, Apple, …), distinct from the
+// admin-token gate and from the scraped-archive `Brewer` rows. Sessions are
+// JWT (a signed cookie), NOT database-backed, so an authenticated request
+// costs no query — deliberate, given the free-tier database pressure. The
+// Session table below exists for the adapter's type contract and future use;
+// the JWT strategy does not write to it per request.
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  createdAt     DateTime  @default(now())
+  accounts      Account[]
+  sessions      Session[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
 }

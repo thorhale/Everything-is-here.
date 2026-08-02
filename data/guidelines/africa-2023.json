@@ -86,7 +86,8 @@
      "examples": "Tella, Korefe",
      "tags": "ethiopia, tella, gesho, grain-beer, traditional"
     }
-   ]
+   ],
+   "archetype": "beer-sorghum-trad"
   },
   {
    "code": "AF2",
@@ -118,7 +119,8 @@
      "examples": "Tej (served in tej bet houses)",
      "tags": "ethiopia, tej, honey-wine, gesho, mead"
     }
-   ]
+   ],
+   "archetype": "mead-cultured"
   },
   {
    "code": "AF3",
@@ -175,7 +177,8 @@
      "examples": "Akpeteshie, Ogogoro",
      "tags": "africa, palm-spirit, akpeteshie, ogogoro, distilled"
     }
-   ]
+   ],
+   "archetype": "spontaneous-wild"
   }
  ]
 }

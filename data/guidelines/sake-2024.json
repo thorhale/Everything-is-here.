@@ -51,7 +51,8 @@
      "tags": "japan, ordinary, residual-category"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "K1",
@@ -138,7 +139,8 @@
      "tags": "japan, junmai, daiginjo, premium, tokutei-meishoshu"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "K2",
@@ -225,7 +227,8 @@
      "tags": "japan, daiginjo, added-alcohol, premium, tokutei-meishoshu"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "K3",
@@ -332,7 +335,8 @@
      "tags": "japan, sweet, dessert, method, specialty"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "K4",
@@ -459,7 +463,8 @@
      "tags": "japan, sparkling, carbonation, modern"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "K5",
@@ -546,7 +551,8 @@
      "tags": "japan, non-alcoholic, koji, reference"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   }
  ]
 }

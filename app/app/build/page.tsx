@@ -1,10 +1,8 @@
 import Link from "next/link";
 import BuilderForm from "./BuilderForm";
-import { getFermentablePickerList, getHopPickerList } from "@/lib/ingredients-curated";
-import { getStrainPickerList } from "@/lib/yeasts-curated";
-import { getWaterPickerList } from "@/lib/water";
-
-export const dynamic = "force-dynamic";
+// Bundled picker data (build-picker-data.mjs) — no database, fully static,
+// and runs offline in the native shell.
+import { fermentablePicks as fermentables, hopPicks as hops, strainPicks as strains, waterPicks as waters } from "@/lib/picker-data";
 
 export const metadata = {
   title: "Recipe builder — WortHogg",
@@ -12,13 +10,7 @@ export const metadata = {
     "One recipe builder for beer, cider, wine, mead and spirit washes. Every ingredient from one database, and fruit priced as the range it really is.",
 };
 
-export default async function BuildPage() {
-  const [fermentables, hops, strains, waters] = await Promise.all([
-    getFermentablePickerList(),
-    getHopPickerList(),
-    getStrainPickerList(),
-    getWaterPickerList(),
-  ]);
+export default function BuildPage() {
 
   return (
     <div>

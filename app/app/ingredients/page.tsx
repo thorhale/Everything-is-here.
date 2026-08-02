@@ -1,3 +1,6 @@
+// A static route, so `revalidate` would make Next prerender it at build time,
+// where there is no database. Rendered per request instead; the detail routes
+// that carry the real DB load are the ones cached.
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";

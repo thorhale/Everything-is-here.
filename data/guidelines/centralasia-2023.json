@@ -61,7 +61,8 @@
      "examples": "Shubat (camel), Buryat tarasun",
      "tags": "centralasia, milk-ferment, shubat, traditional"
     }
-   ]
+   ],
+   "archetype": "milk-kefir"
   },
   {
    "code": "CA2",
@@ -93,7 +94,8 @@
      "examples": "Nermel arkhi (home-distilled), shimiin arkhi",
      "tags": "mongolia, arkhi, milk-liquor, distilled, traditional"
     }
-   ]
+   ],
+   "archetype": "milk-distilled"
   },
   {
    "code": "CA3",
@@ -125,7 +127,8 @@
      "examples": "Turkish boza, Central Asian bozo",
      "tags": "centralasia, boza, cereal, low-alcohol, traditional"
     }
-   ]
+   ],
+   "archetype": "grain-wild-backslop"
   }
  ]
 }

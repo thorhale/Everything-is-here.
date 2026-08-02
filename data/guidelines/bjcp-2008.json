@@ -136,7 +136,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "2",
@@ -218,7 +219,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "3",
@@ -275,7 +277,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "4",
@@ -357,7 +360,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "5",
@@ -464,7 +468,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "6",
@@ -571,7 +576,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "7",
@@ -653,7 +659,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "8",
@@ -735,7 +742,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "9",
@@ -867,7 +875,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "10",
@@ -949,7 +958,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "11",
@@ -1031,7 +1041,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "12",
@@ -1113,7 +1124,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "13",
@@ -1270,7 +1282,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "14",
@@ -1352,7 +1365,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "15",
@@ -1459,7 +1473,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-weizen"
   },
   {
    "code": "16",
@@ -1591,7 +1606,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "17",
@@ -1748,7 +1764,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-mixed-sour"
   },
   {
    "code": "18",
@@ -1880,7 +1897,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "19",
@@ -1962,7 +1980,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "21",
@@ -2019,7 +2038,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "22",
@@ -2101,7 +2121,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "24",
@@ -2183,7 +2204,8 @@
      "tags": null
     }
    ],
-   "beverage": "mead"
+   "beverage": "mead",
+   "archetype": "mead-cultured"
   },
   {
    "code": "25",
@@ -2265,7 +2287,8 @@
      "tags": null
     }
    ],
-   "beverage": "mead"
+   "beverage": "mead",
+   "archetype": "mead-cultured"
   },
   {
    "code": "26",
@@ -2347,7 +2370,8 @@
      "tags": null
     }
    ],
-   "beverage": "mead"
+   "beverage": "mead",
+   "archetype": "mead-cultured"
   },
   {
    "code": "27",
@@ -2479,7 +2503,8 @@
      "tags": null
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-cultured"
   },
   {
    "code": "28",
@@ -2586,7 +2611,8 @@
      "tags": null
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-cultured"
   }
  ]
 }

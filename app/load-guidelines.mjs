@@ -45,6 +45,14 @@ const DDL = [
   // before `prisma migrate` runs.
   `ALTER TABLE "GuidelineEdition" ADD COLUMN IF NOT EXISTS "sourceType" TEXT`,
   `ALTER TABLE "GuidelineCategory" ADD COLUMN IF NOT EXISTS "beverage" TEXT`,
+  // How this category ferments — the id of a record in
+  // data/fermentation/archetypes.json. Added after the table existed, so it
+  // ships as an idempotent ALTER like the columns above.
+  `ALTER TABLE "GuidelineCategory" ADD COLUMN IF NOT EXISTS "archetype" TEXT`,
+  // Per-style provenance. An edition-level sourceUrl is not enough once an
+  // edition carries styles drawn from different documents, which is the norm
+  // for the traditional editions where each style has its own citation.
+  `ALTER TABLE "GuidelineStyle" ADD COLUMN IF NOT EXISTS "sourceUrl" TEXT`,
   `CREATE INDEX IF NOT EXISTS "GuidelineCategory_beverage_idx" ON "GuidelineCategory"("beverage")`,
 ];
 
@@ -72,6 +80,10 @@ function inferBeverage(system, code, name) {
 const TEXT_FIELDS = [
   "impression", "aroma", "appearance", "flavor", "mouthfeel",
   "comments", "history", "ingredients", "comparison", "examples", "tags",
+  // Must stay in this list. A style's sourceUrl is what app/build-sources.mjs
+  // audits its numbers against, so if the loader drops it the provenance gate
+  // passes on a citation the running site never actually has.
+  "sourceUrl",
 ];
 const NUM_FIELDS = [
   "ogMin", "ogMax", "fgMin", "fgMax", "ibuMin", "ibuMax",
@@ -98,7 +110,9 @@ async function run() {
     doc.categories.forEach((c, ci) => {
       const cid = `${eid}-c${ci}`;
       const bev = c.beverage ?? inferBeverage(doc.system, c.code, c.name);
-      catRows.push(`(${lit(cid)}, ${lit(eid)}, ${lit(c.code)}, ${lit(c.name)}, ${lit(bev)}, ${ci})`);
+      catRows.push(
+        `(${lit(cid)}, ${lit(eid)}, ${lit(c.code)}, ${lit(c.name)}, ${lit(bev)}, ${lit(c.archetype ?? null)}, ${ci})`
+      );
       c.styles.forEach((s, si) => {
         const nums = NUM_FIELDS.map((k) => lit(s[k])).join(",");
         const texts = TEXT_FIELDS.map((k) => lit(s[k])).join(",");
@@ -106,7 +120,7 @@ async function run() {
       });
     });
     await sql.query(
-      `INSERT INTO "GuidelineCategory" ("id","editionId","code","name","beverage","sortOrder") VALUES ${catRows.join(",")}`
+      `INSERT INTO "GuidelineCategory" ("id","editionId","code","name","beverage","archetype","sortOrder") VALUES ${catRows.join(",")}`
     );
     for (let i = 0; i < styleRows.length; i += 40) {
       await sql.query(

@@ -61,7 +61,8 @@
      "examples": "Gotlandsdricke, Norwegian maltøl",
      "tags": "nordic, baltic, farmhouse, kveik, juniper, traditional"
     }
-   ]
+   ],
+   "archetype": "beer-sorghum-trad"
   },
   {
    "code": "EU2",
@@ -118,7 +119,8 @@
      "examples": "Medovukha, Lietuviškas midus",
      "tags": "slavic, baltic, honey, medovukha, midus, traditional"
     }
-   ]
+   ],
+   "archetype": "grain-wild-backslop"
   }
  ]
 }

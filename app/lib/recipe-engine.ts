@@ -203,10 +203,30 @@ function contribution(
 }
 
 /** Tinseth utilisation, as used by the beer calculator. */
-function tinsethUtilisation(boilGravity: number, timeMin: number): number {
+export function tinsethUtilisation(boilGravity: number, timeMin: number): number {
   const bigness = 1.65 * 0.000125 ** (boilGravity - 1);
   const timeFactor = (1 - Math.exp(-0.04 * timeMin)) / 4.15;
   return bigness * timeFactor;
+}
+
+/**
+ * Beer colour (SRM) from a grain bill, via malt colour units and the Morey
+ * equation. Exported as the single source of truth so the colour-rebalance
+ * solver and computeRecipe cannot disagree. `massG` is grams; colour is
+ * degrees Lovibond.
+ */
+export function srmOfBill(
+  items: { colorLovibond: number | null; massG: number }[],
+  batchVolumeL: number
+): number {
+  const galBatch = batchVolumeL / 3.785411784;
+  if (galBatch <= 0) return 0;
+  let mcu = 0;
+  for (const it of items) {
+    if (!it.colorLovibond) continue;
+    mcu += (it.colorLovibond * (it.massG / 453.59237)) / galBatch;
+  }
+  return mcu > 0 ? 1.4922 * mcu ** 0.6859 : 0;
 }
 
 export function computeRecipe(inputs: EngineInputs): EngineResult {
@@ -263,13 +283,13 @@ export function computeRecipe(inputs: EngineInputs): EngineResult {
   if (inputs.beverage === "beer") {
     const galBatch = batchVolumeL / 3.785411784;
     if (galBatch > 0) {
-      let mcu = 0;
-      for (const ing of inputs.ingredients) {
-        if (!ing.colorLovibond) continue;
-        const massG = ing.amountUnit === "g" ? ing.amount : ing.amount * 1000;
-        mcu += (ing.colorLovibond * (massG / 453.59237)) / galBatch;
-      }
-      srm = mcu > 0 ? 1.4922 * mcu ** 0.6859 : 0;
+      srm = srmOfBill(
+        inputs.ingredients.map((ing) => ({
+          colorLovibond: ing.colorLovibond ?? null,
+          massG: ing.amountUnit === "g" ? ing.amount : ing.amount * 1000,
+        })),
+        batchVolumeL
+      );
 
       // Tinseth takes the gravity the hops actually boil in, which is the
       // gravity at the average of pre-boil and post-boil volume.

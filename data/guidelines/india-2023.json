@@ -61,7 +61,8 @@
      "examples": "Coconut feni from South Goa",
      "tags": "india, goa, feni, coconut, toddy, GI"
     }
-   ]
+   ],
+   "archetype": "regional-traditional-spirit"
   },
   {
    "code": "IN2",
@@ -118,7 +119,8 @@
      "examples": "Mahua from Madhya Pradesh, Odisha",
      "tags": "india, mahua, tribal, flower-spirit"
     }
-   ]
+   ],
+   "archetype": "spontaneous-wild"
   },
   {
    "code": "IN3",
@@ -175,7 +177,8 @@
      "examples": "Tongba (millet), rice chhaang",
      "tags": "himalaya, chhaang, tongba, millet, traditional"
     }
-   ]
+   ],
+   "archetype": "grain-wild-backslop"
   }
  ]
 }

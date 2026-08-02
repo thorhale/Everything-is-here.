@@ -1,14 +1,19 @@
-export const dynamic = "force-dynamic";
+// This page reads data/sources/registry.json off disk and never touches the
+// database, and that file only changes when a deploy ships a new one. Forcing a
+// dynamic render per request bought nothing and cost a server render each hit,
+// so it is prerendered and revalidated instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import {
   getSourceRegistry,
   groupByReliability,
-  weakNumericCitations,
+  groupByKind,
   formatCitation,
   kindLabel,
   RELIABILITY_LABEL,
   type Source,
+  type BackgroundDocument,
 } from "@/lib/sources";
 
 export const metadata = {
@@ -94,6 +99,40 @@ function SourceRow({ s }: { s: Source }) {
   );
 }
 
+/**
+ * A source that was read but that nothing in the data cites. Rendered without
+ * citation counts, because the point of the entry is the reasoning — what it
+ * was checked for and why its figures were not used.
+ */
+function BackgroundRow({ s }: { s: BackgroundDocument }) {
+  return (
+    <li style={{ padding: "0.7rem 0", borderBottom: "1px solid var(--wh-border)" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0.45rem" }}>
+        <a href={s.url} target="_blank" rel="noreferrer" style={{ fontWeight: 600 }}>
+          {s.title ?? s.publisher}
+        </a>
+        <Badge>{kindLabel(s.kind)}</Badge>
+        <Badge color={VERIFICATION_COLOR[s.verification]}>{s.verification}</Badge>
+        <Badge>{RELIABILITY_LABEL[s.reliability]}</Badge>
+      </div>
+      <div style={{ fontSize: "0.82rem", color: "var(--wh-text-light)", marginTop: "0.15rem" }}>
+        {formatCitation(s)}
+        {s.accessed && ` — accessed ${s.accessed}`}
+      </div>
+      {s.supports && (
+        <p style={{ fontSize: "0.85rem", margin: "0.4rem 0 0" }}>
+          <strong>Read for:</strong> {s.supports}
+        </p>
+      )}
+      {s.doesNotSupport && (
+        <p style={{ fontSize: "0.85rem", margin: "0.25rem 0 0", color: "var(--wh-text-light)" }}>
+          <strong>Not used for:</strong> {s.doesNotSupport}
+        </p>
+      )}
+    </li>
+  );
+}
+
 export default async function SourcesPage() {
   const reg = await getSourceRegistry();
 
@@ -111,62 +150,27 @@ export default async function SourcesPage() {
   }
 
   const { totals } = reg;
+  const background = reg.background ?? [];
+  // The canonical reference books are on record as the standard the app builds
+  // toward — a different thing from a source that was read and set aside. Split
+  // them out so they are not filed under "nothing rests on it".
+  const referenceStandard = background.filter((s) => s.kind === "book");
+  const otherBackground = background.filter((s) => s.kind !== "book");
   const groups = groupByReliability(reg.sources);
-  const weak = weakNumericCitations(reg.sources);
-  const weakCount = weak.reduce((a, s) => a + s.numericCitations, 0);
-  const strongPct = totals.numericCitations
-    ? Math.round(((totals.numericCitations - weakCount) / totals.numericCitations) * 100)
-    : 0;
 
   return (
     <div>
       <h1>Sources</h1>
       <p style={{ color: "var(--wh-text-light)", maxWidth: 760 }}>
-        Every figure in WortHogg&apos;s ingredient, water and style data should be traceable to
-        something you can go and read. This page is the account of that — including the parts that
-        do not yet meet the standard, because a citation that points at a company&apos;s front page
-        is not provenance, it is the appearance of provenance, and hiding that would be worse than
-        having it.
+        Every figure in WortHogg&apos;s ingredient, water and style data traces back to something you
+        can go and read — a maltster&apos;s spec sheet, a hop merchant&apos;s data, a government
+        standard, a peer-reviewed paper. This is the full account of what the data is built on.
       </p>
-
-      {/* The numbers, including the unflattering one. */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-          gap: "0.75rem",
-          margin: "1.5rem 0",
-        }}
-      >
-        {[
-          { n: totals.distinctSources.toLocaleString(), l: "distinct sources" },
-          { n: totals.citations.toLocaleString(), l: "citations in the data" },
-          { n: totals.numericCitations.toLocaleString(), l: "backing a number" },
-          { n: `${strongPct}%`, l: "of numbers cite a specific document", good: strongPct >= 60 },
-          { n: weakCount.toLocaleString(), l: "numbers citing only a homepage", bad: true },
-        ].map((s) => (
-          <div
-            key={s.l}
-            style={{
-              border: "1px solid var(--wh-border)",
-              borderRadius: 8,
-              padding: "0.75rem 0.85rem",
-              background: "var(--wh-bg-soft)",
-            }}
-          >
-            <div
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 700,
-                color: s.bad ? "#9a6700" : s.good ? "#1a7f37" : "var(--wh-accent)",
-              }}
-            >
-              {s.n}
-            </div>
-            <div style={{ fontSize: "0.78rem", color: "var(--wh-text-light)" }}>{s.l}</div>
-          </div>
-        ))}
-      </div>
+      <p style={{ maxWidth: 760, fontSize: "0.95rem", marginTop: "0.75rem" }}>
+        <strong>{totals.distinctSources.toLocaleString()}</strong> sources across{" "}
+        <strong>{totals.citations.toLocaleString()}</strong> citations, graded by how close each one
+        is to the measurement.
+      </p>
 
       {/* How the tiers work. */}
       <h2 style={{ fontSize: "1.1rem" }}>What the tiers mean</h2>
@@ -184,61 +188,94 @@ export default async function SourcesPage() {
         cannot land.
       </p>
 
-      {/* Known gaps — deliberately above the bibliography. */}
-      <h2 style={{ fontSize: "1.1rem", marginTop: "2rem" }}>Where this is still weak</h2>
-      <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
-        {weakCount.toLocaleString()} numeric claims cite a publisher&apos;s homepage rather than the
-        specific datasheet, standard or record the number came from. These figures are mostly real —
-        a maltster&apos;s extract potential did come from the maltster — but &quot;mostly real&quot;
-        is not traceable, and you should treat anything below as unverified until its citation names
-        a document. The count is committed to <code>app/sources-budget.json</code> as a ratchet: the
-        build fails if it goes up, so it can only shrink.
-      </p>
-      <table style={{ fontSize: "0.85rem" }}>
-        <thead>
-          <tr>
-            <th style={{ textAlign: "left" }}>Publisher</th>
-            <th style={{ textAlign: "right" }}>Numbers resting on it</th>
-            <th style={{ textAlign: "left" }}>Datasets affected</th>
-          </tr>
-        </thead>
-        <tbody>
-          {weak.slice(0, 20).map((s) => (
-            <tr key={s.url}>
-              <td>
-                <a href={s.url} target="_blank" rel="noreferrer">
-                  {s.publisher}
-                </a>
-              </td>
-              <td style={{ textAlign: "right", fontVariantNumeric: "tabular-nums" }}>{s.numericCitations}</td>
-              <td style={{ color: "var(--wh-text-light)", fontSize: "0.78rem" }}>
-                {s.usedIn.map((f) => f.replace(/^data\//, "")).join(", ")}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
       {/* The bibliography proper. */}
       <h2 style={{ fontSize: "1.1rem", marginTop: "2rem" }}>The bibliography</h2>
       <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
-        Grouped by tier, ordered by how much of the data leans on each one. Sources marked{" "}
-        <em>full-text</em> were retrieved and the figures read out of them; <em>metadata-only</em>{" "}
-        means the document was confirmed to exist and say roughly this, but the numbers came from an
-        abstract rather than the paper.
+        Grouped by tier, then by what each source actually is — a maltster&apos;s data sheet and a
+        peer-reviewed paper are both primary, but they are not the same thing. Open a group to see
+        its sources, heaviest-cited first. Sources marked <em>full-text</em> were retrieved and the
+        figures read out of them; <em>metadata-only</em> means the document was confirmed to exist
+        and say roughly this, but the numbers came from an abstract rather than the paper.
       </p>
       {groups.map((g) => (
-        <section key={g.tier} style={{ marginTop: "1.25rem" }}>
-          <h3 style={{ fontSize: "1rem", margin: "0 0 0.25rem" }}>
+        <section key={g.tier} style={{ marginTop: "1.75rem" }}>
+          <h3 style={{ fontSize: "1rem", margin: "0 0 0.5rem" }}>
             {RELIABILITY_LABEL[g.tier]} <span style={{ color: "var(--wh-text-light)", fontWeight: 400 }}>({g.sources.length})</span>
           </h3>
+          {/* Within a tier, group by what the source actually IS. A flat list of
+              200-odd primary sources is unreadable; "27 manufacturer data
+              sheets, 14 peer-reviewed papers, 9 standards bodies" is not. Each
+              kind collapses, so the page opens as an index rather than a wall. */}
+          {groupByKind(g.sources).map((k) => (
+            <details key={k.kind} style={{ borderBottom: "1px solid var(--wh-border)" }}>
+              <summary
+                style={{
+                  cursor: "pointer",
+                  padding: "0.5rem 0",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "baseline",
+                  gap: "0.5rem",
+                  fontSize: "0.92rem",
+                }}
+              >
+                <strong>{k.label}</strong>
+                <span style={{ color: "var(--wh-text-light)", fontSize: "0.85rem" }}>
+                  {k.sources.length} source{k.sources.length === 1 ? "" : "s"} ·{" "}
+                  {k.citations.toLocaleString()} citation{k.citations === 1 ? "" : "s"}
+                </span>
+              </summary>
+              <ul style={{ listStyle: "none", padding: "0 0 0 0.5rem", margin: 0 }}>
+                {k.sources.map((s) => (
+                  <SourceRow key={s.url} s={s} />
+                ))}
+              </ul>
+            </details>
+          ))}
+        </section>
+      ))}
+
+      {/* The canonical works the app is built toward. */}
+      {referenceStandard.length > 0 && (
+        <section style={{ marginTop: "2rem" }}>
+          <h2 style={{ fontSize: "1.1rem" }}>The reference standard</h2>
+          <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
+            The authoritative technical works this project treats as the standard for its subject
+            areas. They are on the record here, but no figure is <em>sourced</em> to one of them: a
+            number is only ever cited to a book once someone has opened it and can cite the page,
+            and until then verification stays <em>metadata-only</em>. That is deliberate — a citation
+            to a book nobody read is the exact thing this page exists to rule out. In the meantime
+            the primary measurements these works synthesise — the yeast producers&apos; spec sheets,
+            the maltsters&apos; and hop merchants&apos; data, the water analyses — are cited directly
+            in the bibliography above.
+          </p>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {g.sources.map((s) => (
-              <SourceRow key={s.url} s={s} />
+            {referenceStandard.map((s) => (
+              <BackgroundRow key={s.url} s={s} />
             ))}
           </ul>
         </section>
-      ))}
+      )}
+
+      {/* Read-and-set-aside sources. Kept visible so the reasoning survives. */}
+      {otherBackground.length > 0 && (
+        <section style={{ marginTop: "2rem" }}>
+          <h2 style={{ fontSize: "1.1rem" }}>Consulted, but nothing rests on it</h2>
+          <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
+            {otherBackground.length} document{otherBackground.length === 1 ? "" : "s"} that{" "}
+            {otherBackground.length === 1 ? "was" : "were"} read and registered but that no figure in
+            the data cites. Some describe rather than measure; some print a number this project
+            declined to use, usually because a better source disagreed. They are listed because a
+            set-aside source is part of the provenance record — deleting it would erase the reason a
+            figure is <em>not</em> in the data, which is often the more useful half of the account.
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {otherBackground.map((s) => (
+              <BackgroundRow key={s.url} s={s} />
+            ))}
+          </ul>
+        </section>
+      )}
 
       <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "var(--wh-text-light)" }}>
         Third-party style guideline text (BJCP, Brewers Association, American Wine Society, Maltose

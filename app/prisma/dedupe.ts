@@ -3,6 +3,7 @@
 // BrewToad's "make a clone" button created a brand-new recipe (its own slug)
 // that is a byte-identical copy of the original - same title, style, stats,
 // and ingredient list. The Wayback import stores each as its own row, so the
+import { getRecipeIngredients } from "../lib/recipe-ingredients";
 // archive carries many identical copies. This script fingerprints every
 // recipe by its *content* (not slug) and folds each set of identical clones
 // into one canonical row, reassigning any comments / takedown requests first
@@ -99,17 +100,32 @@ async function main(): Promise<void> {
       sourceTimestamp: true,
       parseConfidence: true,
       cloneCount: true,
-      fermentables: { select: { name: true, amountLb: true, colorLovibond: true } },
-      hops: { select: { name: true, amountOz: true, timeMinutes: true } },
-      yeasts: { select: { name: true } },
       _count: { select: { comments: true } },
     },
-  })) as RecipeForFp[];
+  })) as Omit<RecipeForFp, "fermentables" | "hops" | "yeasts">[];
 
   console.log(`${recipes.length} recipes loaded`);
 
+  // Ingredients come from the static shards now, not from junction tables —
+  // see docs/storage-efficiency.md, tier 3. The fingerprint is unchanged; only
+  // where the rows are read from has moved.
+  const withIngredients: RecipeForFp[] = [];
+  for (const r of recipes) {
+    const ing = await getRecipeIngredients(r.slug);
+    withIngredients.push({
+      ...r,
+      fermentables: ing.fermentables.map((f) => ({
+        name: f.name ?? "", amountLb: f.amountLb, colorLovibond: f.colorLovibond,
+      })),
+      hops: ing.hops.map((h) => ({
+        name: h.name ?? "", amountOz: h.amountOz, timeMinutes: h.timeMinutes,
+      })),
+      yeasts: ing.yeasts.map((y) => ({ name: y.name ?? "" })),
+    });
+  }
+
   const groups = new Map<string, RecipeForFp[]>();
-  for (const rec of recipes) {
+  for (const rec of withIngredients) {
     const fp = fingerprint(rec);
     const arr = groups.get(fp);
     if (arr) arr.push(rec);

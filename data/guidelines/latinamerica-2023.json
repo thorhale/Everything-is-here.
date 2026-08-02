@@ -86,7 +86,8 @@
      "examples": "Cauim (Brazil), Masato (Amazon)",
      "tags": "amazon, cauim, masato, manioc, traditional"
     }
-   ]
+   ],
+   "archetype": "spontaneous-wild"
   },
   {
    "code": "LA2",
@@ -168,7 +169,8 @@
      "examples": "Guarapo (Cuba, Colombia)",
      "tags": "latinamerica, guarapo, sugarcane, traditional"
     }
-   ]
+   ],
+   "archetype": "spontaneous-wild"
   }
  ]
 }

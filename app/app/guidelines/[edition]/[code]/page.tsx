@@ -14,6 +14,7 @@ import { ArchiveStatBands, IngredientUsageList } from "@/components/ArchiveStats
 import { buildRecipeSkeleton } from "@/lib/recipe-builder";
 import { getWaterProfile, suggestWaterTargetId } from "@/lib/water";
 import { matchClassicWaterForStyle } from "@/lib/style-water";
+import { getArchetypeForCategory, INOCULATION_LABEL } from "@/lib/fermentation";
 
 interface Props {
   params: Promise<{ edition: string; code: string }>;
@@ -64,6 +65,9 @@ export default async function GuidelineStylePage({ params }: Props) {
   if (!style) notFound();
   const edition = style.category.edition;
   const suggestedYeasts = await matchStrainsForStyle(style.name, { limit: 6 });
+  // How this style ferments — the mapped archetype (sourced), resolved by the
+  // same key the DB uses. Static lookup, no extra database column.
+  const archetype = await getArchetypeForCategory(edition.id, style.category.code);
 
   // Auto-generated starting recipe from the style's own published targets.
   const [fermCat, hopCat] = await Promise.all([getFermentableCatalog(), getHopCatalog()]);
@@ -141,6 +145,56 @@ export default async function GuidelineStylePage({ params }: Props) {
           </section>
         );
       })}
+
+      {archetype && (
+        <section>
+          <h3>How it ferments</h3>
+          <div
+            style={{
+              border: "1px solid var(--wh-border)",
+              borderRadius: 8,
+              padding: "0.85rem 1rem",
+              background: "var(--wh-bg-soft)",
+            }}
+          >
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0.5rem" }}>
+              <strong>{archetype.label}</strong>
+              <span
+                style={{
+                  fontSize: "0.68rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.03em",
+                  border: "1px solid var(--wh-border)",
+                  borderRadius: 4,
+                  padding: "0.05rem 0.35rem",
+                  color: "var(--wh-text-light)",
+                }}
+              >
+                {INOCULATION_LABEL[archetype.inoculation]}
+              </span>
+              {archetype.researchStatus === "pending" && (
+                <span style={{ fontSize: "0.68rem", fontWeight: 700, color: "#9a6700" }}>figures pending</span>
+              )}
+            </div>
+            <p style={{ fontSize: "0.9rem", margin: "0.45rem 0 0" }}>{archetype.approach}</p>
+            {archetype.standard?.note && (
+              <p style={{ fontSize: "0.85rem", margin: "0.5rem 0 0", color: "var(--wh-text-light)" }}>
+                <strong>Standard:</strong> {archetype.standard.note}
+              </p>
+            )}
+            <p style={{ fontSize: "0.8rem", margin: "0.6rem 0 0" }}>
+              <Link href="/fermentation">Full fermentation reference →</Link>
+              {(archetype.inoculation === "cultured" || archetype.inoculation === "starter-culture") && (
+                <>
+                  {"  ·  "}
+                  <Link href="/pitching">Pitching &amp; inoculation →</Link>
+                </>
+              )}
+            </p>
+          </div>
+        </section>
+      )}
 
       {archiveStats && archiveStats.recipes >= 5 && (
         <section>
@@ -323,10 +377,30 @@ export default async function GuidelineStylePage({ params }: Props) {
       </p>
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {edition.attribution}{" "}
-        <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
-          Original source
-        </a>
-        . <Link href="/takedown">Request removal</Link>
+        {/* A style may cite a different document than its edition — the norm in
+            the traditional editions, where each style carries its own source. */}
+        {style.sourceUrl && style.sourceUrl !== edition.sourceUrl ? (
+          <>
+            This style&apos;s figures were read out of{" "}
+            <a href={style.sourceUrl} target="_blank" rel="noreferrer">
+              its own cited source
+            </a>
+            ; see also the{" "}
+            <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
+              edition source
+            </a>
+            .
+          </>
+        ) : (
+          <>
+            <a href={edition.sourceUrl} target="_blank" rel="noreferrer">
+              Original source
+            </a>
+            .
+          </>
+        )}{" "}
+        <Link href="/sources">How sources are graded</Link>.{" "}
+        <Link href="/takedown">Request removal</Link>
       </p>
     </div>
   );

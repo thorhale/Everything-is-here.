@@ -1,3 +1,6 @@
+// A static route, so `revalidate` would make Next prerender it at build time,
+// where there is no database. Rendered per request instead; the detail routes
+// that carry the real DB load are the ones cached.
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
@@ -9,11 +12,14 @@ export const metadata = { title: "Brewers - WortHogg" };
 const getTopBrewers = unstable_cache(
   async () =>
     prisma.$queryRaw<{ id: string; originalUsername: string; recipes: number }[]>`
-      SELECT b."id", b."originalUsername", count(r."id")::int AS recipes
-      FROM "Brewer" b JOIN "Recipe" r ON r."brewerId" = b."id" AND r."isHidden" = false
-      GROUP BY b."id", b."originalUsername"
-      ORDER BY count(r."id") DESC
-      LIMIT 200`,
+      SELECT t."id", t."originalUsername", t.recipes FROM (
+        SELECT b."id", b."originalUsername", count(r."id")::int AS recipes
+        FROM "Brewer" b JOIN "Recipe" r ON r."brewerId" = b."id" AND r."isHidden" = false
+        GROUP BY b."id", b."originalUsername"
+        ORDER BY count(r."id") DESC
+        LIMIT 200
+      ) t
+      ORDER BY lower(t."originalUsername") ASC`,
   ["top-brewers"],
   { revalidate: 3600 }
 );
@@ -25,7 +31,7 @@ export default async function BrewersPage() {
     <div>
       <h1>Brewers</h1>
       <p style={{ color: "var(--wh-text-light)" }}>
-        The most prolific brewers in the archive. Every recipe stays attributed to the
+        The archive&apos;s 200 most prolific brewers, listed A–Z. Every recipe stays attributed to the
         person who wrote it.
       </p>
       <table>

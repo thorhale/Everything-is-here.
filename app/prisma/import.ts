@@ -6,6 +6,7 @@
 // the scraper is still appending (M2 runs for a long time).
 
 import { PrismaClient } from "@prisma/client";
+import { parseRefId } from "../lib/brewtoad-ref";
 import { createReadStream } from "node:fs";
 import { createInterface } from "node:readline";
 
@@ -146,42 +147,10 @@ async function importRecord(rec: ScrapedRecord): Promise<void> {
       sourceTimestamp: source.html_timestamp,
       parseSource: source.xml_url ? "html+xml_crossvalidated" : "html",
       parseConfidence: rec.parse_confidence,
-      fermentables: {
-        create: html.fermentables.map((f, i) => ({
-          name: f.name,
-          amountDisplay: f.amount_display,
-          amountLb: weightLb(f.amount_display),
-          percent: f.percent,
-          maltster: f.maltster,
-          use: f.use,
-          ppg: num(f.ppg),
-          colorLovibond: num(f.color_lovibond),
-          refUrl: f.ref_url,
-          sortOrder: i,
-        })),
-      },
-      hops: {
-        create: html.hops.map((h, i) => ({
-          name: h.name,
-          amountDisplay: h.amount_display,
-          amountOz: weightOz(h.amount_display),
-          timeDisplay: h.time_display,
-          timeMinutes: num(h.time_display),
-          use: h.use,
-          form: h.form,
-          alphaAcidPct: num(h.alpha_acid),
-          refUrl: h.ref_url,
-          sortOrder: i,
-        })),
-      },
-      yeasts: {
-        create: html.yeasts.map((y) => ({
-          name: y.name,
-          labProduct: y.lab_product,
-          attenuationPct: num(y.attenuation),
-          refUrl: y.ref_url,
-        })),
-      },
+      // Ingredients are no longer rows in Postgres. They are written to
+      // gzipped static shards instead — run, from app/:
+      //   node export-recipe-ingredients.mjs --from-files ../data/parsed
+      // See docs/storage-efficiency.md, tier 3.
       comments: {
         create: html.comments.map((c) => ({
           originalCommentId: c.comment_id,

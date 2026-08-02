@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+// Curated and archived data, rewritten only when a loader runs, so a render
+// per visit bought nothing and kept the Neon compute endpoint awake. Cached
+// and revalidated hourly instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";

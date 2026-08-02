@@ -4,19 +4,23 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "node build-picker-data.mjs && prisma generate && next build",
     "start": "next start",
     "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "import": "tsx prisma/import.ts",
     "import-yeasts": "tsx prisma/import-yeasts.ts",
-    "dedupe": "tsx prisma/dedupe.ts"
+    "dedupe": "tsx prisma/dedupe.ts",
+    "space-audit": "node --env-file=.neon.env neon-space-audit.mjs",
+    "test": "tsx --test \"lib/**/*.test.ts\""
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.11.3",
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/client": "^5.20.0",
     "next": "^14.2.0",
+    "next-auth": "^5.0.0-beta.32",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
   },

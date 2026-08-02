@@ -36,7 +36,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-lager"
   },
   {
    "code": "2",
@@ -93,7 +94,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-lager"
   },
   {
    "code": "3",
@@ -150,7 +152,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-weizen"
   },
   {
    "code": "4",
@@ -182,7 +185,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "5",
@@ -214,7 +218,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "6",
@@ -271,7 +276,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "7",
@@ -328,7 +334,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "8",
@@ -385,7 +392,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "9",
@@ -442,7 +450,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-lager"
   },
   {
    "code": "10",
@@ -474,7 +483,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "11",
@@ -531,7 +541,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "12",
@@ -563,7 +574,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "13",
@@ -620,7 +632,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "17",
@@ -652,7 +665,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "18",
@@ -684,7 +698,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-weizen"
   },
   {
    "code": "19",
@@ -741,7 +756,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "27",
@@ -798,7 +814,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "mead-cultured"
   },
   {
    "code": "28",
@@ -830,7 +847,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "mead-cultured"
   },
   {
    "code": "29",
@@ -887,7 +905,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "mead-cultured"
   },
   {
    "code": "30",
@@ -919,7 +938,8 @@
      "examples": null,
      "tags": "maltose-falcons, club-guideline"
     }
-   ]
+   ],
+   "archetype": "cider-cultured"
   }
  ]
 }

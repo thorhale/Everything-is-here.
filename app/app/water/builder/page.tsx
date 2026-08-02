@@ -1,7 +1,7 @@
-export const dynamic = "force-dynamic";
-
 import Link from "next/link";
-import { getWaterProfiles } from "@/lib/water";
+// Bundled picker data (build-picker-data.mjs) — no database, fully static,
+// and runs offline in the native shell.
+import { waterPicks } from "@/lib/picker-data";
 import WaterBuilder, { type WaterOption } from "./WaterBuilder";
 
 export const metadata = {
@@ -10,9 +10,8 @@ export const metadata = {
     "Build brewing water from a source and a target profile — gypsum, calcium chloride, epsom, salt, baking soda — with live resulting ions, residual alkalinity, and sulfate:chloride balance.",
 };
 
-export default async function WaterBuilderPage() {
-  const profiles = await getWaterProfiles();
-  const options: WaterOption[] = profiles.map((p) => ({
+export default function WaterBuilderPage() {
+  const options: WaterOption[] = waterPicks.map((p) => ({
     id: p.id,
     name: p.name,
     kind: p.kind,

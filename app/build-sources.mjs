@@ -91,6 +91,17 @@ function hostOf(u) {
 // A citation is a deep link if it names a document or record rather than an
 // organisation: two or more path segments, or a query string, or a file
 // extension. "https://briess.com/" is not provenance.
+//
+// The single-segment case needs care. A bare section name ("/products",
+// "/about") is still navigation, but slug-based publication sites put the whole
+// document at the root — NC State Extension serves a bulletin at
+// content.ces.ncsu.edu/muscadine-grapes-in-the-home-garden. Requiring two
+// segments would mark that shallow and force a real, fully-read document to
+// claim weaker verification than it deserves. So a single segment also counts
+// when it looks like a title slug: multi-word, hyphenated, and long enough that
+// it cannot be a section label.
+const TITLE_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+){2,}$/i;
+
 function isDeepLink(u) {
   let p;
   try { p = new globalThis.URL(u); } catch { return false; }
@@ -98,6 +109,7 @@ function isDeepLink(u) {
   if (p.search) return true;
   if (segs.length >= 2) return true;
   if (segs.length === 1 && /\.(pdf|htm|html|aspx|php|json|csv|xlsx?)$/i.test(segs[0])) return true;
+  if (segs.length === 1 && segs[0].length >= 20 && TITLE_SLUG.test(segs[0])) return true;
   return false;
 }
 
@@ -159,8 +171,44 @@ for (const e of [...byUrl.values()].sort((a, b) => b.citations - a.citations)) {
   });
 }
 
+// Curated documents that no dataset cites. Without this, a document entry that
+// nothing links to is dropped on the floor: its `supports` / `doesNotSupport`
+// notes never reach registry.json and never reach /sources, so the reasoning
+// for rejecting a source disappears silently. These are exactly the entries
+// worth keeping visible — a source consulted and found wanting, the conflicting
+// figure that was deliberately not merged, the bibliography a future check
+// would start from. Carried as `background` so they cannot be mistaken for
+// sources the data actually rests on.
+const background = [];
+for (const d of curated.documents) {
+  if (byUrl.has(d.url)) continue;
+  if (d.mirrorUrl && byUrl.has(d.mirrorUrl)) continue;
+  const host = hostOf(d.url);
+  if (!publishers.has(host)) {
+    problems.push(`UNCLASSIFIED HOST  ${host}  (curated document "${d.id}", cited by nothing)`);
+    continue;
+  }
+  background.push({
+    id: d.id,
+    url: d.url,
+    host,
+    title: d.title,
+    publisher: d.publisher ?? publishers.get(host).name,
+    authors: d.authors ?? null,
+    year: d.year ?? null,
+    kind: d.kind,
+    reliability: d.reliability,
+    verification: d.verification ?? "unverified",
+    deepLink: isDeepLink(d.url),
+    supports: d.supports ?? null,
+    doesNotSupport: d.doesNotSupport ?? null,
+    accessed: d.accessed ?? null,
+  });
+}
+
 const totals = {
   distinctSources: sources.length,
+  backgroundDocuments: background.length,
   citations: sources.reduce((a, s) => a + s.citations, 0),
   numericCitations: sources.reduce((a, s) => a + s.numericCitations, 0),
   // The debt figures. These are what the audit gates on.
@@ -169,8 +217,23 @@ const totals = {
   numericOnTertiary: sources.filter((s) => s.numericCitations > 0 && s.reliability === "tertiary")
     .reduce((a, s) => a + s.numericCitations, 0),
   fullTextVerified: sources.filter((s) => s.verification === "full-text").length,
+  backgroundFullTextVerified: background.filter((s) => s.verification === "full-text").length,
   byReliability: sources.reduce((a, s) => { a[s.reliability] = (a[s.reliability] ?? 0) + s.citations; return a; }, {}),
 };
+
+// Every `kind` in use must have a human label in lib/sources.ts, or /sources
+// renders a raw slug like "research-institute" at the reader. That is a quiet
+// failure — the page still builds and looks fine at a glance — so it is checked
+// here rather than left to be noticed.
+{
+  const src = readFileSync(new globalThis.URL("./lib/sources.ts", import.meta.url), "utf8");
+  const block = src.slice(src.indexOf("KIND_LABEL"), src.indexOf("export function kindLabel"));
+  const labelled = new Set([...block.matchAll(/"?([a-z-]+)"?\s*:\s*"/g)].map((m) => m[1]));
+  const used = new Set([...sources, ...background].map((s) => s.kind).filter(Boolean));
+  for (const k of [...used].sort()) {
+    if (!labelled.has(k)) problems.push(`UNLABELLED KIND  "${k}"  (add it to KIND_LABEL in lib/sources.ts)`);
+  }
+}
 
 if (problems.length) {
   console.error("build-sources: cannot classify every citation\n");
@@ -188,6 +251,7 @@ writeFileSync(
       citationRules: curated.citationRules,
       totals,
       sources,
+      background,
     },
     null,
     2
@@ -199,4 +263,5 @@ console.log(`  by reliability: ${JSON.stringify(totals.byReliability)}`);
 console.log(`  full-text verified sources: ${totals.fullTextVerified}`);
 console.log(`  numeric claims on a shallow link: ${totals.numericOnShallowLink}`);
 console.log(`  numeric claims on a tertiary source: ${totals.numericOnTertiary}`);
+console.log(`  background documents (curated, cited by nothing): ${totals.backgroundDocuments}`);
 console.log(`  -> ${relative(ROOT, OUT)}`);

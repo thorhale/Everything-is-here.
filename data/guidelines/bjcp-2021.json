@@ -111,7 +111,8 @@
      "tags": "standard-strength, pale-color, any-fermentation, north-america, craft-style, wheat-beer-family, balanced"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "2",
@@ -193,7 +194,8 @@
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, traditional-style, dark-lager-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "3",
@@ -300,7 +302,8 @@
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, central-europe, traditional-style, dark-lager-family, balanced"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "4",
@@ -382,7 +385,8 @@
      "tags": "high-strength, pale-color, bottom-fermented, lagered, central-europe, traditional-style, bock-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "5",
@@ -489,7 +493,8 @@
      "tags": "standard-strength, pale-color, bottom-fermented, lagered, central-europe, traditional-style, pilsner-family, bitter, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "6",
@@ -571,7 +576,8 @@
      "tags": "high-strength, amber-color, bottom-fermented, lagered, central-europe, traditional-style, bock-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "7",
@@ -628,7 +634,8 @@
      "tags": "standard-strength, amber-color, top-fermented, lagered, central-europe, traditional-style, amber-ale-family, bitter"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "8",
@@ -685,7 +692,8 @@
      "tags": "standard-strength, dark-color, bottom-fermented, lagered, central-europe, traditional-style, balanced, dark-lager-family"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": "9",
@@ -767,7 +775,8 @@
      "tags": "high-strength, dark-color, any-fermentation, lagered, eastern-europe, traditional-style, porter-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "10",
@@ -849,7 +858,8 @@
      "tags": "high-strength, amber-color, pale-color, top-fermented, central-europe, traditional-style, wheat-beer-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-weizen"
   },
   {
    "code": "11",
@@ -931,7 +941,8 @@
      "tags": "standard-strength, amber-color, top-fermented, british-isles, traditional-style, amber-ale-family, bitter"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "12",
@@ -1013,7 +1024,8 @@
      "tags": "high-strength, pale-color, top-fermented, british-isles, traditional-style, ipa-family, bitter, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "13",
@@ -1095,7 +1107,8 @@
      "tags": "standard-strength, dark-color, top-fermented, british-isles, traditional-style, porter-family, malty, roasty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "14",
@@ -1177,7 +1190,8 @@
      "tags": "standard-strength, amber-color, top-fermented, british-isles, traditional-style, amber-ale-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "15",
@@ -1259,7 +1273,8 @@
      "tags": "high-strength, dark-color, top-fermented, british-isles, traditional-style, stout-family, bitter, roasty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "16",
@@ -1366,7 +1381,8 @@
      "tags": "high-strength, dark-color, top-fermented, british-isles, traditional-style, stout-family, balanced, roasty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "17",
@@ -1473,7 +1489,8 @@
      "tags": "very-high-strength, amber-color, top-fermented, british-isles, traditional-style, strong-ale-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "18",
@@ -1530,7 +1547,8 @@
      "tags": "standard-strength, pale-color, top-fermented, north-america, craft-style, pale-ale-family, bitter, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "19",
@@ -1612,7 +1630,8 @@
      "tags": "standard-strength, dark-color, top-fermented, north-america, craft-style, brown-ale-family, balanced, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "20",
@@ -1694,7 +1713,8 @@
      "tags": "very-high-strength, dark-color, top-fermented, british-isles, north-america, traditional-style, craft-style, stout-family, malty, bitter, roasty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "21",
@@ -1776,7 +1796,8 @@
      "tags": "high-strength, pale-color, top-fermented, north-america, craft-style, ipa-family, bitter, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "22",
@@ -1883,7 +1904,8 @@
      "tags": "very-high-strength, amber-color, top-fermented, north-america, craft-style, strong-ale-family, wheat-beer-family, balanced, hoppy"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "23",
@@ -2065,7 +2087,8 @@
      "tags": "standard-strength, pale-color, top-fermented, central-europe, historical-style, wheat-beer-family, sour, spice"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-mixed-sour"
   },
   {
    "code": "24",
@@ -2147,7 +2170,8 @@
      "tags": "high-strength, pale-color, amber-color, any-fermentation, lagered, western-europe, traditional-style, amber-ale-family, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "25",
@@ -2229,7 +2253,8 @@
      "tags": "very-high-strength, pale-color, top-fermented, western-europe, traditional-style, bitter"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "26",
@@ -2336,7 +2361,8 @@
      "tags": "very-high-strength, amber-color, top-fermented, western-europe, traditional-style, malty"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": "28",
@@ -2443,7 +2469,8 @@
      "tags": "pale-color, top-fermented, sour"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-mixed-sour"
   },
   {
    "code": "29",
@@ -2550,7 +2577,8 @@
      "tags": "specialty-beer, fruit"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "30",
@@ -2657,7 +2685,8 @@
      "tags": "specialty-beer, spice"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "31",
@@ -2714,7 +2743,8 @@
      "tags": "specialty-beer"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "32",
@@ -2771,7 +2801,8 @@
      "tags": "specialty-beer, smoke"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "34",
@@ -2853,7 +2884,8 @@
      "tags": "specialty-beer"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "X",
@@ -2910,7 +2942,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "X",
@@ -2942,7 +2975,8 @@
      "tags": "Specialty-beer, FruitBrazilian Styles"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "X",
@@ -2974,7 +3008,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": "X",
@@ -3006,7 +3041,8 @@
      "tags": "bitter, pale-color, standard-strength, bottom-fermented, hoppy, pilsner-family, lagered, craft-style, pacific"
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   }
  ]
 }

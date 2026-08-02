@@ -386,7 +386,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -843,7 +844,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1075,7 +1077,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1357,7 +1360,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1539,7 +1543,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1671,7 +1676,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1728,7 +1734,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -1835,7 +1842,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -2092,7 +2100,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "wine-cultured"
   },
   {
    "code": null,
@@ -2174,7 +2183,8 @@
      "tags": null
     }
    ],
-   "beverage": "fortified"
+   "beverage": "fortified",
+   "archetype": "fortified-arrested"
   },
   {
    "code": null,
@@ -2256,7 +2266,8 @@
      "tags": null
     }
    ],
-   "beverage": "fortified"
+   "beverage": "fortified",
+   "archetype": "fortified-arrested"
   },
   {
    "code": null,
@@ -2413,7 +2424,8 @@
      "tags": null
     }
    ],
-   "beverage": "mead"
+   "beverage": "mead",
+   "archetype": "mead-cultured"
   },
   {
    "code": null,
@@ -2445,7 +2457,8 @@
      "tags": null
     }
    ],
-   "beverage": "wine"
+   "beverage": "wine",
+   "archetype": "sparkling-secondary"
   }
  ]
 }
