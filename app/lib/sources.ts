@@ -104,6 +104,7 @@ export const KIND_LABEL: Record<string, string> = {
   "club-guide": "Homebrew club guide",
   "trade-association": "Trade association",
   "extension-service": "University extension service",
+  "research-institute": "Research institute",
   "practitioner-tool": "Practitioner reference tool",
   "document-host": "Document host",
   encyclopedia: "Encyclopedia",
@@ -150,4 +151,32 @@ export function weakNumericCitations(sources: Source[]): Source[] {
   return sources
     .filter((s) => s.numericCitations > 0 && !s.deepLink)
     .sort((a, b) => b.numericCitations - a.numericCitations);
+}
+
+/**
+ * Sources grouped by kind, heaviest-cited kind first. The reliability tier says
+ * how close a source is to the measurement; the kind says what it actually is,
+ * which is what someone scanning a 250-entry bibliography is really looking
+ * for. Within a kind, order by how much of the data leans on each source.
+ */
+export function groupByKind(sources: Source[]): {
+  kind: string;
+  label: string;
+  sources: Source[];
+  citations: number;
+}[] {
+  const byKind = new Map<string, Source[]>();
+  for (const s of sources) {
+    const k = s.kind ?? "other";
+    if (!byKind.has(k)) byKind.set(k, []);
+    byKind.get(k)!.push(s);
+  }
+  return [...byKind.entries()]
+    .map(([kind, list]) => ({
+      kind,
+      label: kindLabel(kind),
+      sources: list.sort((a, b) => b.citations - a.citations),
+      citations: list.reduce((n, s) => n + s.citations, 0),
+    }))
+    .sort((a, b) => b.citations - a.citations || a.label.localeCompare(b.label));
 }

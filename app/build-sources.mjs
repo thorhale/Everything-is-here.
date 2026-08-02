@@ -221,6 +221,20 @@ const totals = {
   byReliability: sources.reduce((a, s) => { a[s.reliability] = (a[s.reliability] ?? 0) + s.citations; return a; }, {}),
 };
 
+// Every `kind` in use must have a human label in lib/sources.ts, or /sources
+// renders a raw slug like "research-institute" at the reader. That is a quiet
+// failure — the page still builds and looks fine at a glance — so it is checked
+// here rather than left to be noticed.
+{
+  const src = readFileSync(new globalThis.URL("./lib/sources.ts", import.meta.url), "utf8");
+  const block = src.slice(src.indexOf("KIND_LABEL"), src.indexOf("export function kindLabel"));
+  const labelled = new Set([...block.matchAll(/"?([a-z-]+)"?\s*:\s*"/g)].map((m) => m[1]));
+  const used = new Set([...sources, ...background].map((s) => s.kind).filter(Boolean));
+  for (const k of [...used].sort()) {
+    if (!labelled.has(k)) problems.push(`UNLABELLED KIND  "${k}"  (add it to KIND_LABEL in lib/sources.ts)`);
+  }
+}
+
 if (problems.length) {
   console.error("build-sources: cannot classify every citation\n");
   for (const p of problems) console.error("  " + p);

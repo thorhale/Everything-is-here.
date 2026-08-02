@@ -8,6 +8,7 @@ import Link from "next/link";
 import {
   getSourceRegistry,
   groupByReliability,
+  groupByKind,
   formatCitation,
   kindLabel,
   RELIABILITY_LABEL,
@@ -190,21 +191,47 @@ export default async function SourcesPage() {
       {/* The bibliography proper. */}
       <h2 style={{ fontSize: "1.1rem", marginTop: "2rem" }}>The bibliography</h2>
       <p style={{ color: "var(--wh-text-light)", maxWidth: 760, fontSize: "0.9rem" }}>
-        Grouped by tier, ordered by how much of the data leans on each one. Sources marked{" "}
-        <em>full-text</em> were retrieved and the figures read out of them; <em>metadata-only</em>{" "}
-        means the document was confirmed to exist and say roughly this, but the numbers came from an
-        abstract rather than the paper.
+        Grouped by tier, then by what each source actually is — a maltster&apos;s data sheet and a
+        peer-reviewed paper are both primary, but they are not the same thing. Open a group to see
+        its sources, heaviest-cited first. Sources marked <em>full-text</em> were retrieved and the
+        figures read out of them; <em>metadata-only</em> means the document was confirmed to exist
+        and say roughly this, but the numbers came from an abstract rather than the paper.
       </p>
       {groups.map((g) => (
-        <section key={g.tier} style={{ marginTop: "1.25rem" }}>
-          <h3 style={{ fontSize: "1rem", margin: "0 0 0.25rem" }}>
+        <section key={g.tier} style={{ marginTop: "1.75rem" }}>
+          <h3 style={{ fontSize: "1rem", margin: "0 0 0.5rem" }}>
             {RELIABILITY_LABEL[g.tier]} <span style={{ color: "var(--wh-text-light)", fontWeight: 400 }}>({g.sources.length})</span>
           </h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {g.sources.map((s) => (
-              <SourceRow key={s.url} s={s} />
-            ))}
-          </ul>
+          {/* Within a tier, group by what the source actually IS. A flat list of
+              200-odd primary sources is unreadable; "27 manufacturer data
+              sheets, 14 peer-reviewed papers, 9 standards bodies" is not. Each
+              kind collapses, so the page opens as an index rather than a wall. */}
+          {groupByKind(g.sources).map((k) => (
+            <details key={k.kind} style={{ borderBottom: "1px solid var(--wh-border)" }}>
+              <summary
+                style={{
+                  cursor: "pointer",
+                  padding: "0.5rem 0",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "baseline",
+                  gap: "0.5rem",
+                  fontSize: "0.92rem",
+                }}
+              >
+                <strong>{k.label}</strong>
+                <span style={{ color: "var(--wh-text-light)", fontSize: "0.85rem" }}>
+                  {k.sources.length} source{k.sources.length === 1 ? "" : "s"} ·{" "}
+                  {k.citations.toLocaleString()} citation{k.citations === 1 ? "" : "s"}
+                </span>
+              </summary>
+              <ul style={{ listStyle: "none", padding: "0 0 0 0.5rem", margin: 0 }}>
+                {k.sources.map((s) => (
+                  <SourceRow key={s.url} s={s} />
+                ))}
+              </ul>
+            </details>
+          ))}
         </section>
       ))}
 
