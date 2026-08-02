@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 235,
+    "distinctSources": 238,
     "backgroundDocuments": 7,
-    "citations": 666,
+    "citations": 672,
     "numericCitations": 605,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 7,
+    "fullTextVerified": 10,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 510,
+      "primary": 516,
       "secondary": 150,
       "tertiary": 6
     }
@@ -1009,6 +1009,95 @@
       "exampleRecords": [
         "beer-sorghum-trad",
         "beer-sorghum-trad"
+      ]
+    },
+    {
+      "id": "tian-huangjiu-microbiome-2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8844729/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "The microbiome of Chinese rice wine (Huangjiu)",
+      "publisher": "PubMed Central",
+      "authors": [
+        "S. Tian",
+        "et al."
+      ],
+      "year": 2022,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbiology of huangjiu (Chinese yellow rice wine): wheat qu is the starter, supplying amylase, protease and esterase that saccharify grain starch to glucose while Saccharomyces cerevisiae ferments it to ethanol — simultaneous saccharification and alcoholic fermentation, termed semi-solid open fermentation. Dominant fungi are S. cerevisiae, Aspergillus oryzae, Rhizopus oryzae and Monascus purpureus; dominant bacteria are Lactobacillus and Bacillus spp., Weissella and Leuconostoc. A typical course ferments at ~30 C for 5-7 days, then the mash is opened to drop to ~15 C and held 1-2 months. Published in Current Research in Food Science, 5, 325-335; DOI 10.1016/j.crfs.2022.01.007. Underpins the huangjiu-qu fermentation archetype.",
+      "doesNotSupport": "Baijiu solid-state fermentation, Japanese koji sake, or any pitch rate — huangjiu is inoculated with a qu starter culture, not a measured cell count.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "huangjiu-qu",
+        "huangjiu-qu"
+      ]
+    },
+    {
+      "id": "song-gayangju-nuruk-2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9455823/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "Microbial Diversity and Volatile Flavor Changes during Gayangju Fermentation, a Traditional Korean House Rice Wine",
+      "publisher": "PubMed Central",
+      "authors": [
+        "Yu-Ra Song",
+        "Byung-Uk Lim",
+        "Sang-Ho Baik"
+      ],
+      "year": 2022,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbiology of traditional Korean rice wine made with nuruk. Nuruk is produced by natural solid fermentation of moistened ground rice or wheat, growing a mixed population of moulds (Aspergillus, Rhizopus, Mucor spp.), yeasts (Saccharomyces, Pichia, Candida and others) and lactic acid bacteria; its moulds release amylase and glucoamylase to saccharify the rice while yeasts ferment the released sugars. Through fermentation Saccharomyces cerevisiae exceeded 90% of the fungal community alongside Saccharomycopsis fibuligera, with Lactilactobacillus curvatus, Liquorilactobacillus satsumensis and Pediococcus acidilactici predominant among bacteria. The gayangju course ran at ~25 C for the fermentation stages then ~15 C for roughly 35 days of aging. Published in Foods 11(17):2604; DOI 10.3390/foods11172604. Underpins the korean-nuruk fermentation archetype.",
+      "doesNotSupport": "A pitch rate (nuruk is a starter culture, not a measured cell count), or Chinese qu / Japanese koji ferments, which are distinct traditions.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "korean-nuruk",
+        "korean-nuruk"
+      ]
+    },
+    {
+      "id": "delva-ragi-tapai-2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067998/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "Genetic diversity of Amylomyces rouxii from ragi tapai in Java Island based on ribosomal regions ITS1/ITS2 and D1/D2",
+      "publisher": "PubMed Central",
+      "authors": [
+        "E. Delva",
+        "T. Arisuryanti",
+        "M. Ilmi"
+      ],
+      "year": 2022,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The composition and function of ragi tapai, the Southeast Asian rice starter cake: a dry culture of rice flour, spices and mixed microorganisms, typically circular at about 2.5 cm across and 0.5 cm thick. Amylomyces rouxii is the principal amylolytic organism, producing amyloglucosidase and growing on raw substrate (the study also found some isolates previously identified as A. rouxii are in fact Mucor indicus). The community further includes Rhizopus oryzae, Mucor spp., Endomycopsis burtonii, Candida utilis, Saccharomyces cerevisiae and lactic acid bacteria (Pediococcus pentosaceus, Lactobacillus plantarum, L. fermentum). Fermentation runs on two functional groups: one breaks starch down to glucose, the other converts glucose to ethanol. Published in Mycobiology 50(2):132-141; DOI 10.1080/12298093.2022.2028436. Underpins the rice-ragi fermentation archetype.",
+      "doesNotSupport": "A pitch rate, or the microbiology of Chinese qu, Korean nuruk or Japanese koji ferments — related traditions with their own starter cultures.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "rice-ragi",
+        "rice-ragi"
       ]
     },
     {

@@ -236,10 +236,24 @@
       "family": "sake",
       "inoculation": "starter-culture",
       "saccharification": "qu",
-      "organisms": ["mould, yeast and bacteria of the qū (wheat/rice) consortium"],
+      "organisms": [
+        "Moulds of the qū: Aspergillus oryzae, Rhizopus oryzae, Mucor spp., Monascus purpureus",
+        "Yeast: Saccharomyces cerevisiae (the principal ethanol producer)",
+        "Bacteria: Lactobacillus spp., Bacillus spp., Weissella, Leuconostoc"
+      ],
       "approach": "Chinese yellow rice wine uses a qū starter — a cake of grain colonised by a consortium of moulds, yeasts and bacteria — to saccharify and ferment together, related to but distinct from Japanese kōji.",
-      "specialHandling": ["Qū supplies both saccharifying enzymes and fermenting organisms."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "semi-solid open fermentation; no pitch rate",
+        "note": "Tian et al. (2022): wheat qū supplies the amylase, protease and esterase that saccharify the starch while Saccharomyces cerevisiae ferments the released sugars — simultaneous saccharification and alcoholic fermentation, termed semi-solid open fermentation. A typical course runs ~30 °C for 5–7 days, after which the mash is opened to drop to ~15 °C and held 1–2 months to finish.",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8844729/"
+      },
+      "specialHandling": [
+        "Qū supplies both saccharifying enzymes and fermenting organisms.",
+        "Saccharification and alcoholic fermentation run simultaneously (semi-solid open fermentation), not in sequence.",
+        "Lactic acid bacteria dominate the bacterial community, and which species dominate tracks with product quality."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8844729/"
     },
     {
       "id": "korean-nuruk",
@@ -247,10 +261,24 @@
       "family": "sake",
       "inoculation": "starter-culture",
       "saccharification": "nuruk",
-      "organisms": ["moulds and yeasts of nuruk"],
+      "organisms": [
+        "Moulds of the nuruk: Aspergillus, Rhizopus and Mucor spp.",
+        "Yeasts: Saccharomyces cerevisiae (>90% of the fungal community through fermentation) and Saccharomycopsis fibuligera",
+        "Lactic acid bacteria: Lactilactobacillus curvatus, Liquorilactobacillus satsumensis, Pediococcus acidilactici"
+      ],
       "approach": "Takju/makgeolli and yakju use nuruk, a traditional grain fermentation starter carrying both saccharifying moulds and yeast.",
-      "specialHandling": ["Nuruk both saccharifies and ferments."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "starter-culture ferment; no pitch rate",
+        "note": "Song et al. (2022): nuruk is made by natural solid fermentation of moistened ground rice or wheat, growing a mixed population of moulds, yeasts and lactic acid bacteria. Its moulds release amylase and glucoamylase to saccharify the rice while the yeasts ferment the released sugars. The gayangju course they followed ran ~25 °C for the fermentation stages, then ~15 °C for an aging period of about 35 days.",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9455823/"
+      },
+      "specialHandling": [
+        "Nuruk carries both the saccharifying moulds and the fermenting yeasts — there is no separate yeast pitch in the traditional method.",
+        "Lactic acid bacteria persist throughout and shape the finished acidity.",
+        "Often a multi-stage build (a first and second fermentation) before an extended cool aging."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9455823/"
     },
     {
       "id": "rice-ragi",
@@ -258,10 +286,24 @@
       "family": "sake",
       "inoculation": "starter-culture",
       "saccharification": "ragi",
-      "organisms": ["Amylomyces rouxii and yeasts (e.g. Saccharomycopsis) of the ragi cake"],
+      "organisms": [
+        "Amylolytic moulds: Amylomyces rouxii (some isolates reclassified as Mucor indicus), Rhizopus oryzae, Mucor spp.",
+        "Yeasts: Saccharomyces cerevisiae, Candida utilis, Endomycopsis burtonii",
+        "Lactic acid bacteria: Pediococcus pentosaceus, Lactobacillus plantarum, L. fermentum"
+      ],
       "approach": "Tapai and related SE-Asian rice ferments use ragi — a dried starter cake of amylolytic mould plus yeast — inoculated onto cooked rice.",
-      "specialHandling": ["Solid-then-liquid ferment; the mould saccharifies as the yeast ferments."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "starter-cake ferment; no pitch rate",
+        "note": "Delva et al. (2022): ragi tapai is a dry starter cake (~2.5 cm across, ~0.5 cm thick) of rice flour, spices and a mixed microbial culture. Amylomyces rouxii is the principal amylolytic organism, producing amyloglucosidase and growing on raw substrate. Two functional groups do the work — one breaks starch down to glucose, the other converts glucose to ethanol.",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067998/"
+      },
+      "specialHandling": [
+        "The starter is a physical cake crumbled over cooked rice, not a liquid pitch.",
+        "Two functional groups: amylolytic moulds saccharify the starch, yeasts ferment the glucose.",
+        "Related starters across the region go by different names — chu (China), ragi (Indonesia), ragi-tapai (Malaysia), bubod (Philippines), marcha (India), nuruk (Korea)."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067998/"
     },
 
     {
