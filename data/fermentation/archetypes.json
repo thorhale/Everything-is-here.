@@ -1,0 +1,388 @@
+{
+  "$schema": "fermentation-archetypes-v1",
+  "note": "How yeast/fermentation is handled, by archetype rather than per style. Every guideline category maps to one of these. Under this project's sourcing rule, a NUMERIC figure (pitch/inoculation rate) is committed only when cited to world-class professional documentation (primary/secondary: research institutes, industry bodies, peer-reviewed literature, manufacturer handbooks); blogs and retailer sites are never cited. An archetype whose primary figure is not yet retrieved carries researchStatus 'pending' and no number — described, not invented. Beer pitch-rate MATH lives in app/lib/pitching (White & Zainasheff); these records describe approach and point there.",
+  "archetypes": [
+    {
+      "id": "beer-ale-clean",
+      "label": "Ale — clean cultured yeast",
+      "family": "beer",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces cerevisiae (ale)"],
+      "approach": "A measured pitch of a single clean ale strain at ale temperatures. Pitch rate follows the beer model in the pitching calculator (cells/mL/°Plato).",
+      "specialHandling": ["Standard ~0.75 M cells/mL/°P target for ales — see the pitching calculator."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+    },
+    {
+      "id": "beer-lager",
+      "label": "Lager — cold, high pitch",
+      "family": "beer",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces pastorianus (lager)"],
+      "approach": "Roughly double the ale pitch, fermented cold. The higher rate and low temperature keep esters down for a clean profile.",
+      "specialHandling": ["~1.5 M cells/mL/°P; cold fermentation; diacetyl rest — see the pitching calculator."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+    },
+    {
+      "id": "beer-belgian-warm",
+      "label": "Belgian / saison — warm, ester-forward",
+      "family": "beer",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces cerevisiae (Belgian/saison, POF+)"],
+      "approach": "Deliberately expressive: warmer fermentation (and sometimes a lower pitch) to encourage the esters and phenols that define Belgian ales and saison.",
+      "specialHandling": ["Under-pitching and free-rising warm ferments raise ester/phenol production — the opposite goal to a clean lager."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+    },
+    {
+      "id": "beer-weizen",
+      "label": "Weissbier — banana & clove",
+      "family": "beer",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces cerevisiae (Weissbier, POF+)"],
+      "approach": "A POF-positive wheat-beer strain fermented warm; pitch rate and temperature are tuned to balance isoamyl-acetate (banana) against 4-vinyl-guaiacol (clove).",
+      "specialHandling": ["Lower pitch / warmer = more banana; higher pitch / cooler = more clove."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+    },
+    {
+      "id": "beer-mixed-sour",
+      "label": "Mixed-culture / kettle sour",
+      "family": "beer",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces", "Brettanomyces", "Lactobacillus", "Pediococcus"],
+      "approach": "A deliberate blend (or sequential pitch) of yeast and souring bacteria — pitched, not spontaneous. Flanders reds/browns, American wild, and kettle sours sit here.",
+      "specialHandling": ["Souring bacteria added alongside or before Saccharomyces; long maturation for Brett character."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+    },
+    {
+      "id": "beer-spontaneous",
+      "label": "Spontaneous (lambic / coolship)",
+      "family": "beer",
+      "inoculation": "spontaneous",
+      "saccharification": "malt-enzyme",
+      "organisms": ["ambient wild yeast and bacteria (Enterobacteria → Saccharomyces → Brettanomyces → Lactobacillus/Pediococcus succession)"],
+      "approach": "No yeast is pitched. Cooled overnight in an open coolship, the wort is inoculated by ambient microbiota and matures in barrels over 1–3 years.",
+      "specialHandling": ["Seasonal (cool months); microbial succession over years; no controllable pitch."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "beer-sorghum-trad",
+      "label": "Traditional opaque grain beer",
+      "family": "beer",
+      "inoculation": "spontaneous",
+      "saccharification": "malt-enzyme",
+      "organisms": ["wild yeast and lactic acid bacteria (often back-slopped)"],
+      "approach": "African sorghum/millet opaque beers and European farmhouse grain ferments: sour, low-alcohol, often back-slopped from a previous batch rather than pitched from a pure culture. Drunk actively fermenting.",
+      "specialHandling": ["Back-slopping seeds the next batch; simultaneous lactic souring and alcoholic fermentation."],
+      "researchStatus": "pending"
+    },
+
+    {
+      "id": "wine-cultured",
+      "label": "Wine — active dry yeast, dosed by weight",
+      "family": "wine",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (wine)"],
+      "approach": "Winemakers dose active dry wine yeast by weight per volume of must — a different standard from beer's cells/mL/°Plato. The yeast is rehydrated warm before inoculation.",
+      "standard": {
+        "metric": "g active dry wine yeast per hectolitre of must",
+        "value": 25,
+        "rangeLow": 20,
+        "rangeHigh": 30,
+        "targetViableCellsPerMl": 5000000,
+        "rehydrateTempCLow": 38,
+        "rehydrateTempCHigh": 40,
+        "note": "AWRI: an inoculum of 0.25 g/L (25 g/hL) to achieve a minimum 5×10^6 viable cells/mL; rehydrate in 5–10× the yeast weight of 38–40 °C water, stand 10–15 min. Up to ~2× for highly clarified, high-Brix, or high-SO2 musts.",
+        "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
+      },
+      "specialHandling": ["Rehydrate warm; a rehydration nutrient (inactivated yeast) improves survival in difficult musts.", "Higher dose for clarified/high-Brix/high-SO2 juice."],
+      "comparison": "Where beer counts cells/mL/°Plato, wine doses grams/hL — the same idea (enough viable cells) expressed in the winemaker's units.",
+      "researchStatus": "sourced",
+      "sourceUrl": "https://wineserver.ucdavis.edu/"
+    },
+    {
+      "id": "wine-native",
+      "label": "Wine — native / spontaneous",
+      "family": "wine",
+      "inoculation": "spontaneous",
+      "saccharification": "none",
+      "organisms": ["indigenous non-Saccharomyces (Hanseniaspora, Metschnikowia, …) giving way to Saccharomyces cerevisiae"],
+      "approach": "No yeast added; the must ferments on the vineyard/winery microbiota. A per-style choice within many wine categories rather than a separate legal class.",
+      "specialHandling": ["Higher risk and variability; the non-Saccharomyces early phase shapes aroma before Saccharomyces finishes."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "wine-flor",
+      "label": "Biologically-aged (flor) wine",
+      "family": "wine",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae flor strains (film-forming)"],
+      "approach": "Fino/manzanilla sherry: after fermentation a film (flor) of specialised yeast grows on the wine surface under a solera, ageing it oxidatively-protected.",
+      "specialHandling": ["Flor film forms at specific alcohol (~15%) and requires the solera system."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "sparkling-secondary",
+      "label": "Sparkling — second fermentation (tirage)",
+      "family": "wine",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (bayanus/prise-de-mousse type)"],
+      "approach": "A base wine is re-fermented with added sugar and a robust yeast (liqueur de tirage) in bottle or tank to trap CO2; the classic method ages on lees.",
+      "specialHandling": ["Alcohol-tolerant, flocculent yeast for the second ferment; lees ageing for autolytic character."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "fortified-arrested",
+      "label": "Fortified — fermentation arrested by spirit",
+      "family": "fortified",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (wine)"],
+      "approach": "Port-type wines: a normal wine ferment is stopped early by adding grape spirit, killing the yeast and leaving residual sweetness at a higher strength.",
+      "specialHandling": ["Fermentation is deliberately halted mid-way; timing of the spirit addition sets sweetness."],
+      "researchStatus": "pending"
+    },
+
+    {
+      "id": "cider-cultured",
+      "label": "Cider — cultured wine/cider yeast",
+      "family": "cider",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (wine/cider)"],
+      "approach": "Modern cider often pitches a cultured wine or cider yeast, frequently after sulphiting the juice to suppress wild flora — closer to the wine model than the beer one.",
+      "specialHandling": ["Nutrient-poor apple juice benefits from yeast nutrient; cool, slow ferments preserve aroma."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "cider-wild-keeving",
+      "label": "Cider — wild / keeved (traditional)",
+      "family": "cider",
+      "inoculation": "spontaneous",
+      "saccharification": "none",
+      "organisms": ["indigenous yeast and bacteria"],
+      "approach": "Traditional French/Basque/English ciders ferment on wild flora; keeving deliberately starves the ferment (via a pectin gel, the chapeau brun) to leave natural sweetness. No pitch.",
+      "specialHandling": ["Keeving removes nutrients to stall fermentation naturally; slow and low-temperature."],
+      "researchStatus": "pending"
+    },
+
+    {
+      "id": "mead-cultured",
+      "label": "Mead — wine yeast + staggered nutrients",
+      "family": "mead",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (wine)"],
+      "approach": "Honey is nutrient-free, so mead pitches a wine yeast and manages fermentation through staggered nutrient additions rather than pitch rate alone. The builder computes a TOSNA-style schedule (lib/must.ts).",
+      "specialHandling": ["Staggered nutrient additions (TOSNA) over the first third of fermentation; without them, sluggish ferments and H2S."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://scottlabs.com/"
+    },
+
+    {
+      "id": "sake-koji-kobo",
+      "label": "Sake — kōji + sake yeast (multiple parallel fermentation)",
+      "family": "sake",
+      "inoculation": "starter-culture",
+      "saccharification": "koji",
+      "organisms": ["Aspergillus oryzae (kōji, saccharification)", "Saccharomyces cerevisiae — kyōkai sake yeast (kōbo, fermentation)"],
+      "approach": "A common misconception is that kōji ferments the sake. It does not: kōji mould saccharifies the rice (amylase/protease), while a SEPARATE sake yeast — usually a kyōkai strain from the Brewing Society of Japan, added via the shubo/moto starter — carries out the alcoholic fermentation. Both run at once in the moromi, 'multiple parallel fermentation', with rice, water and kōji added in three stages (sandan-jikomi).",
+      "specialHandling": ["Shubo/moto starter built first (sokujō fast-souring, or kimoto/yamahai slow lactic).", "Kōji and yeast work simultaneously in the main mash."],
+      "comparison": "Unlike beer (mash then pitch) or wine (crush then pitch), saccharification and fermentation happen together, which lets sake reach unusually high alcohol.",
+      "researchStatus": "sourced",
+      "sourceUrl": "https://japansake.or.jp/sake/en/professional/sake-brewing-processes-flavor/"
+    },
+    {
+      "id": "huangjiu-qu",
+      "label": "Huangjiu (Chinese yellow wine) — qū starter",
+      "family": "sake",
+      "inoculation": "starter-culture",
+      "saccharification": "qu",
+      "organisms": ["mould, yeast and bacteria of the qū (wheat/rice) consortium"],
+      "approach": "Chinese yellow rice wine uses a qū starter — a cake of grain colonised by a consortium of moulds, yeasts and bacteria — to saccharify and ferment together, related to but distinct from Japanese kōji.",
+      "specialHandling": ["Qū supplies both saccharifying enzymes and fermenting organisms."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "korean-nuruk",
+      "label": "Korean rice wine — nuruk starter",
+      "family": "sake",
+      "inoculation": "starter-culture",
+      "saccharification": "nuruk",
+      "organisms": ["moulds and yeasts of nuruk"],
+      "approach": "Takju/makgeolli and yakju use nuruk, a traditional grain fermentation starter carrying both saccharifying moulds and yeast.",
+      "specialHandling": ["Nuruk both saccharifies and ferments."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "rice-ragi",
+      "label": "Southeast Asian rice ferment — ragi / starter cake",
+      "family": "sake",
+      "inoculation": "starter-culture",
+      "saccharification": "ragi",
+      "organisms": ["Amylomyces rouxii and yeasts (e.g. Saccharomycopsis) of the ragi cake"],
+      "approach": "Tapai and related SE-Asian rice ferments use ragi — a dried starter cake of amylolytic mould plus yeast — inoculated onto cooked rice.",
+      "specialHandling": ["Solid-then-liquid ferment; the mould saccharifies as the yeast ferments."],
+      "researchStatus": "pending"
+    },
+
+    {
+      "id": "spirit-congener-grain",
+      "label": "Whisky wash — congener-developing distiller's yeast",
+      "family": "spirit",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces cerevisiae (distiller's / M-type; sometimes with brewer's yeast)"],
+      "approach": "The wash is fermented for flavour, not clean neutrality: distillers pick strains and conditions that develop esters and higher alcohols (congeners), which carry through distillation into the spirit's character.",
+      "specialHandling": ["Warmer / more-stressed ferments and congener-forward strains raise esters; cooler, cleaner ferments reduce them."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "spirit-congener-cane",
+      "label": "Rum wash — osmophilic yeast + dunder",
+      "family": "spirit",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["osmophilic Saccharomyces; dunder/muck microbiota for heavy styles"],
+      "approach": "Cane/molasses washes use osmophilic yeast; heavy 'high-ester' rums recycle dunder (stillage) in muck pits to build the acids and esters that define the style.",
+      "specialHandling": ["Dunder/muck concentrates esters and acids; long, warm, deliberately funky ferments."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "spirit-neutral",
+      "label": "Neutral spirit wash — low-congener yeast",
+      "family": "spirit",
+      "inoculation": "cultured",
+      "saccharification": "malt-enzyme",
+      "organisms": ["Saccharomyces cerevisiae (low-congener / vodka-type)"],
+      "approach": "Vodka, gin base and neutral spirit want the opposite of whisky: a low-metabolite yeast and clean conditions that minimise congeners for a neutral distillate. Higher fermentation temperature tends to lower esters and raise higher alcohols.",
+      "specialHandling": ["Low-congener strain; controlled temperature to minimise flavour compounds."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2076-3417/13/8/4927"
+    },
+    {
+      "id": "spirit-from-wine",
+      "label": "Brandy — wine base, then distil",
+      "family": "spirit",
+      "inoculation": "cultured",
+      "saccharification": "none",
+      "organisms": ["Saccharomyces cerevisiae (wine)"],
+      "approach": "Grape and fruit brandies ferment as wine first (wine yeast, wine handling) and are then distilled; the fermentation archetype is the wine one, with distillation added.",
+      "specialHandling": ["Follow the wine-cultured approach; low-SO2 base wine for distillation."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "agave",
+      "label": "Agave spirits — cultured or wild",
+      "family": "spirit",
+      "inoculation": "spontaneous",
+      "saccharification": "none",
+      "organisms": ["cultured Saccharomyces, or autochthonous wild yeast (traditional mezcal)"],
+      "approach": "Cooked-agave musts are fermented either with a cultured yeast (industrial tequila) or on wild/ambient flora in open wooden vats (traditional mezcal), which drives much of the rustic character.",
+      "specialHandling": ["Open-air wild ferments for traditional styles; strain choice for industrial."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "baijiu-qu-ssf",
+      "label": "Baijiu — Daqu/Xiaoqu, solid-state fermentation",
+      "family": "spirit",
+      "inoculation": "starter-culture",
+      "saccharification": "qu",
+      "organisms": ["complex Daqu/Xiaoqu microbial consortium (moulds, yeasts, bacteria)"],
+      "approach": "Baijiu is made by solid-state fermentation of grain with a qū starter (Daqu or Xiaoqu) — a self-sustaining microbial consortium — often in earthen pits, then solid-state distilled. Not a single pitched yeast.",
+      "specialHandling": ["Solid-state, pit/vessel-dependent microbiota; aroma type (香型) follows the qū and process."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "milk-distilled",
+      "label": "Distilled milk liquor (arkhi)",
+      "family": "spirit",
+      "inoculation": "starter-culture",
+      "saccharification": "none",
+      "organisms": ["kefir-type lactose-fermenting yeast + lactic acid bacteria"],
+      "approach": "Central Asian milk liquor distils fermented mare's/cow's milk (airag/kumis): the lactose is fermented by a kefir-type yeast-and-bacteria culture, then distilled.",
+      "specialHandling": ["Back-slopped milk culture; lactose (not maltose/sucrose) is the sugar."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "regional-traditional-spirit",
+      "label": "Regional traditional spirits",
+      "family": "spirit",
+      "inoculation": "spontaneous",
+      "saccharification": "none",
+      "organisms": ["varies by tradition (wild or local starter)"],
+      "approach": "Feni, palm distillates and other regional spirits ferment on local wild flora or a regional starter before distillation; handled per style rather than one rule.",
+      "specialHandling": ["Map per style as primary sources are secured."],
+      "researchStatus": "pending"
+    },
+
+    {
+      "id": "spontaneous-wild",
+      "label": "Spontaneous sap/juice ferment (palm wine, pulque, chicha)",
+      "family": "traditional",
+      "inoculation": "spontaneous",
+      "saccharification": "none",
+      "organisms": ["wild Saccharomyces cerevisiae and Zymomonas mobilis, plus non-Saccharomyces yeasts and lactic acid bacteria"],
+      "approach": "Palm sap (palm wine), agave sap (pulque) and maize (chicha) ferment spontaneously on the microbes already present in the sap and environment — no yeast is added. In palm wine, Saccharomyces cerevisiae and Zymomonas mobilis are the main alcohol producers.",
+      "specialHandling": ["Very fast (hours to a day); the microbial mix shifts continuously and drives the flavour.", "Traditionally drunk fresh, still fermenting."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://annalsmicrobiology.biomedcentral.com/articles/10.1007/s13213-014-0861-8"
+    },
+    {
+      "id": "milk-kefir",
+      "label": "Fermented milk (airag / kumis / kefir)",
+      "family": "traditional",
+      "inoculation": "starter-culture",
+      "saccharification": "none",
+      "organisms": ["symbiotic lactic acid bacteria + lactose-fermenting yeast (kefir-type)"],
+      "approach": "Mildly alcoholic fermented milks are back-slopped from a living culture of lactic bacteria and yeast that ferment lactose — a starter culture, not a pitched pure strain.",
+      "specialHandling": ["Back-slopping maintains the culture; simultaneous souring and light alcohol."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "scoby-symbiotic",
+      "label": "SCOBY ferment (kombucha)",
+      "family": "traditional",
+      "inoculation": "starter-culture",
+      "saccharification": "none",
+      "organisms": ["symbiotic culture of acetic acid bacteria and yeast (SCOBY)"],
+      "approach": "Kombucha ferments sweetened tea with a SCOBY — a symbiotic pellicle of acetic-acid bacteria and yeast added from a previous batch (with starter liquid), not a measured yeast pitch.",
+      "specialHandling": ["Low alcohol; the bacteria oxidise ethanol to acid, giving the sour profile."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "grain-wild-backslop",
+      "label": "Wild / back-slopped grain & folk ferments",
+      "family": "traditional",
+      "inoculation": "spontaneous",
+      "saccharification": "malt-enzyme",
+      "organisms": ["wild yeast and lactic acid bacteria"],
+      "approach": "Kvass, tesgüino and other folk grain ferments run on wild flora, often back-slopped, and are drunk young and lightly alcoholic. Handled per tradition.",
+      "specialHandling": ["Back-slopping; short, low-alcohol ferments."],
+      "researchStatus": "pending"
+    },
+    {
+      "id": "none-improvised",
+      "label": "No yeast added (pruno)",
+      "family": "traditional",
+      "inoculation": "none",
+      "saccharification": "none",
+      "organisms": ["whatever is present — wild and from added bread; uncontrolled"],
+      "approach": "Improvised prison wine adds no cultured yeast; fermentation relies on wild organisms and any bread thrown in. It is included as a warning, not a method: pruno has caused documented botulism outbreaks.",
+      "specialHandling": ["No pitch, no control; genuine public-health hazard — see the pruno guideline entry."],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ const nextConfig = {
   experimental: {
     outputFileTracingIncludes: {
       "/sources": ["../data/sources/registry.json"],
+      "/fermentation": ["../data/fermentation/archetypes.json"],
       "/data-download": ["../data/reference-export.json"],
       "/data": ["../data/reference-export.json"],
     },

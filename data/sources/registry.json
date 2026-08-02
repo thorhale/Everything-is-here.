@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 227,
-    "backgroundDocuments": 8,
-    "citations": 650,
-    "numericCitations": 604,
+    "distinctSources": 233,
+    "backgroundDocuments": 7,
+    "citations": 662,
+    "numericCitations": 605,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 4,
+    "fullTextVerified": 5,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 500,
-      "secondary": 144,
+      "primary": 506,
+      "secondary": 150,
       "tertiary": 6
     }
   },
@@ -265,12 +265,13 @@
       "doesNotSupport": null,
       "accessed": null,
       "note": "Scott Labs' annual fermentation handbook is the distributor's own compilation of supplier specs; cite the handbook PDF and its year.",
-      "citations": 24,
+      "citations": 25,
       "numericCitations": 24,
       "usedIn": [
         "data/additives/enzymes-finings.json",
         "data/additives/nutrients.json",
-        "data/additives/tannin-wood.json"
+        "data/additives/tannin-wood.json",
+        "data/fermentation/archetypes.json"
       ],
       "exampleRecords": [
         "enzyme-pectic",
@@ -478,6 +479,38 @@
         "malt-crisp-crystal-77",
         "malt-crisp-chocolate",
         "sugar-invert-no3"
+      ]
+    },
+    {
+      "id": "ba-yeast-white-zainasheff-2010",
+      "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
+      "host": "www.brewerspublications.com",
+      "title": "Yeast: The Practical Guide to Beer Fermentation",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "Chris White",
+        "Jamil Zainasheff"
+      ],
+      "year": 2010,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The canonical modern reference on brewing yeast and fermentation: pitch-rate theory, cell viability and vitality, starter propagation, yeast harvesting and repitching, fermentation temperature and health. ISBN-13 978-0-937381-96-0. This is the acknowledged literature basis, alongside the Maltose Falcons propagation guide, for this project's pitching-rate reconstruction in lib/pitching/formulas.ts.",
+      "doesNotSupport": "Any figure attributed to a specific page. The book's contents have not been opened in this environment — only its existence and bibliographic identity are confirmed — so verification is metadata-only and no numeric claim rests on it. The ISBN is the identifier a future page-level check would use. The numeric yeast specs this project ships are transcribed from the yeast producers' own spec sheets (White Labs, Wyeast, Lallemand, Omega, Fermentis), which are the primary measurements this book itself synthesises.",
+      "accessed": "2026-07-31",
+      "note": "Book imprint of the Brewers Association; publisher of the Brewing Elements series (Yeast, Water, Malt, Hops) — the standard modern technical references. Registered as authoritative secondary literature. A number is never sourced to one of these books unless someone has opened the book and cited the page; until then the ISBN is the durable identifier and verification stays metadata-only. The primary measurements the books synthesise (yeast producers' spec sheets, maltsters' and hop merchants' data, water utility analyses) are cited directly elsewhere in this registry.",
+      "citations": 5,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "beer-ale-clean",
+        "beer-lager",
+        "beer-belgian-warm",
+        "beer-weizen",
+        "beer-mixed-sour"
       ]
     },
     {
@@ -705,6 +738,33 @@
       ]
     },
     {
+      "id": "cdc-mmwr-2013-pruno-botulism",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
+      "host": "www.cdc.gov",
+      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
+      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
+      "authors": null,
+      "year": 2013,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
+      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 3,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json",
+        "data/guidelines/northamerica-trad-2023.json"
+      ],
+      "exampleRecords": [
+        "none-improvised",
+        "Pruno (Prison Wine)"
+      ]
+    },
+    {
       "id": null,
       "url": "https://fermentis.com/en/spirits/",
       "host": "fermentis.com",
@@ -885,31 +945,6 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
-      ]
-    },
-    {
-      "id": "cdc-mmwr-2013-pruno-botulism",
-      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
-      "host": "www.cdc.gov",
-      "title": "Notes from the Field: Botulism from Drinking Prison-Made Illicit Alcohol in Utah, 2011",
-      "publisher": "Morbidity and Mortality Weekly Report 62(07):138, US Centers for Disease Control and Prevention",
-      "authors": null,
-      "year": 2013,
-      "kind": "government-report",
-      "reliability": "primary",
-      "verification": "metadata-only",
-      "deepLink": true,
-      "supports": "An outbreak of foodborne botulism among prisoners who drank pruno; eight hospitalised; type A botulinum toxin identified; a weeks-old baked potato implicated as the spore source. Establishes pruno as a documented public-health hazard rather than folklore.",
-      "doesNotSupport": "Any production method, ingredient ratio or yield. This project cites it to describe and warn, not to instruct.",
-      "accessed": "2026-07-30",
-      "note": null,
-      "citations": 2,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/guidelines/northamerica-trad-2023.json"
-      ],
-      "exampleRecords": [
-        "Pruno (Prison Wine)"
       ]
     },
     {
@@ -2170,6 +2205,131 @@
       ],
       "exampleRecords": [
         "malt-emmer"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wineserver.ucdavis.edu/",
+      "host": "wineserver.ucdavis.edu",
+      "title": null,
+      "publisher": "UC Davis Viticulture & Enology",
+      "authors": null,
+      "year": null,
+      "kind": "extension-service",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "wine-cultured"
+      ]
+    },
+    {
+      "id": "awri-yeast-rehydration",
+      "url": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/",
+      "host": "www.awri.com.au",
+      "title": "Active Dry Wine Yeast (ADWY) rehydration",
+      "publisher": "The Australian Wine Research Institute (AWRI)",
+      "authors": null,
+      "year": 2024,
+      "kind": "research-institute",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The professional wine-yeast inoculation standard: an inoculum of 0.25 g/L (25 g/hL) of active dry wine yeast to achieve a minimum 5×10^6 viable cells/mL; rehydrate by sprinkling over 5-10 times its weight of 38-40 C water and standing 10-15 minutes; up to about twice the dose for highly clarified, high-Brix or high-SO2 musts. Underpins the wine-cultured fermentation archetype.",
+      "doesNotSupport": "Beer/cider/mead pitch rates, or any wild-ferment figure. It is the wine active-dry-yeast standard specifically.",
+      "accessed": "2026-08-02",
+      "note": "National wine research body; its winemaking-resources pages are authoritative professional guidance. Source of the 25 g/hL active-dry-wine-yeast inoculation standard.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "wine-cultured"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://japansake.or.jp/sake/en/professional/sake-brewing-processes-flavor/",
+      "host": "japansake.or.jp",
+      "title": null,
+      "publisher": "Japan Sake and Shochu Makers Association",
+      "authors": null,
+      "year": null,
+      "kind": "trade-association",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The Japanese national industry body; authoritative on sake brewing process (koji saccharification, kyokai sake yeast, shubo/moto, multiple parallel fermentation).",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "sake-koji-kobo"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.mdpi.com/2076-3417/13/8/4927",
+      "host": "www.mdpi.com",
+      "title": null,
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "spirit-neutral"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://annalsmicrobiology.biomedcentral.com/articles/10.1007/s13213-014-0861-8",
+      "host": "annalsmicrobiology.biomedcentral.com",
+      "title": null,
+      "publisher": "Annals of Microbiology (BMC, peer-reviewed)",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Peer-reviewed food-microbiology literature; cited for spontaneous-fermentation organisms in palm wine and related traditional drinks.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "spontaneous-wild"
       ]
     },
     {
@@ -5889,25 +6049,6 @@
       "supports": "That Horst Dornbusch authored 'Das große BRAUWELT Lexikon der Biersorten' (2017), an A-to-Z inventory of world beer styles from antiquity to the present covering classic styles, craft-era beers and the most significant historical styles, deliberately written with minimal brew-science vocabulary, and that the author explicitly claims no completeness.",
       "doesNotSupport": "The contents of any individual entry in that book, Dampfbier included. This is a review, not the text.",
       "accessed": "2026-07-30"
-    },
-    {
-      "id": "ba-yeast-white-zainasheff-2010",
-      "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
-      "host": "www.brewerspublications.com",
-      "title": "Yeast: The Practical Guide to Beer Fermentation",
-      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
-      "authors": [
-        "Chris White",
-        "Jamil Zainasheff"
-      ],
-      "year": 2010,
-      "kind": "book",
-      "reliability": "secondary",
-      "verification": "metadata-only",
-      "deepLink": true,
-      "supports": "The canonical modern reference on brewing yeast and fermentation: pitch-rate theory, cell viability and vitality, starter propagation, yeast harvesting and repitching, fermentation temperature and health. ISBN-13 978-0-937381-96-0. This is the acknowledged literature basis, alongside the Maltose Falcons propagation guide, for this project's pitching-rate reconstruction in lib/pitching/formulas.ts.",
-      "doesNotSupport": "Any figure attributed to a specific page. The book's contents have not been opened in this environment — only its existence and bibliographic identity are confirmed — so verification is metadata-only and no numeric claim rests on it. The ISBN is the identifier a future page-level check would use. The numeric yeast specs this project ships are transcribed from the yeast producers' own spec sheets (White Labs, Wyeast, Lallemand, Omega, Fermentis), which are the primary measurements this book itself synthesises.",
-      "accessed": "2026-07-31"
     },
     {
       "id": "ba-water-palmer-kaminski-2013",
