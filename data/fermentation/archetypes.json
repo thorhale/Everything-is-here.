@@ -142,10 +142,23 @@
       "family": "wine",
       "inoculation": "spontaneous",
       "saccharification": "none",
-      "organisms": ["indigenous non-Saccharomyces (Hanseniaspora, Metschnikowia, …) giving way to Saccharomyces cerevisiae"],
+      "organisms": [
+        "Early non-Saccharomyces from the grape surface: Hanseniaspora, Starmerella, Pichia, Debaryomyces, Metschnikowia",
+        "Saccharomyces cerevisiae, which takes over and finishes the ferment"
+      ],
       "approach": "No yeast added; the must ferments on the vineyard/winery microbiota. A per-style choice within many wine categories rather than a separate legal class.",
-      "specialHandling": ["Higher risk and variability; the non-Saccharomyces early phase shapes aroma before Saccharomyces finishes."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "yeast succession; no pitch rate",
+        "note": "Zabukovec et al. (2020): spontaneous fermentation starts on the non-Saccharomyces yeasts that prevail on grape skins — Hanseniaspora, Starmerella, Pichia, Debaryomyces, Metschnikowia — which ferment sugar only weakly. Their exponential growth lasts just two to three days before they reach stationary phase, after which Saccharomyces cerevisiae, more ethanol-tolerant and able to grow anaerobically, dominates and completes the fermentation.",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7709452/"
+      },
+      "specialHandling": [
+        "Higher risk and variability; the non-Saccharomyces early phase shapes aroma before Saccharomyces finishes.",
+        "That early phase is short — two to three days of exponential growth — but it is where higher alcohols, esters, terpenes and volatile thiols are laid down.",
+        "The indigenous population is what carries terroir character, which is the reason for not inoculating."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7709452/"
     },
     {
       "id": "wine-flor",
@@ -153,10 +166,24 @@
       "family": "wine",
       "inoculation": "cultured",
       "saccharification": "none",
-      "organisms": ["Saccharomyces cerevisiae flor strains (film-forming)"],
+      "organisms": [
+        "Film-forming Saccharomyces cerevisiae; historically classed as the four flor races beticus, cheresiensis, montuliensis and rouxii, now known to share a common origin"
+      ],
       "approach": "Fino/manzanilla sherry: after fermentation a film (flor) of specialised yeast grows on the wine surface under a solera, ageing it oxidatively-protected.",
-      "specialHandling": ["Flor film forms at specific alcohol (~15%) and requires the solera system."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "biological ageing under a yeast film; minimum 15% vol",
+        "value": 15,
+        "note": "OIV defines flor (film) wines as wines biologically aged in contact with air through the development of a film of typical yeasts on the free surface, AFTER complete alcoholic fermentation of the must — nothing is arrested. Wine spirit or neutral alcohol may be added, and the finished wine must reach at least 15% vol actual alcohol. Legras et al. (2016): the velum is an air–liquid biofilm that forms once fermentable carbon is exhausted; FLO11 expression at the diauxic shift raises cell-surface hydrophobicity, and the yeast switches from fermentative to oxidative metabolism, consuming ethanol, glycerol, acetic and lactic acid.",
+        "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-i-definitions/special-wines"
+      },
+      "specialHandling": [
+        "Aged after fermentation is complete — this is not an arrested ferment, unlike port-type fortification.",
+        "The velum forms on nutrient depletion: no fermentable carbon, with FLO11-driven cell-surface hydrophobicity floating the cells into a biofilm.",
+        "Metabolism turns oxidative — the film consumes the wine's own ethanol and glycerol rather than sugar.",
+        "Casks are left partly filled so the film has a free surface to grow on; Jerez ages these fractionally through a solera."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4830823/"
     },
     {
       "id": "sparkling-secondary",
@@ -166,8 +193,18 @@
       "saccharification": "none",
       "organisms": ["Saccharomyces cerevisiae (bayanus/prise-de-mousse type)"],
       "approach": "A base wine is re-fermented with added sugar and a robust yeast (liqueur de tirage) in bottle or tank to trap CO2; the classic method ages on lees.",
-      "specialHandling": ["Alcohol-tolerant, flocculent yeast for the second ferment; lees ageing for autolytic character."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "second fermentation in a sealed vessel; regulated additions",
+        "note": "OIV International Code of Oenological Practices: the second fermentation is started by a tirage liqueur (sugar, must or concentrated must) plus a selected yeast inoculum, with clarifying agents (bentonite, organic fining agents, tannins, potassium alginate) and fermentation activators permitted. Nutritive salts are capped — diammonium phosphate or ammonium sulphate at a maximum 0.3 g/L expressed as the salt, and thiamin hydrochloride at a maximum 0.6 mg/L expressed as thiamin. The bottle route runs tirage, stacking, riddling, disgorging and dosage.",
+        "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/special-wines:-sparkling-wines"
+      },
+      "specialHandling": [
+        "Alcohol-tolerant, flocculent yeast for the second ferment; lees ageing for autolytic character.",
+        "Nutrient additions are legally capped: 0.3 g/L DAP or ammonium sulphate, 0.6 mg/L thiamin.",
+        "The yeast has to start in a finished, alcoholic base wine, which is why a robust prise-de-mousse strain is used rather than a primary-fermentation strain."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/special-wines:-sparkling-wines"
     },
     {
       "id": "fortified-arrested",
@@ -177,8 +214,20 @@
       "saccharification": "none",
       "organisms": ["Saccharomyces cerevisiae (wine)"],
       "approach": "Port-type wines: a normal wine ferment is stopped early by adding grape spirit, killing the yeast and leaving residual sweetness at a higher strength.",
-      "specialHandling": ["Fermentation is deliberately halted mid-way; timing of the spirit addition sets sweetness."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "acquired alcoholic strength, % vol (liqueur wine)",
+        "rangeLow": 15,
+        "rangeHigh": 22,
+        "note": "OIV defines fortification as the addition to wine of wine spirit, rectified alcohol of viticultural origin, or rectified food alcohol — and specifically discourages it for merely raising alcohol, permitting it to produce the special-wine categories (flor/film wines, fortified wines, mistelles). Liqueur wine is defined at an acquired alcoholic strength of at least 15% and at most 22% vol (states may allow up to 24% domestically), made from grape must — including partially fermented must — and/or wine with distillates, spirits and alcohol of vitivinicultural origin added.",
+        "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-i-definitions/special-wines"
+      },
+      "specialHandling": [
+        "Fermentation is deliberately halted mid-way; timing of the spirit addition sets sweetness.",
+        "The spirit must itself meet the OIV production conditions for wine spirit or rectified alcohol.",
+        "Distinct from flor wines, which are aged only after fermentation runs to completion."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/wines/fortification"
     },
 
     {
