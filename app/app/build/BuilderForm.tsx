@@ -117,6 +117,20 @@ const PRESETS: Record<Beverage, { volumeL: number; efficiency: number; attenuati
   spirit: { volumeL: 25, efficiency: 100, attenuation: 98, tolerance: 18 },
 };
 
+// How each beverage is dosed — the archetype pitch model in one line, so the
+// builder points you at the right calculator instead of implying beer's
+// cells/mL applies to everything. Sourced detail lives on /pitching and
+// /fermentation.
+const PITCH_HINT: Record<Beverage, string> = {
+  beer: "Beer is pitched by viable cells per mL per °Plato — size the pitch or a starter on the pitching calculator.",
+  cider:
+    "Cider that pitches cultured wine yeast doses by weight, not cell count — see the g/hL inoculation calculator.",
+  wine: "Wine doses active dry yeast by weight (≈25 g/hL to reach 5×10⁶ cells/mL, AWRI) — use the inoculation calculator.",
+  mead: "Mead pitches a wine yeast and is managed through staggered nutrient additions (the schedule is below), not pitch rate alone.",
+  spirit:
+    "Distillers choose strain and fermentation temperature to develop or suppress congeners rather than hitting a set cell count.",
+};
+
 export default function BuilderForm({
   fermentables,
   hops,
@@ -571,6 +585,12 @@ export default function BuilderForm({
           <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.5rem 0 0" }}>
             There is no mash and no brewhouse efficiency here — nothing is being converted from starch, so every gram of
             sugar in the ingredients is a gram of sugar in the fermenter.
+          </p>
+        )}
+        {!showAll && (
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.5rem 0 0" }}>
+            {PITCH_HINT[primary]}{" "}
+            <Link href="/pitching">Pitching &amp; inoculation →</Link>
           </p>
         )}
       </fieldset>
