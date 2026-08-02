@@ -3,14 +3,17 @@
 // (ADWY) is dosed as grams per hectolitre of must, rehydrated warm before
 // pitching.
 //
-// PROVENANCE: the only committed figure here is the AWRI rehydration standard
-// (25 g/hL → a minimum 5×10⁶ viable cells/mL; rehydrate in 5–10× the yeast
-// weight of 38–40 °C water). That is a world-class primary source (the
-// Australian Wine Research Institute). Cider and mead commonly pitch the same
-// active dry wine yeast; where a beverage has no separately-documented rate we
-// say so rather than invent one.
+// PROVENANCE: every figure here is cited. The rehydration standard (25 g/hL →
+// a minimum 5×10⁶ viable cells/mL; rehydrate in 5–10× the yeast weight of
+// 38–40 °C water) is AWRI's, a world-class primary source. The high-Brix rate
+// is Scott Laboratories', who give 25 g/hL as the standard primary dose and
+// 35 g/hL above 25 °Bx. Cider and mead commonly pitch the same active dry wine
+// yeast; where a beverage has no separately-documented rate we say so rather
+// than invent one.
 //   - AWRI, "Yeast rehydration",
 //     https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/
+//   - Scott Laboratories, "Wine Yeast FAQs",
+//     https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs
 
 export const HL_PER_LITER = 0.01; // 1 hectolitre = 100 litres
 
@@ -23,6 +26,12 @@ export const ADWY_STANDARD = {
   // AWRI notes up to ~2× the base rate for highly clarified, high-Brix, or
   // high-SO2 musts.
   difficultMustMultiplier: 2,
+  // Scott Laboratories' own high-Brix figure: 35 g/hL above 25 °Bx. A more
+  // moderate step than AWRI's "up to 2×" ceiling, and the one to reach for
+  // when the only difficulty is sugar.
+  highBrixGPerHl: 35,
+  highBrixThresholdBx: 25,
+  highBrixSourceUrl: "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs",
   targetViableCellsPerMl: 5_000_000,
   rehydrateTempCLow: 38,
   rehydrateTempCHigh: 40,

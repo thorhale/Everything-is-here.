@@ -94,6 +94,9 @@ export default function InoculationForm() {
               <option value={String(ADWY_STANDARD.rateHighGPerHl)}>
                 {ADWY_STANDARD.rateHighGPerHl} (high)
               </option>
+              <option value={String(ADWY_STANDARD.highBrixGPerHl)}>
+                {ADWY_STANDARD.highBrixGPerHl} (over {ADWY_STANDARD.highBrixThresholdBx} °Bx, Scott Labs)
+              </option>
             </select>
           </label>
         </div>
@@ -107,9 +110,15 @@ export default function InoculationForm() {
         Rate and rehydration protocol from the Australian Wine Research
         Institute: an inoculum of 0.25 g/L (25 g/hL) to reach a minimum
         5×10⁶ viable cells/mL, rehydrated in 5–10× its weight of 38–40 °C water.
-        Cider and mead that pitch active dry wine yeast use the same protocol.{" "}
+        Cider and mead that pitch active dry wine yeast use the same protocol —
+        Scott Laboratories give the same 25 g/hL standard dose and{" "}
+        {ADWY_STANDARD.highBrixGPerHl} g/hL above {ADWY_STANDARD.highBrixThresholdBx} °Bx.{" "}
         <a href={ADWY_STANDARD.sourceUrl} target="_blank" rel="noreferrer">
           awri.com.au
+        </a>{" "}
+        ·{" "}
+        <a href={ADWY_STANDARD.highBrixSourceUrl} target="_blank" rel="noreferrer">
+          scottlabsltd.com
         </a>
       </p>
     </div>

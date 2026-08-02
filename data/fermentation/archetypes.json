@@ -187,10 +187,23 @@
       "family": "cider",
       "inoculation": "cultured",
       "saccharification": "none",
-      "organisms": ["Saccharomyces cerevisiae (wine/cider)"],
+      "organisms": ["Saccharomyces cerevisiae (wine/cider active dry yeast)"],
       "approach": "Modern cider often pitches a cultured wine or cider yeast, frequently after sulphiting the juice to suppress wild flora — closer to the wine model than the beer one.",
-      "specialHandling": ["Nutrient-poor apple juice benefits from yeast nutrient; cool, slow ferments preserve aroma."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "g active dry yeast per hectolitre of juice",
+        "value": 25,
+        "rangeLow": 25,
+        "rangeHigh": 35,
+        "note": "Scott Laboratories: 2 lb/1000 gal (25 g/hL) for a standard primary fermentation, rising to 2.8 lb/1000 gal (35 g/hL) for high-Brix juice above 25 °Bx. The same dose-by-weight standard as wine — AWRI gives 25 g/hL for a minimum 5×10⁶ viable cells/mL — so the inoculation calculator's g/hL model applies directly.",
+        "sourceUrl": "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs"
+      },
+      "specialHandling": [
+        "Dosed by weight per volume like wine, not by cells/mL/°Plato like beer.",
+        "Nutrient-poor apple juice benefits from yeast nutrient; cool, slow ferments preserve aroma.",
+        "Juice is commonly sulphited before pitching to suppress the wild flora the cultured yeast is meant to outcompete."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs"
     },
     {
       "id": "cider-wild-keeving",
@@ -198,10 +211,20 @@
       "family": "cider",
       "inoculation": "spontaneous",
       "saccharification": "none",
-      "organisms": ["indigenous yeast and bacteria"],
+      "organisms": ["indigenous yeast and bacteria of the fruit and cellar"],
       "approach": "Traditional French/Basque/English ciders ferment on wild flora; keeving deliberately starves the ferment (via a pectin gel, the chapeau brun) to leave natural sweetness. No pitch.",
-      "specialHandling": ["Keeving removes nutrients to stall fermentation naturally; slow and low-temperature."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "nutrient depletion by keeving; no pitch rate",
+        "note": "Januszek et al. (2024): keeving (défécation) adds calcium chloride and pectin methylesterase to the must. Demethylation of the homogalacturonan chain in pectin lets it bind calcium and form a gel, which CO₂ floats to the surface as the chapeau brun over roughly 2–6 days. Around 50% of the pectin and nutrients are trapped in that cap and the sediment beneath it; the resulting shortage of assimilable nitrogen makes the fermentation slow and stop of its own accord, leaving residual sweetness.",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11506311/"
+      },
+      "specialHandling": [
+        "Keeving starves rather than stops: nutrient removal, not sulphite or filtration, is what arrests the ferment.",
+        "Calcium chloride plus pectin methylesterase drive gel formation; the chapeau brun rises within about 2–6 days.",
+        "Slow and low-temperature by design — the point is an incomplete fermentation with natural sweetness left in."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11506311/"
     },
 
     {

@@ -33,6 +33,14 @@ test("rehydration water is 5–10× the yeast weight", () => {
   near(w.high, 100);
 });
 
+test("the Scott Labs high-Brix rate doses more yeast than the standard", () => {
+  const std = gramsOfYeast(ADWY_STANDARD.rateGPerHl, 100);
+  const high = gramsOfYeast(ADWY_STANDARD.highBrixGPerHl, 100);
+  near(std, 25);
+  near(high, 35);
+  assert.ok(high > std);
+});
+
 test("computeInoculation carries the AWRI viable-cell target", () => {
   const r = computeInoculation(ADWY_STANDARD.rateGPerHl, 100);
   near(r.grams, 25);

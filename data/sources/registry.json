@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 238,
+    "distinctSources": 240,
     "backgroundDocuments": 7,
-    "citations": 672,
-    "numericCitations": 605,
+    "citations": 676,
+    "numericCitations": 606,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 10,
+    "fullTextVerified": 12,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 516,
+      "primary": 520,
       "secondary": 150,
       "tertiary": 6
     }
@@ -1009,6 +1009,63 @@
       "exampleRecords": [
         "beer-sorghum-trad",
         "beer-sorghum-trad"
+      ]
+    },
+    {
+      "id": "scottlabs-wine-yeast-faq",
+      "url": "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs",
+      "host": "scottlabsltd.com",
+      "title": "Wine Yeast FAQs",
+      "publisher": "Scott Laboratories Ltd (Canada)",
+      "authors": null,
+      "year": 2025,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The distributor's active-dry-yeast inoculation rates: 2 lb/1000 gal (25 g/hL) for a standard primary fermentation, increasing to 2.8 lb/1000 gal (35 g/hL) for high-Brix juice above 25 degrees Brix. Applied here to the cider-cultured archetype, which doses by weight per volume exactly as wine does; it corroborates the AWRI 25 g/hL wine standard.",
+      "doesNotSupport": "A resulting viable-cell concentration per mL — the page does not state one, and the 5x10^6 cells/mL target this project uses comes from AWRI. It also supports no rehydration temperature or procedure, which are cited to AWRI instead.",
+      "accessed": "2026-08-02",
+      "note": "The Canadian arm of Scott Laboratories, same standing as scottlabs.com: the distributor's own technical guidance compiled from supplier specs. Source of the 25 g/hL standard and 35 g/hL high-Brix active-dry-yeast inoculation rates applied to cider.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "cider-cultured",
+        "cider-cultured"
+      ]
+    },
+    {
+      "id": "januszek-keeving-2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11506311/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "The Role of Keeving in Modulating Fermentation and the Flavour Profiles of Apple Brandy",
+      "publisher": "PubMed Central",
+      "authors": [
+        "M. Januszek",
+        "P. Satora",
+        "A. Pater",
+        "Ł. Wajda"
+      ],
+      "year": 2024,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The mechanism of keeving (defecation) in traditional cider: calcium chloride and pectin methylesterase are added to the must; demethylation of the homogalacturonan chain in pectin allows calcium binding and gel formation, and CO2 floats that gel to the surface as the chapeau brun within roughly 2-6 days of fermentation. Close to 50% of the pectin and nutrients are trapped in the gel and the sediment left after decanting, and the resulting shortage of assimilable nitrogen slows the fermentation and arrests it spontaneously. Published in Biomolecules 14(10):1322; DOI 10.3390/biom14101322. Underpins the cider-wild-keeving archetype.",
+      "doesNotSupport": "Which indigenous yeast species dominate traditional French keeved cider — the study compared spontaneous fermentation against a pitched S. cerevisiae strain and did not characterise the traditional indigenous population — nor any pitch rate, since keeved cider is not pitched.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "cider-wild-keeving",
+        "cider-wild-keeving"
       ]
     },
     {
