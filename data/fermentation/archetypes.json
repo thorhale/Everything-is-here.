@@ -384,10 +384,25 @@
       "family": "spirit",
       "inoculation": "cultured",
       "saccharification": "malt-enzyme",
-      "organisms": ["Saccharomyces cerevisiae (distiller's / M-type; sometimes with brewer's yeast)"],
+      "organisms": [
+        "Saccharomyces cerevisiae (distiller's / M-type; sometimes with brewer's yeast)",
+        "Lactic acid bacteria in the late fermentation — Lactobacillus spp., Leuconostoc spp."
+      ],
       "approach": "The wash is fermented for flavour, not clean neutrality: distillers pick strains and conditions that develop esters and higher alcohols (congeners), which carry through distillation into the spirit's character.",
-      "specialHandling": ["Warmer / more-stressed ferments and congener-forward strains raise esters; cooler, cleaner ferments reduce them."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "pitching temperature °C and fermentation duration",
+        "rangeLow": 16,
+        "rangeHigh": 19,
+        "note": "Walker & Hill (2016): Scotch whisky washes normally have no temperature control — the wort is simply pitched at 16–19 °C and allowed to rise, typically peaking around 32–33 °C, over a 2–3 day fermentation. The wort is never boiled, so residual malt enzymes keep converting during fermentation (worth roughly 30% additional spirit). Over 100 esters form, mostly fruity; iso-amyl alcohol makes up 40–70% of the higher alcohols and turns unpleasant when too high. Most Scotch malt distilleries pitch commercially supplied cream yeast directly without propagation; grain distilleries pitch at much lower rates.",
+        "sourceUrl": "https://www.mdpi.com/2306-5710/2/4/38"
+      },
+      "specialHandling": [
+        "Warmer / more-stressed ferments and congener-forward strains raise esters; cooler, cleaner ferments reduce them.",
+        "The wash is unhopped and unboiled — malt enzymes carry on converting starch during fermentation.",
+        "A limited late lactic fermentation is deliberate craft, not contamination: LAB acids esterify to ethyl lactate and γ-dodecalactone, giving sweet, fruity and creamy notes."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2306-5710/2/4/38"
     },
     {
       "id": "spirit-congener-cane",
@@ -395,10 +410,26 @@
       "family": "spirit",
       "inoculation": "cultured",
       "saccharification": "none",
-      "organisms": ["osmophilic Saccharomyces; dunder/muck microbiota for heavy styles"],
+      "organisms": [
+        "Saccharomyces cerevisiae (the usual production yeast)",
+        "Stress-tolerant non-Saccharomyces: Schizosaccharomyces pombe, plus Candida, Debaryomyces, Kluyveromyces, Pichia, Hanseniaspora",
+        "Bacteria: Lactobacillus spp. and Propionibacterium spp."
+      ],
       "approach": "Cane/molasses washes use osmophilic yeast; heavy 'high-ester' rums recycle dunder (stillage) in muck pits to build the acids and esters that define the style.",
-      "specialHandling": ["Dunder/muck concentrates esters and acids; long, warm, deliberately funky ferments."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "fermentation duration and temperature",
+        "rangeLow": 28,
+        "rangeHigh": 35,
+        "note": "Mangwanda et al. (2021): rum fermentations run anywhere from 20 hours to 21 days — short 20–26 hour ferments give light rums, ferments beyond 7 days give heavy ones. Temperature is held at 28–35 °C for yeast growth; S. cerevisiae works best at 20–30 °C and commercial distilling strains tolerate 32–35 °C, with metabolic activity falling away rapidly above that. Molasses is a harsh, low-water-activity substrate (S. cerevisiae needs a water activity of at least 0.65), so few organisms besides Schizosaccharomyces pombe and Bacillus subtilis survive alongside it. Dunder — the volatile-depleted liquid left in the still from previous batches — is routinely added back to preserve volatiles and organoleptic continuity between batches.",
+        "sourceUrl": "https://www.mdpi.com/2311-5637/7/1/21"
+      },
+      "specialHandling": [
+        "Dunder/muck concentrates esters and acids; long, warm, deliberately funky ferments.",
+        "Fermentation length is the main lever on style: hours for light rum, over a week for heavy.",
+        "Bacteria are part of the flavour, not just spoilage — Lactobacillus and Propionibacterium give 2,3-butanediol, diacetyl and propionic acid, though too much inhibits the ferment."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2311-5637/7/1/21"
     },
     {
       "id": "spirit-neutral",
@@ -429,10 +460,25 @@
       "family": "spirit",
       "inoculation": "spontaneous",
       "saccharification": "none",
-      "organisms": ["cultured Saccharomyces, or autochthonous wild yeast (traditional mezcal)"],
+      "organisms": [
+        "Yeasts: Saccharomyces cerevisiae, Hanseniaspora spp., Candida spp., Torulaspora delbrueckii, Kluyveromyces marxianus",
+        "Bacteria: lactic acid bacteria, Leuconostoc mesenteroides"
+      ],
       "approach": "Cooked-agave musts are fermented either with a cultured yeast (industrial tequila) or on wild/ambient flora in open wooden vats (traditional mezcal), which drives much of the rustic character.",
-      "specialHandling": ["Open-air wild ferments for traditional styles; strain choice for industrial."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "spontaneous fermentation duration, days",
+        "rangeLow": 8,
+        "rangeHigh": 20,
+        "note": "Becerra-Lucio et al. (2022): agave piñas are cooked in earthen pit ovens or autoclaves, which both sterilises the material and hydrolyses its complex carbohydrates into fermentable sugars — but inoculation begins the moment the oven is opened, via hands, tools and the surrounding environment. Artisanal mezcal is therefore spontaneous, not pitched, and takes roughly 8 to 20 days. Non-Saccharomyces yeasts and bacteria supply the higher alcohols, acetate esters and ethyl esters behind its floral and fruity character.",
+        "sourceUrl": "https://www.mdpi.com/2311-5637/8/11/662"
+      },
+      "specialHandling": [
+        "Open-air wild ferments for traditional styles; strain choice for industrial.",
+        "Cooking does the saccharification — there is no enzyme or starter culture, the agave's own fructans are hydrolysed by heat.",
+        "The 'inoculum' is the production environment itself: the consortium comes from the surroundings once the oven is opened."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.mdpi.com/2311-5637/8/11/662"
     },
     {
       "id": "baijiu-qu-ssf",
@@ -440,10 +486,23 @@
       "family": "spirit",
       "inoculation": "starter-culture",
       "saccharification": "qu",
-      "organisms": ["complex Daqu/Xiaoqu microbial consortium (moulds, yeasts, bacteria)"],
+      "organisms": [
+        "Fungi: Saccharomyces cerevisiae, Kazachstania, Aspergillus, Rhizopus, Apiotrichum",
+        "Bacteria: Lactobacillus (organic acids), Bacillus (pyrazines and aromatic compounds), Clostridium (caproic-acid precursors)"
+      ],
       "approach": "Baijiu is made by solid-state fermentation of grain with a qū starter (Daqu or Xiaoqu) — a self-sustaining microbial consortium — often in earthen pits, then solid-state distilled. Not a single pitched yeast.",
-      "specialHandling": ["Solid-state, pit/vessel-dependent microbiota; aroma type (香型) follows the qū and process."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "solid-state fermentation on a qū consortium; no pitch rate",
+        "note": "Tu et al. (2022): Daqu is a grain starter of wheat, barley and/or peas, classed by the temperature it is made at — high-temperature for sauce (Maotai) aroma, medium for strong aroma, low for light aroma. Xiaoqu is a simpler rice/sorghum/barley starter made with Chinese medicinal herbs, suited to southern China, and in xiaoqu baijiu saccharification and fermentation run at the same time. In traditional production the organisms come from the environment, the workers and the jiuqu itself rather than a deliberate pitch; modern practice may add isolated functional strains. For strong-aroma baijiu the earthen pit is essential — Clostridium spp. living in the pit mud produce caproic acid and ethyl caproate.",
+        "sourceUrl": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.919044/full"
+      },
+      "specialHandling": [
+        "Solid-state, pit/vessel-dependent microbiota; aroma type (香型) follows the qū and process.",
+        "The pit itself is part of the organism set — pit-mud Clostridium is what makes strong-aroma baijiu taste the way it does.",
+        "Daqu type is chosen by the aroma target: high-temperature daqu for sauce aroma, medium for strong, low for light."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.919044/full"
     },
     {
       "id": "milk-distilled",

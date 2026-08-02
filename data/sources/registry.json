@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 245,
+    "distinctSources": 249,
     "backgroundDocuments": 7,
-    "citations": 684,
-    "numericCitations": 608,
+    "citations": 692,
+    "numericCitations": 611,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 17,
+    "fullTextVerified": 21,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 528,
+      "primary": 536,
       "secondary": 150,
       "tertiary": 6
     }
@@ -1237,6 +1237,130 @@
       "exampleRecords": [
         "rice-ragi",
         "rice-ragi"
+      ]
+    },
+    {
+      "id": "walker-hill-whisky-yeast-2016",
+      "url": "https://www.mdpi.com/2306-5710/2/4/38",
+      "host": "www.mdpi.com",
+      "title": "Saccharomyces cerevisiae in the Production of Whisk(e)y",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "Graeme M. Walker",
+        "Annie E. Hill"
+      ],
+      "year": 2016,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "How a whisky wash is fermented for congeners rather than neutrality. Scotch whisky fermentation normally has no temperature control: the wort is pitched at 16-19 C and allowed to rise, typically peaking around 32-33 C, over 2-3 days depending on distillery capacity. The wort is never boiled, so residual malt enzymes keep converting during fermentation, worth roughly 30% additional spirit. Over 100 esters form, predominantly fruity, and iso-amyl alcohol makes up 40-70% of the total higher alcohols, becoming unpleasant at high levels. Most Scotch malt distilleries add commercially supplied cream yeast directly without propagation, while grain distilleries pitch at much lower rates. Limited lactic-acid-bacteria activity is an essential part of the craft of malt distilling: LAB acids esterify to compounds such as ethyl lactate and gamma-dodecalactone giving sweet, fruity and creamy notes. Published in Beverages 2(4):38; DOI 10.3390/beverages2040038. Underpins the spirit-congener-grain archetype.",
+      "doesNotSupport": "A numeric pitching rate in cells/mL or g/hL — the paper describes cream-yeast practice and relative rates without giving a figure — nor the fermentation of rum, agave or neutral spirit.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "spirit-congener-grain",
+        "spirit-congener-grain"
+      ]
+    },
+    {
+      "id": "mangwanda-rum-production-2021",
+      "url": "https://www.mdpi.com/2311-5637/7/1/21",
+      "host": "www.mdpi.com",
+      "title": "Processes, Challenges and Optimisation of Rum Production from Molasses—A Contemporary Review",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "T. Mangwanda",
+        "J. B. Johnson",
+        "J. S. Mani",
+        "S. Jackson",
+        "S. Chandra",
+        "T. McKeown",
+        "S. White",
+        "M. Naiker"
+      ],
+      "year": 2021,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Rum fermentation from molasses. Fermentation runs from 20 hours to 21 days: 20-26 hour ferments give lighter rums and ferments beyond 7 days give heavier ones. Temperature is maintained at 28-35 C to optimise yeast growth; S. cerevisiae is the usual production species, works optimally at 20-30 C, requires a minimum water activity of 0.65, and commercial distilling strains tolerate 32-35 C with metabolic activity declining rapidly above that. Molasses is stressful enough that few organisms besides Schizosaccharomyces pombe and Bacillus subtilis survive alongside it; minor contributors include Candida, Debaryomyces, Kluyveromyces, Pichia and Hanseniaspora. Dunder — the volatile-depleted liquid residue left in the stills from previous batches — is routinely added back to the molasses preparation to preserve volatiles and organoleptic continuity. Lactobacillus and Propionibacterium are the predominant bacterial contaminants and produce flavour-active 2,3-butanediol, diacetyl and propionic acid, while inhibiting fermentation at excessive concentrations. Published in Fermentation 7(1):21; DOI 10.3390/fermentation7010021. Underpins the spirit-congener-cane archetype.",
+      "doesNotSupport": "The specific Jamaican muck-pit practice or any high-ester dosing figure, and no pitch rate in cells/mL or g/hL.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "spirit-congener-cane",
+        "spirit-congener-cane"
+      ]
+    },
+    {
+      "id": "becerra-lucio-mezcal-2022",
+      "url": "https://www.mdpi.com/2311-5637/8/11/662",
+      "host": "www.mdpi.com",
+      "title": "Unveiling the Microbial Ecology behind Mezcal: A Spirit Drink with a Growing Global Demand",
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": [
+        "P. A. Becerra-Lucio",
+        "E. Diego-García",
+        "K. Guillén-Navarro",
+        "Y. J. Peña-Ramírez"
+      ],
+      "year": 2022,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbial ecology of agave spirits. Agave pinas are cooked in earthen pit ovens or industrial autoclaves, which sterilises the plant material and hydrolyses its complex carbohydrates into fermentable sugars; cross-contamination begins immediately once the oven is opened, through bare-hand manipulation and unsterilised tools. Mezcal production relies on spontaneous fermentation rather than inoculation, the consortium coming from the environments surrounding the production factories. Dominant yeasts in artisanal spontaneous fermentation are Saccharomyces cerevisiae, Hanseniaspora spp., Candida spp., Torulaspora delbrueckii and Kluyveromyces marxianus, alongside lactic acid bacteria and Leuconostoc mesenteroides. Fermentation generally takes approximately 8 to 20 days. Non-Saccharomyces species and bacteria contribute higher alcohols, acetate esters and ethyl esters with floral and fruity character. Published in Fermentation 8(11):662; DOI 10.3390/fermentation8110662. Underpins the agave archetype.",
+      "doesNotSupport": "Industrial tequila's inoculated-fermentation parameters or any pitch rate; it documents the spontaneous artisanal case.",
+      "accessed": "2026-08-02",
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "agave",
+        "agave"
+      ]
+    },
+    {
+      "id": "tu-baijiu-microorganisms-2022",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.919044/full",
+      "host": "www.frontiersin.org",
+      "title": "Chinese Baijiu: The Perfect Works of Microorganisms",
+      "publisher": "Frontiers",
+      "authors": [
+        "W. Tu",
+        "et al."
+      ],
+      "year": 2022,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The starter cultures and solid-state fermentation behind baijiu. Daqu is a grain distiller's jiuqu made from wheat, barley and/or peas, classified by production temperature — high-temperature for sauce (Maotai) aroma, medium-temperature for strong aroma, low-temperature for light aroma. Xiaoqu is a simpler starter of rice, sorghum or barley made with traditional Chinese medicines, suited to southern China and generating less heat; in xiaoqu baijiu, saccharification and fermentation are conducted at the same time. In traditional production the microorganisms originate from the production environment, the production workers and the jiuqu rather than deliberate pitching, though modern practice may add isolated functional strains. Dominant fungi are Saccharomyces cerevisiae, Kazachstania, Aspergillus, Rhizopus and Apiotrichum; dominant bacteria are Lactobacillus (organic acids), Bacillus (flavour components) and Clostridium (caproic-acid precursors). For strong-flavoured baijiu the pit mud and its Clostridium spp. produce caproic acid and ethyl caproate. Published in Frontiers in Microbiology 13:919044; DOI 10.3389/fmicb.2022.919044. Underpins the baijiu-qu-ssf archetype.",
+      "doesNotSupport": "Huangjiu or Japanese koji fermentation, and no pitch rate — baijiu is a starter-culture solid-state ferment with no measured cell count.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "baijiu-qu-ssf",
+        "baijiu-qu-ssf"
       ]
     },
     {
