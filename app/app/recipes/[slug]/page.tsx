@@ -5,6 +5,7 @@ export const revalidate = 3600;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getRecipeIngredients } from "@/lib/recipe-ingredients";
 import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
@@ -55,18 +56,21 @@ function pitchTypeForStyle(styleName: string | null): PitchRateKey {
 export default async function RecipeDetailPage({ params }: Props) {
   const { slug } = await params;
 
-  const recipe = await prisma.recipe.findUnique({
-    where: { slug },
-    include: {
-      brewer: true,
-      fermentables: { orderBy: { sortOrder: "asc" } },
-      hops: { orderBy: { sortOrder: "asc" } },
-      yeasts: true,
-      miscs: true,
-      comments: true,
-      pitchingProtocol: true,
-    },
-  });
+  // Ingredients come from the gzipped static shards, not from Postgres — the
+  // junction tables left the database (docs/storage-efficiency.md, tier 3).
+  // They were 1,092,461 rows costing 270 MB there; they are 14 MB here, and
+  // this page only ever needs one recipe's worth.
+  const [recipe, ingredients] = await Promise.all([
+    prisma.recipe.findUnique({
+      where: { slug },
+      include: {
+        brewer: true,
+        comments: true,
+        pitchingProtocol: true,
+      },
+    }),
+    getRecipeIngredients(slug),
+  ]);
 
   if (!recipe || recipe.isHidden) {
     notFound();
@@ -81,13 +85,13 @@ export default async function RecipeDetailPage({ params }: Props) {
   const suggestedYeasts = recipe.styleName
     ? await matchStrainsForStyle(recipe.styleName, { use: "beer", limit: 4 })
     : [];
-  const yeastStrainLinks: Record<string, string | null> = Object.fromEntries(
-    await Promise.all(
-      recipe.yeasts.map(async (y): Promise<[string, string | null]> => {
-        const match = await matchStrainForName(y.name);
-        return [y.id, match ? strainHref(match.id) : null];
-      }),
-    ),
+  // Keyed by position: shard rows carry no synthetic id, and a recipe's yeast
+  // list is a fixed ordered array.
+  const yeastStrainLinks: (string | null)[] = await Promise.all(
+    ingredients.yeasts.map(async (y) => {
+      const match = y.name ? await matchStrainForName(y.name) : null;
+      return match ? strainHref(match.id) : null;
+    }),
   );
 
   // Water + mash-pH analysis from the recipe's own colour and style.
@@ -159,7 +163,7 @@ export default async function RecipeDetailPage({ params }: Props) {
           </div>
 
           <h3>Fermentables</h3>
-          {recipe.fermentables.length === 0 ? (
+          {ingredients.fermentables.length === 0 ? (
             <p style={{ color: "var(--wh-text-light)" }}>None listed.</p>
           ) : (
             <table id="fermentables">
@@ -174,12 +178,11 @@ export default async function RecipeDetailPage({ params }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {/* sortOrder is half this row's composite primary key, so it is
-                    unique within a recipe and makes a valid list key. The cuid
-                    `id` column existed only to serve as one and has been
-                    dropped — see docs/storage-efficiency.md. */}
-                {recipe.fermentables.map((f) => (
-                  <tr key={f.sortOrder}>
+                {/* The shard stores each recipe's ingredients as an ordered
+                    array, so position is the identity — no id column needed.
+                    See docs/storage-efficiency.md, tier 3. */}
+                {ingredients.fermentables.map((f, i) => (
+                  <tr key={i}>
                     <td className="nowrap">
                       <span title={f.percent ?? undefined}>{f.amountDisplay}</span>
                     </td>
@@ -200,7 +203,7 @@ export default async function RecipeDetailPage({ params }: Props) {
           )}
 
           <h3>Hops</h3>
-          {recipe.hops.length === 0 ? (
+          {ingredients.hops.length === 0 ? (
             <p style={{ color: "var(--wh-text-light)" }}>None listed.</p>
           ) : (
             <table id="hops">
@@ -215,11 +218,11 @@ export default async function RecipeDetailPage({ params }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {recipe.hops.map((h) => (
-                  <tr key={h.sortOrder}>
+                {ingredients.hops.map((h, i) => (
+                  <tr key={i}>
                     <td className="nowrap">{h.amountDisplay}</td>
                     <td className="nowrap">
-                      <Link href={`/hops/${encodeURIComponent(h.name)}`}>{h.name}</Link>
+                      <Link href={`/hops/${encodeURIComponent(h.name ?? "")}`}>{h.name}</Link>
                     </td>
                     <td className="nowrap">{h.timeDisplay}</td>
                     <td className="hide-mobile">{h.use}</td>
@@ -233,7 +236,7 @@ export default async function RecipeDetailPage({ params }: Props) {
             </table>
           )}
 
-          {recipe.yeasts.length > 0 && (
+          {ingredients.yeasts.length > 0 && (
             <>
               <h3>Yeasts</h3>
               <table id="yeasts">
@@ -245,15 +248,15 @@ export default async function RecipeDetailPage({ params }: Props) {
                   </tr>
                 </thead>
                 <tbody>
-                  {recipe.yeasts.map((y) => (
-                    <tr key={y.id}>
+                  {ingredients.yeasts.map((y, i) => (
+                    <tr key={i}>
                       <td className="nowrap">
-                        <Link href={`/yeasts/${encodeURIComponent(y.name)}`}>{y.name}</Link>
-                        {yeastStrainLinks[y.id] && (
+                        <Link href={`/yeasts/${encodeURIComponent(y.name ?? "")}`}>{y.name}</Link>
+                        {yeastStrainLinks[i] && (
                           <>
                             {" "}
                             <Link
-                              href={yeastStrainLinks[y.id]!}
+                              href={yeastStrainLinks[i]!}
                               style={{ fontSize: "0.75rem", color: "var(--wh-text-light)" }}
                             >
                               (specs)
@@ -359,7 +362,7 @@ export default async function RecipeDetailPage({ params }: Props) {
         recipeSlug={recipe.slug}
         defaults={pitchingDefaults}
         saved={savedProtocol}
-        yeastName={recipe.yeasts[0]?.name}
+        yeastName={ingredients.yeasts[0]?.name ?? undefined}
         canEdit={admin}
       />
 

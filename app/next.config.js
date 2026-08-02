@@ -17,6 +17,21 @@ const nextConfig = {
     outputFileTracingIncludes: {
       "/sources": ["../data/sources/registry.json"],
       "/fermentation": ["../data/fermentation/archetypes.json"],
+      // Tier 3 of docs/storage-efficiency.md: the archive's ingredients are
+      // gzipped static shards, not Postgres rows. They are read with
+      // join(process.cwd(), "..", ...), so no static import points at them and
+      // Next cannot infer the dependency — without these entries the pages
+      // deploy and quietly render no ingredients at all.
+      "/recipes/[slug]": [
+        "../data/recipes/ingredients/**",
+        "../data/recipes/archive-rollups.json.gz",
+      ],
+      "/recipes/[slug]/beerxml": ["../data/recipes/ingredients/**"],
+      "/hops/[name]": ["../data/recipes/archive-rollups.json.gz"],
+      "/yeasts/[name]": ["../data/recipes/archive-rollups.json.gz"],
+      "/fermentables/[name]": ["../data/recipes/archive-rollups.json.gz"],
+      "/ingredients": ["../data/recipes/archive-rollups.json.gz"],
+      "/guidelines/[edition]/[code]": ["../data/recipes/archive-rollups.json.gz"],
       "/data-download": ["../data/reference-export.json"],
       "/data": ["../data/reference-export.json"],
     },

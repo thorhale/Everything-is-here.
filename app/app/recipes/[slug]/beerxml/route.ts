@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { getRecipeIngredients } from "@/lib/recipe-ingredients";
 import { prisma } from "@/lib/db";
 import { toBeerXml, scaleRecipe, xmlFilename, type XmlRecipe } from "@/lib/beerxml";
 
@@ -32,15 +33,11 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
-  const recipe = await prisma.recipe.findUnique({
-    where: { slug },
-    include: {
-      brewer: true,
-      fermentables: { orderBy: { sortOrder: "asc" } },
-      hops: { orderBy: { sortOrder: "asc" } },
-      yeasts: true,
-    },
-  });
+  // Ingredients come from the static shards; see lib/recipe-ingredients.ts.
+  const [recipe, ingredients] = await Promise.all([
+    prisma.recipe.findUnique({ where: { slug }, include: { brewer: true } }),
+    getRecipeIngredients(slug),
+  ]);
   if (!recipe || recipe.isHidden) {
     return new NextResponse("Recipe not found", { status: 404 });
   }
@@ -71,22 +68,22 @@ export async function GET(
       `Recovered from the BrewToad archive by WortHogg. Original source: ${recipe.sourceUrl} ` +
       `(Wayback snapshot ${recipe.sourceTimestamp}).` +
       (recipe.notesText ? `\n\n${recipe.notesText}` : ""),
-    fermentables: recipe.fermentables.map((f) => ({
-      name: f.name,
+    fermentables: ingredients.fermentables.map((f) => ({
+      name: f.name ?? "",
       amountLb: f.amountLb,
       ppg: f.ppg,
       colorLovibond: f.colorLovibond,
       type: f.use,
     })),
-    hops: recipe.hops.map((h) => ({
-      name: h.name,
+    hops: ingredients.hops.map((h) => ({
+      name: h.name ?? "",
       amountOz: h.amountOz,
       alphaPct: h.alphaAcidPct,
       timeMin: h.timeMinutes,
       use: h.use,
     })),
-    yeasts: recipe.yeasts.map((y) => ({
-      name: y.name,
+    yeasts: ingredients.yeasts.map((y) => ({
+      name: y.name ?? "",
       labProduct: y.labProduct,
       attenuationPct: y.attenuationPct,
     })),

@@ -1,77 +1,34 @@
 import { prisma } from "@/lib/db";
 import { unstable_cache } from "next/cache";
+import { getRollups, recipeIdsUsing } from "@/lib/archive-rollups";
 
 // The original site's Styles & Ingredients reference databases weren't
 // archived in scrapable form, so these rebuild them by aggregating the
 // ingredient rows of every archived recipe: each hop varietal, yeast type,
 // fermentable, and maltster, with usage counts and typical specs.
+//
+// Those aggregates are no longer computed in SQL. The ingredient junction
+// tables left Postgres (docs/storage-efficiency.md, tier 3), so the same
+// figures are precomputed by app/build-archive-rollups.mjs and read from a
+// 1 MB gzipped file. No unstable_cache wrapper is needed any more — the data
+// is a static file, decompressed once per process, so there is nothing to
+// revalidate.
 
-export const getHopVarietals = unstable_cache(
-  async () =>
-    prisma.$queryRaw<{ name: string; uses: number; alpha: number | null }[]>`
-      SELECT "name", count(*)::int AS uses,
-             round(avg("alphaAcidPct")::numeric, 1)::float AS alpha
-      FROM "RecipeHop"
-      WHERE "name" IS NOT NULL AND "name" <> ''
-      GROUP BY "name"
-      HAVING count(*) >= 5
-      ORDER BY count(*) DESC
-      LIMIT 500`,
-  ["hop-varietals"],
-  { revalidate: 3600 }
-);
+export async function getHopVarietals() {
+  return (await getRollups()).hopVarietals;
+}
 
-export const getYeastTypes = unstable_cache(
-  async () =>
-    prisma.$queryRaw<
-      { name: string; uses: number; attenuation: number | null; labs: string | null }[]
-    >`
-      SELECT "name", count(*)::int AS uses,
-             round(avg("attenuationPct")::numeric, 1)::float AS attenuation,
-             string_agg(DISTINCT "labProduct", ', ') FILTER (WHERE "labProduct" IS NOT NULL) AS labs
-      FROM "RecipeYeast"
-      WHERE "name" IS NOT NULL AND "name" <> ''
-      GROUP BY "name"
-      HAVING count(*) >= 5
-      ORDER BY count(*) DESC
-      LIMIT 500`,
-  ["yeast-types"],
-  { revalidate: 3600 }
-);
+export async function getYeastTypes() {
+  return (await getRollups()).yeastTypes;
+}
 
-export const getFermentables = unstable_cache(
-  async () =>
-    prisma.$queryRaw<
-      { name: string; uses: number; ppg: number | null; color: number | null; maltsters: string | null }[]
-    >`
-      SELECT "name", count(*)::int AS uses,
-             round(avg("ppg")::numeric, 0)::float AS ppg,
-             round(avg("colorLovibond")::numeric, 0)::float AS color,
-             string_agg(DISTINCT "maltster", ', ')
-               FILTER (WHERE "maltster" IS NOT NULL AND "maltster" <> 'Any') AS maltsters
-      FROM "RecipeFermentable"
-      WHERE "name" IS NOT NULL AND "name" <> ''
-      GROUP BY "name"
-      HAVING count(*) >= 5
-      ORDER BY count(*) DESC
-      LIMIT 500`,
-  ["fermentables"],
-  { revalidate: 3600 }
-);
+export async function getFermentables() {
+  return (await getRollups()).fermentables;
+}
 
-export const getMaltsters = unstable_cache(
-  async () =>
-    prisma.$queryRaw<{ maltster: string; uses: number; products: number }[]>`
-      SELECT "maltster", count(*)::int AS uses, count(DISTINCT "name")::int AS products
-      FROM "RecipeFermentable"
-      WHERE "maltster" IS NOT NULL AND "maltster" <> '' AND "maltster" <> 'Any'
-      GROUP BY "maltster"
-      HAVING count(*) >= 5
-      ORDER BY count(*) DESC
-      LIMIT 100`,
-  ["maltsters"],
-  { revalidate: 3600 }
-);
+export async function getMaltsters() {
+  return (await getRollups()).maltsters;
+}
 
 export const getStyles = unstable_cache(
   async () =>
@@ -85,30 +42,28 @@ export const getStyles = unstable_cache(
   { revalidate: 3600 }
 );
 
-// Recent recipes using a given ingredient (for the detail pages)
-export async function recipesUsingHop(name: string, take = 25) {
-  return prisma.recipe.findMany({
-    where: { isHidden: false, hops: { some: { name } } },
-    orderBy: { scrapedAt: "desc" },
-    take,
+// Recent recipes using a given ingredient (for the detail pages). The
+// ingredient -> recipe ids mapping comes from the rollups; the recipes
+// themselves are still rows in Postgres.
+async function recipesByIds(ids: string[]) {
+  if (!ids.length) return [];
+  const rows = await prisma.recipe.findMany({
+    where: { id: { in: ids }, isHidden: false },
     include: { brewer: true },
   });
+  // Preserve the rollup's ordering (most recently scraped first).
+  const rank = new Map(ids.map((id, i) => [id, i]));
+  return rows.sort((a, b) => (rank.get(a.id) ?? 0) - (rank.get(b.id) ?? 0));
+}
+
+export async function recipesUsingHop(name: string, take = 25) {
+  return recipesByIds(await recipeIdsUsing("hop", name, take));
 }
 
 export async function recipesUsingYeast(name: string, take = 25) {
-  return prisma.recipe.findMany({
-    where: { isHidden: false, yeasts: { some: { name } } },
-    orderBy: { scrapedAt: "desc" },
-    take,
-    include: { brewer: true },
-  });
+  return recipesByIds(await recipeIdsUsing("yeast", name, take));
 }
 
 export async function recipesUsingFermentable(name: string, take = 25) {
-  return prisma.recipe.findMany({
-    where: { isHidden: false, fermentables: { some: { name } } },
-    orderBy: { scrapedAt: "desc" },
-    take,
-    include: { brewer: true },
-  });
+  return recipesByIds(await recipeIdsUsing("fermentable", name, take));
 }
