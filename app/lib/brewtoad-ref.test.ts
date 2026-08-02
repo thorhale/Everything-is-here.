@@ -12,6 +12,23 @@ test("parses the id out of a scraped ref_url", () => {
   assert.equal(parseRefId("/web/20181215223250/https://www.brewtoad.com/yeasts/1234"), 1234);
 });
 
+// The parse sample contained only the Wayback-absolute form. Production turned
+// out to be ~85% bare-relative — the migration's verification step caught it and
+// refused to continue, rather than nulling 349k rows. Both shapes carry the same
+// integer, which is the only information either holds.
+test("parses the bare-relative form production actually uses", () => {
+  assert.equal(parseRefId("/generic-fermentables/190"), 190);
+  assert.equal(parseRefId("/hops/7"), 7);
+  assert.equal(parseRefId("/yeasts/1234"), 1234);
+});
+
+test("both production shapes yield the same id", () => {
+  assert.equal(
+    parseRefId("/generic-fermentables/52"),
+    parseRefId("/web/20181215223250/https://www.brewtoad.com/generic-fermentables/52")
+  );
+});
+
 test("anything unexpected parses to null rather than a wrong id", () => {
   assert.equal(parseRefId(null), null);
   assert.equal(parseRefId(""), null);

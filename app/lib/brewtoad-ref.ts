@@ -55,7 +55,17 @@ export function waybackRefUrl(
  * does not match the expected shape, so a surprise in the source data becomes a
  * null rather than a silently wrong id.
  */
-const REF_URL = /^\/web\/\d+\/https:\/\/www\.brewtoad\.com\/(generic-fermentables|hops|yeasts)\/(\d+)$/;
+// Production carries TWO shapes, not the one the parse sample showed. Measured
+// across the live database:
+//
+//   bare-relative     /generic-fermentables/190                        ~85%
+//   wayback-absolute  /web/<ts>/https://www.brewtoad.com/hops/7        ~15%
+//
+// Which one a row got depends on the parse path that produced it, not on
+// anything about the ingredient. Both encode the same integer, which is the
+// only information either carries.
+const REF_URL =
+  /^(?:\/web\/\d+\/https:\/\/www\.brewtoad\.com)?\/(generic-fermentables|hops|yeasts)\/(\d+)$/;
 
 export function parseRefId(refUrl: string | null | undefined): number | null {
   if (!refUrl) return null;

@@ -37,13 +37,21 @@ if (phase !== "expand" && phase !== "contract" && phase !== "check") {
 
 const sql = neon(URL_);
 
-// Largest first, so each table's reclaimed space is available to the next.
-const TABLES = ["RecipeFermentable", "RecipeHop", "RecipeYeast"];
+// SMALLEST FIRST. The original plan said largest-first, on the assumption of
+// comfortable headroom. There is none: the first backfill pass pushed the
+// database to 94% of the tier, because every UPDATE writes a new row version
+// (MVCC) and the old ones sit there until vacuumed. Smallest-first means each
+// table's VACUUM FULL fits in the space available and banks room for the next.
+const TABLES = ["RecipeYeast", "RecipeHop", "RecipeFermentable"];
 
 // Matches /web/<timestamp>/https://www.brewtoad.com/<path>/<id> and captures
 // the id. Anchored, so anything unexpected backfills as NULL rather than as a
 // silently wrong number.
-const EXTRACT = `NULLIF(substring("refUrl" from '^/web/[0-9]+/https://www\\.brewtoad\\.com/(?:generic-fermentables|hops|yeasts)/([0-9]+)$'), '')::int`;
+// Production carries two shapes — a bare relative path (~85%) and a full
+// Wayback URL (~15%) — both encoding the same integer. The sample only had the
+// second, which is why the expand phase's verification exists and why it
+// stopped rather than nulling 349k rows.
+const EXTRACT = `NULLIF(substring("refUrl" from '^(?:/web/[0-9]+/https://www\\.brewtoad\\.com)?/(?:generic-fermentables|hops|yeasts)/([0-9]+)$'), '')::int`;
 
 async function columns(table) {
   const rows = await sql.query(
@@ -54,7 +62,9 @@ async function columns(table) {
 }
 
 async function size(table) {
-  const [r] = await sql.query(`SELECT pg_size_pretty(pg_total_relation_size($1)) AS s`, [table]);
+  // The identifier must be quoted before the regclass cast, or Postgres
+  // down-cases it and cannot find these mixed-case table names.
+  const [r] = await sql.query(`SELECT pg_size_pretty(pg_total_relation_size(('"' || $1 || '"')::regclass)) AS s`, [table]);
   return r.s;
 }
 
@@ -66,7 +76,26 @@ if (phase === "expand") {
       continue;
     }
     await sql.query(`ALTER TABLE "${t}" ADD COLUMN IF NOT EXISTS "refId" integer`);
-    await sql.query(`UPDATE "${t}" SET "refId" = ${EXTRACT} WHERE "refUrl" IS NOT NULL AND "refId" IS NULL`);
+
+    // Backfill in batches with a vacuum between, so the dead row versions each
+    // batch creates get marked reusable and the next batch refills them
+    // instead of extending the table. One unbounded UPDATE across 409k rows is
+    // what took the database from 368 MB to 481 MB.
+    const BATCH = 25_000;
+    for (let pass = 1; ; pass++) {
+      await sql.query(
+        `UPDATE "${t}" SET "refId" = ${EXTRACT}
+          WHERE ctid IN (
+            SELECT ctid FROM "${t}" WHERE "refUrl" IS NOT NULL AND "refId" IS NULL LIMIT ${BATCH}
+          )`
+      );
+      const [rem] = await sql.query(
+        `SELECT count(*)::int AS c FROM "${t}" WHERE "refUrl" IS NOT NULL AND "refId" IS NULL`
+      );
+      await sql.query(`VACUUM "${t}"`);
+      console.log(`  ${t} pass ${pass}: ${rem.c.toLocaleString()} rows left, table ${await size(t)}`);
+      if (rem.c === 0) break;
+    }
 
     // Verify before anyone drops anything: every non-null refUrl must have
     // produced a refId. A non-zero count here means the URL shape varies in
