@@ -54,6 +54,14 @@ const OWN_GUIDELINE_SYSTEMS = new Set([
   "CHINA", "KOREA", "INDIA", "CENTRALASIA", "AFRICA", "LATAM", "SEASIA", "EUROTRAD", "CULTURED",
 ]);
 
+// The fermentation archetypes — how yeast is handled for each family of drink,
+// each cited to professional documentation. Our own compilation, so it ships
+// in the export alongside the traditional guideline editions.
+function readArchetypes() {
+  const doc = JSON.parse(readFileSync("../data/fermentation/archetypes.json", "utf8"));
+  return doc.archetypes ?? [];
+}
+
 function readGuidelines(dir) {
   const out = [];
   for (const f of readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
@@ -74,6 +82,7 @@ async function fromFiles() {
     waterProfiles: readSet("../data/water", "profiles"),
     additives: readSet("../data/additives", "additives"),
     legalStandards: readGuidelines("../data/guidelines"),
+    fermentationArchetypes: readArchetypes(),
   };
 }
 
@@ -99,6 +108,7 @@ async function fromDb() {
     waterProfiles,
     additives,
     legalStandards: readGuidelines("../data/guidelines"),
+    fermentationArchetypes: readArchetypes(),
   };
 }
 
@@ -131,6 +141,14 @@ const payload = {
       "classification, cider appellations, spirits standards of identity). Summaries, not legal " +
       "advice — check the current instrument for your jurisdiction. Third-party judging " +
       "guidelines (BJCP, Brewers Association, AWS) are deliberately excluded from this export.",
+    fermentationArchetypes:
+      "How yeast is handled for each family of drink — beer by cells/mL/degree Plato, wine and " +
+      "cider by grams per hectolitre, sake and baijiu by starter culture, many traditional drinks " +
+      "spontaneously or with no yeast at all. Every numeric figure carries the sourceUrl it came " +
+      "from (AWRI, OIV, Scott Laboratories, peer-reviewed literature). Where researchStatus is " +
+      "'pending' the approach is described but no figure is asserted — that is a deliberate gap, " +
+      "not a missing value to be filled in with a guess. Each guideline category carries an " +
+      "'archetype' key naming the record here that governs its ferment.",
   },
   counts: {
     yeastLabs: data.yeastLabs.length,
@@ -144,6 +162,10 @@ const payload = {
       (n, d) => n + d.categories.reduce((m, c) => m + c.styles.length, 0),
       0
     ),
+    fermentationArchetypes: data.fermentationArchetypes.length,
+    fermentationArchetypesSourced: data.fermentationArchetypes.filter(
+      (a) => a.researchStatus === "sourced"
+    ).length,
   },
   ...data,
 };

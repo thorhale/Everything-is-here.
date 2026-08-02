@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-07-29",
+ "generatedAt": "2026-08-02",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -9,17 +9,20 @@
   "water": "All ion values are ppm (mg/L). Municipal supplies vary seasonally; these are historical/representative profiles.",
   "yeast": "cellsPerUnit is billions of viable cells per pack/vial/gram.",
   "additives": "effectPerGramPerLitre is what one gram per litre does to the named metric - signed, so deacidifiers are negative. Acids move titratable acidity roughly 1:1; DAP delivers 212 mg/L YAN per g/L by stoichiometry. Dose ranges are typical practice, not limits: check your own jurisdiction's legal maxima for sulphite and sorbate.",
-  "legalStandards": "Our own summaries of statutory and protected-designation standards (beer purity law, sake classification, cider appellations, spirits standards of identity). Summaries, not legal advice — check the current instrument for your jurisdiction. Third-party judging guidelines (BJCP, Brewers Association, AWS) are deliberately excluded from this export."
+  "legalStandards": "Our own summaries of statutory and protected-designation standards (beer purity law, sake classification, cider appellations, spirits standards of identity). Summaries, not legal advice — check the current instrument for your jurisdiction. Third-party judging guidelines (BJCP, Brewers Association, AWS) are deliberately excluded from this export.",
+  "fermentationArchetypes": "How yeast is handled for each family of drink — beer by cells/mL/degree Plato, wine and cider by grams per hectolitre, sake and baijiu by starter culture, many traditional drinks spontaneously or with no yeast at all. Every numeric figure carries the sourceUrl it came from (AWRI, OIV, Scott Laboratories, peer-reviewed literature). Where researchStatus is 'pending' the approach is described but no figure is asserted — that is a deliberate gap, not a missing value to be filled in with a guess. Each guideline category carries an 'archetype' key naming the record here that governs its ferment."
  },
  "counts": {
   "yeastLabs": 10,
-  "yeastStrains": 90,
+  "yeastStrains": 91,
   "fermentables": 311,
   "hops": 99,
   "waterProfiles": 44,
   "additives": 72,
   "legalStandardEditions": 14,
-  "legalStandardEntries": 166
+  "legalStandardEntries": 166,
+  "fermentationArchetypes": 32,
+  "fermentationArchetypesSourced": 31
  },
  "yeastLabs": [
   {
@@ -36,7 +39,7 @@
    "name": "Bacteria & Mixed Cultures",
    "country": null,
    "url": null,
-   "description": "Souring bacteria and mixed fermentation cultures. These are not yeast — they are lactic and acetic acid bacteria that produce acid rather than (much) alcohol, plus the blended cultures that combine them with Saccharomyces and Brettanomyces. Catalogued at species level with the commercial products noted, because behaviour varies enormously by strain.",
+   "description": "Souring bacteria and mixed fermentation cultures. These are not yeast — they are lactic and acetic acid bacteria that produce acid rather than (much) alcohol, plus the blended cultures that combine them with Saccharomyces and Brettanomyces. Catalogued at species level, which means most numeric specs are deliberately null: a species does not have a temperature range, a product does. Where a figure appears it comes from a named commercial datasheet for a specific product, and that product is named in the entry.",
    "sortOrder": 95
   },
   {
@@ -96,7 +99,7 @@
    "name": "Wild & Heritage Species",
    "country": null,
    "url": null,
-   "description": "Non-Saccharomyces and wild alcohol-producing microbes, catalogued at the species level. These entries describe the organism and its fermentation behaviour rather than a single commercial product; specs are ranges from research/literature and are null where no reliable figure exists.",
+   "description": "Non-Saccharomyces and wild alcohol-producing microbes, catalogued at the species level. A species does not have a fermentation temperature range — a commercial strain does — so numeric specs here are null unless a named datasheet for a named product supplies them, in which case the product is named in the entry. Everything else is described in prose with the figure attributed to whoever published it.",
    "sortOrder": 90
   },
   {
@@ -300,7 +303,8 @@
    "recommendedStyles": [
     "Berliner Weisse",
     "Gose",
-    "Kettle Sour",
+    "Lambic",
+    "American Wild Ale",
     "Sour IPA"
    ],
    "styleTags": [
@@ -312,18 +316,21 @@
    ],
    "attenuationMin": null,
    "attenuationMax": null,
-   "tempMinF": 90,
-   "tempMaxF": 100,
-   "tempMinC": 32,
-   "tempMaxC": 38,
+   "tempMinF": 86,
+   "tempMaxF": 104,
+   "tempMinC": 30,
+   "tempMaxC": 40,
    "flocculation": null,
-   "alcoholToleranceMax": 6,
-   "description": "The workhorse of kettle souring. Fast and reliable — will typically drop wort from pH 5.3 to 3.3 in 24–48 hours at 35 °C, after which you boil to kill it and ferment normally with yeast. Produces almost no alcohol itself.",
-   "flavorNotes": "Clean lactic tartness, little to no funk.",
-   "optimalPitchNote": "Hop-sensitive: more than about 5–8 IBU will inhibit it, so sour the wort BEFORE any hop addition. Purge headspace with CO2 to prevent the butyric/vomit off-flavours that come from competing organisms in an oxygen-exposed sour.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Lactiplantibacillus_plantarum",
+   "alcoholToleranceMax": null,
+   "description": "The workhorse of kettle souring. Lallemand's WildBrew Sour Pitch is a L. plantarum product and its datasheet is the source of the figures here: 30-40 °C, reaching pH 3.2-3.5, pitched at 10 g/hL. The datasheet classifies it as a facultative hetero-fermentative strain and specifies unhopped wort. Produces little alcohol itself.",
+   "flavorNotes": "Citrus, tangy, sour (WildBrew Sour Pitch datasheet descriptors).",
+   "optimalPitchNote": "The datasheet's temperature range is given for unhopped wort, so sour before any hop addition. The recommended dose is 10 g/hL and the product is specified at >10^11 CFU/g. This entry deliberately states no IBU inhibition threshold: an earlier version of this record claimed '5-8 IBU', which the datasheet does not say and which was not sourced.",
+   "specBasis": "vendor-tds",
+   "sourceTitle": "Lallemand WildBrew Sour Pitch — Technical Data Sheet",
+   "sourceUrl": "https://www.lallemandbrewing.com/docs/products/tds/TDS_WILDBREW_SOURPITCH_ENGLISH_DIGITAL.pdf",
+   "sourceNote": "Supports: species, 30-40 °C, pH 3.2-3.5, 10 g/hL, >10^11 CFU/g, flavour descriptors, style list, unhopped-wort requirement. Does not support: attenuation, alcohol tolerance, flocculation, or any IBU threshold — all null.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-lactobacillus-brevis",
@@ -336,7 +343,6 @@
     "wild"
    ],
    "recommendedStyles": [
-    "Berliner Weisse",
     "Lambic",
     "Flanders Red",
     "Mixed Fermentation"
@@ -347,17 +353,23 @@
     "hop-tolerant",
     "mixed-culture"
    ],
-   "tempMinF": 68,
-   "tempMaxF": 95,
-   "tempMinC": 20,
-   "tempMaxC": 35,
-   "alcoholToleranceMax": 8,
-   "description": "More hop-tolerant and more alcohol-tolerant than L. plantarum, which makes it the Lactobacillus of choice for long mixed-culture ageing rather than quick kettle souring. Slower to acidify but keeps working for months.",
-   "flavorNotes": "Lactic acidity with more complexity and a slight funk over time.",
-   "optimalPitchNote": "Tolerates roughly 10–15 IBU. A common spoilage organism in ordinary beer — segregate soft equipment.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Levilactobacillus_brevis",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The most hop-tolerant of the common lactic acid bacteria, and for that reason the classic beer-spoilage organism as well as a deliberate souring culture for long mixed-culture ageing rather than quick kettle souring. Vriesekoop et al.'s review identifies it as among the most hop-resistant and most commonly implicated beer-spoilage LAB; hop iso-alpha-acids act as ionophores that collapse the proton motive force, and hop resistance is what lets L. brevis survive them.",
+   "flavorNotes": "Lactic acidity. This entry no longer claims a specific funk development curve, which was unsourced.",
+   "optimalPitchNote": "A genuine spoilage risk in clean beer — segregate soft equipment (tubing, gaskets, buckets). No temperature, alcohol-tolerance or IBU figures are given here: the cited review establishes relative hop resistance qualitatively but does not publish a species-wide numeric range, and strain variation is large.",
+   "specBasis": "peer-reviewed",
+   "sourceTitle": "Vriesekoop et al. (2012), 125th Anniversary Review: Bacteria in brewing — the good, the bad and the ugly, J. Inst. Brew. 118:335-345",
+   "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.49",
+   "sourceNote": "Supports: relative hop tolerance, spoilage significance, mechanism of hop inhibition. Does not support: any temperature range, alcohol tolerance, attenuation or IBU threshold — all null. Previous version asserted 20-35 °C, 8% ABV and '10-15 IBU' with no source.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-pediococcus-damnosus",
@@ -382,17 +394,23 @@
     "brett-partner",
     "ropiness"
    ],
-   "tempMinF": 60,
-   "tempMaxF": 85,
-   "tempMinC": 16,
-   "tempMaxC": 29,
-   "alcoholToleranceMax": 10,
-   "description": "The slow, deep souring organism of traditional Belgian sour beer. Highly hop-tolerant and works over months to years, producing a rounder acidity than Lactobacillus.",
-   "flavorNotes": "Deep lactic sourness; substantial diacetyl during the process.",
-   "optimalPitchNote": "Expect a 'sick' or ropy phase — Pediococcus produces exopolysaccharides that make the beer viscous and snot-like, and heavy diacetyl. Both are normal and clear given time, provided Brettanomyces is present to clean them up. Do not panic and do not dump it. Effectively requires a Brett partner.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Pediococcus_damnosus",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The slow, deep souring organism of traditional Belgian sour beer, and with L. brevis one of the two lactic acid bacteria most often responsible for beer spoilage. The Maltose Falcons' club guide describes its working behaviour: it produces large amounts of lactic acid from glucose, produces no CO2, and the early stages of the ferment carry a massive charge of diacetyl.",
+   "flavorNotes": "Deep lactic sourness; heavy diacetyl (butterscotch) during the process, per the Maltose Falcons guide.",
+   "optimalPitchNote": "Expect a ropy phase and heavy diacetyl early on. Both are described as normal stages by the club guide, which pairs Pediococcus with Brettanomyces so the Brett cleans up what the Pedio leaves. Do not dump it on the strength of the ropy phase. No temperature or alcohol-tolerance figures are asserted — neither cited source publishes them for this species.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (Pediococcus section); hop-tolerance and spoilage context from Vriesekoop et al. 2012, J. Inst. Brew. 118:335-345",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: lactic from glucose, no CO2 production, massive early diacetyl charge, Brett pairing. Does not support: temperature range, alcohol tolerance, attenuation — all null. Previous version asserted 16-29 °C and 10% ABV with no source.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-acetobacter",
@@ -417,16 +435,23 @@
     "spoilage",
     "vinegar"
    ],
-   "tempMinF": 60,
-   "tempMaxF": 90,
-   "tempMinC": 16,
-   "tempMaxC": 32,
-   "description": "Converts ethanol into acetic acid — it makes vinegar. Requires oxygen, which is the key to controlling it: in a sealed, full vessel it does very little; in a barrel with headspace or a leaky bung it will take over.",
-   "flavorNotes": "Vinegar, sharp acetic bite; ethyl acetate (nail polish) at higher levels.",
-   "optimalPitchNote": "Almost never pitched deliberately in beer. Traces contribute authentic complexity in Flanders reds; excess is a fault. Control it by controlling oxygen — keep vessels topped up and sealed.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Acetobacter",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The 'vinegar mother'. It converts ethanol into acetic acid, which is what makes vinegar, and it needs oxygen to do it — that oxygen dependence is the whole control lever. In a sealed, topped-up vessel it does very little; in a barrel with headspace or a leaking bung it takes over.",
+   "flavorNotes": "Vinegar, sharp acetic bite. This entry no longer quantifies an ethyl acetate threshold, which was unsourced.",
+   "optimalPitchNote": "Almost never pitched deliberately in beer. Control it by controlling oxygen: keep vessels full and sealed. No temperature range is given — the cited sources describe the organism's role and oxygen requirement but publish no range.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales ('Acetobacter — Vinegar Mother — converts ethanol to acetic acid'); brewing-spoilage context from Vriesekoop et al. 2012, J. Inst. Brew. 118:335-345",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: ethanol-to-acetic-acid conversion, role as spoilage/complexity organism. Does not support: temperature range — null. Previous version asserted 16-32 °C with no source.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-lambic-blend",
@@ -451,13 +476,14 @@
     "brett",
     "long-aging"
    ],
-   "tempMinF": 60,
-   "tempMaxF": 80,
-   "tempMinC": 16,
-   "tempMaxC": 27,
-   "attenuationMin": 80,
-   "attenuationMax": 95,
-   "alcoholToleranceMax": 12,
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
    "isBlend": true,
    "blendComponents": [
     "Saccharomyces cerevisiae",
@@ -466,12 +492,51 @@
     "Lactobacillus",
     "Pediococcus"
    ],
-   "description": "The full traditional consortium. Saccharomyces ferments the sugars first, Lactobacillus and Pediococcus acidify over months, and Brettanomyces slowly consumes the dextrins the others leave behind — which is why a properly aged lambic finishes near 1.000.",
-   "flavorNotes": "Barnyard funk, lactic tartness, citrus, leather; develops over 1–3 years.",
-   "optimalPitchNote": "Plan for a year minimum, three for gueuze. Use dedicated soft equipment — tubing, buckets, gaskets — and never let this culture near your clean beer.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Lambic",
+   "description": "The traditional consortium, sold commercially as blends — the Maltose Falcons' guide names White Labs WLP655 Belgian Sour Mix, Wyeast 3278 Belgian Lambic Blend and Wyeast 3763 Roeselare Blend. Saccharomyces ferments the sugars first, Lactobacillus and Pediococcus acidify, and Brettanomyces works slowly on what the others leave behind.",
+   "flavorNotes": "Barnyard funk, lactic tartness, leather. Character development is slow — see the timeline below.",
+   "optimalPitchNote": "The club guide's own timeline: expect at least a month before the cultures show any character at all, and optimally six months to a year to let the beer bloom. Use dedicated soft equipment and keep this culture away from clean beer. This entry no longer claims a '1-3 year, three-for-gueuze' schedule or a specific 1.000 finishing gravity — those figures were not sourced.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (incl. 'The Falcon Method For Fermenting Lambics', credited to MB Raines)",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: the consortium's composition and division of labour, the named commercial blends, and the 'at least a month / six months to a year' timeline. Does not support: attenuation, temperature, alcohol tolerance, terminal gravity — all null.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
+  },
+  {
+   "id": "bact-lactobacillus-delbrueckii",
+   "productCode": null,
+   "name": "Lactobacillus delbrueckii",
+   "form": "culture",
+   "species": "Lactobacillus delbrueckii",
+   "uses": [
+    "beer",
+    "wild"
+   ],
+   "recommendedStyles": [
+    "Berliner Weisse"
+   ],
+   "styleTags": [
+    "sour",
+    "lactic",
+    "warm-ferment"
+   ],
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": 98,
+   "tempMaxF": null,
+   "tempMinC": 37,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "Produces lactic acid for a crisp, dry acidity and is the primary souring character of Berliner Weisse. The Maltose Falcons' guide gives the one figure recorded here: ferment it very warm, on the order of 98 °F (37 °C).",
+   "flavorNotes": "Crisp, dry lactic acidity.",
+   "optimalPitchNote": "The cited guide gives a single warm target (~98 °F) rather than a range, so only the minimum is populated here and the maximum is null. Do not read the 98 °F figure as an upper limit.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (Lactobacillus section)",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: lactic acid production, crisp dry acidity, primary character of Berliner Weisse, warm ferment ~98 °F. Does not support: an upper temperature bound, alcohol tolerance, attenuation — all null.",
+   "labId": "bacteria-cultures",
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-brett-lambicus",
@@ -485,29 +550,34 @@
    ],
    "recommendedStyles": [
     "Lambic",
+    "Gueuze",
     "Kriek",
     "Flanders Red",
     "Fruit Sour"
    ],
    "styleTags": [
     "brett",
-    "cherry",
-    "pie-spice",
+    "funky",
+    "smoky",
     "wild"
    ],
-   "attenuationMin": 85,
-   "attenuationMax": 100,
-   "tempMinF": 60,
-   "tempMaxF": 85,
-   "tempMinC": 16,
-   "tempMaxC": 29,
-   "flocculation": "low",
-   "alcoholToleranceMax": 12,
-   "description": "The cherry-pie Brett. Distinct from B. bruxellensis in emphasis — more fruit and spice, less horse blanket — and traditionally associated with kriek.",
-   "flavorNotes": "Sour cherry, pie crust, clove, mild funk.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Brettanomyces",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The Brett of lambic — the Maltose Falcons' guide associates it with 'every lambic' and describes it as the biggest Brett character of the three commonly used species.",
+   "flavorNotes": "Huge 'horsey' Brett character with some fruitiness, plus smoky and sour flavours (Maltose Falcons descriptors).",
+   "optimalPitchNote": "Slow. Numeric specs are null: the cited guide characterises the species by flavour and origin, not by temperature, attenuation or alcohol tolerance, and those vary by isolate. An earlier version of this record described it as a 'cherry-pie Brett' with 85-100% attenuation and 12% tolerance; the cherry framing and all three numbers were unsourced.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (Brettanomyces section)",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: association with lambic, 'horsey' character with fruitiness, smoky and sour notes. Does not support: attenuation, temperature, flocculation, alcohol tolerance — all null.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-brett-claussenii",
@@ -530,19 +600,23 @@
     "pineapple",
     "fruity"
    ],
-   "attenuationMin": 80,
-   "attenuationMax": 95,
-   "tempMinF": 60,
-   "tempMaxF": 80,
-   "tempMinC": 16,
-   "tempMaxC": 27,
-   "flocculation": "low",
-   "alcoholToleranceMax": 12,
-   "description": "The mildest of the common Brett species — originally isolated from English stock ales. A good first Brett: fruity and restrained rather than barnyard.",
-   "flavorNotes": "Pineapple, tropical fruit, very light funk.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Brettanomyces",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The softest of the commonly used Brett species. The Maltose Falcons' guide gives its origin as English stock beer and calls it a softer Brett — a reasonable first Brett for that reason.",
+   "flavorNotes": "Pineapple and mango; soft rather than barnyard (Maltose Falcons descriptors).",
+   "optimalPitchNote": "Numeric specs are null — the cited guide describes origin and aroma contribution only. Attenuation and alcohol tolerance figures in an earlier version of this record were unsourced.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (Brettanomyces section)",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: English stock beer origin, softer Brett character, pineapple/mango aroma. Does not support: attenuation, temperature, flocculation, alcohol tolerance — all null.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "bact-brett-anomalus",
@@ -562,21 +636,25 @@
    "styleTags": [
     "brett",
     "wild",
-    "spicy"
+    "fruity"
    ],
-   "attenuationMin": 80,
-   "attenuationMax": 95,
-   "tempMinF": 60,
-   "tempMaxF": 85,
-   "tempMinC": 16,
-   "tempMaxC": 29,
-   "flocculation": "low",
-   "alcoholToleranceMax": 12,
-   "description": "Less common Brett species used for added complexity in mixed cultures; sits between claussenii's fruit and bruxellensis's funk.",
-   "flavorNotes": "Spicy, lightly floral, moderate funk.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Brettanomyces",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "Treated by the Maltose Falcons' guide as closely related to B. claussenii, sharing its softer character rather than the lambic strains' funk.",
+   "flavorNotes": "Soft, fruity — pineapple and mango, as for the related B. claussenii (Maltose Falcons).",
+   "optimalPitchNote": "Numeric specs are null. An earlier version of this record placed it 'between claussenii's fruit and bruxellensis's funk' with spicy and floral notes and a full set of numbers; none of that was sourced, and the cited guide in fact groups it with claussenii.",
+   "specBasis": "club-guide",
+   "sourceTitle": "Maltose Falcons Homebrew Club — Brewing Sour and Wild Ales (Brettanomyces section)",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: relation to B. claussenii and the shared softer/fruity character. Does not support: attenuation, temperature, flocculation, alcohol tolerance, or a distinct 'spicy/floral' profile — all removed or null.",
    "labId": "bacteria-cultures",
-   "attribution": "Species behaviour, temperature and pH tolerances compiled from published brewing microbiology literature and producer datasheets (Omega, White Labs, Wyeast, Lallemand WildBrew). Souring organisms are described by the acid they produce and the pH they reach rather than by attenuation, which is not a meaningful measure for them."
+   "attribution": "Every numeric field in this file traces to one of three named documents, recorded per strain in specBasis/sourceTitle/sourceUrl: the Lallemand WildBrew Sour Pitch technical data sheet (vendor spec for a specific product); Vriesekoop et al. 2012, '125th Anniversary Review: Bacteria in brewing: the good, the bad and the ugly', Journal of the Institute of Brewing 118:335-345 (peer-reviewed); and the Maltose Falcons homebrew club's 'Brewing Sour and Wild Ales' (club guide). Qualitative behaviour is attributed the same way. Fields no source supports are null rather than estimated."
   },
   {
    "id": "fermentis-us-05",
@@ -2754,27 +2832,30 @@
    "styleTags": [
     "brett",
     "funky",
-    "wild",
-    "super-attenuating"
+    "wild"
    ],
-   "attenuationMin": 85,
-   "attenuationMax": 100,
-   "tempMinF": 60,
-   "tempMaxF": 85,
-   "tempMinC": 16,
-   "tempMaxC": 29,
-   "flocculation": "low",
-   "alcoholToleranceMax": 12,
-   "description": "The classic 'Brett' of Belgian sour/wild ales and faulty wines. Slowly ferments dextrins Saccharomyces leaves behind, driving very high attenuation over months and producing barnyard/leather/tropical phenols and esters.",
-   "flavorNotes": "Horse blanket, leather, pineapple, smoke.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Brettanomyces",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "The classic 'Brett' of Belgian sour and wild ales, and the organism behind Brett character in wine. The Maltose Falcons' club guide places its origin in Brussels and describes it as producing a medium amount of the earthy funk associated with Brett — between the softer claussenii and the much bigger lambicus.",
+   "flavorNotes": "Medium earthy funk (Maltose Falcons descriptor).",
+   "optimalPitchNote": "Slow — plan in months, not weeks. All numeric specs are null: an earlier version of this record claimed 85-100% attenuation, 16-29 °C and 12% alcohol tolerance while citing a Wikipedia page on the genus, which supports none of those numbers. Attenuation in particular is strain-dependent and depends on how much dextrin the primary yeast left behind.",
+   "specBasis": "club-guide",
+   "sourceId": "maltose-falcons-sour-wild",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
+   "sourceNote": "Supports: Brussels origin, medium earthy funk, position relative to the other Brett species. Does not support: attenuation, temperature, flocculation, alcohol tolerance — all null.",
    "labId": "wild-heritage",
-   "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs."
+   "attribution": "Each entry cites one document, recorded in sourceId/sourceUrl and catalogued in data/sources/registry.json. Numeric fields are populated only from vendor technical data sheets for specific products; literature-derived figures are stated in prose with the original study attributed, because the published values disagree with each other and collapsing them into a single number would misrepresent them."
   },
   {
    "id": "wild-lachancea-thermotolerans",
    "productCode": null,
-   "name": "Lachancea thermotolerans (species)",
+   "name": "Lachancea thermotolerans (as WildBrew Philly Sour)",
    "form": "culture",
    "species": "Lachancea thermotolerans",
    "uses": [
@@ -2783,10 +2864,11 @@
     "wild"
    ],
    "recommendedStyles": [
-    "Kettle-free Sour",
     "Berliner Weisse",
-    "Sour IPA",
-    "Lower-alcohol Wine"
+    "Gose",
+    "Lambic-style",
+    "American Wild Ale",
+    "Sour IPA"
    ],
    "styleTags": [
     "sour",
@@ -2794,19 +2876,23 @@
     "one-step",
     "acidifying"
    ],
-   "attenuationMin": 70,
+   "attenuationMin": 74,
    "attenuationMax": 82,
-   "tempMinF": 63,
-   "tempMaxF": 82,
-   "tempMinC": 17,
-   "tempMaxC": 28,
-   "flocculation": "medium",
-   "alcoholToleranceMax": 10,
-   "description": "A yeast that produces both lactic acid and ethanol, souring and fermenting in one step without bacteria. Increasingly used in wine to lower pH and in beer for bacteria-free sours (e.g. commercially as WildBrew Philly Sour).",
-   "flavorNotes": "Clean lactic tartness, stone fruit.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Lachancea_thermotolerans",
+   "tempMinF": 68,
+   "tempMaxF": 86,
+   "tempMinC": 20,
+   "tempMaxC": 30,
+   "flocculation": "high",
+   "alcoholToleranceMax": 9,
+   "description": "A yeast that produces both lactic acid and ethanol, souring and fermenting in one step with no bacteria involved. The figures here are the published specification for Lallemand's WildBrew Philly Sour, a pure active dried L. thermotolerans strain — not species-wide values. Its datasheet gives 74-82% attenuation, 20-30 °C (optimal 25-30 °C), high flocculation, 9% ABV tolerance, 50-150 g/hL, and fermentation completable in ten days at 20 °C. The strain is POF negative, diastaticus negative and killer negative.",
+   "flavorNotes": "Sour, red apple, stone fruit, notably peach (WildBrew Philly Sour datasheet descriptors).",
+   "optimalPitchNote": "Datasheet pitching rate is 50-150 g/hL, viability at least 1x10^9 CFU/g. Lower temperatures within the 20-25 °C band call for the higher end of that rate. The pH 3.2-3.5 and 0.1-0.4% lactic acid figures the datasheet quotes apply to Lallemand's standard-conditions wort, so treat them as indicative rather than a promise about your wort. An earlier version of this record claimed 70-82% attenuation, 17-28 °C, medium flocculation and 10% tolerance — every one of those four was wrong against the datasheet.",
+   "specBasis": "vendor-tds",
+   "sourceId": "lallemand-tds-philly-sour",
+   "sourceUrl": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/Philly-Sour-TDS-ENG-A4-Print-WildBrew-3.pdf",
+   "sourceNote": "Supports: every numeric field above, for this product. Does not support: species-wide behaviour of L. thermotolerans, or wine applications — the datasheet is a brewing document.",
    "labId": "wild-heritage",
-   "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs."
+   "attribution": "Each entry cites one document, recorded in sourceId/sourceUrl and catalogued in data/sources/registry.json. Numeric fields are populated only from vendor technical data sheets for specific products; literature-derived figures are stated in prose with the original study attributed, because the published values disagree with each other and collapsing them into a single number would misrepresent them."
   },
   {
    "id": "wild-torulaspora-delbrueckii",
@@ -2821,28 +2907,32 @@
    ],
    "recommendedStyles": [
     "Saison",
-    "Sparkling Wine",
+    "Wheat Beer",
     "Low-alcohol Beer",
-    "Wheat Beer"
+    "Wine (co-fermentation)"
    ],
    "styleTags": [
     "non-sacch",
     "aromatic",
-    "low-off-flavor"
+    "low-volatile-acidity"
    ],
-   "attenuationMin": 60,
-   "attenuationMax": 78,
-   "tempMinF": 64,
-   "tempMaxF": 82,
-   "tempMinC": 18,
-   "tempMaxC": 28,
-   "flocculation": "medium",
-   "alcoholToleranceMax": 9,
-   "description": "A non-Saccharomyces yeast valued for clean, aromatic fermentation with low volatile acidity; used in co-fermentation for wine complexity and in saison/low-alcohol beer.",
-   "flavorNotes": "Fruity, spicy, low off-flavor.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Torulaspora_delbrueckii",
+   "attenuationMin": null,
+   "attenuationMax": null,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
+   "flocculation": null,
+   "alcoholToleranceMax": null,
+   "description": "A non-Saccharomyces yeast of established interest both as a pure brewing starter and, more commonly, in wine co-fermentation. Michel et al.'s review of pure non-Saccharomyces starter cultures covers it among the species of brewing interest; in winemaking its documented value is lower volatile acidity and increased aromatic contribution when inoculated sequentially before Saccharomyces.",
+   "flavorNotes": "Aromatic contribution with low volatile acidity; the specific ester profile depends heavily on strain and on whether it is used pure or sequentially.",
+   "optimalPitchNote": "In wine it is normally inoculated first and followed by Saccharomyces, which is where the volatile-acidity benefit comes from; used entirely alone it will usually stick before a wine ferments dry. Numeric specs are null — the cited review does not publish species-level temperature, attenuation or alcohol-tolerance ranges, and the previous version of this record asserted 60-78% attenuation, 18-28 °C and 9% tolerance on the strength of a Wikipedia species page.",
+   "specBasis": "peer-reviewed",
+   "sourceId": "michel-2016-non-saccharomyces",
+   "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.381",
+   "sourceNote": "Supports: standing as a non-Saccharomyces brewing starter, and the low-volatile-acidity/aromatic role in sequential wine fermentation. Does not support: any numeric range — all null. Verification is metadata-only (abstract and search summaries, not full text).",
    "labId": "wild-heritage",
-   "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs."
+   "attribution": "Each entry cites one document, recorded in sourceId/sourceUrl and catalogued in data/sources/registry.json. Numeric fields are populated only from vendor technical data sheets for specific products; literature-derived figures are stated in prose with the original study attributed, because the published values disagree with each other and collapsing them into a single number would misrepresent them."
   },
   {
    "id": "wild-kluyveromyces-marxianus",
@@ -2852,33 +2942,35 @@
    "species": "Kluyveromyces marxianus",
    "uses": [
     "wine",
-    "wild",
-    "moonshine"
+    "wild"
    ],
    "recommendedStyles": [
-    "Whey/Lactose Ferment",
-    "Fruit Wine",
-    "Bioethanol"
+    "Whey / Lactose Ferment",
+    "Fruit Wine"
    ],
    "styleTags": [
     "non-sacch",
     "lactose-fermenting",
     "thermotolerant",
-    "high-temp"
+    "oxygen-dependent"
    ],
    "attenuationMin": null,
    "attenuationMax": null,
-   "tempMinF": 86,
-   "tempMaxF": 113,
-   "tempMinC": 30,
-   "tempMaxC": 45,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
    "flocculation": null,
-   "alcoholToleranceMax": 10,
-   "description": "A fast-growing, highly thermotolerant yeast that can ferment lactose (unlike most brewing yeast), making it useful for whey/dairy-based and fruit ferments and high-temperature ethanol. Produces fruity esters; being explored for novel beverages.",
-   "flavorNotes": "Fruity, ester-rich; can ferment milk sugar.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Kluyveromyces_marxianus",
+   "alcoholToleranceMax": null,
+   "description": "A fast-growing, genuinely thermotolerant yeast that assimilates and ferments lactose, which most brewing yeast cannot — hence its interest for whey and dairy-based ferments. Fonseca et al.'s review reports maximum growth temperature variously as 47 °C (Anderson et al. 1986), 49 °C (Hughes et al. 1984) and 52 °C (Banat et al. 1992), and ethanol production above 40 °C. Two findings from the same review matter more for anyone thinking of pitching it: its ethanol tolerance is LOWER than that of S. cerevisiae, and it is Crabtree-negative and cannot grow under strictly anaerobic conditions, with ethanol formation almost exclusively tied to oxygen availability.",
+   "flavorNotes": "Fruity and ester-rich; will ferment milk sugar.",
+   "optimalPitchNote": "Not a drop-in replacement for a brewing yeast. Because it cannot grow strictly anaerobically and its ethanol formation is oxygen-linked, a conventional sealed, oxygen-free fermentation is the wrong environment for it. No numeric fields are populated: the published maximum growth temperatures disagree (47/49/52 °C) and are growth limits rather than recommended fermentation ranges, so they are reported above with their attributions instead of being averaged into a fake range. The alcohol tolerance is null and deliberately so — an earlier version of this record claimed 10%, which is the figure reported for strains after roughly 100 days of directed adaptive evolution, not a native specification, and it pointed in the opposite direction to what the literature actually says. That earlier version also listed 'Bioethanol' as a recommended style, which is an industrial application and not a drink.",
+   "specBasis": "peer-reviewed",
+   "sourceId": "fonseca-2008-kluyveromyces",
+   "sourceUrl": "https://doi.org/10.1007/s00253-008-1458-6",
+   "sourceNote": "Supports: lactose assimilation and fermentation, thermotolerance with the three attributed maxima, ethanol production above 40 °C, lower ethanol tolerance than S. cerevisiae, Crabtree-negative character, inability to grow strictly anaerobically. Does not support: any single alcohol-tolerance number, attenuation, flocculation, or a recommended fermentation temperature range — all null.",
    "labId": "wild-heritage",
-   "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs."
+   "attribution": "Each entry cites one document, recorded in sourceId/sourceUrl and catalogued in data/sources/registry.json. Numeric fields are populated only from vendor technical data sheets for specific products; literature-derived figures are stated in prose with the original study attributed, because the published values disagree with each other and collapsing them into a single number would misrepresent them."
   },
   {
    "id": "wild-saccharomycodes-ludwigii",
@@ -2888,12 +2980,10 @@
    "species": "Saccharomycodes ludwigii",
    "uses": [
     "beer",
-    "wine",
     "wild"
    ],
    "recommendedStyles": [
-    "Non-alcoholic / Low-alcohol Beer",
-    "Maltose-negative Ferment"
+    "Non-alcoholic / Low-alcohol Beer"
    ],
    "styleTags": [
     "non-sacch",
@@ -2902,17 +2992,21 @@
    ],
    "attenuationMin": null,
    "attenuationMax": null,
-   "tempMinF": 64,
-   "tempMaxF": 77,
-   "tempMinC": 18,
-   "tempMaxC": 25,
+   "tempMinF": null,
+   "tempMaxF": null,
+   "tempMinC": null,
+   "tempMaxC": null,
    "flocculation": null,
-   "alcoholToleranceMax": 6,
-   "description": "A maltose- and maltotriose-negative yeast that leaves most wort sugars unfermented — used to make low- and non-alcoholic beer with a fermented aroma but minimal alcohol.",
-   "flavorNotes": "Fruity aroma, very low alcohol.",
-   "sourceUrl": "https://en.wikipedia.org/wiki/Saccharomycodes",
+   "alcoholToleranceMax": null,
+   "description": "A maltose- and maltotriose-negative yeast: it will not ferment the main wort sugars, so it produces very little alcohol while still generating fermentation aroma. Michel et al.'s review notes that it is the most studied yeast for low- and non-alcoholic beer and that alcohol-free beer is already produced industrially with it, which is what makes it interesting — the low alcohol comes from what the yeast cannot eat rather than from stripping alcohol back out afterwards.",
+   "flavorNotes": "Fermentation-derived aroma with very little alcohol; the review's point is that the flavours are desirable rather than merely tolerable.",
+   "optimalPitchNote": "The approach works because the sugars are left behind, which means the finished beer is sweet and full of fermentable material — it is microbiologically vulnerable and needs the same care as any low-alcohol product. Numeric specs are null; the cited review does not publish species-level ranges.",
+   "specBasis": "peer-reviewed",
+   "sourceId": "michel-2016-non-saccharomyces",
+   "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.381",
+   "sourceNote": "Supports: maltose- and maltotriose-negative character, resulting low alcohol with desirable flavour, industrial use for alcohol-free beer. Does not support: temperature, attenuation, flocculation, alcohol tolerance — all null. Verification is metadata-only.",
    "labId": "wild-heritage",
-   "attribution": "Species descriptions and fermentation ranges compiled from published brewing/oenology literature; not a single vendor spec sheet. Individual commercial isolates of these species appear under their own labs."
+   "attribution": "Each entry cites one document, recorded in sourceId/sourceUrl and catalogued in data/sources/registry.json. Numeric fields are populated only from vendor technical data sheets for specific products; literature-derived figures are stated in prose with the original study attributed, because the published values disagree with each other and collapsing them into a single number would misrepresent them."
   },
   {
    "id": "wyeast-1056",
@@ -20810,7 +20904,8 @@
        "examples": "Tella, Korefe",
        "tags": "ethiopia, tella, gesho, grain-beer, traditional"
       }
-     ]
+     ],
+     "archetype": "beer-sorghum-trad"
     },
     {
      "code": "AF2",
@@ -20842,7 +20937,8 @@
        "examples": "Tej (served in tej bet houses)",
        "tags": "ethiopia, tej, honey-wine, gesho, mead"
       }
-     ]
+     ],
+     "archetype": "mead-cultured"
     },
     {
      "code": "AF3",
@@ -20899,7 +20995,8 @@
        "examples": "Akpeteshie, Ogogoro",
        "tags": "africa, palm-spirit, akpeteshie, ogogoro, distilled"
       }
-     ]
+     ],
+     "archetype": "spontaneous-wild"
     }
    ]
   },
@@ -21055,7 +21152,8 @@
        "tags": "germany, PGI, munich, bavaria, protected-name"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-ale-clean"
     },
     {
      "code": "L2",
@@ -21122,7 +21220,8 @@
        "tags": "czechia, PDO, hops, ingredient, protected-name"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-lager"
     },
     {
      "code": "L3",
@@ -21209,7 +21308,8 @@
        "tags": "belgium, TSG, blended, bottle-conditioned, sour, protected-name"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-spontaneous"
     },
     {
      "code": "L4",
@@ -21276,7 +21376,8 @@
        "tags": "ireland, taxation, no-purity-law, reference"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-ale-clean"
     },
     {
      "code": "L5",
@@ -21323,7 +21424,8 @@
        "tags": "usa, labelling, TTB, reference"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-ale-clean"
     },
     {
      "code": "L6",
@@ -21410,7 +21512,8 @@
        "tags": "mexico, NOM, statute, reference"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-ale-clean"
     },
     {
      "code": "L7",
@@ -21477,7 +21580,8 @@
        "tags": "labelling, organic, certification, cross-jurisdiction"
       }
      ],
-     "beverage": "beer"
+     "beverage": "beer",
+     "archetype": "beer-ale-clean"
     }
    ]
   },
@@ -21544,7 +21648,8 @@
        "examples": "Shubat (camel), Buryat tarasun",
        "tags": "centralasia, milk-ferment, shubat, traditional"
       }
-     ]
+     ],
+     "archetype": "milk-kefir"
     },
     {
      "code": "CA2",
@@ -21576,7 +21681,8 @@
        "examples": "Nermel arkhi (home-distilled), shimiin arkhi",
        "tags": "mongolia, arkhi, milk-liquor, distilled, traditional"
       }
-     ]
+     ],
+     "archetype": "milk-distilled"
     },
     {
      "code": "CA3",
@@ -21608,7 +21714,8 @@
        "examples": "Turkish boza, Central Asian bozo",
        "tags": "centralasia, boza, cereal, low-alcohol, traditional"
       }
-     ]
+     ],
+     "archetype": "grain-wild-backslop"
     }
    ]
   },
@@ -21750,7 +21857,8 @@
        "examples": "Xifeng (phoenix), Baiyunbian (mixed), Jingzhi (sesame)",
        "tags": "china, baijiu, aroma-types, GB-standard"
       }
-     ]
+     ],
+     "archetype": "baijiu-qu-ssf"
     },
     {
      "code": "CN2",
@@ -21807,7 +21915,8 @@
        "examples": "Northern millet huangjiu (Jimo), black-rice huangjiu",
        "tags": "china, huangjiu, GB-standard, sweetness-class"
       }
-     ]
+     ],
+     "archetype": "huangjiu-qu"
     }
    ]
   },
@@ -21904,7 +22013,8 @@
        "tags": "france, IGP, regional, protected-name"
       }
      ],
-     "beverage": "cider"
+     "beverage": "cider",
+     "archetype": "cider-wild-keeving"
     },
     {
      "code": "D2",
@@ -21951,7 +22061,8 @@
        "tags": "spain, basque, DOP, dry, still, wild-fermented, protected-name"
       }
      ],
-     "beverage": "cider"
+     "beverage": "cider",
+     "archetype": "cider-wild-keeving"
     },
     {
      "code": "D3",
@@ -22038,7 +22149,8 @@
        "tags": "ireland, taxation, commercial, reference"
       }
      ],
-     "beverage": "cider"
+     "beverage": "cider",
+     "archetype": "cider-cultured"
     },
     {
      "code": "D4",
@@ -22125,7 +22237,8 @@
        "tags": "canada, quebec, PGI, dessert, thermal-concentration, protected-name"
       }
      ],
-     "beverage": "cider"
+     "beverage": "cider",
+     "archetype": "cider-cultured"
     },
     {
      "code": "D5",
@@ -22212,7 +22325,8 @@
        "tags": "method, dry, still, wild-fermented, unfiltered, technique"
       }
      ],
-     "beverage": "cider"
+     "beverage": "cider",
+     "archetype": "cider-wild-keeving"
     }
    ]
   },
@@ -22279,7 +22393,8 @@
        "examples": "Jun tea",
        "tags": "jun, scoby, honey, green-tea, low-alcohol"
       }
-     ]
+     ],
+     "archetype": "scoby-symbiotic"
     },
     {
      "code": "CU2",
@@ -22336,7 +22451,8 @@
        "examples": "Milk kefir",
        "tags": "milk-kefir, scoby, cultured-dairy, caucasus, low-alcohol"
       }
-     ]
+     ],
+     "archetype": "grain-wild-backslop"
     }
    ]
   },
@@ -22403,7 +22519,8 @@
        "examples": "Gotlandsdricke, Norwegian maltøl",
        "tags": "nordic, baltic, farmhouse, kveik, juniper, traditional"
       }
-     ]
+     ],
+     "archetype": "beer-sorghum-trad"
     },
     {
      "code": "EU2",
@@ -22460,7 +22577,8 @@
        "examples": "Medovukha, Lietuviškas midus",
        "tags": "slavic, baltic, honey, medovukha, midus, traditional"
       }
-     ]
+     ],
+     "archetype": "grain-wild-backslop"
     }
    ]
   },
@@ -22530,7 +22648,8 @@
        "tags": "vermouth, aromatised, artemisia"
       }
      ],
-     "beverage": "fortified"
+     "beverage": "fortified",
+     "archetype": "fortified-arrested"
     },
     {
      "code": "F2",
@@ -22569,7 +22688,8 @@
        "tags": "makgeolli, nuruk, korea"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "F3",
@@ -22627,7 +22747,8 @@
        "tags": "kumis, airag, mare milk, kluyveromyces, lactose"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "agave"
     }
    ]
   },
@@ -22694,7 +22815,8 @@
        "examples": "Coconut feni from South Goa",
        "tags": "india, goa, feni, coconut, toddy, GI"
       }
-     ]
+     ],
+     "archetype": "regional-traditional-spirit"
     },
     {
      "code": "IN2",
@@ -22751,7 +22873,8 @@
        "examples": "Mahua from Madhya Pradesh, Odisha",
        "tags": "india, mahua, tribal, flower-spirit"
       }
-     ]
+     ],
+     "archetype": "spontaneous-wild"
     },
     {
      "code": "IN3",
@@ -22808,7 +22931,8 @@
        "examples": "Tongba (millet), rice chhaang",
        "tags": "himalaya, chhaang, tongba, millet, traditional"
       }
-     ]
+     ],
+     "archetype": "grain-wild-backslop"
     }
    ]
   },
@@ -22875,7 +22999,8 @@
        "examples": "Gyeongju Gyodong Beopju, Baekseju",
        "tags": "korea, yakju, cheongju, refined"
       }
-     ]
+     ],
+     "archetype": "korean-nuruk"
     },
     {
      "code": "KR2",
@@ -22932,7 +23057,8 @@
        "examples": "Chamisul, Chum-Churum",
        "tags": "korea, soju, diluted, neutral-spirit"
       }
-     ]
+     ],
+     "archetype": "spirit-neutral"
     },
     {
      "code": "KR3",
@@ -22989,7 +23115,8 @@
        "examples": "Munbaeju, Songjeol-ju, Hansan Sogokju",
        "tags": "korea, folk-liquor, cultural-property"
       }
-     ]
+     ],
+     "archetype": "grain-wild-backslop"
     }
    ]
   },
@@ -23081,7 +23208,8 @@
        "examples": "Cauim (Brazil), Masato (Amazon)",
        "tags": "amazon, cauim, masato, manioc, traditional"
       }
-     ]
+     ],
+     "archetype": "spontaneous-wild"
     },
     {
      "code": "LA2",
@@ -23163,7 +23291,8 @@
        "examples": "Guarapo (Cuba, Colombia)",
        "tags": "latinamerica, guarapo, sugarcane, traditional"
       }
-     ]
+     ],
+     "archetype": "spontaneous-wild"
     }
    ]
   },
@@ -23220,7 +23349,8 @@
        "tags": "japan, ordinary, residual-category"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "K1",
@@ -23307,7 +23437,8 @@
        "tags": "japan, junmai, daiginjo, premium, tokutei-meishoshu"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "K2",
@@ -23394,7 +23525,8 @@
        "tags": "japan, daiginjo, added-alcohol, premium, tokutei-meishoshu"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "K3",
@@ -23501,7 +23633,8 @@
        "tags": "japan, sweet, dessert, method, specialty"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "K4",
@@ -23628,7 +23761,8 @@
        "tags": "japan, sparkling, carbonation, modern"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     },
     {
      "code": "K5",
@@ -23715,7 +23849,8 @@
        "tags": "japan, non-alcoholic, koji, reference"
       }
      ],
-     "beverage": "sake"
+     "beverage": "sake",
+     "archetype": "sake-koji-kobo"
     }
    ]
   },
@@ -23807,7 +23942,8 @@
        "examples": "Sato (Thailand), Lao hai (Laos)",
        "tags": "thailand, laos, sato, rice-wine, jar-wine, traditional"
       }
-     ]
+     ],
+     "archetype": "rice-ragi"
     },
     {
      "code": "SEA2",
@@ -23864,7 +24000,8 @@
        "examples": "Lambanog (Quezon)",
        "tags": "philippines, lambanog, coconut, arrack, distilled"
       }
-     ]
+     ],
+     "archetype": "spontaneous-wild"
     }
    ]
   },
@@ -23914,7 +24051,8 @@
        "tags": "scotch, blend"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-congener-grain"
     },
     {
      "code": "S2",
@@ -23965,7 +24103,8 @@
        "tags": "japanese, voluntary standard"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-congener-grain"
     },
     {
      "code": "S3",
@@ -24039,7 +24178,8 @@
        "tags": "single malt, american, 2024 standard"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-congener-grain"
     },
     {
      "code": "S4",
@@ -24090,7 +24230,8 @@
        "tags": "cachaça, brazil, cane juice"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-congener-cane"
     },
     {
      "code": "S5",
@@ -24129,7 +24270,8 @@
        "tags": "raicilla, bacanora, regional"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "agave"
     },
     {
      "code": "S6",
@@ -24197,7 +24339,8 @@
        "tags": "eau-de-vie, fruit, unaged"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-from-wine"
     },
     {
      "code": "S7",
@@ -24253,7 +24396,8 @@
        "tags": "liqueur, cordial, sweetened"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "spirit-neutral"
     },
     {
      "code": "S8",
@@ -24310,9 +24454,730 @@
        "tags": "moonshine, white dog, unaged, corn whiskey"
       }
      ],
-     "beverage": "spirit"
+     "beverage": "spirit",
+     "archetype": "regional-traditional-spirit"
     }
    ]
+  }
+ ],
+ "fermentationArchetypes": [
+  {
+   "id": "beer-ale-clean",
+   "label": "Ale — clean cultured yeast",
+   "family": "beer",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces cerevisiae (ale)"
+   ],
+   "approach": "A measured pitch of a single clean ale strain at ale temperatures. Pitch rate follows the beer model in the pitching calculator (cells/mL/°Plato).",
+   "specialHandling": [
+    "Standard ~0.75 M cells/mL/°P target for ales — see the pitching calculator."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "beer-lager",
+   "label": "Lager — cold, high pitch",
+   "family": "beer",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces pastorianus (lager)"
+   ],
+   "approach": "Roughly double the ale pitch, fermented cold. The higher rate and low temperature keep esters down for a clean profile.",
+   "specialHandling": [
+    "~1.5 M cells/mL/°P; cold fermentation; diacetyl rest — see the pitching calculator."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "beer-belgian-warm",
+   "label": "Belgian / saison — warm, ester-forward",
+   "family": "beer",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces cerevisiae (Belgian/saison, POF+)"
+   ],
+   "approach": "Deliberately expressive: warmer fermentation (and sometimes a lower pitch) to encourage the esters and phenols that define Belgian ales and saison.",
+   "specialHandling": [
+    "Under-pitching and free-rising warm ferments raise ester/phenol production — the opposite goal to a clean lager."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "beer-weizen",
+   "label": "Weissbier — banana & clove",
+   "family": "beer",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces cerevisiae (Weissbier, POF+)"
+   ],
+   "approach": "A POF-positive wheat-beer strain fermented warm; pitch rate and temperature are tuned to balance isoamyl-acetate (banana) against 4-vinyl-guaiacol (clove).",
+   "specialHandling": [
+    "Lower pitch / warmer = more banana; higher pitch / cooler = more clove."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "beer-mixed-sour",
+   "label": "Mixed-culture / kettle sour",
+   "family": "beer",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces",
+    "Brettanomyces",
+    "Lactobacillus",
+    "Pediococcus"
+   ],
+   "approach": "A deliberate blend (or sequential pitch) of yeast and souring bacteria — pitched, not spontaneous. Flanders reds/browns, American wild, and kettle sours sit here.",
+   "specialHandling": [
+    "Souring bacteria added alongside or before Saccharomyces; long maturation for Brett character."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "beer-spontaneous",
+   "label": "Spontaneous (lambic / coolship)",
+   "family": "beer",
+   "inoculation": "spontaneous",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Enterobacteriaceae (Escherichia coli, Enterobacter, Klebsiella pneumoniae, Hafnia alvei) in the first month",
+    "Pediococcus damnosus with Saccharomyces cerevisiae and S. pastorianus from ~2 months",
+    "Dekkera (Brettanomyces) bruxellensis dominant from ~6 months, coexisting with P. damnosus"
+   ],
+   "approach": "No yeast is pitched. Cooled overnight in an open coolship, the wort is inoculated by ambient microbiota and matures in barrels over 1–3 years.",
+   "standard": {
+    "metric": "microbial succession, not a pitch rate",
+    "note": "Spitaels et al. (2014), from >2000 isolates over two years at a traditional Belgian lambic brewery: no yeast is pitched; ambient coolship inoculation drives a reproducible succession (Enterobacteriaceae → Pediococcus damnosus + Saccharomyces → Dekkera bruxellensis) over a 1–3 year maturation.",
+    "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384"
+   },
+   "specialHandling": [
+    "No pitch: hot wort cools overnight in an open coolship and is inoculated by the ambient microbiota of the Senne valley.",
+    "Characteristic succession — Enterobacteriaceae (first ~3–40 days) → Pediococcus damnosus + Saccharomyces (~2 months) → Dekkera bruxellensis (~6 months onward).",
+    "Matures in barrels 1–3 years before bottling; seasonal (cool months), with no controllable pitch rate."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384"
+  },
+  {
+   "id": "beer-sorghum-trad",
+   "label": "Traditional opaque grain beer",
+   "family": "beer",
+   "inoculation": "spontaneous",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Lactic acid bacteria: Limosilactobacillus (Lactobacillus) fermentum, Pediococcus acidilactici, Lactococcus lactis, Leuconostoc spp.",
+    "Yeast: Saccharomyces cerevisiae (dominant, 45–99% of the alcoholic phase)"
+   ],
+   "approach": "African sorghum/millet opaque beers and European farmhouse grain ferments: sour, low-alcohol, often back-slopped from a previous batch rather than pitched from a pure culture. Drunk actively fermenting.",
+   "standard": {
+    "metric": "two-stage spontaneous fermentation, not a pitch rate",
+    "note": "Sawadogo-Lingani et al. (2021, dolo): a lactic-acid souring of the wort (12–16 h; LAB to 8.8–9.9 log CFU/mL, pH ~3.0–3.8) is followed by an alcoholic fermentation (9–14 h) on indigenous Saccharomyces cerevisiae. Seeded by back-slopping — part of a previous batch, or a sun-dried yeast leaven — rather than a measured pitch.",
+    "sourceUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2021.672410/full"
+   },
+   "specialHandling": [
+    "Two stages: spontaneous lactic souring first, then alcoholic fermentation on indigenous yeast.",
+    "Back-slopping seeds the next batch — a portion of previous beer or a sun-dried yeast leaven acts as the local starter.",
+    "Drunk while actively fermenting; sour and low in alcohol."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2021.672410/full"
+  },
+  {
+   "id": "wine-cultured",
+   "label": "Wine — active dry yeast, dosed by weight",
+   "family": "wine",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (wine)"
+   ],
+   "approach": "Winemakers dose active dry wine yeast by weight per volume of must — a different standard from beer's cells/mL/°Plato. The yeast is rehydrated warm before inoculation.",
+   "standard": {
+    "metric": "g active dry wine yeast per hectolitre of must",
+    "value": 25,
+    "rangeLow": 20,
+    "rangeHigh": 30,
+    "targetViableCellsPerMl": 5000000,
+    "rehydrateTempCLow": 38,
+    "rehydrateTempCHigh": 40,
+    "note": "AWRI: an inoculum of 0.25 g/L (25 g/hL) to achieve a minimum 5×10^6 viable cells/mL; rehydrate in 5–10× the yeast weight of 38–40 °C water, stand 10–15 min. Up to ~2× for highly clarified, high-Brix, or high-SO2 musts.",
+    "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
+   },
+   "specialHandling": [
+    "Rehydrate warm; a rehydration nutrient (inactivated yeast) improves survival in difficult musts.",
+    "Higher dose for clarified/high-Brix/high-SO2 juice."
+   ],
+   "comparison": "Where beer counts cells/mL/°Plato, wine doses grams/hL — the same idea (enough viable cells) expressed in the winemaker's units.",
+   "researchStatus": "sourced",
+   "sourceUrl": "https://wineserver.ucdavis.edu/"
+  },
+  {
+   "id": "wine-native",
+   "label": "Wine — native / spontaneous",
+   "family": "wine",
+   "inoculation": "spontaneous",
+   "saccharification": "none",
+   "organisms": [
+    "Early non-Saccharomyces from the grape surface: Hanseniaspora, Starmerella, Pichia, Debaryomyces, Metschnikowia",
+    "Saccharomyces cerevisiae, which takes over and finishes the ferment"
+   ],
+   "approach": "No yeast added; the must ferments on the vineyard/winery microbiota. A per-style choice within many wine categories rather than a separate legal class.",
+   "standard": {
+    "metric": "yeast succession; no pitch rate",
+    "note": "Zabukovec et al. (2020): spontaneous fermentation starts on the non-Saccharomyces yeasts that prevail on grape skins — Hanseniaspora, Starmerella, Pichia, Debaryomyces, Metschnikowia — which ferment sugar only weakly. Their exponential growth lasts just two to three days before they reach stationary phase, after which Saccharomyces cerevisiae, more ethanol-tolerant and able to grow anaerobically, dominates and completes the fermentation.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7709452/"
+   },
+   "specialHandling": [
+    "Higher risk and variability; the non-Saccharomyces early phase shapes aroma before Saccharomyces finishes.",
+    "That early phase is short — two to three days of exponential growth — but it is where higher alcohols, esters, terpenes and volatile thiols are laid down.",
+    "The indigenous population is what carries terroir character, which is the reason for not inoculating."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7709452/"
+  },
+  {
+   "id": "wine-flor",
+   "label": "Biologically-aged (flor) wine",
+   "family": "wine",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Film-forming Saccharomyces cerevisiae; historically classed as the four flor races beticus, cheresiensis, montuliensis and rouxii, now known to share a common origin"
+   ],
+   "approach": "Fino/manzanilla sherry: after fermentation a film (flor) of specialised yeast grows on the wine surface under a solera, ageing it oxidatively-protected.",
+   "standard": {
+    "metric": "biological ageing under a yeast film; minimum 15% vol",
+    "value": 15,
+    "note": "OIV defines flor (film) wines as wines biologically aged in contact with air through the development of a film of typical yeasts on the free surface, AFTER complete alcoholic fermentation of the must — nothing is arrested. Wine spirit or neutral alcohol may be added, and the finished wine must reach at least 15% vol actual alcohol. Legras et al. (2016): the velum is an air–liquid biofilm that forms once fermentable carbon is exhausted; FLO11 expression at the diauxic shift raises cell-surface hydrophobicity, and the yeast switches from fermentative to oxidative metabolism, consuming ethanol, glycerol, acetic and lactic acid.",
+    "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-i-definitions/special-wines"
+   },
+   "specialHandling": [
+    "Aged after fermentation is complete — this is not an arrested ferment, unlike port-type fortification.",
+    "The velum forms on nutrient depletion: no fermentable carbon, with FLO11-driven cell-surface hydrophobicity floating the cells into a biofilm.",
+    "Metabolism turns oxidative — the film consumes the wine's own ethanol and glycerol rather than sugar.",
+    "Casks are left partly filled so the film has a free surface to grow on; Jerez ages these fractionally through a solera."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4830823/"
+  },
+  {
+   "id": "sparkling-secondary",
+   "label": "Sparkling — second fermentation (tirage)",
+   "family": "wine",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (bayanus/prise-de-mousse type)"
+   ],
+   "approach": "A base wine is re-fermented with added sugar and a robust yeast (liqueur de tirage) in bottle or tank to trap CO2; the classic method ages on lees.",
+   "standard": {
+    "metric": "second fermentation in a sealed vessel; regulated additions",
+    "note": "OIV International Code of Oenological Practices: the second fermentation is started by a tirage liqueur (sugar, must or concentrated must) plus a selected yeast inoculum, with clarifying agents (bentonite, organic fining agents, tannins, potassium alginate) and fermentation activators permitted. Nutritive salts are capped — diammonium phosphate or ammonium sulphate at a maximum 0.3 g/L expressed as the salt, and thiamin hydrochloride at a maximum 0.6 mg/L expressed as thiamin. The bottle route runs tirage, stacking, riddling, disgorging and dosage.",
+    "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/special-wines:-sparkling-wines"
+   },
+   "specialHandling": [
+    "Alcohol-tolerant, flocculent yeast for the second ferment; lees ageing for autolytic character.",
+    "Nutrient additions are legally capped: 0.3 g/L DAP or ammonium sulphate, 0.6 mg/L thiamin.",
+    "The yeast has to start in a finished, alcoholic base wine, which is why a robust prise-de-mousse strain is used rather than a primary-fermentation strain."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/special-wines:-sparkling-wines"
+  },
+  {
+   "id": "fortified-arrested",
+   "label": "Fortified — fermentation arrested by spirit",
+   "family": "fortified",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (wine)"
+   ],
+   "approach": "Port-type wines: a normal wine ferment is stopped early by adding grape spirit, killing the yeast and leaving residual sweetness at a higher strength.",
+   "standard": {
+    "metric": "acquired alcoholic strength, % vol (liqueur wine)",
+    "rangeLow": 15,
+    "rangeHigh": 22,
+    "note": "OIV defines fortification as the addition to wine of wine spirit, rectified alcohol of viticultural origin, or rectified food alcohol — and specifically discourages it for merely raising alcohol, permitting it to produce the special-wine categories (flor/film wines, fortified wines, mistelles). Liqueur wine is defined at an acquired alcoholic strength of at least 15% and at most 22% vol (states may allow up to 24% domestically), made from grape must — including partially fermented must — and/or wine with distillates, spirits and alcohol of vitivinicultural origin added.",
+    "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-i-definitions/special-wines"
+   },
+   "specialHandling": [
+    "Fermentation is deliberately halted mid-way; timing of the spirit addition sets sweetness.",
+    "The spirit must itself meet the OIV production conditions for wine spirit or rectified alcohol.",
+    "Distinct from flor wines, which are aged only after fermentation runs to completion."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.oiv.int/standards/international-code-of-oenological-practices/part-ii-oenological-treatments-and-practices/wines/fortification"
+  },
+  {
+   "id": "cider-cultured",
+   "label": "Cider — cultured wine/cider yeast",
+   "family": "cider",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (wine/cider active dry yeast)"
+   ],
+   "approach": "Modern cider often pitches a cultured wine or cider yeast, frequently after sulphiting the juice to suppress wild flora — closer to the wine model than the beer one.",
+   "standard": {
+    "metric": "g active dry yeast per hectolitre of juice",
+    "value": 25,
+    "rangeLow": 25,
+    "rangeHigh": 35,
+    "note": "Scott Laboratories: 2 lb/1000 gal (25 g/hL) for a standard primary fermentation, rising to 2.8 lb/1000 gal (35 g/hL) for high-Brix juice above 25 °Bx. The same dose-by-weight standard as wine — AWRI gives 25 g/hL for a minimum 5×10⁶ viable cells/mL — so the inoculation calculator's g/hL model applies directly.",
+    "sourceUrl": "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs"
+   },
+   "specialHandling": [
+    "Dosed by weight per volume like wine, not by cells/mL/°Plato like beer.",
+    "Nutrient-poor apple juice benefits from yeast nutrient; cool, slow ferments preserve aroma.",
+    "Juice is commonly sulphited before pitching to suppress the wild flora the cultured yeast is meant to outcompete."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://scottlabsltd.com/en-ca/faqs/wine-yeast-faqs"
+  },
+  {
+   "id": "cider-wild-keeving",
+   "label": "Cider — wild / keeved (traditional)",
+   "family": "cider",
+   "inoculation": "spontaneous",
+   "saccharification": "none",
+   "organisms": [
+    "indigenous yeast and bacteria of the fruit and cellar"
+   ],
+   "approach": "Traditional French/Basque/English ciders ferment on wild flora; keeving deliberately starves the ferment (via a pectin gel, the chapeau brun) to leave natural sweetness. No pitch.",
+   "standard": {
+    "metric": "nutrient depletion by keeving; no pitch rate",
+    "note": "Januszek et al. (2024): keeving (défécation) adds calcium chloride and pectin methylesterase to the must. Demethylation of the homogalacturonan chain in pectin lets it bind calcium and form a gel, which CO₂ floats to the surface as the chapeau brun over roughly 2–6 days. Around 50% of the pectin and nutrients are trapped in that cap and the sediment beneath it; the resulting shortage of assimilable nitrogen makes the fermentation slow and stop of its own accord, leaving residual sweetness.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11506311/"
+   },
+   "specialHandling": [
+    "Keeving starves rather than stops: nutrient removal, not sulphite or filtration, is what arrests the ferment.",
+    "Calcium chloride plus pectin methylesterase drive gel formation; the chapeau brun rises within about 2–6 days.",
+    "Slow and low-temperature by design — the point is an incomplete fermentation with natural sweetness left in."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11506311/"
+  },
+  {
+   "id": "mead-cultured",
+   "label": "Mead — wine yeast + staggered nutrients",
+   "family": "mead",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (wine)"
+   ],
+   "approach": "Honey is nutrient-free, so mead pitches a wine yeast and manages fermentation through staggered nutrient additions rather than pitch rate alone. The builder computes a TOSNA-style schedule (lib/must.ts).",
+   "specialHandling": [
+    "Staggered nutrient additions (TOSNA) over the first third of fermentation; without them, sluggish ferments and H2S."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://scottlabs.com/"
+  },
+  {
+   "id": "sake-koji-kobo",
+   "label": "Sake — kōji + sake yeast (multiple parallel fermentation)",
+   "family": "sake",
+   "inoculation": "starter-culture",
+   "saccharification": "koji",
+   "organisms": [
+    "Aspergillus oryzae (kōji, saccharification)",
+    "Saccharomyces cerevisiae — kyōkai sake yeast (kōbo, fermentation)"
+   ],
+   "approach": "A common misconception is that kōji ferments the sake. It does not: kōji mould saccharifies the rice (amylase/protease), while a SEPARATE sake yeast — usually a kyōkai strain from the Brewing Society of Japan, added via the shubo/moto starter — carries out the alcoholic fermentation. Both run at once in the moromi, 'multiple parallel fermentation', with rice, water and kōji added in three stages (sandan-jikomi).",
+   "specialHandling": [
+    "Shubo/moto starter built first (sokujō fast-souring, or kimoto/yamahai slow lactic).",
+    "Kōji and yeast work simultaneously in the main mash."
+   ],
+   "comparison": "Unlike beer (mash then pitch) or wine (crush then pitch), saccharification and fermentation happen together, which lets sake reach unusually high alcohol.",
+   "researchStatus": "sourced",
+   "sourceUrl": "https://japansake.or.jp/sake/en/professional/sake-brewing-processes-flavor/"
+  },
+  {
+   "id": "huangjiu-qu",
+   "label": "Huangjiu (Chinese yellow wine) — qū starter",
+   "family": "sake",
+   "inoculation": "starter-culture",
+   "saccharification": "qu",
+   "organisms": [
+    "Moulds of the qū: Aspergillus oryzae, Rhizopus oryzae, Mucor spp., Monascus purpureus",
+    "Yeast: Saccharomyces cerevisiae (the principal ethanol producer)",
+    "Bacteria: Lactobacillus spp., Bacillus spp., Weissella, Leuconostoc"
+   ],
+   "approach": "Chinese yellow rice wine uses a qū starter — a cake of grain colonised by a consortium of moulds, yeasts and bacteria — to saccharify and ferment together, related to but distinct from Japanese kōji.",
+   "standard": {
+    "metric": "semi-solid open fermentation; no pitch rate",
+    "note": "Tian et al. (2022): wheat qū supplies the amylase, protease and esterase that saccharify the starch while Saccharomyces cerevisiae ferments the released sugars — simultaneous saccharification and alcoholic fermentation, termed semi-solid open fermentation. A typical course runs ~30 °C for 5–7 days, after which the mash is opened to drop to ~15 °C and held 1–2 months to finish.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8844729/"
+   },
+   "specialHandling": [
+    "Qū supplies both saccharifying enzymes and fermenting organisms.",
+    "Saccharification and alcoholic fermentation run simultaneously (semi-solid open fermentation), not in sequence.",
+    "Lactic acid bacteria dominate the bacterial community, and which species dominate tracks with product quality."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8844729/"
+  },
+  {
+   "id": "korean-nuruk",
+   "label": "Korean rice wine — nuruk starter",
+   "family": "sake",
+   "inoculation": "starter-culture",
+   "saccharification": "nuruk",
+   "organisms": [
+    "Moulds of the nuruk: Aspergillus, Rhizopus and Mucor spp.",
+    "Yeasts: Saccharomyces cerevisiae (>90% of the fungal community through fermentation) and Saccharomycopsis fibuligera",
+    "Lactic acid bacteria: Lactilactobacillus curvatus, Liquorilactobacillus satsumensis, Pediococcus acidilactici"
+   ],
+   "approach": "Takju/makgeolli and yakju use nuruk, a traditional grain fermentation starter carrying both saccharifying moulds and yeast.",
+   "standard": {
+    "metric": "starter-culture ferment; no pitch rate",
+    "note": "Song et al. (2022): nuruk is made by natural solid fermentation of moistened ground rice or wheat, growing a mixed population of moulds, yeasts and lactic acid bacteria. Its moulds release amylase and glucoamylase to saccharify the rice while the yeasts ferment the released sugars. The gayangju course they followed ran ~25 °C for the fermentation stages, then ~15 °C for an aging period of about 35 days.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9455823/"
+   },
+   "specialHandling": [
+    "Nuruk carries both the saccharifying moulds and the fermenting yeasts — there is no separate yeast pitch in the traditional method.",
+    "Lactic acid bacteria persist throughout and shape the finished acidity.",
+    "Often a multi-stage build (a first and second fermentation) before an extended cool aging."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9455823/"
+  },
+  {
+   "id": "rice-ragi",
+   "label": "Southeast Asian rice ferment — ragi / starter cake",
+   "family": "sake",
+   "inoculation": "starter-culture",
+   "saccharification": "ragi",
+   "organisms": [
+    "Amylolytic moulds: Amylomyces rouxii (some isolates reclassified as Mucor indicus), Rhizopus oryzae, Mucor spp.",
+    "Yeasts: Saccharomyces cerevisiae, Candida utilis, Endomycopsis burtonii",
+    "Lactic acid bacteria: Pediococcus pentosaceus, Lactobacillus plantarum, L. fermentum"
+   ],
+   "approach": "Tapai and related SE-Asian rice ferments use ragi — a dried starter cake of amylolytic mould plus yeast — inoculated onto cooked rice.",
+   "standard": {
+    "metric": "starter-cake ferment; no pitch rate",
+    "note": "Delva et al. (2022): ragi tapai is a dry starter cake (~2.5 cm across, ~0.5 cm thick) of rice flour, spices and a mixed microbial culture. Amylomyces rouxii is the principal amylolytic organism, producing amyloglucosidase and growing on raw substrate. Two functional groups do the work — one breaks starch down to glucose, the other converts glucose to ethanol.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067998/"
+   },
+   "specialHandling": [
+    "The starter is a physical cake crumbled over cooked rice, not a liquid pitch.",
+    "Two functional groups: amylolytic moulds saccharify the starch, yeasts ferment the glucose.",
+    "Related starters across the region go by different names — chu (China), ragi (Indonesia), ragi-tapai (Malaysia), bubod (Philippines), marcha (India), nuruk (Korea)."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9067998/"
+  },
+  {
+   "id": "spirit-congener-grain",
+   "label": "Whisky wash — congener-developing distiller's yeast",
+   "family": "spirit",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces cerevisiae (distiller's / M-type; sometimes with brewer's yeast)",
+    "Lactic acid bacteria in the late fermentation — Lactobacillus spp., Leuconostoc spp."
+   ],
+   "approach": "The wash is fermented for flavour, not clean neutrality: distillers pick strains and conditions that develop esters and higher alcohols (congeners), which carry through distillation into the spirit's character.",
+   "standard": {
+    "metric": "pitching temperature °C and fermentation duration",
+    "rangeLow": 16,
+    "rangeHigh": 19,
+    "note": "Walker & Hill (2016): Scotch whisky washes normally have no temperature control — the wort is simply pitched at 16–19 °C and allowed to rise, typically peaking around 32–33 °C, over a 2–3 day fermentation. The wort is never boiled, so residual malt enzymes keep converting during fermentation (worth roughly 30% additional spirit). Over 100 esters form, mostly fruity; iso-amyl alcohol makes up 40–70% of the higher alcohols and turns unpleasant when too high. Most Scotch malt distilleries pitch commercially supplied cream yeast directly without propagation; grain distilleries pitch at much lower rates.",
+    "sourceUrl": "https://www.mdpi.com/2306-5710/2/4/38"
+   },
+   "specialHandling": [
+    "Warmer / more-stressed ferments and congener-forward strains raise esters; cooler, cleaner ferments reduce them.",
+    "The wash is unhopped and unboiled — malt enzymes carry on converting starch during fermentation.",
+    "A limited late lactic fermentation is deliberate craft, not contamination: LAB acids esterify to ethyl lactate and γ-dodecalactone, giving sweet, fruity and creamy notes."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2306-5710/2/4/38"
+  },
+  {
+   "id": "spirit-congener-cane",
+   "label": "Rum wash — osmophilic yeast + dunder",
+   "family": "spirit",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (the usual production yeast)",
+    "Stress-tolerant non-Saccharomyces: Schizosaccharomyces pombe, plus Candida, Debaryomyces, Kluyveromyces, Pichia, Hanseniaspora",
+    "Bacteria: Lactobacillus spp. and Propionibacterium spp."
+   ],
+   "approach": "Cane/molasses washes use osmophilic yeast; heavy 'high-ester' rums recycle dunder (stillage) in muck pits to build the acids and esters that define the style.",
+   "standard": {
+    "metric": "fermentation duration and temperature",
+    "rangeLow": 28,
+    "rangeHigh": 35,
+    "note": "Mangwanda et al. (2021): rum fermentations run anywhere from 20 hours to 21 days — short 20–26 hour ferments give light rums, ferments beyond 7 days give heavy ones. Temperature is held at 28–35 °C for yeast growth; S. cerevisiae works best at 20–30 °C and commercial distilling strains tolerate 32–35 °C, with metabolic activity falling away rapidly above that. Molasses is a harsh, low-water-activity substrate (S. cerevisiae needs a water activity of at least 0.65), so few organisms besides Schizosaccharomyces pombe and Bacillus subtilis survive alongside it. Dunder — the volatile-depleted liquid left in the still from previous batches — is routinely added back to preserve volatiles and organoleptic continuity between batches.",
+    "sourceUrl": "https://www.mdpi.com/2311-5637/7/1/21"
+   },
+   "specialHandling": [
+    "Dunder/muck concentrates esters and acids; long, warm, deliberately funky ferments.",
+    "Fermentation length is the main lever on style: hours for light rum, over a week for heavy.",
+    "Bacteria are part of the flavour, not just spoilage — Lactobacillus and Propionibacterium give 2,3-butanediol, diacetyl and propionic acid, though too much inhibits the ferment."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2311-5637/7/1/21"
+  },
+  {
+   "id": "spirit-neutral",
+   "label": "Neutral spirit wash — low-congener yeast",
+   "family": "spirit",
+   "inoculation": "cultured",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Saccharomyces cerevisiae (low-congener / vodka-type)"
+   ],
+   "approach": "Vodka, gin base and neutral spirit want the opposite of whisky: a low-metabolite yeast and clean conditions that minimise congeners for a neutral distillate. Higher fermentation temperature tends to lower esters and raise higher alcohols.",
+   "specialHandling": [
+    "Low-congener strain; controlled temperature to minimise flavour compounds."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2076-3417/13/8/4927"
+  },
+  {
+   "id": "spirit-from-wine",
+   "label": "Brandy — wine base, then distil",
+   "family": "spirit",
+   "inoculation": "cultured",
+   "saccharification": "none",
+   "organisms": [
+    "Saccharomyces cerevisiae (wine)"
+   ],
+   "approach": "Grape and fruit brandies ferment as wine first (wine yeast, wine handling) and are then distilled; the fermentation archetype is the wine one, with distillation added.",
+   "standard": {
+    "metric": "g active dry wine yeast per hectolitre of must",
+    "value": 25,
+    "rangeLow": 20,
+    "rangeHigh": 30,
+    "targetViableCellsPerMl": 5000000,
+    "rehydrateTempCLow": 38,
+    "rehydrateTempCHigh": 40,
+    "note": "The base is a wine, so the wine standard governs the fermentation: AWRI's 25 g/hL of active dry wine yeast to reach a minimum 5×10⁶ viable cells/mL, rehydrated in 5–10× the yeast weight of 38–40 °C water. What distinguishes this archetype is what happens after — the wine is distilled rather than bottled, and it is made as a distillation base rather than as a drinking wine.",
+    "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
+   },
+   "specialHandling": [
+    "Follow the wine-cultured approach — this is the wine model with a still on the end.",
+    "Base wines for distillation are conventionally made with minimal sulphite; treat that as practice rather than a sourced figure here.",
+    "A spontaneous base wine follows the wine-native succession instead."
+   ],
+   "comparison": "Same fermentation as wine-cultured; the difference is downstream, not in the ferment.",
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.awri.com.au/industry_support/winemaking_resources/wine_fermentation/yeast-rehydration/"
+  },
+  {
+   "id": "agave",
+   "label": "Agave spirits — cultured or wild",
+   "family": "spirit",
+   "inoculation": "spontaneous",
+   "saccharification": "none",
+   "organisms": [
+    "Yeasts: Saccharomyces cerevisiae, Hanseniaspora spp., Candida spp., Torulaspora delbrueckii, Kluyveromyces marxianus",
+    "Bacteria: lactic acid bacteria, Leuconostoc mesenteroides"
+   ],
+   "approach": "Cooked-agave musts are fermented either with a cultured yeast (industrial tequila) or on wild/ambient flora in open wooden vats (traditional mezcal), which drives much of the rustic character.",
+   "standard": {
+    "metric": "spontaneous fermentation duration, days",
+    "rangeLow": 8,
+    "rangeHigh": 20,
+    "note": "Becerra-Lucio et al. (2022): agave piñas are cooked in earthen pit ovens or autoclaves, which both sterilises the material and hydrolyses its complex carbohydrates into fermentable sugars — but inoculation begins the moment the oven is opened, via hands, tools and the surrounding environment. Artisanal mezcal is therefore spontaneous, not pitched, and takes roughly 8 to 20 days. Non-Saccharomyces yeasts and bacteria supply the higher alcohols, acetate esters and ethyl esters behind its floral and fruity character.",
+    "sourceUrl": "https://www.mdpi.com/2311-5637/8/11/662"
+   },
+   "specialHandling": [
+    "Open-air wild ferments for traditional styles; strain choice for industrial.",
+    "Cooking does the saccharification — there is no enzyme or starter culture, the agave's own fructans are hydrolysed by heat.",
+    "The 'inoculum' is the production environment itself: the consortium comes from the surroundings once the oven is opened."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2311-5637/8/11/662"
+  },
+  {
+   "id": "baijiu-qu-ssf",
+   "label": "Baijiu — Daqu/Xiaoqu, solid-state fermentation",
+   "family": "spirit",
+   "inoculation": "starter-culture",
+   "saccharification": "qu",
+   "organisms": [
+    "Fungi: Saccharomyces cerevisiae, Kazachstania, Aspergillus, Rhizopus, Apiotrichum",
+    "Bacteria: Lactobacillus (organic acids), Bacillus (pyrazines and aromatic compounds), Clostridium (caproic-acid precursors)"
+   ],
+   "approach": "Baijiu is made by solid-state fermentation of grain with a qū starter (Daqu or Xiaoqu) — a self-sustaining microbial consortium — often in earthen pits, then solid-state distilled. Not a single pitched yeast.",
+   "standard": {
+    "metric": "solid-state fermentation on a qū consortium; no pitch rate",
+    "note": "Tu et al. (2022): Daqu is a grain starter of wheat, barley and/or peas, classed by the temperature it is made at — high-temperature for sauce (Maotai) aroma, medium for strong aroma, low for light aroma. Xiaoqu is a simpler rice/sorghum/barley starter made with Chinese medicinal herbs, suited to southern China, and in xiaoqu baijiu saccharification and fermentation run at the same time. In traditional production the organisms come from the environment, the workers and the jiuqu itself rather than a deliberate pitch; modern practice may add isolated functional strains. For strong-aroma baijiu the earthen pit is essential — Clostridium spp. living in the pit mud produce caproic acid and ethyl caproate.",
+    "sourceUrl": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.919044/full"
+   },
+   "specialHandling": [
+    "Solid-state, pit/vessel-dependent microbiota; aroma type (香型) follows the qū and process.",
+    "The pit itself is part of the organism set — pit-mud Clostridium is what makes strong-aroma baijiu taste the way it does.",
+    "Daqu type is chosen by the aroma target: high-temperature daqu for sauce aroma, medium for strong, low for light."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2022.919044/full"
+  },
+  {
+   "id": "milk-distilled",
+   "label": "Distilled milk liquor (arkhi)",
+   "family": "spirit",
+   "inoculation": "starter-culture",
+   "saccharification": "none",
+   "organisms": [
+    "Lactic acid bacteria: Lactobacillus kefiranofaciens (tarag base), L. helveticus, Lactococcus lactis",
+    "Lactose-fermenting yeasts: Kluyveromyces marxianus, Saccharomyces cerevisiae"
+   ],
+   "approach": "Central Asian milk liquor distils fermented mare's/cow's milk (airag/kumis): the lactose is fermented by a kefir-type yeast-and-bacteria culture, then distilled.",
+   "standard": {
+    "metric": "fermented-milk base, then distilled; no pitch rate",
+    "note": "Kumar et al. (2025): arkhi is a distilled alcoholic beverage derived from fermented milk, with tarag — a firm Mongolian yoghurt made by fermenting boiled and cooled cow's or goat's milk with Lactobacillus kefiranofaciens, reaching pH 3.6–3.9 — as its base. The related airag is horse or camel milk agitated vigorously in leather sacks or wooden containers for one to two days on Lactobacillus helveticus, Lactococcus lactis and native yeasts, reaching 1–3% ethanol. Distillation concentrates that low-alcohol milk ferment; there is no pitch rate, the culture is carried over from a previous batch.",
+    "sourceUrl": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1693995/full"
+   },
+   "specialHandling": [
+    "Back-slopped milk culture; lactose (not maltose/sucrose) is the sugar.",
+    "The base ferment is weak (1–3% ABV), so distillation is what makes it a spirit at all.",
+    "Acidity is high going into the still — the tarag base sits at pH 3.6–3.9."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1693995/full"
+  },
+  {
+   "id": "regional-traditional-spirit",
+   "label": "Regional traditional spirits",
+   "family": "spirit",
+   "inoculation": "spontaneous",
+   "saccharification": "none",
+   "organisms": [
+    "varies by tradition (wild or local starter)"
+   ],
+   "approach": "Feni, palm distillates and other regional spirits ferment on local wild flora or a regional starter before distillation; handled per style rather than one rule.",
+   "specialHandling": [
+    "Map per style as primary sources are secured.",
+    "This is deliberately a catch-all, not a technique: it groups unrelated traditions (Goan feni, Southeast Asian palm distillates, Korean regional liquors) that share only the fact of being distilled.",
+    "It stays marked pending on purpose — no single source can honestly describe all of them, and the right unit of sourcing is the individual style. Where a tradition is well documented it gets its own archetype instead."
+   ],
+   "researchStatus": "pending"
+  },
+  {
+   "id": "spontaneous-wild",
+   "label": "Spontaneous sap/juice ferment (palm wine, pulque, chicha)",
+   "family": "traditional",
+   "inoculation": "spontaneous",
+   "saccharification": "none",
+   "organisms": [
+    "wild Saccharomyces cerevisiae and Zymomonas mobilis, plus non-Saccharomyces yeasts and lactic acid bacteria"
+   ],
+   "approach": "Palm sap (palm wine), agave sap (pulque) and maize (chicha) ferment spontaneously on the microbes already present in the sap and environment — no yeast is added. In palm wine, Saccharomyces cerevisiae and Zymomonas mobilis are the main alcohol producers.",
+   "specialHandling": [
+    "Very fast (hours to a day); the microbial mix shifts continuously and drives the flavour.",
+    "Traditionally drunk fresh, still fermenting."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://annalsmicrobiology.biomedcentral.com/articles/10.1007/s13213-014-0861-8"
+  },
+  {
+   "id": "milk-kefir",
+   "label": "Fermented milk (airag / kumis / kefir)",
+   "family": "traditional",
+   "inoculation": "starter-culture",
+   "saccharification": "none",
+   "organisms": [
+    "Lactic acid bacteria: Lactobacillus helveticus (dominant), Lactococcus lactis, Leuconostoc mesenteroides",
+    "Lactose-fermenting yeasts: Kluyveromyces marxianus, Saccharomyces cerevisiae"
+   ],
+   "approach": "Mildly alcoholic fermented milks are back-slopped from a living culture of lactic bacteria and yeast that ferment lactose — a starter culture, not a pitched pure strain.",
+   "standard": {
+    "metric": "back-slopped mixed LAB + yeast ferment; % ethanol",
+    "rangeLow": 1,
+    "rangeHigh": 3,
+    "note": "Martuzzi et al. (2024): mare-milk fermentation is a bacteria–yeast interaction — LAB acidify the milk while the yeasts modify titratable acidity — and is started by back-slopping, inoculating fresh milk with a small quantity of already-fermented milk as the natural starter. Koumiss generally contains about 2% alcohol, 0.5–1.5% lactic acid, 2–4% sugar and 2% fat; Russian classification runs weak (0.7–1% ethanol), normal (1–1.75%) and strong (1.75–2.5%). Kumar et al. (2025) describe airag as horse or camel milk agitated vigorously in leather sacks or wooden containers for one to two days, giving a slightly effervescent drink at 1–3% ethanol.",
+    "sourceUrl": "https://www.mdpi.com/2304-8158/13/3/493"
+   },
+   "specialHandling": [
+    "Back-slopping maintains the culture; simultaneous souring and light alcohol.",
+    "The sugar is lactose, so the yeast has to be a lactose fermenter — Kluyveromyces marxianus, not a brewing strain.",
+    "Agitation is part of the method: vigorous stirring in a leather sack or wooden vessel aerates the milk and drives the ferment."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2304-8158/13/3/493"
+  },
+  {
+   "id": "scoby-symbiotic",
+   "label": "SCOBY ferment (kombucha)",
+   "family": "traditional",
+   "inoculation": "starter-culture",
+   "saccharification": "none",
+   "organisms": [
+    "Acetic acid bacteria: Acetobacter aceti, Komagataeibacter xylinum, Gluconobacter oxydans, Acetobacter pasteurianus",
+    "Yeasts: Brettanomyces/Dekkera, Zygosaccharomyces, Saccharomyces, Schizosaccharomyces pombe"
+   ],
+   "approach": "Kombucha ferments sweetened tea with a SCOBY — a symbiotic pellicle of acetic-acid bacteria and yeast added from a previous batch (with starter liquid), not a measured yeast pitch.",
+   "standard": {
+    "metric": "back-slopped SCOBY plus starter liquid; days",
+    "rangeLow": 6,
+    "rangeHigh": 14,
+    "note": "Ojo & de Smidt (2023): the SCOBY is a metabolically active symbiotic community of bacteria and yeast that builds a jelly-like cellulose pellicle (zooglea biofilm) at the liquid–air interface. A representative protocol dissolves 50 g sucrose in 1 L boiling water, steeps tea for 5 minutes, cools to 20 °C, then inoculates with 24 g of SCOBY plus 0.2 L of previously fermented kombucha — the starter liquid lowers pH to shut out unwanted microbes. Optimal fermentation runs 6–14 days. The symbiosis is a loop: yeast ethanol lets the bacteria make acetic acid, and that acetic acid stimulates the yeast to make more ethanol.",
+    "sourceUrl": "https://www.mdpi.com/2311-5637/9/5/472"
+   },
+   "specialHandling": [
+    "Low alcohol; the bacteria oxidise ethanol to acid, giving the sour profile.",
+    "The back-slopped starter liquid matters as much as the pellicle — it acidifies the tea immediately and keeps contaminants out.",
+    "Composition varies with substrate, origin, climate and production conditions, so no two SCOBYs are the same culture."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2311-5637/9/5/472"
+  },
+  {
+   "id": "grain-wild-backslop",
+   "label": "Wild / back-slopped grain & folk ferments",
+   "family": "traditional",
+   "inoculation": "spontaneous",
+   "saccharification": "malt-enzyme",
+   "organisms": [
+    "Yeast: Saccharomyces cerevisiae",
+    "Lactic acid bacteria: Lactobacillus casei, Lacticaseibacillus paracasei, Leuconostoc mesenteroides",
+    "Acetic acid bacteria: Acetobacter pasteurianus (bread kvass)"
+   ],
+   "approach": "Kvass, tesgüino and other folk grain ferments run on wild flora, often back-slopped, and are drunk young and lightly alcoholic. Handled per tradition.",
+   "standard": {
+    "metric": "combined lactic and alcoholic fermentation; % ethanol",
+    "rangeHigh": 1,
+    "note": "Ashaolu & Reale (2020): kvass is made from fermented barley and rye malt, rye flour and stale rye bread, mainly in Russia, Poland and the Baltic states. It is a combined lactic and alcoholic fermentation on a natural mixed flora of Saccharomyces cerevisiae with lactic acid bacteria such as Lactobacillus casei and Leuconostoc mesenteroides — no pure culture is pitched, and species composition varies widely with technique and medium. It contains 1% alcohol or less, and because it is not pasteurised the live LAB remain in the finished drink.",
+    "sourceUrl": "https://www.mdpi.com/2076-2607/8/8/1176"
+   },
+   "specialHandling": [
+    "Back-slopping; short, low-alcohol ferments.",
+    "Lactic and alcoholic fermentation run together — the sourness is not a fault, it is half the process.",
+    "Species composition is genuinely variable between makers; this archetype describes a practice, not a fixed culture."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.mdpi.com/2076-2607/8/8/1176"
+  },
+  {
+   "id": "none-improvised",
+   "label": "No yeast added (pruno)",
+   "family": "traditional",
+   "inoculation": "none",
+   "saccharification": "none",
+   "organisms": [
+    "whatever is present — wild and from added bread; uncontrolled"
+   ],
+   "approach": "Improvised prison wine adds no cultured yeast; fermentation relies on wild organisms and any bread thrown in. It is included as a warning, not a method: pruno has caused documented botulism outbreaks.",
+   "specialHandling": [
+    "No pitch, no control; genuine public-health hazard — see the pruno guideline entry."
+   ],
+   "researchStatus": "sourced",
+   "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm"
   }
  ]
 }

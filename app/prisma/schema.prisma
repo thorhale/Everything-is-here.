@@ -293,6 +293,14 @@ model GuidelineCategory {
   sortOrder Int
   styles    GuidelineStyle[]
 
+  // NOTE: the guideline files also carry a per-category `archetype` (how it
+  // ferments). load-guidelines.mjs writes it to Neon so the database and the
+  // export stay complete, but it is deliberately NOT a field here: the app
+  // resolves it from lib/generated/category-archetype.json instead, which is
+  // built from the same data, costs no query, and works offline. Adding it as
+  // a Prisma field would make every category query select a column that does
+  // not exist until the loader has run, 500ing the guideline pages on any
+  // deploy that got there first.
   @@index([editionId])
   @@index([beverage])
 }
