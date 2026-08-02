@@ -89,14 +89,11 @@ model Recipe {
 }
 
 model RecipeFermentable {
-  // Kept as a plain column (still cuid-defaulted) so existing code that reads
-  // `f.id` — React list keys, lookup maps — keeps working untouched. It is no
-  // longer the primary key: the cuid PK was a 37 MB btree index that nothing
-  // ever queried by (every access is by recipeId). Identity is the composite
-  // below, which also serves as the recipeId lookup index, so the standalone
-  // @@index([recipeId]) is gone too. (recipeId, sortOrder) is unique across
-  // all 513k rows — verified before migrating.
-  id            String  @default(cuid())
+  // Identity is (recipeId, sortOrder). The cuid PK went first — a 37 MB btree
+  // nothing ever queried by, since every access is by recipeId — and the cuid
+  // column itself followed once the only thing still reading it, a React list
+  // key, moved to sortOrder. That column was 13 MB of pure overhead.
+  // See docs/storage-efficiency.md.
   recipeId      String
   recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 
@@ -119,10 +116,9 @@ model RecipeFermentable {
 }
 
 model RecipeHop {
-  // See RecipeFermentable: id demoted from primary key to a plain column to
-  // shed a 33 MB unused index. (recipeId, sortOrder) is unique across all
-  // 453k rows and is now both the identity and the recipeId lookup index.
-  id            String  @default(cuid())
+  // See RecipeFermentable: the cuid PK shed a 33 MB unused index, and the
+  // leftover cuid column a further 11 MB. Identity is (recipeId, sortOrder),
+  // which is also the recipeId lookup index.
   recipeId      String
   recipe        Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
 

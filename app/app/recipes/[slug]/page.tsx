@@ -174,8 +174,12 @@ export default async function RecipeDetailPage({ params }: Props) {
                 </tr>
               </thead>
               <tbody>
+                {/* sortOrder is half this row's composite primary key, so it is
+                    unique within a recipe and makes a valid list key. The cuid
+                    `id` column existed only to serve as one and has been
+                    dropped — see docs/storage-efficiency.md. */}
                 {recipe.fermentables.map((f) => (
-                  <tr key={f.id}>
+                  <tr key={f.sortOrder}>
                     <td className="nowrap">
                       <span title={f.percent ?? undefined}>{f.amountDisplay}</span>
                     </td>
@@ -212,7 +216,7 @@ export default async function RecipeDetailPage({ params }: Props) {
               </thead>
               <tbody>
                 {recipe.hops.map((h) => (
-                  <tr key={h.id}>
+                  <tr key={h.sortOrder}>
                     <td className="nowrap">{h.amountDisplay}</td>
                     <td className="nowrap">
                       <Link href={`/hops/${encodeURIComponent(h.name)}`}>{h.name}</Link>

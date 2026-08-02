@@ -106,13 +106,19 @@ Two things are verified before this touches the database:
   TypeScript parser across all 2,323 sample URLs: 100% agreement, zero
   mismatches. The two code paths cannot disagree about what an id is.
 
-### 2. Drop the orphaned cuid `id` columns — 23.9 MB
+### 2. Drop the orphaned cuid `id` columns — 23.9 MB — **IMPLEMENTED**
 
-`schema.prisma` records that these were demoted from primary key and kept only
+`schema.prisma` recorded that these were demoted from primary key and kept only
 so "existing code that reads `f.id` — React list keys, lookup maps — keeps
-working". The identity is now `(recipeId, sortOrder)`, which makes a perfectly
-good React key. Grep for `.id` on these two models, switch the keys, drop the
-columns.
+working". Auditing that claim found the entire surface was **two React keys** on
+the recipe detail page. Nothing else read either column: not the BeerXML export,
+not the search, nothing. Both now key on `sortOrder`, which is half the
+composite primary key and therefore unique within a recipe.
+
+The drop is folded into the same `contract` pass as step 1 rather than run
+separately, which matters near the cap: each `VACUUM FULL` needs roughly the
+table's size free, so doing both columns in one rewrite halves the peak space
+the migration costs.
 
 ### 3. Dictionary-encode the repeated strings — ~22 MB
 

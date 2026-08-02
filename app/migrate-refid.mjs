@@ -99,15 +99,26 @@ if (phase === "expand") {
       console.error(`${t}: no refId column — run "expand" first. Stopping.`);
       process.exit(1);
     }
-    if (!cols.has("refUrl")) {
-      console.log(`${t}: refUrl already dropped, skipping`);
+    const drop = [];
+    if (cols.has("refUrl")) drop.push("refUrl");
+    // Step 2 of docs/storage-efficiency.md, folded into the same rewrite: the
+    // orphaned cuid `id` on the two junction tables. It stopped being a primary
+    // key earlier and its last reader (a React list key) now uses sortOrder,
+    // which is half the composite key and unique within a recipe. Dropping it
+    // here rather than in a separate pass avoids a second VACUUM FULL of the
+    // same table — each rewrite needs roughly the table's size free, so doing
+    // both columns in one pass halves the peak space this costs.
+    if (t !== "RecipeYeast" && cols.has("id")) drop.push("id");
+
+    if (!drop.length) {
+      console.log(`${t}: already contracted, skipping`);
       continue;
     }
     const before = await size(t);
-    await sql.query(`ALTER TABLE "${t}" DROP COLUMN "refUrl"`);
+    for (const c of drop) await sql.query(`ALTER TABLE "${t}" DROP COLUMN "${c}"`);
     // DROP COLUMN is metadata-only; the bytes come back on rewrite.
     await sql.query(`VACUUM FULL "${t}"`);
-    console.log(`${t}: ${before} -> ${await size(t)}`);
+    console.log(`${t}: dropped ${drop.join(", ")}   ${before} -> ${await size(t)}`);
   }
   const [db] = await sql.query(`SELECT pg_size_pretty(pg_database_size(current_database())) AS s`);
   console.log(`\ncontract complete. Database now ${db.s}.`);
