@@ -64,7 +64,8 @@
      "tags": "vermouth, aromatised, artemisia"
     }
    ],
-   "beverage": "fortified"
+   "beverage": "fortified",
+   "archetype": "fortified-arrested"
   },
   {
    "code": "F2",
@@ -103,7 +104,8 @@
      "tags": "makgeolli, nuruk, korea"
     }
    ],
-   "beverage": "sake"
+   "beverage": "sake",
+   "archetype": "sake-koji-kobo"
   },
   {
    "code": "F3",
@@ -161,7 +163,8 @@
      "tags": "kumis, airag, mare milk, kluyveromyces, lactose"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "agave"
   }
  ]
 }

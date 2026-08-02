@@ -136,7 +136,8 @@
      "examples": "Xifeng (phoenix), Baiyunbian (mixed), Jingzhi (sesame)",
      "tags": "china, baijiu, aroma-types, GB-standard"
     }
-   ]
+   ],
+   "archetype": "baijiu-qu-ssf"
   },
   {
    "code": "CN2",
@@ -193,7 +194,8 @@
      "examples": "Northern millet huangjiu (Jimo), black-rice huangjiu",
      "tags": "china, huangjiu, GB-standard, sweetness-class"
     }
-   ]
+   ],
+   "archetype": "huangjiu-qu"
   }
  ]
 }

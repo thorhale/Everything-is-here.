@@ -536,7 +536,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": null,
@@ -618,7 +619,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": null,
@@ -1125,7 +1127,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": null,
@@ -1482,7 +1485,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": null,
@@ -1889,7 +1893,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-belgian-warm"
   },
   {
    "code": null,
@@ -2021,7 +2026,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-ale-clean"
   },
   {
    "code": null,
@@ -2478,7 +2484,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": null,
@@ -2710,7 +2717,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": null,
@@ -2792,7 +2800,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   },
   {
    "code": null,
@@ -3699,7 +3708,8 @@
      "tags": null
     }
    ],
-   "beverage": "beer"
+   "beverage": "beer",
+   "archetype": "beer-lager"
   }
  ]
 }

@@ -86,7 +86,8 @@
      "examples": "Sato (Thailand), Lao hai (Laos)",
      "tags": "thailand, laos, sato, rice-wine, jar-wine, traditional"
     }
-   ]
+   ],
+   "archetype": "rice-ragi"
   },
   {
    "code": "SEA2",
@@ -143,7 +144,8 @@
      "examples": "Lambanog (Quezon)",
      "tags": "philippines, lambanog, coconut, arrack, distilled"
     }
-   ]
+   ],
+   "archetype": "spontaneous-wild"
   }
  ]
 }

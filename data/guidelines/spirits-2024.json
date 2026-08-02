@@ -44,7 +44,8 @@
      "tags": "scotch, blend"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-congener-grain"
   },
   {
    "code": "S2",
@@ -95,7 +96,8 @@
      "tags": "japanese, voluntary standard"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-congener-grain"
   },
   {
    "code": "S3",
@@ -169,7 +171,8 @@
      "tags": "single malt, american, 2024 standard"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-congener-grain"
   },
   {
    "code": "S4",
@@ -220,7 +223,8 @@
      "tags": "cachaça, brazil, cane juice"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-congener-cane"
   },
   {
    "code": "S5",
@@ -259,7 +263,8 @@
      "tags": "raicilla, bacanora, regional"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "agave"
   },
   {
    "code": "S6",
@@ -327,7 +332,8 @@
      "tags": "eau-de-vie, fruit, unaged"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-from-wine"
   },
   {
    "code": "S7",
@@ -383,7 +389,8 @@
      "tags": "liqueur, cordial, sweetened"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "spirit-neutral"
   },
   {
    "code": "S8",
@@ -440,7 +447,8 @@
      "tags": "moonshine, white dog, unaged, corn whiskey"
     }
    ],
-   "beverage": "spirit"
+   "beverage": "spirit",
+   "archetype": "regional-traditional-spirit"
   }
  ]
 }

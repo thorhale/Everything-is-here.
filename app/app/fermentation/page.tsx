@@ -2,6 +2,9 @@ export const revalidate = 3600;
 
 import Link from "next/link";
 import { getArchetypes, INOCULATION_LABEL, type Archetype } from "@/lib/fermentation";
+import usage from "@/lib/generated/archetype-usage.json";
+
+const USAGE = usage as Record<string, string[]>;
 
 export const metadata = {
   title: "Fermentation & yeast handling — WortHogg",
@@ -31,6 +34,7 @@ function host(url: string): string {
 
 function Card({ a }: { a: Archetype }) {
   const s = a.standard;
+  const cats = USAGE[a.id] ?? [];
   return (
     <li style={{ border: "1px solid var(--wh-border)", borderRadius: 8, padding: "0.85rem 1rem", marginBottom: "0.7rem" }}>
       <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0.5rem" }}>
@@ -85,6 +89,17 @@ function Card({ a }: { a: Archetype }) {
         <p style={{ fontSize: "0.82rem", color: "var(--wh-text-light)", margin: "0.4rem 0 0", fontStyle: "italic" }}>
           {a.comparison}
         </p>
+      )}
+
+      {cats.length > 0 && (
+        <details style={{ marginTop: "0.5rem" }}>
+          <summary style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", cursor: "pointer" }}>
+            Maps to {cats.length} guideline {cats.length === 1 ? "category" : "categories"}
+          </summary>
+          <div style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", marginTop: "0.35rem", lineHeight: 1.5 }}>
+            {cats.join(" · ")}
+          </div>
+        </details>
       )}
 
       <div style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.5rem" }}>

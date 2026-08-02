@@ -61,7 +61,8 @@
      "examples": "Gyeongju Gyodong Beopju, Baekseju",
      "tags": "korea, yakju, cheongju, refined"
     }
-   ]
+   ],
+   "archetype": "korean-nuruk"
   },
   {
    "code": "KR2",
@@ -118,7 +119,8 @@
      "examples": "Chamisul, Chum-Churum",
      "tags": "korea, soju, diluted, neutral-spirit"
     }
-   ]
+   ],
+   "archetype": "spirit-neutral"
   },
   {
    "code": "KR3",
@@ -175,7 +177,8 @@
      "examples": "Munbaeju, Songjeol-ju, Hansan Sogokju",
      "tags": "korea, folk-liquor, cultural-property"
     }
-   ]
+   ],
+   "archetype": "grain-wild-backslop"
   }
  ]
 }

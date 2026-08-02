@@ -91,7 +91,8 @@
      "tags": "france, IGP, regional, protected-name"
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-wild-keeving"
   },
   {
    "code": "D2",
@@ -138,7 +139,8 @@
      "tags": "spain, basque, DOP, dry, still, wild-fermented, protected-name"
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-wild-keeving"
   },
   {
    "code": "D3",
@@ -225,7 +227,8 @@
      "tags": "ireland, taxation, commercial, reference"
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-cultured"
   },
   {
    "code": "D4",
@@ -312,7 +315,8 @@
      "tags": "canada, quebec, PGI, dessert, thermal-concentration, protected-name"
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-cultured"
   },
   {
    "code": "D5",
@@ -399,7 +403,8 @@
      "tags": "method, dry, still, wild-fermented, unfiltered, technique"
     }
    ],
-   "beverage": "cider"
+   "beverage": "cider",
+   "archetype": "cider-wild-keeving"
   }
  ]
 }

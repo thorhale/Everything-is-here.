@@ -61,7 +61,8 @@
      "examples": "Jun tea",
      "tags": "jun, scoby, honey, green-tea, low-alcohol"
     }
-   ]
+   ],
+   "archetype": "scoby-symbiotic"
   },
   {
    "code": "CU2",
@@ -118,7 +119,8 @@
      "examples": "Milk kefir",
      "tags": "milk-kefir, scoby, cultured-dairy, caucasus, low-alcohol"
     }
-   ]
+   ],
+   "archetype": "grain-wild-backslop"
   }
  ]
 }

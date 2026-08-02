@@ -1,43 +1,44 @@
 {
-  "system": "NORTHAM",
-  "year": 2023,
-  "title": "North America: Improvised & Folk Ferments",
-  "sourceType": "traditional",
-  "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
-  "attribution": "The improvised ferments of North America, documented to describe and to warn — not to instruct. The headline example, pruno, is included because it is real and genuinely dangerous, and a catalogue of what people ferment is honest only if it says so. Sourced from public-health reporting.",
-  "categories": [
+ "system": "NORTHAM",
+ "year": 2023,
+ "title": "North America: Improvised & Folk Ferments",
+ "sourceType": "traditional",
+ "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
+ "attribution": "The improvised ferments of North America, documented to describe and to warn — not to instruct. The headline example, pruno, is included because it is real and genuinely dangerous, and a catalogue of what people ferment is honest only if it says so. Sourced from public-health reporting.",
+ "categories": [
+  {
+   "code": "NA1",
+   "name": "Improvised & Prison Ferments",
+   "beverage": "traditional",
+   "styles": [
     {
-      "code": "NA1",
-      "name": "Improvised & Prison Ferments",
-      "beverage": "traditional",
-      "styles": [
-        {
-          "code": "NA1A",
-          "name": "Pruno (Prison Wine)",
-          "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
-          "ogMin": null,
-          "ogMax": null,
-          "fgMin": null,
-          "fgMax": null,
-          "ibuMin": null,
-          "ibuMax": null,
-          "srmMin": null,
-          "srmMax": null,
-          "abvMin": null,
-          "abvMax": null,
-          "impression": "An improvised alcoholic drink fermented in secret from whatever sugar and fruit is at hand — the archetypal 'anything ferments' beverage, and a genuine public-health hazard, not a novelty.",
-          "aroma": null,
-          "appearance": null,
-          "flavor": null,
-          "mouthfeel": null,
-          "comments": "DANGER — this is a warning entry, not a recipe. Pruno has caused documented outbreaks of botulism, a paralytic and potentially fatal poisoning: the CDC reported eight hospitalisations in a single 2013 outbreak traced to a batch that included a baked potato, a classic source of Clostridium botulinum spores. It carries no numeric style targets here and never will, because encouraging precision would be encouraging the drink. It is catalogued so the record is honest about what people ferment, and so anyone who finds it here reads the danger first.",
-          "history": "A folk ferment of the North American prison system, made covertly because alcohol is prohibited inside. Improvised from commissary and kitchen ingredients and hidden while it works.",
-          "ingredients": null,
-          "comparison": "Related in spirit to every other improvised folk ferment in this section — the difference is that pruno's typical ingredients and conditions make botulism a real and repeatedly documented risk.",
-          "examples": null,
-          "tags": "north-america, improvised, prison, folk-ferment, hazard, botulism-risk, warning, no-recipe"
-        }
-      ]
+     "code": "NA1A",
+     "name": "Pruno (Prison Wine)",
+     "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6207a3.htm",
+     "ogMin": null,
+     "ogMax": null,
+     "fgMin": null,
+     "fgMax": null,
+     "ibuMin": null,
+     "ibuMax": null,
+     "srmMin": null,
+     "srmMax": null,
+     "abvMin": null,
+     "abvMax": null,
+     "impression": "An improvised alcoholic drink fermented in secret from whatever sugar and fruit is at hand — the archetypal 'anything ferments' beverage, and a genuine public-health hazard, not a novelty.",
+     "aroma": null,
+     "appearance": null,
+     "flavor": null,
+     "mouthfeel": null,
+     "comments": "DANGER — this is a warning entry, not a recipe. Pruno has caused documented outbreaks of botulism, a paralytic and potentially fatal poisoning: the CDC reported eight hospitalisations in a single 2013 outbreak traced to a batch that included a baked potato, a classic source of Clostridium botulinum spores. It carries no numeric style targets here and never will, because encouraging precision would be encouraging the drink. It is catalogued so the record is honest about what people ferment, and so anyone who finds it here reads the danger first.",
+     "history": "A folk ferment of the North American prison system, made covertly because alcohol is prohibited inside. Improvised from commissary and kitchen ingredients and hidden while it works.",
+     "ingredients": null,
+     "comparison": "Related in spirit to every other improvised folk ferment in this section — the difference is that pruno's typical ingredients and conditions make botulism a real and repeatedly documented risk.",
+     "examples": null,
+     "tags": "north-america, improvised, prison, folk-ferment, hazard, botulism-risk, warning, no-recipe"
     }
-  ]
+   ],
+   "archetype": "none-improvised"
+  }
+ ]
 }
