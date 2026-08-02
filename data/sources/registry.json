@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 234,
+    "distinctSources": 235,
     "backgroundDocuments": 7,
-    "citations": 664,
+    "citations": 666,
     "numericCitations": 605,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
-    "fullTextVerified": 6,
+    "fullTextVerified": 7,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 508,
+      "primary": 510,
       "secondary": 150,
       "tertiary": 6
     }
@@ -976,6 +976,39 @@
       "exampleRecords": [
         "beer-spontaneous",
         "beer-spontaneous"
+      ]
+    },
+    {
+      "id": "sawadogo-lingani-dolo-2021",
+      "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2021.672410/full",
+      "host": "www.frontiersin.org",
+      "title": "Sustainable Production of African Traditional Beers With Focus on Dolo, a West African Sorghum-Based Alcoholic Beverage",
+      "publisher": "Frontiers",
+      "authors": [
+        "Hagrétou Sawadogo-Lingani",
+        "James Owusu-Kwarteng",
+        "Richard Glover",
+        "Bréhima Diawara",
+        "Mogens Jakobsen",
+        "Lene Jespersen"
+      ],
+      "year": 2021,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The microbiology of West African sorghum opaque beer (dolo, pito): a two-stage spontaneous fermentation — a lactic-acid souring of the malt wort (12-16 h, lactic acid bacteria reaching 8.8-9.9 log CFU/mL, pH ~3.0-3.8) followed by an alcoholic fermentation (9-14 h) on indigenous yeast. Dominant lactic acid bacteria are Limosilactobacillus (Lactobacillus) fermentum, Pediococcus acidilactici, Lactococcus lactis and Leuconostoc spp.; the dominant yeast is Saccharomyces cerevisiae (45-99%). Production is back-slopped: part of a previous batch, or a sun-dried indigenous yeast leaven, seeds the next. DOI 10.3389/fsufs.2021.672410. Underpins the beer-sorghum-trad fermentation archetype. Synthesises the primary measurements of Sawadogo-Lingani et al. (2007).",
+      "doesNotSupport": "Any pitched pure-culture rate, or European farmhouse grain ferments (a different tradition grouped under the same archetype); it documents West African sorghum beer specifically.",
+      "accessed": "2026-08-02",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "beer-sorghum-trad",
+        "beer-sorghum-trad"
       ]
     },
     {

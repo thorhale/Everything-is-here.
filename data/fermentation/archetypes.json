@@ -93,10 +93,23 @@
       "family": "beer",
       "inoculation": "spontaneous",
       "saccharification": "malt-enzyme",
-      "organisms": ["wild yeast and lactic acid bacteria (often back-slopped)"],
+      "organisms": [
+        "Lactic acid bacteria: Limosilactobacillus (Lactobacillus) fermentum, Pediococcus acidilactici, Lactococcus lactis, Leuconostoc spp.",
+        "Yeast: Saccharomyces cerevisiae (dominant, 45–99% of the alcoholic phase)"
+      ],
       "approach": "African sorghum/millet opaque beers and European farmhouse grain ferments: sour, low-alcohol, often back-slopped from a previous batch rather than pitched from a pure culture. Drunk actively fermenting.",
-      "specialHandling": ["Back-slopping seeds the next batch; simultaneous lactic souring and alcoholic fermentation."],
-      "researchStatus": "pending"
+      "standard": {
+        "metric": "two-stage spontaneous fermentation, not a pitch rate",
+        "note": "Sawadogo-Lingani et al. (2021, dolo): a lactic-acid souring of the wort (12–16 h; LAB to 8.8–9.9 log CFU/mL, pH ~3.0–3.8) is followed by an alcoholic fermentation (9–14 h) on indigenous Saccharomyces cerevisiae. Seeded by back-slopping — part of a previous batch, or a sun-dried yeast leaven — rather than a measured pitch.",
+        "sourceUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2021.672410/full"
+      },
+      "specialHandling": [
+        "Two stages: spontaneous lactic souring first, then alcoholic fermentation on indigenous yeast.",
+        "Back-slopping seeds the next batch — a portion of previous beer or a sun-dried yeast leaven acts as the local starter.",
+        "Drunk while actively fermenting; sour and low in alcohol."
+      ],
+      "researchStatus": "sourced",
+      "sourceUrl": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2021.672410/full"
     },
 
     {
