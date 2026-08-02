@@ -196,6 +196,73 @@ So the order matters:
 
 Run `app/neon-space-audit.mjs` between steps. It is read-only.
 
+## Capacity plan: fitting a lot more
+
+Column-level tuning has a ceiling. Measured against the live database, here is
+where the recipe archive's 270 MB of junction tables actually goes:
+
+| | |
+|---|---|
+| 28 MB | Postgres row headers — 27 bytes × 1,092,461 rows, unavoidable *per row* |
+| 27 MB | `recipeId` cuid, repeated on every child row |
+| 24 MB | orphaned `id` cuid |
+| 93 MB | indexes |
+| **98 MB** | **actual ingredient data** |
+
+**172 MB — 64% — is structural overhead, not data.** No amount of narrowing
+columns touches most of it, because it is a cost per *row*, and there are a
+million rows holding 98 MB of content.
+
+That reframes the problem. The lever is not "make each row smaller", it is
+"stop having a million rows".
+
+### Tier 1 — finish the column work (~95 MB, gets to ~265 MB)
+
+`refUrl` (46 MB, `reclaim-refurl.mjs`), the orphaned `id` columns (24 MB,
+needs the deploy), then dictionary encoding and float narrowing (~36 MB
+combined). Straightforward, no architecture change. This is the ceiling of
+tinkering.
+
+### Tier 2 — collapse the junction tables into the recipe row (~140 MB more)
+
+Store each recipe's ingredients as one compact JSONB column on `Recipe`
+instead of three child tables. A recipe averages 9 ingredient rows; folding
+them into the parent turns 1,092,461 rows into 118,246.
+
+That deletes the per-row overhead outright: all 93 MB of junction indexes, the
+27 MB of repeated `recipeId`, the 24 MB of orphaned cuid, and ~25 MB of row
+headers. Use array-of-arrays encoding rather than repeated JSON keys, or the
+key names eat the gain.
+
+The trade: ingredients stop being independently queryable in SQL. Check what
+depends on that first — `/hops/[name]` and the archive-stats aggregations read
+across all recipes' ingredients, so they would need precomputed rollups. Those
+are already cached and could be built at load time.
+
+### Tier 3 — the archive stops living in Postgres (~300 MB, the real answer)
+
+The BrewToad archive is **read-only and never changes**. It is a published
+dataset, not application state, and it is the wrong shape for a row store.
+
+Keep in Postgres only what genuinely needs querying: a slim `Recipe` row for
+search, filter and sort (id, slug, title, style, the five stats, brewer) —
+roughly 34 MB with its indexes. Everything else, the full ingredient detail
+read one recipe at a time on the detail page, becomes sharded static files
+served from the CDN, exactly like the reference data already is.
+
+That leaves Postgres at well under 100 MB and around 400 MB free — enough
+headroom that the storage question stops being a question. It also makes the
+archive survivable independent of any database, which is the project's founding
+premise.
+
+Cost: a file read instead of a query on the detail page, and a build step to
+shard the data. Neither is hard; the pattern already exists in this repo.
+
+### What not to do
+
+Do not reach for compression (see the top of this document), and do not delete
+archive data to make room. The archive existing is the point.
+
 ## If more is needed later
 
 The structural option, not needed yet: the junction tables are only ever read
