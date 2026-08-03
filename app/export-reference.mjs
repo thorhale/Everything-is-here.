@@ -35,6 +35,15 @@ function readYeasts(dir) {
   const strains = [];
   for (const f of readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
     const doc = JSON.parse(readFileSync(join(dir, f), "utf8"));
+    // Not every JSON file here is a lab file. lineages.json is a cross-reference
+    // of which products are the same underlying yeast — it has no `lab` and no
+    // `strains`. Skip files that are neither, but still fail loudly on a file
+    // that claims to be a lab and then has no strains, which would be a real
+    // data error rather than a different kind of document.
+    if (!doc.lab && !doc.strains) continue;
+    if (!Array.isArray(doc.strains)) {
+      throw new Error(`${f}: has a lab but no strains array`);
+    }
     labs.push(doc.lab);
     for (const s of doc.strains) {
       strains.push({ ...s, labId: doc.lab.id, attribution: s.attribution ?? doc.attribution ?? null });

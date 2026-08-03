@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-08-02",
+ "generatedAt": "2026-08-03",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -17,7 +17,7 @@
   "yeastStrains": 91,
   "fermentables": 311,
   "hops": 99,
-  "waterProfiles": 44,
+  "waterProfiles": 51,
   "additives": 72,
   "legalStandardEditions": 16,
   "legalStandardEntries": 183,
@@ -18865,6 +18865,202 @@
    "sourceUrl": "https://www.ttb.gov/",
    "sortOrder": 43,
    "attribution": "Classic brewing-city ion concentrations (ppm) compiled from the standard homebrewing literature — Palmer & Kaminski 'Water', the Bru'n Water knowledge base, and A.J. deLange's historical analyses. Municipal water varies seasonally and with treatment; these are the historical/representative profiles brewers target, not a current tap analysis. Style-target profiles follow the Bru'n Water colour-and-balance framework."
+  },
+  {
+   "id": "ro-distilled",
+   "name": "RO / distilled water",
+   "kind": "bottled",
+   "country": null,
+   "region": null,
+   "calcium": 0,
+   "magnesium": 0,
+   "sodium": 0,
+   "chloride": 0,
+   "sulfate": 0,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "Any style, built from scratch"
+   ],
+   "styleTags": [
+    "blank",
+    "build-up",
+    "neutral"
+   ],
+   "description": "A blank slate: reverse-osmosis and distilled water are effectively free of the six brewing ions, which is exactly why serious brewers use them. Rather than correcting whatever the tap happens to deliver this month, you add the salts you want and know precisely what is in the liquor. Sold in the US as distilled water in gallon jugs and dispensed from supermarket RO machines. These zeroes are not a measurement of a particular brand — they are what the process produces by definition; RO removes roughly 95-99% of dissolved solids and distillation essentially all of it. Build any profile on this page up from here with the salt calculator.",
+   "sourceUrl": "https://www.epa.gov/sdwa/drinking-water-treatability-database",
+   "attribution": "Definitional rather than a brand analysis: RO and distillation remove substantially all dissolved minerals, so the starting point is zero on every ion.",
+   "sortOrder": 44
+  },
+  {
+   "id": "evian",
+   "name": "evian",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Cachat spring, Évian-les-Bains",
+   "calcium": 80,
+   "magnesium": 26,
+   "sodium": 6.5,
+   "chloride": 10,
+   "sulfate": 14,
+   "bicarbonate": 360,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Bock",
+    "Brown Ale",
+    "Amber Lager"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate"
+   ],
+   "description": "A single-source alpine water from the Cachat spring, and one of the few big brands that publishes a full ion analysis. Very high bicarbonate (360 ppm) against modest calcium makes it alkaline: it will push mash pH up, so it suits dark malty beers that need the carbonate to offset roast acidity, and fights you on pale hoppy ones. Sulfate and chloride are both low, so it carries almost no flavour bias of its own. Stated pH 7.2.",
+   "sourceUrl": "https://www.evian.com/en_int/products/everyday-range/1l/",
+   "attribution": "Mineral composition as published by evian on its own product page (Ca 80, Mg 26, Na 6.5, Cl 10, SO4 14, HCO3 360 mg/L; also K 1, silica 15, nitrates 3.8; pH 7.2).",
+   "sortOrder": 46
+  },
+  {
+   "id": "badoit",
+   "name": "Badoit",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Saint-Galmier, Loire",
+   "calcium": 153,
+   "magnesium": 80,
+   "sodium": 180,
+   "chloride": 54,
+   "sulfate": 35,
+   "bicarbonate": 1250,
+   "bestForStyles": [
+    "Carbonate addition",
+    "Dark ale (blended)",
+    "Dunkel (blended)"
+   ],
+   "styleTags": [
+    "alkaline",
+    "sodium",
+    "carbonate",
+    "blend-only"
+   ],
+   "description": "Naturally sparkling water from Saint-Galmier, and one of the most alkaline waters in common supply: 1250 ppm bicarbonate against only 153 ppm calcium. Do not brew on it neat — that residual alkalinity would leave a pale mash far above target pH. Its use is as a measured carbonate addition to a dark or malty grist, where a small blend supplies the alkalinity roast malt wants without the chalk that famously refuses to dissolve. The 180 ppm sodium is not negligible either: it will read as a soft, faintly salty roundness well before it reaches the level that tastes salty.",
+   "sourceUrl": "https://www.badoit.fr/notre-eau-minerale/badoit-composition.html",
+   "attribution": "Composition as published by Badoit (Danone) on its own composition page: HCO3 1250, Ca 153, Na 180, Mg 80, Cl 54, SO4 35, silica 27, fluoride 1.2 mg/L. The page states these are regulatory-analysis values, stable over time.",
+   "sortOrder": 45
+  },
+  {
+   "id": "gerolsteiner-sprudel",
+   "name": "Gerolsteiner Sprudel",
+   "kind": "bottled",
+   "country": "Germany",
+   "region": "Gerolstein, Vulkaneifel",
+   "calcium": 348,
+   "magnesium": 108,
+   "sodium": 118,
+   "chloride": 40,
+   "sulfate": 38,
+   "bicarbonate": 1816,
+   "bestForStyles": [
+    "Carbonate addition",
+    "Schwarzbier (blended)",
+    "Munich Dunkel (blended)"
+   ],
+   "styleTags": [
+    "alkaline",
+    "carbonate",
+    "calcium",
+    "blend-only"
+   ],
+   "description": "The most heavily mineralised water most brewers can buy off a shelf: 1816 ppm bicarbonate with 348 ppm calcium, from the volcanic Eifel. Like Badoit this is a blending ingredient, not a brewing liquor — but it is a far better one, because it carries its enormous alkalinity together with the calcium a mash actually needs, rather than with sodium. A litre or two into a dark grist does the job chalk is supposed to do and does badly, since calcium carbonate is barely soluble in water while this water arrives with it already dissolved.",
+   "sourceUrl": "https://www.gerolsteiner.de/produkte/mineralwasser/sprudel",
+   "attribution": "Analysis excerpt published by Gerolsteiner Brunnen on its own product page (mg/L): hydrogen carbonate 1816, calcium 348, magnesium 108, sodium 118, chloride 40, sulfate 38, potassium 11. The six brewing ions plus potassium balance to within 0.1% on charge, which is what a complete real analysis looks like.",
+   "sortOrder": 47
+  },
+  {
+   "id": "mountain-valley",
+   "name": "Mountain Valley Spring Water (still)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Hot Springs, Arkansas",
+   "calcium": 68,
+   "magnesium": 7,
+   "sodium": 2,
+   "chloride": 2,
+   "sulfate": 7,
+   "bicarbonate": 232,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Brown Ale",
+    "Porter",
+    "Amber Lager"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "low-sulfate",
+    "low-chloride"
+   ],
+   "description": "A rare thing in the United States: a nationally sold bottled water drawn from one spring, with a published analysis you can actually brew to. Moderate calcium against 232 ppm bicarbonate gives a residual alkalinity of about 137, which sits between Munich's and Dublin's — squarely dark-beer territory. With barely 2 ppm each of chloride and sulfate it contributes essentially no flavour bias of its own, so you are free to set the sulfate:chloride balance entirely with salts. Suits dark and malty beers as it comes; a pale beer will need acid.",
+   "sourceUrl": "https://www.mountainvalleyspring.com/pages/water-quality-report",
+   "attribution": "From the 2025 Mountain Valley Water Quality Report, still-water column (mg/L): calcium 65-70, magnesium 6.1-7.2, sodium 1.7-2.5, chloride 1.8-2.5, sulfate 5.2-8.2, total alkalinity as CaCO3 190, TDS 210, pH 7.3-8.1. Midpoints are shown here. Bicarbonate is the published alkalinity converted at the standard 1.22 mg/L HCO3 per mg/L CaCO3; the resulting ion set balances to within 0.5% on charge.",
+   "sortOrder": 48
+  },
+  {
+   "id": "s-pellegrino",
+   "name": "S.Pellegrino",
+   "kind": "bottled",
+   "country": "Italy",
+   "region": "San Pellegrino Terme, Bergamo",
+   "calcium": 164,
+   "magnesium": 46,
+   "sodium": 30,
+   "chloride": 51,
+   "sulfate": 388,
+   "bicarbonate": 228,
+   "bestForStyles": [
+    "English IPA",
+    "Pale Ale",
+    "ESB",
+    "American IPA"
+   ],
+   "styleTags": [
+    "hoppy",
+    "sulfate",
+    "gypsum",
+    "burton"
+   ],
+   "description": "The surprise of this table, but read the RA column before you get excited. S.Pellegrino carries 388 ppm sulfate against 51 ppm chloride — a sulfate:chloride ratio of about 7.6:1, the most hop-forward water sold in a supermarket, and the only entry here that pulls bitterness the crisp, dry, minerally way Burton does. It is not Burton, though. Burton's 270 ppm bicarbonate is almost exactly cancelled by its 275 ppm calcium, landing it at a residual alkalinity of about 1; S.Pellegrino has less calcium and lands at about 43, nearer London. So it brews as a sulfate-led pale ale water that still wants acid for a pale grist — or a little gypsum, which raises the calcium and walks it the rest of the way toward Burton. Genuinely brewable neat, unlike the two carbonate waters above it, though 388 ppm sulfate will flatten anything malt-forward.",
+   "sourceUrl": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2024-09/SP_WA_EN_2023.pdf",
+   "attribution": "From the 2023 S.Pellegrino Water Analysis Report published by Nestle USA (mg/L): calcium 164, magnesium 46.4, sodium 29.9, chloride 51, sulfate 388, potassium 2.5, total alkalinity as CaCO3 187, total hardness as CaCO3 601, TDS 901, pH 5.18. Bicarbonate is the published alkalinity converted at 1.22; the ion set balances to within 1% on charge.",
+   "sortOrder": 49
+  },
+  {
+   "id": "volvic",
+   "name": "Volvic",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Auvergne volcanic aquifer, Puy-de-Dome",
+   "calcium": 13,
+   "magnesium": 9,
+   "sodium": 12,
+   "chloride": 16,
+   "sulfate": 9,
+   "bicarbonate": 80,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles",
+    "Kolsch"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "delicate"
+   ],
+   "description": "Very lightly mineralised volcanic water: every one of the six ions is in single or low double figures except bicarbonate. That makes it a good base for delicate pale lagers, where real mineral content coarsens the malt. One honest caveat the table makes visible: it is not a Pilsen substitute. Pilsen runs 3 ppm bicarbonate for a residual alkalinity of about -4; Volvic runs 80 ppm with only 13 ppm calcium to offset it, so its RA is about 51 — higher than London's. Soft is not the same as acidic. Brew pale on it and you will still want acid or acidulated malt.",
+   "sourceUrl": "https://www.volvic.fr/produits/eau-minerale-naturelle/volvic-nature/nature-15l",
+   "attribution": "Analyse caracteristique published by Volvic (Danone) on its own product page (mg/L): calcium 13, magnesium 9, sodium 12, potassium 7, chlorides 16, sulfates 9, bicarbonates 80, silica 31, nitrates 7.7. The full ion set balances to within 1% on charge.",
+   "sortOrder": 50
   }
  ],
  "additives": [

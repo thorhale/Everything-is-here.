@@ -14,8 +14,9 @@ const KIND_LABELS: Record<string, string> = {
   "classic-city": "Classic brewing cities",
   "modern-city": "Modern brewing centers",
   "style-target": "Style targets",
+  bottled: "Bottled & purified water",
 };
-const KIND_ORDER = ["classic-city", "modern-city", "style-target"];
+const KIND_ORDER = ["classic-city", "modern-city", "bottled", "style-target"];
 
 function num(v: number | null): string {
   return v == null ? "—" : String(Math.round(v));
@@ -83,9 +84,31 @@ export default async function WaterPage() {
         </section>
       ))}
 
+      <section style={{ marginTop: "2rem" }}>
+        <h2 style={{ fontSize: "1.15rem" }}>Why so few bottled waters?</h2>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          Because most brands do not publish enough to brew on. A profile earns a place here only if
+          the bottler or its laboratory publishes <strong>all six brewing ions</strong>, and the
+          published set <strong>balances on charge</strong> — cations and anions within a few percent
+          once converted to milliequivalents, which is what a real analysis does and a partial one
+          does not. Half a table is worse than none: the salt calculator would build on the gap and
+          be confidently wrong.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          That rules out most of the shelf. Some brands publish only the two or three minerals they
+          advertise. Others cannot publish a single figure honestly at all — a great many American
+          &ldquo;spring water&rdquo; labels are blended from a rotating set of springs, and the
+          bottlers say so themselves, noting that each source may differ in mineral content. There is
+          no one number to print. If your brand is not here, ask the bottler for its analysis, or
+          start from RO and build the profile you want.
+        </p>
+      </section>
+
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         All values ppm (mg/L). Municipal water varies seasonally and with treatment — these are the
-        historical/representative profiles brewers target, not a live tap analysis.
+        historical/representative profiles brewers target, not a live tap analysis. Where a bottler
+        publishes total alkalinity as CaCO₃ rather than bicarbonate, HCO₃ here is the standard 1.22
+        conversion of it, and the profile&rsquo;s note says so.
       </p>
     </div>
   );

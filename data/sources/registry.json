@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 258,
+    "distinctSources": 265,
     "backgroundDocuments": 7,
-    "citations": 719,
-    "numericCitations": 623,
+    "citations": 734,
+    "numericCitations": 630,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 563,
+      "primary": 578,
       "secondary": 150,
       "tertiary": 6
     }
@@ -1572,6 +1572,60 @@
     },
     {
       "id": null,
+      "url": "https://fermentis.com/en/product/safale-us-05/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json",
+        "data/yeasts/lineages.json"
+      ],
+      "exampleRecords": [
+        "fermentis-us-05",
+        "SafAle US-05"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/saflager-w-34-70/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/fermentis.json",
+        "data/yeasts/lineages.json"
+      ],
+      "exampleRecords": [
+        "fermentis-w-3470",
+        "SafLager W-34/70"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.lallemandbiofuels.com/products/distilamax/",
       "host": "www.lallemandbiofuels.com",
       "title": null,
@@ -1594,6 +1648,168 @@
       "exampleRecords": [
         "distilamax-rm",
         "distilamax-mw"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://omegayeast.com/yeast/ales/west-coast-ale-i",
+      "host": "omegayeast.com",
+      "title": null,
+      "publisher": "Omega Yeast Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/omega.json"
+      ],
+      "exampleRecords": [
+        "West Coast Ale I",
+        "omega-oyl-004"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=27",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "California Ale",
+        "white-labs-wlp001"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/american-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "American Ale",
+        "wyeast-1056"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=28",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "English Ale",
+        "white-labs-wlp002"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/london-esb-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "London ESB Ale",
+        "wyeast-1968"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wyeastlab.com/strain/bohemian-lager/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/lineages.json",
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "Bohemian Lager",
+        "wyeast-2124"
       ]
     },
     {
@@ -4904,6 +5120,181 @@
     },
     {
       "id": null,
+      "url": "https://www.epa.gov/sdwa/drinking-water-treatability-database",
+      "host": "www.epa.gov",
+      "title": null,
+      "publisher": "US Environmental Protection Agency",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for what reverse osmosis and distillation remove, which is what makes the RO/distilled profile definitionally zero rather than a brand measurement.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "ro-distilled"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.evian.com/en_int/products/everyday-range/1l/",
+      "host": "www.evian.com",
+      "title": null,
+      "publisher": "evian (Danone)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "evian"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.badoit.fr/notre-eau-minerale/badoit-composition.html",
+      "host": "www.badoit.fr",
+      "title": null,
+      "publisher": "Badoit (Danone)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "badoit"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.gerolsteiner.de/produkte/mineralwasser/sprudel",
+      "host": "www.gerolsteiner.de",
+      "title": null,
+      "publisher": "Gerolsteiner Brunnen",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "gerolsteiner-sprudel"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.mountainvalleyspring.com/pages/water-quality-report",
+      "host": "www.mountainvalleyspring.com",
+      "title": null,
+      "publisher": "Mountain Valley Spring Water",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for the annual Mountain Valley Water Quality Report — a certified-laboratory panel published under the same California disclosure requirement, reporting still and sparkling product in separate columns.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "mountain-valley"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2024-09/SP_WA_EN_2023.pdf",
+      "host": "www.sanpellegrino.com",
+      "title": null,
+      "publisher": "S.Pellegrino (Nestle)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for the annual S.Pellegrino Water Analysis Report published by Nestle USA — a full certified-laboratory panel published to satisfy the California bottled-water disclosure law, not a marketing page.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "s-pellegrino"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.volvic.fr/produits/eau-minerale-naturelle/volvic-nature/nature-15l",
+      "host": "www.volvic.fr",
+      "title": null,
+      "publisher": "Volvic (Danone)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "volvic"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://en.angelyeast.com/products/wine-yeast.html",
       "host": "en.angelyeast.com",
       "title": null,
@@ -4980,31 +5371,6 @@
       ],
       "exampleRecords": [
         "bact-lactobacillus-brevis"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://fermentis.com/en/product/safale-us-05/",
-      "host": "fermentis.com",
-      "title": null,
-      "publisher": "Fermentis (Lesaffre)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/fermentis.json"
-      ],
-      "exampleRecords": [
-        "fermentis-us-05"
       ]
     },
     {
@@ -5180,31 +5546,6 @@
       ],
       "exampleRecords": [
         "fermentis-k-97"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://fermentis.com/en/product/saflager-w-34-70/",
-      "host": "fermentis.com",
-      "title": null,
-      "publisher": "Fermentis (Lesaffre)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/fermentis.json"
-      ],
-      "exampleRecords": [
-        "fermentis-w-3470"
       ]
     },
     {
@@ -5834,31 +6175,6 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/west-coast-ale-i",
-      "host": "omegayeast.com",
-      "title": null,
-      "publisher": "Omega Yeast Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/omega.json"
-      ],
-      "exampleRecords": [
-        "omega-oyl-004"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://omegayeast.com/yeast/ales/hothead-ale",
       "host": "omegayeast.com",
       "title": null,
@@ -6080,56 +6396,6 @@
       ],
       "exampleRecords": [
         "red-star-premier-rouge"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=27",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "white-labs-wlp001"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=28",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "white-labs-wlp002"
       ]
     },
     {
@@ -6414,31 +6680,6 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/american-ale/",
-      "host": "wyeastlab.com",
-      "title": null,
-      "publisher": "Wyeast Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/wyeast.json"
-      ],
-      "exampleRecords": [
-        "wyeast-1056"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://wyeastlab.com/strain/irish-ale/",
       "host": "wyeastlab.com",
       "title": null,
@@ -6510,56 +6751,6 @@
       ],
       "exampleRecords": [
         "wyeast-1318"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://wyeastlab.com/strain/london-esb-ale/",
-      "host": "wyeastlab.com",
-      "title": null,
-      "publisher": "Wyeast Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/wyeast.json"
-      ],
-      "exampleRecords": [
-        "wyeast-1968"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://wyeastlab.com/strain/bohemian-lager/",
-      "host": "wyeastlab.com",
-      "title": null,
-      "publisher": "Wyeast Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/wyeast.json"
-      ],
-      "exampleRecords": [
-        "wyeast-2124"
       ]
     },
     {
