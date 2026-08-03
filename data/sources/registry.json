@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 265,
+    "distinctSources": 275,
     "backgroundDocuments": 7,
-    "citations": 734,
-    "numericCitations": 630,
+    "citations": 744,
+    "numericCitations": 640,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 578,
+      "primary": 588,
       "secondary": 150,
       "tertiary": 6
     }
@@ -5291,6 +5291,256 @@
       ],
       "exampleRecords": [
         "volvic"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6446f0b3d521870b64979254/1682370739263/PS-WQR-eng.pdf",
+      "host": "static1.squarespace.com",
+      "title": null,
+      "publisher": "Primo Brands / BlueTriton water analysis reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "poland-spring"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://a-us.storyblok.com/f/1021132/x/656199c3da/ozarka_wqr_2025_en.pdf",
+      "host": "a-us.storyblok.com",
+      "title": null,
+      "publisher": "Ozarka water analysis report",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Ozarka report.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "ozarka"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/65b7b7b51a127209036c116d/1706538933941/DeerPark_2023_WQR_EN.pdf",
+      "host": "static1.squarespace.com",
+      "title": null,
+      "publisher": "Primo Brands / BlueTriton water analysis reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "deer-park"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/62879ce9d106953d85ece3bf/1653054697428/ZH-WQR-2021.pdf",
+      "host": "static1.squarespace.com",
+      "title": null,
+      "publisher": "Primo Brands / BlueTriton water analysis reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "zephyrhills"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://connect.live-oasis.com/storage/v1/object/public/website/items/180/Arrowhead%20WQR%202024.pdf",
+      "host": "connect.live-oasis.com",
+      "title": null,
+      "publisher": "Arrowhead, Crystal Geyser and FIJI water quality reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Arrowhead, Crystal Geyser (per-spring) and FIJI Water reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "arrowhead"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6287a2cd2f7a5e117792ebd7/1653056206057/im-wqr-2021.pdf",
+      "host": "static1.squarespace.com",
+      "title": null,
+      "publisher": "Primo Brands / BlueTriton water analysis reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "ice-mountain"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/Crystal%20Geyser%20water%20quality%20report%20Mount%20Shasta,%20CA.pdf",
+      "host": "connect.live-oasis.com",
+      "title": null,
+      "publisher": "Arrowhead, Crystal Geyser and FIJI water quality reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Arrowhead, Crystal Geyser (per-spring) and FIJI Water reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "crystal-geyser-shasta"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.acquapanna.com/us/sites/g/files/xknfdk971/files/2023-05/Panna_EN.pdf",
+      "host": "www.acquapanna.com",
+      "title": null,
+      "publisher": "Acqua Panna (Nestle)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "acqua-panna"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/2025-03/perrier-en-2024-water-report-march-3-2025.pdf",
+      "host": "www.goodnes.com",
+      "title": null,
+      "publisher": "Perrier / Nestle Waters North America",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "perrier"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://connect.live-oasis.com/storage/v1/object/public/website/items/147/Fiji%20Water%20Quality%20Report%202025.pdf",
+      "host": "connect.live-oasis.com",
+      "title": null,
+      "publisher": "Arrowhead, Crystal Geyser and FIJI water quality reports",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Arrowhead, Crystal Geyser (per-spring) and FIJI Water reports.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "fiji"
       ]
     },
     {

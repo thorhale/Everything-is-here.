@@ -13,6 +13,13 @@
  },
  "publishers": [
   {
+   "host": "a-us.storyblok.com",
+   "name": "Ozarka water analysis report",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Ozarka report."
+  },
+  {
    "host": "admin.lallemandbrewing.com",
    "name": "Lallemand Brewing (document host)",
    "kind": "vendor-datasheet",
@@ -62,6 +69,13 @@
    "kind": "preprint-mirror",
    "reliability": "secondary",
    "note": "Hosts an author copy of a published review; the version of record is the journal's."
+  },
+  {
+   "host": "connect.live-oasis.com",
+   "name": "Arrowhead, Crystal Geyser and FIJI water quality reports",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Arrowhead, Crystal Geyser (per-spring) and FIJI Water reports."
   },
   {
    "host": "content.ces.ncsu.edu",
@@ -263,6 +277,13 @@
    "note": "The Canadian arm of Scott Laboratories, same standing as scottlabs.com: the distributor's own technical guidance compiled from supplier specs. Source of the 25 g/hL standard and 35 g/hL high-Brix active-dry-yeast inoculation rates applied to cider."
   },
   {
+   "host": "static1.squarespace.com",
+   "name": "Primo Brands / BlueTriton water analysis reports",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports."
+  },
+  {
    "host": "vinmethodenature.org",
    "name": "Syndicat de defense des vins naturels (Vin Methode Nature)",
    "kind": "trade-association",
@@ -275,6 +296,13 @@
    "kind": "extension-service",
    "reliability": "primary",
    "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards."
+  },
+  {
+   "host": "www.acquapanna.com",
+   "name": "Acqua Panna (Nestle)",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises."
   },
   {
    "host": "www.awri.com.au",
@@ -403,6 +431,13 @@
    "kind": "vendor-datasheet",
    "reliability": "primary",
    "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description."
+  },
+  {
+   "host": "www.goodnes.com",
+   "name": "Perrier / Nestle Waters North America",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises."
   },
   {
    "host": "www.gov.uk",

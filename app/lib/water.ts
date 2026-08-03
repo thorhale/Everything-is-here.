@@ -120,3 +120,43 @@ export function suggestWaterTargetId(srm: number | null, styleName: string | nul
   if (c < 30) return "target-brown-balanced";
   return "target-black-balanced";
 }
+
+// The six ions a bottler published as min/max rather than a single figure.
+// Present only on `variable` profiles — brands blended from several springs,
+// where the range is the measurement and the stored column is its midpoint.
+export const ION_KEYS = [
+  "calcium",
+  "magnesium",
+  "sodium",
+  "chloride",
+  "sulfate",
+  "bicarbonate",
+] as const;
+export type IonKey = (typeof ION_KEYS)[number];
+export type IonRanges = Partial<Record<IonKey, [number, number]>>;
+
+/**
+ * The published range for a profile, or null if it reports single figures.
+ *
+ * ionRanges arrives from Prisma as loose JSON, so this narrows it rather than
+ * trusting it: a malformed entry is dropped instead of being rendered as a
+ * range the bottler never published.
+ */
+export function ionRangesOf(w: { variable?: boolean; ionRanges?: unknown }): IonRanges | null {
+  if (!w.variable || !w.ionRanges || typeof w.ionRanges !== "object") return null;
+  const raw = w.ionRanges as Record<string, unknown>;
+  const out: IonRanges = {};
+  for (const key of ION_KEYS) {
+    const v = raw[key];
+    if (Array.isArray(v) && v.length === 2 && typeof v[0] === "number" && typeof v[1] === "number") {
+      out[key] = [v[0], v[1]];
+    }
+  }
+  return Object.keys(out).length ? out : null;
+}
+
+/** "5–12" for a range, rounded the same way the single figures are. */
+export function formatRange(range: [number, number]): string {
+  const [lo, hi] = range;
+  return `${Math.round(lo)}–${Math.round(hi)}`;
+}

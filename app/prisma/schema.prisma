@@ -513,6 +513,15 @@ model WaterProfile {
   sulfate     Float? // SO4 2- ppm
   bicarbonate Float? // HCO3- ppm
 
+  // Some bottled waters are not one water. A brand blended from several springs
+  // publishes a RANGE per ion rather than a figure, and the range is the honest
+  // datum: the six columns above hold its midpoint so the salt calculator has
+  // something to work with, while ionRanges holds the published min/max so the
+  // page can show what actually varies. variable marks those rows so nothing
+  // presents a midpoint as if it were a measurement.
+  variable    Boolean @default(false)
+  ionRanges   Json?
+
   description  String?
   bestForStyles String[] @default([])
   styleTags    String[] @default([])

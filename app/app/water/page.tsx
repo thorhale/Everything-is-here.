@@ -1,7 +1,14 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { getWaterByKind, residualAlkalinity, sulfateChloride } from "@/lib/water";
+import {
+  getWaterByKind,
+  residualAlkalinity,
+  sulfateChloride,
+  ionRangesOf,
+  formatRange,
+} from "@/lib/water";
+import type { IonKey } from "@/lib/water";
 import type { WaterProfile } from "@/lib/water";
 
 export const metadata = {
@@ -20,6 +27,23 @@ const KIND_ORDER = ["classic-city", "modern-city", "bottled", "style-target"];
 
 function num(v: number | null): string {
   return v == null ? "—" : String(Math.round(v));
+}
+
+// A cell for one ion. Most profiles are a single published figure. A profile
+// blended from several springs is a range, and showing only its midpoint would
+// assert a measurement nobody took — so the range goes underneath, and the
+// midpoint is marked as such rather than left to look like a reading.
+function IonCell({ value, range }: { value: number | null; range?: [number, number] }) {
+  if (!range) return <td>{num(value)}</td>;
+  return (
+    <td style={{ lineHeight: 1.25 }}>
+      <span style={{ opacity: 0.55 }} title="midpoint of the published range, not a measurement">
+        ~{num(value)}
+      </span>
+      <br />
+      <span style={{ fontSize: "0.72rem", whiteSpace: "nowrap" }}>{formatRange(range)}</span>
+    </td>
+  );
 }
 
 export default async function WaterPage() {
@@ -64,15 +88,27 @@ export default async function WaterPage() {
               <tbody>
                 {byKind[kind].map((w: WaterProfile) => {
                   const sc = sulfateChloride(w);
+                  const ranges = ionRangesOf(w);
+                  const cell = (ion: IonKey) => <IonCell value={w[ion]} range={ranges?.[ion]} />;
                   return (
                     <tr key={w.id}>
-                      <td className="nowrap"><Link href={`/water/${encodeURIComponent(w.id)}`}>{w.name}</Link></td>
-                      <td>{num(w.calcium)}</td>
-                      <td>{num(w.magnesium)}</td>
-                      <td>{num(w.sodium)}</td>
-                      <td>{num(w.chloride)}</td>
-                      <td>{num(w.sulfate)}</td>
-                      <td>{num(w.bicarbonate)}</td>
+                      <td className="nowrap">
+                        <Link href={`/water/${encodeURIComponent(w.id)}`}>{w.name}</Link>
+                        {ranges ? (
+                          <span
+                            title="Blended from several springs — the bottler publishes a range, not a figure"
+                            style={{ fontSize: "0.7rem", opacity: 0.6, marginLeft: "0.35rem" }}
+                          >
+                            varies
+                          </span>
+                        ) : null}
+                      </td>
+                      {cell("calcium")}
+                      {cell("magnesium")}
+                      {cell("sodium")}
+                      {cell("chloride")}
+                      {cell("sulfate")}
+                      {cell("bicarbonate")}
                       <td>{num(residualAlkalinity(w))}</td>
                       <td className="hide-mobile" style={{ fontSize: "0.8rem" }}>{sc.balance}</td>
                     </tr>
@@ -85,22 +121,33 @@ export default async function WaterPage() {
       ))}
 
       <section style={{ marginTop: "2rem" }}>
-        <h2 style={{ fontSize: "1.15rem" }}>Why so few bottled waters?</h2>
+        <h2 style={{ fontSize: "1.15rem" }}>Reading the bottled waters</h2>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
-          Because most brands do not publish enough to brew on. A profile earns a place here only if
-          the bottler or its laboratory publishes <strong>all six brewing ions</strong>, and the
-          published set <strong>balances on charge</strong> — cations and anions within a few percent
-          once converted to milliequivalents, which is what a real analysis does and a partial one
-          does not. Half a table is worse than none: the salt calculator would build on the gap and
-          be confidently wrong.
+          Every profile here comes from the bottler&rsquo;s own analysis or its laboratory&rsquo;s
+          report, and every one is checked two ways before it is listed. It must give{" "}
+          <strong>all six brewing ions</strong>, and the set must{" "}
+          <strong>balance on charge</strong> — cations and anions agreeing within a few percent once
+          converted to milliequivalents, which is what a real analysis does and a partial one does
+          not. Half a table is worse than none: the salt calculator would build on the gap and be
+          confidently wrong. That check is why brands publishing only the two or three minerals they
+          advertise are absent.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
-          That rules out most of the shelf. Some brands publish only the two or three minerals they
-          advertise. Others cannot publish a single figure honestly at all — a great many American
-          &ldquo;spring water&rdquo; labels are blended from a rotating set of springs, and the
-          bottlers say so themselves, noting that each source may differ in mineral content. There is
-          no one number to print. If your brand is not here, ask the bottler for its analysis, or
-          start from RO and build the profile you want.
+          Rows marked <strong>varies</strong> are the awkward ones, and most American spring brands
+          are among them. They are not one water: the bottler draws from several springs and its
+          report gives a <em>range</em> per ion rather than a figure. The range is the measurement,
+          so it is what you see; the pale <code>~</code> number above it is only its midpoint, shown
+          so the salt calculator has something to work with, and it is not a reading anyone took.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          Whether that matters depends entirely on how wide the range is.{" "}
+          <strong>Poland Spring</strong> and <strong>Ozarka</strong> stay soft and barely alkaline
+          across their whole span, so you can treat either as a near-blank slate.{" "}
+          <strong>Ice Mountain</strong> swings widely but never stops being hard and alkaline, so
+          the style it suits is never in doubt even though the numbers are.{" "}
+          <strong>Deer Park</strong> reports alkalinity anywhere from 3 to 160 ppm as CaCO₃ — a
+          fiftyfold spread that crosses every decision a brewer would make with it. For that one,
+          buy distilled water instead and build from zero.
         </p>
       </section>
 
