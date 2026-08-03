@@ -6,6 +6,7 @@ export const revalidate = 3600;
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getRecipeIngredients } from "@/lib/recipe-ingredients";
+import { langProps } from "@/lib/script";
 import { prisma } from "@/lib/db";
 import { StatBars, srmClass } from "@/components/StatBars";
 import { getStyleRanges } from "@/lib/style-ranges";
@@ -116,7 +117,7 @@ export default async function RecipeDetailPage({ params }: Props) {
           <PintGlass />
         </figure>
         <div className="header-content">
-          <h1>{recipe.title ?? recipe.slug}</h1>
+          <h1 {...langProps(recipe.title)}>{recipe.title ?? recipe.slug}</h1>
           <p className="flush">
             {recipe.styleName && (
               <>

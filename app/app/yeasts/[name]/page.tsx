@@ -36,7 +36,10 @@ export default async function YeastDetailPage({ params }: Props) {
         {stats.attenuation != null && <> · typical attenuation {stats.attenuation}%</>}
         {stats.labs && <> · labs: {stats.labs}</>}
       </p>
-      <h3>Recent recipes using {name}</h3>
+      <h3>Recipes using {name}</h3>
+      {/* Not "recent": the archive carries no recipe creation dates. The only
+          ordering available is our own import order, so claiming recency would
+          be inventing a fact. */}
       <RecipeList recipes={recipes} />
       <p>
         <Link href="/yeasts">← All yeasts</Link>

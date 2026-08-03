@@ -202,7 +202,9 @@ export default async function GuidelineStylePage({ params }: Props) {
           <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginTop: "-0.3rem" }}>
             {archiveStats.recipes.toLocaleString()} archived{" "}
             <Link href={`/recipes?style=${encodeURIComponent(archiveStyle!)}`}>{archiveStyle}</Link>{" "}
-            recipes, measured against this guideline&apos;s published range.
+            recipes, measured against this guideline&apos;s published range. This is a snapshot of
+            BrewToad as it stood in December 2018, when the site closed — a record of what
+            homebrewers were doing between roughly 2013 and 2018, not of current practice.
             {ogConform != null && (
               <> <strong>{ogConform}%</strong> of them fall inside the spec OG range.</>
             )}

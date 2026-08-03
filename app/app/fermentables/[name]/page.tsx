@@ -37,7 +37,10 @@ export default async function FermentableDetailPage({ params }: Props) {
         {stats.color != null && <> · colour {stats.color} °L</>}
         {stats.maltsters && <> · maltsters: {stats.maltsters}</>}
       </p>
-      <h3>Recent recipes using {name}</h3>
+      <h3>Recipes using {name}</h3>
+      {/* Not "recent": the archive carries no recipe creation dates. The only
+          ordering available is our own import order, so claiming recency would
+          be inventing a fact. */}
       <RecipeList recipes={recipes} />
       <p>
         <Link href="/fermentables">← All fermentables</Link>
