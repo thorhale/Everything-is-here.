@@ -585,6 +585,13 @@
    "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description."
   },
   {
+   "host": "www.webstaurantstore.com",
+   "name": "WebstaurantStore",
+   "kind": "vendor-datasheet",
+   "reliability": "secondary",
+   "note": "Cited only for observed retail prices, never for water chemistry. A national US foodservice distributor publishing case prices with pack configurations — the seller is the primary authority on what it charges, but a price is a dated observation rather than a stable fact, so each citation carries the date it was seen."
+  },
+  {
    "host": "www.weyermann.de",
    "name": "Weyermann Specialty Malts",
    "kind": "vendor-datasheet",

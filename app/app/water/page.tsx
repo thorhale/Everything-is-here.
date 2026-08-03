@@ -9,6 +9,8 @@ import {
   formatRange,
 } from "@/lib/water";
 import type { IonKey } from "@/lib/water";
+import { cheapestPerGallon, ageInDays, STALE_DAYS } from "@/lib/water-prices";
+import type { WaterPrice } from "@/lib/water-prices";
 import type { WaterProfile } from "@/lib/water";
 
 export const metadata = {
@@ -46,8 +48,35 @@ function IonCell({ value, range }: { value: number | null; range?: [number, numb
   );
 }
 
+// Cost per gallon, with the date it was seen. A price with no date is not a
+// price — it moves with the retailer, the region and the week — so the age
+// travels with the number and goes grey once it is old enough to distrust.
+function PriceCell({ price }: { price?: WaterPrice }) {
+  if (!price) return <td style={{ color: "var(--wh-text-light)" }}>—</td>;
+  const age = ageInDays(price.observedAt);
+  const old = age != null && age > STALE_DAYS;
+  return (
+    <td style={{ lineHeight: 1.25, whiteSpace: "nowrap" }}>
+      <a
+        href={price.url}
+        rel="nofollow noopener"
+        style={{ opacity: old ? 0.5 : 1 }}
+        title={`${price.product} — ${price.packDescription} at ${price.seller}`}
+      >
+        ${price.pricePerGallonUsd.toFixed(2)}
+      </a>
+      <br />
+      <span style={{ fontSize: "0.7rem", opacity: 0.6 }}>
+        {price.observedAt}
+        {old ? " (old)" : ""}
+      </span>
+    </td>
+  );
+}
+
 export default async function WaterPage() {
   const byKind = await getWaterByKind();
+  const prices = await cheapestPerGallon();
 
   return (
     <div>
@@ -83,6 +112,11 @@ export default async function WaterPage() {
                   <th title="Bicarbonate">HCO₃</th>
                   <th title="Residual alkalinity">RA</th>
                   <th className="hide-mobile">SO₄:Cl</th>
+                  {kind === "bottled" ? (
+                    <th title="Cheapest observed price per US gallon, and the date it was seen">
+                      $/gal
+                    </th>
+                  ) : null}
                 </tr>
               </thead>
               <tbody>
@@ -111,6 +145,7 @@ export default async function WaterPage() {
                       {cell("bicarbonate")}
                       <td>{num(residualAlkalinity(w))}</td>
                       <td className="hide-mobile" style={{ fontSize: "0.8rem" }}>{sc.balance}</td>
+                      {kind === "bottled" ? <PriceCell price={prices.get(w.id)} /> : null}
                     </tr>
                   );
                 })}
@@ -161,6 +196,29 @@ export default async function WaterPage() {
           blended range — so its bottles are known waters rather than averages, and five of its
           springs are listed here individually. Check which source is on the label before using the
           numbers.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          <strong>What it costs.</strong> The $/gal column is the cheapest observed price per US
+          gallon for that water, with the date it was seen — because a bottled-water price is
+          worthless without one. It moves with the retailer, the region, the pack and the week, so
+          these are dated observations, not <em>the</em> price, and they go grey once they are more
+          than six months old. Cheapest rather than average, because pack sizes for the same water
+          differ by threefold: S.Pellegrino is $13.09 a gallon in litre bottles and $21.44 in 250 mL
+          ones, and an average of those describes no purchase anyone can actually make. Hover a
+          price for the pack it came from.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          The spread is the point. Crystal Geyser in gallon jugs is <strong>$0.88</strong> a gallon;
+          Acqua Panna in 250 mL glass is <strong>$23.97</strong>, twenty-seven times more for water
+          that is chemically unremarkable. For a five-gallon batch that is the difference between
+          $4 and $120 of liquor. Prices marked <em>direct</em> come from the producer&rsquo;s own
+          shop and run well above shelf price — treat those as an upper bound.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          Most rows have no price, and that is deliberate. Live retail prices could not be checked
+          for them, so rather than print a figure from memory — undated and unverifiable, the exact
+          thing this column exists to avoid — the cell is left empty until someone observes a real
+          one.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
           <strong>Purified brands</strong> divide in two. Aquafina and the distilled water sold by

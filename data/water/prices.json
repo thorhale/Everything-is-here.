@@ -1,0 +1,282 @@
+{
+ "set": "Bottled water prices, per US gallon",
+ "note": "What a gallon of each bottled water actually costs, so the profiles above can be compared on money as well as chemistry. EVERY price carries the date it was observed, the seller, the exact pack it came from and a link, because a bottled-water price is worth nothing without them: it moves with the retailer, the region, the pack size and the week. Treat these as dated observations, not as the price. pricePerGallonUsd is always priceUsd divided by volumeGallons, recomputed by validate-prices.mjs rather than trusted.",
+ "sellerNote": "Two kinds of seller appear. WebstaurantStore is a national foodservice distributor selling by the case, which is the closest thing to a stable, checkable published US price and is roughly what a brewer buying in volume would pay. Producer-direct prices come from the brand's own shop and run well above supermarket shelf prices - treat those as an upper bound, not a typical cost.",
+ "coverage": "Only four of the bottled waters have a verified price. Live retail prices could not be retrieved for the rest: Walmart serves unrelated products for retired item IDs, Target returns 404, and Costco, Amazon, Kroger and Walgreens all refuse automated requests. Rather than fill the gap from memory - which would produce undated, unverifiable numbers of exactly the kind this file exists to avoid - the remaining waters carry no price at all. Adding one is a six-field edit.",
+ "currency": "USD",
+ "prices": [
+  {
+   "id": "cg-1gal-6ct-ws",
+   "profileIds": [
+    "crystal-geyser-shasta",
+    "crystal-geyser-olancha",
+    "crystal-geyser-norman",
+    "crystal-geyser-salem",
+    "crystal-geyser-johnstown"
+   ],
+   "brand": "Crystal Geyser",
+   "product": "Crystal Geyser 1 Gallon Natural Spring Water - 6/Case",
+   "packDescription": "6 x 1 US gallon",
+   "volumeGallons": 6.0,
+   "priceUsd": 5.29,
+   "url": "https://www.webstaurantstore.com/crystal-geyser-1-gallon-natural-spring-water-case/103WATER61.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 0.88
+  },
+  {
+   "id": "cg-169oz-24ct-ws",
+   "profileIds": [
+    "crystal-geyser-shasta",
+    "crystal-geyser-olancha",
+    "crystal-geyser-norman",
+    "crystal-geyser-salem",
+    "crystal-geyser-johnstown"
+   ],
+   "brand": "Crystal Geyser",
+   "product": "Crystal Geyser 16.9 fl. oz. Natural Spring Water - 24/Case",
+   "packDescription": "24 x 16.9 fl oz",
+   "volumeGallons": 3.16875,
+   "priceUsd": 3.89,
+   "url": "https://www.webstaurantstore.com/crystal-geyser-16-9-oz-natural-spring-water-case/103WATER2450.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 1.23
+  },
+  {
+   "id": "cg-750ml-24ct-ws",
+   "profileIds": [
+    "crystal-geyser-shasta",
+    "crystal-geyser-olancha",
+    "crystal-geyser-norman",
+    "crystal-geyser-salem",
+    "crystal-geyser-johnstown"
+   ],
+   "brand": "Crystal Geyser",
+   "product": "Crystal Geyser 'Sport Cap' 750 mL Natural Spring Water - 24/Case",
+   "packDescription": "24 x 750 mL",
+   "volumeGallons": 4.7551,
+   "priceUsd": 5.39,
+   "url": "https://www.webstaurantstore.com/crystal-geyser-sport-cap-750-ml-natural-spring-water-case/103WATER750.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 1.13
+  },
+  {
+   "id": "cg-8oz-28ct-ws",
+   "profileIds": [
+    "crystal-geyser-shasta",
+    "crystal-geyser-olancha",
+    "crystal-geyser-norman",
+    "crystal-geyser-salem",
+    "crystal-geyser-johnstown"
+   ],
+   "brand": "Crystal Geyser",
+   "product": "Crystal Geyser 8 fl. oz. Natural Spring Bottled Water - 28/Case",
+   "packDescription": "28 x 8 fl oz",
+   "volumeGallons": 1.75,
+   "priceUsd": 3.99,
+   "note": "Listed out of stock at the time of observation.",
+   "url": "https://www.webstaurantstore.com/crystal-geyser-8-oz-natural-spring-bottled-water-case/103WATER288.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 2.28
+  },
+  {
+   "id": "sp-1l-12ct-ws",
+   "profileIds": [
+    "s-pellegrino"
+   ],
+   "brand": "S.Pellegrino",
+   "product": "San Pellegrino Sparkling Natural Mineral Water 1 Liter Glass Bottle - 12/Case",
+   "packDescription": "12 x 1 L glass",
+   "volumeGallons": 3.17006,
+   "priceUsd": 41.49,
+   "url": "https://www.webstaurantstore.com/san-pellegrino-sparkling-natural-mineral-water-1-liter-glass-bottle-case/103SANPEL862.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 13.09
+  },
+  {
+   "id": "sp-500ml-24ct-ws",
+   "profileIds": [
+    "s-pellegrino"
+   ],
+   "brand": "S.Pellegrino",
+   "product": "San Pellegrino Sparkling Natural Mineral Water 500 mL Glass Bottle - 24/Case",
+   "packDescription": "24 x 500 mL glass",
+   "volumeGallons": 3.17006,
+   "priceUsd": 46.49,
+   "url": "https://www.webstaurantstore.com/san-pellegrino-sparkling-natural-mineral-water-500-ml-glass-bottle-24-case-case/103SANPEL5ML.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 14.67
+  },
+  {
+   "id": "sp-250ml-24ct-ws",
+   "profileIds": [
+    "s-pellegrino"
+   ],
+   "brand": "S.Pellegrino",
+   "product": "San Pellegrino Sparkling Natural Mineral Water 250 mL Glass Bottle - 24/Case",
+   "packDescription": "24 x 250 mL glass",
+   "volumeGallons": 1.58503,
+   "priceUsd": 33.99,
+   "url": "https://www.webstaurantstore.com/san-pellegrino-sparkling-natural-mineral-water-250-ml-glass-bottle-24-case-case/103SANPEL25M.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 21.44
+  },
+  {
+   "id": "ap-1l-12ct-ws",
+   "profileIds": [
+    "acqua-panna"
+   ],
+   "brand": "Acqua Panna",
+   "product": "Acqua Panna Natural Spring Water 1 Liter Glass Bottle - 12/Case",
+   "packDescription": "12 x 1 L glass",
+   "volumeGallons": 3.17006,
+   "priceUsd": 36.49,
+   "url": "https://www.webstaurantstore.com/acqua-panna-natural-spring-water-1-liter-glass-bottle-12-case-case/103ACQPNGL1L.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 11.51
+  },
+  {
+   "id": "ap-500ml-24ct-ws",
+   "profileIds": [
+    "acqua-panna"
+   ],
+   "brand": "Acqua Panna",
+   "product": "Acqua Panna 500 mL Natural Spring Water in Glass Bottle - 24/Case",
+   "packDescription": "24 x 500 mL glass",
+   "volumeGallons": 3.17006,
+   "priceUsd": 54.99,
+   "url": "https://www.webstaurantstore.com/acqua-panna-500-ml-natural-spring-water-in-glass-bottle-case/103WATER906.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 17.35
+  },
+  {
+   "id": "ap-250ml-24ct-ws",
+   "profileIds": [
+    "acqua-panna"
+   ],
+   "brand": "Acqua Panna",
+   "product": "Acqua Panna Natural Spring Water 250 mL Glass Bottle - 24/Case",
+   "packDescription": "24 x 250 mL glass",
+   "volumeGallons": 1.58503,
+   "priceUsd": 37.99,
+   "url": "https://www.webstaurantstore.com/acqua-panna-natural-spring-water-250-ml-glass-bottle-case/103ACQPNG25M.html",
+   "seller": "WebstaurantStore",
+   "sellerType": "foodservice-distributor",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 23.97
+  },
+  {
+   "id": "mv-500ml-24ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "500 ML SPRING WATER IN PET (24 PACK)",
+   "packDescription": "24 x 500 mL PET",
+   "volumeGallons": 3.17006,
+   "priceUsd": 29.99,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 9.46
+  },
+  {
+   "id": "mv-1l-12ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "1 L SPRING WATER IN GLASS (12 PACK)",
+   "packDescription": "12 x 1 L glass",
+   "volumeGallons": 3.17006,
+   "priceUsd": 33.99,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 10.72
+  },
+  {
+   "id": "mv-500ml-12ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "500 ML SPRING WATER IN GLASS (12 PACK)",
+   "packDescription": "12 x 500 mL glass",
+   "volumeGallons": 1.58503,
+   "priceUsd": 22.99,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 14.5
+  },
+  {
+   "id": "mv-333ml-24ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "333 ML SPRING WATER IN GLASS (24 PACK)",
+   "packDescription": "24 x 333 mL glass",
+   "volumeGallons": 2.11126,
+   "priceUsd": 31.99,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 15.15
+  },
+  {
+   "id": "mv-750ml-12ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "750 ML SPRING WATER IN ALUMINUM (12 PACK)",
+   "packDescription": "12 x 750 mL aluminium",
+   "volumeGallons": 2.37755,
+   "priceUsd": 36.99,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 15.56
+  },
+  {
+   "id": "mv-16oz-9ct-dtc",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "product": "16 OZ SPRING WATER IN ALUMINUM (9 PACK)",
+   "packDescription": "9 x 16 fl oz aluminium",
+   "volumeGallons": 1.125,
+   "priceUsd": 20.0,
+   "seller": "Mountain Valley Spring Water (direct)",
+   "sellerType": "producer-direct",
+   "url": "https://www.mountainvalleyspring.com/collections/spring-water",
+   "observedAt": "2026-08-03",
+   "pricePerGallonUsd": 17.78
+  }
+ ]
+}

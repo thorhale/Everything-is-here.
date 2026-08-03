@@ -35,6 +35,10 @@ const nextConfig = {
       "/guidelines/[edition]/[code]": ["../data/recipes/archive-rollups.json.gz"],
       "/data-download": ["../data/reference-export.json"],
       "/data": ["../data/reference-export.json"],
+      // Prices are read from disk at request time like the source registry, so
+      // they need tracing in or the column silently renders empty on Vercel.
+      "/water": ["../data/water/prices.json"],
+      "/water/[id]": ["../data/water/prices.json"],
     },
   },
   async headers() {
