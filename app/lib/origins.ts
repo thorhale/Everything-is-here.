@@ -37,6 +37,8 @@ export interface OriginItem {
   name: string;
   href: string;
   detail?: string | null;
+  /** Products this entry makes — yeast strains under their producer. */
+  children?: OriginItem[];
 }
 
 export interface OriginCountry {
@@ -53,7 +55,12 @@ export const getOrigins = unstable_cache(
     const [hops, water, labs, ferms] = await Promise.all([
       prisma.hop.findMany({ select: { id: true, name: true, country: true, purpose: true } }),
       prisma.waterProfile.findMany({ select: { id: true, name: true, country: true, region: true } }),
-      prisma.yeastLab.findMany({ select: { id: true, name: true, country: true, region: true } }),
+      prisma.yeastLab.findMany({
+        select: {
+          id: true, name: true, country: true, region: true,
+          strains: { select: { id: true, name: true, productCode: true, form: true } },
+        },
+      }),
       prisma.fermentable.findMany({ select: { id: true, name: true, origin: true, category: true } }),
     ]);
 
@@ -76,7 +83,26 @@ export const getOrigins = unstable_cache(
     }
     for (const l of labs) {
       const e = bucket(l.country);
-      if (e) e.yeastLabs.push({ name: l.name, href: `/yeasts/db?lab=${encodeURIComponent(l.id)}`, detail: l.region });
+      if (!e) continue;
+      // A strain's product code IS its origin marker — US-05 is Fermentis,
+      // WLP001 White Labs, 1056 Wyeast. Listing strains under their producer is
+      // how a brewer actually reads the catalogue. Codes sort numerically, so
+      // WLP002 comes before WLP010 rather than after it.
+      const strains = l.strains
+        .map((st) => ({
+          name: st.productCode ? `${st.productCode} — ${st.name}` : st.name,
+          href: `/yeasts/db/${encodeURIComponent(st.id)}`,
+          detail: st.form,
+          sortKey: st.productCode ?? st.name,
+        }))
+        .sort((a, b) => compareNames(a.sortKey, b.sortKey))
+        .map(({ sortKey: _sortKey, ...rest }) => rest);
+      e.yeastLabs.push({
+        name: l.name,
+        href: `/yeasts/db?lab=${encodeURIComponent(l.id)}`,
+        detail: l.region,
+        children: strains,
+      });
     }
     for (const f of ferms) {
       // Fermentable.origin mixes maltster countries with wine-grape growing
@@ -95,7 +121,11 @@ export const getOrigins = unstable_cache(
       e.water.sort(byName);
       e.yeastLabs.sort(byName);
       e.fermentables.sort(byName);
-      e.total = e.hops.length + e.water.length + e.yeastLabs.length + e.fermentables.length;
+      e.total =
+        e.hops.length +
+        e.water.length +
+        e.fermentables.length +
+        e.yeastLabs.reduce((n, l) => n + 1 + (l.children?.length ?? 0), 0);
     }
     return out.sort((a, b) => compareNames(a.country, b.country));
   },

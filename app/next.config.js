@@ -29,6 +29,7 @@ const nextConfig = {
       "/recipes/[slug]/beerxml": ["../data/recipes/ingredients/**"],
       "/hops/[name]": ["../data/recipes/archive-rollups.json.gz"],
       "/yeasts/[name]": ["../data/recipes/archive-rollups.json.gz"],
+      "/yeasts/db/[id]": ["../data/yeasts/lineages.json"],
       "/fermentables/[name]": ["../data/recipes/archive-rollups.json.gz"],
       "/ingredients": ["../data/recipes/archive-rollups.json.gz"],
       "/guidelines/[edition]/[code]": ["../data/recipes/archive-rollups.json.gz"],

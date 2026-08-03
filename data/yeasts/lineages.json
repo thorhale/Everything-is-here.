@@ -1,0 +1,123 @@
+{
+ "note": "Commercial yeast strains that are the same underlying yeast sold by different producers. Every membership is asserted by the producer of that strain in its own product description, and the sentence saying so is quoted with its source URL. Nothing is inferred; no third-party cross-reference chart was copied. A lineage must be named specifically (Chico, Fuller's, 34/70) — a style descriptor such as 'Bavarian weizen strain' is not a claim of shared ancestry — and all members must share a species.",
+ "generated": "2026-08-03",
+ "groups": [
+  {
+   "id": "chico",
+   "label": "Chico",
+   "note": "The Californian ale strain, named for Sierra Nevada's home town. Clean, hop-accentuating and highly attenuative — the most widely resold ale yeast in the world.",
+   "members": [
+    {
+     "strainId": "fermentis-us-05",
+     "productCode": "US-05",
+     "name": "SafAle US-05",
+     "lab": "Fermentis (Lesaffre)",
+     "labId": "fermentis",
+     "labCountry": "France",
+     "form": "dry",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "The classic American ale strain (Chico lineage).",
+     "sourceUrl": "https://fermentis.com/en/product/safale-us-05/"
+    },
+    {
+     "strainId": "omega-oyl-004",
+     "productCode": "OYL-004",
+     "name": "West Coast Ale I",
+     "lab": "Omega Yeast Labs",
+     "labId": "omega",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "Omega's Chico American ale strain; clean, hop-forward workhorse.",
+     "sourceUrl": "https://omegayeast.com/yeast/ales/west-coast-ale-i"
+    },
+    {
+     "strainId": "white-labs-wlp001",
+     "productCode": "WLP001",
+     "name": "California Ale",
+     "lab": "White Labs",
+     "labId": "white-labs",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "The quintessential American ale strain (Chico); clean, accentuates hops, very versatile.",
+     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=27"
+    },
+    {
+     "strainId": "wyeast-1056",
+     "productCode": "1056",
+     "name": "American Ale",
+     "lab": "Wyeast Laboratories",
+     "labId": "wyeast",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "The Chico American ale strain; clean, well-balanced, low fruitiness.",
+     "sourceUrl": "https://wyeastlab.com/strain/american-ale/"
+    }
+   ]
+  },
+  {
+   "id": "fullers",
+   "label": "Fuller's",
+   "note": "The Fuller's ESB strain: very flocculant, malty and fruity, leaving body and residual sweetness. Flocculates so hard it may need rousing to finish.",
+   "members": [
+    {
+     "strainId": "white-labs-wlp002",
+     "productCode": "WLP002",
+     "name": "English Ale",
+     "lab": "White Labs",
+     "labId": "white-labs",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "Classic English (Fuller's-type) strain; extremely flocculant, leaves residual sweetness/body.",
+     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=28"
+    },
+    {
+     "strainId": "wyeast-1968",
+     "productCode": "1968",
+     "name": "London ESB Ale",
+     "lab": "Wyeast Laboratories",
+     "labId": "wyeast",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces cerevisiae",
+     "statedBy": "Fuller's ESB strain; malty, fruity, so flocculant it may need rousing to finish.",
+     "sourceUrl": "https://wyeastlab.com/strain/london-esb-ale/"
+    }
+   ]
+  },
+  {
+   "id": "weihenstephan-3470",
+   "label": "Weihenstephan 34/70",
+   "note": "The Weihenstephan 34/70 lager strain, the most-used lager yeast in commercial brewing worldwide. Clean, balanced and cold-tolerant.",
+   "members": [
+    {
+     "strainId": "fermentis-w-3470",
+     "productCode": "W-34/70",
+     "name": "SafLager W-34/70",
+     "lab": "Fermentis (Lesaffre)",
+     "labId": "fermentis",
+     "labCountry": "France",
+     "form": "dry",
+     "species": "Saccharomyces pastorianus",
+     "statedBy": "The famous Weihenstephan 34/70 lager strain; clean, balanced, the global workhorse.",
+     "sourceUrl": "https://fermentis.com/en/product/saflager-w-34-70/"
+    },
+    {
+     "strainId": "wyeast-2124",
+     "productCode": "2124",
+     "name": "Bohemian Lager",
+     "lab": "Wyeast Laboratories",
+     "labId": "wyeast",
+     "labCountry": "United States",
+     "form": "liquid",
+     "species": "Saccharomyces pastorianus",
+     "statedBy": "Weihenstephan 34/70-type lager strain; clean and malty, ferments cold well.",
+     "sourceUrl": "https://wyeastlab.com/strain/bohemian-lager/"
+    }
+   ]
+  }
+ ]
+}

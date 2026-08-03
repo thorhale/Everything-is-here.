@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
+import { lineageForStrain } from "@/lib/strain-lineages";
 import { notFound } from "next/navigation";
 import { getStrain } from "@/lib/yeasts-curated";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
@@ -99,6 +100,11 @@ export default async function StrainPage({ params }: Props) {
   const strain = await getStrain(decodeURIComponent(id));
   if (!strain) notFound();
 
+  // The same yeast sold under other names. Built from the producers' own
+  // descriptions — see lib/strain-lineages.ts.
+  const lineage = await lineageForStrain(strain.id);
+  const equivalents = lineage ? lineage.members.filter((m) => m.strainId !== strain.id) : [];
+
   // Resolve each recommended style to a guideline page when one exists.
   const styleLinks = await Promise.all(
     strain.recommendedStyles.map(async (name) => {
@@ -143,6 +149,50 @@ export default async function StrainPage({ params }: Props) {
       </header>
 
       {strain.description && <p>{strain.description}</p>}
+
+      {lineage && equivalents.length > 0 && (
+        <section
+          style={{
+            border: "1px solid var(--wh-border)", borderRadius: 8,
+            padding: "0.85rem 1rem", background: "var(--wh-bg-soft)", margin: "1rem 0",
+          }}
+        >
+          <h3 style={{ margin: "0 0 0.2rem", fontSize: "1rem" }}>
+            Same yeast, different label — the {lineage.label} strain
+          </h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", margin: "0 0 0.6rem" }}>
+            {lineage.note}
+          </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {equivalents.map((m) => (
+              <li key={m.strainId} style={{ padding: "0.4rem 0", borderTop: "1px solid var(--wh-border)" }}>
+                <Link href={`/yeasts/db/${encodeURIComponent(m.strainId)}`} style={{ fontWeight: 600 }}>
+                  {m.productCode ? `${m.productCode} · ` : ""}{m.name}
+                </Link>
+                <span style={{ color: "var(--wh-text-light)", fontSize: "0.85rem" }}>
+                  {" "}— {m.lab}
+                  {m.labCountry ? `, ${m.labCountry}` : ""}
+                  {m.form ? ` · ${m.form}` : ""}
+                </span>
+                {/* The producer's own words, so the equivalence is checkable
+                    rather than asserted. */}
+                <div style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "0.15rem" }}>
+                  &ldquo;{m.statedBy}&rdquo;{" "}
+                  {m.sourceUrl && (
+                    <a href={m.sourceUrl} target="_blank" rel="noreferrer">source</a>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", margin: "0.6rem 0 0" }}>
+            Each grouping is stated by the producer of that strain, not inferred and not copied
+            from anyone&apos;s cross-reference chart. Products described only as a shared style
+            (&ldquo;a Bavarian weizen strain&rdquo;) are deliberately not grouped — that is a
+            description, not a claim of shared ancestry.
+          </p>
+        </section>
+      )}
       {strain.flavorNotes && (
         <p style={{ color: "var(--wh-text-light)" }}>
           <strong>Flavor:</strong> {strain.flavorNotes}
