@@ -17,7 +17,7 @@
   "yeastStrains": 91,
   "fermentables": 311,
   "hops": 99,
-  "waterProfiles": 61,
+  "waterProfiles": 66,
   "additives": 72,
   "legalStandardEditions": 16,
   "legalStandardEntries": 183,
@@ -18888,7 +18888,7 @@
    ],
    "description": "A blank slate: reverse-osmosis and distilled water are effectively free of the six brewing ions, which is exactly why serious brewers use them. Rather than correcting whatever the tap happens to deliver this month, you add the salts you want and know precisely what is in the liquor. Sold in the US as distilled water in gallon jugs and dispensed from supermarket RO machines. These zeroes are not a measurement of a particular brand — they are what the process produces by definition; RO removes roughly 95-99% of dissolved solids and distillation essentially all of it. Build any profile on this page up from here with the salt calculator.",
    "sourceUrl": "https://www.epa.gov/sdwa/drinking-water-treatability-database",
-   "attribution": "Definitional rather than a brand analysis: RO and distillation remove substantially all dissolved minerals, so the starting point is zero on every ion.",
+   "attribution": "Definitional rather than a brand analysis: RO and distillation remove substantially all dissolved minerals, so the starting point is zero on every ion. Empirically confirmed by the bottlers themselves: the distilled-water columns of the Poland Spring, Zephyrhills and Ice Mountain analysis reports return ND (not detected) on every mineral, and Aquafina's California report gives ND for total dissolved solids at a 10 mg/L reporting limit. Purified bottled water in the United States really is this row.",
    "sortOrder": 44
   },
   {
@@ -18917,7 +18917,7 @@
    "description": "A single-source alpine water from the Cachat spring, and one of the few big brands that publishes a full ion analysis. Very high bicarbonate (360 ppm) against modest calcium makes it alkaline: it will push mash pH up, so it suits dark malty beers that need the carbonate to offset roast acidity, and fights you on pale hoppy ones. Sulfate and chloride are both low, so it carries almost no flavour bias of its own. Stated pH 7.2.",
    "sourceUrl": "https://www.evian.com/en_int/products/everyday-range/1l/",
    "attribution": "Mineral composition as published by evian on its own product page (Ca 80, Mg 26, Na 6.5, Cl 10, SO4 14, HCO3 360 mg/L; also K 1, silica 15, nitrates 3.8; pH 7.2).",
-   "sortOrder": 50
+   "sortOrder": 54
   },
   {
    "id": "badoit",
@@ -18973,7 +18973,7 @@
    "description": "The most heavily mineralised water most brewers can buy off a shelf: 1816 ppm bicarbonate with 348 ppm calcium, from the volcanic Eifel. Like Badoit this is a blending ingredient, not a brewing liquor — but it is a far better one, because it carries its enormous alkalinity together with the calcium a mash actually needs, rather than with sodium. A litre or two into a dark grist does the job chalk is supposed to do and does badly, since calcium carbonate is barely soluble in water while this water arrives with it already dissolved.",
    "sourceUrl": "https://www.gerolsteiner.de/produkte/mineralwasser/sprudel",
    "attribution": "Analysis excerpt published by Gerolsteiner Brunnen on its own product page (mg/L): hydrogen carbonate 1816, calcium 348, magnesium 108, sodium 118, chloride 40, sulfate 38, potassium 11. The six brewing ions plus potassium balance to within 0.1% on charge, which is what a complete real analysis looks like.",
-   "sortOrder": 52
+   "sortOrder": 56
   },
   {
    "id": "mountain-valley",
@@ -19003,7 +19003,7 @@
    "description": "A rare thing in the United States: a nationally sold bottled water drawn from one spring, with a published analysis you can actually brew to. Moderate calcium against 232 ppm bicarbonate gives a residual alkalinity of about 137, which sits between Munich's and Dublin's — squarely dark-beer territory. With barely 2 ppm each of chloride and sulfate it contributes essentially no flavour bias of its own, so you are free to set the sulfate:chloride balance entirely with salts. Suits dark and malty beers as it comes; a pale beer will need acid.",
    "sourceUrl": "https://www.mountainvalleyspring.com/pages/water-quality-report",
    "attribution": "From the 2025 Mountain Valley Water Quality Report, still-water column (mg/L): calcium 65-70, magnesium 6.1-7.2, sodium 1.7-2.5, chloride 1.8-2.5, sulfate 5.2-8.2, total alkalinity as CaCO3 190, TDS 210, pH 7.3-8.1. Midpoints are shown here. Bicarbonate is the published alkalinity converted at the standard 1.22 mg/L HCO3 per mg/L CaCO3; the resulting ion set balances to within 0.5% on charge.",
-   "sortOrder": 54
+   "sortOrder": 58
   },
   {
    "id": "s-pellegrino",
@@ -19032,7 +19032,7 @@
    "description": "The surprise of this table, but read the RA column before you get excited. S.Pellegrino carries 388 ppm sulfate against 51 ppm chloride — a sulfate:chloride ratio of about 7.6:1, the most hop-forward water sold in a supermarket, and the only entry here that pulls bitterness the crisp, dry, minerally way Burton does. It is not Burton, though. Burton's 270 ppm bicarbonate is almost exactly cancelled by its 275 ppm calcium, landing it at a residual alkalinity of about 1; S.Pellegrino has less calcium and lands at about 43, nearer London. So it brews as a sulfate-led pale ale water that still wants acid for a pale grist — or a little gypsum, which raises the calcium and walks it the rest of the way toward Burton. Genuinely brewable neat, unlike the two carbonate waters above it, though 388 ppm sulfate will flatten anything malt-forward.",
    "sourceUrl": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2024-09/SP_WA_EN_2023.pdf",
    "attribution": "From the 2023 S.Pellegrino Water Analysis Report published by Nestle USA (mg/L): calcium 164, magnesium 46.4, sodium 29.9, chloride 51, sulfate 388, potassium 2.5, total alkalinity as CaCO3 187, total hardness as CaCO3 601, TDS 901, pH 5.18. Bicarbonate is the published alkalinity converted at 1.22; the ion set balances to within 1% on charge.",
-   "sortOrder": 58
+   "sortOrder": 62
   },
   {
    "id": "volvic",
@@ -19060,7 +19060,7 @@
    "description": "Very lightly mineralised volcanic water: every one of the six ions is in single or low double figures except bicarbonate. That makes it a good base for delicate pale lagers, where real mineral content coarsens the malt. One honest caveat the table makes visible: it is not a Pilsen substitute. Pilsen runs 3 ppm bicarbonate for a residual alkalinity of about -4; Volvic runs 80 ppm with only 13 ppm calcium to offset it, so its RA is about 51 — higher than London's. Soft is not the same as acidic. Brew pale on it and you will still want acid or acidulated malt.",
    "sourceUrl": "https://www.volvic.fr/produits/eau-minerale-naturelle/volvic-nature/nature-15l",
    "attribution": "Analyse caracteristique published by Volvic (Danone) on its own product page (mg/L): calcium 13, magnesium 9, sodium 12, potassium 7, chlorides 16, sulfates 9, bicarbonates 80, silica 31, nitrates 7.7. The full ion set balances to within 1% on charge.",
-   "sortOrder": 59
+   "sortOrder": 64
   },
   {
    "id": "poland-spring",
@@ -19116,7 +19116,7 @@
    "description": "The most useful of the big American spring brands, because its range is narrow enough to plan around. Whatever bottle you get, the water is soft and barely alkaline: calcium never exceeds 12 ppm and total alkalinity tops out at 32 ppm as CaCO3, giving a residual alkalinity around 13 at the midpoint and staying low across the whole span. That is close enough to a blank slate to treat it as one - build the profile you want on top and allow for a little alkalinity you did not add. Sulfate and chloride are both single figures, so it carries no flavour bias of its own.",
    "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6446f0b3d521870b64979254/1682370739263/PS-WQR-eng.pdf",
    "attribution": "Transcribed from the 2022 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 57
+   "sortOrder": 61
   },
   {
    "id": "ozarka",
@@ -19171,7 +19171,7 @@
    "description": "The softest of the American brands and the one closest to reverse osmosis. Total alkalinity never exceeds 12 ppm as CaCO3 and calcium never exceeds 8.3, which puts residual alkalinity at about 1 - effectively nothing to correct. The catch is chloride, which swings from 3.3 to 37 ppm across the springs; that is a real difference in mouthfeel, and it is the one number you cannot assume. Excellent base water for pale, delicate beers if you treat the chloride as unknown.",
    "sourceUrl": "https://a-us.storyblok.com/f/1021132/x/656199c3da/ozarka_wqr_2025_en.pdf",
    "attribution": "Transcribed from the 2025 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 55
+   "sortOrder": 59
   },
   {
    "id": "deer-park",
@@ -19223,7 +19223,7 @@
    "description": "Listed as a warning rather than a target. Deer Park's own report gives total alkalinity as 3.1 to 160 ppm as CaCO3 - a fiftyfold spread - with calcium from undetectable to 68 and sulfate from undetectable to 39. One bottle is essentially distilled water and another is a moderately hard, alkaline supply, and nothing on the label tells you which you have. The midpoint shown here is arithmetic, not a measurement, and brewing to it would be guessing. If this is what your shop stocks, use it for cleaning and buy distilled water for the kettle.",
    "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/65b7b7b51a127209036c116d/1706538933941/DeerPark_2023_WQR_EN.pdf",
    "attribution": "Transcribed from the 2023 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 49
+   "sortOrder": 53
   },
   {
    "id": "zephyrhills",
@@ -19276,7 +19276,7 @@
    "description": "Florida limestone, and it shows: at the top of its range this is a hard, alkaline water, at the bottom it is nearly soft. Total alkalinity runs 11 to 160 ppm as CaCO3 and calcium 5.4 to 68, so like Deer Park it cannot be brewed to as a number. What you can rely on is direction - every sample leans alkaline rather than acidic, so it will push mash pH up, never down. Treat it as an unknown carbonate water and measure your mash rather than trusting the label.",
    "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/62879ce9d106953d85ece3bf/1653054697428/ZH-WQR-2021.pdf",
    "attribution": "Transcribed from the 2021 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 60
+   "sortOrder": 65
   },
   {
    "id": "arrowhead",
@@ -19386,11 +19386,11 @@
    "description": "By far the hardest and most alkaline American spring brand, drawn through Michigan limestone: total alkalinity 170 to 320 ppm as CaCO3, calcium 46 to 79, magnesium 16 to 34. The range is wide in absolute terms but never crosses a decision boundary - even the softest sample has a residual alkalinity well over 100, so this is a dark-beer water in every bottle. That makes it more useful than the brands with wider proportional swings: you cannot hit a number, but you can confidently pick a style. Pale beers on it will need a substantial acid addition.",
    "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6287a2cd2f7a5e117792ebd7/1653056206057/im-wqr-2021.pdf",
    "attribution": "Transcribed from the 2021 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 53
+   "sortOrder": 57
   },
   {
    "id": "crystal-geyser-shasta",
-   "name": "Crystal Geyser (Mount Shasta)",
+   "name": "Crystal Geyser (Mount Shasta, CA)",
    "kind": "bottled",
    "country": "United States",
    "region": "Weed, California",
@@ -19442,7 +19442,7 @@
    "description": "Crystal Geyser bottles from seven springs but, unusually and to its credit, publishes a separate report for each one rather than a single blended range - so a bottle labelled Mount Shasta is a known water. This one is soft and remarkably clean: chloride below 0.76 ppm and sulfate below 1.9, meaning almost no flavour ions at all, over a moderate alkalinity that puts residual alkalinity near 46. Check the label for the source before trusting these figures; the other six springs have their own reports and their own numbers.",
    "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/Crystal%20Geyser%20water%20quality%20report%20Mount%20Shasta,%20CA.pdf",
    "attribution": "Transcribed from the CG Roxane bottled water report linked above, the bottler's own certified-laboratory panel. From the CG Roxane bottled water report for the Mount Shasta (Weed, California) source. Ranges are that single spring's sampling spread, not a blend of different springs, which is why they are narrow. Bicarbonate is the published alkalinity as CaCO3 converted at 1.22.",
-   "sortOrder": 48
+   "sortOrder": 49
   },
   {
    "id": "acqua-panna",
@@ -19498,7 +19498,7 @@
    "description": "A third carbonate water, and the most useful of them for a brewer, because its alkalinity arrives with a lot of calcium and very little sodium - 138 ppm calcium against only 7.8 sodium, where Badoit gives you 180 ppm of sodium for the privilege. Residual alkalinity is about 231, far too high to brew on neat, but that is the point: a measured blend supplies carbonate and calcium together, which is exactly what a dark grist wants and what chalk fails to deliver. Cheaper and more widely stocked than Gerolsteiner, if a little weaker.",
    "sourceUrl": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/2025-03/perrier-en-2024-water-report-march-3-2025.pdf",
    "attribution": "From the 2024 Perrier Water Analysis Report published by Nestle Waters North America (mg/L): calcium 138, magnesium 3.6, sodium 7.8, chloride 21.2, sulfate 26.4, total alkalinity as CaCO3 332, total hardness as CaCO3 359, TDS 476, pH 5.52. Bicarbonate is the alkalinity converted at 1.22; the ion set balances to within 3.5% on charge.",
-   "sortOrder": 56
+   "sortOrder": 60
   },
   {
    "id": "fiji",
@@ -19527,7 +19527,204 @@
    "description": "The lowest sulfate of any water here by a distance: 0.6 ppm, against 9 ppm chloride. Nothing else on this page is so completely free of the ion that sharpens bitterness, which makes it a soft, round, malt-leaning liquor whatever else you do to it. Residual alkalinity around 109 points the same way, toward darker and maltier beers. It is also unusually high in silica, the brand's main marketing claim, which has no effect on brewing worth adjusting for.",
    "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/147/Fiji%20Water%20Quality%20Report%202025.pdf",
    "attribution": "Transcribed from the 2025 Water Analysis Report linked above, the bottler's own certified-laboratory panel. From the FIJI Water Company bottled water quality report (mg/L): calcium 18, magnesium 14, sodium 16, potassium 4.6, chloride 9, sulfate 0.6, alkalinity in CaCO3 units 130, TDS 220. Bicarbonate is the alkalinity converted at 1.22; the ion set balances to within 0.1% on charge, the tightest in the table.",
+   "sortOrder": 55
+  },
+  {
+   "id": "crystal-geyser-johnstown",
+   "name": "Crystal Geyser (Johnstown, NY)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Johnstown, New York",
+   "calcium": 58,
+   "magnesium": 11,
+   "sodium": 12,
+   "chloride": 30,
+   "sulfate": 12,
+   "bicarbonate": 182.91,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Brown Ale",
+    "Porter",
+    "Scottish Ale"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "hard"
+   ],
+   "description": "The hardest and most alkaline of Crystal Geyser's springs, and the only one with real chloride in it: 30 ppm against 12 ppm sulfate, so it leans distinctly malty and round before you add anything. Residual alkalinity near 102 makes it a dark-beer water as it comes. The closest thing here to a domestic Munich, and much easier to buy.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/Crystal%20Geyser%20water%20quality%20report%20Johnstown,%20NY.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 58, magnesium 11, sodium 12, chloride 30, sulfate 12, alkalinity 150.",
+   "sortOrder": 48
+  },
+  {
+   "id": "crystal-geyser-norman",
+   "name": "Crystal Geyser (Norman, AR)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Norman, Arkansas",
+   "calcium": 37,
+   "magnesium": 1.3,
+   "sodium": 0,
+   "chloride": 1.1,
+   "sulfate": 5.2,
+   "bicarbonate": 103.65,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Amber Lager",
+    "Brown Ale"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "low-sodium",
+    "low-chloride"
+   ],
+   "description": "Arkansas limestone: calcium and carbonate and almost nothing else. Chloride is 1.1 ppm, sulfate 5.2, sodium below the reporting limit entirely — so of the six ions, four are effectively absent and the water is very nearly pure calcium bicarbonate. Residual alkalinity around 58. That makes it an unusually clean canvas for a malty beer: the carbonate is already there for dark malt, and you set the flavour ions yourself from zero.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Norman,%20AR.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 37, magnesium 1.3, sodium 0, chloride 1.1, sulfate 5.2, alkalinity 85. Sodium is reported ND (not detected) and is stored as 0; the report's reporting limit for sodium is 1 mg/L, so the true value is somewhere below that rather than exactly nothing.",
+   "sortOrder": 50
+  },
+  {
+   "id": "crystal-geyser-salem",
+   "name": "Crystal Geyser (Salem, SC)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Salem, South Carolina",
+   "calcium": 8.3,
+   "magnesium": 0.35,
+   "sodium": 4,
+   "chloride": 0.67,
+   "sulfate": 6.9,
+   "bicarbonate": 26.83,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles",
+    "Kolsch"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity"
+   ],
+   "description": "The softest water in this entire table that is not distilled. Every ion is in single figures and alkalinity is 22 ppm as CaCO3, giving a residual alkalinity near 16 — genuinely close to a blank slate, and the best off-the-shelf starting point here for a pale, delicate lager. Unlike the blended brands, it is a single named spring, so the figure is a figure rather than a range.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Salem,%20SC.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 8.3, magnesium 0.35, sodium 4.0, chloride 0.67, sulfate 6.9, alkalinity 22.",
+   "sortOrder": 52
+  },
+  {
+   "id": "crystal-geyser-olancha",
+   "name": "Crystal Geyser (Olancha Peak, CA)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Olancha, California",
+   "calcium": 17,
+   "magnesium": 1.85,
+   "sodium": 16.5,
+   "chloride": 1.85,
+   "sulfate": 16.75,
+   "bicarbonate": 78.04,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     15,
+     19
+    ],
+    "magnesium": [
+     1.8,
+     1.9
+    ],
+    "sodium": [
+     15,
+     18
+    ],
+    "chloride": [
+     1,
+     2.7
+    ],
+    "sulfate": [
+     8.5,
+     25
+    ],
+    "bicarbonate": [
+     76.82,
+     79.26
+    ]
+   },
+   "bestForStyles": [
+    "Helles",
+    "Kolsch",
+    "Amber Ale",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-chloride",
+    "sodium"
+   ],
+   "description": "Eastern Sierra snowmelt, soft and low in everything except sodium, which runs 15 to 18 ppm — enough to round the palate without tasting of anything. Residual alkalinity around 51. The one figure that moves is sulfate, which the report gives as 8.5 to 25 ppm; at the top of that range it will noticeably sharpen hop bitterness and at the bottom it will not, so treat the hop character as the variable and everything else as settled.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Olancha%20Peak,%20CA.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted.",
    "sortOrder": 51
+  },
+  {
+   "id": "saratoga",
+   "name": "Saratoga Spring Water",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Saratoga Springs, New York (several springs)",
+   "calcium": 8.25,
+   "magnesium": 0.55,
+   "sodium": 2.1,
+   "chloride": 5,
+   "sulfate": 4.7,
+   "bicarbonate": 22.99,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     7.5,
+     9
+    ],
+    "magnesium": [
+     0,
+     1.1
+    ],
+    "sodium": [
+     2,
+     2.2
+    ],
+    "chloride": [
+     3.4,
+     6.6
+    ],
+    "sulfate": [
+     4.7,
+     4.7
+    ],
+    "bicarbonate": [
+     11.83,
+     34.14
+    ]
+   },
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity",
+    "variable"
+   ],
+   "description": "Blended from several springs like the big brands, but the range barely matters: calcium stays between 7.5 and 9 ppm and alkalinity between 9.7 and 28 as CaCO3, so every bottle is soft and nearly free of carbonate whichever spring it came from. Residual alkalinity is around 13 at the midpoint. Along with Ozarka and the Salem spring, this is one of the few American waters you can treat as a near-blank slate without testing it first.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/65b7bc79e069aa4ffc3ff451/1706540153302/Saratoga_2023_WQR_EN.pdf",
+   "attribution": "Transcribed from the 2023 Saratoga Water Analysis Report, still-water column (mg/L): calcium 7.5-9, magnesium ND-1.1, sodium 2-2.2, chloride 3.4-6.6, sulfate 4.7, total alkalinity as CaCO3 9.7-28, TDS 30-44, pH 6.7-6.9. Sulfate is a single published figure rather than a range. Bicarbonate is the alkalinity converted at 1.22.",
+   "sortOrder": 63
   }
  ],
  "additives": [

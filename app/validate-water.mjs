@@ -4,19 +4,27 @@
 // neutral, so the positive charge carried by the cations (Ca, Mg, Na, K) has to
 // equal the negative charge carried by the anions (HCO3, Cl, SO4, NO3, F) once
 // each is converted from mg/L to milliequivalents. A published analysis that
-// balances is almost certainly transcribed correctly; one that does not is
-// either mistyped or — far more commonly — incomplete, because a brand
-// published four of its ions and left the rest off the label.
+// balances is almost certainly transcribed correctly; one that does not has
+// either been mistyped or is missing something substantial.
 //
-// That second case is the one that bites. An incomplete ion set does not look
-// broken: it looks like a water profile with some low numbers in it, and the
-// salt calculator will happily build a recipe on top of it and be wrong. This
-// check is what stopped several big brands going into data/water/profiles.json
-// on partial figures.
+// The failure this guards against is an incomplete ion set, because it does not
+// look broken: it looks like a water profile with some low numbers in it, and
+// the salt calculator will happily build a recipe on top of it and be wrong.
+//
+// BUT — and this was overstated when this file was first written — charge
+// balance does NOT reliably catch a missing ion. It catches a missing ion only
+// when that ion carries a real share of the charge. Delete the sulfate from
+// Badoit, whose 1250 ppm bicarbonate dwarfs its 35 ppm sulfate, and the balance
+// moves by 0.2%: invisible. So balance is the check for transcription errors and
+// for gross inconsistency, and COMPLETENESS is a separate check that has to be
+// made separately — every bottled profile must actually carry all six ions.
+// Both run below; neither substitutes for the other.
 //
 // It is a data check, not a chemistry lesson: real analyses drift a few percent
-// from unaccounted trace ions and from rounding on the label, so the tolerance
-// is generous and the point is to catch the order-of-magnitude miss.
+// from unaccounted trace ions and from rounding on the label — bottlers commonly
+// round alkalinity to two significant figures, which alone moves the balance a
+// couple of percent — so the tolerance is generous and the point is to catch the
+// order-of-magnitude miss.
 //
 // Usage: node validate-water.mjs
 import { readFileSync } from "node:fs";
@@ -53,8 +61,25 @@ const ANIONS = { bicarbonate: 61.02, chloride: 35.45, sulfate: 48.03, nitrate: 6
 // further down: every stored value must be the midpoint of its published range.
 const ENFORCED_KINDS = new Set(["bottled"]);
 const SKIPPED_KINDS = new Set(["style-target"]);
-const TOLERANCE_PCT = 5;
+
+// 8%, not the 5% this started at. 5% was a guess, and it was never tested near
+// its limit — every profile admitted under it happened to sit at 4.5% or below,
+// so it looked strict when it had simply never been challenged. Two things set
+// the number honestly. Below: bottlers round alkalinity to two significant
+// figures ("150", "85", "22"), and that rounding alone moves a balance by around
+// 3%, so anything under about 5% is measuring our arithmetic rather than their
+// water. Above: every ion set actually rejected for being partial was out by 20%
+// or more, because what those brands omitted was a major ion. 8% sits in the
+// gap. It is not load-bearing for completeness — REQUIRED_IONS is.
+const TOLERANCE_PCT = 8;
 const VARIABLE_TOLERANCE_PCT = 15;
+
+// The check that actually guarantees a full ion set. A bottled profile claims to
+// be a published analysis, so all six brewing ions must be present — a null is a
+// figure the bottler never gave us, and a profile missing one cannot be brewed
+// to no matter how well the rest balances. Zero is a legitimate value here (RO
+// water really is zero); absent is not.
+const REQUIRED_IONS = ["calcium", "magnesium", "sodium", "chloride", "sulfate", "bicarbonate"];
 
 function meq(row, table) {
   let total = 0;
@@ -68,6 +93,7 @@ function meq(row, table) {
 const doc = JSON.parse(readFileSync(PROFILES, "utf8"));
 const failures = [];
 const rangeProblems = [];
+const incomplete = [];
 const rows = [];
 
 let skipped = 0;
@@ -76,6 +102,13 @@ for (const p of doc.profiles) {
     skipped++;
     continue;
   }
+  if (ENFORCED_KINDS.has(p.kind)) {
+    const missing = REQUIRED_IONS.filter((ion) => typeof p[ion] !== "number");
+    if (missing.length) {
+      incomplete.push(`${p.id}: no published figure for ${missing.join(", ")}`);
+    }
+  }
+
   const cat = meq(p, CATIONS);
   const an = meq(p, ANIONS);
   const sum = cat + an;
@@ -139,6 +172,15 @@ for (const kind of [...new Set(rows.map((r) => r.kind))]) {
   }
 }
 
+if (incomplete.length) {
+  console.error(`\nFAIL: ${incomplete.length} bottled profile(s) do not carry all six ions:`);
+  for (const m of incomplete) console.error(`  ${m}`);
+  console.error(
+    `  A partial analysis cannot be brewed to, and charge balance will not catch it — a missing ` +
+      `minor ion barely moves the balance at all. Get the full published set or drop the profile.`
+  );
+}
+
 if (rangeProblems.length) {
   console.error(`\nFAIL: ${rangeProblems.length} problem(s) with published ion ranges:`);
   for (const m of rangeProblems) console.error(`  ${m}`);
@@ -155,11 +197,11 @@ if (failures.length) {
   }
   process.exit(1);
 }
-if (rangeProblems.length) process.exit(1);
+if (rangeProblems.length || incomplete.length) process.exit(1);
 
 const enforcedCount = rows.filter((r) => r.enforced).length;
 console.log(
   `\nOK: ${enforcedCount} published analyses balance (${TOLERANCE_PCT}% for a single analysis, ` +
-    `${VARIABLE_TOLERANCE_PCT}% for a blended range), and every range is a well-formed pair whose ` +
-    `midpoint matches the stored value. ${rows.length} profiles checked, ${skipped} style targets skipped.`
+    `${VARIABLE_TOLERANCE_PCT}% for a blended range), all six ions are present on every one of them, ` +
+    `and every range is a well-formed pair whose midpoint matches the stored value. ${rows.length} profiles checked, ${skipped} style targets skipped.`
 );

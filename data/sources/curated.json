@@ -78,6 +78,13 @@
    "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Arrowhead, Crystal Geyser (per-spring) and FIJI Water reports."
   },
   {
+   "host": "contact.pepsico.com",
+   "name": "Aquafina (PepsiCo)",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Cited for the Aquafina California water quality report, which returns ND across the mineral panel — the evidence that US purified bottled water is the RO row rather than a profile of its own."
+  },
+  {
    "host": "content.ces.ncsu.edu",
    "name": "NC State Extension",
    "kind": "extension-service",

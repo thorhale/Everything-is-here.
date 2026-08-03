@@ -125,12 +125,18 @@ export default async function WaterPage() {
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
           Every profile here comes from the bottler&rsquo;s own analysis or its laboratory&rsquo;s
           report, and every one is checked two ways before it is listed. It must give{" "}
-          <strong>all six brewing ions</strong>, and the set must{" "}
-          <strong>balance on charge</strong> — cations and anions agreeing within a few percent once
-          converted to milliequivalents, which is what a real analysis does and a partial one does
-          not. Half a table is worse than none: the salt calculator would build on the gap and be
-          confidently wrong. That check is why brands publishing only the two or three minerals they
-          advertise are absent.
+          <strong>all six brewing ions</strong> — half a table is worse than none, because the salt
+          calculator would build on the gap and be confidently wrong. And the set must{" "}
+          <strong>balance on charge</strong>: water is electrically neutral, so cations and anions
+          have to agree once converted to milliequivalents, and a set that does not agree has been
+          mistyped or is missing something large.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          Those are two checks rather than one on purpose. Charge balance is often described as
+          catching incomplete data, and it does not: strip the sulfate out of Badoit, whose
+          bicarbonate is thirty-five times larger, and the balance shifts by 0.2% — completely
+          invisible. Only counting the ions catches that. Between them they are why brands
+          publishing just the two or three minerals they advertise are absent here.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
           Rows marked <strong>varies</strong> are the awkward ones, and most American spring brands
@@ -148,6 +154,21 @@ export default async function WaterPage() {
           <strong>Deer Park</strong> reports alkalinity anywhere from 3 to 160 ppm as CaCO₃ — a
           fiftyfold spread that crosses every decision a brewer would make with it. For that one,
           buy distilled water instead and build from zero.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          Crystal Geyser deserves a note of credit. It bottles from seven springs and, alone among
+          the American brands, publishes a <em>separate report for each one</em> instead of a single
+          blended range — so its bottles are known waters rather than averages, and five of its
+          springs are listed here individually. Check which source is on the label before using the
+          numbers.
+        </p>
+        <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
+          <strong>Purified brands</strong> divide in two. Aquafina and the distilled water sold by
+          Poland Spring, Zephyrhills and Ice Mountain report every mineral as not-detected, which is
+          what reverse osmosis and distillation are for — use the RO row above for any of them.
+          Dasani, smartwater and Essentia are different: they purify and then add minerals back for
+          taste, in amounts their makers describe as proprietary and do not publish. They are not
+          blank slates and they cannot be brewed to, so they are not listed.
         </p>
       </section>
 
