@@ -75,6 +75,65 @@ for (const p of doc.prices) {
   }
 }
 
+// Estimates are guesses and are allowed to be guesses. What is NOT allowed is
+// an estimate wearing the clothes of an observation, so the shapes are kept
+// apart by force: an estimate may not carry a seller, a link or an observation
+// date, and an observation may not carry an estimated figure. If those ever
+// merge, the page loses the only thing that distinguishes a checked price from
+// a judgement call.
+for (const e of doc.estimates ?? []) {
+  const where = e.id ?? e.brand ?? "(unidentified estimate)";
+  for (const field of ["id", "brand", "packAssumption", "basis", "estimatedAt"]) {
+    if (!e[field]) errors.push(`${where}: estimate missing ${field}`);
+  }
+  for (const forbidden of ["url", "seller", "observedAt", "priceUsd", "pricePerGallonUsd"]) {
+    if (e[forbidden] !== undefined) {
+      errors.push(
+        `${where}: estimate carries "${forbidden}", which belongs to an observed price — ` +
+          `an estimate must not be able to pass for one`
+      );
+    }
+  }
+  if (!(e.estimatedPricePerGallonUsd > 0)) {
+    errors.push(`${where}: estimatedPricePerGallonUsd must be positive`);
+  }
+  if (!Array.isArray(e.profileIds) || e.profileIds.length === 0) {
+    errors.push(`${where}: no profileIds`);
+  } else {
+    for (const id of e.profileIds) {
+      if (!profileIds.has(id)) errors.push(`${where}: profileId "${id}" is not a water profile`);
+    }
+  }
+}
+for (const p of doc.prices) {
+  if (p.estimatedPricePerGallonUsd !== undefined) {
+    errors.push(`${p.id}: an observed price must not carry estimatedPricePerGallonUsd`);
+  }
+}
+
+// An estimate that undercuts a real observation of the same water is suspect:
+// these are meant to be rounded UP, so coming in below a price someone actually
+// paid means the guess is wrong in the one direction it was not supposed to go.
+const cheapest = new Map();
+for (const p of doc.prices) {
+  for (const id of p.profileIds ?? []) {
+    const held = cheapest.get(id);
+    if (!held || p.pricePerGallonUsd < held) cheapest.set(id, p.pricePerGallonUsd);
+  }
+}
+const optimistic = [];
+for (const e of doc.estimates ?? []) {
+  for (const id of e.profileIds ?? []) {
+    const seen = cheapest.get(id);
+    if (seen != null && e.estimatedPricePerGallonUsd < seen) {
+      optimistic.push(
+        `${e.id}: estimates $${e.estimatedPricePerGallonUsd}/gal for ${id}, below the ` +
+          `$${seen}/gal actually observed — estimates are supposed to round up`
+      );
+    }
+  }
+}
+
 const withPrice = new Set(doc.prices.flatMap((p) => p.profileIds ?? []));
 const bottled = JSON.parse(readFileSync(PROFILES, "utf8")).profiles.filter((p) => p.kind === "bottled");
 const missing = bottled.filter((p) => !withPrice.has(p.id));
@@ -88,11 +147,18 @@ for (const p of byGal) {
   );
 }
 
+const estimated = new Set((doc.estimates ?? []).flatMap((e) => e.profileIds ?? []));
+const unpriced = missing.filter((p) => !estimated.has(p.id));
 console.log(
-  `\nCoverage: ${bottled.length - missing.length} of ${bottled.length} bottled waters priced.`
+  `\nCoverage: ${bottled.length - missing.length} of ${bottled.length} bottled waters have an ` +
+    `observed price; ${missing.length - unpriced.length} more carry an estimate only.`
 );
-if (missing.length) {
-  console.log(`  no price yet: ${missing.map((p) => p.id).join(", ")}`);
+if (unpriced.length) {
+  console.log(`  neither: ${unpriced.map((p) => p.id).join(", ")}`);
+}
+if (optimistic.length) {
+  console.log(`\nEstimates below an observed price — round these up:`);
+  for (const m of optimistic) console.log(`  ${m}`);
 }
 if (stale.length) {
   console.log(`\nStale (older than ${STALE_DAYS} days) — re-observe before relying on these:`);
@@ -104,4 +170,7 @@ if (errors.length) {
   for (const e of errors) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log("\nOK: every price recomputes from its pack, carries a date and a source, and names a real water.");
+console.log(
+  "\nOK: every observed price recomputes from its pack, carries a date and a source, and names a " +
+    "real water; every estimate is marked as one and cannot pass for an observation."
+);

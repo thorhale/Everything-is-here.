@@ -9,8 +9,8 @@ import {
   formatRange,
 } from "@/lib/water";
 import type { IonKey } from "@/lib/water";
-import { cheapestPerGallon, ageInDays, STALE_DAYS } from "@/lib/water-prices";
-import type { WaterPrice } from "@/lib/water-prices";
+import { cheapestPerGallon, estimatesByProfile, ageInDays, STALE_DAYS } from "@/lib/water-prices";
+import type { WaterPrice, WaterPriceEstimate } from "@/lib/water-prices";
 import type { WaterProfile } from "@/lib/water";
 
 export const metadata = {
@@ -51,8 +51,22 @@ function IonCell({ value, range }: { value: number | null; range?: [number, numb
 // Cost per gallon, with the date it was seen. A price with no date is not a
 // price — it moves with the retailer, the region and the week — so the age
 // travels with the number and goes grey once it is old enough to distrust.
-function PriceCell({ price }: { price?: WaterPrice }) {
-  if (!price) return <td style={{ color: "var(--wh-text-light)" }}>—</td>;
+function PriceCell({ price, estimate }: { price?: WaterPrice; estimate?: WaterPriceEstimate }) {
+  // An observed price always wins over an estimate. Where only an estimate
+  // exists it is shown in italic with "est." on it, because a guess that looks
+  // like a measurement is worse than no number at all.
+  if (!price) {
+    if (!estimate) return <td style={{ color: "var(--wh-text-light)" }}>—</td>;
+    return (
+      <td style={{ lineHeight: 1.25, whiteSpace: "nowrap", fontStyle: "italic", opacity: 0.75 }}>
+        <span title={`${estimate.basis} Assumes ${estimate.packAssumption}.`}>
+          ~${estimate.estimatedPricePerGallonUsd.toFixed(2)}
+        </span>
+        <br />
+        <span style={{ fontSize: "0.7rem", opacity: 0.8 }}>est.</span>
+      </td>
+    );
+  }
   const age = ageInDays(price.observedAt);
   const old = age != null && age > STALE_DAYS;
   return (
@@ -77,6 +91,7 @@ function PriceCell({ price }: { price?: WaterPrice }) {
 export default async function WaterPage() {
   const byKind = await getWaterByKind();
   const prices = await cheapestPerGallon();
+  const estimates = await estimatesByProfile();
 
   return (
     <div>
@@ -145,7 +160,7 @@ export default async function WaterPage() {
                       {cell("bicarbonate")}
                       <td>{num(residualAlkalinity(w))}</td>
                       <td className="hide-mobile" style={{ fontSize: "0.8rem" }}>{sc.balance}</td>
-                      {kind === "bottled" ? <PriceCell price={prices.get(w.id)} /> : null}
+                      {kind === "bottled" ? <PriceCell price={prices.get(w.id)} estimate={estimates.get(w.id)} /> : null}
                     </tr>
                   );
                 })}
@@ -215,10 +230,13 @@ export default async function WaterPage() {
           shop and run well above shelf price — treat those as an upper bound.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
-          Most rows have no price, and that is deliberate. Live retail prices could not be checked
-          for them, so rather than print a figure from memory — undated and unverifiable, the exact
-          thing this column exists to avoid — the cell is left empty until someone observes a real
-          one.
+          Prices shown in <em>italic with &ldquo;est.&rdquo;</em> are a different thing entirely:
+          not observations but <strong>estimates</strong> of typical US supermarket cost, made
+          because a rough number beats an empty cell when you are budgeting a batch. They are
+          deliberately <strong>rounded up</strong>, so you over-budget rather than under. They are
+          not sourced, not checkable, and not a substitute for looking at a shelf — US bottled water
+          pricing varies by region, chain and week far more than a single figure suggests, and
+          thinly distributed imports like Badoit vary most of all. Hover one for what it assumes.
         </p>
         <p style={{ fontSize: "0.9rem", color: "var(--wh-text-light)" }}>
           <strong>Purified brands</strong> divide in two. Aquafina and the distilled water sold by

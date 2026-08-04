@@ -69,3 +69,40 @@ export function ageInDays(observedAt: string, now = new Date()): number | null {
   if (Number.isNaN(when.getTime())) return null;
   return Math.floor((now.getTime() - when.getTime()) / 86_400_000);
 }
+
+// An estimate is a guess, not an observation. It has no seller and no link
+// because nobody sold it at this price on a given day — it is a rounded-up
+// judgement about typical US supermarket cost, kept in its own list and its own
+// type so it can never be read as a checked figure. Deliberately rounded up, so
+// a batch is over-budgeted rather than under.
+export interface WaterPriceEstimate {
+  id: string;
+  profileIds: string[];
+  brand: string;
+  estimatedPricePerGallonUsd: number;
+  packAssumption: string;
+  basis: string;
+  estimatedAt: string;
+}
+
+export const getWaterPriceEstimates = unstable_cache(
+  async (): Promise<WaterPriceEstimate[]> => {
+    try {
+      const raw = await readFile(join(process.cwd(), "..", "data", "water", "prices.json"), "utf8");
+      return (JSON.parse(raw).estimates ?? []) as WaterPriceEstimate[];
+    } catch {
+      return [];
+    }
+  },
+  ["water-price-estimates-v1"],
+  { revalidate: 3600 }
+);
+
+/** Estimate per profile id. Callers must prefer an observed price where one exists. */
+export async function estimatesByProfile(): Promise<Map<string, WaterPriceEstimate>> {
+  const out = new Map<string, WaterPriceEstimate>();
+  for (const e of await getWaterPriceEstimates()) {
+    for (const id of e.profileIds) out.set(id, e);
+  }
+  return out;
+}

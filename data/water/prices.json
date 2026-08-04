@@ -278,5 +278,210 @@
    "observedAt": "2026-08-03",
    "pricePerGallonUsd": 17.78
   }
- ]
+ ],
+ "estimates": [
+  {
+   "id": "est-ro-distilled",
+   "profileIds": [
+    "ro-distilled"
+   ],
+   "brand": "Distilled / RO",
+   "estimatedPricePerGallonUsd": 2.0,
+   "packAssumption": "1 US gallon jug",
+   "basis": "Store-brand distilled water in gallon jugs is the cheapest water in any American supermarket and the usual brewing baseline. Rounded up from roughly $1.50.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-poland-spring",
+   "profileIds": [
+    "poland-spring"
+   ],
+   "brand": "Poland Spring",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-deer-park",
+   "profileIds": [
+    "deer-park"
+   ],
+   "brand": "Deer Park",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-ozarka",
+   "profileIds": [
+    "ozarka"
+   ],
+   "brand": "Ozarka",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-zephyrhills",
+   "profileIds": [
+    "zephyrhills"
+   ],
+   "brand": "Zephyrhills",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-arrowhead",
+   "profileIds": [
+    "arrowhead"
+   ],
+   "brand": "Arrowhead",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-ice-mountain",
+   "profileIds": [
+    "ice-mountain"
+   ],
+   "brand": "Ice Mountain",
+   "estimatedPricePerGallonUsd": 3.0,
+   "packAssumption": "1 gallon jug or 24 x 16.9 oz case",
+   "basis": "Typical US supermarket price for the gallon jug and the 24 x 16.9 oz case, which land close to each other per gallon. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-crystal-geyser-shasta",
+   "profileIds": [
+    "crystal-geyser-shasta",
+    "crystal-geyser-olancha",
+    "crystal-geyser-norman",
+    "crystal-geyser-salem",
+    "crystal-geyser-johnstown"
+   ],
+   "brand": "Crystal Geyser",
+   "estimatedPricePerGallonUsd": 2.0,
+   "packAssumption": "1 gallon jug",
+   "basis": "Supermarket shelf price, above the $0.88/gal observed at a foodservice distributor for the same water in a six-jug case. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-saratoga",
+   "profileIds": [
+    "saratoga"
+   ],
+   "brand": "Saratoga Spring Water",
+   "estimatedPricePerGallonUsd": 12.0,
+   "packAssumption": "1 L PET; glass costs far more",
+   "basis": "Sold mainly in premium glass, where it is several times dearer. Estimate assumes the cheapest PET format. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-mountain-valley",
+   "profileIds": [
+    "mountain-valley"
+   ],
+   "brand": "Mountain Valley Spring Water",
+   "estimatedPricePerGallonUsd": 11.0,
+   "packAssumption": "1 L glass",
+   "basis": "Close to the $9.46/gal observed from the producer direct, with retail glass typically a little above that. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-fiji",
+   "profileIds": [
+    "fiji"
+   ],
+   "brand": "FIJI Water",
+   "estimatedPricePerGallonUsd": 13.0,
+   "packAssumption": "1 L bottle or 24 x 500 mL case",
+   "basis": "Typical US supermarket price for the 1 L or 1.5 L bottle, which is the cheapest way these are sold here. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-evian",
+   "profileIds": [
+    "evian"
+   ],
+   "brand": "evian",
+   "estimatedPricePerGallonUsd": 10.0,
+   "packAssumption": "1.5 L bottle",
+   "basis": "Typical US supermarket price for the 1 L or 1.5 L bottle, which is the cheapest way these are sold here. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-volvic",
+   "profileIds": [
+    "volvic"
+   ],
+   "brand": "Volvic",
+   "estimatedPricePerGallonUsd": 10.0,
+   "packAssumption": "1.5 L bottle",
+   "basis": "Typical US supermarket price for the 1 L or 1.5 L bottle, which is the cheapest way these are sold here. Rounded up. Thinly distributed in the US, so shelf price varies more than most.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-acqua-panna",
+   "profileIds": [
+    "acqua-panna"
+   ],
+   "brand": "Acqua Panna",
+   "estimatedPricePerGallonUsd": 14.0,
+   "packAssumption": "1 L glass",
+   "basis": "Above the $11.51/gal observed at a foodservice distributor, since supermarket glass runs dearer than case pricing. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-s-pellegrino",
+   "profileIds": [
+    "s-pellegrino"
+   ],
+   "brand": "S.Pellegrino",
+   "estimatedPricePerGallonUsd": 14.0,
+   "packAssumption": "1 L glass",
+   "basis": "Above the $13.09/gal observed at a foodservice distributor, for the same reason. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-perrier",
+   "profileIds": [
+    "perrier"
+   ],
+   "brand": "Perrier",
+   "estimatedPricePerGallonUsd": 13.0,
+   "packAssumption": "1 L bottle or 10 x 250 mL case",
+   "basis": "Typical US supermarket price for the 1 L or 1.5 L bottle, which is the cheapest way these are sold here. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-gerolsteiner-sprudel",
+   "profileIds": [
+    "gerolsteiner-sprudel"
+   ],
+   "brand": "Gerolsteiner",
+   "estimatedPricePerGallonUsd": 14.0,
+   "packAssumption": "750 mL or 1 L glass",
+   "basis": "Typical US supermarket price for the 1 L or 1.5 L bottle, which is the cheapest way these are sold here. Rounded up. Sold as a specialty import, usually in glass.",
+   "estimatedAt": "2026-08-03"
+  },
+  {
+   "id": "est-badoit",
+   "profileIds": [
+    "badoit"
+   ],
+   "brand": "Badoit",
+   "estimatedPricePerGallonUsd": 20.0,
+   "packAssumption": "750 mL glass",
+   "basis": "A specialty import with thin US distribution, sold in small glass bottles at import prices. The least certain estimate here. Rounded up.",
+   "estimatedAt": "2026-08-03"
+  }
+ ],
+ "estimateNote": "ESTIMATES, NOT OBSERVATIONS. These are best guesses at a typical US supermarket price per gallon, made on the date shown, deliberately rounded UP so a batch is over-budgeted rather than under. They are not sourced, not checkable and not a substitute for looking at a shelf: US bottled water pricing varies by region, chain and week far more than these single figures suggest, and imports with thin distribution vary most of all. They are kept in a separate list from `prices` so the two can never be mistaken for one another - anything in `prices` was actually seen at a named seller on a named date with a link, and nothing here was."
 }

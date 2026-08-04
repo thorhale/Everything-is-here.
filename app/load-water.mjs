@@ -55,6 +55,18 @@ async function run() {
   const colList = COLS.map((c) => `"${c}"`).join(",");
   for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json")).sort()) {
     const doc = JSON.parse(readFileSync(join(DIR, f), "utf8"));
+    // Not every JSON file in data/water is a set of profiles. prices.json holds
+    // dated price observations and has no `profiles` key at all. Skip documents
+    // that plainly are not profile sets, but fail loudly on one that has the key
+    // with the wrong shape, which would be a real data error rather than a
+    // different kind of document.
+    if (doc.profiles === undefined) {
+      console.log(`${f}: not a profile set, skipped`);
+      continue;
+    }
+    if (!Array.isArray(doc.profiles)) {
+      throw new Error(`${f}: "profiles" is present but is not an array`);
+    }
     const ids = doc.profiles.map((x) => lit(x.id)).join(",");
     await sql.query(`DELETE FROM "WaterProfile" WHERE id IN (${ids})`);
     const rows = doc.profiles.map((x, i) => tuple(x, i, doc.attribution));
