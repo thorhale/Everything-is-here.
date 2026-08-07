@@ -28,7 +28,13 @@ import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 const DIR = "../data/yeasts";
-const OUT = "../data/yeasts/lineages.json";
+// Derived data lives in a subdirectory, NOT beside the lab files. Three
+// separate scripts glob data/yeasts/*.json expecting every file to be a lab
+// file, and this one is not — it broke export-reference.mjs, then
+// load-water.mjs's sibling load-yeasts.mjs, on separate occasions. A
+// subdirectory ends the whole class of failure, because those globs filter on
+// ".json" and do not recurse.
+const OUT = "../data/yeasts/derived/lineages.json";
 
 const LINEAGES = [
   {
@@ -64,7 +70,7 @@ const LINEAGES = [
 ];
 
 const strains = [];
-for (const f of readdirSync(DIR).filter((n) => n.endsWith(".json") && n !== "lineages.json")) {
+for (const f of readdirSync(DIR).filter((n) => n.endsWith(".json"))) {
   const doc = JSON.parse(readFileSync(join(DIR, f), "utf8"));
   const lab = doc.lab ?? {};
   for (const s of doc.strains ?? []) strains.push({ s, lab });

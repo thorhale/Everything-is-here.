@@ -1,0 +1,41 @@
+{
+ "set": "Published fermentation-temperature trials",
+ "note": "What measured studies actually found when fermentation temperature was varied and everything else held constant. This file exists so the temperature guidance in the app can point at real experiments rather than at folklore. Each entry records the conditions the trial ran under, because that is what makes its findings meaningful — and what stops them being extrapolated onto a batch they do not describe.",
+ "whyNoFormula": "There is no per-compound formula here, and that is deliberate rather than unfinished. Ester yield is not a function of temperature alone: it depends on the strain's own genetics (ATF1/ATF2 expression differs several-fold between strains), on wort free amino nitrogen, on pitching rate, on dissolved oxygen at pitch, on original gravity and on top pressure. Two strains at the same temperature in the same wort can differ several-fold in isoamyl acetate. A model that turned a temperature into a milligrams-per-litre figure would be inventing precision the published work does not have, and would be wrong in the way that is hardest to catch — confidently, and with a citation attached. The app therefore gives direction, which every one of these trials supports, and defers magnitude to a meter and a palate.",
+ "whatAQuantitativeModelWouldNeed": [
+  "Per-strain ester-forming capacity, which suppliers do not publish and which varies several-fold across commercial strains.",
+  "Wort free amino nitrogen (FAN), the nitrogen source that drives higher-alcohol formation via the Ehrlich pathway. Not routinely measured by homebrewers and not published for malts.",
+  "Pitching rate and dissolved oxygen at pitch, both of which change yeast growth, and growth is what actually sets the fusel/ester balance.",
+  "Original gravity and top pressure, both of which shift the same balance independently of temperature.",
+  "A temperature PROFILE rather than a single number: most ester formation happens during active growth, so when a ferment was warm matters as much as how warm it got."
+ ],
+ "trials": [
+  {
+   "id": "kucharczyk-tuszynski-2018",
+   "title": "The effect of temperature on fermentation and beer volatiles at an industrial scale",
+   "authors": "Kucharczyk, K. & Tuszyński, T.",
+   "publication": "Journal of the Institute of Brewing 124(3), 230–235",
+   "year": 2018,
+   "scale": "industrial",
+   "conditions": "Wort fermented at 8.5, 10 and 11.5 °C, with maturation at −1 °C. Extract, yeast growth, esters, higher alcohols and carbonyl compounds followed through fermentation and maturation.",
+   "findings": [
+    { "measured": "esters", "direction": "increase", "withRisingTemperature": true },
+    { "measured": "higher (fusel) alcohols", "direction": "increase", "withRisingTemperature": true },
+    { "measured": "acetaldehyde", "direction": "decrease", "withRisingTemperature": true },
+    { "measured": "vicinal diketones (diacetyl and relatives)", "direction": "decrease", "withRisingTemperature": true }
+   ],
+   "quantitative": null,
+   "quantitativeNote": "Per-compound concentrations at each temperature are in the full text, which is paywalled and could not be retrieved. The directions above are from the published abstract and are what this app relies on. If someone with access adds the measured figures here, they should be presented as what this trial measured at lager temperatures on its own wort and strain — not as a curve to read other batches off.",
+   "appliesTo": "Lager fermentation. The three temperatures span a narrow, cold band; nothing here should be projected onto ale or saison temperatures.",
+   "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.491"
+  }
+ ],
+ "manufacturerStatements": [
+  {
+   "strain": "Wyeast 1084 Irish Ale",
+   "statement": "Fruit and complex esters increase when fermentation temperatures are above 64 °F (18 °C). Beers fermented at the lower end of the range produce a dry, crisp profile with subtle fruitiness.",
+   "note": "A supplier stating the temperature–ester relationship for its own strain, with a threshold. This is the most directly useful form of the claim there is, and it comes from the people who selected the strain.",
+   "sourceUrl": "https://wyeastlab.com/product/irish-ale/"
+  }
+ ]
+}

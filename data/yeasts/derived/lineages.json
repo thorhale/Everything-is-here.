@@ -1,6 +1,6 @@
 {
  "note": "Commercial yeast strains that are the same underlying yeast sold by different producers. Every membership is asserted by the producer of that strain in its own product description, and the sentence saying so is quoted with its source URL. Nothing is inferred; no third-party cross-reference chart was copied. A lineage must be named specifically (Chico, Fuller's, 34/70) — a style descriptor such as 'Bavarian weizen strain' is not a claim of shared ancestry — and all members must share a species.",
- "generated": "2026-08-03",
+ "generated": "2026-08-07",
  "groups": [
   {
    "id": "chico",
@@ -53,7 +53,7 @@
      "form": "liquid",
      "species": "Saccharomyces cerevisiae",
      "statedBy": "The Chico American ale strain; clean, well-balanced, low fruitiness.",
-     "sourceUrl": "https://wyeastlab.com/strain/american-ale/"
+     "sourceUrl": "https://wyeastlab.com/product/american-ale/"
     }
    ]
   },
@@ -84,7 +84,7 @@
      "form": "liquid",
      "species": "Saccharomyces cerevisiae",
      "statedBy": "Fuller's ESB strain; malty, fruity, so flocculant it may need rousing to finish.",
-     "sourceUrl": "https://wyeastlab.com/strain/london-esb-ale/"
+     "sourceUrl": "https://wyeastlab.com/product/london-esb-ale/"
     }
    ]
   },
@@ -115,7 +115,7 @@
      "form": "liquid",
      "species": "Saccharomyces pastorianus",
      "statedBy": "Weihenstephan 34/70-type lager strain; clean and malty, ferments cold well.",
-     "sourceUrl": "https://wyeastlab.com/strain/bohemian-lager/"
+     "sourceUrl": "https://wyeastlab.com/product/bohemian-lager/"
     }
    ]
   }

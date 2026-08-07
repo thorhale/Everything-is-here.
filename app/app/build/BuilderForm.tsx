@@ -388,8 +388,23 @@ export default function BuilderForm({
     const ratio = cl > 0 ? so4 / cl : so4 > 0 ? Infinity : null;
     return { source, target, plan, result, ra, ratio };
   }, [sourceWater, targetWater, waterVol]);
+  // Acid demand scales with alkalinity AND water volume, and acid malt has to be
+  // a share of a real grist rather than a percentage of nothing — so both go in.
+  // Liquid rows (juice, honey by volume) are excluded: they are not grain.
+  const gristKg = useMemo(
+    () =>
+      rows
+        .filter((r) => r.amountUnit !== "L")
+        .reduce((kg, r) => kg + (num(r.amount) * TO_GRAMS[r.amountUnit]) / 1000, 0),
+    [rows]
+  );
   const phAdvice =
-    isBeer && water && engine.srm != null ? mashPhAdvice(engine.srm, water.ra) : null;
+    isBeer && water && engine.srm != null
+      ? mashPhAdvice(engine.srm, water.ra, {
+          mashWaterL: waterVol,
+          gristKg: gristKg > 0 ? gristKg : null,
+        })
+      : null;
   // Colour-based default target so the picker isn't a blank stare.
   const suggestedTargetId = isBeer
     ? engine.srm == null || engine.srm < 8
@@ -945,9 +960,21 @@ export default function BuilderForm({
                 <p style={NOTE}>
                   Mash pH looks <strong>{phAdvice.verdict}</strong> for this colour (RA {phAdvice.actualRa} vs
                   target {phAdvice.targetRa}).{" "}
-                  {phAdvice.verdict === "too alkaline" && phAdvice.acidMaltPct != null && (
-                    <>Bring it down with about <strong>{phAdvice.acidMaltPct}%</strong> acidulated malt, or ~
-                    {phAdvice.lacticMlPerGal} mL of 88% lactic acid per gallon of mash water. </>
+                  {phAdvice.verdict === "too alkaline" && phAdvice.acids.length > 0 && (
+                    <>
+                      It is <strong>{phAdvice.gap} ppm</strong> too alkaline. Over {waterVol.toFixed(0)} L that
+                      is{" "}
+                      {phAdvice.acids
+                        .map((d) => `${d.mlTotal} mL of ${d.label}`)
+                        .join(", or ")}
+                      {phAdvice.acidMalt != null && (
+                        <>
+                          , or <strong>{phAdvice.acidMalt.grams} g</strong> of acidulated malt
+                          {phAdvice.acidMalt.pctOfGrist != null && ` (${phAdvice.acidMalt.pctOfGrist}% of the grist)`}
+                        </>
+                      )}
+                      .{" "}
+                    </>
                   )}
                   {phAdvice.verdict === "too soft" && (
                     <>The grist is dark enough that this water is too soft — a pinch of baking soda (or chalk in the mash)

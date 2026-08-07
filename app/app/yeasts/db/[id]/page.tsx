@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { getStrain } from "@/lib/yeasts-curated";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
 import { getYeastSubstitutes } from "@/lib/substitutions";
+import { assessTemp, tempAtFraction, rangeSummary } from "@/lib/fermentation-temp";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -120,6 +121,23 @@ export default async function StrainPage({ params }: Props) {
 
   const pitchQuery = new URLSearchParams({ strain: strain.id }).toString();
 
+  // The strain's published range, turned into what each end of it actually does.
+  // Null for the dozen Brett/Lacto/Pedio cultures whose suppliers publish no
+  // range — the section simply does not render rather than guessing one.
+  const tempRange = { tempMinC: strain.tempMinC, tempMaxC: strain.tempMaxC };
+  const summary = rangeSummary(tempRange);
+  const tempBands = summary
+    ? {
+        summary,
+        rows: ([0.1, 0.5, 0.9] as const)
+          .map((f) => {
+            const t = tempAtFraction(tempRange, f);
+            return t == null ? null : assessTemp(tempRange, t);
+          })
+          .filter((x): x is NonNullable<typeof x> => x != null),
+      }
+    : null;
+
   const specs: [string, string | null][] = [
     ["Lab / brand", strain.lab.name],
     ["Species", strain.species],
@@ -210,6 +228,44 @@ export default async function StrainPage({ params }: Props) {
           ))}
         </tbody>
       </table>
+
+      {tempBands && (
+        <>
+          <h3>What temperature does to it</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", margin: "0 0 0.6rem" }}>
+            {tempBands.summary} Temperature is the largest flavour lever you control with this
+            strain, and the supplier&rsquo;s range is not a single setting — it is a dial.
+          </p>
+          <table>
+            <tbody>
+              {tempBands.rows.map((b) => (
+                <tr key={b.band}>
+                  <th style={{ textAlign: "left", whiteSpace: "nowrap", width: 200, verticalAlign: "top" }}>
+                    {b.label}
+                    <div style={{ fontWeight: 400, color: "var(--wh-text-light)", fontSize: "0.8rem" }}>
+                      {b.tempC} °C / {b.tempF} °F
+                    </div>
+                  </th>
+                  <td>
+                    <ul style={{ margin: 0, paddingLeft: "1.1rem", fontSize: "0.85rem" }}>
+                      {b.effects.map((e) => (
+                        <li key={e}>{e}</li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
+            Directions, not magnitudes. Esters and fusel alcohols rise with temperature while
+            acetaldehyde and diacetyl fall — measured at industrial scale by Kucharczyk &amp;
+            Tuszyński (<em>J. Inst. Brew.</em> 124(3), 2018). How <em>much</em> they move depends on
+            the strain&rsquo;s own genetics, wort nitrogen, pitch rate and pressure, so no figure is
+            asserted here. See <Link href="/fermentation">fermentation archetypes</Link>.
+          </p>
+        </>
+      )}
 
       {styleLinks.length > 0 && (
         <>

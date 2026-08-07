@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-08-03",
+ "generatedAt": "2026-08-07",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -3041,7 +3041,7 @@
    "unitLabel": "pack",
    "description": "The Chico American ale strain; clean, well-balanced, low fruitiness. Slightly hazy (low floc).",
    "flavorNotes": "Clean, faint citrus.",
-   "sourceUrl": "https://wyeastlab.com/strain/american-ale/",
+   "sourceUrl": "https://wyeastlab.com/product/american-ale/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3070,7 +3070,7 @@
    "attenuationMax": 75,
    "tempMinF": 62,
    "tempMaxF": 72,
-   "tempMinC": 16,
+   "tempMinC": 17,
    "tempMaxC": 22,
    "flocculation": "medium",
    "alcoholToleranceMax": 12,
@@ -3078,7 +3078,7 @@
    "unitLabel": "pack",
    "description": "Classic Irish stout strain in the Guinness/dry-stout tradition (not Guinness's proprietary culture). Slight tartness and roast-friendly esters; the go-to for Irish dry stout.",
    "flavorNotes": "Soft diacetyl, mild tart complexity.",
-   "sourceUrl": "https://wyeastlab.com/strain/irish-ale/",
+   "sourceUrl": "https://wyeastlab.com/product/irish-ale/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3113,7 +3113,7 @@
    "unitLabel": "pack",
    "description": "Fruitier, nuttier, more flocculant American strain than 1056; slight tartness.",
    "flavorNotes": "Nutty, light fruit.",
-   "sourceUrl": "https://wyeastlab.com/strain/american-ale-ii/",
+   "sourceUrl": "https://wyeastlab.com/product/american-ale-ii/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3150,7 +3150,7 @@
    "unitLabel": "pack",
    "description": "The NEIPA darling; fruity, leaves body and soft mouthfeel, drops bright despite haze potential.",
    "flavorNotes": "Peach/citrus esters, soft.",
-   "sourceUrl": "https://wyeastlab.com/strain/london-ale-iii/",
+   "sourceUrl": "https://wyeastlab.com/product/london-ale-iii/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3187,7 +3187,7 @@
    "unitLabel": "pack",
    "description": "Fuller's ESB strain; malty, fruity, so flocculant it may need rousing to finish.",
    "flavorNotes": "Malty, ripe fruit.",
-   "sourceUrl": "https://wyeastlab.com/strain/london-esb-ale/",
+   "sourceUrl": "https://wyeastlab.com/product/london-esb-ale/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3223,7 +3223,7 @@
    "unitLabel": "pack",
    "description": "Weihenstephan 34/70-type lager strain; clean and malty, ferments cold well.",
    "flavorNotes": "Clean, balanced.",
-   "sourceUrl": "https://wyeastlab.com/strain/bohemian-lager/",
+   "sourceUrl": "https://wyeastlab.com/product/bohemian-lager/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3259,7 +3259,7 @@
    "unitLabel": "pack",
    "description": "The benchmark German weizen strain; banana/clove tunable by temp and pitch. Low floc, needs a blow-off.",
    "flavorNotes": "Banana + clove, vanilla hints.",
-   "sourceUrl": "https://wyeastlab.com/strain/weihenstephan-weizen/",
+   "sourceUrl": "https://wyeastlab.com/product/weihenstephan-weizen/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3295,7 +3295,7 @@
    "unitLabel": "pack",
    "description": "Reliable, fast, super-dry saison strain — an \"absolute reliable monster attenuator\" that routinely exceeds its listed range. Far less finicky than the Dupont-type strains; a good pick for hoppy saisons, though less traditional in profile.",
    "flavorNotes": "Leathery, big fruity nose, spicy — black pepper and cardamom.",
-   "sourceUrl": "https://wyeastlab.com/strain/french-saison/",
+   "sourceUrl": "https://wyeastlab.com/product/french-saison/",
    "attribution": "Strain specs from Wyeast; character notes from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts).",
    "labId": "wyeast"
   },
@@ -3332,7 +3332,7 @@
    "description": "The authentic Dupont saison strain; phenols and fruit in balance, finishing beautifully dry. Famously stall-prone — the Maltose Falcons saison guide attributes this to backpressure sensitivity: ferment under sanitized foil rather than an airlock, and hold it warm to finish.",
    "flavorNotes": "Phenolic, peppery, fruit in balance, very dry.",
    "optimalPitchNote": "Chill wort to 62–64°F, hold at 65°F for ~3 days, then let it free-rise. Use sanitized foil instead of an airlock — backpressure is a major cause of stalls with this strain.",
-   "sourceUrl": "https://wyeastlab.com/strain/belgian-saison/",
+   "sourceUrl": "https://wyeastlab.com/product/belgian-saison/",
    "attribution": "Strain specs from Wyeast; fermentation guidance from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts).",
    "labId": "wyeast"
   },
@@ -3369,7 +3369,7 @@
    "description": "Farmhouse/saison strain with a distinctly tropical fruit character; attenuates well and finishes dry without the stalling reputation of the Dupont strain.",
    "flavorNotes": "Tropical front nose — pineapple with cinnamon and clove; ginger on the finish.",
    "optimalPitchNote": "Like other saison strains, ferment under sanitized foil rather than an airlock to avoid backpressure-related stalls.",
-   "sourceUrl": "https://wyeastlab.com/strain/farmhouse-ale/",
+   "sourceUrl": "https://wyeastlab.com/product/farmhouse-ale/",
    "attribution": "Strain specs from Wyeast; character notes from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts).",
    "labId": "wyeast"
   },
@@ -3406,7 +3406,7 @@
    "unitLabel": "pack",
    "description": "Westmalle-type Trappist strain; robust for big Belgians, rich esters and spice, alcohol-tolerant.",
    "flavorNotes": "Dark fruit, clove, warming.",
-   "sourceUrl": "https://wyeastlab.com/strain/trappist-high-gravity/",
+   "sourceUrl": "https://wyeastlab.com/product/belgian-high-gravity/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   },
@@ -3452,7 +3452,7 @@
    "unitLabel": "pack",
    "description": "Traditional lambic blend of Saccharomyces, two Brett species, and souring bacteria; develops complex funk/sour over months.",
    "flavorNotes": "Barnyard, citrus, lactic tartness over time.",
-   "sourceUrl": "https://wyeastlab.com/strain/belgian-lambic-blend/",
+   "sourceUrl": "https://wyeastlab.com/product/belgian-lambic-blend/",
    "labId": "wyeast",
    "attribution": "Specs transcribed from Wyeast published strain pages (wyeastlab.com). Activator packs ~100 billion cells."
   }

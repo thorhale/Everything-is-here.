@@ -35,7 +35,7 @@ export interface Lineage {
 export const getLineages = unstable_cache(
   async (): Promise<Lineage[]> => {
     try {
-      const raw = await readFile(join(process.cwd(), "..", "data", "yeasts", "lineages.json"), "utf8");
+      const raw = await readFile(join(process.cwd(), "..", "data", "yeasts", "derived", "lineages.json"), "utf8");
       return (JSON.parse(raw).groups ?? []) as Lineage[];
     } catch {
       return [];

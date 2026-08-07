@@ -1,0 +1,168 @@
+// What fermentation temperature does to the drink.
+//
+// WHY THIS EXISTS: every strain in this catalog carries a published temperature
+// range, and until now nothing did anything with it. That is a strange gap,
+// because temperature is the largest flavour lever a fermenter actually
+// controls. The same yeast, the same wort, the same pitch — run at the bottom
+// of its range versus the top — makes a recognisably different beer. A brewer
+// choosing 18 °C over 22 °C is making a bigger decision than most of the
+// ingredient choices the rest of this app helps with.
+//
+// WHAT THE SCIENCE SUPPORTS. The direction of travel is well established and
+// consistent across the literature: as fermentation temperature rises, esters
+// and higher (fusel) alcohols increase, while acetaldehyde and vicinal diketones
+// — diacetyl and its relatives — decrease. Kucharczyk & Tuszyński measured
+// exactly this at industrial scale across 8.5, 10 and 11.5 °C (J. Inst. Brew.
+// 124(3), 2018, 230–235), and the mechanism is understood: temperature drives
+// yeast growth rate, and growth rate sets the fusel/ester balance.
+//
+// WHAT IT DOES NOT SUPPORT, and why this module gives no numbers. Ester yield
+// is not a function of temperature alone. It depends on the strain's own genetics
+// (ATF1/ATF2 expression varies enormously between strains), on wort free amino
+// nitrogen, on pitching rate, on dissolved oxygen, on gravity and on top
+// pressure. Two strains at the same temperature in the same wort can differ
+// several-fold in isoamyl acetate. So a model that turned "20 °C" into
+// "3.2 mg/L isoamyl acetate" would be inventing precision that the published
+// work does not have, and would be wrong in a way that looks authoritative.
+//
+// What this module does instead: it says where you are in the strain's OWN
+// published range, and what moving within that range does, directionally. That
+// is a claim the literature actually supports for any strain. Where a specific
+// trial has measured figures, those live in data/fermentation/temperature-trials
+// .json and are shown as what that trial measured under its conditions — never
+// extrapolated onto your batch.
+//
+// Pure computation, no filesystem or database access, so client components can
+// import it directly.
+
+export type TempBand = "below" | "cool" | "mid" | "warm" | "above";
+
+export interface StrainTempRange {
+  tempMinC: number | null;
+  tempMaxC: number | null;
+}
+
+export const BAND_LABELS: Record<TempBand, string> = {
+  below: "Below the published range",
+  cool: "Cool end",
+  mid: "Middle",
+  warm: "Warm end",
+  above: "Above the published range",
+};
+
+export interface TempAssessment {
+  band: TempBand;
+  label: string;
+  /** 0 at the bottom of the range, 1 at the top; outside [0,1] when out of range. */
+  fraction: number;
+  tempC: number;
+  tempF: number;
+  rangeC: [number, number];
+  /** Directional consequences, most important first. */
+  effects: string[];
+  /** Present only when the temperature is outside the published range. */
+  warning: string | null;
+}
+
+export const cToF = (c: number) => Math.round((c * 9) / 5 + 32);
+export const fToC = (f: number) => ((f - 32) * 5) / 9;
+
+/**
+ * Where `tempC` sits in a strain's published range, and what that does.
+ *
+ * Returns null when the strain has no published range — 12 of the cultures in
+ * this catalog are Brettanomyces, Lactobacillus and other non-Saccharomyces
+ * organisms whose suppliers give no figure, and inventing one for them would be
+ * worse than saying nothing.
+ */
+export function assessTemp(range: StrainTempRange, tempC: number): TempAssessment | null {
+  const { tempMinC: lo, tempMaxC: hi } = range;
+  if (lo == null || hi == null || !(hi > lo)) return null;
+
+  const fraction = (tempC - lo) / (hi - lo);
+  let band: TempBand;
+  if (fraction < 0) band = "below";
+  else if (fraction > 1) band = "above";
+  else if (fraction < 0.33) band = "cool";
+  else if (fraction < 0.67) band = "mid";
+  else band = "warm";
+
+  return {
+    band,
+    label: BAND_LABELS[band],
+    fraction: Math.round(fraction * 100) / 100,
+    tempC: Math.round(tempC * 10) / 10,
+    tempF: cToF(tempC),
+    rangeC: [lo, hi],
+    effects: EFFECTS[band],
+    warning: WARNINGS[band],
+  };
+}
+
+// The directional consequences. Deliberately worded as directions rather than
+// magnitudes: "more esters" is defensible for any strain, "2.4 mg/L more" is not.
+const EFFECTS: Record<TempBand, string[]> = {
+  below: [
+    "Fermentation may stall or never properly start — below the supplier's range the yeast is not guaranteed to perform.",
+    "Whatever does ferment will be very clean, but expect it to be slow and to finish high.",
+    "Diacetyl and acetaldehyde are slowest to clean up down here, so a cold finish can leave both behind.",
+  ],
+  cool: [
+    "Fewest esters — the cleanest, crispest expression this strain offers.",
+    "Fewest fusel alcohols, so no hot or solvent-like alcohol character.",
+    "More acetaldehyde and diacetyl to clear, so give it time at the end rather than crashing early.",
+    "Slower, and more likely to finish a point or two higher than the strain's stated attenuation.",
+  ],
+  mid: [
+    "The balance the supplier designed the strain around, and the safest place to start.",
+    "Moderate ester production — present but not dominant.",
+    "Reliable attenuation and a predictable timeline.",
+  ],
+  warm: [
+    "Most esters — fruity, and for Belgian and weizen strains this is where the character lives.",
+    "More fusel alcohols, which read as warming at best and solventy at worst.",
+    "Faster, and diacetyl and acetaldehyde clean up more readily.",
+    "Higher attenuation, and a drier finish than the same beer run cool.",
+  ],
+  above: [
+    "Fusel alcohols rise sharply — hot, solvent-like, and they do not age out on any useful timescale.",
+    "Esters can tip past fruity into nail-varnish.",
+    "Risk of the yeast stressing, dropping out early and leaving the ferment stuck.",
+  ],
+};
+
+const WARNINGS: Record<TempBand, string | null> = {
+  below: "Colder than the supplier's published minimum.",
+  cool: null,
+  mid: null,
+  warm: null,
+  above: "Hotter than the supplier's published maximum — the usual cause of hot, solventy homebrew.",
+};
+
+/**
+ * The temperature at a given position in the range. `0` is the bottom, `1` the
+ * top. Used to offer "cool / middle / warm" presets without hard-coding numbers
+ * that only make sense for one strain.
+ */
+export function tempAtFraction(range: StrainTempRange, fraction: number): number | null {
+  const { tempMinC: lo, tempMaxC: hi } = range;
+  if (lo == null || hi == null || !(hi > lo)) return null;
+  return Math.round((lo + (hi - lo) * fraction) * 10) / 10;
+}
+
+/**
+ * A one-line summary of what the strain's range offers, for catalog pages where
+ * there is no temperature input to respond to.
+ */
+export function rangeSummary(range: StrainTempRange): string | null {
+  const { tempMinC: lo, tempMaxC: hi } = range;
+  if (lo == null || hi == null || !(hi > lo)) return null;
+  const span = hi - lo;
+  const swing =
+    span >= 10
+      ? "an unusually wide range — this strain is a different beer at each end"
+      : span >= 6
+        ? "enough range to shift the ester character noticeably"
+        : "a narrow range, so temperature is less of a lever here than with most strains";
+  return `${lo}–${hi} °C (${cToF(lo)}–${cToF(hi)} °F): ${swing}.`;
+}

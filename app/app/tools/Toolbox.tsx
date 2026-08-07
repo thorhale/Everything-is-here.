@@ -210,8 +210,11 @@ function MashPhCard() {
   const [ca, setCa] = useState("50");
   const [mg, setMg] = useState("8");
   const [hco3, setHco3] = useState("40");
+  const [volGal, setVolGal] = useState("7");
   const ra = residualAlkalinity(n(ca), n(mg), n(hco3));
-  const a = mashPhAdvice(n(srm), ra);
+  // Acid demand is equivalents times volume, so mash volume is an input rather
+  // than a detail: the same water needs twice the acid for twice the mash.
+  const a = mashPhAdvice(n(srm), ra, { mashWaterL: n(volGal) * 3.785411784 });
   const color = a.verdict === "on target" ? "#3f7d3f" : "#b55002";
   return (
     <Card title="Mash pH / alkalinity">
@@ -219,17 +222,42 @@ function MashPhCard() {
       <Row label="Water Ca (ppm)"><input style={inp} value={ca} onChange={(e) => setCa(e.target.value)} /></Row>
       <Row label="Water Mg (ppm)"><input style={inp} value={mg} onChange={(e) => setMg(e.target.value)} /></Row>
       <Row label="Water HCO₃ (ppm)"><input style={inp} value={hco3} onChange={(e) => setHco3(e.target.value)} /></Row>
+      <Row label="Mash water (gal)"><input style={inp} value={volGal} onChange={(e) => setVolGal(e.target.value)} /></Row>
       <Out label="Residual alkalinity" value={`${a.actualRa} ppm`} />
       <Out label="Target RA (for colour)" value={`${a.targetRa} ppm`} />
       <Out label="Estimated mash pH" value={`~${f(a.estimatedPh, 2)}`} />
       <div style={{ fontSize: "0.85rem", fontWeight: 600, color, padding: "0.3rem 0" }}>
         {a.verdict === "on target" && "Water suits this grist."}
-        {a.verdict === "too alkaline" && `Too alkaline — add ~${a.acidMaltPct}% acidulated malt, or ~${a.lacticMlPerGal} mL 88% lactic acid per gallon of mash water (or dilute with RO).`}
+        {a.verdict === "too alkaline" && `Too alkaline by ${a.gap} ppm — acidify the liquor, or dilute with RO.`}
         {a.verdict === "too soft" && "Too soft for this dark a grist — add alkalinity (baking soda / chalk) to avoid a too-low mash pH."}
       </div>
+      {a.acids.length > 0 && (
+        <table style={{ fontSize: "0.8rem", width: "100%", marginTop: "0.2rem" }}>
+          <tbody>
+            {a.acids.map((d) => (
+              <tr key={d.key}>
+                <td style={{ paddingRight: "0.6rem" }}>{d.label}</td>
+                <td style={{ textAlign: "right", whiteSpace: "nowrap" }}>
+                  <strong>{d.mlTotal} mL</strong>{" "}
+                  <span style={{ color: "var(--wh-text-light)" }}>({d.mlPerGallon}/gal)</span>
+                </td>
+              </tr>
+            ))}
+            {a.acidMalt && (
+              <tr>
+                <td style={{ paddingRight: "0.6rem" }}>Acidulated malt</td>
+                <td style={{ textAlign: "right", whiteSpace: "nowrap" }}>
+                  <strong>{a.acidMalt.grams} g</strong>
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      )}
       <p style={{ fontSize: "0.72rem", color: "var(--wh-text-light)", margin: "0.2rem 0 0" }}>
-        Estimate only — confirm with a calibrated pH meter. Based on Palmer&apos;s colour↔RA
-        relationship.
+        Doses are sized on acid equivalents to bring residual alkalinity to target — the part that
+        can be calculated honestly. The malt&apos;s own buffering sets the final number, so confirm
+        with a calibrated pH meter. Colour↔RA relationship after Palmer.
       </p>
     </Card>
   );

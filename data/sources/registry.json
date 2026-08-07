@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 280,
+    "distinctSources": 281,
     "backgroundDocuments": 7,
-    "citations": 749,
+    "citations": 751,
     "numericCitations": 645,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 593,
+      "primary": 595,
       "secondary": 150,
       "tertiary": 6
     }
@@ -1572,6 +1572,32 @@
     },
     {
       "id": null,
+      "url": "https://wyeastlab.com/product/irish-ale/",
+      "host": "wyeastlab.com",
+      "title": null,
+      "publisher": "Wyeast Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentation/temperature-trials.json",
+        "data/yeasts/wyeast.json"
+      ],
+      "exampleRecords": [
+        "wyeast-1084"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fermentis.com/en/product/safale-us-05/",
       "host": "fermentis.com",
       "title": null,
@@ -1706,7 +1732,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/american-ale/",
+      "url": "https://wyeastlab.com/product/american-ale/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -1760,7 +1786,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/london-esb-ale/",
+      "url": "https://wyeastlab.com/product/london-esb-ale/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -1787,7 +1813,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/bohemian-lager/",
+      "url": "https://wyeastlab.com/product/bohemian-lager/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -3197,6 +3223,31 @@
       ],
       "exampleRecords": [
         "spontaneous-wild"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jib.491",
+      "host": "onlinelibrary.wiley.com",
+      "title": null,
+      "publisher": "Wiley Online Library",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/temperature-trials.json"
+      ],
+      "exampleRecords": [
+        "kucharczyk-tuszynski-2018"
       ]
     },
     {
@@ -7055,32 +7106,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/irish-ale/",
-      "host": "wyeastlab.com",
-      "title": null,
-      "publisher": "Wyeast Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/wyeast.json"
-      ],
-      "exampleRecords": [
-        "wyeast-1084"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://wyeastlab.com/strain/american-ale-ii/",
+      "url": "https://wyeastlab.com/product/american-ale-ii/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7105,7 +7131,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/london-ale-iii/",
+      "url": "https://wyeastlab.com/product/london-ale-iii/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7130,7 +7156,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/weihenstephan-weizen/",
+      "url": "https://wyeastlab.com/product/weihenstephan-weizen/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7155,7 +7181,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/french-saison/",
+      "url": "https://wyeastlab.com/product/french-saison/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7180,7 +7206,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/belgian-saison/",
+      "url": "https://wyeastlab.com/product/belgian-saison/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7205,7 +7231,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/farmhouse-ale/",
+      "url": "https://wyeastlab.com/product/farmhouse-ale/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7230,7 +7256,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/trappist-high-gravity/",
+      "url": "https://wyeastlab.com/product/belgian-high-gravity/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
@@ -7255,7 +7281,7 @@
     },
     {
       "id": null,
-      "url": "https://wyeastlab.com/strain/belgian-lambic-blend/",
+      "url": "https://wyeastlab.com/product/belgian-lambic-blend/",
       "host": "wyeastlab.com",
       "title": null,
       "publisher": "Wyeast Laboratories",
