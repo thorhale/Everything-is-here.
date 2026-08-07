@@ -480,6 +480,13 @@
    "note": "Self-published biography and bibliography. Primary for facts about Dornbusch himself, but it hosts none of the German Beer Institute style content and no style specifications, so it can support nothing numeric."
   },
   {
+   "host": "www.johnihaas.com",
+   "name": "John I. Haas",
+   "kind": "vendor-handbook",
+   "reliability": "primary",
+   "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable."
+  },
+  {
    "host": "www.kelloggs.com",
    "name": "Kellogg's (nutrition labelling)",
    "kind": "nutrition-label",
@@ -1316,6 +1323,18 @@
    "accessed": "2026-08-07",
    "supports": "Grape variety identity: prime name, 62 recorded synonyms, species, berry colour, country of origin and pedigree. Retrieved and read as the worked example for the whole catalogue.",
    "doesNotSupport": "Harvest chemistry. VIVC carries no Brix, titratable acidity or pH, so it cannot support the numeric fields on this project's 53 wine-grape records. It was evaluated as a replacement for the dead iv.ucdavis.edu citations and deliberately not used for them: swapping a homepage for a per-variety page would have cut 53 from the shallow-link debt while citing a document that does not contain the figures."
+  },
+  {
+   "id": "haas-hops-companion-2022",
+   "url": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "title": "Hops Companion — A brewer's guide to hop varieties and hop products, 4th edition (2022)",
+   "publisher": "John I. Haas",
+   "kind": "vendor-handbook",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Per-variety specifications for 155 hop varieties: alpha and beta acids (%), cohumulone (% of alpha), total oil (mL/100g) and the myrcene, humulene, caryophyllene, farnesene and linalool fractions (% of total oil), plus total polyphenols, pedigree and aroma descriptors. Retrieved and read; Cascade and Simcoe checked against the page directly.",
+   "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding."
   }
  ]
 }

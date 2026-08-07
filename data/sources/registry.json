@@ -11,13 +11,13 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 298,
+    "distinctSources": 257,
     "backgroundDocuments": 8,
     "citations": 760,
     "numericCitations": 645,
-    "numericOnShallowLink": 339,
+    "numericOnShallowLink": 294,
     "numericOnTertiary": 0,
-    "fullTextVerified": 30,
+    "fullTextVerified": 31,
     "backgroundFullTextVerified": 5,
     "byReliability": {
       "primary": 650,
@@ -63,6 +63,43 @@
         "adjunct-cracked-corn",
         "adjunct-quinoa",
         "adjunct-millet"
+      ]
+    },
+    {
+      "id": "haas-hops-companion-2022",
+      "url": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+      "host": "www.johnihaas.com",
+      "title": "Hops Companion — A brewer's guide to hop varieties and hop products, 4th edition (2022)",
+      "publisher": "John I. Haas",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Per-variety specifications for 155 hop varieties: alpha and beta acids (%), cohumulone (% of alpha), total oil (mL/100g) and the myrcene, humulene, caryophyllene, farnesene and linalool fractions (% of total oil), plus total polyphenols, pedigree and aroma descriptors. Retrieved and read; Cascade and Simcoe checked against the page directly.",
+      "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding.",
+      "accessed": "2026-08-07",
+      "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable.",
+      "citations": 85,
+      "numericCitations": 85,
+      "usedIn": [
+        "data/hops/us.json",
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "cascade",
+        "centennial",
+        "citra",
+        "mosaic",
+        "simcoe",
+        "amarillo",
+        "chinook",
+        "columbus",
+        "willamette",
+        "sabro",
+        "strata",
+        "idaho-7"
       ]
     },
     {
@@ -215,42 +252,6 @@
       ]
     },
     {
-      "id": null,
-      "url": "https://www.barthhaas.com/",
-      "host": "www.barthhaas.com",
-      "title": null,
-      "publisher": "BarthHaas",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 28,
-      "numericCitations": 28,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "hallertau-mittelfrueh",
-        "tettnanger",
-        "spalt",
-        "hersbrucker",
-        "perle",
-        "magnum-de",
-        "herkules",
-        "saphir",
-        "hallertau-blanc",
-        "huell-melon",
-        "mandarina-bavaria",
-        "lubelski"
-      ]
-    },
-    {
       "id": "uga-c717-winemaking-at-home",
       "url": "https://fieldreport.caes.uga.edu/publications/C717/",
       "host": "fieldreport.caes.uga.edu",
@@ -284,41 +285,6 @@
         "Muscadine Wine",
         "Concord & Fox Grape Wine",
         "Garden & Root Wines"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.nzhops.co.nz/",
-      "host": "www.nzhops.co.nz",
-      "title": null,
-      "publisher": "New Zealand Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 11,
-      "numericCitations": 11,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "nelson-sauvin",
-        "motueka",
-        "riwaka",
-        "pacific-jade",
-        "wai-iti",
-        "nectaron",
-        "dr-rudi",
-        "wakatu",
-        "green-bullet",
-        "kohatu",
-        "cascade-nz"
       ]
     },
     {
@@ -456,36 +422,6 @@
     },
     {
       "id": null,
-      "url": "https://www.hops.com.au/",
-      "host": "www.hops.com.au",
-      "title": null,
-      "publisher": "Hop Products Australia",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 6,
-      "numericCitations": 6,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "galaxy",
-        "vic-secret",
-        "ella",
-        "enigma",
-        "topaz",
-        "pride-of-ringwood"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
       "host": "www.ecfr.gov",
       "title": null,
@@ -542,36 +478,6 @@
         "malt-crisp-crystal-77",
         "malt-crisp-chocolate",
         "sugar-invert-no3"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 5,
-      "numericCitations": 5,
-      "usedIn": [
-        "data/hops/us.json",
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "zappa",
-        "contessa",
-        "triumph",
-        "palisade",
-        "tettnang-us"
       ]
     },
     {
@@ -715,10 +621,10 @@
     },
     {
       "id": null,
-      "url": "https://www.czhops.cz/",
-      "host": "www.czhops.cz",
+      "url": "https://www.barthhaas.com/",
+      "host": "www.barthhaas.com",
       "title": null,
-      "publisher": "Czech Hops (Hop Research Institute Žatec)",
+      "publisher": "BarthHaas",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -735,10 +641,38 @@
         "data/hops/world.json"
       ],
       "exampleRecords": [
-        "saaz",
-        "sladek",
-        "kazbek",
-        "premiant"
+        "hallertau-mittelfrueh",
+        "spalt",
+        "huell-melon",
+        "styrian-goldings"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.nzhops.co.nz/",
+      "host": "www.nzhops.co.nz",
+      "title": null,
+      "publisher": "New Zealand Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "pacific-jade",
+        "nectaron",
+        "green-bullet",
+        "kohatu"
       ]
     },
     {
@@ -4446,681 +4380,6 @@
     },
     {
       "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/cascade.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "cascade"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/centennial.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "centennial"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/citra.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "citra"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/mosaic.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "mosaic"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/simcoe.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "simcoe"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/amarillo.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "amarillo"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/chinook.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "chinook"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/columbus.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "columbus"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/willamette.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "willamette"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/sabro.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "sabro"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/strata.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "strata"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/idaho-7.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "idaho-7"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/el-dorado.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "el-dorado"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/azacca.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "azacca"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/talus.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "talus"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/loral.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "loral"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/ekuanot.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "ekuanot"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/magnum.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "magnum-us"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/warrior.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "warrior"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/nugget.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "nugget"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/galena.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "galena"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/crystal.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "crystal"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/mt-hood.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "mount-hood"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/cluster.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "cluster"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/comet.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "comet"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/cashmere.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "cashmere"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/northern-brewer.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "northern-brewer-us"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.yakimachief.com/commercial/products/cryo-hops.html",
       "host": "www.yakimachief.com",
       "title": null,
@@ -5142,31 +4401,6 @@
       ],
       "exampleRecords": [
         "cryo-note"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/summit.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "summit"
       ]
     },
     {
@@ -5196,131 +4430,6 @@
     },
     {
       "id": null,
-      "url": "https://charlesfaram.com/hop/fuggle/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "fuggle"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/challenger/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "challenger"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/target/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "target"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/bramling-cross/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "bramling-cross"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/first-gold/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "first-gold"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://charlesfaram.com/hop/jester/",
       "host": "charlesfaram.com",
       "title": null,
@@ -5346,16 +4455,16 @@
     },
     {
       "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/sorachi-ace.html",
-      "host": "www.yakimachief.com",
+      "url": "https://www.czhops.cz/",
+      "host": "www.czhops.cz",
       "title": null,
-      "publisher": "Yakima Chief Hops",
+      "publisher": "Czech Hops (Hop Research Institute Žatec)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": true,
+      "deepLink": false,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
@@ -5366,157 +4475,7 @@
         "data/hops/world.json"
       ],
       "exampleRecords": [
-        "sorachi-ace"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/northdown/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "northdown"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/progress/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "progress"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/sterling.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "saaz-us"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/hop-varieties/liberty.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "liberty"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/admiral/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "sussex"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://charlesfaram.com/hop/endeavour/",
-      "host": "charlesfaram.com",
-      "title": null,
-      "publisher": "Charles Faram",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "endeavour"
+        "sladek"
       ]
     },
     {

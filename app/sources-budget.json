@@ -1,5 +1,5 @@
 {
-  "numericOnShallowLink": 339,
+  "numericOnShallowLink": 294,
   "note": "Ratchet baseline for numeric claims citing a publisher homepage rather than a specific document. May only ever be lowered. Lower it by replacing homepage citations with deep links to the datasheet, standard or record the figure actually came from. validate-sources.mjs lowers this automatically whenever the count improves, so the ratchet cannot be forgotten.",
   "updated": "2026-08-07"
 }

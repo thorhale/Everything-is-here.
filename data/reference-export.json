@@ -14644,8 +14644,8 @@
    "breeder": "USDA/Oregon State",
    "yearReleased": 1972,
    "description": "The hop that defined American craft brewing. Sierra Nevada Pale Ale made its grapefruit-and-flowers signature the reference point for the whole American ale category.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/cascade.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "centennial",
@@ -14681,8 +14681,8 @@
    ],
    "yearReleased": 1990,
    "description": "Cleaner and more intense than Cascade, with pronounced lemon-citrus. The backbone of Two Hearted Ale.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/centennial.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "citra",
@@ -14722,8 +14722,8 @@
    "yearReleased": 2008,
    "description": "The single most influential modern aroma hop; enormous tropical and citrus intensity. Its low cohumulone also makes it surprisingly smooth as a bittering charge.",
    "usageNotes": "A thiol-rich variety — pairs exceptionally with thiolized yeast strains for amplified tropical character.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/citra.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "mosaic",
@@ -14760,8 +14760,8 @@
    "breeder": "Hop Breeding Company",
    "yearReleased": 2012,
    "description": "A Simcoe daughter with remarkable complexity — berry and tropical fruit over a resinous base. Notoriously variable lot to lot.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/mosaic.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "simcoe",
@@ -14795,8 +14795,8 @@
    ],
    "yearReleased": 2000,
    "description": "Distinctive pine-and-passionfruit character with unusually low cohumulone, giving a smooth bitterness despite high alpha.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/simcoe.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "amarillo",
@@ -14829,8 +14829,8 @@
     "hazy"
    ],
    "description": "A chance farm discovery (Virgil Gamache Farms) with a pronounced orange-citrus character distinct from Cascade's grapefruit.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/amarillo.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "chinook",
@@ -14864,8 +14864,8 @@
    ],
    "yearReleased": 1985,
    "description": "Assertive pine-and-grapefruit resin; a West Coast IPA staple both for bittering and for late additions.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/chinook.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "columbus",
@@ -14903,8 +14903,8 @@
     "dank"
    ],
    "description": "High-alpha workhorse sold interchangeably as CTZ. Pungent, dank, and resinous — the source of much classic 'dank' IPA character.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/columbus.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "willamette",
@@ -14939,8 +14939,8 @@
    ],
    "yearReleased": 1976,
    "description": "American Fuggle derivative; gentle, earthy and floral. The traditional choice for English-leaning American ales.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/willamette.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "sabro",
@@ -14973,8 +14973,8 @@
    "breeder": "Hop Breeding Company",
    "yearReleased": 2018,
    "description": "A neomexicanus-derived variety with an unmistakable coconut-and-citrus profile unlike anything else in the US portfolio.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/sabro.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "strata",
@@ -15007,8 +15007,8 @@
    "breeder": "Indie Hops / Oregon State",
    "yearReleased": 2018,
    "description": "Combines bright tropical fruit with a distinctly dank, cannabis-like undertone.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/strata.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "idaho-7",
@@ -15036,8 +15036,8 @@
     "ipa"
    ],
    "description": "Big-oil variety with an unusual black-tea and stone-fruit complexity alongside tropical notes.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/idaho-7.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "el-dorado",
@@ -15067,8 +15067,8 @@
     "ipa"
    ],
    "description": "Sweet, candy-like fruit character — watermelon and pear drops — with high alpha for dual duty.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/el-dorado.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "azacca",
@@ -15099,8 +15099,8 @@
    ],
    "yearReleased": 2014,
    "description": "Named for the Haitian god of agriculture; bold tropical fruit with a piney backbone.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/azacca.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "talus",
@@ -15131,8 +15131,8 @@
    "breeder": "Hop Breeding Company",
    "yearReleased": 2020,
    "description": "A Sabro daughter with a savoury, floral-citrus profile — grapefruit rind, rose, and sage.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/talus.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "loral",
@@ -15165,8 +15165,8 @@
    ],
    "yearReleased": 2016,
    "description": "Bred as a modern 'noble' hop — floral and herbal like a continental variety but with American intensity and agronomics.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/loral.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "ekuanot",
@@ -15199,8 +15199,8 @@
     "hazy"
    ],
    "description": "Melon-forward tropical hop with a distinctive vegetal green-pepper edge in some lots.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/ekuanot.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "magnum-us",
@@ -15230,8 +15230,8 @@
     "clean"
    ],
    "description": "The reference clean bittering hop — high alpha, low cohumulone, minimal aroma contribution.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/magnum.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "warrior",
@@ -15260,8 +15260,8 @@
     "ipa"
    ],
    "description": "Smooth, clean high-alpha bittering hop favoured when you want IBUs without flavour interference.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/warrior.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "nugget",
@@ -15291,8 +15291,8 @@
     "ipa"
    ],
    "description": "Herbal, resinous bittering hop with more character than Magnum or Warrior.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/nugget.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "galena",
@@ -15322,8 +15322,8 @@
     "stout"
    ],
    "description": "Long-standing American bittering variety with a blackcurrant edge.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/galena.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "crystal",
@@ -15355,8 +15355,8 @@
     "noble-adjacent"
    ],
    "description": "American triploid Hallertau descendant; gentle, spicy, noble-like character.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/crystal.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "mount-hood",
@@ -15386,8 +15386,8 @@
     "noble-adjacent"
    ],
    "description": "Hallertau-derived American aroma hop for continental-style lagers.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/mt-hood.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "cluster",
@@ -15418,8 +15418,8 @@
     "amber"
    ],
    "description": "The oldest American hop lineage — the dominant US variety for most of the 19th and 20th centuries before craft aroma hops took over.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/cluster.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "comet",
@@ -15449,8 +15449,8 @@
     "pale-ale"
    ],
    "description": "A revived 1970s variety known for an intense 'wild American' grapefruit-and-grass character.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/comet.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "cashmere",
@@ -15481,8 +15481,8 @@
     "hazy"
    ],
    "description": "A Cascade-Northern Brewer cross with a smooth citrus-melon profile and low cohumulone.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/cashmere.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "northern-brewer-us",
@@ -15513,8 +15513,8 @@
     "altbier"
    ],
    "description": "Minty, woody dual-purpose hop; the defining hop of California Common (steam beer).",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/northern-brewer.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "zappa",
@@ -15542,8 +15542,8 @@
     "ipa"
    ],
    "description": "A rare true neomexicanus (native American wild hop) variety; minty, spicy, and tropical all at once.",
-   "sourceUrl": "https://www.yakimachief.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "cryo-note",
@@ -15595,8 +15595,8 @@
     "dank"
    ],
    "description": "Very high-alpha dwarf variety; citrus with a notorious onion/garlic note in some lots.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/summit.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "contessa",
@@ -15624,8 +15624,8 @@
     "hazy"
    ],
    "description": "A softer, floral-fruity American variety suited to lager and delicate late additions.",
-   "sourceUrl": "https://www.yakimachief.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "triumph",
@@ -15653,8 +15653,8 @@
     "pale-ale"
    ],
    "description": "An Oregon State release with a berry-and-tea complexity over a citrus base.",
-   "sourceUrl": "https://www.yakimachief.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "palisade",
@@ -15684,8 +15684,8 @@
     "english"
    ],
    "description": "Mild apricot-and-grass aroma hop; a gentler option for balanced ales.",
-   "sourceUrl": "https://www.yakimachief.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical sheets (Yakima Chief Hops, Hopsteiner, YCH/Select Botanicals, John I. Haas). Alpha acid varies by crop year and lot — always brew to the analysis on the bag."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "east-kent-goldings",
@@ -15758,8 +15758,8 @@
    ],
    "yearReleased": 1875,
    "description": "The other great English hop — earthier and more rustic than Goldings. Parent of Willamette and Styrian Goldings.",
-   "sourceUrl": "https://charlesfaram.com/hop/fuggle/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "challenger",
@@ -15790,8 +15790,8 @@
     "porter"
    ],
    "description": "Versatile English dual-purpose hop; cedar and spice with clean bitterness.",
-   "sourceUrl": "https://charlesfaram.com/hop/challenger/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "target",
@@ -15822,8 +15822,8 @@
     "bitter"
    ],
    "description": "High-alpha English bittering hop with a distinctive sage and marmalade character.",
-   "sourceUrl": "https://charlesfaram.com/hop/target/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "bramling-cross",
@@ -15852,8 +15852,8 @@
     "bitter"
    ],
    "description": "Unmistakable blackcurrant and lemon; a Goldings cross with wild Manitoban parentage.",
-   "sourceUrl": "https://charlesfaram.com/hop/bramling-cross/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "first-gold",
@@ -15884,8 +15884,8 @@
     "golden-ale"
    ],
    "description": "Dwarf Goldings variant with a marmalade-like citrus character.",
-   "sourceUrl": "https://charlesfaram.com/hop/first-gold/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "jester",
@@ -15983,8 +15983,8 @@
     "noble"
    ],
    "description": "Noble variety from the Lake Constance region; slightly spicier than Hallertau.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "spalt",
@@ -16047,8 +16047,8 @@
     "noble"
    ],
    "description": "Gentle floral German aroma hop, common in wheat beers and lagers.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "perle",
@@ -16079,8 +16079,8 @@
     "kolsch"
    ],
    "description": "Clean German dual-purpose hop with a minty-spicy edge.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "magnum-de",
@@ -16109,8 +16109,8 @@
     "clean"
    ],
    "description": "Germany's standard clean high-alpha bittering hop; contributes bitterness with essentially no aroma.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "herkules",
@@ -16139,8 +16139,8 @@
     "lager"
    ],
    "description": "Very high-alpha German bittering variety, now widely grown for efficiency.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "saphir",
@@ -16170,8 +16170,8 @@
     "pilsner"
    ],
    "description": "Modern German aroma hop with a bright tangerine-citrus lift over a noble base.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "hallertau-blanc",
@@ -16202,8 +16202,8 @@
     "modern-german"
    ],
    "description": "Part of Germany's 'Flavor Hop' program — an answer to Nelson Sauvin with distinct white-wine character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "huell-melon",
@@ -16263,8 +16263,8 @@
     "modern-german"
    ],
    "description": "Cascade-derived German variety with a pronounced tangerine character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "saaz",
@@ -16302,8 +16302,8 @@
     "noble"
    ],
    "description": "The defining hop of Bohemian pilsner — delicate, spicy, and earthy, with very low alpha. Pilsner Urquell's signature.",
-   "sourceUrl": "https://www.czhops.cz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "sladek",
@@ -16363,8 +16363,8 @@
     "saison"
    ],
    "description": "Czech variety with wild Russian parentage; citrus lift over a noble backbone.",
-   "sourceUrl": "https://www.czhops.cz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "lubelski",
@@ -16398,8 +16398,8 @@
     "noble"
    ],
    "description": "Poland's noble-type aroma hop, closely related to Saaz.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "styrian-goldings",
@@ -16467,8 +16467,8 @@
    ],
    "description": "Named for its uncanny resemblance to Sauvignon Blanc — gooseberry and crushed-grape character unlike any other hop.",
    "usageNotes": "Polarising and powerful; easy to overdo.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "motueka",
@@ -16499,8 +16499,8 @@
     "ipa"
    ],
    "description": "Saaz-derived NZ hop with a vivid fresh-lime character.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "riwaka",
@@ -16530,8 +16530,8 @@
     "hazy"
    ],
    "description": "Intensely aromatic Saaz-derived NZ hop; grapefruit and passionfruit. Chronically scarce.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "pacific-jade",
@@ -16589,8 +16589,8 @@
     "lager"
    ],
    "description": "Low-alpha NZ aroma hop with delicate peach and citrus.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "nectaron",
@@ -16652,8 +16652,8 @@
     "pale-ale"
    ],
    "description": "Australia's flagship hop and one of the highest oil-content varieties grown; overwhelming passionfruit and peach.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "vic-secret",
@@ -16683,8 +16683,8 @@
     "hazy"
    ],
    "description": "Clean, potent tropical-and-pine Australian variety.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "ella",
@@ -16714,8 +16714,8 @@
     "belgian"
    ],
    "description": "Aromatic Australian hop; floral and spicy at low rates, tropical when pushed.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "enigma",
@@ -16743,8 +16743,8 @@
     "hazy"
    ],
    "description": "Distinctive berry and white-wine character; a Tasmanian breeding release.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "topaz",
@@ -16773,8 +16773,8 @@
     "bittering"
    ],
    "description": "High-alpha Australian hop; clean bittering with a grassy-tropical aroma.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "pride-of-ringwood",
@@ -16803,8 +16803,8 @@
     "historical"
    ],
    "description": "For decades the dominant Australian bittering hop, and the signature of classic Australian lager.",
-   "sourceUrl": "https://www.hops.com.au/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "sorachi-ace",
@@ -16836,8 +16836,8 @@
    "breeder": "Sapporo Breweries",
    "yearReleased": 1984,
    "description": "Bred by Sapporo; an unmistakable lemon-dill-coconut profile that people either love or find soapy.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/sorachi-ace.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "strisselspalt",
@@ -16869,8 +16869,8 @@
     "noble"
    ],
    "description": "Alsatian noble-type aroma hop; delicate, floral, and slightly fruity.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "barbe-rouge",
@@ -16897,8 +16897,8 @@
     "pale-ale"
    ],
    "description": "French variety with a distinctive red-fruit character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "southern-passion",
@@ -16926,8 +16926,8 @@
     "hazy"
    ],
    "description": "South African variety bred for the short-daylight Cape climate; intense passionfruit and guava.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "african-queen",
@@ -16955,8 +16955,8 @@
     "hazy"
    ],
    "description": "Dark-fruit and tropical South African hop with a dank undertone.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "northdown",
@@ -16987,8 +16987,8 @@
     "porter"
    ],
    "description": "Well-rounded English dual-purpose hop; a refined Northern Brewer descendant good for bittering and late additions alike.",
-   "sourceUrl": "https://charlesfaram.com/hop/northdown/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "progress",
@@ -17018,8 +17018,8 @@
     "mild"
    ],
    "description": "A gentle Fuggle-replacement aroma hop; soft, earthy, and honeyed.",
-   "sourceUrl": "https://charlesfaram.com/hop/progress/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "callista",
@@ -17048,8 +17048,8 @@
     "wheat"
    ],
    "description": "Low-alpha German flavour hop with a bright fruity-white-wine aroma for late and dry hopping.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "akoya",
@@ -17078,8 +17078,8 @@
     "lager"
    ],
    "description": "Modern French aroma variety with a floral-citrus and subtle anise character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "dr-rudi",
@@ -17112,8 +17112,8 @@
     "ipa"
    ],
    "description": "New Zealand's clean bittering standard, with a resinous pine-and-citrus edge when used late.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "wakatu",
@@ -17146,8 +17146,8 @@
     "pale-ale"
    ],
    "description": "A NZ Hallertau cross with a soft lime-and-floral character; versatile late hop.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "green-bullet",
@@ -17210,8 +17210,8 @@
     "wheat"
    ],
    "description": "Disease-resistant noble-type replacement for Mittelfrüh; clean, floral, herbal.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "polaris",
@@ -17241,8 +17241,8 @@
     "bittering"
    ],
    "description": "Extremely high alpha and oil with a unique icy mint/menthol aroma — a little goes a very long way.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "styrian-wolf",
@@ -17271,8 +17271,8 @@
     "modern"
    ],
    "description": "Modern Slovenian aroma hop with bright grapefruit and white-wine notes.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "bobek",
@@ -17306,8 +17306,8 @@
     "english"
    ],
    "description": "Slovenian Goldings-type with a lifted floral-citrus character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "cascade-argentina",
@@ -17335,8 +17335,8 @@
     "ipa"
    ],
    "description": "Patagonian-grown Cascade; the mainstay of Argentina's large craft scene, a touch softer than US Cascade.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "kohatu",
@@ -17395,8 +17395,8 @@
     "noble-adjacent"
    ],
    "description": "An American Saaz descendant with noble spice plus a citrus lift; a practical domestic substitute for Czech Saaz.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/sterling.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "liberty",
@@ -17428,8 +17428,8 @@
     "noble-adjacent"
    ],
    "description": "American Hallertau descendant; the closest domestic match to German noble character.",
-   "sourceUrl": "https://www.yakimachief.com/commercial/hop-varieties/liberty.html",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "tettnang-us",
@@ -17460,8 +17460,8 @@
     "noble-adjacent"
    ],
    "description": "American-grown Tettnanger; slightly earthier than the German original but a serviceable stand-in.",
-   "sourceUrl": "https://www.yakimachief.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "hallertau-taurus",
@@ -17490,8 +17490,8 @@
     "lager"
    ],
    "description": "High-alpha German bittering hop with unusually low cohumulone for its strength — smooth bitterness.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "opal",
@@ -17522,8 +17522,8 @@
     "lager"
    ],
    "description": "German aroma variety with a distinctive aniseed-and-spice note; very low cohumulone.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "sussex",
@@ -17553,8 +17553,8 @@
     "bitter"
    ],
    "description": "High-alpha English bittering hop bred to replace Target; clean and efficient with a marmalade edge.",
-   "sourceUrl": "https://charlesfaram.com/hop/admiral/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "endeavour",
@@ -17582,8 +17582,8 @@
     "ipa"
    ],
    "description": "Modern British variety with soft red-berry fruit; a Cascade-adjacent option grown in Kent.",
-   "sourceUrl": "https://charlesfaram.com/hop/endeavour/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "olicana",
@@ -17671,8 +17671,8 @@
     "lager"
    ],
    "description": "Polish high-alpha bittering variety, resinous and herbal.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "premiant",
@@ -17702,8 +17702,8 @@
     "pilsner"
    ],
    "description": "Czech dual-purpose hop with low cohumulone; refined bitterness with Saaz-like aroma.",
-   "sourceUrl": "https://www.czhops.cz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "aurora",
@@ -17737,8 +17737,8 @@
     "lager"
    ],
    "description": "Slovenian dual-purpose hop; more assertive than Styrian Goldings while keeping its character.",
-   "sourceUrl": "https://www.barthhaas.com/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   },
   {
    "id": "cascade-nz",
@@ -17764,8 +17764,8 @@
     "ipa"
    ],
    "description": "New Zealand-grown Cascade; softer and more floral than the US original thanks to the different growing climate.",
-   "sourceUrl": "https://www.nzhops.co.nz/",
-   "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis."
+   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
   }
  ],
  "waterProfiles": [
