@@ -16,9 +16,11 @@
 //   maltster — but a homepage is not a traceable citation, and I cannot
 //   re-source several hundred rows in one pass without pretending to a
 //   thoroughness I have not applied. So the count is committed to
-//   sources-budget.json and this script fails if it goes UP. The debt can only
-//   shrink. That is a ratchet, not an excuse: it makes the number visible in
-//   CI, and every future dataset change has to hold the line or improve it.
+//   sources-budget.json and this script fails if it goes UP, and rewrites the
+//   file downward the moment it goes DOWN. The debt can only shrink, and it
+//   shrinks without anyone remembering to record it. That is a ratchet, not an
+//   excuse: the number is visible in CI and every dataset change must hold the
+//   line or improve it.
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
@@ -100,7 +102,7 @@ if (shallowNumeric > budget.numericOnShallowLink) {
   failed = true;
   console.error(`  REGRESSED by ${shallowNumeric - budget.numericOnShallowLink}. New numeric data must cite a specific document.`);
 } else if (shallowNumeric < budget.numericOnShallowLink) {
-  console.log(`  improved by ${budget.numericOnShallowLink - shallowNumeric} — run with --update-budget to ratchet down.`);
+  console.log(`  improved by ${budget.numericOnShallowLink - shallowNumeric} — ratcheting the budget down to match.`);
 } else {
   console.log("  holding at budget.");
 }
@@ -111,7 +113,20 @@ for (const s of worstOffenders) {
 }
 console.log("");
 
-if (process.argv.includes("--update-budget") && !hard.length && shallowNumeric <= budget.numericOnShallowLink) {
+// The ratchet closes itself. An improvement that has to be committed by hand is
+// an improvement that gets forgotten, and the debt then drifts back up to
+// whatever the stale ceiling still allows. So a genuine improvement rewrites the
+// budget on the spot: the number can only ever fall, and a later regression
+// fails against the better figure rather than the old one. --no-update-budget
+// opts out when a purely read-only check is wanted (CI on a pull request, say).
+const improved = shallowNumeric < budget.numericOnShallowLink;
+const mayUpdate =
+  !hard.length &&
+  shallowNumeric <= budget.numericOnShallowLink &&
+  !process.argv.includes("--no-update-budget") &&
+  (improved || process.argv.includes("--update-budget"));
+
+if (mayUpdate) {
   writeFileSync(
     BUDGET,
     JSON.stringify(
@@ -120,7 +135,8 @@ if (process.argv.includes("--update-budget") && !hard.length && shallowNumeric <
         note:
           "Ratchet baseline for numeric claims citing a publisher homepage rather than a specific document. " +
           "May only ever be lowered. Lower it by replacing homepage citations with deep links to the datasheet, " +
-          "standard or record the figure actually came from, then re-running with --update-budget.",
+          "standard or record the figure actually came from. validate-sources.mjs lowers this " +
+          "automatically whenever the count improves, so the ratchet cannot be forgotten.",
         updated: new Date().toISOString().slice(0, 10),
       },
       null,

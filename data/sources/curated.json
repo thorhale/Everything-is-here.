@@ -52,6 +52,13 @@
    "note": "German brewing trade journal. Cited here for its own review of Dornbusch's Lexikon (BRAUWELT 39-40, 2017, p. 1176), which is what establishes that book's authorship and scope."
   },
   {
+   "host": "brewingwithbriess.com",
+   "name": "Briess Malt & Ingredients Co.",
+   "kind": "vendor-tds",
+   "reliability": "primary",
+   "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from."
+  },
+  {
    "host": "cdn.brewersassociation.org",
    "name": "Brewers Association",
    "kind": "guideline-publisher",

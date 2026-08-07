@@ -11,11 +11,11 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 283,
+    "distinctSources": 295,
     "backgroundDocuments": 7,
     "citations": 760,
     "numericCitations": 645,
-    "numericOnShallowLink": 347,
+    "numericOnShallowLink": 339,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
     "backgroundFullTextVerified": 4,
@@ -360,41 +360,6 @@
       ]
     },
     {
-      "id": null,
-      "url": "https://www.briess.com/",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 10,
-      "numericCitations": 10,
-      "usedIn": [
-        "data/fermentables/adjunct-grains.json",
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "adjunct-flaked-maize",
-        "adjunct-flaked-rice",
-        "adjunct-flaked-oats",
-        "adjunct-flaked-barley",
-        "adjunct-flaked-wheat",
-        "adjunct-rice-hulls",
-        "sugar-lactose",
-        "sugar-maltodextrin",
-        "extract-dme-light",
-        "extract-lme-light"
-      ]
-    },
-    {
       "id": "maltose-falcons-sour-wild",
       "url": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales",
       "host": "www.maltosefalcons.com",
@@ -609,34 +574,6 @@
         "cereal-corn-flakes",
         "cereal-rice-krispies",
         "cereal-frosted-flakes"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.briess.com/malt/caramel-malt",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-crystal-20",
-        "malt-crystal-40",
-        "malt-crystal-60",
-        "malt-crystal-120"
       ]
     },
     {
@@ -940,32 +877,6 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/brewers-malt",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-2row-pale",
-        "malt-6row-pale"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.dingemansmout.be/",
       "host": "www.dingemansmout.be",
       "title": null,
@@ -1066,6 +977,32 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-lactose",
+        "sugar-maltodextrin"
       ]
     },
     {
@@ -1980,6 +1917,156 @@
     },
     {
       "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Yellow-Corn-Flakes-NonGMO.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-maize"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Brown-Rice-Flakes.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-rice"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Oat-Flakes.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-oats"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Barley-Flakes.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-barley"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Red-Wheat-Flakes.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-flaked-wheat"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Rice-Hulls.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-hulls"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.quakeroats.com/",
       "host": "www.quakeroats.com",
       "title": null,
@@ -2001,6 +2088,56 @@
       ],
       "exampleRecords": [
         "cereal-capn-crunch"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Malt.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-2row-pale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/malt/brewers-malt",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-6row-pale"
       ]
     },
     {
@@ -2280,20 +2417,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/carapils-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Carapils-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2301,6 +2438,106 @@
       ],
       "exampleRecords": [
         "malt-carapils"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-20L.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-20"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-40L.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-40"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-60L.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-60"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-120L.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-120"
       ]
     },
     {
@@ -2330,20 +2567,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/victory-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2380,20 +2617,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/chocolate-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Chocolate-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2405,20 +2642,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/black-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Black-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2430,20 +2667,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/roasted-barley",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Roasted-Barley.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2680,20 +2917,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/cherrywood-smoked-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Smoked-Malt-Cherry-Wood.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2730,20 +2967,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/midnight-wheat-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Midnight-Wheat-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2755,20 +2992,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/extra-special-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Extra-Special-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2980,20 +3217,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/bonlander-munich-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Bonlander-Munich-Malt-10L.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -3005,20 +3242,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/special-roast-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Special-Roast-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -3030,20 +3267,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/blackprinz-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Blackprinz-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -3055,20 +3292,20 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/vienna-malt",
-      "host": "www.briess.com",
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Goldpils-Vienna-Malt.pdf",
+      "host": "brewingwithbriess.com",
       "title": null,
-      "publisher": "Briess Malt & Ingredients",
+      "publisher": "Briess Malt & Ingredients Co.",
       "authors": null,
       "year": null,
-      "kind": "vendor-datasheet",
+      "kind": "vendor-tds",
       "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -3126,6 +3363,56 @@
       ],
       "exampleRecords": [
         "malt-emmer"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-DME.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "extract-dme-light"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-LME.pdf",
+      "host": "brewingwithbriess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cited for Briess Product Information & Specification Bulletin PDFs — the maltster's own typical analysis, carrying extract on a dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Preferred over the product pages: briess.com/malt/<slug> is entirely 404 and brewingwithbriess.com/product/<slug>/ 301s to the catalogue, while the PISB PDFs are the document the numbers actually come from.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "extract-lme-light"
       ]
     },
     {

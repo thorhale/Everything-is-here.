@@ -1,73 +1,1569 @@
 {
-  "set": "malts",
-  "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag.",
-  "fermentables": [
-    {"id":"malt-2row-pale","name":"2-Row Pale Malt","aliases":["2-row","Two-row Brewers Malt"],"brand":null,"category":"base-malt","type":"grain","origin":"United States","ppg":37,"colorLovibond":1.8,"diastaticPowerLintner":140,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer","whiskey"],"styleTags":["american","clean","base"],"description":"The default American base malt. Clean, mildly sweet, plenty of diastatic power to convert itself and a load of adjuncts.","sourceUrl":"https://www.briess.com/malt/brewers-malt"},
-    {"id":"malt-6row-pale","name":"6-Row Pale Malt","brand":null,"category":"base-malt","type":"grain","origin":"United States","ppg":35,"colorLovibond":1.8,"diastaticPowerLintner":160,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer","whiskey"],"styleTags":["american","adjunct-friendly","base"],"description":"Higher protein and higher diastatic power than 2-row, lower extract. The classic choice when a grist carries a lot of corn or rice.","usageNotes":"Its enzyme surplus is why American adjunct lagers use it.","sourceUrl":"https://www.briess.com/malt/brewers-malt"},
-    {"id":"malt-maris-otter","name":"Maris Otter","brand":"Crisp","category":"base-malt","type":"grain","origin":"United Kingdom","ppg":38,"colorLovibond":3,"diastaticPowerLintner":120,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["english","bitter","malty","base"],"description":"The benchmark English floor-malted base; rich, biscuity, bready depth that plain pale malt lacks.","flavorNotes":"Biscuit, nutty, gentle toast.","sourceUrl":"https://crispmalt.com/malts/finest-maris-otter-ale-malt/"},
-    {"id":"malt-golden-promise","name":"Golden Promise","brand":"Simpsons","category":"base-malt","type":"grain","origin":"United Kingdom","ppg":37,"colorLovibond":2.5,"diastaticPowerLintner":120,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer","whiskey"],"styleTags":["scottish","english","base"],"description":"Scottish base malt, softer and cleaner than Maris Otter. A staple of Scotch whisky distilling as well as brewing.","sourceUrl":"https://www.simpsonsmalt.co.uk/our-malts/golden-promise/"},
-    {"id":"malt-pilsner","name":"Pilsner Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":1.6,"diastaticPowerLintner":110,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["lager","pilsner","german","base"],"description":"Continental lager base malt, kilned very lightly for a pale, delicate, honeyed malt character.","usageNotes":"High in SMM/DMS precursors — give it a vigorous 90-minute boil.","sourceUrl":"https://www.weyermann.de/en/pilsner-malt/"},
-    {"id":"malt-vienna","name":"Vienna Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":36,"colorLovibond":3.5,"diastaticPowerLintner":70,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["vienna","marzen","amber","base"],"description":"Lightly toasted base malt bridging Pilsner and Munich; golden colour with a soft toasty sweetness.","sourceUrl":"https://www.weyermann.de/en/vienna-malt/"},
-    {"id":"malt-munich-light","name":"Munich Malt (Light)","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":36,"colorLovibond":8,"diastaticPowerLintner":50,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["munich","malty","oktoberfest","base"],"description":"Malt-forward base with enough enzyme to convert itself; the backbone of Märzen, bock, and dunkel.","flavorNotes":"Bread crust, toffee, deep malt.","sourceUrl":"https://www.weyermann.de/en/munich-malt-type-1/"},
-    {"id":"malt-munich-dark","name":"Munich Malt (Dark)","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":35,"colorLovibond":18,"diastaticPowerLintner":40,"maxBatchPct":60,"ppgBasis":"maltster","uses":["beer"],"styleTags":["munich","malty","dunkel"],"description":"Darker, richer Munich; intense malty depth with marginal enzyme reserve.","sourceUrl":"https://www.weyermann.de/en/munich-malt-type-2/"},
-    {"id":"malt-pale-ale","name":"Pale Ale Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":38,"colorLovibond":3,"diastaticPowerLintner":100,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["pale-ale","ipa","base"],"description":"Slightly darker, fuller-bodied kilned base malt for ales.","sourceUrl":"https://www.weyermann.de/en/pale-ale-malt/"},
-    {"id":"malt-wheat-pale","name":"Pale Wheat Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":38,"colorLovibond":2,"diastaticPowerLintner":150,"maxBatchPct":70,"ppgBasis":"maltster","uses":["beer"],"styleTags":["wheat","weizen","witbier","head-retention"],"description":"Malted wheat: boosts body, head retention, and haze. The base of German weissbier at 50–70% of the grist.","usageNotes":"Huskless — pair with rice hulls or barley malt to avoid a stuck sparge.","sourceUrl":"https://www.weyermann.de/en/pale-wheat-malt/"},
-    {"id":"malt-wheat-dark","name":"Dark Wheat Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":7,"diastaticPowerLintner":100,"maxBatchPct":60,"ppgBasis":"maltster","uses":["beer"],"styleTags":["wheat","dunkelweizen"],"description":"Kilned darker for dunkelweizen depth while keeping wheat's protein and head retention.","sourceUrl":"https://www.weyermann.de/en/dark-wheat-malt/"},
-    {"id":"malt-rye","name":"Rye Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":36,"colorLovibond":3.5,"diastaticPowerLintner":75,"maxBatchPct":50,"ppgBasis":"maltster","uses":["beer","whiskey"],"styleTags":["rye","roggenbier","spicy"],"description":"Malted rye — dry, peppery, spicy, with a silky mouthfeel. Also a whiskey mash staple.","usageNotes":"Very gummy (beta-glucans); rice hulls strongly recommended above ~20%.","sourceUrl":"https://www.weyermann.de/en/rye-malt/"},
-    {"id":"malt-acidulated","name":"Acidulated Malt","aliases":["Sauermalz","Acid Malt"],"brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":27,"colorLovibond":3,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["ph-adjust","pilsner"],"description":"Malt coated in lactic acid from a natural souring step; used to drop mash pH without mineral additions. Roughly 1% of the grist lowers pH by ~0.1.","sourceUrl":"https://www.weyermann.de/en/acidulated-malt/"},
-    {"id":"malt-carapils","name":"Carapils / Dextrine Malt","aliases":["Carafoam","Dextrin Malt"],"brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":33,"colorLovibond":1.5,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["body","head-retention"],"description":"Adds unfermentable dextrins for body and head retention with essentially no colour or flavour.","sourceUrl":"https://www.briess.com/malt/carapils-malt"},
-    {"id":"malt-crystal-20","name":"Crystal Malt 20L","aliases":["Caramel 20"],"brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":35,"colorLovibond":20,"maxBatchPct":20,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","caramel","light"],"description":"Light caramel malt; mild sweetness and golden colour without heaviness.","sourceUrl":"https://www.briess.com/malt/caramel-malt"},
-    {"id":"malt-crystal-40","name":"Crystal Malt 40L","aliases":["Caramel 40"],"brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":34,"colorLovibond":40,"maxBatchPct":20,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","caramel","amber","pale-ale"],"description":"The workhorse caramel malt — toffee sweetness and amber colour in pale ales and ambers.","flavorNotes":"Toffee, light caramel.","sourceUrl":"https://www.briess.com/malt/caramel-malt"},
-    {"id":"malt-crystal-60","name":"Crystal Malt 60L","aliases":["Caramel 60"],"brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":34,"colorLovibond":60,"maxBatchPct":20,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","caramel","amber","bitter"],"description":"Deeper caramel with a hint of raisin; standard in ambers, bitters, and porters.","sourceUrl":"https://www.briess.com/malt/caramel-malt"},
-    {"id":"malt-crystal-120","name":"Crystal Malt 120L","aliases":["Caramel 120"],"brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":33,"colorLovibond":120,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","raisin","dark"],"description":"Dark crystal — raisin, burnt sugar, and dried fruit. Heavy-handed above ~5% of the grist.","sourceUrl":"https://www.briess.com/malt/caramel-malt"},
-    {"id":"malt-special-b","name":"Special B","brand":"Castle Malting","category":"specialty-malt","type":"grain","origin":"Belgium","ppg":30,"colorLovibond":180,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["belgian","dubbel","raisin","dark"],"description":"The most intense Belgian caramel malt; unmistakable dark raisin and plum. A signature of dubbels.","flavorNotes":"Raisin, prune, dark toffee.","sourceUrl":"https://www.castlemalting.com/"},
-    {"id":"malt-melanoidin","name":"Melanoidin Malt","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":28,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["malty","red","bock"],"description":"Intensifies malt aroma and red hues, mimicking the effect of decoction mashing.","sourceUrl":"https://www.weyermann.de/en/melanoidin-malt/"},
-    {"id":"malt-biscuit","name":"Biscuit Malt","brand":"Dingemans","category":"specialty-malt","type":"grain","origin":"Belgium","ppg":35,"colorLovibond":23,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["toasty","biscuit"],"description":"Lightly roasted for warm bread-crust and biscuit character.","sourceUrl":"https://www.dingemansmout.be/"},
-    {"id":"malt-victory","name":"Victory Malt","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":34,"colorLovibond":28,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["toasty","nutty"],"description":"Toasted malt with a nutty, biscuity bite.","sourceUrl":"https://www.briess.com/malt/victory-malt"},
-    {"id":"malt-aromatic","name":"Aromatic Malt","brand":"Dingemans","category":"specialty-malt","type":"grain","origin":"Belgium","ppg":33,"colorLovibond":26,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["malty","belgian"],"description":"Very malt-aromatic, boosts malt intensity in Belgian and malty styles.","sourceUrl":"https://www.dingemansmout.be/"},
-    {"id":"malt-honey","name":"Honey Malt","brand":"Gambrinus","category":"specialty-malt","type":"grain","origin":"Canada","ppg":37,"colorLovibond":25,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["sweet","honey"],"description":"Intensely sweet, honeyed malt with no actual honey; a little goes a long way.","sourceUrl":"https://gambrinusmalting.com/"},
-    {"id":"malt-chocolate","name":"Chocolate Malt","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":28,"colorLovibond":350,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","porter","stout","chocolate"],"description":"Roasted to a smooth cocoa and coffee character; the colour backbone of porters.","flavorNotes":"Cocoa, coffee, light roast bitterness.","sourceUrl":"https://www.briess.com/malt/chocolate-malt"},
-    {"id":"malt-black-patent","name":"Black Patent Malt","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":25,"colorLovibond":500,"maxBatchPct":5,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","black","stout"],"description":"Maximum colour with a sharp, acrid roast. Use sparingly for colour correction or dry-stout bite.","sourceUrl":"https://www.briess.com/malt/black-malt"},
-    {"id":"malt-roasted-barley","name":"Roasted Barley","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":25,"colorLovibond":300,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","irish-stout","dry-stout","coffee"],"description":"Unmalted barley roasted dark — the defining sharp, coffee-like dryness of Irish dry stout.","flavorNotes":"Espresso, dry roast, faint acidity.","sourceUrl":"https://www.briess.com/malt/roasted-barley"},
-    {"id":"malt-carafa-ii","name":"Carafa Special Type II","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":30,"colorLovibond":415,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","dehusked","smooth","schwarzbier"],"description":"Dehusked roasted malt: deep colour and cocoa without the astringent bite of husked roast malts.","usageNotes":"The standard way to darken a beer smoothly — ideal for schwarzbier and black IPA.","sourceUrl":"https://www.weyermann.de/en/carafa-special-type-2/"},
-    {"id":"malt-smoked-beech","name":"Beechwood Smoked Malt","aliases":["Rauchmalz"],"brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":3,"diastaticPowerLintner":80,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["smoke","rauchbier"],"description":"Kilned over beechwood for the classic Bamberg rauchbier smoke. Can be used as the whole base malt.","sourceUrl":"https://www.weyermann.de/en/beech-smoked-barley-malt/"},
-    {"id":"malt-peated","name":"Peated Malt","brand":"Crisp","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":34,"colorLovibond":2.5,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer","whiskey"],"styleTags":["smoke","peat","whisky"],"description":"Peat-smoked malt — medicinal, earthy smoke. The signature of Islay whisky; use tiny amounts in beer.","sourceUrl":"https://crispmalt.com/malts/peated-malt/"},
-    {"id":"malt-brown","name":"Brown Malt","brand":"Thomas Fawcett","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":32,"colorLovibond":65,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["porter","english","dry"],"description":"Dry, toasty, coffee-ish English malt central to historical porters.","sourceUrl":"https://www.fawcett-maltsters.co.uk/"},
-    {"id":"malt-amber","name":"Amber Malt","brand":"Thomas Fawcett","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":33,"colorLovibond":27,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["english","toasty","mild"],"description":"Toasted English malt with a dry biscuit character for milds, browns, and porters.","sourceUrl":"https://www.fawcett-maltsters.co.uk/"},
-    {"id":"malt-chit","name":"Chit Malt","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":30,"colorLovibond":1.5,"maxBatchPct":20,"ppgBasis":"maltster","uses":["beer"],"styleTags":["body","head-retention","haze"],"description":"Barely-germinated malt high in protein; improves foam and body, popular in hazy IPAs.","sourceUrl":"https://www.weyermann.de/en/chit-malt/"},
-    {"id":"malt-caramunich-iii","name":"CaraMunich III","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":57,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["caramel","malty","bock","dubbel"],"description":"German caramel malt with intense malty-sweet, light-raisin depth; the continental counterpart to English crystal.","sourceUrl":"https://www.weyermann.de/en/caramunich-type-3/"},
-    {"id":"malt-carahell","name":"CaraHell","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":34,"colorLovibond":10,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["light-caramel","helles","body"],"description":"Light German caramel malt for body and gentle sweetness in Helles, bock, and pale lagers.","sourceUrl":"https://www.weyermann.de/en/carahell/"},
-    {"id":"malt-carared","name":"CaraRed","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":34,"colorLovibond":20,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["red","amber","caramel"],"description":"Adds a warm red-amber hue and light caramel to red ales and amber lagers.","sourceUrl":"https://www.weyermann.de/en/carared/"},
-    {"id":"malt-carafa-i","name":"Carafa Special Type I","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":30,"colorLovibond":340,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","dehusked","smooth"],"description":"The lightest dehusked Carafa; smooth colour and mild cocoa without husk astringency.","sourceUrl":"https://www.weyermann.de/en/carafa-special-type-1/"},
-    {"id":"malt-golden-naked-oats","name":"Golden Naked Oats","brand":"Simpsons","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":33,"colorLovibond":10,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["oat","nutty","hazy","body"],"description":"Huskless malted oat crystal malt; nutty, creamy, silky mouthfeel. A hazy-IPA and oatmeal favourite.","sourceUrl":"https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/"},
-    {"id":"malt-oat-malt","name":"Oat Malt","brand":"Thomas Fawcett","category":"base-malt","type":"grain","origin":"United Kingdom","ppg":33,"colorLovibond":2,"diastaticPowerLintner":40,"maxBatchPct":40,"ppgBasis":"maltster","uses":["beer"],"styleTags":["oat","silky","hazy"],"description":"Malted (rather than flaked) oats — silky body with more enzyme than raw oats, easier to mash.","sourceUrl":"https://www.fawcett-maltsters.co.uk/"},
-    {"id":"malt-abbey","name":"Abbey Malt","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":34,"colorLovibond":17,"maxBatchPct":20,"ppgBasis":"maltster","uses":["beer"],"styleTags":["belgian","malty","dark-fruit"],"description":"Malty, bready specialty malt with a hint of dark fruit for Belgian and strong ales.","sourceUrl":"https://www.weyermann.de/en/abbey-malt/"},
-    {"id":"malt-cherrywood-smoked","name":"Cherrywood Smoked Malt","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":37,"colorLovibond":5,"diastaticPowerLintner":40,"maxBatchPct":60,"ppgBasis":"maltster","uses":["beer"],"styleTags":["smoke","fruity-smoke"],"description":"American malt smoked over cherrywood for a sweeter, fruitier smoke than beechwood.","sourceUrl":"https://www.briess.com/malt/cherrywood-smoked-malt"},
-    {"id":"malt-pale-chocolate","name":"Pale Chocolate Malt","brand":"Thomas Fawcett","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":29,"colorLovibond":225,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","porter","smooth","chocolate"],"description":"Lighter than full chocolate malt; deep colour with a softer, less acrid cocoa character.","sourceUrl":"https://www.fawcett-maltsters.co.uk/"},
-    {"id":"malt-pilsner-bestmalz","name":"Pilsen Malt","brand":"BestMalz","category":"base-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":1.7,"diastaticPowerLintner":110,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["lager","pilsner","base"],"description":"BestMalz's continental Pilsner base — clean, pale, and honeyed, a widely-used alternative to Weyermann.","sourceUrl":"https://bestmalz.de/en/our-malts/best-pilsen/"},
-    {"id":"malt-heidelberg","name":"Heidelberg Malt","brand":"BestMalz","category":"base-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":3,"diastaticPowerLintner":90,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["malty","mild-munich","base"],"description":"A lightly-kilned Munich-adjacent base malt giving gentle malt depth without darkening much.","sourceUrl":"https://bestmalz.de/en/"},
-    {"id":"malt-marris-otter-crisp-extra-pale","name":"Extra Pale Maris Otter","brand":"Crisp","category":"base-malt","type":"grain","origin":"United Kingdom","ppg":38,"colorLovibond":2,"diastaticPowerLintner":120,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["english","pale","base"],"description":"A paler-kilned Maris Otter keeping the biscuity depth while allowing very pale beers.","sourceUrl":"https://crispmalt.com/"},
-    {"id":"malt-vienna-castle","name":"Château Vienna","brand":"Castle Malting","category":"base-malt","type":"grain","origin":"Belgium","ppg":36,"colorLovibond":4,"diastaticPowerLintner":65,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["vienna","amber","base"],"description":"Belgian Vienna base malt; toasty-golden with a soft sweetness for amber and Belgian styles.","sourceUrl":"https://www.castlemalting.com/"},
-    {"id":"malt-cara-belge","name":"Château CaraBelge","brand":"Castle Malting","category":"specialty-malt","type":"grain","origin":"Belgium","ppg":34,"colorLovibond":22,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["caramel","belgian","body"],"description":"Belgian caramel malt for body and a light amber-caramel note in Belgian ales.","sourceUrl":"https://www.castlemalting.com/"},
-    {"id":"malt-crystal-rye","name":"Crystal Rye","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":75,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["rye","crystal","spicy"],"description":"Caramelised rye malt combining crystal sweetness with rye's dry spice.","sourceUrl":"https://www.weyermann.de/en/carared/"},
-    {"id":"malt-midnight-wheat","name":"Midnight Wheat","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":25,"colorLovibond":550,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","smooth","black","dehusked"],"description":"The wheat-based counterpart to Carafa; maximum colour with an exceptionally smooth, low-astringency roast for black IPAs and porters.","sourceUrl":"https://www.briess.com/malt/midnight-wheat-malt"},
-    {"id":"malt-extra-special","name":"Extra Special Malt","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":33,"colorLovibond":130,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["caramel","dark-fruit","raisin"],"description":"Dark caramel malt with intense raisin and dark-fruit notes, akin to Special B.","sourceUrl":"https://www.briess.com/malt/extra-special-malt"},
-    {"id":"malt-brown-crisp","name":"Brown Malt","brand":"Crisp","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":32,"colorLovibond":70,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["porter","english","dry","coffee"],"description":"Crisp's dry, coffee-and-toast brown malt for historical porters and milds.","sourceUrl":"https://crispmalt.com/malts/brown-malt/"},
-    {"id":"malt-lager-rahr","name":"Standard 6-Row / Lager Malt","brand":"Rahr","category":"base-malt","type":"grain","origin":"United States","ppg":36,"colorLovibond":1.8,"diastaticPowerLintner":140,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["american-lager","adjunct-friendly","base"],"description":"Rahr's American lager/6-row base — high enzyme, a classic adjunct-lager workhorse.","sourceUrl":"https://rahrmalting.com/"},
-    {"id":"malt-carapils-weyermann","name":"CaraFoam","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":2,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["body","head-retention"],"description":"Weyermann's dextrine malt — body and foam stability with negligible colour or flavour.","sourceUrl":"https://www.weyermann.de/en/carafoam/"},
-    {"id":"malt-caraaroma","name":"CaraAroma","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":130,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["caramel","dark-fruit","red"],"description":"Intense dark caramel malt; raisin and dark berry with a deep red hue.","sourceUrl":"https://www.weyermann.de/en/caraaroma/"},
-    {"id":"malt-carawheat","name":"CaraWheat","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":45,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["wheat","caramel","dunkelweizen"],"description":"Caramelised wheat malt for colour, body and a bready-caramel note in wheat beers.","sourceUrl":"https://www.weyermann.de/en/carawheat/"},
-    {"id":"malt-sinamar","name":"Sinamar (Colour Extract)","brand":"Weyermann","category":"extract","type":"extract","ppg":18,"colorLovibond":3000,"maxBatchPct":2,"ppgBasis":"maltster","uses":["beer"],"styleTags":["colour","adjust","schwarzbier"],"description":"Liquid colour extract from roasted barley malt — adjusts colour post-boil with essentially no flavour impact. The clean way to darken a beer without changing the grist.","sourceUrl":"https://www.weyermann.de/en/sinamar/"},
-    {"id":"malt-chocolate-rye","name":"Chocolate Rye Malt","brand":"Weyermann","category":"specialty-malt","type":"grain","origin":"Germany","ppg":28,"colorLovibond":250,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["rye","roast","spicy"],"description":"Roasted rye — dry cocoa with rye's characteristic pepper. Excellent in roggenbier and dark rye ales.","sourceUrl":"https://www.weyermann.de/en/chocolate-rye-malt/"},
-    {"id":"malt-crisp-crystal-77","name":"Crystal Malt 77°L","brand":"Crisp","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":34,"colorLovibond":77,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","english","toffee"],"description":"Classic English medium-dark crystal; rich toffee and dried fruit for bitters and old ales.","sourceUrl":"https://crispmalt.com/"},
-    {"id":"malt-crisp-chocolate","name":"Chocolate Malt","brand":"Crisp","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":28,"colorLovibond":420,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","porter","stout"],"description":"English chocolate malt, darker than the US equivalent — smooth cocoa and coffee for porters and stouts.","sourceUrl":"https://crispmalt.com/"},
-    {"id":"malt-simpsons-double-roasted","name":"Double Roasted Crystal","brand":"Simpsons","category":"specialty-malt","type":"grain","origin":"United Kingdom","ppg":33,"colorLovibond":140,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["crystal","burnt-sugar","dark-fruit"],"description":"Crystal malt roasted twice; burnt sugar, treacle and dark fruit. Distinctive in English strong ales.","sourceUrl":"https://www.simpsonsmalt.co.uk/"},
-    {"id":"malt-briess-bonlander","name":"Bonlander Munich Malt","brand":"Briess","category":"base-malt","type":"grain","origin":"United States","ppg":36,"colorLovibond":10,"diastaticPowerLintner":40,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["munich","malty","base"],"description":"American Munich malt with enough diastatic power to convert itself; deep bready malt character.","sourceUrl":"https://www.briess.com/malt/bonlander-munich-malt"},
-    {"id":"malt-briess-special-roast","name":"Special Roast","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":33,"colorLovibond":40,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["toasty","biscuit","sour-note"],"description":"Toasted malt with a sharp biscuit-and-tang character; a signature of some American brown and amber ales.","sourceUrl":"https://www.briess.com/malt/special-roast-malt"},
-    {"id":"malt-blackprinz","name":"Blackprinz","brand":"Briess","category":"specialty-malt","type":"grain","origin":"United States","ppg":25,"colorLovibond":500,"maxBatchPct":10,"ppgBasis":"maltster","uses":["beer"],"styleTags":["roast","dehusked","smooth","black"],"description":"Dehusked black malt: maximum colour with almost no astringency or roast bitterness — colour without character.","sourceUrl":"https://www.briess.com/malt/blackprinz-malt"},
-    {"id":"malt-vienna-briess","name":"Vienna Malt","brand":"Briess","category":"base-malt","type":"grain","origin":"United States","ppg":36,"colorLovibond":3.5,"diastaticPowerLintner":60,"maxBatchPct":100,"ppgBasis":"maltster","uses":["beer"],"styleTags":["vienna","amber","base"],"description":"American Vienna base malt; light toast and golden colour.","sourceUrl":"https://www.briess.com/malt/vienna-malt"},
-    {"id":"malt-dextrapils","name":"Dextrin Pilsner (Carapils DE)","brand":"BestMalz","category":"specialty-malt","type":"grain","origin":"Germany","ppg":33,"colorLovibond":2,"maxBatchPct":15,"ppgBasis":"maltster","uses":["beer"],"styleTags":["body","head-retention","pilsner"],"description":"German dextrine malt for foam and mouthfeel in pale lagers.","sourceUrl":"https://bestmalz.de/en/"},
-    {"id":"malt-spelt","name":"Spelt Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":37,"colorLovibond":2,"diastaticPowerLintner":60,"maxBatchPct":40,"ppgBasis":"maltster","uses":["beer"],"styleTags":["ancient-grain","wheat-adjacent","silky"],"description":"Malted spelt — an ancient wheat relative giving a silky body and a delicate nutty note.","sourceUrl":"https://www.weyermann.de/en/spelt-malt/"},
-    {"id":"malt-emmer","name":"Emmer Malt","brand":"Weyermann","category":"base-malt","type":"grain","origin":"Germany","ppg":36,"colorLovibond":2.5,"diastaticPowerLintner":50,"maxBatchPct":40,"ppgBasis":"maltster","uses":["beer"],"styleTags":["ancient-grain","nutty"],"description":"Malted emmer, one of the oldest cultivated wheats; earthy and nutty, used in historical and specialty brewing.","sourceUrl":"https://www.weyermann.de/en/emmer-malt/"}
-  ]
+ "set": "malts",
+ "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag.",
+ "fermentables": [
+  {
+   "id": "malt-2row-pale",
+   "name": "2-Row Pale Malt",
+   "aliases": [
+    "2-row",
+    "Two-row Brewers Malt"
+   ],
+   "brand": null,
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 37,
+   "colorLovibond": 1.8,
+   "diastaticPowerLintner": 140,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "american",
+    "clean",
+    "base"
+   ],
+   "description": "The default American base malt. Clean, mildly sweet, plenty of diastatic power to convert itself and a load of adjuncts.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-6row-pale",
+   "name": "6-Row Pale Malt",
+   "brand": null,
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 35,
+   "colorLovibond": 1.8,
+   "diastaticPowerLintner": 160,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "american",
+    "adjunct-friendly",
+    "base"
+   ],
+   "description": "Higher protein and higher diastatic power than 2-row, lower extract. The classic choice when a grist carries a lot of corn or rice.",
+   "usageNotes": "Its enzyme surplus is why American adjunct lagers use it.",
+   "sourceUrl": "https://www.briess.com/malt/brewers-malt"
+  },
+  {
+   "id": "malt-maris-otter",
+   "name": "Maris Otter",
+   "brand": "Crisp",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 38,
+   "colorLovibond": 3,
+   "diastaticPowerLintner": 120,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "malty",
+    "base"
+   ],
+   "description": "The benchmark English floor-malted base; rich, biscuity, bready depth that plain pale malt lacks.",
+   "flavorNotes": "Biscuit, nutty, gentle toast.",
+   "sourceUrl": "https://crispmalt.com/malts/finest-maris-otter-ale-malt/"
+  },
+  {
+   "id": "malt-golden-promise",
+   "name": "Golden Promise",
+   "brand": "Simpsons",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 37,
+   "colorLovibond": 2.5,
+   "diastaticPowerLintner": 120,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "scottish",
+    "english",
+    "base"
+   ],
+   "description": "Scottish base malt, softer and cleaner than Maris Otter. A staple of Scotch whisky distilling as well as brewing.",
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/golden-promise/"
+  },
+  {
+   "id": "malt-pilsner",
+   "name": "Pilsner Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 1.6,
+   "diastaticPowerLintner": 110,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "german",
+    "base"
+   ],
+   "description": "Continental lager base malt, kilned very lightly for a pale, delicate, honeyed malt character.",
+   "usageNotes": "High in SMM/DMS precursors — give it a vigorous 90-minute boil.",
+   "sourceUrl": "https://www.weyermann.de/en/pilsner-malt/"
+  },
+  {
+   "id": "malt-vienna",
+   "name": "Vienna Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 36,
+   "colorLovibond": 3.5,
+   "diastaticPowerLintner": 70,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "vienna",
+    "marzen",
+    "amber",
+    "base"
+   ],
+   "description": "Lightly toasted base malt bridging Pilsner and Munich; golden colour with a soft toasty sweetness.",
+   "sourceUrl": "https://www.weyermann.de/en/vienna-malt/"
+  },
+  {
+   "id": "malt-munich-light",
+   "name": "Munich Malt (Light)",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 36,
+   "colorLovibond": 8,
+   "diastaticPowerLintner": 50,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "munich",
+    "malty",
+    "oktoberfest",
+    "base"
+   ],
+   "description": "Malt-forward base with enough enzyme to convert itself; the backbone of Märzen, bock, and dunkel.",
+   "flavorNotes": "Bread crust, toffee, deep malt.",
+   "sourceUrl": "https://www.weyermann.de/en/munich-malt-type-1/"
+  },
+  {
+   "id": "malt-munich-dark",
+   "name": "Munich Malt (Dark)",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 35,
+   "colorLovibond": 18,
+   "diastaticPowerLintner": 40,
+   "maxBatchPct": 60,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "munich",
+    "malty",
+    "dunkel"
+   ],
+   "description": "Darker, richer Munich; intense malty depth with marginal enzyme reserve.",
+   "sourceUrl": "https://www.weyermann.de/en/munich-malt-type-2/"
+  },
+  {
+   "id": "malt-pale-ale",
+   "name": "Pale Ale Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 38,
+   "colorLovibond": 3,
+   "diastaticPowerLintner": 100,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "pale-ale",
+    "ipa",
+    "base"
+   ],
+   "description": "Slightly darker, fuller-bodied kilned base malt for ales.",
+   "sourceUrl": "https://www.weyermann.de/en/pale-ale-malt/"
+  },
+  {
+   "id": "malt-wheat-pale",
+   "name": "Pale Wheat Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 38,
+   "colorLovibond": 2,
+   "diastaticPowerLintner": 150,
+   "maxBatchPct": 70,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "wheat",
+    "weizen",
+    "witbier",
+    "head-retention"
+   ],
+   "description": "Malted wheat: boosts body, head retention, and haze. The base of German weissbier at 50–70% of the grist.",
+   "usageNotes": "Huskless — pair with rice hulls or barley malt to avoid a stuck sparge.",
+   "sourceUrl": "https://www.weyermann.de/en/pale-wheat-malt/"
+  },
+  {
+   "id": "malt-wheat-dark",
+   "name": "Dark Wheat Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 7,
+   "diastaticPowerLintner": 100,
+   "maxBatchPct": 60,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "wheat",
+    "dunkelweizen"
+   ],
+   "description": "Kilned darker for dunkelweizen depth while keeping wheat's protein and head retention.",
+   "sourceUrl": "https://www.weyermann.de/en/dark-wheat-malt/"
+  },
+  {
+   "id": "malt-rye",
+   "name": "Rye Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 36,
+   "colorLovibond": 3.5,
+   "diastaticPowerLintner": 75,
+   "maxBatchPct": 50,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "rye",
+    "roggenbier",
+    "spicy"
+   ],
+   "description": "Malted rye — dry, peppery, spicy, with a silky mouthfeel. Also a whiskey mash staple.",
+   "usageNotes": "Very gummy (beta-glucans); rice hulls strongly recommended above ~20%.",
+   "sourceUrl": "https://www.weyermann.de/en/rye-malt/"
+  },
+  {
+   "id": "malt-acidulated",
+   "name": "Acidulated Malt",
+   "aliases": [
+    "Sauermalz",
+    "Acid Malt"
+   ],
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 27,
+   "colorLovibond": 3,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "ph-adjust",
+    "pilsner"
+   ],
+   "description": "Malt coated in lactic acid from a natural souring step; used to drop mash pH without mineral additions. Roughly 1% of the grist lowers pH by ~0.1.",
+   "sourceUrl": "https://www.weyermann.de/en/acidulated-malt/"
+  },
+  {
+   "id": "malt-carapils",
+   "name": "Carapils / Dextrine Malt",
+   "aliases": [
+    "Carafoam",
+    "Dextrin Malt"
+   ],
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 33,
+   "colorLovibond": 1.5,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "body",
+    "head-retention"
+   ],
+   "description": "Adds unfermentable dextrins for body and head retention with essentially no colour or flavour.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Carapils-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-crystal-20",
+   "name": "Crystal Malt 20L",
+   "aliases": [
+    "Caramel 20"
+   ],
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 35,
+   "colorLovibond": 20,
+   "maxBatchPct": 20,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "caramel",
+    "light"
+   ],
+   "description": "Light caramel malt; mild sweetness and golden colour without heaviness.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-20L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-crystal-40",
+   "name": "Crystal Malt 40L",
+   "aliases": [
+    "Caramel 40"
+   ],
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 34,
+   "colorLovibond": 40,
+   "maxBatchPct": 20,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "caramel",
+    "amber",
+    "pale-ale"
+   ],
+   "description": "The workhorse caramel malt — toffee sweetness and amber colour in pale ales and ambers.",
+   "flavorNotes": "Toffee, light caramel.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-40L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-crystal-60",
+   "name": "Crystal Malt 60L",
+   "aliases": [
+    "Caramel 60"
+   ],
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 34,
+   "colorLovibond": 60,
+   "maxBatchPct": 20,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "caramel",
+    "amber",
+    "bitter"
+   ],
+   "description": "Deeper caramel with a hint of raisin; standard in ambers, bitters, and porters.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-60L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-crystal-120",
+   "name": "Crystal Malt 120L",
+   "aliases": [
+    "Caramel 120"
+   ],
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 33,
+   "colorLovibond": 120,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "raisin",
+    "dark"
+   ],
+   "description": "Dark crystal — raisin, burnt sugar, and dried fruit. Heavy-handed above ~5% of the grist.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-120L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-special-b",
+   "name": "Special B",
+   "brand": "Castle Malting",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Belgium",
+   "ppg": 30,
+   "colorLovibond": 180,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "dubbel",
+    "raisin",
+    "dark"
+   ],
+   "description": "The most intense Belgian caramel malt; unmistakable dark raisin and plum. A signature of dubbels.",
+   "flavorNotes": "Raisin, prune, dark toffee.",
+   "sourceUrl": "https://www.castlemalting.com/"
+  },
+  {
+   "id": "malt-melanoidin",
+   "name": "Melanoidin Malt",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 28,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "malty",
+    "red",
+    "bock"
+   ],
+   "description": "Intensifies malt aroma and red hues, mimicking the effect of decoction mashing.",
+   "sourceUrl": "https://www.weyermann.de/en/melanoidin-malt/"
+  },
+  {
+   "id": "malt-biscuit",
+   "name": "Biscuit Malt",
+   "brand": "Dingemans",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Belgium",
+   "ppg": 35,
+   "colorLovibond": 23,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "toasty",
+    "biscuit"
+   ],
+   "description": "Lightly roasted for warm bread-crust and biscuit character.",
+   "sourceUrl": "https://www.dingemansmout.be/"
+  },
+  {
+   "id": "malt-victory",
+   "name": "Victory Malt",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 34,
+   "colorLovibond": 28,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "toasty",
+    "nutty"
+   ],
+   "description": "Toasted malt with a nutty, biscuity bite.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-aromatic",
+   "name": "Aromatic Malt",
+   "brand": "Dingemans",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Belgium",
+   "ppg": 33,
+   "colorLovibond": 26,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "malty",
+    "belgian"
+   ],
+   "description": "Very malt-aromatic, boosts malt intensity in Belgian and malty styles.",
+   "sourceUrl": "https://www.dingemansmout.be/"
+  },
+  {
+   "id": "malt-honey",
+   "name": "Honey Malt",
+   "brand": "Gambrinus",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Canada",
+   "ppg": 37,
+   "colorLovibond": 25,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "sweet",
+    "honey"
+   ],
+   "description": "Intensely sweet, honeyed malt with no actual honey; a little goes a long way.",
+   "sourceUrl": "https://gambrinusmalting.com/"
+  },
+  {
+   "id": "malt-chocolate",
+   "name": "Chocolate Malt",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 28,
+   "colorLovibond": 350,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "porter",
+    "stout",
+    "chocolate"
+   ],
+   "description": "Roasted to a smooth cocoa and coffee character; the colour backbone of porters.",
+   "flavorNotes": "Cocoa, coffee, light roast bitterness.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Chocolate-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-black-patent",
+   "name": "Black Patent Malt",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 25,
+   "colorLovibond": 500,
+   "maxBatchPct": 5,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "black",
+    "stout"
+   ],
+   "description": "Maximum colour with a sharp, acrid roast. Use sparingly for colour correction or dry-stout bite.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Black-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-roasted-barley",
+   "name": "Roasted Barley",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 25,
+   "colorLovibond": 300,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "irish-stout",
+    "dry-stout",
+    "coffee"
+   ],
+   "description": "Unmalted barley roasted dark — the defining sharp, coffee-like dryness of Irish dry stout.",
+   "flavorNotes": "Espresso, dry roast, faint acidity.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Roasted-Barley.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-carafa-ii",
+   "name": "Carafa Special Type II",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 30,
+   "colorLovibond": 415,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "dehusked",
+    "smooth",
+    "schwarzbier"
+   ],
+   "description": "Dehusked roasted malt: deep colour and cocoa without the astringent bite of husked roast malts.",
+   "usageNotes": "The standard way to darken a beer smoothly — ideal for schwarzbier and black IPA.",
+   "sourceUrl": "https://www.weyermann.de/en/carafa-special-type-2/"
+  },
+  {
+   "id": "malt-smoked-beech",
+   "name": "Beechwood Smoked Malt",
+   "aliases": [
+    "Rauchmalz"
+   ],
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 3,
+   "diastaticPowerLintner": 80,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "smoke",
+    "rauchbier"
+   ],
+   "description": "Kilned over beechwood for the classic Bamberg rauchbier smoke. Can be used as the whole base malt.",
+   "sourceUrl": "https://www.weyermann.de/en/beech-smoked-barley-malt/"
+  },
+  {
+   "id": "malt-peated",
+   "name": "Peated Malt",
+   "brand": "Crisp",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 34,
+   "colorLovibond": 2.5,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "smoke",
+    "peat",
+    "whisky"
+   ],
+   "description": "Peat-smoked malt — medicinal, earthy smoke. The signature of Islay whisky; use tiny amounts in beer.",
+   "sourceUrl": "https://crispmalt.com/malts/peated-malt/"
+  },
+  {
+   "id": "malt-brown",
+   "name": "Brown Malt",
+   "brand": "Thomas Fawcett",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 32,
+   "colorLovibond": 65,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "porter",
+    "english",
+    "dry"
+   ],
+   "description": "Dry, toasty, coffee-ish English malt central to historical porters.",
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+  },
+  {
+   "id": "malt-amber",
+   "name": "Amber Malt",
+   "brand": "Thomas Fawcett",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 33,
+   "colorLovibond": 27,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "english",
+    "toasty",
+    "mild"
+   ],
+   "description": "Toasted English malt with a dry biscuit character for milds, browns, and porters.",
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+  },
+  {
+   "id": "malt-chit",
+   "name": "Chit Malt",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 30,
+   "colorLovibond": 1.5,
+   "maxBatchPct": 20,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "body",
+    "head-retention",
+    "haze"
+   ],
+   "description": "Barely-germinated malt high in protein; improves foam and body, popular in hazy IPAs.",
+   "sourceUrl": "https://www.weyermann.de/en/chit-malt/"
+  },
+  {
+   "id": "malt-caramunich-iii",
+   "name": "CaraMunich III",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 57,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "caramel",
+    "malty",
+    "bock",
+    "dubbel"
+   ],
+   "description": "German caramel malt with intense malty-sweet, light-raisin depth; the continental counterpart to English crystal.",
+   "sourceUrl": "https://www.weyermann.de/en/caramunich-type-3/"
+  },
+  {
+   "id": "malt-carahell",
+   "name": "CaraHell",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 34,
+   "colorLovibond": 10,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "light-caramel",
+    "helles",
+    "body"
+   ],
+   "description": "Light German caramel malt for body and gentle sweetness in Helles, bock, and pale lagers.",
+   "sourceUrl": "https://www.weyermann.de/en/carahell/"
+  },
+  {
+   "id": "malt-carared",
+   "name": "CaraRed",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 34,
+   "colorLovibond": 20,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "red",
+    "amber",
+    "caramel"
+   ],
+   "description": "Adds a warm red-amber hue and light caramel to red ales and amber lagers.",
+   "sourceUrl": "https://www.weyermann.de/en/carared/"
+  },
+  {
+   "id": "malt-carafa-i",
+   "name": "Carafa Special Type I",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 30,
+   "colorLovibond": 340,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "dehusked",
+    "smooth"
+   ],
+   "description": "The lightest dehusked Carafa; smooth colour and mild cocoa without husk astringency.",
+   "sourceUrl": "https://www.weyermann.de/en/carafa-special-type-1/"
+  },
+  {
+   "id": "malt-golden-naked-oats",
+   "name": "Golden Naked Oats",
+   "brand": "Simpsons",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 33,
+   "colorLovibond": 10,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "oat",
+    "nutty",
+    "hazy",
+    "body"
+   ],
+   "description": "Huskless malted oat crystal malt; nutty, creamy, silky mouthfeel. A hazy-IPA and oatmeal favourite.",
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/"
+  },
+  {
+   "id": "malt-oat-malt",
+   "name": "Oat Malt",
+   "brand": "Thomas Fawcett",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 33,
+   "colorLovibond": 2,
+   "diastaticPowerLintner": 40,
+   "maxBatchPct": 40,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "oat",
+    "silky",
+    "hazy"
+   ],
+   "description": "Malted (rather than flaked) oats — silky body with more enzyme than raw oats, easier to mash.",
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+  },
+  {
+   "id": "malt-abbey",
+   "name": "Abbey Malt",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 34,
+   "colorLovibond": 17,
+   "maxBatchPct": 20,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "malty",
+    "dark-fruit"
+   ],
+   "description": "Malty, bready specialty malt with a hint of dark fruit for Belgian and strong ales.",
+   "sourceUrl": "https://www.weyermann.de/en/abbey-malt/"
+  },
+  {
+   "id": "malt-cherrywood-smoked",
+   "name": "Cherrywood Smoked Malt",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 37,
+   "colorLovibond": 5,
+   "diastaticPowerLintner": 40,
+   "maxBatchPct": 60,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "smoke",
+    "fruity-smoke"
+   ],
+   "description": "American malt smoked over cherrywood for a sweeter, fruitier smoke than beechwood.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Smoked-Malt-Cherry-Wood.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-pale-chocolate",
+   "name": "Pale Chocolate Malt",
+   "brand": "Thomas Fawcett",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 29,
+   "colorLovibond": 225,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "porter",
+    "smooth",
+    "chocolate"
+   ],
+   "description": "Lighter than full chocolate malt; deep colour with a softer, less acrid cocoa character.",
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+  },
+  {
+   "id": "malt-pilsner-bestmalz",
+   "name": "Pilsen Malt",
+   "brand": "BestMalz",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 1.7,
+   "diastaticPowerLintner": 110,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "base"
+   ],
+   "description": "BestMalz's continental Pilsner base — clean, pale, and honeyed, a widely-used alternative to Weyermann.",
+   "sourceUrl": "https://bestmalz.de/en/our-malts/best-pilsen/"
+  },
+  {
+   "id": "malt-heidelberg",
+   "name": "Heidelberg Malt",
+   "brand": "BestMalz",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 3,
+   "diastaticPowerLintner": 90,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "malty",
+    "mild-munich",
+    "base"
+   ],
+   "description": "A lightly-kilned Munich-adjacent base malt giving gentle malt depth without darkening much.",
+   "sourceUrl": "https://bestmalz.de/en/"
+  },
+  {
+   "id": "malt-marris-otter-crisp-extra-pale",
+   "name": "Extra Pale Maris Otter",
+   "brand": "Crisp",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 38,
+   "colorLovibond": 2,
+   "diastaticPowerLintner": 120,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "english",
+    "pale",
+    "base"
+   ],
+   "description": "A paler-kilned Maris Otter keeping the biscuity depth while allowing very pale beers.",
+   "sourceUrl": "https://crispmalt.com/"
+  },
+  {
+   "id": "malt-vienna-castle",
+   "name": "Château Vienna",
+   "brand": "Castle Malting",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Belgium",
+   "ppg": 36,
+   "colorLovibond": 4,
+   "diastaticPowerLintner": 65,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "vienna",
+    "amber",
+    "base"
+   ],
+   "description": "Belgian Vienna base malt; toasty-golden with a soft sweetness for amber and Belgian styles.",
+   "sourceUrl": "https://www.castlemalting.com/"
+  },
+  {
+   "id": "malt-cara-belge",
+   "name": "Château CaraBelge",
+   "brand": "Castle Malting",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Belgium",
+   "ppg": 34,
+   "colorLovibond": 22,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "caramel",
+    "belgian",
+    "body"
+   ],
+   "description": "Belgian caramel malt for body and a light amber-caramel note in Belgian ales.",
+   "sourceUrl": "https://www.castlemalting.com/"
+  },
+  {
+   "id": "malt-crystal-rye",
+   "name": "Crystal Rye",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 75,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "rye",
+    "crystal",
+    "spicy"
+   ],
+   "description": "Caramelised rye malt combining crystal sweetness with rye's dry spice.",
+   "sourceUrl": "https://www.weyermann.de/en/carared/"
+  },
+  {
+   "id": "malt-midnight-wheat",
+   "name": "Midnight Wheat",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 25,
+   "colorLovibond": 550,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "smooth",
+    "black",
+    "dehusked"
+   ],
+   "description": "The wheat-based counterpart to Carafa; maximum colour with an exceptionally smooth, low-astringency roast for black IPAs and porters.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Midnight-Wheat-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-extra-special",
+   "name": "Extra Special Malt",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 33,
+   "colorLovibond": 130,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "caramel",
+    "dark-fruit",
+    "raisin"
+   ],
+   "description": "Dark caramel malt with intense raisin and dark-fruit notes, akin to Special B.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Extra-Special-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-brown-crisp",
+   "name": "Brown Malt",
+   "brand": "Crisp",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 32,
+   "colorLovibond": 70,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "porter",
+    "english",
+    "dry",
+    "coffee"
+   ],
+   "description": "Crisp's dry, coffee-and-toast brown malt for historical porters and milds.",
+   "sourceUrl": "https://crispmalt.com/malts/brown-malt/"
+  },
+  {
+   "id": "malt-lager-rahr",
+   "name": "Standard 6-Row / Lager Malt",
+   "brand": "Rahr",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 36,
+   "colorLovibond": 1.8,
+   "diastaticPowerLintner": 140,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "american-lager",
+    "adjunct-friendly",
+    "base"
+   ],
+   "description": "Rahr's American lager/6-row base — high enzyme, a classic adjunct-lager workhorse.",
+   "sourceUrl": "https://rahrmalting.com/"
+  },
+  {
+   "id": "malt-carapils-weyermann",
+   "name": "CaraFoam",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 2,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "body",
+    "head-retention"
+   ],
+   "description": "Weyermann's dextrine malt — body and foam stability with negligible colour or flavour.",
+   "sourceUrl": "https://www.weyermann.de/en/carafoam/"
+  },
+  {
+   "id": "malt-caraaroma",
+   "name": "CaraAroma",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 130,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "caramel",
+    "dark-fruit",
+    "red"
+   ],
+   "description": "Intense dark caramel malt; raisin and dark berry with a deep red hue.",
+   "sourceUrl": "https://www.weyermann.de/en/caraaroma/"
+  },
+  {
+   "id": "malt-carawheat",
+   "name": "CaraWheat",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 45,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "wheat",
+    "caramel",
+    "dunkelweizen"
+   ],
+   "description": "Caramelised wheat malt for colour, body and a bready-caramel note in wheat beers.",
+   "sourceUrl": "https://www.weyermann.de/en/carawheat/"
+  },
+  {
+   "id": "malt-sinamar",
+   "name": "Sinamar (Colour Extract)",
+   "brand": "Weyermann",
+   "category": "extract",
+   "type": "extract",
+   "ppg": 18,
+   "colorLovibond": 3000,
+   "maxBatchPct": 2,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "colour",
+    "adjust",
+    "schwarzbier"
+   ],
+   "description": "Liquid colour extract from roasted barley malt — adjusts colour post-boil with essentially no flavour impact. The clean way to darken a beer without changing the grist.",
+   "sourceUrl": "https://www.weyermann.de/en/sinamar/"
+  },
+  {
+   "id": "malt-chocolate-rye",
+   "name": "Chocolate Rye Malt",
+   "brand": "Weyermann",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 28,
+   "colorLovibond": 250,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "rye",
+    "roast",
+    "spicy"
+   ],
+   "description": "Roasted rye — dry cocoa with rye's characteristic pepper. Excellent in roggenbier and dark rye ales.",
+   "sourceUrl": "https://www.weyermann.de/en/chocolate-rye-malt/"
+  },
+  {
+   "id": "malt-crisp-crystal-77",
+   "name": "Crystal Malt 77°L",
+   "brand": "Crisp",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 34,
+   "colorLovibond": 77,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "english",
+    "toffee"
+   ],
+   "description": "Classic English medium-dark crystal; rich toffee and dried fruit for bitters and old ales.",
+   "sourceUrl": "https://crispmalt.com/"
+  },
+  {
+   "id": "malt-crisp-chocolate",
+   "name": "Chocolate Malt",
+   "brand": "Crisp",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 28,
+   "colorLovibond": 420,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "porter",
+    "stout"
+   ],
+   "description": "English chocolate malt, darker than the US equivalent — smooth cocoa and coffee for porters and stouts.",
+   "sourceUrl": "https://crispmalt.com/"
+  },
+  {
+   "id": "malt-simpsons-double-roasted",
+   "name": "Double Roasted Crystal",
+   "brand": "Simpsons",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United Kingdom",
+   "ppg": 33,
+   "colorLovibond": 140,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "crystal",
+    "burnt-sugar",
+    "dark-fruit"
+   ],
+   "description": "Crystal malt roasted twice; burnt sugar, treacle and dark fruit. Distinctive in English strong ales.",
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/"
+  },
+  {
+   "id": "malt-briess-bonlander",
+   "name": "Bonlander Munich Malt",
+   "brand": "Briess",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 36,
+   "colorLovibond": 10,
+   "diastaticPowerLintner": 40,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "munich",
+    "malty",
+    "base"
+   ],
+   "description": "American Munich malt with enough diastatic power to convert itself; deep bready malt character.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Bonlander-Munich-Malt-10L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-briess-special-roast",
+   "name": "Special Roast",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 33,
+   "colorLovibond": 40,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "toasty",
+    "biscuit",
+    "sour-note"
+   ],
+   "description": "Toasted malt with a sharp biscuit-and-tang character; a signature of some American brown and amber ales.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Special-Roast-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-blackprinz",
+   "name": "Blackprinz",
+   "brand": "Briess",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 25,
+   "colorLovibond": 500,
+   "maxBatchPct": 10,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "roast",
+    "dehusked",
+    "smooth",
+    "black"
+   ],
+   "description": "Dehusked black malt: maximum colour with almost no astringency or roast bitterness — colour without character.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Blackprinz-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-vienna-briess",
+   "name": "Vienna Malt",
+   "brand": "Briess",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 36,
+   "colorLovibond": 3.5,
+   "diastaticPowerLintner": 60,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "vienna",
+    "amber",
+    "base"
+   ],
+   "description": "American Vienna base malt; light toast and golden colour.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Goldpils-Vienna-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "malt-dextrapils",
+   "name": "Dextrin Pilsner (Carapils DE)",
+   "brand": "BestMalz",
+   "category": "specialty-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 33,
+   "colorLovibond": 2,
+   "maxBatchPct": 15,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "body",
+    "head-retention",
+    "pilsner"
+   ],
+   "description": "German dextrine malt for foam and mouthfeel in pale lagers.",
+   "sourceUrl": "https://bestmalz.de/en/"
+  },
+  {
+   "id": "malt-spelt",
+   "name": "Spelt Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 37,
+   "colorLovibond": 2,
+   "diastaticPowerLintner": 60,
+   "maxBatchPct": 40,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "ancient-grain",
+    "wheat-adjacent",
+    "silky"
+   ],
+   "description": "Malted spelt — an ancient wheat relative giving a silky body and a delicate nutty note.",
+   "sourceUrl": "https://www.weyermann.de/en/spelt-malt/"
+  },
+  {
+   "id": "malt-emmer",
+   "name": "Emmer Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 36,
+   "colorLovibond": 2.5,
+   "diastaticPowerLintner": 50,
+   "maxBatchPct": 40,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "ancient-grain",
+    "nutty"
+   ],
+   "description": "Malted emmer, one of the oldest cultivated wheats; earthy and nutty, used in historical and specialty brewing.",
+   "sourceUrl": "https://www.weyermann.de/en/emmer-malt/"
+  }
+ ]
 }

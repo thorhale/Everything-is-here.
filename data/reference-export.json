@@ -3481,9 +3481,9 @@
    ],
    "description": "Pre-gelatinised corn flakes; lightens body and colour and dries the finish without cereal-mashing.",
    "usageNotes": "Needs diastatic base malt to convert — no enzymes of its own.",
-   "sourceUrl": "https://www.briess.com/",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Yellow-Corn-Flakes-NonGMO.pdf",
    "requiresGelatinization": false,
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "adjunct-flaked-rice",
@@ -3504,8 +3504,8 @@
     "dry"
    ],
    "description": "Pre-gelatinised rice; the crispest, most neutral way to lighten a beer. The classic American macro-lager adjunct.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Brown-Rice-Flakes.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "adjunct-flaked-oats",
@@ -3528,8 +3528,8 @@
    ],
    "description": "Adds silky mouthfeel, body, and haze. Essential in oatmeal stouts and modern hazy IPAs.",
    "usageNotes": "Gummy beta-glucans — use rice hulls above ~20% to protect the sparge.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Oat-Flakes.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "adjunct-flaked-barley",
@@ -3550,8 +3550,8 @@
     "body"
    ],
    "description": "Unmalted flaked barley — big protein contribution for head retention and the creamy body of Irish stout.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Barley-Flakes.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "adjunct-flaked-wheat",
@@ -3573,8 +3573,8 @@
     "head-retention"
    ],
    "description": "Unmalted wheat for witbier and lambic; haze, tang, and dense foam.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Red-Wheat-Flakes.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "adjunct-torrified-wheat",
@@ -3999,8 +3999,8 @@
    ],
    "description": "Not a fermentable at all — an inert filter bed that keeps gummy grists (wheat, rye, oats) from sticking the sparge.",
    "usageNotes": "Contributes zero gravity and zero flavour. Roughly 0.5–1 lb per 5 gal batch when needed.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Rice-Hulls.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "cereal-fruity-pebbles",
@@ -9714,8 +9714,8 @@
     "base"
    ],
    "description": "The default American base malt. Clean, mildly sweet, plenty of diastatic power to convert itself and a load of adjuncts.",
-   "sourceUrl": "https://www.briess.com/malt/brewers-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-6row-pale",
@@ -10043,8 +10043,8 @@
     "head-retention"
    ],
    "description": "Adds unfermentable dextrins for body and head retention with essentially no colour or flavour.",
-   "sourceUrl": "https://www.briess.com/malt/carapils-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Carapils-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-crystal-20",
@@ -10069,8 +10069,8 @@
     "light"
    ],
    "description": "Light caramel malt; mild sweetness and golden colour without heaviness.",
-   "sourceUrl": "https://www.briess.com/malt/caramel-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-20L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-crystal-40",
@@ -10097,8 +10097,8 @@
    ],
    "description": "The workhorse caramel malt — toffee sweetness and amber colour in pale ales and ambers.",
    "flavorNotes": "Toffee, light caramel.",
-   "sourceUrl": "https://www.briess.com/malt/caramel-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-40L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-crystal-60",
@@ -10124,8 +10124,8 @@
     "bitter"
    ],
    "description": "Deeper caramel with a hint of raisin; standard in ambers, bitters, and porters.",
-   "sourceUrl": "https://www.briess.com/malt/caramel-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-60L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-crystal-120",
@@ -10150,8 +10150,8 @@
     "dark"
    ],
    "description": "Dark crystal — raisin, burnt sugar, and dried fruit. Heavy-handed above ~5% of the grist.",
-   "sourceUrl": "https://www.briess.com/malt/caramel-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-120L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-special-b",
@@ -10242,8 +10242,8 @@
     "nutty"
    ],
    "description": "Toasted malt with a nutty, biscuity bite.",
-   "sourceUrl": "https://www.briess.com/malt/victory-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-aromatic",
@@ -10311,8 +10311,8 @@
    ],
    "description": "Roasted to a smooth cocoa and coffee character; the colour backbone of porters.",
    "flavorNotes": "Cocoa, coffee, light roast bitterness.",
-   "sourceUrl": "https://www.briess.com/malt/chocolate-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Chocolate-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-black-patent",
@@ -10334,8 +10334,8 @@
     "stout"
    ],
    "description": "Maximum colour with a sharp, acrid roast. Use sparingly for colour correction or dry-stout bite.",
-   "sourceUrl": "https://www.briess.com/malt/black-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Black-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-roasted-barley",
@@ -10359,8 +10359,8 @@
    ],
    "description": "Unmalted barley roasted dark — the defining sharp, coffee-like dryness of Irish dry stout.",
    "flavorNotes": "Espresso, dry roast, faint acidity.",
-   "sourceUrl": "https://www.briess.com/malt/roasted-barley",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Roasted-Barley.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-carafa-ii",
@@ -10690,8 +10690,8 @@
     "fruity-smoke"
    ],
    "description": "American malt smoked over cherrywood for a sweeter, fruitier smoke than beechwood.",
-   "sourceUrl": "https://www.briess.com/malt/cherrywood-smoked-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Smoked-Malt-Cherry-Wood.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-pale-chocolate",
@@ -10880,8 +10880,8 @@
     "dehusked"
    ],
    "description": "The wheat-based counterpart to Carafa; maximum colour with an exceptionally smooth, low-astringency roast for black IPAs and porters.",
-   "sourceUrl": "https://www.briess.com/malt/midnight-wheat-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Midnight-Wheat-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-extra-special",
@@ -10903,8 +10903,8 @@
     "raisin"
    ],
    "description": "Dark caramel malt with intense raisin and dark-fruit notes, akin to Special B.",
-   "sourceUrl": "https://www.briess.com/malt/extra-special-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Extra-Special-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-brown-crisp",
@@ -11157,8 +11157,8 @@
     "base"
    ],
    "description": "American Munich malt with enough diastatic power to convert itself; deep bready malt character.",
-   "sourceUrl": "https://www.briess.com/malt/bonlander-munich-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Bonlander-Munich-Malt-10L.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-briess-special-roast",
@@ -11180,8 +11180,8 @@
     "sour-note"
    ],
    "description": "Toasted malt with a sharp biscuit-and-tang character; a signature of some American brown and amber ales.",
-   "sourceUrl": "https://www.briess.com/malt/special-roast-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Special-Roast-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-blackprinz",
@@ -11204,8 +11204,8 @@
     "black"
    ],
    "description": "Dehusked black malt: maximum colour with almost no astringency or roast bitterness — colour without character.",
-   "sourceUrl": "https://www.briess.com/malt/blackprinz-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Blackprinz-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-vienna-briess",
@@ -11228,8 +11228,8 @@
     "base"
    ],
    "description": "American Vienna base malt; light toast and golden colour.",
-   "sourceUrl": "https://www.briess.com/malt/vienna-malt",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Goldpils-Vienna-Malt.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "malt-dextrapils",
@@ -11966,8 +11966,8 @@
     "starter"
    ],
    "description": "Dehydrated wort. The standard base for extract brewing and for yeast starters (~100 g per litre gives ~1.040).",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-DME.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "extract-lme-light",
@@ -11989,8 +11989,8 @@
     "extract-brewing"
    ],
    "description": "Syrup-form malt extract — about 20% water, hence lower PPG than DME.",
-   "sourceUrl": "https://www.briess.com/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-LME.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
   },
   {
    "id": "grape-cabernet-sauvignon",
