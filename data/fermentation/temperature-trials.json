@@ -44,6 +44,54 @@
    "quantitativeNote": "Per-compound concentrations at each temperature are in the full text, which is paywalled and could not be retrieved. The directions above are from the published abstract and are what this app relies on. If someone with access adds the measured figures here, they should be presented as what this trial measured at lager temperatures on its own wort and strain — not as a curve to read other batches off.",
    "appliesTo": "Lager fermentation. The three temperatures span a narrow, cold band; nothing here should be projected onto ale or saison temperatures.",
    "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.491"
+  },
+  {
+   "id": "kucharczyk-zyla-tuszynski-2020",
+   "title": "Volatile Esters and Fusel Alcohol Concentrations in Beer Optimized by Modulation of Main Fermentation Parameters in an Industrial Plant",
+   "authors": "Kucharczyk, K.; Żyła, K.; Tuszyński, T.",
+   "publication": "Processes 8(7), 769",
+   "year": 2020,
+   "doi": "10.3390/pr8070769",
+   "licence": "CC BY 4.0",
+   "openAccess": true,
+   "scale": "industrial",
+   "conditions": "Saccharomyces pastorianus W-34/70 at 15.5 °P original gravity. Four parameters varied together in a Box–Behnken design: fermentation temperature 8.5–11.5 °C, pitching rate 6–10 million cells/mL, aeration 8–12 mg O2/L, and fermenter filling time 4.5–13.5 h.",
+   "quantitative": [
+    {
+     "measure": "ethyl acetate",
+     "value": 22.07,
+     "unit": "mg/L",
+     "at": "the highest tested temperature (11.5 °C) with a 10 million cells/mL pitch"
+    },
+    {
+     "measure": "isoamyl acetate",
+     "value": 2.22,
+     "unit": "mg/L",
+     "at": "the same setting; the balanced multi-response optimum gave 2.09 mg/L"
+    },
+    {
+     "measure": "amyl alcohols",
+     "value": 62.3,
+     "unit": "mg/L",
+     "at": "the lowest parameter settings"
+    },
+    {
+     "measure": "total higher alcohols",
+     "value": 85.6,
+     "unit": "mg/L",
+     "at": "the lowest parameter settings"
+    },
+    {
+     "measure": "total higher alcohols",
+     "value": 97.9,
+     "unit": "mg/L",
+     "at": "the balanced multi-response optimum at 11.5 °C"
+    }
+   ],
+   "quantitativeNote": "Real measured figures, openly licensed, and the closest thing in this file to the numbers a quantitative model would need. They are still NOT a curve to read a batch off: they belong to one lager strain at 15.5 °P across a 3 °C band, and every value is the output of a four-parameter optimisation rather than a temperature series. For scale, the flavour threshold for isoamyl acetate in beer is about 1.2 mg/L, so 2.09 is perceptible.",
+   "whyItSupportsNoFormula": "The authors could not express their results as a function of temperature. They needed second-order polynomials with interaction terms across all four parameters — which is direct published evidence for what this file argues elsewhere: temperature alone does not determine ester yield, and a single-variable formula would be a misrepresentation of the system rather than a simplification of it.",
+   "appliesTo": "Lager fermentation, one strain, high gravity. Nothing here transfers to ale or saison temperatures.",
+   "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769"
   }
  ],
  "manufacturerStatements": [
@@ -132,6 +180,23 @@
    "supports": "The bacteria and Brettanomyces cultures in this catalog, including the single Lactobacillus delbrueckii temperature figure — and, by its silence, the documented reason eleven other cultures carry no range.",
    "howItIsUsed": "Eighteen strain records cite it. Re-read in full for this work specifically to check whether more temperature data was there; it was not.",
    "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales"
+  }
+ ],
+ "disagreements": [
+  {
+   "topic": "Does pitching more yeast raise or lower esters?",
+   "positions": [
+    {
+     "claim": "MORE yeast means FEWER esters. Ester formation tracks yeast growth, so a bigger pitch means less growth and a cleaner beer; increasing pitch is often described as the most effective way to cut an ester profile.",
+     "heldBy": "The general homebrewing and supplier literature."
+    },
+    {
+     "claim": "MORE yeast means MORE esters. A ten-fold increase in pitching rate produced a two-fold increase in ethyl acetate, and both ethyl acetate and isoamyl acetate correlated positively with pitch rate.",
+     "heldBy": "Kucharczyk, Żyła & Tuszyński 2020, measured at industrial scale.",
+     "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769"
+    }
+   ],
+   "howThisAppHandlesIt": "It does not adjudicate. The measured study is industrial, one strain, high gravity, and varied pitch alongside aeration and filling time, so its pitch effect is not cleanly separable — while the conventional claim is mechanistically reasonable but rarely measured. Recording the disagreement is more useful than picking a side and presenting it as settled. It is also a third reason this app gives no ester formula: the sign of one of the inputs is contested."
   }
  ]
 }

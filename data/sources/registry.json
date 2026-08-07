@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 281,
+    "distinctSources": 283,
     "backgroundDocuments": 7,
-    "citations": 751,
+    "citations": 760,
     "numericCitations": 645,
     "numericOnShallowLink": 347,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
     "backgroundFullTextVerified": 4,
     "byReliability": {
-      "primary": 595,
-      "secondary": 150,
+      "primary": 597,
+      "secondary": 157,
       "tertiary": 6
     }
   },
@@ -410,13 +410,15 @@
       "doesNotSupport": "Temperature ranges, attenuation, flocculation or alcohol tolerance for any of these organisms except the single 98 °F figure for L. delbrueckii.",
       "accessed": "2026-07-30",
       "note": null,
-      "citations": 8,
+      "citations": 10,
       "numericCitations": 1,
       "usedIn": [
+        "data/fermentation/temperature-trials.json",
         "data/yeasts/bacteria-cultures.json",
         "data/yeasts/wild-heritage.json"
       ],
       "exampleRecords": [
+        "maltose-falcons-sour-guide",
         "bact-pediococcus-damnosus",
         "bact-acetobacter",
         "bact-lambic-blend",
@@ -425,6 +427,40 @@
         "bact-brett-claussenii",
         "bact-brett-anomalus",
         "wild-brettanomyces-bruxellensis"
+      ]
+    },
+    {
+      "id": "ba-yeast-white-zainasheff-2010",
+      "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
+      "host": "www.brewerspublications.com",
+      "title": "Yeast: The Practical Guide to Beer Fermentation",
+      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
+      "authors": [
+        "Chris White",
+        "Jamil Zainasheff"
+      ],
+      "year": 2010,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The canonical modern reference on brewing yeast and fermentation: pitch-rate theory, cell viability and vitality, starter propagation, yeast harvesting and repitching, fermentation temperature and health. ISBN-13 978-0-937381-96-0. This is the acknowledged literature basis, alongside the Maltose Falcons propagation guide, for this project's pitching-rate reconstruction in lib/pitching/formulas.ts.",
+      "doesNotSupport": "Any figure attributed to a specific page. The book's contents have not been opened in this environment — only its existence and bibliographic identity are confirmed — so verification is metadata-only and no numeric claim rests on it. The ISBN is the identifier a future page-level check would use. The numeric yeast specs this project ships are transcribed from the yeast producers' own spec sheets (White Labs, Wyeast, Lallemand, Omega, Fermentis), which are the primary measurements this book itself synthesises.",
+      "accessed": "2026-07-31",
+      "note": "Book imprint of the Brewers Association; publisher of the Brewing Elements series (Yeast, Water, Malt, Hops) — the standard modern technical references. Registered as authoritative secondary literature. A number is never sourced to one of these books unless someone has opened the book and cited the page; until then the ISBN is the durable identifier and verification stays metadata-only. The primary measurements the books synthesise (yeast producers' spec sheets, maltsters' and hop merchants' data, water utility analyses) are cited directly elsewhere in this registry.",
+      "citations": 6,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json",
+        "data/fermentation/temperature-trials.json"
+      ],
+      "exampleRecords": [
+        "beer-ale-clean",
+        "beer-lager",
+        "beer-belgian-warm",
+        "beer-weizen",
+        "beer-mixed-sour",
+        "ba-yeast-white-zainasheff-2010"
       ]
     },
     {
@@ -515,38 +551,6 @@
         "malt-crisp-crystal-77",
         "malt-crisp-chocolate",
         "sugar-invert-no3"
-      ]
-    },
-    {
-      "id": "ba-yeast-white-zainasheff-2010",
-      "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
-      "host": "www.brewerspublications.com",
-      "title": "Yeast: The Practical Guide to Beer Fermentation",
-      "publisher": "Brewers Publications, Boulder CO (Brewing Elements series)",
-      "authors": [
-        "Chris White",
-        "Jamil Zainasheff"
-      ],
-      "year": 2010,
-      "kind": "book",
-      "reliability": "secondary",
-      "verification": "metadata-only",
-      "deepLink": true,
-      "supports": "The canonical modern reference on brewing yeast and fermentation: pitch-rate theory, cell viability and vitality, starter propagation, yeast harvesting and repitching, fermentation temperature and health. ISBN-13 978-0-937381-96-0. This is the acknowledged literature basis, alongside the Maltose Falcons propagation guide, for this project's pitching-rate reconstruction in lib/pitching/formulas.ts.",
-      "doesNotSupport": "Any figure attributed to a specific page. The book's contents have not been opened in this environment — only its existence and bibliographic identity are confirmed — so verification is metadata-only and no numeric claim rests on it. The ISBN is the identifier a future page-level check would use. The numeric yeast specs this project ships are transcribed from the yeast producers' own spec sheets (White Labs, Wyeast, Lallemand, Omega, Fermentis), which are the primary measurements this book itself synthesises.",
-      "accessed": "2026-07-31",
-      "note": "Book imprint of the Brewers Association; publisher of the Brewing Elements series (Yeast, Water, Malt, Hops) — the standard modern technical references. Registered as authoritative secondary literature. A number is never sourced to one of these books unless someone has opened the book and cited the page; until then the ISBN is the durable identifier and verification stays metadata-only. The primary measurements the books synthesise (yeast producers' spec sheets, maltsters' and hop merchants' data, water utility analyses) are cited directly elsewhere in this registry.",
-      "citations": 5,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "beer-ale-clean",
-        "beer-lager",
-        "beer-belgian-warm",
-        "beer-weizen",
-        "beer-mixed-sour"
       ]
     },
     {
@@ -661,6 +665,33 @@
         "malt-amber",
         "malt-oat-malt",
         "malt-pale-chocolate"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts",
+      "host": "www.maltosefalcons.com",
+      "title": null,
+      "publisher": "Maltose Falcons Homebrew Club",
+      "authors": null,
+      "year": null,
+      "kind": "club-guide",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/temperature-trials.json"
+      ],
+      "exampleRecords": [
+        "maltose-falcons-wlp565-ab",
+        "maltose-falcons-saison-schedule",
+        "maltose-falcons-saison-guide"
       ]
     },
     {
@@ -1572,6 +1603,31 @@
     },
     {
       "id": null,
+      "url": "https://www.mdpi.com/2227-9717/8/7/769",
+      "host": "www.mdpi.com",
+      "title": null,
+      "publisher": "MDPI (peer-reviewed open-access journals)",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "citations": 2,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/temperature-trials.json"
+      ],
+      "exampleRecords": [
+        "kucharczyk-zyla-tuszynski-2020"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://wyeastlab.com/product/irish-ale/",
       "host": "wyeastlab.com",
       "title": null,
@@ -1615,65 +1671,12 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/fermentis.json",
-        "data/yeasts/lineages.json"
+        "data/yeasts/derived/lineages.json",
+        "data/yeasts/fermentis.json"
       ],
       "exampleRecords": [
-        "fermentis-us-05",
-        "SafAle US-05"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://fermentis.com/en/product/saflager-w-34-70/",
-      "host": "fermentis.com",
-      "title": null,
-      "publisher": "Fermentis (Lesaffre)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/fermentis.json",
-        "data/yeasts/lineages.json"
-      ],
-      "exampleRecords": [
-        "fermentis-w-3470",
-        "SafLager W-34/70"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.lallemandbiofuels.com/products/distilamax/",
-      "host": "www.lallemandbiofuels.com",
-      "title": null,
-      "publisher": "Lallemand Biofuels & Distilled Spirits",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/yeasts/lallemand.json"
-      ],
-      "exampleRecords": [
-        "distilamax-rm",
-        "distilamax-mw"
+        "SafAle US-05",
+        "fermentis-us-05"
       ]
     },
     {
@@ -1695,7 +1698,7 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/omega.json"
       ],
       "exampleRecords": [
@@ -1722,7 +1725,7 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/white-labs.json"
       ],
       "exampleRecords": [
@@ -1749,7 +1752,7 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/wyeast.json"
       ],
       "exampleRecords": [
@@ -1776,7 +1779,7 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/white-labs.json"
       ],
       "exampleRecords": [
@@ -1803,12 +1806,39 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/wyeast.json"
       ],
       "exampleRecords": [
         "London ESB Ale",
         "wyeast-1968"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fermentis.com/en/product/saflager-w-34-70/",
+      "host": "fermentis.com",
+      "title": null,
+      "publisher": "Fermentis (Lesaffre)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/derived/lineages.json",
+        "data/yeasts/fermentis.json"
+      ],
+      "exampleRecords": [
+        "SafLager W-34/70",
+        "fermentis-w-3470"
       ]
     },
     {
@@ -1830,12 +1860,38 @@
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
-        "data/yeasts/lineages.json",
+        "data/yeasts/derived/lineages.json",
         "data/yeasts/wyeast.json"
       ],
       "exampleRecords": [
         "Bohemian Lager",
         "wyeast-2124"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.lallemandbiofuels.com/products/distilamax/",
+      "host": "www.lallemandbiofuels.com",
+      "title": null,
+      "publisher": "Lallemand Biofuels & Distilled Spirits",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/yeasts/lallemand.json"
+      ],
+      "exampleRecords": [
+        "distilamax-rm",
+        "distilamax-mw"
       ]
     },
     {
