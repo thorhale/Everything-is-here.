@@ -25,8 +25,9 @@
    "description": "Condensed tannin from grape skins and seeds, used to build structure and stabilise colour.",
    "usageNotes": "Added at crush it binds with anthocyanin to fix colour; added later it adds grip and mouthfeel.",
    "cautions": "Easy to overshoot into bitterness. Bench-trial at 0.1 g/L increments.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 0
+   "sourceUrl": "https://scottlab.com/tannins",
+   "sortOrder": 0,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "tannin-grape-white",
@@ -51,8 +52,9 @@
    "description": "A gentler tannin preparation for whites and rosés, protecting against oxidation without adding perceptible astringency.",
    "usageNotes": "Also used pre-fermentation to inhibit the laccase enzyme carried by botrytised fruit.",
    "cautions": "Overdosing shows as a hard, drying finish rather than obvious bitterness.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 1
+   "sourceUrl": "https://scottlab.com/tannins",
+   "sortOrder": 1,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "tannin-quebracho",
@@ -75,8 +77,9 @@
    "description": "A robust, inexpensive condensed tannin from South American quebracho wood.",
    "usageNotes": "Common in cider for adding the grip that dessert-apple juice lacks.",
    "cautions": "Coarser than grape tannin — noticeable as woody astringency if overdone.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 2
+   "sourceUrl": "https://scottlab.com/tannins",
+   "sortOrder": 2,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "tannin-oak-hydrolysable",
@@ -102,8 +105,9 @@
    "description": "Ellagitannins extracted from oak, the compounds that give barrel-aged drinks their structure independent of any oak flavour.",
    "usageNotes": "Adds the tannic contribution of a barrel without the vanillin and lactone flavours.",
    "cautions": "Consumes oxygen readily, which is part of the point, but means it can mask a genuine oxidation problem.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 3
+   "sourceUrl": "https://scottlab.com/tannins",
+   "sortOrder": 3,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "tannin-tea",

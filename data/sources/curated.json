@@ -277,6 +277,13 @@
    "note": "Opaque host; the citation should name the publishing organisation in its title."
   },
   {
+   "host": "scottlab.com",
+   "name": "Scott Laboratories",
+   "kind": "vendor-handbook",
+   "reliability": "primary",
+   "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it."
+  },
+  {
    "host": "scottlabs.com",
    "name": "Scott Laboratories",
    "kind": "vendor-handbook",
@@ -583,6 +590,13 @@
    "name": "US Alcohol and Tobacco Tax and Trade Bureau",
    "kind": "regulation",
    "reliability": "primary"
+  },
+  {
+   "host": "www.vivc.de",
+   "name": "Vitis International Variety Catalogue (Julius Kuhn-Institut)",
+   "kind": "government-database",
+   "reliability": "primary",
+   "note": "The international grape variety register, with stable per-variety passport pages. Registered because it was evaluated as a replacement for the dead UC Davis citations and rejected for that purpose: see doesNotSupport. Kept here so the next person does not repeat the investigation."
   },
   {
    "host": "www.volvic.fr",
@@ -1290,6 +1304,18 @@
    "accessed": "2026-08-02",
    "supports": "The twelve commitments of the French Vin Methode Nature label, whose charter the Syndicat de defense des vins naturels lodged with the DGCCRF and which that authority validated in 2020. Grapes must be 100% certified organic (Nature & Progres, or in the third year of conversion) and hand-harvested. Inoculation of yeast or bacteria is not permitted; a pied de cuve is the permitted route to starting fermentation. Oenological additives and processing aids are not permitted, nor is voluntary modification of the structure of the grapes. Interventionist physical techniques are prohibited, the charter naming reverse osmosis, filtration, thermovinification and centrifugation. Sulphites are the sole exception, permitted in small declared amounts in the finished wine whatever its colour or style, measured by Frantz Paul analysis, with two identification logos separating wines with no added sulphites from wines carrying an addition. Producers sign the Charter of Commitment and are subject to control by the Syndicate.",
    "doesNotSupport": "A precise sulphite ceiling in mg/L. The published PDF does not extract its numerals reliably and the label website's stated figures did not agree closely enough with the charter text to commit one, so no sulphite number is asserted anywhere in this archive. It also supports no gravity, ABV or sensory target, and applies only to wines carrying this specific French label, not to natural wine as a general description."
+  },
+  {
+   "id": "vivc-passport-cabernet-sauvignon",
+   "url": "https://www.vivc.de/index.php?r=passport%2Fview&id=1929",
+   "title": "VIVC passport data — Cabernet Sauvignon (variety no. 1929)",
+   "publisher": "Vitis International Variety Catalogue, Julius Kuhn-Institut",
+   "kind": "government-database",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Grape variety identity: prime name, 62 recorded synonyms, species, berry colour, country of origin and pedigree. Retrieved and read as the worked example for the whole catalogue.",
+   "doesNotSupport": "Harvest chemistry. VIVC carries no Brix, titratable acidity or pH, so it cannot support the numeric fields on this project's 53 wine-grape records. It was evaluated as a replacement for the dead iv.ucdavis.edu citations and deliberately not used for them: swapping a homepage for a per-variety page would have cut 53 from the shallow-link debt while citing a document that does not contain the figures."
   }
  ]
 }

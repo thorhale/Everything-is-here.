@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 295,
-    "backgroundDocuments": 7,
+    "distinctSources": 298,
+    "backgroundDocuments": 8,
     "citations": 760,
     "numericCitations": 645,
     "numericOnShallowLink": 339,
     "numericOnTertiary": 0,
     "fullTextVerified": 30,
-    "backgroundFullTextVerified": 4,
+    "backgroundFullTextVerified": 5,
     "byReliability": {
-      "primary": 597,
-      "secondary": 157,
+      "primary": 650,
+      "secondary": 104,
       "tertiary": 6
     }
   },
@@ -67,24 +67,25 @@
     },
     {
       "id": null,
-      "url": "https://iv.ucdavis.edu/",
-      "host": "iv.ucdavis.edu",
+      "url": "https://wineserver.ucdavis.edu/",
+      "host": "wineserver.ucdavis.edu",
       "title": null,
-      "publisher": "UC Davis Integrated Viticulture",
+      "publisher": "UC Davis Viticulture & Enology",
       "authors": null,
       "year": null,
       "kind": "extension-service",
-      "reliability": "secondary",
+      "reliability": "primary",
       "verification": "unverified",
       "deepLink": false,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
-      "citations": 53,
+      "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
+      "citations": 54,
       "numericCitations": 53,
       "usedIn": [
-        "data/fermentables/wine-grapes.json"
+        "data/fermentables/wine-grapes.json",
+        "data/fermentation/archetypes.json"
       ],
       "exampleRecords": [
         "grape-cabernet-sauvignon",
@@ -250,45 +251,6 @@
       ]
     },
     {
-      "id": null,
-      "url": "https://scottlabs.com/",
-      "host": "scottlabs.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Scott Labs' annual fermentation handbook is the distributor's own compilation of supplier specs; cite the handbook PDF and its year.",
-      "citations": 25,
-      "numericCitations": 24,
-      "usedIn": [
-        "data/additives/enzymes-finings.json",
-        "data/additives/nutrients.json",
-        "data/additives/tannin-wood.json",
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "enzyme-pectic",
-        "enzyme-amylase",
-        "enzyme-glucoamylase",
-        "enzyme-beta-glucanase",
-        "fining-bentonite",
-        "fining-isinglass",
-        "fining-gelatin",
-        "fining-sparkolloid",
-        "fining-kieselsol-chitosan",
-        "fining-pvpp",
-        "fining-irish-moss",
-        "fining-activated-carbon"
-      ]
-    },
-    {
       "id": "uga-c717-winemaking-at-home",
       "url": "https://fieldreport.caes.uga.edu/publications/C717/",
       "host": "fieldreport.caes.uga.edu",
@@ -392,6 +354,70 @@
         "bact-brett-claussenii",
         "bact-brett-anomalus",
         "wild-brettanomyces-bruxellensis"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlab.com/",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 8,
+      "numericCitations": 8,
+      "usedIn": [
+        "data/additives/enzymes-finings.json"
+      ],
+      "exampleRecords": [
+        "fining-bentonite",
+        "fining-isinglass",
+        "fining-gelatin",
+        "fining-sparkolloid",
+        "fining-kieselsol-chitosan",
+        "fining-pvpp",
+        "fining-irish-moss",
+        "fining-activated-carbon"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlab.com/nutrients",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 8,
+      "numericCitations": 8,
+      "usedIn": [
+        "data/additives/nutrients.json"
+      ],
+      "exampleRecords": [
+        "nutrient-dap",
+        "nutrient-fermaid-k",
+        "nutrient-fermaid-o",
+        "nutrient-go-ferm",
+        "nutrient-yeast-hulls",
+        "nutrient-thiamine",
+        "nutrient-yeast-energizer",
+        "nutrient-beer-nutrient"
       ]
     },
     {
@@ -546,6 +572,62 @@
         "triumph",
         "palisade",
         "tettnang-us"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlab.com/enzymes",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/additives/enzymes-finings.json"
+      ],
+      "exampleRecords": [
+        "enzyme-pectic",
+        "enzyme-amylase",
+        "enzyme-glucoamylase",
+        "enzyme-beta-glucanase"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlab.com/tannins",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/additives/tannin-wood.json"
+      ],
+      "exampleRecords": [
+        "tannin-grape-red",
+        "tannin-grape-white",
+        "tannin-quebracho",
+        "tannin-oak-hydrolysable"
       ]
     },
     {
@@ -3416,31 +3498,6 @@
       ]
     },
     {
-      "id": null,
-      "url": "https://wineserver.ucdavis.edu/",
-      "host": "wineserver.ucdavis.edu",
-      "title": null,
-      "publisher": "UC Davis Viticulture & Enology",
-      "authors": null,
-      "year": null,
-      "kind": "extension-service",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
-      "citations": 1,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "wine-cultured"
-      ]
-    },
-    {
       "id": "legras-flor-yeast-2016",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4830823/",
       "host": "pmc.ncbi.nlm.nih.gov",
@@ -3491,6 +3548,31 @@
       ],
       "exampleRecords": [
         "fortified-arrested"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://scottlabs.com/",
+      "host": "scottlabs.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Scott Labs' annual fermentation handbook is the distributor's own compilation of supplier specs; cite the handbook PDF and its year.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "mead-cultured"
       ]
     },
     {
@@ -7769,6 +7851,22 @@
       "supports": "The modern reference on hops: alpha and beta acids and cohumulone, essential oils and the aroma compounds behind them, utilisation and bitterness, variety profiles and hopping technique. ISBN-13 978-1-938469-01-5.",
       "doesNotSupport": "Page-cited figures; not opened here, verification metadata-only, no number rests on it. The hop alpha-acid and oil figures this project ships are transcribed from the hop merchants' and growers' own variety data sheets (BarthHaas, Yakima Chief, Charles Faram, NZ Hops, and others), which are the primary source.",
       "accessed": "2026-07-31"
+    },
+    {
+      "id": "vivc-passport-cabernet-sauvignon",
+      "url": "https://www.vivc.de/index.php?r=passport%2Fview&id=1929",
+      "host": "www.vivc.de",
+      "title": "VIVC passport data — Cabernet Sauvignon (variety no. 1929)",
+      "publisher": "Vitis International Variety Catalogue, Julius Kuhn-Institut",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Grape variety identity: prime name, 62 recorded synonyms, species, berry colour, country of origin and pedigree. Retrieved and read as the worked example for the whole catalogue.",
+      "doesNotSupport": "Harvest chemistry. VIVC carries no Brix, titratable acidity or pH, so it cannot support the numeric fields on this project's 53 wine-grape records. It was evaluated as a replacement for the dead iv.ucdavis.edu citations and deliberately not used for them: swapping a homepage for a per-variety page would have cut 53 from the shallow-link debt while citing a document that does not contain the figures.",
+      "accessed": "2026-08-07"
     }
   ]
 }

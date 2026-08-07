@@ -45,8 +45,9 @@
    ],
    "description": "Thick-skinned, small-berried and heavily tannic — the highest skin-to-juice ratio of the major reds, which is where the structure comes from.",
    "usageNotes": "Picked under-ripe it shows green bell pepper from pyrazines that do not fade with age. Long maceration and oak are the norm.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 0
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 0,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-merlot",
@@ -92,8 +93,9 @@
    ],
    "description": "Earlier-ripening and softer than Cabernet, with larger berries and correspondingly less tannin.",
    "usageNotes": "Prone to running high in pH and low in acid in warm sites — check TA at harvest rather than assuming.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 1
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 1,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-pinot-noir",
@@ -142,8 +144,9 @@
    ],
    "description": "Thin-skinned and pale, with low tannin and low anthocyanin — the colour is fragile and oxidises easily.",
    "usageNotes": "Cold-soak before fermentation is standard practice for colour. Unforgiving of heat and of heavy-handed extraction.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 2
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 2,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-syrah",
@@ -191,8 +194,9 @@
    ],
    "description": "Deeply pigmented with firm tannin and a peppery rotundone character that fades in warmer sites.",
    "usageNotes": "The pepper note is temperature-driven: cool-climate Syrah keeps it, Barossa Shiraz trades it for jam.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 3
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 3,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-zinfandel",
@@ -241,8 +245,9 @@
    ],
    "description": "Notorious for uneven ripening — raisined and green berries on the same bunch, which is why Brix runs so high.",
    "usageNotes": "Sugar can exceed what many yeasts finish. Pick a high-tolerance strain and expect a stuck ferment otherwise.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 4
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 4,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-sangiovese",
@@ -291,8 +296,9 @@
    ],
    "description": "High acid and high tannin with only moderate colour — structural rather than plush.",
    "usageNotes": "Holds acidity well into ripeness, which is why Chianti stays fresh at 14% alcohol.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 5
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 5,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-nebbiolo",
@@ -341,8 +347,9 @@
    ],
    "description": "Pale in colour but ferociously tannic and acidic — the classic mismatch between appearance and structure.",
    "usageNotes": "Long macerations are traditional. Colour fades to brick within a few years regardless.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 6
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 6,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-tempranillo",
@@ -391,8 +398,9 @@
    ],
    "description": "Naturally low in acid and moderate in tannin, with an affinity for American oak.",
    "usageNotes": "Acidification is common in warm sites. Often blended with Graciano for acid.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 7
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 7,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-grenache",
@@ -441,8 +449,9 @@
    ],
    "description": "Very high sugar accumulation with low acid, low tannin and a tendency to oxidise.",
    "usageNotes": "Routinely reaches 15%+ alcohol. Blend with Syrah or Mourvèdre for structure and colour.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 8
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 8,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-malbec",
@@ -491,8 +500,9 @@
    ],
    "description": "Inky colour with plush, round tannin — much softer in Argentina than in its French home.",
    "usageNotes": "Susceptible to coulure; yields swing hard year to year.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 9
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 9,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-cabernet-franc",
@@ -541,8 +551,9 @@
    ],
    "description": "The parent of Cabernet Sauvignon: earlier-ripening, lighter, more aromatic and more herbaceous.",
    "usageNotes": "Pyrazine character is a varietal signature here rather than a ripeness fault.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 10
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 10,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-petit-verdot",
@@ -588,8 +599,9 @@
    ],
    "description": "Very late-ripening, very dark and very tannic — a blending component in Bordeaux and a varietal wine in warmer regions.",
    "usageNotes": "Rarely ripens fully in Bordeaux, which is why it is used in small proportions there.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 11
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 11,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-barbera",
@@ -635,8 +647,9 @@
    ],
    "description": "Exceptionally high acid with low tannin and deep colour — the inverse of Nebbiolo's balance.",
    "usageNotes": "The acid holds up in hot sites, which is why it thrives in California's Central Valley.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 12
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 12,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-petite-sirah",
@@ -684,8 +697,9 @@
    ],
    "description": "Tiny berries and enormous tannin and colour — one of the most extractive grapes there is.",
    "usageNotes": "Cap management needs a light touch or the tannin becomes unbearable.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 13
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 13,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-mourvedre",
@@ -734,8 +748,9 @@
    ],
    "description": "Very late-ripening, tannic and reductive — prone to hydrogen sulphide if nitrogen runs short.",
    "usageNotes": "Watch YAN closely. Needs heat to ripen and gives gamey, meaty character when it does.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 14
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 14,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-carmenere",
@@ -783,8 +798,9 @@
    ],
    "description": "Ripens very late and shows strong pyrazine green-pepper character if picked early.",
    "usageNotes": "Mistaken for Merlot in Chile for over a century until DNA testing sorted it out in 1994.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 15
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 15,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-touriga-nacional",
@@ -830,8 +846,9 @@
    ],
    "description": "Small berries, thick skins, intense floral aromatics and high sugar — the backbone of Port.",
    "usageNotes": "For Port the fermentation is arrested with grape spirit at around half sugar depletion.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 16
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 16,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-gamay",
@@ -879,8 +896,9 @@
    ],
    "description": "Light, low-tannin and high-acid, with bright red-fruit character.",
    "usageNotes": "The classic carbonic maceration grape — whole clusters under CO2 give the banana and kirsch signature.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 17
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 17,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-nero-davola",
@@ -928,8 +946,9 @@
    ],
    "description": "Sicily's flagship red: high sugar, moderate tannin, dark plum and liquorice.",
    "usageNotes": "Heat-tolerant and reliably ripens; acid correction is often needed.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 18
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 18,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-pinotage",
@@ -975,8 +994,9 @@
    ],
    "description": "A 1925 Pinot Noir x Cinsault cross, deeply coloured and tannic, with a reputation for acetone and burnt-rubber faults.",
    "usageNotes": "The off-characters are largely fermentation-management problems — high temperatures and volatile acidity — rather than inherent.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 19
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 19,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-chardonnay",
@@ -1022,8 +1042,9 @@
    ],
    "description": "The neutral canvas — its reputation comes almost entirely from what the winemaker does with oak, lees and malolactic conversion.",
    "usageNotes": "Malolactic conversion turns malic to lactic acid and produces the diacetyl that reads as butter.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 20
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 20,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-sauvignon-blanc",
@@ -1071,8 +1092,9 @@
    ],
    "description": "Driven by volatile thiols and pyrazines: passionfruit and grapefruit over grass and green pepper.",
    "usageNotes": "The thiols are bound precursors released by yeast — strain choice changes the wine more than the vineyard does.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 21
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 21,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-riesling",
@@ -1120,8 +1142,9 @@
    ],
    "description": "The highest-acid major white, capable of balancing enormous residual sugar. Ages for decades.",
    "usageNotes": "Petrol character (TDN) develops with age and sun exposure. Cool fermentation preserves the floral terpenes.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 22
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 22,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-pinot-gris",
@@ -1170,8 +1193,9 @@
    ],
    "description": "A pink-skinned mutation of Pinot Noir; picked early it is lean and neutral, picked late it becomes rich and honeyed.",
    "usageNotes": "Brief skin contact gives the copper tint of ramato styles.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 23
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 23,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-gewurztraminer",
@@ -1219,8 +1243,9 @@
    ],
    "description": "Overtly perfumed — lychee, rose and baking spice from a very high terpene load — with naturally low acid.",
    "usageNotes": "Loses acid fast at the end of ripening. Skin contact increases both aromatics and phenolic bitterness.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 24
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 24,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-viognier",
@@ -1266,8 +1291,9 @@
    ],
    "description": "Apricot and honeysuckle at full ripeness, and completely mute if picked even slightly early.",
    "usageNotes": "A narrow ripeness window and naturally low acid make it technically demanding. Co-fermented with Syrah in Côte-Rôtie.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 25
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 25,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-chenin-blanc",
@@ -1316,8 +1342,9 @@
    ],
    "description": "Extremely versatile and very high in acid — makes everything from bone-dry sparkling to botrytised dessert wine.",
    "usageNotes": "Ripens unevenly, which suits noble rot selection in Vouvray and Coteaux du Layon.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 26
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 26,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-semillon",
@@ -1363,8 +1390,9 @@
    ],
    "description": "Thin-skinned and highly susceptible to botrytis, which is exactly why Sauternes exists.",
    "usageNotes": "Ages remarkably in dry form — Hunter Valley Sémillon is picked at low Brix and develops toast without oak.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 27
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 27,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-albarino",
@@ -1412,8 +1440,9 @@
    ],
    "description": "Thick-skinned, high-acid and saline, with stone fruit and citrus.",
    "usageNotes": "The thick skins resist the Atlantic damp of Galicia. Brief lees ageing adds texture.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 28
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 28,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-gruner-veltliner",
@@ -1459,8 +1488,9 @@
    ],
    "description": "White pepper and lentil over high acid — the pepper is rotundone, the same compound as in Syrah.",
    "usageNotes": "Responds well to lees contact. Ages far better than its fresh-wine reputation suggests.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 29
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 29,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-muscat",
@@ -1509,8 +1539,9 @@
    ],
    "description": "The most overtly grapey of all grapes, from free terpenes that need no yeast release.",
    "usageNotes": "Ancient and genetically the parent of a great many varieties. Fermented cold and stopped early for Moscato d'Asti.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 30
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 30,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-verdejo",
@@ -1556,8 +1587,9 @@
    ],
    "description": "Bitter-almond finish over citrus and fennel; oxidises readily, so it is handled protectively.",
    "usageNotes": "Historically made in an oxidative sherry-like style before the modern fresh style took over.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 31
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 31,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-vermentino",
@@ -1606,8 +1638,9 @@
    ],
    "description": "Saline, herbal and slightly bitter on the finish — a Mediterranean coastal white.",
    "usageNotes": "Holds up in heat better than most aromatic whites.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 32
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 32,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-trebbiano",
@@ -1656,8 +1689,9 @@
    ],
    "description": "Neutral, high-acid and high-yielding — the most planted white grape in France, almost all of it distilled.",
    "usageNotes": "The low alcohol and high acid that make it a poor table wine make it an ideal Cognac base.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 33
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 33,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-marsanne",
@@ -1703,8 +1737,9 @@
    ],
    "description": "Full-bodied and waxy with almond and quince; naturally low in acid.",
    "usageNotes": "Usually blended with Roussanne for lift. Ages into a nutty, honeyed style.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 34
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 34,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-roussanne",
@@ -1750,8 +1785,9 @@
    ],
    "description": "More aromatic and higher in acid than Marsanne, with herbal tea and pear character.",
    "usageNotes": "Difficult in the vineyard — late, uneven and disease-prone.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 35
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 35,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-petit-manseng",
@@ -1797,8 +1833,9 @@
    ],
    "description": "Tiny thick-skinned berries that raisin on the vine, reaching extraordinary sugar while keeping acid.",
    "usageNotes": "The classic passerillage grape — dried on the vine rather than botrytised. Can exceed 30 Brix.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 36
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 36,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-furmint",
@@ -1844,8 +1881,9 @@
    ],
    "description": "High acid, thin skins and extreme botrytis susceptibility — the Tokaji Aszú grape.",
    "usageNotes": "Aszú berries are harvested individually and measured in puttonyos.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 37
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 37,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-chambourcin",
@@ -1891,8 +1929,9 @@
    ],
    "description": "A teinturier hybrid with red flesh as well as red skin, giving deep colour at modest ripeness.",
    "usageNotes": "Disease-resistant and cold-hardy. Acid usually needs reducing rather than raising.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 38
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 38,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-baco-noir",
@@ -1938,8 +1977,9 @@
    ],
    "description": "Very high acid and deep colour with low tannin; a smoky, earthy character.",
    "usageNotes": "Malolactic conversion is essentially mandatory to bring the acid into range.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 39
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 39,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-marquette",
@@ -1985,8 +2025,9 @@
    ],
    "description": "A University of Minnesota release surviving to -35 °C, with unusually good tannin for a cold-hardy hybrid.",
    "usageNotes": "High malic acid — malolactic conversion is standard. A Frontenac descendant with Pinot Noir in its ancestry.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 40
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 40,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-frontenac",
@@ -2032,8 +2073,9 @@
    ],
    "description": "Extremely cold-hardy and extremely acidic — TA can exceed 15 g/L at full sugar ripeness.",
    "usageNotes": "The acid is the defining challenge. Often made sweet or as a port-style wine for that reason.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 41
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 41,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-marechal-foch",
@@ -2081,8 +2123,9 @@
    ],
    "description": "Early-ripening, deeply coloured, low-tannin, with a distinct herbal-earthy note.",
    "usageNotes": "Carbonic maceration suits it well and softens the hybrid character.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 42
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 42,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-vidal-blanc",
@@ -2130,8 +2173,9 @@
    ],
    "description": "Thick-skinned and cold-hardy enough to hang until January — the standard Canadian icewine grape.",
    "usageNotes": "For icewine the frozen berries are pressed at -8 °C or below and the must can exceed 35 Brix.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 43
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 43,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-seyval-blanc",
@@ -2179,8 +2223,9 @@
    ],
    "description": "Neutral and crisp with good acid — a workhorse for English and Eastern US sparkling wine.",
    "usageNotes": "Prone to over-cropping, which thins the wine further. Cluster thinning pays.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 44
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 44,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-traminette",
@@ -2226,8 +2271,9 @@
    ],
    "description": "A Gewürztraminer descendant that keeps the lychee-and-rose aromatics with far better disease resistance and acidity.",
    "usageNotes": "Indiana's signature grape. Often made off-dry to balance the acid.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 45
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 45,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-la-crescent",
@@ -2273,8 +2319,9 @@
    ],
    "description": "Intense apricot and citrus aromatics over ferocious acidity.",
    "usageNotes": "Nearly always finished with residual sugar — the acid demands it.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 46
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 46,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-cayuga-white",
@@ -2320,8 +2367,9 @@
    ],
    "description": "Reliable, productive and mildly aromatic — a Cornell release bred for the Finger Lakes.",
    "usageNotes": "Usually made off-dry in a Germanic style.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 47
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 47,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-concord-wine",
@@ -2367,8 +2415,9 @@
    ],
    "description": "Unmistakably foxy from methyl anthranilate, low in sugar and high in acid.",
    "usageNotes": "Requires substantial chaptalisation. The grape of American grape juice and jelly, and of kosher sweet wine.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 48
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 48,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-niagara",
@@ -2414,8 +2463,9 @@
    ],
    "description": "The white counterpart to Concord, with the same foxy signature in a lighter register.",
    "usageNotes": "Almost always made sweet.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 49
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 49,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-catawba",
@@ -2461,8 +2511,9 @@
    ],
    "description": "Pink-skinned and musky; the basis of 19th-century American sparkling wine before Prohibition.",
    "usageNotes": "Sparkling Catawba was America's first commercially successful wine style.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 50
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 50,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-norton",
@@ -2510,8 +2561,9 @@
    ],
    "description": "A native American species with genuine tannin, deep colour and no foxiness at all.",
    "usageNotes": "Very high malic acid — malolactic conversion is essential. Missouri's state grape and phylloxera-immune.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 51
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 51,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   },
   {
    "id": "grape-muscadine",
@@ -2560,8 +2612,9 @@
    ],
    "description": "A different species entirely, with thick slip-skins, large berries and a strong musky aroma.",
    "usageNotes": "Low sugar and heavy chaptalisation are normal. Extremely disease-resistant in the humid Southeast; Scuppernong is the bronze-skinned form.",
-   "sourceUrl": "https://iv.ucdavis.edu/",
-   "sortOrder": 52
+   "sourceUrl": "https://wineserver.ucdavis.edu/",
+   "sortOrder": 52,
+   "attribution": "iv.ucdavis.edu was retired; UC Davis viticulture now publishes at wineserver.ucdavis.edu (which refuses automated requests, so this is verified by hand, not by the link checker). This remains a site-level citation and is still counted as such. The Brix, titratable acidity and pH figures here are typical ranges from general viticulture practice rather than a per-variety measurement: no free comprehensive per-cultivar maturity table was found, and the international variety catalogue VIVC — which does have stable per-variety pages — carries identity and pedigree, not harvest chemistry."
   }
  ]
 }

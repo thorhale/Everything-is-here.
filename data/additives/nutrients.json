@@ -27,8 +27,9 @@
    "description": "Pure inorganic nitrogen: 21.2% N by weight, so 1 g/L contributes about 212 mg/L of yeast assimilable nitrogen.",
    "usageNotes": "Cheap and immediately available. Best added in stages rather than all at pitch.",
    "cautions": "Ammonium alone does not supply the amino acids, sterols and vitamins yeast also need. A large single dose late in fermentation can drive a heat spike and is largely wasted — yeast lose their nitrogen transporters past about the one-third sugar break.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 0
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 0,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-fermaid-k",
@@ -52,8 +53,9 @@
    "description": "A blended nutrient: DAP plus inactivated yeast, amino acids, sterols, thiamine and minerals. About 100 mg/L YAN per g/L.",
    "usageNotes": "The general-purpose complete nutrient. Typical dose 25 g/hL (0.25 g/L) at the one-third sugar break.",
    "cautions": "Contains DAP, so it counts toward any inorganic nitrogen limit you are working to.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 1
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 1,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-fermaid-o",
@@ -78,8 +80,9 @@
    "description": "Fully organic nitrogen from autolysed yeast — no DAP. Measured YAN is modest, around 40 mg/L per g/L, but it supports fermentation as though it delivered several times that, because the nitrogen arrives as amino acids the yeast can use directly.",
    "usageNotes": "The nutrient the TOSNA mead protocol is built around: roughly 1 g/L total, split into four equal doses at 24 h, 48 h, 72 h and the one-third sugar break.",
    "cautions": "The gap between measured and effective YAN is well documented but not precisely fixed — treat any single conversion figure, including ours, as approximate.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 2
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 2,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-go-ferm",
@@ -105,8 +108,9 @@
    "description": "A rehydration nutrient, not a fermentation nutrient. Micronutrients and sterols taken up by dry yeast during the rehydration window, before they meet the must.",
    "usageNotes": "Suspend in water at about 43 °C, cool to 40 °C, then rehydrate the yeast in it. Typical rate is 1.25 g Go-Ferm per gram of yeast.",
    "cautions": "Must go in the rehydration water, never the must — added directly it does nothing useful.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 3
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 3,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-yeast-hulls",
@@ -133,8 +137,9 @@
    "description": "Cell wall fragments that adsorb the medium-chain fatty acids which inhibit yeast late in fermentation, and provide sterols and unsaturated fatty acids.",
    "usageNotes": "The standard first intervention for a stuck or sluggish fermentation.",
    "cautions": "Contributes essentially no nitrogen — pair with a nitrogen source if YAN is the actual problem.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 4
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 4,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-thiamine",
@@ -159,8 +164,9 @@
    "description": "An essential yeast cofactor. Deficiency causes sluggish fermentation and elevated volatile acidity.",
    "usageNotes": "Regulatory limits typically cap additions around 0.6 mg/L. Present in most blended nutrients already.",
    "cautions": "Sulphite destroys thiamine, so heavily sulphited musts run short of it.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 5
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 5,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-yeast-energizer",
@@ -186,8 +192,9 @@
    "description": "The generic homebrew-shop blend — usually DAP, yeast hulls, and some combination of vitamins and minerals.",
    "usageNotes": "Composition varies by brand, so the YAN figure here is indicative only.",
    "cautions": "Read the label. Some 'energizers' are little more than repackaged DAP.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 6
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 6,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   },
   {
    "id": "nutrient-beer-nutrient",
@@ -211,8 +218,9 @@
    "description": "Zinc-focused nutrient for wort, which is usually nitrogen-sufficient but zinc-deficient after boiling with stainless.",
    "usageNotes": "Added in the last few minutes of the boil. Zinc target is around 0.15–0.30 mg/L.",
    "cautions": "Wort rarely needs nitrogen — dosing beer with DAP is generally unnecessary and can produce harsh flavours.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 7
+   "sourceUrl": "https://scottlab.com/nutrients",
+   "sortOrder": 7,
+   "attribution": "scottlabs.com does not resolve and never did — the supplier's domain is scottlab.com, singular. Repointed to the product category section; Scott Laboratories publishes its figures in the annual Fermentation Handbook, which is the document behind these numbers."
   }
  ]
 }
