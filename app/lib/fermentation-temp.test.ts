@@ -6,6 +6,7 @@ import {
   rangeSummary,
   cToF,
   fToC,
+  schedulesFor,
 } from "@/lib/fermentation-temp";
 
 // A typical clean ale strain: Wyeast 1056, 16–22 °C.
@@ -83,4 +84,33 @@ test("unit conversion round-trips", () => {
   assert.equal(cToF(20), 68);
   assert.ok(Math.abs(fToC(68) - 20) < 1e-9);
   assert.ok(Math.abs(fToC(cToF(18)) - 18) < 0.6);
+});
+
+// --- Schedules: when you are warm, not just how warm ----------------------
+
+test("schedules are expressed in the strain's own temperatures", () => {
+  const s = schedulesFor(ALE);
+  assert.equal(s.length, 3);
+  const cool = s.find((x) => x.key === "cool-then-rise")!;
+  const warm = s.find((x) => x.key === "warm-throughout")!;
+  // Cool-then-rise grows cold and finishes warm; warm-throughout does neither.
+  assert.ok(cool.growthC < cool.finishC, "cool-then-rise must ramp up");
+  assert.ok(cool.growthC < warm.growthC, "cool-then-rise grows colder than warm-throughout");
+  // Everything stays inside the published range.
+  for (const x of s) {
+    assert.ok(x.growthC >= ALE.tempMinC && x.growthC <= ALE.tempMaxC, `${x.key} growth in range`);
+    assert.ok(x.finishC >= ALE.tempMinC && x.finishC <= ALE.tempMaxC, `${x.key} finish in range`);
+  }
+});
+
+test("schedules move with the strain, like the bands do", () => {
+  const lager = schedulesFor({ tempMinC: 9, tempMaxC: 15 });
+  const saison = schedulesFor({ tempMinC: 20, tempMaxC: 35 });
+  const growth = (s: ReturnType<typeof schedulesFor>) =>
+    s.find((x) => x.key === "cool-then-rise")!.growthC;
+  assert.ok(growth(lager) < growth(saison), "a lager grows colder than a saison");
+});
+
+test("no range means no schedule, rather than a made-up one", () => {
+  assert.deepEqual(schedulesFor({ tempMinC: null, tempMaxC: null }), []);
 });

@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { getStrain } from "@/lib/yeasts-curated";
 import { matchGuidelineForStyleName, styleHref } from "@/lib/guidelines";
 import { getYeastSubstitutes } from "@/lib/substitutions";
-import { assessTemp, tempAtFraction, rangeSummary } from "@/lib/fermentation-temp";
+import { assessTemp, tempAtFraction, rangeSummary, schedulesFor } from "@/lib/fermentation-temp";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -126,6 +126,7 @@ export default async function StrainPage({ params }: Props) {
   // range — the section simply does not render rather than guessing one.
   const tempRange = { tempMinC: strain.tempMinC, tempMaxC: strain.tempMaxC };
   const summary = rangeSummary(tempRange);
+  const schedules = schedulesFor(tempRange);
   const tempBands = summary
     ? {
         summary,
@@ -257,12 +258,51 @@ export default async function StrainPage({ params }: Props) {
               ))}
             </tbody>
           </table>
+          <h4 style={{ margin: "1rem 0 0.3rem", fontSize: "0.95rem" }}>
+            When you are warm matters as much as how warm
+          </h4>
+          <p style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", margin: "0 0 0.5rem" }}>
+            Esters and fusel alcohols are made almost entirely during the first day or two, while
+            the yeast is still growing — so holding cool through that window and letting it rise
+            afterwards gives a cleaner beer than sitting at the average the whole way. Same average,
+            different beer.
+          </p>
+          <table>
+            <tbody>
+              {schedules.map((s) => (
+                <tr key={s.key}>
+                  <th style={{ textAlign: "left", whiteSpace: "nowrap", width: 200, verticalAlign: "top" }}>
+                    {s.label}
+                    <div style={{ fontWeight: 400, color: "var(--wh-text-light)", fontSize: "0.8rem" }}>
+                      grow {s.growthC} °C / {s.growthF} °F
+                      {s.finishC !== s.growthC ? `, finish ${s.finishC} °C / ${s.finishF} °F` : ""}
+                    </div>
+                  </th>
+                  <td style={{ fontSize: "0.85rem" }}>
+                    {s.outcome}
+                    <div style={{ color: "var(--wh-text-light)", marginTop: "0.2rem" }}>
+                      Best for: {s.bestFor}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
           <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
             Directions, not magnitudes. Esters and fusel alcohols rise with temperature while
             acetaldehyde and diacetyl fall — measured at industrial scale by Kucharczyk &amp;
-            Tuszyński (<em>J. Inst. Brew.</em> 124(3), 2018). How <em>much</em> they move depends on
-            the strain&rsquo;s own genetics, wort nitrogen, pitch rate and pressure, so no figure is
-            asserted here. See <Link href="/fermentation">fermentation archetypes</Link>.
+            Tuszyński (<em>J. Inst. Brew.</em> 124(3), 2018). The growth-phase point, and a
+            same-strain A/B showing it, come from the{" "}
+            <a
+              href="https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Maltose Falcons saison guide
+            </a>
+            . How <em>much</em> any of it moves depends on the strain&rsquo;s own genetics, wort
+            nitrogen, pitch rate and pressure, so no figure is asserted here. See{" "}
+            <Link href="/fermentation">fermentation archetypes</Link>.
           </p>
         </>
       )}

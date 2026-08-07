@@ -19,10 +19,26 @@
    "scale": "industrial",
    "conditions": "Wort fermented at 8.5, 10 and 11.5 °C, with maturation at −1 °C. Extract, yeast growth, esters, higher alcohols and carbonyl compounds followed through fermentation and maturation.",
    "findings": [
-    { "measured": "esters", "direction": "increase", "withRisingTemperature": true },
-    { "measured": "higher (fusel) alcohols", "direction": "increase", "withRisingTemperature": true },
-    { "measured": "acetaldehyde", "direction": "decrease", "withRisingTemperature": true },
-    { "measured": "vicinal diketones (diacetyl and relatives)", "direction": "decrease", "withRisingTemperature": true }
+    {
+     "measured": "esters",
+     "direction": "increase",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "higher (fusel) alcohols",
+     "direction": "increase",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "acetaldehyde",
+     "direction": "decrease",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "vicinal diketones (diacetyl and relatives)",
+     "direction": "decrease",
+     "withRisingTemperature": true
+    }
    ],
    "quantitative": null,
    "quantitativeNote": "Per-compound concentrations at each temperature are in the full text, which is paywalled and could not be retrieved. The directions above are from the published abstract and are what this app relies on. If someone with access adds the measured figures here, they should be presented as what this trial measured at lager temperatures on its own wort and strain — not as a curve to read other batches off.",
@@ -36,6 +52,86 @@
    "statement": "Fruit and complex esters increase when fermentation temperatures are above 64 °F (18 °C). Beers fermented at the lower end of the range produce a dry, crisp profile with subtle fruitiness.",
    "note": "A supplier stating the temperature–ester relationship for its own strain, with a threshold. This is the most directly useful form of the claim there is, and it comes from the people who selected the strain.",
    "sourceUrl": "https://wyeastlab.com/product/irish-ale/"
+  },
+  {
+   "strain": "Wyeast 3711 French Saison",
+   "statement": "Reported to give better flavour fermented cooler, within its range.",
+   "note": "A practitioner observation from a club guide rather than a supplier specification — recorded as such.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  }
+ ],
+ "growthPhaseNote": "The single most important qualifier on everything else in this file: esters and higher alcohols are made overwhelmingly during active yeast GROWTH, in roughly the first two days, because growth rate is what sets the fusel/ester balance. The same temperature applied after growth does something different — it speeds diacetyl and acetaldehyde cleanup without adding much ester. Two ferments averaging the same temperature therefore need not taste alike, and a single number is an incomplete description of a ferment. This is also the clearest reason a temperature cannot be turned into a milligrams-per-litre figure: the profile matters, not the reading.",
+ "practitionerTrials": [
+  {
+   "id": "maltose-falcons-wlp565-ab",
+   "source": "Maltose Falcons Homebrew Club, A Guide to Saisons and Saison Yeasts",
+   "reliability": "secondary",
+   "design": "Same strain (White Labs WLP565 Belgian Saison I), two temperature handlings, tasted against each other.",
+   "arms": [
+    {
+     "handling": "Taken straight to 85 °F (29 °C) from the start",
+     "result": "Deep, dry spice; black pepper."
+    },
+    {
+     "handling": "Started cool and allowed to rise on ambient",
+     "result": "Fruit and cherries; subdued spice; more balanced overall."
+    }
+   ],
+   "whyItMatters": "A controlled comparison on one strain showing that WHEN the ferment is warm changes the character, not merely how warm it gets. It is the practical face of the growth-phase point above.",
+   "caveat": "A club guide, not a peer-reviewed trial: no replication, no analytical measurement, and sensory description only. Cited as an observation, not as data.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  },
+  {
+   "id": "maltose-falcons-saison-schedule",
+   "source": "Maltose Falcons Homebrew Club, A Guide to Saisons and Saison Yeasts",
+   "reliability": "secondary",
+   "design": "A recommended saison schedule rather than a comparison.",
+   "arms": [
+    {
+     "handling": "Chill wort to 62–64 °F (16.7–17.8 °C), hold at 65 °F (18.3 °C) for three days, then allow a free rise toward the mid-80s and 90s °F (29–35 °C)",
+     "result": "Cited as generating the intended balance of esters and phenols by controlling temperature early, during the lag phase, while the yeast are reproducing."
+    }
+   ],
+   "whyItMatters": "A concrete instance of the cool-through-growth-then-rise strategy the app now offers for any strain.",
+   "caveat": "Style-specific and strain-specific. The temperatures suit saison strains bred for heat; the same ramp applied to a clean ale strain would run well past its range.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  }
+ ],
+ "notesOnOrganismsWithoutRanges": {
+  "finding": "The Maltose Falcons wild-and-sour guide, this project's cited source for the bacteria and Brettanomyces cultures, gives exactly one temperature figure across all of them: ferment Lactobacillus delbrueckii very warm, on the order of 98 °F (37 °C).",
+  "consequence": "The eleven cultures in the catalog with no temperature range are therefore not an oversight in this repository — the source genuinely does not publish ranges for them. Filling those in needs a different primary source (supplier datasheets from the culture banks, or the microbiological literature), not a closer reading of this one.",
+  "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales"
+ },
+ "standardReferences": [
+  {
+   "id": "ba-yeast-white-zainasheff-2010",
+   "title": "Yeast: The Practical Guide to Beer Fermentation",
+   "authors": "White, C. & Zainasheff, J.",
+   "publisher": "Brewers Publications (Brewers Association), Boulder CO — Brewing Elements series",
+   "year": 2010,
+   "isbn": "978-0-937381-96-9",
+   "verification": "metadata-only",
+   "supports": "The canonical modern treatment of fermentation temperature and its effect on yeast-derived flavour, alongside pitch-rate theory and viability. This project's pitching model in app/lib/pitching/formulas.ts is built on its published targets.",
+   "howItIsUsed": "Referenced as the standard work a reader should go to for depth, NOT quoted for figures. The registry holds Brewing Elements titles at metadata-only verification: no number is attributed to one of these books unless somebody has opened the book and cited the page. The temperature guidance in this app therefore rests on the retrievable sources above — a peer-reviewed trial and the producers' own statements — and points at the book rather than leaning on it.",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "maltose-falcons-saison-guide",
+   "title": "A Guide to Saisons and Saison Yeasts",
+   "publisher": "Maltose Falcons Homebrew Club",
+   "verification": "full-text",
+   "supports": "The growth-phase point that qualifies everything else here — that the ester and phenol balance is set early, while the yeast is reproducing — plus a same-strain A/B on WLP565 and a concrete saison ramp schedule.",
+   "howItIsUsed": "An experienced club's published guide: strong on practice, but sensory rather than analytical, and cited as observation rather than measurement. Ten strain records in data/yeasts/ already draw their character notes from it.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  },
+  {
+   "id": "maltose-falcons-sour-guide",
+   "title": "Brewing Sour and Wild Ales",
+   "publisher": "Maltose Falcons Homebrew Club",
+   "verification": "full-text",
+   "supports": "The bacteria and Brettanomyces cultures in this catalog, including the single Lactobacillus delbrueckii temperature figure — and, by its silence, the documented reason eleven other cultures carry no range.",
+   "howItIsUsed": "Eighteen strain records cite it. Re-read in full for this work specifically to check whether more temperature data was there; it was not.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales"
   }
  ]
 }

@@ -32,6 +32,17 @@
 // .json and are shown as what that trial measured under its conditions — never
 // extrapolated onto your batch.
 //
+// WHERE TO READ MORE. White & Zainasheff, "Yeast: The Practical Guide to Beer
+// Fermentation" (Brewers Publications, 2010) is the standard work on this
+// territory and is what the pitching model in lib/pitching/formulas.ts is built
+// on. It is deliberately pointed AT rather than quoted: the source registry
+// holds the Brewing Elements titles at metadata-only verification, meaning no
+// figure is attributed to one of those books unless somebody has opened it and
+// cited the page. The claims this module makes therefore rest on sources a
+// reader can retrieve — the peer-reviewed trial above, the producers' own strain
+// statements, and the Maltose Falcons guides recorded in
+// data/fermentation/temperature-trials.json.
+//
 // Pure computation, no filesystem or database access, so client components can
 // import it directly.
 
@@ -148,6 +159,88 @@ export function tempAtFraction(range: StrainTempRange, fraction: number): number
   const { tempMinC: lo, tempMaxC: hi } = range;
   if (lo == null || hi == null || !(hi > lo)) return null;
   return Math.round((lo + (hi - lo) * fraction) * 10) / 10;
+}
+
+// --- WHEN you are warm, not just how warm --------------------------------
+//
+// A single temperature is an incomplete description of a ferment, and this is
+// the refinement that matters most. Esters and higher alcohols are made
+// overwhelmingly during active yeast GROWTH — the first couple of days — because
+// growth rate is what sets the fusel/ester balance. After growth finishes, the
+// same temperature does something quite different: it speeds up diacetyl and
+// acetaldehyde cleanup without adding much ester.
+//
+// So two ferments that both average 20 °C can come out unalike. Held at 18 °C
+// through the growth phase and then allowed to free-rise, a beer is markedly
+// cleaner than one pitched straight in at 22 °C, even if both finish in the same
+// place. The Maltose Falcons saison guide puts it plainly — the balance of
+// esters and phenols is generated "by controlling the temperature early during
+// the lag phase when the yeast are reproducing" — and reports the A/B: WLP565
+// taken straight to 85 °F gave deep, dry, black-peppery spice, while the same
+// strain started cool and allowed to rise gave fruit and cherries with subdued
+// spice.
+//
+// This is also why the app declines to turn a temperature into a number. A
+// quantitative model would need the whole profile, not one reading.
+
+export type ScheduleKey = "cool-then-rise" | "steady-mid" | "warm-throughout";
+
+export interface Schedule {
+  key: ScheduleKey;
+  label: string;
+  /** Where in the strain's range to sit during active growth, then afterwards. */
+  growthFraction: number;
+  finishFraction: number;
+  outcome: string;
+  bestFor: string;
+}
+
+export const SCHEDULES: Schedule[] = [
+  {
+    key: "cool-then-rise",
+    label: "Cool through growth, then free-rise",
+    growthFraction: 0.15,
+    finishFraction: 0.85,
+    outcome:
+      "The cleanest result the strain can give while still finishing dry. Holding the growth phase cool suppresses ester and fusel formation where it actually happens; letting it rise afterwards clears diacetyl and acetaldehyde without putting the esters back.",
+    bestFor: "Clean ales and lagers, and any beer where you want the malt or hops rather than the yeast.",
+  },
+  {
+    key: "steady-mid",
+    label: "Steady, mid-range",
+    growthFraction: 0.5,
+    finishFraction: 0.5,
+    outcome:
+      "The strain as its supplier characterises it — moderate esters, predictable timing, no surprises in either direction.",
+    bestFor: "A first run with an unfamiliar strain, and most everyday brewing.",
+  },
+  {
+    key: "warm-throughout",
+    label: "Warm from the start",
+    growthFraction: 0.85,
+    finishFraction: 0.9,
+    outcome:
+      "Maximum ester and phenol expression, because growth happens hot. Fastest, driest and most characterful — and the point at which fusel alcohols become a real risk if the strain is not built for it.",
+    bestFor: "Saison, weizen and Belgian strains, where the yeast character is the beer.",
+  },
+];
+
+export interface ScheduleForStrain extends Schedule {
+  growthC: number;
+  growthF: number;
+  finishC: number;
+  finishF: number;
+}
+
+/** The three common strategies, expressed in this strain's own temperatures. */
+export function schedulesFor(range: StrainTempRange): ScheduleForStrain[] {
+  return SCHEDULES.map((s) => {
+    const growthC = tempAtFraction(range, s.growthFraction);
+    const finishC = tempAtFraction(range, s.finishFraction);
+    return growthC == null || finishC == null
+      ? null
+      : { ...s, growthC, growthF: cToF(growthC), finishC, finishF: cToF(finishC) };
+  }).filter((x): x is ScheduleForStrain => x != null);
 }
 
 /**
