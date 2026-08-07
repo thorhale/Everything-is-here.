@@ -25,8 +25,24 @@ const ARGS = process.argv.slice(2);
 const STRICT = ARGS.includes("--strict");
 const AS_JSON = ARGS.includes("--json");
 const ONLY = ARGS.find((a) => a.startsWith("--only="))?.slice(7) ?? null;
-const CONCURRENCY = 10;
+// Concurrency was 10, and that turned out to make this tool lie. A full run
+// reported 99 URLs as "fetch failed"; spot-checking them one at a time, four in
+// five answered 200. The failures were the network refusing a burst, not
+// documents that had gone away — and a link checker that cries wolf on a
+// quarter of the corpus is one nobody reads, which is the same way an
+// un-ratcheted budget stops meaning anything.
+//
+// So: fewer in flight, and a transient failure is retried with a pause before it
+// is believed. A 404 is a fact and is taken at face value; a connection reset is
+// an opinion and gets a second and third ask.
+//
+// This makes a full run slow — minutes, not seconds. That is the right trade for
+// something whose whole job is to be believed, but it is why --only=<area> exists
+// and why a whole-repo run wants a generous timeout or a background shell.
+const CONCURRENCY = 4;
 const TIMEOUT_MS = 25_000;
+const RETRIES = 2;
+const RETRY_PAUSE_MS = 1_500;
 
 // A 403 is usually a publisher refusing robots, not a missing document —
 // Wiley and ScienceDirect do this to every automated request. Reporting those
@@ -71,7 +87,9 @@ function walk(node, file, out, label) {
   }
 }
 
-async function probe(url) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function attempt(url) {
   const control = new AbortController();
   const timer = setTimeout(() => control.abort(), TIMEOUT_MS);
   try {
@@ -88,6 +106,18 @@ async function probe(url) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function probe(url) {
+  let last;
+  for (let i = 0; i <= RETRIES; i++) {
+    last = await attempt(url);
+    // A status code is an answer, even an unwelcome one — only a failure to get
+    // any answer at all is worth asking again about.
+    if (last.status !== 0) return i > 0 ? { ...last, retried: i } : last;
+    if (i < RETRIES) await sleep(RETRY_PAUSE_MS * (i + 1));
+  }
+  return { ...last, retried: RETRIES };
 }
 
 const cited = collect(ROOT);
