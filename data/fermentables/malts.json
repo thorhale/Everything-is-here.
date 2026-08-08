@@ -79,7 +79,8 @@
    ],
    "description": "The benchmark English floor-malted base; rich, biscuity, bready depth that plain pale malt lacks.",
    "flavorNotes": "Biscuit, nutty, gentle toast.",
-   "sourceUrl": "https://crispmalt.com/malts/finest-maris-otter-ale-malt/"
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_FinestMarisOtterAleMalt.pdf",
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
   },
   {
    "id": "malt-golden-promise",
@@ -739,7 +740,8 @@
     "whisky"
    ],
    "description": "Peat-smoked malt — medicinal, earthy smoke. The signature of Islay whisky; use tiny amounts in beer.",
-   "sourceUrl": "https://crispmalt.com/malts/peated-malt/"
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/SPEC-Crisp-Premium-Peated-Malt.pdf",
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
   },
   {
    "id": "malt-brown",
@@ -1081,7 +1083,8 @@
     "base"
    ],
    "description": "A paler-kilned Maris Otter keeping the biscuity depth while allowing very pale beers.",
-   "sourceUrl": "https://crispmalt.com/"
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_ExtraPaleMarisOtterMalt.pdf",
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
   },
   {
    "id": "malt-vienna-castle",

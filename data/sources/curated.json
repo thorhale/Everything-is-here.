@@ -258,6 +258,13 @@
    "reliability": "primary"
   },
   {
+   "host": "rahrbsg.ca",
+   "name": "RahrBSG (Brewers Supply Group)",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording."
+  },
+  {
    "host": "rahrmalting.com",
    "name": "Rahr Malting",
    "kind": "vendor-datasheet",
@@ -1378,6 +1385,18 @@
    "accessed": "2026-08-07",
    "supports": "Individual measured concentrations of calcium, magnesium, sodium, chloride, sulfate and bicarbonate in mg/L, each tied to a monitoring site, a sampling date and an analytical method. Queried for Iowa since 2018 and read: 17,702 site/date groups returned, of which 377 carried a complete six-ion panel that balanced on charge.",
    "doesNotSupport": "Anything about what comes out of a tap. These are ambient water bodies — rivers, lakes and wells — sampled before treatment or distribution, so they describe a source and not a supply. They also do not replace the historic city profiles, which are literature reconstructions of water that can no longer be sampled."
+  },
+  {
+   "id": "rahrbsg-hop-variety-sheets",
+   "url": "https://rahrbsg.ca/product-sheets/",
+   "title": "RahrBSG product sheets — hop varieties, Crisp malts, Fermentis yeast",
+   "publisher": "RahrBSG",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Per-variety hop brewing values: alpha and beta acid ranges, co-humulone as % of alpha, total oils mL/100 g, and the myrcene, humulene, caryophyllene and farnesene fractions. Fifty-two sheets matching this project's hops were downloaded and parsed; the Amarillo sheet was read against the page directly.",
+   "doesNotSupport": "Lot-specific analysis — these are typical ranges and a real bale is certified by its own certificate of analysis. It also does not settle disagreements with other merchants: on five varieties RahrBSG and John I. Haas publish materially different alpha ranges, and neither is authoritative over the other."
   }
  ]
 }

@@ -11,14 +11,14 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 240,
-    "backgroundDocuments": 10,
+    "distinctSources": 273,
+    "backgroundDocuments": 11,
     "citations": 760,
     "numericCitations": 645,
-    "numericOnShallowLink": 294,
+    "numericOnShallowLink": 289,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
-    "backgroundFullTextVerified": 7,
+    "backgroundFullTextVerified": 8,
     "byReliability": {
       "primary": 650,
       "secondary": 104,
@@ -81,25 +81,25 @@
       "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding.",
       "accessed": "2026-08-07",
       "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable.",
-      "citations": 85,
-      "numericCitations": 85,
+      "citations": 56,
+      "numericCitations": 56,
       "usedIn": [
         "data/hops/us.json",
         "data/hops/world.json"
       ],
       "exampleRecords": [
         "cascade",
-        "centennial",
-        "citra",
         "mosaic",
         "simcoe",
         "amarillo",
-        "chinook",
         "columbus",
         "willamette",
         "sabro",
         "strata",
-        "idaho-7"
+        "idaho-7",
+        "el-dorado",
+        "talus",
+        "loral"
       ]
     },
     {
@@ -487,37 +487,6 @@
     },
     {
       "id": null,
-      "url": "https://crispmalt.com/",
-      "host": "crispmalt.com",
-      "title": null,
-      "publisher": "Crisp Malt",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 5,
-      "numericCitations": 5,
-      "usedIn": [
-        "data/fermentables/adjunct-grains.json",
-        "data/fermentables/malts.json",
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "adjunct-torrified-wheat",
-        "malt-marris-otter-crisp-extra-pale",
-        "malt-crisp-crystal-77",
-        "malt-crisp-chocolate",
-        "sugar-invert-no3"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://scottlab.com/enzymes",
       "host": "scottlab.com",
       "title": null,
@@ -570,6 +539,36 @@
         "tannin-grape-white",
         "tannin-quebracho",
         "tannin-oak-hydrolysable"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 4,
+      "numericCitations": 4,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json",
+        "data/fermentables/malts.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "adjunct-torrified-wheat",
+        "malt-crisp-crystal-77",
+        "malt-crisp-chocolate",
+        "sugar-invert-no3"
       ]
     },
     {
@@ -653,62 +652,6 @@
         "maltose-falcons-wlp565-ab",
         "maltose-falcons-saison-schedule",
         "maltose-falcons-saison-guide"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.barthhaas.com/",
-      "host": "www.barthhaas.com",
-      "title": null,
-      "publisher": "BarthHaas",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "hallertau-mittelfrueh",
-        "spalt",
-        "huell-melon",
-        "styrian-goldings"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.nzhops.co.nz/",
-      "host": "www.nzhops.co.nz",
-      "title": null,
-      "publisher": "New Zealand Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "pacific-jade",
-        "nectaron",
-        "green-bullet",
-        "kohatu"
       ]
     },
     {
@@ -872,6 +815,33 @@
       "exampleRecords": [
         "Qvevri Wine (Georgia)",
         "Skin-Contact (\"Orange\") White Wine"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.barthhaas.com/",
+      "host": "www.barthhaas.com",
+      "title": null,
+      "publisher": "BarthHaas",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "hallertau-mittelfrueh",
+        "spalt",
+        "styrian-goldings"
       ]
     },
     {
@@ -1617,6 +1587,32 @@
     },
     {
       "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cascade.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "cascade-argentina",
+        "cascade-nz"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fermentis.com/en/product/safale-us-05/",
       "host": "fermentis.com",
       "title": null,
@@ -2168,10 +2164,10 @@
     },
     {
       "id": null,
-      "url": "https://crispmalt.com/malts/finest-maris-otter-ale-malt/",
-      "host": "crispmalt.com",
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_FinestMarisOtterAleMalt.pdf",
+      "host": "rahrbsg.ca",
       "title": null,
-      "publisher": "Crisp Malt",
+      "publisher": "RahrBSG (Brewers Supply Group)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -2181,7 +2177,7 @@
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2518,10 +2514,10 @@
     },
     {
       "id": null,
-      "url": "https://crispmalt.com/malts/peated-malt/",
-      "host": "crispmalt.com",
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/SPEC-Crisp-Premium-Peated-Malt.pdf",
+      "host": "rahrbsg.ca",
       "title": null,
-      "publisher": "Crisp Malt",
+      "publisher": "RahrBSG (Brewers Supply Group)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -2531,7 +2527,7 @@
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2664,6 +2660,31 @@
       ],
       "exampleRecords": [
         "malt-pilsner-bestmalz"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_ExtraPaleMarisOtterMalt.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-marris-otter-crisp-extra-pale"
       ]
     },
     {
@@ -3965,6 +3986,331 @@
     },
     {
       "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Centennial.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "centennial"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Citra.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "citra"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Chinook.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "chinook"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Azacca.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "azacca"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Ekuanot.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "ekuanot"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Nugget.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "nugget"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Galena.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "galena"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Crystal.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "crystal"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Mount-Hood.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "mount-hood"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cluster.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cluster"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Comet.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "comet"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cashmere.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "cashmere"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Northern-Brewer.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "northern-brewer-us"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.yakimachief.com/commercial/products/cryo-hops.html",
       "host": "www.yakimachief.com",
       "title": null,
@@ -3990,10 +4336,10 @@
     },
     {
       "id": null,
-      "url": "https://charlesfaram.com/hop/east-kent-golding/",
-      "host": "charlesfaram.com",
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Summit.pdf",
+      "host": "rahrbsg.ca",
       "title": null,
-      "publisher": "Charles Faram",
+      "publisher": "RahrBSG (Brewers Supply Group)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -4003,7 +4349,32 @@
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/us.json"
+      ],
+      "exampleRecords": [
+        "summit"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-East-Kent-Goldings.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -4011,6 +4382,56 @@
       ],
       "exampleRecords": [
         "east-kent-goldings"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Challenger.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "challenger"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Target.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "target"
       ]
     },
     {
@@ -4040,6 +4461,156 @@
     },
     {
       "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hersbrucker.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "hersbrucker"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Perle.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "perle"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Saphir.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "saphir"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Blanc.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "hallertau-blanc"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Huell-Melon.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "huell-melon"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Mandarina-Bavaria.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "mandarina-bavaria"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.czhops.cz/",
       "host": "www.czhops.cz",
       "title": null,
@@ -4061,6 +4632,256 @@
       ],
       "exampleRecords": [
         "sladek"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Czech-Kazbek.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "kazbek"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Nelson-Sauvin.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "nelson-sauvin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Pacific-Jade.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "pacific-jade"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.nzhops.co.nz/",
+      "host": "www.nzhops.co.nz",
+      "title": null,
+      "publisher": "New Zealand Hops",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "nectaron"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Progress.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "progress"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/12.22.20-Green-Bullet-v1.1.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "green-bullet"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Tradition.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "hallertau-tradition"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Polaris.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "polaris"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Kohatu.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "kohatu"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Liberty.pdf",
+      "host": "rahrbsg.ca",
+      "title": null,
+      "publisher": "RahrBSG (Brewers Supply Group)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "liberty"
       ]
     },
     {
@@ -6442,6 +7263,22 @@
       "deepLink": false,
       "supports": "Individual measured concentrations of calcium, magnesium, sodium, chloride, sulfate and bicarbonate in mg/L, each tied to a monitoring site, a sampling date and an analytical method. Queried for Iowa since 2018 and read: 17,702 site/date groups returned, of which 377 carried a complete six-ion panel that balanced on charge.",
       "doesNotSupport": "Anything about what comes out of a tap. These are ambient water bodies — rivers, lakes and wells — sampled before treatment or distribution, so they describe a source and not a supply. They also do not replace the historic city profiles, which are literature reconstructions of water that can no longer be sampled.",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "rahrbsg-hop-variety-sheets",
+      "url": "https://rahrbsg.ca/product-sheets/",
+      "host": "rahrbsg.ca",
+      "title": "RahrBSG product sheets — hop varieties, Crisp malts, Fermentis yeast",
+      "publisher": "RahrBSG",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": false,
+      "supports": "Per-variety hop brewing values: alpha and beta acid ranges, co-humulone as % of alpha, total oils mL/100 g, and the myrcene, humulene, caryophyllene and farnesene fractions. Fifty-two sheets matching this project's hops were downloaded and parsed; the Amarillo sheet was read against the page directly.",
+      "doesNotSupport": "Lot-specific analysis — these are typical ranges and a real bale is certified by its own certificate of analysis. It also does not settle disagreements with other merchants: on five varieties RahrBSG and John I. Haas publish materially different alpha ranges, and neither is authoritative over the other.",
       "accessed": "2026-08-07"
     }
   ]

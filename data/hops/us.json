@@ -74,8 +74,8 @@
    ],
    "yearReleased": 1990,
    "description": "Cleaner and more intense than Cascade, with pronounced lemon-citrus. The backbone of Two Hearted Ale.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Centennial.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "citra",
@@ -115,8 +115,8 @@
    "yearReleased": 2008,
    "description": "The single most influential modern aroma hop; enormous tropical and citrus intensity. Its low cohumulone also makes it surprisingly smooth as a bittering charge.",
    "usageNotes": "A thiol-rich variety — pairs exceptionally with thiolized yeast strains for amplified tropical character.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Citra.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "mosaic",
@@ -257,8 +257,8 @@
    ],
    "yearReleased": 1985,
    "description": "Assertive pine-and-grapefruit resin; a West Coast IPA staple both for bittering and for late additions.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Chinook.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "columbus",
@@ -430,7 +430,7 @@
    ],
    "description": "Big-oil variety with an unusual black-tea and stone-fruit complexity alongside tropical notes.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. The two major distributors do not agree on this variety's alpha: RahrBSG publishes 11.5-13.5% and the John I. Haas Hops Companion 13.0-15.0%. This record follows Haas, which it cites. The disagreement is recorded rather than resolved — both are typical-range guides from primary merchants, neither is a lot analysis, and a real bale is certified by its own certificate of analysis."
   },
   {
    "id": "el-dorado",
@@ -492,8 +492,8 @@
    ],
    "yearReleased": 2014,
    "description": "Named for the Haitian god of agriculture; bold tropical fruit with a piney backbone.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Azacca.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "talus",
@@ -592,8 +592,8 @@
     "hazy"
    ],
    "description": "Melon-forward tropical hop with a distinctive vegetal green-pepper edge in some lots.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Ekuanot.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "magnum-us",
@@ -654,7 +654,7 @@
    ],
    "description": "Smooth, clean high-alpha bittering hop favoured when you want IBUs without flavour interference.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. The two major distributors do not agree on this variety's alpha: RahrBSG publishes 14.5-16.5% and the John I. Haas Hops Companion 15.5-18.0%. This record follows Haas, which it cites. The disagreement is recorded rather than resolved — both are typical-range guides from primary merchants, neither is a lot analysis, and a real bale is certified by its own certificate of analysis."
   },
   {
    "id": "nugget",
@@ -684,8 +684,8 @@
     "ipa"
    ],
    "description": "Herbal, resinous bittering hop with more character than Magnum or Warrior.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Nugget.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "galena",
@@ -715,8 +715,8 @@
     "stout"
    ],
    "description": "Long-standing American bittering variety with a blackcurrant edge.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Galena.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "crystal",
@@ -748,8 +748,8 @@
     "noble-adjacent"
    ],
    "description": "American triploid Hallertau descendant; gentle, spicy, noble-like character.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Crystal.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "mount-hood",
@@ -779,8 +779,8 @@
     "noble-adjacent"
    ],
    "description": "Hallertau-derived American aroma hop for continental-style lagers.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Mount-Hood.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "cluster",
@@ -811,8 +811,8 @@
     "amber"
    ],
    "description": "The oldest American hop lineage — the dominant US variety for most of the 19th and 20th centuries before craft aroma hops took over.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cluster.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "comet",
@@ -842,8 +842,8 @@
     "pale-ale"
    ],
    "description": "A revived 1970s variety known for an intense 'wild American' grapefruit-and-grass character.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Comet.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "cashmere",
@@ -874,8 +874,8 @@
     "hazy"
    ],
    "description": "A Cascade-Northern Brewer cross with a smooth citrus-melon profile and low cohumulone.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cashmere.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "northern-brewer-us",
@@ -906,8 +906,8 @@
     "altbier"
    ],
    "description": "Minty, woody dual-purpose hop; the defining hop of California Common (steam beer).",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Northern-Brewer.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "zappa",
@@ -987,8 +987,8 @@
     "dank"
    ],
    "description": "Very high-alpha dwarf variety; citrus with a notorious onion/garlic note in some lots.",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Summit.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Brewing values for this variety are published by RahrBSG (BSG Canada product sheets) as a per-variety PDF carrying alpha and beta acid ranges, co-humulone as a percentage of alpha, total oils in mL/100 g and the myrcene, humulene, caryophyllene and farnesene fractions. The sheet was retrieved and read. Cross-checked against the John I. Haas Hops Companion: on the thirteen varieties where both distributors publish a readable figure and this project holds one, all three agree on alpha to within a point."
   },
   {
    "id": "contessa",
