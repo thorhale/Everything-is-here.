@@ -995,8 +995,8 @@
    "name": "Contessa (HBC 586)",
    "country": "United States",
    "purpose": "aroma",
-   "alphaMin": 9,
-   "alphaMax": 12,
+   "alphaMin": 3.0,
+   "alphaMax": 5.0,
    "betaMin": 3,
    "betaMax": 5,
    "totalOilMin": 1,
@@ -1017,15 +1017,15 @@
    ],
    "description": "A softer, floral-fruity American variety suited to lager and delicate late additions.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 9-12% to 3.0-5.0% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "triumph",
    "name": "Triumph",
    "country": "United States",
    "purpose": "dual",
-   "alphaMin": 11,
-   "alphaMax": 14,
+   "alphaMin": 10.6,
+   "alphaMax": 11.4,
    "betaMin": 4,
    "betaMax": 6,
    "totalOilMin": 1.5,
@@ -1046,7 +1046,7 @@
    ],
    "description": "An Oregon State release with a berry-and-tea complexity over a citrus base.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 11-14% to 10.6-11.4% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "palisade",

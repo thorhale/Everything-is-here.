@@ -1,0 +1,338 @@
+{
+ "set": "Measured water analyses — US:19",
+ "note": "Individual laboratory analyses from the Water Quality Portal, published jointly by the USGS and EPA. Each entry is one site on one sampling date with all six brewing ions measured in mg/L, admitted only if the set balances on charge. These are measurements of real water bodies, not curated brewing profiles, and they are not a substitute for a report on your own supply — a river is not what comes out of the tap.",
+ "source": "https://www.waterqualitydata.us/",
+ "query": {
+  "state": "US:19",
+  "since": "2018-01-01",
+  "tolerancePct": 10
+ },
+ "generated": "2026-08-08",
+ "sites": [
+  {
+   "site": "USGS-05451210",
+   "date": "2021-08-23",
+   "ions": {
+    "bicarbonate": 223,
+    "calcium": 40.8,
+    "magnesium": 22.3,
+    "sodium": 8.51,
+    "chloride": 12.5,
+    "sulfate": 11.5
+   },
+   "balancePct": 0.1
+  },
+  {
+   "site": "USGS-05451210",
+   "date": "2021-02-01",
+   "ions": {
+    "bicarbonate": 382,
+    "calcium": 81.9,
+    "magnesium": 31.4,
+    "sodium": 10.9,
+    "chloride": 14.1,
+    "sulfate": 23.1
+   },
+   "balancePct": 0.1
+  },
+  {
+   "site": "USGS-420036091444001",
+   "date": "2022-02-24",
+   "ions": {
+    "bicarbonate": 320,
+    "calcium": 81.7,
+    "magnesium": 25.3,
+    "sodium": 14.9,
+    "chloride": 29,
+    "sulfate": 35.5
+   },
+   "balancePct": 0.1
+  },
+  {
+   "site": "USGS-420010091431801",
+   "date": "2018-03-12",
+   "ions": {
+    "bicarbonate": 296,
+    "calcium": 74.7,
+    "magnesium": 24.6,
+    "sodium": 14.3,
+    "chloride": 29.9,
+    "sulfate": 33.2
+   },
+   "balancePct": 0.2
+  },
+  {
+   "site": "USGS-420035091422301",
+   "date": "2022-02-25",
+   "ions": {
+    "bicarbonate": 299,
+    "calcium": 75.9,
+    "magnesium": 25.3,
+    "sodium": 15.2,
+    "chloride": 32.4,
+    "sulfate": 33.7
+   },
+   "balancePct": 0.2
+  },
+  {
+   "site": "USGS-05420500",
+   "date": "2023-08-21",
+   "ions": {
+    "bicarbonate": 181,
+    "calcium": 35.5,
+    "magnesium": 21.3,
+    "sodium": 11.5,
+    "chloride": 20.1,
+    "sulfate": 24
+   },
+   "balancePct": 0.2
+  },
+  {
+   "site": "USGS-05465500",
+   "date": "2023-08-23",
+   "ions": {
+    "bicarbonate": 200,
+    "calcium": 42.8,
+    "magnesium": 24.4,
+    "sodium": 34.4,
+    "chloride": 51.7,
+    "sulfate": 43
+   },
+   "balancePct": 0.2
+  },
+  {
+   "site": "USGS-05451210",
+   "date": "2022-10-24",
+   "ions": {
+    "bicarbonate": 323,
+    "calcium": 66.7,
+    "magnesium": 30.8,
+    "sodium": 11.7,
+    "chloride": 20.7,
+    "sulfate": 23
+   },
+   "balancePct": 0.3
+  },
+  {
+   "site": "USGS-05420500",
+   "date": "2021-03-29",
+   "ions": {
+    "bicarbonate": 192,
+    "calcium": 43.8,
+    "magnesium": 18.3,
+    "sodium": 11.5,
+    "chloride": 20.6,
+    "sulfate": 21.6
+   },
+   "balancePct": 0.4
+  },
+  {
+   "site": "USGS-420031091422601",
+   "date": "2022-12-19",
+   "ions": {
+    "bicarbonate": 241,
+    "calcium": 64.8,
+    "magnesium": 20.3,
+    "sodium": 11.1,
+    "chloride": 26.8,
+    "sulfate": 31.4
+   },
+   "balancePct": 0.5
+  },
+  {
+   "site": "USGS-420036091444001",
+   "date": "2020-11-18",
+   "ions": {
+    "bicarbonate": 234,
+    "calcium": 62.4,
+    "magnesium": 19.4,
+    "sodium": 11.9,
+    "chloride": 24.9,
+    "sulfate": 31.7
+   },
+   "balancePct": 0.6
+  },
+  {
+   "site": "USGS-420013091442000",
+   "date": "2022-02-24",
+   "ions": {
+    "bicarbonate": 293,
+    "calcium": 75.7,
+    "magnesium": 23.7,
+    "sodium": 13.5,
+    "chloride": 28.2,
+    "sulfate": 32.6
+   },
+   "balancePct": 0.6
+  },
+  {
+   "site": "USGS-05451210",
+   "date": "2022-12-05",
+   "ions": {
+    "bicarbonate": 374,
+    "calcium": 79.8,
+    "magnesium": 34.9,
+    "sodium": 11.4,
+    "chloride": 19.6,
+    "sulfate": 30
+   },
+   "balancePct": 0.6
+  },
+  {
+   "site": "USGS-05465500",
+   "date": "2020-11-05",
+   "ions": {
+    "bicarbonate": 258,
+    "calcium": 66.6,
+    "magnesium": 22.4,
+    "sodium": 21.4,
+    "chloride": 35.7,
+    "sulfate": 39.4
+   },
+   "balancePct": 0.7
+  },
+  {
+   "site": "USGS-05420500",
+   "date": "2023-05-01",
+   "ions": {
+    "bicarbonate": 91.6,
+    "calcium": 22.9,
+    "magnesium": 7.35,
+    "sodium": 5.13,
+    "chloride": 9.16,
+    "sulfate": 10.8
+   },
+   "balancePct": 0.7
+  },
+  {
+   "site": "USGS-05490500",
+   "date": "2023-10-24",
+   "ions": {
+    "bicarbonate": 216,
+    "calcium": 58.4,
+    "magnesium": 28.1,
+    "sodium": 65.1,
+    "chloride": 88.7,
+    "sulfate": 94
+   },
+   "balancePct": 0.7
+  },
+  {
+   "site": "USGS-05451210",
+   "date": "2021-05-26",
+   "ions": {
+    "bicarbonate": 344,
+    "calcium": 83.7,
+    "magnesium": 30.4,
+    "sodium": 8.26,
+    "chloride": 25.1,
+    "sulfate": 30.5
+   },
+   "balancePct": 0.8
+  },
+  {
+   "site": "USGS-05465500",
+   "date": "2022-03-23",
+   "ions": {
+    "bicarbonate": 229,
+    "calcium": 59.5,
+    "magnesium": 18.6,
+    "sodium": 17,
+    "chloride": 35.8,
+    "sulfate": 24.9
+   },
+   "balancePct": 0.8
+  },
+  {
+   "site": "USGS-05490500",
+   "date": "2023-12-05",
+   "ions": {
+    "bicarbonate": 227,
+    "calcium": 61.2,
+    "magnesium": 29.1,
+    "sodium": 64.4,
+    "chloride": 80.4,
+    "sulfate": 112
+   },
+   "balancePct": 0.8
+  },
+  {
+   "site": "USGS-05420500",
+   "date": "2020-09-21",
+   "ions": {
+    "bicarbonate": 205,
+    "calcium": 41.8,
+    "magnesium": 19.4,
+    "sodium": 8.99,
+    "chloride": 14.8,
+    "sulfate": 16
+   },
+   "balancePct": 0.9
+  },
+  {
+   "site": "USGS-420035091422301",
+   "date": "2022-08-22",
+   "ions": {
+    "bicarbonate": 259,
+    "calcium": 67.8,
+    "magnesium": 19.9,
+    "sodium": 11.5,
+    "chloride": 25.7,
+    "sulfate": 24.2
+   },
+   "balancePct": 0.9
+  },
+  {
+   "site": "USGS-05490500",
+   "date": "2023-04-17",
+   "ions": {
+    "bicarbonate": 231,
+    "calcium": 66.7,
+    "magnesium": 20.4,
+    "sodium": 18.9,
+    "chloride": 33.3,
+    "sulfate": 50.4
+   },
+   "balancePct": 0.9
+  },
+  {
+   "site": "USGS-05465500",
+   "date": "2018-03-05",
+   "ions": {
+    "bicarbonate": 130,
+    "calcium": 35.6,
+    "magnesium": 10.3,
+    "sodium": 11.6,
+    "chloride": 24.8,
+    "sulfate": 15.9
+   },
+   "balancePct": 1
+  },
+  {
+   "site": "USGS-05490500",
+   "date": "2021-03-18",
+   "ions": {
+    "bicarbonate": 193,
+    "calcium": 52.8,
+    "magnesium": 20.4,
+    "sodium": 26.5,
+    "chloride": 42.6,
+    "sulfate": 55.5
+   },
+   "balancePct": 1
+  },
+  {
+   "site": "USGS-420013091442000",
+   "date": "2022-05-16",
+   "ions": {
+    "bicarbonate": 283,
+    "calcium": 73,
+    "magnesium": 22.9,
+    "sodium": 12.8,
+    "chloride": 28.3,
+    "sulfate": 28.3
+   },
+   "balancePct": 1
+  }
+ ]
+}

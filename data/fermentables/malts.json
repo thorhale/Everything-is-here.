@@ -128,7 +128,8 @@
    ],
    "description": "Continental lager base malt, kilned very lightly for a pale, delicate, honeyed malt character.",
    "usageNotes": "High in SMM/DMS precursors — give it a vigorous 90-minute boil.",
-   "sourceUrl": "https://www.weyermann.de/en/pilsner-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-vienna",
@@ -152,7 +153,8 @@
     "base"
    ],
    "description": "Lightly toasted base malt bridging Pilsner and Munich; golden colour with a soft toasty sweetness.",
-   "sourceUrl": "https://www.weyermann.de/en/vienna-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-munich-light",
@@ -177,7 +179,8 @@
    ],
    "description": "Malt-forward base with enough enzyme to convert itself; the backbone of Märzen, bock, and dunkel.",
    "flavorNotes": "Bread crust, toffee, deep malt.",
-   "sourceUrl": "https://www.weyermann.de/en/munich-malt-type-1/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-munich-dark",
@@ -200,7 +203,8 @@
     "dunkel"
    ],
    "description": "Darker, richer Munich; intense malty depth with marginal enzyme reserve.",
-   "sourceUrl": "https://www.weyermann.de/en/munich-malt-type-2/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-pale-ale",
@@ -223,7 +227,8 @@
     "base"
    ],
    "description": "Slightly darker, fuller-bodied kilned base malt for ales.",
-   "sourceUrl": "https://www.weyermann.de/en/pale-ale-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-wheat-pale",
@@ -270,7 +275,8 @@
     "dunkelweizen"
    ],
    "description": "Kilned darker for dunkelweizen depth while keeping wheat's protein and head retention.",
-   "sourceUrl": "https://www.weyermann.de/en/dark-wheat-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-rye",
@@ -295,7 +301,8 @@
    ],
    "description": "Malted rye — dry, peppery, spicy, with a silky mouthfeel. Also a whiskey mash staple.",
    "usageNotes": "Very gummy (beta-glucans); rice hulls strongly recommended above ~20%.",
-   "sourceUrl": "https://www.weyermann.de/en/rye-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-acidulated",
@@ -320,7 +327,8 @@
     "pilsner"
    ],
    "description": "Malt coated in lactic acid from a natural souring step; used to drop mash pH without mineral additions. Roughly 1% of the grist lowers pH by ~0.1.",
-   "sourceUrl": "https://www.weyermann.de/en/acidulated-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-carapils",
@@ -499,7 +507,8 @@
     "bock"
    ],
    "description": "Intensifies malt aroma and red hues, mimicking the effect of decoction mashing.",
-   "sourceUrl": "https://www.weyermann.de/en/melanoidin-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-biscuit",
@@ -681,7 +690,8 @@
    ],
    "description": "Dehusked roasted malt: deep colour and cocoa without the astringent bite of husked roast malts.",
    "usageNotes": "The standard way to darken a beer smoothly — ideal for schwarzbier and black IPA.",
-   "sourceUrl": "https://www.weyermann.de/en/carafa-special-type-2/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-smoked-beech",
@@ -840,7 +850,8 @@
     "body"
    ],
    "description": "Light German caramel malt for body and gentle sweetness in Helles, bock, and pale lagers.",
-   "sourceUrl": "https://www.weyermann.de/en/carahell/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-carared",
@@ -862,7 +873,8 @@
     "caramel"
    ],
    "description": "Adds a warm red-amber hue and light caramel to red ales and amber lagers.",
-   "sourceUrl": "https://www.weyermann.de/en/carared/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-carafa-i",
@@ -884,7 +896,8 @@
     "smooth"
    ],
    "description": "The lightest dehusked Carafa; smooth colour and mild cocoa without husk astringency.",
-   "sourceUrl": "https://www.weyermann.de/en/carafa-special-type-1/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-golden-naked-oats",
@@ -952,7 +965,8 @@
     "dark-fruit"
    ],
    "description": "Malty, bready specialty malt with a hint of dark fruit for Belgian and strong ales.",
-   "sourceUrl": "https://www.weyermann.de/en/abbey-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-cherrywood-smoked",
@@ -1270,7 +1284,8 @@
     "red"
    ],
    "description": "Intense dark caramel malt; raisin and dark berry with a deep red hue.",
-   "sourceUrl": "https://www.weyermann.de/en/caraaroma/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-carawheat",
@@ -1292,7 +1307,8 @@
     "dunkelweizen"
    ],
    "description": "Caramelised wheat malt for colour, body and a bready-caramel note in wheat beers.",
-   "sourceUrl": "https://www.weyermann.de/en/carawheat/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-sinamar",
@@ -1313,7 +1329,8 @@
     "schwarzbier"
    ],
    "description": "Liquid colour extract from roasted barley malt — adjusts colour post-boil with essentially no flavour impact. The clean way to darken a beer without changing the grist.",
-   "sourceUrl": "https://www.weyermann.de/en/sinamar/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-chocolate-rye",
@@ -1335,7 +1352,8 @@
     "spicy"
    ],
    "description": "Roasted rye — dry cocoa with rye's characteristic pepper. Excellent in roggenbier and dark rye ales.",
-   "sourceUrl": "https://www.weyermann.de/en/chocolate-rye-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-crisp-crystal-77",
@@ -1541,7 +1559,8 @@
     "silky"
    ],
    "description": "Malted spelt — an ancient wheat relative giving a silky body and a delicate nutty note.",
-   "sourceUrl": "https://www.weyermann.de/en/spelt-malt/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
   },
   {
    "id": "malt-emmer",

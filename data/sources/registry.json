@@ -11,14 +11,14 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 257,
-    "backgroundDocuments": 9,
+    "distinctSources": 240,
+    "backgroundDocuments": 10,
     "citations": 760,
     "numericCitations": 645,
     "numericOnShallowLink": 294,
     "numericOnTertiary": 0,
-    "fullTextVerified": 31,
-    "backgroundFullTextVerified": 6,
+    "fullTextVerified": 32,
+    "backgroundFullTextVerified": 7,
     "byReliability": {
       "primary": 650,
       "secondary": 104,
@@ -249,6 +249,42 @@
         "honey-heather",
         "honey-eucalyptus",
         "honey-linden"
+      ]
+    },
+    {
+      "id": "weyermann-brewery-products-crop2025",
+      "url": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+      "host": "www.weyermann.de",
+      "title": "Weyermann Specialty Malts — Brewery Products catalogue (Crop 2025)",
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Per-malt typical analysis: moisture (%), extract on dry substance (%), and colour in both EBC and Lovibond, with minimum and maximum for each. Retrieved and read; the CARAAROMA entry was checked against the page directly.",
+      "doesNotSupport": "Diastatic power and protein, which this catalogue does not tabulate, and PPG — the figures this project stores are derived from extract rather than printed here. Crop-year specific: the analysis is labelled Crop 2025 and later crops will differ.",
+      "accessed": "2026-08-07",
+      "note": null,
+      "citations": 19,
+      "numericCitations": 19,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-pilsner",
+        "malt-vienna",
+        "malt-munich-light",
+        "malt-munich-dark",
+        "malt-pale-ale",
+        "malt-wheat-dark",
+        "malt-rye",
+        "malt-acidulated",
+        "malt-melanoidin",
+        "malt-carafa-ii",
+        "malt-carahell",
+        "malt-carared"
       ]
     },
     {
@@ -915,32 +951,6 @@
       "exampleRecords": [
         "malt-biscuit",
         "malt-aromatic"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/carared/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-carared",
-        "malt-crystal-rye"
       ]
     },
     {
@@ -2208,131 +2218,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/pilsner-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-pilsner"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/vienna-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-vienna"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/munich-malt-type-1/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-munich-light"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/munich-malt-type-2/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-munich-dark"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/pale-ale-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-pale-ale"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.weyermann.de/en/pale-wheat-malt/",
       "host": "www.weyermann.de",
       "title": null,
@@ -2354,81 +2239,6 @@
       ],
       "exampleRecords": [
         "malt-wheat-pale"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/dark-wheat-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-wheat-dark"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/rye-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-rye"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/acidulated-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-acidulated"
       ]
     },
     {
@@ -2558,31 +2368,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/melanoidin-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-melanoidin"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
       "host": "brewingwithbriess.com",
       "title": null,
@@ -2708,31 +2493,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/carafa-special-type-2/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-carafa-ii"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.weyermann.de/en/beech-smoked-barley-malt/",
       "host": "www.weyermann.de",
       "title": null,
@@ -2833,56 +2593,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/carahell/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-carahell"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/carafa-special-type-1/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-carafa-i"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/",
       "host": "www.simpsonsmalt.co.uk",
       "title": null,
@@ -2904,31 +2614,6 @@
       ],
       "exampleRecords": [
         "malt-golden-naked-oats"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/abbey-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-abbey"
       ]
     },
     {
@@ -2979,6 +2664,31 @@
       ],
       "exampleRecords": [
         "malt-pilsner-bestmalz"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/en/carared/",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crystal-rye"
       ]
     },
     {
@@ -3108,106 +2818,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/caraaroma/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-caraaroma"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/carawheat/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-carawheat"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/sinamar/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-sinamar"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/chocolate-rye-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-chocolate-rye"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.simpsonsmalt.co.uk/",
       "host": "www.simpsonsmalt.co.uk",
       "title": null,
@@ -3329,31 +2939,6 @@
       ],
       "exampleRecords": [
         "malt-vienna-briess"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/spelt-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-spelt"
       ]
     },
     {
@@ -6841,6 +6426,22 @@
       "deepLink": true,
       "supports": "Federal standards of identity for whisky: the class definition (distillate from a fermented mash of grain at less than 95% ABV, stored in oak) and the enumerated types including bourbon, rye, wheat, malt, corn, straight designations and — as type (15) — American single malt whisky, with their mash-bill, distillation-proof and cooperage requirements. Retrieved as XML from the eCFR API at version 2026-01-01 and read.",
       "doesNotSupport": "Tennessee whiskey, which this section does not define — the maple-charcoal filtration requirement is Tennessee state law recognised in trade agreements, not a federal standard of identity. Also does not cover Scotch, Irish or Canadian whisky beyond the designations the US permits on imports; their governing law is UK, Irish and Canadian respectively.",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "wqp-result-search",
+      "url": "https://www.waterqualitydata.us/",
+      "host": "www.waterqualitydata.us",
+      "title": "Water Quality Portal — Result search service",
+      "publisher": "USGS / EPA / National Water Quality Monitoring Council",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": false,
+      "supports": "Individual measured concentrations of calcium, magnesium, sodium, chloride, sulfate and bicarbonate in mg/L, each tied to a monitoring site, a sampling date and an analytical method. Queried for Iowa since 2018 and read: 17,702 site/date groups returned, of which 377 carried a complete six-ion panel that balanced on charge.",
+      "doesNotSupport": "Anything about what comes out of a tap. These are ambient water bodies — rivers, lakes and wells — sampled before treatment or distribution, so they describe a source and not a supply. They also do not replace the historic city profiles, which are literature reconstructions of water that can no longer be sampled.",
       "accessed": "2026-08-07"
     }
   ]

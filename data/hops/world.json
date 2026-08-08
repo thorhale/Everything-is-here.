@@ -933,8 +933,8 @@
    "name": "Galaxy",
    "country": "Australia",
    "purpose": "dual",
-   "alphaMin": 11,
-   "alphaMax": 16,
+   "alphaMin": 13.0,
+   "alphaMax": 18.5,
    "betaMin": 5,
    "betaMax": 6.9,
    "cohumuloneMin": 32,
@@ -959,7 +959,7 @@
    ],
    "description": "Australia's flagship hop and one of the highest oil-content varieties grown; overwhelming passionfruit and peach.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 11-16% to 13.0-18.5% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "vic-secret",
@@ -997,8 +997,8 @@
    "name": "Ella",
    "country": "Australia",
    "purpose": "dual",
-   "alphaMin": 13,
-   "alphaMax": 16,
+   "alphaMin": 13.4,
+   "alphaMax": 19.2,
    "betaMin": 5,
    "betaMax": 8,
    "cohumuloneMin": 33,
@@ -1021,15 +1021,15 @@
    ],
    "description": "Aromatic Australian hop; floral and spicy at low rates, tropical when pushed.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 13-16% to 13.4-19.2% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "enigma",
    "name": "Enigma",
    "country": "Australia",
    "purpose": "dual",
-   "alphaMin": 13,
-   "alphaMax": 17,
+   "alphaMin": 16.7,
+   "alphaMax": 19.4,
    "betaMin": 4.5,
    "betaMax": 6,
    "totalOilMin": 1.8,
@@ -1050,15 +1050,15 @@
    ],
    "description": "Distinctive berry and white-wine character; a Tasmanian breeding release.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 13-17% to 16.7-19.4% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "topaz",
    "name": "Topaz",
    "country": "Australia",
    "purpose": "dual",
-   "alphaMin": 15,
-   "alphaMax": 18,
+   "alphaMin": 16.2,
+   "alphaMax": 20.1,
    "betaMin": 6,
    "betaMax": 8,
    "cohumuloneMin": 47,
@@ -1080,7 +1080,7 @@
    ],
    "description": "High-alpha Australian hop; clean bittering with a grassy-tropical aroma.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 15-18% to 16.2-20.1% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "pride-of-ringwood",
@@ -1117,8 +1117,8 @@
    "name": "Sorachi Ace",
    "country": "Japan",
    "purpose": "dual",
-   "alphaMin": 10,
-   "alphaMax": 16,
+   "alphaMin": 12.0,
+   "alphaMax": 16.0,
    "betaMin": 6,
    "betaMax": 7,
    "cohumuloneMin": 23,
@@ -1143,7 +1143,7 @@
    "yearReleased": 1984,
    "description": "Bred by Sapporo; an unmistakable lemon-dill-coconut profile that people either love or find soapy.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 10-16% to 12.0-16.0% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "strisselspalt",
@@ -1362,8 +1362,8 @@
    "name": "Akoya",
    "country": "France",
    "purpose": "aroma",
-   "alphaMin": 8,
-   "alphaMax": 12,
+   "alphaMin": 9.0,
+   "alphaMax": 10.0,
    "betaMin": 3,
    "betaMax": 5,
    "totalOilMin": 1,
@@ -1385,7 +1385,7 @@
    ],
    "description": "Modern French aroma variety with a floral-citrus and subtle anise character.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 8-12% to 9.0-10.0% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "dr-rudi",
@@ -1554,8 +1554,8 @@
    "name": "Styrian Wolf",
    "country": "Slovenia",
    "purpose": "aroma",
-   "alphaMin": 10,
-   "alphaMax": 13,
+   "alphaMin": 13.5,
+   "alphaMax": 18.5,
    "betaMin": 3,
    "betaMax": 5,
    "totalOilMin": 1.5,
@@ -1577,7 +1577,7 @@
    ],
    "description": "Modern Slovenian aroma hop with bright grapefruit and white-wine notes.",
    "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script."
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions for this variety are published in the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide. The guide was retrieved and this variety confirmed present with a full specification table; the stored figures were NOT bulk-imported from it, because a naive parse of that PDF silently mis-associates blocks — it read Simcoe as 4.5-8.0% alpha where the page plainly says 12.0-15.5%, while parsing Cascade exactly right. Reconciling the numbers needs a per-variety read, not a script. Alpha revised from 10-13% to 13.5-18.5% to match the Haas Hops Companion (2022), which this record cites; the previous figures came from a citation that was only a publisher homepage and disagreed with the guide by more than 1.5 points."
   },
   {
    "id": "bobek",

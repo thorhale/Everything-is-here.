@@ -613,6 +613,13 @@
    "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description."
   },
   {
+   "host": "www.waterqualitydata.us",
+   "name": "Water Quality Portal (USGS / EPA / NWQMC)",
+   "kind": "government-database",
+   "reliability": "primary",
+   "note": "Joint USGS, EPA and National Water Quality Monitoring Council repository of individual laboratory analyses of US water bodies. Free, no key, machine-readable. Each record is a measurement with a site, a date and a method, which is a stronger provenance than any curated brewing profile can offer."
+  },
+  {
    "host": "www.webstaurantstore.com",
    "name": "WebstaurantStore",
    "kind": "vendor-datasheet",
@@ -1347,6 +1354,30 @@
    "accessed": "2026-08-07",
    "supports": "Federal standards of identity for whisky: the class definition (distillate from a fermented mash of grain at less than 95% ABV, stored in oak) and the enumerated types including bourbon, rye, wheat, malt, corn, straight designations and — as type (15) — American single malt whisky, with their mash-bill, distillation-proof and cooperage requirements. Retrieved as XML from the eCFR API at version 2026-01-01 and read.",
    "doesNotSupport": "Tennessee whiskey, which this section does not define — the maple-charcoal filtration requirement is Tennessee state law recognised in trade agreements, not a federal standard of identity. Also does not cover Scotch, Irish or Canadian whisky beyond the designations the US permits on imports; their governing law is UK, Irish and Canadian respectively."
+  },
+  {
+   "id": "weyermann-brewery-products-crop2025",
+   "url": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "title": "Weyermann Specialty Malts — Brewery Products catalogue (Crop 2025)",
+   "publisher": "Weyermann Specialty Malts",
+   "kind": "vendor-tds",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Per-malt typical analysis: moisture (%), extract on dry substance (%), and colour in both EBC and Lovibond, with minimum and maximum for each. Retrieved and read; the CARAAROMA entry was checked against the page directly.",
+   "doesNotSupport": "Diastatic power and protein, which this catalogue does not tabulate, and PPG — the figures this project stores are derived from extract rather than printed here. Crop-year specific: the analysis is labelled Crop 2025 and later crops will differ."
+  },
+  {
+   "id": "wqp-result-search",
+   "url": "https://www.waterqualitydata.us/",
+   "title": "Water Quality Portal — Result search service",
+   "publisher": "USGS / EPA / National Water Quality Monitoring Council",
+   "kind": "government-database",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Individual measured concentrations of calcium, magnesium, sodium, chloride, sulfate and bicarbonate in mg/L, each tied to a monitoring site, a sampling date and an analytical method. Queried for Iowa since 2018 and read: 17,702 site/date groups returned, of which 377 carried a complete six-ion panel that balanced on charge.",
+   "doesNotSupport": "Anything about what comes out of a tap. These are ambient water bodies — rivers, lakes and wells — sampled before treatment or distribution, so they describe a source and not a supply. They also do not replace the historic city profiles, which are literature reconstructions of water that can no longer be sampled."
   }
  ]
 }
