@@ -286,7 +286,7 @@
       "approach": "Honey is nutrient-free, so mead pitches a wine yeast and manages fermentation through staggered nutrient additions rather than pitch rate alone. The builder computes a TOSNA-style schedule (lib/must.ts).",
       "specialHandling": ["Staggered nutrient additions (TOSNA) over the first third of fermentation; without them, sluggish ferments and H2S."],
       "researchStatus": "sourced",
-      "sourceUrl": "https://scottlabs.com/"
+      "sourceUrl": "https://scottlab.com/nutrients"
     },
 
     {

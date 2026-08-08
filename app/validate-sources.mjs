@@ -22,9 +22,11 @@
 //   excuse: the number is visible in CI and every dataset change must hold the
 //   line or improve it.
 
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from "node:fs";
+import { join } from "node:path";
 
 const REG = new URL("../data/sources/registry.json", import.meta.url).pathname;
+const DATA = new URL("../data/", import.meta.url).pathname;
 const BUDGET = new URL("./sources-budget.json", import.meta.url).pathname;
 
 const reg = JSON.parse(readFileSync(REG, "utf8"));
@@ -58,6 +60,38 @@ for (const s of reg.sources) {
     hard.push(`curated document "${s.id}" does not state what it supports: ${s.url}`);
   }
 }
+
+// --- Hard rule 4: a withdrawn source must be declared, not implied. --------
+//
+// When a publisher takes down the page a figure came from and there is no
+// successor, the record keeps the figure and records the dead URL in
+// withdrawnSourceUrl instead of sourceUrl. That is a deliberate, visible state.
+// The failure it must not decay into is a record that quietly has neither — a
+// number with no story at all — or one that claims both, where nobody can tell
+// which URL the figure actually came from.
+function eachRecord(dir, fn) {
+  for (const entry of readdirSync(dir)) {
+    const path = join(dir, entry);
+    if (statSync(path).isDirectory()) { eachRecord(path, fn); continue; }
+    if (!entry.endsWith(".json")) continue;
+    let doc;
+    try { doc = JSON.parse(readFileSync(path, "utf8")); } catch { continue; }
+    for (const value of Object.values(doc)) {
+      if (!Array.isArray(value)) continue;
+      for (const r of value) {
+        if (r && typeof r === "object" && typeof r.id === "string") fn(r, path.replace(DATA, ""));
+      }
+    }
+  }
+}
+eachRecord(DATA, (r, file) => {
+  if (r.withdrawnSourceUrl && r.sourceUrl) {
+    hard.push(`${file}:${r.id} has both sourceUrl and withdrawnSourceUrl — cite the live one only.`);
+  }
+  if (r.withdrawnSourceUrl && !r.attribution) {
+    hard.push(`${file}:${r.id} records a withdrawn source but never says what happened to it.`);
+  }
+});
 
 // --- Budgeted: numeric claims on a shallow (homepage-level) link. ----------
 const shallowNumeric = reg.totals.numericOnShallowLink;

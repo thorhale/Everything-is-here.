@@ -1076,7 +1076,7 @@
     "neutral"
    ],
    "description": "A blank slate: reverse-osmosis and distilled water are effectively free of the six brewing ions, which is exactly why serious brewers use them. Rather than correcting whatever the tap happens to deliver this month, you add the salts you want and know precisely what is in the liquor. Sold in the US as distilled water in gallon jugs and dispensed from supermarket RO machines. These zeroes are not a measurement of a particular brand — they are what the process produces by definition; RO removes roughly 95-99% of dissolved solids and distillation essentially all of it. Build any profile on this page up from here with the salt calculator.",
-   "sourceUrl": "https://www.epa.gov/sdwa/drinking-water-treatability-database",
+   "sourceUrl": "https://www.epa.gov/water-research/drinking-water-treatability-database-tdb",
    "attribution": "Definitional rather than a brand analysis: RO and distillation remove substantially all dissolved minerals, so the starting point is zero on every ion. Empirically confirmed by the bottlers themselves: the distilled-water columns of the Poland Spring, Zephyrhills and Ice Mountain analysis reports return ND (not detected) on every mineral, and Aquafina's California report gives ND for total dissolved solids at a 10 mg/L reporting limit. Purified bottled water in the United States really is this row.",
    "sortOrder": 44
   },

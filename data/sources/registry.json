@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 269,
+    "distinctSources": 259,
     "backgroundDocuments": 11,
-    "citations": 754,
-    "numericCitations": 639,
+    "citations": 746,
+    "numericCitations": 631,
     "numericOnShallowLink": 284,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 8,
     "byReliability": {
-      "primary": 644,
+      "primary": 636,
       "secondary": 104,
       "tertiary": 6
     }
@@ -360,6 +360,40 @@
     },
     {
       "id": null,
+      "url": "https://scottlab.com/nutrients",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 9,
+      "numericCitations": 8,
+      "usedIn": [
+        "data/additives/nutrients.json",
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "nutrient-dap",
+        "nutrient-fermaid-k",
+        "nutrient-fermaid-o",
+        "nutrient-go-ferm",
+        "nutrient-yeast-hulls",
+        "nutrient-thiamine",
+        "nutrient-yeast-energizer",
+        "nutrient-beer-nutrient",
+        "mead-cultured"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://scottlab.com/",
       "host": "scottlab.com",
       "title": null,
@@ -388,38 +422,6 @@
         "fining-pvpp",
         "fining-irish-moss",
         "fining-activated-carbon"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://scottlab.com/nutrients",
-      "host": "scottlab.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
-      "citations": 8,
-      "numericCitations": 8,
-      "usedIn": [
-        "data/additives/nutrients.json"
-      ],
-      "exampleRecords": [
-        "nutrient-dap",
-        "nutrient-fermaid-k",
-        "nutrient-fermaid-o",
-        "nutrient-go-ferm",
-        "nutrient-yeast-hulls",
-        "nutrient-thiamine",
-        "nutrient-yeast-energizer",
-        "nutrient-beer-nutrient"
       ]
     },
     {
@@ -1775,6 +1777,33 @@
       ]
     },
     {
+      "id": "lallemand-tds-philly-sour",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/Philly-Sour-TDS-ENG-A4-Print-WildBrew-3.pdf",
+      "host": "admin.lallemandbrewing.com",
+      "title": "WildBrew Philly Sour — Technical Data Sheet",
+      "publisher": "Lallemand Brewing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-tds",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Lachancea thermotolerans, pure active dried strain; attenuation 74-82%; 20-30 °C (68-86 °F), optimal 25-30 °C (77-86 °F); flocculation high; alcohol tolerance 9% ABV; pitching 50-150 g/hL; viability >=1x10^9 CFU/g; POF negative; diastaticus negative; killer negative; aroma sour, red apple, stone fruit, peach; fermentation completable in 10 days at 20 °C.",
+      "doesNotSupport": "Species-wide behaviour of L. thermotolerans outside this product; titratable acidity figures are quoted in Lallemand standard-conditions wort only.",
+      "accessed": "2026-07-30",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/yeasts/lallemand.json",
+        "data/yeasts/wild-heritage.json"
+      ],
+      "exampleRecords": [
+        "lallemand-philly-sour",
+        "wild-lachancea-thermotolerans"
+      ]
+    },
+    {
       "id": null,
       "url": "https://www.lallemandbiofuels.com/products/distilamax/",
       "host": "www.lallemandbiofuels.com",
@@ -2086,31 +2115,6 @@
     },
     {
       "id": null,
-      "url": "https://www.briess.com/malt/brewers-malt",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-6row-pale"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_FinestMarisOtterAleMalt.pdf",
       "host": "rahrbsg.ca",
       "title": null,
@@ -2136,7 +2140,7 @@
     },
     {
       "id": null,
-      "url": "https://www.simpsonsmalt.co.uk/our-malts/golden-promise/",
+      "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-golden-promise/",
       "host": "www.simpsonsmalt.co.uk",
       "title": null,
       "publisher": "Simpsons Malt",
@@ -2161,7 +2165,7 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/pale-wheat-malt/",
+      "url": "https://www.weyermann.de/en-us/product/weyermann-wheat-malt-pale-2/",
       "host": "www.weyermann.de",
       "title": null,
       "publisher": "Weyermann Specialty Malts",
@@ -2436,7 +2440,7 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/beech-smoked-barley-malt/",
+      "url": "https://www.weyermann.de/en-us/product/weyermann-beech-smoked-barley-malt-2/",
       "host": "www.weyermann.de",
       "title": null,
       "publisher": "Weyermann Specialty Malts",
@@ -2486,32 +2490,7 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/chit-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-chit"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.weyermann.de/en/caramunich-type-3/",
+      "url": "https://www.weyermann.de/en-us/product/weyermann-caramunich-type-3-2/",
       "host": "www.weyermann.de",
       "title": null,
       "publisher": "Weyermann Specialty Malts",
@@ -2586,7 +2565,7 @@
     },
     {
       "id": null,
-      "url": "https://bestmalz.de/en/our-malts/best-pilsen/",
+      "url": "https://bestmalz.de/en/malts/best-pilsen-malt/",
       "host": "bestmalz.de",
       "title": null,
       "publisher": "BESTMALZ",
@@ -2636,7 +2615,7 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/carared/",
+      "url": "https://www.weyermann.de/en-us/product/weyermann-cararye-5/",
       "host": "www.weyermann.de",
       "title": null,
       "publisher": "Weyermann Specialty Malts",
@@ -2761,7 +2740,7 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/carafoam/",
+      "url": "https://www.weyermann.de/en-us/product/weyermann-carafoam/",
       "host": "www.weyermann.de",
       "title": null,
       "publisher": "Weyermann Specialty Malts",
@@ -2911,31 +2890,6 @@
     },
     {
       "id": null,
-      "url": "https://www.weyermann.de/en/emmer-malt/",
-      "host": "www.weyermann.de",
-      "title": null,
-      "publisher": "Weyermann Specialty Malts",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-emmer"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-DME.pdf",
       "host": "brewingwithbriess.com",
       "title": null,
@@ -3035,31 +2989,6 @@
       ],
       "exampleRecords": [
         "fortified-arrested"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://scottlabs.com/",
-      "host": "scottlabs.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Scott Labs' annual fermentation handbook is the distributor's own compilation of supplier specs; cite the handbook PDF and its year.",
-      "citations": 1,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "mead-cultured"
       ]
     },
     {
@@ -4858,7 +4787,7 @@
     },
     {
       "id": null,
-      "url": "https://www.epa.gov/sdwa/drinking-water-treatability-database",
+      "url": "https://www.epa.gov/water-research/drinking-water-treatability-database-tdb",
       "host": "www.epa.gov",
       "title": null,
       "publisher": "US Environmental Protection Agency",
@@ -5713,10 +5642,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-nottingham/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_NOTTINGHAM_ENG_8.5x11-5.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5738,10 +5667,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-windsor/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_WINDSOR_ENG_A4-4.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5763,10 +5692,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-bry-97-american-west-coast-ale-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/BRY-97-TDS-FRA-A4-Print-LalBrew-1.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5788,10 +5717,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-verdant-ipa/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_VERDANT_ENG_A4-4.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5813,10 +5742,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-voss-kveik-ale-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_VOSS_ENG_A4-1-3.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5838,35 +5767,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-lutra-kveik/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/Koln-TDS-FRA-A4-Print-LalBrew-1.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/lallemand.json"
-      ],
-      "exampleRecords": [
-        "lallemand-lutra"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-koln-kolsch-style-ale-yeast/",
-      "host": "www.lallemandbrewing.com",
-      "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5888,10 +5792,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-munich-classic-wheat-beer-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_MUNICHCLASSIC_ENG_A4-5.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5913,10 +5817,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-belle-saison-ale-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_BELLESAISON_ENG_A4-4.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5938,10 +5842,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-diamond-lager-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/TDS_LPS_BREWINGYEAST_DIAMOND_ENG_A4-5.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5963,10 +5867,10 @@
     },
     {
       "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-novalager-yeast/",
-      "host": "www.lallemandbrewing.com",
+      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/NovaLager-TDS-ENGPrint-A4-LalBrew-3.pdf",
+      "host": "admin.lallemandbrewing.com",
       "title": null,
-      "publisher": "Lallemand Brewing",
+      "publisher": "Lallemand Brewing (document host)",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -5984,31 +5888,6 @@
       ],
       "exampleRecords": [
         "lallemand-novalager"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.lallemandbrewing.com/en/global/products/wildbrew-philly-sour/",
-      "host": "www.lallemandbrewing.com",
-      "title": null,
-      "publisher": "Lallemand Brewing",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/lallemand.json"
-      ],
-      "exampleRecords": [
-        "lallemand-philly-sour"
       ]
     },
     {
@@ -6138,7 +6017,7 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/craft-series-yeast-m44-us-west-coast",
+      "url": "https://mangrovejacks.com/products/m44-us-west-coast-yeast-10g",
       "host": "mangrovejacks.com",
       "title": null,
       "publisher": "Mangrove Jack's",
@@ -6163,7 +6042,7 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/craft-series-yeast-m36-liberty-bell-ale",
+      "url": "https://mangrovejacks.com/products/liberty-bell-ale-m36-yeast-10g",
       "host": "mangrovejacks.com",
       "title": null,
       "publisher": "Mangrove Jack's",
@@ -6188,7 +6067,7 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/craft-series-yeast-m31-belgian-tripel",
+      "url": "https://mangrovejacks.com/products/belgian-tripel-m31-yeast-10g",
       "host": "mangrovejacks.com",
       "title": null,
       "publisher": "Mangrove Jack's",
@@ -6213,7 +6092,7 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/craft-series-yeast-m84-bohemian-lager",
+      "url": "https://mangrovejacks.com/products/m84-bohemian-lager-10g",
       "host": "mangrovejacks.com",
       "title": null,
       "publisher": "Mangrove Jack's",
@@ -6238,7 +6117,7 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/cider-yeast-m02",
+      "url": "https://mangrovejacks.com/products/craft-series-cider-yeast",
       "host": "mangrovejacks.com",
       "title": null,
       "publisher": "Mangrove Jack's",
@@ -6263,10 +6142,10 @@
     },
     {
       "id": null,
-      "url": "https://mangrovejacks.com/products/whiskey-distillers-yeast",
-      "host": "mangrovejacks.com",
+      "url": "https://www.stillspirits.com/products/yeast-whiskey",
+      "host": "www.stillspirits.com",
       "title": null,
-      "publisher": "Mangrove Jack's",
+      "publisher": "Still Spirits",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
@@ -6276,7 +6155,7 @@
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Sibling brand to Mangrove Jack's under the same parent. Mangrove Jack's stopped listing a whiskey distiller's yeast under its own name; Still Spirits sells it and its product page carries the temperature and attenuation figures, so the citation follows the product rather than staying on a dead Mangrove Jack's URL.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -6288,7 +6167,7 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/hothead-ale",
+      "url": "https://omegayeast.com/products/hothead-kveik-standard",
       "host": "omegayeast.com",
       "title": null,
       "publisher": "Omega Yeast Labs",
@@ -6313,7 +6192,7 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/voss-kveik",
+      "url": "https://omegayeast.com/products/voss-kveik-standard",
       "host": "omegayeast.com",
       "title": null,
       "publisher": "Omega Yeast Labs",
@@ -6338,7 +6217,7 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/lutra-kveik",
+      "url": "https://omegayeast.com/products/lutra-kveik-standard",
       "host": "omegayeast.com",
       "title": null,
       "publisher": "Omega Yeast Labs",
@@ -6363,7 +6242,7 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/cosmic-punch-ale-yeast",
+      "url": "https://omegayeast.com/products/cosmic-punch-next",
       "host": "omegayeast.com",
       "title": null,
       "publisher": "Omega Yeast Labs",
@@ -6388,7 +6267,7 @@
     },
     {
       "id": null,
-      "url": "https://omegayeast.com/yeast/ales/saisonstein-monster",
+      "url": "https://omegayeast.com/products/saisonstein-standard",
       "host": "omegayeast.com",
       "title": null,
       "publisher": "Omega Yeast Labs",
@@ -6409,106 +6288,6 @@
       ],
       "exampleRecords": [
         "omega-oyl-500"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://redstaryeast.com/yeast-strains/premier-blanc/",
-      "host": "redstaryeast.com",
-      "title": null,
-      "publisher": "Red Star Yeast",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/red-star.json"
-      ],
-      "exampleRecords": [
-        "red-star-premier-blanc"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://redstaryeast.com/yeast-strains/premier-cuvee/",
-      "host": "redstaryeast.com",
-      "title": null,
-      "publisher": "Red Star Yeast",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/red-star.json"
-      ],
-      "exampleRecords": [
-        "red-star-premier-cuvee"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://redstaryeast.com/yeast-strains/cote-des-blancs/",
-      "host": "redstaryeast.com",
-      "title": null,
-      "publisher": "Red Star Yeast",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/red-star.json"
-      ],
-      "exampleRecords": [
-        "red-star-cote-des-blancs"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://redstaryeast.com/yeast-strains/premier-rouge/",
-      "host": "redstaryeast.com",
-      "title": null,
-      "publisher": "Red Star Yeast",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/red-star.json"
-      ],
-      "exampleRecords": [
-        "red-star-premier-rouge"
       ]
     },
     {
@@ -6734,31 +6513,6 @@
       ],
       "exampleRecords": [
         "white-labs-wlp715"
-      ]
-    },
-    {
-      "id": "lallemand-tds-philly-sour",
-      "url": "https://admin.lallemandbrewing.com/wp-content/uploads/2023/05/Philly-Sour-TDS-ENG-A4-Print-WildBrew-3.pdf",
-      "host": "admin.lallemandbrewing.com",
-      "title": "WildBrew Philly Sour — Technical Data Sheet",
-      "publisher": "Lallemand Brewing",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-tds",
-      "reliability": "primary",
-      "verification": "full-text",
-      "deepLink": true,
-      "supports": "Lachancea thermotolerans, pure active dried strain; attenuation 74-82%; 20-30 °C (68-86 °F), optimal 25-30 °C (77-86 °F); flocculation high; alcohol tolerance 9% ABV; pitching 50-150 g/hL; viability >=1x10^9 CFU/g; POF negative; diastaticus negative; killer negative; aroma sour, red apple, stone fruit, peach; fermentation completable in 10 days at 20 °C.",
-      "doesNotSupport": "Species-wide behaviour of L. thermotolerans outside this product; titratable acidity figures are quoted in Lallemand standard-conditions wort only.",
-      "accessed": "2026-07-30",
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/wild-heritage.json"
-      ],
-      "exampleRecords": [
-        "wild-lachancea-thermotolerans"
       ]
     },
     {

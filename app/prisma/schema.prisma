@@ -325,9 +325,15 @@ model YeastStrain {
 
   description String?
   flavorNotes String?
-  sourceUrl   String
-  attribution String?
-  sortOrder   Int      @default(0)
+
+  // Optional: a publisher can withdraw the page a figure came from. When that
+  // happens and no successor document exists, sourceUrl goes null and the URL
+  // that used to carry the figure is recorded here, so the claim stays honest
+  // without leaving a citation that 404s. See the 20260808010000 migration.
+  sourceUrl          String?
+  withdrawnSourceUrl String?
+  attribution        String?
+  sortOrder          Int     @default(0)
 
   // Provenance. specBasis is what kind of evidence the numeric fields above
   // rest on (vendor-tds | peer-reviewed | club-guide | vendor-web | regulation);
@@ -414,9 +420,12 @@ model Fermentable {
   description String?
   flavorNotes String?
   usageNotes  String?
-  sourceUrl   String
-  attribution String?
-  sortOrder   Int      @default(0)
+
+  // See YeastStrain.withdrawnSourceUrl.
+  sourceUrl          String?
+  withdrawnSourceUrl String?
+  attribution        String?
+  sortOrder          Int     @default(0)
 
   @@index([category])
   @@index([name])

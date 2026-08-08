@@ -607,6 +607,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.stillspirits.com",
+   "name": "Still Spirits",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Sibling brand to Mangrove Jack's under the same parent. Mangrove Jack's stopped listing a whiskey distiller's yeast under its own name; Still Spirits sells it and its product page carries the temperature and attenuation figures, so the citation follows the product rather than staying on a dead Mangrove Jack's URL."
+  },
+  {
    "host": "www.ttb.gov",
    "name": "US Alcohol and Tobacco Tax and Trade Bureau",
    "kind": "regulation",

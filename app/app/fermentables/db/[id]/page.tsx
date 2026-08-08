@@ -106,7 +106,17 @@ PPG            = ${SUCROSE_PPG} x ${((f.totalCarbG! - (f.fiberG ?? 0)) / f.servi
 
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {f.attribution ?? ""}{" "}
-        <a href={f.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+        {f.sourceUrl ? (
+          <>
+            <a href={f.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+          </>
+        ) : (
+          f.withdrawnSourceUrl && (
+            <>
+              Withdrawn source: <code>{f.withdrawnSourceUrl}</code>.{" "}
+            </>
+          )
+        )}
         <Link href="/fermentables/db">← Back to the fermentable database</Link>
       </p>
     </div>

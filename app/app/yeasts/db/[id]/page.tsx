@@ -32,6 +32,12 @@ const SPEC_BASIS: Record<string, { label: string; color: string; blurb: string }
     color: "#1a7f37",
     blurb: "Taken from a published statute or standard of identity.",
   },
+  "vendor-withdrawn": {
+    label: "Source withdrawn",
+    color: "#9a6700",
+    blurb:
+      "These were the manufacturer's own published figures, but the page they came from no longer exists and the manufacturer has published nothing to replace it. The numbers are kept and the dead URL is recorded; treat them as unverifiable.",
+  },
   "club-guide": {
     label: "Club guide",
     color: "#9a6700",
@@ -367,10 +373,22 @@ export default async function StrainPage({ params }: Props) {
 
         <p style={{ margin: "0.4rem 0 0" }}>
           {strain.specBasis && SPEC_BASIS[strain.specBasis]?.blurb}{" "}
-          <a href={strain.sourceUrl} target="_blank" rel="noreferrer">
-            {strain.specBasis === "vendor-tds" ? "Manufacturer datasheet" : "Cited source"}
-          </a>
-          .
+          {strain.sourceUrl ? (
+            <>
+              <a href={strain.sourceUrl} target="_blank" rel="noreferrer">
+                {strain.specBasis === "vendor-tds" ? "Manufacturer datasheet" : "Cited source"}
+              </a>
+              .
+            </>
+          ) : (
+            strain.withdrawnSourceUrl && (
+              // Shown, not linked: the page is gone, and a link that 404s is
+              // worse than telling the reader plainly where the figure came from.
+              <span style={{ color: "var(--wh-text-light)" }}>
+                Withdrawn source: <code>{strain.withdrawnSourceUrl}</code>
+              </span>
+            )
+          )}
         </p>
 
         {strain.sourceNote && (

@@ -92,7 +92,22 @@ for (const s of strains) {
     errors.push(`${id}: alcohol tolerance range is inverted (${vn} > ${vx})`);
   }
 
-  if (!s.sourceUrl) errors.push(`${id}: no sourceUrl — every strain must be checkable`);
+  if (!s.sourceUrl) {
+    // A strain may lose its citation when a maker withdraws the page, but only
+    // if it says so: the withdrawn URL is recorded and specBasis marks the
+    // figures as resting on a document that is no longer published. Silence is
+    // not allowed — that is indistinguishable from never having had a source.
+    if (!s.withdrawnSourceUrl) {
+      errors.push(`${id}: no sourceUrl — every strain must be checkable, or record withdrawnSourceUrl`);
+    } else if (s.specBasis !== "vendor-withdrawn") {
+      errors.push(`${id}: has a withdrawnSourceUrl but specBasis is "${s.specBasis ?? "unset"}" — set it to "vendor-withdrawn"`);
+    } else if (!s.attribution) {
+      errors.push(`${id}: source was withdrawn and the record does not say what happened`);
+    }
+  }
+  if (s.sourceUrl && s.withdrawnSourceUrl) {
+    errors.push(`${id}: has both a live sourceUrl and a withdrawnSourceUrl — cite the live one only`);
+  }
 }
 
 const withRange = strains.length - noRange.length - singlePoint.length;

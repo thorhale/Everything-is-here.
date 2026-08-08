@@ -78,6 +78,10 @@ function walk(node, file, out, label) {
   if (!node || typeof node !== "object") return;
   const name = node.productCode ?? node.id ?? node.name ?? label;
   for (const [key, value] of Object.entries(node)) {
+    // withdrawnSourceUrl deliberately holds a URL the publisher has taken down.
+    // Probing it would report, every single run, rot that is already recorded
+    // and cannot be fixed — which is how a checker trains people to ignore it.
+    if (/^withdrawn/.test(key)) continue;
     if (typeof value === "string" && /^https?:\/\//.test(value) && /url/i.test(key)) {
       if (!out.has(value)) out.set(value, []);
       out.get(value).push(`${file.replace(ROOT + "/", "")}:${name ?? key}`);
