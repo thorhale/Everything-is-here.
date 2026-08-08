@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 273,
+    "distinctSources": 269,
     "backgroundDocuments": 11,
-    "citations": 760,
-    "numericCitations": 645,
-    "numericOnShallowLink": 289,
+    "citations": 754,
+    "numericCitations": 639,
+    "numericOnShallowLink": 284,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 8,
     "byReliability": {
-      "primary": 650,
+      "primary": 644,
       "secondary": 104,
       "tertiary": 6
     }
@@ -81,8 +81,8 @@
       "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding.",
       "accessed": "2026-08-07",
       "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable.",
-      "citations": 56,
-      "numericCitations": 56,
+      "citations": 57,
+      "numericCitations": 57,
       "usedIn": [
         "data/hops/us.json",
         "data/hops/world.json"
@@ -815,33 +815,6 @@
       "exampleRecords": [
         "Qvevri Wine (Georgia)",
         "Skin-Contact (\"Orange\") White Wine"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.barthhaas.com/",
-      "host": "www.barthhaas.com",
-      "title": null,
-      "publisher": "BarthHaas",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 3,
-      "numericCitations": 3,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "hallertau-mittelfrueh",
-        "spalt",
-        "styrian-goldings"
       ]
     },
     {
@@ -1583,32 +1556,6 @@
       ],
       "exampleRecords": [
         "wyeast-1084"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cascade.pdf",
-      "host": "rahrbsg.ca",
-      "title": null,
-      "publisher": "RahrBSG (Brewers Supply Group)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "cascade-argentina",
-        "cascade-nz"
       ]
     },
     {
@@ -4286,56 +4233,6 @@
     },
     {
       "id": null,
-      "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Northern-Brewer.pdf",
-      "host": "rahrbsg.ca",
-      "title": null,
-      "publisher": "RahrBSG (Brewers Supply Group)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording.",
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "northern-brewer-us"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.yakimachief.com/commercial/products/cryo-hops.html",
-      "host": "www.yakimachief.com",
-      "title": null,
-      "publisher": "Yakima Chief Hops",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/us.json"
-      ],
-      "exampleRecords": [
-        "cryo-note"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Summit.pdf",
       "host": "rahrbsg.ca",
       "title": null,
@@ -4436,7 +4333,7 @@
     },
     {
       "id": null,
-      "url": "https://charlesfaram.com/hop/jester/",
+      "url": "https://charlesfaram.com/hop-oracle/jester/",
       "host": "charlesfaram.com",
       "title": null,
       "publisher": "Charles Faram",
@@ -4611,31 +4508,6 @@
     },
     {
       "id": null,
-      "url": "https://www.czhops.cz/",
-      "host": "www.czhops.cz",
-      "title": null,
-      "publisher": "Czech Hops (Hop Research Institute Žatec)",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/hops/world.json"
-      ],
-      "exampleRecords": [
-        "sladek"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Czech-Kazbek.pdf",
       "host": "rahrbsg.ca",
       "title": null,
@@ -4711,8 +4583,8 @@
     },
     {
       "id": null,
-      "url": "https://www.nzhops.co.nz/",
-      "host": "www.nzhops.co.nz",
+      "url": "https://nzhops.co.nz/products/nectaron",
+      "host": "nzhops.co.nz",
       "title": null,
       "publisher": "New Zealand Hops",
       "authors": null,
@@ -4720,7 +4592,32 @@
       "kind": "vendor-datasheet",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Same grower co-operative as www.nzhops.co.nz — the site redirects the www host to this one, so a citation written against either lands here. Their per-variety PDF sheets are image scans with no text layer, so only figures stated in the page's own copy are used.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/hops/world.json"
+      ],
+      "exampleRecords": [
+        "nectaron"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://charlesfaram.com/hop-oracle/northdown/",
+      "host": "charlesfaram.com",
+      "title": null,
+      "publisher": "Charles Faram",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
@@ -4731,7 +4628,7 @@
         "data/hops/world.json"
       ],
       "exampleRecords": [
-        "nectaron"
+        "northdown"
       ]
     },
     {
@@ -4886,7 +4783,7 @@
     },
     {
       "id": null,
-      "url": "https://charlesfaram.com/hop/olicana/",
+      "url": "https://charlesfaram.com/hop-oracle/olicana-hops/",
       "host": "charlesfaram.com",
       "title": null,
       "publisher": "Charles Faram",
@@ -4911,7 +4808,7 @@
     },
     {
       "id": null,
-      "url": "https://charlesfaram.com/hop/harlequin/",
+      "url": "https://charlesfaram.com/hop-oracle/harlequin/",
       "host": "charlesfaram.com",
       "title": null,
       "publisher": "Charles Faram",

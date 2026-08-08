@@ -234,6 +234,13 @@
    "reliability": "primary"
   },
   {
+   "host": "nzhops.co.nz",
+   "name": "New Zealand Hops",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Same grower co-operative as www.nzhops.co.nz — the site redirects the www host to this one, so a citation written against either lands here. Their per-variety PDF sheets are image scans with no text layer, so only figures stated in the page's own copy are used."
+  },
+  {
    "host": "omegayeast.com",
    "name": "Omega Yeast Labs",
    "kind": "vendor-datasheet",

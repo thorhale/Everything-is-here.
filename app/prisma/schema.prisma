@@ -471,12 +471,21 @@ model Hop {
   cohumuloneMin Float?
   cohumuloneMax Float?
 
-  totalOilMin      Float? // mL per 100 g
-  totalOilMax      Float?
-  myrcenePct       Float?
-  humulenePct      Float?
-  caryophyllenePct Float?
-  farnescenePct    Float?
+  totalOilMin Float? // mL per 100 g
+  totalOilMax Float?
+
+  // Oil fractions, % of total oil. Ranges rather than points because that is
+  // how every merchant publishes them; a stored midpoint is a number nobody
+  // measured, and eighteen of the old midpoints fell outside the range the
+  // record's own cited sheet prints.
+  myrceneMin       Float?
+  myrceneMax       Float?
+  humuleneMin      Float?
+  humuleneMax      Float?
+  caryophylleneMin Float?
+  caryophylleneMax Float?
+  farneseneMin     Float?
+  farneseneMax     Float?
 
   aromaDescriptors String[] @default([])
   substitutes      String[] @default([])
@@ -486,9 +495,15 @@ model Hop {
   yearReleased Int?
   description  String?
   usageNotes   String?
-  sourceUrl    String
-  attribution  String?
-  sortOrder    Int      @default(0)
+
+  // Which merchant document the brewing values above were transcribed from,
+  // as "<source id>:<key>" into data/hops/merchant-specs.json.
+  specSource String?
+  // Optional: six records deliberately hold no citation because no merchant
+  // publishes an analysis of the crop they describe. They hold no numbers either.
+  sourceUrl   String?
+  attribution String?
+  sortOrder   Int     @default(0)
 
   @@index([country])
   @@index([name])

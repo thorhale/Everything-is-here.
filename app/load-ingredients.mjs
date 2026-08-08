@@ -76,13 +76,16 @@ const DDL = [
     "betaMin" DOUBLE PRECISION, "betaMax" DOUBLE PRECISION,
     "cohumuloneMin" DOUBLE PRECISION, "cohumuloneMax" DOUBLE PRECISION,
     "totalOilMin" DOUBLE PRECISION, "totalOilMax" DOUBLE PRECISION,
-    "myrcenePct" DOUBLE PRECISION, "humulenePct" DOUBLE PRECISION,
-    "caryophyllenePct" DOUBLE PRECISION, "farnescenePct" DOUBLE PRECISION,
+    "myrceneMin" DOUBLE PRECISION, "myrceneMax" DOUBLE PRECISION,
+    "humuleneMin" DOUBLE PRECISION, "humuleneMax" DOUBLE PRECISION,
+    "caryophylleneMin" DOUBLE PRECISION, "caryophylleneMax" DOUBLE PRECISION,
+    "farneseneMin" DOUBLE PRECISION, "farneseneMax" DOUBLE PRECISION,
     "aromaDescriptors" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "substitutes" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "styleTags" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "breeder" TEXT, "yearReleased" INTEGER, "description" TEXT, "usageNotes" TEXT,
-    "sourceUrl" TEXT NOT NULL, "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
+    "specSource" TEXT, "sourceUrl" TEXT, "attribution" TEXT,
+    "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   `CREATE INDEX IF NOT EXISTS "Hop_country_idx" ON "Hop"("country")`,
   `CREATE INDEX IF NOT EXISTS "Hop_name_idx" ON "Hop"("name")`,
   `CREATE INDEX IF NOT EXISTS "Hop_purpose_idx" ON "Hop"("purpose")`,
@@ -93,7 +96,7 @@ const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg
 
 const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","attribution","sortOrder"];
 
-const HOP_COLS = ["id","name","aliases","country","purpose","alphaMin","alphaMax","betaMin","betaMax","cohumuloneMin","cohumuloneMax","totalOilMin","totalOilMax","myrcenePct","humulenePct","caryophyllenePct","farnescenePct","aromaDescriptors","substitutes","styleTags","breeder","yearReleased","description","usageNotes","sourceUrl","attribution","sortOrder"];
+const HOP_COLS = ["id","name","aliases","country","purpose","alphaMin","alphaMax","betaMin","betaMax","cohumuloneMin","cohumuloneMax","totalOilMin","totalOilMax","myrceneMin","myrceneMax","humuleneMin","humuleneMax","caryophylleneMin","caryophylleneMax","farneseneMin","farneseneMax","aromaDescriptors","substitutes","styleTags","breeder","yearReleased","description","usageNotes","specSource","sourceUrl","attribution","sortOrder"];
 
 function fermTuple(f, i, attribution) {
   return "(" + [
@@ -132,11 +135,14 @@ function hopTuple(h, i, attribution) {
     lit(h.alphaMin ?? null), lit(h.alphaMax ?? null), lit(h.betaMin ?? null), lit(h.betaMax ?? null),
     lit(h.cohumuloneMin ?? null), lit(h.cohumuloneMax ?? null),
     lit(h.totalOilMin ?? null), lit(h.totalOilMax ?? null),
-    lit(h.myrcenePct ?? null), lit(h.humulenePct ?? null),
-    lit(h.caryophyllenePct ?? null), lit(h.farnescenePct ?? null),
+    lit(h.myrceneMin ?? null), lit(h.myrceneMax ?? null),
+    lit(h.humuleneMin ?? null), lit(h.humuleneMax ?? null),
+    lit(h.caryophylleneMin ?? null), lit(h.caryophylleneMax ?? null),
+    lit(h.farneseneMin ?? null), lit(h.farneseneMax ?? null),
     litArr(h.aromaDescriptors), litArr(h.substitutes), litArr(h.styleTags),
     lit(h.breeder ?? null), lit(h.yearReleased ?? null), lit(h.description ?? null),
-    lit(h.usageNotes ?? null), lit(h.sourceUrl), lit(h.attribution ?? attribution ?? null), lit(h.sortOrder ?? i),
+    lit(h.usageNotes ?? null), lit(h.specSource ?? null), lit(h.sourceUrl ?? null),
+    lit(h.attribution ?? attribution ?? null), lit(h.sortOrder ?? i),
   ].join(",") + ")";
 }
 
@@ -147,28 +153,53 @@ async function insertBatched(table, cols, rows) {
   }
 }
 
+// Read the catalogue files out of a data directory.
+//
+// A loader that assumes every .json in a folder is a catalogue file has now
+// broken several times, once per reference file added alongside the catalogues:
+// prices.json in data/water, lineages.json in data/yeasts, and now
+// merchant-specs.json here. Each time it crashed on "cannot read properties of
+// undefined", which at least is loud — a version that silently skipped would
+// have been worse, because of the prune at the end of run().
+//
+// So: a document with no `key` property at all is reference material sharing the
+// directory, and is skipped BY NAME so the skip shows up in the log. A document
+// that HAS the key but whose value is not a non-empty array is a broken
+// catalogue file, and that throws — otherwise the prune decides its rows are
+// orphans and deletes every one of them.
+function catalogues(dir, key) {
+  const kept = [], skipped = [];
+  for (const file of readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
+    const doc = JSON.parse(readFileSync(join(dir, file), "utf8"));
+    if (!(key in doc)) { skipped.push(file); continue; }
+    if (!Array.isArray(doc[key]) || doc[key].length === 0) {
+      throw new Error(`${dir}/${file} has a "${key}" property that is not a non-empty array`);
+    }
+    kept.push({ file, doc });
+  }
+  if (skipped.length) console.log(`  (no "${key}" array, skipped: ${skipped.join(", ")})`);
+  return kept;
+}
+
 async function run() {
   for (const stmt of DDL) await sql.query(stmt);
   console.log("fermentable + hop tables ready");
 
-  for (const f of readdirSync(FERM_DIR).filter((x) => x.endsWith(".json")).sort()) {
-    const doc = JSON.parse(readFileSync(join(FERM_DIR, f), "utf8"));
+  for (const { file: f, doc } of catalogues(FERM_DIR, "fermentables")) {
     const ids = doc.fermentables.map((x) => lit(x.id)).join(",");
     await sql.query(`DELETE FROM "Fermentable" WHERE id IN (${ids})`);
     await insertBatched("Fermentable", FERM_COLS, doc.fermentables.map((x, i) => fermTuple(x, i, doc.attribution)));
     console.log(`fermentables/${f}: ${doc.fermentables.length}`);
   }
 
-  for (const f of readdirSync(HOPS_DIR).filter((x) => x.endsWith(".json")).sort()) {
-    const doc = JSON.parse(readFileSync(join(HOPS_DIR, f), "utf8"));
+  for (const { file: f, doc } of catalogues(HOPS_DIR, "hops")) {
     const ids = doc.hops.map((x) => lit(x.id)).join(",");
     await sql.query(`DELETE FROM "Hop" WHERE id IN (${ids})`);
     await insertBatched("Hop", HOP_COLS, doc.hops.map((x, i) => hopTuple(x, i, doc.attribution)));
     console.log(`hops/${f}: ${doc.hops.length}`);
   }
 
-  for (const f of readdirSync(ADD_DIR).filter((x) => x.endsWith(".json")).sort()) {
-    const doc = JSON.parse(readFileSync(join(ADD_DIR, f), "utf8"));
+  for (const { file: f, doc } of catalogues(ADD_DIR, "additives")) {
     const ids = doc.additives.map((x) => lit(x.id)).join(",");
     await sql.query(`DELETE FROM "Additive" WHERE id IN (${ids})`);
     await insertBatched("Additive", ADD_COLS, doc.additives.map((x, i) => addTuple(x, i, doc.attribution)));
@@ -183,11 +214,17 @@ async function run() {
     ["Hop", HOPS_DIR, "hops"],
     ["Additive", ADD_DIR, "additives"],
   ]) {
-    const known = readdirSync(dir)
-      .filter((x) => x.endsWith(".json"))
-      .flatMap((x) => JSON.parse(readFileSync(join(dir, x), "utf8"))[key].map((r) => lit(r.id)));
+    const known = catalogues(dir, key).flatMap(({ doc }) => doc[key].map((r) => lit(r.id)));
     const orphans = await sql.query(`SELECT id FROM "${table}" WHERE id NOT IN (${known.join(",")})`);
     if (orphans.length > 0) {
+      // A prune that wants to remove a large share of the table is not finding
+      // orphans, it is reacting to a file that failed to load.
+      if (orphans.length > known.length / 5) {
+        throw new Error(
+          `refusing to prune ${orphans.length} ${table} rows against only ${known.length} in the data ` +
+            `files — that is a load failure, not a rename`
+        );
+      }
       await sql.query(`DELETE FROM "${table}" WHERE id NOT IN (${known.join(",")})`);
       console.log(`pruned ${orphans.length} stale ${table} row(s): ${orphans.map((o) => o.id).join(", ")}`);
     }
