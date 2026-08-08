@@ -1335,6 +1335,18 @@
    "accessed": "2026-08-07",
    "supports": "Per-variety specifications for 155 hop varieties: alpha and beta acids (%), cohumulone (% of alpha), total oil (mL/100g) and the myrcene, humulene, caryophyllene, farnesene and linalool fractions (% of total oil), plus total polyphenols, pedigree and aroma descriptors. Retrieved and read; Cascade and Simcoe checked against the page directly.",
    "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding."
+  },
+  {
+   "id": "ecfr-27-cfr-5-143-whisky",
+   "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+   "title": "27 CFR § 5.143 — Whisky (standards of identity for distilled spirits)",
+   "publisher": "US Government Publishing Office / National Archives",
+   "kind": "regulation",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-07",
+   "supports": "Federal standards of identity for whisky: the class definition (distillate from a fermented mash of grain at less than 95% ABV, stored in oak) and the enumerated types including bourbon, rye, wheat, malt, corn, straight designations and — as type (15) — American single malt whisky, with their mash-bill, distillation-proof and cooperage requirements. Retrieved as XML from the eCFR API at version 2026-01-01 and read.",
+   "doesNotSupport": "Tennessee whiskey, which this section does not define — the maple-charcoal filtration requirement is Tennessee state law recognised in trade agreements, not a federal standard of identity. Also does not cover Scotch, Irish or Canadian whisky beyond the designations the US permits on imports; their governing law is UK, Irish and Canadian respectively."
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-08-07",
+ "generatedAt": "2026-08-08",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -25250,8 +25250,8 @@
    "year": 2019,
    "title": "Spirits: Legal Definitions & Standards of Identity",
    "sourceType": "legal-standard",
-   "sourceUrl": "https://www.ttb.gov/spirits/spirits-standards-of-identity",
-   "attribution": "Unlike beer, mead, and cider, distilled spirits have no judging style guidelines — but they do have binding legal definitions. This edition compiles the actual statutory standards of identity: the Scotch Whisky Regulations 2009 (UK), the Irish Whiskey Technical File, US 27 CFR Part 5 (TTB), EU Regulation 2019/787, Mexico's NOM-006/NOM-070, French AOC decrees, and equivalent national standards. Figures are the legal minima/maxima, not sensory targets. Compiled for reference; always check the current regulation for the jurisdiction you are producing in.",
+   "sourceUrl": "https://www.ecfr.gov/current/title-27/part-5/subpart-I",
+   "attribution": "Unlike beer, mead, and cider, distilled spirits have no judging style guidelines — but they do have binding legal definitions. This edition compiles the actual statutory standards of identity: the Scotch Whisky Regulations 2009 (UK), the Irish Whiskey Technical File, US 27 CFR Part 5 (TTB), EU Regulation 2019/787, Mexico's NOM-006/NOM-070, French AOC decrees, and equivalent national standards. Figures are the legal minima/maxima, not sensory targets. Compiled for reference; always check the current regulation for the jurisdiction you are producing in. US standards of identity are cited to the Code of Federal Regulations itself rather than to a TTB overview page (the previous citation, ttb.gov/spirits/spirits-standards-of-identity, now 404s). Text read from the eCFR API at version 2026-01-01 — a standard of identity is only true as of a date, so the date travels with the citation.",
    "categories": [
     {
      "code": "S1",
@@ -25360,7 +25360,13 @@
        "comments": "27 CFR 5.143: distilled to no more than 80% ABV (160 proof); entered into the barrel at no more than 62.5% ABV (125 proof); stored in NEW charred oak containers; bottled at no less than 40% ABV (80 proof). No colouring, flavouring or other blending materials may be added. There is no minimum ageing period for plain 'bourbon' — but see Straight Bourbon.",
        "history": "Bourbon may be produced anywhere in the United States, not only Kentucky — a common misconception.",
        "examples": "Buffalo Trace, Maker's Mark, Wild Turkey",
-       "tags": "bourbon, corn, new charred oak"
+       "tags": "bourbon, corn, new charred oak",
+       "legalCitation": {
+        "instrument": "27 CFR § 5.143 (Whisky)",
+        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "version": "2026-01-01",
+        "note": "Federal standard of identity, read from the eCFR API at this version."
+       }
       },
       {
        "code": "S3B",
@@ -25370,7 +25376,13 @@
        "impression": "Bourbon that has met a minimum maturation period.",
        "comments": "All bourbon requirements plus storage in new charred oak for at least 2 years. If aged less than 4 years, the label must carry an age statement. 'Bottled in Bond' is stricter still (Standards of Fill / 27 CFR 5.88): the product of one distillation season by one distiller at one distillery, aged ≥4 years in a federally bonded warehouse, and bottled at exactly 50% ABV (100 proof).",
        "examples": "Knob Creek, Elijah Craig, Henry McKenna Bottled-in-Bond",
-       "tags": "bourbon, straight, bottled-in-bond"
+       "tags": "bourbon, straight, bottled-in-bond",
+       "legalCitation": {
+        "instrument": "27 CFR § 5.143 (Whisky)",
+        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "version": "2026-01-01",
+        "note": "Federal standard of identity, read from the eCFR API at this version."
+       }
       },
       {
        "code": "S3C",
@@ -25382,7 +25394,13 @@
        "comments": "Identical distillation, barrel-entry and bottling limits to bourbon (≤80% ABV distillation, ≤62.5% ABV barrel entry, new charred oak, ≥40% ABV bottling). 'Straight Rye' requires ≥2 years.",
        "comparison": "Contrast Canadian 'rye', which carries no rye-content requirement.",
        "examples": "Rittenhouse, Sazerac Rye, WhistlePig",
-       "tags": "rye, spicy"
+       "tags": "rye, spicy",
+       "legalCitation": {
+        "instrument": "27 CFR § 5.143 (Whisky)",
+        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "version": "2026-01-01",
+        "note": "Federal standard of identity, read from the eCFR API at this version."
+       }
       },
       {
        "code": "S3D",
@@ -25394,7 +25412,13 @@
        "comments": "27 CFR 5.143: distilled to ≤80% ABV. Uniquely, if aged at all it must be in UNUSED uncharred oak or USED barrels, and entered at ≤62.5% ABV. It may also be sold unaged. This is the category most 'white whiskey' and commercial 'moonshine' is legally bottled under.",
        "comparison": "'Moonshine' is not itself a federal standard of identity. Commercially it is sold either as corn whiskey, as unaged whisky, or — if distilled above 95% ABV from sugar — as neutral spirits or a specialty/flavoured product.",
        "examples": "Mellow Corn, Georgia Moon",
-       "tags": "corn whiskey, moonshine, unaged"
+       "tags": "corn whiskey, moonshine, unaged",
+       "legalCitation": {
+        "instrument": "27 CFR § 5.143 (Whisky)",
+        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "version": "2026-01-01",
+        "note": "Federal standard of identity, read from the eCFR API at this version."
+       }
       },
       {
        "code": "S3E",
@@ -25404,7 +25428,13 @@
        "impression": "Bourbon-spec whiskey charcoal-mellowed before barrelling.",
        "comments": "Tennessee Code § 57-2-106 and the NAFTA/USMCA designation: must meet all bourbon requirements, be produced in Tennessee, and be filtered through maple charcoal before ageing — the Lincoln County Process. Prichard's holds a statutory exemption from the charcoal step.",
        "examples": "Jack Daniel's, George Dickel",
-       "tags": "tennessee, lincoln county process"
+       "tags": "tennessee, lincoln county process",
+       "legalCitation": {
+        "instrument": "Tenn. Code Ann. § 57-2-106",
+        "url": null,
+        "version": null,
+        "note": "Deliberately NOT cited to 27 CFR § 5.143: that section enumerates bourbon, rye, corn, wheat, malt, straight and American single malt whisky, and does not define Tennessee whiskey. The requirement to filter through maple charcoal is Tennessee state law, recognised in trade agreements rather than in the federal standards of identity."
+       }
       },
       {
        "code": "S3F",
@@ -25415,7 +25445,13 @@
        "ingredients": "100% malted barley.",
        "comments": "Formalised by TTB in 2024 (27 CFR 5.144): mashed, distilled and matured in the United States at a single distillery; distilled to ≤80% ABV; matured in oak casks ≤700 L; bottled at ≥40% ABV. Unlike bourbon, the oak need not be new or charred.",
        "examples": "Westward, Balcones, Stranahan's",
-       "tags": "single malt, american, 2024 standard"
+       "tags": "single malt, american, 2024 standard",
+       "legalCitation": {
+        "instrument": "27 CFR § 5.143 (Whisky)",
+        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "version": "2026-01-01",
+        "note": "Federal standard of identity, read from the eCFR API at this version."
+       }
       }
      ],
      "beverage": "spirit",

@@ -12,13 +12,13 @@
   },
   "totals": {
     "distinctSources": 257,
-    "backgroundDocuments": 8,
+    "backgroundDocuments": 9,
     "citations": 760,
     "numericCitations": 645,
     "numericOnShallowLink": 294,
     "numericOnTertiary": 0,
     "fullTextVerified": 31,
-    "backgroundFullTextVerified": 5,
+    "backgroundFullTextVerified": 6,
     "byReliability": {
       "primary": 650,
       "secondary": 104,
@@ -4332,10 +4332,10 @@
     },
     {
       "id": null,
-      "url": "https://www.ttb.gov/spirits/spirits-standards-of-identity",
-      "host": "www.ttb.gov",
+      "url": "https://www.ecfr.gov/current/title-27/part-5/subpart-I",
+      "host": "www.ecfr.gov",
       "title": null,
-      "publisher": "US Alcohol and Tobacco Tax and Trade Bureau",
+      "publisher": "Electronic Code of Federal Regulations (US)",
       "authors": null,
       "year": null,
       "kind": "regulation",
@@ -6825,6 +6825,22 @@
       "deepLink": true,
       "supports": "Grape variety identity: prime name, 62 recorded synonyms, species, berry colour, country of origin and pedigree. Retrieved and read as the worked example for the whole catalogue.",
       "doesNotSupport": "Harvest chemistry. VIVC carries no Brix, titratable acidity or pH, so it cannot support the numeric fields on this project's 53 wine-grape records. It was evaluated as a replacement for the dead iv.ucdavis.edu citations and deliberately not used for them: swapping a homepage for a per-variety page would have cut 53 from the shallow-link debt while citing a document that does not contain the figures.",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "ecfr-27-cfr-5-143-whisky",
+      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "host": "www.ecfr.gov",
+      "title": "27 CFR § 5.143 — Whisky (standards of identity for distilled spirits)",
+      "publisher": "US Government Publishing Office / National Archives",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Federal standards of identity for whisky: the class definition (distillate from a fermented mash of grain at less than 95% ABV, stored in oak) and the enumerated types including bourbon, rye, wheat, malt, corn, straight designations and — as type (15) — American single malt whisky, with their mash-bill, distillation-proof and cooperage requirements. Retrieved as XML from the eCFR API at version 2026-01-01 and read.",
+      "doesNotSupport": "Tennessee whiskey, which this section does not define — the maple-charcoal filtration requirement is Tennessee state law recognised in trade agreements, not a federal standard of identity. Also does not cover Scotch, Irish or Canadian whisky beyond the designations the US permits on imports; their governing law is UK, Irish and Canadian respectively.",
       "accessed": "2026-08-07"
     }
   ]
