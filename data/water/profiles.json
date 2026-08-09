@@ -496,10 +496,10 @@
    "region": "North Carolina",
    "calcium": 6,
    "magnesium": 2,
-   "sodium": 4,
+   "sodium": 12.4,
    "chloride": 5,
    "sulfate": 6,
-   "bicarbonate": 16,
+   "bicarbonate": 29,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -508,9 +508,16 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Very soft Appalachian mountain water; a blank slate that helped make Asheville a dense craft-brewing hub.",
+   "description": "Very soft Appalachian surface water — the City reports 5.48 mg/L total hardness as CaCO3 — but with 29 mg/L of bicarbonate and 12.4 of sodium, not the mineral-free slate the profile used to claim.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Partly sourced. The City of Asheville's 2024 Water Quality Report publishes annual averages for four physical and mineral characteristics and no more: pH 7.61, alkalinity 24.08 ppm as CaCO3, hardness 5.48 ppm as CaCO3 and sodium 12.4 ppm. Two of those replace figures here - bicarbonate, which follows from the alkalinity at 29 mg/L against a stored 16, and sodium at 12.4 against a stored 4. The hardness figure convicts two more without replacing them: calcium 6 and magnesium 2 as stored compute to 23.2 mg/L of hardness as CaCO3, over four times the 5.48 the City measures, so both are far too high. Asheville publishes no split between them, so this project will not invent one, and the two wrong numbers are left standing with this note rather than replaced by a guess. Chloride and sulfate are not published either.",
+   "aquifer": {
+    "name": "North Fork and Bee Tree reservoirs, Black Mountains — protected Appalachian surface water",
+    "url": "https://www.ashevillenc.gov/department/water/water-quality-report/",
+    "citation": "City of Asheville, Water Quality Report 2024, physical and mineral characteristics, annual averages.",
+    "ions": {},
+    "note": "Asheville's four published figures are enough to place the water but not to build a profile from. Hardness of 5.48 mg/L as CaCO3 puts calcium and magnesium together at roughly 2 mg/L of calcium equivalent - among the softest municipal supplies anywhere, which is the usual explanation for why the city's breweries built their reputations on hop-forward beer. The alkalinity of 24 mg/L as CaCO3 against that hardness means the water is carbonate-dominated with almost no hardness to offset it, so its residual alkalinity is higher than its softness suggests. The City reports no calcium, magnesium, chloride or sulfate individually, which is why this record stays declared unsourced."
+   }
   },
   {
    "id": "bend",
@@ -1019,12 +1026,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "California",
-   "calcium": 58,
-   "magnesium": 18,
-   "sodium": 88,
-   "chloride": 90,
-   "sulfate": 120,
-   "bicarbonate": 190,
+   "calcium": 57.0,
+   "magnesium": 23.1,
+   "sodium": 87.8,
+   "chloride": 94.9,
+   "sulfate": 154,
+   "bicarbonate": 144,
    "bestForStyles": [
     "West Coast IPA",
     "Double IPA"
@@ -1034,9 +1041,16 @@
     "moderate-hard",
     "modern-craft"
    ],
-   "description": "Moderately hard, moderately alkaline Colorado River water with meaningful sulfate — heavily treated by the West Coast IPA breweries that made the city famous. Most SD brewers dilute with RO and rebuild toward a high-sulfate hoppy profile.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Hard, saline imported water — sulfate 154 and chloride 95 mg/L, with sodium at 88. Among the most heavily mineralised municipal supplies in this catalogue, and the reason San Diego brewers dilute before they do anything else.",
+   "attribution": "City of San Diego Public Utilities, 2025 Additional Characteristics, Water Quality Chemistry Services (ELAP certificate 1058), annual averages for the Alvarado, Miramar and Otay treatment plants. This record carries the median of the three: calcium 57.0, magnesium 23.1 and bicarbonate 144 mg/L. Sodium 87.8, chloride 94.9 and sulfate 154 come from the same utility's 2025 Annual Drinking Water Quality Report, secondary standards table, cited below. It balances on charge to 5.2% including the reported potassium. The stored profile was already close on calcium, sodium and chloride - someone had sourced it once - but magnesium was 18 against 23.1, sulfate 120 against 154 and bicarbonate 190 against 144.",
+   "sourceUrl": "https://www.sandiego.gov/sites/default/files/2026-06/additional-characteristics.pdf",
+   "sourceNote": "The three plants are not interchangeable. Otay runs chloride 156 and sodium 111 against Alvarado's 94.9 and 87.8, while Alvarado and Miramar run half again Otay's sulfate. Total dissolved solids average 532 to 585 mg/L across them. San Diego also treats a large purchased imported supply, reported as a fourth column and not included in this median. The utility publishes no pH on this record's behalf here, and juice-side figures like hardness are given as calcium hardness rather than total.",
+   "additionalSources": [
+    {
+     "url": "https://www.sandiego.gov/sites/default/files/2026-06/pud-annual-drinking-water-quality-report-2025.pdf",
+     "supports": "Sodium 87.8, chloride 94.9 and sulfate 154 mg/L - the Alvarado plant's 2025 annual averages from the secondary standards table of the City of San Diego's Annual Drinking Water Quality Report. The Additional Characteristics sheet cited as the main source carries calcium, magnesium and bicarbonate but not these three."
+    }
+   ]
   },
   {
    "id": "portland",

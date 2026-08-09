@@ -396,6 +396,13 @@
    "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises."
   },
   {
+   "host": "www.ashevillenc.gov",
+   "name": "City of Asheville Water Resources",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Asheville, North Carolina's municipal water utility. Its annual water quality report publishes pH, alkalinity, hardness and sodium as annual averages, but no individual calcium, magnesium, chloride or sulfate."
+  },
+  {
    "host": "www.awri.com.au",
    "name": "The Australian Wine Research Institute (AWRI)",
    "kind": "research-institute",
@@ -725,6 +732,13 @@
    "kind": "government-report",
    "reliability": "primary",
    "note": "Cologne's municipal utility. Publishes a separate Trinkwasseranalyse for each bank of the Rhine, which matters because the two supplies differ enough to change a recipe."
+  },
+  {
+   "host": "www.sandiego.gov",
+   "name": "City of San Diego Public Utilities",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "San Diego's municipal water utility. Publishes an annual drinking water quality report with the secondary-standards panel plus a separate Additional Characteristics sheet carrying calcium, magnesium, bicarbonate, carbonate and the saturation indices, both broken out per treatment plant and produced by its ELAP-certified laboratory."
   },
   {
    "host": "www.sanpellegrino.com",
