@@ -267,6 +267,13 @@
    "reliability": "primary"
   },
   {
+   "host": "patents.google.com",
+   "name": "Google Patents",
+   "kind": "regulation",
+   "reliability": "primary",
+   "note": "Full text of US plant patents. Used for cold-climate grape cultivars, whose breeders' patents state harvest Brix, titratable acidity and pH as multi-season means with ranges — a patent has to describe the cultivar precisely enough to distinguish it in law. USPTO's own PDFs of these are image scans with no text layer, so this is the readable copy of the same document."
+  },
+  {
    "host": "pmc.ncbi.nlm.nih.gov",
    "name": "PubMed Central",
    "kind": "peer-reviewed",
@@ -584,6 +591,13 @@
    "kind": "vendor-datasheet",
    "reliability": "primary",
    "note": "Cited for the annual Mountain Valley Water Quality Report — a certified-laboratory panel published under the same California disclosure requirement, reporting still and sparkling product in separate columns."
+  },
+  {
+   "host": "www.nass.usda.gov",
+   "name": "USDA National Agricultural Statistics Service",
+   "kind": "government-database",
+   "reliability": "primary",
+   "note": "Publishes the California Grape Crush Report with CDFA. Every California processor is required by law to report tonnage and degrees Brix by variety and pricing district, so the per-variety Brix carries the entire state crush behind it rather than one vineyard's sample. Released as PDF, XLSX and CSV."
   },
   {
    "host": "www.ncbi.nlm.nih.gov",

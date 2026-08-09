@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 335,
+    "distinctSources": 339,
     "backgroundDocuments": 13,
-    "citations": 669,
-    "numericCitations": 554,
-    "numericOnShallowLink": 120,
+    "citations": 655,
+    "numericCitations": 540,
+    "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 639,
+      "primary": 625,
       "secondary": 24,
       "tertiary": 6
     }
@@ -61,43 +61,6 @@
         "el-dorado",
         "talus",
         "loral"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://wineserver.ucdavis.edu/",
-      "host": "wineserver.ucdavis.edu",
-      "title": null,
-      "publisher": "UC Davis Viticulture & Enology",
-      "authors": null,
-      "year": null,
-      "kind": "extension-service",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
-      "citations": 54,
-      "numericCitations": 53,
-      "usedIn": [
-        "data/fermentables/wine-grapes.json",
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "grape-cabernet-sauvignon",
-        "grape-merlot",
-        "grape-pinot-noir",
-        "grape-syrah",
-        "grape-zinfandel",
-        "grape-sangiovese",
-        "grape-nebbiolo",
-        "grape-tempranillo",
-        "grape-grenache",
-        "grape-malbec",
-        "grape-cabernet-franc",
-        "grape-petit-verdot"
       ]
     },
     {
@@ -174,6 +137,42 @@
         "honey-heather",
         "honey-eucalyptus",
         "honey-linden"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.nass.usda.gov/Statistics_by_State/California/Publications/Specialty_and_Other_Releases/Grapes/Crush/Final/2025/Grape_Crush_2025_Final.pdf",
+      "host": "www.nass.usda.gov",
+      "title": null,
+      "publisher": "USDA National Agricultural Statistics Service",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Publishes the California Grape Crush Report with CDFA. Every California processor is required by law to report tonnage and degrees Brix by variety and pricing district, so the per-variety Brix carries the entire state crush behind it rather than one vineyard's sample. Released as PDF, XLSX and CSV.",
+      "citations": 36,
+      "numericCitations": 36,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-cabernet-sauvignon",
+        "grape-merlot",
+        "grape-pinot-noir",
+        "grape-syrah",
+        "grape-zinfandel",
+        "grape-sangiovese",
+        "grape-nebbiolo",
+        "grape-tempranillo",
+        "grape-grenache",
+        "grape-malbec",
+        "grape-cabernet-franc",
+        "grape-petit-verdot"
       ]
     },
     {
@@ -4781,6 +4780,106 @@
       ],
       "exampleRecords": [
         "extract-lme-light"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://patents.google.com/patent/USPP19579P3/en",
+      "host": "patents.google.com",
+      "title": null,
+      "publisher": "Google Patents",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Full text of US plant patents. Used for cold-climate grape cultivars, whose breeders' patents state harvest Brix, titratable acidity and pH as multi-season means with ranges — a patent has to describe the cultivar precisely enough to distinguish it in law. USPTO's own PDFs of these are image scans with no text layer, so this is the readable copy of the same document.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-marquette"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://patents.google.com/patent/USPP16478P3/en",
+      "host": "patents.google.com",
+      "title": null,
+      "publisher": "Google Patents",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Full text of US plant patents. Used for cold-climate grape cultivars, whose breeders' patents state harvest Brix, titratable acidity and pH as multi-season means with ranges — a patent has to describe the cultivar precisely enough to distinguish it in law. USPTO's own PDFs of these are image scans with no text layer, so this is the readable copy of the same document.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-seyval-blanc"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://patents.google.com/patent/USPP14617P3/en",
+      "host": "patents.google.com",
+      "title": null,
+      "publisher": "Google Patents",
+      "authors": null,
+      "year": null,
+      "kind": "regulation",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Full text of US plant patents. Used for cold-climate grape cultivars, whose breeders' patents state harvest Brix, titratable acidity and pH as multi-season means with ranges — a patent has to describe the cultivar precisely enough to distinguish it in law. USPTO's own PDFs of these are image scans with no text layer, so this is the readable copy of the same document.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-la-crescent"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://wineserver.ucdavis.edu/",
+      "host": "wineserver.ucdavis.edu",
+      "title": null,
+      "publisher": "UC Davis Viticulture & Enology",
+      "authors": null,
+      "year": null,
+      "kind": "extension-service",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "University research-and-extension in winemaking; corroborates the wine-yeast inoculation and rehydration standards.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "wine-cultured"
       ]
     },
     {
