@@ -19529,11 +19529,11 @@
    "country": "Japan",
    "region": "Hokkaidō",
    "calcium": 10,
-   "magnesium": 4,
-   "sodium": 8,
-   "chloride": 10,
+   "magnesium": 2.44,
+   "sodium": 11,
+   "chloride": 17,
    "sulfate": 12,
-   "bicarbonate": 30,
+   "bicarbonate": 24.4,
    "bestForStyles": [
     "Japanese Rice Lager",
     "Pilsner"
@@ -19543,9 +19543,48 @@
     "lager",
     "modern-craft"
    ],
-   "description": "Very soft Hokkaidō snowmelt; part of why Japanese lager reads so crisp and delicate.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Very soft Hokkaido snowmelt — 35 mg/L total hardness as CaCO3 and only 24 of bicarbonate. Among the softest city supplies in this catalogue, and the reason Sapporo's lagers need no dilution.",
+   "attribution": "Sapporo City Waterworks Bureau, 令和6年度水質年報, section 4 «浄水場水質試験結果» — the annual tap-water column for each of the city's five purification plants: Moiwa, Shirakawa, Nishino, Miyanomachi and Jozankei. Median of the five: calcium 10, magnesium 2.44, sodium 11, chloride 17 mg/L, and alkalinity 20 mg/L as CaCO3, which is 24.4 mg/L of bicarbonate. Every plant's figures were checked against the report's own published total hardness — calcium times 2.497 plus magnesium times 4.116 — and all five reconcile within 1.0 mg/L as CaCO3, which is what makes the extraction trustworthy. Shirakawa's magnesium is the one derived figure: the report prints its hardness and calcium but not its magnesium, so magnesium is back-computed from the other two. Corrections: magnesium was stored at 4 against 2.44, chloride at 10 against 17, sodium at 8 against 11 and bicarbonate at 30 against 24.4.",
+   "sourceUrl": "https://www.city.sapporo.jp/suido/overview/suishitu/result/documents/r06_04.pdf",
+   "sourceNote": "Sapporo does not measure sulfate. It is not one of Japan's 51 statutory drinking-water parameters and it appears nowhere in the annual report — checked page by page — so the 12 mg/L on this record remains uncited, and the record is five ions sourced out of six. Two other columns this project extracted, potassium and total dissolved solids, are deliberately discarded: the values they produced (potassium around 0.05 mg/L) are physically implausible and were mis-paired with a neighbouring row, so nothing from them is used. The five plants differ modestly — hardness 34 to 44 as CaCO3, chloride 11 to 20 — and Shirakawa is the largest, so a Sapporo brewer is most likely on figures close to the median.",
+   "aquifer": {
+    "name": "Toyohira and Ishikari river system, five purification plants",
+    "url": "https://www.city.sapporo.jp/suido/overview/suishitu/result/documents/r06_04.pdf",
+    "citation": "札幌市水道局 (Sapporo City Waterworks Bureau), 令和6年度水質年報, 4 浄水場水質試験結果, annual tap-water statistics for the Moiwa, Shirakawa, Nishino, Miyanomachi and Jozankei plants.",
+    "ions": {
+     "calcium": {
+      "n": 5,
+      "min": 9.1,
+      "median": 10,
+      "max": 13
+     },
+     "magnesium": {
+      "n": 5,
+      "min": 2.1,
+      "median": 2.44,
+      "max": 3.1
+     },
+     "sodium": {
+      "n": 5,
+      "min": 8.5,
+      "median": 11,
+      "max": 14
+     },
+     "chloride": {
+      "n": 5,
+      "min": 11,
+      "median": 17,
+      "max": 20
+     },
+     "bicarbonate": {
+      "n": 5,
+      "min": 24,
+      "median": 24.4,
+      "max": 29
+     }
+    },
+    "note": "Five plants and no great drama between them: total hardness runs 34 to 44 mg/L as CaCO3 and alkalinity 20 to 24, so every part of Sapporo drinks soft, low-alkalinity water. Nishino is the hardest at 44 and Moiwa the softest at 34. Sulfate is absent from the table because Japan does not regulate it in drinking water; Tokyo measures it as a voluntary management target but Sapporo does not, so no sulfate figure is carried here."
+   }
   },
   {
    "id": "vancouver",

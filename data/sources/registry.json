@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 368,
+    "distinctSources": 369,
     "backgroundDocuments": 13,
-    "citations": 693,
-    "numericCitations": 578,
+    "citations": 694,
+    "numericCitations": 579,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 660,
+      "primary": 661,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7233,6 +7233,31 @@
       ],
       "exampleRecords": [
         "dusseldorf"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.city.sapporo.jp/suido/overview/suishitu/result/documents/r06_04.pdf",
+      "host": "www.city.sapporo.jp",
+      "title": null,
+      "publisher": "Sapporo City Waterworks Bureau (札幌市水道局)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The utility supplying Sapporo. Its annual 水質年報 publishes raw, treated and tap-water statistics for each of the city's five purification plants, including calcium, magnesium, alkalinity, chloride and total hardness. It does not measure sulfate, which is not a Japanese statutory parameter.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "sapporo"
       ]
     },
     {

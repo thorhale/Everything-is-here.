@@ -502,6 +502,13 @@
    "note": "Andrew Lea, formerly a research scientist at the Long Ashton Research Station, compiles the station's cider apple juice analyses here from Bulmer's Pomona (1987) and Beech and Carr (1977), alongside the Geneva NY and Virginia datasets. Secondary because it is a compilation rather than the original publication, but by someone who worked on the original programme, and the underlying citations are named on the page. Long Ashton closed in 2003 and its data is not otherwise online."
   },
   {
+   "host": "www.city.sapporo.jp",
+   "name": "Sapporo City Waterworks Bureau (札幌市水道局)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility supplying Sapporo. Its annual 水質年報 publishes raw, treated and tap-water statistics for each of the city's five purification plants, including calcium, magnesium, alkalinity, chloride and total hardness. It does not measure sulfate, which is not a Japanese statutory parameter."
+  },
+  {
    "host": "www.czhops.cz",
    "name": "Czech Hops (Hop Research Institute Žatec)",
    "kind": "vendor-datasheet",
