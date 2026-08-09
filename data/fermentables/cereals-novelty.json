@@ -7,7 +7,7 @@
    "name": "Fruity Pebbles",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 42.2,
+   "ppg": 39.6,
    "colorLovibond": 2,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -27,14 +27,16 @@
    "description": "Rice-based cereal that is nearly all sugar and gelatinised rice starch — hence a very high potential extract for a cereal. A pastry-sour and milkshake-IPA favourite.",
    "flavorNotes": "Artificial fruit punch, sweet cereal milk.",
    "usageNotes": "The rice starch is already gelatinised (it was extruded), so it converts readily in a normal mash — but it still needs diastatic malt. The colour is mostly water-soluble dye that mostly washes out. Expect sticky, dusty handling.",
-   "sourceUrl": "https://www.postconsumerbrands.com/pebbles/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2626163",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2626163, \"PEBBLES SWEETENED RICE CEREAL (brand FRUITY PEBBLES)\", Post Consumer Brands, LLC, published 31 August 2023): a 36 g serving declaring 31.0 g of total carbohydrate and 0.0 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (31.0 - 0.0) / 36 = 39.6 - the stored 42.2 was high by 2.6. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-cocoa-pebbles",
    "name": "Cocoa Pebbles",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 42.2,
+   "ppg": 38.3,
    "colorLovibond": 6,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -52,14 +54,16 @@
     "chocolate"
    ],
    "description": "The cocoa version — same rice base, with cocoa for a light chocolate-cereal note.",
-   "sourceUrl": "https://www.postconsumerbrands.com/pebbles/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2484426",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2484426, \"COCOA PEBBLES CHOCOLATE FLAVORED RICE CEREAL\", Post Consumer Brands, LLC, published 16 February 2023): a 36 g serving declaring 31.0 g of total carbohydrate and 1.01 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (31.0 - 1.01) / 36 = 38.3 - the stored 42.2 was high by 3.9. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-capn-crunch",
    "name": "Cap'n Crunch",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 37.1,
+   "ppg": 38.6,
    "colorLovibond": 4,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -77,14 +81,16 @@
    ],
    "description": "Corn-and-oat cereal with a distinct toasted-sweet character that survives fermentation better than most.",
    "flavorNotes": "Toasted corn, brown sugar, cereal milk.",
-   "sourceUrl": "https://www.quakeroats.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/1460496",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 1460496, \"Cap'n Crunch Sweetened Corn & Oat Cereal\", Pepsico Inc., published 19 March 2021): a 27 g serving declaring 23.2 g of total carbohydrate and 0.567 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (23.2 - 0.567) / 27 = 38.6 - the stored 37.1 was low by 1.5. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-cinnamon-toast-crunch",
    "name": "Cinnamon Toast Crunch",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 35.4,
+   "ppg": 33.7,
    "colorLovibond": 6,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -103,14 +109,16 @@
    ],
    "description": "Wheat-and-rice cereal carrying real cinnamon sugar — one of the few novelty cereals whose flavour genuinely carries through.",
    "usageNotes": "Contains added fat from the coating; keep the percentage moderate or head retention suffers.",
-   "sourceUrl": "https://www.generalmills.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2769683",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2769683, \"Cinnamon Toast Crunch Cereal\", GENERAL MILLS SALES INC., published 21 May 2026): a 41 g serving declaring 33.0 g of total carbohydrate and 2.99 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (33.0 - 2.99) / 41 = 33.7 - the stored 35.4 was high by 1.7. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-lucky-charms",
    "name": "Lucky Charms",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 34.5,
+   "ppg": 35.8,
    "colorLovibond": 4,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -128,14 +136,16 @@
     "marshmallow"
    ],
    "description": "Oat cereal plus marshmallows. The marshmallow portion is nearly pure fermentable sugar and gelatin.",
-   "sourceUrl": "https://www.generalmills.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2740713",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2740713, \"Lucky Charms Breakfast Cereal\", GENERAL MILLS SALES INC., published 21 August 2025): a 36 g serving declaring 30.0 g of total carbohydrate and 2.02 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (30.0 - 2.02) / 36 = 35.8 - the stored 34.5 was low by 1.3. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-froot-loops",
    "name": "Froot Loops",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 36.6,
+   "ppg": 37.7,
    "colorLovibond": 3,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -153,14 +163,16 @@
     "fruity"
    ],
    "description": "Corn, wheat, and oat blend with citrus-forward artificial fruit flavour.",
-   "sourceUrl": "https://www.kelloggs.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2736010",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2736010, \"Kellogg's Froot Loops Cereal Original\", WK KELLOGG CO, published 19 June 2025): a 42 g serving declaring 36.8 g of total carbohydrate and 2.39 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (36.8 - 2.39) / 42 = 37.7 - the stored 36.6 was low by 1.1. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-corn-flakes",
    "name": "Corn Flakes",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 37.3,
+   "ppg": 37.5,
    "colorLovibond": 2,
    "requiresConversion": true,
    "maxBatchPct": 40,
@@ -180,14 +192,16 @@
    ],
    "description": "Plain corn flakes are effectively pre-gelatinised flaked maize with a little sugar and salt — a genuinely serviceable corn adjunct, not just a novelty.",
    "usageNotes": "Choose unsweetened; the salt content is negligible at normal rates.",
-   "sourceUrl": "https://www.kelloggs.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2736282",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2736282, \"Kellogg's Corn Flakes Cereal\", WK KELLOGG CO, published 19 June 2025): a 23 g serving declaring 19.5 g of total carbohydrate and 0.759 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (19.5 - 0.759) / 23 = 37.5 - the stored 37.3 was low by 0.2. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-rice-krispies",
    "name": "Rice Krispies",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 39.6,
+   "ppg": 40.8,
    "colorLovibond": 2,
    "requiresConversion": true,
    "maxBatchPct": 40,
@@ -207,14 +221,16 @@
    ],
    "description": "Puffed rice — already gelatinised, so it converts without a cereal mash. One of the highest-extract cereal adjuncts.",
    "usageNotes": "A practical shortcut when you want rice character without cooking raw rice.",
-   "sourceUrl": "https://www.kelloggs.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2735979",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2735979, \"Kellogg's Rice Krispies Cereal\", WK KELLOGG CO, published 19 June 2025): a 18 g serving declaring 16.1 g of total carbohydrate and 0.126 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (16.1 - 0.126) / 18 = 40.8 - the stored 39.6 was low by 1.2. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-frosted-flakes",
    "name": "Frosted Flakes",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 41.4,
+   "ppg": 39.3,
    "colorLovibond": 3,
    "requiresConversion": true,
    "maxBatchPct": 25,
@@ -231,14 +247,16 @@
     "sweet"
    ],
    "description": "Sugar-coated corn flakes; the coating is directly fermentable, the flake needs conversion.",
-   "sourceUrl": "https://www.kelloggs.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2725235",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2725235, \"Kellogg's Frosted Flakes Cereal Original\", WK KELLOGG CO, published 24 April 2025): a 60 g serving declaring 53.0 g of total carbohydrate and 1.74 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (53.0 - 1.74) / 60 = 39.3 - the stored 41.4 was high by 2.1. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "cereal-cheerios",
    "name": "Cheerios",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 29,
+   "ppg": 29.5,
    "colorLovibond": 3,
    "requiresConversion": true,
    "maxBatchPct": 20,
@@ -255,7 +273,9 @@
     "body"
    ],
    "description": "Whole-oat cereal — high fibre drags the extract down, but it brings oat-like body and a toasty note.",
-   "sourceUrl": "https://www.generalmills.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2758490",
+   "attribution": "ppg is derived from the product's own Nutrition Facts panel as filed with USDA FoodData Central (Branded Foods, FDC ID 2758490, \"Cheerios Breakfast Cereal\", GENERAL MILLS SALES INC., published 23 April 2026): a 39 g serving declaring 29.0 g of total carbohydrate and 4.02 g of dietary fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x (29.0 - 4.02) / 39 = 29.5 - the stored 29 was low by 0.5. Branded Foods is label data supplied by the manufacturer, which for a packaged cereal is the primary statement of composition; the citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else on this record. Colour in Lovibond and the maximum batch percentage are this project's own curation and are not sourced - no cereal manufacturer publishes either, because neither is a food-labelling quantity. Note also that ppg here is a ceiling and not a promise: the carbohydrate is mostly gelatinised starch, so it needs the diastatic power of a base malt to become fermentable, which is what requiresConversion records. And branded label data is a snapshot of one formulation on one date - manufacturers reformulate, so a figure carries the date its panel was filed."
   },
   {
    "id": "novelty-graham-crackers",

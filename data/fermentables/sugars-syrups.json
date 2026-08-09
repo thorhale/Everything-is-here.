@@ -321,7 +321,8 @@
     "dry"
    ],
    "description": "Crystallised sucrose used to boost gravity in Belgian tripels and golden strongs without adding body.",
-   "sourceUrl": "https://www.candisyrup.com/"
+   "sourceUrl": "https://www.candisyrup.com/",
+   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
   },
   {
    "id": "sugar-candi-syrup-d180",
@@ -344,7 +345,8 @@
    ],
    "description": "Deeply caramelised Belgian syrup contributing dark fruit and burnt-sugar complexity to dubbels and quads.",
    "flavorNotes": "Raisin, fig, dark caramel.",
-   "sourceUrl": "https://www.candisyrup.com/"
+   "sourceUrl": "https://www.candisyrup.com/",
+   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
   },
   {
    "id": "sugar-molasses",
@@ -574,14 +576,15 @@
    ],
    "description": "Brewing yeast cannot ferment lactose at all — it stays in the beer as residual sweetness and body. The defining ingredient of milk stouts and modern pastry/milkshake styles.",
    "usageNotes": "0% fermentable: it raises OG and FG equally and does not add alcohol. Not vegan; and note that Saccharomyces cannot touch it but Kluyveromyces marxianus can.",
-   "sourceUrl": "https://www.briess.com/"
+   "sourceUrl": "https://www.briess.com/",
+   "sourceNote": "The ppg on this record is unsourced and the citation is a homepage. Briess was cited but their site publishes a single page in its sitemap and no product specification for lactose. USDA FoodData Central has no entry for pure lactose either - searching it returns lactose-free milks and infant formulas, not the sugar - so the nutrition-panel method this project uses for adjuncts has nothing to work from. Worth noting that the stored 35 looks low on its face: lactose monohydrate is about 95% anhydrous sugar by weight, which on the 46-point sucrose scale would be nearer 44. That is arithmetic, not a source, and the figure has been left alone rather than changed on the strength of it."
   },
   {
    "id": "sugar-maltodextrin",
    "name": "Maltodextrin",
    "category": "sugar",
    "type": "sugar",
-   "ppg": 40,
+   "ppg": 43.5,
    "colorLovibond": 0,
    "fermentabilityPct": 0,
    "maxBatchPct": 10,
@@ -594,14 +597,16 @@
     "mouthfeel"
    ],
    "description": "Unfermentable glucose polymer added purely for body and mouthfeel; flavourless and non-sweet.",
-   "sourceUrl": "https://www.briess.com/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2585907",
+   "attribution": "ppg is derived from the Nutrition Facts panel of a pure maltodextrin powder as filed with USDA FoodData Central (Branded Foods, FDC ID 2585907, \"UNFLAVORED MALTODEXTRIN POWDER\", PepsiCo Inc. / CytoSport, published 29 June 2023, single ingredient: maltodextrin): a 56 g serving declaring 53 g of total carbohydrate and no fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x 53 / 56 = 43.5, against a stored 40. A second, independent panel agrees: FDC ID 2423905, also single-ingredient maltodextrin, declares 14 g of carbohydrate in a 15 g serving, which is 42.9. The two bracket the figure at 43, and the difference between them is label rounding on the smaller serving. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else. Maltodextrin is close to pure carbohydrate, so its gravity contribution is near sucrose's 46 - the stored 40 understated it by about 8%. What the panel cannot tell you is the part that actually matters for brewing: dextrose equivalent. Maltodextrins are sold from about DE 4 to DE 20, and the higher the DE the more of that carbohydrate brewing yeast can ferment, but DE is not a food-labelling quantity and neither panel states it. The fermentability figure on this record is therefore unsourced, and so is the colour. Both panels are for food-grade powder rather than a brewing-branded product; the molecule is the same, the DE may not be."
   },
   {
    "id": "sugar-invert-no3",
    "name": "Invert Sugar No. 3",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 36,
+   "ppg": 35.0,
    "colorLovibond": 55,
    "fermentabilityPct": 100,
    "maxBatchPct": 20,
@@ -615,7 +620,9 @@
     "historical"
    ],
    "description": "Graded British invert syrup (No.1 pale through No.4 dark); No.3 brings rich caramel and dried fruit to old ales and porters.",
-   "sourceUrl": "https://crispmalt.com/"
+   "sourceUrl": "https://www.ragus.co.uk/product/invert-sugar-syrup/",
+   "attribution": "Ragus Sugars, Invert Sugar Syrup, product page: a full invert is manufactured to 76 Brix with a polarisation of -18 to -22, and a partial invert to a maximum of 77 Brix at +17 to +23. Brix here is dissolved solids, which for an invert syrup is sugar, so 46 x 0.76 is 35.0 ppg against a stored 36.",
+   "sourceNote": "The citation was pointed at the wrong company and the replacement only covers half the record. Crisp Malt was cited for this, but Crisp publish no invert sugar at all - it is absent from their malts sitemap and their own site search for \"invert\" returns no product. Ragus is a British sugar refiner that does make brewing inverts and does publish a specification, so the dissolved-solids figure and the ppg derived from it now rest on that. What Ragus do not publish is the numbered grade system: No. 1 through No. 4 are colour grades, darkening with each boil, and the stored 55 Lovibond for a No. 3 is not supported by this or any document this project holds. Treat the colour as unsourced."
   },
   {
    "id": "extract-dme-light",

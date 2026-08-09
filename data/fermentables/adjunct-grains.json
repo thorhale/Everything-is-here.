@@ -125,7 +125,7 @@
    "name": "Torrified Wheat",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 36,
+   "ppg": 37.7,
    "colorLovibond": 2,
    "requiresConversion": true,
    "maxBatchPct": 40,
@@ -138,7 +138,9 @@
     "head-retention"
    ],
    "description": "Heat-puffed whole wheat; similar to flaked wheat, traditional in English ales.",
-   "sourceUrl": "https://crispmalt.com/"
+   "sourceUrl": "https://crispmalt.com/malts/torrefied-wheat/",
+   "attribution": "Crisp Malt's published typical analysis for Torrefied Wheat. Extract is 81.9% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 37.7, against a stored 36. They publish no colour figure for this product, so the stored 2 Lovibond remains unsourced curation. Moisture is given as 10.0% max.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "adjunct-rice-long-grain",

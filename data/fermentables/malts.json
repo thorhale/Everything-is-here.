@@ -472,8 +472,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "Belgium",
-   "ppg": 30,
-   "colorLovibond": 180,
+   "ppg": 34.0,
+   "colorLovibond": 109.3,
    "maxBatchPct": 10,
    "ppgBasis": "maltster",
    "uses": [
@@ -487,7 +487,9 @@
    ],
    "description": "The most intense Belgian caramel malt; unmistakable dark raisin and plum. A signature of dubbels.",
    "flavorNotes": "Raisin, prune, dark toffee.",
-   "sourceUrl": "https://www.castlemalting.com/"
+   "sourceUrl": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=183&Language=English&FileType=HTML",
+   "attribution": "Castle Malting's published typical analysis for Château Special Belgium®, crop year 2025. Extract is specified as not less than 74.0% dry basis, which is 34.0 ppg. The stored 30 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 98.1-120.6 Lovibond (260-320 EBC), so the midpoint is 109.3, against a stored 180. Moisture is given as max 6.0%.",
+   "sourceNote": "The record's citation of Castle Malting was right, though the naming looks wrong at first: Special B® is Dingemans' registered mark. Castle's own specification sheet settles it in a note - \"Château Special B® became Château Special Belgium®\" - so Castle did make a Special B and renamed it, and this is that malt. Dingemans' own Special B® MD is specified at 270-350 EBC and 115.00 Lovibond, which agrees with Castle's 98.1-120.6 to within the width of either range. Two maltsters independently put this malt near 110 Lovibond; the stored 180 was not close to either. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-melanoidin",
@@ -520,7 +522,7 @@
    "type": "grain",
    "origin": "Belgium",
    "ppg": 35,
-   "colorLovibond": 23,
+   "colorLovibond": 20.0,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -531,7 +533,9 @@
     "biscuit"
    ],
    "description": "Lightly roasted for warm bread-crust and biscuit character.",
-   "sourceUrl": "https://www.dingemansmout.be/"
+   "sourceUrl": "https://dingemansmout.be/malt/biscuit%C2%AE-50%C2%A0md",
+   "attribution": "Dingemans's published typical analysis for Biscuit® 50 MD. Extract is specified as not less than 75.0% dry basis, which is 34.5 ppg. The stored 35 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 20 Lovibond (47-70 EBC, with a nominal 50 EBC quoted as 20.00 Lovibond), taken as printed, against a stored 23. Moisture is given as max 4.5%.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-victory",
@@ -562,8 +566,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "Belgium",
-   "ppg": 33,
-   "colorLovibond": 26,
+   "ppg": 36.3,
+   "colorLovibond": 20.0,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -574,7 +578,9 @@
     "belgian"
    ],
    "description": "Very malt-aromatic, boosts malt intensity in Belgian and malty styles.",
-   "sourceUrl": "https://www.dingemansmout.be/"
+   "sourceUrl": "https://dingemansmout.be/malt/amber-aromatic%C2%AE-md",
+   "attribution": "Dingemans's published typical analysis for Amber - Aromatic® MD. Extract is specified as not less than 79.0% dry basis, which is 36.3 ppg. The stored 33 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 20 Lovibond (40-60 EBC, with a nominal 50 EBC quoted as 20.00 Lovibond), taken as printed, against a stored 26. Moisture is given as max 4.5%.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-honey",
@@ -584,7 +590,7 @@
    "type": "grain",
    "origin": "Canada",
    "ppg": 37,
-   "colorLovibond": 25,
+   "colorLovibond": 19.0,
    "maxBatchPct": 10,
    "ppgBasis": "maltster",
    "uses": [
@@ -595,7 +601,9 @@
     "honey"
    ],
    "description": "Intensely sweet, honeyed malt with no actual honey; a little goes a long way.",
-   "sourceUrl": "https://gambrinusmalting.com/"
+   "sourceUrl": "https://gambrinusmalting.com/gambrinus-honey-malt/",
+   "attribution": "Gambrinus Malting's published typical analysis for Gambrinus Honey Malt. Colour is published as 15.3-22.7 Lovibond (39.4-59.1 EBC, 20-30 SRM), so the midpoint is 19.0, against a stored 25. Moisture is given as Max 5%.",
+   "sourceNote": "Gambrinus publish colour, moisture and protein for this malt but no extract figure at all, so the stored ppg of 37 remains unsourced curation. Their colour figures are internally consistent: 20-30 SRM converts to the 15.3-22.7 Lovibond they print, and to the 39.4-59.1 EBC. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-chocolate",
@@ -751,8 +759,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "United Kingdom",
-   "ppg": 32,
-   "colorLovibond": 65,
+   "ppg": 32.2,
+   "colorLovibond": 71.0,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -764,7 +772,9 @@
     "dry"
    ],
    "description": "Dry, toasty, coffee-ish English malt central to historical porters.",
-   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/brown-malt/",
+   "attribution": "Thomas Fawcett & Sons's published typical analysis for Brown Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 32 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 66-76 Lovibond (140-160 EBC by IoB, 175-200 EBC by the EBC method), so the midpoint is 71.0, against a stored 65.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-amber",
@@ -774,7 +784,7 @@
    "type": "grain",
    "origin": "United Kingdom",
    "ppg": 33,
-   "colorLovibond": 27,
+   "colorLovibond": 43.0,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -786,7 +796,9 @@
     "mild"
    ],
    "description": "Toasted English malt with a dry biscuit character for milds, browns, and porters.",
-   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/amber-malt/",
+   "attribution": "Thomas Fawcett & Sons's published typical analysis for Amber Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 38-48 Lovibond (90-110 EBC by IoB, 110-140 EBC by the EBC method), so the midpoint is 43.0, against a stored 27.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-chit",
@@ -924,7 +936,7 @@
     "body"
    ],
    "description": "Huskless malted oat crystal malt; nutty, creamy, silky mouthfeel. A hazy-IPA and oatmeal favourite.",
-   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/"
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/special-malts/golden-naked-oats/"
   },
   {
    "id": "malt-oat-malt",
@@ -934,7 +946,7 @@
    "type": "grain",
    "origin": "United Kingdom",
    "ppg": 33,
-   "colorLovibond": 2,
+   "colorLovibond": 2.8,
    "diastaticPowerLintner": 40,
    "maxBatchPct": 40,
    "ppgBasis": "maltster",
@@ -947,7 +959,9 @@
     "hazy"
    ],
    "description": "Malted (rather than flaked) oats — silky body with more enzyme than raw oats, easier to mash.",
-   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/oat-malt/",
+   "attribution": "Thomas Fawcett & Sons's published typical analysis for Oat Malt. Extract is specified as not less than 60.0% dry basis, which is 27.6 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 2.3-3.3 Lovibond (4.0-6.0 EBC by IoB, 5.0-7.5 EBC by the EBC method), so the midpoint is 2.8, against a stored 2.",
+   "sourceNote": "Fawcett's extract figure is a floor and a distant one. They guarantee not less than 60.0% coarse-grind extract, which is 27.6 ppg, while the stored 33 implies 71.7%. The stored figure is not refuted - a minimum cannot refute anything above it - but the gap is wide enough to be worth knowing about, and Fawcett publish no typical value to close it. Oat malt genuinely runs low on extract because the husk is a large fraction of the grain. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-abbey",
@@ -1002,8 +1016,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "United Kingdom",
-   "ppg": 29,
-   "colorLovibond": 225,
+   "ppg": 32.2,
+   "colorLovibond": 230.0,
    "maxBatchPct": 10,
    "ppgBasis": "maltster",
    "uses": [
@@ -1016,7 +1030,9 @@
     "chocolate"
    ],
    "description": "Lighter than full chocolate malt; deep colour with a softer, less acrid cocoa character.",
-   "sourceUrl": "https://www.fawcett-maltsters.co.uk/"
+   "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/pale-chocolate-malt/",
+   "attribution": "Thomas Fawcett & Sons's published typical analysis for Pale Chocolate Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 29 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 200-260 Lovibond (450-550 EBC by IoB, 560-690 EBC by the EBC method), so the midpoint is 230.0, against a stored 225.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-pilsner-bestmalz",
@@ -1095,8 +1111,8 @@
    "category": "base-malt",
    "type": "grain",
    "origin": "Belgium",
-   "ppg": 36,
-   "colorLovibond": 4,
+   "ppg": 36.8,
+   "colorLovibond": 2.7,
    "diastaticPowerLintner": 65,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
@@ -1109,17 +1125,19 @@
     "base"
    ],
    "description": "Belgian Vienna base malt; toasty-golden with a soft sweetness for amber and Belgian styles.",
-   "sourceUrl": "https://www.castlemalting.com/"
+   "sourceUrl": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=176&Language=English&FileType=HTML",
+   "attribution": "Castle Malting's published typical analysis for Château Vienna®, crop year 2025. Extract is specified as not less than 80.0% dry basis, which is 36.8 ppg. The stored 36 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 2.1-3.2 Lovibond (4-7 EBC), so the midpoint is 2.7, against a stored 4. Moisture is given as max 4.5%.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-cara-belge",
-   "name": "Château CaraBelge",
+   "name": "CaraBelge (Weyermann)",
    "brand": "Castle Malting",
    "category": "specialty-malt",
    "type": "grain",
    "origin": "Belgium",
    "ppg": 34,
-   "colorLovibond": 22,
+   "colorLovibond": 12.7,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -1131,7 +1149,9 @@
     "body"
    ],
    "description": "Belgian caramel malt for body and a light amber-caramel note in Belgian ales.",
-   "sourceUrl": "https://www.castlemalting.com/"
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2021/01/Weyermann%C2%AE-CARABELGE%C2%AE_Specification-1.pdf",
+   "attribution": "Weyermann's published typical analysis for Weyermann® CARABELGE®, crop 2025. Extract is specified as not less than 74.0% dry basis, which is 34.0 ppg. The stored 34 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 11.8-13.6 Lovibond (30-35 EBC), so the midpoint is 12.7, against a stored 22. Moisture is given as max 9%.",
+   "sourceNote": "This record was pointing at the wrong maltster. CARABELGE® is a registered trademark of Mich. Weyermann GmbH & Co. KG of Bamberg, and the record's name, \"Château CaraBelge\", fuses Weyermann's mark with Castle Malting's Château prefix to make a product nobody sells. Castle's current catalogue has no CaraBelge at all - their caramel range is Cara Blond, Cara Ruby, Cara Gold, Cara Arome, Cara Honey, Cara Crystal, Cara Terra, Cara Cafe and Cara Ultra 60 and 150. The record now cites Weyermann's own product specification and the name has been corrected. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-crystal-rye",
@@ -1367,8 +1387,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "United Kingdom",
-   "ppg": 34,
-   "colorLovibond": 77,
+   "ppg": 32.9,
+   "colorLovibond": 102.0,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -1380,7 +1400,9 @@
     "toffee"
    ],
    "description": "Classic English medium-dark crystal; rich toffee and dried fruit for bitters and old ales.",
-   "sourceUrl": "https://crispmalt.com/"
+   "sourceUrl": "https://crispmalt.com/en-us/malts/crystal-77l/",
+   "attribution": "Crisp Malt's published typical analysis for Crystal 77L Malt. Extract is 71.5% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 32.9, against a stored 34. Colour is published as 94-110 Lovibond (225-265 EBC by IoB, 247-291 EBC by the EBC method), so the midpoint is 102.0, against a stored 77. Moisture is given as 3.5% max.",
+   "sourceNote": "The malt's own name disagrees with its maker's analysis and the analysis wins. Crisp sell this as Crystal 77L, and the stored colour was that 77; their typical analysis says 94-110 Lovibond. Their table is internally consistent - the Lovibond column is a correct conversion of the EBC column beside it, 247-291 EBC being 94-110 Lovibond - and the same offset appears on Crystal Extra Dark 120L, specified at 158-181 Lovibond. Crystal Light 45L (38-46) and Crystal 60L (61-69) do match their names, so this is not a systematic error in Crisp's tables; the darker two appear to be named to US market convention rather than to their own analysis. Brew to 102, not 77. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-crisp-chocolate",
@@ -1389,8 +1411,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "United Kingdom",
-   "ppg": 28,
-   "colorLovibond": 420,
+   "ppg": 33.1,
+   "colorLovibond": 394.5,
    "maxBatchPct": 10,
    "ppgBasis": "maltster",
    "uses": [
@@ -1402,7 +1424,9 @@
     "stout"
    ],
    "description": "English chocolate malt, darker than the US equivalent — smooth cocoa and coffee for porters and stouts.",
-   "sourceUrl": "https://crispmalt.com/"
+   "sourceUrl": "https://crispmalt.com/malts/chocolate-malt/",
+   "attribution": "Crisp Malt's published typical analysis for Chocolate Malt. Extract is 72.0% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 33.1, against a stored 28. Colour is published as 353-436 Lovibond (850-1050 EBC by IoB, 930-1155 EBC by the EBC method), so the midpoint is 394.5, against a stored 420. Moisture is given as 2.0% max.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-simpsons-double-roasted",
@@ -1412,7 +1436,7 @@
    "type": "grain",
    "origin": "United Kingdom",
    "ppg": 33,
-   "colorLovibond": 140,
+   "colorLovibond": 112.5,
    "maxBatchPct": 10,
    "ppgBasis": "maltster",
    "uses": [
@@ -1424,7 +1448,9 @@
     "dark-fruit"
    ],
    "description": "Crystal malt roasted twice; burnt sugar, treacle and dark fruit. Distinctive in English strong ales.",
-   "sourceUrl": "https://www.simpsonsmalt.co.uk/"
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/crystal-malts/simpsons-drc/",
+   "attribution": "Simpsons Malt's published typical analysis for Simpsons DRC®. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 105-120 Lovibond (280-320 EBC by IoB, 308-352 EBC by the EBC method), so the midpoint is 112.5, against a stored 140. Moisture is given as 5% max.",
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
   },
   {
    "id": "malt-briess-bonlander",

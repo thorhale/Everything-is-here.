@@ -133,6 +133,13 @@
    "note": "Same standing as en.wikipedia.org: descriptive claims only. Cited here for Dornbusch's bibliography, where the durable identifiers are the ISBNs, not the article."
   },
   {
+   "host": "dingemansmout.be",
+   "name": "Dingemans Mout",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Belgian maltster. Each malt page carries a Technical specifications block with colour as an EBC range, a nominal EBC with its Lovibond equivalent, extract fine dry matter as a minimum, moisture, protein, pH and diastatic power."
+  },
+  {
    "host": "document.environnement.brussels",
    "name": "Bruxelles Environnement / Leefmilieu Brussel (document host)",
    "kind": "government-report",
@@ -767,6 +774,13 @@
    "name": "Quaker Oats (nutrition labelling)",
    "kind": "nutrition-label",
    "reliability": "primary"
+  },
+  {
+   "host": "www.ragus.co.uk",
+   "name": "Ragus Sugars Manufacturing",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "British sugar refiner making brewing invert syrups. Publishes manufacturing specifications - Brix and polarisation for full and partial inverts - but not the numbered No. 1 to No. 4 colour grades brewers order by."
   },
   {
    "host": "www.rheinenergie.com",

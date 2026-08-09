@@ -11,11 +11,11 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 375,
+    "distinctSources": 391,
     "backgroundDocuments": 14,
     "citations": 694,
     "numericCitations": 579,
-    "numericOnShallowLink": 58,
+    "numericOnShallowLink": 32,
     "numericOnTertiary": 0,
     "fullTextVerified": 34,
     "backgroundFullTextVerified": 11,
@@ -531,92 +531,6 @@
     },
     {
       "id": null,
-      "url": "https://crispmalt.com/",
-      "host": "crispmalt.com",
-      "title": null,
-      "publisher": "Crisp Malt",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/fermentables/adjunct-grains.json",
-        "data/fermentables/malts.json",
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "adjunct-torrified-wheat",
-        "malt-crisp-crystal-77",
-        "malt-crisp-chocolate",
-        "sugar-invert-no3"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.kelloggs.com/",
-      "host": "www.kelloggs.com",
-      "title": null,
-      "publisher": "Kellogg's (nutrition labelling)",
-      "authors": null,
-      "year": null,
-      "kind": "nutrition-label",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/fermentables/cereals-novelty.json"
-      ],
-      "exampleRecords": [
-        "cereal-froot-loops",
-        "cereal-corn-flakes",
-        "cereal-rice-krispies",
-        "cereal-frosted-flakes"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.fawcett-maltsters.co.uk/",
-      "host": "www.fawcett-maltsters.co.uk",
-      "title": null,
-      "publisher": "Thomas Fawcett & Sons",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-brown",
-        "malt-amber",
-        "malt-oat-malt",
-        "malt-pale-chocolate"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts",
       "host": "www.maltosefalcons.com",
       "title": null,
@@ -699,33 +613,6 @@
     },
     {
       "id": null,
-      "url": "https://www.generalmills.com/",
-      "host": "www.generalmills.com",
-      "title": null,
-      "publisher": "General Mills (nutrition labelling)",
-      "authors": null,
-      "year": null,
-      "kind": "nutrition-label",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 3,
-      "numericCitations": 3,
-      "usedIn": [
-        "data/fermentables/cereals-novelty.json"
-      ],
-      "exampleRecords": [
-        "cereal-cinnamon-toast-crunch",
-        "cereal-lucky-charms",
-        "cereal-cheerios"
-      ]
-    },
-    {
-      "id": null,
       "url": "http://www.cider.org.uk/appledat.htm",
       "host": "www.cider.org.uk",
       "title": null,
@@ -778,33 +665,6 @@
         "juice-grape-white",
         "juice-grape-red",
         "juice-cranberry"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.castlemalting.com/",
-      "host": "www.castlemalting.com",
-      "title": null,
-      "publisher": "Castle Malting",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 3,
-      "numericCitations": 3,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-special-b",
-        "malt-vienna-castle",
-        "malt-cara-belge"
       ]
     },
     {
@@ -943,32 +803,6 @@
     },
     {
       "id": null,
-      "url": "https://www.postconsumerbrands.com/pebbles/",
-      "host": "www.postconsumerbrands.com",
-      "title": null,
-      "publisher": "Post Consumer Brands (nutrition labelling)",
-      "authors": null,
-      "year": null,
-      "kind": "nutrition-label",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/cereals-novelty.json"
-      ],
-      "exampleRecords": [
-        "cereal-fruity-pebbles",
-        "cereal-cocoa-pebbles"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/169655",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -1019,32 +853,6 @@
       "exampleRecords": [
         "adjunct-sweet-potato",
         "fruit-sweetpotato"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.dingemansmout.be/",
-      "host": "www.dingemansmout.be",
-      "title": null,
-      "publisher": "Dingemans Mout",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/malts.json"
-      ],
-      "exampleRecords": [
-        "malt-biscuit",
-        "malt-aromatic"
       ]
     },
     {
@@ -1123,32 +931,6 @@
       "exampleRecords": [
         "sugar-candi-clear",
         "sugar-candi-syrup-d180"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.briess.com/",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "sugar-lactose",
-        "sugar-maltodextrin"
       ]
     },
     {
@@ -2161,6 +1943,31 @@
     },
     {
       "id": null,
+      "url": "https://crispmalt.com/malts/torrefied-wheat/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-torrified-wheat"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/168883",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -2386,20 +2193,70 @@
     },
     {
       "id": null,
-      "url": "https://www.quakeroats.com/",
-      "host": "www.quakeroats.com",
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2626163",
+      "host": "fdc.nal.usda.gov",
       "title": null,
-      "publisher": "Quaker Oats (nutrition labelling)",
+      "publisher": "USDA FoodData Central",
       "authors": null,
       "year": null,
-      "kind": "nutrition-label",
+      "kind": "government-database",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-fruity-pebbles"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2484426",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-cocoa-pebbles"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/1460496",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -2407,6 +2264,181 @@
       ],
       "exampleRecords": [
         "cereal-capn-crunch"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2769683",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-cinnamon-toast-crunch"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2740713",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-lucky-charms"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2736010",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-froot-loops"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2736282",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-corn-flakes"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2735979",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-rice-krispies"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2725235",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-frosted-flakes"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2758490",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "cereal-cheerios"
       ]
     },
     {
@@ -4463,6 +4495,56 @@
     },
     {
       "id": null,
+      "url": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=183&Language=English&FileType=HTML",
+      "host": "www.castlemalting.com",
+      "title": null,
+      "publisher": "Castle Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-special-b"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://dingemansmout.be/malt/biscuit%C2%AE-50%C2%A0md",
+      "host": "dingemansmout.be",
+      "title": null,
+      "publisher": "Dingemans Mout",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Belgian maltster. Each malt page carries a Technical specifications block with colour as an EBC range, a nominal EBC with its Lovibond equivalent, extract fine dry matter as a minimum, moisture, protein, pH and diastatic power.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-biscuit"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
       "host": "brewingwithbriess.com",
       "title": null,
@@ -4488,7 +4570,32 @@
     },
     {
       "id": null,
-      "url": "https://gambrinusmalting.com/",
+      "url": "https://dingemansmout.be/malt/amber-aromatic%C2%AE-md",
+      "host": "dingemansmout.be",
+      "title": null,
+      "publisher": "Dingemans Mout",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Belgian maltster. Each malt page carries a Technical specifications block with colour as an EBC range, a nominal EBC with its Lovibond equivalent, extract fine dry matter as a minimum, moisture, protein, pH and diastatic power.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-aromatic"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://gambrinusmalting.com/gambrinus-honey-malt/",
       "host": "gambrinusmalting.com",
       "title": null,
       "publisher": "Gambrinus Malting",
@@ -4497,7 +4604,7 @@
       "kind": "vendor-datasheet",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
@@ -4638,6 +4745,56 @@
     },
     {
       "id": null,
+      "url": "https://www.fawcett-maltsters.co.uk/malt/brown-malt/",
+      "host": "www.fawcett-maltsters.co.uk",
+      "title": null,
+      "publisher": "Thomas Fawcett & Sons",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-brown"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.fawcett-maltsters.co.uk/malt/amber-malt/",
+      "host": "www.fawcett-maltsters.co.uk",
+      "title": null,
+      "publisher": "Thomas Fawcett & Sons",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-amber"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.weyermann.de/en-us/product/weyermann-caramunich-type-3-2/",
       "host": "www.weyermann.de",
       "title": null,
@@ -4663,7 +4820,7 @@
     },
     {
       "id": null,
-      "url": "https://www.simpsonsmalt.co.uk/our-malts/golden-naked-oats/",
+      "url": "https://www.simpsonsmalt.co.uk/our-malts/special-malts/golden-naked-oats/",
       "host": "www.simpsonsmalt.co.uk",
       "title": null,
       "publisher": "Simpsons Malt",
@@ -4684,6 +4841,31 @@
       ],
       "exampleRecords": [
         "malt-golden-naked-oats"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.fawcett-maltsters.co.uk/malt/oat-malt/",
+      "host": "www.fawcett-maltsters.co.uk",
+      "title": null,
+      "publisher": "Thomas Fawcett & Sons",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-oat-malt"
       ]
     },
     {
@@ -4709,6 +4891,31 @@
       ],
       "exampleRecords": [
         "malt-cherrywood-smoked"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.fawcett-maltsters.co.uk/malt/pale-chocolate-malt/",
+      "host": "www.fawcett-maltsters.co.uk",
+      "title": null,
+      "publisher": "Thomas Fawcett & Sons",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-pale-chocolate"
       ]
     },
     {
@@ -4759,6 +4966,56 @@
       ],
       "exampleRecords": [
         "malt-marris-otter-crisp-extra-pale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=176&Language=English&FileType=HTML",
+      "host": "www.castlemalting.com",
+      "title": null,
+      "publisher": "Castle Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-vienna-castle"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.weyermann.de/wp-content/uploads/2021/01/Weyermann%C2%AE-CARABELGE%C2%AE_Specification-1.pdf",
+      "host": "www.weyermann.de",
+      "title": null,
+      "publisher": "Weyermann Specialty Malts",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-cara-belge"
       ]
     },
     {
@@ -4913,7 +5170,57 @@
     },
     {
       "id": null,
-      "url": "https://www.simpsonsmalt.co.uk/",
+      "url": "https://crispmalt.com/en-us/malts/crystal-77l/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crisp-crystal-77"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://crispmalt.com/malts/chocolate-malt/",
+      "host": "crispmalt.com",
+      "title": null,
+      "publisher": "Crisp Malt",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-crisp-chocolate"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.simpsonsmalt.co.uk/our-malts/crystal-malts/simpsons-drc/",
       "host": "www.simpsonsmalt.co.uk",
       "title": null,
       "publisher": "Simpsons Malt",
@@ -4922,7 +5229,7 @@
       "kind": "vendor-datasheet",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
@@ -5159,6 +5466,81 @@
       ],
       "exampleRecords": [
         "sugar-sorghum-syrup"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.briess.com/",
+      "host": "www.briess.com",
+      "title": null,
+      "publisher": "Briess Malt & Ingredients",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-lactose"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/2585907",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-maltodextrin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.ragus.co.uk/product/invert-sugar-syrup/",
+      "host": "www.ragus.co.uk",
+      "title": null,
+      "publisher": "Ragus Sugars Manufacturing",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "British sugar refiner making brewing invert syrups. Publishes manufacturing specifications - Brix and polarisation for full and partial inverts - but not the numbered No. 1 to No. 4 colour grades brewers order by.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-invert-no3"
       ]
     },
     {
