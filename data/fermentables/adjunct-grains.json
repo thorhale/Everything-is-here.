@@ -153,7 +153,7 @@
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
+   "totalCarbG": 80.0,
    "fiberG": 1.3,
    "uses": [
     "beer",
@@ -167,7 +167,8 @@
    ],
    "description": "Ordinary long-grain white rice. High-amylose starch that gelatinises around 158–172°F, so it needs a cereal mash before it will convert.",
    "usageNotes": "Cereal mash: boil with ~20% of the base malt to gelatinise, then combine with the main mash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-sushi",
@@ -178,15 +179,15 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.7,
+   "ppg": 35.1,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 79,
-   "fiberG": 1.4,
+   "totalCarbG": 79.2,
+   "fiberG": 2.8,
    "uses": [
     "beer",
     "whiskey",
@@ -199,22 +200,23 @@
    ],
    "description": "Short-grain japonica rice, high in amylopectin so it gelatinises at a lower temperature and goes sticky. The rice class used for sake.",
    "usageNotes": "Lower gelatinisation point than long grain makes it a bit easier to cereal-mash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no separate sushi-rice entry; this is its short-grain white rice, which is what sushi rice is."
   },
   {
    "id": "adjunct-rice-arborio",
    "name": "Arborio Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 36.1,
+   "ppg": 35.1,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
-   "fiberG": 1.6,
+   "totalCarbG": 79.2,
+   "fiberG": 2.8,
    "uses": [
     "beer",
     "moonshine"
@@ -225,22 +227,23 @@
    ],
    "description": "Italian short-grain risotto rice, unusually high in amylopectin — it releases starch readily and can add a creamy body.",
    "usageNotes": "Its free-starch tendency makes for a thick, gluey cereal mash; keep the volume generous.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Arborio entry. This cites its short-grain white rice, the class Arborio belongs to — the figures are for the class, not for Arborio specifically."
   },
   {
    "id": "adjunct-rice-jasmine",
    "name": "Jasmine Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 36.1,
+   "ppg": 36.2,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
-   "fiberG": 1.4,
+   "totalCarbG": 80.0,
+   "fiberG": 1.3,
    "uses": [
     "beer",
     "moonshine"
@@ -250,22 +253,23 @@
     "floral"
    ],
    "description": "Aromatic Thai long-grain rice; carries a faint floral, popcorn-like aroma that can survive into the beer.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Jasmine entry. This cites its long-grain white rice, the class Jasmine belongs to — the figures are for the class, not for Jasmine specifically."
   },
   {
    "id": "adjunct-rice-basmati",
    "name": "Basmati Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.2,
+   "ppg": 36.2,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 78,
-   "fiberG": 1.4,
+   "totalCarbG": 80.0,
+   "fiberG": 1.3,
    "uses": [
     "beer",
     "moonshine"
@@ -275,7 +279,8 @@
     "nutty"
    ],
    "description": "Long-grain aromatic rice with a nutty, tea-like aroma.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Basmati entry. This cites its long-grain white rice, the class Basmati belongs to — the figures are for the class, not for Basmati specifically."
   },
   {
    "id": "adjunct-rice-glutinous",
@@ -286,14 +291,14 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.5,
+   "ppg": 36.3,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
+   "totalCarbG": 81.7,
    "fiberG": 2.8,
    "uses": [
     "beer",
@@ -304,22 +309,23 @@
     "asian-brewing"
    ],
    "description": "Almost pure amylopectin (no gluten despite the name). Used across Asian rice-wine and spirit traditions; very sticky when cooked.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168883",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, glutinous, unenriched, uncooked (SR Legacy, FDC ID 168883), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-brown",
    "name": "Brown Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 33.8,
+   "ppg": 33.4,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 25,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 77,
-   "fiberG": 3.5,
+   "totalCarbG": 76.2,
+   "fiberG": 3.6,
    "uses": [
     "beer",
     "moonshine"
@@ -330,22 +336,23 @@
    ],
    "description": "Whole-grain rice with the bran intact — nuttier, but the bran oil can hurt head retention and shelf stability.",
    "usageNotes": "The oil content is a real staling risk; keep the percentage modest.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169703",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 169703), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-wild",
    "name": "Wild Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 31.7,
+   "ppg": 31.6,
    "colorLovibond": 4,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
-   "fiberG": 6,
+   "totalCarbG": 74.9,
+   "fiberG": 6.2,
    "uses": [
     "beer"
    ],
@@ -354,7 +361,8 @@
     "earthy"
    ],
    "description": "Not a true rice (Zizania). Earthy, tea-like, and much higher in fibre, so lower extract.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169726",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Wild rice, raw (SR Legacy, FDC ID 169726), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-corn-grits",
@@ -364,15 +372,15 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.4,
+   "ppg": 35.9,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 79,
-   "fiberG": 2,
+   "totalCarbG": 79.6,
+   "fiberG": 1.6,
    "uses": [
     "beer",
     "whiskey",
@@ -384,22 +392,18 @@
    ],
    "description": "Raw milled corn. Cheap extract and a soft sweetness; must be cereal-mashed to gelatinise the starch.",
    "usageNotes": "The traditional pre-Prohibition American lager adjunct, and the backbone of bourbon mashes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171670",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cereals, corn grits, yellow, regular and quick, unenriched, dry (SR Legacy, FDC ID 171670), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-cracked-corn",
    "name": "Cracked Corn",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 34.5,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 80,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 76,
-   "fiberG": 1,
    "uses": [
     "whiskey",
     "moonshine"
@@ -411,22 +415,22 @@
    ],
    "description": "Coarsely cracked field corn — the base of bourbon and corn whiskey mashes (bourbon requires ≥51% corn).",
    "usageNotes": "Cook to gelatinise, then convert with malted barley or exogenous enzymes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source."
   },
   {
    "id": "adjunct-quinoa",
    "name": "Quinoa",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 26.2,
+   "ppg": 26.3,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 25,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 64,
-   "fiberG": 7,
+   "totalCarbG": 64.2,
+   "fiberG": 7.0,
    "uses": [
     "beer"
    ],
@@ -435,21 +439,22 @@
     "nutty"
    ],
    "description": "Gluten-free pseudocereal; nutty and slightly grassy. Rinse well — the natural saponin coating is bitter and soapy.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168874",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Quinoa, uncooked (SR Legacy, FDC ID 168874), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-millet",
    "name": "Millet",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 29.7,
+   "ppg": 29.6,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 100,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 73,
+   "totalCarbG": 72.8,
    "fiberG": 8.5,
    "uses": [
     "beer"
@@ -459,21 +464,22 @@
     "african-brewing"
    ],
    "description": "A staple gluten-free brewing grain, and the traditional base of many African beers. Available malted for gluten-free brewing.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169702",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Millet, raw (SR Legacy, FDC ID 169702), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-sorghum-grain",
    "name": "Sorghum (Grain)",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 31.4,
+   "ppg": 30.1,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 100,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
+   "totalCarbG": 72.1,
    "fiberG": 6.7,
    "uses": [
     "beer",
@@ -485,22 +491,23 @@
     "baijiu"
    ],
    "description": "Gluten-free grain used for African sorghum beers and, in China, as the primary grain for baijiu.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169716",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sorghum grain (SR Legacy, FDC ID 169716), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-buckwheat",
    "name": "Buckwheat",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 28.5,
+   "ppg": 28.3,
    "colorLovibond": 3,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 72,
-   "fiberG": 10,
+   "totalCarbG": 71.5,
+   "fiberG": 10.0,
    "uses": [
     "beer"
    ],
@@ -509,7 +516,8 @@
     "earthy"
    ],
    "description": "Gluten-free pseudocereal with a strong earthy, almost tannic character.",
-   "sourceUrl": "https://fdc.nal.usda.gov/"
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170286",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Buckwheat (SR Legacy, FDC ID 170286), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-hulls",

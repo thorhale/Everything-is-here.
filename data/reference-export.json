@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-08-08",
+ "generatedAt": "2026-08-09",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -3591,8 +3591,8 @@
    ],
    "description": "Ordinary long-grain white rice. High-amylose starch that gelatinises around 158–172°F, so it needs a cereal mash before it will convert.",
    "usageNotes": "Cereal mash: boil with ~20% of the base malt to gelatinise, then combine with the main mash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-sushi",
@@ -3603,15 +3603,15 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.7,
+   "ppg": 35.1,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 79,
-   "fiberG": 1.4,
+   "totalCarbG": 79.2,
+   "fiberG": 2.8,
    "uses": [
     "beer",
     "whiskey",
@@ -3624,23 +3624,23 @@
    ],
    "description": "Short-grain japonica rice, high in amylopectin so it gelatinises at a lower temperature and goes sticky. The rice class used for sake.",
    "usageNotes": "Lower gelatinisation point than long grain makes it a bit easier to cereal-mash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no separate sushi-rice entry; this is its short-grain white rice, which is what sushi rice is."
   },
   {
    "id": "adjunct-rice-arborio",
    "name": "Arborio Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 36.1,
+   "ppg": 35.1,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
-   "fiberG": 1.6,
+   "totalCarbG": 79.2,
+   "fiberG": 2.8,
    "uses": [
     "beer",
     "moonshine"
@@ -3651,15 +3651,15 @@
    ],
    "description": "Italian short-grain risotto rice, unusually high in amylopectin — it releases starch readily and can add a creamy body.",
    "usageNotes": "Its free-starch tendency makes for a thick, gluey cereal mash; keep the volume generous.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Arborio entry. This cites its short-grain white rice, the class Arborio belongs to — the figures are for the class, not for Arborio specifically."
   },
   {
    "id": "adjunct-rice-jasmine",
    "name": "Jasmine Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 36.1,
+   "ppg": 36.2,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
@@ -3667,7 +3667,7 @@
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
    "totalCarbG": 80,
-   "fiberG": 1.4,
+   "fiberG": 1.3,
    "uses": [
     "beer",
     "moonshine"
@@ -3677,23 +3677,23 @@
     "floral"
    ],
    "description": "Aromatic Thai long-grain rice; carries a faint floral, popcorn-like aroma that can survive into the beer.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Jasmine entry. This cites its long-grain white rice, the class Jasmine belongs to — the figures are for the class, not for Jasmine specifically."
   },
   {
    "id": "adjunct-rice-basmati",
    "name": "Basmati Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.2,
+   "ppg": 36.2,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 78,
-   "fiberG": 1.4,
+   "totalCarbG": 80,
+   "fiberG": 1.3,
    "uses": [
     "beer",
     "moonshine"
@@ -3703,8 +3703,8 @@
     "nutty"
    ],
    "description": "Long-grain aromatic rice with a nutty, tea-like aroma.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Basmati entry. This cites its long-grain white rice, the class Basmati belongs to — the figures are for the class, not for Basmati specifically."
   },
   {
    "id": "adjunct-rice-glutinous",
@@ -3715,14 +3715,14 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.5,
+   "ppg": 36.3,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 80,
+   "totalCarbG": 81.7,
    "fiberG": 2.8,
    "uses": [
     "beer",
@@ -3733,23 +3733,23 @@
     "asian-brewing"
    ],
    "description": "Almost pure amylopectin (no gluten despite the name). Used across Asian rice-wine and spirit traditions; very sticky when cooked.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168883",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, glutinous, unenriched, uncooked (SR Legacy, FDC ID 168883), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-brown",
    "name": "Brown Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 33.8,
+   "ppg": 33.4,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 25,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 77,
-   "fiberG": 3.5,
+   "totalCarbG": 76.2,
+   "fiberG": 3.6,
    "uses": [
     "beer",
     "moonshine"
@@ -3760,23 +3760,23 @@
    ],
    "description": "Whole-grain rice with the bran intact — nuttier, but the bran oil can hurt head retention and shelf stability.",
    "usageNotes": "The oil content is a real staling risk; keep the percentage modest.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169703",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 169703), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-wild",
    "name": "Wild Rice",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 31.7,
+   "ppg": 31.6,
    "colorLovibond": 4,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
-   "fiberG": 6,
+   "totalCarbG": 74.9,
+   "fiberG": 6.2,
    "uses": [
     "beer"
    ],
@@ -3785,8 +3785,8 @@
     "earthy"
    ],
    "description": "Not a true rice (Zizania). Earthy, tea-like, and much higher in fibre, so lower extract.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169726",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Wild rice, raw (SR Legacy, FDC ID 169726), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-corn-grits",
@@ -3796,15 +3796,15 @@
    ],
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 35.4,
+   "ppg": 35.9,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 40,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 79,
-   "fiberG": 2,
+   "totalCarbG": 79.6,
+   "fiberG": 1.6,
    "uses": [
     "beer",
     "whiskey",
@@ -3816,23 +3816,18 @@
    ],
    "description": "Raw milled corn. Cheap extract and a soft sweetness; must be cereal-mashed to gelatinise the starch.",
    "usageNotes": "The traditional pre-Prohibition American lager adjunct, and the backbone of bourbon mashes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171670",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cereals, corn grits, yellow, regular and quick, unenriched, dry (SR Legacy, FDC ID 171670), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-cracked-corn",
    "name": "Cracked Corn",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 34.5,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 80,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 76,
-   "fiberG": 1,
    "uses": [
     "whiskey",
     "moonshine"
@@ -3844,22 +3839,21 @@
    ],
    "description": "Coarsely cracked field corn — the base of bourbon and corn whiskey mashes (bourbon requires ≥51% corn).",
    "usageNotes": "Cook to gelatinise, then convert with malted barley or exogenous enzymes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source."
   },
   {
    "id": "adjunct-quinoa",
    "name": "Quinoa",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 26.2,
+   "ppg": 26.3,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 25,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 64,
+   "totalCarbG": 64.2,
    "fiberG": 7,
    "uses": [
     "beer"
@@ -3869,22 +3863,22 @@
     "nutty"
    ],
    "description": "Gluten-free pseudocereal; nutty and slightly grassy. Rinse well — the natural saponin coating is bitter and soapy.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168874",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Quinoa, uncooked (SR Legacy, FDC ID 168874), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-millet",
    "name": "Millet",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 29.7,
+   "ppg": 29.6,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 100,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 73,
+   "totalCarbG": 72.8,
    "fiberG": 8.5,
    "uses": [
     "beer"
@@ -3894,22 +3888,22 @@
     "african-brewing"
    ],
    "description": "A staple gluten-free brewing grain, and the traditional base of many African beers. Available malted for gluten-free brewing.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169702",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Millet, raw (SR Legacy, FDC ID 169702), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-sorghum-grain",
    "name": "Sorghum (Grain)",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 31.4,
+   "ppg": 30.1,
    "colorLovibond": 2,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 100,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
+   "totalCarbG": 72.1,
    "fiberG": 6.7,
    "uses": [
     "beer",
@@ -3921,22 +3915,22 @@
     "baijiu"
    ],
    "description": "Gluten-free grain used for African sorghum beers and, in China, as the primary grain for baijiu.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169716",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sorghum grain (SR Legacy, FDC ID 169716), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-buckwheat",
    "name": "Buckwheat",
    "category": "adjunct-grain",
    "type": "grain",
-   "ppg": 28.5,
+   "ppg": 28.3,
    "colorLovibond": 3,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 30,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 72,
+   "totalCarbG": 71.5,
    "fiberG": 10,
    "uses": [
     "beer"
@@ -3946,8 +3940,8 @@
     "earthy"
    ],
    "description": "Gluten-free pseudocereal with a strong earthy, almost tannic character.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "Brewing-prepared adjuncts (flaked/torrified) use published brewing extract figures. Raw grains and rices have no brewing datasheet, so their PPG is derived from USDA FoodData Central nutrition data via lib/fermentable-math.ts — PPG = 46 x (total carbohydrate - fibre) / serving weight. The nutrition inputs are stored with each entry so the figure can be audited."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170286",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Buckwheat (SR Legacy, FDC ID 170286), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-rice-hulls",
@@ -4239,14 +4233,14 @@
    "name": "Graham Crackers",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 34.1,
+   "ppg": 34.2,
    "colorLovibond": 8,
    "requiresConversion": true,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 77,
-   "fiberG": 2.8,
+   "totalCarbG": 77.7,
+   "fiberG": 3.4,
    "uses": [
     "beer"
    ],
@@ -4258,22 +4252,22 @@
    ],
    "description": "Honey-graham flour biscuit; the go-to for s'mores stouts and pastry beers.",
    "usageNotes": "Contains fat — moderate the percentage to protect foam.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174957",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cookies, graham crackers, plain or honey (includes cinnamon) (SR Legacy, FDC ID 174957), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "novelty-marshmallow",
    "name": "Marshmallows",
    "category": "cereal",
    "type": "sugar",
-   "ppg": 37.3,
+   "ppg": 37.4,
    "colorLovibond": 1,
    "fermentabilityPct": 100,
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 81,
-   "fiberG": 0,
+   "totalCarbG": 81.3,
+   "fiberG": 0.1,
    "uses": [
     "beer"
    ],
@@ -4285,8 +4279,8 @@
    ],
    "description": "Corn syrup, sugar, and gelatin. Fully fermentable, so it adds alcohol rather than the sweetness people expect.",
    "usageNotes": "For actual marshmallow sweetness use lactose or vanilla instead — the sugar here ferments out completely. Gelatin means not vegan, and it will foam violently in the boil.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167995",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Candies, marshmallows (SR Legacy, FDC ID 167995), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "novelty-oreo",
@@ -4300,7 +4294,7 @@
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
    "totalCarbG": 71,
-   "fiberG": 3,
+   "fiberG": 2.9,
    "uses": [
     "beer"
    ],
@@ -4311,8 +4305,8 @@
    ],
    "description": "Cocoa biscuit with a fat-based creme filling.",
    "usageNotes": "Roughly 20% fat by weight — this is a foam killer. Cocoa nibs plus lactose give the same idea without wrecking head retention.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/172718",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cookies, chocolate sandwich, with creme filling, regular (SR Legacy, FDC ID 172718), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "novelty-hard-candy",
@@ -4336,8 +4330,8 @@
     "sugar"
    ],
    "description": "Essentially flavoured, coloured sucrose and corn syrup — ferments out completely, leaving only the flavouring.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167990",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Candies, hard (SR Legacy, FDC ID 167990), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "novelty-cotton-candy",
@@ -4360,22 +4354,22 @@
     "sugar"
    ],
    "description": "Spun sucrose — chemically identical to table sugar at 46 PPG. Only the flavouring and dye survive fermentation.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169655",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, granulated (SR Legacy, FDC ID 169655), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no cotton candy entry, and does not need one: spun sugar is granulated sucrose with air in it, so its granulated sugar entry is the composition."
   },
   {
    "id": "novelty-gummy-candy",
    "name": "Gummy Candy",
    "category": "sugar",
    "type": "sugar",
-   "ppg": 35.4,
+   "ppg": 45.4,
    "colorLovibond": 2,
    "fermentabilityPct": 100,
    "maxBatchPct": 10,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 77,
-   "fiberG": 0,
+   "totalCarbG": 98.9,
+   "fiberG": 0.1,
    "uses": [
     "beer"
    ],
@@ -4384,22 +4378,22 @@
     "fruity"
    ],
    "description": "Glucose syrup, sucrose, and gelatin. Ferments dry; the gelatin can actually help clarity as a fining.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167989",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Candies, gumdrops, starch jelly pieces (SR Legacy, FDC ID 167989), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA's nearest published entry is starch jelly gumdrops, which is what a gummy sweet is: sugar and glucose syrup set with starch or gelatine."
   },
   {
    "id": "novelty-peanut-butter",
    "name": "Peanut Butter",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 6.4,
+   "ppg": 8,
    "colorLovibond": 10,
    "requiresConversion": false,
    "maxBatchPct": 5,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 20,
-   "fiberG": 6,
+   "totalCarbG": 22.3,
+   "fiberG": 5,
    "uses": [
     "beer"
    ],
@@ -4410,22 +4404,22 @@
    ],
    "description": "Almost no fermentable sugar and about 50% fat.",
    "usageNotes": "Strongly discouraged as a direct addition — the fat destroys head retention and can turn rancid. Use powdered/defatted peanut flour (PB2-style) or natural flavouring instead.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/172470",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Peanut butter, smooth style, without salt (SR Legacy, FDC ID 172470), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-sweet-potato",
    "name": "Sweet Potato",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 7.8,
+   "ppg": 7.9,
    "colorLovibond": 4,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 20,
+   "totalCarbG": 20.1,
    "fiberG": 3,
    "uses": [
     "beer",
@@ -4437,23 +4431,23 @@
     "shochu"
    ],
    "description": "Starchy root with an earthy sweetness; roast before mashing for real flavour. The base of Japanese imo-shochu.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168482",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168482), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "adjunct-potato",
    "name": "Potato",
    "category": "cereal",
    "type": "adjunct",
-   "ppg": 7.4,
+   "ppg": 7.1,
    "colorLovibond": 1,
    "requiresConversion": true,
    "requiresGelatinization": true,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 17,
-   "fiberG": 2.2,
+   "totalCarbG": 17.5,
+   "fiberG": 2.1,
    "uses": [
     "beer",
     "moonshine"
@@ -4465,8 +4459,8 @@
    ],
    "description": "Mostly water and starch. Little flavour contribution, but a traditional vodka and poitín base.",
    "usageNotes": "Must be cooked to gelatinise, then converted with malt or enzymes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170026",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Potatoes, flesh and skin, raw (SR Legacy, FDC ID 170026), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "flavor-cacao-nibs",
@@ -4488,8 +4482,7 @@
    ],
    "description": "Flavouring, not a fermentable — contributes essentially no gravity. The clean way to get chocolate without cookie fat.",
    "usageNotes": "Typical: 2–4 oz per 5 gal in secondary, optionally soaked in neutral spirit.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Nibs do carry carbohydrate, but almost none of it is fermentable, and they are used at flavouring rates."
   },
   {
    "id": "flavor-vanilla-bean",
@@ -4512,8 +4505,7 @@
    ],
    "description": "Pure flavouring with no fermentable content; the honest way to add the sweetness people wrongly expect from marshmallows.",
    "usageNotes": "1–3 beans per 5 gal, split and soaked in vodka, added at packaging.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. A pod or two per batch: any extract it contributes is below the resolution of a hydrometer."
   },
   {
    "id": "flavor-coffee",
@@ -4533,8 +4525,7 @@
     "stout"
    ],
    "description": "No fermentable sugar. Cold-brew added at packaging keeps the aroma and avoids the harsh tannins hot extraction pulls.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "None of these have a brewing datasheet, so every PPG here is derived from the product's own Nutrition Facts panel via lib/fermentable-math.ts: PPG = 46 x (total carbohydrate - fibre) / serving weight. Panels change between reformulations and countries — check the box you actually bought. Values are potential extract; starch-based items still need enzymatic conversion."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Brewed coffee is USDA-measured at 0.0 g carbohydrate per 100 g, and cold brew added to beer moves gravity by nothing measurable."
   },
   {
    "id": "fruit-apple",
@@ -11302,8 +11293,8 @@
    ],
    "description": "The reference fermentable — 46 PPG by definition. Fully fermentable, dries the finish, boosts ABV without body.",
    "usageNotes": "Above ~20% of the grist you risk a thin, cidery beer. Standard for Belgian styles and priming.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169655",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, granulated (SR Legacy, FDC ID 169655), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-dextrose",
@@ -11314,11 +11305,9 @@
    ],
    "category": "sugar",
    "type": "sugar",
-   "ppg": 42,
    "colorLovibond": 0,
    "fermentabilityPct": 100,
    "maxBatchPct": 20,
-   "ppgBasis": "literature",
    "uses": [
     "beer",
     "wine",
@@ -11332,8 +11321,7 @@
    ],
    "description": "Glucose monohydrate — the water of crystallisation is why it is 42 PPG rather than 46. The standard priming sugar.",
    "usageNotes": "Yeast take it first and fastest; completely neutral in flavour.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it."
   },
   {
    "id": "sugar-turbinado",
@@ -11344,14 +11332,13 @@
    ],
    "category": "sugar",
    "type": "sugar",
-   "ppg": 45.5,
+   "ppg": 45.9,
    "colorLovibond": 1.5,
    "fermentabilityPct": 100,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 99,
-   "fiberG": 0,
+   "totalCarbG": 99.8,
    "uses": [
     "beer",
     "wine",
@@ -11365,22 +11352,21 @@
    ],
    "description": "Partially refined cane sugar with a thin film of molasses left on the crystal. Nearly as fermentable as white sugar with a faint caramel note.",
    "flavorNotes": "Light molasses, caramel hint.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170674",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugar, turbinado (SR Legacy, FDC ID 170674), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-demerara",
    "name": "Demerara Sugar",
    "category": "sugar",
    "type": "sugar",
-   "ppg": 45.1,
+   "ppg": 45.9,
    "colorLovibond": 2,
    "fermentabilityPct": 100,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 98,
-   "fiberG": 0,
+   "totalCarbG": 99.8,
    "uses": [
     "beer",
     "wine",
@@ -11392,8 +11378,8 @@
    ],
    "description": "Large-crystal raw cane sugar; slightly more molasses character than turbinado.",
    "flavorNotes": "Toffee, light rum.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170674",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugar, turbinado (SR Legacy, FDC ID 170674), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Demerara entry. This cites its turbinado sugar: both are partially refined cane sugars retaining a little molasses, and the figures are for that class rather than for Demerara specifically."
   },
   {
    "id": "sugar-light-brown",
@@ -11406,7 +11392,7 @@
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 98,
+   "totalCarbG": 98.1,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11419,8 +11405,8 @@
     "brown"
    ],
    "description": "White sugar with molasses added back. Fully fermentable, contributes caramel colour and flavour.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-dark-brown",
@@ -11433,7 +11419,7 @@
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 98,
+   "totalCarbG": 98.1,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11449,8 +11435,8 @@
    ],
    "description": "Higher molasses content than light brown — pronounced toffee and molasses, and real colour contribution.",
    "flavorNotes": "Molasses, dark toffee, faint liquorice.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes one brown sugar entry rather than separate light and dark. The extra molasses in dark brown changes flavour and colour far more than it changes extract."
   },
   {
    "id": "sugar-muscovado",
@@ -11460,13 +11446,13 @@
    ],
    "category": "sugar",
    "type": "sugar",
-   "ppg": 44.6,
+   "ppg": 45.1,
    "colorLovibond": 40,
    "fermentabilityPct": 100,
    "maxBatchPct": 10,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 97,
+   "totalCarbG": 98.1,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11479,8 +11465,8 @@
    ],
    "description": "Unrefined cane sugar retaining most of its molasses; sticky, intense, strongly flavoured.",
    "flavorNotes": "Heavy molasses, liquorice, dried fruit.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Muscovado entry. This cites its brown sugar: muscovado is an unrefined brown cane sugar, and the figures are for that class rather than for Muscovado specifically."
   },
   {
    "id": "sugar-coconut-palm",
@@ -11492,14 +11478,9 @@
    ],
    "category": "sugar",
    "type": "sugar",
-   "ppg": 42.6,
    "colorLovibond": 15,
    "fermentabilityPct": 95,
    "maxBatchPct": 15,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 94,
-   "fiberG": 1,
    "uses": [
     "beer",
     "wine",
@@ -11515,21 +11496,20 @@
    "description": "Boiled-down coconut palm flower sap, a staple sweetener across Thailand and Southeast Asia. Mostly sucrose with a small inulin fraction (hence a touch of fibre and slightly under 100% fermentability).",
    "flavorNotes": "Butterscotch, caramel, faint smoke and nuttiness.",
    "usageNotes": "Sold as hard discs or soft paste; dissolve in hot wort. Adds an aromatic depth plain sugar cannot.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything."
   },
   {
    "id": "sugar-jaggery",
    "name": "Jaggery / Gur",
    "category": "sugar",
    "type": "sugar",
-   "ppg": 43.7,
+   "ppg": 45.1,
    "colorLovibond": 25,
    "fermentabilityPct": 95,
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 95,
+   "totalCarbG": 98.1,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11544,8 +11524,8 @@
    ],
    "description": "Unrefined South Asian cane or palm sugar, sold in blocks. Widely used in Indian country liquor and increasingly in craft brewing.",
    "flavorNotes": "Deep caramel, mineral, earthy.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Jaggery entry. This cites its brown sugar, the closest published class — jaggery is unrefined whole cane sugar. Treat the figures as approximate for jaggery in particular; the molasses fraction varies widely by producer."
   },
   {
    "id": "sugar-piloncillo",
@@ -11555,13 +11535,13 @@
    ],
    "category": "sugar",
    "type": "sugar",
-   "ppg": 44.2,
+   "ppg": 45.1,
    "colorLovibond": 22,
    "fermentabilityPct": 98,
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 96,
+   "totalCarbG": 98.1,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11574,8 +11554,8 @@
     "caramel"
    ],
    "description": "Unrefined Latin American cane sugar cones; the sugar behind Mexican piloncillo stouts and traditional aguardiente.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Piloncillo entry. This cites its brown sugar, the closest published class — piloncillo is unrefined whole cane sugar cast into cones."
   },
   {
    "id": "sugar-candi-clear",
@@ -11628,13 +11608,13 @@
    "name": "Molasses",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 34.5,
+   "ppg": 34.4,
    "colorLovibond": 80,
    "fermentabilityPct": 90,
    "maxBatchPct": 10,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
+   "totalCarbG": 74.7,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11648,22 +11628,17 @@
    ],
    "description": "Cane refining by-product; the base of virtually all rum. Assertive and unmistakable in beer.",
    "flavorNotes": "Liquorice, burnt sugar, mineral.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168820",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Molasses (SR Legacy, FDC ID 168820), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-blackstrap",
    "name": "Blackstrap Molasses",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 32.2,
    "colorLovibond": 500,
    "fermentabilityPct": 80,
    "maxBatchPct": 5,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 70,
-   "fiberG": 0,
    "uses": [
     "beer",
     "rum",
@@ -11675,21 +11650,20 @@
     "mineral"
    ],
    "description": "The final, most concentrated molasses extraction — bitter, salty, intensely mineral. A tiny addition dominates.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything."
   },
   {
    "id": "sugar-honey",
    "name": "Honey",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 37.6,
+   "ppg": 37.8,
    "colorLovibond": 2,
    "fermentabilityPct": 95,
    "maxBatchPct": 100,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 82,
+   "totalCarbG": 82.4,
    "fiberG": 0.2,
    "uses": [
     "beer",
@@ -11705,8 +11679,8 @@
    "description": "About 17% water, the rest almost entirely fructose and glucose. The sole fermentable in mead; a delicate addition in beer.",
    "usageNotes": "Add post-boil or at flame-out — boiling drives off the aromatics you paid for. Varietal matters enormously (orange blossom, buckwheat, clover).",
    "flavorNotes": "Floral to dark and malty depending on varietal.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169640",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Honey (SR Legacy, FDC ID 169640), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-maple-syrup",
@@ -11733,21 +11707,21 @@
    ],
    "description": "Roughly one-third water. Ferments nearly dry, and most of the maple aroma goes with it — add late and expect subtlety.",
    "usageNotes": "For actual maple flavour, add at packaging or use a darker Grade B/dark syrup.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169661",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Syrups, maple (SR Legacy, FDC ID 169661), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-agave",
    "name": "Agave Nectar",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 35,
+   "ppg": 35.1,
    "colorLovibond": 8,
    "fermentabilityPct": 98,
    "maxBatchPct": 20,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 76,
+   "totalCarbG": 76.4,
    "fiberG": 0.2,
    "uses": [
     "beer",
@@ -11761,8 +11735,8 @@
     "neutral"
    ],
    "description": "Mostly fructose, so it ferments very dry. Related to (but not the same as) the cooked agave used for tequila and mezcal.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170277",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sweetener, syrup, agave (SR Legacy, FDC ID 170277), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-sorghum-syrup",
@@ -11775,7 +11749,7 @@
    "maxBatchPct": 15,
    "ppgBasis": "nutrition",
    "servingSizeG": 100,
-   "totalCarbG": 75,
+   "totalCarbG": 74.9,
    "fiberG": 0,
    "uses": [
     "beer",
@@ -11788,22 +11762,17 @@
    ],
    "description": "Pressed and boiled sorghum cane juice — a Southern US staple, and a gluten-free gravity source.",
    "flavorNotes": "Tangy, earthy, lighter than molasses.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169662",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Syrups, sorghum (SR Legacy, FDC ID 169662), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
   },
   {
    "id": "sugar-golden-syrup",
    "name": "Golden Syrup / Treacle",
    "category": "syrup",
    "type": "sugar",
-   "ppg": 36.3,
    "colorLovibond": 20,
    "fermentabilityPct": 95,
    "maxBatchPct": 15,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 79,
-   "fiberG": 0,
    "uses": [
     "beer"
    ],
@@ -11813,8 +11782,7 @@
     "caramel"
    ],
    "description": "Partially inverted cane syrup; a traditional English brewing sugar for milds and old ales.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything."
   },
   {
    "id": "sugar-date-syrup",
@@ -11824,14 +11792,9 @@
    ],
    "category": "syrup",
    "type": "sugar",
-   "ppg": 33.6,
    "colorLovibond": 45,
    "fermentabilityPct": 90,
    "maxBatchPct": 15,
-   "ppgBasis": "nutrition",
-   "servingSizeG": 100,
-   "totalCarbG": 74,
-   "fiberG": 1,
    "uses": [
     "beer",
     "wine",
@@ -11842,8 +11805,7 @@
     "dark-fruit"
    ],
    "description": "Boiled date extract used across the Middle East; rich dried-fruit sweetness suited to dark strong ales.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer."
+   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything."
   },
   {
    "id": "sugar-lactose",

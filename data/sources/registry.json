@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 259,
+    "distinctSources": 285,
     "backgroundDocuments": 11,
-    "citations": 746,
-    "numericCitations": 631,
-    "numericOnShallowLink": 284,
+    "citations": 737,
+    "numericCitations": 622,
+    "numericOnShallowLink": 240,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 8,
     "byReliability": {
-      "primary": 636,
+      "primary": 627,
       "secondary": 104,
       "tertiary": 6
     }
@@ -42,27 +42,24 @@
       "doesNotSupport": null,
       "accessed": null,
       "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
-      "citations": 130,
-      "numericCitations": 130,
+      "citations": 86,
+      "numericCitations": 86,
       "usedIn": [
-        "data/fermentables/adjunct-grains.json",
-        "data/fermentables/cereals-novelty.json",
-        "data/fermentables/fruits-juices.json",
-        "data/fermentables/sugars-syrups.json"
+        "data/fermentables/fruits-juices.json"
       ],
       "exampleRecords": [
-        "adjunct-rice-long-grain",
-        "adjunct-rice-sushi",
-        "adjunct-rice-arborio",
-        "adjunct-rice-jasmine",
-        "adjunct-rice-basmati",
-        "adjunct-rice-glutinous",
-        "adjunct-rice-brown",
-        "adjunct-rice-wild",
-        "adjunct-corn-grits",
-        "adjunct-cracked-corn",
-        "adjunct-quinoa",
-        "adjunct-millet"
+        "fruit-apple",
+        "fruit-apple-bittersweet",
+        "fruit-apple-bittersharp",
+        "fruit-apple-sharp",
+        "fruit-crabapple",
+        "fruit-pear",
+        "fruit-perry-pear",
+        "fruit-quince",
+        "fruit-peach",
+        "fruit-nectarine",
+        "fruit-apricot",
+        "fruit-plum"
       ]
     },
     {
@@ -489,6 +486,35 @@
     },
     {
       "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168833",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 5,
+      "numericCitations": 5,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-light-brown",
+        "sugar-dark-brown",
+        "sugar-muscovado",
+        "sugar-jaggery",
+        "sugar-piloncillo"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://scottlab.com/enzymes",
       "host": "scottlab.com",
       "title": null,
@@ -686,6 +712,33 @@
     },
     {
       "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169756",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-long-grain",
+        "adjunct-rice-jasmine",
+        "adjunct-rice-basmati"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.generalmills.com/",
       "host": "www.generalmills.com",
       "title": null,
@@ -848,6 +901,32 @@
     },
     {
       "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168881",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-sushi",
+        "adjunct-rice-arborio"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.postconsumerbrands.com/pebbles/",
       "host": "www.postconsumerbrands.com",
       "title": null,
@@ -870,6 +949,33 @@
       "exampleRecords": [
         "cereal-fruity-pebbles",
         "cereal-cocoa-pebbles"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169655",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "novelty-cotton-candy",
+        "sugar-sucrose"
       ]
     },
     {
@@ -922,6 +1028,32 @@
       "exampleRecords": [
         "malt-heidelberg",
         "malt-dextrapils"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/170674",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-turbinado",
+        "sugar-demerara"
       ]
     },
     {
@@ -2040,6 +2172,206 @@
     },
     {
       "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168883",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-glutinous"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169703",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-brown"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169726",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-rice-wild"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/171670",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-corn-grits"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168874",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-quinoa"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169702",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-millet"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169716",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-sorghum-grain"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/170286",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/adjunct-grains.json"
+      ],
+      "exampleRecords": [
+        "adjunct-buckwheat"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Rice-Hulls.pdf",
       "host": "brewingwithbriess.com",
       "title": null,
@@ -2086,6 +2418,206 @@
       ],
       "exampleRecords": [
         "cereal-capn-crunch"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/174957",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-graham-crackers"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/167995",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-marshmallow"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/172718",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-oreo"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/167990",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-hard-candy"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/167989",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-gummy-candy"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/172470",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "novelty-peanut-butter"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168482",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "adjunct-sweet-potato"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/170026",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json"
+      ],
+      "exampleRecords": [
+        "adjunct-potato"
       ]
     },
     {
@@ -2886,6 +3418,131 @@
       ],
       "exampleRecords": [
         "malt-vienna-briess"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/168820",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-molasses"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169640",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-honey"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169661",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-maple-syrup"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/170277",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-agave"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169662",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "sugar-sorghum-syrup"
       ]
     },
     {
