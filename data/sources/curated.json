@@ -183,6 +183,13 @@
    "note": "Editorial site of Fachverlag Hans Carl — the Nürnberg house that publishes BRAUWELT and BrewingScience, and that published Horst Dornbusch's two German beer-style books. Bylined articles carrying full recipe specifications. Secondary, not primary: it reports brewing practice rather than measuring it, and its recipe figures are one formulation's targets, not a measured range."
   },
   {
+   "host": "gsi.geodata.gov.ie",
+   "name": "Geological Survey Ireland (data downloads)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Ireland's geological survey. Publishes a characterisation report for every groundwater body, describing the rock, its hydrochemical signature and its hardness and conductivity ranges."
+  },
+  {
    "host": "honey.com",
    "name": "National Honey Board",
    "kind": "trade-association",
@@ -493,6 +500,13 @@
    "name": "UK Government",
    "kind": "regulation",
    "reliability": "primary"
+  },
+  {
+   "host": "www.guinness-storehouse.com",
+   "name": "Guinness Storehouse (Diageo)",
+   "kind": "trade-association",
+   "reliability": "primary",
+   "note": "Guinness's own visitor centre site, cited only for what the company states about its own brewing water: that it comes from the Wicklow Mountains around 40 km from St James's Gate and is not, and never has been, drawn from the Liffey. It publishes no mineral analysis."
   },
   {
    "host": "www.hops.com.au",

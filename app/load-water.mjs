@@ -25,7 +25,7 @@ const DDL = [
     "chloride" DOUBLE PRECISION, "sulfate" DOUBLE PRECISION, "bicarbonate" DOUBLE PRECISION,
     "description" TEXT, "bestForStyles" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "styleTags" TEXT[] DEFAULT ARRAY[]::TEXT[],
-    "sourceUrl" TEXT, "sourceNote" TEXT, "unsourced" BOOLEAN NOT NULL DEFAULT false, "aquifer" JSONB,
+    "sourceUrl" TEXT, "sourceNote" TEXT, "unsourced" BOOLEAN NOT NULL DEFAULT false, "aquifer" JSONB, "brewerySource" JSONB,
     "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   // Added after the table already existed in Neon, so they go on as ALTERs.
   // Prisma tolerates extra DB columns but not missing ones, which is why these
@@ -36,7 +36,7 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "WaterProfile_name_idx" ON "WaterProfile"("name")`,
 ];
 
-const COLS = ["id","name","kind","country","region","calcium","magnesium","sodium","chloride","sulfate","bicarbonate","description","bestForStyles","styleTags","sourceUrl","sourceNote","unsourced","aquifer","attribution","sortOrder","variable","ionRanges"];
+const COLS = ["id","name","kind","country","region","calcium","magnesium","sodium","chloride","sulfate","bicarbonate","description","bestForStyles","styleTags","sourceUrl","sourceNote","unsourced","aquifer","brewerySource","attribution","sortOrder","variable","ionRanges"];
 
 function tuple(w, i, attribution) {
   return "(" + [
@@ -44,7 +44,7 @@ function tuple(w, i, attribution) {
     lit(w.calcium ?? null), lit(w.magnesium ?? null), lit(w.sodium ?? null),
     lit(w.chloride ?? null), lit(w.sulfate ?? null), lit(w.bicarbonate ?? null),
     lit(w.description ?? null), litArr(w.bestForStyles), litArr(w.styleTags),
-    lit(w.sourceUrl ?? null), lit(w.sourceNote ?? null), lit(w.unsourced ?? false), lit(w.aquifer ? JSON.stringify(w.aquifer) : null), lit(w.attribution ?? attribution ?? null), lit(w.sortOrder ?? i),
+    lit(w.sourceUrl ?? null), lit(w.sourceNote ?? null), lit(w.unsourced ?? false), lit(w.aquifer ? JSON.stringify(w.aquifer) : null), lit(w.brewerySource ? JSON.stringify(w.brewerySource) : null), lit(w.attribution ?? attribution ?? null), lit(w.sortOrder ?? i),
     w.variable ? "true" : "false",
     w.ionRanges ? lit(JSON.stringify(w.ionRanges)) + "::jsonb" : "NULL",
   ].join(",") + ")";

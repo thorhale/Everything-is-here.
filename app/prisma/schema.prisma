@@ -555,6 +555,10 @@ model WaterProfile {
   // drew from, with the survey's own percentiles. Says where the classic
   // profile sits in the rock's range instead of implying it is the only value.
   aquifer     Json?
+  // What the brewery itself says about where its liquor comes from, where the
+  // brewery says anything. Guinness states Wicklow, never the Liffey, and that
+  // contradicts the profile every homebrewer uses to brew stout.
+  brewerySource Json?
 
   description  String?
   bestForStyles String[] @default([])

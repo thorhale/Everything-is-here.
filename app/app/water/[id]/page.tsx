@@ -13,6 +13,12 @@ function ppm(v: number | null): string {
   return v == null ? "—" : `${Math.round(v)} ppm`;
 }
 
+interface BrewerySource {
+  brewery: string;
+  url: string;
+  statement: string;
+}
+
 interface Aquifer {
   name: string;
   url: string;
@@ -39,6 +45,7 @@ export default async function WaterDetailPage({ params }: Props) {
   // Stored as JSON because the shape is the survey's, not ours: which
   // percentiles a geological survey publishes varies between reports.
   const aquifer = (w as { aquifer?: Aquifer | null }).aquifer ?? null;
+  const brewery = (w as { brewerySource?: BrewerySource | null }).brewerySource ?? null;
 
   const ra = residualAlkalinity(w);
   const hardness = totalHardness(w);
@@ -127,6 +134,16 @@ export default async function WaterDetailPage({ params }: Props) {
               </li>
             ))}
           </ul>
+        </>
+      )}
+
+      {brewery && (
+        <>
+          <h3>What the brewery says</h3>
+          <p style={{ fontSize: "0.85rem" }}>
+            <strong>{brewery.brewery}.</strong> {brewery.statement}{" "}
+            <a href={brewery.url} target="_blank" rel="noreferrer">Source</a>.
+          </p>
         </>
       )}
 
