@@ -593,6 +593,13 @@
    "note": "German-language enthusiast blog running a 'Stile mit Geschichte' historical-style series. Unbylined and uncited, so tertiary: usable to corroborate a qualitative picture, never adequate for a number. Its Dampfbier bitterness figure conflicts with the Hans Carl recipe and is recorded as a disagreement rather than merged."
   },
   {
+   "host": "www.matvaretabellen.no",
+   "name": "Matvaretabellen - Norwegian Food Composition Table",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Norway's national food composition table, published by the Norwegian Food Safety Authority with the Directorate of Health and the University of Oslo, and served as open JSON per food. Cited for Nordic wild berries and the European wild crab apple, which USDA either lacks entirely or records without a sugar figure. Its mono- and disaccharide column is derived from available carbohydrate rather than measured chromatographically, so it reads high on acidic fruit; records citing it say so."
+  },
+  {
    "host": "www.mdpi.com",
    "name": "MDPI (peer-reviewed open-access journals)",
    "kind": "peer-reviewed",

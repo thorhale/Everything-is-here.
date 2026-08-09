@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 341,
+    "distinctSources": 352,
     "backgroundDocuments": 13,
-    "citations": 666,
-    "numericCitations": 551,
+    "citations": 679,
+    "numericCitations": 564,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 633,
+      "primary": 646,
       "secondary": 27,
       "tertiary": 6
     }
@@ -105,6 +105,43 @@
     },
     {
       "id": null,
+      "url": "https://www.nass.usda.gov/Statistics_by_State/California/Publications/Specialty_and_Other_Releases/Grapes/Crush/Final/2025/Grape_Crush_2025_Final.pdf",
+      "host": "www.nass.usda.gov",
+      "title": null,
+      "publisher": "USDA National Agricultural Statistics Service",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Publishes the California Grape Crush Report with CDFA. Every California processor is required by law to report tonnage and degrees Brix by variety and pricing district, so the per-variety Brix carries the entire state crush behind it rather than one vineyard's sample. Released as PDF, XLSX and CSV.",
+      "citations": 38,
+      "numericCitations": 38,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json",
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "fruit-grape-wine-red",
+        "fruit-grape-wine-white",
+        "grape-cabernet-sauvignon",
+        "grape-merlot",
+        "grape-pinot-noir",
+        "grape-syrah",
+        "grape-zinfandel",
+        "grape-sangiovese",
+        "grape-nebbiolo",
+        "grape-tempranillo",
+        "grape-grenache",
+        "grape-malbec"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://sites.evergreen.edu/terroir-spring/wp-content/uploads/sites/186/2016/03/Honey-Composition-and-Properties.pdf",
       "host": "sites.evergreen.edu",
       "title": null,
@@ -137,42 +174,6 @@
         "honey-heather",
         "honey-eucalyptus",
         "honey-linden"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.nass.usda.gov/Statistics_by_State/California/Publications/Specialty_and_Other_Releases/Grapes/Crush/Final/2025/Grape_Crush_2025_Final.pdf",
-      "host": "www.nass.usda.gov",
-      "title": null,
-      "publisher": "USDA National Agricultural Statistics Service",
-      "authors": null,
-      "year": null,
-      "kind": "government-database",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Publishes the California Grape Crush Report with CDFA. Every California processor is required by law to report tonnage and degrees Brix by variety and pricing district, so the per-variety Brix carries the entire state crush behind it rather than one vineyard's sample. Released as PDF, XLSX and CSV.",
-      "citations": 36,
-      "numericCitations": 36,
-      "usedIn": [
-        "data/fermentables/wine-grapes.json"
-      ],
-      "exampleRecords": [
-        "grape-cabernet-sauvignon",
-        "grape-merlot",
-        "grape-pinot-noir",
-        "grape-syrah",
-        "grape-zinfandel",
-        "grape-sangiovese",
-        "grape-nebbiolo",
-        "grape-tempranillo",
-        "grape-grenache",
-        "grape-malbec",
-        "grape-cabernet-franc",
-        "grape-petit-verdot"
       ]
     },
     {
@@ -2668,6 +2669,31 @@
     },
     {
       "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701241/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-crabapple"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/169118",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -3018,6 +3044,31 @@
     },
     {
       "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11675623/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-aronia"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/169913",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -3039,6 +3090,106 @@
       ],
       "exampleRecords": [
         "fruit-mulberry"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7179145/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-seabuckthorn"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10253110/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-lingonberry"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.matvaretabellen.no/en/cloudberries-raw/",
+      "host": "www.matvaretabellen.no",
+      "title": null,
+      "publisher": "Matvaretabellen - Norwegian Food Composition Table",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Norway's national food composition table, published by the Norwegian Food Safety Authority with the Directorate of Health and the University of Oslo, and served as open JSON per food. Cited for Nordic wild berries and the European wild crab apple, which USDA either lacks entirely or records without a sugar figure. Its mono- and disaccharide column is derived from available carbohydrate rather than measured chromatographically, so it reads high on acidic fruit; records citing it say so.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-cloudberry"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7230331/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-rosehip"
       ]
     },
     {
@@ -3114,6 +3265,31 @@
       ],
       "exampleRecords": [
         "fruit-orange"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9299091/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-orange-blood"
       ]
     },
     {
@@ -3214,6 +3390,31 @@
       ],
       "exampleRecords": [
         "fruit-mandarin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7847423/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-yuzu"
       ]
     },
     {
@@ -3393,6 +3594,31 @@
     },
     {
       "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12872244/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-dragonfruit"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/174687",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -3464,6 +3690,31 @@
       ],
       "exampleRecords": [
         "fruit-tamarind"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11476303/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-acai"
       ]
     },
     {
@@ -3864,6 +4115,31 @@
       ],
       "exampleRecords": [
         "fruit-carrot"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701365/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": null,
+      "publisher": "PubMed Central",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-agave"
       ]
     },
     {
