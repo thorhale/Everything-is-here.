@@ -20,8 +20,8 @@
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 8,
     "byReliability": {
-      "primary": 600,
-      "secondary": 104,
+      "primary": 637,
+      "secondary": 67,
       "tertiary": 6
     }
   },
@@ -178,20 +178,20 @@
     },
     {
       "id": null,
-      "url": "https://honey.com/honey-industry/honey-varietals",
-      "host": "honey.com",
+      "url": "https://sites.evergreen.edu/terroir-spring/wp-content/uploads/sites/186/2016/03/Honey-Composition-and-Properties.pdf",
+      "host": "sites.evergreen.edu",
       "title": null,
-      "publisher": "National Honey Board",
+      "publisher": "USDA Agriculture Handbook 335 (hosted copy)",
       "authors": null,
       "year": null,
-      "kind": "trade-association",
-      "reliability": "secondary",
+      "kind": "government-report",
+      "reliability": "primary",
       "verification": "unverified",
       "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Hosts a scan of \"Honey Composition and Properties\", White and Doner, pages 82-91 of Beekeeping in the United States, USDA Agriculture Handbook 335, revised October 1980. The document is a USDA publication and states its own provenance on the first page; the college is only the host. It is cited because it is the copy that was read and because USDA's own repositories no longer serve the handbook openly — the National Agricultural Library catalogue entry resolves but carries no file, and AgEcon Search's copy at record 322041 is behind a login.",
       "citations": 37,
       "numericCitations": 37,
       "usedIn": [
