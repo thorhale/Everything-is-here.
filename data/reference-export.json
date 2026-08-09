@@ -18831,12 +18831,12 @@
    "kind": "classic-city",
    "country": "Austria",
    "region": "Vienna",
-   "calcium": 200,
-   "magnesium": 60,
-   "sodium": 8,
-   "chloride": 12,
-   "sulfate": 125,
-   "bicarbonate": 290,
+   "calcium": 50,
+   "magnesium": 12,
+   "sodium": 1.9,
+   "chloride": 4.6,
+   "sulfate": 18,
+   "bicarbonate": 187,
    "bestForStyles": [
     "Vienna Lager",
     "Märzen"
@@ -18846,9 +18846,54 @@
     "hard",
     "amber"
    ],
-   "description": "Hard and alkaline with moderate sulfate — a profile that shaped the amber, malty Vienna lager style.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Soft alpine spring water, carbonate-dominated: 187 mg/L of bicarbonate against 18 of sulfate and under 5 of chloride. Almost no sodium at all — 1.9 mg/L, the lowest of any city in this catalogue.",
+   "attribution": "Stadt Wien, Trinkwasserqualität - aktuelle Werte, published under CC BY 4.0 and sampled 27 April 2026. This record carries the I. Hochquellenleitung: calcium 50, magnesium 12, sodium 1.9, chloride 4.6 and sulfate 18 mg/L, with carbonate hardness 8.6 °dH, which is 187 mg/L of bicarbonate, at pH 7.7 and 308 µS/cm. It balances on charge to 2.8%. The stored profile was not Vienna's water by any reading: calcium 200 against a measured 50, magnesium 60 against 12, sulfate 125 against 18. Vienna drinks protected alpine spring water from the Rax, Schneeberg, Schneealpe and Hochschwab, and the city describes it as low in dissolved calcium and magnesium — the stored figures described something four times harder.",
+   "sourceUrl": "https://www.wien.gv.at/umwelt/trinkwasserqualitaet-aktuelle-werte",
+   "sourceNote": "This is the modern municipal supply, not a reconstruction of the water Vienna's nineteenth-century lager brewers used, for which this project has no source — and the spring lines are themselves a municipal engineering work, so the two are not the same water even in principle. Vienna also has four supplies, tabulated below. The city says the Hochquellenleitungen supply the households and that groundwater provides \"zusätzliche Sicherheit\", additional security, which is why this record carries a spring line and not a waterworks. The II. Hochquellenleitung is softer still, at calcium 36 and sulfate 2.4.",
+   "aquifer": {
+    "name": "Karst springs of the Rax, Schneeberg, Schneealpe and Hochschwab, with the Lobau and Moosbrunn groundwater works as reserve",
+    "url": "https://www.wien.gv.at/umwelt/trinkwasserqualitaet-aktuelle-werte",
+    "citation": "Stadt Wien - Wiener Wasser, Trinkwasserqualität - aktuelle Werte, analyses of 27-30 April 2026, published under CC BY 4.0.",
+    "ions": {
+     "calcium": {
+      "n": 4,
+      "min": 36,
+      "median": 63.5,
+      "max": 84
+     },
+     "magnesium": {
+      "n": 4,
+      "min": 5.9,
+      "median": 15.5,
+      "max": 24
+     },
+     "sodium": {
+      "n": 4,
+      "min": 1,
+      "median": 5.1000000000000005,
+      "max": 13
+     },
+     "chloride": {
+      "n": 4,
+      "min": 1,
+      "median": 12.8,
+      "max": 21
+     },
+     "sulfate": {
+      "n": 4,
+      "min": 2.4,
+      "median": 27.5,
+      "max": 62
+     },
+     "bicarbonate": {
+      "n": 4,
+      "min": 139,
+      "median": 236,
+      "max": 296
+     }
+    },
+    "note": "Four supplies, and the spread is the whole story. The two Hochquellenleitungen are karst spring water off the limestone Alps: the first at 308 µS/cm and 9.7 °dH total hardness, the second at 202 µS/cm and 6.4 °dH, which the city classifies as weich. The Lobau and Moosbrunn groundwater works are a different water entirely - 535 and 573 µS/cm, sulfate 37 and 62 against the first spring line's 18, and Moosbrunn is classified hart. Vienna's water is soft because it comes down a pipe from the mountains, not because the ground under Vienna is soft; the two boreholes in the city are three times the sulfate of the springs. A brewer taking 'Vienna water' as a target should mean the spring lines."
+   }
   },
   {
    "id": "cologne",
@@ -19122,12 +19167,12 @@
    "kind": "modern-city",
    "country": "Denmark",
    "region": "Hovedstaden",
-   "calcium": 110,
-   "magnesium": 18,
-   "sodium": 30,
-   "chloride": 55,
-   "sulfate": 55,
-   "bicarbonate": 250,
+   "calcium": 69,
+   "magnesium": 24,
+   "sodium": 80,
+   "chloride": 65,
+   "sulfate": 64,
+   "bicarbonate": 340,
    "bestForStyles": [
     "Lager",
     "Pilsner"
@@ -19137,9 +19182,54 @@
     "alkaline",
     "lager"
    ],
-   "description": "Hard, chalky Danish groundwater — historically the water of Carlsberg's lagers.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Strongly alkaline Danish limestone groundwater — 340 mg/L of bicarbonate — and unusually high in sodium, because HOFOR is progressively softening its waterworks and trading calcium for it.",
+   "attribution": "HOFOR's stor kontrol chemical analysis of January 2026, covering the seven regional waterworks that supply Copenhagen: Gevninge, Islevbro, Marbjerg, Regnemark, Slangerup, Søndersø and Thorsbro. This record carries the median across the seven - calcium 69 (range 42-120), magnesium 24 (18-25), sodium 80 (31-140), chloride 65 (38-100), sulfate 64 (42-82) and bicarbonate 340 (304-414) mg/L - because HOFOR states that every Copenhagen district is supplied from all the regional works, with particular ones predominating. The biggest correction is sodium, stored at 30 against a measured median of 80, and bicarbonate at 250 against 340. HOFOR publishes its own ion balance for each works, from 0.9% to 5.0%, so these analyses are self-checked before this project checks them.",
+   "sourceUrl": "https://www.hofor.dk/wp-content/uploads/2026/07/stor_kontrol_januar_2026.xlsx",
+   "sourceNote": "This profile is a moving target and will keep moving. HOFOR is installing softening at all its regional waterworks and says so on the same page: Marbjerg in spring 2021, Søndersø in late summer 2022, Thorsbro in spring 2024 and Gevninge in autumn 2024. The effect is visible in the numbers - the four softened works run calcium 42 to 69, the three not yet softened run 110 to 120, and sodium moves the other way, 80 to 140 against 31 to 36. Copenhagen's water is getting softer and saltier by deliberate policy, so a figure dated January 2026 is a snapshot of a programme in progress, not a standing description of the city.",
+   "aquifer": {
+    "name": "Danish Zealand limestone and glacial deposits, via HOFOR's seven regional waterworks",
+    "url": "https://www.hofor.dk/privat/vand/bliv-klog-paa-drikkevandet/se-vandkvaliteten-din-kommune/vandkvalitet-koebenhavns-kommune/",
+    "citation": "HOFOR, Vandkvalitet i Københavns Kommune, and the accompanying stor kontrol chemical analysis of January 2026 for each regional waterworks.",
+    "ions": {
+     "calcium": {
+      "n": 7,
+      "min": 42,
+      "median": 69,
+      "max": 120
+     },
+     "magnesium": {
+      "n": 7,
+      "min": 18,
+      "median": 24,
+      "max": 25
+     },
+     "sodium": {
+      "n": 7,
+      "min": 31,
+      "median": 80,
+      "max": 140
+     },
+     "chloride": {
+      "n": 7,
+      "min": 38,
+      "median": 65,
+      "max": 100
+     },
+     "sulfate": {
+      "n": 7,
+      "min": 42,
+      "median": 64,
+      "max": 82
+     },
+     "bicarbonate": {
+      "n": 7,
+      "min": 304,
+      "median": 340,
+      "max": 414
+     }
+    },
+    "note": "The seven works do not split by geology so much as by treatment. Islevbro, Regnemark and Slangerup are not yet softened and carry 110 to 120 mg/L calcium at 21 to 23 °dH; Gevninge, Marbjerg, Søndersø and Thorsbro have been softened since 2021-2024 and carry 42 to 69 at 11 to 14 °dH. Alkalinity stays high across all of them, 304 to 414 mg/L of bicarbonate, because softening removes hardness rather than carbonate. That is an awkward combination for a brewer: the calcium that would have offset the alkalinity in the mash is the part being taken out. Which works a given address draws from varies by district and by day, and HOFOR lists the predominant works per postal district."
+   }
   },
   {
    "id": "portland-me",

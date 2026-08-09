@@ -558,6 +558,13 @@
    "note": "Guinness's own visitor centre site, cited only for what the company states about its own brewing water: that it comes from the Wicklow Mountains around 40 km from St James's Gate and is not, and never has been, drawn from the Liffey. It publishes no mineral analysis."
   },
   {
+   "host": "www.hofor.dk",
+   "name": "HOFOR (Copenhagen water utility)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility supplying Copenhagen and neighbouring municipalities. Publishes the full stor kontrol chemical analysis for each of its regional waterworks as a spreadsheet, including hydrogen carbonate and its own computed ion balance, plus which works supply each postal district."
+  },
+  {
    "host": "www.hops.com.au",
    "name": "Hop Products Australia",
    "kind": "vendor-datasheet",
@@ -784,6 +791,13 @@
    "name": "White Labs",
    "kind": "vendor-datasheet",
    "reliability": "primary"
+  },
+  {
+   "host": "www.wien.gv.at",
+   "name": "Stadt Wien - Wiener Wasser",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The City of Vienna's water division. Publishes current Trinkwasserverordnung analyses for both Hochquellenleitungen and both groundwater works as a single table, under a CC BY 4.0 licence."
   },
   {
    "host": "www.yakimachief.com",
