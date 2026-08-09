@@ -417,6 +417,13 @@
    "note": "Cited for the brand's annual bottled water analysis report — a certified-laboratory panel published to satisfy the California bottled-water disclosure requirement, which is why it reports the full mineral set rather than the two or three figures a label advertises."
   },
   {
+   "host": "www.ams.usda.gov",
+   "name": "USDA Agricultural Marketing Service",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Issues the voluntary United States Standards for Grades of processed fruits and vegetables under the Agricultural Marketing Act of 1946. Several, including the frozen concentrated juice standards, have been removed from the Code of Federal Regulations but are still published by AMS as PDFs; those PDFs are the primary text."
+  },
+  {
    "host": "www.ashevillenc.gov",
    "name": "City of Asheville Water Resources",
    "kind": "government-report",
@@ -553,6 +560,13 @@
    "kind": "vendor-datasheet",
    "reliability": "primary",
    "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description."
+  },
+  {
+   "host": "www.fao.org",
+   "name": "FAO / WHO Codex Alimentarius Commission",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The joint FAO/WHO food standards body. Its General Standard for Fruit Juices and Nectars (CXS 247-2005) fixes, per fruit and by botanical name, the minimum Brix a reconstituted juice must reach to be traded as juice. The Codex portal is behind a Cloudflare challenge; FAO's own document server at fao.org/input/download/standards serves the same PDF directly and is what this project cites."
   },
   {
    "host": "www.fawcett-maltsters.co.uk",
@@ -1683,6 +1697,38 @@
    "accessed": "2026-08-09",
    "supports": "The origin and meaning of the classic brewing-water types. Sykes's Water chapter tabulates a Burton-on-Trent deep well (Type I, very high calcium sulphate, attributed to Brown's Geology and the Mineral Waters of Burton-on-Trent), a Dublin well water (Type II, low sulphate and high carbonate), a chloride-dominated mild-ale water (Type III) and a chalk water, all in grains per imperial gallon. It supports the qualitative typology, the statement that 40-50 grains per gallon of calcium sulphate captures all the useful effect for pale ale, the observation that Dublin liquor was boiled down to 2-3 grains per gallon of solids before mashing, and the earliest water-treatment recipe this project holds (50 grains gypsum, 6 Epsom salt, 10 calcium chloride per gallon to turn a chalk water into a pale-ale liquor).",
    "doesNotSupport": "Any individual ion figure. The scan is OCR and its table cells are corrupted in places - Dublin's lime reads as \"9379\" and its calcium sulphate as \"SaaS\" - so no number from the tables is transcribed into any record. Only figures that appear in running prose, where the OCR is clean, are used."
+  },
+  {
+   "id": "codex-cxs-247-2005-fruit-juices",
+   "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+   "title": "General Standard for Fruit Juices and Nectars (CXS 247-2005)",
+   "authors": [
+    "Codex Alimentarius Commission (FAO/WHO)"
+   ],
+   "year": 2005,
+   "publisher": "Food and Agriculture Organization of the United Nations / World Health Organization",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-09",
+   "supports": "The Annex table of minimum Brix levels for reconstituted juice at 20 C, given per fruit against its botanical name - 11.5 for apple, 16.0 for grape, 7.5 for cranberry and strawberry, 20.0 for sweet cherry, 14.0 for sour cherry, and so on for roughly sixty fruits. Also section 2.1.2's definition of concentrated fruit juice as juice whose Brix has been raised to at least 50% above the reconstituted value. The table was transcribed by page geometry rather than text order: pdfminer merges runs of cells in it into single blocks, and six groups of fruits would be mis-paired with their values by reading order alone.",
+   "doesNotSupport": "Any typical or average Brix. Every figure in the Annex is a floor - the least a juice may contain and still be sold as that juice in international trade - so it bounds a record from below and can never establish the middle of a range. It also gives no sugar figure: Brix is soluble solids, which for a juice includes organic acid, pectin and minerals as well as sugar. Apple, orange and pineapple carry a second, lower absolute floor of 10.0 for countries whose fruit runs consistently lower, and that 10.0 is the binding number, not the printed 11.5, 11.8-11.2 or 12.8. Around a dozen entries, including aronia, mulberry, persimmon, kiwi and papaya, are marked \"no data currently available\" and support nothing at all."
+  },
+  {
+   "id": "ams-frozen-concentrated-apple-juice-1975",
+   "url": "https://www.ams.usda.gov/sites/default/files/media/Frozen_Concentrated_Apple_Juice_Standard%5B1%5D.pdf",
+   "title": "United States Standards for Grades of Frozen Concentrated Apple Juice",
+   "authors": [
+    "USDA Agricultural Marketing Service, Processed Products Branch"
+   ],
+   "year": 1975,
+   "publisher": "United States Department of Agriculture",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-09",
+   "supports": "Section 52.6322's Brix requirements: the minimum Brix of the finished concentrate at each dilution factor, 22.9 degrees at 1 plus 1, then 33.0, 42.2, 50.8, 58.8, 66.3 and 73.3 at 7 plus 1. Also section 52.6321's product description, which requires frozen concentrated apple juice to be clarified and concentrated to at least 22.9 degrees Brix. Published at 40 FR 13195, effective 15 May 1975.",
+   "doesNotSupport": "Any sugar figure - the standard grades soluble solids and never separates sugar from acid. It is also no longer codified: 7 CFR part 52 now ends at section 52.3764 and the 52.6321-52.6332 subpart has been removed from the Code of Federal Regulations, so this AMS PDF is the text and an eCFR link would be dead. It covers frozen concentrate only; there is no AMS standard for unsweetened grape or tart cherry concentrate, and the frozen concentrated grape juice standard (section 52.2453) grades *sweetened* concentrate, its Brix figures including added sweetener."
   }
  ]
 }
