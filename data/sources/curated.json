@@ -255,6 +255,13 @@
    "reliability": "primary"
   },
   {
+   "host": "metrovancouver.org",
+   "name": "Metro Vancouver / Greater Vancouver Water District",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The regional authority supplying drinking water to Vancouver and its neighbouring municipalities. Its annual Water Quality Annual Report tabulates untreated and treated averages and ranges for each of the three source reservoirs. It reports alkalinity, calcium, magnesium, sodium and chloride but not sulfate."
+  },
+  {
    "host": "nora.nerc.ac.uk",
    "name": "NERC Open Research Archive",
    "kind": "government-report",

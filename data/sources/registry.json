@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 360,
+    "distinctSources": 361,
     "backgroundDocuments": 13,
-    "citations": 687,
-    "numericCitations": 572,
+    "citations": 688,
+    "numericCitations": 573,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 654,
+      "primary": 655,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7187,6 +7187,31 @@
       ],
       "exampleRecords": [
         "dusseldorf"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://metrovancouver.org/services/water/Documents/water-quality-annual-report-volume-1-2025.pdf",
+      "host": "metrovancouver.org",
+      "title": null,
+      "publisher": "Metro Vancouver / Greater Vancouver Water District",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The regional authority supplying drinking water to Vancouver and its neighbouring municipalities. Its annual Water Quality Annual Report tabulates untreated and treated averages and ranges for each of the three source reservoirs. It reports alkalinity, calcium, magnesium, sodium and chloride but not sulfate.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "vancouver"
       ]
     },
     {

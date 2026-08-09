@@ -882,12 +882,12 @@
    "kind": "modern-city",
    "country": "Canada",
    "region": "British Columbia",
-   "calcium": 3,
-   "magnesium": 1,
-   "sodium": 2,
-   "chloride": 3,
+   "calcium": 7.81,
+   "magnesium": 0.21,
+   "sodium": 1.65,
+   "chloride": 2.8,
    "sulfate": 3,
-   "bicarbonate": 6,
+   "bicarbonate": 24,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -896,9 +896,48 @@
     "blank-slate",
     "modern-craft"
    ],
-   "description": "Among the softest municipal supplies anywhere — coastal mountain reservoir water that is essentially RO out of the tap.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Among the softest municipal water anywhere — 7.8 mg/L calcium and 0.21 of magnesium off the North Shore mountains. The alkalinity of 24 mg/L is not natural: the filtration plant adds it deliberately, because the raw reservoir water is too corrosive to put in a pipe.",
+   "attribution": "Greater Vancouver Water District 2025 Water Quality Annual Report, Metro Vancouver, the Seymour Water System treated-water table. Annual averages: alkalinity 20 mg/L as CaCO3, which is 24 mg/L bicarbonate; calcium 7,810 µg/L; magnesium 213; sodium 1,650; chloride 2.8 mg/L; hardness 20.2 as CaCO3, pH 8.1, conductivity 52 µmhos/cm, TDS 32 mg/L. Calcium and magnesium reconcile with the published hardness to within 1%. The stored profile had bicarbonate 6 against 24 and magnesium 1 against 0.21.",
+   "sourceUrl": "https://metrovancouver.org/services/water/Documents/water-quality-annual-report-volume-1-2025.pdf",
+   "sourceNote": "Sulfate is the one ion Metro Vancouver does not report - it is absent from all three system tables - so the 3 mg/L on this record is still uncited. Charge balance says it is too high: the five published ions leave the profile 11% anion-heavy with sulfate at 3, and would balance to under 1% with sulfate below 1 mg/L. That is an inference, not a measurement, so the stored figure is left alone and the imbalance left visible. Note also that most of the alkalinity here is added, not natural. Untreated Seymour water carries 4.1 mg/L alkalinity as CaCO3 and 1.67 mg/L calcium; the Seymour Capilano Filtration Plant dissolves carbon dioxide and lime into it for corrosion control, which is where the difference comes from. A brewer in Vancouver is treating water that has already been treated in the opposite direction.",
+   "aquifer": {
+    "name": "Capilano, Seymour and Coquitlam reservoirs, North Shore and Coast Mountains surface water",
+    "url": "https://metrovancouver.org/services/water/Documents/water-quality-annual-report-volume-1-2025.pdf",
+    "citation": "Metro Vancouver, Greater Vancouver Water District 2025 Water Quality Annual Report, Volume 1: physical and chemical analysis of water supply for the Capilano, Seymour and Coquitlam systems.",
+    "ions": {
+     "calcium": {
+      "n": 3,
+      "min": 0.82,
+      "median": 7.81,
+      "max": 7.91
+     },
+     "magnesium": {
+      "n": 3,
+      "min": 0.09,
+      "median": 0.21,
+      "max": 0.22
+     },
+     "sodium": {
+      "n": 3,
+      "min": 1.65,
+      "median": 1.66,
+      "max": 10.1
+     },
+     "chloride": {
+      "n": 3,
+      "min": 2.3,
+      "median": 2.7,
+      "max": 2.8
+     },
+     "bicarbonate": {
+      "n": 3,
+      "min": 24,
+      "median": 24,
+      "max": 26
+     }
+    },
+    "note": "Three reservoirs, and the difference between them is treatment rather than geology. Capilano and Seymour are filtered together at the Seymour Capilano plant and come out nearly identical - calcium 7.9 and 7.8 mg/L, hardness 20.5 and 20.2 as CaCO3. Coquitlam is treated separately and comes out at calcium 0.82 and hardness 2.4, with sodium at 10.1 mg/L against 1.65 in the other two: it is pH-corrected with something sodium-based rather than with lime. Coquitlam's treated water is essentially deionised water with a little sodium bicarbonate in it, and is the softest municipal supply in this catalogue by a wide margin. Which reservoir serves an address depends on the municipality; the City of Vancouver is on the Capilano and Seymour side. Sulfate is not measured in any of the three, so no sulfate figure is carried here."
+   }
   },
   {
    "id": "target-hoppy-lager",
