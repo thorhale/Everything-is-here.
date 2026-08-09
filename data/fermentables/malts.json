@@ -1065,7 +1065,7 @@
    "type": "grain",
    "origin": "Germany",
    "ppg": 37,
-   "colorLovibond": 3,
+   "colorLovibond": 1.5,
    "diastaticPowerLintner": 90,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
@@ -1078,7 +1078,9 @@
     "base"
    ],
    "description": "A lightly-kilned Munich-adjacent base malt giving gentle malt depth without darkening much.",
-   "sourceUrl": "https://bestmalz.de/en/"
+   "sourceUrl": "https://bestmalz.de/en/malts/best-heidelberg/",
+   "attribution": "BESTMALZ's published specification for BEST Heidelberg. Extract on dry substance is given as not less than 80.5%, which on this project's 46-point scale is 37.0 ppg; the stored 37 sits at that minimum and is unchanged. Wort colour is given as a maximum of 2.9 EBC / 1.5 Lovibond, so the stored 3 has been brought to the maltster's ceiling of 1.5. Diastatic power is specified as not less than 250 WK, which is about 76 degrees Lintner, and the stored 90 sits above that floor. Moisture max 4.9%, protein 9-11.5% dry basis, Kolbach index 36-43%.",
+   "sourceNote": "Almost everything BESTMALZ publish here is a one-sided limit rather than a typical value - a maximum for moisture and colour, a minimum for extract and diastatic power - so the figures bound this record rather than describe an average bag. Colour is set to their maximum because it is the only colour number they give. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance."
   },
   {
    "id": "malt-marris-otter-crisp-extra-pale",
@@ -1266,7 +1268,8 @@
     "base"
    ],
    "description": "Rahr's American lager/6-row base — high enzyme, a classic adjunct-lager workhorse.",
-   "sourceUrl": "https://rahrmalting.com/"
+   "sourceUrl": "https://rahrmalting.com/",
+   "sourceNote": "The ppg, colour and diastatic power on this record are unsourced and the citation is a homepage that no longer has anything behind it. rahrmalting.com now answers every path with a 114-byte document whose only content is a script redirecting to /lander, and /lander itself carries no text - no product list, no specifications, nothing an automated or a human reader could cite. This is not a bot block; the site has been emptied. No replacement was substituted: a distributor's copy of a maltster's figures is not the maltster's specification, and this project does not cite one as though it were."
   },
   {
    "id": "malt-carapils-weyermann",
@@ -1554,8 +1557,8 @@
    "category": "specialty-malt",
    "type": "grain",
    "origin": "Germany",
-   "ppg": 33,
-   "colorLovibond": 2,
+   "ppg": 34.5,
+   "colorLovibond": 2.35,
    "maxBatchPct": 15,
    "ppgBasis": "maltster",
    "uses": [
@@ -1567,7 +1570,9 @@
     "pilsner"
    ],
    "description": "German dextrine malt for foam and mouthfeel in pale lagers.",
-   "sourceUrl": "https://bestmalz.de/en/"
+   "sourceUrl": "https://bestmalz.de/en/malts/best-caramel-pils/",
+   "attribution": "BESTMALZ's published specification for BEST Caramel® Pils. Extract on dry substance is given as not less than 75.0%, which is 34.5 ppg; the stored 33 was below the maltster's own guaranteed minimum and has been raised to it. Wort colour is given as 3.0-7.0 EBC / 1.6-3.1 Lovibond, so the midpoint is 2.35 against a stored 2. Moisture max 4.5%, protein max 12.0% dry basis, wort pH 5.0-5.8.",
+   "sourceNote": "The record's name needs explaining. Carapils® is a Weyermann registered trademark (and separately a Briess one in the US), so \"Carapils DE\" is not a BESTMALZ product name. BEST Caramel® Pils is their malt of that type, and their own description matches what the record is for - it gives \"more full-bodiedness without intensifying their colour\" because the caramel sugars in it cannot be fermented. Its 3.0-7.0 EBC also matches the class. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance."
   },
   {
    "id": "malt-spelt",
