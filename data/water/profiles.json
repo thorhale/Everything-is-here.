@@ -643,12 +643,12 @@
    "kind": "modern-city",
    "country": "Japan",
    "region": "Kantō",
-   "calcium": 18,
-   "magnesium": 6,
-   "sodium": 18,
-   "chloride": 30,
-   "sulfate": 22,
-   "bicarbonate": 55,
+   "calcium": 19.6,
+   "magnesium": 4.3,
+   "sodium": 15.0,
+   "chloride": 18.4,
+   "sulfate": 30.0,
+   "bicarbonate": 51.5,
    "bestForStyles": [
     "Rice Lager",
     "Pale Ale"
@@ -657,9 +657,54 @@
     "soft-moderate",
     "modern-craft"
    ],
-   "description": "Moderately soft municipal water supplying Japan's dense Tokyo craft scene; a light, flexible base.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Soft-to-moderate river water at about 67 mg/L total hardness, sulfate-leaning: 30 mg/L of sulfate against 52 of bicarbonate. Tokyo is two waters, and the west of the city is markedly softer than the east.",
+   "attribution": "Tokyo Metropolitan Government Bureau of Waterworks, 令和6年度水質年報 (Water Quality Annual Report, fiscal year 2024-25), Appendix 5, 給水栓水の水質検査 — the tap-water results for 47 sampling points across the wards. This record carries the median of 46 of them: calcium 19.6, magnesium 4.3, sodium 15, chloride 18.4, sulfate 30 mg/L, and alkalinity 42.2 mg/L as CaCO3, which is 52 mg/L of bicarbonate. Calcium and magnesium are converted from the report's own カルシウム硬度 and マグネシウム硬度 columns at 2.497 and 4.116 mg of CaCO3 per mg. The 47th point, No.47 Chūō-ku Harumi, is excluded: its printed hardness does not equal its own calcium and magnesium hardness, so its row was not read reliably. The kept 46 balance on charge to 2.6%. The stored profile had chloride at 30 against a measured 18.4 and sulfate at 22 against 30 — the two the wrong way round.",
+   "sourceUrl": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/102019006-nempo_r06_f03",
+   "sourceNote": "These are ward tap water figures, sampled monthly or quarterly through the year and averaged by the Bureau, so they describe what comes out of a tap in Tokyo rather than any one treatment plant. The Bureau publishes plant-level tables in the same report, but their numeric cells do not carry extractable text, so this record works from the tap appendix. pH, potassium and nitrate are in the report and are not carried in this schema.",
+   "aquifer": {
+    "name": "Tone and Ara river system (Asaka, Kanamachi, Misato plants) and Tama river system (Nagasawa, Kinuta plants)",
+    "url": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/102019006-nempo_r06_f03",
+    "citation": "Tokyo Metropolitan Government Bureau of Waterworks, 令和6年度水質年報, Appendix 5: tap-water analyses for 47 sampling points, each labelled with the reservoir and treatment plants that supply it.",
+    "ions": {
+     "calcium": {
+      "n": 46,
+      "min": 15.3,
+      "median": 19.62,
+      "max": 22.75
+     },
+     "magnesium": {
+      "n": 46,
+      "min": 3.74,
+      "median": 4.3,
+      "max": 5.22
+     },
+     "sodium": {
+      "n": 46,
+      "min": 9.6,
+      "median": 15.0,
+      "max": 18.0
+     },
+     "chloride": {
+      "n": 46,
+      "min": 8.4,
+      "median": 18.4,
+      "max": 20.0
+     },
+     "sulfate": {
+      "n": 46,
+      "min": 16.0,
+      "median": 30.0,
+      "max": 34.0
+     },
+     "bicarbonate": {
+      "n": 46,
+      "min": 40.24,
+      "median": 51.52,
+      "max": 64.38
+     }
+    },
+    "note": "The spread is not noise, it is geography, and the report labels it: every sampling point names the plants that feed it. The softest taps in the city are in Ōta and Setagaya in the southwest — No.23 Minamiyukigaya at chloride 8.4 and sulfate 16, No.6 Tamagawa-denenchōfu at 9.3 and 18 — and all of them are fed from the Nagasawa and Kinuta plants on the Tama river. The hardest and saltiest are in the east and on the bay — No.39 Shinden in Adachi at chloride 20.0 and sulfate 33, No.34 Higashimizue in Edogawa at sulfate 34 — and those are fed from Misato and Kanamachi on the Edo and Tone. That is roughly a doubling of both ions across one city. A Tokyo brewer in Setagaya and one in Edogawa are not treating the same water, and the median above is neither of them."
+   }
   },
   {
    "id": "copenhagen",

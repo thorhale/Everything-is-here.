@@ -816,6 +816,13 @@
    "note": "Joint USGS, EPA and National Water Quality Monitoring Council repository of individual laboratory analyses of US water bodies. Free, no key, machine-readable. Each record is a measurement with a site, a date and a method, which is a stronger provenance than any curated brewing profile can offer."
   },
   {
+   "host": "www.waterworks.metro.tokyo.lg.jp",
+   "name": "Tokyo Metropolitan Government Bureau of Waterworks (東京都水道局)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility supplying Tokyo. Its annual 水質年報 publishes month-by-month analyses for every water source, treatment plant and tap sampling point in the city, including calcium and magnesium hardness, alkalinity, chloride and sulfate. The report index is rendered client-side; the report files themselves are served from /documents/d/waterworks/."
+  },
+  {
    "host": "www.webstaurantstore.com",
    "name": "WebstaurantStore",
    "kind": "vendor-datasheet",

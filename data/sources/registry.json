@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 365,
+    "distinctSources": 366,
     "backgroundDocuments": 13,
-    "citations": 690,
-    "numericCitations": 575,
+    "citations": 691,
+    "numericCitations": 576,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 657,
+      "primary": 658,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7083,6 +7083,31 @@
       ],
       "exampleRecords": [
         "bamberg"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/102019006-nempo_r06_f03",
+      "host": "www.waterworks.metro.tokyo.lg.jp",
+      "title": null,
+      "publisher": "Tokyo Metropolitan Government Bureau of Waterworks (東京都水道局)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The utility supplying Tokyo. Its annual 水質年報 publishes month-by-month analyses for every water source, treatment plant and tap sampling point in the city, including calcium and magnesium hardness, alkalinity, chloride and sulfate. The report index is rendered client-side; the report files themselves are served from /documents/d/waterworks/.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "tokyo"
       ]
     },
     {
