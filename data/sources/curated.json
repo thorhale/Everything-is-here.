@@ -126,6 +126,13 @@
    "note": "Same standing as en.wikipedia.org: descriptive claims only. Cited here for Dornbusch's bibliography, where the durable identifiers are the ISBNs, not the article."
   },
   {
+   "host": "document.environnement.brussels",
+   "name": "Bruxelles Environnement / Leefmilieu Brussel (document host)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Document host for the Brussels-Capital Region environment agency, the regulator for drinking water quality in Brussels. Its «L'Eau à Bruxelles» fiches tabulate the average composition of the water in each supply reservoir and feeder, including bicarbonate stated directly, from VIVAQUA's data."
+  },
+  {
    "host": "doi.org",
    "name": "DOI resolver",
    "kind": "peer-reviewed",

@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 367,
+    "distinctSources": 368,
     "backgroundDocuments": 13,
-    "citations": 692,
-    "numericCitations": 577,
+    "citations": 693,
+    "numericCitations": 578,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 659,
+      "primary": 660,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7083,6 +7083,31 @@
       ],
       "exampleRecords": [
         "cologne"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://document.environnement.brussels/opac_css/elecfile/Eau%2010",
+      "host": "document.environnement.brussels",
+      "title": null,
+      "publisher": "Bruxelles Environnement / Leefmilieu Brussel (document host)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Document host for the Brussels-Capital Region environment agency, the regulator for drinking water quality in Brussels. Its «L'Eau à Bruxelles» fiches tabulate the average composition of the water in each supply reservoir and feeder, including bicarbonate stated directly, from VIVAQUA's data.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "brussels"
       ]
     },
     {

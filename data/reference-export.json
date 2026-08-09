@@ -18971,12 +18971,12 @@
    "kind": "classic-city",
    "country": "Belgium",
    "region": "Brussels-Capital",
-   "calcium": 90,
-   "magnesium": 11,
-   "sodium": 29,
-   "chloride": 33,
-   "sulfate": 54,
-   "bicarbonate": 230,
+   "calcium": 105.5,
+   "magnesium": 15.6,
+   "sodium": 18.6,
+   "chloride": 28.15,
+   "sulfate": 70.95,
+   "bicarbonate": 290.05,
    "bestForStyles": [
     "Lambic",
     "Witbier",
@@ -18987,9 +18987,54 @@
     "moderate-alkalinity",
     "belgian"
    ],
-   "description": "Moderately hard, moderately alkaline water of the Senne valley — the historic water of lambic and Belgian wheat.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Hard, strongly alkaline Brussels water — 290 mg/L of bicarbonate at the median and up to 344 in the south-east of the city. Sulfate is substantial too at 71, and unlike the other ions it barely varies across the network.",
+   "attribution": "Bruxelles Environnement, Les données de Bruxelles Environnement: \"L'Eau à Bruxelles\", fiche 10 «Qualité de l'eau de distribution», October 2020, Table 10.7 — average composition of the water in the reservoirs and the feeder supplying the Brussels network in 2019, sourced by the regulator from VIVAQUA. Six supply points: réservoirs Callois, Rhode, Boitsfort, Uccle and Ixelles, and the Daussoulx-Boitsfort feeder. This record carries the median of the six — calcium 105.5 (range 69-132), magnesium 15.6 (5.1-16.4), sodium 18.6 (13.7-25.3), chloride 28.15 (18.0-34.4), sulfate 70.95 (68.1-75.6) and bicarbonate 290.05 (172.5-343.6) mg/L. Bicarbonate is published directly rather than derived from alkalinity. With the table's own potassium and nitrate the median balances on charge to 1.6%. The corrections are sulfate, stored at 54 against a measured 71, and bicarbonate at 230 against 290.",
+   "sourceUrl": "https://document.environnement.brussels/opac_css/elecfile/Eau%2010",
+   "sourceNote": "Brussels is not one water and the regulator says so: the composition reflects the mix of surface water, groundwater and blends feeding each reservoir, and it varies from one quarter of the city to the next. Calcium runs 69 mg/L at Callois to 132 at Boitsfort and bicarbonate 172 to 344 — a factor of two across six supply points — so the median describes Brussels rather than any address in it. Sulfate is the exception, sitting between 68 and 76 everywhere. These are 2019 figures published in 2020, and they are the modern municipal supply: this project has no source for the water Brussels lambic brewers used historically, and the Payottenland breweries outside the city are on different water again. VIVAQUA publishes a street-by-street lookup, but only through a form this project could not reach.",
+   "aquifer": {
+    "name": "Brussels supply reservoirs and the Daussoulx-Boitsfort feeder — mixed groundwater catchments and surface water",
+    "url": "https://document.environnement.brussels/opac_css/elecfile/Eau%2010",
+    "citation": "Bruxelles Environnement, fiche documentée 10 «Qualité de l'eau de distribution», October 2020, Table 10.7, from VIVAQUA 2020 data for 2019.",
+    "ions": {
+     "calcium": {
+      "n": 6,
+      "min": 69,
+      "median": 105.5,
+      "max": 132
+     },
+     "magnesium": {
+      "n": 6,
+      "min": 5.1,
+      "median": 15.6,
+      "max": 16.4
+     },
+     "sodium": {
+      "n": 6,
+      "min": 13.7,
+      "median": 18.6,
+      "max": 25.3
+     },
+     "chloride": {
+      "n": 6,
+      "min": 18,
+      "median": 28.15,
+      "max": 34.4
+     },
+     "sulfate": {
+      "n": 6,
+      "min": 68.1,
+      "median": 70.95,
+      "max": 75.6
+     },
+     "bicarbonate": {
+      "n": 6,
+      "min": 172.5,
+      "median": 290.05,
+      "max": 343.6
+     }
+    },
+    "note": "The six supply points split cleanly into two groups and the split is visible in every ion but sulfate. Callois and Uccle are soft and low-alkalinity — calcium 69 and 81, magnesium 5.1 and 5.9, bicarbonate 172 and 198 — while Rhode, Boitsfort and Ixelles are hard and highly alkaline at calcium 118 to 132, magnesium about 16, bicarbonate 320 to 344. The feeder from Daussoulx sits between them. Bruxelles Environnement attributes the difference to source: VIVAQUA draws mainly on groundwater catchments, which carry more calcium and carbonate than surface water, and different reservoirs get different mixes. A brewer in Watermael-Boitsfort has twice the alkalinity of one supplied from Callois."
+   }
   },
   {
    "id": "tadcaster",
