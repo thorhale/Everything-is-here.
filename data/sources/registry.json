@@ -1576,8 +1576,8 @@
     },
     {
       "id": "martuzzi-fermented-mare-milk-2024",
-      "url": "https://www.mdpi.com/2304-8158/13/3/493",
-      "host": "www.mdpi.com",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10855475/",
+      "host": "pmc.ncbi.nlm.nih.gov",
       "title": "Fermented Mare Milk and Its Microorganisms for Human Consumption and Health",
       "publisher": "MDPI (peer-reviewed open-access journals)",
       "authors": [
@@ -1592,7 +1592,7 @@
       "supports": "The microbiology and composition of fermented mare milk (koumiss/airag). Fermentation is a lactic-acid-bacteria and yeast interaction: LAB mainly acidify the milk while yeasts partly modify titratable acidity. It is started by back-slopping — fresh milk inoculated with a small quantity of already-fermented milk as a natural starter. Lactobacillus helveticus predominates among LAB (78.9% of sequences in one study) and Kluyveromyces marxianus and Saccharomyces cerevisiae are the most common yeasts. Koumiss generally contains about 2% alcohol, 0.5-1.5% lactic acid, 2-4% sugar and 2% fat, with Russian classification distinguishing weak (0.7-1% ethanol), normal (1-1.75%) and strong (1.75-2.5%). Published in Foods 13(3):493; DOI 10.3390/foods13030493. Underpins the milk-kefir archetype.",
       "doesNotSupport": "Fermentation temperature or duration, and distillation into a spirit — the review states neither, so the arkhi distillation step is cited elsewhere.",
       "accessed": "2026-08-02",
-      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "note": null,
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
@@ -1634,8 +1634,8 @@
     },
     {
       "id": "ashaolu-reale-lab-cereals-2020",
-      "url": "https://www.mdpi.com/2076-2607/8/8/1176",
-      "host": "www.mdpi.com",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7463871/",
+      "host": "pmc.ncbi.nlm.nih.gov",
       "title": "A Holistic Review on Euro-Asian Lactic Acid Bacteria Fermented Cereals and Vegetables",
       "publisher": "MDPI (peer-reviewed open-access journals)",
       "authors": [
@@ -1650,7 +1650,7 @@
       "supports": "Kvass and related Euro-Asian lactic-fermented cereal beverages. Kvass is made from fermented barley and rye malt, rye flour and stale rye bread, produced mainly in Russia, Poland and the Baltic states. It undergoes a combined lactic and alcoholic fermentation on a natural mixed flora of Saccharomyces cerevisiae with lactic acid bacteria including Lactobacillus casei and Leuconostoc mesenteroides, and species composition varies considerably with fermentation technique and medium. It contains 1% alcohol or less and is not pasteurised, so live LAB remain in the finished drink. Published in Microorganisms 8(8):1176; DOI 10.3390/microorganisms8081176. Underpins the grain-wild-backslop archetype.",
       "doesNotSupport": "A specific back-slopping protocol or inoculation quantity, and no claim about non-European folk grain ferments grouped under the same archetype.",
       "accessed": "2026-08-02",
-      "note": "Peer-reviewed literature; cited for fermentation congener/ester studies in distilling.",
+      "note": null,
       "citations": 2,
       "numericCitations": 1,
       "usedIn": [
