@@ -690,12 +690,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "North Rhine-Westphalia",
-   "calcium": 90,
-   "magnesium": 15,
-   "sodium": 45,
-   "chloride": 85,
-   "sulfate": 55,
-   "bicarbonate": 215,
+   "calcium": 65,
+   "magnesium": 8.6,
+   "sodium": 28.5,
+   "chloride": 67.9,
+   "sulfate": 58.2,
+   "bicarbonate": 122,
    "bestForStyles": [
     "Altbier"
    ],
@@ -704,9 +704,10 @@
     "chloride",
     "alkaline"
    ],
-   "description": "Moderately hard, chloride-forward and alkaline — suits the malty, copper-coloured altbier the city is known for.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Chloride-forward Rhine-derived water of moderate hardness and, at 122 mg/L of bicarbonate, much less alkaline than an altbier profile is usually drawn as — chloride outruns sulfate, which is where the soft, malty balance comes from.",
+   "attribution": "Stadtwerke Düsseldorf AG, Trinkwasseranalyse for the supply area, from the evaluation of analyses at Hochbehälter Hardt over 1 January to 31 December 2025: calcium 65, magnesium 8.6, sodium 28.5, chloride 67.9, sulfate 58.2 and nitrate 13.1 mg/L, with an acid capacity to pH 4.3 of 2.00 mmol/L, which is 122 mg/L of bicarbonate. Conductivity 699 µS/cm. The panel balances on charge to 1.2% including the reported potassium and nitrate, which is as tight as any analysis in this catalogue. Every stored ion was too high, and bicarbonate worst: 215 against a measured 122, which is most of a doubling in the ion that sets residual alkalinity. Calcium was 90 against 65 and chloride 85 against 68.",
+   "sourceUrl": "https://a.storyblok.com/f/274772/x/9e9ba42c93/trinkwasseranalyse-duesseldorf-2026.pdf",
+   "sourceNote": "One thing in the utility's own table does not agree with itself. It reports total hardness of 15.0 °dH, but its own calcium and magnesium come to 11.1 °dH, and the six ions balance on charge to 1.2% as they stand. The ions are taken and the hardness line is not; this project has not resolved which is the error. Note also what the water is: Stadtwerke Düsseldorf state that about three quarters of it is infiltrated Rhine water and a quarter groundwater, so this is a treated river, and the analysis is finished drinking water rather than raw water. It is the modern supply, not the water Düsseldorf brewed altbier with before the Rhine works were built."
   },
   {
    "id": "antwerp",
@@ -1162,12 +1163,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Brandenburg",
-   "calcium": 80,
-   "magnesium": 10,
-   "sodium": 25,
-   "chloride": 40,
-   "sulfate": 55,
-   "bicarbonate": 100,
+   "calcium": 113,
+   "magnesium": 10.0,
+   "sodium": 37,
+   "chloride": 52,
+   "sulfate": 112,
+   "bicarbonate": 248,
    "bestForStyles": [
     "Berliner Weisse",
     "German Pils"
@@ -1177,10 +1178,55 @@
     "pale",
     "sour"
    ],
-   "description": "Moderately soft, low-alkalinity water. Low residual alkalinity suits the very pale grist of a Berliner Weisse and lets the lactic tartness stand clean without mineral clutter — the reason Berlin's 'Champagne of the North' stayed so delicate and dry.",
+   "description": "Hard and strongly alkaline — every one of Berlin's nine waterworks is classified hart, and the median carries 248 mg/L of bicarbonate against 112 of sulfate. This is not the soft, low-alkalinity water Berliner Weisse is usually said to come from.",
    "sortOrder": 39,
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Berliner Wasserbetriebe, Analysendaten der Wasserwerke, annual median values for 2025, covering all nine Berlin waterworks. This record carries the median across those nine: calcium 113 (range 93-143 across the works), magnesium 10.0 (8.2-15.3), sodium 37 (24-66), chloride 52 (42-91) and sulfate 112 (62-175) mg/L, with carbonate hardness 11.4 °dH (9.6-14.0), which is 248 mg/L of bicarbonate at 21.76 mg/L per degree. The median of the nine is used rather than any one works because all nine supply the city and no single one is 'Berlin'. It balances on charge to 2.6%. The stored profile was wrong in the direction that matters most: bicarbonate at 100 against 248, and sulfate at 55 against 112.",
+   "sourceUrl": "https://www.bwb.de/de/assets/downloads/analysewerte-wasserwerke.pdf",
+   "sourceNote": "The record's brewing advice was backwards, and correcting the numbers corrects it. It said Berlin was 'moderately soft, low-alkalinity' water whose low residual alkalinity suited the very pale grist of a Berliner Weisse. Berliner Wasserbetriebe classify every one of the nine works as hart, total hardness 15.1 to 23.3 °dH, with 248 mg/L of bicarbonate at the median. A pale Weisse grist does not sit comfortably in that water; the style's low pH comes from its lactic fermentation, not from the liquor. The nine works also differ enough to matter on their own: sulfate runs 62 mg/L at Stolpe to 175 at Friedrichshagen, nearly a threefold spread inside one city, so the median is a description of Berlin rather than of any address in it. Modern figures, not the nineteenth-century water the style was built on, for which this project has no source.",
+   "aquifer": {
+    "name": "Berlin's nine waterworks — bank filtrate and artificially recharged groundwater of the Warsaw-Berlin glacial spillway",
+    "url": "https://www.bwb.de/de/assets/downloads/analysewerte-wasserwerke.pdf",
+    "citation": "Berliner Wasserbetriebe, Analysendaten der Wasserwerke, Jahresmedianwerte 2025 / annual median values 2025.",
+    "ions": {
+     "calcium": {
+      "n": 9,
+      "min": 93,
+      "median": 113,
+      "max": 143
+     },
+     "magnesium": {
+      "n": 9,
+      "min": 8.2,
+      "median": 10.0,
+      "max": 15.3
+     },
+     "sodium": {
+      "n": 9,
+      "min": 24,
+      "median": 37,
+      "max": 66
+     },
+     "chloride": {
+      "n": 9,
+      "min": 42,
+      "median": 52,
+      "max": 91
+     },
+     "sulfate": {
+      "n": 9,
+      "min": 62,
+      "median": 112,
+      "max": 175
+     },
+     "bicarbonate": {
+      "n": 9,
+      "min": 209,
+      "median": 248,
+      "max": 305
+     }
+    },
+    "note": "Beelitzhof, Friedrichshagen, Kaulsdorf, Kladow, Spandau, Stolpe, Tegel, Tiefwerder and Wuhlheide, each an annual median for 2025. Berlin draws almost entirely on bank filtrate from the Havel and Spree and on artificially recharged groundwater in the sands of the glacial spillway the city sits in, so the mineral load reflects the surface water and the recharge, not a deep aquifer. The softest water in the city, at Stolpe and Spandau in the west, carries about a third of the sulfate of the hardest, at Friedrichshagen and Wuhlheide in the east. Bicarbonate is derived from the utility's carbonate hardness rather than measured as such."
+   }
   },
   {
    "id": "goslar",

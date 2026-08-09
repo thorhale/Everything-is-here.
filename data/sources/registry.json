@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 355,
+    "distinctSources": 357,
     "backgroundDocuments": 13,
-    "citations": 682,
-    "numericCitations": 567,
+    "citations": 684,
+    "numericCitations": 569,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 649,
+      "primary": 651,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7116,6 +7116,31 @@
     },
     {
       "id": null,
+      "url": "https://a.storyblok.com/f/274772/x/9e9ba42c93/trinkwasseranalyse-duesseldorf-2026.pdf",
+      "host": "a.storyblok.com",
+      "title": null,
+      "publisher": "Storyblok (document host for Stadtwerke Düsseldorf)",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Content host used by Stadtwerke Düsseldorf AG for its published Trinkwasseranalyse PDFs. The analysis itself is the utility's, produced under the Trinkwasserverordnung; this host is registered only as where they put it.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "dusseldorf"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.denverwater.org/your-water/water-quality/brewing-beer-home",
       "host": "www.denverwater.org",
       "title": null,
@@ -7137,6 +7162,31 @@
       ],
       "exampleRecords": [
         "denver"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.bwb.de/de/assets/downloads/analysewerte-wasserwerke.pdf",
+      "host": "www.bwb.de",
+      "title": null,
+      "publisher": "Berliner Wasserbetriebe",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Berlin's municipal water utility. Publishes annual median analyses for each of the city's nine waterworks as a single table, with the full cation and anion panel, carbonate and total hardness.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "berlin"
       ]
     },
     {

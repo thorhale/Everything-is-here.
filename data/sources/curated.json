@@ -20,6 +20,13 @@
    "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Ozarka report."
   },
   {
+   "host": "a.storyblok.com",
+   "name": "Storyblok (document host for Stadtwerke Düsseldorf)",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Content host used by Stadtwerke Düsseldorf AG for its published Trinkwasseranalyse PDFs. The analysis itself is the utility's, produced under the Trinkwasserverordnung; this host is registered only as where they put it."
+  },
+  {
    "host": "admin.lallemandbrewing.com",
    "name": "Lallemand Brewing (document host)",
    "kind": "vendor-datasheet",
@@ -426,6 +433,13 @@
    "kind": "practitioner-tool",
    "reliability": "secondary",
    "note": "The de facto reference for homebrew water chemistry, but a practitioner spreadsheet rather than a measuring authority. Municipal ion figures should ideally cite the water utility's own published analysis."
+  },
+  {
+   "host": "www.bwb.de",
+   "name": "Berliner Wasserbetriebe",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Berlin's municipal water utility. Publishes annual median analyses for each of the city's nine waterworks as a single table, with the full cation and anion panel, carbonate and total hardness."
   },
   {
    "host": "www.candisyrup.com",
