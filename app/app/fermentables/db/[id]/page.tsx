@@ -15,6 +15,9 @@ export default async function FermentableDetailPage({ params }: Props) {
   const { id } = await params;
   const f = await getFermentable(id);
   if (!f) notFound();
+  // Where a record's fields honestly come from more than one document.
+  const extra = ((f as { additionalSources?: { url: string; supports: string }[] | null })
+    .additionalSources ?? []);
 
   const specs: [string, string | null][] = [
     ["Category", f.category],
@@ -103,6 +106,18 @@ PPG            = ${SUCROSE_PPG} x ${((f.totalCarbG! - (f.fiberG ?? 0)) / f.servi
       )}
 
       <FermentableSubs id={f.id} />
+
+      {extra.length > 0 && (
+        <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "1rem" }}>
+          {extra.map((a, i) => (
+            <span key={a.url}>
+              {i > 0 && " "}
+              {a.supports}{" "}
+              <a href={a.url} target="_blank" rel="noreferrer">Source</a>.
+            </span>
+          ))}
+        </p>
+      )}
 
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {f.attribution ?? ""}{" "}

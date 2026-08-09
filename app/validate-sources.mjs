@@ -104,6 +104,13 @@ eachRecord(DATA, (r, file) => {
   if (r.withdrawnSourceUrl && !r.attribution) {
     hard.push(`${file}:${r.id} records a withdrawn source but never says what happened to it.`);
   }
+  // A record whose fields genuinely come from two documents lists the second
+  // in additionalSources. Each entry must say what it supports, or it is just
+  // a URL sitting next to some numbers.
+  for (const a of r.additionalSources ?? []) {
+    if (!a.url) hard.push(`${file}:${r.id} has an additionalSources entry with no url.`);
+    if (!a.supports) hard.push(`${file}:${r.id} has an additional source that does not say what it supports: ${a.url}`);
+  }
   if (r.unsourced) {
     unsourced++;
     if (r.sourceUrl) hard.push(`${file}:${r.id} is flagged unsourced but carries a sourceUrl.`);

@@ -72,7 +72,7 @@
    "juiceBrix": 13.5,
    "juiceBrixMax": 17,
    "juiceYieldPct": 68,
-   "titratableAcidityGPerL": 2,
+   "titratableAcidityGPerL": 2.1,
    "dominantAcid": "malic",
    "phTypical": 3.8,
    "pectinLevel": "high",
@@ -90,8 +90,11 @@
    "description": "True cider apples: high tannin, low acid, largely inedible fresh. The soft-tannin backbone of West Country and Normandy cider.",
    "usageNotes": "Low acid means a blend with sharps is usually needed to get pH under 3.8. Low nitrogen — these are the varieties that keeve.",
    "sortOrder": 1,
-   "attribution": "No source. USDA publishes apples by supermarket cultivar; bittersweet cider apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
-   "unsourced": true
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 25 bittersweet cultivars measured across the station's run from 1905 to 1975: median 0.21% malic acid (range 0.14-0.33) and median 0.28% tannin (range 0.18-0.64). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid below 0.45% with tannin above 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider.",
+   "titratableAcidityMinGPerL": 1.4,
+   "titratableAcidityMaxGPerL": 3.3,
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar, Brix and juice yield on this record are not from it. The figures are also a class summary across many cultivars, not any one apple: a bittersweet ranges from Ashton Brown Jersey at 0.14% acid to Perthyre at 0.33, and Medaille d'Or carries three times White Jersey's tannin."
   },
   {
    "id": "fruit-apple-bittersharp",
@@ -116,11 +119,11 @@
    "juiceBrix": 13,
    "juiceBrixMax": 16,
    "juiceYieldPct": 68,
-   "titratableAcidityGPerL": 7.5,
+   "titratableAcidityGPerL": 6.4,
    "dominantAcid": "malic",
    "phTypical": 3.3,
    "pectinLevel": "high",
-   "tanninLevel": "medium",
+   "tanninLevel": "high",
    "fruitGroup": "pome",
    "uses": [
     "cider",
@@ -134,8 +137,11 @@
    "description": "The rare varieties carrying both acid and tannin — the ones that can make a complete single-varietal cider.",
    "usageNotes": "Kingston Black is the classic vintage-quality apple; it also ferments notoriously unreliably.",
    "sortOrder": 2,
-   "attribution": "No source. USDA publishes apples by supermarket cultivar; bittersharp cider apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
-   "unsourced": true
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 4 bittersharp cultivars measured across the station's run from 1905 to 1975: median 0.64% malic acid (range 0.58-1.91) and median 0.225% tannin (range 0.2-0.31). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid above 0.45% and tannin above 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider.",
+   "titratableAcidityMinGPerL": 5.8,
+   "titratableAcidityMaxGPerL": 19.1,
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar, Brix and juice yield on this record are not from it. The figures are also a class summary across many cultivars, not any one apple: a bittersweet ranges from Ashton Brown Jersey at 0.14% acid to Perthyre at 0.33, and Medaille d'Or carries three times White Jersey's tannin."
   },
   {
    "id": "fruit-apple-sharp",
@@ -146,7 +152,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.37,
+   "ppg": 4.09,
    "ppgMin": 3.68,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -154,13 +160,13 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.5,
+   "sugarGPer100g": 8.9,
    "sugarGPer100gMax": 13,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
    "juiceBrixMax": 15,
    "juiceYieldPct": 70,
-   "titratableAcidityGPerL": 9,
+   "titratableAcidityGPerL": 7.0,
    "dominantAcid": "malic",
    "phTypical": 3.1,
    "pectinLevel": "high",
@@ -178,8 +184,17 @@
    "description": "Cooking apples. High malic acid, negligible tannin — a blending component that props up the pH of a bittersweet-heavy blend.",
    "usageNotes": "Useful for correcting a flabby low-acid must without reaching for the acid packet.",
    "sortOrder": 3,
-   "attribution": "No source. USDA publishes apples by supermarket cultivar; sharp culinary apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
-   "unsourced": true
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 6 sharp cultivars measured across the station's run from 1905 to 1975: median 0.7% malic acid (range 0.6-1.02) and median 0.11% tannin (range 0.07-0.14). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid above 0.45% with tannin below 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider. Sugar is not from Long Ashton and is cited separately below.",
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar here is CoFID's cooking apple, cited under additional sources; Brix and juice yield are still unsourced. The acid and tannin are also a class summary across six sharp cultivars rather than any one apple — Bramley's Seedling at 0.85% acid against Cox at 0.60.",
+   "titratableAcidityMinGPerL": 6.0,
+   "titratableAcidityMaxGPerL": 10.2,
+   "additionalSources": [
+    {
+     "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+     "supports": "Total sugars, 8.9 g per 100 g — McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-362, \"Apples, cooking, raw, flesh only, peeled\". A sharp cider apple is a culinary apple, so CoFID's cooking apple is the right class for its sugar; Long Ashton tabulated acid and tannin but not sugar, which is why this record needs both documents."
+    }
+   ]
   },
   {
    "id": "fruit-crabapple",
@@ -322,7 +337,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.09,
+   "ppg": 2.9,
    "ppgMin": 3.22,
    "ppgMax": 5.06,
    "ppgBasis": "sugar-content",
@@ -330,7 +345,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.9,
+   "sugarGPer100g": 6.3,
    "sugarGPer100gMax": 11,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -354,8 +369,9 @@
    "description": "Hard, aromatic and inedible raw. Enormous pectin load and a perfume that survives fermentation better than most fruit.",
    "usageNotes": "The highest-pectin fruit here — pectic enzyme is mandatory, and a fruit brandy from quince needs careful methanol cuts.",
    "sortOrder": 7,
-   "attribution": "No source. USDA's quince entry publishes carbohydrate but no sugar figure.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-241, \"Quinces, flesh only\": 6.3 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-peach",
@@ -570,8 +586,9 @@
    "description": "A small, astringent, intensely coloured plum. Too sharp to eat, excellent in a ferment.",
    "usageNotes": "Pairs well with a sweeter base — damson alone will finish austere.",
    "sortOrder": 12,
-   "attribution": "No source. USDA publishes plums as one entry and damsons are a distinct, far more acidic fruit.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-077, \"Damsons, flesh and skin, raw\": 9.6 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-cherry-sweet",
@@ -883,7 +900,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.22,
+   "ppg": 3.4,
    "ppgMin": 2.3,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -891,7 +908,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 7,
+   "sugarGPer100g": 7.4,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -915,8 +932,9 @@
    "description": "The classic English country-wine berry: enormous colour, real tannin, and enough structure to age for years.",
    "usageNotes": "Cook before use. Raw berries, and especially stems, leaves and unripe fruit, contain cyanogenic glycosides — strip the berries from the stems and heat them.",
    "sortOrder": 20,
-   "attribution": "No source. USDA's elderberry entry publishes carbohydrate but no sugar figure.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-089, \"Elderberries, whole fruit\": 7.4 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-blackcurrant",
@@ -926,7 +944,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.13,
+   "ppg": 3.04,
    "ppgMin": 2.3,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -934,7 +952,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 6.8,
+   "sugarGPer100g": 6.6,
    "sugarGPer100gMax": 9,
    "juiceBrixMin": 11,
    "juiceBrix": 14,
@@ -958,8 +976,9 @@
    "description": "Ferociously acidic and tannic, with an aroma so strong it dominates anything it is blended into.",
    "usageNotes": "Titratable acidity around 30 g/L means dilution or deacidification is not optional for a drinkable wine.",
    "sortOrder": 21,
-   "attribution": "No source. USDA's European black currant entry publishes carbohydrate but no sugar figure.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-053, \"Blackcurrants, raw\": 6.6 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-redcurrant",
@@ -1008,7 +1027,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.02,
+   "ppg": 1.38,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -1016,7 +1035,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.4,
+   "sugarGPer100g": 3.0,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
@@ -1040,8 +1059,9 @@
    "description": "Sharp and green-tasting, with a thiol character that overlaps Sauvignon Blanc — which is why the tasting note exists.",
    "usageNotes": "A traditional base for English sparkling country wine, where the high acid is an asset.",
    "sortOrder": 23,
-   "attribution": "No source. USDA's gooseberry entry publishes carbohydrate but no sugar figure.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-100, \"Gooseberries, cooking, raw\": 3.0 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-cranberry",
@@ -2459,7 +2479,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 5.29,
    "ppgMin": 3.22,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -2467,7 +2487,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 11.5,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -2492,8 +2512,9 @@
    "description": "Desert cactus fruit with a brilliant betalain magenta and almost no acid at all.",
    "usageNotes": "pH near 6 — this must be acidified aggressively or it will spoil rather than ferment. Glochids are a hazard when handling.",
    "sortOrder": 57,
-   "attribution": "No source. USDA's plain prickly pear entry gives no sugar figure, and its regional entry gives 1.02 g against the 9.9 g stored here.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-230, \"Prickly pears, flesh and seeds\": 11.5 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-watermelon",
@@ -2800,7 +2821,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 17.48,
+   "ppg": 17.66,
    "ppgMin": 14.72,
    "ppgMax": 20.7,
    "ppgBasis": "sugar-content",
@@ -2808,7 +2829,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 32,
-   "sugarGPer100g": 38,
+   "sugarGPer100g": 38.4,
    "sugarGPer100gMax": 45,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -2831,8 +2852,9 @@
    "description": "Dried plum — high sugar, real acid, and a dark stewed-fruit note that suits fortified and aged styles.",
    "usageNotes": "Contains sorbitol, so a prune ferment retains apparent sweetness.",
    "sortOrder": 65,
-   "attribution": "No source. USDA publishes prunes only stewed, canned or dehydrated; none of those is the dried prune this record describes, and the dehydrated entry gives no sugar figure.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-231, \"Prunes, flesh and skin\": 38.4 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g. CoFID's prune is the dried fruit, flesh and skin, which is what this record describes. USDA publishes prunes only stewed, canned or dehydrated.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-apricot-dried",
@@ -3099,7 +3121,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.2,
+   "ppg": 1.38,
    "ppgMin": 0.92,
    "ppgMax": 1.84,
    "ppgBasis": "sugar-content",
@@ -3107,7 +3129,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.6,
+   "sugarGPer100g": 3.0,
    "sugarGPer100gMax": 4,
    "juiceBrixMin": 4,
    "juiceBrix": 5,
@@ -3130,8 +3152,9 @@
    "description": "A traditional if unfashionable country-wine base. Very low sugar, moderate acid.",
    "usageNotes": "Requires heavy chaptalisation. The result is savoury and divides opinion sharply.",
    "sortOrder": 72,
-   "attribution": "No source yet. USDA publishes red, green and yellow tomatoes separately and this record does not say which it describes; picking one would be inventing a specificity the record does not have.",
-   "unsourced": true
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 13-517, \"Tomatoes, standard, raw\": 3.0 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g. CoFID publishes one standard raw tomato where USDA splits red, green and yellow, which is why USDA could not be used: this record does not say which colour it describes.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-beetroot",

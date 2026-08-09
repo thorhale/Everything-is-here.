@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 339,
+    "distinctSources": 341,
     "backgroundDocuments": 13,
-    "citations": 655,
-    "numericCitations": 540,
+    "citations": 666,
+    "numericCitations": 551,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 625,
-      "secondary": 24,
+      "primary": 633,
+      "secondary": 27,
       "tertiary": 6
     }
   },
@@ -382,6 +382,38 @@
       ]
     },
     {
+      "id": null,
+      "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+      "host": "assets.publishing.service.gov.uk",
+      "title": null,
+      "publisher": "UK Government publishing service",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "File host for UK government publications. Used for McCance & Widdowson's Composition of Foods Integrated Dataset, the UK's national food composition database published by Public Health England — the counterpart to USDA's SR Legacy, and the one that covers northern European fruit USDA has no reason to analyse.",
+      "citations": 8,
+      "numericCitations": 8,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-quince",
+        "fruit-damson",
+        "fruit-elderberry",
+        "fruit-blackcurrant",
+        "fruit-gooseberry",
+        "fruit-pricklypear",
+        "fruit-prune",
+        "fruit-tomato"
+      ]
+    },
+    {
       "id": "ba-yeast-white-zainasheff-2010",
       "url": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation",
       "host": "www.brewerspublications.com",
@@ -722,6 +754,33 @@
         "cereal-cinnamon-toast-crunch",
         "cereal-lucky-charms",
         "cereal-cheerios"
+      ]
+    },
+    {
+      "id": null,
+      "url": "http://www.cider.org.uk/appledat.htm",
+      "host": "www.cider.org.uk",
+      "title": null,
+      "publisher": "The Wittenham Hill Cider Portal (Andrew Lea)",
+      "authors": null,
+      "year": null,
+      "kind": "peer-reviewed",
+      "reliability": "secondary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Andrew Lea, formerly a research scientist at the Long Ashton Research Station, compiles the station's cider apple juice analyses here from Bulmer's Pomona (1987) and Beech and Carr (1977), alongside the Geneva NY and Virginia datasets. Secondary because it is a compilation rather than the original publication, but by someone who worked on the original programme, and the underlying citations are named on the page. Long Ashton closed in 2003 and its data is not otherwise online.",
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/fruits-juices.json"
+      ],
+      "exampleRecords": [
+        "fruit-apple-bittersweet",
+        "fruit-apple-bittersharp",
+        "fruit-apple-sharp"
       ]
     },
     {

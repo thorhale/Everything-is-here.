@@ -39,6 +39,13 @@
    "note": "Peer-reviewed food-microbiology literature; cited for spontaneous-fermentation organisms in palm wine and related traditional drinks."
   },
   {
+   "host": "assets.publishing.service.gov.uk",
+   "name": "UK Government publishing service",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "File host for UK government publications. Used for McCance & Widdowson's Composition of Foods Integrated Dataset, the UK's national food composition database published by Public Health England — the counterpart to USDA's SR Legacy, and the one that covers northern European fruit USDA has no reason to analyse."
+  },
+  {
    "host": "bestmalz.de",
    "name": "BESTMALZ",
    "kind": "vendor-datasheet",
@@ -437,6 +444,13 @@
    "kind": "standards-reseller",
    "reliability": "secondary",
    "note": "A reseller of GB standards rather than the issuing body; the standard number is the durable identifier."
+  },
+  {
+   "host": "www.cider.org.uk",
+   "name": "The Wittenham Hill Cider Portal (Andrew Lea)",
+   "kind": "peer-reviewed",
+   "reliability": "secondary",
+   "note": "Andrew Lea, formerly a research scientist at the Long Ashton Research Station, compiles the station's cider apple juice analyses here from Bulmer's Pomona (1987) and Beech and Carr (1977), alongside the Geneva NY and Virginia datasets. Secondary because it is a compilation rather than the original publication, but by someone who worked on the original programme, and the underlying citations are named on the page. Long Ashton closed in 2003 and its data is not otherwise online."
   },
   {
    "host": "www.czhops.cz",
