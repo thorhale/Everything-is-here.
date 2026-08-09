@@ -857,7 +857,40 @@
    ],
    "description": "Hard, alkaline Baltic limestone groundwater — well suited to the dark, malty Baltic porters of the region.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Still unsourced, but now checked. Tartu Veevärk publishes the range each parameter has taken in the city's drinking water rather than a single analysis, and says why: Tartu draws on 30 to 40 boreholes pumping from four different aquifers, blended in the treatment plants and the mains, so which borehole dominates a given tap can change over the course of a day. Their published ranges are calcium 37-124, magnesium 28.8-37.5, sodium 27-88.8, chloride 6.7-60.1 and sulfate 3.2-38.2 mg/L, with total hardness 1.7-4.5 mmol/L (9.5-25.2 °dH), conductivity 602-917 µS/cm and pH 7.2-8.0. Three of the six stored ions fall outside those ranges: magnesium at 25 against a published floor of 28.8, sodium at 20 against a floor of 27, and sulfate at 60 against a ceiling of 38.2. Calcium and chloride are inside. No figure here is replaced, because taking the midpoint of five independent ranges from a water the utility says swings widely would build a profile of a water that may never have existed. Bicarbonate, the sixth ion, is not published at all.",
+   "aquifer": {
+    "name": "30-40 boreholes in four aquifers beneath Tartu, blended in supply",
+    "url": "https://tartuvesi.ee/vee-kvaliteet/tartu-joogivee-kvaliteedinaitajad/",
+    "citation": "Tartu Veevärk AS, Tartu joogivee kvaliteedinäitajad — the ranges taken by each parameter in the city's drinking water.",
+    "ions": {
+     "calcium": {
+      "n": null,
+      "min": 37,
+      "max": 124
+     },
+     "magnesium": {
+      "n": null,
+      "min": 28.8,
+      "max": 37.5
+     },
+     "sodium": {
+      "n": null,
+      "min": 27,
+      "max": 88.8
+     },
+     "chloride": {
+      "n": null,
+      "min": 6.7,
+      "max": 60.1
+     },
+     "sulfate": {
+      "n": null,
+      "min": 3.2,
+      "max": 38.2
+     }
+    },
+    "note": "These are ranges the utility has observed, not an analysis: no median is published and none is invented here, so the median column is empty on purpose. The width is the point. Calcium alone moves over a factor of three and total hardness from 9.5 to 25.2 °dH, because the four aquifers are chemically different and the mix at any address depends on how much water the neighbourhood is drawing. A brewer in Tartu cannot treat to a fixed profile from the mains without measuring first. Bicarbonate is not published, so the 290 mg/L on this record rests on nothing and the record stays declared unsourced."
+   }
   },
   {
    "id": "sapporo",

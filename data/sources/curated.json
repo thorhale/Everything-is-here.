@@ -375,6 +375,13 @@
    "note": "Content host for bottled-water analysis reports published by their bottlers to satisfy the California bottled-water disclosure requirement. The report itself is the primary source — a certified-laboratory panel giving the full mineral set — and this host is registered only as where those named bottlers put it, not as a source in its own right. Serves the Poland Spring, Deer Park, Zephyrhills and Ice Mountain reports."
   },
   {
+   "host": "tartuvesi.ee",
+   "name": "Tartu Veevärk AS",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The municipal water utility for Tartu, Estonia. Publishes the observed range of each drinking-water parameter rather than a single analysis, because the city blends 30-40 boreholes across four aquifers and the composition varies with demand. It does not publish alkalinity or bicarbonate."
+  },
+  {
    "host": "vinmethodenature.org",
    "name": "Syndicat de defense des vins naturels (Vin Methode Nature)",
    "kind": "trade-association",

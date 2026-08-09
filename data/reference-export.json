@@ -2409,7 +2409,7 @@
    "unitLabel": "pack",
    "description": "The quintessential American ale strain (Chico); clean, accentuates hops, very versatile.",
    "flavorNotes": "Clean, neutral, faint citrus.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=27",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2446,7 +2446,7 @@
    "unitLabel": "pack",
    "description": "Classic English (Fuller's-type) strain; extremely flocculant, leaves residual sweetness/body.",
    "flavorNotes": "Malty, fruity English character.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=28",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2483,7 +2483,7 @@
    "unitLabel": "pack",
    "description": "Classic Irish ale strain in the Guinness/dry-stout tradition (not Guinness's proprietary culture). Slight tartness that suits roasty dry stouts and Irish reds.",
    "flavorNotes": "Subtle diacetyl/tartness, complements roast.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=30",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=104&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2519,7 +2519,7 @@
    "unitLabel": "pack",
    "description": "Drier, more attenuative English strain than WLP002; clean and highly flocculant.",
    "flavorNotes": "Malty but finishes dry.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=33",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=107&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2556,7 +2556,7 @@
    "unitLabel": "pack",
    "description": "Kölsch/alt strain; ferments clean with a slight sulfur that clears with lagering.",
    "flavorNotes": "Clean, slightly winey.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=41",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=119&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2592,7 +2592,7 @@
    "unitLabel": "pack",
    "description": "Classic Bavarian weizen strain; banana/clove balance shifts with temperature and pitch rate.",
    "flavorNotes": "Banana ester + clove phenol.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=57",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=148&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2628,7 +2628,7 @@
    "description": "Dupont-type saison strain; earthy, spicy, notoriously slow. Its character swings hard with temperature: fermented hot (~85°F) it turns deeply dry and peppery, while cooler fermentation keeps it fruit-forward and balanced.",
    "flavorNotes": "Hot (~85°F): deep dry spice, black pepper, bone dry, slightly medicinal. Cooler: fruit and cherries with subdued spice.",
    "optimalPitchNote": "Chill wort to 62–64°F, hold at 65°F for ~3 days, then ramp. Ferment under sanitized foil rather than an airlock — these strains are backpressure sensitive, a common cause of stalls.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=82",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=168&type=YEAST",
    "attribution": "Strain specs from White Labs; temperature/character and anti-stall guidance from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts).",
    "labId": "white-labs"
   },
@@ -2663,7 +2663,7 @@
    "unitLabel": "pack",
    "description": "Czech Pilsner Urquell-type lager strain; malty, dry finish.",
    "flavorNotes": "Malty, clean, slight fruit.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=99",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=218&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2699,7 +2699,7 @@
    "unitLabel": "pack",
    "description": "One of the most popular German lager strains; crisp, clean, well-balanced.",
    "flavorNotes": "Clean, dry, malt-balanced.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=108",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=223&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2737,7 +2737,7 @@
    "unitLabel": "pack",
    "description": "Classic Brettanomyces bruxellensis; barnyard/horse-blanket funk. Slow, super-attenuating; usually a secondary/co-culture.",
    "flavorNotes": "Barnyard, leather, stone fruit.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=88",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=185&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -2774,7 +2774,7 @@
    "unitLabel": "pack",
    "description": "Neutral high-tolerance champagne strain for dry wines, ciders, meads, and priming.",
    "flavorNotes": "Neutral, crisp, dry.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=94",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=204&type=YEAST",
    "labId": "white-labs",
    "attribution": "Specs transcribed from White Labs published strain data (whitelabs.com). Liquid PurePitch pouches ~100 billion cells."
   },
@@ -19364,7 +19364,40 @@
    ],
    "description": "Hard, alkaline Baltic limestone groundwater — well suited to the dark, malty Baltic porters of the region.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Still unsourced, but now checked. Tartu Veevärk publishes the range each parameter has taken in the city's drinking water rather than a single analysis, and says why: Tartu draws on 30 to 40 boreholes pumping from four different aquifers, blended in the treatment plants and the mains, so which borehole dominates a given tap can change over the course of a day. Their published ranges are calcium 37-124, magnesium 28.8-37.5, sodium 27-88.8, chloride 6.7-60.1 and sulfate 3.2-38.2 mg/L, with total hardness 1.7-4.5 mmol/L (9.5-25.2 °dH), conductivity 602-917 µS/cm and pH 7.2-8.0. Three of the six stored ions fall outside those ranges: magnesium at 25 against a published floor of 28.8, sodium at 20 against a floor of 27, and sulfate at 60 against a ceiling of 38.2. Calcium and chloride are inside. No figure here is replaced, because taking the midpoint of five independent ranges from a water the utility says swings widely would build a profile of a water that may never have existed. Bicarbonate, the sixth ion, is not published at all.",
+   "aquifer": {
+    "name": "30-40 boreholes in four aquifers beneath Tartu, blended in supply",
+    "url": "https://tartuvesi.ee/vee-kvaliteet/tartu-joogivee-kvaliteedinaitajad/",
+    "citation": "Tartu Veevärk AS, Tartu joogivee kvaliteedinäitajad — the ranges taken by each parameter in the city's drinking water.",
+    "ions": {
+     "calcium": {
+      "n": null,
+      "min": 37,
+      "max": 124
+     },
+     "magnesium": {
+      "n": null,
+      "min": 28.8,
+      "max": 37.5
+     },
+     "sodium": {
+      "n": null,
+      "min": 27,
+      "max": 88.8
+     },
+     "chloride": {
+      "n": null,
+      "min": 6.7,
+      "max": 60.1
+     },
+     "sulfate": {
+      "n": null,
+      "min": 3.2,
+      "max": 38.2
+     }
+    },
+    "note": "These are ranges the utility has observed, not an analysis: no median is published and none is invented here, so the median column is empty on purpose. The width is the point. Calcium alone moves over a factor of three and total hardness from 9.5 to 25.2 °dH, because the four aquifers are chemically different and the mix at any address depends on how much water the neighbourhood is drawing. A brewer in Tartu cannot treat to a fixed profile from the mains without measuring first. Bicarbonate is not published, so the 290 mg/L on this record rests on nothing and the record stays declared unsourced."
+   }
   },
   {
    "id": "sapporo",

@@ -11,7 +11,7 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 363,
+    "distinctSources": 365,
     "backgroundDocuments": 13,
     "citations": 690,
     "numericCitations": 575,
@@ -1795,33 +1795,6 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=27",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/derived/lineages.json",
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "California Ale",
-        "white-labs-wlp001"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://wyeastlab.com/product/american-ale/",
       "host": "wyeastlab.com",
       "title": null,
@@ -1845,33 +1818,6 @@
       "exampleRecords": [
         "American Ale",
         "wyeast-1056"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=28",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/derived/lineages.json",
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "English Ale",
-        "white-labs-wlp002"
       ]
     },
     {
@@ -8021,6 +7967,56 @@
     },
     {
       "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=27",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/yeasts/derived/lineages.json"
+      ],
+      "exampleRecords": [
+        "California Ale"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=28",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/yeasts/derived/lineages.json"
+      ],
+      "exampleRecords": [
+        "English Ale"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://fermentis.com/en/product/safale-s-04/",
       "host": "fermentis.com",
       "title": null,
@@ -8896,7 +8892,57 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=30",
+      "url": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp001"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "white-labs-wlp002"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=104&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -8921,7 +8967,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=33",
+      "url": "https://www.whitelabs.com/yeast-single?id=107&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -8946,7 +8992,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=41",
+      "url": "https://www.whitelabs.com/yeast-single?id=119&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -8971,7 +9017,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=57",
+      "url": "https://www.whitelabs.com/yeast-single?id=148&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -8996,7 +9042,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=82",
+      "url": "https://www.whitelabs.com/yeast-single?id=168&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -9021,7 +9067,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=99",
+      "url": "https://www.whitelabs.com/yeast-single?id=218&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -9046,7 +9092,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=108",
+      "url": "https://www.whitelabs.com/yeast-single?id=223&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -9071,7 +9117,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=88",
+      "url": "https://www.whitelabs.com/yeast-single?id=185&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",
@@ -9096,7 +9142,7 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=94",
+      "url": "https://www.whitelabs.com/yeast-single?id=204&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
       "publisher": "White Labs",

@@ -43,7 +43,7 @@
    "unitLabel": "pack",
    "description": "The quintessential American ale strain (Chico); clean, accentuates hops, very versatile.",
    "flavorNotes": "Clean, neutral, faint citrus.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=27"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST"
   },
   {
    "id": "white-labs-wlp002",
@@ -78,7 +78,7 @@
    "unitLabel": "pack",
    "description": "Classic English (Fuller's-type) strain; extremely flocculant, leaves residual sweetness/body.",
    "flavorNotes": "Malty, fruity English character.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=28"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST"
   },
   {
    "id": "white-labs-wlp004",
@@ -113,7 +113,7 @@
    "unitLabel": "pack",
    "description": "Classic Irish ale strain in the Guinness/dry-stout tradition (not Guinness's proprietary culture). Slight tartness that suits roasty dry stouts and Irish reds.",
    "flavorNotes": "Subtle diacetyl/tartness, complements roast.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=30"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=104&type=YEAST"
   },
   {
    "id": "white-labs-wlp007",
@@ -147,7 +147,7 @@
    "unitLabel": "pack",
    "description": "Drier, more attenuative English strain than WLP002; clean and highly flocculant.",
    "flavorNotes": "Malty but finishes dry.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=33"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=107&type=YEAST"
   },
   {
    "id": "white-labs-wlp029",
@@ -182,7 +182,7 @@
    "unitLabel": "pack",
    "description": "Kölsch/alt strain; ferments clean with a slight sulfur that clears with lagering.",
    "flavorNotes": "Clean, slightly winey.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=41"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=119&type=YEAST"
   },
   {
    "id": "white-labs-wlp300",
@@ -216,7 +216,7 @@
    "unitLabel": "pack",
    "description": "Classic Bavarian weizen strain; banana/clove balance shifts with temperature and pitch rate.",
    "flavorNotes": "Banana ester + clove phenol.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=57"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=148&type=YEAST"
   },
   {
    "id": "white-labs-wlp565",
@@ -250,7 +250,7 @@
    "description": "Dupont-type saison strain; earthy, spicy, notoriously slow. Its character swings hard with temperature: fermented hot (~85°F) it turns deeply dry and peppery, while cooler fermentation keeps it fruit-forward and balanced.",
    "flavorNotes": "Hot (~85°F): deep dry spice, black pepper, bone dry, slightly medicinal. Cooler: fruit and cherries with subdued spice.",
    "optimalPitchNote": "Chill wort to 62–64°F, hold at 65°F for ~3 days, then ramp. Ferment under sanitized foil rather than an airlock — these strains are backpressure sensitive, a common cause of stalls.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=82",
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=168&type=YEAST",
    "attribution": "Strain specs from White Labs; temperature/character and anti-stall guidance from the Maltose Falcons saison guide (https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts)."
   },
   {
@@ -284,7 +284,7 @@
    "unitLabel": "pack",
    "description": "Czech Pilsner Urquell-type lager strain; malty, dry finish.",
    "flavorNotes": "Malty, clean, slight fruit.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=99"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=218&type=YEAST"
   },
   {
    "id": "white-labs-wlp830",
@@ -318,7 +318,7 @@
    "unitLabel": "pack",
    "description": "One of the most popular German lager strains; crisp, clean, well-balanced.",
    "flavorNotes": "Clean, dry, malt-balanced.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=108"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=223&type=YEAST"
   },
   {
    "id": "white-labs-wlp650",
@@ -354,7 +354,7 @@
    "unitLabel": "pack",
    "description": "Classic Brettanomyces bruxellensis; barnyard/horse-blanket funk. Slow, super-attenuating; usually a secondary/co-culture.",
    "flavorNotes": "Barnyard, leather, stone fruit.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=88"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=185&type=YEAST"
   },
   {
    "id": "white-labs-wlp715",
@@ -389,7 +389,7 @@
    "unitLabel": "pack",
    "description": "Neutral high-tolerance champagne strain for dry wines, ciders, meads, and priming.",
    "flavorNotes": "Neutral, crisp, dry.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=94"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=204&type=YEAST"
   }
  ]
 }
