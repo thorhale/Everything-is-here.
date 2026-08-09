@@ -680,6 +680,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.oowv.de",
+   "name": "Oldenburgisch-Ostfriesischer Wasserverband (OOWV)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The public water association for Oldenburg and East Frisia. Publishes a quarterly Trinkwasseranalyse per waterworks supply area, produced by an accredited external laboratory, giving the full cation and anion panel with hydrogen carbonate stated directly."
+  },
+  {
    "host": "www.portland.gov",
    "name": "Portland Water Bureau",
    "kind": "government-report",

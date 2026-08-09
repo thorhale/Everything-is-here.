@@ -19883,12 +19883,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Lower Saxony",
-   "calcium": 25,
-   "magnesium": 5,
-   "sodium": 12,
-   "chloride": 18,
-   "sulfate": 35,
-   "bicarbonate": 30,
+   "calcium": 35,
+   "magnesium": 4.1,
+   "sodium": 13,
+   "chloride": 22,
+   "sulfate": 19,
+   "bicarbonate": 100,
    "bestForStyles": [
     "German Pils",
     "North German Pilsner"
@@ -19898,10 +19898,11 @@
     "dry",
     "bitter"
    ],
-   "description": "Soft water with just enough sulfate to sharpen bitterness into the famously bone-dry, aggressively hoppy North German Pils. Low alkalinity keeps the pale grist crisp; the modest sulfate is why Jever Pilsener bites harder and finishes drier than its Bavarian cousins.",
+   "description": "Soft Frisian groundwater at 5.8 °dH — but not the near-zero alkalinity a Jever-style pilsner profile is usually drawn with: 100 mg/L of bicarbonate against 19 of sulfate and 22 of chloride.",
    "sortOrder": 42,
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Oldenburgisch-Ostfriesischer Wasserverband, Trinkwasseranalyse for the Wasserwerk Sandelermöns supply area, which covers Jever, first quarter 2026: sampled 28 January 2026 and analysed by Institut Dr. Nowak, Ottersberg, test report 26-02098. Calcium 35, magnesium 4.1, sodium 13, potassium 2.2, chloride 22, sulfate 19 and nitrate 0.70 mg/L, with hydrogen carbonate given directly as 100 mg/L and an acid capacity to pH 4.3 of 1.71 mmol/L, at pH 8.04, 295 µS/cm and 5.8 °dH, classified weich. The panel balances on charge to 1.4%. Bicarbonate was stored at 30 against a published 100, which is the correction that matters; sulfate was 35 against 19 and calcium 25 against 35.",
+   "sourceUrl": "https://www.oowv.de/assets/media/downloads/service/labor/trinkwasseranalysen/analyse_sandelermoens.pdf",
+   "sourceNote": "This is the public supply at Jever, not the brewery's liquor. Friesisches Brauhaus zu Jever is known to draw from its own wells, and this project has found no published analysis of them — so a profile named for the town's beer is being sourced to the town's tap, which is a real limitation and not a small one for a beer whose whole identity is its water. The analysis is also a single quarter at a single sampling point."
   },
   {
    "id": "kentucky-limestone",
