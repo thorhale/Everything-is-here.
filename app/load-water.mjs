@@ -25,7 +25,8 @@ const DDL = [
     "chloride" DOUBLE PRECISION, "sulfate" DOUBLE PRECISION, "bicarbonate" DOUBLE PRECISION,
     "description" TEXT, "bestForStyles" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "styleTags" TEXT[] DEFAULT ARRAY[]::TEXT[],
-    "sourceUrl" TEXT NOT NULL, "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
+    "sourceUrl" TEXT, "sourceNote" TEXT, "unsourced" BOOLEAN NOT NULL DEFAULT false,
+    "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   // Added after the table already existed in Neon, so they go on as ALTERs.
   // Prisma tolerates extra DB columns but not missing ones, which is why these
   // run before any insert rather than in a separate migration step.
@@ -35,7 +36,7 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "WaterProfile_name_idx" ON "WaterProfile"("name")`,
 ];
 
-const COLS = ["id","name","kind","country","region","calcium","magnesium","sodium","chloride","sulfate","bicarbonate","description","bestForStyles","styleTags","sourceUrl","attribution","sortOrder","variable","ionRanges"];
+const COLS = ["id","name","kind","country","region","calcium","magnesium","sodium","chloride","sulfate","bicarbonate","description","bestForStyles","styleTags","sourceUrl","sourceNote","unsourced","attribution","sortOrder","variable","ionRanges"];
 
 function tuple(w, i, attribution) {
   return "(" + [
@@ -43,7 +44,7 @@ function tuple(w, i, attribution) {
     lit(w.calcium ?? null), lit(w.magnesium ?? null), lit(w.sodium ?? null),
     lit(w.chloride ?? null), lit(w.sulfate ?? null), lit(w.bicarbonate ?? null),
     lit(w.description ?? null), litArr(w.bestForStyles), litArr(w.styleTags),
-    lit(w.sourceUrl), lit(w.attribution ?? attribution ?? null), lit(w.sortOrder ?? i),
+    lit(w.sourceUrl ?? null), lit(w.sourceNote ?? null), lit(w.unsourced ?? false), lit(w.attribution ?? attribution ?? null), lit(w.sortOrder ?? i),
     w.variable ? "true" : "false",
     w.ionRanges ? lit(JSON.stringify(w.ionRanges)) + "::jsonb" : "NULL",
   ].join(",") + ")";

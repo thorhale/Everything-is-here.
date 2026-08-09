@@ -11,17 +11,17 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 334,
+    "distinctSources": 335,
     "backgroundDocuments": 11,
-    "citations": 710,
-    "numericCitations": 595,
-    "numericOnShallowLink": 163,
+    "citations": 669,
+    "numericCitations": 554,
+    "numericOnShallowLink": 120,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 8,
     "byReliability": {
-      "primary": 637,
-      "secondary": 67,
+      "primary": 639,
+      "secondary": 24,
       "tertiary": 6
     }
   },
@@ -98,42 +98,6 @@
         "grape-malbec",
         "grape-cabernet-franc",
         "grape-petit-verdot"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.brunwater.com/",
-      "host": "www.brunwater.com",
-      "title": null,
-      "publisher": "Bru'n Water (Martin Brungard)",
-      "authors": null,
-      "year": null,
-      "kind": "practitioner-tool",
-      "reliability": "secondary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "The de facto reference for homebrew water chemistry, but a practitioner spreadsheet rather than a measuring authority. Municipal ion figures should ideally cite the water utility's own published analysis.",
-      "citations": 43,
-      "numericCitations": 43,
-      "usedIn": [
-        "data/water/profiles.json"
-      ],
-      "exampleRecords": [
-        "burton-upon-trent",
-        "dublin",
-        "munich",
-        "pilsen",
-        "london",
-        "dortmund",
-        "edinburgh",
-        "vienna",
-        "cologne",
-        "brussels",
-        "tadcaster",
-        "bohemia-soft"
       ]
     },
     {
@@ -6639,6 +6603,56 @@
       ],
       "exampleRecords": [
         "harlequin"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.swm.de/dam/doc/wasser/trinkwasser-analysewerte.pdf",
+      "host": "www.swm.de",
+      "title": null,
+      "publisher": "Stadtwerke München",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Munich's municipal utility. Publishes the city's full drinking-water analysis annually as a PDF, giving each ion's network median with its minimum and maximum.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "munich"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.rheinenergie.com/media/documents/trinkwasseranalyse/Trinkwasseranalyse_Linksrheinisch.pdf",
+      "host": "www.rheinenergie.com",
+      "title": null,
+      "publisher": "RheinEnergie AG",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Cologne's municipal utility. Publishes a separate Trinkwasseranalyse for each bank of the Rhine, which matters because the two supplies differ enough to change a recipe.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "cologne"
       ]
     },
     {

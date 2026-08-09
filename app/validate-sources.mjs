@@ -156,12 +156,23 @@ if (hard.length) {
   console.log("");
 }
 
+// Declaring debt that was previously hidden RAISES this count, and that is
+// progress, not regression — a record that admits it has no source is strictly
+// better than one that quietly cites a homepage supporting nothing. But it must
+// be a deliberate act with a reason attached, or the ratchet means nothing. So
+// --declare="<why>" is the only way the number is allowed to go up.
+const declareArg = process.argv.find((a) => a.startsWith("--declare="));
 const unsourcedBudget = budget.unsourcedRecords ?? unsourced; // first run sets the baseline
 console.log(`DECLARED UNSOURCED: ${unsourced} record(s) carry numbers with no citation at all`);
 console.log(`  budget:      ${unsourcedBudget}`);
-if (unsourced > unsourcedBudget) {
+if (unsourced > unsourcedBudget && !declareArg) {
   failed = true;
-  console.error(`  REGRESSED by ${unsourced - unsourcedBudget}. A new record must arrive with a source.`);
+  console.error(
+    `  REGRESSED by ${unsourced - unsourcedBudget}. A new record must arrive with a source. If these are ` +
+      `existing records being honestly declared rather than new ones, re-run with --declare="<why>".`
+  );
+} else if (unsourced > unsourcedBudget) {
+  console.log(`  raised by ${unsourced - unsourcedBudget}, declared: ${declareArg.slice(10)}`);
 } else if (unsourced < unsourcedBudget) {
   console.log(`  improved by ${unsourcedBudget - unsourced} — ratcheting down.`);
 } else {
@@ -193,11 +204,11 @@ console.log("");
 // fails against the better figure rather than the old one. --no-update-budget
 // opts out when a purely read-only check is wanted (CI on a pull request, say).
 const improved =
-  shallowNumeric < budget.numericOnShallowLink || unsourced < unsourcedBudget;
+  shallowNumeric < budget.numericOnShallowLink || unsourced < unsourcedBudget || Boolean(declareArg);
 const mayUpdate =
   !hard.length &&
   shallowNumeric <= budget.numericOnShallowLink &&
-  unsourced <= unsourcedBudget &&
+  (unsourced <= unsourcedBudget || declareArg) &&
   !process.argv.includes("--no-update-budget") &&
   (improved || process.argv.includes("--update-budget"));
 
@@ -208,6 +219,7 @@ if (mayUpdate) {
       {
         numericOnShallowLink: shallowNumeric,
         unsourcedRecords: unsourced,
+        ...(declareArg ? { unsourcedRaisedBecause: declareArg.slice(10) } : {}),
         note:
           "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims " +
           "citing a publisher homepage rather than the specific document the figure came from; lower it by " +

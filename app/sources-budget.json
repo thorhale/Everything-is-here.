@@ -1,6 +1,7 @@
 {
-  "numericOnShallowLink": 163,
-  "unsourcedRecords": 36,
+  "numericOnShallowLink": 120,
+  "unsourcedRecords": 77,
+  "unsourcedRaisedBecause": "41 water profiles that were citing the Bru'n Water homepage now say plainly that nothing supports them. Spot-checking three against the cities' own analyses found all three wrong about that city, so the whole table is declared rather than left looking sourced.",
   "note": "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims citing a publisher homepage rather than the specific document the figure came from; lower it by finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that their numbers currently rest on no citation at all; lower it by sourcing them or by removing the numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be forgotten, and fails the build if either rises.",
   "updated": "2026-08-09"
 }

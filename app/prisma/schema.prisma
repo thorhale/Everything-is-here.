@@ -555,7 +555,11 @@ model WaterProfile {
   description  String?
   bestForStyles String[] @default([])
   styleTags    String[] @default([])
-  sourceUrl    String
+  // See Fermentable.sourceUrl — optional, because a profile may declare it
+  // has no source rather than cite a homepage that supports nothing.
+  sourceUrl   String?
+  sourceNote  String?
+  unsourced   Boolean @default(false)
   attribution  String?
   sortOrder    Int      @default(0)
 

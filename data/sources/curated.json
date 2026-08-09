@@ -601,6 +601,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.rheinenergie.com",
+   "name": "RheinEnergie AG",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Cologne's municipal utility. Publishes a separate Trinkwasseranalyse for each bank of the Rhine, which matters because the two supplies differ enough to change a recipe."
+  },
+  {
    "host": "www.sanpellegrino.com",
    "name": "S.Pellegrino (Nestle)",
    "kind": "vendor-datasheet",
@@ -619,6 +626,13 @@
    "kind": "vendor-datasheet",
    "reliability": "primary",
    "note": "Sibling brand to Mangrove Jack's under the same parent. Mangrove Jack's stopped listing a whiskey distiller's yeast under its own name; Still Spirits sells it and its product page carries the temperature and attenuation figures, so the citation follows the product rather than staying on a dead Mangrove Jack's URL."
+  },
+  {
+   "host": "www.swm.de",
+   "name": "Stadtwerke München",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Munich's municipal utility. Publishes the city's full drinking-water analysis annually as a PDF, giving each ion's network median with its minimum and maximum."
   },
   {
    "host": "www.ttb.gov",

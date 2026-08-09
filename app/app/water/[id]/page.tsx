@@ -108,9 +108,19 @@ export default async function WaterDetailPage({ params }: Props) {
         </>
       )}
 
+      {w.sourceNote && (
+        <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "1rem" }}>
+          {w.sourceNote}
+        </p>
+      )}
+
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {w.attribution ?? ""}{" "}
-        <a href={w.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+        {w.sourceUrl && (
+          <>
+            <a href={w.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+          </>
+        )}
         <Link href="/water">← Back to water profiles</Link>
       </p>
     </div>
