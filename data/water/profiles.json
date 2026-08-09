@@ -283,7 +283,14 @@
    ],
    "description": "Very hard water with substantial sulfate AND alkalinity — a high-mineral profile that gives Dortmunder Export its firm, slightly minerally, hop-balanced character distinct from softer Munich Helles.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "The six ion figures are still the classic brewing-city table that circulates in the brewing literature, and this project still cannot name the publication they came from. What has been established is what they are not. Dortmund's tap water is not abstracted from beneath Dortmund at all: DEW21 buys it from its subsidiary Wasserwerke Westfalen, whose Hengsen, Westhofen and Halingen works sit in the Ruhr valley and make drinking water by infiltrating pre-treated Ruhr water into the ground and recovering it as artificially recharged groundwater and bank filtrate. The Ruhrverband and AWWR's Ruhrgütebericht 2024 measured the Ruhr's mean calcium at 39 mg/L and magnesium at 6.9 at Essen-Rellinghausen, and its mean sulfate at 12 to 39 mg/L and chloride at 7 to 41 across thirteen stations along the river. The profile stored here claims 225 mg/L calcium and 120 of sulfate — five times the calcium and three times the sulfate of the river the city drinks. Bank filtration and deacidification harden the water somewhat, but not by that factor. This profile is therefore a description of the deep well water Dortmund's breweries drew for Export, not of any water now coming out of a Dortmund tap, and it should be treated as a historic reconstruction with no citation rather than as a measurement. There is a second, self-contained reason to distrust the stored figures, which needs no external document at all: they do not balance on charge. 225 mg/L calcium, 40 of magnesium and 60 of sodium are 17.1 milliequivalents of cations, against 7.1 from 180 of bicarbonate, 60 of chloride and 120 of sulfate — 82% cation-heavy, the worst imbalance of any profile in this catalogue. Ten milliequivalents of anions are simply missing. No real water analysis looks like that, so whatever these numbers are, they are not a transcription of one.",
+   "aquifer": {
+    "name": "Ruhr valley alluvium at Hengsen, Westhofen and Halingen — artificially recharged groundwater and bank filtrate, not a Dortmund aquifer",
+    "url": "https://ruhrverband.de/fileadmin/user_upload/Service/Publikationen_und_Downloads/Ruhrguetebericht_2024.pdf",
+    "citation": "Ruhrverband and Arbeitsgemeinschaft der Wasserwerke an der Ruhr (AWWR), Ruhrgütebericht 2024, chapter 5 (physico-chemical monitoring of the Ruhr) and chapter 24 (analytical results of the AWWR water-quality committee).",
+    "ions": {},
+    "note": "Dortmunder Export is the one classic style whose water is usually explained by the city's geology, and the modern supply has nothing to do with it. Wasserwerke Westfalen describe their own process on their plant pages: pre-cleaned Ruhr water is infiltrated through slow sand basins into the subsoil at Hengsen (since 1908), Westhofen and Halingen (since 1888), then collected by perforated drains as a mixture of recharged groundwater, bank filtrate and natural groundwater. That water starts as a soft river: the Ruhrgütebericht 2024 gives 39 mg/L calcium and 6.9 mg/L magnesium as annual means at Essen-Rellinghausen — below the ten-year means of 41 and 7.5 because 2024 ran wet — with sulfate at 35 and chloride at 37 there, and 12 to 39 mg/L sulfate and 7 to 41 mg/L chloride as the range of annual means across all thirteen Ruhr stations. The Export water was something else: deep wells into the Upper Cretaceous strata under the city, whose gypsum is where the sulfate came from. This project has not found a published analysis of those brewery wells, and no ion figure here is taken from a survey. The one thing worth taking from this block is negative and load-bearing: brewing this profile does not reproduce what a Dortmund brewery gets from the mains today, and a brewer in Dortmund should treat the stored numbers as a target to build, not as their tap."
+   }
   },
   {
    "id": "edinburgh",
@@ -513,12 +520,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Bavaria",
-   "calcium": 120,
-   "magnesium": 10,
-   "sodium": 8,
-   "chloride": 10,
-   "sulfate": 40,
-   "bicarbonate": 300,
+   "calcium": 110,
+   "magnesium": 14,
+   "sodium": 31,
+   "chloride": 46,
+   "sulfate": 66,
+   "bicarbonate": 303,
    "bestForStyles": [
     "Rauchbier",
     "Märzen",
@@ -529,9 +536,54 @@
     "alkaline",
     "smoke"
    ],
-   "description": "Hard, alkaline Franconian water behind Bamberg's smoked lagers and dark Franconian styles.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Hard, alkaline Franconian valley water — 303 mg/L bicarbonate against only 66 of sulfate, which is what pushes a pale mash pH up and why Bamberg's beers are dark, malty and smoked rather than pale and bitter.",
+   "attribution": "Stadtwerke Bamberg's own Trinkwasseranalyse for the Stadtwald supply zone, sampled 19 March 2026 and reported 10 April 2026 by CLG Chemisches Labor Dr. Graser KG under the Trinkwasserverordnung: calcium 110, magnesium 14, sodium 31, chloride 46, sulfate 66, hydrogen carbonate 303 mg/L, total hardness 18.0 °dH, pH 7.30, conductivity measured on the day of sampling. The Stadtwald works supplies the Inselgebiet — the island quarter where Schlenkerla, Fässla, Klosterbräu and Spezial all sit — so this is the zone that matters for the beers this profile exists to explain. It corrects every ion the record used to carry except bicarbonate: sodium was stored at 8 mg/L against a measured 31, chloride at 10 against 46, sulfate at 40 against 66, magnesium at 10 against 14 and calcium at 120 against 110. The old bicarbonate of 300 was almost exactly right, which is the one figure that most affects mash pH. The analysis balances on charge to 4.5% as stored, and the residual is accounted for by the two ions this schema does not carry: adding the report's 19 mg/L nitrate and 4.6 mg/L potassium brings it inside 2%.",
+   "sourceUrl": "https://www.stadtwerke-bamberg.de/fileadmin/user_upload/Dokumente/Wasser/Pruefberichte/Pruefbericht_Stadtwald_10.04.2026.pdf",
+   "sourceNote": "This is the current municipal supply, not a historic reconstruction of the water Bamberg's breweries used when the smoked styles were established, and no Bamberg brewery publishes an analysis of its own well. The analysis is one sampling date at one point in one of four supply zones; the aquifer block below carries the spread across the city's three groundwater zones.",
+   "aquifer": {
+    "name": "Regnitz valley Quaternary sands and gravels — Wasserschutzgebiete Stadtwald, Gereuther Wiesen, Buger Wiesen and Hirschaider Büsche",
+    "url": "https://www.stadtwerke-bamberg.de/wasser/haertegrade",
+    "citation": "Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH, Wasserhärtegrade und Trinkwasseranalysen, and the utility's descriptions of its protection zones and waterworks. Analyses by CLG Chemisches Labor Dr. Graser KG, sampled March 2026.",
+    "ions": {
+     "calcium": {
+      "n": 3,
+      "min": 93,
+      "median": 110,
+      "max": 110
+     },
+     "magnesium": {
+      "n": 3,
+      "min": 14,
+      "median": 15,
+      "max": 21
+     },
+     "sodium": {
+      "n": 3,
+      "min": 23,
+      "median": 31,
+      "max": 31
+     },
+     "chloride": {
+      "n": 3,
+      "min": 37,
+      "median": 46,
+      "max": 47
+     },
+     "sulfate": {
+      "n": 3,
+      "min": 45,
+      "median": 66,
+      "max": 66
+     },
+     "bicarbonate": {
+      "n": 3,
+      "min": 303,
+      "median": 304,
+      "max": 322
+     }
+    },
+    "note": "Bamberg does not drill for its water. The wells are shallow — the utility puts them at ten to twelve metres — and sit in the Quaternary gravels of the Regnitz floodplain south and west of the city, inside a 3,828-hectare protection area designated in 2011 and made up of four blocks: Stadtwald, Gereuther Wiesen, Buger Wiesen and Hirschaider Büsche. The waterworks remove iron and manganese and pass the water over activated carbon; nothing is added that would change the mineral profile. The table above is the three groundwater-supplied zones — Gaustadt, Stadtwald (which feeds the Inselgebiet) and Bug-Gereuth (which feeds the Berggebiet) — and they agree closely: 17.9, 18.0 and 18.2 °dH. The city's fourth zone, Bamberg-Ost, is deliberately left out, because since 1975 it has drunk Fernwasser piped from the Donau-Lech area by the Zweckverband Fernwasserversorgung Oberfranken and is a different water entirely: calcium 68, magnesium 16, sodium 11, chloride 16, sulfate 21, hydrogen carbonate 259 mg/L, 13.1 °dH. About a third of Bamberg's supply is that imported water, so a brewer's tap in Bamberg-Ost does not deliver Bamberg's water."
+   }
   },
   {
    "id": "tokyo",

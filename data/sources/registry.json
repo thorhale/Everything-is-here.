@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 352,
+    "distinctSources": 353,
     "backgroundDocuments": 13,
-    "citations": 679,
-    "numericCitations": 564,
+    "citations": 680,
+    "numericCitations": 565,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 646,
+      "primary": 647,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7087,6 +7087,31 @@
       ],
       "exampleRecords": [
         "cologne"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.stadtwerke-bamberg.de/fileadmin/user_upload/Dokumente/Wasser/Pruefberichte/Pruefbericht_Stadtwald_10.04.2026.pdf",
+      "host": "www.stadtwerke-bamberg.de",
+      "title": null,
+      "publisher": "Stadtwerke Bamberg (municipal water utility)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Bamberg's municipal energy and water utility. Publishes the statutory Trinkwasserverordnung test reports for each of its four supply zones, produced by an accredited laboratory, together with the hardness of each zone and descriptions of its waterworks and protection areas.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "bamberg"
       ]
     },
     {

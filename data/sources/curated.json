@@ -312,6 +312,13 @@
    "reliability": "primary"
   },
   {
+   "host": "ruhrverband.de",
+   "name": "Ruhrverband / AWWR Ruhrgütebericht",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The Ruhrverband is the statutory water-management association for the Ruhr catchment; the Ruhrgütebericht is its annual joint report with the Arbeitsgemeinschaft der Wasserwerke an der Ruhr, giving measured river and drinking-water chemistry for the whole river. Cited for the water that becomes Dortmund's municipal supply."
+  },
+  {
    "host": "s3-us-west-2.amazonaws.com",
    "name": "Object storage (publisher-hosted PDF)",
    "kind": "document-host",
@@ -675,6 +682,13 @@
    "name": "Simpsons Malt",
    "kind": "vendor-datasheet",
    "reliability": "primary"
+  },
+  {
+   "host": "www.stadtwerke-bamberg.de",
+   "name": "Stadtwerke Bamberg (municipal water utility)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Bamberg's municipal energy and water utility. Publishes the statutory Trinkwasserverordnung test reports for each of its four supply zones, produced by an accredited laboratory, together with the hardness of each zone and descriptions of its waterworks and protection areas."
   },
   {
    "host": "www.stillspirits.com",

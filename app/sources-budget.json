@@ -1,6 +1,6 @@
 {
   "numericOnShallowLink": 67,
-  "unsourcedRecords": 67,
+  "unsourcedRecords": 66,
   "note": "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims citing a publisher homepage rather than the specific document the figure came from; lower it by finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that their numbers currently rest on no citation at all; lower it by sourcing them or by removing the numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be forgotten, and fails the build if either rises.",
   "updated": "2026-08-09"
 }
