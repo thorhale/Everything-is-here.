@@ -247,62 +247,50 @@
    ],
    "description": "Moderately hard and moderately alkaline, with chloride edging out sulfate for a rounder, maltier balance — well suited to the porters, milds, and browns that defined London brewing.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been.",
+   "attribution": "Still unsourced as a profile, but now bounded by the aquifer it claims to describe. The six ions here remain the classic brewing-city table with no publication behind them, and two independent checks say they are not London Chalk groundwater. First, the British Geological Survey's baseline survey of the Chalk between the Lee and the Colne measured bicarbonate at 289-367 mg/L in the unconfined aquifer and 256-447 in the confined; this record stores 125, which is below the minimum of all 33 samples BGS reports. Second, the stored ions do not balance on charge - 5.55 milliequivalents of cations against 4.01, 32% cation-heavy. Calcium at 90 and chloride at 40 do sit almost exactly on the confined Chalk's medians of 93.2 and 40, so parts of this profile may well descend from a real well analysis, but the alkalinity does not survive contact with the survey. Thames Water publishes its own per-zone figures only behind a Cloudflare challenge on the lookup form, which this project will not work around, and the Drinking Water Inspectorate publishes compliance rather than mineral panels.",
    "aquifer": {
-    "name": "Chalk of the Colne and Lee catchments, confined beneath the London Basin",
-    "url": "https://nora.nerc.ac.uk/id/eprint/3571/1/CR03069N_.pdf",
-    "citation": "Shand, P., Tyler-Whittle, R., Morton, M., Simpson, E., Lawrence, A.R., Pacey, J. and Hargreaves, R. 2003. Baseline Report Series 6: The Chalk of the Colne and Lee River Catchments. British Geological Survey Commissioned Report CR/03/69N / Environment Agency NC/99/74/6.",
+    "name": "Chalk of the London Basin, between the Rivers Lee and Colne — confined beneath the London Clay",
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c0d39e5274a7202e193e7/scho0207blyd-e-e.pdf",
+    "citation": "Shand, P., Tyler-Whittle, R., Morton, M., Simpson, E., Lawrence, A.R., Pacey, J. and Hargreaves, R. Baseline Report Series: 6. The Chalk of the Colne and Lee River Catchments. British Geological Survey Commissioned Report CR/03/069N / Environment Agency, Table 5.1, 87 sites.",
     "ions": {
      "calcium": {
       "n": 21,
       "min": 17,
       "median": 93.2,
-      "mean": 88.0,
-      "p977": 169,
       "max": 204
      },
      "magnesium": {
       "n": 21,
       "min": 3.9,
       "median": 24,
-      "mean": 27.8,
-      "p977": 82.7,
       "max": 113
      },
      "sodium": {
       "n": 21,
       "min": 8,
       "median": 83,
-      "mean": 115,
-      "p977": 460,
       "max": 589
      },
      "chloride": {
       "n": 21,
       "min": 14,
       "median": 40,
-      "mean": 119,
-      "p977": 764,
       "max": 1250
      },
      "sulfate": {
       "n": 21,
       "min": 5,
       "median": 102,
-      "mean": 155,
-      "p977": 525,
       "max": 562
      },
      "bicarbonate": {
       "n": 21,
       "min": 256,
       "median": 323,
-      "mean": 325,
-      "p977": 442,
       "max": 447
      }
     },
-    "note": "London's brewers drilled through the London Clay into the Chalk beneath, so the confined Chalk is the relevant population, not the unconfined outcrop and not the Thames. The figures above are BGS's confined-Chalk statistics; its unconfined Chalk is a different water again, at 125 mg/L calcium, 2.3 magnesium and 22 sulfate. The stored profile's 125 mg/L bicarbonate is the figure to distrust: the Chalk is a carbonate aquifer and BGS finds 256 mg/L at its minimum across both populations, with a confined median of 323."
+    "note": "London's porter brewers sank wells, and the water under London is the confined Chalk - the aquifer where it dips beneath the London Clay - which is what the table above reports. It is a different water from the Chalk outcrop in the Chilterns, which BGS reports separately from 38 to 53 sites: unconfined calcium 106-156 with a median of 125, magnesium 1.7-7.9 median 2.3, sodium 6-47 median 12.1, chloride 11.5-74 median 23, sulfate 5-78 median 22, bicarbonate 289-367 median 329. Going under the clay multiplies the magnesium tenfold and the sodium sevenfold as the water ages and exchanges sodium for calcium, and the spread becomes enormous - sodium reaches 589 mg/L and chloride 1250 in the deepest, most saline samples. What both columns agree on is alkalinity: every one of the 33 bicarbonate measurements sits between 256 and 447 mg/L. A Chalk water in this basin is a hard, strongly alkaline water, which is the real reason London brewed dark beer. Modern London tap water is mostly treated Thames and Lee surface water and is not this; neither is the profile stored on this record."
    }
   },
   {
