@@ -707,6 +707,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.pwd.org",
+   "name": "Portland Water District (Maine)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility supplying Greater Portland, Maine from Sebago Lake. Publishes a complete water chemistry sheet alongside its annual report, giving untreated, treated and distribution figures side by side for each supply."
+  },
+  {
    "host": "www.quakeroats.com",
    "name": "Quaker Oats (nutrition labelling)",
    "kind": "nutrition-label",

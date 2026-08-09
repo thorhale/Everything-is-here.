@@ -19237,12 +19237,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "Maine",
-   "calcium": 5,
-   "magnesium": 1,
-   "sodium": 6,
-   "chloride": 8,
-   "sulfate": 5,
-   "bicarbonate": 14,
+   "calcium": 2.82,
+   "magnesium": 0.58,
+   "sodium": 9.82,
+   "chloride": 10,
+   "sulfate": 2,
+   "bicarbonate": 11,
    "bestForStyles": [
     "Hazy IPA",
     "Pale Ale"
@@ -19252,9 +19252,10 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Very soft Sebago Lake water behind the outsized New England hazy-IPA scene (Bissell Brothers, Foundation, etc.).",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Sebago Lake water, about as soft as a municipal supply gets — 2.8 mg/L calcium, 2 of sulfate, 11 of bicarbonate. Its most abundant ion is sodium, and most of that is added at the plant.",
+   "attribution": "Portland Water District, Analysis of Water Supplies, sampled 15 April 2025, Greater Portland treated column: calcium 2.82, magnesium 0.58, sodium 9.82, chloride 10, sulfate 2 mg/L, alkalinity 9.2 mg/L as CaCO3 which is 11 mg/L bicarbonate, at pH 8.08, conductivity 47.8 µS and TDS 31 mg/L. Calcium and magnesium reproduce the published hardness of 9.43 as CaCO3 exactly. The stored profile had roughly the right shape but the wrong ions: calcium 5 against 2.82, sodium 6 against 9.82, sulfate 5 against 2.",
+   "sourceUrl": "https://www.pwd.org/wp-content/uploads/2026/05/Complete-Water-Chemistry.pdf",
+   "sourceNote": "Sodium is treatment, not lake. Untreated Sebago water carries 6.13 mg/L sodium and 5.9 alkalinity as CaCO3; the treated water carries 9.82 and 9.2, and the report shows 0.63 mg/L ammonia-N in the treated column, so the plant is dosing caustic and chloraminating. The panel also does not balance on charge - 0.62 milliequivalents of cations against 0.51 of anions, 19% cation-heavy - and the untreated column is imbalanced the same way, so it is not a treatment artefact. A soft, coloured lake water carries organic anions that this six-ion model has no column for, which is the most likely explanation, but this project has not confirmed it and no figure here is adjusted to close the gap."
   },
   {
    "id": "plzen-region",
