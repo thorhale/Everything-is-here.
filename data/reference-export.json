@@ -18856,7 +18856,14 @@
    ],
    "description": "Hard, alkaline water that supported Edinburgh's malt-forward Scottish ales; the alkalinity and moderate sulfate suit rich, malty brews rather than aggressively hoppy ones.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Still unsourced, and only partly bounded. Edinburgh's brewers worked the wells of the so-called charmed circle, into the Carboniferous strata beneath the city, and the British Geological Survey's Baseline Scotland survey of the Carboniferous aquifers of the Midland Valley is the nearest published description of that water. It reports 10th to 90th percentile ranges rather than a full per-ion table for the cations, and on the three ions it does quantify this record is inside them: sulfate 140 mg/L against a range of 4.7-179, bicarbonate 225 against 132-510, chloride 65 against 7.2-123. Calcium, magnesium and sodium are presented only as box plots in that report, so nothing here confirms or contradicts the stored 120, 25 and 55. Scottish Water's own site refuses automated requests.",
+   "aquifer": {
+    "name": "Carboniferous aquifers of the Midland Valley of Scotland",
+    "url": "https://nora.nerc.ac.uk/14314/1/OR11021.pdf",
+    "citation": "Ó Dochartaigh, B.É., Smedley, P.L., MacDonald, A.M., Darling, W.G. and Homoncik, S. 2011. Baseline Scotland: groundwater chemistry of the Carboniferous sedimentary aquifers of the Midland Valley. British Geological Survey Open Report OR/11/021.",
+    "ions": {},
+    "note": "This is the most heavily mineralised groundwater in Scotland, which is why Edinburgh could brew what it brewed. BGS reports pH 6.40-7.84, alkalinity 132-510 mg/L, chloride 7.2-123 and sulfate 4.7-179 as 10th-90th percentile ranges, with total dissolved solids spanning 65 to 19,000 mg/L and a median of 555. Water types run from Ca-HCO3 through Ca-Mg-HCO3 to SO4-rich and Na-HCO3. The sulfate range is driven by two opposing processes the report names: oxidation of sulphide minerals, especially where mining has affected the water, pushing it up; and sulfate reduction in the most reducing groundwaters, pushing it below 5 mg/L. So a Carboniferous well in the Lothians could be either a sulfate-rich brewing water or nearly sulfate-free depending on its redox state, and which one you got was luck of the borehole. No ion table is carried here because the report publishes the cations only as box plots. Note also that this describes the aquifer, not Edinburgh's modern tap, which Scottish Water draws from upland surface reservoirs and which is soft."
+   }
   },
   {
    "id": "vienna",
@@ -19047,7 +19054,63 @@
    ],
    "description": "A hard, sulfate-rich Yorkshire brewing town (home of Samuel Smith's and John Smith's); a gentler cousin of Burton's water for firm, dry bitters.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Still unsourced as a profile, and now placed against the aquifer Tadcaster's brewers actually draw from. The town sits on the Magnesian Limestone, and the British Geological Survey's baseline survey of that aquifer across County Durham and North Yorkshire gives the range it can deliver, from 107 to 110 analyses per ion. Five of this record's six figures sit high but inside it: calcium 220 above the 95th percentile of 177 but well inside the maximum of 547, sulfate 390 between the 75th and 90th percentiles of 153 and 400, magnesium 60 and sodium 45 and chloride 60 all between the 75th and 90th. That is exactly what a brewery well chosen for mineral content should look like. The exception is bicarbonate: 210 mg/L sits below the survey's 5th percentile of 240, in an aquifer whose median is 351. Yorkshire Water publishes per-zone figures only through a postcode form this project could not reach.",
+   "aquifer": {
+    "name": "Magnesian Limestone (Permian) of County Durham and North Yorkshire — Yorkshire Province",
+    "url": "https://nora.nerc.ac.uk/id/eprint/8147/1/OR09030.pdf",
+    "citation": "Bearcock, J. and Smedley, P.L. 2009. Baseline groundwater chemistry: the Magnesian Limestone of County Durham and North Yorkshire. British Geological Survey Open Report OR/09/030, Table 5.1.",
+    "ions": {
+     "calcium": {
+      "n": 107,
+      "min": 10.3,
+      "p5": 57.8,
+      "median": 92,
+      "p95": 177,
+      "max": 547
+     },
+     "magnesium": {
+      "n": 107,
+      "min": 0.519,
+      "p5": 25.7,
+      "median": 42.8,
+      "p95": 84,
+      "max": 537
+     },
+     "sodium": {
+      "n": 106,
+      "min": 8.45,
+      "p5": 12.4,
+      "median": 27.5,
+      "p95": 125,
+      "max": 4610
+     },
+     "chloride": {
+      "n": 109,
+      "min": 2,
+      "p5": 14.8,
+      "median": 38.3,
+      "p95": 235,
+      "max": 9250
+     },
+     "sulfate": {
+      "n": 107,
+      "min": 1.18,
+      "p5": 21.8,
+      "median": 89.1,
+      "p95": 461,
+      "max": 1610
+     },
+     "bicarbonate": {
+      "n": 110,
+      "min": 56,
+      "p5": 240,
+      "median": 351,
+      "p95": 504,
+      "max": 586
+     }
+    },
+    "note": "Tadcaster's water is Burton's story told in a different rock. BGS splits the aquifer into a Durham and a Yorkshire province and says the difference is mineralogy: Durham groundwaters are Ca-Mg-HCO3 dominated by dolomite, while the Yorkshire ones — Tadcaster's — are Ca-HCO3 mixing towards Ca-SO4 because of gypsum in the evaporite deposits. That gypsum is where a Yorkshire brewery well gets its sulfate, the same mechanism that gives Burton its. The aquifer's range is enormous: sulfate spans 1.18 to 1610 mg/L and chloride reaches 9250 in samples affected by saline intrusion near Hartlepool and by minewater rebound around Ferryhill, so the upper tail describes water nobody would brew with. The median Magnesian Limestone water is much milder than Tadcaster's stored profile, which is the point: a brewing well is a chosen point in a range, not the average of it."
+   }
   },
   {
    "id": "bohemia-soft",
