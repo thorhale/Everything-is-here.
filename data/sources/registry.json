@@ -12,13 +12,13 @@
   },
   "totals": {
     "distinctSources": 369,
-    "backgroundDocuments": 13,
+    "backgroundDocuments": 14,
     "citations": 694,
     "numericCitations": 579,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
-    "backgroundFullTextVerified": 10,
+    "backgroundFullTextVerified": 11,
     "byReliability": {
       "primary": 661,
       "secondary": 27,
@@ -9723,6 +9723,24 @@
       "deepLink": true,
       "supports": "Measured major-ion statistics for the Chalk of the London Basin, reported separately for the unconfined outcrop and the Chalk confined beneath the London Clay — the latter being what London's brewery wells reached. Minimum, maximum, median, mean, 97.7th percentile and n for each ion.",
       "doesNotSupport": "Any individual brewery's borehole, and anything about Thames water. It is groundwater chemistry, sampled from monitoring points across two catchments.",
+      "accessed": "2026-08-09"
+    },
+    {
+      "id": "sykes-principles-practice-brewing-1897",
+      "url": "https://archive.org/details/principlespracti0000wjsy",
+      "host": "archive.org",
+      "title": "The Principles and Practice of Brewing",
+      "publisher": "Charles Griffin and Company, London (scan hosted by the Internet Archive)",
+      "authors": [
+        "W. J. Sykes"
+      ],
+      "year": 1897,
+      "kind": "peer-reviewed",
+      "reliability": "secondary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The origin and meaning of the classic brewing-water types. Sykes's Water chapter tabulates a Burton-on-Trent deep well (Type I, very high calcium sulphate, attributed to Brown's Geology and the Mineral Waters of Burton-on-Trent), a Dublin well water (Type II, low sulphate and high carbonate), a chloride-dominated mild-ale water (Type III) and a chalk water, all in grains per imperial gallon. It supports the qualitative typology, the statement that 40-50 grains per gallon of calcium sulphate captures all the useful effect for pale ale, the observation that Dublin liquor was boiled down to 2-3 grains per gallon of solids before mashing, and the earliest water-treatment recipe this project holds (50 grains gypsum, 6 Epsom salt, 10 calcium chloride per gallon to turn a chalk water into a pale-ale liquor).",
+      "doesNotSupport": "Any individual ion figure. The scan is OCR and its table cells are corrupted in places - Dublin's lime reads as \"9379\" and its calcium sulphate as \"SaaS\" - so no number from the tables is transcribed into any record. Only figures that appear in running prose, where the OCR is clean, are used.",
       "accessed": "2026-08-09"
     }
   ]
