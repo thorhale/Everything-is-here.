@@ -802,6 +802,13 @@
    "note": "The international grape variety register, with stable per-variety passport pages. Registered because it was evaluated as a replacement for the dead UC Davis citations and rejected for that purpose: see doesNotSupport. Kept here so the next person does not repeat the investigation."
   },
   {
+   "host": "www.vodarna.cz",
+   "name": "VODÁRNA PLZEŇ a.s.",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The operator of the water infrastructure for the city of Plzeň and surrounding municipalities. Publishes a full monthly analysis for the supply area under vyhláška 252/2004 Sb., including calcium, magnesium, sodium, chloride, sulfate, hardness and acid neutralising capacity, archived by month."
+  },
+  {
    "host": "www.volvic.fr",
    "name": "Volvic (Danone)",
    "kind": "vendor-datasheet",

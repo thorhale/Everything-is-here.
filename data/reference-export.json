@@ -18665,12 +18665,12 @@
    "kind": "classic-city",
    "country": "Czech Republic",
    "region": "Bohemia",
-   "calcium": 7,
-   "magnesium": 2,
-   "sodium": 2,
-   "chloride": 5,
-   "sulfate": 5,
-   "bicarbonate": 3,
+   "calcium": 43.25,
+   "magnesium": 6.65,
+   "sodium": 12.95,
+   "chloride": 19.35,
+   "sulfate": 53.75,
+   "bicarbonate": 91.5,
    "bestForStyles": [
     "Bohemian Pilsner",
     "Czech Lager"
@@ -18680,9 +18680,54 @@
     "very-low-mineral",
     "delicate"
    ],
-   "description": "Astonishingly soft — almost distilled. This near-zero mineral content is what lets Bohemian Pilsner show its delicate Saaz hop and Pilsner malt character without any mineral interference. The template for every soft-water pale lager.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Plzeň's actual municipal water: moderately soft at 7.6 °dH but distinctly sulfate-leaning, 54 mg/L of sulfate against 92 of bicarbonate. This is not the near-distilled liquor the world calls Pilsen water — see the note.",
+   "attribution": "VODÁRNA PLZEŇ a.s., Kvalita pitné vody: Plzeň město a skupinové vodovody — the monthly average published for each month of 2024, twelve reports read in full. Medians across the twelve: calcium 43.25 mg/L (range 41.6-59.7), magnesium 6.65 (5.6-7.11), sodium 12.95 (11.5-17.3), chloride 19.35 (14.7-24.2), sulfate 53.75 (47.2-93.3), and acid neutralising capacity to pH 4.5 of 1.5 mmol/L (1.2-1.71), which is 91.5 mg/L of bicarbonate (73-104). Total hardness 1.35 mmol/L, pH 8.25, conductivity 36.25 mS/m. Two independent checks pass: the utility's own published hardness of 1.35 mmol/L is exactly the sum of its calcium and magnesium in millimoles, and the six ions with the reported potassium and nitrate balance on charge to 0.1%, the tightest figure in this catalogue.",
+   "sourceUrl": "https://www.vodarna.cz/archiv-ukazatelu-kvality-pitne-vody/",
+   "sourceNote": "This is the most important note on any water record here, so read it before using the profile. What this record used to hold — calcium 7, sulfate 5, bicarbonate 3 mg/L — is the near-distilled liquor that the brewing world calls Pilsen water and that the whole pale-lager tradition is explained by. Plzeň's municipal supply is not that water and is not close: six times the calcium, eleven times the sulfate, thirty times the bicarbonate, measured every month of 2024 by the city's own utility. Whatever the classic figures describe — the brewery's own wells, a historic analysis, or a number that has simply been copied between books — this project has no source for them, and would not have found this out by reading the brewing literature. A brewer aiming at the traditional target should use the bohemia-soft profile in this catalogue and treat it as the unsourced style target it is, not as Plzeň's tap. Note also that Vodárna Plzeň supplies the city and a group of surrounding villages under one report, so this is a supply-area average rather than a single works.",
+   "aquifer": {
+    "name": "Úhlava river supply to the Plzeň treatment plant, with the city group water mains",
+    "url": "https://www.vodarna.cz/archiv-ukazatelu-kvality-pitne-vody/",
+    "citation": "VODÁRNA PLZEŇ a.s., monthly Kvalita pitné vody reports for Plzeň město a skupinové vodovody, January to December 2024, published under vyhláška 252/2004 Sb.",
+    "ions": {
+     "calcium": {
+      "n": 12,
+      "min": 41.6,
+      "median": 43.25,
+      "max": 59.7
+     },
+     "magnesium": {
+      "n": 12,
+      "min": 5.6,
+      "median": 6.65,
+      "max": 7.11
+     },
+     "sodium": {
+      "n": 12,
+      "min": 11.5,
+      "median": 12.95,
+      "max": 17.3
+     },
+     "chloride": {
+      "n": 12,
+      "min": 14.7,
+      "median": 19.35,
+      "max": 24.2
+     },
+     "sulfate": {
+      "n": 12,
+      "min": 47.2,
+      "median": 53.75,
+      "max": 93.3
+     },
+     "bicarbonate": {
+      "n": 12,
+      "min": 73,
+      "median": 91.5,
+      "max": 104
+     }
+    },
+    "note": "Twelve consecutive monthly averages, so the range is seasonal rather than spatial. Most parameters are steady — calcium sits between 41.6 and 44 for eleven months — but one month reaches 59.7 calcium and 93.3 sulfate, nearly double the median sulfate, and hardness rises with it to 1.75 mmol/L. Anyone treating Plzeň water to a target should know it can move that far inside a year. Nothing in these reports supports the ultra-soft profile the city is famous for."
+   }
   },
   {
    "id": "london",
