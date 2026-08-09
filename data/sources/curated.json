@@ -234,6 +234,13 @@
    "reliability": "primary"
   },
   {
+   "host": "nora.nerc.ac.uk",
+   "name": "NERC Open Research Archive",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Open repository for the British Geological Survey and the rest of NERC. Hosts the BGS/Environment Agency Baseline series, which measures the natural chemistry of each UK aquifer — the water a brewery well draws, as opposed to what a utility delivers to a tap."
+  },
+  {
    "host": "nzhops.co.nz",
    "name": "New Zealand Hops",
    "kind": "vendor-datasheet",
@@ -1432,6 +1439,45 @@
    "accessed": "2026-08-07",
    "supports": "Per-variety hop brewing values: alpha and beta acid ranges, co-humulone as % of alpha, total oils mL/100 g, and the myrcene, humulene, caryophyllene and farnesene fractions. Fifty-two sheets matching this project's hops were downloaded and parsed; the Amarillo sheet was read against the page directly.",
    "doesNotSupport": "Lot-specific analysis — these are typical ranges and a real bale is certified by its own certificate of analysis. It also does not settle disagreements with other merchants: on five varieties RahrBSG and John I. Haas publish materially different alpha ranges, and neither is authoritative over the other."
+  },
+  {
+   "id": "bgs-or20046-sherwood-sandstone",
+   "url": "https://nora.nerc.ac.uk/id/eprint/529759/1/OR20046.pdf",
+   "title": "Baseline groundwater chemistry: the Sherwood Sandstone aquifer of the East Midlands and South Yorkshire",
+   "authors": [
+    "D. Mallin Martin",
+    "P.L. Smedley"
+   ],
+   "year": 2020,
+   "publisher": "British Geological Survey (Open Report OR/20/046)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-09",
+   "supports": "Measured distributions for calcium, magnesium, sodium, chloride, sulfate and bicarbonate in the Permo-Triassic Sherwood Sandstone, with n, minimum, percentiles and maximum for each. Sulfate runs from under 2 to 1810 mg/L over 211 samples, the gypsum and anhydrite signature that gives Burton's well water its character. Read from the PDF; Table 4.1 extracted by page geometry.",
+   "doesNotSupport": "Burton upon Trent itself. The survey area is the East Midlands and South Yorkshire, and BGS publishes no baseline report for the Trent valley, so this describes the aquifer Burton sits in rather than any Burton borehole. It says nothing about which well any brewery used or how the water changed as they drilled deeper."
+  },
+  {
+   "id": "bgs-cr0369n-chalk-colne-lee",
+   "url": "https://nora.nerc.ac.uk/id/eprint/3571/1/CR03069N_.pdf",
+   "title": "Baseline Report Series 6: The Chalk of the Colne and Lee River Catchments",
+   "authors": [
+    "P. Shand",
+    "R. Tyler-Whittle",
+    "M. Morton",
+    "E. Simpson",
+    "A.R. Lawrence",
+    "J. Pacey",
+    "R. Hargreaves"
+   ],
+   "year": 2003,
+   "publisher": "British Geological Survey CR/03/69N / Environment Agency NC/99/74/6",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-09",
+   "supports": "Measured major-ion statistics for the Chalk of the London Basin, reported separately for the unconfined outcrop and the Chalk confined beneath the London Clay — the latter being what London's brewery wells reached. Minimum, maximum, median, mean, 97.7th percentile and n for each ion.",
+   "doesNotSupport": "Any individual brewery's borehole, and anything about Thames water. It is groundwater chemistry, sampled from monitoring points across two catchments."
   }
  ]
 }

@@ -13,10 +13,32 @@ function ppm(v: number | null): string {
   return v == null ? "—" : `${Math.round(v)} ppm`;
 }
 
+interface Aquifer {
+  name: string;
+  url: string;
+  citation: string;
+  note: string;
+  ions: Partial<Record<IonKey, { n: number; min: number; median: number; max: number }>>;
+}
+
+type IonKey = "calcium" | "magnesium" | "sodium" | "chloride" | "sulfate" | "bicarbonate";
+
+const ION_ROWS: [IonKey, string][] = [
+  ["calcium", "Calcium"],
+  ["magnesium", "Magnesium"],
+  ["sodium", "Sodium"],
+  ["chloride", "Chloride"],
+  ["sulfate", "Sulfate"],
+  ["bicarbonate", "Bicarbonate"],
+];
+
 export default async function WaterDetailPage({ params }: Props) {
   const { id } = await params;
   const w = await getWaterProfile(id);
   if (!w) notFound();
+  // Stored as JSON because the shape is the survey's, not ours: which
+  // percentiles a geological survey publishes varies between reports.
+  const aquifer = (w as { aquifer?: Aquifer | null }).aquifer ?? null;
 
   const ra = residualAlkalinity(w);
   const hardness = totalHardness(w);
@@ -105,6 +127,44 @@ export default async function WaterDetailPage({ params }: Props) {
               </li>
             ))}
           </ul>
+        </>
+      )}
+
+      {aquifer && (
+        <>
+          <h3>The aquifer underneath</h3>
+          <p style={{ fontSize: "0.85rem" }}>{aquifer.note}</p>
+          <table>
+            <thead>
+              <tr>
+                <th style={{ textAlign: "left" }}>Ion</th>
+                <th style={{ textAlign: "right" }}>This profile</th>
+                <th style={{ textAlign: "right" }}>Aquifer median</th>
+                <th style={{ textAlign: "right" }}>Aquifer range</th>
+                <th style={{ textAlign: "right" }}>n</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ION_ROWS.map(([key, label]) => {
+                const a = aquifer.ions[key];
+                if (!a) return null;
+                const mine = w[key];
+                return (
+                  <tr key={key}>
+                    <th style={{ textAlign: "left" }}>{label}</th>
+                    <td style={{ textAlign: "right" }}>{mine ?? "—"}</td>
+                    <td style={{ textAlign: "right" }}>{a.median}</td>
+                    <td style={{ textAlign: "right" }}>{a.min}–{a.max}</td>
+                    <td style={{ textAlign: "right" }}>{a.n}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)" }}>
+            {aquifer.citation}{" "}
+            <a href={aquifer.url} target="_blank" rel="noreferrer">Report</a>. All figures mg/L.
+          </p>
         </>
       )}
 

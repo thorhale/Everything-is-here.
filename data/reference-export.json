@@ -18432,7 +18432,63 @@
    ],
    "description": "The most famous brewing water on earth. Enormously high sulfate from the local gypsum accentuates hop bitterness into a crisp, dry, minerally snap — the 'Burton snap' — and made the town the historic capital of pale ale. So influential that adding gypsum to liquor is still called 'Burtonisation'.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been.",
+   "aquifer": {
+    "name": "Sherwood Sandstone (Permo-Triassic), East Midlands and South Yorkshire",
+    "url": "https://nora.nerc.ac.uk/id/eprint/529759/1/OR20046.pdf",
+    "citation": "Mallin Martin, D. and Smedley, P.L. 2020. Baseline groundwater chemistry: the Sherwood Sandstone aquifer of the East Midlands and South Yorkshire. British Geological Survey Open Report OR/20/046.",
+    "ions": {
+     "calcium": {
+      "n": 62,
+      "min": 13.3,
+      "p5": 23.6,
+      "median": 69.7,
+      "p95": 248,
+      "max": 579
+     },
+     "magnesium": {
+      "n": 62,
+      "min": 4.51,
+      "p5": 13.4,
+      "median": 31.5,
+      "p95": 70.6,
+      "max": 161
+     },
+     "sodium": {
+      "n": 62,
+      "min": 2.76,
+      "p5": 4.66,
+      "median": 14.7,
+      "p95": 164,
+      "max": 391
+     },
+     "chloride": {
+      "n": 206,
+      "min": 4,
+      "p5": 10,
+      "median": 46,
+      "p95": 296,
+      "max": 471
+     },
+     "sulfate": {
+      "n": 211,
+      "min": 2,
+      "p5": 2.8,
+      "median": 93.2,
+      "p95": 963,
+      "max": 1810
+     },
+     "bicarbonate": {
+      "n": 225,
+      "min": 6.1,
+      "p5": 84.1,
+      "median": 217,
+      "p95": 524,
+      "max": 798
+     }
+    },
+    "note": "Burton's brewers sank wells into this sandstone, not into a town main, and the gypsum and anhydrite in it are where the sulfate comes from. The survey covers the East Midlands and South Yorkshire rather than Burton itself — BGS has no baseline report for the Trent valley — so it describes the aquifer Burton sits in, not Burton's boreholes. The classic 610 mg/L sulfate falls between this survey's 90th and 95th percentile, and 275 mg/L calcium near its 95th: high, but comfortably inside the rock's own range. Burton's brewers also moved. The early wells were shallow and close to the river; as the Trent grew filthy they drilled deeper and further out and found water several times richer in gypsum, so 'Burton water' is a moving target even within the town."
+   }
   },
   {
    "id": "dublin",
@@ -18538,7 +18594,63 @@
    ],
    "description": "Moderately hard and moderately alkaline, with chloride edging out sulfate for a rounder, maltier balance — well suited to the porters, milds, and browns that defined London brewing.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been.",
+   "aquifer": {
+    "name": "Chalk of the Colne and Lee catchments, confined beneath the London Basin",
+    "url": "https://nora.nerc.ac.uk/id/eprint/3571/1/CR03069N_.pdf",
+    "citation": "Shand, P., Tyler-Whittle, R., Morton, M., Simpson, E., Lawrence, A.R., Pacey, J. and Hargreaves, R. 2003. Baseline Report Series 6: The Chalk of the Colne and Lee River Catchments. British Geological Survey Commissioned Report CR/03/69N / Environment Agency NC/99/74/6.",
+    "ions": {
+     "calcium": {
+      "n": 21,
+      "min": 17,
+      "median": 93.2,
+      "mean": 88,
+      "p977": 169,
+      "max": 204
+     },
+     "magnesium": {
+      "n": 21,
+      "min": 3.9,
+      "median": 24,
+      "mean": 27.8,
+      "p977": 82.7,
+      "max": 113
+     },
+     "sodium": {
+      "n": 21,
+      "min": 8,
+      "median": 83,
+      "mean": 115,
+      "p977": 460,
+      "max": 589
+     },
+     "chloride": {
+      "n": 21,
+      "min": 14,
+      "median": 40,
+      "mean": 119,
+      "p977": 764,
+      "max": 1250
+     },
+     "sulfate": {
+      "n": 21,
+      "min": 5,
+      "median": 102,
+      "mean": 155,
+      "p977": 525,
+      "max": 562
+     },
+     "bicarbonate": {
+      "n": 21,
+      "min": 256,
+      "median": 323,
+      "mean": 325,
+      "p977": 442,
+      "max": 447
+     }
+    },
+    "note": "London's brewers drilled through the London Clay into the Chalk beneath, so the confined Chalk is the relevant population, not the unconfined outcrop and not the Thames. The figures above are BGS's confined-Chalk statistics; its unconfined Chalk is a different water again, at 125 mg/L calcium, 2.3 magnesium and 22 sulfate. The stored profile's 125 mg/L bicarbonate is the figure to distrust: the Chalk is a carbonate aquifer and BGS finds 256 mg/L at its minimum across both populations, with a confined median of 323."
+   }
   },
   {
    "id": "dortmund",

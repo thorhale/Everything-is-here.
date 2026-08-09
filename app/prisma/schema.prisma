@@ -551,6 +551,10 @@ model WaterProfile {
   // presents a midpoint as if it were a measurement.
   variable    Boolean @default(false)
   ionRanges   Json?
+  // The measured baseline chemistry of the aquifer a historic brewery's well
+  // drew from, with the survey's own percentiles. Says where the classic
+  // profile sits in the rock's range instead of implying it is the only value.
+  aquifer     Json?
 
   description  String?
   bestForStyles String[] @default([])
