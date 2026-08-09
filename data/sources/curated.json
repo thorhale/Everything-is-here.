@@ -466,6 +466,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.denverwater.org",
+   "name": "Denver Water (municipal water utility)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Denver's municipal water utility. Publishes annual water quality reports and, separately, a mineral analysis prepared for home brewers giving calcium, magnesium, sodium, chloride, sulfate and alkalinity as ranges and averages for each of its two treated-water systems, measured at treatment plant effluent."
+  },
+  {
    "host": "www.dingemansmout.be",
    "name": "Dingemans Mout",
    "kind": "vendor-datasheet",
@@ -652,6 +659,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.portland.gov",
+   "name": "Portland Water Bureau",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Portland, Oregon's municipal water utility. Publishes water quality characteristics for Bull Run surface water, the Columbia South Shore well field and the blend of the two, but reports alkalinity and hardness rather than individual ions."
+  },
+  {
    "host": "www.postconsumerbrands.com",
    "name": "Post Consumer Brands (nutrition labelling)",
    "kind": "nutrition-label",
@@ -676,6 +690,13 @@
    "kind": "vendor-datasheet",
    "reliability": "primary",
    "note": "Cited for the annual S.Pellegrino Water Analysis Report published by Nestle USA — a full certified-laboratory panel published to satisfy the California bottled-water disclosure law, not a marketing page."
+  },
+  {
+   "host": "www.sfpuc.gov",
+   "name": "San Francisco Public Utilities Commission",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility for San Francisco's water system. Its annual water quality report carries a non-regulated parameters table with the full mineral panel - calcium, magnesium, sodium, chloride, sulfate, alkalinity, hardness and silica - as ranges and averages for each service area."
   },
   {
    "host": "www.simpsonsmalt.co.uk",

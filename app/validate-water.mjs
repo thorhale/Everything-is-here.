@@ -163,7 +163,14 @@ for (const kind of [...new Set(rows.map((r) => r.kind))]) {
   const group = rows.filter((r) => r.kind === kind);
   console.log(`\n${kind}${group[0].enforced ? " (enforced)" : " (reported only)"}`);
   for (const r of group.sort((a, b) => b.errPct - a.errPct)) {
-    const flag = r.errPct > r.limit ? (r.enforced ? " FAIL" : " cation-heavy") : "";
+    // The direction has to be computed, not assumed. This printed a hardcoded
+    // "cation-heavy" for years because every reported profile happened to be
+    // one — they list only the six brewing ions, so the missing potassium and
+    // nitrate always fell on the cation side. Portland is the first profile to
+    // go the other way, and a label that cannot be wrong is a label that tells
+    // you nothing.
+    const dir = r.cat > r.an ? " cation-heavy" : " anion-heavy";
+    const flag = r.errPct > r.limit ? (r.enforced ? " FAIL" : dir) : "";
     const tag = r.variable ? " [range]" : "";
     console.log(
       `  ${r.id.padEnd(width)}  cations ${r.cat.toFixed(2).padStart(7)} meq  ` +

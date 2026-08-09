@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 353,
+    "distinctSources": 355,
     "backgroundDocuments": 13,
-    "citations": 680,
-    "numericCitations": 565,
+    "citations": 682,
+    "numericCitations": 567,
     "numericOnShallowLink": 67,
     "numericOnTertiary": 0,
     "fullTextVerified": 32,
     "backgroundFullTextVerified": 10,
     "byReliability": {
-      "primary": 647,
+      "primary": 649,
       "secondary": 27,
       "tertiary": 6
     }
@@ -7112,6 +7112,56 @@
       ],
       "exampleRecords": [
         "bamberg"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.denverwater.org/your-water/water-quality/brewing-beer-home",
+      "host": "www.denverwater.org",
+      "title": null,
+      "publisher": "Denver Water (municipal water utility)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Denver's municipal water utility. Publishes annual water quality reports and, separately, a mineral analysis prepared for home brewers giving calcium, magnesium, sodium, chloride, sulfate and alkalinity as ranges and averages for each of its two treated-water systems, measured at treatment plant effluent.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "denver"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.sfpuc.gov/sites/default/files/accounts-and-services/water-quality/water-quality-en-SF-2025.pdf",
+      "host": "www.sfpuc.gov",
+      "title": null,
+      "publisher": "San Francisco Public Utilities Commission",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The utility for San Francisco's water system. Its annual water quality report carries a non-regulated parameters table with the full mineral panel - calcium, magnesium, sodium, chloride, sulfate, alkalinity, hardness and silica - as ranges and averages for each service area.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "san-francisco"
       ]
     },
     {

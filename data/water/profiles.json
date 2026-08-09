@@ -918,7 +918,7 @@
    "sodium": 6,
    "chloride": 5,
    "sulfate": 3,
-   "bicarbonate": 9,
+   "bicarbonate": 35,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -927,9 +927,16 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Bull Run reservoir water is extraordinarily soft — nearly as clean as Pilsen. A blank slate the Oregon craft scene builds up for any style.",
+   "description": "Bull Run reservoir water is extraordinarily soft, but it is not mineral-free at the tap: the Water Bureau raises pH for corrosion control and the delivered alkalinity is 29 mg/L as CaCO3. A near-blank slate the Oregon craft scene builds up for any style.",
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Still no source for five of the six ions. The Portland Water Bureau publishes water quality characteristics for 100% Bull Run, a 65/35 Bull Run and groundwater blend, and 100% groundwater, but it publishes them as pH, conductance, TDS, silica, total organic carbon, total alkalinity and hardness - not as individual cations and anions. What that does settle is the most important figure on the record. Bull Run's total alkalinity is 29 mg/L as CaCO3 at pH 8.8, which is 35 mg/L of bicarbonate, and this record had 9. That is the ion that sets residual alkalinity, so a fourfold error in it misdirects every acid addition built on this profile. Hardness of 7 mg/L as CaCO3 is consistent with the stored calcium of 2 and magnesium of 1, which together compute to 9, so those two are at least not contradicted. Calcium, magnesium, sodium, chloride and sulfate individually remain uncited, and the stored ions total 26 mg/L against a published TDS of 60, so something is missing from them. Correcting that one ion then exposes the rest. With bicarbonate at 35 the profile is 0.44 milliequivalents of cations against 0.78 of anions - 55% anion-heavy, and the only profile in this catalogue that leans that way, because every other one is short of the potassium and nitrate that fall on the cation side. Roughly 0.33 meq of cations are missing, about 8 mg/L more sodium than the 6 stored here. The Water Bureau raises pH with a caustic addition for corrosion control, which would put sodium there, but the Bureau does not publish the figure and this project will not put a number on it. The imbalance is left visible rather than papered over: it is the evidence that these five ions still need a source.",
+   "aquifer": {
+    "name": "Bull Run watershed surface water, blended with the Columbia South Shore Well Field",
+    "url": "https://www.portland.gov/water/drinking-water-quality/about-drinking-water-quality/test-results",
+    "citation": "Portland Water Bureau, Water Quality Test Results: characteristics of 100% Bull Run water, a 65/35 Bull Run and groundwater blend, and 100% groundwater.",
+    "ions": {},
+    "note": "Portland is two waters, and which one comes out of the tap depends on the season. Bull Run is the default: pH 8.8, total alkalinity 29 mg/L as CaCO3, hardness 7, TDS 60, conductance 65 microsiemens per centimetre, silica 3.8 as Si. The Columbia South Shore Well Field takes over when demand is high or the reservoir is turbid, and it is a different water at every parameter: pH 8.2, alkalinity 91 as CaCO3, hardness 68, TDS 125, conductance 166, silica 19. The 65/35 blend the Bureau also tabulates sits between them at alkalinity 50.7 and hardness 28.1. So a Portland brewer's alkalinity can triple between a wet spring and a dry September without anything changing at their end. The Bureau does not publish individual cations and anions for any of the three, which is why this record is still declared unsourced."
+   }
   },
   {
    "id": "denver",
@@ -937,12 +944,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "Colorado",
-   "calcium": 30,
+   "calcium": 32,
    "magnesium": 8,
-   "sodium": 25,
-   "chloride": 20,
-   "sulfate": 50,
-   "bicarbonate": 90,
+   "sodium": 24,
+   "chloride": 25,
+   "sulfate": 66,
+   "bicarbonate": 83,
    "bestForStyles": [
     "Amber Ale",
     "Pale Ale"
@@ -951,9 +958,10 @@
     "soft-moderate",
     "modern-craft"
    ],
-   "description": "Soft-to-moderate Rocky Mountain snowmelt; a flexible, lightly mineralised base used across Colorado's large craft scene.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "description": "Moderately mineralised Rocky Mountain snowmelt with more sulfate than anything else — 66 mg/L against 83 of bicarbonate, which is why Colorado pale ales sit so comfortably on the untreated tap.",
+   "attribution": "Denver Water publishes a mineral analysis specifically for brewers, taken from treatment plant effluent in 2025. This record carries their South System: calcium 32 (range 27-37), magnesium 8 (6-10), sodium 24 (18-30), chloride 25 (17-35), sulfate 66 (53-76) and total alkalinity 68 mg/L as CaCO3 (42-84), which is 83 mg/L of bicarbonate at the factor of 1.2194. Specific conductance averages 351 microsiemens per centimetre and TDS 200 mg/L. The stored figures were already close - calcium 30 against 32, magnesium exactly right - with sulfate the real correction, at 50 against a measured 66, which understated the hop-forward bias of the water by a third.",
+   "sourceUrl": "https://www.denverwater.org/your-water/water-quality/brewing-beer-home",
+   "sourceNote": "Denver has two treated-water systems and they are not the same water. The North System, which this record does not carry, runs calcium 18, magnesium 2, sodium 12, chloride 6, sulfate 20 and alkalinity 52 as CaCO3 - a third of the South System's sulfate and half its conductance. A Denver brewer needs to know which one their tap is on before treating from this profile. Denver Water also raised the pH of delivered water in March 2020 as part of its lead reduction programme, so the alkalinity here is partly a treatment decision rather than the watershed."
   },
   {
    "id": "target-yellow-balanced",
@@ -1206,12 +1214,12 @@
    "kind": "classic-city",
    "country": "United States",
    "region": "California",
-   "calcium": 8,
-   "magnesium": 2,
-   "sodium": 10,
-   "chloride": 8,
-   "sulfate": 5,
-   "bicarbonate": 20,
+   "calcium": 16,
+   "magnesium": 5.9,
+   "sodium": 18,
+   "chloride": 10,
+   "sulfate": 16,
+   "bicarbonate": 78,
    "bestForStyles": [
     "California Common",
     "Steam Beer"
@@ -1220,10 +1228,11 @@
     "very-soft",
     "clean"
    ],
-   "description": "Fed by the pristine Hetch Hetchy reservoir in the Sierra Nevada, San Francisco's water is exceptionally soft — near-distilled. That blank canvas is why Anchor Steam's toasty malt and woody Northern Brewer hops read so cleanly. Add whatever minerals the recipe wants; the base gets in the way of nothing.",
+   "description": "Soft Sierra water, but not the blank slate it is usually described as: the city system blends Hetch Hetchy with treated Bay Area supplies and averages 78 mg/L of bicarbonate, enough alkalinity to matter in a pale mash.",
    "sortOrder": 41,
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "San Francisco Public Utilities Commission, City of San Francisco 2025 Annual Water Quality Report, the San Francisco system table: calcium 16 mg/L (range 3.1-29), magnesium 5.9 (0.2-10), sodium 18 (3.1-29), chloride 10 (<3-19), sulfate 16 (1-45) and alkalinity 64 mg/L as CaCO3 (8-131), which is 78 mg/L of bicarbonate. Hardness averages 62 as CaCO3, and calcium and magnesium account for 64 of that, so the panel is internally consistent. This is a large correction to a record that claimed near-distilled water: bicarbonate was stored at 20 against a measured 78, sulfate at 5 against 16, calcium at 8 against 16. The old figures describe pure Hetch Hetchy; the tap is a blend.",
+   "sourceUrl": "https://www.sfpuc.gov/sites/default/files/accounts-and-services/water-quality/water-quality-en-SF-2025.pdf",
+   "sourceNote": "The wide ranges are the point. SFPUC blends unfiltered Hetch Hetchy, which is very soft, with filtered water from the Sunol Valley and Harry Tracy plants, which is not, and the mix at any address varies through the year - calcium runs 3.1 to 29 mg/L across the reporting period. The averages above are what the system delivers on average, not what any one tap delivers on a given day. Note also the pH: SFPUC reports an average of 9.3 for corrosion control, well above anything a brewer would recognise, and the alkalinity partly follows from that treatment. The stored ions are 8.8% cation-heavy on a charge balance, a little outside this project's 8% bar for a single analysis, which is what averaging ranges that wide will do; potassium and silica are not carried in this schema."
   },
   {
    "id": "jever-frisia",
