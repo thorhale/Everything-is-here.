@@ -415,7 +415,8 @@
    ],
    "description": "Coarsely cracked field corn — the base of bourbon and corn whiskey mashes (bourbon requires ≥51% corn).",
    "usageNotes": "Cook to gelatinise, then convert with malted barley or exogenous enzymes.",
-   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source."
+   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source.",
+   "unsourced": true
   },
   {
    "id": "adjunct-quinoa",

@@ -424,8 +424,14 @@ model Fermentable {
   // See YeastStrain.withdrawnSourceUrl.
   sourceUrl          String?
   withdrawnSourceUrl String?
-  attribution        String?
-  sortOrder          Int     @default(0)
+  // What the cited document does NOT support. A fruit's sugar comes from USDA;
+  // its Brix, acidity and pH do not, and one sourceUrl cannot say so on its own.
+  sourceNote  String?
+  // No citation at all, declared rather than implied. Counted by
+  // validate-sources against a ratchet so it can only ever go down.
+  unsourced   Boolean @default(false)
+  attribution String?
+  sortOrder   Int     @default(0)
 
   @@index([category])
   @@index([name])

@@ -511,7 +511,8 @@
    ],
    "description": "Flavouring, not a fermentable — contributes essentially no gravity. The clean way to get chocolate without cookie fat.",
    "usageNotes": "Typical: 2–4 oz per 5 gal in secondary, optionally soaked in neutral spirit.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Nibs do carry carbohydrate, but almost none of it is fermentable, and they are used at flavouring rates."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Nibs do carry carbohydrate, but almost none of it is fermentable, and they are used at flavouring rates.",
+   "unsourced": true
   },
   {
    "id": "flavor-vanilla-bean",
@@ -534,7 +535,8 @@
    ],
    "description": "Pure flavouring with no fermentable content; the honest way to add the sweetness people wrongly expect from marshmallows.",
    "usageNotes": "1–3 beans per 5 gal, split and soaked in vodka, added at packaging.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. A pod or two per batch: any extract it contributes is below the resolution of a hydrometer."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. A pod or two per batch: any extract it contributes is below the resolution of a hydrometer.",
+   "unsourced": true
   },
   {
    "id": "flavor-coffee",
@@ -554,7 +556,8 @@
     "stout"
    ],
    "description": "No fermentable sugar. Cold-brew added at packaging keeps the aroma and avoids the harsh tannins hot extraction pulls.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Brewed coffee is USDA-measured at 0.0 g carbohydrate per 100 g, and cold brew added to beer moves gravity by nothing measurable."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Brewed coffee is USDA-measured at 0.0 g carbohydrate per 100 g, and cold brew added to beer moves gravity by nothing measurable.",
+   "unsourced": true
   }
  ]
 }

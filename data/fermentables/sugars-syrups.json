@@ -64,7 +64,8 @@
    ],
    "description": "Glucose monohydrate — the water of crystallisation is why it is 42 PPG rather than 46. The standard priming sugar.",
    "usageNotes": "Yeast take it first and fastest; completely neutral in flavour.",
-   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it."
+   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it.",
+   "unsourced": true
   },
   {
    "id": "sugar-turbinado",
@@ -239,7 +240,8 @@
    "description": "Boiled-down coconut palm flower sap, a staple sweetener across Thailand and Southeast Asia. Mostly sucrose with a small inulin fraction (hence a touch of fibre and slightly under 100% fermentability).",
    "flavorNotes": "Butterscotch, caramel, faint smoke and nuttiness.",
    "usageNotes": "Sold as hard discs or soft paste; dissolve in hot wort. Adds an aromatic depth plain sugar cannot.",
-   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything."
+   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-jaggery",
@@ -391,7 +393,8 @@
     "mineral"
    ],
    "description": "The final, most concentrated molasses extraction — bitter, salty, intensely mineral. A tiny addition dominates.",
-   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything."
+   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-honey",
@@ -523,7 +526,8 @@
     "caramel"
    ],
    "description": "Partially inverted cane syrup; a traditional English brewing sugar for milds and old ales.",
-   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything."
+   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-date-syrup",
@@ -546,7 +550,8 @@
     "dark-fruit"
    ],
    "description": "Boiled date extract used across the Middle East; rich dried-fruit sweetness suited to dark strong ales.",
-   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything."
+   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-lactose",

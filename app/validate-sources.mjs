@@ -74,6 +74,9 @@ function eachRecord(dir, fn) {
     const path = join(dir, entry);
     if (statSync(path).isDirectory()) { eachRecord(path, fn); continue; }
     if (!entry.endsWith(".json")) continue;
+    // reference-export.json is generated from everything else; auditing it
+    // reports every finding twice and blames the wrong file for it.
+    if (entry === "reference-export.json") continue;
     let doc;
     try { doc = JSON.parse(readFileSync(path, "utf8")); } catch { continue; }
     for (const value of Object.values(doc)) {
@@ -84,12 +87,35 @@ function eachRecord(dir, fn) {
     }
   }
 }
+// --- Hard rule 5: a record with numbers and no citation must SAY so. -------
+//
+// The failure this catches is the quiet one. A record can lose its citation in
+// a repair pass and keep its numbers, and nothing downstream notices — the page
+// still renders, the calculator still runs, and a figure resting on nothing
+// looks exactly like a figure resting on a datasheet. Declaring it costs one
+// boolean and turns an invisible problem into a counted one.
+const NUMERIC_FIELDS = ["ppg","colorLovibond","sugarGPer100g","juiceBrix","alphaMin","totalOilMin",
+  "titratableAcidityGPerL","phTypical","doseMinGPerL","effectPerGramPerLitre","calcium","attenuationMin"];
+let unsourced = 0;
 eachRecord(DATA, (r, file) => {
   if (r.withdrawnSourceUrl && r.sourceUrl) {
     hard.push(`${file}:${r.id} has both sourceUrl and withdrawnSourceUrl — cite the live one only.`);
   }
   if (r.withdrawnSourceUrl && !r.attribution) {
     hard.push(`${file}:${r.id} records a withdrawn source but never says what happened to it.`);
+  }
+  if (r.unsourced) {
+    unsourced++;
+    if (r.sourceUrl) hard.push(`${file}:${r.id} is flagged unsourced but carries a sourceUrl.`);
+    if (!r.attribution) hard.push(`${file}:${r.id} is flagged unsourced and does not say why.`);
+    return;
+  }
+  const carries = NUMERIC_FIELDS.some((f) => r[f] != null);
+  if (carries && !r.sourceUrl && !r.withdrawnSourceUrl) {
+    hard.push(
+      `${file}:${r.id} carries numbers with no sourceUrl, no withdrawnSourceUrl and no "unsourced": true. ` +
+        `Cite it, record the withdrawn URL, or declare it.`
+    );
   }
 });
 
@@ -130,6 +156,19 @@ if (hard.length) {
   console.log("");
 }
 
+const unsourcedBudget = budget.unsourcedRecords ?? unsourced; // first run sets the baseline
+console.log(`DECLARED UNSOURCED: ${unsourced} record(s) carry numbers with no citation at all`);
+console.log(`  budget:      ${unsourcedBudget}`);
+if (unsourced > unsourcedBudget) {
+  failed = true;
+  console.error(`  REGRESSED by ${unsourced - unsourcedBudget}. A new record must arrive with a source.`);
+} else if (unsourced < unsourcedBudget) {
+  console.log(`  improved by ${unsourcedBudget - unsourced} — ratcheting down.`);
+} else {
+  console.log("  holding at budget.");
+}
+console.log("");
+
 console.log(`BUDGETED DEBT: ${shallowNumeric} numeric claims cite a publisher homepage`);
 console.log(`  budget:      ${budget.numericOnShallowLink}`);
 if (shallowNumeric > budget.numericOnShallowLink) {
@@ -153,10 +192,12 @@ console.log("");
 // budget on the spot: the number can only ever fall, and a later regression
 // fails against the better figure rather than the old one. --no-update-budget
 // opts out when a purely read-only check is wanted (CI on a pull request, say).
-const improved = shallowNumeric < budget.numericOnShallowLink;
+const improved =
+  shallowNumeric < budget.numericOnShallowLink || unsourced < unsourcedBudget;
 const mayUpdate =
   !hard.length &&
   shallowNumeric <= budget.numericOnShallowLink &&
+  unsourced <= unsourcedBudget &&
   !process.argv.includes("--no-update-budget") &&
   (improved || process.argv.includes("--update-budget"));
 
@@ -166,11 +207,14 @@ if (mayUpdate) {
     JSON.stringify(
       {
         numericOnShallowLink: shallowNumeric,
+        unsourcedRecords: unsourced,
         note:
-          "Ratchet baseline for numeric claims citing a publisher homepage rather than a specific document. " +
-          "May only ever be lowered. Lower it by replacing homepage citations with deep links to the datasheet, " +
-          "standard or record the figure actually came from. validate-sources.mjs lowers this " +
-          "automatically whenever the count improves, so the ratchet cannot be forgotten.",
+          "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims " +
+          "citing a publisher homepage rather than the specific document the figure came from; lower it by " +
+          "finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that " +
+          "their numbers currently rest on no citation at all; lower it by sourcing them or by removing the " +
+          "numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be " +
+          "forgotten, and fails the build if either rises.",
         updated: new Date().toISOString().slice(0, 10),
       },
       null,

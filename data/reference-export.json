@@ -3839,7 +3839,8 @@
    ],
    "description": "Coarsely cracked field corn — the base of bourbon and corn whiskey mashes (bourbon requires ≥51% corn).",
    "usageNotes": "Cook to gelatinise, then convert with malted barley or exogenous enzymes.",
-   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source."
+   "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source.",
+   "unsourced": true
   },
   {
    "id": "adjunct-quinoa",
@@ -4482,7 +4483,8 @@
    ],
    "description": "Flavouring, not a fermentable — contributes essentially no gravity. The clean way to get chocolate without cookie fat.",
    "usageNotes": "Typical: 2–4 oz per 5 gal in secondary, optionally soaked in neutral spirit.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Nibs do carry carbohydrate, but almost none of it is fermentable, and they are used at flavouring rates."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Nibs do carry carbohydrate, but almost none of it is fermentable, and they are used at flavouring rates.",
+   "unsourced": true
   },
   {
    "id": "flavor-vanilla-bean",
@@ -4505,7 +4507,8 @@
    ],
    "description": "Pure flavouring with no fermentable content; the honest way to add the sweetness people wrongly expect from marshmallows.",
    "usageNotes": "1–3 beans per 5 gal, split and soaked in vodka, added at packaging.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. A pod or two per batch: any extract it contributes is below the resolution of a hydrometer."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. A pod or two per batch: any extract it contributes is below the resolution of a hydrometer.",
+   "unsourced": true
   },
   {
    "id": "flavor-coffee",
@@ -4525,7 +4528,8 @@
     "stout"
    ],
    "description": "No fermentable sugar. Cold-brew added at packaging keeps the aroma and avoids the harsh tannins hot extraction pulls.",
-   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Brewed coffee is USDA-measured at 0.0 g carbohydrate per 100 g, and cold brew added to beer moves gravity by nothing measurable."
+   "attribution": "Contributes no fermentable extract, and the zero is a modelling choice rather than a measurement — it is here so the ingredient can be added to a recipe without moving the gravity. This record used to cite USDA FoodData Central for that zero, which USDA never published; the citation is removed rather than left standing behind a number it did not supply. Brewed coffee is USDA-measured at 0.0 g carbohydrate per 100 g, and cold brew added to beer moves gravity by nothing measurable.",
+   "unsourced": true
   },
   {
    "id": "fruit-apple",
@@ -4537,7 +4541,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.78,
+   "ppg": 4.6,
    "ppgMin": 4.14,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -4545,7 +4549,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 9,
-   "sugarGPer100g": 10.4,
+   "sugarGPer100g": 10,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -4569,9 +4573,10 @@
    ],
    "description": "Standard eating apple. Low tannin and moderate acid, so on its own it makes a light, simple cider that benefits from blending.",
    "usageNotes": "Pectin haze is near-certain without pectic enzyme. Supermarket juice is usually this profile.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168202",
    "sortOrder": 0,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apples, raw, golden delicious, with skin (SR Legacy, FDC ID 168202), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA publishes apples by cultivar rather than as a dessert-apple class; Golden Delicious is one of this record's own listed aliases.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-apple-bittersweet",
@@ -4614,9 +4619,9 @@
    ],
    "description": "True cider apples: high tannin, low acid, largely inedible fresh. The soft-tannin backbone of West Country and Normandy cider.",
    "usageNotes": "Low acid means a blend with sharps is usually needed to get pH under 3.8. Low nitrogen — these are the varieties that keeve.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 1,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes apples by supermarket cultivar; bittersweet cider apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
+   "unsourced": true
   },
   {
    "id": "fruit-apple-bittersharp",
@@ -4658,9 +4663,9 @@
    ],
    "description": "The rare varieties carrying both acid and tannin — the ones that can make a complete single-varietal cider.",
    "usageNotes": "Kingston Black is the classic vintage-quality apple; it also ferments notoriously unreliably.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 2,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes apples by supermarket cultivar; bittersharp cider apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
+   "unsourced": true
   },
   {
    "id": "fruit-apple-sharp",
@@ -4702,9 +4707,9 @@
    ],
    "description": "Cooking apples. High malic acid, negligible tannin — a blending component that props up the pH of a bittersweet-heavy blend.",
    "usageNotes": "Useful for correcting a flabby low-acid must without reaching for the acid packet.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 3,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes apples by supermarket cultivar; sharp culinary apples are a different fruit for brewing purposes and their chemistry is in the cider literature.",
+   "unsourced": true
   },
   {
    "id": "fruit-crabapple",
@@ -4746,9 +4751,9 @@
    ],
    "description": "Wild or ornamental apple: small, fiercely acidic and astringent, and much higher in pectin than a dessert apple.",
    "usageNotes": "A little goes a long way as a tannin and acid correction. Expect a hard, slow press.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 4,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes crabapples but gives no sugar figure for them, only total carbohydrate, and this record's numbers are about sugar. Cider crabapple chemistry is in the cider literature rather than a food-composition table.",
+   "unsourced": true
   },
   {
    "id": "fruit-pear",
@@ -4760,7 +4765,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.51,
+   "ppg": 4.49,
    "ppgMin": 3.68,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -4768,7 +4773,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.8,
+   "sugarGPer100g": 9.75,
    "sugarGPer100gMax": 13,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -4791,9 +4796,10 @@
    ],
    "description": "Eating pear. Contains sorbitol, which yeast cannot ferment — so a pear ferment finishes dry on paper and still tastes sweet.",
    "usageNotes": "The Williams pear is the basis of Poire Williams eau-de-vie. High pH: acidify toward 3.5 before pitching.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169118",
    "sortOrder": 5,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pears, raw (SR Legacy, FDC ID 169118), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-perry-pear",
@@ -4836,9 +4842,9 @@
    ],
    "description": "Traditional perry pears — high tannin, high sorbitol, and often high citric acid, which invites lactic spoilage that apple rarely sees.",
    "usageNotes": "Mill and leave the pomace to stand before pressing; unlike apple, fresh-milled perry pear presses poorly.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 6,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes dessert pears; perry pears are a distinct group, high in tannin and sorbitol, and their chemistry is in the perry literature.",
+   "unsourced": true
   },
   {
    "id": "fruit-quince",
@@ -4877,9 +4883,9 @@
    ],
    "description": "Hard, aromatic and inedible raw. Enormous pectin load and a perfume that survives fermentation better than most fruit.",
    "usageNotes": "The highest-pectin fruit here — pectic enzyme is mandatory, and a fruit brandy from quince needs careful methanol cuts.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 7,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's quince entry publishes carbohydrate but no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-peach",
@@ -4895,7 +4901,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.4,
+   "sugarGPer100g": 8.39,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -4919,9 +4925,10 @@
    ],
    "description": "Delicate and easily lost. Most of what reads as peach in a finished beer or wine comes from yeast esters, not fruit.",
    "usageNotes": "Add late and generously — 1–2 kg per 20 L is not excessive. Freeze and thaw first to break down cell walls.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169928",
    "sortOrder": 8,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Peaches, yellow, raw (SR Legacy, FDC ID 169928), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-nectarine",
@@ -4937,7 +4944,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 7.9,
+   "sugarGPer100g": 7.89,
    "sugarGPer100gMax": 11,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -4960,9 +4967,10 @@
    ],
    "description": "A fuzzless peach, and effectively interchangeable with one in the fermenter.",
    "usageNotes": "Same handling as peach: freeze, thaw, add post-primary.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169914",
    "sortOrder": 9,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Nectarines, raw (SR Legacy, FDC ID 169914), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-apricot",
@@ -4970,7 +4978,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.23,
+   "ppg": 4.25,
    "ppgMin": 3.22,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -4978,7 +4986,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.2,
+   "sugarGPer100g": 9.24,
    "sugarGPer100gMax": 13,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -5001,9 +5009,10 @@
    ],
    "description": "Much more acidic than peach and with a firmer aromatic signature that survives fermentation.",
    "usageNotes": "Kernels contain amygdalin — do not crush the stones into the must in quantity.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171697",
    "sortOrder": 10,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apricots, raw (SR Legacy, FDC ID 171697), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-plum",
@@ -5014,7 +5023,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 4.56,
    "ppgMin": 3.68,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -5022,7 +5031,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 9.92,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -5045,9 +5054,10 @@
    ],
    "description": "The base of slivovitz and quetsch. Skins carry real tannin and colour, and the sugar runs high in a good year.",
    "usageNotes": "Ferment on the skins for colour. Destone before fermentation for spirit washes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169949",
    "sortOrder": 11,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Plums, raw (SR Legacy, FDC ID 169949), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-damson",
@@ -5089,9 +5099,9 @@
    ],
    "description": "A small, astringent, intensely coloured plum. Too sharp to eat, excellent in a ferment.",
    "usageNotes": "Pairs well with a sweeter base — damson alone will finish austere.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 12,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes plums as one entry and damsons are a distinct, far more acidic fruit.",
+   "unsourced": true
   },
   {
    "id": "fruit-cherry-sweet",
@@ -5133,9 +5143,10 @@
    ],
    "description": "Dessert cherry — plenty of sugar, not much acid, and a pH high enough to need watching.",
    "usageNotes": "Less suited to kriek than the tart types; the acid balance ends up flat.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171719",
    "sortOrder": 13,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cherries, sweet, raw (SR Legacy, FDC ID 171719), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-cherry-tart",
@@ -5155,7 +5166,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.5,
+   "sugarGPer100g": 8.49,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 12,
    "juiceBrix": 14,
@@ -5179,9 +5190,10 @@
    ],
    "description": "The kriek cherry. Low sugar, high acid, and stone-and-skin tannin that gives a lambic its grip.",
    "usageNotes": "Traditional kriek uses whole cherries with stones, macerated for months — the stones contribute a faint almond note.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173954",
    "sortOrder": 14,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cherries, sour, red, raw (SR Legacy, FDC ID 173954), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-mango",
@@ -5220,9 +5232,10 @@
    ],
    "description": "High sugar, low acid, heavy pectin. Pulpy enough that it will not clear without help.",
    "usageNotes": "pH is high enough that acidification is worth considering for a wine. Pectic enzyme essential.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169910",
    "sortOrder": 15,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Mangos, raw (SR Legacy, FDC ID 169910), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-strawberry",
@@ -5238,7 +5251,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 4.89,
    "sugarGPer100gMax": 8,
    "juiceBrixMin": 6,
    "juiceBrix": 8,
@@ -5261,9 +5274,10 @@
    ],
    "description": "Very low sugar for its bulk and notoriously fragile aroma — most of the character is lost to fermentation.",
    "usageNotes": "Use at high rates and late. Colour fades to a dull orange-brown within months; this is normal and not spoilage.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167762",
    "sortOrder": 16,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Strawberries, raw (SR Legacy, FDC ID 167762), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-raspberry",
@@ -5271,7 +5285,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.02,
+   "ppg": 2.03,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -5279,7 +5293,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.4,
+   "sugarGPer100g": 4.42,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
@@ -5302,9 +5316,10 @@
    ],
    "description": "Low sugar, high acid, and an aroma that survives fermentation better than almost any other berry.",
    "usageNotes": "The framboise fruit. 1.5–2 kg per 20 L for a clear varietal character.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167755",
    "sortOrder": 17,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Raspberries, raw (SR Legacy, FDC ID 167755), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-blackberry",
@@ -5314,7 +5329,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.25,
+   "ppg": 2.24,
    "ppgMin": 1.84,
    "ppgMax": 3.68,
    "ppgBasis": "sugar-content",
@@ -5322,7 +5337,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 4.88,
    "sugarGPer100gMax": 8,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
@@ -5345,9 +5360,10 @@
    ],
    "description": "Seedy, tannic and deeply coloured. More structure than raspberry and a better candidate for a standalone wine.",
    "usageNotes": "Seeds carry harsh tannin — press gently and avoid grinding them.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173946",
    "sortOrder": 18,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Blackberries, raw (SR Legacy, FDC ID 173946), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-blueberry",
@@ -5355,7 +5371,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.6,
+   "ppg": 4.58,
    "ppgMin": 3.68,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -5363,7 +5379,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 10,
+   "sugarGPer100g": 9.96,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -5384,9 +5400,10 @@
    ],
    "description": "Higher sugar than the cane berries, with skin tannin and anthocyanin that shifts from purple to red as pH drops.",
    "usageNotes": "Freeze before use to rupture the skins; whole blueberries in a fermenter give up very little.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171711",
    "sortOrder": 19,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Blueberries, raw (SR Legacy, FDC ID 171711), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-elderberry",
@@ -5427,9 +5444,9 @@
    ],
    "description": "The classic English country-wine berry: enormous colour, real tannin, and enough structure to age for years.",
    "usageNotes": "Cook before use. Raw berries, and especially stems, leaves and unripe fruit, contain cyanogenic glycosides — strip the berries from the stems and heat them.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 20,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's elderberry entry publishes carbohydrate but no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-blackcurrant",
@@ -5470,9 +5487,9 @@
    ],
    "description": "Ferociously acidic and tannic, with an aroma so strong it dominates anything it is blended into.",
    "usageNotes": "Titratable acidity around 30 g/L means dilution or deacidification is not optional for a drinkable wine.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 21,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's European black currant entry publishes carbohydrate but no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-redcurrant",
@@ -5480,7 +5497,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.25,
+   "ppg": 3.39,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -5488,7 +5505,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 7.37,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 7,
    "juiceBrix": 9,
@@ -5510,9 +5527,10 @@
    ],
    "description": "Bright, sharp and pale. Needs both dilution and sugar to reach a fermentable balance.",
    "usageNotes": "Very high pectin — expect a slow press and a stubborn haze.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173964",
    "sortOrder": 22,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Currants, red and white, raw (SR Legacy, FDC ID 173964), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA publishes red and white currants as one entry.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-gooseberry",
@@ -5551,9 +5569,9 @@
    ],
    "description": "Sharp and green-tasting, with a thiol character that overlaps Sauvignon Blanc — which is why the tasting note exists.",
    "usageNotes": "A traditional base for English sparkling country wine, where the high acid is an asset.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 23,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's gooseberry entry publishes carbohydrate but no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-cranberry",
@@ -5561,7 +5579,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.84,
+   "ppg": 1.96,
    "ppgMin": 1.38,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -5569,7 +5587,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 3,
-   "sugarGPer100g": 4,
+   "sugarGPer100g": 4.27,
    "sugarGPer100gMax": 6,
    "juiceBrixMin": 7,
    "juiceBrix": 8,
@@ -5593,9 +5611,10 @@
    ],
    "description": "The most acidic common berry and among the most tannic. pH 2.5 will stall many yeasts outright.",
    "usageNotes": "Blend or dilute heavily. On its own the must is below the pH most wine yeast will tolerate.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171722",
    "sortOrder": 24,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cranberries, raw (SR Legacy, FDC ID 171722), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-aronia",
@@ -5635,9 +5654,9 @@
    ],
    "description": "The most astringent fruit in common use — polyphenol levels several times those of blueberry.",
    "usageNotes": "Use as a colour and tannin adjunct rather than a base. Ages remarkably well.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 25,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no chokeberry entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-mulberry",
@@ -5674,9 +5693,10 @@
    ],
    "description": "Soft, sweet and staining. Low tannin and moderate acid make it an easy, if simple, ferment.",
    "usageNotes": "Extremely perishable — freeze on picking.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169913",
    "sortOrder": 26,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Mulberries, raw (SR Legacy, FDC ID 169913), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-boysenberry",
@@ -5716,9 +5736,9 @@
    ],
    "description": "Raspberry–blackberry hybrids. Behave like blackberry with a touch more aromatic lift.",
    "usageNotes": "Interchangeable with blackberry for planning purposes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 27,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no raw boysenberry entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-seabuckthorn",
@@ -5759,9 +5779,9 @@
    ],
    "description": "Extraordinarily acidic — roughly the titratable acidity of lemon juice — with an oily, sea-air aroma unlike anything else.",
    "usageNotes": "Cannot be fermented undiluted. Treat as a flavouring at 5–10% of the must.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 28,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no sea buckthorn entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-lingonberry",
@@ -5801,9 +5821,9 @@
    ],
    "description": "Nordic bog berry: sharp, tannic and naturally high in benzoic acid, which resists spoilage and also slows yeast.",
    "usageNotes": "The benzoic acid content can inhibit fermentation — pitch heavily and expect a slow start.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 29,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no lingonberry entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-cloudberry",
@@ -5843,9 +5863,9 @@
    ],
    "description": "Rare Nordic berry with a distinctive baked-apple and honey aroma.",
    "usageNotes": "Scarce and expensive — usually used as a flavouring fraction rather than a base.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 30,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's cloudberry entry publishes carbohydrate but no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-rosehip",
@@ -5884,9 +5904,9 @@
    ],
    "description": "A traditional country-wine base, very high in pectin and vitamin C, with a mild floral-fruit character.",
    "usageNotes": "The internal hairs are a serious irritant — use whole or strained, never crushed and unstrained.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 31,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's only rose hip entry is a Northern Plains Indians regional food giving 2.58 g sugar against the 12 g stored here — far enough apart that citing it would be asserting something different, not confirming this.",
+   "unsourced": true
   },
   {
    "id": "fruit-grape-table",
@@ -5927,9 +5947,10 @@
    ],
    "description": "Eating grapes: less sugar and far less acid and tannin than wine varieties, bred for crunch rather than fermentation.",
    "usageNotes": "Makes a thin wine on its own. Fine as a beer adjunct or a base for a neutral spirit wash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174683",
    "sortOrder": 32,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapes, red or green (European type, such as Thompson seedless), raw (SR Legacy, FDC ID 174683), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-grape-wine-red",
@@ -5969,9 +5990,9 @@
    ],
    "description": "Generic red vinifera at harvest ripeness. Use the varietal database for a specific grape.",
    "usageNotes": "Ferment on skins for colour and tannin. 24 Brix is roughly 14% potential alcohol.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 33,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source here. USDA publishes table grapes; wine-grape harvest chemistry belongs to the viticulture literature, and this catalogue's varietal grape records are sourced there instead.",
+   "unsourced": true
   },
   {
    "id": "fruit-grape-wine-white",
@@ -6010,9 +6031,9 @@
    ],
    "description": "Generic white vinifera at harvest ripeness. Use the varietal database for a specific grape.",
    "usageNotes": "Press off the skins immediately unless a skin-contact style is intended.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 34,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source here. USDA publishes table grapes; wine-grape harvest chemistry belongs to the viticulture literature, and this catalogue's varietal grape records are sourced there instead.",
+   "unsourced": true
   },
   {
    "id": "fruit-grape-concord",
@@ -6022,7 +6043,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 6.9,
+   "ppg": 7.45,
    "ppgMin": 5.98,
    "ppgMax": 8.74,
    "ppgBasis": "sugar-content",
@@ -6030,7 +6051,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 13,
-   "sugarGPer100g": 15,
+   "sugarGPer100g": 16.2,
    "sugarGPer100gMax": 19,
    "juiceBrixMin": 15,
    "juiceBrix": 17,
@@ -6053,9 +6074,10 @@
    ],
    "description": "The American native grape. Unmistakable 'foxy' methyl anthranilate aroma, high acid, and low sugar by vinifera standards.",
    "usageNotes": "Almost always chaptalised. The foxy character is a varietal signature, not a fault.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174682",
    "sortOrder": 35,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapes, american type (slip skin), raw (SR Legacy, FDC ID 174682), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. Concord is an American slip-skin grape, which is the entry USDA publishes.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-orange",
@@ -6066,7 +6088,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.32,
+   "ppg": 4.3,
    "ppgMin": 3.68,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -6074,7 +6096,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.4,
+   "sugarGPer100g": 9.35,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -6098,9 +6120,10 @@
    ],
    "description": "Sweet orange. The juice ferments cleanly; most of the aroma people want is in the peel, not the flesh.",
    "usageNotes": "For witbier and gin the dried bitter-orange peel is the traditional ingredient — see the botanicals catalog.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169097",
    "sortOrder": 36,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Oranges, raw, all commercial varieties (SR Legacy, FDC ID 169097), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-orange-blood",
@@ -6141,9 +6164,9 @@
    ],
    "description": "Anthocyanin-pigmented orange with more acid and a raspberry edge to the aroma.",
    "usageNotes": "The red pigment is pH-sensitive and largely lost in fermentation — expect colour disappointment.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 37,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes oranges by growing region and by navel or Valencia, not by blood orange, and this record exists because blood oranges differ.",
+   "unsourced": true
   },
   {
    "id": "fruit-lemon",
@@ -6182,9 +6205,10 @@
    ],
    "description": "Effectively an acid source with a little sugar attached — around 48 g/L citric acid.",
    "usageNotes": "Never a base. Use for acid correction or late aroma; the zest carries the limonene.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167746",
    "sortOrder": 38,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Lemons, raw, without peel (SR Legacy, FDC ID 167746), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-lime",
@@ -6203,7 +6227,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 1,
-   "sugarGPer100g": 1.7,
+   "sugarGPer100g": 1.69,
    "sugarGPer100gMax": 3,
    "juiceBrixMin": 8,
    "juiceBrix": 9,
@@ -6227,9 +6251,10 @@
    ],
    "description": "Even sharper than lemon. A gose and margarita-adjacent flavouring, not a fermentable.",
    "usageNotes": "Pith turns bitter and vegetal in a long ferment — zest only, added late.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168155",
    "sortOrder": 39,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Limes, raw (SR Legacy, FDC ID 168155), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-grapefruit",
@@ -6237,7 +6262,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.17,
+   "ppg": 3.21,
    "ppgMin": 2.76,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -6245,7 +6270,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 6.9,
+   "sugarGPer100g": 6.98,
    "sugarGPer100gMax": 9,
    "juiceBrixMin": 9,
    "juiceBrix": 10,
@@ -6268,9 +6293,10 @@
    ],
    "description": "Bitter as well as sour, from naringin in the pith and membranes — the bitterness carries into the finished drink.",
    "usageNotes": "Overlaps heavily with the thiol character of Citra and Simcoe, which is why grapefruit IPAs work.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173033",
    "sortOrder": 40,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapefruit, raw, pink and red and white, all areas (SR Legacy, FDC ID 173033), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-mandarin",
@@ -6311,9 +6337,10 @@
    ],
    "description": "Sweeter and less acidic than orange, with a distinctly perfumed peel.",
    "usageNotes": "The peel oil is the reason to use it — juice alone is unremarkable.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169105",
    "sortOrder": 41,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Tangerines, (mandarin oranges), raw (SR Legacy, FDC ID 169105), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-yuzu",
@@ -6353,9 +6380,9 @@
    ],
    "description": "Aromatic Japanese citrus — mostly peel and seed, with a very low juice yield and a floral, grapefruit-mandarin nose.",
    "usageNotes": "Expensive and worth using as zest or juice at low rates. 25% juice yield is optimistic for hand-pressing.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 42,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no yuzu entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-kumquat",
@@ -6363,7 +6390,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.32,
+   "ppg": 4.31,
    "ppgMin": 3.22,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -6371,7 +6398,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.4,
+   "sugarGPer100g": 9.36,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -6393,9 +6420,10 @@
    ],
    "description": "Eaten whole, peel and all — sweet skin, sour flesh. Fermented whole it gives both oil and acid.",
    "usageNotes": "Halve and freeze before use; whole fruit floats and moulds.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168154",
    "sortOrder": 43,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Kumquats, raw (SR Legacy, FDC ID 168154), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-calamansi",
@@ -6437,9 +6465,9 @@
    ],
    "description": "Filipino sour citrus, somewhere between lime and mandarin, extremely acidic.",
    "usageNotes": "Acid source and aromatic, not a fermentable base.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 44,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no calamansi entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-pineapple",
@@ -6447,7 +6475,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 4.53,
    "ppgMin": 3.68,
    "ppgMax": 6.9,
    "ppgBasis": "sugar-content",
@@ -6455,7 +6483,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 9.85,
    "sugarGPer100gMax": 15,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -6479,9 +6507,10 @@
    ],
    "description": "Sweet, acidic and enzymatically active — the bromelain in fresh pineapple digests protein and will strip head retention from a beer.",
    "usageNotes": "Bromelain also degrades gelatin finings. Heat-treating deactivates it; canned pineapple is already deactivated. The base of tepache.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169124",
    "sortOrder": 45,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pineapple, raw, all varieties (SR Legacy, FDC ID 169124), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-passionfruit",
@@ -6523,9 +6552,10 @@
    ],
    "description": "Intensely aromatic and very acidic, with a low juice yield because so much of the fruit is seed and rind.",
    "usageNotes": "A little carries a long way. Thiol-driven aroma that pairs naturally with modern hops.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169108",
    "sortOrder": 46,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Passion-fruit, (granadilla), purple, raw (SR Legacy, FDC ID 169108), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-guava",
@@ -6533,7 +6563,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.09,
+   "ppg": 4.1,
    "ppgMin": 3.22,
    "ppgMax": 5.06,
    "ppgBasis": "sugar-content",
@@ -6541,7 +6571,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.9,
+   "sugarGPer100g": 8.92,
    "sugarGPer100gMax": 11,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -6563,9 +6593,10 @@
    ],
    "description": "Musky, floral and heavily pectinous. Pink varieties add colour that survives reasonably well.",
    "usageNotes": "Very high pectin — enzyme treatment is essential or it will never clear.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173044",
    "sortOrder": 47,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Guavas, common, raw (SR Legacy, FDC ID 173044), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-banana",
@@ -6604,9 +6635,10 @@
    ],
    "description": "Not juiceable in any practical sense — it is a starch-to-sugar fruit best mashed or boiled. Ripeness changes the sugar content enormously.",
    "usageNotes": "pH 4.7 is dangerously high for a wine must; acidify. Green bananas are mostly resistant starch and need amylase.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173944",
    "sortOrder": 48,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Bananas, raw (SR Legacy, FDC ID 173944), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-papaya",
@@ -6616,7 +6648,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.59,
+   "ppg": 3.6,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -6624,7 +6656,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 7.8,
+   "sugarGPer100g": 7.82,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -6646,9 +6678,10 @@
    ],
    "description": "Very low acid and high pH — a papaya must sits well outside the range where wine yeast outcompetes bacteria.",
    "usageNotes": "Papain digests protein as bromelain does. Acidify to at least pH 3.6 before pitching.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169926",
    "sortOrder": 49,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Papayas, raw (SR Legacy, FDC ID 169926), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-lychee",
@@ -6689,9 +6722,10 @@
    ],
    "description": "High sugar, very low acid, and a rose-and-muscat aroma driven by the same terpenes found in Gewürztraminer.",
    "usageNotes": "Acidify. The aroma is fragile — add post-fermentation.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169086",
    "sortOrder": 50,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Litchis, raw (SR Legacy, FDC ID 169086), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA files lychee under its older spelling, litchi.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-dragonfruit",
@@ -6732,9 +6766,9 @@
    ],
    "description": "Mild to the point of blandness, but the red-fleshed type contributes a startling magenta betacyanin colour.",
    "usageNotes": "Used almost entirely for colour. The pigment is more pH-stable than anthocyanin but fades with oxygen.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 51,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's SR Legacy set has no pitaya entry.",
+   "unsourced": true
   },
   {
    "id": "fruit-jackfruit",
@@ -6772,9 +6806,10 @@
    ],
    "description": "The highest-sugar fresh fruit in common use, with a heavy tropical-bubblegum aroma.",
    "usageNotes": "Very low acid — acidification is mandatory. Laborious to process.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174687",
    "sortOrder": 52,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Jackfruit, raw (SR Legacy, FDC ID 174687), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-soursop",
@@ -6814,9 +6849,10 @@
    ],
    "description": "Creamy, custard-textured pulp with a pineapple-and-cream aroma and workable natural acidity.",
    "usageNotes": "Pulp is very thick — dilute and treat with pectic enzyme.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167761",
    "sortOrder": 53,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Soursop, raw (SR Legacy, FDC ID 167761), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-tamarind",
@@ -6856,9 +6892,10 @@
    ],
    "description": "A dried pod pulp, not a fresh fruit: extremely high in both sugar and tartaric acid — around 10% acid by weight.",
    "usageNotes": "One of the very few natural tartaric acid sources outside grapes. Use as a souring agent at low rates.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167763",
    "sortOrder": 54,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Tamarinds, raw (SR Legacy, FDC ID 167763), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-acai",
@@ -6897,9 +6934,9 @@
    ],
    "description": "Almost sugar-free and unusually high in fat for a fruit. Contributes colour and tannin, essentially no fermentables.",
    "usageNotes": "The fat content will destroy head retention in beer. Colour and antioxidant only.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 55,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's only acai entries are sweetened juice blends, which say nothing about the fruit.",
+   "unsourced": true
   },
   {
    "id": "fruit-coconut-water",
@@ -6915,7 +6952,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.6,
+   "sugarGPer100g": 2.61,
    "sugarGPer100gMax": 4,
    "juiceBrixMin": 4,
    "juiceBrix": 5,
@@ -6938,9 +6975,10 @@
    ],
    "description": "Very dilute sugar with a high mineral load — potassium in particular.",
    "usageNotes": "Contributes little gravity. Used as a partial water replacement for flavour and mouthfeel.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170174",
    "sortOrder": 56,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Nuts, coconut water (liquid from coconuts) (SR Legacy, FDC ID 170174), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-pricklypear",
@@ -6983,9 +7021,9 @@
    ],
    "description": "Desert cactus fruit with a brilliant betalain magenta and almost no acid at all.",
    "usageNotes": "pH near 6 — this must be acidified aggressively or it will spoil rather than ferment. Glochids are a hazard when handling.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 57,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's plain prickly pear entry gives no sugar figure, and its regional entry gives 1.02 g against the 9.9 g stored here.",
+   "unsourced": true
   },
   {
    "id": "fruit-watermelon",
@@ -7024,9 +7062,10 @@
    ],
    "description": "Over 90% water, so the gravity contribution per kilogram is among the lowest of any fruit.",
    "usageNotes": "Acidify. The aroma is exceptionally fugitive — expect to lose most of it.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167765",
    "sortOrder": 58,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Watermelon, raw (SR Legacy, FDC ID 167765), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-cantaloupe",
@@ -7037,7 +7076,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.63,
+   "ppg": 3.62,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -7045,7 +7084,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 7.9,
+   "sugarGPer100g": 7.86,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -7067,9 +7106,10 @@
    ],
    "description": "pH above 6 makes this one of the least safe fruits to ferment untreated.",
    "usageNotes": "Acidify to 3.5 or below before pitching, and sulphite — the surface microflora is heavy.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169092",
    "sortOrder": 59,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Melons, cantaloupe, raw (SR Legacy, FDC ID 169092), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-honeydew",
@@ -7077,7 +7117,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.73,
+   "ppg": 3.74,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -7085,7 +7125,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 8.1,
+   "sugarGPer100g": 8.12,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -7107,9 +7147,10 @@
    ],
    "description": "As cantaloupe: high sugar for a melon, effectively no acid, and a delicate aroma.",
    "usageNotes": "Same caution — acidify before fermenting.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169911",
    "sortOrder": 60,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Melons, honeydew, raw (SR Legacy, FDC ID 169911), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-raisin",
@@ -7120,7 +7161,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 27.14,
+   "ppg": 29.99,
    "ppgMin": 25.3,
    "ppgMax": 32.2,
    "ppgBasis": "sugar-content",
@@ -7128,7 +7169,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 55,
-   "sugarGPer100g": 59,
+   "sugarGPer100g": 65.2,
    "sugarGPer100gMax": 70,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -7152,9 +7193,10 @@
    ],
    "description": "Dried grape: roughly 60% sugar by weight, plus the tannin, potassium and nitrogen that make it the traditional country-wine nutrient.",
    "usageNotes": "The classic mead and country-wine body additive. Chop or the sugar stays locked inside.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168165",
    "sortOrder": 61,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168165), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-date",
@@ -7162,7 +7204,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 30.36,
+   "ppg": 30.59,
    "ppgMin": 27.6,
    "ppgMax": 34.5,
    "ppgBasis": "sugar-content",
@@ -7170,7 +7212,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 60,
-   "sugarGPer100g": 66,
+   "sugarGPer100g": 66.5,
    "sugarGPer100gMax": 75,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -7194,9 +7236,10 @@
    ],
    "description": "Among the highest-sugar foods there is — two-thirds sugar by weight, mostly already inverted.",
    "usageNotes": "Ferments fast and clean. Low acid, so blend or acidify. The base of Middle Eastern date arak.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168191",
    "sortOrder": 62,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Dates, medjool (SR Legacy, FDC ID 168191), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-fig-dried",
@@ -7236,9 +7279,10 @@
    ],
    "description": "Concentrated fig sugar with a jammy, slightly resinous character.",
    "usageNotes": "Seeds and skin can add astringency in a long maceration.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174665",
    "sortOrder": 63,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Figs, dried, uncooked (SR Legacy, FDC ID 174665), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-fig-fresh",
@@ -7275,9 +7319,10 @@
    ],
    "description": "Fresh figs are high in sugar and very low in acid, with a soft honeyed character.",
    "usageNotes": "Acidify. Skin and seed give a faint tannin backbone.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173021",
    "sortOrder": 64,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Figs, raw (SR Legacy, FDC ID 173021), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-prune",
@@ -7315,9 +7360,9 @@
    ],
    "description": "Dried plum — high sugar, real acid, and a dark stewed-fruit note that suits fortified and aged styles.",
    "usageNotes": "Contains sorbitol, so a prune ferment retains apparent sweetness.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 65,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA publishes prunes only stewed, canned or dehydrated; none of those is the dried prune this record describes, and the dehydrated entry gives no sugar figure.",
+   "unsourced": true
   },
   {
    "id": "fruit-apricot-dried",
@@ -7325,7 +7370,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 24.38,
+   "ppg": 24.56,
    "ppgMin": 20.7,
    "ppgMax": 27.6,
    "ppgBasis": "sugar-content",
@@ -7333,7 +7378,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 45,
-   "sugarGPer100g": 53,
+   "sugarGPer100g": 53.4,
    "sugarGPer100gMax": 60,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -7356,9 +7401,10 @@
    ],
    "description": "Concentrated apricot: high sugar and high acid together.",
    "usageNotes": "Usually sulphited for colour retention — check before use if a wild or unsulphited ferment is intended.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173941",
    "sortOrder": 66,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apricots, dried, sulfured, uncooked (SR Legacy, FDC ID 173941), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-pomegranate",
@@ -7398,9 +7444,10 @@
    ],
    "description": "Punicalagin tannins give real grip, and the acid and colour are both high. One of the better standalone fruit wines.",
    "usageNotes": "Press the arils only — the white pith is unbearably bitter.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169134",
    "sortOrder": 67,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pomegranates, raw (SR Legacy, FDC ID 169134), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-persimmon",
@@ -7443,9 +7490,10 @@
    ],
    "description": "Astringent varieties are almost unusable until fully soft, when the soluble tannin polymerises and the fruit turns sweet.",
    "usageNotes": "Use only fully ripe fruit. pH near 5.5 demands acidification. The base of Korean gamsikcho vinegar and some soju.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169941",
    "sortOrder": 68,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Persimmons, japanese, raw (SR Legacy, FDC ID 169941), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. The Japanese persimmon is the one sold as a fruit; USDA's native persimmon entry gives no sugar figure.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-kiwi",
@@ -7463,7 +7511,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9,
+   "sugarGPer100g": 8.99,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -7484,9 +7532,10 @@
    ],
    "description": "Good natural acidity and a clean green-fruit character. Actinidin, another protease, is present.",
    "usageNotes": "Like pineapple, it will attack gelatin finings and beer foam proteins.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168153",
    "sortOrder": 69,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Kiwifruit, green, raw (SR Legacy, FDC ID 168153), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-rhubarb",
@@ -7525,9 +7574,10 @@
    ],
    "description": "Botanically a stem, traditionally treated as fruit. Almost no sugar and a lot of acid, much of it oxalic.",
    "usageNotes": "Use stalks only — rhubarb leaves contain enough oxalic acid to be genuinely poisonous. Always chaptalised.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167758",
    "sortOrder": 70,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Rhubarb, raw (SR Legacy, FDC ID 167758), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-pumpkin",
@@ -7537,7 +7587,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.29,
+   "ppg": 1.27,
    "ppgMin": 0.92,
    "ppgMax": 1.84,
    "ppgBasis": "sugar-content",
@@ -7545,7 +7595,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.8,
+   "sugarGPer100g": 2.76,
    "sugarGPer100gMax": 4,
    "juiceBrixMin": 6,
    "juiceBrix": 7,
@@ -7568,9 +7618,10 @@
    ],
    "description": "Contributes almost no fermentable sugar — a pumpkin beer tastes of spice and roast, not of pumpkin.",
    "usageNotes": "Roast before use to develop Maillard character. Adds body and a pouring nightmare of pulp.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168448",
    "sortOrder": 71,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pumpkin, raw (SR Legacy, FDC ID 168448), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-tomato",
@@ -7608,9 +7659,9 @@
    ],
    "description": "A traditional if unfashionable country-wine base. Very low sugar, moderate acid.",
    "usageNotes": "Requires heavy chaptalisation. The result is savoury and divides opinion sharply.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 72,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source yet. USDA publishes red, green and yellow tomatoes separately and this record does not say which it describes; picking one would be inventing a specificity the record does not have.",
+   "unsourced": true
   },
   {
    "id": "fruit-beetroot",
@@ -7620,7 +7671,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.13,
+   "ppg": 3.11,
    "ppgMin": 2.3,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -7628,7 +7679,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 6.8,
+   "sugarGPer100g": 6.76,
    "sugarGPer100gMax": 9,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -7652,9 +7703,10 @@
    ],
    "description": "Earthy from geosmin, with a deep betalain colour and a pH high enough to be a real spoilage risk.",
    "usageNotes": "Acidify hard. Sugar beet, the industrial relative, is the source of most European beet sugar and neutral spirit.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169145",
    "sortOrder": 73,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Beets, raw (SR Legacy, FDC ID 169145), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-carrot",
@@ -7662,7 +7714,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.16,
+   "ppg": 2.18,
    "ppgMin": 1.84,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -7670,7 +7722,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.7,
+   "sugarGPer100g": 4.74,
    "sugarGPer100gMax": 6,
    "juiceBrixMin": 7,
    "juiceBrix": 9,
@@ -7693,9 +7745,10 @@
    ],
    "description": "A traditional country wine, often fortified. Low acid, low sugar, faintly sweet and earthy.",
    "usageNotes": "Acidify and chaptalise. Best known as the base of an old-fashioned carrot whisky.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170393",
    "sortOrder": 74,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Carrots, raw (SR Legacy, FDC ID 170393), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-sweetpotato",
@@ -7705,7 +7758,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.93,
+   "ppg": 1.92,
    "ppgMin": 1.38,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -7713,7 +7766,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": true,
    "sugarGPer100gMin": 3,
-   "sugarGPer100g": 4.2,
+   "sugarGPer100g": 4.18,
    "sugarGPer100gMax": 6,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -7737,9 +7790,10 @@
    ],
    "description": "Mostly starch rather than sugar — the listed sugar figure understates its potential once converted.",
    "usageNotes": "Needs a cereal mash or added amylase to convert the starch. The base of imo-jochu shochu.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168482",
    "sortOrder": 75,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168482), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-agave",
@@ -7779,9 +7833,9 @@
    ],
    "description": "The sugar in raw agave is inulin, a fructose polymer that yeast cannot ferment. Cooking hydrolyses it to fructose.",
    "usageNotes": "The whole-fruit sugar figure is zero on purpose: uncooked agave yields nothing. Roast or steam for 24–48 h first, then the juice runs 22–30 Brix.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
    "sortOrder": 76,
-   "attribution": "Sugar contents are typical values for ripe fruit, cross-checked against the USDA FoodData Central composition tables; juice Brix, press yield, titratable acidity and pH are typical ranges from standard fruit-processing and winemaking references. Fruit is a biological product — cultivar, season, ripeness and growing site move these figures substantially, which is why minimum, typical and maximum are all given. Where you have a refractometer reading, use it in preference to any of these numbers."
+   "attribution": "No source. USDA's raw agave entry is the Southwest food plant at 2.58 g sugar; the agave pina used for fermentation is cooked, which converts its inulin to fermentable sugar, and this record's 0 g raw sugar is describing that uncooked state without a citation for it.",
+   "unsourced": true
   },
   {
    "id": "juice-apple",
@@ -11321,7 +11375,8 @@
    ],
    "description": "Glucose monohydrate — the water of crystallisation is why it is 42 PPG rather than 46. The standard priming sugar.",
    "usageNotes": "Yeast take it first and fastest; completely neutral in flavour.",
-   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it."
+   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it.",
+   "unsourced": true
   },
   {
    "id": "sugar-turbinado",
@@ -11496,7 +11551,8 @@
    "description": "Boiled-down coconut palm flower sap, a staple sweetener across Thailand and Southeast Asia. Mostly sucrose with a small inulin fraction (hence a touch of fibre and slightly under 100% fermentability).",
    "flavorNotes": "Butterscotch, caramel, faint smoke and nuttiness.",
    "usageNotes": "Sold as hard discs or soft paste; dissolve in hot wort. Adds an aromatic depth plain sugar cannot.",
-   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything."
+   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-jaggery",
@@ -11650,7 +11706,8 @@
     "mineral"
    ],
    "description": "The final, most concentrated molasses extraction — bitter, salty, intensely mineral. A tiny addition dominates.",
-   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything."
+   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-honey",
@@ -11782,7 +11839,8 @@
     "caramel"
    ],
    "description": "Partially inverted cane syrup; a traditional English brewing sugar for milds and old ales.",
-   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything."
+   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-date-syrup",
@@ -11805,7 +11863,8 @@
     "dark-fruit"
    ],
    "description": "Boiled date extract used across the Middle East; rich dried-fruit sweetness suited to dark strong ales.",
-   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything."
+   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything.",
+   "unsourced": true
   },
   {
    "id": "sugar-lactose",

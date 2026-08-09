@@ -35,7 +35,8 @@ const DDL = [
     "servingSizeG" DOUBLE PRECISION, "totalCarbG" DOUBLE PRECISION, "fiberG" DOUBLE PRECISION,
     "uses" TEXT[] DEFAULT ARRAY[]::TEXT[], "styleTags" TEXT[] DEFAULT ARRAY[]::TEXT[],
     "description" TEXT, "flavorNotes" TEXT, "usageNotes" TEXT,
-    "sourceUrl" TEXT, "withdrawnSourceUrl" TEXT, "attribution" TEXT,
+    "sourceUrl" TEXT, "withdrawnSourceUrl" TEXT, "sourceNote" TEXT,
+    "unsourced" BOOLEAN NOT NULL DEFAULT false, "attribution" TEXT,
     "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   `CREATE INDEX IF NOT EXISTS "Fermentable_category_idx" ON "Fermentable"("category")`,
   `CREATE INDEX IF NOT EXISTS "Fermentable_name_idx" ON "Fermentable"("name")`,
@@ -92,7 +93,7 @@ const DDL = [
   `CREATE INDEX IF NOT EXISTS "Hop_purpose_idx" ON "Hop"("purpose")`,
 ];
 
-const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","withdrawnSourceUrl","attribution","sortOrder",
+const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","withdrawnSourceUrl","sourceNote","unsourced","attribution","sortOrder",
   "ppgMin","ppgMax","pfundColorMm","sugarGPer100g","sugarGPer100gMin","sugarGPer100gMax","juiceBrix","juiceBrixMin","juiceBrixMax","juiceYieldPct","moisturePct","titratableAcidityGPerL","titratableAcidityMinGPerL","titratableAcidityMaxGPerL","dominantAcid","phTypical","phMin","phMax","pectinLevel","tanninLevel","fruitGroup","species","grapeColor"];
 
 const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","attribution","sortOrder"];
@@ -107,7 +108,7 @@ function fermTuple(f, i, attribution) {
     lit(f.diastaticPowerLintner ?? null), lit(f.fermentabilityPct ?? null), lit(f.maxBatchPct ?? null),
     lit(f.ppgBasis ?? null), lit(f.servingSizeG ?? null), lit(f.totalCarbG ?? null), lit(f.fiberG ?? null),
     litArr(f.uses), litArr(f.styleTags), lit(f.description ?? null), lit(f.flavorNotes ?? null),
-    lit(f.usageNotes ?? null), lit(f.sourceUrl ?? null), lit(f.withdrawnSourceUrl ?? null), lit(f.attribution ?? attribution ?? null), lit(f.sortOrder ?? i),
+    lit(f.usageNotes ?? null), lit(f.sourceUrl ?? null), lit(f.withdrawnSourceUrl ?? null), lit(f.sourceNote ?? null), lit(f.unsourced ?? false), lit(f.attribution ?? attribution ?? null), lit(f.sortOrder ?? i),
     lit(f.ppgMin ?? null), lit(f.ppgMax ?? null), lit(f.pfundColorMm ?? null),
     lit(f.sugarGPer100g ?? null), lit(f.sugarGPer100gMin ?? null), lit(f.sugarGPer100gMax ?? null),
     lit(f.juiceBrix ?? null), lit(f.juiceBrixMin ?? null), lit(f.juiceBrixMax ?? null),
