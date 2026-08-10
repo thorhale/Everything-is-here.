@@ -880,6 +880,13 @@
    "note": "The bottler's own published mineral analysis. EU Directive 2009/54/EC requires natural mineral waters to declare their analytical composition, so a bottler publishing its own ion figures is the primary measurement, not a secondary description."
   },
   {
+   "host": "www.waternet.nl",
+   "name": "Waternet (Amsterdam water utility)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The utility for Amsterdam and surrounding municipalities. Publishes a statutory annual report per production location — Leiduin and Weesperkarspel — giving the minimum, average and maximum of every parameter the Drinkwaterbesluit requires, with the sample count, alongside the legal limit. The panel includes potassium and nitrate as well as the six brewing ions, so it can be charge-balanced in full. Read the columns by position: the legal limit sits immediately left of the measured minimum and its round numbers pass easily for measurements."
+  },
+  {
    "host": "www.waterqualitydata.us",
    "name": "Water Quality Portal (USGS / EPA / NWQMC)",
    "kind": "government-database",

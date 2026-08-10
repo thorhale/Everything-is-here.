@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 391,
+    "distinctSources": 392,
     "backgroundDocuments": 15,
-    "citations": 695,
-    "numericCitations": 580,
+    "citations": 696,
+    "numericCitations": 581,
     "numericOnShallowLink": 3,
     "numericOnTertiary": 0,
     "fullTextVerified": 39,
     "backgroundFullTextVerified": 12,
     "byReliability": {
-      "primary": 662,
+      "primary": 663,
       "secondary": 27,
       "tertiary": 6
     }
@@ -8628,6 +8628,31 @@
       ],
       "exampleRecords": [
         "saratoga"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.waternet.nl/siteassets/ons-water/drinkwater/waterkwaliteit-rapporten/2024/drinkwater-leiduin-wettelijk-2024-jaar.pdf",
+      "host": "www.waternet.nl",
+      "title": null,
+      "publisher": "Waternet (Amsterdam water utility)",
+      "authors": null,
+      "year": null,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The utility for Amsterdam and surrounding municipalities. Publishes a statutory annual report per production location — Leiduin and Weesperkarspel — giving the minimum, average and maximum of every parameter the Drinkwaterbesluit requires, with the sample count, alongside the legal limit. The panel includes potassium and nitrate as well as the six brewing ions, so it can be charge-balanced in full. Read the columns by position: the legal limit sits immediately left of the measured minimum and its round numbers pass easily for measurements.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "amsterdam"
       ]
     },
     {
