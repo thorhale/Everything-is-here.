@@ -83,6 +83,11 @@
      }
     },
     "note": "Burton's brewers sank wells into this sandstone, not into a town main, and the gypsum and anhydrite in it are where the sulfate comes from. The survey covers the East Midlands and South Yorkshire rather than Burton itself — BGS has no baseline report for the Trent valley — so it describes the aquifer Burton sits in, not Burton's boreholes. The classic 610 mg/L sulfate falls between this survey's 90th and 95th percentile, and 275 mg/L calcium near its 95th: high, but comfortably inside the rock's own range. Burton's brewers also moved. The early wells were shallow and close to the river; as the Trent grew filthy they drilled deeper and further out and found water several times richer in gypsum, so 'Burton water' is a moving target even within the town."
+   },
+   "brewerySource": {
+    "brewery": "Marston's, Burton upon Trent",
+    "url": "https://www.marstonsbrewery.co.uk/",
+    "statement": "Burton's gypsum-rich well water made the town synonymous with pale ale, and gave brewing the verb \"Burtonisation\" for adding sulfate to imitate it. Marston's still brews in the town; Bass, the name most associated with Burton pale ale, no longer brews independently there. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -150,7 +155,12 @@
    "description": "Moderately alkaline, low in sulfate and chloride — a clean, malt-forward profile that suits amber and dark Bavarian lagers. The alkalinity is balanced by the darker malts in dunkel and bock; for pale Helles, brewers now dilute or acidify.",
    "sourceUrl": "https://www.swm.de/dam/doc/wasser/trinkwasser-analysewerte.pdf",
    "attribution": "Stadtwerke München's published Münchner Trinkwasser-Analysewerte, January 2026. Median of the network's measurements, with SWM's own minima and maxima in brackets: calcium 78.0 (67.6-87.0), magnesium 20.9 (18.6-24.8), sodium 5.9 (5.0-6.7), chloride 10.6 (7.9-12.5), sulfate 14.8 (6.5-39.4), hydrogen carbonate 324 (258-368). This replaces figures that were not Munich's: bicarbonate had been stored at 200 mg/L against a published 324, and bicarbonate is what sets residual alkalinity and therefore mash pH — a third of it missing moves the acid addition for every recipe built on this profile.",
-   "sourceNote": "SWM's table is the current municipal supply. It is not the historic Munich brewing water that the dunkel and helles styles were built on; those figures are a literature reconstruction and no modern sample can confirm them."
+   "sourceNote": "SWM's table is the current municipal supply. It is not the historic Munich brewing water that the dunkel and helles styles were built on; those figures are a literature reconstruction and no modern sample can confirm them.",
+   "brewerySource": {
+    "brewery": "Spaten, Munich",
+    "url": "https://www.spatenbraeu.de/",
+    "statement": "Gabriel Sedlmayr's Spaten is where Munich's dark, carbonate-heavy water was turned into the Dunkel and, in 1894, the Helles. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "pilsen",
@@ -220,6 +230,11 @@
      }
     },
     "note": "Twelve consecutive monthly averages, so the range is seasonal rather than spatial. Most parameters are steady — calcium sits between 41.6 and 44 for eleven months — but one month reaches 59.7 calcium and 93.3 sulfate, nearly double the median sulfate, and hardness rises with it to 1.75 mmol/L. Anyone treating Plzeň water to a target should know it can move that far inside a year. Nothing in these reports supports the ultra-soft profile the city is famous for."
+   },
+   "brewerySource": {
+    "brewery": "Pilsner Urquell (Plzeňský Prazdroj), Plzeň",
+    "url": "https://www.pilsnerurquell.com/",
+    "statement": "The brewery that gave the style its name: the first pale lager was brewed here on 5 October 1842, and the very soft Plzeň water is half the reason it could be pale. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -323,6 +338,11 @@
     "citation": "Ruhrverband and Arbeitsgemeinschaft der Wasserwerke an der Ruhr (AWWR), Ruhrgütebericht 2024, chapter 5 (physico-chemical monitoring of the Ruhr) and chapter 24 (analytical results of the AWWR water-quality committee).",
     "ions": {},
     "note": "Dortmunder Export is the one classic style whose water is usually explained by the city's geology, and the modern supply has nothing to do with it. Wasserwerke Westfalen describe their own process on their plant pages: pre-cleaned Ruhr water is infiltrated through slow sand basins into the subsoil at Hengsen (since 1908), Westhofen and Halingen (since 1888), then collected by perforated drains as a mixture of recharged groundwater, bank filtrate and natural groundwater. That water starts as a soft river: the Ruhrgütebericht 2024 gives 39 mg/L calcium and 6.9 mg/L magnesium as annual means at Essen-Rellinghausen — below the ten-year means of 41 and 7.5 because 2024 ran wet — with sulfate at 35 and chloride at 37 there, and 12 to 39 mg/L sulfate and 7 to 41 mg/L chloride as the range of annual means across all thirteen Ruhr stations. The Export water was something else: deep wells into the Upper Cretaceous strata under the city, whose gypsum is where the sulfate came from. This project has not found a published analysis of those brewery wells, and no ion figure here is taken from a survey. The one thing worth taking from this block is negative and load-bearing: brewing this profile does not reproduce what a Dortmund brewery gets from the mains today, and a brewer in Dortmund should treat the stored numbers as a target to build, not as their tap."
+   },
+   "brewerySource": {
+    "brewery": "Dortmunder Actien-Brauerei (DAB), Dortmund",
+    "url": "https://www.dab.de/",
+    "statement": "Dortmunder Export is named for this city and its hard, sulfate-and-chloride water; DAB is the surviving brewery of the group that made the style an export article. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -426,6 +446,11 @@
      }
     },
     "note": "Four supplies, and the spread is the whole story. The two Hochquellenleitungen are karst spring water off the limestone Alps: the first at 308 µS/cm and 9.7 °dH total hardness, the second at 202 µS/cm and 6.4 °dH, which the city classifies as weich. The Lobau and Moosbrunn groundwater works are a different water entirely - 535 and 573 µS/cm, sulfate 37 and 62 against the first spring line's 18, and Moosbrunn is classified hart. Vienna's water is soft because it comes down a pipe from the mountains, not because the ground under Vienna is soft; the two boreholes in the city are three times the sulfate of the springs. A brewer taking 'Vienna water' as a target should mean the spring lines."
+   },
+   "brewerySource": {
+    "brewery": "Brauerei Schwechat (Brau Union), Vienna",
+    "url": "https://www.brauunion.at/",
+    "statement": "Anton Dreher brewed the first Vienna lager at Schwechat in 1841, using the new English kilning to make an amber malt the local water suited. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -451,7 +476,12 @@
    "description": "Moderate hardness with chloride well above sulfate, giving Kölsch its soft, rounded, subtly malty delicacy under a crisp finish.",
    "sourceUrl": "https://www.rheinenergie.com/media/documents/trinkwasseranalyse/Trinkwasseranalyse_Linksrheinisch.pdf",
    "attribution": "RheinEnergie's published Trinkwasseranalyse for the left bank of the Rhine, the larger of Cologne's two supplies. Read from the PDF: calcium 106, magnesium 14, sodium 35, chloride 58, sulfate 73, hydrogen carbonate 280 mg/L. The stored figures had chloride at 90 against a published 58 and sulfate at 40 against 73 — the sulfate-to-chloride ratio, which is the number a brewer actually uses this profile for, was inverted.",
-   "sourceNote": "Cologne has two supplies and they differ. RheinEnergie's right-bank analysis gives calcium 74±3, magnesium 14±4, sodium 27±2, chloride 33±3, sulfate 62±9 and hydrogen carbonate 217±9 mg/L. This record carries the left bank; a brewer on the right bank should use those figures instead."
+   "sourceNote": "Cologne has two supplies and they differ. RheinEnergie's right-bank analysis gives calcium 74±3, magnesium 14±4, sodium 27±2, chloride 33±3, sulfate 62±9 and hydrogen carbonate 217±9 mg/L. This record carries the left bank; a brewer on the right bank should use those figures instead.",
+   "brewerySource": {
+    "brewery": "Cölner Hofbräu Früh, Cologne",
+    "url": "https://www.frueh.de/",
+    "statement": "Kölsch is a protected appellation restricted to Cologne breweries; Früh is among the signatories of the Kölsch-Konvention. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "brussels",
@@ -522,6 +552,11 @@
      }
     },
     "note": "The six supply points split cleanly into two groups and the split is visible in every ion but sulfate. Callois and Uccle are soft and low-alkalinity — calcium 69 and 81, magnesium 5.1 and 5.9, bicarbonate 172 and 198 — while Rhode, Boitsfort and Ixelles are hard and highly alkaline at calcium 118 to 132, magnesium about 16, bicarbonate 320 to 344. The feeder from Daussoulx sits between them. Bruxelles Environnement attributes the difference to source: VIVAQUA draws mainly on groundwater catchments, which carry more calcium and carbonate than surface water, and different reservoirs get different mixes. A brewer in Watermael-Boitsfort has twice the alkalinity of one supplied from Callois."
+   },
+   "brewerySource": {
+    "brewery": "Brasserie Cantillon, Brussels",
+    "url": "https://www.cantillon.be/",
+    "statement": "Lambic is defined by spontaneous fermentation in the Zenne valley around Brussels; Cantillon is the only brewery still operating within the city itself. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -603,6 +638,11 @@
      }
     },
     "note": "Tadcaster's water is Burton's story told in a different rock. BGS splits the aquifer into a Durham and a Yorkshire province and says the difference is mineralogy: Durham groundwaters are Ca-Mg-HCO3 dominated by dolomite, while the Yorkshire ones — Tadcaster's — are Ca-HCO3 mixing towards Ca-SO4 because of gypsum in the evaporite deposits. That gypsum is where a Yorkshire brewery well gets its sulfate, the same mechanism that gives Burton its. The aquifer's range is enormous: sulfate spans 1.18 to 1610 mg/L and chloride reaches 9250 in samples affected by saline intrusion near Hartlepool and by minewater rebound around Ferryhill, so the upper tail describes water nobody would brew with. The median Magnesian Limestone water is much milder than Tadcaster's stored profile, which is the point: a brewing well is a chosen point in a range, not the average of it."
+   },
+   "brewerySource": {
+    "brewery": "Samuel Smith's Old Brewery, Tadcaster",
+    "url": "https://www.samuelsmithsbrewery.co.uk/",
+    "statement": "Tadcaster's hard limestone well water is the reason three breweries sit in one small Yorkshire town. Samuel Smith's still draws from its original 1758 well. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -776,6 +816,11 @@
      }
     },
     "note": "Bamberg does not drill for its water. The wells are shallow — the utility puts them at ten to twelve metres — and sit in the Quaternary gravels of the Regnitz floodplain south and west of the city, inside a 3,828-hectare protection area designated in 2011 and made up of four blocks: Stadtwald, Gereuther Wiesen, Buger Wiesen and Hirschaider Büsche. The waterworks remove iron and manganese and pass the water over activated carbon; nothing is added that would change the mineral profile. The table above is the three groundwater-supplied zones — Gaustadt, Stadtwald (which feeds the Inselgebiet) and Bug-Gereuth (which feeds the Berggebiet) — and they agree closely: 17.9, 18.0 and 18.2 °dH. The city's fourth zone, Bamberg-Ost, is deliberately left out, because since 1975 it has drunk Fernwasser piped from the Donau-Lech area by the Zweckverband Fernwasserversorgung Oberfranken and is a different water entirely: calcium 68, magnesium 16, sodium 11, chloride 16, sulfate 21, hydrogen carbonate 259 mg/L, 13.1 °dH. About a third of Bamberg's supply is that imported water, so a brewer's tap in Bamberg-Ost does not deliver Bamberg's water."
+   },
+   "brewerySource": {
+    "brewery": "Brauerei Heller-Trum / Schlenkerla, Bamberg",
+    "url": "https://www.schlenkerla.de/",
+    "statement": "Schlenkerla's Aecht Schlenkerla Rauchbier is the reference for the smoked style Bamberg is known for. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -915,6 +960,11 @@
      }
     },
     "note": "The seven works do not split by geology so much as by treatment. Islevbro, Regnemark and Slangerup are not yet softened and carry 110 to 120 mg/L calcium at 21 to 23 °dH; Gevninge, Marbjerg, Søndersø and Thorsbro have been softened since 2021-2024 and carry 42 to 69 at 11 to 14 °dH. Alkalinity stays high across all of them, 304 to 414 mg/L of bicarbonate, because softening removes hardness rather than carbonate. That is an awkward combination for a brewer: the calcium that would have offset the alkalinity in the mash is the part being taken out. Which works a given address draws from varies by district and by day, and HOFOR lists the predominant works per postal district."
+   },
+   "brewerySource": {
+    "brewery": "Carlsberg, Copenhagen",
+    "url": "https://www.carlsberggroup.com/",
+    "statement": "Carlsberg was founded at Valby in 1847 and is where Emil Christian Hansen isolated the first pure lager yeast in 1883, which is why this city appears in a brewing catalogue at all. Cited to the group site rather than carlsberg.com, which answers automated requests with 403. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -991,7 +1041,12 @@
    "description": "Chloride-forward Rhine-derived water of moderate hardness and, at 122 mg/L of bicarbonate, much less alkaline than an altbier profile is usually drawn as — chloride outruns sulfate, which is where the soft, malty balance comes from.",
    "attribution": "Stadtwerke Düsseldorf AG, Trinkwasseranalyse for the supply area, from the evaluation of analyses at Hochbehälter Hardt over 1 January to 31 December 2025: calcium 65, magnesium 8.6, sodium 28.5, chloride 67.9, sulfate 58.2 and nitrate 13.1 mg/L, with an acid capacity to pH 4.3 of 2.00 mmol/L, which is 122 mg/L of bicarbonate. Conductivity 699 µS/cm. The panel balances on charge to 1.2% including the reported potassium and nitrate, which is as tight as any analysis in this catalogue. Every stored ion was too high, and bicarbonate worst: 215 against a measured 122, which is most of a doubling in the ion that sets residual alkalinity. Calcium was 90 against 65 and chloride 85 against 68.",
    "sourceUrl": "https://a.storyblok.com/f/274772/x/9e9ba42c93/trinkwasseranalyse-duesseldorf-2026.pdf",
-   "sourceNote": "One thing in the utility's own table does not agree with itself. It reports total hardness of 15.0 °dH, but its own calcium and magnesium come to 11.1 °dH, and the six ions balance on charge to 1.2% as they stand. The ions are taken and the hardness line is not; this project has not resolved which is the error. Note also what the water is: Stadtwerke Düsseldorf state that about three quarters of it is infiltrated Rhine water and a quarter groundwater, so this is a treated river, and the analysis is finished drinking water rather than raw water. It is the modern supply, not the water Düsseldorf brewed altbier with before the Rhine works were built."
+   "sourceNote": "One thing in the utility's own table does not agree with itself. It reports total hardness of 15.0 °dH, but its own calcium and magnesium come to 11.1 °dH, and the six ions balance on charge to 1.2% as they stand. The ions are taken and the hardness line is not; this project has not resolved which is the error. Note also what the water is: Stadtwerke Düsseldorf state that about three quarters of it is infiltrated Rhine water and a quarter groundwater, so this is a treated river, and the analysis is finished drinking water rather than raw water. It is the modern supply, not the water Düsseldorf brewed altbier with before the Rhine works were built.",
+   "brewerySource": {
+    "brewery": "Uerige, Düsseldorf",
+    "url": "https://www.uerige.de/",
+    "statement": "Altbier is Düsseldorf's, and Uerige is the best known of the Altstadt house breweries still brewing it on the premises. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "antwerp",
@@ -1140,6 +1195,11 @@
      }
     },
     "note": "Five plants and no great drama between them: total hardness runs 34 to 44 mg/L as CaCO3 and alkalinity 20 to 24, so every part of Sapporo drinks soft, low-alkalinity water. Nishino is the hardest at 44 and Moiwa the softest at 34. Sulfate is absent from the table because Japan does not regulate it in drinking water; Tokyo measures it as a voluntary management target but Sapporo does not, so no sulfate figure is carried here."
+   },
+   "brewerySource": {
+    "brewery": "Sapporo Breweries, Sapporo",
+    "url": "https://www.sapporobeer.jp/",
+    "statement": "Japan's oldest beer brand, founded in Sapporo in 1876 as the Kaitakushi brewery, and the reason the city's soft water is a reference point for Japanese lager. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -1321,6 +1381,11 @@
      }
     },
     "note": "153 wells with a full six-ion panel. The median is soft and lightly buffered - 24 mg/L calcium against 160 of bicarbonate, sulfate 8.4 and chloride 5.6 - which is the water the region's brewing reputation rests on. The maxima are a different water entirely and are included so nobody mistakes the median for the whole county."
+   },
+   "brewerySource": {
+    "brewery": "Sierra Nevada Brewing Co., Chico",
+    "url": "https://sierranevada.com/",
+    "statement": "Sierra Nevada Pale Ale, first brewed in Chico in 1980, is the beer that established American pale ale, and the town's soft low-sulfate water is part of why the record carries the style. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -1673,6 +1738,11 @@
      }
     },
     "note": "Beelitzhof, Friedrichshagen, Kaulsdorf, Kladow, Spandau, Stolpe, Tegel, Tiefwerder and Wuhlheide, each an annual median for 2025. Berlin draws almost entirely on bank filtrate from the Havel and Spree and on artificially recharged groundwater in the sands of the glacial spillway the city sits in, so the mineral load reflects the surface water and the recharge, not a deep aquifer. The softest water in the city, at Stolpe and Spandau in the west, carries about a third of the sulfate of the hardest, at Friedrichshagen and Wuhlheide in the east. Bicarbonate is derived from the utility's carbonate hardness rather than measured as such."
+   },
+   "brewerySource": {
+    "brewery": "Berliner Kindl, Berlin",
+    "url": "https://www.berliner-kindl.de/",
+    "statement": "Berliner Weisse is the city's own style, and Berliner Kindl Weisse is the surviving large-scale example. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
    }
   },
   {
@@ -1699,7 +1769,12 @@
    "description": "The home of Gose, named for the Gose river whose naturally saline water gave the style its signature gentle salinity. Elevated sodium and chloride are the whole point — the faint brininess that balances the coriander and lactic sourness. Most modern brewers add salt to recreate it, but Goslar had it in the ground.",
    "sortOrder": 40,
    "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been.",
+   "brewerySource": {
+    "brewery": "Brauhaus Goslar",
+    "url": "https://www.brauhaus-goslar.de/",
+    "statement": "Gose takes its name from the river Gose at Goslar; Brauhaus Goslar revived brewing of the style in the town of origin. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "san-francisco",
@@ -1752,7 +1827,12 @@
    "sortOrder": 42,
    "attribution": "Oldenburgisch-Ostfriesischer Wasserverband, Trinkwasseranalyse for the Wasserwerk Sandelermöns supply area, which covers Jever, first quarter 2026: sampled 28 January 2026 and analysed by Institut Dr. Nowak, Ottersberg, test report 26-02098. Calcium 35, magnesium 4.1, sodium 13, potassium 2.2, chloride 22, sulfate 19 and nitrate 0.70 mg/L, with hydrogen carbonate given directly as 100 mg/L and an acid capacity to pH 4.3 of 1.71 mmol/L, at pH 8.04, 295 µS/cm and 5.8 °dH, classified weich. The panel balances on charge to 1.4%. Bicarbonate was stored at 30 against a published 100, which is the correction that matters; sulfate was 35 against 19 and calcium 25 against 35.",
    "sourceUrl": "https://www.oowv.de/assets/media/downloads/service/labor/trinkwasseranalysen/analyse_sandelermoens.pdf",
-   "sourceNote": "This is the public supply at Jever, not the brewery's liquor. Friesisches Brauhaus zu Jever is known to draw from its own wells, and this project has found no published analysis of them — so a profile named for the town's beer is being sourced to the town's tap, which is a real limitation and not a small one for a beer whose whole identity is its water. The analysis is also a single quarter at a single sampling point."
+   "sourceNote": "This is the public supply at Jever, not the brewery's liquor. Friesisches Brauhaus zu Jever is known to draw from its own wells, and this project has found no published analysis of them — so a profile named for the town's beer is being sourced to the town's tap, which is a real limitation and not a small one for a beer whose whole identity is its water. The analysis is also a single quarter at a single sampling point.",
+   "brewerySource": {
+    "brewery": "Friesisches Brauhaus zu Jever",
+    "url": "https://www.jever.de/",
+    "statement": "The brewery and the town share a name, and the beer's famously dry bitterness is usually credited to the very soft East Frisian water. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "kentucky-limestone",
