@@ -1259,12 +1259,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "California",
-   "calcium": 12,
-   "magnesium": 1,
-   "sodium": 18,
-   "chloride": 12,
-   "sulfate": 15,
-   "bicarbonate": 48,
+   "calcium": 24.0,
+   "magnesium": 17.0,
+   "sodium": 13.0,
+   "chloride": 5.6,
+   "sulfate": 8.4,
+   "bicarbonate": 160.0,
    "bestForStyles": [
     "American Pale Ale",
     "American IPA"
@@ -1275,8 +1275,53 @@
     "modern-craft"
    ],
    "description": "Soft, low-mineral water — the tap water behind Sierra Nevada and a big reason clean, hop-showcasing American pale ale developed here. A near-blank canvas that brewers build up with salts to taste.",
-   "unsourced": true,
-   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
+   "attribution": "Median of 153 groundwater wells in Butte County, California, from 1,703 analyses retrieved through the Water Quality Portal, the joint USGS / EPA / NWQMC database, sampled between 1952 and 2021. Each well is reduced to its own median first and the profile is the median of those, so a well sampled fifty times does not outvote one sampled twice. The cited URL is the exact query and returns the dataset. Calcium 24.0 (stored 12), magnesium 17.0 (1), sodium 13.0 (18), chloride 5.6 (12), sulfate 8.4 (15) and bicarbonate 160.0 (48) mg/L. It balances on charge to 6.8%, cation-heavy, as a six-ion panel does when potassium and nitrate are left out. The record previously carried the unattributed brewing-literature table and declared itself unsourced.",
+   "sourceUrl": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A06%3A007&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+   "sourceNote": "This is the aquifer, not the tap. California Water Service supplies Chico from wells in the Tuscan Formation, and every one of the 153 sites here is a well - the Water Quality Portal returned no springs in the county - so this is the groundwater the city draws from rather than a treated finished water at a customer's meter. The magnesium correction is the largest: 1 mg/L stored against a measured median of 17, which changes the residual alkalinity materially. The old figures came from the anonymous brewing-literature table this project has been unpicking all along; the Sierra Nevada association that made Chico a 'brewing city' is not evidence about its water.\n\nThe spread is wide and worth reading in the aquifer block: sulfate runs from 0 to 690 mg/L and sodium to 520 across the county, because Butte County spans fresh volcanic aquifer and older, more mineralised water. The median well is the soft, low-alkalinity water Chico is known for; the tail is not.",
+   "aquifer": {
+    "name": "Tuscan Formation and Butte County valley-fill groundwater",
+    "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A06%3A007&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+    "citation": "US Geological Survey and US Environmental Protection Agency, Water Quality Portal (waterqualitydata.us), well results for Butte County, California, 1952-2021.",
+    "ions": {
+     "calcium": {
+      "n": 153,
+      "min": 4.6,
+      "median": 24.0,
+      "max": 87.0
+     },
+     "magnesium": {
+      "n": 153,
+      "min": 0.7,
+      "median": 17.0,
+      "max": 93.0
+     },
+     "sodium": {
+      "n": 153,
+      "min": 2.2,
+      "median": 13.0,
+      "max": 520.0
+     },
+     "chloride": {
+      "n": 153,
+      "min": 0.5,
+      "median": 5.6,
+      "max": 260.0
+     },
+     "sulfate": {
+      "n": 153,
+      "min": 0.0,
+      "median": 8.4,
+      "max": 690.0
+     },
+     "bicarbonate": {
+      "n": 153,
+      "min": 23.0,
+      "median": 160.0,
+      "max": 522.0
+     }
+    },
+    "note": "153 wells with a full six-ion panel. The median is soft and lightly buffered - 24 mg/L calcium against 160 of bicarbonate, sulfate 8.4 and chloride 5.6 - which is the water the region's brewing reputation rests on. The maxima are a different water entirely and are included so nobody mistakes the median for the whole county."
+   }
   },
   {
    "id": "san-diego",

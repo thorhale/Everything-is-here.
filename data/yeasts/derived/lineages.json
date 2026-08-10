@@ -1,6 +1,6 @@
 {
  "note": "Commercial yeast strains that are the same underlying yeast sold by different producers. Every membership is asserted by the producer of that strain in its own product description, and the sentence saying so is quoted with its source URL. Nothing is inferred; no third-party cross-reference chart was copied. A lineage must be named specifically (Chico, Fuller's, 34/70) — a style descriptor such as 'Bavarian weizen strain' is not a claim of shared ancestry — and all members must share a species.",
- "generated": "2026-08-07",
+ "generated": "2026-08-10",
  "groups": [
   {
    "id": "chico",
@@ -41,7 +41,7 @@
      "form": "liquid",
      "species": "Saccharomyces cerevisiae",
      "statedBy": "The quintessential American ale strain (Chico); clean, accentuates hops, very versatile.",
-     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=27"
+     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST"
     },
     {
      "strainId": "wyeast-1056",
@@ -72,7 +72,7 @@
      "form": "liquid",
      "species": "Saccharomyces cerevisiae",
      "statedBy": "Classic English (Fuller's-type) strain; extremely flocculant, leaves residual sweetness/body.",
-     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=28"
+     "sourceUrl": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST"
     },
     {
      "strainId": "wyeast-1968",

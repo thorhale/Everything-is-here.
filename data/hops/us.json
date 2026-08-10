@@ -42,8 +42,8 @@
    "yearReleased": 1972,
    "description": "The hop that defined American craft brewing. Sierra Nevada Pale Ale made its grapefruit-and-flowers signature the reference point for the whole American ale category.",
    "specSource": "haas-companion-2022:CASCADE",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 73 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 73 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/cascade, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "centennial",
@@ -174,8 +174,8 @@
    "yearReleased": 2012,
    "description": "A Simcoe daughter with remarkable complexity — berry and tropical fruit over a resinous base. Notoriously variable lot to lot.",
    "specSource": "haas-companion-2022:MOSAIC®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 137 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 137 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/mosaicr, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "simcoe",
@@ -216,7 +216,7 @@
    "yearReleased": 2000,
    "description": "Distinctive pine-and-passionfruit character with unusually low cohumulone, giving a smooth bitterness despite high alpha.",
    "specSource": "haas-companion-2022:SIMCOE®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 166 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -257,8 +257,8 @@
    ],
    "description": "A chance farm discovery (Virgil Gamache Farms) with a pronounced orange-citrus character distinct from Cascade's grapefruit.",
    "specSource": "haas-companion-2022:AMARILLO®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 54 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 54 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/amarillor-vgxp01-cv, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "chinook",
@@ -345,8 +345,8 @@
    ],
    "description": "High-alpha workhorse sold interchangeably as CTZ. Pungent, dank, and resinous — the source of much classic 'dank' IPA character.",
    "specSource": "haas-companion-2022:COLUMBUS",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 81 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 81 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/columbus, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "willamette",
@@ -388,8 +388,8 @@
    "yearReleased": 1976,
    "description": "American Fuggle derivative; gentle, earthy and floral. The traditional choice for English-leaning American ales.",
    "specSource": "haas-companion-2022:WILLAMETTE",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 208 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 208 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/willamette, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "sabro",
@@ -429,8 +429,8 @@
    "yearReleased": 2018,
    "description": "A neomexicanus-derived variety with an unmistakable coconut-and-citrus profile unlike anything else in the US portfolio.",
    "specSource": "haas-companion-2022:SABRO®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 162 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 162 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/sabror, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "strata",
@@ -470,7 +470,7 @@
    "yearReleased": 2018,
    "description": "Combines bright tropical fruit with a distinctly dank, cannabis-like undertone.",
    "specSource": "haas-companion-2022:STRATA™",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 179 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -508,7 +508,7 @@
    ],
    "description": "Big-oil variety with an unusual black-tea and stone-fruit complexity alongside tropical notes.",
    "specSource": "haas-companion-2022:IDAHO 7™",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 117 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -548,8 +548,8 @@
    ],
    "description": "Sweet, candy-like fruit character — watermelon and pear drops — with high alpha for dual duty.",
    "specSource": "haas-companion-2022:EL DORADO®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 90 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 90 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/el-dorado, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document. The two disagree on beta: BarthHaas prints 4.8-6.2 per cent against the Companion's 6.4-8.0. Page 90 of the Companion was re-read and does print 6.4-8.0, so this is a real difference between two documents rather than a transcription error, and the Companion's figure is kept. The alpha ranges overlap."
   },
   {
    "id": "azacca",
@@ -632,8 +632,8 @@
    "yearReleased": 2020,
    "description": "A Sabro daughter with a savoury, floral-citrus profile — grapefruit rind, rose, and sage.",
    "specSource": "haas-companion-2022:TALUS®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 194 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 194 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/talustm, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "loral",
@@ -675,8 +675,8 @@
    "yearReleased": 2016,
    "description": "Bred as a modern 'noble' hop — floral and herbal like a continental variety but with American intensity and agronomics.",
    "specSource": "haas-companion-2022:LORAL®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
-   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 125 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 125 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/loralr, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
   },
   {
    "id": "ekuanot",
@@ -779,7 +779,7 @@
    ],
    "description": "Smooth, clean high-alpha bittering hop favoured when you want IBUs without flavour interference.",
    "specSource": "haas-companion-2022:WARRIOR®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 206 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -1104,7 +1104,7 @@
    ],
    "description": "A rare true neomexicanus (native American wild hop) variety; minty, spicy, and tropical all at once.",
    "specSource": "haas-companion-2022:ZAPPA™",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 212 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -1197,7 +1197,7 @@
    ],
    "description": "A softer, floral-fruity American variety suited to lager and delicate late additions.",
    "specSource": "haas-companion-2022:CONTESSA™",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 83 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -1235,7 +1235,7 @@
    ],
    "description": "An Oregon State release with a berry-and-tea complexity over a citrus base.",
    "specSource": "haas-companion-2022:TRIUMPH",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 201 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   },
   {
@@ -1275,7 +1275,7 @@
    ],
    "description": "Mild apricot-and-grass aroma hop; a gentler option for balanced ales.",
    "specSource": "haas-companion-2022:PALISADE®",
-   "sourceUrl": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
    "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 149 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
   }
  ]

@@ -11,36 +11,36 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 390,
-    "backgroundDocuments": 14,
-    "citations": 689,
-    "numericCitations": 574,
+    "distinctSources": 389,
+    "backgroundDocuments": 15,
+    "citations": 690,
+    "numericCitations": 575,
     "numericOnShallowLink": 4,
     "numericOnTertiary": 0,
     "fullTextVerified": 36,
-    "backgroundFullTextVerified": 11,
+    "backgroundFullTextVerified": 12,
     "byReliability": {
-      "primary": 656,
+      "primary": 657,
       "secondary": 27,
       "tertiary": 6
     }
   },
   "sources": [
     {
-      "id": "haas-hops-companion-2022",
-      "url": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+      "id": null,
+      "url": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
       "host": "www.johnihaas.com",
-      "title": "Hops Companion — A brewer's guide to hop varieties and hop products, 4th edition (2022)",
+      "title": null,
       "publisher": "John I. Haas",
       "authors": null,
       "year": null,
       "kind": "vendor-handbook",
       "reliability": "primary",
-      "verification": "full-text",
+      "verification": "unverified",
       "deepLink": true,
-      "supports": "Per-variety specifications for 155 hop varieties: alpha and beta acids (%), cohumulone (% of alpha), total oil (mL/100g) and the myrcene, humulene, caryophyllene, farnesene and linalool fractions (% of total oil), plus total polyphenols, pedigree and aroma descriptors. Retrieved and read; Cascade and Simcoe checked against the page directly.",
-      "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding.",
-      "accessed": "2026-08-07",
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
       "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable.",
       "citations": 57,
       "numericCitations": 57,
@@ -855,6 +855,35 @@
       ]
     },
     {
+      "id": "pedneault-2018-interspecific-hybrids",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6272385/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "Volatile Compounds from Grape Skin, Juice and Wine from Five Interspecific Hybrid Grape Cultivars Grown in Québec",
+      "publisher": "Molecules (MDPI), via PubMed Central",
+      "authors": [
+        "K. Pedneault",
+        "and colleagues"
+      ],
+      "year": 2018,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Table 1: berry weight, skin proportion, juice yield as a percentage of fresh berry weight, total soluble solids in Brix, titratable acidity as tartaric acid, pH and yeast assimilable nitrogen for Frontenac, Maréchal Foch, Marquette, Sabrevois and St. Croix, each the mean of six to eight replicates. Published CC BY, so the figures can be reused with attribution.",
+      "doesNotSupport": "Any range. Every figure is a single-vintage, single-region mean - the 2012 harvest in Québec - so it establishes a well-documented point and not the spread a cultivar shows from Minnesota to Nova Scotia. It also says nothing about colour or fermentability, and its juice yields are laboratory press recoveries, which run well above commercial ones.",
+      "accessed": "2026-08-10",
+      "note": null,
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-frontenac",
+        "grape-marechal-foch"
+      ]
+    },
+    {
       "id": "spitaels-lambic-microbiota-2014",
       "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095384",
       "host": "journals.plos.org",
@@ -1494,6 +1523,33 @@
     },
     {
       "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/derived/lineages.json",
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "California Ale",
+        "white-labs-wlp001"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://wyeastlab.com/product/american-ale/",
       "host": "wyeastlab.com",
       "title": null,
@@ -1517,6 +1573,33 @@
       "exampleRecords": [
         "American Ale",
         "wyeast-1056"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST",
+      "host": "www.whitelabs.com",
+      "title": null,
+      "publisher": "White Labs",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": null,
+      "citations": 2,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/yeasts/derived/lineages.json",
+        "data/yeasts/white-labs.json"
+      ],
+      "exampleRecords": [
+        "English Ale",
+        "white-labs-wlp002"
       ]
     },
     {
@@ -1625,32 +1708,6 @@
       "exampleRecords": [
         "lallemand-philly-sour",
         "wild-lachancea-thermotolerans"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.lallemandbiofuels.com/products/distilamax/",
-      "host": "www.lallemandbiofuels.com",
-      "title": null,
-      "publisher": "Lallemand Biofuels & Distilled Spirits",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/yeasts/lallemand.json"
-      ],
-      "exampleRecords": [
-        "distilamax-rm",
-        "distilamax-mw"
       ]
     },
     {
@@ -7788,6 +7845,31 @@
     },
     {
       "id": null,
+      "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A06%3A007&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+      "host": "www.waterqualitydata.us",
+      "title": null,
+      "publisher": "Water Quality Portal (USGS / EPA / NWQMC)",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Joint USGS, EPA and National Water Quality Monitoring Council repository of individual laboratory analyses of US water bodies. Free, no key, machine-readable. Each record is a measurement with a site, a date and a method, which is a stronger provenance than any curated brewing profile can offer.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/water/profiles.json"
+      ],
+      "exampleRecords": [
+        "chico"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://www.sandiego.gov/sites/default/files/2026-06/additional-characteristics.pdf",
       "host": "www.sandiego.gov",
       "title": null,
@@ -8564,56 +8646,6 @@
       ],
       "exampleRecords": [
         "bact-lactobacillus-brevis"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=27",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/yeasts/derived/lineages.json"
-      ],
-      "exampleRecords": [
-        "California Ale"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=28",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 0,
-      "usedIn": [
-        "data/yeasts/derived/lineages.json"
-      ],
-      "exampleRecords": [
-        "English Ale"
       ]
     },
     {
@@ -9493,56 +9525,6 @@
     },
     {
       "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=101&type=YEAST",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "white-labs-wlp001"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.whitelabs.com/yeast-single?id=102&type=YEAST",
-      "host": "www.whitelabs.com",
-      "title": null,
-      "publisher": "White Labs",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/yeasts/white-labs.json"
-      ],
-      "exampleRecords": [
-        "white-labs-wlp002"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.whitelabs.com/yeast-single?id=104&type=YEAST",
       "host": "www.whitelabs.com",
       "title": null,
@@ -10133,6 +10115,22 @@
       "deepLink": true,
       "supports": "Grape variety identity: prime name, 62 recorded synonyms, species, berry colour, country of origin and pedigree. Retrieved and read as the worked example for the whole catalogue.",
       "doesNotSupport": "Harvest chemistry. VIVC carries no Brix, titratable acidity or pH, so it cannot support the numeric fields on this project's 53 wine-grape records. It was evaluated as a replacement for the dead iv.ucdavis.edu citations and deliberately not used for them: swapping a homepage for a per-variety page would have cut 53 from the shallow-link debt while citing a document that does not contain the figures.",
+      "accessed": "2026-08-07"
+    },
+    {
+      "id": "haas-hops-companion-2022",
+      "url": "http://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+      "host": "www.johnihaas.com",
+      "title": "Hops Companion — A brewer's guide to hop varieties and hop products, 4th edition (2022)",
+      "publisher": "John I. Haas",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Per-variety specifications for 155 hop varieties: alpha and beta acids (%), cohumulone (% of alpha), total oil (mL/100g) and the myrcene, humulene, caryophyllene, farnesene and linalool fractions (% of total oil), plus total polyphenols, pedigree and aroma descriptors. Retrieved and read; Cascade and Simcoe checked against the page directly.",
+      "doesNotSupport": "It is a typical-range guide, not a lot analysis — a specific bale is certified by its own certificate of analysis and will differ. The figures in this project's hop records were not imported from this PDF: extracting it programmatically produces plausible but wrong values (Simcoe parsed as 4.5-8.0% alpha against a printed 12.0-15.5%), so the guide is cited as the source that carries each variety's specification, and reconciling the stored numbers against it remains outstanding.",
       "accessed": "2026-08-07"
     },
     {

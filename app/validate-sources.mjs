@@ -96,7 +96,17 @@ function eachRecord(dir, fn) {
 // boolean and turns an invisible problem into a counted one.
 const NUMERIC_FIELDS = ["ppg","colorLovibond","sugarGPer100g","juiceBrix","alphaMin","totalOilMin",
   "titratableAcidityGPerL","phTypical","doseMinGPerL","effectPerGramPerLitre","calcium","attenuationMin"];
+// A style target is a goal, not a measurement. "Aim for 250 ppm sulfate in a
+// hoppy pale" is a recommendation this project is making; there is no document
+// in the world that could be its source, because no analyst ever measured it.
+// Counting the ten of them as unsourced debt says the catalogue owes a citation
+// it can never pay, and it hides the records that genuinely do owe one —
+// validate-water already skips them for charge balance on the same reasoning.
+// They are still required to declare themselves and still counted, just on
+// their own line, so exempting them cannot become a way to hide anything.
+const DESIGNED_KINDS = new Set(["style-target"]);
 let unsourced = 0;
+let designed = 0;
 eachRecord(DATA, (r, file) => {
   if (r.withdrawnSourceUrl && r.sourceUrl) {
     hard.push(`${file}:${r.id} has both sourceUrl and withdrawnSourceUrl — cite the live one only.`);
@@ -112,7 +122,8 @@ eachRecord(DATA, (r, file) => {
     if (!a.supports) hard.push(`${file}:${r.id} has an additional source that does not say what it supports: ${a.url}`);
   }
   if (r.unsourced) {
-    unsourced++;
+    if (DESIGNED_KINDS.has(r.kind)) designed++;
+    else unsourced++;
     if (r.sourceUrl) hard.push(`${file}:${r.id} is flagged unsourced but carries a sourceUrl.`);
     if (!r.attribution) hard.push(`${file}:${r.id} is flagged unsourced and does not say why.`);
     return;
@@ -171,6 +182,12 @@ if (hard.length) {
 const declareArg = process.argv.find((a) => a.startsWith("--declare="));
 const unsourcedBudget = budget.unsourcedRecords ?? unsourced; // first run sets the baseline
 console.log(`DECLARED UNSOURCED: ${unsourced} record(s) carry numbers with no citation at all`);
+if (designed) {
+  console.log(
+    `  (plus ${designed} style target(s), counted separately: a target is this project's own ` +
+      `recommendation, so there is no document that could ever be its source)`
+  );
+}
 console.log(`  budget:      ${unsourcedBudget}`);
 if (unsourced > unsourcedBudget && !declareArg) {
   failed = true;

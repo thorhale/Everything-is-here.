@@ -1782,6 +1782,23 @@
    "accessed": "2026-08-10",
    "supports": "Per-product dosage rates in g/hL with lb/1000 gal alongside - Fermaid K at 25-50 g/hL, Fermaid O at 10-40 g/hL, Go-Ferm at a single 30 g/hL - and the nutrient comparison table giving YAN contribution in ppm at 40 g/hL, which is what converts a dose into a nitrogen figure. Also the distinction between measureable YAN and \"YAN equivalents\" for organic nutrients, and rehydration and stuck-fermentation protocols.",
    "doesNotSupport": "Anything about generic materials it does not sell. The handbook is a Lallemand product catalogue with technical depth, not a reference on winemaking additives in general: there is no entry for yeast energizer, Sparkolloid, Irish moss or brewing yeast nutrient, and its DAP entry gives no dose at all. Note also that the YAN comparison table's column header sits far from its values in the PDF's text stream and has to be recovered by page geometry; read in stream order the ppm figures appear with no basis and are unusable."
+  },
+  {
+   "id": "pedneault-2018-interspecific-hybrids",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6272385/",
+   "title": "Volatile Compounds from Grape Skin, Juice and Wine from Five Interspecific Hybrid Grape Cultivars Grown in Québec",
+   "authors": [
+    "K. Pedneault",
+    "and colleagues"
+   ],
+   "year": 2018,
+   "publisher": "Molecules (MDPI), via PubMed Central",
+   "kind": "peer-reviewed",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "Table 1: berry weight, skin proportion, juice yield as a percentage of fresh berry weight, total soluble solids in Brix, titratable acidity as tartaric acid, pH and yeast assimilable nitrogen for Frontenac, Maréchal Foch, Marquette, Sabrevois and St. Croix, each the mean of six to eight replicates. Published CC BY, so the figures can be reused with attribution.",
+   "doesNotSupport": "Any range. Every figure is a single-vintage, single-region mean - the 2012 harvest in Québec - so it establishes a well-documented point and not the spread a cultivar shows from Minnesota to Nova Scotia. It also says nothing about colour or fermentability, and its juice yields are laboratory press recoveries, which run well above commercial ones."
   }
  ]
 }

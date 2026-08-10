@@ -600,7 +600,9 @@
    "unitLabel": "g",
    "description": "Rum distilling strain selected for cane/molasses washes; heat tolerant, ester-forward.",
    "flavorNotes": "Rich rum esters.",
-   "sourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/"
+   "withdrawnSourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/",
+   "attribution": "The cited page has gone: lallemandbiofuels.com no longer resolves at all - not a 404, no DNS. Lallemand's distilled-spirits business now trades as Lallemand Biofuels & Distilled Spirits at lallemandbds.com, but that host answers automated requests with 403, so its DistilaMax pages could not be retrieved and confirmed to be the right document. Rather than swap in a URL nobody has read, the dead one is recorded here and the figures stand on it.",
+   "specBasis": "vendor-withdrawn"
   },
   {
    "id": "distilamax-mw",
@@ -629,7 +631,9 @@
    "unitLabel": "g",
    "description": "Malt whisky distilling strain; fruity/estery congener profile for pot-still malt.",
    "flavorNotes": "Fruity malt-whisky congeners.",
-   "sourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/"
+   "withdrawnSourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/",
+   "attribution": "The cited page has gone: lallemandbiofuels.com no longer resolves at all - not a 404, no DNS. Lallemand's distilled-spirits business now trades as Lallemand Biofuels & Distilled Spirits at lallemandbds.com, but that host answers automated requests with 403, so its DistilaMax pages could not be retrieved and confirmed to be the right document. Rather than swap in a URL nobody has read, the dead one is recorded here and the figures stand on it.",
+   "specBasis": "vendor-withdrawn"
   }
  ]
 }
