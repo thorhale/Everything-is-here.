@@ -68,7 +68,8 @@ const DDL = [
     "doseMinGPerL" DOUBLE PRECISION, "doseMaxGPerL" DOUBLE PRECISION, "doseUnit" TEXT,
     "effectMetric" TEXT, "effectPerGramPerLitre" DOUBLE PRECISION, "effectUnit" TEXT,
     "contactTime" TEXT, "description" TEXT NOT NULL, "usageNotes" TEXT, "cautions" TEXT,
-    "sourceUrl" TEXT NOT NULL, "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
+    "sourceUrl" TEXT, "unsourced" BOOLEAN NOT NULL DEFAULT false,
+    "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   `CREATE INDEX IF NOT EXISTS "Additive_category_idx" ON "Additive"("category")`,
   `CREATE INDEX IF NOT EXISTS "Additive_name_idx" ON "Additive"("name")`,
   `CREATE TABLE IF NOT EXISTS "Hop" (
@@ -96,7 +97,7 @@ const DDL = [
 const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","withdrawnSourceUrl","sourceNote","additionalSources","unsourced","attribution","sortOrder",
   "ppgMin","ppgMax","pfundColorMm","sugarGPer100g","sugarGPer100gMin","sugarGPer100gMax","juiceBrix","juiceBrixMin","juiceBrixMax","juiceYieldPct","moisturePct","titratableAcidityGPerL","titratableAcidityMinGPerL","titratableAcidityMaxGPerL","dominantAcid","phTypical","phMin","phMax","pectinLevel","tanninLevel","fruitGroup","species","grapeColor"];
 
-const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","attribution","sortOrder"];
+const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","unsourced","attribution","sortOrder"];
 
 const HOP_COLS = ["id","name","aliases","country","purpose","alphaMin","alphaMax","betaMin","betaMax","cohumuloneMin","cohumuloneMax","totalOilMin","totalOilMax","myrceneMin","myrceneMax","humuleneMin","humuleneMax","caryophylleneMin","caryophylleneMax","farneseneMin","farneseneMax","aromaDescriptors","substitutes","styleTags","breeder","yearReleased","description","usageNotes","specSource","sourceUrl","attribution","sortOrder"];
 
@@ -127,7 +128,7 @@ function addTuple(a, i, attribution) {
     litArr(a.uses), lit(a.doseMinGPerL ?? null), lit(a.doseMaxGPerL ?? null), lit(a.doseUnit ?? null),
     lit(a.effectMetric ?? null), lit(a.effectPerGramPerLitre ?? null), lit(a.effectUnit ?? null),
     lit(a.contactTime ?? null), lit(a.description), lit(a.usageNotes ?? null), lit(a.cautions ?? null),
-    lit(a.sourceUrl), lit(a.attribution ?? attribution ?? null), lit(a.sortOrder ?? i),
+    lit(a.sourceUrl ?? null), lit(a.unsourced ?? false), lit(a.attribution ?? attribution ?? null), lit(a.sortOrder ?? i),
   ].join(",") + ")";
 }
 
