@@ -21397,7 +21397,7 @@
    "description": "The defining gin botanical — by law, gin must taste predominantly of juniper. Piney, resinous and faintly citrus.",
    "usageNotes": "Typically 60-80% of a gin botanical bill by weight. Also the traditional Finnish sahti flavouring, where juniper twigs form the lauter filter bed.",
    "cautions": "Some Juniperus species are toxic. Use only J. communis.",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-5",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5",
    "sortOrder": 0,
    "attribution": "Dose ranges are typical homebrew and craft-distilling practice in grams per litre of finished volume, compiled from standard references. Botanicals vary enormously in potency by harvest, age and grind, so every range here is wide on purpose. Safety notes on wormwood, star anise, juniper species and elder are included because the distinctions genuinely matter."
   },
@@ -22539,7 +22539,7 @@
    "description": "The workhorse antimicrobial and antioxidant of winemaking. About 57.6% SO2 by weight, so 1 g/L yields roughly 576 mg/L SO2 — in practice dosed in tens of milligrams per litre.",
    "usageNotes": "What matters is not free SO2 but molecular SO2, which is pH-dependent: molecular = free / (1 + 10^(pH - 1.81)). Target around 0.5-0.8 mg/L molecular. At pH 3.2 that needs roughly 20 mg/L free; at pH 3.8 it needs over 80.",
    "cautions": "Legal total-SO2 limits apply — 350 mg/L in the US for table wine, lower in the EU and lower again for organic. Some people are genuinely sulphite-sensitive; declaration is mandatory above 10 mg/L in most markets.",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
    "sortOrder": 0,
    "attribution": "Sulphite chemistry follows the standard molecular SO2 relationship, molecular = free / (1 + 10^(pH - 1.81)), where 1.81 is the first pKa of sulphurous acid. Legal total-SO2 and sorbate limits differ by jurisdiction and by product category — the figures cited are US TTB values for table wine and are not universal. Check your own regulator."
   },
@@ -22567,7 +22567,7 @@
    "description": "Slightly higher SO2 yield per gram than the potassium salt, at about 67.4%, but it contributes sodium.",
    "usageNotes": "More common in brewing sanitation and in cider than in wine.",
    "cautions": "The sodium is cumulative and undesirable in wine, which is why potassium metabisulfite is preferred there.",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
    "sortOrder": 1,
    "attribution": "Sulphite chemistry follows the standard molecular SO2 relationship, molecular = free / (1 + 10^(pH - 1.81)), where 1.81 is the first pKa of sulphurous acid. Legal total-SO2 and sorbate limits differ by jurisdiction and by product category — the figures cited are US TTB values for table wine and are not universal. Check your own regulator."
   },
@@ -22595,7 +22595,7 @@
    "description": "Pre-measured metabisulfite. A common 0.44 g potassium metabisulfite tablet delivers roughly 65 mg/L of SO2 in one US gallon.",
    "usageNotes": "Convenient for small batches. One tablet per gallon is the standard pre-fermentation dose for fruit musts; wait 24 hours before pitching.",
    "cautions": "Tablet mass and salt vary between brands — some are sodium metabisulfite, some are heavier or lighter. Check the packet rather than trusting any single ppm figure, including this one.",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
    "sortOrder": 2,
    "attribution": "Sulphite chemistry follows the standard molecular SO2 relationship, molecular = free / (1 + 10^(pH - 1.81)), where 1.81 is the first pKa of sulphurous acid. Legal total-SO2 and sorbate limits differ by jurisdiction and by product category — the figures cited are US TTB values for table wine and are not universal. Check your own regulator."
   },
@@ -22623,7 +22623,7 @@
    "description": "Prevents yeast from reproducing. It does not kill yeast and it does not stop an active fermentation — it stops a finished wine restarting when you sweeten it.",
    "usageNotes": "The standard backsweetening partner: sorbate plus free SO2, added to a wine that has already finished and been racked clear.",
    "cautions": "Without adequate free SO2, lactic bacteria metabolise sorbate into 2-ethoxyhexa-3,5-diene, which smells overwhelmingly of crushed geranium leaves and cannot be removed. Never sorbate a wine you intend to put through malolactic conversion. US limit is 300 mg/L.",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
    "sortOrder": 3,
    "attribution": "Sulphite chemistry follows the standard molecular SO2 relationship, molecular = free / (1 + 10^(pH - 1.81)), where 1.81 is the first pKa of sulphurous acid. Legal total-SO2 and sorbate limits differ by jurisdiction and by product category — the figures cited are US TTB values for table wine and are not universal. Check your own regulator."
   },
@@ -24162,7 +24162,7 @@
    "year": 2021,
    "title": "Cider & Perry: Appellations, Legal Standards & Traditional Methods",
    "sourceType": "legal-standard",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
    "attribution": "Cider is the beverage where the gap between the legal definition and the traditional product is widest: a UK 'cider' need only be 35% juice, while a French AOC cider must be 100% juice from named varieties, keeved and bottle-conditioned. This edition compiles the binding standards — the French AOC/AOP decrees for Pays d'Auge, Cornouaille and Domfront, the Spanish DOP for Asturias and Euskal Sagardoa, UK duty law and the West Country and Three Counties PGIs, US TTB 27 CFR Part 24 and the hard-cider tax class, and Quebec's ice cider and fire cider PGIs — alongside the traditional methods (keeving, sidra natural, cryoconcentration) that those standards exist to protect. Numbers are legal thresholds, not judging targets. Cider gravities are given in specific gravity for calculator use; where a standard is written in grams per litre of sugar or in Brix, both are noted. Check the current instrument before relying on any of this commercially.",
    "categories": [
     {
@@ -26627,7 +26627,7 @@
    "year": 2019,
    "title": "Spirits: Legal Definitions & Standards of Identity",
    "sourceType": "legal-standard",
-   "sourceUrl": "https://www.ecfr.gov/current/title-27/part-5/subpart-I",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&subpart=I",
    "attribution": "Unlike beer, mead, and cider, distilled spirits have no judging style guidelines — but they do have binding legal definitions. This edition compiles the actual statutory standards of identity: the Scotch Whisky Regulations 2009 (UK), the Irish Whiskey Technical File, US 27 CFR Part 5 (TTB), EU Regulation 2019/787, Mexico's NOM-006/NOM-070, French AOC decrees, and equivalent national standards. Figures are the legal minima/maxima, not sensory targets. Compiled for reference; always check the current regulation for the jurisdiction you are producing in. US standards of identity are cited to the Code of Federal Regulations itself rather than to a TTB overview page (the previous citation, ttb.gov/spirits/spirits-standards-of-identity, now 404s). Text read from the eCFR API at version 2026-01-01 — a standard of identity is only true as of a date, so the date travels with the citation.",
    "categories": [
     {
@@ -26740,7 +26740,7 @@
        "tags": "bourbon, corn, new charred oak",
        "legalCitation": {
         "instrument": "27 CFR § 5.143 (Whisky)",
-        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
         "version": "2026-01-01",
         "note": "Federal standard of identity, read from the eCFR API at this version."
        }
@@ -26756,7 +26756,7 @@
        "tags": "bourbon, straight, bottled-in-bond",
        "legalCitation": {
         "instrument": "27 CFR § 5.143 (Whisky)",
-        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
         "version": "2026-01-01",
         "note": "Federal standard of identity, read from the eCFR API at this version."
        }
@@ -26774,7 +26774,7 @@
        "tags": "rye, spicy",
        "legalCitation": {
         "instrument": "27 CFR § 5.143 (Whisky)",
-        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
         "version": "2026-01-01",
         "note": "Federal standard of identity, read from the eCFR API at this version."
        }
@@ -26792,7 +26792,7 @@
        "tags": "corn whiskey, moonshine, unaged",
        "legalCitation": {
         "instrument": "27 CFR § 5.143 (Whisky)",
-        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
         "version": "2026-01-01",
         "note": "Federal standard of identity, read from the eCFR API at this version."
        }
@@ -26825,7 +26825,7 @@
        "tags": "single malt, american, 2024 standard",
        "legalCitation": {
         "instrument": "27 CFR § 5.143 (Whisky)",
-        "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+        "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
         "version": "2026-01-01",
         "note": "Federal standard of identity, read from the eCFR API at this version."
        }

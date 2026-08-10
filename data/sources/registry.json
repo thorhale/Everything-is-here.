@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 392,
+    "distinctSources": 390,
     "backgroundDocuments": 14,
-    "citations": 694,
-    "numericCitations": 579,
-    "numericOnShallowLink": 30,
+    "citations": 689,
+    "numericCitations": 574,
+    "numericOnShallowLink": 4,
     "numericOnTertiary": 0,
-    "fullTextVerified": 34,
+    "fullTextVerified": 36,
     "backgroundFullTextVerified": 11,
     "byReliability": {
-      "primary": 661,
+      "primary": 656,
       "secondary": 27,
       "tertiary": 6
     }
@@ -213,6 +213,46 @@
       ]
     },
     {
+      "id": "cfr-27-24-246-wine-treatment-materials",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+      "host": "www.ecfr.gov",
+      "title": "27 CFR 24.246 - Materials authorized for the treatment of wine and juice",
+      "publisher": "Office of the Federal Register (eCFR)",
+      "authors": [
+        "Alcohol and Tobacco Tax and Trade Bureau"
+      ],
+      "year": 2026,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The list of materials legally permitted for treating wine and juice in the United States, with the numeric ceiling on each where one exists: diammonium phosphate 0.96 g/L, thiamine hydrochloride 0.6 mg/L, yeast cell wall 0.36 g/L, PVPP 7.19 g/L, silica gel 2.4 g/L, chitosan 500 g/100 L, activated carbon 3 g/L for decolorising, copper as copper 6 mg/L, and residual tannin 800 mg/L in white wine and 3 g/L in red. For enzymes it regulates provenance rather than quantity, naming the permitted source organism for each activity. Cited to the eCFR versioner API rather than to www.ecfr.gov/current, which 302s automated clients to an unblock page; the API returns the section itself and is pinned to 2026-08-01, which for a legal text is the point.",
+      "doesNotSupport": "Any recommended dose. Every number in the section is a maximum or a residual limit, so it can bound a record from above and can never establish a working rate or a minimum. Several entries - bentonite, gelatin, isinglass, autolyzed yeast - print \"None\" in the limitation column and support only the fact that the material is permitted. It is also US law about wine and juice specifically: it says nothing about beer, and nothing about products such as Sparkolloid or Irish moss that it does not list.",
+      "accessed": "2026-08-10",
+      "note": null,
+      "citations": 17,
+      "numericCitations": 17,
+      "usedIn": [
+        "data/additives/enzymes-finings.json",
+        "data/additives/nutrients.json",
+        "data/additives/tannin-wood.json"
+      ],
+      "exampleRecords": [
+        "enzyme-pectic",
+        "enzyme-amylase",
+        "enzyme-glucoamylase",
+        "enzyme-beta-glucanase",
+        "fining-bentonite",
+        "fining-isinglass",
+        "fining-gelatin",
+        "fining-kieselsol-chitosan",
+        "fining-pvpp",
+        "fining-activated-carbon",
+        "nutrient-dap",
+        "nutrient-yeast-hulls"
+      ]
+    },
+    {
       "id": "uga-c717-winemaking-at-home",
       "url": "https://fieldreport.caes.uga.edu/publications/C717/",
       "host": "fieldreport.caes.uga.edu",
@@ -285,72 +325,6 @@
     },
     {
       "id": null,
-      "url": "https://scottlab.com/nutrients",
-      "host": "scottlab.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
-      "citations": 9,
-      "numericCitations": 8,
-      "usedIn": [
-        "data/additives/nutrients.json",
-        "data/fermentation/archetypes.json"
-      ],
-      "exampleRecords": [
-        "nutrient-dap",
-        "nutrient-fermaid-k",
-        "nutrient-fermaid-o",
-        "nutrient-go-ferm",
-        "nutrient-yeast-hulls",
-        "nutrient-thiamine",
-        "nutrient-yeast-energizer",
-        "nutrient-beer-nutrient",
-        "mead-cultured"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://scottlab.com/",
-      "host": "scottlab.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
-      "citations": 8,
-      "numericCitations": 8,
-      "usedIn": [
-        "data/additives/enzymes-finings.json"
-      ],
-      "exampleRecords": [
-        "fining-bentonite",
-        "fining-isinglass",
-        "fining-gelatin",
-        "fining-sparkolloid",
-        "fining-kieselsol-chitosan",
-        "fining-pvpp",
-        "fining-irish-moss",
-        "fining-activated-carbon"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
       "host": "assets.publishing.service.gov.uk",
       "title": null,
@@ -417,7 +391,7 @@
     },
     {
       "id": null,
-      "url": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-24",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24",
       "host": "www.ecfr.gov",
       "title": null,
       "publisher": "Electronic Code of Federal Regulations (US)",
@@ -475,62 +449,6 @@
     },
     {
       "id": null,
-      "url": "https://scottlab.com/enzymes",
-      "host": "scottlab.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/additives/enzymes-finings.json"
-      ],
-      "exampleRecords": [
-        "enzyme-pectic",
-        "enzyme-amylase",
-        "enzyme-glucoamylase",
-        "enzyme-beta-glucanase"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://scottlab.com/tannins",
-      "host": "scottlab.com",
-      "title": null,
-      "publisher": "Scott Laboratories",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-handbook",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
-      "citations": 4,
-      "numericCitations": 4,
-      "usedIn": [
-        "data/additives/tannin-wood.json"
-      ],
-      "exampleRecords": [
-        "tannin-grape-red",
-        "tannin-grape-white",
-        "tannin-quebracho",
-        "tannin-oak-hydrolysable"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts",
       "host": "www.maltosefalcons.com",
       "title": null,
@@ -582,6 +500,35 @@
         "angel-whiskey",
         "angel-rum",
         "angel-baijiu-daqu"
+      ]
+    },
+    {
+      "id": "scott-laboratories-winemaking-handbook-2025-2026",
+      "url": "https://scottlab.com/content/files/documents/handbooks/rev/scott%20laboratories%202025-2026%20winemaking%20handbook%20aug.pdf",
+      "host": "scottlab.com",
+      "title": "Scott Laboratories 2025-2026 Winemaking Handbook",
+      "publisher": "Scott Laboratories, Petaluma CA",
+      "authors": [
+        "Scott Laboratories"
+      ],
+      "year": 2025,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Per-product dosage rates in g/hL with lb/1000 gal alongside - Fermaid K at 25-50 g/hL, Fermaid O at 10-40 g/hL, Go-Ferm at a single 30 g/hL - and the nutrient comparison table giving YAN contribution in ppm at 40 g/hL, which is what converts a dose into a nitrogen figure. Also the distinction between measureable YAN and \"YAN equivalents\" for organic nutrients, and rehydration and stuck-fermentation protocols.",
+      "doesNotSupport": "Anything about generic materials it does not sell. The handbook is a Lallemand product catalogue with technical depth, not a reference on winemaking additives in general: there is no entry for yeast energizer, Sparkolloid, Irish moss or brewing yeast nutrient, and its DAP entry gives no dose at all. Note also that the YAN comparison table's column header sits far from its values in the PDF's text stream and has to be recovered by page geometry; read in stream order the ppm figures appear with no basis and are unusable.",
+      "accessed": "2026-08-10",
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/additives/nutrients.json"
+      ],
+      "exampleRecords": [
+        "nutrient-fermaid-k",
+        "nutrient-fermaid-o",
+        "nutrient-go-ferm"
       ]
     },
     {
@@ -1742,7 +1689,7 @@
     },
     {
       "id": null,
-      "url": "https://www.ecfr.gov/current/title-27/chapter-I/subchapter-A/part-5",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5",
       "host": "www.ecfr.gov",
       "title": null,
       "publisher": "Electronic Code of Federal Regulations (US)",
@@ -1763,31 +1710,6 @@
       ],
       "exampleRecords": [
         "bot-juniper"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.gov.uk/",
-      "host": "www.gov.uk",
-      "title": null,
-      "publisher": "UK Government",
-      "authors": null,
-      "year": null,
-      "kind": "regulation",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/additives/tannin-wood.json"
-      ],
-      "exampleRecords": [
-        "tannin-tea"
       ]
     },
     {
@@ -5772,6 +5694,31 @@
     },
     {
       "id": null,
+      "url": "https://scottlab.com/nutrients",
+      "host": "scottlab.com",
+      "title": null,
+      "publisher": "Scott Laboratories",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": false,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Fermentation supplier to the wine and cider trade; publishes an annual Fermentation Handbook carrying enzyme activities, nutrient compositions, fining dose rates and tannin specifications. Note the domain: scottlabs.com (plural) has never resolved and 24 citations pointed at it.",
+      "citations": 1,
+      "numericCitations": 0,
+      "usedIn": [
+        "data/fermentation/archetypes.json"
+      ],
+      "exampleRecords": [
+        "mead-cultured"
+      ]
+    },
+    {
+      "id": null,
       "url": "https://japansake.or.jp/sake/en/professional/sake-brewing-processes-flavor/",
       "host": "japansake.or.jp",
       "title": null,
@@ -6593,7 +6540,7 @@
     },
     {
       "id": null,
-      "url": "https://www.ecfr.gov/current/title-27/part-5/subpart-I",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&subpart=I",
       "host": "www.ecfr.gov",
       "title": null,
       "publisher": "Electronic Code of Federal Regulations (US)",
@@ -7966,20 +7913,20 @@
     },
     {
       "id": null,
-      "url": "https://www.ttb.gov/",
-      "host": "www.ttb.gov",
+      "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A21%3A021&countycode=US%3A21%3A239&countycode=US%3A21%3A179&countycode=US%3A21%3A073&countycode=US%3A21%3A005&countycode=US%3A21%3A155&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+      "host": "www.waterqualitydata.us",
       "title": null,
-      "publisher": "US Alcohol and Tobacco Tax and Trade Bureau",
+      "publisher": "Water Quality Portal (USGS / EPA / NWQMC)",
       "authors": null,
       "year": null,
-      "kind": "regulation",
+      "kind": "government-database",
       "reliability": "primary",
       "verification": "unverified",
-      "deepLink": false,
+      "deepLink": true,
       "supports": null,
       "doesNotSupport": null,
       "accessed": null,
-      "note": null,
+      "note": "Joint USGS, EPA and National Water Quality Monitoring Council repository of individual laboratory analyses of US water bodies. Free, no key, machine-readable. Each record is a measurement with a site, a date and a method, which is a stronger provenance than any curated brewing profile can offer.",
       "citations": 1,
       "numericCitations": 1,
       "usedIn": [
@@ -10190,7 +10137,7 @@
     },
     {
       "id": "ecfr-27-cfr-5-143-whisky",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "host": "www.ecfr.gov",
       "title": "27 CFR § 5.143 — Whisky (standards of identity for distilled spirits)",
       "publisher": "US Government Publishing Office / National Archives",

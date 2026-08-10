@@ -3,7 +3,7 @@
  "year": 2019,
  "title": "Spirits: Legal Definitions & Standards of Identity",
  "sourceType": "legal-standard",
- "sourceUrl": "https://www.ecfr.gov/current/title-27/part-5/subpart-I",
+ "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&subpart=I",
  "attribution": "Unlike beer, mead, and cider, distilled spirits have no judging style guidelines — but they do have binding legal definitions. This edition compiles the actual statutory standards of identity: the Scotch Whisky Regulations 2009 (UK), the Irish Whiskey Technical File, US 27 CFR Part 5 (TTB), EU Regulation 2019/787, Mexico's NOM-006/NOM-070, French AOC decrees, and equivalent national standards. Figures are the legal minima/maxima, not sensory targets. Compiled for reference; always check the current regulation for the jurisdiction you are producing in. US standards of identity are cited to the Code of Federal Regulations itself rather than to a TTB overview page (the previous citation, ttb.gov/spirits/spirits-standards-of-identity, now 404s). Text read from the eCFR API at version 2026-01-01 — a standard of identity is only true as of a date, so the date travels with the citation.",
  "categories": [
   {
@@ -116,7 +116,7 @@
      "tags": "bourbon, corn, new charred oak",
      "legalCitation": {
       "instrument": "27 CFR § 5.143 (Whisky)",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "version": "2026-01-01",
       "note": "Federal standard of identity, read from the eCFR API at this version."
      }
@@ -132,7 +132,7 @@
      "tags": "bourbon, straight, bottled-in-bond",
      "legalCitation": {
       "instrument": "27 CFR § 5.143 (Whisky)",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "version": "2026-01-01",
       "note": "Federal standard of identity, read from the eCFR API at this version."
      }
@@ -150,7 +150,7 @@
      "tags": "rye, spicy",
      "legalCitation": {
       "instrument": "27 CFR § 5.143 (Whisky)",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "version": "2026-01-01",
       "note": "Federal standard of identity, read from the eCFR API at this version."
      }
@@ -168,7 +168,7 @@
      "tags": "corn whiskey, moonshine, unaged",
      "legalCitation": {
       "instrument": "27 CFR § 5.143 (Whisky)",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "version": "2026-01-01",
       "note": "Federal standard of identity, read from the eCFR API at this version."
      }
@@ -201,7 +201,7 @@
      "tags": "single malt, american, 2024 standard",
      "legalCitation": {
       "instrument": "27 CFR § 5.143 (Whisky)",
-      "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
       "version": "2026-01-01",
       "note": "Federal standard of identity, read from the eCFR API at this version."
      }

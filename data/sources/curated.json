@@ -322,6 +322,13 @@
    "reliability": "primary"
   },
   {
+   "host": "pubchem.ncbi.nlm.nih.gov",
+   "name": "PubChem (NIH National Library of Medicine)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The NIH chemical database. Used here only for molecular formulae and weights, which are facts about the molecule rather than claims about a product - the nitrogen fraction of diammonium phosphate follows from its formula and needs no vendor to assert it."
+  },
+  {
    "host": "pubmed.ncbi.nlm.nih.gov",
    "name": "PubMed",
    "kind": "peer-reviewed",
@@ -1611,7 +1618,7 @@
   },
   {
    "id": "ecfr-27-cfr-5-143-whisky",
-   "url": "https://www.ecfr.gov/current/title-27/section-5.143",
+   "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=5&section=5.143",
    "title": "27 CFR § 5.143 — Whisky (standards of identity for distilled spirits)",
    "publisher": "US Government Publishing Office / National Archives",
    "kind": "regulation",
@@ -1743,6 +1750,38 @@
    "accessed": "2026-08-09",
    "supports": "Section 52.6322's Brix requirements: the minimum Brix of the finished concentrate at each dilution factor, 22.9 degrees at 1 plus 1, then 33.0, 42.2, 50.8, 58.8, 66.3 and 73.3 at 7 plus 1. Also section 52.6321's product description, which requires frozen concentrated apple juice to be clarified and concentrated to at least 22.9 degrees Brix. Published at 40 FR 13195, effective 15 May 1975.",
    "doesNotSupport": "Any sugar figure - the standard grades soluble solids and never separates sugar from acid. It is also no longer codified: 7 CFR part 52 now ends at section 52.3764 and the 52.6321-52.6332 subpart has been removed from the Code of Federal Regulations, so this AMS PDF is the text and an eCFR link would be dead. It covers frozen concentrate only; there is no AMS standard for unsweetened grape or tart cherry concentrate, and the frozen concentrated grape juice standard (section 52.2453) grades *sweetened* concentrate, its Brix figures including added sweetener."
+  },
+  {
+   "id": "cfr-27-24-246-wine-treatment-materials",
+   "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "title": "27 CFR 24.246 - Materials authorized for the treatment of wine and juice",
+   "authors": [
+    "Alcohol and Tobacco Tax and Trade Bureau"
+   ],
+   "year": 2026,
+   "publisher": "Office of the Federal Register (eCFR)",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "The list of materials legally permitted for treating wine and juice in the United States, with the numeric ceiling on each where one exists: diammonium phosphate 0.96 g/L, thiamine hydrochloride 0.6 mg/L, yeast cell wall 0.36 g/L, PVPP 7.19 g/L, silica gel 2.4 g/L, chitosan 500 g/100 L, activated carbon 3 g/L for decolorising, copper as copper 6 mg/L, and residual tannin 800 mg/L in white wine and 3 g/L in red. For enzymes it regulates provenance rather than quantity, naming the permitted source organism for each activity. Cited to the eCFR versioner API rather than to www.ecfr.gov/current, which 302s automated clients to an unblock page; the API returns the section itself and is pinned to 2026-08-01, which for a legal text is the point.",
+   "doesNotSupport": "Any recommended dose. Every number in the section is a maximum or a residual limit, so it can bound a record from above and can never establish a working rate or a minimum. Several entries - bentonite, gelatin, isinglass, autolyzed yeast - print \"None\" in the limitation column and support only the fact that the material is permitted. It is also US law about wine and juice specifically: it says nothing about beer, and nothing about products such as Sparkolloid or Irish moss that it does not list."
+  },
+  {
+   "id": "scott-laboratories-winemaking-handbook-2025-2026",
+   "url": "https://scottlab.com/content/files/documents/handbooks/rev/scott%20laboratories%202025-2026%20winemaking%20handbook%20aug.pdf",
+   "title": "Scott Laboratories 2025-2026 Winemaking Handbook",
+   "authors": [
+    "Scott Laboratories"
+   ],
+   "year": 2025,
+   "publisher": "Scott Laboratories, Petaluma CA",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "Per-product dosage rates in g/hL with lb/1000 gal alongside - Fermaid K at 25-50 g/hL, Fermaid O at 10-40 g/hL, Go-Ferm at a single 30 g/hL - and the nutrient comparison table giving YAN contribution in ppm at 40 g/hL, which is what converts a dose into a nitrogen figure. Also the distinction between measureable YAN and \"YAN equivalents\" for organic nutrients, and rehydration and stuck-fermentation protocols.",
+   "doesNotSupport": "Anything about generic materials it does not sell. The handbook is a Lallemand product catalogue with technical depth, not a reference on winemaking additives in general: there is no entry for yeast energizer, Sparkolloid, Irish moss or brewing yeast nutrient, and its DAP entry gives no dose at all. Note also that the YAN comparison table's column header sits far from its values in the PDF's text stream and has to be recovered by page geometry; read in stream order the ppm figures appear with no basis and are unusable."
   }
  ]
 }

@@ -1715,12 +1715,12 @@
    "kind": "classic-city",
    "country": "United States",
    "region": "Kentucky",
-   "calcium": 90,
-   "magnesium": 10,
-   "sodium": 15,
-   "chloride": 12,
-   "sulfate": 40,
-   "bicarbonate": 200,
+   "calcium": 76.2,
+   "magnesium": 15.0,
+   "sodium": 6.5,
+   "chloride": 9.2,
+   "sulfate": 29.2,
+   "bicarbonate": 252.2,
    "bestForStyles": [
     "Bourbon mash water",
     "Cream Ale"
@@ -1732,8 +1732,54 @@
     "whiskey"
    ],
    "description": "The water that made bourbon country. Filtered through deep limestone, it is hard and alkaline but crucially iron-free — dissolved iron ruins fermentation and blackens whiskey, and the limestone strips it out while adding the calcium yeast love. Not a beer profile, but the reason Kentucky, not somewhere else, became the home of American whiskey.",
-   "sourceUrl": "https://www.ttb.gov/",
-   "sortOrder": 43
+   "sourceUrl": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A21%3A021&countycode=US%3A21%3A239&countycode=US%3A21%3A179&countycode=US%3A21%3A073&countycode=US%3A21%3A005&countycode=US%3A21%3A155&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+   "sortOrder": 43,
+   "attribution": "Median of 34 groundwater sampling sites - 35 wells and 19 springs, of which 34 carry all six ions - in the six Bluegrass and bourbon counties of Bourbon, Woodford, Nelson, Franklin, Anderson and Marion, retrieved from the Water Quality Portal, the joint USGS / EPA / NWQMC national water-quality database. The cited URL is the exact query, all six counties at once, and it returns the 552 analyses this profile was built from. sampled between 1935 and 2007 with a median year of 1956. Each site is reduced to its own median first and the profile is the median of those, so a site sampled a hundred times does not outvote one sampled twice. Calcium 76.2 (stored 90), magnesium 15.0 (10), sodium 6.5 (15), chloride 9.2 (12), sulfate 29.2 (40) and bicarbonate 252.2 (200) mg/L. It balances on charge to 6.2%, cation-heavy, which is what a six-ion panel does when the potassium and nitrate are not in it. The record previously cited ttb.gov, which publishes no water analyses at all.",
+   "sourceNote": "The stored profile was directionally right and numerically wrong in every ion: it had the hardness and the alkalinity the story requires, but it overstated calcium by a fifth, sodium by more than double, and understated bicarbonate. The correction does not disturb the point the record is making - this is hard, strongly alkaline limestone water.\n\nTwo limits. First, the record's central claim, that the limestone strips out iron, is not tested here: iron was not queried and is not in this panel, so the iron-free assertion remains unsourced. Second, this is a regional aquifer and not a distillery's intake. No distillery's own water analysis is cited, and the spread between sites is enormous - the aquifer block below records a maximum chloride of 13,700 mg/L and sodium of 6,730, because the Bluegrass has deep Ohio Valley brine beneath its freshwater zone and the Water Quality Portal does not separate the two. That is why the median across sites is the statistic used and why the maximum is not, in any sense, Kentucky's water.",
+   "aquifer": {
+    "name": "Ordovician limestone of the Inner Bluegrass karst, with the underlying Ohio Valley brines",
+    "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A21%3A021&countycode=US%3A21%3A239&countycode=US%3A21%3A179&countycode=US%3A21%3A073&countycode=US%3A21%3A005&countycode=US%3A21%3A155&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+    "citation": "US Geological Survey and US Environmental Protection Agency, Water Quality Portal (waterqualitydata.us), groundwater results for Bourbon, Woodford, Nelson, Franklin, Anderson and Marion counties, Kentucky, 1935-2007.",
+    "ions": {
+     "calcium": {
+      "n": 34,
+      "min": 28.0,
+      "median": 76.2,
+      "max": 1280.0
+     },
+     "magnesium": {
+      "n": 34,
+      "min": 2.7,
+      "median": 15.0,
+      "max": 669.0
+     },
+     "sodium": {
+      "n": 34,
+      "min": 1.4,
+      "median": 6.5,
+      "max": 6730.0
+     },
+     "chloride": {
+      "n": 34,
+      "min": 1.2,
+      "median": 9.2,
+      "max": 13700.0
+     },
+     "sulfate": {
+      "n": 34,
+      "min": 1.5,
+      "median": 29.2,
+      "max": 1340.0
+     },
+     "bicarbonate": {
+      "n": 34,
+      "min": 123.0,
+      "median": 252.2,
+      "max": 515.0
+     }
+    },
+    "note": "Read the range, not just the median. The freshwater karst these counties are known for sits on top of saline formation water, and both are in this dataset: calcium runs from 28 to 1,280 mg/L across the 34 sites and chloride from 1.2 to 13,700. The median site is unambiguously the karst water - 76 mg/L calcium against 252 of bicarbonate, hard and strongly alkaline, with sulfate at 29 and chloride at 9 - and that is the water the bourbon story is about. The brine wells are real Kentucky groundwater too, and nobody mashes with them. Bicarbonate is reported directly by the analysts here rather than derived from an alkalinity titration, which is unusual and welcome."
+   }
   },
   {
    "id": "ro-distilled",

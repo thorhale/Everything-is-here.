@@ -1,6 +1,7 @@
 {
-  "numericOnShallowLink": 30,
-  "unsourcedRecords": 52,
+  "numericOnShallowLink": 4,
+  "unsourcedRecords": 57,
+  "unsourcedRaisedBecause": "Five records whose cited source does not document them: yeast energizer and brewing yeast nutrient are unspecified generic blends absent from both Scott Laboratories handbooks and from 27 CFR 24.246; Sparkolloid and Irish moss are likewise absent from both; and black tea as a tannin source has no product specification and is not an authorised wine treatment material. In every case a homepage was standing in for a document that does not exist, and an admitted gap is worth more than a false citation.",
   "note": "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims citing a publisher homepage rather than the specific document the figure came from; lower it by finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that their numbers currently rest on no citation at all; lower it by sourcing them or by removing the numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be forgotten, and fails the build if either rises.",
-  "updated": "2026-08-09"
+  "updated": "2026-08-10"
 }
