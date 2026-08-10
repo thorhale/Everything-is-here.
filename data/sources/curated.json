@@ -648,17 +648,18 @@
    "note": "Self-published biography and bibliography. Primary for facts about Dornbusch himself, but it hosts none of the German Beer Institute style content and no style specifications, so it can support nothing numeric."
   },
   {
+   "host": "www.hort.cornell.edu",
+   "name": "Cornell University, New York State Agricultural Experiment Station",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "The grape breeding programme at Geneva, NY. Its cultivar release bulletins are the breeders' own publication for varieties they bred - Traminette, Cayuga White, Chardonel, Noiret, Corot noir - and tabulate juice soluble solids, total acidity as tartaric and pH as multi-vintage means with observed minima and maxima, footnoted with the number of years behind each figure."
+  },
+  {
    "host": "www.johnihaas.com",
    "name": "John I. Haas",
    "kind": "vendor-handbook",
    "reliability": "primary",
    "note": "One of the largest hop merchants; publishes the Hops Companion as a free PDF variety guide. Registered because hops was the worst-sourced topic in this project — most hop merchants render their variety data in JavaScript or refuse automated requests, and this guide is the one substantial hop reference that is both freely published and machine-readable."
-  },
-  {
-   "host": "www.kelloggs.com",
-   "name": "Kellogg's (nutrition labelling)",
-   "kind": "nutrition-label",
-   "reliability": "primary"
   },
   {
    "host": "www.lallemandbiofuels.com",
@@ -1799,6 +1800,40 @@
    "accessed": "2026-08-10",
    "supports": "Table 1: berry weight, skin proportion, juice yield as a percentage of fresh berry weight, total soluble solids in Brix, titratable acidity as tartaric acid, pH and yeast assimilable nitrogen for Frontenac, Maréchal Foch, Marquette, Sabrevois and St. Croix, each the mean of six to eight replicates. Published CC BY, so the figures can be reused with attribution.",
    "doesNotSupport": "Any range. Every figure is a single-vintage, single-region mean - the 2012 harvest in Québec - so it establishes a well-documented point and not the spread a cultivar shows from Minnesota to Nova Scotia. It also says nothing about colour or fermentability, and its juice yields are laboratory press recoveries, which run well above commercial ones."
+  },
+  {
+   "id": "cornell-traminette-release-bulletin",
+   "url": "http://www.hort.cornell.edu/reisch/grapegenetics/bulletin/traminette.html",
+   "title": "'Traminette' Grape — cultivar release bulletin",
+   "authors": [
+    "B. I. Reisch",
+    "and colleagues, NYSAES Cornell University"
+   ],
+   "year": 1996,
+   "publisher": "New York State Agricultural Experiment Station, Cornell University",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "Table 3: juice soluble solids in Brix, total acidity as tartaric acid in g/L and pH for Traminette and Cayuga White at Geneva NY, and for Traminette and Melody at Fredonia, each as a multi-vintage average with the observed minimum and maximum. Traminette at Geneva runs 1972-95 and Cayuga White 1975-86, and the footnotes give the number of years behind each individual figure.",
+   "doesNotSupport": "Anything outside New York. Both cultivars are now grown from Indiana to Virginia, and a warmer site carries more sugar and less acid than Geneva. Cayuga White's pH rests on only two vintages against ten for its soluble solids, so it is much the weakest figure in the table. The bulletin gives no juice yield, colour or fermentability."
+  },
+  {
+   "id": "islam-2021-muscadine-juice-attributes",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8156615/",
+   "title": "Evaluation of Biochemical Juice Attributes and Color-Related Traits in Muscadine Grape Population",
+   "authors": [
+    "M. Islam",
+    "and colleagues"
+   ],
+   "year": 2021,
+   "publisher": "Horticulturae (MDPI), via PubMed Central",
+   "kind": "peer-reviewed",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "Total soluble solids and juice pH across 90 muscadine genotypes measured over three consecutive seasons, 2017-2019, on 50 berries per replicate with three replicates per genotype: TSS averaging 14.4 Brix from 7.9 to 18.1, and pH from 3.11 to 3.85. Published CC BY.",
+   "doesNotSupport": "Its acidity figures, which are printed as \"mg tartaric acid/L\" — 3.4 average, 2.6 to 4.8 — a unit that cannot be right, since 3.4 mg/L is three orders of magnitude below any grape juice. The numbers are almost certainly g/L but this project does not reinterpret a published unit, so they are not used. The population is also mostly breeding lines rather than wine cultivars, and the paper places the two standard wine cultivars, Noble and Carlos, in its low-sugar group."
   }
  ]
 }

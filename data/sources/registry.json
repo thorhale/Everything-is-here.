@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 389,
+    "distinctSources": 391,
     "backgroundDocuments": 15,
-    "citations": 690,
-    "numericCitations": 575,
+    "citations": 693,
+    "numericCitations": 578,
     "numericOnShallowLink": 4,
     "numericOnTertiary": 0,
-    "fullTextVerified": 36,
+    "fullTextVerified": 38,
     "backgroundFullTextVerified": 12,
     "byReliability": {
-      "primary": 657,
+      "primary": 660,
       "secondary": 27,
       "tertiary": 6
     }
@@ -881,6 +881,35 @@
       "exampleRecords": [
         "grape-frontenac",
         "grape-marechal-foch"
+      ]
+    },
+    {
+      "id": "cornell-traminette-release-bulletin",
+      "url": "http://www.hort.cornell.edu/reisch/grapegenetics/bulletin/traminette.html",
+      "host": "www.hort.cornell.edu",
+      "title": "'Traminette' Grape — cultivar release bulletin",
+      "publisher": "New York State Agricultural Experiment Station, Cornell University",
+      "authors": [
+        "B. I. Reisch",
+        "and colleagues, NYSAES Cornell University"
+      ],
+      "year": 1996,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Table 3: juice soluble solids in Brix, total acidity as tartaric acid in g/L and pH for Traminette and Cayuga White at Geneva NY, and for Traminette and Melody at Fredonia, each as a multi-vintage average with the observed minimum and maximum. Traminette at Geneva runs 1972-95 and Cayuga White 1975-86, and the footnotes give the number of years behind each individual figure.",
+      "doesNotSupport": "Anything outside New York. Both cultivars are now grown from Indiana to Virginia, and a warmer site carries more sugar and less acid than Geneva. Cayuga White's pH rests on only two vintages against ten for its soluble solids, so it is much the weakest figure in the table. The bulletin gives no juice yield, colour or fermentability.",
+      "accessed": "2026-08-10",
+      "note": "The grape breeding programme at Geneva, NY. Its cultivar release bulletins are the breeders' own publication for varieties they bred - Traminette, Cayuga White, Chardonel, Noiret, Corot noir - and tabulate juice soluble solids, total acidity as tartaric and pH as multi-vintage means with observed minima and maxima, footnoted with the number of years behind each figure.",
+      "citations": 2,
+      "numericCitations": 2,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-traminette",
+        "grape-cayuga-white"
       ]
     },
     {
@@ -5669,6 +5698,34 @@
       ],
       "exampleRecords": [
         "grape-la-crescent"
+      ]
+    },
+    {
+      "id": "islam-2021-muscadine-juice-attributes",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8156615/",
+      "host": "pmc.ncbi.nlm.nih.gov",
+      "title": "Evaluation of Biochemical Juice Attributes and Color-Related Traits in Muscadine Grape Population",
+      "publisher": "Horticulturae (MDPI), via PubMed Central",
+      "authors": [
+        "M. Islam",
+        "and colleagues"
+      ],
+      "year": 2021,
+      "kind": "peer-reviewed",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Total soluble solids and juice pH across 90 muscadine genotypes measured over three consecutive seasons, 2017-2019, on 50 berries per replicate with three replicates per genotype: TSS averaging 14.4 Brix from 7.9 to 18.1, and pH from 3.11 to 3.85. Published CC BY.",
+      "doesNotSupport": "Its acidity figures, which are printed as \"mg tartaric acid/L\" — 3.4 average, 2.6 to 4.8 — a unit that cannot be right, since 3.4 mg/L is three orders of magnitude below any grape juice. The numbers are almost certainly g/L but this project does not reinterpret a published unit, so they are not used. The population is also mostly breeding lines rather than wine cultivars, and the paper places the two standard wine cultivars, Noble and Carlos, in its low-sugar group.",
+      "accessed": "2026-08-10",
+      "note": null,
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-muscadine"
       ]
     },
     {
