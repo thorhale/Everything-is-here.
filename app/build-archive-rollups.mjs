@@ -112,6 +112,41 @@ for (const [key, table, amtCol] of [
   }
 }
 
+// --- per-name stats, for the /hops/[name] etc. detail pages ---------------
+// Every name, not just the top 500 the catalogue pages show — those pages must
+// resolve any ingredient a recipe mentions, however rare.
+//
+// `uses` is the row count and `recipes` the distinct-recipe count, and they are
+// very different: hops get added several times per recipe (bittering, flavour,
+// aroma, dry hop), so Citra shows 29,387 rows across only 11,759 recipes. The
+// pages were printing the row count under the label "archived recipes",
+// overstating by up to 2.5x. Both numbers are carried here so the label can be
+// honest.
+const nameStats = {};
+for (const [key, table, extra] of [
+  ["hop", "RecipeHop",
+   `round(avg("alphaAcidPct")::numeric,1)::float AS alpha,
+    string_agg(DISTINCT "form", ', ') FILTER (WHERE "form" IS NOT NULL) AS forms`],
+  ["yeast", "RecipeYeast",
+   `round(avg("attenuationPct")::numeric,1)::float AS attenuation,
+    string_agg(DISTINCT "labProduct", ', ') FILTER (WHERE "labProduct" IS NOT NULL) AS labs`],
+  ["fermentable", "RecipeFermentable",
+   `round(avg("ppg")::numeric,0)::float AS ppg,
+    round(avg("colorLovibond")::numeric,0)::float AS color,
+    string_agg(DISTINCT "maltster", ', ') FILTER (WHERE "maltster" IS NOT NULL AND "maltster" <> 'Any') AS maltsters`],
+]) {
+  const rows = await q(`${key} per-name stats`, `
+    SELECT "name", count(*)::int AS uses, count(DISTINCT "recipeId")::int AS recipes, ${extra}
+      FROM "${table}" WHERE "name" IS NOT NULL AND "name" <> ''
+     GROUP BY "name"`);
+  const m = {};
+  for (const r of rows) {
+    const { name, ...rest } = r;
+    m[name] = rest;
+  }
+  nameStats[key] = m;
+}
+
 // --- reverse index: ingredient name -> recipe ids -------------------------
 // Backs "recipes using Cascade" on the ingredient pages, which today is a
 // Prisma `some:` subquery against the junction table. 25 is the largest `take`
@@ -138,6 +173,7 @@ for (const [key, table] of [["hop", "RecipeHop"], ["fermentable", "RecipeFerment
 const payload = {
   generated: new Date().toISOString().slice(0, 10),
   usedBy,
+  nameStats,
   note:
     "Precomputed aggregates over the recipe archive's ingredients. The archive is " +
     "static (BrewToad shut down in 2018), so these never go stale. Regenerate with " +

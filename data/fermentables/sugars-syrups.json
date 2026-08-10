@@ -1,31 +1,676 @@
 {
-  "set": "sugars-syrups",
-  "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer.",
-  "fermentables": [
-    {"id":"sugar-sucrose","name":"Table Sugar (Sucrose)","aliases":["White Sugar","Granulated Sugar","Cane Sugar"],"category":"sugar","type":"sugar","ppg":46,"yieldPct":100,"colorLovibond":0,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":100,"fiberG":0,"uses":["beer","wine","mead","cider","rum","moonshine"],"styleTags":["belgian","priming","dry"],"description":"The reference fermentable — 46 PPG by definition. Fully fermentable, dries the finish, boosts ABV without body.","usageNotes":"Above ~20% of the grist you risk a thin, cidery beer. Standard for Belgian styles and priming.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-dextrose","name":"Dextrose (Corn Sugar)","aliases":["Glucose","Priming Sugar"],"category":"sugar","type":"sugar","ppg":42,"colorLovibond":0,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"literature","uses":["beer","wine","cider","moonshine"],"styleTags":["priming","dry","neutral"],"description":"Glucose monohydrate — the water of crystallisation is why it is 42 PPG rather than 46. The standard priming sugar.","usageNotes":"Yeast take it first and fastest; completely neutral in flavour.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-turbinado","name":"Turbinado Sugar","aliases":["Raw Sugar","Sugar in the Raw"],"category":"sugar","type":"sugar","ppg":45.5,"colorLovibond":1.5,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":99,"fiberG":0,"uses":["beer","wine","mead","rum"],"styleTags":["belgian","raw-sugar","light-molasses"],"description":"Partially refined cane sugar with a thin film of molasses left on the crystal. Nearly as fermentable as white sugar with a faint caramel note.","flavorNotes":"Light molasses, caramel hint.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-demerara","name":"Demerara Sugar","category":"sugar","type":"sugar","ppg":45.1,"colorLovibond":2,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":98,"fiberG":0,"uses":["beer","wine","rum"],"styleTags":["belgian","toffee"],"description":"Large-crystal raw cane sugar; slightly more molasses character than turbinado.","flavorNotes":"Toffee, light rum.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-light-brown","name":"Light Brown Sugar","category":"sugar","type":"sugar","ppg":45.1,"colorLovibond":8,"fermentabilityPct":100,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":98,"fiberG":0,"uses":["beer","wine","mead","rum"],"styleTags":["caramel","brown"],"description":"White sugar with molasses added back. Fully fermentable, contributes caramel colour and flavour.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-dark-brown","name":"Dark Brown Sugar","category":"sugar","type":"sugar","ppg":45.1,"colorLovibond":18,"fermentabilityPct":100,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":98,"fiberG":0,"uses":["beer","wine","mead","rum"],"styleTags":["molasses","dark","belgian","dubbel"],"description":"Higher molasses content than light brown — pronounced toffee and molasses, and real colour contribution.","flavorNotes":"Molasses, dark toffee, faint liquorice.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-muscovado","name":"Muscovado Sugar","aliases":["Barbados Sugar"],"category":"sugar","type":"sugar","ppg":44.6,"colorLovibond":40,"fermentabilityPct":100,"maxBatchPct":10,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":97,"fiberG":0,"uses":["beer","rum"],"styleTags":["molasses","intense","dark"],"description":"Unrefined cane sugar retaining most of its molasses; sticky, intense, strongly flavoured.","flavorNotes":"Heavy molasses, liquorice, dried fruit.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-coconut-palm","name":"Coconut Palm Sugar (Thai)","aliases":["Coconut Sugar","Palm Sugar","Nam Tan Pip"],"category":"sugar","type":"sugar","ppg":42.6,"colorLovibond":15,"fermentabilityPct":95,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":94,"fiberG":1,"uses":["beer","wine","mead","rum"],"styleTags":["thai","caramel","smoky","southeast-asian"],"description":"Boiled-down coconut palm flower sap, a staple sweetener across Thailand and Southeast Asia. Mostly sucrose with a small inulin fraction (hence a touch of fibre and slightly under 100% fermentability).","flavorNotes":"Butterscotch, caramel, faint smoke and nuttiness.","usageNotes":"Sold as hard discs or soft paste; dissolve in hot wort. Adds an aromatic depth plain sugar cannot.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-jaggery","name":"Jaggery / Gur","category":"sugar","type":"sugar","ppg":43.7,"colorLovibond":25,"fermentabilityPct":95,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":95,"fiberG":0,"uses":["beer","wine","rum","moonshine"],"styleTags":["indian","unrefined","caramel"],"description":"Unrefined South Asian cane or palm sugar, sold in blocks. Widely used in Indian country liquor and increasingly in craft brewing.","flavorNotes":"Deep caramel, mineral, earthy.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-piloncillo","name":"Piloncillo / Panela","aliases":["Rapadura"],"category":"sugar","type":"sugar","ppg":44.2,"colorLovibond":22,"fermentabilityPct":98,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":96,"fiberG":0,"uses":["beer","wine","rum"],"styleTags":["latin-american","unrefined","caramel"],"description":"Unrefined Latin American cane sugar cones; the sugar behind Mexican piloncillo stouts and traditional aguardiente.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-candi-clear","name":"Belgian Candi Sugar (Clear)","category":"sugar","type":"sugar","ppg":46,"colorLovibond":1,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"literature","uses":["beer"],"styleTags":["belgian","tripel","dry"],"description":"Crystallised sucrose used to boost gravity in Belgian tripels and golden strongs without adding body.","sourceUrl":"https://www.candisyrup.com/"},
-    {"id":"sugar-candi-syrup-d180","name":"Belgian Candi Syrup D-180","category":"syrup","type":"sugar","ppg":32,"colorLovibond":180,"fermentabilityPct":75,"maxBatchPct":15,"ppgBasis":"literature","uses":["beer"],"styleTags":["belgian","dubbel","quad","dark-fruit"],"description":"Deeply caramelised Belgian syrup contributing dark fruit and burnt-sugar complexity to dubbels and quads.","flavorNotes":"Raisin, fig, dark caramel.","sourceUrl":"https://www.candisyrup.com/"},
-    {"id":"sugar-molasses","name":"Molasses","category":"syrup","type":"sugar","ppg":34.5,"colorLovibond":80,"fermentabilityPct":90,"maxBatchPct":10,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":75,"fiberG":0,"uses":["beer","rum","moonshine"],"styleTags":["rum","dark","liquorice"],"description":"Cane refining by-product; the base of virtually all rum. Assertive and unmistakable in beer.","flavorNotes":"Liquorice, burnt sugar, mineral.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-blackstrap","name":"Blackstrap Molasses","category":"syrup","type":"sugar","ppg":32.2,"colorLovibond":500,"fermentabilityPct":80,"maxBatchPct":5,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":70,"fiberG":0,"uses":["beer","rum","moonshine"],"styleTags":["intense","bitter","mineral"],"description":"The final, most concentrated molasses extraction — bitter, salty, intensely mineral. A tiny addition dominates.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-honey","name":"Honey","category":"syrup","type":"sugar","ppg":37.6,"colorLovibond":2,"fermentabilityPct":95,"maxBatchPct":100,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":82,"fiberG":0.2,"uses":["beer","mead","cider","wine"],"styleTags":["mead","braggot","floral"],"description":"About 17% water, the rest almost entirely fructose and glucose. The sole fermentable in mead; a delicate addition in beer.","usageNotes":"Add post-boil or at flame-out — boiling drives off the aromatics you paid for. Varietal matters enormously (orange blossom, buckwheat, clover).","flavorNotes":"Floral to dark and malty depending on varietal.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-maple-syrup","name":"Maple Syrup","category":"syrup","type":"sugar","ppg":30.8,"colorLovibond":35,"fermentabilityPct":95,"maxBatchPct":20,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":67,"fiberG":0,"uses":["beer","wine","mead"],"styleTags":["maple","acerglyn","autumn"],"description":"Roughly one-third water. Ferments nearly dry, and most of the maple aroma goes with it — add late and expect subtlety.","usageNotes":"For actual maple flavour, add at packaging or use a darker Grade B/dark syrup.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-agave","name":"Agave Nectar","category":"syrup","type":"sugar","ppg":35,"colorLovibond":8,"fermentabilityPct":98,"maxBatchPct":20,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":76,"fiberG":0.2,"uses":["beer","wine","mead","moonshine"],"styleTags":["agave","tequila-adjacent","neutral"],"description":"Mostly fructose, so it ferments very dry. Related to (but not the same as) the cooked agave used for tequila and mezcal.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-sorghum-syrup","name":"Sorghum Syrup","category":"syrup","type":"sugar","ppg":34.5,"colorLovibond":40,"fermentabilityPct":90,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":75,"fiberG":0,"uses":["beer","moonshine"],"styleTags":["gluten-free","southern-us","earthy"],"description":"Pressed and boiled sorghum cane juice — a Southern US staple, and a gluten-free gravity source.","flavorNotes":"Tangy, earthy, lighter than molasses.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-golden-syrup","name":"Golden Syrup / Treacle","category":"syrup","type":"sugar","ppg":36.3,"colorLovibond":20,"fermentabilityPct":95,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":79,"fiberG":0,"uses":["beer"],"styleTags":["english","treacle","caramel"],"description":"Partially inverted cane syrup; a traditional English brewing sugar for milds and old ales.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-date-syrup","name":"Date Syrup","aliases":["Silan"],"category":"syrup","type":"sugar","ppg":33.6,"colorLovibond":45,"fermentabilityPct":90,"maxBatchPct":15,"ppgBasis":"nutrition","servingSizeG":100,"totalCarbG":74,"fiberG":1,"uses":["beer","wine","mead"],"styleTags":["middle-eastern","dark-fruit"],"description":"Boiled date extract used across the Middle East; rich dried-fruit sweetness suited to dark strong ales.","sourceUrl":"https://fdc.nal.usda.gov/"},
-    {"id":"sugar-lactose","name":"Lactose (Milk Sugar)","category":"sugar","type":"sugar","ppg":35,"colorLovibond":1,"fermentabilityPct":0,"maxBatchPct":15,"ppgBasis":"literature","uses":["beer"],"styleTags":["milk-stout","pastry","sweet","hazy"],"description":"Brewing yeast cannot ferment lactose at all — it stays in the beer as residual sweetness and body. The defining ingredient of milk stouts and modern pastry/milkshake styles.","usageNotes":"0% fermentable: it raises OG and FG equally and does not add alcohol. Not vegan; and note that Saccharomyces cannot touch it but Kluyveromyces marxianus can.","sourceUrl":"https://www.briess.com/"},
-    {"id":"sugar-maltodextrin","name":"Maltodextrin","category":"sugar","type":"sugar","ppg":40,"colorLovibond":0,"fermentabilityPct":0,"maxBatchPct":10,"ppgBasis":"literature","uses":["beer"],"styleTags":["body","mouthfeel"],"description":"Unfermentable glucose polymer added purely for body and mouthfeel; flavourless and non-sweet.","sourceUrl":"https://www.briess.com/"},
-    {"id":"sugar-invert-no3","name":"Invert Sugar No. 3","category":"syrup","type":"sugar","ppg":36,"colorLovibond":55,"fermentabilityPct":100,"maxBatchPct":20,"ppgBasis":"literature","uses":["beer"],"styleTags":["english","old-ale","historical"],"description":"Graded British invert syrup (No.1 pale through No.4 dark); No.3 brings rich caramel and dried fruit to old ales and porters.","sourceUrl":"https://crispmalt.com/"},
-    {"id":"extract-dme-light","name":"Dry Malt Extract (Light)","aliases":["DME"],"category":"extract","type":"extract","ppg":44,"colorLovibond":4,"fermentabilityPct":75,"maxBatchPct":100,"ppgBasis":"literature","uses":["beer"],"styleTags":["extract-brewing","starter"],"description":"Dehydrated wort. The standard base for extract brewing and for yeast starters (~100 g per litre gives ~1.040).","sourceUrl":"https://www.briess.com/"},
-    {"id":"extract-lme-light","name":"Liquid Malt Extract (Light)","aliases":["LME"],"category":"extract","type":"extract","ppg":36,"colorLovibond":4,"fermentabilityPct":75,"maxBatchPct":100,"ppgBasis":"literature","uses":["beer"],"styleTags":["extract-brewing"],"description":"Syrup-form malt extract — about 20% water, hence lower PPG than DME.","sourceUrl":"https://www.briess.com/"}
-  ]
+ "set": "sugars-syrups",
+ "attribution": "PPG derived from Nutrition Facts / USDA FoodData Central carbohydrate content via lib/fermentable-math.ts (PPG = 46 x available carbohydrate fraction), except where a standard brewing figure exists (dextrose monohydrate, lactose, maltodextrin). Colour values are typical and vary by producer.",
+ "fermentables": [
+  {
+   "id": "sugar-sucrose",
+   "name": "Table Sugar (Sucrose)",
+   "aliases": [
+    "White Sugar",
+    "Granulated Sugar",
+    "Cane Sugar"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 46.0,
+   "yieldPct": 100,
+   "colorLovibond": 0,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 100,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "cider",
+    "rum",
+    "moonshine"
+   ],
+   "styleTags": [
+    "belgian",
+    "priming",
+    "dry"
+   ],
+   "description": "The reference fermentable — 46 PPG by definition. Fully fermentable, dries the finish, boosts ABV without body.",
+   "usageNotes": "Above ~20% of the grist you risk a thin, cidery beer. Standard for Belgian styles and priming.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169655",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, granulated (SR Legacy, FDC ID 169655), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-dextrose",
+   "name": "Dextrose (Corn Sugar)",
+   "aliases": [
+    "Glucose",
+    "Priming Sugar"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "colorLovibond": 0,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "uses": [
+    "beer",
+    "wine",
+    "cider",
+    "moonshine"
+   ],
+   "styleTags": [
+    "priming",
+    "dry",
+    "neutral"
+   ],
+   "description": "Glucose monohydrate — the water of crystallisation is why it is 42 PPG rather than 46. The standard priming sugar.",
+   "usageNotes": "Yeast take it first and fastest; completely neutral in flavour.",
+   "attribution": "No source. USDA's SR Legacy set has no dextrose entry, and the ppg of 42 stored here was never cited to anything. It is the figure every brewing text gives for dextrose monohydrate, and it follows from the hydrate: C6H12O6.H2O is 90.9% anhydrous glucose by mass, so 46 x 0.909 = 41.8. That arithmetic is sound but it is this project's arithmetic, not a published measurement, so the number comes out until there is a document behind it.",
+   "unsourced": true
+  },
+  {
+   "id": "sugar-turbinado",
+   "name": "Turbinado Sugar",
+   "aliases": [
+    "Raw Sugar",
+    "Sugar in the Raw"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.9,
+   "colorLovibond": 1.5,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 99.8,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "rum"
+   ],
+   "styleTags": [
+    "belgian",
+    "raw-sugar",
+    "light-molasses"
+   ],
+   "description": "Partially refined cane sugar with a thin film of molasses left on the crystal. Nearly as fermentable as white sugar with a faint caramel note.",
+   "flavorNotes": "Light molasses, caramel hint.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170674",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugar, turbinado (SR Legacy, FDC ID 170674), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-demerara",
+   "name": "Demerara Sugar",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.9,
+   "colorLovibond": 2,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 99.8,
+   "uses": [
+    "beer",
+    "wine",
+    "rum"
+   ],
+   "styleTags": [
+    "belgian",
+    "toffee"
+   ],
+   "description": "Large-crystal raw cane sugar; slightly more molasses character than turbinado.",
+   "flavorNotes": "Toffee, light rum.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170674",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugar, turbinado (SR Legacy, FDC ID 170674), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Demerara entry. This cites its turbinado sugar: both are partially refined cane sugars retaining a little molasses, and the figures are for that class rather than for Demerara specifically."
+  },
+  {
+   "id": "sugar-light-brown",
+   "name": "Light Brown Sugar",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.1,
+   "colorLovibond": 8,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 15,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 98.1,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "rum"
+   ],
+   "styleTags": [
+    "caramel",
+    "brown"
+   ],
+   "description": "White sugar with molasses added back. Fully fermentable, contributes caramel colour and flavour.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-dark-brown",
+   "name": "Dark Brown Sugar",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.1,
+   "colorLovibond": 18,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 15,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 98.1,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "rum"
+   ],
+   "styleTags": [
+    "molasses",
+    "dark",
+    "belgian",
+    "dubbel"
+   ],
+   "description": "Higher molasses content than light brown — pronounced toffee and molasses, and real colour contribution.",
+   "flavorNotes": "Molasses, dark toffee, faint liquorice.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes one brown sugar entry rather than separate light and dark. The extra molasses in dark brown changes flavour and colour far more than it changes extract."
+  },
+  {
+   "id": "sugar-muscovado",
+   "name": "Muscovado Sugar",
+   "aliases": [
+    "Barbados Sugar"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.1,
+   "colorLovibond": 40,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 10,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 98.1,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "rum"
+   ],
+   "styleTags": [
+    "molasses",
+    "intense",
+    "dark"
+   ],
+   "description": "Unrefined cane sugar retaining most of its molasses; sticky, intense, strongly flavoured.",
+   "flavorNotes": "Heavy molasses, liquorice, dried fruit.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Muscovado entry. This cites its brown sugar: muscovado is an unrefined brown cane sugar, and the figures are for that class rather than for Muscovado specifically."
+  },
+  {
+   "id": "sugar-coconut-palm",
+   "name": "Coconut Palm Sugar (Thai)",
+   "aliases": [
+    "Coconut Sugar",
+    "Palm Sugar",
+    "Nam Tan Pip"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "colorLovibond": 15,
+   "fermentabilityPct": 95,
+   "maxBatchPct": 15,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "rum"
+   ],
+   "styleTags": [
+    "thai",
+    "caramel",
+    "smoky",
+    "southeast-asian"
+   ],
+   "description": "Boiled-down coconut palm flower sap, a staple sweetener across Thailand and Southeast Asia. Mostly sucrose with a small inulin fraction (hence a touch of fibre and slightly under 100% fermentability).",
+   "flavorNotes": "Butterscotch, caramel, faint smoke and nuttiness.",
+   "usageNotes": "Sold as hard discs or soft paste; dissolve in hot wort. Adds an aromatic depth plain sugar cannot.",
+   "attribution": "No source. Coconut palm sugar is not cane, so USDA's brown and turbinado cane entries are not a class substitute, and the set has no coconut sugar entry. The stored figures were never cited to anything.",
+   "unsourced": true
+  },
+  {
+   "id": "sugar-jaggery",
+   "name": "Jaggery / Gur",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.1,
+   "colorLovibond": 25,
+   "fermentabilityPct": 95,
+   "maxBatchPct": 15,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 98.1,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "rum",
+    "moonshine"
+   ],
+   "styleTags": [
+    "indian",
+    "unrefined",
+    "caramel"
+   ],
+   "description": "Unrefined South Asian cane or palm sugar, sold in blocks. Widely used in Indian country liquor and increasingly in craft brewing.",
+   "flavorNotes": "Deep caramel, mineral, earthy.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Jaggery entry. This cites its brown sugar, the closest published class — jaggery is unrefined whole cane sugar. Treat the figures as approximate for jaggery in particular; the molasses fraction varies widely by producer."
+  },
+  {
+   "id": "sugar-piloncillo",
+   "name": "Piloncillo / Panela",
+   "aliases": [
+    "Rapadura"
+   ],
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 45.1,
+   "colorLovibond": 22,
+   "fermentabilityPct": 98,
+   "maxBatchPct": 15,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 98.1,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "rum"
+   ],
+   "styleTags": [
+    "latin-american",
+    "unrefined",
+    "caramel"
+   ],
+   "description": "Unrefined Latin American cane sugar cones; the sugar behind Mexican piloncillo stouts and traditional aguardiente.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168833",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sugars, brown (SR Legacy, FDC ID 168833), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA has no Piloncillo entry. This cites its brown sugar, the closest published class — piloncillo is unrefined whole cane sugar cast into cones."
+  },
+  {
+   "id": "sugar-candi-clear",
+   "name": "Belgian Candi Sugar (Clear)",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 46,
+   "colorLovibond": 1,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "tripel",
+    "dry"
+   ],
+   "description": "Crystallised sucrose used to boost gravity in Belgian tripels and golden strongs without adding body.",
+   "sourceUrl": "https://www.candisyrup.com/",
+   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
+  },
+  {
+   "id": "sugar-candi-syrup-d180",
+   "name": "Belgian Candi Syrup D-180",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 32,
+   "colorLovibond": 180,
+   "fermentabilityPct": 75,
+   "maxBatchPct": 15,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "dubbel",
+    "quad",
+    "dark-fruit"
+   ],
+   "description": "Deeply caramelised Belgian syrup contributing dark fruit and burnt-sugar complexity to dubbels and quads.",
+   "flavorNotes": "Raisin, fig, dark caramel.",
+   "sourceUrl": "https://www.candisyrup.com/",
+   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
+  },
+  {
+   "id": "sugar-molasses",
+   "name": "Molasses",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 34.4,
+   "colorLovibond": 80,
+   "fermentabilityPct": 90,
+   "maxBatchPct": 10,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 74.7,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "rum",
+    "moonshine"
+   ],
+   "styleTags": [
+    "rum",
+    "dark",
+    "liquorice"
+   ],
+   "description": "Cane refining by-product; the base of virtually all rum. Assertive and unmistakable in beer.",
+   "flavorNotes": "Liquorice, burnt sugar, mineral.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168820",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Molasses (SR Legacy, FDC ID 168820), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-blackstrap",
+   "name": "Blackstrap Molasses",
+   "category": "syrup",
+   "type": "sugar",
+   "colorLovibond": 500,
+   "fermentabilityPct": 80,
+   "maxBatchPct": 5,
+   "uses": [
+    "beer",
+    "rum",
+    "moonshine"
+   ],
+   "styleTags": [
+    "intense",
+    "bitter",
+    "mineral"
+   ],
+   "description": "The final, most concentrated molasses extraction — bitter, salty, intensely mineral. A tiny addition dominates.",
+   "attribution": "No source. USDA publishes one generic molasses entry at 74.7 g carbohydrate; blackstrap is the third-boil product and genuinely lower in fermentable sugar, so citing the generic figure for it would be wrong rather than approximate. The stored 70 g was never cited to anything.",
+   "unsourced": true
+  },
+  {
+   "id": "sugar-honey",
+   "name": "Honey",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 37.8,
+   "colorLovibond": 2,
+   "fermentabilityPct": 95,
+   "maxBatchPct": 100,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 82.4,
+   "fiberG": 0.2,
+   "uses": [
+    "beer",
+    "mead",
+    "cider",
+    "wine"
+   ],
+   "styleTags": [
+    "mead",
+    "braggot",
+    "floral"
+   ],
+   "description": "About 17% water, the rest almost entirely fructose and glucose. The sole fermentable in mead; a delicate addition in beer.",
+   "usageNotes": "Add post-boil or at flame-out — boiling drives off the aromatics you paid for. Varietal matters enormously (orange blossom, buckwheat, clover).",
+   "flavorNotes": "Floral to dark and malty depending on varietal.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169640",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Honey (SR Legacy, FDC ID 169640), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-maple-syrup",
+   "name": "Maple Syrup",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 30.8,
+   "colorLovibond": 35,
+   "fermentabilityPct": 95,
+   "maxBatchPct": 20,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 67.0,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "wine",
+    "mead"
+   ],
+   "styleTags": [
+    "maple",
+    "acerglyn",
+    "autumn"
+   ],
+   "description": "Roughly one-third water. Ferments nearly dry, and most of the maple aroma goes with it — add late and expect subtlety.",
+   "usageNotes": "For actual maple flavour, add at packaging or use a darker Grade B/dark syrup.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169661",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Syrups, maple (SR Legacy, FDC ID 169661), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-agave",
+   "name": "Agave Nectar",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 35.1,
+   "colorLovibond": 8,
+   "fermentabilityPct": 98,
+   "maxBatchPct": 20,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 76.4,
+   "fiberG": 0.2,
+   "uses": [
+    "beer",
+    "wine",
+    "mead",
+    "moonshine"
+   ],
+   "styleTags": [
+    "agave",
+    "tequila-adjacent",
+    "neutral"
+   ],
+   "description": "Mostly fructose, so it ferments very dry. Related to (but not the same as) the cooked agave used for tequila and mezcal.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170277",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sweetener, syrup, agave (SR Legacy, FDC ID 170277), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-sorghum-syrup",
+   "name": "Sorghum Syrup",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 34.5,
+   "colorLovibond": 40,
+   "fermentabilityPct": 90,
+   "maxBatchPct": 15,
+   "ppgBasis": "nutrition",
+   "servingSizeG": 100,
+   "totalCarbG": 74.9,
+   "fiberG": 0.0,
+   "uses": [
+    "beer",
+    "moonshine"
+   ],
+   "styleTags": [
+    "gluten-free",
+    "southern-us",
+    "earthy"
+   ],
+   "description": "Pressed and boiled sorghum cane juice — a Southern US staple, and a gluten-free gravity source.",
+   "flavorNotes": "Tangy, earthy, lighter than molasses.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169662",
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Syrups, sorghum (SR Legacy, FDC ID 169662), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+  },
+  {
+   "id": "sugar-golden-syrup",
+   "name": "Golden Syrup / Treacle",
+   "category": "syrup",
+   "type": "sugar",
+   "colorLovibond": 20,
+   "fermentabilityPct": 95,
+   "maxBatchPct": 15,
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "english",
+    "treacle",
+    "caramel"
+   ],
+   "description": "Partially inverted cane syrup; a traditional English brewing sugar for milds and old ales.",
+   "attribution": "No source. USDA's nearest entries are pancake table blends, which are corn syrup and sugar rather than the partially inverted cane syrup golden syrup is. The stored figures were never cited to anything.",
+   "unsourced": true
+  },
+  {
+   "id": "sugar-date-syrup",
+   "name": "Date Syrup",
+   "aliases": [
+    "Silan"
+   ],
+   "category": "syrup",
+   "type": "sugar",
+   "colorLovibond": 45,
+   "fermentabilityPct": 90,
+   "maxBatchPct": 15,
+   "uses": [
+    "beer",
+    "wine",
+    "mead"
+   ],
+   "styleTags": [
+    "middle-eastern",
+    "dark-fruit"
+   ],
+   "description": "Boiled date extract used across the Middle East; rich dried-fruit sweetness suited to dark strong ales.",
+   "attribution": "No source. USDA publishes whole dates but not date syrup, which is a concentrate — the whole-fruit figures are not transferable. The stored figures were never cited to anything.",
+   "unsourced": true
+  },
+  {
+   "id": "sugar-lactose",
+   "name": "Lactose (Milk Sugar)",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 35,
+   "colorLovibond": 1,
+   "fermentabilityPct": 0,
+   "maxBatchPct": 15,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "milk-stout",
+    "pastry",
+    "sweet",
+    "hazy"
+   ],
+   "description": "Brewing yeast cannot ferment lactose at all — it stays in the beer as residual sweetness and body. The defining ingredient of milk stouts and modern pastry/milkshake styles.",
+   "usageNotes": "0% fermentable: it raises OG and FG equally and does not add alcohol. Not vegan; and note that Saccharomyces cannot touch it but Kluyveromyces marxianus can.",
+   "sourceNote": "The ppg on this record is unsourced and the citation is a homepage. Briess was cited but their site publishes a single page in its sitemap and no product specification for lactose. USDA FoodData Central has no entry for pure lactose either - searching it returns lactose-free milks and infant formulas, not the sugar - so the nutrition-panel method this project uses for adjuncts has nothing to work from. Worth noting that the stored 35 looks low on its face: lactose monohydrate is about 95% anhydrous sugar by weight, which on the 46-point sucrose scale would be nearer 44. That is arithmetic, not a source, and the figure has been left alone rather than changed on the strength of it.",
+   "unsourced": true,
+   "attribution": "No citation, because the company cited does not make this. briess.com was the source on this record; Briess's actual brewing catalogue is at brewingwithbriess.com, and its product sitemap lists 90 products with no lactose among them - they make malt extracts, specialty malts and a sorghum extract. USDA FoodData Central has no entry for pure lactose either; searching it returns lactose-free milks and infant formulas. So the nutrition-panel method this project uses for adjuncts has nothing to work from and the dose figures here are unsourced. Worth recording that the stored 35 ppg looks low on its face: lactose monohydrate is about 95% anhydrous sugar by weight, which on the 46-point sucrose scale would be nearer 44. That is arithmetic, not a source, so the figure has been left alone."
+  },
+  {
+   "id": "sugar-maltodextrin",
+   "name": "Maltodextrin",
+   "category": "sugar",
+   "type": "sugar",
+   "ppg": 43.5,
+   "colorLovibond": 0,
+   "fermentabilityPct": 0,
+   "maxBatchPct": 10,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "body",
+    "mouthfeel"
+   ],
+   "description": "Unfermentable glucose polymer added purely for body and mouthfeel; flavourless and non-sweet.",
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/2585907",
+   "attribution": "ppg is derived from the Nutrition Facts panel of a pure maltodextrin powder as filed with USDA FoodData Central (Branded Foods, FDC ID 2585907, \"UNFLAVORED MALTODEXTRIN POWDER\", PepsiCo Inc. / CytoSport, published 29 June 2023, single ingredient: maltodextrin): a 56 g serving declaring 53 g of total carbohydrate and no fibre. This project's method is 46 x (total carbohydrate - fibre) / serving grams, so 46 x 53 / 56 = 43.5, against a stored 40. A second, independent panel agrees: FDC ID 2423905, also single-ingredient maltodextrin, declares 14 g of carbohydrate in a 15 g serving, which is 42.9. The two bracket the figure at 43, and the difference between them is label rounding on the smaller serving. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The panel backs ppg and nothing else. Maltodextrin is close to pure carbohydrate, so its gravity contribution is near sucrose's 46 - the stored 40 understated it by about 8%. What the panel cannot tell you is the part that actually matters for brewing: dextrose equivalent. Maltodextrins are sold from about DE 4 to DE 20, and the higher the DE the more of that carbohydrate brewing yeast can ferment, but DE is not a food-labelling quantity and neither panel states it. The fermentability figure on this record is therefore unsourced, and so is the colour. Both panels are for food-grade powder rather than a brewing-branded product; the molecule is the same, the DE may not be."
+  },
+  {
+   "id": "sugar-invert-no3",
+   "name": "Invert Sugar No. 3",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 35.0,
+   "colorLovibond": 55,
+   "fermentabilityPct": 100,
+   "maxBatchPct": 20,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "english",
+    "old-ale",
+    "historical"
+   ],
+   "description": "Graded British invert syrup (No.1 pale through No.4 dark); No.3 brings rich caramel and dried fruit to old ales and porters.",
+   "sourceUrl": "https://www.ragus.co.uk/product/invert-sugar-syrup/",
+   "attribution": "Ragus Sugars, Invert Sugar Syrup, product page: a full invert is manufactured to 76 Brix with a polarisation of -18 to -22, and a partial invert to a maximum of 77 Brix at +17 to +23. Brix here is dissolved solids, which for an invert syrup is sugar, so 46 x 0.76 is 35.0 ppg against a stored 36.",
+   "sourceNote": "The citation was pointed at the wrong company and the replacement only covers half the record. Crisp Malt was cited for this, but Crisp publish no invert sugar at all - it is absent from their malts sitemap and their own site search for \"invert\" returns no product. Ragus is a British sugar refiner that does make brewing inverts and does publish a specification, so the dissolved-solids figure and the ppg derived from it now rest on that. What Ragus do not publish is the numbered grade system: No. 1 through No. 4 are colour grades, darkening with each boil, and the stored 55 Lovibond for a No. 3 is not supported by this or any document this project holds. Treat the colour as unsourced."
+  },
+  {
+   "id": "extract-dme-light",
+   "name": "Dry Malt Extract (Light)",
+   "aliases": [
+    "DME"
+   ],
+   "category": "extract",
+   "type": "extract",
+   "ppg": 44,
+   "colorLovibond": 4,
+   "fermentabilityPct": 75,
+   "maxBatchPct": 100,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "extract-brewing",
+    "starter"
+   ],
+   "description": "Dehydrated wort. The standard base for extract brewing and for yeast starters (~100 g per litre gives ~1.040).",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-DME.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  },
+  {
+   "id": "extract-lme-light",
+   "name": "Liquid Malt Extract (Light)",
+   "aliases": [
+    "LME"
+   ],
+   "category": "extract",
+   "type": "extract",
+   "ppg": 36,
+   "colorLovibond": 4,
+   "fermentabilityPct": 75,
+   "maxBatchPct": 100,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "extract-brewing"
+   ],
+   "description": "Syrup-form malt extract — about 20% water, hence lower PPG than DME.",
+   "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-CBW-Golden-Light-LME.pdf",
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+  }
+ ]
 }

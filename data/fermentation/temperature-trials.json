@@ -1,0 +1,203 @@
+{
+ "set": "Published fermentation-temperature trials",
+ "note": "What measured studies actually found when fermentation temperature was varied and everything else held constant. This file exists so the temperature guidance in the app can point at real experiments rather than at folklore. Each entry records the conditions the trial ran under, because that is what makes its findings meaningful — and what stops them being extrapolated onto a batch they do not describe.",
+ "whyNoFormula": "There is no per-compound formula here, and that is deliberate rather than unfinished. Ester yield is not a function of temperature alone: it depends on the strain's own genetics (ATF1/ATF2 expression differs several-fold between strains), on wort free amino nitrogen, on pitching rate, on dissolved oxygen at pitch, on original gravity and on top pressure. Two strains at the same temperature in the same wort can differ several-fold in isoamyl acetate. A model that turned a temperature into a milligrams-per-litre figure would be inventing precision the published work does not have, and would be wrong in the way that is hardest to catch — confidently, and with a citation attached. The app therefore gives direction, which every one of these trials supports, and defers magnitude to a meter and a palate.",
+ "whatAQuantitativeModelWouldNeed": [
+  "Per-strain ester-forming capacity, which suppliers do not publish and which varies several-fold across commercial strains.",
+  "Wort free amino nitrogen (FAN), the nitrogen source that drives higher-alcohol formation via the Ehrlich pathway. Not routinely measured by homebrewers and not published for malts.",
+  "Pitching rate and dissolved oxygen at pitch, both of which change yeast growth, and growth is what actually sets the fusel/ester balance.",
+  "Original gravity and top pressure, both of which shift the same balance independently of temperature.",
+  "A temperature PROFILE rather than a single number: most ester formation happens during active growth, so when a ferment was warm matters as much as how warm it got."
+ ],
+ "trials": [
+  {
+   "id": "kucharczyk-tuszynski-2018",
+   "title": "The effect of temperature on fermentation and beer volatiles at an industrial scale",
+   "authors": "Kucharczyk, K. & Tuszyński, T.",
+   "publication": "Journal of the Institute of Brewing 124(3), 230–235",
+   "year": 2018,
+   "scale": "industrial",
+   "conditions": "Wort fermented at 8.5, 10 and 11.5 °C, with maturation at −1 °C. Extract, yeast growth, esters, higher alcohols and carbonyl compounds followed through fermentation and maturation.",
+   "findings": [
+    {
+     "measured": "esters",
+     "direction": "increase",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "higher (fusel) alcohols",
+     "direction": "increase",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "acetaldehyde",
+     "direction": "decrease",
+     "withRisingTemperature": true
+    },
+    {
+     "measured": "vicinal diketones (diacetyl and relatives)",
+     "direction": "decrease",
+     "withRisingTemperature": true
+    }
+   ],
+   "quantitative": null,
+   "quantitativeNote": "Per-compound concentrations at each temperature are in the full text, which is paywalled and could not be retrieved. The directions above are from the published abstract and are what this app relies on. If someone with access adds the measured figures here, they should be presented as what this trial measured at lager temperatures on its own wort and strain — not as a curve to read other batches off.",
+   "appliesTo": "Lager fermentation. The three temperatures span a narrow, cold band; nothing here should be projected onto ale or saison temperatures.",
+   "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jib.491"
+  },
+  {
+   "id": "kucharczyk-zyla-tuszynski-2020",
+   "title": "Volatile Esters and Fusel Alcohol Concentrations in Beer Optimized by Modulation of Main Fermentation Parameters in an Industrial Plant",
+   "authors": "Kucharczyk, K.; Żyła, K.; Tuszyński, T.",
+   "publication": "Processes 8(7), 769",
+   "year": 2020,
+   "doi": "10.3390/pr8070769",
+   "licence": "CC BY 4.0",
+   "openAccess": true,
+   "scale": "industrial",
+   "conditions": "Saccharomyces pastorianus W-34/70 at 15.5 °P original gravity. Four parameters varied together in a Box–Behnken design: fermentation temperature 8.5–11.5 °C, pitching rate 6–10 million cells/mL, aeration 8–12 mg O2/L, and fermenter filling time 4.5–13.5 h.",
+   "quantitative": [
+    {
+     "measure": "ethyl acetate",
+     "value": 22.07,
+     "unit": "mg/L",
+     "at": "the highest tested temperature (11.5 °C) with a 10 million cells/mL pitch"
+    },
+    {
+     "measure": "isoamyl acetate",
+     "value": 2.22,
+     "unit": "mg/L",
+     "at": "the same setting; the balanced multi-response optimum gave 2.09 mg/L"
+    },
+    {
+     "measure": "amyl alcohols",
+     "value": 62.3,
+     "unit": "mg/L",
+     "at": "the lowest parameter settings"
+    },
+    {
+     "measure": "total higher alcohols",
+     "value": 85.6,
+     "unit": "mg/L",
+     "at": "the lowest parameter settings"
+    },
+    {
+     "measure": "total higher alcohols",
+     "value": 97.9,
+     "unit": "mg/L",
+     "at": "the balanced multi-response optimum at 11.5 °C"
+    }
+   ],
+   "quantitativeNote": "Real measured figures, openly licensed, and the closest thing in this file to the numbers a quantitative model would need. They are still NOT a curve to read a batch off: they belong to one lager strain at 15.5 °P across a 3 °C band, and every value is the output of a four-parameter optimisation rather than a temperature series. For scale, the flavour threshold for isoamyl acetate in beer is about 1.2 mg/L, so 2.09 is perceptible.",
+   "whyItSupportsNoFormula": "The authors could not express their results as a function of temperature. They needed second-order polynomials with interaction terms across all four parameters — which is direct published evidence for what this file argues elsewhere: temperature alone does not determine ester yield, and a single-variable formula would be a misrepresentation of the system rather than a simplification of it.",
+   "appliesTo": "Lager fermentation, one strain, high gravity. Nothing here transfers to ale or saison temperatures.",
+   "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769",
+   "attribution": "This article is not deposited in PubMed Central and mdpi.com refuses automated requests, so the link cannot be machine-verified. Its DOI is 10.3390/processes8070769, which is the permanent identifier and will outlive any URL."
+  }
+ ],
+ "manufacturerStatements": [
+  {
+   "strain": "Wyeast 1084 Irish Ale",
+   "statement": "Fruit and complex esters increase when fermentation temperatures are above 64 °F (18 °C). Beers fermented at the lower end of the range produce a dry, crisp profile with subtle fruitiness.",
+   "note": "A supplier stating the temperature–ester relationship for its own strain, with a threshold. This is the most directly useful form of the claim there is, and it comes from the people who selected the strain.",
+   "sourceUrl": "https://wyeastlab.com/product/irish-ale/"
+  },
+  {
+   "strain": "Wyeast 3711 French Saison",
+   "statement": "Reported to give better flavour fermented cooler, within its range.",
+   "note": "A practitioner observation from a club guide rather than a supplier specification — recorded as such.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  }
+ ],
+ "growthPhaseNote": "The single most important qualifier on everything else in this file: esters and higher alcohols are made overwhelmingly during active yeast GROWTH, in roughly the first two days, because growth rate is what sets the fusel/ester balance. The same temperature applied after growth does something different — it speeds diacetyl and acetaldehyde cleanup without adding much ester. Two ferments averaging the same temperature therefore need not taste alike, and a single number is an incomplete description of a ferment. This is also the clearest reason a temperature cannot be turned into a milligrams-per-litre figure: the profile matters, not the reading.",
+ "practitionerTrials": [
+  {
+   "id": "maltose-falcons-wlp565-ab",
+   "source": "Maltose Falcons Homebrew Club, A Guide to Saisons and Saison Yeasts",
+   "reliability": "secondary",
+   "design": "Same strain (White Labs WLP565 Belgian Saison I), two temperature handlings, tasted against each other.",
+   "arms": [
+    {
+     "handling": "Taken straight to 85 °F (29 °C) from the start",
+     "result": "Deep, dry spice; black pepper."
+    },
+    {
+     "handling": "Started cool and allowed to rise on ambient",
+     "result": "Fruit and cherries; subdued spice; more balanced overall."
+    }
+   ],
+   "whyItMatters": "A controlled comparison on one strain showing that WHEN the ferment is warm changes the character, not merely how warm it gets. It is the practical face of the growth-phase point above.",
+   "caveat": "A club guide, not a peer-reviewed trial: no replication, no analytical measurement, and sensory description only. Cited as an observation, not as data.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  },
+  {
+   "id": "maltose-falcons-saison-schedule",
+   "source": "Maltose Falcons Homebrew Club, A Guide to Saisons and Saison Yeasts",
+   "reliability": "secondary",
+   "design": "A recommended saison schedule rather than a comparison.",
+   "arms": [
+    {
+     "handling": "Chill wort to 62–64 °F (16.7–17.8 °C), hold at 65 °F (18.3 °C) for three days, then allow a free rise toward the mid-80s and 90s °F (29–35 °C)",
+     "result": "Cited as generating the intended balance of esters and phenols by controlling temperature early, during the lag phase, while the yeast are reproducing."
+    }
+   ],
+   "whyItMatters": "A concrete instance of the cool-through-growth-then-rise strategy the app now offers for any strain.",
+   "caveat": "Style-specific and strain-specific. The temperatures suit saison strains bred for heat; the same ramp applied to a clean ale strain would run well past its range.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  }
+ ],
+ "notesOnOrganismsWithoutRanges": {
+  "finding": "The Maltose Falcons wild-and-sour guide, this project's cited source for the bacteria and Brettanomyces cultures, gives exactly one temperature figure across all of them: ferment Lactobacillus delbrueckii very warm, on the order of 98 °F (37 °C).",
+  "consequence": "The eleven cultures in the catalog with no temperature range are therefore not an oversight in this repository — the source genuinely does not publish ranges for them. Filling those in needs a different primary source (supplier datasheets from the culture banks, or the microbiological literature), not a closer reading of this one.",
+  "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales"
+ },
+ "standardReferences": [
+  {
+   "id": "ba-yeast-white-zainasheff-2010",
+   "title": "Yeast: The Practical Guide to Beer Fermentation",
+   "authors": "White, C. & Zainasheff, J.",
+   "publisher": "Brewers Publications (Brewers Association), Boulder CO — Brewing Elements series",
+   "year": 2010,
+   "isbn": "978-0-937381-96-9",
+   "verification": "metadata-only",
+   "supports": "The canonical modern treatment of fermentation temperature and its effect on yeast-derived flavour, alongside pitch-rate theory and viability. This project's pitching model in app/lib/pitching/formulas.ts is built on its published targets.",
+   "howItIsUsed": "Referenced as the standard work a reader should go to for depth, NOT quoted for figures. The registry holds Brewing Elements titles at metadata-only verification: no number is attributed to one of these books unless somebody has opened the book and cited the page. The temperature guidance in this app therefore rests on the retrievable sources above — a peer-reviewed trial and the producers' own statements — and points at the book rather than leaning on it.",
+   "sourceUrl": "https://www.brewerspublications.com/products/yeast-the-practical-guide-to-beer-fermentation"
+  },
+  {
+   "id": "maltose-falcons-saison-guide",
+   "title": "A Guide to Saisons and Saison Yeasts",
+   "publisher": "Maltose Falcons Homebrew Club",
+   "verification": "full-text",
+   "supports": "The growth-phase point that qualifies everything else here — that the ester and phenol balance is set early, while the yeast is reproducing — plus a same-strain A/B on WLP565 and a concrete saison ramp schedule.",
+   "howItIsUsed": "An experienced club's published guide: strong on practice, but sensory rather than analytical, and cited as observation rather than measurement. Ten strain records in data/yeasts/ already draw their character notes from it.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/a-guide-to-saisons-and-saison-yeasts"
+  },
+  {
+   "id": "maltose-falcons-sour-guide",
+   "title": "Brewing Sour and Wild Ales",
+   "publisher": "Maltose Falcons Homebrew Club",
+   "verification": "full-text",
+   "supports": "The bacteria and Brettanomyces cultures in this catalog, including the single Lactobacillus delbrueckii temperature figure — and, by its silence, the documented reason eleven other cultures carry no range.",
+   "howItIsUsed": "Eighteen strain records cite it. Re-read in full for this work specifically to check whether more temperature data was there; it was not.",
+   "sourceUrl": "https://www.maltosefalcons.com/blogs/brewing-techniques-tips/brewing-sour-and-wild-ales"
+  }
+ ],
+ "disagreements": [
+  {
+   "topic": "Does pitching more yeast raise or lower esters?",
+   "positions": [
+    {
+     "claim": "MORE yeast means FEWER esters. Ester formation tracks yeast growth, so a bigger pitch means less growth and a cleaner beer; increasing pitch is often described as the most effective way to cut an ester profile.",
+     "heldBy": "The general homebrewing and supplier literature."
+    },
+    {
+     "claim": "MORE yeast means MORE esters. A ten-fold increase in pitching rate produced a two-fold increase in ethyl acetate, and both ethyl acetate and isoamyl acetate correlated positively with pitch rate.",
+     "heldBy": "Kucharczyk, Żyła & Tuszyński 2020, measured at industrial scale.",
+     "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769"
+    }
+   ],
+   "howThisAppHandlesIt": "It does not adjudicate. The measured study is industrial, one strain, high gravity, and varied pitch alongside aeration and filling time, so its pitch effect is not cleanly separable — while the conventional claim is mechanistically reasonable but rarely measured. Recording the disagreement is more useful than picking a side and presenting it as settled. It is also a third reason this app gives no ester formula: the sign of one of the inputs is contested."
+  }
+ ]
+}

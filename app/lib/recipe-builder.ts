@@ -213,24 +213,37 @@ function detectTemplate(style: StyleTargets, srm: number): Template {
 }
 
 // Pick a bittering + optional aroma hop for the family from the catalog.
+//
+// Only hops with a published alpha are eligible. The bittering charge is sized
+// from alpha, so picking a hop without one means inventing the number that sets
+// the IBU of the whole recipe — and the catalog does now contain hops with no
+// alpha, because a few records describe a regional crop nobody publishes an
+// analysis of. The American bittering pick used to be "magnum-us", which is
+// exactly one of those.
 function pickHops(hopCat: CatalogHop[], hopStyle: Template["hop"]): { bittering: CatalogHop; aroma: CatalogHop } | null {
-  const byId = (id: string) => hopCat.find((h) => h.id === id);
+  const usable = hopCat.filter((h) => h.alphaMin != null || h.alphaMax != null);
+  const byId = (id: string) => usable.find((h) => h.id === id);
   const map: Record<Template["hop"], [string, string]> = {
-    american: ["magnum-us", "cascade"],
+    american: ["warrior", "cascade"],
     english: ["challenger", "east-kent-goldings"],
     "german-noble": ["magnum-de", "hallertau-mittelfrueh"],
     "czech-noble": ["magnum-de", "saaz"],
     belgian: ["magnum-de", "styrian-goldings"],
   };
   const [bId, aId] = map[hopStyle];
-  const bittering = byId(bId) ?? hopCat.find((h) => h.purpose === "bittering") ?? hopCat[0];
-  const aroma = byId(aId) ?? hopCat.find((h) => h.purpose === "aroma") ?? bittering;
+  const bittering = byId(bId) ?? usable.find((h) => h.purpose === "bittering") ?? usable[0];
+  const aroma = byId(aId) ?? usable.find((h) => h.purpose === "aroma") ?? bittering;
   return bittering && aroma ? { bittering, aroma } : null;
 }
 
 function alphaOf(h: CatalogHop): number {
   if (h.alphaMin != null && h.alphaMax != null) return (h.alphaMin + h.alphaMax) / 2;
-  return h.alphaMax ?? h.alphaMin ?? 10;
+  const one = h.alphaMax ?? h.alphaMin;
+  // pickHops only ever hands over a hop with an alpha, so this is unreachable
+  // rather than a default. It used to return 10, which quietly sized a bittering
+  // charge off a number no merchant published.
+  if (one == null) throw new Error(`recipe-builder: hop "${h.id}" has no published alpha acid`);
+  return one;
 }
 
 // Tinseth utilisation for a given boil time (min) and average boil gravity.

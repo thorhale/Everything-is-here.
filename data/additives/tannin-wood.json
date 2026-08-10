@@ -25,8 +25,9 @@
    "description": "Condensed tannin from grape skins and seeds, used to build structure and stabilise colour.",
    "usageNotes": "Added at crush it binds with anthocyanin to fix colour; added later it adds grip and mouthfeel.",
    "cautions": "Easy to overshoot into bitterness. Bench-trial at 0.1 g/L increments.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 0
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 0,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises tannin to clarify or adjust the tannin content of juice or wine. Its limits are on the residual in the finished wine rather than on the addition: calculated as gallic acid equivalents, residual tannin \"must not exceed 6.4 GAE per 1000 gallons of wine (800 mg/L) in white wine and 24 pounds per 1000 gallons (3 g/L) in red wine\", and only tannin which does not impart colour may be used. For apple juice and apple wine the residual ceiling is 3 g/L. The section also caps one specific addition: \"total tannin must not be increased by more than 150 ppm (150 mg/L; 0.150 g/L) by the addition of tannic acid (poly-galloylglucose)\". Against the red-wine residual ceiling of 3 g/L, the stored maximum of 0.4 g/L is comfortably inside - and note the statute limits what is left in the wine, not what goes in, so grape tannin that binds and drops out is not counted."
   },
   {
    "id": "tannin-grape-white",
@@ -51,8 +52,9 @@
    "description": "A gentler tannin preparation for whites and rosés, protecting against oxidation without adding perceptible astringency.",
    "usageNotes": "Also used pre-fermentation to inhibit the laccase enzyme carried by botrytised fruit.",
    "cautions": "Overdosing shows as a hard, drying finish rather than obvious bitterness.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 1
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 1,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises tannin to clarify or adjust the tannin content of juice or wine. Its limits are on the residual in the finished wine rather than on the addition: calculated as gallic acid equivalents, residual tannin \"must not exceed 6.4 GAE per 1000 gallons of wine (800 mg/L) in white wine and 24 pounds per 1000 gallons (3 g/L) in red wine\", and only tannin which does not impart colour may be used. For apple juice and apple wine the residual ceiling is 3 g/L. The section also caps one specific addition: \"total tannin must not be increased by more than 150 ppm (150 mg/L; 0.150 g/L) by the addition of tannic acid (poly-galloylglucose)\". The white-wine residual ceiling is 800 mg/L, four times lower than red, and the stored maximum of 0.2 g/L is inside it. The colour clause matters more here than the number: only tannin which does not impart colour may be used."
   },
   {
    "id": "tannin-quebracho",
@@ -75,8 +77,9 @@
    "description": "A robust, inexpensive condensed tannin from South American quebracho wood.",
    "usageNotes": "Common in cider for adding the grip that dessert-apple juice lacks.",
    "cautions": "Coarser than grape tannin — noticeable as woody astringency if overdone.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 2
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 2,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises tannin to clarify or adjust the tannin content of juice or wine. Its limits are on the residual in the finished wine rather than on the addition: calculated as gallic acid equivalents, residual tannin \"must not exceed 6.4 GAE per 1000 gallons of wine (800 mg/L) in white wine and 24 pounds per 1000 gallons (3 g/L) in red wine\", and only tannin which does not impart colour may be used. For apple juice and apple wine the residual ceiling is 3 g/L. The section also caps one specific addition: \"total tannin must not be increased by more than 150 ppm (150 mg/L; 0.150 g/L) by the addition of tannic acid (poly-galloylglucose)\". Quebracho is a condensed tannin, so the 150 mg/L cap on tannic acid does not reach it, and the stored maximum of 0.3 g/L sits inside the residual ceilings for both red and white."
   },
   {
    "id": "tannin-oak-hydrolysable",
@@ -102,8 +105,9 @@
    "description": "Ellagitannins extracted from oak, the compounds that give barrel-aged drinks their structure independent of any oak flavour.",
    "usageNotes": "Adds the tannic contribution of a barrel without the vanillin and lactone flavours.",
    "cautions": "Consumes oxygen readily, which is part of the point, but means it can mask a genuine oxidation problem.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 3
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 3,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises tannin to clarify or adjust the tannin content of juice or wine. Its limits are on the residual in the finished wine rather than on the addition: calculated as gallic acid equivalents, residual tannin \"must not exceed 6.4 GAE per 1000 gallons of wine (800 mg/L) in white wine and 24 pounds per 1000 gallons (3 g/L) in red wine\", and only tannin which does not impart colour may be used. For apple juice and apple wine the residual ceiling is 3 g/L. The section also caps one specific addition: \"total tannin must not be increased by more than 150 ppm (150 mg/L; 0.150 g/L) by the addition of tannic acid (poly-galloylglucose)\". This is the one to watch. The 150 mg/L cap applies specifically to tannic acid, poly-galloylglucose, and the stored maximum of 0.2 g/L is 200 mg/L - above it. Hydrolysable oak tannin is a mixture of ellagitannins and gallotannins rather than tannic acid as such, so the cap does not automatically bind, but a product sold as tannic acid or heavily gallotannin-based would breach it at this record's upper bound. The maximum has been left as stored because the statute's category and this record's are not the same thing; treat 150 mg/L as the working ceiling unless the specific product is known not to be tannic acid."
   },
   {
    "id": "tannin-tea",
@@ -128,8 +132,9 @@
    "description": "The traditional country-wine tannin source: a cup of strong tea per gallon.",
    "usageNotes": "Works, and costs nothing. Brings its own tea flavour, which suits some meads and country wines.",
    "cautions": "Far less predictable than a measured oenological tannin.",
-   "sourceUrl": "https://www.gov.uk/",
-   "sortOrder": 4
+   "sortOrder": 4,
+   "unsourced": true,
+   "attribution": "No citation, because there is no document. Adding brewed black tea for tannin is a homebrew practice rather than a commercial one: there is no product specification for it, tea's tannin content varies with cultivar, grade, leaf-to-water ratio and steep time over roughly an order of magnitude, and 27 CFR 24.246 does not list tea as an authorised material for treating wine at all. The record previously cited gov.uk, which supports nothing here. The dose range is this project's own working guidance, and the tannin actually delivered by a given weight of tea is not knowable from it."
   },
   {
    "id": "wood-oak-french",

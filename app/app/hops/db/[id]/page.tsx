@@ -69,10 +69,10 @@ export default async function HopDetailPage({ params }: Props) {
     ["Beta acid", range(h.betaMin, h.betaMax, "%")],
     ["Cohumulone", range(h.cohumuloneMin, h.cohumuloneMax, "% of alpha")],
     ["Total oil", range(h.totalOilMin, h.totalOilMax, " mL/100g")],
-    ["Myrcene", h.myrcenePct != null ? `${h.myrcenePct}% of oil` : null],
-    ["Humulene", h.humulenePct != null ? `${h.humulenePct}% of oil` : null],
-    ["Caryophyllene", h.caryophyllenePct != null ? `${h.caryophyllenePct}% of oil` : null],
-    ["Farnesene", h.farnescenePct != null ? `${h.farnescenePct}% of oil` : null],
+    ["Myrcene", range(h.myrceneMin, h.myrceneMax, "% of oil")],
+    ["Humulene", range(h.humuleneMin, h.humuleneMax, "% of oil")],
+    ["Caryophyllene", range(h.caryophylleneMin, h.caryophylleneMax, "% of oil")],
+    ["Farnesene", range(h.farneseneMin, h.farneseneMax, "% of oil")],
     ["Breeder", h.breeder],
     ["Released", h.yearReleased != null ? String(h.yearReleased) : null],
   ];
@@ -132,7 +132,11 @@ export default async function HopDetailPage({ params }: Props) {
 
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "2rem" }}>
         {h.attribution ?? ""}{" "}
-        <a href={h.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+        {h.sourceUrl && (
+          <>
+            <a href={h.sourceUrl} target="_blank" rel="noreferrer">Source</a>.{" "}
+          </>
+        )}
         <Link href="/hops/db">← Back to the hop database</Link>
       </p>
     </div>

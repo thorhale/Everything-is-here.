@@ -325,9 +325,15 @@ model YeastStrain {
 
   description String?
   flavorNotes String?
-  sourceUrl   String
-  attribution String?
-  sortOrder   Int      @default(0)
+
+  // Optional: a publisher can withdraw the page a figure came from. When that
+  // happens and no successor document exists, sourceUrl goes null and the URL
+  // that used to carry the figure is recorded here, so the claim stays honest
+  // without leaving a citation that 404s. See the 20260808010000 migration.
+  sourceUrl          String?
+  withdrawnSourceUrl String?
+  attribution        String?
+  sortOrder          Int     @default(0)
 
   // Provenance. specBasis is what kind of evidence the numeric fields above
   // rest on (vendor-tds | peer-reviewed | club-guide | vendor-web | regulation);
@@ -414,9 +420,22 @@ model Fermentable {
   description String?
   flavorNotes String?
   usageNotes  String?
-  sourceUrl   String
+
+  // See YeastStrain.withdrawnSourceUrl.
+  sourceUrl          String?
+  withdrawnSourceUrl String?
+  // What the cited document does NOT support. A fruit's sugar comes from USDA;
+  // its Brix, acidity and pH do not, and one sourceUrl cannot say so on its own.
+  sourceNote  String?
+  // Where a record's fields honestly come from two documents: [{url, supports}].
+  // A sharp cider apple takes its acid and tannin from Long Ashton, which never
+  // tabulated sugar, and its sugar from CoFID, which has no tannin.
+  additionalSources Json?
+  // No citation at all, declared rather than implied. Counted by
+  // validate-sources against a ratchet so it can only ever go down.
+  unsourced   Boolean @default(false)
   attribution String?
-  sortOrder   Int      @default(0)
+  sortOrder   Int     @default(0)
 
   @@index([category])
   @@index([name])
@@ -449,7 +468,16 @@ model Additive {
   description String
   usageNotes  String?
   cautions    String?
-  sourceUrl   String
+  // Optional for the same reason as Fermentable.sourceUrl. Some additives are
+  // shelf categories rather than products: "yeast energizer" is whatever a
+  // supplier chose to blend that week, Irish moss appears in neither 27 CFR
+  // 24.246 nor either Scott Laboratories handbook. Requiring a URL here did not
+  // make those records sourced — it made them cite a homepage that says nothing
+  // about them, which reads as provenance and is not.
+  sourceUrl   String?
+  // No citation at all, declared rather than implied. Counted by
+  // validate-sources against a ratchet so it can only ever go down.
+  unsourced   Boolean @default(false)
   attribution String?
   sortOrder   Int     @default(0)
 
@@ -471,12 +499,21 @@ model Hop {
   cohumuloneMin Float?
   cohumuloneMax Float?
 
-  totalOilMin      Float? // mL per 100 g
-  totalOilMax      Float?
-  myrcenePct       Float?
-  humulenePct      Float?
-  caryophyllenePct Float?
-  farnescenePct    Float?
+  totalOilMin Float? // mL per 100 g
+  totalOilMax Float?
+
+  // Oil fractions, % of total oil. Ranges rather than points because that is
+  // how every merchant publishes them; a stored midpoint is a number nobody
+  // measured, and eighteen of the old midpoints fell outside the range the
+  // record's own cited sheet prints.
+  myrceneMin       Float?
+  myrceneMax       Float?
+  humuleneMin      Float?
+  humuleneMax      Float?
+  caryophylleneMin Float?
+  caryophylleneMax Float?
+  farneseneMin     Float?
+  farneseneMax     Float?
 
   aromaDescriptors String[] @default([])
   substitutes      String[] @default([])
@@ -486,9 +523,15 @@ model Hop {
   yearReleased Int?
   description  String?
   usageNotes   String?
-  sourceUrl    String
-  attribution  String?
-  sortOrder    Int      @default(0)
+
+  // Which merchant document the brewing values above were transcribed from,
+  // as "<source id>:<key>" into data/hops/merchant-specs.json.
+  specSource String?
+  // Optional: six records deliberately hold no citation because no merchant
+  // publishes an analysis of the crop they describe. They hold no numbers either.
+  sourceUrl   String?
+  attribution String?
+  sortOrder   Int     @default(0)
 
   @@index([country])
   @@index([name])
@@ -513,10 +556,31 @@ model WaterProfile {
   sulfate     Float? // SO4 2- ppm
   bicarbonate Float? // HCO3- ppm
 
+  // Some bottled waters are not one water. A brand blended from several springs
+  // publishes a RANGE per ion rather than a figure, and the range is the honest
+  // datum: the six columns above hold its midpoint so the salt calculator has
+  // something to work with, while ionRanges holds the published min/max so the
+  // page can show what actually varies. variable marks those rows so nothing
+  // presents a midpoint as if it were a measurement.
+  variable    Boolean @default(false)
+  ionRanges   Json?
+  // The measured baseline chemistry of the aquifer a historic brewery's well
+  // drew from, with the survey's own percentiles. Says where the classic
+  // profile sits in the rock's range instead of implying it is the only value.
+  aquifer     Json?
+  // What the brewery itself says about where its liquor comes from, where the
+  // brewery says anything. Guinness states Wicklow, never the Liffey, and that
+  // contradicts the profile every homebrewer uses to brew stout.
+  brewerySource Json?
+
   description  String?
   bestForStyles String[] @default([])
   styleTags    String[] @default([])
-  sourceUrl    String
+  // See Fermentable.sourceUrl — optional, because a profile may declare it
+  // has no source rather than cite a homepage that supports nothing.
+  sourceUrl   String?
+  sourceNote  String?
+  unsourced   Boolean @default(false)
   attribution  String?
   sortOrder    Int      @default(0)
 

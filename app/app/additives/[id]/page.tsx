@@ -99,7 +99,16 @@ export default async function AdditivePage({ params }: Props) {
       )}
 
       <p style={{ fontSize: "0.8rem", color: "var(--wh-text-light)", marginTop: "1.5rem" }}>
-        Source: <a href={a.sourceUrl} target="_blank" rel="noreferrer">{a.sourceUrl}</a>
+        {a.sourceUrl ? (
+          <>
+            Source: <a href={a.sourceUrl} target="_blank" rel="noreferrer">{a.sourceUrl}</a>
+          </>
+        ) : (
+          // Not a missing field — a declared gap. Saying so is the point of the
+          // flag: a record with no document behind it has to look different
+          // from one that has read its document.
+          <>No published source.</>
+        )}
         {a.attribution && <> — {a.attribution}</>}
       </p>
     </div>

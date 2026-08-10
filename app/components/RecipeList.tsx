@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { langProps } from "@/lib/script";
 import { srmClass } from "@/components/StatBars";
 
 interface RecipeRow {
@@ -19,7 +20,7 @@ export function RecipeList({ recipes }: { recipes: RecipeRow[] }) {
         <li key={r.id} style={{ padding: "0.75rem 0", borderBottom: "1px solid #eee" }}>
           <span className={`swatch ${srmClass(r.srm)}`} />
           <Link href={`/recipes/${r.slug}`} style={{ fontWeight: 600 }}>
-            {r.title ?? r.slug}
+            <span {...langProps(r.title)}>{r.title ?? r.slug}</span>
           </Link>
           <div style={{ fontSize: "0.85rem", color: "var(--wh-text-light)", marginLeft: 20 }}>
             {r.styleName ?? "Unknown style"}

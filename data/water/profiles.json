@@ -26,7 +26,69 @@
     "gypsum"
    ],
    "description": "The most famous brewing water on earth. Enormously high sulfate from the local gypsum accentuates hop bitterness into a crisp, dry, minerally snap — the 'Burton snap' — and made the town the historic capital of pale ale. So influential that adding gypsum to liquor is still called 'Burtonisation'.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been. There is a brewing-specific source for where these profiles come from, and it has now been found: W.J. Sykes, The Principles and Practice of Brewing (1897), chapter on Water, read in full at https://archive.org/details/principlespracti0000wjsy. Sykes does not tabulate cities. He tabulates three types — Type I, a Burton-on-Trent deep well, very high in calcium sulphate; Type II, a Dublin well water, low in calcium sulphate and high in calcium carbonate; Type III, a chloride-dominated mild-ale water — plus a chalk water, all in grains per imperial gallon. He attributes the Burton analysis to Brown, \"The Geology and the Mineral Waters of Burton-on-Trent\", p. 23. This is the tradition the modern brewing-city table descends from. No figure from it is transcribed into this record: the scan's OCR renders individual table cells unreliably (Dublin's lime reads as \"9379\", its calcium sulphate as \"SaaS\"), and a number that cannot be read cleanly is not a citation. What is legible is his running prose, which is quoted where it bears on this record. For Burton, Sykes writes that in waters of this class the calcium sulphate is \"exceedingly high\", and that \"most probably all the possible beneficial effect to be derived from the presence of calcium sulphate in a brewing water may be obtained with from 40 to 50 grains per gallon of that salt\". At 14.254 mg/L per grain per imperial gallon that is 570 to 713 mg/L of calcium sulphate, or 402 to 503 mg/L of sulfate with 168 to 210 of calcium. This record's 610 mg/L of sulfate is the equivalent of about 61 grains per gallon of calcium sulphate — above the ceiling Sykes says is worth having, which is a useful thing to know about a profile people brew to deliberately.",
+   "aquifer": {
+    "name": "Sherwood Sandstone (Permo-Triassic), East Midlands and South Yorkshire",
+    "url": "https://nora.nerc.ac.uk/id/eprint/529759/1/OR20046.pdf",
+    "citation": "Mallin Martin, D. and Smedley, P.L. 2020. Baseline groundwater chemistry: the Sherwood Sandstone aquifer of the East Midlands and South Yorkshire. British Geological Survey Open Report OR/20/046.",
+    "ions": {
+     "calcium": {
+      "n": 62,
+      "min": 13.3,
+      "p5": 23.6,
+      "median": 69.7,
+      "p95": 248,
+      "max": 579
+     },
+     "magnesium": {
+      "n": 62,
+      "min": 4.51,
+      "p5": 13.4,
+      "median": 31.5,
+      "p95": 70.6,
+      "max": 161
+     },
+     "sodium": {
+      "n": 62,
+      "min": 2.76,
+      "p5": 4.66,
+      "median": 14.7,
+      "p95": 164,
+      "max": 391
+     },
+     "chloride": {
+      "n": 206,
+      "min": 4,
+      "p5": 10,
+      "median": 46,
+      "p95": 296,
+      "max": 471
+     },
+     "sulfate": {
+      "n": 211,
+      "min": 2,
+      "p5": 2.8,
+      "median": 93.2,
+      "p95": 963,
+      "max": 1810
+     },
+     "bicarbonate": {
+      "n": 225,
+      "min": 6.1,
+      "p5": 84.1,
+      "median": 217,
+      "p95": 524,
+      "max": 798
+     }
+    },
+    "note": "Burton's brewers sank wells into this sandstone, not into a town main, and the gypsum and anhydrite in it are where the sulfate comes from. The survey covers the East Midlands and South Yorkshire rather than Burton itself — BGS has no baseline report for the Trent valley — so it describes the aquifer Burton sits in, not Burton's boreholes. The classic 610 mg/L sulfate falls between this survey's 90th and 95th percentile, and 275 mg/L calcium near its 95th: high, but comfortably inside the rock's own range. Burton's brewers also moved. The early wells were shallow and close to the river; as the Trent grew filthy they drilled deeper and further out and found water several times richer in gypsum, so 'Burton water' is a moving target even within the town."
+   },
+   "brewerySource": {
+    "brewery": "Marston's, Burton upon Trent",
+    "url": "https://www.marstonsbrewery.co.uk/",
+    "statement": "Burton's gypsum-rich well water made the town synonymous with pale ale, and gave brewing the verb \"Burtonisation\" for adding sulfate to imitate it. Marston's still brews in the town; Bass, the name most associated with Burton pale ale, no longer brews independently there. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "dublin",
@@ -51,7 +113,21 @@
     "malty"
    ],
    "description": "Very high bicarbonate alkalinity — the reason Dublin became a stout city. Only heavily roasted, acidic dark malts can balance the mash pH this water pushes up, which is exactly what Guinness-style dry stout is built from.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been. There is a brewing-specific source for where these profiles come from, and it has now been found: W.J. Sykes, The Principles and Practice of Brewing (1897), chapter on Water, read in full at https://archive.org/details/principlespracti0000wjsy. Sykes does not tabulate cities. He tabulates three types — Type I, a Burton-on-Trent deep well, very high in calcium sulphate; Type II, a Dublin well water, low in calcium sulphate and high in calcium carbonate; Type III, a chloride-dominated mild-ale water — plus a chalk water, all in grains per imperial gallon. He attributes the Burton analysis to Brown, \"The Geology and the Mineral Waters of Burton-on-Trent\", p. 23. This is the tradition the modern brewing-city table descends from. No figure from it is transcribed into this record: the scan's OCR renders individual table cells unreliably (Dublin's lime reads as \"9379\", its calcium sulphate as \"SaaS\"), and a number that cannot be read cleanly is not a citation. What is legible is his running prose, which is quoted where it bears on this record. For Dublin, Sykes writes that its well waters contain \"calcium sulphate in small quantity, but fairly large amounts of the acid calcium and magnesium carbonates; and, since these latter salts are almost completely precipitated on boiling, the water as it is actually used in brewing contains but two or three grains of solid matter per gallon\" — 29 to 43 mg/L of total dissolved solids in the copper. That is the part the modern table drops. A Dublin brewer of the 1890s was not mashing with 319 mg/L of bicarbonate; he was boiling almost all of it out first, and the liquor that met the grist was nearly as soft as the Wicklow water Guinness describes today.",
+   "aquifer": {
+    "name": "Leinster Granite and Lower Palaeozoic rocks of the Wicklow Mountains",
+    "url": "https://gsi.geodata.gov.ie/downloads/Groundwater/Reports/GWB/WicklowGWB.pdf",
+    "citation": "Geological Survey of Ireland. Wicklow Groundwater Body: Summary of Initial Characterisation.",
+    "ions": {},
+    "note": "Guinness says on its own site that the water for St James's Gate comes from the Wicklow Mountains about 40 km south, and that it is not, and never has been, drawn from the Liffey. This is the rock that water crosses. GSI characterises the granite sources as calcium-bicarbonate type at 50-250 mg/L hardness as CaCO3, the Ordovician sources at 20-80, with conductivity of 130-220 microsiemens per centimetre across the body — a soft, weakly mineralised water. The profile stored on this record is not that water. Its 319 mg/L bicarbonate is roughly 260 mg/L of alkalinity as CaCO3, which no water at 130-220 microsiemens can carry; the conductivity of such a water would be several times higher. It looks instead like a Dublin municipal supply, which is drawn from the Liffey at Ballymore Eustace and crosses Kildare limestone on the way. That distinction matters to anyone using this profile. The received wisdom is that Dublin's hard, alkaline water is why stout needs roasted barley — the roast acidity offsetting the carbonate. If Guinness brews with soft mountain water, that reasoning is backwards for the beer it is usually used to explain. GSI publishes hardness bands and conductivity rather than individual ions, so no ion figures are taken from it and none are invented here."
+   },
+   "sourceNote": "Guinness's own statement of its water source and GSI's characterisation of that ground are both cited on this record, and neither supports the ion figures stored here — they contradict them. The numbers are retained, flagged unsourced, because they are the profile in circulation and a brewer may want to reproduce it; they are not Guinness's brewing liquor.",
+   "brewerySource": {
+    "brewery": "Guinness, St James's Gate",
+    "url": "https://www.guinness-storehouse.com/en/guinness-ingredients-experience/water",
+    "statement": "\"Our water comes from the Wicklow Mountains just south of Dublin City\", around 40 km from St James's Gate, and \"contrary to popular belief, the water is not (and never has been) drawn from the River Liffey.\" Guinness publishes no mineral analysis of it."
+   }
   },
   {
    "id": "munich",
@@ -59,12 +135,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Bavaria",
-   "calcium": 75,
-   "magnesium": 18,
-   "sodium": 10,
-   "chloride": 8,
-   "sulfate": 18,
-   "bicarbonate": 200,
+   "calcium": 78.0,
+   "magnesium": 20.9,
+   "sodium": 5.9,
+   "chloride": 10.6,
+   "sulfate": 14.8,
+   "bicarbonate": 324.0,
    "bestForStyles": [
     "Munich Dunkel",
     "Märzen",
@@ -77,7 +153,14 @@
     "amber"
    ],
    "description": "Moderately alkaline, low in sulfate and chloride — a clean, malt-forward profile that suits amber and dark Bavarian lagers. The alkalinity is balanced by the darker malts in dunkel and bock; for pale Helles, brewers now dilute or acidify.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "sourceUrl": "https://www.swm.de/dam/doc/wasser/trinkwasser-analysewerte.pdf",
+   "attribution": "Stadtwerke München's published Münchner Trinkwasser-Analysewerte, January 2026. Median of the network's measurements, with SWM's own minima and maxima in brackets: calcium 78.0 (67.6-87.0), magnesium 20.9 (18.6-24.8), sodium 5.9 (5.0-6.7), chloride 10.6 (7.9-12.5), sulfate 14.8 (6.5-39.4), hydrogen carbonate 324 (258-368). This replaces figures that were not Munich's: bicarbonate had been stored at 200 mg/L against a published 324, and bicarbonate is what sets residual alkalinity and therefore mash pH — a third of it missing moves the acid addition for every recipe built on this profile.",
+   "sourceNote": "SWM's table is the current municipal supply. It is not the historic Munich brewing water that the dunkel and helles styles were built on; those figures are a literature reconstruction and no modern sample can confirm them.",
+   "brewerySource": {
+    "brewery": "Spaten, Munich",
+    "url": "https://www.spatenbraeu.de/",
+    "statement": "Gabriel Sedlmayr's Spaten is where Munich's dark, carbonate-heavy water was turned into the Dunkel and, in 1894, the Helles. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "pilsen",
@@ -85,12 +168,12 @@
    "kind": "classic-city",
    "country": "Czech Republic",
    "region": "Bohemia",
-   "calcium": 7,
-   "magnesium": 2,
-   "sodium": 2,
-   "chloride": 5,
-   "sulfate": 5,
-   "bicarbonate": 3,
+   "calcium": 43.25,
+   "magnesium": 6.65,
+   "sodium": 12.95,
+   "chloride": 19.35,
+   "sulfate": 53.75,
+   "bicarbonate": 91.5,
    "bestForStyles": [
     "Bohemian Pilsner",
     "Czech Lager"
@@ -100,8 +183,59 @@
     "very-low-mineral",
     "delicate"
    ],
-   "description": "Astonishingly soft — almost distilled. This near-zero mineral content is what lets Bohemian Pilsner show its delicate Saaz hop and Pilsner malt character without any mineral interference. The template for every soft-water pale lager.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Plzeň's actual municipal water: moderately soft at 7.6 °dH but distinctly sulfate-leaning, 54 mg/L of sulfate against 92 of bicarbonate. This is not the near-distilled liquor the world calls Pilsen water — see the note.",
+   "attribution": "VODÁRNA PLZEŇ a.s., Kvalita pitné vody: Plzeň město a skupinové vodovody — the monthly average published for each month of 2024, twelve reports read in full. Medians across the twelve: calcium 43.25 mg/L (range 41.6-59.7), magnesium 6.65 (5.6-7.11), sodium 12.95 (11.5-17.3), chloride 19.35 (14.7-24.2), sulfate 53.75 (47.2-93.3), and acid neutralising capacity to pH 4.5 of 1.5 mmol/L (1.2-1.71), which is 91.5 mg/L of bicarbonate (73-104). Total hardness 1.35 mmol/L, pH 8.25, conductivity 36.25 mS/m. Two independent checks pass: the utility's own published hardness of 1.35 mmol/L is exactly the sum of its calcium and magnesium in millimoles, and the six ions with the reported potassium and nitrate balance on charge to 0.1%, the tightest figure in this catalogue.",
+   "sourceUrl": "https://www.vodarna.cz/archiv-ukazatelu-kvality-pitne-vody/",
+   "sourceNote": "This is the most important note on any water record here, so read it before using the profile. What this record used to hold — calcium 7, sulfate 5, bicarbonate 3 mg/L — is the near-distilled liquor that the brewing world calls Pilsen water and that the whole pale-lager tradition is explained by. Plzeň's municipal supply is not that water and is not close: six times the calcium, eleven times the sulfate, thirty times the bicarbonate, measured every month of 2024 by the city's own utility. Whatever the classic figures describe — the brewery's own wells, a historic analysis, or a number that has simply been copied between books — this project has no source for them, and would not have found this out by reading the brewing literature. A brewer aiming at the traditional target should use the bohemia-soft profile in this catalogue and treat it as the unsourced style target it is, not as Plzeň's tap. Note also that Vodárna Plzeň supplies the city and a group of surrounding villages under one report, so this is a supply-area average rather than a single works.",
+   "aquifer": {
+    "name": "Úhlava river supply to the Plzeň treatment plant, with the city group water mains",
+    "url": "https://www.vodarna.cz/archiv-ukazatelu-kvality-pitne-vody/",
+    "citation": "VODÁRNA PLZEŇ a.s., monthly Kvalita pitné vody reports for Plzeň město a skupinové vodovody, January to December 2024, published under vyhláška 252/2004 Sb.",
+    "ions": {
+     "calcium": {
+      "n": 12,
+      "min": 41.6,
+      "median": 43.25,
+      "max": 59.7
+     },
+     "magnesium": {
+      "n": 12,
+      "min": 5.6,
+      "median": 6.65,
+      "max": 7.11
+     },
+     "sodium": {
+      "n": 12,
+      "min": 11.5,
+      "median": 12.95,
+      "max": 17.3
+     },
+     "chloride": {
+      "n": 12,
+      "min": 14.7,
+      "median": 19.35,
+      "max": 24.2
+     },
+     "sulfate": {
+      "n": 12,
+      "min": 47.2,
+      "median": 53.75,
+      "max": 93.3
+     },
+     "bicarbonate": {
+      "n": 12,
+      "min": 73,
+      "median": 91.5,
+      "max": 104
+     }
+    },
+    "note": "Twelve consecutive monthly averages, so the range is seasonal rather than spatial. Most parameters are steady — calcium sits between 41.6 and 44 for eleven months — but one month reaches 59.7 calcium and 93.3 sulfate, nearly double the median sulfate, and hardness rises with it to 1.75 mmol/L. Anyone treating Plzeň water to a target should know it can move that far inside a year. Nothing in these reports supports the ultra-soft profile the city is famous for."
+   },
+   "brewerySource": {
+    "brewery": "Pilsner Urquell (Plzeňský Prazdroj), Plzeň",
+    "url": "https://www.pilsnerurquell.com/",
+    "statement": "The brewery that gave the style its name: the first pale lager was brewed here on 5 October 1842, and the very soft Plzeň water is half the reason it could be pale. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "london",
@@ -127,7 +261,52 @@
     "dark"
    ],
    "description": "Moderately hard and moderately alkaline, with chloride edging out sulfate for a rounder, maltier balance — well suited to the porters, milds, and browns that defined London brewing.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "Still unsourced as a profile, but now bounded by the aquifer it claims to describe. The six ions here remain the classic brewing-city table with no publication behind them, and two independent checks say they are not London Chalk groundwater. First, the British Geological Survey's baseline survey of the Chalk between the Lee and the Colne measured bicarbonate at 289-367 mg/L in the unconfined aquifer and 256-447 in the confined; this record stores 125, which is below the minimum of all 33 samples BGS reports. Second, the stored ions do not balance on charge - 5.55 milliequivalents of cations against 4.01, 32% cation-heavy. Calcium at 90 and chloride at 40 do sit almost exactly on the confined Chalk's medians of 93.2 and 40, so parts of this profile may well descend from a real well analysis, but the alkalinity does not survive contact with the survey. Thames Water publishes its own per-zone figures only behind a Cloudflare challenge on the lookup form, which this project will not work around, and the Drinking Water Inspectorate publishes compliance rather than mineral panels. There is a brewing-specific source for where these profiles come from, and it has now been found: W.J. Sykes, The Principles and Practice of Brewing (1897), chapter on Water, read in full at https://archive.org/details/principlespracti0000wjsy. Sykes does not tabulate cities. He tabulates three types — Type I, a Burton-on-Trent deep well, very high in calcium sulphate; Type II, a Dublin well water, low in calcium sulphate and high in calcium carbonate; Type III, a chloride-dominated mild-ale water — plus a chalk water, all in grains per imperial gallon. He attributes the Burton analysis to Brown, \"The Geology and the Mineral Waters of Burton-on-Trent\", p. 23. This is the tradition the modern brewing-city table descends from. No figure from it is transcribed into this record: the scan's OCR renders individual table cells unreliably (Dublin's lime reads as \"9379\", its calcium sulphate as \"SaaS\"), and a number that cannot be read cleanly is not a citation. What is legible is his running prose, which is quoted where it bears on this record. For London, Sykes records the practice rather than an analysis: the London waters were \"long noted for their adaptability for the production of black beers, and for their unfitness for yielding pale ales; so much was this the case, that formerly it was the custom for London firms either to obtain their pale ales from Burton or to have a branch brewery there\". He then gives the gypsum, Epsom salt and calcium chloride additions that let a London brewer make pale ale at home — 50, 6 and 10 grains per gallon respectively. That is the earliest water treatment recipe this project holds, and it is the same move a brewer makes today.",
+   "aquifer": {
+    "name": "Chalk of the London Basin, between the Rivers Lee and Colne — confined beneath the London Clay",
+    "url": "https://assets.publishing.service.gov.uk/media/5a7c0d39e5274a7202e193e7/scho0207blyd-e-e.pdf",
+    "citation": "Shand, P., Tyler-Whittle, R., Morton, M., Simpson, E., Lawrence, A.R., Pacey, J. and Hargreaves, R. Baseline Report Series: 6. The Chalk of the Colne and Lee River Catchments. British Geological Survey Commissioned Report CR/03/069N / Environment Agency, Table 5.1, 87 sites.",
+    "ions": {
+     "calcium": {
+      "n": 21,
+      "min": 17,
+      "median": 93.2,
+      "max": 204
+     },
+     "magnesium": {
+      "n": 21,
+      "min": 3.9,
+      "median": 24,
+      "max": 113
+     },
+     "sodium": {
+      "n": 21,
+      "min": 8,
+      "median": 83,
+      "max": 589
+     },
+     "chloride": {
+      "n": 21,
+      "min": 14,
+      "median": 40,
+      "max": 1250
+     },
+     "sulfate": {
+      "n": 21,
+      "min": 5,
+      "median": 102,
+      "max": 562
+     },
+     "bicarbonate": {
+      "n": 21,
+      "min": 256,
+      "median": 323,
+      "max": 447
+     }
+    },
+    "note": "London's porter brewers sank wells, and the water under London is the confined Chalk - the aquifer where it dips beneath the London Clay - which is what the table above reports. It is a different water from the Chalk outcrop in the Chilterns, which BGS reports separately from 38 to 53 sites: unconfined calcium 106-156 with a median of 125, magnesium 1.7-7.9 median 2.3, sodium 6-47 median 12.1, chloride 11.5-74 median 23, sulfate 5-78 median 22, bicarbonate 289-367 median 329. Going under the clay multiplies the magnesium tenfold and the sodium sevenfold as the water ages and exchanges sodium for calcium, and the spread becomes enormous - sodium reaches 589 mg/L and chloride 1250 in the deepest, most saline samples. What both columns agree on is alkalinity: every one of the 33 bicarbonate measurements sits between 256 and 447 mg/L. A Chalk water in this basin is a hard, strongly alkaline water, which is the real reason London brewed dark beer. Modern London tap water is mostly treated Thames and Lee surface water and is not this; neither is the profile stored on this record."
+   }
   },
   {
    "id": "dortmund",
@@ -151,7 +330,20 @@
     "export"
    ],
    "description": "Very hard water with substantial sulfate AND alkalinity — a high-mineral profile that gives Dortmunder Export its firm, slightly minerally, hop-balanced character distinct from softer Munich Helles.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "The six ion figures are still the classic brewing-city table that circulates in the brewing literature, and this project still cannot name the publication they came from. What has been established is what they are not. Dortmund's tap water is not abstracted from beneath Dortmund at all: DEW21 buys it from its subsidiary Wasserwerke Westfalen, whose Hengsen, Westhofen and Halingen works sit in the Ruhr valley and make drinking water by infiltrating pre-treated Ruhr water into the ground and recovering it as artificially recharged groundwater and bank filtrate. The Ruhrverband and AWWR's Ruhrgütebericht 2024 measured the Ruhr's mean calcium at 39 mg/L and magnesium at 6.9 at Essen-Rellinghausen, and its mean sulfate at 12 to 39 mg/L and chloride at 7 to 41 across thirteen stations along the river. The profile stored here claims 225 mg/L calcium and 120 of sulfate — five times the calcium and three times the sulfate of the river the city drinks. Bank filtration and deacidification harden the water somewhat, but not by that factor. This profile is therefore a description of the deep well water Dortmund's breweries drew for Export, not of any water now coming out of a Dortmund tap, and it should be treated as a historic reconstruction with no citation rather than as a measurement. There is a second, self-contained reason to distrust the stored figures, which needs no external document at all: they do not balance on charge. 225 mg/L calcium, 40 of magnesium and 60 of sodium are 17.1 milliequivalents of cations, against 7.1 from 180 of bicarbonate, 60 of chloride and 120 of sulfate — 82% cation-heavy, the worst imbalance of any profile in this catalogue. Ten milliequivalents of anions are simply missing. No real water analysis looks like that, so whatever these numbers are, they are not a transcription of one.",
+   "aquifer": {
+    "name": "Ruhr valley alluvium at Hengsen, Westhofen and Halingen — artificially recharged groundwater and bank filtrate, not a Dortmund aquifer",
+    "url": "https://ruhrverband.de/fileadmin/user_upload/Service/Publikationen_und_Downloads/Ruhrguetebericht_2024.pdf",
+    "citation": "Ruhrverband and Arbeitsgemeinschaft der Wasserwerke an der Ruhr (AWWR), Ruhrgütebericht 2024, chapter 5 (physico-chemical monitoring of the Ruhr) and chapter 24 (analytical results of the AWWR water-quality committee).",
+    "ions": {},
+    "note": "Dortmunder Export is the one classic style whose water is usually explained by the city's geology, and the modern supply has nothing to do with it. Wasserwerke Westfalen describe their own process on their plant pages: pre-cleaned Ruhr water is infiltrated through slow sand basins into the subsoil at Hengsen (since 1908), Westhofen and Halingen (since 1888), then collected by perforated drains as a mixture of recharged groundwater, bank filtrate and natural groundwater. That water starts as a soft river: the Ruhrgütebericht 2024 gives 39 mg/L calcium and 6.9 mg/L magnesium as annual means at Essen-Rellinghausen — below the ten-year means of 41 and 7.5 because 2024 ran wet — with sulfate at 35 and chloride at 37 there, and 12 to 39 mg/L sulfate and 7 to 41 mg/L chloride as the range of annual means across all thirteen Ruhr stations. The Export water was something else: deep wells into the Upper Cretaceous strata under the city, whose gypsum is where the sulfate came from. This project has not found a published analysis of those brewery wells, and no ion figure here is taken from a survey. The one thing worth taking from this block is negative and load-bearing: brewing this profile does not reproduce what a Dortmund brewery gets from the mains today, and a brewer in Dortmund should treat the stored numbers as a target to build, not as their tap."
+   },
+   "brewerySource": {
+    "brewery": "Dortmunder Actien-Brauerei (DAB), Dortmund",
+    "url": "https://www.dab.de/",
+    "statement": "Dortmunder Export is named for this city and its hard, sulfate-and-chloride water; DAB is the surviving brewery of the group that made the style an export article. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "edinburgh",
@@ -176,7 +368,15 @@
     "alkaline"
    ],
    "description": "Hard, alkaline water that supported Edinburgh's malt-forward Scottish ales; the alkalinity and moderate sulfate suit rich, malty brews rather than aggressively hoppy ones.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "Still unsourced, and only partly bounded. Edinburgh's brewers worked the wells of the so-called charmed circle, into the Carboniferous strata beneath the city, and the British Geological Survey's Baseline Scotland survey of the Carboniferous aquifers of the Midland Valley is the nearest published description of that water. It reports 10th to 90th percentile ranges rather than a full per-ion table for the cations, and on the three ions it does quantify this record is inside them: sulfate 140 mg/L against a range of 4.7-179, bicarbonate 225 against 132-510, chloride 65 against 7.2-123. Calcium, magnesium and sodium are presented only as box plots in that report, so nothing here confirms or contradicts the stored 120, 25 and 55. Scottish Water's own site refuses automated requests.",
+   "aquifer": {
+    "name": "Carboniferous aquifers of the Midland Valley of Scotland",
+    "url": "https://nora.nerc.ac.uk/14314/1/OR11021.pdf",
+    "citation": "Ó Dochartaigh, B.É., Smedley, P.L., MacDonald, A.M., Darling, W.G. and Homoncik, S. 2011. Baseline Scotland: groundwater chemistry of the Carboniferous sedimentary aquifers of the Midland Valley. British Geological Survey Open Report OR/11/021.",
+    "ions": {},
+    "note": "This is the most heavily mineralised groundwater in Scotland, which is why Edinburgh could brew what it brewed. BGS reports pH 6.40-7.84, alkalinity 132-510 mg/L, chloride 7.2-123 and sulfate 4.7-179 as 10th-90th percentile ranges, with total dissolved solids spanning 65 to 19,000 mg/L and a median of 555. Water types run from Ca-HCO3 through Ca-Mg-HCO3 to SO4-rich and Na-HCO3. The sulfate range is driven by two opposing processes the report names: oxidation of sulphide minerals, especially where mining has affected the water, pushing it up; and sulfate reduction in the most reducing groundwaters, pushing it below 5 mg/L. So a Carboniferous well in the Lothians could be either a sulfate-rich brewing water or nearly sulfate-free depending on its redox state, and which one you got was luck of the borehole. No ion table is carried here because the report publishes the cations only as box plots. Note also that this describes the aquifer, not Edinburgh's modern tap, which Scottish Water draws from upland surface reservoirs and which is soft."
+   }
   },
   {
    "id": "vienna",
@@ -184,12 +384,12 @@
    "kind": "classic-city",
    "country": "Austria",
    "region": "Vienna",
-   "calcium": 200,
-   "magnesium": 60,
-   "sodium": 8,
-   "chloride": 12,
-   "sulfate": 125,
-   "bicarbonate": 290,
+   "calcium": 50,
+   "magnesium": 12,
+   "sodium": 1.9,
+   "chloride": 4.6,
+   "sulfate": 18,
+   "bicarbonate": 187,
    "bestForStyles": [
     "Vienna Lager",
     "Märzen"
@@ -199,8 +399,59 @@
     "hard",
     "amber"
    ],
-   "description": "Hard and alkaline with moderate sulfate — a profile that shaped the amber, malty Vienna lager style.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Soft alpine spring water, carbonate-dominated: 187 mg/L of bicarbonate against 18 of sulfate and under 5 of chloride. Almost no sodium at all — 1.9 mg/L, the lowest of any city in this catalogue.",
+   "attribution": "Stadt Wien, Trinkwasserqualität - aktuelle Werte, published under CC BY 4.0 and sampled 27 April 2026. This record carries the I. Hochquellenleitung: calcium 50, magnesium 12, sodium 1.9, chloride 4.6 and sulfate 18 mg/L, with carbonate hardness 8.6 °dH, which is 187 mg/L of bicarbonate, at pH 7.7 and 308 µS/cm. It balances on charge to 2.8%. The stored profile was not Vienna's water by any reading: calcium 200 against a measured 50, magnesium 60 against 12, sulfate 125 against 18. Vienna drinks protected alpine spring water from the Rax, Schneeberg, Schneealpe and Hochschwab, and the city describes it as low in dissolved calcium and magnesium — the stored figures described something four times harder.",
+   "sourceUrl": "https://www.wien.gv.at/umwelt/trinkwasserqualitaet-aktuelle-werte",
+   "sourceNote": "This is the modern municipal supply, not a reconstruction of the water Vienna's nineteenth-century lager brewers used, for which this project has no source — and the spring lines are themselves a municipal engineering work, so the two are not the same water even in principle. Vienna also has four supplies, tabulated below. The city says the Hochquellenleitungen supply the households and that groundwater provides \"zusätzliche Sicherheit\", additional security, which is why this record carries a spring line and not a waterworks. The II. Hochquellenleitung is softer still, at calcium 36 and sulfate 2.4.",
+   "aquifer": {
+    "name": "Karst springs of the Rax, Schneeberg, Schneealpe and Hochschwab, with the Lobau and Moosbrunn groundwater works as reserve",
+    "url": "https://www.wien.gv.at/umwelt/trinkwasserqualitaet-aktuelle-werte",
+    "citation": "Stadt Wien - Wiener Wasser, Trinkwasserqualität - aktuelle Werte, analyses of 27-30 April 2026, published under CC BY 4.0.",
+    "ions": {
+     "calcium": {
+      "n": 4,
+      "min": 36,
+      "median": 63.5,
+      "max": 84
+     },
+     "magnesium": {
+      "n": 4,
+      "min": 5.9,
+      "median": 15.5,
+      "max": 24
+     },
+     "sodium": {
+      "n": 4,
+      "min": 1.0,
+      "median": 5.1000000000000005,
+      "max": 13
+     },
+     "chloride": {
+      "n": 4,
+      "min": 1.0,
+      "median": 12.8,
+      "max": 21
+     },
+     "sulfate": {
+      "n": 4,
+      "min": 2.4,
+      "median": 27.5,
+      "max": 62
+     },
+     "bicarbonate": {
+      "n": 4,
+      "min": 139,
+      "median": 236,
+      "max": 296
+     }
+    },
+    "note": "Four supplies, and the spread is the whole story. The two Hochquellenleitungen are karst spring water off the limestone Alps: the first at 308 µS/cm and 9.7 °dH total hardness, the second at 202 µS/cm and 6.4 °dH, which the city classifies as weich. The Lobau and Moosbrunn groundwater works are a different water entirely - 535 and 573 µS/cm, sulfate 37 and 62 against the first spring line's 18, and Moosbrunn is classified hart. Vienna's water is soft because it comes down a pipe from the mountains, not because the ground under Vienna is soft; the two boreholes in the city are three times the sulfate of the springs. A brewer taking 'Vienna water' as a target should mean the spring lines."
+   },
+   "brewerySource": {
+    "brewery": "Brauerei Schwechat (Brau Union), Vienna",
+    "url": "https://www.brauunion.at/",
+    "statement": "Anton Dreher brewed the first Vienna lager at Schwechat in 1841, using the new English kilning to make an amber malt the local water suited. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "cologne",
@@ -208,12 +459,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "North Rhine-Westphalia",
-   "calcium": 90,
-   "magnesium": 20,
-   "sodium": 40,
-   "chloride": 90,
-   "sulfate": 40,
-   "bicarbonate": 230,
+   "calcium": 106.0,
+   "magnesium": 14.0,
+   "sodium": 35.0,
+   "chloride": 58.0,
+   "sulfate": 73.0,
+   "bicarbonate": 280.0,
    "bestForStyles": [
     "Kölsch"
    ],
@@ -223,7 +474,14 @@
     "delicate"
    ],
    "description": "Moderate hardness with chloride well above sulfate, giving Kölsch its soft, rounded, subtly malty delicacy under a crisp finish.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "sourceUrl": "https://www.rheinenergie.com/media/documents/trinkwasseranalyse/Trinkwasseranalyse_Linksrheinisch.pdf",
+   "attribution": "RheinEnergie's published Trinkwasseranalyse for the left bank of the Rhine, the larger of Cologne's two supplies. Read from the PDF: calcium 106, magnesium 14, sodium 35, chloride 58, sulfate 73, hydrogen carbonate 280 mg/L. The stored figures had chloride at 90 against a published 58 and sulfate at 40 against 73 — the sulfate-to-chloride ratio, which is the number a brewer actually uses this profile for, was inverted.",
+   "sourceNote": "Cologne has two supplies and they differ. RheinEnergie's right-bank analysis gives calcium 74±3, magnesium 14±4, sodium 27±2, chloride 33±3, sulfate 62±9 and hydrogen carbonate 217±9 mg/L. This record carries the left bank; a brewer on the right bank should use those figures instead.",
+   "brewerySource": {
+    "brewery": "Cölner Hofbräu Früh, Cologne",
+    "url": "https://www.frueh.de/",
+    "statement": "Kölsch is a protected appellation restricted to Cologne breweries; Früh is among the signatories of the Kölsch-Konvention. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "brussels",
@@ -231,12 +489,12 @@
    "kind": "classic-city",
    "country": "Belgium",
    "region": "Brussels-Capital",
-   "calcium": 90,
-   "magnesium": 11,
-   "sodium": 29,
-   "chloride": 33,
-   "sulfate": 54,
-   "bicarbonate": 230,
+   "calcium": 105.5,
+   "magnesium": 15.6,
+   "sodium": 18.6,
+   "chloride": 28.15,
+   "sulfate": 70.95,
+   "bicarbonate": 290.05,
    "bestForStyles": [
     "Lambic",
     "Witbier",
@@ -247,8 +505,59 @@
     "moderate-alkalinity",
     "belgian"
    ],
-   "description": "Moderately hard, moderately alkaline water of the Senne valley — the historic water of lambic and Belgian wheat.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Hard, strongly alkaline Brussels water — 290 mg/L of bicarbonate at the median and up to 344 in the south-east of the city. Sulfate is substantial too at 71, and unlike the other ions it barely varies across the network.",
+   "attribution": "Bruxelles Environnement, Les données de Bruxelles Environnement: \"L'Eau à Bruxelles\", fiche 10 «Qualité de l'eau de distribution», October 2020, Table 10.7 — average composition of the water in the reservoirs and the feeder supplying the Brussels network in 2019, sourced by the regulator from VIVAQUA. Six supply points: réservoirs Callois, Rhode, Boitsfort, Uccle and Ixelles, and the Daussoulx-Boitsfort feeder. This record carries the median of the six — calcium 105.5 (range 69-132), magnesium 15.6 (5.1-16.4), sodium 18.6 (13.7-25.3), chloride 28.15 (18.0-34.4), sulfate 70.95 (68.1-75.6) and bicarbonate 290.05 (172.5-343.6) mg/L. Bicarbonate is published directly rather than derived from alkalinity. With the table's own potassium and nitrate the median balances on charge to 1.6%. The corrections are sulfate, stored at 54 against a measured 71, and bicarbonate at 230 against 290.",
+   "sourceUrl": "https://document.environnement.brussels/opac_css/elecfile/Eau%2010",
+   "sourceNote": "Brussels is not one water and the regulator says so: the composition reflects the mix of surface water, groundwater and blends feeding each reservoir, and it varies from one quarter of the city to the next. Calcium runs 69 mg/L at Callois to 132 at Boitsfort and bicarbonate 172 to 344 — a factor of two across six supply points — so the median describes Brussels rather than any address in it. Sulfate is the exception, sitting between 68 and 76 everywhere. These are 2019 figures published in 2020, and they are the modern municipal supply: this project has no source for the water Brussels lambic brewers used historically, and the Payottenland breweries outside the city are on different water again. VIVAQUA publishes a street-by-street lookup, but only through a form this project could not reach.",
+   "aquifer": {
+    "name": "Brussels supply reservoirs and the Daussoulx-Boitsfort feeder — mixed groundwater catchments and surface water",
+    "url": "https://document.environnement.brussels/opac_css/elecfile/Eau%2010",
+    "citation": "Bruxelles Environnement, fiche documentée 10 «Qualité de l'eau de distribution», October 2020, Table 10.7, from VIVAQUA 2020 data for 2019.",
+    "ions": {
+     "calcium": {
+      "n": 6,
+      "min": 69,
+      "median": 105.5,
+      "max": 132
+     },
+     "magnesium": {
+      "n": 6,
+      "min": 5.1,
+      "median": 15.6,
+      "max": 16.4
+     },
+     "sodium": {
+      "n": 6,
+      "min": 13.7,
+      "median": 18.6,
+      "max": 25.3
+     },
+     "chloride": {
+      "n": 6,
+      "min": 18.0,
+      "median": 28.15,
+      "max": 34.4
+     },
+     "sulfate": {
+      "n": 6,
+      "min": 68.1,
+      "median": 70.95,
+      "max": 75.6
+     },
+     "bicarbonate": {
+      "n": 6,
+      "min": 172.5,
+      "median": 290.05,
+      "max": 343.6
+     }
+    },
+    "note": "The six supply points split cleanly into two groups and the split is visible in every ion but sulfate. Callois and Uccle are soft and low-alkalinity — calcium 69 and 81, magnesium 5.1 and 5.9, bicarbonate 172 and 198 — while Rhode, Boitsfort and Ixelles are hard and highly alkaline at calcium 118 to 132, magnesium about 16, bicarbonate 320 to 344. The feeder from Daussoulx sits between them. Bruxelles Environnement attributes the difference to source: VIVAQUA draws mainly on groundwater catchments, which carry more calcium and carbonate than surface water, and different reservoirs get different mixes. A brewer in Watermael-Boitsfort has twice the alkalinity of one supplied from Callois."
+   },
+   "brewerySource": {
+    "brewery": "Brasserie Cantillon, Brussels",
+    "url": "https://www.cantillon.be/",
+    "statement": "Lambic is defined by spontaneous fermentation in the Zenne valley around Brussels; Cantillon is the only brewery still operating within the city itself. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "tadcaster",
@@ -272,7 +581,69 @@
     "sulfate"
    ],
    "description": "A hard, sulfate-rich Yorkshire brewing town (home of Samuel Smith's and John Smith's); a gentler cousin of Burton's water for firm, dry bitters.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "Still unsourced as a profile, and now placed against the aquifer Tadcaster's brewers actually draw from. The town sits on the Magnesian Limestone, and the British Geological Survey's baseline survey of that aquifer across County Durham and North Yorkshire gives the range it can deliver, from 107 to 110 analyses per ion. Five of this record's six figures sit high but inside it: calcium 220 above the 95th percentile of 177 but well inside the maximum of 547, sulfate 390 between the 75th and 90th percentiles of 153 and 400, magnesium 60 and sodium 45 and chloride 60 all between the 75th and 90th. That is exactly what a brewery well chosen for mineral content should look like. The exception is bicarbonate: 210 mg/L sits below the survey's 5th percentile of 240, in an aquifer whose median is 351. Yorkshire Water publishes per-zone figures only through a postcode form this project could not reach.",
+   "aquifer": {
+    "name": "Magnesian Limestone (Permian) of County Durham and North Yorkshire — Yorkshire Province",
+    "url": "https://nora.nerc.ac.uk/id/eprint/8147/1/OR09030.pdf",
+    "citation": "Bearcock, J. and Smedley, P.L. 2009. Baseline groundwater chemistry: the Magnesian Limestone of County Durham and North Yorkshire. British Geological Survey Open Report OR/09/030, Table 5.1.",
+    "ions": {
+     "calcium": {
+      "n": 107,
+      "min": 10.3,
+      "p5": 57.8,
+      "median": 92.0,
+      "p95": 177,
+      "max": 547
+     },
+     "magnesium": {
+      "n": 107,
+      "min": 0.519,
+      "p5": 25.7,
+      "median": 42.8,
+      "p95": 84.0,
+      "max": 537
+     },
+     "sodium": {
+      "n": 106,
+      "min": 8.45,
+      "p5": 12.4,
+      "median": 27.5,
+      "p95": 125,
+      "max": 4610
+     },
+     "chloride": {
+      "n": 109,
+      "min": 2,
+      "p5": 14.8,
+      "median": 38.3,
+      "p95": 235,
+      "max": 9250
+     },
+     "sulfate": {
+      "n": 107,
+      "min": 1.18,
+      "p5": 21.8,
+      "median": 89.1,
+      "p95": 461,
+      "max": 1610
+     },
+     "bicarbonate": {
+      "n": 110,
+      "min": 56,
+      "p5": 240,
+      "median": 351,
+      "p95": 504,
+      "max": 586
+     }
+    },
+    "note": "Tadcaster's water is Burton's story told in a different rock. BGS splits the aquifer into a Durham and a Yorkshire province and says the difference is mineralogy: Durham groundwaters are Ca-Mg-HCO3 dominated by dolomite, while the Yorkshire ones — Tadcaster's — are Ca-HCO3 mixing towards Ca-SO4 because of gypsum in the evaporite deposits. That gypsum is where a Yorkshire brewery well gets its sulfate, the same mechanism that gives Burton its. The aquifer's range is enormous: sulfate spans 1.18 to 1610 mg/L and chloride reaches 9250 in samples affected by saline intrusion near Hartlepool and by minewater rebound around Ferryhill, so the upper tail describes water nobody would brew with. The median Magnesian Limestone water is much milder than Tadcaster's stored profile, which is the point: a brewing well is a chosen point in a range, not the average of it."
+   },
+   "brewerySource": {
+    "brewery": "Samuel Smith's Old Brewery, Tadcaster",
+    "url": "https://www.samuelsmithsbrewery.co.uk/",
+    "statement": "Tadcaster's hard limestone well water is the reason three breweries sit in one small Yorkshire town. Samuel Smith's still draws from its original 1758 well. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "bohemia-soft",
@@ -295,7 +666,8 @@
     "low-mineral"
    ],
    "description": "A representative soft Bohemian supply just above Pilsen's near-zero baseline; the template for delicate Czech pale lager.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
   },
   {
    "id": "asheville",
@@ -305,10 +677,10 @@
    "region": "North Carolina",
    "calcium": 6,
    "magnesium": 2,
-   "sodium": 4,
+   "sodium": 12.4,
    "chloride": 5,
    "sulfate": 6,
-   "bicarbonate": 16,
+   "bicarbonate": 29,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -317,8 +689,16 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Very soft Appalachian mountain water; a blank slate that helped make Asheville a dense craft-brewing hub.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Very soft Appalachian surface water — the City reports 5.48 mg/L total hardness as CaCO3 — but with 29 mg/L of bicarbonate and 12.4 of sodium, not the mineral-free slate the profile used to claim.",
+   "unsourced": true,
+   "attribution": "Partly sourced. The City of Asheville's 2024 Water Quality Report publishes annual averages for four physical and mineral characteristics and no more: pH 7.61, alkalinity 24.08 ppm as CaCO3, hardness 5.48 ppm as CaCO3 and sodium 12.4 ppm. Two of those replace figures here - bicarbonate, which follows from the alkalinity at 29 mg/L against a stored 16, and sodium at 12.4 against a stored 4. The hardness figure convicts two more without replacing them: calcium 6 and magnesium 2 as stored compute to 23.2 mg/L of hardness as CaCO3, over four times the 5.48 the City measures, so both are far too high. Asheville publishes no split between them, so this project will not invent one, and the two wrong numbers are left standing with this note rather than replaced by a guess. Chloride and sulfate are not published either.",
+   "aquifer": {
+    "name": "North Fork and Bee Tree reservoirs, Black Mountains — protected Appalachian surface water",
+    "url": "https://www.ashevillenc.gov/department/water/water-quality-report/",
+    "citation": "City of Asheville, Water Quality Report 2024, physical and mineral characteristics, annual averages.",
+    "ions": {},
+    "note": "Asheville's four published figures are enough to place the water but not to build a profile from. Hardness of 5.48 mg/L as CaCO3 puts calcium and magnesium together at roughly 2 mg/L of calcium equivalent - among the softest municipal supplies anywhere, which is the usual explanation for why the city's breweries built their reputations on hop-forward beer. The alkalinity of 24 mg/L as CaCO3 against that hardness means the water is carbonate-dominated with almost no hardness to offset it, so its residual alkalinity is higher than its softness suggests. The City reports no calcium, magnesium, chloride or sulfate individually, which is why this record stays declared unsourced."
+   }
   },
   {
    "id": "bend",
@@ -341,7 +721,8 @@
     "modern-craft"
    ],
    "description": "Soft Cascade snowmelt behind Central Oregon's outsized brewery count.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
   },
   {
    "id": "melbourne",
@@ -363,7 +744,8 @@
     "modern-craft"
    ],
    "description": "Soft protected-catchment water supplying one of the southern hemisphere's busiest craft scenes.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
   },
   {
    "id": "bamberg",
@@ -371,12 +753,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Bavaria",
-   "calcium": 120,
-   "magnesium": 10,
-   "sodium": 8,
-   "chloride": 10,
-   "sulfate": 40,
-   "bicarbonate": 300,
+   "calcium": 110,
+   "magnesium": 14,
+   "sodium": 31,
+   "chloride": 46,
+   "sulfate": 66,
+   "bicarbonate": 303,
    "bestForStyles": [
     "Rauchbier",
     "Märzen",
@@ -387,8 +769,59 @@
     "alkaline",
     "smoke"
    ],
-   "description": "Hard, alkaline Franconian water behind Bamberg's smoked lagers and dark Franconian styles.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Hard, alkaline Franconian valley water — 303 mg/L bicarbonate against only 66 of sulfate, which is what pushes a pale mash pH up and why Bamberg's beers are dark, malty and smoked rather than pale and bitter.",
+   "attribution": "Stadtwerke Bamberg's own Trinkwasseranalyse for the Stadtwald supply zone, sampled 19 March 2026 and reported 10 April 2026 by CLG Chemisches Labor Dr. Graser KG under the Trinkwasserverordnung: calcium 110, magnesium 14, sodium 31, chloride 46, sulfate 66, hydrogen carbonate 303 mg/L, total hardness 18.0 °dH, pH 7.30, conductivity measured on the day of sampling. The Stadtwald works supplies the Inselgebiet — the island quarter where Schlenkerla, Fässla, Klosterbräu and Spezial all sit — so this is the zone that matters for the beers this profile exists to explain. It corrects every ion the record used to carry except bicarbonate: sodium was stored at 8 mg/L against a measured 31, chloride at 10 against 46, sulfate at 40 against 66, magnesium at 10 against 14 and calcium at 120 against 110. The old bicarbonate of 300 was almost exactly right, which is the one figure that most affects mash pH. The analysis balances on charge to 4.5% as stored, and the residual is accounted for by the two ions this schema does not carry: adding the report's 19 mg/L nitrate and 4.6 mg/L potassium brings it inside 2%.",
+   "sourceUrl": "https://www.stadtwerke-bamberg.de/fileadmin/user_upload/Dokumente/Wasser/Pruefberichte/Pruefbericht_Stadtwald_10.04.2026.pdf",
+   "sourceNote": "This is the current municipal supply, not a historic reconstruction of the water Bamberg's breweries used when the smoked styles were established, and no Bamberg brewery publishes an analysis of its own well. The analysis is one sampling date at one point in one of four supply zones; the aquifer block below carries the spread across the city's three groundwater zones.",
+   "aquifer": {
+    "name": "Regnitz valley Quaternary sands and gravels — Wasserschutzgebiete Stadtwald, Gereuther Wiesen, Buger Wiesen and Hirschaider Büsche",
+    "url": "https://www.stadtwerke-bamberg.de/wasser/haertegrade",
+    "citation": "Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH, Wasserhärtegrade und Trinkwasseranalysen, and the utility's descriptions of its protection zones and waterworks. Analyses by CLG Chemisches Labor Dr. Graser KG, sampled March 2026.",
+    "ions": {
+     "calcium": {
+      "n": 3,
+      "min": 93,
+      "median": 110,
+      "max": 110
+     },
+     "magnesium": {
+      "n": 3,
+      "min": 14,
+      "median": 15,
+      "max": 21
+     },
+     "sodium": {
+      "n": 3,
+      "min": 23,
+      "median": 31,
+      "max": 31
+     },
+     "chloride": {
+      "n": 3,
+      "min": 37,
+      "median": 46,
+      "max": 47
+     },
+     "sulfate": {
+      "n": 3,
+      "min": 45,
+      "median": 66,
+      "max": 66
+     },
+     "bicarbonate": {
+      "n": 3,
+      "min": 303,
+      "median": 304,
+      "max": 322
+     }
+    },
+    "note": "Bamberg does not drill for its water. The wells are shallow — the utility puts them at ten to twelve metres — and sit in the Quaternary gravels of the Regnitz floodplain south and west of the city, inside a 3,828-hectare protection area designated in 2011 and made up of four blocks: Stadtwald, Gereuther Wiesen, Buger Wiesen and Hirschaider Büsche. The waterworks remove iron and manganese and pass the water over activated carbon; nothing is added that would change the mineral profile. The table above is the three groundwater-supplied zones — Gaustadt, Stadtwald (which feeds the Inselgebiet) and Bug-Gereuth (which feeds the Berggebiet) — and they agree closely: 17.9, 18.0 and 18.2 °dH. The city's fourth zone, Bamberg-Ost, is deliberately left out, because since 1975 it has drunk Fernwasser piped from the Donau-Lech area by the Zweckverband Fernwasserversorgung Oberfranken and is a different water entirely: calcium 68, magnesium 16, sodium 11, chloride 16, sulfate 21, hydrogen carbonate 259 mg/L, 13.1 °dH. About a third of Bamberg's supply is that imported water, so a brewer's tap in Bamberg-Ost does not deliver Bamberg's water."
+   },
+   "brewerySource": {
+    "brewery": "Brauerei Heller-Trum / Schlenkerla, Bamberg",
+    "url": "https://www.schlenkerla.de/",
+    "statement": "Schlenkerla's Aecht Schlenkerla Rauchbier is the reference for the smoked style Bamberg is known for. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "tokyo",
@@ -396,12 +829,12 @@
    "kind": "modern-city",
    "country": "Japan",
    "region": "Kantō",
-   "calcium": 18,
-   "magnesium": 6,
-   "sodium": 18,
-   "chloride": 30,
-   "sulfate": 22,
-   "bicarbonate": 55,
+   "calcium": 19.6,
+   "magnesium": 4.3,
+   "sodium": 15.0,
+   "chloride": 18.4,
+   "sulfate": 30.0,
+   "bicarbonate": 51.5,
    "bestForStyles": [
     "Rice Lager",
     "Pale Ale"
@@ -410,8 +843,54 @@
     "soft-moderate",
     "modern-craft"
    ],
-   "description": "Moderately soft municipal water supplying Japan's dense Tokyo craft scene; a light, flexible base.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Soft-to-moderate river water at about 67 mg/L total hardness, sulfate-leaning: 30 mg/L of sulfate against 52 of bicarbonate. Tokyo is two waters, and the west of the city is markedly softer than the east.",
+   "attribution": "Tokyo Metropolitan Government Bureau of Waterworks, 令和6年度水質年報 (Water Quality Annual Report, fiscal year 2024-25), Appendix 5, 給水栓水の水質検査 — the tap-water results for 47 sampling points across the wards. This record carries the median of 46 of them: calcium 19.6, magnesium 4.3, sodium 15, chloride 18.4, sulfate 30 mg/L, and alkalinity 42.2 mg/L as CaCO3, which is 52 mg/L of bicarbonate. Calcium and magnesium are converted from the report's own カルシウム硬度 and マグネシウム硬度 columns at 2.497 and 4.116 mg of CaCO3 per mg. The 47th point, No.47 Chūō-ku Harumi, is excluded: its printed hardness does not equal its own calcium and magnesium hardness, so its row was not read reliably. The kept 46 balance on charge to 2.6%. The stored profile had chloride at 30 against a measured 18.4 and sulfate at 22 against 30 — the two the wrong way round.",
+   "sourceUrl": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/102019006-nempo_r06_f03",
+   "sourceNote": "These are ward tap water figures, sampled monthly or quarterly through the year and averaged by the Bureau, so they describe what comes out of a tap in Tokyo rather than any one treatment plant. The Bureau publishes plant-level tables in the same report, but their numeric cells do not carry extractable text, so this record works from the tap appendix. pH, potassium and nitrate are in the report and are not carried in this schema.",
+   "aquifer": {
+    "name": "Tone and Ara river system (Asaka, Kanamachi, Misato plants) and Tama river system (Nagasawa, Kinuta plants)",
+    "url": "https://www.waterworks.metro.tokyo.lg.jp/documents/d/waterworks/102019006-nempo_r06_f03",
+    "citation": "Tokyo Metropolitan Government Bureau of Waterworks, 令和6年度水質年報, Appendix 5: tap-water analyses for 47 sampling points, each labelled with the reservoir and treatment plants that supply it.",
+    "ions": {
+     "calcium": {
+      "n": 46,
+      "min": 15.3,
+      "median": 19.62,
+      "max": 22.75
+     },
+     "magnesium": {
+      "n": 46,
+      "min": 3.74,
+      "median": 4.3,
+      "max": 5.22
+     },
+     "sodium": {
+      "n": 46,
+      "min": 9.6,
+      "median": 15.0,
+      "max": 18.0
+     },
+     "chloride": {
+      "n": 46,
+      "min": 8.4,
+      "median": 18.4,
+      "max": 20.0
+     },
+     "sulfate": {
+      "n": 46,
+      "min": 16.0,
+      "median": 30.0,
+      "max": 34.0
+     },
+     "bicarbonate": {
+      "n": 46,
+      "min": 40.24,
+      "median": 51.52,
+      "max": 64.38
+     }
+    },
+    "note": "The spread is not noise, it is geography, and the report labels it: every sampling point names the plants that feed it. The softest taps in the city are in Ōta and Setagaya in the southwest — No.23 Minamiyukigaya at chloride 8.4 and sulfate 16, No.6 Tamagawa-denenchōfu at 9.3 and 18 — and all of them are fed from the Nagasawa and Kinuta plants on the Tama river. The hardest and saltiest are in the east and on the bay — No.39 Shinden in Adachi at chloride 20.0 and sulfate 33, No.34 Higashimizue in Edogawa at sulfate 34 — and those are fed from Misato and Kanamachi on the Edo and Tone. That is roughly a doubling of both ions across one city. A Tokyo brewer in Setagaya and one in Edogawa are not treating the same water, and the median above is neither of them."
+   }
   },
   {
    "id": "copenhagen",
@@ -419,12 +898,12 @@
    "kind": "modern-city",
    "country": "Denmark",
    "region": "Hovedstaden",
-   "calcium": 110,
-   "magnesium": 18,
-   "sodium": 30,
-   "chloride": 55,
-   "sulfate": 55,
-   "bicarbonate": 250,
+   "calcium": 69,
+   "magnesium": 24,
+   "sodium": 80,
+   "chloride": 65,
+   "sulfate": 64,
+   "bicarbonate": 340,
    "bestForStyles": [
     "Lager",
     "Pilsner"
@@ -434,8 +913,59 @@
     "alkaline",
     "lager"
    ],
-   "description": "Hard, chalky Danish groundwater — historically the water of Carlsberg's lagers.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Strongly alkaline Danish limestone groundwater — 340 mg/L of bicarbonate — and unusually high in sodium, because HOFOR is progressively softening its waterworks and trading calcium for it.",
+   "attribution": "HOFOR's stor kontrol chemical analysis of January 2026, covering the seven regional waterworks that supply Copenhagen: Gevninge, Islevbro, Marbjerg, Regnemark, Slangerup, Søndersø and Thorsbro. This record carries the median across the seven - calcium 69 (range 42-120), magnesium 24 (18-25), sodium 80 (31-140), chloride 65 (38-100), sulfate 64 (42-82) and bicarbonate 340 (304-414) mg/L - because HOFOR states that every Copenhagen district is supplied from all the regional works, with particular ones predominating. The biggest correction is sodium, stored at 30 against a measured median of 80, and bicarbonate at 250 against 340. HOFOR publishes its own ion balance for each works, from 0.9% to 5.0%, so these analyses are self-checked before this project checks them.",
+   "sourceUrl": "https://www.hofor.dk/wp-content/uploads/2026/07/stor_kontrol_januar_2026.xlsx",
+   "sourceNote": "This profile is a moving target and will keep moving. HOFOR is installing softening at all its regional waterworks and says so on the same page: Marbjerg in spring 2021, Søndersø in late summer 2022, Thorsbro in spring 2024 and Gevninge in autumn 2024. The effect is visible in the numbers - the four softened works run calcium 42 to 69, the three not yet softened run 110 to 120, and sodium moves the other way, 80 to 140 against 31 to 36. Copenhagen's water is getting softer and saltier by deliberate policy, so a figure dated January 2026 is a snapshot of a programme in progress, not a standing description of the city.",
+   "aquifer": {
+    "name": "Danish Zealand limestone and glacial deposits, via HOFOR's seven regional waterworks",
+    "url": "https://www.hofor.dk/privat/vand/bliv-klog-paa-drikkevandet/se-vandkvaliteten-din-kommune/vandkvalitet-koebenhavns-kommune/",
+    "citation": "HOFOR, Vandkvalitet i Københavns Kommune, and the accompanying stor kontrol chemical analysis of January 2026 for each regional waterworks.",
+    "ions": {
+     "calcium": {
+      "n": 7,
+      "min": 42,
+      "median": 69,
+      "max": 120
+     },
+     "magnesium": {
+      "n": 7,
+      "min": 18,
+      "median": 24,
+      "max": 25
+     },
+     "sodium": {
+      "n": 7,
+      "min": 31,
+      "median": 80,
+      "max": 140
+     },
+     "chloride": {
+      "n": 7,
+      "min": 38,
+      "median": 65,
+      "max": 100
+     },
+     "sulfate": {
+      "n": 7,
+      "min": 42,
+      "median": 64,
+      "max": 82
+     },
+     "bicarbonate": {
+      "n": 7,
+      "min": 304,
+      "median": 340,
+      "max": 414
+     }
+    },
+    "note": "The seven works do not split by geology so much as by treatment. Islevbro, Regnemark and Slangerup are not yet softened and carry 110 to 120 mg/L calcium at 21 to 23 °dH; Gevninge, Marbjerg, Søndersø and Thorsbro have been softened since 2021-2024 and carry 42 to 69 at 11 to 14 °dH. Alkalinity stays high across all of them, 304 to 414 mg/L of bicarbonate, because softening removes hardness rather than carbonate. That is an awkward combination for a brewer: the calcium that would have offset the alkalinity in the mash is the part being taken out. Which works a given address draws from varies by district and by day, and HOFOR lists the predominant works per postal district."
+   },
+   "brewerySource": {
+    "brewery": "Carlsberg, Copenhagen",
+    "url": "https://www.carlsberggroup.com/",
+    "statement": "Carlsberg was founded at Valby in 1847 and is where Emil Christian Hansen isolated the first pure lager yeast in 1883, which is why this city appears in a brewing catalogue at all. Cited to the group site rather than carlsberg.com, which answers automated requests with 403. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "portland-me",
@@ -443,12 +973,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "Maine",
-   "calcium": 5,
-   "magnesium": 1,
-   "sodium": 6,
-   "chloride": 8,
-   "sulfate": 5,
-   "bicarbonate": 14,
+   "calcium": 2.82,
+   "magnesium": 0.58,
+   "sodium": 9.82,
+   "chloride": 10,
+   "sulfate": 2,
+   "bicarbonate": 11,
    "bestForStyles": [
     "Hazy IPA",
     "Pale Ale"
@@ -458,8 +988,10 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Very soft Sebago Lake water behind the outsized New England hazy-IPA scene (Bissell Brothers, Foundation, etc.).",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Sebago Lake water, about as soft as a municipal supply gets — 2.8 mg/L calcium, 2 of sulfate, 11 of bicarbonate. Its most abundant ion is sodium, and most of that is added at the plant.",
+   "attribution": "Portland Water District, Analysis of Water Supplies, sampled 15 April 2025, Greater Portland treated column: calcium 2.82, magnesium 0.58, sodium 9.82, chloride 10, sulfate 2 mg/L, alkalinity 9.2 mg/L as CaCO3 which is 11 mg/L bicarbonate, at pH 8.08, conductivity 47.8 µS and TDS 31 mg/L. Calcium and magnesium reproduce the published hardness of 9.43 as CaCO3 exactly. The stored profile had roughly the right shape but the wrong ions: calcium 5 against 2.82, sodium 6 against 9.82, sulfate 5 against 2.",
+   "sourceUrl": "https://www.pwd.org/wp-content/uploads/2026/05/Complete-Water-Chemistry.pdf",
+   "sourceNote": "Sodium is treatment, not lake. Untreated Sebago water carries 6.13 mg/L sodium and 5.9 alkalinity as CaCO3; the treated water carries 9.82 and 9.2, and the report shows 0.63 mg/L ammonia-N in the treated column, so the plant is dosing caustic and chloraminating. The panel also does not balance on charge - 0.62 milliequivalents of cations against 0.51 of anions, 19% cation-heavy - and the untreated column is imbalanced the same way, so it is not a treatment artefact. A soft, coloured lake water carries organic anions that this six-ion model has no column for, which is the most likely explanation, but this project has not confirmed it and no figure here is adjusted to close the gap."
   },
   {
    "id": "plzen-region",
@@ -483,7 +1015,8 @@
     "malty"
    ],
    "description": "Softer than most brewing centres but firmer than Pilsen — the water behind Budweiser Budvar's rounder, maltier take on Czech lager.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
   },
   {
    "id": "dusseldorf",
@@ -491,12 +1024,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "North Rhine-Westphalia",
-   "calcium": 90,
-   "magnesium": 15,
-   "sodium": 45,
-   "chloride": 85,
-   "sulfate": 55,
-   "bicarbonate": 215,
+   "calcium": 65,
+   "magnesium": 8.6,
+   "sodium": 28.5,
+   "chloride": 67.9,
+   "sulfate": 58.2,
+   "bicarbonate": 122,
    "bestForStyles": [
     "Altbier"
    ],
@@ -505,8 +1038,15 @@
     "chloride",
     "alkaline"
    ],
-   "description": "Moderately hard, chloride-forward and alkaline — suits the malty, copper-coloured altbier the city is known for.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Chloride-forward Rhine-derived water of moderate hardness and, at 122 mg/L of bicarbonate, much less alkaline than an altbier profile is usually drawn as — chloride outruns sulfate, which is where the soft, malty balance comes from.",
+   "attribution": "Stadtwerke Düsseldorf AG, Trinkwasseranalyse for the supply area, from the evaluation of analyses at Hochbehälter Hardt over 1 January to 31 December 2025: calcium 65, magnesium 8.6, sodium 28.5, chloride 67.9, sulfate 58.2 and nitrate 13.1 mg/L, with an acid capacity to pH 4.3 of 2.00 mmol/L, which is 122 mg/L of bicarbonate. Conductivity 699 µS/cm. The panel balances on charge to 1.2% including the reported potassium and nitrate, which is as tight as any analysis in this catalogue. Every stored ion was too high, and bicarbonate worst: 215 against a measured 122, which is most of a doubling in the ion that sets residual alkalinity. Calcium was 90 against 65 and chloride 85 against 68.",
+   "sourceUrl": "https://a.storyblok.com/f/274772/x/9e9ba42c93/trinkwasseranalyse-duesseldorf-2026.pdf",
+   "sourceNote": "One thing in the utility's own table does not agree with itself. It reports total hardness of 15.0 °dH, but its own calcium and magnesium come to 11.1 °dH, and the six ions balance on charge to 1.2% as they stand. The ions are taken and the hardness line is not; this project has not resolved which is the error. Note also what the water is: Stadtwerke Düsseldorf state that about three quarters of it is infiltrated Rhine water and a quarter groundwater, so this is a treated river, and the analysis is finished drinking water rather than raw water. It is the modern supply, not the water Düsseldorf brewed altbier with before the Rhine works were built.",
+   "brewerySource": {
+    "brewery": "Uerige, Düsseldorf",
+    "url": "https://www.uerige.de/",
+    "statement": "Altbier is Düsseldorf's, and Uerige is the best known of the Altstadt house breweries still brewing it on the premises. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "antwerp",
@@ -531,7 +1071,8 @@
     "moderate"
    ],
    "description": "Moderately hard Flemish water with balanced sulfate and chloride; the historic supply of Antwerp's ale breweries.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been."
   },
   {
    "id": "tartu-baltic",
@@ -556,7 +1097,41 @@
     "baltic"
    ],
    "description": "Hard, alkaline Baltic limestone groundwater — well suited to the dark, malty Baltic porters of the region.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "Still unsourced, but now checked. Tartu Veevärk publishes the range each parameter has taken in the city's drinking water rather than a single analysis, and says why: Tartu draws on 30 to 40 boreholes pumping from four different aquifers, blended in the treatment plants and the mains, so which borehole dominates a given tap can change over the course of a day. Their published ranges are calcium 37-124, magnesium 28.8-37.5, sodium 27-88.8, chloride 6.7-60.1 and sulfate 3.2-38.2 mg/L, with total hardness 1.7-4.5 mmol/L (9.5-25.2 °dH), conductivity 602-917 µS/cm and pH 7.2-8.0. Three of the six stored ions fall outside those ranges: magnesium at 25 against a published floor of 28.8, sodium at 20 against a floor of 27, and sulfate at 60 against a ceiling of 38.2. Calcium and chloride are inside. No figure here is replaced, because taking the midpoint of five independent ranges from a water the utility says swings widely would build a profile of a water that may never have existed. Bicarbonate, the sixth ion, is not published at all.",
+   "aquifer": {
+    "name": "30-40 boreholes in four aquifers beneath Tartu, blended in supply",
+    "url": "https://tartuvesi.ee/vee-kvaliteet/tartu-joogivee-kvaliteedinaitajad/",
+    "citation": "Tartu Veevärk AS, Tartu joogivee kvaliteedinäitajad — the ranges taken by each parameter in the city's drinking water.",
+    "ions": {
+     "calcium": {
+      "n": null,
+      "min": 37,
+      "max": 124
+     },
+     "magnesium": {
+      "n": null,
+      "min": 28.8,
+      "max": 37.5
+     },
+     "sodium": {
+      "n": null,
+      "min": 27,
+      "max": 88.8
+     },
+     "chloride": {
+      "n": null,
+      "min": 6.7,
+      "max": 60.1
+     },
+     "sulfate": {
+      "n": null,
+      "min": 3.2,
+      "max": 38.2
+     }
+    },
+    "note": "These are ranges the utility has observed, not an analysis: no median is published and none is invented here, so the median column is empty on purpose. The width is the point. Calcium alone moves over a factor of three and total hardness from 9.5 to 25.2 °dH, because the four aquifers are chemically different and the mix at any address depends on how much water the neighbourhood is drawing. A brewer in Tartu cannot treat to a fixed profile from the mains without measuring first. Bicarbonate is not published, so the 290 mg/L on this record rests on nothing and the record stays declared unsourced."
+   }
   },
   {
    "id": "sapporo",
@@ -565,11 +1140,11 @@
    "country": "Japan",
    "region": "Hokkaidō",
    "calcium": 10,
-   "magnesium": 4,
-   "sodium": 8,
-   "chloride": 10,
+   "magnesium": 2.44,
+   "sodium": 11,
+   "chloride": 17,
    "sulfate": 12,
-   "bicarbonate": 30,
+   "bicarbonate": 24.4,
    "bestForStyles": [
     "Japanese Rice Lager",
     "Pilsner"
@@ -579,8 +1154,53 @@
     "lager",
     "modern-craft"
    ],
-   "description": "Very soft Hokkaidō snowmelt; part of why Japanese lager reads so crisp and delicate.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Very soft Hokkaido snowmelt — 35 mg/L total hardness as CaCO3 and only 24 of bicarbonate. Among the softest city supplies in this catalogue, and the reason Sapporo's lagers need no dilution.",
+   "attribution": "Sapporo City Waterworks Bureau, 令和6年度水質年報, section 4 «浄水場水質試験結果» — the annual tap-water column for each of the city's five purification plants: Moiwa, Shirakawa, Nishino, Miyanomachi and Jozankei. Median of the five: calcium 10, magnesium 2.44, sodium 11, chloride 17 mg/L, and alkalinity 20 mg/L as CaCO3, which is 24.4 mg/L of bicarbonate. Every plant's figures were checked against the report's own published total hardness — calcium times 2.497 plus magnesium times 4.116 — and all five reconcile within 1.0 mg/L as CaCO3, which is what makes the extraction trustworthy. Shirakawa's magnesium is the one derived figure: the report prints its hardness and calcium but not its magnesium, so magnesium is back-computed from the other two. Corrections: magnesium was stored at 4 against 2.44, chloride at 10 against 17, sodium at 8 against 11 and bicarbonate at 30 against 24.4.",
+   "sourceUrl": "https://www.city.sapporo.jp/suido/overview/suishitu/result/documents/r06_04.pdf",
+   "sourceNote": "Sapporo does not measure sulfate. It is not one of Japan's 51 statutory drinking-water parameters and it appears nowhere in the annual report — checked page by page — so the 12 mg/L on this record remains uncited, and the record is five ions sourced out of six. Two other columns this project extracted, potassium and total dissolved solids, are deliberately discarded: the values they produced (potassium around 0.05 mg/L) are physically implausible and were mis-paired with a neighbouring row, so nothing from them is used. The five plants differ modestly — hardness 34 to 44 as CaCO3, chloride 11 to 20 — and Shirakawa is the largest, so a Sapporo brewer is most likely on figures close to the median.",
+   "aquifer": {
+    "name": "Toyohira and Ishikari river system, five purification plants",
+    "url": "https://www.city.sapporo.jp/suido/overview/suishitu/result/documents/r06_04.pdf",
+    "citation": "札幌市水道局 (Sapporo City Waterworks Bureau), 令和6年度水質年報, 4 浄水場水質試験結果, annual tap-water statistics for the Moiwa, Shirakawa, Nishino, Miyanomachi and Jozankei plants.",
+    "ions": {
+     "calcium": {
+      "n": 5,
+      "min": 9.1,
+      "median": 10,
+      "max": 13
+     },
+     "magnesium": {
+      "n": 5,
+      "min": 2.1,
+      "median": 2.44,
+      "max": 3.1
+     },
+     "sodium": {
+      "n": 5,
+      "min": 8.5,
+      "median": 11,
+      "max": 14
+     },
+     "chloride": {
+      "n": 5,
+      "min": 11,
+      "median": 17,
+      "max": 20
+     },
+     "bicarbonate": {
+      "n": 5,
+      "min": 24,
+      "median": 24.4,
+      "max": 29
+     }
+    },
+    "note": "Five plants and no great drama between them: total hardness runs 34 to 44 mg/L as CaCO3 and alkalinity 20 to 24, so every part of Sapporo drinks soft, low-alkalinity water. Nishino is the hardest at 44 and Moiwa the softest at 34. Sulfate is absent from the table because Japan does not regulate it in drinking water; Tokyo measures it as a voluntary management target but Sapporo does not, so no sulfate figure is carried here."
+   },
+   "brewerySource": {
+    "brewery": "Sapporo Breweries, Sapporo",
+    "url": "https://www.sapporobeer.jp/",
+    "statement": "Japan's oldest beer brand, founded in Sapporo in 1876 as the Kaitakushi brewery, and the reason the city's soft water is a reference point for Japanese lager. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "vancouver",
@@ -588,12 +1208,12 @@
    "kind": "modern-city",
    "country": "Canada",
    "region": "British Columbia",
-   "calcium": 3,
-   "magnesium": 1,
-   "sodium": 2,
-   "chloride": 3,
+   "calcium": 7.81,
+   "magnesium": 0.21,
+   "sodium": 1.65,
+   "chloride": 2.8,
    "sulfate": 3,
-   "bicarbonate": 6,
+   "bicarbonate": 24,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -602,8 +1222,48 @@
     "blank-slate",
     "modern-craft"
    ],
-   "description": "Among the softest municipal supplies anywhere — coastal mountain reservoir water that is essentially RO out of the tap.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Among the softest municipal water anywhere — 7.8 mg/L calcium and 0.21 of magnesium off the North Shore mountains. The alkalinity of 24 mg/L is not natural: the filtration plant adds it deliberately, because the raw reservoir water is too corrosive to put in a pipe.",
+   "attribution": "Greater Vancouver Water District 2025 Water Quality Annual Report, Metro Vancouver, the Seymour Water System treated-water table. Annual averages: alkalinity 20 mg/L as CaCO3, which is 24 mg/L bicarbonate; calcium 7,810 µg/L; magnesium 213; sodium 1,650; chloride 2.8 mg/L; hardness 20.2 as CaCO3, pH 8.1, conductivity 52 µmhos/cm, TDS 32 mg/L. Calcium and magnesium reconcile with the published hardness to within 1%. The stored profile had bicarbonate 6 against 24 and magnesium 1 against 0.21.",
+   "sourceUrl": "https://metrovancouver.org/services/water/Documents/water-quality-annual-report-volume-1-2025.pdf",
+   "sourceNote": "Sulfate is the one ion Metro Vancouver does not report - it is absent from all three system tables - so the 3 mg/L on this record is still uncited. Charge balance says it is too high: the five published ions leave the profile 11% anion-heavy with sulfate at 3, and would balance to under 1% with sulfate below 1 mg/L. That is an inference, not a measurement, so the stored figure is left alone and the imbalance left visible. Note also that most of the alkalinity here is added, not natural. Untreated Seymour water carries 4.1 mg/L alkalinity as CaCO3 and 1.67 mg/L calcium; the Seymour Capilano Filtration Plant dissolves carbon dioxide and lime into it for corrosion control, which is where the difference comes from. A brewer in Vancouver is treating water that has already been treated in the opposite direction.",
+   "aquifer": {
+    "name": "Capilano, Seymour and Coquitlam reservoirs, North Shore and Coast Mountains surface water",
+    "url": "https://metrovancouver.org/services/water/Documents/water-quality-annual-report-volume-1-2025.pdf",
+    "citation": "Metro Vancouver, Greater Vancouver Water District 2025 Water Quality Annual Report, Volume 1: physical and chemical analysis of water supply for the Capilano, Seymour and Coquitlam systems.",
+    "ions": {
+     "calcium": {
+      "n": 3,
+      "min": 0.82,
+      "median": 7.81,
+      "max": 7.91
+     },
+     "magnesium": {
+      "n": 3,
+      "min": 0.09,
+      "median": 0.21,
+      "max": 0.22
+     },
+     "sodium": {
+      "n": 3,
+      "min": 1.65,
+      "median": 1.66,
+      "max": 10.1
+     },
+     "chloride": {
+      "n": 3,
+      "min": 2.3,
+      "median": 2.7,
+      "max": 2.8
+     },
+     "bicarbonate": {
+      "n": 3,
+      "min": 24,
+      "median": 24,
+      "max": 26
+     }
+    },
+    "note": "Three reservoirs, and the difference between them is treatment rather than geology. Capilano and Seymour are filtered together at the Seymour Capilano plant and come out nearly identical - calcium 7.9 and 7.8 mg/L, hardness 20.5 and 20.2 as CaCO3. Coquitlam is treated separately and comes out at calcium 0.82 and hardness 2.4, with sodium at 10.1 mg/L against 1.65 in the other two: it is pH-corrected with something sodium-based rather than with lime. Coquitlam's treated water is essentially deionised water with a little sodium bicarbonate in it, and is the softest municipal supply in this catalogue by a wide margin. Which reservoir serves an address depends on the municipality; the City of Vancouver is on the Capilano and Seymour side. Sulfate is not measured in any of the three, so no sulfate figure is carried here."
+   }
   },
   {
    "id": "target-hoppy-lager",
@@ -627,7 +1287,8 @@
     "sulfate"
    ],
    "description": "For pale lagers that want a snappy, dry, hop-accented finish rather than a soft malty one — sulfate ahead of chloride, near-zero alkalinity.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-mineral-free",
@@ -649,7 +1310,8 @@
     "delicate"
    ],
    "description": "A practical soft-water target: enough calcium for healthy mashing and yeast flocculation, but low enough overall to keep the beer delicate the way Pilsen does.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "chico",
@@ -657,12 +1319,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "California",
-   "calcium": 12,
-   "magnesium": 1,
-   "sodium": 18,
-   "chloride": 12,
-   "sulfate": 15,
-   "bicarbonate": 48,
+   "calcium": 24.0,
+   "magnesium": 17.0,
+   "sodium": 13.0,
+   "chloride": 5.6,
+   "sulfate": 8.4,
+   "bicarbonate": 160.0,
    "bestForStyles": [
     "American Pale Ale",
     "American IPA"
@@ -673,7 +1335,58 @@
     "modern-craft"
    ],
    "description": "Soft, low-mineral water — the tap water behind Sierra Nevada and a big reason clean, hop-showcasing American pale ale developed here. A near-blank canvas that brewers build up with salts to taste.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "attribution": "Median of 153 groundwater wells in Butte County, California, from 1,703 analyses retrieved through the Water Quality Portal, the joint USGS / EPA / NWQMC database, sampled between 1952 and 2021. Each well is reduced to its own median first and the profile is the median of those, so a well sampled fifty times does not outvote one sampled twice. The cited URL is the exact query and returns the dataset. Calcium 24.0 (stored 12), magnesium 17.0 (1), sodium 13.0 (18), chloride 5.6 (12), sulfate 8.4 (15) and bicarbonate 160.0 (48) mg/L. It balances on charge to 6.8%, cation-heavy, as a six-ion panel does when potassium and nitrate are left out. The record previously carried the unattributed brewing-literature table and declared itself unsourced.",
+   "sourceUrl": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A06%3A007&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+   "sourceNote": "This is the aquifer, not the tap. California Water Service supplies Chico from wells in the Tuscan Formation, and every one of the 153 sites here is a well - the Water Quality Portal returned no springs in the county - so this is the groundwater the city draws from rather than a treated finished water at a customer's meter. The magnesium correction is the largest: 1 mg/L stored against a measured median of 17, which changes the residual alkalinity materially. The old figures came from the anonymous brewing-literature table this project has been unpicking all along; the Sierra Nevada association that made Chico a 'brewing city' is not evidence about its water.\n\nThe spread is wide and worth reading in the aquifer block: sulfate runs from 0 to 690 mg/L and sodium to 520 across the county, because Butte County spans fresh volcanic aquifer and older, more mineralised water. The median well is the soft, low-alkalinity water Chico is known for; the tail is not.",
+   "aquifer": {
+    "name": "Tuscan Formation and Butte County valley-fill groundwater",
+    "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A06%3A007&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+    "citation": "US Geological Survey and US Environmental Protection Agency, Water Quality Portal (waterqualitydata.us), well results for Butte County, California, 1952-2021.",
+    "ions": {
+     "calcium": {
+      "n": 153,
+      "min": 4.6,
+      "median": 24.0,
+      "max": 87.0
+     },
+     "magnesium": {
+      "n": 153,
+      "min": 0.7,
+      "median": 17.0,
+      "max": 93.0
+     },
+     "sodium": {
+      "n": 153,
+      "min": 2.2,
+      "median": 13.0,
+      "max": 520.0
+     },
+     "chloride": {
+      "n": 153,
+      "min": 0.5,
+      "median": 5.6,
+      "max": 260.0
+     },
+     "sulfate": {
+      "n": 153,
+      "min": 0.0,
+      "median": 8.4,
+      "max": 690.0
+     },
+     "bicarbonate": {
+      "n": 153,
+      "min": 23.0,
+      "median": 160.0,
+      "max": 522.0
+     }
+    },
+    "note": "153 wells with a full six-ion panel. The median is soft and lightly buffered - 24 mg/L calcium against 160 of bicarbonate, sulfate 8.4 and chloride 5.6 - which is the water the region's brewing reputation rests on. The maxima are a different water entirely and are included so nobody mistakes the median for the whole county."
+   },
+   "brewerySource": {
+    "brewery": "Sierra Nevada Brewing Co., Chico",
+    "url": "https://sierranevada.com/",
+    "statement": "Sierra Nevada Pale Ale, first brewed in Chico in 1980, is the beer that established American pale ale, and the town's soft low-sulfate water is part of why the record carries the style. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "san-diego",
@@ -681,12 +1394,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "California",
-   "calcium": 58,
-   "magnesium": 18,
-   "sodium": 88,
-   "chloride": 90,
-   "sulfate": 120,
-   "bicarbonate": 190,
+   "calcium": 57.0,
+   "magnesium": 23.1,
+   "sodium": 87.8,
+   "chloride": 94.9,
+   "sulfate": 154,
+   "bicarbonate": 144,
    "bestForStyles": [
     "West Coast IPA",
     "Double IPA"
@@ -696,8 +1409,16 @@
     "moderate-hard",
     "modern-craft"
    ],
-   "description": "Moderately hard, moderately alkaline Colorado River water with meaningful sulfate — heavily treated by the West Coast IPA breweries that made the city famous. Most SD brewers dilute with RO and rebuild toward a high-sulfate hoppy profile.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Hard, saline imported water — sulfate 154 and chloride 95 mg/L, with sodium at 88. Among the most heavily mineralised municipal supplies in this catalogue, and the reason San Diego brewers dilute before they do anything else.",
+   "attribution": "City of San Diego Public Utilities, 2025 Additional Characteristics, Water Quality Chemistry Services (ELAP certificate 1058), annual averages for the Alvarado, Miramar and Otay treatment plants. This record carries the median of the three: calcium 57.0, magnesium 23.1 and bicarbonate 144 mg/L. Sodium 87.8, chloride 94.9 and sulfate 154 come from the same utility's 2025 Annual Drinking Water Quality Report, secondary standards table, cited below. It balances on charge to 5.2% including the reported potassium. The stored profile was already close on calcium, sodium and chloride - someone had sourced it once - but magnesium was 18 against 23.1, sulfate 120 against 154 and bicarbonate 190 against 144.",
+   "sourceUrl": "https://www.sandiego.gov/sites/default/files/2026-06/additional-characteristics.pdf",
+   "sourceNote": "The three plants are not interchangeable. Otay runs chloride 156 and sodium 111 against Alvarado's 94.9 and 87.8, while Alvarado and Miramar run half again Otay's sulfate. Total dissolved solids average 532 to 585 mg/L across them. San Diego also treats a large purchased imported supply, reported as a fourth column and not included in this median. The utility publishes no pH on this record's behalf here, and juice-side figures like hardness are given as calcium hardness rather than total.",
+   "additionalSources": [
+    {
+     "url": "https://www.sandiego.gov/sites/default/files/2026-06/pud-annual-drinking-water-quality-report-2025.pdf",
+     "supports": "Sodium 87.8, chloride 94.9 and sulfate 154 mg/L - the Alvarado plant's 2025 annual averages from the secondary standards table of the City of San Diego's Annual Drinking Water Quality Report. The Additional Characteristics sheet cited as the main source carries calcium, magnesium and bicarbonate but not these three."
+    }
+   ]
   },
   {
    "id": "portland",
@@ -710,7 +1431,7 @@
    "sodium": 6,
    "chloride": 5,
    "sulfate": 3,
-   "bicarbonate": 9,
+   "bicarbonate": 35,
    "bestForStyles": [
     "Any (blank slate)"
    ],
@@ -719,8 +1440,16 @@
     "modern-craft",
     "blank-slate"
    ],
-   "description": "Bull Run reservoir water is extraordinarily soft — nearly as clean as Pilsen. A blank slate the Oregon craft scene builds up for any style.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Bull Run reservoir water is extraordinarily soft, but it is not mineral-free at the tap: the Water Bureau raises pH for corrosion control and the delivered alkalinity is 29 mg/L as CaCO3. A near-blank slate the Oregon craft scene builds up for any style.",
+   "unsourced": true,
+   "attribution": "Still no source for five of the six ions. The Portland Water Bureau publishes water quality characteristics for 100% Bull Run, a 65/35 Bull Run and groundwater blend, and 100% groundwater, but it publishes them as pH, conductance, TDS, silica, total organic carbon, total alkalinity and hardness - not as individual cations and anions. What that does settle is the most important figure on the record. Bull Run's total alkalinity is 29 mg/L as CaCO3 at pH 8.8, which is 35 mg/L of bicarbonate, and this record had 9. That is the ion that sets residual alkalinity, so a fourfold error in it misdirects every acid addition built on this profile. Hardness of 7 mg/L as CaCO3 is consistent with the stored calcium of 2 and magnesium of 1, which together compute to 9, so those two are at least not contradicted. Calcium, magnesium, sodium, chloride and sulfate individually remain uncited, and the stored ions total 26 mg/L against a published TDS of 60, so something is missing from them. Correcting that one ion then exposes the rest. With bicarbonate at 35 the profile is 0.44 milliequivalents of cations against 0.78 of anions - 55% anion-heavy, and the only profile in this catalogue that leans that way, because every other one is short of the potassium and nitrate that fall on the cation side. Roughly 0.33 meq of cations are missing, about 8 mg/L more sodium than the 6 stored here. The Water Bureau raises pH with a caustic addition for corrosion control, which would put sodium there, but the Bureau does not publish the figure and this project will not put a number on it. The imbalance is left visible rather than papered over: it is the evidence that these five ions still need a source.",
+   "aquifer": {
+    "name": "Bull Run watershed surface water, blended with the Columbia South Shore Well Field",
+    "url": "https://www.portland.gov/water/drinking-water-quality/about-drinking-water-quality/test-results",
+    "citation": "Portland Water Bureau, Water Quality Test Results: characteristics of 100% Bull Run water, a 65/35 Bull Run and groundwater blend, and 100% groundwater.",
+    "ions": {},
+    "note": "Portland is two waters, and which one comes out of the tap depends on the season. Bull Run is the default: pH 8.8, total alkalinity 29 mg/L as CaCO3, hardness 7, TDS 60, conductance 65 microsiemens per centimetre, silica 3.8 as Si. The Columbia South Shore Well Field takes over when demand is high or the reservoir is turbid, and it is a different water at every parameter: pH 8.2, alkalinity 91 as CaCO3, hardness 68, TDS 125, conductance 166, silica 19. The 65/35 blend the Bureau also tabulates sits between them at alkalinity 50.7 and hardness 28.1. So a Portland brewer's alkalinity can triple between a wet spring and a dry September without anything changing at their end. The Bureau does not publish individual cations and anions for any of the three, which is why this record is still declared unsourced."
+   }
   },
   {
    "id": "denver",
@@ -728,12 +1457,12 @@
    "kind": "modern-city",
    "country": "United States",
    "region": "Colorado",
-   "calcium": 30,
+   "calcium": 32,
    "magnesium": 8,
-   "sodium": 25,
-   "chloride": 20,
-   "sulfate": 50,
-   "bicarbonate": 90,
+   "sodium": 24,
+   "chloride": 25,
+   "sulfate": 66,
+   "bicarbonate": 83,
    "bestForStyles": [
     "Amber Ale",
     "Pale Ale"
@@ -742,8 +1471,10 @@
     "soft-moderate",
     "modern-craft"
    ],
-   "description": "Soft-to-moderate Rocky Mountain snowmelt; a flexible, lightly mineralised base used across Colorado's large craft scene.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "description": "Moderately mineralised Rocky Mountain snowmelt with more sulfate than anything else — 66 mg/L against 83 of bicarbonate, which is why Colorado pale ales sit so comfortably on the untreated tap.",
+   "attribution": "Denver Water publishes a mineral analysis specifically for brewers, taken from treatment plant effluent in 2025. This record carries their South System: calcium 32 (range 27-37), magnesium 8 (6-10), sodium 24 (18-30), chloride 25 (17-35), sulfate 66 (53-76) and total alkalinity 68 mg/L as CaCO3 (42-84), which is 83 mg/L of bicarbonate at the factor of 1.2194. Specific conductance averages 351 microsiemens per centimetre and TDS 200 mg/L. The stored figures were already close - calcium 30 against 32, magnesium exactly right - with sulfate the real correction, at 50 against a measured 66, which understated the hop-forward bias of the water by a third.",
+   "sourceUrl": "https://www.denverwater.org/your-water/water-quality/brewing-beer-home",
+   "sourceNote": "Denver has two treated-water systems and they are not the same water. The North System, which this record does not carry, runs calcium 18, magnesium 2, sodium 12, chloride 6, sulfate 20 and alkalinity 52 as CaCO3 - a third of the South System's sulfate and half its conductance. A Denver brewer needs to know which one their tap is on before treating from this profile. Denver Water also raised the pH of delivered water in March 2020 as part of its lead reduction programme, so the alkalinity here is partly a treatment decision rather than the watershed."
   },
   {
    "id": "target-yellow-balanced",
@@ -767,7 +1498,8 @@
     "balanced"
    ],
    "description": "A general-purpose pale-beer target: enough calcium for healthy mashing and yeast, low alkalinity for a pale grist, and even sulfate/chloride for a balanced finish.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-yellow-hoppy",
@@ -791,7 +1523,8 @@
     "high-sulfate"
    ],
    "description": "The modern West Coast IPA target — high sulfate (150–250 ppm) over low chloride for a crisp, dry, assertively bitter finish. Effectively a controlled Burtonisation.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-hazy-juicy",
@@ -814,7 +1547,8 @@
     "soft"
    ],
    "description": "The NEIPA target: chloride pushed well above sulfate (often 2:1) for a soft, full, 'juicy' mouthfeel that rounds off hop bitterness rather than sharpening it.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-amber-balanced",
@@ -838,7 +1572,8 @@
     "balanced"
    ],
    "description": "A malt-leaning target for amber styles: some alkalinity to balance moderate crystal-malt acidity, with even sulfate/chloride.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-brown-balanced",
@@ -861,7 +1596,8 @@
     "malty"
    ],
    "description": "For brown and dark-amber styles: enough alkalinity to offset roast acidity, chloride-forward for malt roundness.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-black-balanced",
@@ -884,7 +1620,8 @@
     "malty"
    ],
    "description": "For stouts and porters: substantial alkalinity (100–200 ppm) to buffer heavy roasted malts, chloride-forward for a smooth, full body.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-black-roasty-bitter",
@@ -907,7 +1644,8 @@
     "sulfate"
    ],
    "description": "A Dublin-leaning dry-stout target: high alkalinity to support the roast, but sulfate over chloride to keep the finish dry and the roast bitterness crisp.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "target-ro",
@@ -928,7 +1666,8 @@
     "zero"
    ],
    "description": "Zero-ion blank slate. Many modern brewers start here and add salts precisely, rather than trying to correct an unknown or variable tap supply.",
-   "sourceUrl": "https://www.brunwater.com/"
+   "unsourced": true,
+   "attribution": "A style target, not a measurement. These are the ion levels this project suggests building toward for the style named, and they are brewing guidance rather than an analysis of any water that exists. They carried a citation to the Bru'n Water homepage, which is a spreadsheet's front page and supports nothing; a target does not need a source for its measurement because there is no measurement, but it should not pretend to have one either."
   },
   {
    "id": "berlin",
@@ -936,12 +1675,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Brandenburg",
-   "calcium": 80,
-   "magnesium": 10,
-   "sodium": 25,
-   "chloride": 40,
-   "sulfate": 55,
-   "bicarbonate": 100,
+   "calcium": 113,
+   "magnesium": 10.0,
+   "sodium": 37,
+   "chloride": 52,
+   "sulfate": 112,
+   "bicarbonate": 248,
    "bestForStyles": [
     "Berliner Weisse",
     "German Pils"
@@ -951,9 +1690,60 @@
     "pale",
     "sour"
    ],
-   "description": "Moderately soft, low-alkalinity water. Low residual alkalinity suits the very pale grist of a Berliner Weisse and lets the lactic tartness stand clean without mineral clutter — the reason Berlin's 'Champagne of the North' stayed so delicate and dry.",
-   "sourceUrl": "https://www.brunwater.com/",
-   "sortOrder": 39
+   "description": "Hard and strongly alkaline — every one of Berlin's nine waterworks is classified hart, and the median carries 248 mg/L of bicarbonate against 112 of sulfate. This is not the soft, low-alkalinity water Berliner Weisse is usually said to come from.",
+   "sortOrder": 39,
+   "attribution": "Berliner Wasserbetriebe, Analysendaten der Wasserwerke, annual median values for 2025, covering all nine Berlin waterworks. This record carries the median across those nine: calcium 113 (range 93-143 across the works), magnesium 10.0 (8.2-15.3), sodium 37 (24-66), chloride 52 (42-91) and sulfate 112 (62-175) mg/L, with carbonate hardness 11.4 °dH (9.6-14.0), which is 248 mg/L of bicarbonate at 21.76 mg/L per degree. The median of the nine is used rather than any one works because all nine supply the city and no single one is 'Berlin'. It balances on charge to 2.6%. The stored profile was wrong in the direction that matters most: bicarbonate at 100 against 248, and sulfate at 55 against 112.",
+   "sourceUrl": "https://www.bwb.de/de/assets/downloads/analysewerte-wasserwerke.pdf",
+   "sourceNote": "The record's brewing advice was backwards, and correcting the numbers corrects it. It said Berlin was 'moderately soft, low-alkalinity' water whose low residual alkalinity suited the very pale grist of a Berliner Weisse. Berliner Wasserbetriebe classify every one of the nine works as hart, total hardness 15.1 to 23.3 °dH, with 248 mg/L of bicarbonate at the median. A pale Weisse grist does not sit comfortably in that water; the style's low pH comes from its lactic fermentation, not from the liquor. The nine works also differ enough to matter on their own: sulfate runs 62 mg/L at Stolpe to 175 at Friedrichshagen, nearly a threefold spread inside one city, so the median is a description of Berlin rather than of any address in it. Modern figures, not the nineteenth-century water the style was built on, for which this project has no source.",
+   "aquifer": {
+    "name": "Berlin's nine waterworks — bank filtrate and artificially recharged groundwater of the Warsaw-Berlin glacial spillway",
+    "url": "https://www.bwb.de/de/assets/downloads/analysewerte-wasserwerke.pdf",
+    "citation": "Berliner Wasserbetriebe, Analysendaten der Wasserwerke, Jahresmedianwerte 2025 / annual median values 2025.",
+    "ions": {
+     "calcium": {
+      "n": 9,
+      "min": 93,
+      "median": 113,
+      "max": 143
+     },
+     "magnesium": {
+      "n": 9,
+      "min": 8.2,
+      "median": 10.0,
+      "max": 15.3
+     },
+     "sodium": {
+      "n": 9,
+      "min": 24,
+      "median": 37,
+      "max": 66
+     },
+     "chloride": {
+      "n": 9,
+      "min": 42,
+      "median": 52,
+      "max": 91
+     },
+     "sulfate": {
+      "n": 9,
+      "min": 62,
+      "median": 112,
+      "max": 175
+     },
+     "bicarbonate": {
+      "n": 9,
+      "min": 209,
+      "median": 248,
+      "max": 305
+     }
+    },
+    "note": "Beelitzhof, Friedrichshagen, Kaulsdorf, Kladow, Spandau, Stolpe, Tegel, Tiefwerder and Wuhlheide, each an annual median for 2025. Berlin draws almost entirely on bank filtrate from the Havel and Spree and on artificially recharged groundwater in the sands of the glacial spillway the city sits in, so the mineral load reflects the surface water and the recharge, not a deep aquifer. The softest water in the city, at Stolpe and Spandau in the west, carries about a third of the sulfate of the hardest, at Friedrichshagen and Wuhlheide in the east. Bicarbonate is derived from the utility's carbonate hardness rather than measured as such."
+   },
+   "brewerySource": {
+    "brewery": "Berliner Kindl, Berlin",
+    "url": "https://www.berliner-kindl.de/",
+    "statement": "Berliner Weisse is the city's own style, and Berliner Kindl Weisse is the surviving large-scale example. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "goslar",
@@ -977,8 +1767,14 @@
     "chloride"
    ],
    "description": "The home of Gose, named for the Gose river whose naturally saline water gave the style its signature gentle salinity. Elevated sodium and chloride are the whole point — the faint brininess that balances the coriander and lactic sourness. Most modern brewers add salt to recreate it, but Goslar had it in the ground.",
-   "sourceUrl": "https://www.brunwater.com/",
-   "sortOrder": 40
+   "sortOrder": 40,
+   "unsourced": true,
+   "attribution": "This is the classic brewing-city water table that circulates in the brewing literature, and this project cannot name the publication its figures came from. That matters more than it sounds. Three of these profiles have now been checked against the city's own published analysis and all three were wrong about that city: Munich's bicarbonate was stored at 200 mg/L against a published 324, Vienna's calcium at 200 against a published 52 — Vienna drinks soft alpine spring water — and Cologne's sulfate and chloride were the wrong way round. Some of these numbers may be honest historic reconstructions of water that can no longer be sampled, which is a legitimate thing for a brewing profile to be; but nothing here distinguishes those from the ones that are simply wrong. Treat every figure as unverified until it is replaced by the utility's own analysis, as Munich and Cologne have been.",
+   "brewerySource": {
+    "brewery": "Brauhaus Goslar",
+    "url": "https://www.brauhaus-goslar.de/",
+    "statement": "Gose takes its name from the river Gose at Goslar; Brauhaus Goslar revived brewing of the style in the town of origin. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "san-francisco",
@@ -986,12 +1782,12 @@
    "kind": "classic-city",
    "country": "United States",
    "region": "California",
-   "calcium": 8,
-   "magnesium": 2,
-   "sodium": 10,
-   "chloride": 8,
-   "sulfate": 5,
-   "bicarbonate": 20,
+   "calcium": 16,
+   "magnesium": 5.9,
+   "sodium": 18,
+   "chloride": 10,
+   "sulfate": 16,
+   "bicarbonate": 78,
    "bestForStyles": [
     "California Common",
     "Steam Beer"
@@ -1000,9 +1796,11 @@
     "very-soft",
     "clean"
    ],
-   "description": "Fed by the pristine Hetch Hetchy reservoir in the Sierra Nevada, San Francisco's water is exceptionally soft — near-distilled. That blank canvas is why Anchor Steam's toasty malt and woody Northern Brewer hops read so cleanly. Add whatever minerals the recipe wants; the base gets in the way of nothing.",
-   "sourceUrl": "https://www.brunwater.com/",
-   "sortOrder": 41
+   "description": "Soft Sierra water, but not the blank slate it is usually described as: the city system blends Hetch Hetchy with treated Bay Area supplies and averages 78 mg/L of bicarbonate, enough alkalinity to matter in a pale mash.",
+   "sortOrder": 41,
+   "attribution": "San Francisco Public Utilities Commission, City of San Francisco 2025 Annual Water Quality Report, the San Francisco system table: calcium 16 mg/L (range 3.1-29), magnesium 5.9 (0.2-10), sodium 18 (3.1-29), chloride 10 (<3-19), sulfate 16 (1-45) and alkalinity 64 mg/L as CaCO3 (8-131), which is 78 mg/L of bicarbonate. Hardness averages 62 as CaCO3, and calcium and magnesium account for 64 of that, so the panel is internally consistent. This is a large correction to a record that claimed near-distilled water: bicarbonate was stored at 20 against a measured 78, sulfate at 5 against 16, calcium at 8 against 16. The old figures describe pure Hetch Hetchy; the tap is a blend.",
+   "sourceUrl": "https://www.sfpuc.gov/sites/default/files/accounts-and-services/water-quality/water-quality-en-SF-2025.pdf",
+   "sourceNote": "The wide ranges are the point. SFPUC blends unfiltered Hetch Hetchy, which is very soft, with filtered water from the Sunol Valley and Harry Tracy plants, which is not, and the mix at any address varies through the year - calcium runs 3.1 to 29 mg/L across the reporting period. The averages above are what the system delivers on average, not what any one tap delivers on a given day. Note also the pH: SFPUC reports an average of 9.3 for corrosion control, well above anything a brewer would recognise, and the alkalinity partly follows from that treatment. The stored ions are 8.8% cation-heavy on a charge balance, a little outside this project's 8% bar for a single analysis, which is what averaging ranges that wide will do; potassium and silica are not carried in this schema."
   },
   {
    "id": "jever-frisia",
@@ -1010,12 +1808,12 @@
    "kind": "classic-city",
    "country": "Germany",
    "region": "Lower Saxony",
-   "calcium": 25,
-   "magnesium": 5,
-   "sodium": 12,
-   "chloride": 18,
-   "sulfate": 35,
-   "bicarbonate": 30,
+   "calcium": 35,
+   "magnesium": 4.1,
+   "sodium": 13,
+   "chloride": 22,
+   "sulfate": 19,
+   "bicarbonate": 100,
    "bestForStyles": [
     "German Pils",
     "North German Pilsner"
@@ -1025,9 +1823,16 @@
     "dry",
     "bitter"
    ],
-   "description": "Soft water with just enough sulfate to sharpen bitterness into the famously bone-dry, aggressively hoppy North German Pils. Low alkalinity keeps the pale grist crisp; the modest sulfate is why Jever Pilsener bites harder and finishes drier than its Bavarian cousins.",
-   "sourceUrl": "https://www.brunwater.com/",
-   "sortOrder": 42
+   "description": "Soft Frisian groundwater at 5.8 °dH — but not the near-zero alkalinity a Jever-style pilsner profile is usually drawn with: 100 mg/L of bicarbonate against 19 of sulfate and 22 of chloride.",
+   "sortOrder": 42,
+   "attribution": "Oldenburgisch-Ostfriesischer Wasserverband, Trinkwasseranalyse for the Wasserwerk Sandelermöns supply area, which covers Jever, first quarter 2026: sampled 28 January 2026 and analysed by Institut Dr. Nowak, Ottersberg, test report 26-02098. Calcium 35, magnesium 4.1, sodium 13, potassium 2.2, chloride 22, sulfate 19 and nitrate 0.70 mg/L, with hydrogen carbonate given directly as 100 mg/L and an acid capacity to pH 4.3 of 1.71 mmol/L, at pH 8.04, 295 µS/cm and 5.8 °dH, classified weich. The panel balances on charge to 1.4%. Bicarbonate was stored at 30 against a published 100, which is the correction that matters; sulfate was 35 against 19 and calcium 25 against 35.",
+   "sourceUrl": "https://www.oowv.de/assets/media/downloads/service/labor/trinkwasseranalysen/analyse_sandelermoens.pdf",
+   "sourceNote": "This is the public supply at Jever, not the brewery's liquor. Friesisches Brauhaus zu Jever is known to draw from its own wells, and this project has found no published analysis of them — so a profile named for the town's beer is being sourced to the town's tap, which is a real limitation and not a small one for a beer whose whole identity is its water. The analysis is also a single quarter at a single sampling point.",
+   "brewerySource": {
+    "brewery": "Friesisches Brauhaus zu Jever",
+    "url": "https://www.jever.de/",
+    "statement": "The brewery and the town share a name, and the beer's famously dry bitterness is usually credited to the very soft East Frisian water. The brewery publishes no mineral analysis of its liquor, which is the normal position — of every brewery checked for this catalogue, none does. The profile above is the municipal or aquifer water of the place, not the brewery's mash liquor, and a brewery of any size treats to a house specification."
+   }
   },
   {
    "id": "kentucky-limestone",
@@ -1035,12 +1840,12 @@
    "kind": "classic-city",
    "country": "United States",
    "region": "Kentucky",
-   "calcium": 90,
-   "magnesium": 10,
-   "sodium": 15,
-   "chloride": 12,
-   "sulfate": 40,
-   "bicarbonate": 200,
+   "calcium": 76.2,
+   "magnesium": 15.0,
+   "sodium": 6.5,
+   "chloride": 9.2,
+   "sulfate": 29.2,
+   "bicarbonate": 252.2,
    "bestForStyles": [
     "Bourbon mash water",
     "Cream Ale"
@@ -1052,8 +1857,992 @@
     "whiskey"
    ],
    "description": "The water that made bourbon country. Filtered through deep limestone, it is hard and alkaline but crucially iron-free — dissolved iron ruins fermentation and blackens whiskey, and the limestone strips it out while adding the calcium yeast love. Not a beer profile, but the reason Kentucky, not somewhere else, became the home of American whiskey.",
-   "sourceUrl": "https://www.ttb.gov/",
-   "sortOrder": 43
+   "sourceUrl": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A21%3A021&countycode=US%3A21%3A239&countycode=US%3A21%3A179&countycode=US%3A21%3A073&countycode=US%3A21%3A005&countycode=US%3A21%3A155&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+   "sortOrder": 43,
+   "attribution": "Median of 34 groundwater sampling sites - 35 wells and 19 springs, of which 34 carry all six ions - in the six Bluegrass and bourbon counties of Bourbon, Woodford, Nelson, Franklin, Anderson and Marion, retrieved from the Water Quality Portal, the joint USGS / EPA / NWQMC national water-quality database. The cited URL is the exact query, all six counties at once, and it returns the 552 analyses this profile was built from. sampled between 1935 and 2007 with a median year of 1956. Each site is reduced to its own median first and the profile is the median of those, so a site sampled a hundred times does not outvote one sampled twice. Calcium 76.2 (stored 90), magnesium 15.0 (10), sodium 6.5 (15), chloride 9.2 (12), sulfate 29.2 (40) and bicarbonate 252.2 (200) mg/L. It balances on charge to 6.2%, cation-heavy, which is what a six-ion panel does when the potassium and nitrate are not in it. The record previously cited ttb.gov, which publishes no water analyses at all.",
+   "sourceNote": "The stored profile was directionally right and numerically wrong in every ion: it had the hardness and the alkalinity the story requires, but it overstated calcium by a fifth, sodium by more than double, and understated bicarbonate. The correction does not disturb the point the record is making - this is hard, strongly alkaline limestone water.\n\nTwo limits. First, the record's central claim, that the limestone strips out iron, is not tested here: iron was not queried and is not in this panel, so the iron-free assertion remains unsourced. Second, this is a regional aquifer and not a distillery's intake. No distillery's own water analysis is cited, and the spread between sites is enormous - the aquifer block below records a maximum chloride of 13,700 mg/L and sodium of 6,730, because the Bluegrass has deep Ohio Valley brine beneath its freshwater zone and the Water Quality Portal does not separate the two. That is why the median across sites is the statistic used and why the maximum is not, in any sense, Kentucky's water.",
+   "aquifer": {
+    "name": "Ordovician limestone of the Inner Bluegrass karst, with the underlying Ohio Valley brines",
+    "url": "https://www.waterqualitydata.us/data/Result/search?countycode=US%3A21%3A021&countycode=US%3A21%3A239&countycode=US%3A21%3A179&countycode=US%3A21%3A073&countycode=US%3A21%3A005&countycode=US%3A21%3A155&siteType=Spring&siteType=Well&characteristicName=Calcium&characteristicName=Magnesium&characteristicName=Sodium&characteristicName=Chloride&characteristicName=Sulfate&characteristicName=Bicarbonate&mimeType=csv&dataProfile=resultPhysChem",
+    "citation": "US Geological Survey and US Environmental Protection Agency, Water Quality Portal (waterqualitydata.us), groundwater results for Bourbon, Woodford, Nelson, Franklin, Anderson and Marion counties, Kentucky, 1935-2007.",
+    "ions": {
+     "calcium": {
+      "n": 34,
+      "min": 28.0,
+      "median": 76.2,
+      "max": 1280.0
+     },
+     "magnesium": {
+      "n": 34,
+      "min": 2.7,
+      "median": 15.0,
+      "max": 669.0
+     },
+     "sodium": {
+      "n": 34,
+      "min": 1.4,
+      "median": 6.5,
+      "max": 6730.0
+     },
+     "chloride": {
+      "n": 34,
+      "min": 1.2,
+      "median": 9.2,
+      "max": 13700.0
+     },
+     "sulfate": {
+      "n": 34,
+      "min": 1.5,
+      "median": 29.2,
+      "max": 1340.0
+     },
+     "bicarbonate": {
+      "n": 34,
+      "min": 123.0,
+      "median": 252.2,
+      "max": 515.0
+     }
+    },
+    "note": "Read the range, not just the median. The freshwater karst these counties are known for sits on top of saline formation water, and both are in this dataset: calcium runs from 28 to 1,280 mg/L across the 34 sites and chloride from 1.2 to 13,700. The median site is unambiguously the karst water - 76 mg/L calcium against 252 of bicarbonate, hard and strongly alkaline, with sulfate at 29 and chloride at 9 - and that is the water the bourbon story is about. The brine wells are real Kentucky groundwater too, and nobody mashes with them. Bicarbonate is reported directly by the analysts here rather than derived from an alkalinity titration, which is unusual and welcome."
+   }
+  },
+  {
+   "id": "ro-distilled",
+   "name": "RO / distilled water",
+   "kind": "bottled",
+   "country": null,
+   "region": null,
+   "calcium": 0,
+   "magnesium": 0,
+   "sodium": 0,
+   "chloride": 0,
+   "sulfate": 0,
+   "bicarbonate": 0,
+   "bestForStyles": [
+    "Any style, built from scratch"
+   ],
+   "styleTags": [
+    "blank",
+    "build-up",
+    "neutral"
+   ],
+   "description": "A blank slate: reverse-osmosis and distilled water are effectively free of the six brewing ions, which is exactly why serious brewers use them. Rather than correcting whatever the tap happens to deliver this month, you add the salts you want and know precisely what is in the liquor. Sold in the US as distilled water in gallon jugs and dispensed from supermarket RO machines. These zeroes are not a measurement of a particular brand — they are what the process produces by definition; RO removes roughly 95-99% of dissolved solids and distillation essentially all of it. Build any profile on this page up from here with the salt calculator.",
+   "sourceUrl": "https://www.epa.gov/water-research/drinking-water-treatability-database-tdb",
+   "attribution": "Definitional rather than a brand analysis: RO and distillation remove substantially all dissolved minerals, so the starting point is zero on every ion. Empirically confirmed by the bottlers themselves: the distilled-water columns of the Poland Spring, Zephyrhills and Ice Mountain analysis reports return ND (not detected) on every mineral, and Aquafina's California report gives ND for total dissolved solids at a 10 mg/L reporting limit. Purified bottled water in the United States really is this row.",
+   "sortOrder": 44
+  },
+  {
+   "id": "evian",
+   "name": "evian",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Cachat spring, Évian-les-Bains",
+   "calcium": 80,
+   "magnesium": 26,
+   "sodium": 6.5,
+   "chloride": 10,
+   "sulfate": 14,
+   "bicarbonate": 360,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Bock",
+    "Brown Ale",
+    "Amber Lager"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate"
+   ],
+   "description": "A single-source alpine water from the Cachat spring, and one of the few big brands that publishes a full ion analysis. Very high bicarbonate (360 ppm) against modest calcium makes it alkaline: it will push mash pH up, so it suits dark malty beers that need the carbonate to offset roast acidity, and fights you on pale hoppy ones. Sulfate and chloride are both low, so it carries almost no flavour bias of its own. Stated pH 7.2.",
+   "sourceUrl": "https://www.evian.com/en_int/products/everyday-range/1l/",
+   "attribution": "Mineral composition as published by evian on its own product page (Ca 80, Mg 26, Na 6.5, Cl 10, SO4 14, HCO3 360 mg/L; also K 1, silica 15, nitrates 3.8; pH 7.2).",
+   "sortOrder": 54
+  },
+  {
+   "id": "badoit",
+   "name": "Badoit",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Saint-Galmier, Loire",
+   "calcium": 153,
+   "magnesium": 80,
+   "sodium": 180,
+   "chloride": 54,
+   "sulfate": 35,
+   "bicarbonate": 1250,
+   "bestForStyles": [
+    "Carbonate addition",
+    "Dark ale (blended)",
+    "Dunkel (blended)"
+   ],
+   "styleTags": [
+    "alkaline",
+    "sodium",
+    "carbonate",
+    "blend-only"
+   ],
+   "description": "Naturally sparkling water from Saint-Galmier, and one of the most alkaline waters in common supply: 1250 ppm bicarbonate against only 153 ppm calcium. Do not brew on it neat — that residual alkalinity would leave a pale mash far above target pH. Its use is as a measured carbonate addition to a dark or malty grist, where a small blend supplies the alkalinity roast malt wants without the chalk that famously refuses to dissolve. The 180 ppm sodium is not negligible either: it will read as a soft, faintly salty roundness well before it reaches the level that tastes salty.",
+   "sourceUrl": "https://www.badoit.fr/notre-eau-minerale/badoit-composition.html",
+   "attribution": "Composition as published by Badoit (Danone) on its own composition page: HCO3 1250, Ca 153, Na 180, Mg 80, Cl 54, SO4 35, silica 27, fluoride 1.2 mg/L. The page states these are regulatory-analysis values, stable over time.",
+   "sortOrder": 47
+  },
+  {
+   "id": "gerolsteiner-sprudel",
+   "name": "Gerolsteiner Sprudel",
+   "kind": "bottled",
+   "country": "Germany",
+   "region": "Gerolstein, Vulkaneifel",
+   "calcium": 348,
+   "magnesium": 108,
+   "sodium": 118,
+   "chloride": 40,
+   "sulfate": 38,
+   "bicarbonate": 1816,
+   "bestForStyles": [
+    "Carbonate addition",
+    "Schwarzbier (blended)",
+    "Munich Dunkel (blended)"
+   ],
+   "styleTags": [
+    "alkaline",
+    "carbonate",
+    "calcium",
+    "blend-only"
+   ],
+   "description": "The most heavily mineralised water most brewers can buy off a shelf: 1816 ppm bicarbonate with 348 ppm calcium, from the volcanic Eifel. Like Badoit this is a blending ingredient, not a brewing liquor — but it is a far better one, because it carries its enormous alkalinity together with the calcium a mash actually needs, rather than with sodium. A litre or two into a dark grist does the job chalk is supposed to do and does badly, since calcium carbonate is barely soluble in water while this water arrives with it already dissolved.",
+   "sourceUrl": "https://www.gerolsteiner.de/produkte/mineralwasser/sprudel",
+   "attribution": "Analysis excerpt published by Gerolsteiner Brunnen on its own product page (mg/L): hydrogen carbonate 1816, calcium 348, magnesium 108, sodium 118, chloride 40, sulfate 38, potassium 11. The six brewing ions plus potassium balance to within 0.1% on charge, which is what a complete real analysis looks like.",
+   "sortOrder": 56
+  },
+  {
+   "id": "mountain-valley",
+   "name": "Mountain Valley Spring Water (still)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Hot Springs, Arkansas",
+   "calcium": 68,
+   "magnesium": 7,
+   "sodium": 2,
+   "chloride": 2,
+   "sulfate": 7,
+   "bicarbonate": 232,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Brown Ale",
+    "Porter",
+    "Amber Lager"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "low-sulfate",
+    "low-chloride"
+   ],
+   "description": "A rare thing in the United States: a nationally sold bottled water drawn from one spring, with a published analysis you can actually brew to. Moderate calcium against 232 ppm bicarbonate gives a residual alkalinity of about 137, which sits between Munich's and Dublin's — squarely dark-beer territory. With barely 2 ppm each of chloride and sulfate it contributes essentially no flavour bias of its own, so you are free to set the sulfate:chloride balance entirely with salts. Suits dark and malty beers as it comes; a pale beer will need acid.",
+   "sourceUrl": "https://www.mountainvalleyspring.com/pages/water-quality-report",
+   "attribution": "From the 2025 Mountain Valley Water Quality Report, still-water column (mg/L): calcium 65-70, magnesium 6.1-7.2, sodium 1.7-2.5, chloride 1.8-2.5, sulfate 5.2-8.2, total alkalinity as CaCO3 190, TDS 210, pH 7.3-8.1. Midpoints are shown here. Bicarbonate is the published alkalinity converted at the standard 1.22 mg/L HCO3 per mg/L CaCO3; the resulting ion set balances to within 0.5% on charge.",
+   "sortOrder": 58
+  },
+  {
+   "id": "s-pellegrino",
+   "name": "S.Pellegrino",
+   "kind": "bottled",
+   "country": "Italy",
+   "region": "San Pellegrino Terme, Bergamo",
+   "calcium": 164,
+   "magnesium": 46,
+   "sodium": 30,
+   "chloride": 51,
+   "sulfate": 388,
+   "bicarbonate": 228,
+   "bestForStyles": [
+    "English IPA",
+    "Pale Ale",
+    "ESB",
+    "American IPA"
+   ],
+   "styleTags": [
+    "hoppy",
+    "sulfate",
+    "gypsum",
+    "burton"
+   ],
+   "description": "The surprise of this table, but read the RA column before you get excited. S.Pellegrino carries 388 ppm sulfate against 51 ppm chloride — a sulfate:chloride ratio of about 7.6:1, the most hop-forward water sold in a supermarket, and the only entry here that pulls bitterness the crisp, dry, minerally way Burton does. It is not Burton, though. Burton's 270 ppm bicarbonate is almost exactly cancelled by its 275 ppm calcium, landing it at a residual alkalinity of about 1; S.Pellegrino has less calcium and lands at about 43, nearer London. So it brews as a sulfate-led pale ale water that still wants acid for a pale grist — or a little gypsum, which raises the calcium and walks it the rest of the way toward Burton. Genuinely brewable neat, unlike the two carbonate waters above it, though 388 ppm sulfate will flatten anything malt-forward.",
+   "sourceUrl": "https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2024-09/SP_WA_EN_2023.pdf",
+   "attribution": "From the 2023 S.Pellegrino Water Analysis Report published by Nestle USA (mg/L): calcium 164, magnesium 46.4, sodium 29.9, chloride 51, sulfate 388, potassium 2.5, total alkalinity as CaCO3 187, total hardness as CaCO3 601, TDS 901, pH 5.18. Bicarbonate is the published alkalinity converted at 1.22; the ion set balances to within 1% on charge.",
+   "sortOrder": 62
+  },
+  {
+   "id": "volvic",
+   "name": "Volvic",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Auvergne volcanic aquifer, Puy-de-Dome",
+   "calcium": 13,
+   "magnesium": 9,
+   "sodium": 12,
+   "chloride": 16,
+   "sulfate": 9,
+   "bicarbonate": 80,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles",
+    "Kolsch"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "delicate"
+   ],
+   "description": "Very lightly mineralised volcanic water: every one of the six ions is in single or low double figures except bicarbonate. That makes it a good base for delicate pale lagers, where real mineral content coarsens the malt. One honest caveat the table makes visible: it is not a Pilsen substitute. Pilsen runs 3 ppm bicarbonate for a residual alkalinity of about -4; Volvic runs 80 ppm with only 13 ppm calcium to offset it, so its RA is about 51 — higher than London's. Soft is not the same as acidic. Brew pale on it and you will still want acid or acidulated malt.",
+   "sourceUrl": "https://www.volvic.fr/produits/eau-minerale-naturelle/volvic-nature/nature-15l",
+   "attribution": "Analyse caracteristique published by Volvic (Danone) on its own product page (mg/L): calcium 13, magnesium 9, sodium 12, potassium 7, chlorides 16, sulfates 9, bicarbonates 80, silica 31, nitrates 7.7. The full ion set balances to within 1% on charge.",
+   "sortOrder": 64
+  },
+  {
+   "id": "poland-spring",
+   "name": "Poland Spring",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Maine (several named springs)",
+   "calcium": 8.55,
+   "magnesium": 1.5,
+   "sodium": 5.8,
+   "chloride": 8.0,
+   "sulfate": 4.95,
+   "bicarbonate": 24.63,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     5.1,
+     12.0
+    ],
+    "magnesium": [
+     0.99,
+     2.0
+    ],
+    "sodium": [
+     2.2,
+     9.4
+    ],
+    "chloride": [
+     0,
+     16
+    ],
+    "sulfate": [
+     2.9,
+     7
+    ],
+    "bicarbonate": [
+     10.24,
+     39.02
+    ]
+   },
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity",
+    "variable"
+   ],
+   "description": "The most useful of the big American spring brands, because its range is narrow enough to plan around. Whatever bottle you get, the water is soft and barely alkaline: calcium never exceeds 12 ppm and total alkalinity tops out at 32 ppm as CaCO3, giving a residual alkalinity around 13 at the midpoint and staying low across the whole span. That is close enough to a blank slate to treat it as one - build the profile you want on top and allow for a little alkalinity you did not add. Sulfate and chloride are both single figures, so it carries no flavour bias of its own.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6446f0b3d521870b64979254/1682370739263/PS-WQR-eng.pdf",
+   "attribution": "Transcribed from the 2022 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 61
+  },
+  {
+   "id": "ozarka",
+   "name": "Ozarka",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Texas (several springs)",
+   "calcium": 5.2,
+   "magnesium": 1.8,
+   "sodium": 8.85,
+   "chloride": 20.15,
+   "sulfate": 5.9,
+   "bicarbonate": 7.32,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     2.1,
+     8.3
+    ],
+    "magnesium": [
+     0.9,
+     2.7
+    ],
+    "sodium": [
+     2.7,
+     15
+    ],
+    "chloride": [
+     3.3,
+     37
+    ],
+    "sulfate": [
+     1.8,
+     10
+    ],
+    "bicarbonate": [
+     0,
+     14.63
+    ]
+   },
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity",
+    "variable"
+   ],
+   "description": "The softest of the American brands and the one closest to reverse osmosis. Total alkalinity never exceeds 12 ppm as CaCO3 and calcium never exceeds 8.3, which puts residual alkalinity at about 1 - effectively nothing to correct. The catch is chloride, which swings from 3.3 to 37 ppm across the springs; that is a real difference in mouthfeel, and it is the one number you cannot assume. Excellent base water for pale, delicate beers if you treat the chloride as unknown.",
+   "sourceUrl": "https://a-us.storyblok.com/f/1021132/x/656199c3da/ozarka_wqr_2025_en.pdf",
+   "attribution": "Transcribed from the 2025 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 59
+  },
+  {
+   "id": "deer-park",
+   "name": "Deer Park",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Mid-Atlantic (several springs)",
+   "calcium": 34.0,
+   "magnesium": 4.7,
+   "sodium": 5.0,
+   "chloride": 12.0,
+   "sulfate": 19.5,
+   "bicarbonate": 99.44,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     0,
+     68
+    ],
+    "magnesium": [
+     0,
+     9.4
+    ],
+    "sodium": [
+     0,
+     10
+    ],
+    "chloride": [
+     1,
+     23
+    ],
+    "sulfate": [
+     0,
+     39
+    ],
+    "bicarbonate": [
+     3.78,
+     195.1
+    ]
+   },
+   "bestForStyles": [
+    "Not recommended as a brewing target"
+   ],
+   "styleTags": [
+    "variable",
+    "unpredictable",
+    "wide-range"
+   ],
+   "description": "Listed as a warning rather than a target. Deer Park's own report gives total alkalinity as 3.1 to 160 ppm as CaCO3 - a fiftyfold spread - with calcium from undetectable to 68 and sulfate from undetectable to 39. One bottle is essentially distilled water and another is a moderately hard, alkaline supply, and nothing on the label tells you which you have. The midpoint shown here is arithmetic, not a measurement, and brewing to it would be guessing. If this is what your shop stocks, use it for cleaning and buy distilled water for the kettle.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/65b7b7b51a127209036c116d/1706538933941/DeerPark_2023_WQR_EN.pdf",
+   "attribution": "Transcribed from the 2023 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 53
+  },
+  {
+   "id": "zephyrhills",
+   "name": "Zephyrhills",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Florida (several springs)",
+   "calcium": 36.7,
+   "magnesium": 2.45,
+   "sodium": 5.05,
+   "chloride": 9.35,
+   "sulfate": 7.45,
+   "bicarbonate": 104.26,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     5.4,
+     68
+    ],
+    "magnesium": [
+     0,
+     4.9
+    ],
+    "sodium": [
+     1.1,
+     9
+    ],
+    "chloride": [
+     1.7,
+     17
+    ],
+    "sulfate": [
+     1.9,
+     13
+    ],
+    "bicarbonate": [
+     13.41,
+     195.1
+    ]
+   },
+   "bestForStyles": [
+    "Not recommended as a brewing target"
+   ],
+   "styleTags": [
+    "variable",
+    "unpredictable",
+    "wide-range",
+    "carbonate"
+   ],
+   "description": "Florida limestone, and it shows: at the top of its range this is a hard, alkaline water, at the bottom it is nearly soft. Total alkalinity runs 11 to 160 ppm as CaCO3 and calcium 5.4 to 68, so like Deer Park it cannot be brewed to as a number. What you can rely on is direction - every sample leans alkaline rather than acidic, so it will push mash pH up, never down. Treat it as an unknown carbonate water and measure your mash rather than trusting the label.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/62879ce9d106953d85ece3bf/1653054697428/ZH-WQR-2021.pdf",
+   "attribution": "Transcribed from the 2021 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 65
+  },
+  {
+   "id": "arrowhead",
+   "name": "Arrowhead",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "California and Western US (several springs)",
+   "calcium": 28.1,
+   "magnesium": 10.75,
+   "sodium": 9.4,
+   "chloride": 3.01,
+   "sulfate": 13.18,
+   "bicarbonate": 126.82,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     4.2,
+     52
+    ],
+    "magnesium": [
+     1.5,
+     20
+    ],
+    "sodium": [
+     2.8,
+     16
+    ],
+    "chloride": [
+     0.61,
+     5.4
+    ],
+    "sulfate": [
+     0.35,
+     26.0
+    ],
+    "bicarbonate": [
+     21.95,
+     231.69
+    ]
+   },
+   "bestForStyles": [
+    "Not recommended as a brewing target"
+   ],
+   "styleTags": [
+    "variable",
+    "unpredictable",
+    "wide-range",
+    "low-chloride"
+   ],
+   "description": "The widest-swinging of the western brands: total alkalinity 18 to 190 ppm as CaCO3, calcium 4.2 to 52, magnesium 1.5 to 20. The one thing that stays put is chloride, which never exceeds 5.4 ppm in any sample - unusually low, and the reason Arrowhead tastes lean rather than round. That single stable number is not enough to brew on when everything else moves by an order of magnitude. Distilled water is the better buy from the same shelf.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/180/Arrowhead%20WQR%202024.pdf",
+   "attribution": "Transcribed from the 2024 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 46
+  },
+  {
+   "id": "ice-mountain",
+   "name": "Ice Mountain",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Michigan (several springs)",
+   "calcium": 62.5,
+   "magnesium": 25.0,
+   "sodium": 5.8,
+   "chloride": 8.1,
+   "sulfate": 13.5,
+   "bicarbonate": 298.75,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     46,
+     79
+    ],
+    "magnesium": [
+     16,
+     34
+    ],
+    "sodium": [
+     2.7,
+     8.9
+    ],
+    "chloride": [
+     1.2,
+     15
+    ],
+    "sulfate": [
+     10,
+     17
+    ],
+    "bicarbonate": [
+     207.3,
+     390.21
+    ]
+   },
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Schwarzbier",
+    "Brown Ale",
+    "Porter"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "hard",
+    "variable"
+   ],
+   "description": "By far the hardest and most alkaline American spring brand, drawn through Michigan limestone: total alkalinity 170 to 320 ppm as CaCO3, calcium 46 to 79, magnesium 16 to 34. The range is wide in absolute terms but never crosses a decision boundary - even the softest sample has a residual alkalinity well over 100, so this is a dark-beer water in every bottle. That makes it more useful than the brands with wider proportional swings: you cannot hit a number, but you can confidently pick a style. Pale beers on it will need a substantial acid addition.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/6287a2cd2f7a5e117792ebd7/1653056206057/im-wqr-2021.pdf",
+   "attribution": "Transcribed from the 2021 Water Analysis Report linked above, the bottler's own certified-laboratory panel. Published as a range because the brand is not one water: the report names the several springs it is drawn from and the figures span all of them. The six columns here are the midpoint of that range so the salt calculator has something to work with; the range itself is what the bottler actually measured. Bicarbonate is the published total alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 57
+  },
+  {
+   "id": "crystal-geyser-shasta",
+   "name": "Crystal Geyser (Mount Shasta, CA)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Weed, California",
+   "calcium": 6.25,
+   "magnesium": 4.15,
+   "sodium": 11.0,
+   "chloride": 0.38,
+   "sulfate": 1.31,
+   "bicarbonate": 64.02,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     6.2,
+     6.3
+    ],
+    "magnesium": [
+     2.8,
+     5.5
+    ],
+    "sodium": [
+     10,
+     12
+    ],
+    "chloride": [
+     0,
+     0.76
+    ],
+    "sulfate": [
+     0.73,
+     1.9
+    ],
+    "bicarbonate": [
+     56.09,
+     71.94
+    ]
+   },
+   "bestForStyles": [
+    "Helles",
+    "Kolsch",
+    "Munich Dunkel",
+    "Brown Ale"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-sulfate",
+    "low-chloride"
+   ],
+   "description": "Crystal Geyser bottles from seven springs but, unusually and to its credit, publishes a separate report for each one rather than a single blended range - so a bottle labelled Mount Shasta is a known water. This one is soft and remarkably clean: chloride below 0.76 ppm and sulfate below 1.9, meaning almost no flavour ions at all, over a moderate alkalinity that puts residual alkalinity near 46. Check the label for the source before trusting these figures; the other six springs have their own reports and their own numbers.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/Crystal%20Geyser%20water%20quality%20report%20Mount%20Shasta,%20CA.pdf",
+   "attribution": "Transcribed from the CG Roxane bottled water report linked above, the bottler's own certified-laboratory panel. From the CG Roxane bottled water report for the Mount Shasta (Weed, California) source. Ranges are that single spring's sampling spread, not a blend of different springs, which is why they are narrow. Bicarbonate is the published alkalinity as CaCO3 converted at 1.22.",
+   "sortOrder": 49
+  },
+  {
+   "id": "acqua-panna",
+   "name": "Acqua Panna",
+   "kind": "bottled",
+   "country": "Italy",
+   "region": "Scarperia, Tuscan Apennines",
+   "calcium": 34,
+   "magnesium": 6.9,
+   "sodium": 7,
+   "chloride": 7.5,
+   "sulfate": 22,
+   "bicarbonate": 116,
+   "bestForStyles": [
+    "Amber Ale",
+    "Vienna Lager",
+    "Bitter",
+    "Marzen"
+   ],
+   "styleTags": [
+    "balanced",
+    "moderate",
+    "versatile"
+   ],
+   "description": "The most ordinary water in this table, and that is a compliment. Moderate calcium, moderate alkalinity, nothing extreme in any direction: residual alkalinity around 67 and a sulfate:chloride ratio near 3:1 put it naturally in amber and malty-but-not-dark territory, and it is the only brand here you could brew a balanced beer on without adjusting anything. Where S.Pellegrino is an argument and Gerolsteiner is an ingredient, Panna is simply water that happens to suit brewing.",
+   "sourceUrl": "https://www.acquapanna.com/us/sites/g/files/xknfdk971/files/2023-05/Panna_EN.pdf",
+   "attribution": "From the 2022 Acqua Panna Water Analysis Report published by Nestle (mg/L): calcium 34, magnesium 6.9, sodium 7, chloride 7.5, sulfate 22, total alkalinity as CaCO3 95, total hardness as CaCO3 110, TDS 140, pH 7.7. Bicarbonate is the alkalinity converted at 1.22; the ion set balances to within 0.1% on charge.",
+   "sortOrder": 45
+  },
+  {
+   "id": "perrier",
+   "name": "Perrier",
+   "kind": "bottled",
+   "country": "France",
+   "region": "Vergeze, Gard",
+   "calcium": 138,
+   "magnesium": 3.6,
+   "sodium": 7.8,
+   "chloride": 21.2,
+   "sulfate": 26.4,
+   "bicarbonate": 405,
+   "bestForStyles": [
+    "Carbonate addition",
+    "Munich Dunkel (blended)",
+    "Porter (blended)"
+   ],
+   "styleTags": [
+    "alkaline",
+    "carbonate",
+    "calcium",
+    "blend-only"
+   ],
+   "description": "A third carbonate water, and the most useful of them for a brewer, because its alkalinity arrives with a lot of calcium and very little sodium - 138 ppm calcium against only 7.8 sodium, where Badoit gives you 180 ppm of sodium for the privilege. Residual alkalinity is about 231, far too high to brew on neat, but that is the point: a measured blend supplies carbonate and calcium together, which is exactly what a dark grist wants and what chalk fails to deliver. Cheaper and more widely stocked than Gerolsteiner, if a little weaker.",
+   "sourceUrl": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/2025-03/perrier-en-2024-water-report-march-3-2025.pdf",
+   "attribution": "From the 2024 Perrier Water Analysis Report published by Nestle Waters North America (mg/L): calcium 138, magnesium 3.6, sodium 7.8, chloride 21.2, sulfate 26.4, total alkalinity as CaCO3 332, total hardness as CaCO3 359, TDS 476, pH 5.52. Bicarbonate is the alkalinity converted at 1.22; the ion set balances to within 3.5% on charge.",
+   "sortOrder": 60
+  },
+  {
+   "id": "fiji",
+   "name": "FIJI Water",
+   "kind": "bottled",
+   "country": "Fiji",
+   "region": "Yaqara Valley, Viti Levu",
+   "calcium": 18,
+   "magnesium": 14,
+   "sodium": 16,
+   "chloride": 9,
+   "sulfate": 0.6,
+   "bicarbonate": 159,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Brown Ale",
+    "Mild",
+    "Scottish Ale"
+   ],
+   "styleTags": [
+    "malty",
+    "low-sulfate",
+    "chloride-leaning",
+    "silica"
+   ],
+   "description": "The lowest sulfate of any water here by a distance: 0.6 ppm, against 9 ppm chloride. Nothing else on this page is so completely free of the ion that sharpens bitterness, which makes it a soft, round, malt-leaning liquor whatever else you do to it. Residual alkalinity around 109 points the same way, toward darker and maltier beers. It is also unusually high in silica, the brand's main marketing claim, which has no effect on brewing worth adjusting for.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/147/Fiji%20Water%20Quality%20Report%202025.pdf",
+   "attribution": "Transcribed from the 2025 Water Analysis Report linked above, the bottler's own certified-laboratory panel. From the FIJI Water Company bottled water quality report (mg/L): calcium 18, magnesium 14, sodium 16, potassium 4.6, chloride 9, sulfate 0.6, alkalinity in CaCO3 units 130, TDS 220. Bicarbonate is the alkalinity converted at 1.22; the ion set balances to within 0.1% on charge, the tightest in the table.",
+   "sortOrder": 55
+  },
+  {
+   "id": "crystal-geyser-johnstown",
+   "name": "Crystal Geyser (Johnstown, NY)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Johnstown, New York",
+   "calcium": 58,
+   "magnesium": 11,
+   "sodium": 12,
+   "chloride": 30,
+   "sulfate": 12,
+   "bicarbonate": 182.91,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Brown Ale",
+    "Porter",
+    "Scottish Ale"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "hard"
+   ],
+   "description": "The hardest and most alkaline of Crystal Geyser's springs, and the only one with real chloride in it: 30 ppm against 12 ppm sulfate, so it leans distinctly malty and round before you add anything. Residual alkalinity near 102 makes it a dark-beer water as it comes. The closest thing here to a domestic Munich, and much easier to buy.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/Crystal%20Geyser%20water%20quality%20report%20Johnstown,%20NY.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 58, magnesium 11, sodium 12, chloride 30, sulfate 12, alkalinity 150.",
+   "sortOrder": 48
+  },
+  {
+   "id": "crystal-geyser-norman",
+   "name": "Crystal Geyser (Norman, AR)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Norman, Arkansas",
+   "calcium": 37,
+   "magnesium": 1.3,
+   "sodium": 0,
+   "chloride": 1.1,
+   "sulfate": 5.2,
+   "bicarbonate": 103.65,
+   "bestForStyles": [
+    "Munich Dunkel",
+    "Amber Lager",
+    "Brown Ale"
+   ],
+   "styleTags": [
+    "alkaline",
+    "malty",
+    "carbonate",
+    "low-sodium",
+    "low-chloride"
+   ],
+   "description": "Arkansas limestone: calcium and carbonate and almost nothing else. Chloride is 1.1 ppm, sulfate 5.2, sodium below the reporting limit entirely — so of the six ions, four are effectively absent and the water is very nearly pure calcium bicarbonate. Residual alkalinity around 58. That makes it an unusually clean canvas for a malty beer: the carbonate is already there for dark malt, and you set the flavour ions yourself from zero.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Norman,%20AR.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 37, magnesium 1.3, sodium 0, chloride 1.1, sulfate 5.2, alkalinity 85. Sodium is reported ND (not detected) and is stored as 0; the report's reporting limit for sodium is 1 mg/L, so the true value is somewhere below that rather than exactly nothing.",
+   "sortOrder": 50
+  },
+  {
+   "id": "crystal-geyser-salem",
+   "name": "Crystal Geyser (Salem, SC)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Salem, South Carolina",
+   "calcium": 8.3,
+   "magnesium": 0.35,
+   "sodium": 4.0,
+   "chloride": 0.67,
+   "sulfate": 6.9,
+   "bicarbonate": 26.83,
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles",
+    "Kolsch"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity"
+   ],
+   "description": "The softest water in this entire table that is not distilled. Every ion is in single figures and alkalinity is 22 ppm as CaCO3, giving a residual alkalinity near 16 — genuinely close to a blank slate, and the best off-the-shelf starting point here for a pale, delicate lager. Unlike the blended brands, it is a single named spring, so the figure is a figure rather than a range.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Salem,%20SC.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted. Published (mg/L): calcium 8.3, magnesium 0.35, sodium 4.0, chloride 0.67, sulfate 6.9, alkalinity 22.",
+   "sortOrder": 52
+  },
+  {
+   "id": "crystal-geyser-olancha",
+   "name": "Crystal Geyser (Olancha Peak, CA)",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Olancha, California",
+   "calcium": 17.0,
+   "magnesium": 1.85,
+   "sodium": 16.5,
+   "chloride": 1.85,
+   "sulfate": 16.75,
+   "bicarbonate": 78.04,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     15,
+     19
+    ],
+    "magnesium": [
+     1.8,
+     1.9
+    ],
+    "sodium": [
+     15,
+     18
+    ],
+    "chloride": [
+     1.0,
+     2.7
+    ],
+    "sulfate": [
+     8.5,
+     25
+    ],
+    "bicarbonate": [
+     76.82,
+     79.26
+    ]
+   },
+   "bestForStyles": [
+    "Helles",
+    "Kolsch",
+    "Amber Ale",
+    "Pale Ale"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-chloride",
+    "sodium"
+   ],
+   "description": "Eastern Sierra snowmelt, soft and low in everything except sodium, which runs 15 to 18 ppm — enough to round the palate without tasting of anything. Residual alkalinity around 51. The one figure that moves is sulfate, which the report gives as 8.5 to 25 ppm; at the top of that range it will noticeably sharpen hop bitterness and at the bottom it will not, so treat the hop character as the variable and everything else as settled.",
+   "sourceUrl": "https://connect.live-oasis.com/storage/v1/object/public/website/items/8/crystal%20geyser%20water%20quality%20report%20Olancha%20Peak,%20CA.pdf",
+   "attribution": "From the CG Roxane bottled water report for this named spring. Crystal Geyser publishes a separate report per source rather than one blended range, so a bottle labelled with this spring is a known water. The report prints an 'Alkalinity' and a 'Bicarbonate' row carrying the same figure, which cannot both be right — bicarbonate in mg/L is 1.22x alkalinity as CaCO3, never equal to it. Charge balance settles it: read as alkalinity as CaCO3 and converted, the ion set balances; read as bicarbonate directly it is out by roughly 20%. So the figure is treated as alkalinity and converted.",
+   "sortOrder": 51
+  },
+  {
+   "id": "saratoga",
+   "name": "Saratoga Spring Water",
+   "kind": "bottled",
+   "country": "United States",
+   "region": "Saratoga Springs, New York (several springs)",
+   "calcium": 8.25,
+   "magnesium": 0.55,
+   "sodium": 2.1,
+   "chloride": 5.0,
+   "sulfate": 4.7,
+   "bicarbonate": 22.99,
+   "variable": true,
+   "ionRanges": {
+    "calcium": [
+     7.5,
+     9
+    ],
+    "magnesium": [
+     0,
+     1.1
+    ],
+    "sodium": [
+     2,
+     2.2
+    ],
+    "chloride": [
+     3.4,
+     6.6
+    ],
+    "sulfate": [
+     4.7,
+     4.7
+    ],
+    "bicarbonate": [
+     11.83,
+     34.14
+    ]
+   },
+   "bestForStyles": [
+    "Czech Pale Lager",
+    "German Pils",
+    "Helles"
+   ],
+   "styleTags": [
+    "soft",
+    "low-mineral",
+    "low-alkalinity",
+    "variable"
+   ],
+   "description": "Blended from several springs like the big brands, but the range barely matters: calcium stays between 7.5 and 9 ppm and alkalinity between 9.7 and 28 as CaCO3, so every bottle is soft and nearly free of carbonate whichever spring it came from. Residual alkalinity is around 13 at the midpoint. Along with Ozarka and the Salem spring, this is one of the few American waters you can treat as a near-blank slate without testing it first.",
+   "sourceUrl": "https://static1.squarespace.com/static/60d362b2beb14d399efd7738/t/65b7bc79e069aa4ffc3ff451/1706540153302/Saratoga_2023_WQR_EN.pdf",
+   "attribution": "Transcribed from the 2023 Saratoga Water Analysis Report, still-water column (mg/L): calcium 7.5-9, magnesium ND-1.1, sodium 2-2.2, chloride 3.4-6.6, sulfate 4.7, total alkalinity as CaCO3 9.7-28, TDS 30-44, pH 6.7-6.9. Sulfate is a single published figure rather than a range. Bicarbonate is the alkalinity converted at 1.22.",
+   "sortOrder": 63
+  },
+  {
+   "id": "amsterdam",
+   "name": "Amsterdam",
+   "kind": "modern-city",
+   "country": "Netherlands",
+   "region": "North Holland",
+   "calcium": 43.0,
+   "magnesium": 7.6,
+   "sodium": 54.2,
+   "chloride": 53.0,
+   "sulfate": 21.5,
+   "bicarbonate": 193.0,
+   "bestForStyles": [
+    "Dutch Pilsener",
+    "Helles",
+    "Kölsch",
+    "Witbier"
+   ],
+   "styleTags": [
+    "moderate",
+    "alkaline",
+    "sodium-forward"
+   ],
+   "description": "Soft-to-moderate, strongly alkaline and unusually high in sodium — 193 mg/L of bicarbonate and 54 of sodium against only 43 of calcium. Amsterdam's two treatment works differ sevenfold in sulfate, so the city has no single brewing water.",
+   "attribution": "Waternet, the Amsterdam water utility, statutory annual drinking-water reports for 2024 (Wettelijk te meten stoffen), one per production location. This record is the mean of the city's two works. Leiduin: calcium 41.15, magnesium 8.85, sodium 56.1, chloride 51, sulfate 37.7 and bicarbonate 183 mg/L. Weesperkarspel: calcium 44.85, magnesium 6.42, sodium 52.4, chloride 55, sulfate 5.3 and bicarbonate 203. Each figure is the reported annual average over 13 to 106 samples. Both reports also give potassium and nitrate, so the panel can be balanced in full rather than on the usual six ions, and both do: Leiduin is 0.44% from electroneutrality and Weesperkarspel 0.76%, which is the tightest agreement of any analysis in this catalogue. The Dutch reports print the Drinkwaterbesluit legal limit in a column beside the measured average, and those limits are round numbers that read as plausible measurements, so the table was extracted by column position rather than by reading order.",
+   "sourceUrl": "https://www.waternet.nl/siteassets/ons-water/drinkwater/waterkwaliteit-rapporten/2024/drinkwater-leiduin-wettelijk-2024-jaar.pdf",
+   "sourceNote": "There is no single Amsterdam water, and averaging the two works hides the one number a brewer would most want. Leiduin carries 37.7 mg/L of sulfate and Weesperkarspel 5.3 — sevenfold, and the difference between a water that will carry hop bitterness cleanly and one that will not. The two are different sources, not two treatments of one: Leiduin is Rhine water piped in and infiltrated through the Amsterdamse Waterleidingduinen, while Weesperkarspel takes seepage from the Bethunepolder and the Loenderveense Plas. Which one reaches a given address depends on the district. If the address is known, use the plant rather than this record.\n\nNote also what the sodium means. At 54 mg/L it is higher than any German or Czech profile here, and it comes with only 43 of calcium, so the residual alkalinity is high and a pale grist will need acid. This is the modern supply; it is not a reconstruction of whatever Amsterdam brewed on before the dune works were built in 1853.\n\nOne more thing this record is not: Heineken's brewing water. Heineken has not brewed in Amsterdam since 1988. Its Dutch production is at Zoeterwoude and 's-Hertogenbosch, and a brewery of that size treats its liquor to a house specification regardless of what arrives at the meter. The brewerySource block below records the historic connection, which is real, without pretending these six numbers are what goes into the beer.",
+   "aquifer": {
+    "name": "Amsterdamse Waterleidingduinen dune infiltration of Rhine water (Leiduin) and Bethunepolder / Loenderveense Plas seepage (Weesperkarspel)",
+    "url": "https://www.waternet.nl/siteassets/ons-water/drinkwater/waterkwaliteit-rapporten/2024/drinkwater-weesperkarspel-wettelijk-2024-jaar.pdf",
+    "citation": "Waternet, Drinkwater Productielocatie Leiduin and Drinkwater Productielocatie Weesperkarspel, Wettelijk te meten stoffen, jaar 2024.",
+    "ions": {
+     "calcium": {
+      "n": 2,
+      "min": 41.15,
+      "median": 43.0,
+      "max": 44.85
+     },
+     "magnesium": {
+      "n": 2,
+      "min": 6.42,
+      "median": 7.6,
+      "max": 8.85
+     },
+     "sodium": {
+      "n": 2,
+      "min": 52.4,
+      "median": 54.2,
+      "max": 56.1
+     },
+     "chloride": {
+      "n": 2,
+      "min": 51.0,
+      "median": 53.0,
+      "max": 55.0
+     },
+     "sulfate": {
+      "n": 2,
+      "min": 5.3,
+      "median": 21.5,
+      "max": 37.7
+     },
+     "bicarbonate": {
+      "n": 2,
+      "min": 183.0,
+      "median": 193.0,
+      "max": 203.0
+     }
+    },
+    "note": "Two works, and the spread is the point. They agree closely on calcium (41 and 45), magnesium (8.9 and 6.4), sodium (56 and 52) and chloride (51 and 55), and diverge almost completely on sulfate: 37.7 at Leiduin against 5.3 at Weesperkarspel. That follows the source. Leiduin's water starts as the Rhine, which carries sulfate, and is infiltrated through coastal dunes; Weesperkarspel's is polder seepage that never sees the river. Bicarbonate runs high at both, 183 and 203, and pH sits above 8 at both — Waternet softens and then re-mineralises, which is why the alkalinity survives while the calcium does not. Potassium is 3.6 and 2.9 mg/L and nitrate 4.2 and 5.8, both far below the Dutch limits and both included in the balance check."
+   },
+   "sortOrder": 66,
+   "brewerySource": {
+    "brewery": "Heineken, Stadhouderskade, Amsterdam (1864-1988)",
+    "url": "https://www.heinekencollection.com/en/stars-of-the-collection/taste-water",
+    "statement": "The Heineken Collection Foundation, the company's own archive, says the Amsterdam brewery had access to \"filtered water from the Waterleidingduinen (Water Supply Dunes, near Haarlem)\", and that Gerard Adriaan Heineken chose the site of his second brewery, in Rotterdam, \"due to the presence of a well, a natural groundwater source\". Those same dunes are where Waternet's Leiduin plant still produces, so the Leiduin column of this record is the descendant of Heineken's Amsterdam liquor - but a descendant, not the same water. The brewery closed in 1988 and is now the Heineken Experience museum, and in the meantime the dunes stopped being fed by their own groundwater alone: Rhine water has been piped in and infiltrated through them since the late 1950s, and Waternet now softens and re-mineralises the output. Heineken publishes no mineral analysis of what it brewed with, then or now."
+   }
   }
  ]
 }

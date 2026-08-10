@@ -1,75 +1,216 @@
 {
-  "lab": {
-    "id": "mangrove-jacks",
-    "name": "Mangrove Jack's",
-    "country": "New Zealand",
-    "url": "https://mangrovejacks.com",
-    "description": "New Zealand craft brand with dry beer (M-series), cider, wine, and spirit yeasts aimed at homebrewers.",
-    "sortOrder": 15
+ "lab": {
+  "id": "mangrove-jacks",
+  "name": "Mangrove Jack's",
+  "country": "New Zealand",
+  "url": "https://mangrovejacks.com",
+  "description": "New Zealand craft brand with dry beer (M-series), cider, wine, and spirit yeasts aimed at homebrewers.",
+  "sortOrder": 15
+ },
+ "attribution": "Specs transcribed from Mangrove Jack's published product pages (mangrovejacks.com).",
+ "strains": [
+  {
+   "id": "mangrove-jacks-m44",
+   "productCode": "M44",
+   "name": "US West Coast Ale",
+   "form": "dry",
+   "species": "Saccharomyces cerevisiae",
+   "uses": [
+    "beer"
+   ],
+   "recommendedStyles": [
+    "American Pale Ale",
+    "American IPA",
+    "American Amber"
+   ],
+   "styleTags": [
+    "american",
+    "clean",
+    "ipa"
+   ],
+   "attenuationMin": 74,
+   "attenuationMax": 82,
+   "tempMinF": 64,
+   "tempMaxF": 72,
+   "tempMinC": 18,
+   "tempMaxC": 22,
+   "flocculation": "high",
+   "alcoholToleranceMax": 12,
+   "cellsPerUnit": 20,
+   "unitLabel": "g",
+   "description": "Clean American ale strain; crisp and hop-friendly, high flocculation.",
+   "flavorNotes": "Clean, crisp.",
+   "sourceUrl": "https://mangrovejacks.com/products/m44-us-west-coast-yeast-10g"
   },
-  "attribution": "Specs transcribed from Mangrove Jack's published product pages (mangrovejacks.com).",
-  "strains": [
-    {
-      "id": "mangrove-jacks-m44", "productCode": "M44", "name": "US West Coast Ale",
-      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
-      "recommendedStyles": ["American Pale Ale", "American IPA", "American Amber"],
-      "styleTags": ["american", "clean", "ipa"],
-      "attenuationMin": 74, "attenuationMax": 82, "tempMinF": 64, "tempMaxF": 72, "tempMinC": 18, "tempMaxC": 22,
-      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Clean American ale strain; crisp and hop-friendly, high flocculation.",
-      "flavorNotes": "Clean, crisp.", "sourceUrl": "https://mangrovejacks.com/products/craft-series-yeast-m44-us-west-coast"
-    },
-    {
-      "id": "mangrove-jacks-m36", "productCode": "M36", "name": "Liberty Bell Ale",
-      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
-      "recommendedStyles": ["English Bitter", "Pale Ale", "ESB", "Amber Ale"],
-      "styleTags": ["english", "balanced", "fast"],
-      "attenuationMin": 72, "attenuationMax": 78, "tempMinF": 64, "tempMaxF": 73, "tempMinC": 18, "tempMaxC": 23,
-      "flocculation": "high", "alcoholToleranceMax": 11, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Versatile balanced ale strain; quick starter, good general-purpose English/American ale.",
-      "flavorNotes": "Balanced, mild fruit.", "sourceUrl": "https://mangrovejacks.com/products/craft-series-yeast-m36-liberty-bell-ale"
-    },
-    {
-      "id": "mangrove-jacks-m31", "productCode": "M31", "name": "Belgian Tripel",
-      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["beer"],
-      "recommendedStyles": ["Belgian Tripel", "Belgian Strong Ale", "Golden Strong"],
-      "styleTags": ["belgian", "tripel", "high-gravity", "phenolic"],
-      "attenuationMin": 80, "attenuationMax": 86, "tempMinF": 64, "tempMaxF": 82, "tempMinC": 18, "tempMaxC": 28,
-      "flocculation": "medium", "alcoholToleranceMax": 14, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Belgian tripel strain; tolerates high gravity, spicy and fruity phenolic character.",
-      "flavorNotes": "Spice, pear, subtle phenol.", "sourceUrl": "https://mangrovejacks.com/products/craft-series-yeast-m31-belgian-tripel"
-    },
-    {
-      "id": "mangrove-jacks-m84", "productCode": "M84", "name": "Bohemian Lager",
-      "form": "dry", "species": "Saccharomyces pastorianus", "uses": ["beer"],
-      "recommendedStyles": ["Bohemian Pilsner", "Czech Lager", "Helles"],
-      "styleTags": ["lager", "clean"],
-      "attenuationMin": 77, "attenuationMax": 83, "tempMinF": 50, "tempMaxF": 59, "tempMinC": 10, "tempMaxC": 15,
-      "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Clean bottom-fermenting lager strain for crisp continental lagers.",
-      "flavorNotes": "Clean, malty.", "sourceUrl": "https://mangrovejacks.com/products/craft-series-yeast-m84-bohemian-lager"
-    },
-    {
-      "id": "mangrove-jacks-m02", "productCode": "M02", "name": "Cider Yeast",
-      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["cider"],
-      "recommendedStyles": ["Cider", "Perry", "Apple Wine"],
-      "styleTags": ["cider", "crisp", "aromatic"],
-      "tempMinF": 54, "tempMaxF": 77, "tempMinC": 12, "tempMaxC": 25,
-      "flocculation": "medium", "alcoholToleranceMin": 12, "alcoholToleranceMax": 14, "cellsPerUnit": 20, "unitLabel": "g",
-      "description": "Cider strain that keeps fresh apple aromatics and finishes crisp; works for perry and apple wine too.",
-      "flavorNotes": "Fresh apple, crisp, aromatic.", "sourceUrl": "https://mangrovejacks.com/products/cider-yeast-m02"
-    },
-    {
-      "id": "mangrove-jacks-whiskey", "productCode": "Whiskey Distiller's", "name": "Whiskey Distiller's Yeast",
-      "form": "dry", "species": "Saccharomyces cerevisiae", "uses": ["whiskey", "moonshine"],
-      "recommendedStyles": ["Whiskey Wash", "Grain Spirit"],
-      "styleTags": ["distilling", "whiskey", "with-enzyme"],
-      "tempMinF": 68, "tempMaxF": 86, "tempMinC": 20, "tempMaxC": 30,
-      "alcoholToleranceMin": 12, "alcoholToleranceMax": 16,
-      "isBlend": true, "blendComponents": ["Saccharomyces cerevisiae", "Glucoamylase enzyme", "Nutrients"],
-      "unitLabel": "g",
-      "description": "Whiskey distiller's yeast blend with added enzyme and nutrient for grain washes; produces malty whisky congeners.",
-      "flavorNotes": "Malty, grain whisky character.", "sourceUrl": "https://mangrovejacks.com/products/whiskey-distillers-yeast"
-    }
-  ]
+  {
+   "id": "mangrove-jacks-m36",
+   "productCode": "M36",
+   "name": "Liberty Bell Ale",
+   "form": "dry",
+   "species": "Saccharomyces cerevisiae",
+   "uses": [
+    "beer"
+   ],
+   "recommendedStyles": [
+    "English Bitter",
+    "Pale Ale",
+    "ESB",
+    "Amber Ale"
+   ],
+   "styleTags": [
+    "english",
+    "balanced",
+    "fast"
+   ],
+   "attenuationMin": 72,
+   "attenuationMax": 78,
+   "tempMinF": 64,
+   "tempMaxF": 73,
+   "tempMinC": 18,
+   "tempMaxC": 23,
+   "flocculation": "high",
+   "alcoholToleranceMax": 11,
+   "cellsPerUnit": 20,
+   "unitLabel": "g",
+   "description": "Versatile balanced ale strain; quick starter, good general-purpose English/American ale.",
+   "flavorNotes": "Balanced, mild fruit.",
+   "sourceUrl": "https://mangrovejacks.com/products/liberty-bell-ale-m36-yeast-10g"
+  },
+  {
+   "id": "mangrove-jacks-m31",
+   "productCode": "M31",
+   "name": "Belgian Tripel",
+   "form": "dry",
+   "species": "Saccharomyces cerevisiae",
+   "uses": [
+    "beer"
+   ],
+   "recommendedStyles": [
+    "Belgian Tripel",
+    "Belgian Strong Ale",
+    "Golden Strong"
+   ],
+   "styleTags": [
+    "belgian",
+    "tripel",
+    "high-gravity",
+    "phenolic"
+   ],
+   "attenuationMin": 80,
+   "attenuationMax": 86,
+   "tempMinF": 64,
+   "tempMaxF": 82,
+   "tempMinC": 18,
+   "tempMaxC": 28,
+   "flocculation": "medium",
+   "alcoholToleranceMax": 14,
+   "cellsPerUnit": 20,
+   "unitLabel": "g",
+   "description": "Belgian tripel strain; tolerates high gravity, spicy and fruity phenolic character.",
+   "flavorNotes": "Spice, pear, subtle phenol.",
+   "sourceUrl": "https://mangrovejacks.com/products/belgian-tripel-m31-yeast-10g"
+  },
+  {
+   "id": "mangrove-jacks-m84",
+   "productCode": "M84",
+   "name": "Bohemian Lager",
+   "form": "dry",
+   "species": "Saccharomyces pastorianus",
+   "uses": [
+    "beer"
+   ],
+   "recommendedStyles": [
+    "Bohemian Pilsner",
+    "Czech Lager",
+    "Helles"
+   ],
+   "styleTags": [
+    "lager",
+    "clean"
+   ],
+   "attenuationMin": 77,
+   "attenuationMax": 83,
+   "tempMinF": 50,
+   "tempMaxF": 59,
+   "tempMinC": 10,
+   "tempMaxC": 15,
+   "flocculation": "high",
+   "alcoholToleranceMax": 12,
+   "cellsPerUnit": 20,
+   "unitLabel": "g",
+   "description": "Clean bottom-fermenting lager strain for crisp continental lagers.",
+   "flavorNotes": "Clean, malty.",
+   "sourceUrl": "https://mangrovejacks.com/products/m84-bohemian-lager-10g"
+  },
+  {
+   "id": "mangrove-jacks-m02",
+   "productCode": "M02",
+   "name": "Cider Yeast",
+   "form": "dry",
+   "species": "Saccharomyces cerevisiae",
+   "uses": [
+    "cider"
+   ],
+   "recommendedStyles": [
+    "Cider",
+    "Perry",
+    "Apple Wine"
+   ],
+   "styleTags": [
+    "cider",
+    "crisp",
+    "aromatic"
+   ],
+   "tempMinF": 54,
+   "tempMaxF": 77,
+   "tempMinC": 12,
+   "tempMaxC": 25,
+   "flocculation": "medium",
+   "alcoholToleranceMin": 12,
+   "alcoholToleranceMax": 14,
+   "cellsPerUnit": 20,
+   "unitLabel": "g",
+   "description": "Cider strain that keeps fresh apple aromatics and finishes crisp; works for perry and apple wine too.",
+   "flavorNotes": "Fresh apple, crisp, aromatic.",
+   "sourceUrl": "https://mangrovejacks.com/products/craft-series-cider-yeast",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
+  },
+  {
+   "id": "mangrove-jacks-whiskey",
+   "productCode": "Whiskey Distiller's",
+   "name": "Whiskey Distiller's Yeast",
+   "form": "dry",
+   "species": "Saccharomyces cerevisiae",
+   "uses": [
+    "whiskey",
+    "moonshine"
+   ],
+   "recommendedStyles": [
+    "Whiskey Wash",
+    "Grain Spirit"
+   ],
+   "styleTags": [
+    "distilling",
+    "whiskey",
+    "with-enzyme"
+   ],
+   "tempMinF": 68,
+   "tempMaxF": 86,
+   "tempMinC": 20,
+   "tempMaxC": 30,
+   "alcoholToleranceMin": 12,
+   "alcoholToleranceMax": 16,
+   "isBlend": true,
+   "blendComponents": [
+    "Saccharomyces cerevisiae",
+    "Glucoamylase enzyme",
+    "Nutrients"
+   ],
+   "unitLabel": "g",
+   "description": "Whiskey distiller's yeast blend with added enzyme and nutrient for grain washes; produces malty whisky congeners.",
+   "flavorNotes": "Malty, grain whisky character.",
+   "sourceUrl": "https://www.stillspirits.com/products/yeast-whiskey",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
+  }
+ ]
 }

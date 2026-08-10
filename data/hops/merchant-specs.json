@@ -1,0 +1,8502 @@
+{
+ "set": "Merchant-published hop specifications",
+ "note": "Three hop merchants' own published variety specifications, transcribed field for field so that every number in data/hops can be checked against the document it cites. Nothing here is this project's opinion: a figure appears exactly as its publisher prints it, including single values where a merchant publishes one, and ceilings where a merchant prints '<1'. Where a publisher prints something that cannot be true, the field is refused and the reason recorded rather than repaired — see the Charles Faram entry. app/validate-hops.mjs fails the build when a hop record disagrees with the sheet it cites, which is how the eighty-one records that used to disagree can never quietly come back.",
+ "generated": "2026-08-08",
+ "units": {
+  "alpha": "% w/w",
+  "beta": "% w/w",
+  "cohumulone": "% of alpha acids",
+  "totalOil": "mL/100 g",
+  "myrcene": "% of total oil",
+  "humulene": "% of total oil",
+  "caryophyllene": "% of total oil",
+  "farnesene": "% of total oil",
+  "linalool": "% of total oil",
+  "polyphenols": "% w/w"
+ },
+ "shape": "Each field is one of {value}, {min,max}, {max,atMost:true} for a '<n' ceiling, or {min,atLeast:true} for a '>n' floor. A field the publisher does not print is absent.",
+ "sources": {
+  "haas-companion-2022": {
+   "publisher": "John I. Haas, Inc.",
+   "title": "Hops Companion (2022)",
+   "url": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "kind": "merchant variety guide, freely distributed PDF",
+   "retrieved": "2026-08-08",
+   "varieties": 166,
+   "read": "Parsed from the PDF by page geometry — each label paired with the value printed on the same line — rather than by text order. Text order silently mis-pairs: pdfminer emits 'Total Polyphenols' after the first nine values on some pages, which slides every field by one, and an earlier text-order parse read Simcoe as 4.5-8.0% alpha where the page plainly prints 12.0-15.5%. Geometry pairing resolves all 166 variety pages with no unpaired field; twenty pages were then read by eye and agree with the parser field for field. Page numbers below are zero-based PDF pages, not the printed folio."
+  },
+  "rahrbsg-variety-sheets": {
+   "publisher": "RahrBSG (BSG Canada)",
+   "title": "Per-variety hop product sheets",
+   "url": "https://rahrbsg.ca/hops/",
+   "kind": "merchant product sheets, one PDF per variety",
+   "retrieved": "2026-08-08",
+   "varieties": 67,
+   "read": "Each sheet is keyed by its filename, not by the heading printed on the page: Idaho 7's sheet leads with the sensory word 'CITRUS', and a spec table filed under the wrong variety is precisely the failure this whole exercise exists to catch. Every other sheet's printed heading was checked against its filename and agrees."
+  },
+  "charles-faram-hop-oracle": {
+   "publisher": "Charles Faram & Co. Ltd",
+   "title": "Hop Oracle variety pages",
+   "url": "https://charlesfaram.com/hop-oracle/cascade/",
+   "kind": "merchant variety pages, server-rendered HTML",
+   "retrieved": "2026-08-08",
+   "varieties": 13,
+   "read": "The only merchant found that publishes Northdown, Jester, Olicana and Harlequin. Its alpha, beta and cohumulone agree with Haas and RahrBSG wherever all three carry a variety — Cascade's cohumulone is 33-40 on all three. Two of its fields are not usable and are refused rather than corrected: total oil is printed with a stray digit on many pages (Challenger '10.0-10.5 ml/100g', Northdown '10.2-20.2', Endeavour '10.1-10.7'), and myrcene is sometimes a fraction and sometimes a percentage on the same page (Cascade '0.53' where every other merchant prints 45-60%). The obvious repair in both cases is to shift a decimal point, which is exactly why this does not do it — a number this project invented is worse than a number it does not have.",
+   "refusalRules": [
+    "total oil outside 0.3-6.0 mL/100 g is refused as a printing error",
+    "an oil fraction below 1 is refused as a fraction the publisher did not label as one",
+    "a non-numeric value such as 'Trace%' is refused"
+   ],
+   "urlNote": "There is no index page at /hop-oracle/ — it 404s. Each variety has its own page and every variety used here carries its own URL below; this is one of them, so the source line points at a document rather than a directory that does not exist."
+  },
+  "nzhops-product-pages": {
+   "publisher": "New Zealand Hops Ltd",
+   "title": "Variety product pages",
+   "url": "https://nzhops.co.nz/products/nectaron",
+   "kind": "grower co-operative product pages, server-rendered HTML",
+   "retrieved": "2026-08-08",
+   "varieties": 1,
+   "read": "Used for one variety only. NZ Hops publishes a per-variety PDF sheet, but the Nectaron sheet is an image with no text layer, so nothing can be read out of it and it is not cited as though it were. The product page itself states the alpha range in its own copy — '(10-14% AA)' — and that is the only figure taken. Beta and oil are not published anywhere retrievable for this variety, so they are absent rather than estimated."
+  }
+ },
+ "varieties": {
+  "haas-companion-2022": {
+   "ADEENA®": {
+    "page": 47,
+    "alpha": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.6
+    },
+    "cohumulone": {
+     "min": 34,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.1
+    },
+    "myrcene": {
+     "min": 27.3,
+     "max": 29.4
+    },
+    "humulene": {
+     "min": 31.3,
+     "max": 45.4
+    },
+    "caryophyllene": {
+     "min": 14.6,
+     "max": 21.9
+    },
+    "farnesene": {
+     "min": 4.3,
+     "max": 6.6
+    }
+   },
+   "ADMIRAL": {
+    "page": 48,
+    "alpha": {
+     "min": 13,
+     "max": 16
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 37,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.7
+    },
+    "myrcene": {
+     "value": 45
+    },
+    "humulene": {
+     "min": 23,
+     "max": 26
+    },
+    "farnesene": {
+     "value": 2
+    }
+   },
+   "AFRICAN QUEEN": {
+    "page": 49,
+    "alpha": {
+     "min": 10,
+     "max": 17
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 27
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 29
+    },
+    "humulene": {
+     "min": 21,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 7
+    },
+    "linalool": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "AGNUS": {
+    "page": 50,
+    "alpha": {
+     "min": 9,
+     "max": 12
+    },
+    "beta": {
+     "min": 4,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 2,
+     "max": 3
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.5
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5.5
+    }
+   },
+   "AHTANUM®": {
+    "page": 51,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 65
+    },
+    "humulene": {
+     "min": 12,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.5
+    }
+   },
+   "AKOYA™": {
+    "page": 52,
+    "alpha": {
+     "min": 9,
+     "max": 10
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 0.8
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "ALTUS™": {
+    "page": 53,
+    "alpha": {
+     "min": 15,
+     "max": 18.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.2
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 3,
+     "max": 4.4
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 0.3
+    },
+    "linalool": {
+     "min": 0.9,
+     "max": 1.2
+    }
+   },
+   "AMARILLO®": {
+    "page": 54,
+    "alpha": {
+     "min": 8,
+     "max": 11
+    },
+    "beta": {
+     "min": 6,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 68,
+     "max": 70
+    },
+    "humulene": {
+     "min": 9,
+     "max": 11
+    },
+    "caryophyllene": {
+     "min": 2,
+     "max": 4
+    },
+    "farnesene": {
+     "min": 2,
+     "max": 4
+    }
+   },
+   "ARAMIS": {
+    "page": 56,
+    "alpha": {
+     "min": 5.5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 22
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.6
+    },
+    "myrcene": {
+     "min": 38,
+     "max": 41
+    },
+    "humulene": {
+     "min": 19,
+     "max": 21
+    }
+   },
+   "ARIANA": {
+    "page": 57,
+    "alpha": {
+     "min": 10,
+     "max": 13
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 42
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.4
+    },
+    "myrcene": {
+     "min": 47,
+     "max": 57.6
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.6
+    },
+    "polyphenols": {
+     "min": 2.9,
+     "max": 3.3
+    }
+   },
+   "AURORA": {
+    "page": 58,
+    "alpha": {
+     "min": 7.2,
+     "max": 12.6
+    },
+    "beta": {
+     "min": 2.7,
+     "max": 4.4
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.6
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 53
+    },
+    "humulene": {
+     "min": 20,
+     "max": 27
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 9
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 1
+    }
+   },
+   "AZACCA®": {
+    "page": 59,
+    "alpha": {
+     "min": 14,
+     "max": 16
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 38,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 46,
+     "max": 55
+    },
+    "humulene": {
+     "min": 14,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "BAČKA": {
+    "page": 60,
+    "alpha": {
+     "min": 2,
+     "max": 5
+    },
+    "beta": {
+     "min": 4,
+     "max": 7.4
+    },
+    "cohumulone": {
+     "value": 25
+    },
+    "totalOil": {
+     "value": 0.6
+    },
+    "myrcene": {
+     "value": 50
+    },
+    "humulene": {
+     "value": 24
+    },
+    "caryophyllene": {
+     "value": 12
+    }
+   },
+   "BARBE ROUGE": {
+    "page": 61,
+    "alpha": {
+     "min": 7.5,
+     "max": 9.5
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.6
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 52,
+     "max": 58
+    },
+    "humulene": {
+     "min": 17,
+     "max": 21
+    }
+   },
+   "BOADICEA": {
+    "page": 62,
+    "alpha": {
+     "min": 7,
+     "max": 10
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "value": 26
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 2
+    },
+    "myrcene": {
+     "value": 33
+    },
+    "humulene": {
+     "value": 20
+    },
+    "farnesene": {
+     "value": 5
+    }
+   },
+   "BOBEK": {
+    "page": 63,
+    "alpha": {
+     "min": 3.5,
+     "max": 7.8
+    },
+    "beta": {
+     "min": 4,
+     "max": 6.1
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 4
+    },
+    "myrcene": {
+     "min": 49,
+     "max": 57
+    },
+    "humulene": {
+     "min": 13,
+     "max": 19
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 6
+    },
+    "farnesene": {
+     "min": 4,
+     "max": 7
+    },
+    "linalool": {
+     "min": 0.9,
+     "max": 1.3
+    }
+   },
+   "BOHEMIE": {
+    "page": 64,
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 6,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 17,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 3
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.75
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 4.5
+    }
+   },
+   "BOR": {
+    "page": 65,
+    "alpha": {
+     "min": 6,
+     "max": 9
+    },
+    "beta": {
+     "min": 3,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 27
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 25,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.3
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 5
+    }
+   },
+   "BOUCLIER": {
+    "page": 66,
+    "alpha": {
+     "min": 3.8,
+     "max": 6
+    },
+    "beta": {
+     "min": 2.3,
+     "max": 3.3
+    },
+    "totalOil": {
+     "min": 1.1,
+     "max": 1.6
+    },
+    "myrcene": {
+     "value": 38
+    },
+    "humulene": {
+     "value": 34
+    }
+   },
+   "BRAMLING CROSS": {
+    "page": 67,
+    "alpha": {
+     "min": 6,
+     "max": 8
+    },
+    "beta": {
+     "min": 2.3,
+     "max": 3.5
+    },
+    "cohumulone": {
+     "value": 34
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.2
+    },
+    "myrcene": {
+     "value": 36
+    },
+    "humulene": {
+     "value": 25
+    },
+    "caryophyllene": {
+     "min": 15,
+     "max": 19
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "BRAVO™": {
+    "page": 68,
+    "alpha": {
+     "min": 14,
+     "max": 17
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 50
+    },
+    "humulene": {
+     "min": 18,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "BREWERS GOLD": {
+    "page": 69,
+    "alpha": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "cohumulone": {
+     "min": 36,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    }
+   },
+   "BRU-1™": {
+    "page": 70,
+    "alpha": {
+     "min": 13,
+     "max": 15
+    },
+    "beta": {
+     "min": 8,
+     "max": 10
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 37
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 55
+    },
+    "humulene": {
+     "min": 7,
+     "max": 8
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CALLISTA": {
+    "page": 71,
+    "alpha": {
+     "min": 2,
+     "max": 5
+    },
+    "beta": {
+     "min": 5,
+     "max": 10
+    },
+    "cohumulone": {
+     "min": 15,
+     "max": 22
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 2.1
+    },
+    "myrcene": {
+     "min": 54,
+     "max": 63.5
+    },
+    "linalool": {
+     "value": 1.3
+    },
+    "polyphenols": {
+     "min": 4.1,
+     "max": 6.2
+    }
+   },
+   "CALYPSO™": {
+    "page": 72,
+    "alpha": {
+     "min": 12,
+     "max": 14
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 42
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 20,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CASCADE": {
+    "page": 73,
+    "alpha": {
+     "min": 4.5,
+     "max": 7
+    },
+    "beta": {
+     "min": 4.8,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 60
+    },
+    "humulene": {
+     "min": 8,
+     "max": 13
+    },
+    "caryophyllene": {
+     "min": 3,
+     "max": 6
+    },
+    "farnesene": {
+     "min": 3,
+     "max": 7
+    },
+    "polyphenols": {
+     "min": 4.5,
+     "max": 4.9
+    }
+   },
+   "CASHMERE": {
+    "page": 74,
+    "alpha": {
+     "min": 7.7,
+     "max": 9.1
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 39,
+     "max": 42
+    },
+    "humulene": {
+     "min": 26,
+     "max": 29
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 13
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CELEIA": {
+    "page": 75,
+    "alpha": {
+     "min": 3,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2,
+     "max": 3.3
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 3.6
+    },
+    "myrcene": {
+     "min": 26,
+     "max": 40
+    },
+    "humulene": {
+     "min": 18,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 3,
+     "max": 7
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 1.2
+    }
+   },
+   "CENTENNIAL": {
+    "page": 76,
+    "alpha": {
+     "min": 9.5,
+     "max": 11.5
+    },
+    "beta": {
+     "min": 3.4,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CHELAN": {
+    "page": 77,
+    "alpha": {
+     "min": 12,
+     "max": 14.5
+    },
+    "beta": {
+     "min": 8.5,
+     "max": 9.8
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 12,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CHINOOK": {
+    "page": 78,
+    "alpha": {
+     "min": 12,
+     "max": 14
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.7,
+     "max": 2.7
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 40
+    },
+    "humulene": {
+     "min": 18,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CITRA®": {
+    "page": 79,
+    "alpha": {
+     "min": 11,
+     "max": 13
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 2.2,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 60,
+     "max": 65
+    },
+    "humulene": {
+     "min": 11,
+     "max": 13
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 1,
+     "max": 2
+    },
+    "polyphenols": {
+     "min": 4.5,
+     "max": 5.5
+    }
+   },
+   "CLUSTER": {
+    "page": 80,
+    "alpha": {
+     "min": 5.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 37,
+     "max": 43
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 15,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 7
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "COLUMBUS": {
+    "page": 81,
+    "alpha": {
+     "min": 15,
+     "max": 17
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 12,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "COMET": {
+    "page": 82,
+    "alpha": {
+     "min": 9.4,
+     "max": 12.4
+    },
+    "beta": {
+     "min": 3,
+     "max": 6.1
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 3.3
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 65
+    },
+    "humulene": {
+     "min": 1,
+     "max": 2
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 7
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "CONTESSA™": {
+    "page": 83,
+    "alpha": {
+     "min": 3,
+     "max": 5
+    },
+    "beta": {
+     "min": 5,
+     "max": 7.4
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.9
+    },
+    "farnesene": {
+     "min": 4,
+     "max": 5.5
+    },
+    "linalool": {
+     "min": 0.9,
+     "max": 1
+    }
+   },
+   "CRYSTAL": {
+    "page": 84,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 5,
+     "max": 6.7
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 2.1
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 65
+    },
+    "humulene": {
+     "min": 18,
+     "max": 24
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 8
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "DELTA™": {
+    "page": 85,
+    "alpha": {
+     "min": 5.5,
+     "max": 7
+    },
+    "beta": {
+     "min": 5.5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1.1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "DR. RUDI": {
+    "page": 86,
+    "alpha": {
+     "min": 10,
+     "max": 12
+    },
+    "beta": {
+     "min": 7,
+     "max": 8.5
+    },
+    "cohumulone": {
+     "value": 33
+    },
+    "totalOil": {
+     "value": 1.3
+    },
+    "myrcene": {
+     "value": 29.2
+    },
+    "humulene": {
+     "value": 33.2
+    },
+    "caryophyllene": {
+     "value": 10.1
+    },
+    "farnesene": {
+     "value": 0.5
+    }
+   },
+   "EAST KENT GOLDING (EKG)": {
+    "page": 87,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 1.9,
+     "max": 3
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "value": 25
+    },
+    "humulene": {
+     "value": 36
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "ECLIPSE®": {
+    "page": 88,
+    "alpha": {
+     "min": 15.7,
+     "max": 17.9
+    },
+    "beta": {
+     "min": 5.9,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 37
+    },
+    "totalOil": {
+     "min": 1.7,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 35.5,
+     "max": 49
+    },
+    "humulene": {
+     "min": 0.6,
+     "max": 1.6
+    },
+    "caryophyllene": {
+     "min": 6.1,
+     "max": 12.1
+    },
+    "farnesene": {
+     "value": 0.2
+    },
+    "linalool": {
+     "value": 0.6
+    }
+   },
+   "EKUANOT®": {
+    "page": 89,
+    "alpha": {
+     "min": 14.5,
+     "max": 15.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 32,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 4.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 12,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "EL DORADO®": {
+    "page": 90,
+    "alpha": {
+     "min": 13,
+     "max": 17
+    },
+    "beta": {
+     "min": 6.4,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.3
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 60
+    },
+    "humulene": {
+     "min": 10,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "ELIXIR": {
+    "page": 91,
+    "alpha": {
+     "min": 4.6,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 5.8,
+     "max": 6.6
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 27.4
+    },
+    "totalOil": {
+     "value": 1.85
+    },
+    "myrcene": {
+     "value": 65.5
+    },
+    "humulene": {
+     "value": 1.4
+    },
+    "caryophyllene": {
+     "value": 2.15
+    }
+   },
+   "ELLA™": {
+    "page": 92,
+    "alpha": {
+     "min": 13.4,
+     "max": 19.2
+    },
+    "beta": {
+     "min": 5.2,
+     "max": 7.5
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 2.3
+    },
+    "myrcene": {
+     "min": 34,
+     "max": 40
+    },
+    "humulene": {
+     "min": 16,
+     "max": 19
+    },
+    "caryophyllene": {
+     "min": 5.9,
+     "max": 14.1
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 0.5
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.6
+    }
+   },
+   "ENDEAVOUR": {
+    "page": 93,
+    "alpha": {
+     "min": 8,
+     "max": 10.5
+    },
+    "beta": {
+     "min": 3.8,
+     "max": 5.3
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 36
+    },
+    "totalOil": {
+     "min": 1.1,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 27,
+     "max": 37
+    },
+    "humulene": {
+     "min": 3,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 8
+    }
+   },
+   "ENIGMA®": {
+    "page": 94,
+    "alpha": {
+     "min": 16.7,
+     "max": 19.4
+    },
+    "beta": {
+     "min": 5.2,
+     "max": 7.1
+    },
+    "cohumulone": {
+     "min": 37,
+     "max": 43
+    },
+    "totalOil": {
+     "min": 1.9,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 23,
+     "max": 30
+    },
+    "humulene": {
+     "min": 12,
+     "max": 19
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 9,
+     "max": 11
+    },
+    "linalool": {
+     "min": 0.1,
+     "max": 0.5
+    }
+   },
+   "EUREKA!™": {
+    "page": 95,
+    "alpha": {
+     "min": 17,
+     "max": 19.9
+    },
+    "beta": {
+     "min": 4.6,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 4.4
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 1
+    },
+    "polyphenols": {
+     "min": 4.5,
+     "max": 5
+    }
+   },
+   "EXTRA STYRIAN DANA": {
+    "page": 96,
+    "alpha": {
+     "min": 12.5,
+     "max": 18.8
+    },
+    "beta": {
+     "min": 4.2,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 2.4,
+     "max": 3.9
+    },
+    "myrcene": {
+     "min": 42,
+     "max": 60
+    },
+    "humulene": {
+     "min": 15,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 9
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 1
+    }
+   },
+   "FIRST GOLD": {
+    "page": 97,
+    "alpha": {
+     "min": 6.5,
+     "max": 10
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 32,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 38
+    },
+    "humulene": {
+     "value": 20
+    },
+    "farnesene": {
+     "min": 1.5,
+     "max": 3
+    }
+   },
+   "FUGGLE": {
+    "page": 98,
+    "alpha": {
+     "min": 3.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 30
+    },
+    "humulene": {
+     "min": 30,
+     "max": 38
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 8
+    }
+   },
+   "GALAXY®": {
+    "page": 99,
+    "alpha": {
+     "min": 13,
+     "max": 18.5
+    },
+    "beta": {
+     "min": 6.1,
+     "max": 11.6
+    },
+    "cohumulone": {
+     "min": 32,
+     "max": 43
+    },
+    "totalOil": {
+     "min": 1.9,
+     "max": 2.9
+    },
+    "myrcene": {
+     "min": 32,
+     "max": 56
+    },
+    "humulene": {
+     "min": 0.8,
+     "max": 2.2
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 14.7
+    },
+    "farnesene": {
+     "min": 2.8,
+     "max": 5.1
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 1
+    }
+   },
+   "GALENA": {
+    "page": 100,
+    "alpha": {
+     "min": 11.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 7.2,
+     "max": 8.7
+    },
+    "cohumulone": {
+     "min": 36,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 60
+    },
+    "humulene": {
+     "min": 10,
+     "max": 13
+    },
+    "caryophyllene": {
+     "min": 3,
+     "max": 5
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "GLACIER": {
+    "page": 101,
+    "alpha": {
+     "min": 3.3,
+     "max": 9.7
+    },
+    "beta": {
+     "min": 5.4,
+     "max": 9.7
+    },
+    "cohumulone": {
+     "min": 11,
+     "max": 13
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.6
+    },
+    "myrcene": {
+     "min": 33,
+     "max": 62
+    },
+    "humulene": {
+     "min": 24,
+     "max": 36
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "GOLDING": {
+    "page": 102,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 2,
+     "max": 3
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 35
+    },
+    "humulene": {
+     "min": 35,
+     "max": 45
+    },
+    "caryophyllene": {
+     "min": 13,
+     "max": 16
+    }
+   },
+   "HALLERTAU BLANC": {
+    "page": 103,
+    "alpha": {
+     "min": 9,
+     "max": 11
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 1.8
+    },
+    "myrcene": {
+     "value": 70
+    },
+    "humulene": {
+     "min": 0,
+     "max": 3
+    },
+    "caryophyllene": {
+     "min": 0,
+     "max": 2
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 5.9
+    }
+   },
+   "HALLERTAUER MAGNUM": {
+    "page": 104,
+    "alpha": {
+     "min": 11,
+     "max": 16
+    },
+    "beta": {
+     "min": 5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.6
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 30,
+     "max": 45
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.7
+    },
+    "polyphenols": {
+     "min": 2,
+     "max": 3
+    }
+   },
+   "HALLERTAUER MITTELFRÜH": {
+    "page": 105,
+    "alpha": {
+     "min": 3,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 18,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 28
+    },
+    "humulene": {
+     "min": 45,
+     "max": 55
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.7,
+     "max": 1.1
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "HALLERTAUER TAURUS": {
+    "page": 106,
+    "alpha": {
+     "min": 12,
+     "max": 17
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 50
+    },
+    "humulene": {
+     "min": 23,
+     "max": 33
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 1,
+     "max": 1.5
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 4
+    }
+   },
+   "HARMONIE": {
+    "page": 107,
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 5,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 17,
+     "max": 21
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.7,
+     "max": 1.2
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 4.5
+    }
+   },
+   "HBC 1019 c.v.": {
+    "page": 112,
+    "alpha": {
+     "min": 10,
+     "max": 12
+    },
+    "beta": {
+     "min": 8,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 2.2
+    },
+    "myrcene": {
+     "value": 38.9
+    },
+    "humulene": {
+     "value": 10.6
+    },
+    "caryophyllene": {
+     "value": 7.2
+    },
+    "farnesene": {
+     "value": 0.4
+    },
+    "linalool": {
+     "value": 0.5
+    }
+   },
+   "HBC 472 c.v.": {
+    "page": 108,
+    "alpha": {
+     "min": 7,
+     "max": 10
+    },
+    "beta": {
+     "min": 7,
+     "max": 9
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 45
+    },
+    "humulene": {
+     "min": 1,
+     "max": 5
+    },
+    "caryophyllene": {
+     "min": 25,
+     "max": 30
+    },
+    "farnesene": {
+     "min": 4,
+     "max": 6
+    },
+    "linalool": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "HBC 522 c.v.": {
+    "page": 109,
+    "alpha": {
+     "min": 9.5,
+     "max": 12
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 2.3
+    },
+    "myrcene": {
+     "value": 36.9
+    },
+    "humulene": {
+     "value": 13.2
+    },
+    "caryophyllene": {
+     "value": 8.44
+    },
+    "farnesene": {
+     "value": 0.52
+    },
+    "linalool": {
+     "value": 0.64
+    }
+   },
+   "HBC 586 c.v.": {
+    "page": 110,
+    "alpha": {
+     "min": 12,
+     "max": 13
+    },
+    "beta": {
+     "min": 7.5,
+     "max": 8.5
+    },
+    "cohumulone": {
+     "min": 38,
+     "max": 41
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 14,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 15
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "HBC 630 c.v.": {
+    "page": 111,
+    "alpha": {
+     "min": 13.6,
+     "max": 14
+    },
+    "beta": {
+     "min": 5.6,
+     "max": 6.3
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3
+    }
+   },
+   "HERKULES": {
+    "page": 113,
+    "alpha": {
+     "min": 12,
+     "max": 17
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 32,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.4
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 50
+    },
+    "humulene": {
+     "min": 30,
+     "max": 45
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.8
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 4
+    }
+   },
+   "HERSBRUCKER": {
+    "page": 114,
+    "alpha": {
+     "min": 1.5,
+     "max": 4
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 17,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 15,
+     "max": 30
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 13
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 1
+    },
+    "polyphenols": {
+     "min": 5,
+     "max": 6
+    }
+   },
+   "HORIZON": {
+    "page": 115,
+    "alpha": {
+     "min": 10.2,
+     "max": 16.5
+    },
+    "beta": {
+     "min": 4.6,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 17,
+     "max": 22
+    },
+    "totalOil": {
+     "min": 1.25,
+     "max": 2.6
+    },
+    "myrcene": {
+     "min": 60,
+     "max": 70
+    },
+    "humulene": {
+     "min": 8,
+     "max": 10
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 6
+    },
+    "farnesene": {
+     "value": 2
+    }
+   },
+   "HÜLL MELON": {
+    "page": 116,
+    "alpha": {
+     "min": 7,
+     "max": 8
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 2.1
+    },
+    "myrcene": {
+     "min": 26,
+     "max": 42
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.3
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 4.6
+    }
+   },
+   "IDAHO 7™": {
+    "page": 117,
+    "alpha": {
+     "min": 13,
+     "max": 15
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.6
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 1
+    }
+   },
+   "IDAHO GEM™": {
+    "page": 118,
+    "alpha": {
+     "min": 11,
+     "max": 14
+    },
+    "beta": {
+     "min": 5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 3
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 16,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 6
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 1
+    }
+   },
+   "IUNGA": {
+    "page": 119,
+    "alpha": {
+     "min": 8,
+     "max": 12.5
+    },
+    "beta": {
+     "min": 5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "IZABELLA": {
+    "page": 120,
+    "alpha": {
+     "min": 4.7,
+     "max": 6
+    },
+    "beta": {
+     "min": 2,
+     "max": 3
+    },
+    "totalOil": {
+     "value": 1.3
+    },
+    "myrcene": {
+     "value": 54.4
+    },
+    "humulene": {
+     "value": 18
+    },
+    "caryophyllene": {
+     "value": 8.7
+    }
+   },
+   "JARRYLO®": {
+    "page": 121,
+    "alpha": {
+     "min": 15,
+     "max": 17
+    },
+    "beta": {
+     "min": 6,
+     "max": 7.5
+    },
+    "cohumulone": {
+     "min": 34,
+     "max": 37
+    },
+    "totalOil": {
+     "min": 3.6,
+     "max": 4.3
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 15,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "KAZBEK": {
+    "page": 122,
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 20,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.5
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 4.5
+    }
+   },
+   "LEMON DROP™": {
+    "page": 123,
+    "alpha": {
+     "min": 5,
+     "max": 7
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 7
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.6
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 4.5
+    }
+   },
+   "LIBERTY": {
+    "page": 124,
+    "alpha": {
+     "min": 3,
+     "max": 5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 40
+    },
+    "humulene": {
+     "min": 35,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "LORAL®": {
+    "page": 125,
+    "alpha": {
+     "min": 10,
+     "max": 12
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 37,
+     "max": 39
+    },
+    "humulene": {
+     "min": 23,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 1,
+     "max": 1.4
+    }
+   },
+   "LOTUS™": {
+    "page": 126,
+    "alpha": {
+     "min": 13,
+     "max": 17
+    },
+    "beta": {
+     "min": 5.5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 39
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.4
+    }
+   },
+   "LUBLIN (LUBELSKI)": {
+    "page": 127,
+    "alpha": {
+     "min": 3,
+     "max": 4.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1.1
+    },
+    "myrcene": {
+     "min": 22,
+     "max": 29
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 11
+    },
+    "farnesene": {
+     "min": 10,
+     "max": 14
+    }
+   },
+   "MAGNAT": {
+    "page": 128,
+    "alpha": {
+     "min": 11,
+     "max": 16
+    },
+    "beta": {
+     "min": 3,
+     "max": 7
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 50
+    },
+    "humulene": {
+     "value": 19
+    },
+    "caryophyllene": {
+     "value": 7.2
+    }
+   },
+   "MANDARINA BAVARIA": {
+    "page": 129,
+    "alpha": {
+     "min": 7,
+     "max": 10
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 31,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.2
+    },
+    "myrcene": {
+     "max": 71,
+     "atMost": true
+    },
+    "humulene": {
+     "min": 5,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 5
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "max": 0.3,
+     "atMost": true
+    },
+    "polyphenols": {
+     "min": 2.3,
+     "max": 2.7
+    }
+   },
+   "MARYNKA": {
+    "page": 130,
+    "alpha": {
+     "min": 9,
+     "max": 12
+    },
+    "beta": {
+     "min": 10.2,
+     "max": 13
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 28,
+     "max": 31
+    },
+    "humulene": {
+     "min": 26,
+     "max": 33
+    },
+    "caryophyllene": {
+     "min": 11,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 3
+    }
+   },
+   "MCKENZIE™": {
+    "page": 131,
+    "alpha": {
+     "value": 10.3
+    },
+    "beta": {
+     "value": 8.7
+    },
+    "totalOil": {
+     "value": 2.3
+    }
+   },
+   "MEDUSA™": {
+    "page": 132,
+    "alpha": {
+     "value": 3
+    },
+    "beta": {
+     "value": 6.5
+    },
+    "totalOil": {
+     "value": 0.7
+    },
+    "myrcene": {
+     "value": 54.6
+    },
+    "humulene": {
+     "value": 9.1
+    },
+    "caryophyllene": {
+     "value": 14
+    },
+    "farnesene": {
+     "value": 1.6
+    },
+    "linalool": {
+     "value": 0.6
+    }
+   },
+   "MERIDIAN®": {
+    "page": 133,
+    "alpha": {
+     "min": 5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 7,
+     "max": 8
+    },
+    "cohumulone": {
+     "value": 50.1
+    },
+    "totalOil": {
+     "min": 1.1,
+     "max": 1.6
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 64.4
+    },
+    "humulene": {
+     "min": 9,
+     "max": 17.6
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 8
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "MILLENNIUM®": {
+    "page": 134,
+    "alpha": {
+     "min": 14.5,
+     "max": 16.5
+    },
+    "beta": {
+     "min": 4.3,
+     "max": 5.3
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 23,
+     "max": 27
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "MISTRAL": {
+    "page": 135,
+    "alpha": {
+     "min": 6.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 3.1,
+     "max": 3.8
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 39
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 65
+    },
+    "humulene": {
+     "min": 9.5,
+     "max": 17
+    }
+   },
+   "MONROE": {
+    "page": 136,
+    "alpha": {
+     "min": 2.8,
+     "max": 2.9
+    },
+    "beta": {
+     "min": 6.5,
+     "max": 7.5
+    },
+    "totalOil": {
+     "max": 0.95,
+     "atMost": true
+    },
+    "myrcene": {
+     "max": 37,
+     "atMost": true
+    },
+    "linalool": {
+     "max": 1,
+     "atMost": true
+    },
+    "polyphenols": {
+     "min": 4.4,
+     "max": 4.8
+    }
+   },
+   "MOSAIC®": {
+    "page": 137,
+    "alpha": {
+     "min": 11.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 3.2,
+     "max": 3.9
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 47,
+     "max": 53
+    },
+    "humulene": {
+     "min": 13,
+     "max": 16
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    },
+    "farnesene": {
+     "value": 0
+    }
+   },
+   "MOTUEKA™": {
+    "page": 138,
+    "alpha": {
+     "min": 6.5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 50
+    },
+    "humulene": {
+     "min": 2,
+     "max": 6
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 3
+    },
+    "farnesene": {
+     "min": 10,
+     "max": 14
+    }
+   },
+   "MOUNT HOOD": {
+    "page": 139,
+    "alpha": {
+     "min": 4,
+     "max": 7
+    },
+    "beta": {
+     "min": 5,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 30,
+     "max": 38
+    },
+    "caryophyllene": {
+     "min": 13,
+     "max": 16
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.7
+    }
+   },
+   "MOUNT RAINIER": {
+    "page": 140,
+    "alpha": {
+     "min": 5,
+     "max": 8.1
+    },
+    "beta": {
+     "min": 5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 0.2,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 47,
+     "max": 54
+    },
+    "humulene": {
+     "min": 9,
+     "max": 14
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 7
+    }
+   },
+   "MOUTERE™": {
+    "page": 141,
+    "alpha": {
+     "min": 17.5,
+     "max": 19.5
+    },
+    "beta": {
+     "min": 8,
+     "max": 10
+    },
+    "cohumulone": {
+     "value": 26
+    },
+    "totalOil": {
+     "value": 1.7
+    },
+    "myrcene": {
+     "value": 22.2
+    },
+    "humulene": {
+     "value": 15.2
+    },
+    "caryophyllene": {
+     "value": 5.8
+    },
+    "farnesene": {
+     "value": 0.3
+    }
+   },
+   "NELSON SAUVIN™": {
+    "page": 142,
+    "alpha": {
+     "min": 12,
+     "max": 13
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 21,
+     "max": 23
+    },
+    "humulene": {
+     "min": 35,
+     "max": 37
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "NEWPORT": {
+    "page": 143,
+    "alpha": {
+     "min": 13.5,
+     "max": 17
+    },
+    "beta": {
+     "min": 7.2,
+     "max": 9.1
+    },
+    "cohumulone": {
+     "min": 36,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 3.4
+    },
+    "myrcene": {
+     "min": 47,
+     "max": 54
+    },
+    "humulene": {
+     "min": 9,
+     "max": 14
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 7
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "NORTHERN BREWER (GERMANY)": {
+    "page": 144,
+    "alpha": {
+     "min": 8,
+     "max": 10
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 45
+    },
+    "humulene": {
+     "min": 35,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 20
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "NUGGET": {
+    "page": 145,
+    "alpha": {
+     "min": 11.5,
+     "max": 14
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 27,
+     "max": 42
+    },
+    "humulene": {
+     "min": 16,
+     "max": 19
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 1
+    }
+   },
+   "OPAL": {
+    "page": 146,
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 13,
+     "max": 17
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 45
+    },
+    "humulene": {
+     "min": 30,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 1,
+     "max": 1.5
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 5
+    }
+   },
+   "PACIFICA™": {
+    "page": 147,
+    "alpha": {
+     "min": 5,
+     "max": 6
+    },
+    "beta": {
+     "value": 6
+    },
+    "cohumulone": {
+     "value": 25
+    },
+    "totalOil": {
+     "value": 1
+    },
+    "myrcene": {
+     "value": 12.5
+    },
+    "humulene": {
+     "value": 50.9
+    },
+    "caryophyllene": {
+     "value": 16.7
+    },
+    "farnesene": {
+     "value": 0.2
+    }
+   },
+   "PAHTO®": {
+    "page": 148,
+    "alpha": {
+     "min": 17,
+     "max": 20
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 6
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 48,
+     "max": 52
+    },
+    "humulene": {
+     "min": 13,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 6
+    },
+    "linalool": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "PALISADE®": {
+    "page": 149,
+    "alpha": {
+     "min": 6.5,
+     "max": 9.5
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 14
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.6
+    }
+   },
+   "PEKKO®": {
+    "page": 150,
+    "alpha": {
+     "min": 13,
+     "max": 16
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.3
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 2.1,
+     "max": 2.7
+    },
+    "myrcene": {
+     "min": 46,
+     "max": 55
+    },
+    "humulene": {
+     "min": 12,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 11,
+     "max": 13
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "PERLE": {
+    "page": 151,
+    "alpha": {
+     "min": 4,
+     "max": 9
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 35,
+     "max": 55
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 20
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.6
+    },
+    "polyphenols": {
+     "min": 3,
+     "max": 5
+    }
+   },
+   "PILGRIM": {
+    "page": 152,
+    "alpha": {
+     "min": 9,
+     "max": 13
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "value": 35
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 35
+    },
+    "humulene": {
+     "min": 21,
+     "max": 25
+    },
+    "farnesene": {
+     "value": 0.3
+    }
+   },
+   "POLARIS": {
+    "page": 153,
+    "alpha": {
+     "min": 18,
+     "max": 24
+    },
+    "beta": {
+     "min": 5,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 2.4,
+     "max": 4.4
+    },
+    "myrcene": {
+     "max": 50.3,
+     "atMost": true
+    },
+    "humulene": {
+     "min": 20,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 13
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "max": 0.2,
+     "atMost": true
+    },
+    "polyphenols": {
+     "min": 2.6,
+     "max": 2.7
+    }
+   },
+   "PREMIANT": {
+    "page": 154,
+    "alpha": {
+     "min": 7,
+     "max": 10
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 18,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 45
+    },
+    "humulene": {
+     "min": 25,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 3
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.7
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "PRIDE OF RINGWOOD": {
+    "page": 155,
+    "alpha": {
+     "min": 8.6,
+     "max": 11
+    },
+    "beta": {
+     "min": 4,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 34
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 41
+    },
+    "humulene": {
+     "min": 1.6,
+     "max": 3
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "PROGRESS": {
+    "page": 156,
+    "alpha": {
+     "min": 6,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 2,
+     "max": 3.3
+    },
+    "cohumulone": {
+     "value": 33
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1
+    },
+    "myrcene": {
+     "value": 29
+    },
+    "humulene": {
+     "min": 36,
+     "max": 42
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "RAKAU™": {
+    "page": 157,
+    "alpha": {
+     "min": 10,
+     "max": 11
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "value": 24
+    },
+    "totalOil": {
+     "value": 2.15
+    },
+    "myrcene": {
+     "value": 56
+    },
+    "humulene": {
+     "value": 16.3
+    },
+    "caryophyllene": {
+     "value": 5.2
+    },
+    "farnesene": {
+     "value": 4.5
+    }
+   },
+   "RELAX": {
+    "page": 158,
+    "alpha": {
+     "min": 0.3,
+     "max": 1.5
+    },
+    "beta": {
+     "min": 10,
+     "max": 15
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 17,
+     "max": 30
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.5
+    }
+   },
+   "RIWAKA™": {
+    "page": 159,
+    "alpha": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "value": 32
+    },
+    "totalOil": {
+     "value": 1.5
+    },
+    "myrcene": {
+     "value": 68
+    },
+    "humulene": {
+     "value": 9
+    },
+    "caryophyllene": {
+     "value": 4
+    },
+    "farnesene": {
+     "value": 1
+    }
+   },
+   "SAAZ": {
+    "page": 160,
+    "alpha": {
+     "min": 2.5,
+     "max": 4.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 15,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 14,
+     "max": 20
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.6
+    },
+    "polyphenols": {
+     "min": 5.5,
+     "max": 7
+    }
+   },
+   "SAAZ LATE": {
+    "page": 161,
+    "alpha": {
+     "min": 3.5,
+     "max": 6
+    },
+    "beta": {
+     "min": 4,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 35
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 15,
+     "max": 20
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.4
+    },
+    "polyphenols": {
+     "min": 5,
+     "max": 6
+    }
+   },
+   "SABRO®": {
+    "page": 162,
+    "alpha": {
+     "min": 12,
+     "max": 16
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 15,
+     "max": 20
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "SANTIAM": {
+    "page": 163,
+    "alpha": {
+     "min": 5.5,
+     "max": 7
+    },
+    "beta": {
+     "min": 7,
+     "max": 8.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 22
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 20,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 13,
+     "max": 16
+    }
+   },
+   "SAPHIR": {
+    "page": 164,
+    "alpha": {
+     "min": 2,
+     "max": 4.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 12,
+     "max": 17
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.8,
+     "max": 1.3
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "SASQUATCH": {
+    "page": 165,
+    "alpha": {
+     "value": 7.3
+    },
+    "beta": {
+     "value": 8.2
+    },
+    "cohumulone": {
+     "value": 34.6
+    },
+    "totalOil": {
+     "value": 0.8
+    },
+    "myrcene": {
+     "value": 60.1
+    },
+    "humulene": {
+     "value": 13.7
+    },
+    "caryophyllene": {
+     "value": 5.9
+    },
+    "farnesene": {
+     "value": 8.3
+    },
+    "linalool": {
+     "value": 0.1
+    }
+   },
+   "SIMCOE®": {
+    "page": 166,
+    "alpha": {
+     "min": 12,
+     "max": 15.5
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 17,
+     "max": 21
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 3
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 12,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.8
+    }
+   },
+   "SLÁDEK": {
+    "page": 167,
+    "alpha": {
+     "min": 4.5,
+     "max": 8
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 50
+    },
+    "humulene": {
+     "min": 20,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.15,
+     "max": 0.3
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 5
+    }
+   },
+   "SMARAGD": {
+    "page": 168,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 13,
+     "max": 18
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 40
+    },
+    "humulene": {
+     "min": 30,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.9,
+     "max": 1.4
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 6
+    }
+   },
+   "SOLERO™": {
+    "page": 169,
+    "alpha": {
+     "min": 9,
+     "max": 10
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.5
+    }
+   },
+   "SORACHI ACE": {
+    "page": 170,
+    "alpha": {
+     "min": 12,
+     "max": 16
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 45
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.8
+    }
+   },
+   "SOUTHERN AROMA": {
+    "page": 171,
+    "alpha": {
+     "min": 3.6,
+     "max": 6.1
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 16,
+     "max": 22.6
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 18.3,
+     "max": 20
+    },
+    "humulene": {
+     "min": 23,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 13.9
+    },
+    "farnesene": {
+     "min": 0.6,
+     "max": 1.6
+    },
+    "linalool": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "SOUTHERN PASSION": {
+    "page": 172,
+    "alpha": {
+     "min": 5,
+     "max": 12
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 16.6,
+     "max": 20.2
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 17,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 3
+    },
+    "linalool": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "SOUTHERN PROMISE": {
+    "page": 173,
+    "alpha": {
+     "min": 9.5,
+     "max": 11.5
+    },
+    "beta": {
+     "min": 3.6,
+     "max": 5.4
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 22
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.1
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 23
+    },
+    "humulene": {
+     "min": 22,
+     "max": 28
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "SOUTHERN STAR": {
+    "page": 174,
+    "alpha": {
+     "min": 12,
+     "max": 18
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 27.5,
+     "max": 38.9
+    },
+    "humulene": {
+     "min": 21.9,
+     "max": 32.8
+    },
+    "caryophyllene": {
+     "min": 11.2,
+     "max": 14.6
+    },
+    "farnesene": {
+     "min": 4.5,
+     "max": 12
+    },
+    "linalool": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "SOVEREIGN": {
+    "page": 175,
+    "alpha": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2.1,
+     "max": 3.1
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 30
+    },
+    "humulene": {
+     "min": 21,
+     "max": 26
+    },
+    "farnesene": {
+     "min": 3,
+     "max": 5
+    }
+   },
+   "SPALT SPALTER": {
+    "page": 176,
+    "alpha": {
+     "min": 2.5,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 0.9
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 12,
+     "max": 18
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.8
+    },
+    "polyphenols": {
+     "min": 5,
+     "max": 6
+    }
+   },
+   "SPALTER SELECT": {
+    "page": 177,
+    "alpha": {
+     "min": 3,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 27
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 0.9
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 40
+    },
+    "humulene": {
+     "min": 10,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 15,
+     "max": 22
+    },
+    "linalool": {
+     "min": 1,
+     "max": 1.5
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "STERLING": {
+    "page": 178,
+    "alpha": {
+     "min": 6,
+     "max": 9
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 44,
+     "max": 48
+    },
+    "humulene": {
+     "min": 19,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 7
+    },
+    "farnesene": {
+     "min": 11,
+     "max": 17
+    }
+   },
+   "STRATA™": {
+    "page": 179,
+    "alpha": {
+     "value": 12.1
+    },
+    "beta": {
+     "value": 5.3
+    },
+    "cohumulone": {
+     "value": 21
+    },
+    "totalOil": {
+     "min": 2.3,
+     "max": 3.5
+    },
+    "myrcene": {
+     "min": 52,
+     "max": 65
+    },
+    "humulene": {
+     "min": 22,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 12.5
+    }
+   },
+   "STRISSELSPALT": {
+    "page": 180,
+    "alpha": {
+     "min": 1.8,
+     "max": 2.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 4.7
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 52
+    },
+    "humulene": {
+     "min": 12.5,
+     "max": 21
+    },
+    "caryophyllene": {
+     "min": 6.1,
+     "max": 10.2
+    }
+   },
+   "STYRIAN CARDINAL": {
+    "page": 181,
+    "alpha": {
+     "min": 10,
+     "max": 15
+    },
+    "beta": {
+     "min": 3.2,
+     "max": 4.6
+    },
+    "cohumulone": {
+     "min": 31,
+     "max": 37
+    },
+    "totalOil": {
+     "min": 3,
+     "max": 4
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 15,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 11
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 7
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 1
+    },
+    "polyphenols": {
+     "min": 5.3,
+     "max": 6.3
+    }
+   },
+   "STYRIAN EAGLE": {
+    "page": 182,
+    "alpha": {
+     "min": 12.5,
+     "max": 17.5
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.9
+    },
+    "myrcene": {
+     "min": 52,
+     "max": 60
+    },
+    "humulene": {
+     "min": 0.9,
+     "max": 2.1
+    },
+    "caryophyllene": {
+     "min": 4.2,
+     "max": 7
+    },
+    "farnesene": {
+     "min": 6.5,
+     "max": 9.5
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.5
+    },
+    "polyphenols": {
+     "min": 3.6,
+     "max": 4.6
+    }
+   },
+   "STYRIAN EUREKA": {
+    "page": 183,
+    "alpha": {
+     "min": 11,
+     "max": 17
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 4
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 17,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 7
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 0.4
+    },
+    "linalool": {
+     "min": 0.7,
+     "max": 0.9
+    },
+    "polyphenols": {
+     "min": 3.5,
+     "max": 4.5
+    }
+   },
+   "STYRIAN GOLD": {
+    "page": 184,
+    "alpha": {
+     "min": 3.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 5.9
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 2.3
+    },
+    "myrcene": {
+     "min": 38,
+     "max": 47
+    },
+    "humulene": {
+     "min": 19,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 10
+    },
+    "linalool": {
+     "min": 1.3,
+     "max": 2.3
+    }
+   },
+   "STYRIAN SAVINJSKI GOLDING": {
+    "page": 185,
+    "alpha": {
+     "min": 2.8,
+     "max": 6.1
+    },
+    "beta": {
+     "min": 1.8,
+     "max": 4.1
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 0.3,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 38
+    },
+    "humulene": {
+     "min": 29,
+     "max": 38
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 8
+    },
+    "linalool": {
+     "min": 0.1,
+     "max": 0.2
+    }
+   },
+   "STYRIAN WOLF": {
+    "page": 186,
+    "alpha": {
+     "min": 13.5,
+     "max": 18.5
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 3,
+     "max": 4.5
+    },
+    "myrcene": {
+     "min": 60,
+     "max": 70
+    },
+    "humulene": {
+     "min": 5,
+     "max": 9
+    },
+    "caryophyllene": {
+     "min": 2,
+     "max": 3
+    },
+    "farnesene": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "linalool": {
+     "min": 0.8,
+     "max": 1.3
+    },
+    "polyphenols": {
+     "min": 4.7,
+     "max": 5.7
+    }
+   },
+   "SULTANA™": {
+    "page": 187,
+    "alpha": {
+     "min": 13,
+     "max": 15
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 4
+    },
+    "linalool": {
+     "min": 0.6,
+     "max": 1
+    },
+    "polyphenols": {
+     "min": 2.5,
+     "max": 3
+    }
+   },
+   "SUMMIT®": {
+    "page": 188,
+    "alpha": {
+     "min": 16,
+     "max": 19
+    },
+    "beta": {
+     "min": 3,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 50
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "SUPER GALENA™": {
+    "page": 189,
+    "alpha": {
+     "min": 13,
+     "max": 16
+    },
+    "beta": {
+     "min": 8,
+     "max": 10
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 2.5
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0.3,
+     "max": 0.6
+    }
+   },
+   "SUPER PRIDE": {
+    "page": 190,
+    "alpha": {
+     "min": 12.3,
+     "max": 16.9
+    },
+    "beta": {
+     "min": 5.2,
+     "max": 10.7
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 2.7
+    },
+    "myrcene": {
+     "min": 17,
+     "max": 44
+    },
+    "humulene": {
+     "min": 1,
+     "max": 2
+    },
+    "caryophyllene": {
+     "min": 3.4,
+     "max": 9.8
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 0.1
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.7
+    }
+   },
+   "SYBILLA": {
+    "page": 191,
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "value": 3
+    },
+    "cohumulone": {
+     "value": 28.6
+    },
+    "totalOil": {
+     "value": 2
+    },
+    "myrcene": {
+     "value": 50.9
+    },
+    "humulene": {
+     "value": 17.4
+    },
+    "caryophyllene": {
+     "value": 8.4
+    }
+   },
+   "TAHOMA": {
+    "page": 192,
+    "alpha": {
+     "min": 7.2,
+     "max": 8.2
+    },
+    "beta": {
+     "min": 8.5,
+     "max": 9.5
+    },
+    "cohumulone": {
+     "min": 15,
+     "max": 17
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 67,
+     "max": 72
+    },
+    "humulene": {
+     "min": 9,
+     "max": 11
+    },
+    "caryophyllene": {
+     "min": 2.9,
+     "max": 3.5
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "TAIHEKE®": {
+    "page": 193,
+    "alpha": {
+     "min": 6,
+     "max": 8
+    },
+    "beta": {
+     "min": 5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "value": 37
+    },
+    "totalOil": {
+     "value": 1.1
+    },
+    "myrcene": {
+     "value": 53.6
+    },
+    "humulene": {
+     "value": 14.5
+    },
+    "caryophyllene": {
+     "value": 5.4
+    },
+    "farnesene": {
+     "value": 6
+    }
+   },
+   "TALUS®": {
+    "page": 194,
+    "alpha": {
+     "min": 8.1,
+     "max": 9.5
+    },
+    "beta": {
+     "min": 8.3,
+     "max": 10.2
+    },
+    "cohumulone": {
+     "min": 34,
+     "max": 39
+    },
+    "totalOil": {
+     "min": 2,
+     "max": 2.7
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 16,
+     "max": 21
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "TETTNANG TETTNANGER": {
+    "page": 195,
+    "alpha": {
+     "min": 2.5,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 0.9
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 22,
+     "max": 32
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 11
+    },
+    "farnesene": {
+     "min": 16,
+     "max": 24
+    },
+    "linalool": {
+     "min": 0.4,
+     "max": 0.9
+    },
+    "polyphenols": {
+     "min": 5,
+     "max": 6
+    }
+   },
+   "TOMAHAWK®": {
+    "page": 196,
+    "alpha": {
+     "min": 15,
+     "max": 17
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 12,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "TOPAZ™": {
+    "page": 197,
+    "alpha": {
+     "min": 16.2,
+     "max": 20.1
+    },
+    "beta": {
+     "min": 4.9,
+     "max": 6.7
+    },
+    "cohumulone": {
+     "min": 47,
+     "max": 53
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 18,
+     "max": 53
+    },
+    "humulene": {
+     "min": 8.9,
+     "max": 16.6
+    },
+    "caryophyllene": {
+     "min": 6.7,
+     "max": 12.5
+    },
+    "farnesene": {
+     "min": 0,
+     "max": 0.9
+    },
+    "linalool": {
+     "min": 0.5,
+     "max": 0.9
+    }
+   },
+   "TRADITION": {
+    "page": 198,
+    "alpha": {
+     "min": 4,
+     "max": 7
+    },
+    "beta": {
+     "min": 3,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 17,
+     "max": 32
+    },
+    "humulene": {
+     "min": 35,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    },
+    "linalool": {
+     "min": 0.7,
+     "max": 1.2
+    },
+    "polyphenols": {
+     "min": 4,
+     "max": 5
+    }
+   },
+   "TRIPLE PEARL": {
+    "page": 199,
+    "alpha": {
+     "min": 10.3,
+     "max": 11.2
+    },
+    "beta": {
+     "min": 3.3,
+     "max": 4.2
+    },
+    "cohumulone": {
+     "min": 39,
+     "max": 55
+    },
+    "totalOil": {
+     "min": 1.1,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 39,
+     "max": 55
+    },
+    "humulene": {
+     "min": 7,
+     "max": 11
+    },
+    "caryophyllene": {
+     "min": 3,
+     "max": 5
+    }
+   },
+   "TRISKEL": {
+    "page": 200,
+    "alpha": {
+     "min": 3,
+     "max": 5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 60
+    },
+    "humulene": {
+     "min": 13,
+     "max": 16
+    }
+   },
+   "TRIUMPH": {
+    "page": 201,
+    "alpha": {
+     "min": 10.6,
+     "max": 11.4
+    },
+    "beta": {
+     "min": 3.34,
+     "max": 3.95
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1.07,
+     "max": 1.15
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 28,
+     "max": 33.6
+    },
+    "caryophyllene": {
+     "min": 8.6,
+     "max": 9.5
+    },
+    "linalool": {
+     "min": 1,
+     "atLeast": true
+    }
+   },
+   "ULTRA": {
+    "page": 202,
+    "alpha": {
+     "min": 3,
+     "max": 5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.5
+    },
+    "myrcene": {
+     "value": 30
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 14
+    }
+   },
+   "VIC SECRET™": {
+    "page": 203,
+    "alpha": {
+     "min": 15.1,
+     "max": 21.8
+    },
+    "beta": {
+     "min": 6.4,
+     "max": 8.1
+    },
+    "cohumulone": {
+     "min": 51,
+     "max": 56
+    },
+    "totalOil": {
+     "min": 2.1,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 31,
+     "max": 46
+    },
+    "humulene": {
+     "min": 9.4,
+     "max": 12.2
+    },
+    "caryophyllene": {
+     "min": 9.8,
+     "max": 10.7
+    },
+    "farnesene": {
+     "value": 0
+    },
+    "linalool": {
+     "value": 0.7
+    }
+   },
+   "WAI-ITI™": {
+    "page": 204,
+    "alpha": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "value": 1.6
+    },
+    "myrcene": {
+     "value": 30
+    },
+    "humulene": {
+     "value": 28
+    },
+    "caryophyllene": {
+     "value": 9
+    },
+    "farnesene": {
+     "value": 13
+    }
+   },
+   "WAKATU™": {
+    "page": 205,
+    "alpha": {
+     "min": 6.5,
+     "max": 8.5
+    },
+    "beta": {
+     "value": 8.5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 30
+    },
+    "totalOil": {
+     "value": 1
+    },
+    "myrcene": {
+     "value": 35.5
+    },
+    "humulene": {
+     "value": 16.8
+    },
+    "caryophyllene": {
+     "value": 8.2
+    },
+    "farnesene": {
+     "value": 6.7
+    }
+   },
+   "WARRIOR®": {
+    "page": 206,
+    "alpha": {
+     "min": 15.5,
+     "max": 18
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 12,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 1
+    },
+    "linalool": {
+     "min": 0.2,
+     "max": 0.5
+    }
+   },
+   "WHITBREAD GOLDING VARIETY": {
+    "page": 207,
+    "alpha": {
+     "min": 5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "cohumulone": {
+     "value": 37
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 24,
+     "max": 27
+    },
+    "humulene": {
+     "min": 38,
+     "max": 42
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 2
+    }
+   },
+   "WILLAMETTE": {
+    "page": 208,
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 20,
+     "max": 27
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 6
+    }
+   },
+   "WYE CHALLENGER": {
+    "page": 209,
+    "alpha": {
+     "min": 6.5,
+     "max": 9
+    },
+    "beta": {
+     "min": 3.2,
+     "max": 4.2
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "value": 30
+    },
+    "humulene": {
+     "value": 25
+    },
+    "farnesene": {
+     "value": 1
+    }
+   },
+   "WYE TARGET": {
+    "page": 210,
+    "alpha": {
+     "min": 8.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.7
+    },
+    "cohumulone": {
+     "value": 37
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.8
+    },
+    "myrcene": {
+     "value": 45
+    },
+    "humulene": {
+     "value": 17
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "YAKIMA GOLD": {
+    "page": 211,
+    "alpha": {
+     "min": 8.8,
+     "max": 10.5
+    },
+    "beta": {
+     "min": 4.3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1.9,
+     "max": 2.3
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 50
+    },
+    "humulene": {
+     "min": 21,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 9,
+     "max": 10
+    }
+   },
+   "ZAPPA™": {
+    "page": 212,
+    "alpha": {
+     "min": 6,
+     "max": 8
+    },
+    "beta": {
+     "min": 8,
+     "max": 9
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.5
+    },
+    "myrcene": {
+     "value": 64.4
+    },
+    "humulene": {
+     "value": 4.6
+    },
+    "caryophyllene": {
+     "value": 8.6
+    },
+    "linalool": {
+     "value": 0.8
+    }
+   },
+   "ZEUS": {
+    "page": 213,
+    "alpha": {
+     "min": 15,
+     "max": 17
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 12,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   }
+  },
+  "rahrbsg-variety-sheets": {
+   "Amarillo.pdf": {
+    "variety": "Amarillo",
+    "printedTitle": "AMARILLO®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Amarillo.pdf",
+    "alpha": {
+     "min": 8,
+     "max": 11
+    },
+    "beta": {
+     "min": 6,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 19,
+     "max": 24
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 9
+    }
+   },
+   "2019-Ariana.pdf": {
+    "variety": "Ariana",
+    "printedTitle": "ARIANA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/2019-Ariana.pdf",
+    "alpha": {
+     "min": 10,
+     "max": 13
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 42
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.4
+    },
+    "myrcene": {
+     "value": 58
+    }
+   },
+   "Australian-Galaxy.pdf": {
+    "variety": "Australian Galaxy",
+    "printedTitle": "AUSTRALIAN GALAXY™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Australian-Galaxy.pdf",
+    "alpha": {
+     "min": 13.5,
+     "max": 15
+    },
+    "beta": {
+     "min": 5.8,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 2.4,
+     "max": 4
+    }
+   },
+   "Australian-Vic-Secret.pdf": {
+    "variety": "Australian Vic Secret",
+    "printedTitle": "AUSTRALIAN VIC SECRET™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Australian-Vic-Secret.pdf",
+    "alpha": {
+     "min": 14,
+     "max": 17
+    },
+    "beta": {
+     "min": 6.1,
+     "max": 7.8
+    },
+    "cohumulone": {
+     "min": 51,
+     "max": 56
+    },
+    "totalOil": {
+     "min": 2.2,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 45
+    },
+    "humulene": {
+     "min": 10,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Azacca.pdf": {
+    "variety": "Azacca",
+    "printedTitle": "AZACCA®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Azacca.pdf",
+    "alpha": {
+     "min": 14,
+     "max": 16
+    },
+    "beta": {
+     "min": 4,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 38,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 14,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "2019-Callista.pdf": {
+    "variety": "Callista",
+    "printedTitle": "CALLISTA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/2019-Callista.pdf",
+    "alpha": {
+     "min": 2,
+     "max": 5
+    },
+    "beta": {
+     "min": 5,
+     "max": 10
+    },
+    "cohumulone": {
+     "min": 15,
+     "max": 21
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.5
+    },
+    "myrcene": {
+     "value": 63.5
+    }
+   },
+   "Cascade.pdf": {
+    "variety": "Cascade",
+    "printedTitle": "CASCADE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cascade.pdf",
+    "alpha": {
+     "min": 4.5,
+     "max": 7
+    },
+    "beta": {
+     "min": 4.8,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 60
+    },
+    "humulene": {
+     "min": 14,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 6,
+     "max": 9
+    }
+   },
+   "Cashmere.pdf": {
+    "variety": "Cashmere",
+    "printedTitle": "CASHMERE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cashmere.pdf",
+    "alpha": {
+     "min": 7.7,
+     "max": 9.1
+    },
+    "beta": {
+     "min": 3.3,
+     "max": 7.1
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 39,
+     "max": 42
+    },
+    "humulene": {
+     "min": 26,
+     "max": 29
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 13
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Centennial.pdf": {
+    "variety": "Centennial",
+    "printedTitle": "CENTENNIAL",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Centennial.pdf",
+    "alpha": {
+     "min": 9.5,
+     "max": 11.5
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.3
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 65
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 7
+    }
+   },
+   "Challenger-US.pdf": {
+    "variety": "Challenger US",
+    "printedTitle": "CHALLENGER",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Challenger-US.pdf",
+    "alpha": {
+     "min": 6.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 42
+    },
+    "humulene": {
+     "min": 23,
+     "max": 27
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    }
+   },
+   "Chinook.pdf": {
+    "variety": "Chinook",
+    "printedTitle": "CHINOOK",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Chinook.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 14
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.7,
+     "max": 2.7
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 30
+    },
+    "humulene": {
+     "min": 18,
+     "max": 24
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 11
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Citra.pdf": {
+    "variety": "Citra",
+    "printedTitle": "CITRA®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Citra.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 13
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 2.2,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 60,
+     "max": 70
+    },
+    "humulene": {
+     "min": 7,
+     "max": 12
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    }
+   },
+   "Cluster.pdf": {
+    "variety": "Cluster",
+    "printedTitle": "CLUSTER",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Cluster.pdf",
+    "alpha": {
+     "min": 5.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 43
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 38,
+     "max": 46
+    },
+    "humulene": {
+     "min": 15,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 10
+    }
+   },
+   "Comet.pdf": {
+    "variety": "Comet",
+    "printedTitle": "COMET",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Comet.pdf",
+    "alpha": {
+     "min": 9,
+     "max": 12
+    },
+    "beta": {
+     "min": 3,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 40,
+     "max": 45
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 1,
+     "max": 2
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    }
+   },
+   "Crystal.pdf": {
+    "variety": "Crystal",
+    "printedTitle": "CRYSTAL",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Crystal.pdf",
+    "alpha": {
+     "min": 3.5,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 2.1
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 55
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    }
+   },
+   "CTZ.pdf": {
+    "variety": "CTZ",
+    "printedTitle": "CTZ",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/CTZ.pdf",
+    "alpha": {
+     "min": 14.5,
+     "max": 16.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 2,
+     "max": 3
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 8,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    }
+   },
+   "Czech-Kazbek.pdf": {
+    "variety": "Czech Kazbek",
+    "printedTitle": "CZECH KAZBEK",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Czech-Kazbek.pdf",
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 20,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Dr.-Rudi.pdf": {
+    "variety": "Dr. Rudi",
+    "printedTitle": "DR. RUDI",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Dr.-Rudi.pdf",
+    "alpha": {
+     "min": 10,
+     "max": 12
+    },
+    "beta": {
+     "min": 7,
+     "max": 8.5
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 39
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 35
+    },
+    "humulene": {
+     "min": 30,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Ekuanot.pdf": {
+    "variety": "Ekuanot",
+    "printedTitle": "EKUANOT®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Ekuanot.pdf",
+    "alpha": {
+     "min": 14.5,
+     "max": 15.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 32,
+     "max": 38
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 4.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "value": 0.5
+    }
+   },
+   "El-Dorado.pdf": {
+    "variety": "El Dorado",
+    "printedTitle": "EL DORADO®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/El-Dorado.pdf",
+    "alpha": {
+     "min": 14,
+     "max": 16
+    },
+    "beta": {
+     "min": 7,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 31
+    },
+    "totalOil": {
+     "min": 2.5,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 60
+    },
+    "humulene": {
+     "min": 10,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    }
+   },
+   "Galena.pdf": {
+    "variety": "Galena",
+    "printedTitle": "GALENA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Galena.pdf",
+    "alpha": {
+     "min": 11.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 7.2,
+     "max": 8.7
+    },
+    "cohumulone": {
+     "min": 36,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.3
+    }
+   },
+   "12.22.20-Green-Bullet-v1.1.pdf": {
+    "variety": "Green Bullet",
+    "printedTitle": "GREEN BULLET",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/12.22.20-Green-Bullet-v1.1.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 14
+    },
+    "beta": {
+     "min": 6.5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 38,
+     "max": 43
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 40
+    },
+    "humulene": {
+     "min": 26,
+     "max": 32
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Hallertau-Blanc.pdf": {
+    "variety": "Hallertau Blanc",
+    "printedTitle": "HALLERTAU BLANC",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Blanc.pdf",
+    "alpha": {
+     "min": 9,
+     "max": 11
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 75
+    },
+    "humulene": {
+     "min": 1,
+     "max": 3
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 2
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Hallertau-Magnum.pdf": {
+    "variety": "Hallertau Magnum",
+    "printedTitle": "HALLERTAU MAGNUM",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Magnum.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 16
+    },
+    "beta": {
+     "min": 5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.6
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 45
+    },
+    "humulene": {
+     "min": 30,
+     "max": 45
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Hallertau-Mittelfruh.pdf": {
+    "variety": "Hallertau Mittelfruh",
+    "printedTitle": "HALLERTAU MITTELFRÜH",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Mittelfruh.pdf",
+    "alpha": {
+     "min": 3,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 18,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 12,
+     "max": 18
+    },
+    "humulene": {
+     "min": 50,
+     "max": 60
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 16
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Hallertau-Tradition.pdf": {
+    "variety": "Hallertau Tradition",
+    "printedTitle": "HALLERTAU TRADITION",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Tradition.pdf",
+    "alpha": {
+     "min": 4,
+     "max": 7
+    },
+    "beta": {
+     "min": 3,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 16,
+     "max": 32
+    },
+    "humulene": {
+     "min": 35,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Hersbrucker.pdf": {
+    "variety": "Hersbrucker",
+    "printedTitle": "HERSBRUCKER",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hersbrucker.pdf",
+    "alpha": {
+     "min": 1.5,
+     "max": 4
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 17,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 15,
+     "max": 30
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Huell-Melon.pdf": {
+    "variety": "Huell Melon",
+    "printedTitle": "HUELL MELON",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Huell-Melon.pdf",
+    "alpha": {
+     "min": 7,
+     "max": 8
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Idaho-7.pdf": {
+    "variety": "Idaho 7",
+    "printedTitle": "CITRUS",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Idaho-7.pdf",
+    "alpha": {
+     "min": 11.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 7.2,
+     "max": 8.7
+    },
+    "cohumulone": {
+     "min": 36,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 10
+    }
+   },
+   "Jarrylo.pdf": {
+    "variety": "Jarrylo",
+    "printedTitle": "JARRYLO®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Jarrylo.pdf",
+    "alpha": {
+     "min": 15,
+     "max": 17
+    },
+    "beta": {
+     "min": 6,
+     "max": 7.5
+    },
+    "cohumulone": {
+     "min": 34,
+     "max": 37
+    },
+    "totalOil": {
+     "min": 3.6,
+     "max": 4.3
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 55
+    },
+    "humulene": {
+     "min": 15,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    }
+   },
+   "Kohatu.pdf": {
+    "variety": "Kohatu",
+    "printedTitle": "KOHATU®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Kohatu.pdf",
+    "alpha": {
+     "min": 6,
+     "max": 7
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 14
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Liberty.pdf": {
+    "variety": "Liberty",
+    "printedTitle": "LIBERTY",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Liberty.pdf",
+    "alpha": {
+     "min": 3,
+     "max": 5
+    },
+    "beta": {
+     "min": 3,
+     "max": 4
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 15,
+     "max": 25
+    },
+    "humulene": {
+     "min": 35,
+     "max": 45
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    }
+   },
+   "Mandarina-Bavaria.pdf": {
+    "variety": "Mandarina Bavaria",
+    "printedTitle": "MANDARINA BAVARIA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Mandarina-Bavaria.pdf",
+    "alpha": {
+     "min": 7,
+     "max": 10
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 31,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 65,
+     "max": 75
+    },
+    "humulene": {
+     "min": 5,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 5
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Mosaic.pdf": {
+    "variety": "Mosaic",
+    "printedTitle": "MOSAIC®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Mosaic.pdf",
+    "alpha": {
+     "min": 11.5,
+     "max": 13.5
+    },
+    "beta": {
+     "min": 3.2,
+     "max": 3.9
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 10,
+     "max": 15
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 9
+    }
+   },
+   "Motueka.pdf": {
+    "variety": "Motueka",
+    "printedTitle": "MOTUEKA™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Motueka.pdf",
+    "alpha": {
+     "min": 6.5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 50
+    },
+    "humulene": {
+     "min": 2,
+     "max": 6
+    },
+    "caryophyllene": {
+     "min": 1,
+     "max": 2
+    },
+    "farnesene": {
+     "min": 10,
+     "max": 14
+    }
+   },
+   "Mount-Hood.pdf": {
+    "variety": "Mount Hood",
+    "printedTitle": "MOUNT HOOD",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Mount-Hood.pdf",
+    "alpha": {
+     "min": 4,
+     "max": 7
+    },
+    "beta": {
+     "min": 5,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 21,
+     "max": 23
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 3.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 35
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    }
+   },
+   "Moutere.pdf": {
+    "variety": "Moutere",
+    "printedTitle": "MOUTERE™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Moutere.pdf",
+    "alpha": {
+     "min": 17.5,
+     "max": 19.5
+    },
+    "beta": {
+     "min": 8,
+     "max": 10
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 22,
+     "max": 23
+    },
+    "humulene": {
+     "min": 15,
+     "max": 16
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 6
+    },
+    "farnesene": {
+     "min": 0.5,
+     "max": 1
+    }
+   },
+   "Nelson-Sauvin.pdf": {
+    "variety": "Nelson Sauvin",
+    "printedTitle": "NELSON SAUVIN™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Nelson-Sauvin.pdf",
+    "alpha": {
+     "min": 12,
+     "max": 13
+    },
+    "beta": {
+     "min": 6,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 25
+    },
+    "humulene": {
+     "min": 30,
+     "max": 40
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Northern-Brewer.pdf": {
+    "variety": "Northern Brewer",
+    "printedTitle": "NORTHERN BREWER",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Northern-Brewer.pdf",
+    "alpha": {
+     "min": 6,
+     "max": 10
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 1.6,
+     "max": 2.1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 45
+    },
+    "humulene": {
+     "min": 35,
+     "max": 50
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 20
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Nugget.pdf": {
+    "variety": "Nugget",
+    "printedTitle": "NUGGET",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Nugget.pdf",
+    "alpha": {
+     "min": 11.5,
+     "max": 14
+    },
+    "beta": {
+     "min": 3,
+     "max": 5.8
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 16,
+     "max": 24
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    }
+   },
+   "12.22.20-Pacific-Gem-v1.1.pdf": {
+    "variety": "Pacific Gem",
+    "printedTitle": "PACIFIC GEM",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/12.22.20-Pacific-Gem-v1.1.pdf",
+    "alpha": {
+     "min": 13,
+     "max": 15
+    },
+    "beta": {
+     "min": 7,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 37,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.3
+    },
+    "myrcene": {
+     "min": 28,
+     "max": 35
+    },
+    "humulene": {
+     "min": 25,
+     "max": 33
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Pacific-Jade.pdf": {
+    "variety": "Pacific Jade",
+    "printedTitle": "PACIFIC JADE™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2022/01/Pacific-Jade.pdf",
+    "alpha": {
+     "min": 12,
+     "max": 14
+    },
+    "beta": {
+     "min": 7,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 1.1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 35
+    },
+    "humulene": {
+     "min": 30,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Pacifica.pdf": {
+    "variety": "Pacifica",
+    "printedTitle": "PACIFICA™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Pacifica.pdf",
+    "alpha": {
+     "min": 5,
+     "max": 6
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 10,
+     "max": 15
+    },
+    "humulene": {
+     "min": 45,
+     "max": 55
+    },
+    "caryophyllene": {
+     "min": 14,
+     "max": 18
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Perle.pdf": {
+    "variety": "Perle",
+    "printedTitle": "PERLE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Perle.pdf",
+    "alpha": {
+     "min": 4,
+     "max": 8
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 35,
+     "max": 55
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 20
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Polaris.pdf": {
+    "variety": "Polaris",
+    "printedTitle": "POLARIS",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Polaris.pdf",
+    "alpha": {
+     "min": 18,
+     "max": 24
+    },
+    "beta": {
+     "min": 5,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 4.4,
+     "max": 4.8
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 20,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 12
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Rakau.pdf": {
+    "variety": "Rakau",
+    "printedTitle": "RAKAU™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Rakau.pdf",
+    "alpha": {
+     "min": 9,
+     "max": 11
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.2
+    },
+    "myrcene": {
+     "min": 50,
+     "max": 60
+    },
+    "humulene": {
+     "min": 10,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 3,
+     "max": 8
+    },
+    "farnesene": {
+     "min": 2,
+     "max": 6
+    }
+   },
+   "6.9.21-Saaz.pdf": {
+    "variety": "Saaz",
+    "printedTitle": "CZECH SAAZ",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/6.9.21-Saaz.pdf",
+    "alpha": {
+     "min": 2,
+     "max": 5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 8
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 15,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 14,
+     "max": 20
+    }
+   },
+   "Saphir.pdf": {
+    "variety": "Saphir",
+    "printedTitle": "SAPHIR",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Saphir.pdf",
+    "alpha": {
+     "min": 2,
+     "max": 4.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 12,
+     "max": 17
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 40
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 10,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Sorachi-Ace.pdf": {
+    "variety": "Sorachi Ace",
+    "printedTitle": "SORACHI ACE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Sorachi-Ace.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 12.5
+    },
+    "beta": {
+     "min": 6.5,
+     "max": 7
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 2,
+     "max": 2.8
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 20,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 2,
+     "max": 5
+    }
+   },
+   "12.22.20-Southern-Cross-v1.1.pdf": {
+    "variety": "Southern Cross",
+    "printedTitle": "SOUTHERN CROSS",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/12.22.20-Southern-Cross-v1.1.pdf",
+    "alpha": {
+     "min": 11,
+     "max": 14
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 1.8
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 35
+    },
+    "humulene": {
+     "min": 15,
+     "max": 25
+    },
+    "caryophyllene": {
+     "min": 4,
+     "max": 11
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 12
+    }
+   },
+   "Sterling.pdf": {
+    "variety": "Sterling",
+    "printedTitle": "STERLING",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Sterling.pdf",
+    "alpha": {
+     "min": 6,
+     "max": 9
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.9
+    },
+    "myrcene": {
+     "min": 35,
+     "max": 45
+    },
+    "humulene": {
+     "min": 16,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 5,
+     "max": 8
+    }
+   },
+   "Styrian-Goldings-Celia.pdf": {
+    "variety": "Styrian Goldings Celia",
+    "printedTitle": "STYRIAN GOLDINGS CELEIA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Styrian-Goldings-Celia.pdf",
+    "alpha": {
+     "min": 3,
+     "max": 6
+    },
+    "beta": {
+     "min": 2,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 29
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 3.6
+    },
+    "myrcene": {
+     "min": 26,
+     "max": 40
+    },
+    "humulene": {
+     "min": 16,
+     "max": 24
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 3,
+     "max": 7
+    }
+   },
+   "Summit.pdf": {
+    "variety": "Summit",
+    "printedTitle": "SUMMIT™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Summit.pdf",
+    "alpha": {
+     "min": 15,
+     "max": 18
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 33
+    },
+    "totalOil": {
+     "min": 1.5,
+     "max": 2.5
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 18,
+     "max": 22
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 16
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "Tettnang.pdf": {
+    "variety": "Tettnang",
+    "printedTitle": "TETTNANG",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Tettnang.pdf",
+    "alpha": {
+     "min": 2.5,
+     "max": 5.5
+    },
+    "beta": {
+     "min": 3,
+     "max": 5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 0.9
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 35
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 12
+    },
+    "farnesene": {
+     "min": 15,
+     "max": 25
+    }
+   },
+   "UK-Boadicea.pdf": {
+    "variety": "UK Boadicea",
+    "printedTitle": "BOADICEA",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Boadicea.pdf",
+    "alpha": {
+     "min": 8,
+     "max": 10
+    },
+    "beta": {
+     "min": 3.5,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 2
+    },
+    "myrcene": {
+     "min": 30,
+     "max": 40
+    },
+    "humulene": {
+     "min": 18,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 15,
+     "max": 20
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 5
+    }
+   },
+   "UK-Challenger.pdf": {
+    "variety": "UK Challenger",
+    "printedTitle": "CHALLENGER",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Challenger.pdf",
+    "alpha": {
+     "min": 6.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 4,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.7
+    }
+   },
+   "UK-East-Kent-Goldings.pdf": {
+    "variety": "UK East Kent Goldings",
+    "printedTitle": "EAST KENT GOLDINGS",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-East-Kent-Goldings.pdf",
+    "alpha": {
+     "min": 4,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 1.9,
+     "max": 2.8
+    },
+    "cohumulone": {
+     "min": 20,
+     "max": 25
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 27,
+     "max": 33
+    },
+    "humulene": {
+     "min": 38,
+     "max": 44
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 16
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "UK-Fuggle.pdf": {
+    "variety": "UK Fuggle",
+    "printedTitle": "FUGGLE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Fuggle.pdf",
+    "alpha": {
+     "min": 3,
+     "max": 5.6
+    },
+    "beta": {
+     "min": 2,
+     "max": 3
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.7,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 30
+    },
+    "humulene": {
+     "min": 33,
+     "max": 38
+    },
+    "caryophyllene": {
+     "min": 9,
+     "max": 13
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 7
+    }
+   },
+   "UK-Progress.pdf": {
+    "variety": "UK Progress",
+    "printedTitle": "PROGRESS",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Progress.pdf",
+    "alpha": {
+     "min": 5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 1.8,
+     "max": 2.7
+    },
+    "cohumulone": {
+     "min": 25,
+     "max": 27
+    },
+    "totalOil": {
+     "min": 0.5,
+     "max": 0.8
+    },
+    "myrcene": {
+     "min": 25,
+     "max": 30
+    },
+    "humulene": {
+     "min": 40,
+     "max": 47
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 15
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "UK-Sovereign.pdf": {
+    "variety": "UK Sovereign",
+    "printedTitle": "SOVEREIGN",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Sovereign.pdf",
+    "alpha": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "beta": {
+     "min": 2.1,
+     "max": 3.1
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 30
+    },
+    "humulene": {
+     "min": 20,
+     "max": 30
+    },
+    "caryophyllene": {
+     "min": 7,
+     "max": 9
+    },
+    "farnesene": {
+     "min": 2,
+     "max": 4
+    }
+   },
+   "UK-Target.pdf": {
+    "variety": "UK Target",
+    "printedTitle": "TARGET",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Target.pdf",
+    "alpha": {
+     "min": 9.5,
+     "max": 12.5
+    },
+    "beta": {
+     "min": 4.3,
+     "max": 5.7
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.4
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 55
+    },
+    "humulene": {
+     "min": 17,
+     "max": 23
+    },
+    "caryophyllene": {
+     "min": 8,
+     "max": 10
+    },
+    "farnesene": {
+     "max": 1,
+     "atMost": true
+    }
+   },
+   "UK-WGV.pdf": {
+    "variety": "UK WGV",
+    "printedTitle": "WGV",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-WGV.pdf",
+    "alpha": {
+     "min": 5,
+     "max": 7.5
+    },
+    "beta": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 39
+    },
+    "totalOil": {
+     "min": 0.8,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 20,
+     "max": 30
+    },
+    "humulene": {
+     "min": 35,
+     "max": 42
+    },
+    "caryophyllene": {
+     "min": 11,
+     "max": 15
+    },
+    "farnesene": {
+     "min": 1,
+     "max": 2
+    }
+   },
+   "Wai-iti.pdf": {
+    "variety": "Wai iti",
+    "printedTitle": "WAI-ITI™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Wai-iti.pdf",
+    "alpha": {
+     "min": 2.5,
+     "max": 3.5
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 5.5
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.4,
+     "max": 1.8
+    },
+    "myrcene": {
+     "value": 3
+    },
+    "humulene": {
+     "value": 28
+    },
+    "caryophyllene": {
+     "value": 9
+    },
+    "farnesene": {
+     "value": 13
+    }
+   },
+   "Waimea.pdf": {
+    "variety": "Waimea",
+    "printedTitle": "WAIMEA™",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Waimea.pdf",
+    "alpha": {
+     "min": 16,
+     "max": 19
+    },
+    "beta": {
+     "min": 7,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 24
+    },
+    "totalOil": {
+     "min": 1.8,
+     "max": 2.3
+    },
+    "myrcene": {
+     "min": 55,
+     "max": 65
+    },
+    "humulene": {
+     "min": 8,
+     "max": 12
+    },
+    "caryophyllene": {
+     "min": 2,
+     "max": 5
+    },
+    "farnesene": {
+     "min": 3,
+     "max": 7
+    }
+   },
+   "12.22.20-Wakatu-v1.1.pdf": {
+    "variety": "Wakatu",
+    "printedTitle": "WAKATU",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/12.22.20-Wakatu-v1.1.pdf",
+    "alpha": {
+     "min": 6.5,
+     "max": 8.5
+    },
+    "beta": {
+     "min": 8,
+     "max": 8.5
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 30
+    },
+    "totalOil": {
+     "min": 0.9,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 33,
+     "max": 37
+    },
+    "humulene": {
+     "min": 15,
+     "max": 20
+    },
+    "caryophyllene": {
+     "min": 6,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 9
+    }
+   },
+   "Warrior.pdf": {
+    "variety": "Warrior",
+    "printedTitle": "WARRIOR®",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Warrior.pdf",
+    "alpha": {
+     "min": 14.5,
+     "max": 16.5
+    },
+    "beta": {
+     "min": 4.3,
+     "max": 5.3
+    },
+    "cohumulone": {
+     "min": 22,
+     "max": 26
+    },
+    "totalOil": {
+     "min": 1.3,
+     "max": 1.7
+    },
+    "myrcene": {
+     "min": 40,
+     "max": 50
+    },
+    "humulene": {
+     "min": 15,
+     "max": 18
+    },
+    "caryophyllene": {
+     "min": 11,
+     "max": 14
+    }
+   },
+   "Willamette.pdf": {
+    "variety": "Willamette",
+    "printedTitle": "WILLAMETTE",
+    "url": "https://rahrbsg.ca/wp-content/uploads/2021/12/Willamette.pdf",
+    "alpha": {
+     "min": 4,
+     "max": 6
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.5
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 35
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.5
+    },
+    "myrcene": {
+     "min": 22,
+     "max": 32
+    },
+    "humulene": {
+     "min": 30,
+     "max": 35
+    },
+    "caryophyllene": {
+     "min": 12,
+     "max": 14
+    },
+    "farnesene": {
+     "min": 7,
+     "max": 10
+    }
+   }
+  },
+  "charles-faram-hop-oracle": {
+   "admiral": {
+    "url": "https://charlesfaram.com/hop-oracle/admiral/",
+    "alpha": {
+     "min": 14,
+     "max": 16
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.1
+    },
+    "cohumulone": {
+     "min": 37,
+     "max": 45
+    },
+    "myrcene": {
+     "value": 45
+    },
+    "humulene": {
+     "min": 23,
+     "max": 26
+    },
+    "farnesene": {
+     "value": 2
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 0.7-10.3ml/100g"
+    }
+   },
+   "bramling-cross": {
+    "url": "https://charlesfaram.com/hop-oracle/bramling-cross/",
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 2.3,
+     "max": 3.2
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 31
+    },
+    "humulene": {
+     "value": 25
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 0.7-10.0ml/100g",
+     "myrcene": "fraction, not a percentage: 0.36",
+     "farnesene": "unparseable: Trace%"
+    }
+   },
+   "cascade": {
+    "url": "https://charlesfaram.com/hop-oracle/cascade/",
+    "alpha": {
+     "min": 5,
+     "max": 9
+    },
+    "beta": {
+     "min": 5,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 33,
+     "max": 40
+    },
+    "totalOil": {
+     "value": 1
+    },
+    "humulene": {
+     "value": 12
+    },
+    "farnesene": {
+     "value": 6
+    },
+    "refused": {
+     "myrcene": "fraction, not a percentage: 0.53"
+    }
+   },
+   "east-kent-golding": {
+    "url": "https://charlesfaram.com/hop-oracle/east-kent-goldings/",
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 1.9,
+     "max": 3
+    },
+    "cohumulone": {
+     "min": 26,
+     "max": 32
+    },
+    "totalOil": {
+     "min": 0.4,
+     "max": 0.8
+    },
+    "humulene": {
+     "value": 36
+    },
+    "refused": {
+     "myrcene": "fraction, not a percentage: 0.25",
+     "farnesene": "unparseable: Trace%"
+    }
+   },
+   "endeavour": {
+    "url": "https://charlesfaram.com/hop-oracle/endeavour/",
+    "alpha": {
+     "min": 5,
+     "max": 9
+    },
+    "beta": {
+     "min": 3.8,
+     "max": 5.3
+    },
+    "cohumulone": {
+     "min": 30,
+     "max": 34
+    },
+    "myrcene": {
+     "min": 27,
+     "max": 37
+    },
+    "humulene": {
+     "min": 3,
+     "max": 10
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 8
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 10.1-10.7ml/100g"
+    }
+   },
+   "first-gold": {
+    "url": "https://charlesfaram.com/hop-oracle/first-gold/",
+    "alpha": {
+     "min": 6,
+     "max": 9
+    },
+    "beta": {
+     "min": 3,
+     "max": 4.1
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 34
+    },
+    "myrcene": {
+     "min": 24,
+     "max": 38
+    },
+    "humulene": {
+     "min": 20,
+     "max": 24
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 0.7-10.3ml/100g",
+     "farnesene": "unparseable: 10.5-4%"
+    }
+   },
+   "fuggle": {
+    "url": "https://charlesfaram.com/hop-oracle/fuggle/",
+    "alpha": {
+     "min": 4,
+     "max": 7
+    },
+    "beta": {
+     "min": 2.2,
+     "max": 3.1
+    },
+    "cohumulone": {
+     "min": 29,
+     "max": 30
+    },
+    "myrcene": {
+     "min": 24,
+     "max": 30
+    },
+    "humulene": {
+     "min": 30,
+     "max": 38
+    },
+    "farnesene": {
+     "min": 5,
+     "max": 8
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 0.7-10.1ml/100g"
+    }
+   },
+   "harlequin": {
+    "url": "https://charlesfaram.com/hop-oracle/harlequin/",
+    "alpha": {
+     "min": 9.5,
+     "max": 12
+    },
+    "beta": {
+     "min": 7,
+     "max": 9
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 31
+    },
+    "totalOil": {
+     "min": 1,
+     "max": 1.6
+    },
+    "humulene": {
+     "value": 5
+    },
+    "farnesene": {
+     "value": 10
+    },
+    "refused": {
+     "myrcene": "fraction, not a percentage: 0.6"
+    }
+   },
+   "jester": {
+    "url": "https://charlesfaram.com/hop-oracle/jester/",
+    "alpha": {
+     "min": 7,
+     "max": 9
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 23,
+     "max": 28
+    },
+    "totalOil": {
+     "min": 0.6,
+     "max": 1.2
+    },
+    "myrcene": {
+     "min": 45,
+     "max": 50
+    },
+    "humulene": {
+     "value": 2
+    },
+    "farnesene": {
+     "min": 0.1,
+     "max": 2
+    }
+   },
+   "northdown": {
+    "url": "https://charlesfaram.com/hop-oracle/northdown/",
+    "alpha": {
+     "min": 6,
+     "max": 9
+    },
+    "beta": {
+     "min": 4.5,
+     "max": 6.5
+    },
+    "cohumulone": {
+     "min": 24,
+     "max": 29
+    },
+    "humulene": {
+     "value": 37
+    },
+    "farnesene": {
+     "value": 1
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 10.2-20.2ml/100g",
+     "myrcene": "fraction, not a percentage: 0.25"
+    }
+   },
+   "olicana-hops": {
+    "url": "https://charlesfaram.com/hop-oracle/olicana-hops/",
+    "alpha": {
+     "min": 7,
+     "max": 9
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 28,
+     "max": 32
+    },
+    "totalOil": {
+     "value": 0.5
+    },
+    "myrcene": {
+     "min": 19,
+     "max": 20
+    },
+    "humulene": {
+     "min": 8,
+     "max": 9
+    },
+    "refused": {
+     "farnesene": "unparseable: Trace%"
+    }
+   },
+   "progress": {
+    "url": "https://charlesfaram.com/hop-oracle/progress/",
+    "alpha": {
+     "min": 5,
+     "max": 8
+    },
+    "beta": {
+     "min": 2,
+     "max": 3.3
+    },
+    "cohumulone": {
+     "min": 27,
+     "max": 36
+    },
+    "myrcene": {
+     "min": 24,
+     "max": 34
+    },
+    "humulene": {
+     "min": 36,
+     "max": 47
+    },
+    "refused": {
+     "totalOil": "implausible total oil: 0.5-10.2ml/100g",
+     "farnesene": "unparseable: Trace%"
+    }
+   },
+   "target": {
+    "url": "https://charlesfaram.com/hop-oracle/target/",
+    "alpha": {
+     "min": 9,
+     "max": 12
+    },
+    "beta": {
+     "min": 4,
+     "max": 6
+    },
+    "cohumulone": {
+     "min": 35,
+     "max": 40
+    },
+    "totalOil": {
+     "min": 1.2,
+     "max": 1.8
+    },
+    "humulene": {
+     "value": 17
+    },
+    "farnesene": {
+     "value": 1
+    },
+    "refused": {
+     "myrcene": "fraction, not a percentage: 0.45"
+    }
+   }
+  },
+  "nzhops-product-pages": {
+   "nectaron": {
+    "url": "https://nzhops.co.nz/products/nectaron",
+    "alpha": {
+     "min": 10.0,
+     "max": 14.0
+    }
+   }
+  }
+ }
+}

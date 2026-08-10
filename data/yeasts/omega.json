@@ -28,7 +28,7 @@
       "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 98, "tempMinC": 20, "tempMaxC": 37,
       "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
       "description": "Clean kveik that ferments to ~98°F without off-flavors; fast turnaround, no temp control needed.",
-      "flavorNotes": "Clean, faint fruit when hot.", "sourceUrl": "https://omegayeast.com/yeast/ales/hothead-ale"
+      "flavorNotes": "Clean, faint fruit when hot.", "sourceUrl": "https://omegayeast.com/products/hothead-kveik-standard"
     },
     {
       "id": "omega-oyl-061", "productCode": "OYL-061", "name": "Voss Kveik",
@@ -38,7 +38,7 @@
       "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 95, "tempMinC": 20, "tempMaxC": 35,
       "flocculation": "high", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
       "description": "Traditional Norwegian Voss kveik; orange-citrus esters at high temps, super fast.",
-      "flavorNotes": "Orange, citrus esters.", "sourceUrl": "https://omegayeast.com/yeast/ales/voss-kveik"
+      "flavorNotes": "Orange, citrus esters.", "sourceUrl": "https://omegayeast.com/products/voss-kveik-standard"
     },
     {
       "id": "omega-oyl-071", "productCode": "OYL-071", "name": "Lutra Kveik",
@@ -48,7 +48,7 @@
       "attenuationMin": 75, "attenuationMax": 82, "tempMinF": 68, "tempMaxF": 95, "tempMinC": 20, "tempMaxC": 35,
       "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
       "description": "Ultra-clean kveik for fast lager-like beers and neutral seltzer bases.",
-      "flavorNotes": "Extremely clean.", "sourceUrl": "https://omegayeast.com/yeast/ales/lutra-kveik"
+      "flavorNotes": "Extremely clean.", "sourceUrl": "https://omegayeast.com/products/lutra-kveik-standard"
     },
     {
       "id": "omega-oyl-218", "productCode": "OYL-218", "name": "Cosmic Punch",
@@ -58,7 +58,7 @@
       "attenuationMin": 73, "attenuationMax": 80, "tempMinF": 65, "tempMaxF": 72, "tempMinC": 18, "tempMaxC": 22,
       "flocculation": "medium", "alcoholToleranceMax": 11, "cellsPerUnit": 100, "unitLabel": "pack",
       "description": "Thiolized strain that releases tropical thiols (passionfruit/guava) from hops and malt; boosts hazy IPAs.",
-      "flavorNotes": "Passionfruit, guava, tropical thiols.", "sourceUrl": "https://omegayeast.com/yeast/ales/cosmic-punch-ale-yeast"
+      "flavorNotes": "Passionfruit, guava, tropical thiols.", "sourceUrl": "https://omegayeast.com/products/cosmic-punch-next"
     },
     {
       "id": "omega-oyl-500", "productCode": "OYL-500", "name": "Saisonstein's Monster",
@@ -68,7 +68,7 @@
       "attenuationMin": 80, "attenuationMax": 88, "tempMinF": 68, "tempMaxF": 85, "tempMinC": 20, "tempMaxC": 29,
       "flocculation": "medium", "alcoholToleranceMax": 12, "cellsPerUnit": 100, "unitLabel": "pack",
       "description": "A saison hybrid that attenuates like a diastatic strain without being STA1+; reliable and dry.",
-      "flavorNotes": "Peppery, fruity, dry.", "sourceUrl": "https://omegayeast.com/yeast/ales/saisonstein-monster"
+      "flavorNotes": "Peppery, fruity, dry.", "sourceUrl": "https://omegayeast.com/products/saisonstein-standard"
     }
   ]
 }

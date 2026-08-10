@@ -11,7 +11,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.78,
+   "ppg": 4.6,
    "ppgMin": 4.14,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -19,7 +19,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 9,
-   "sugarGPer100g": 10.4,
+   "sugarGPer100g": 10.0,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -43,8 +43,16 @@
    ],
    "description": "Standard eating apple. Low tannin and moderate acid, so on its own it makes a light, simple cider that benefits from blending.",
    "usageNotes": "Pectin haze is near-certain without pectic enzyme. Supermarket juice is usually this profile.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 0
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168202",
+   "sortOrder": 0,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apples, raw, golden delicious, with skin (SR Legacy, FDC ID 168202), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA publishes apples by cultivar rather than as a dessert-apple class; Golden Delicious is one of this record's own listed aliases. FoodData Central marks this figure Analytical - measured, not estimated, from 6 samples, reported range 8.77-11.26 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apple juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.5, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-apple-bittersweet",
@@ -70,7 +78,7 @@
    "juiceBrix": 13.5,
    "juiceBrixMax": 17,
    "juiceYieldPct": 68,
-   "titratableAcidityGPerL": 2,
+   "titratableAcidityGPerL": 2.1,
    "dominantAcid": "malic",
    "phTypical": 3.8,
    "pectinLevel": "high",
@@ -87,8 +95,18 @@
    ],
    "description": "True cider apples: high tannin, low acid, largely inedible fresh. The soft-tannin backbone of West Country and Normandy cider.",
    "usageNotes": "Low acid means a blend with sharps is usually needed to get pH under 3.8. Low nitrogen — these are the varieties that keeve.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 1
+   "sortOrder": 1,
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 25 bittersweet cultivars measured across the station's run from 1905 to 1975: median 0.21% malic acid (range 0.14-0.33) and median 0.28% tannin (range 0.18-0.64). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid below 0.45% with tannin above 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider.",
+   "titratableAcidityMinGPerL": 1.4,
+   "titratableAcidityMaxGPerL": 3.3,
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar, Brix and juice yield on this record are not from it. The figures are also a class summary across many cultivars, not any one apple: a bittersweet ranges from Ashton Brown Jersey at 0.14% acid to Perthyre at 0.33, and Medaille d'Or carries three times White Jersey's tannin.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apple juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.5, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 11 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-apple-bittersharp",
@@ -113,11 +131,11 @@
    "juiceBrix": 13,
    "juiceBrixMax": 16,
    "juiceYieldPct": 68,
-   "titratableAcidityGPerL": 7.5,
+   "titratableAcidityGPerL": 6.4,
    "dominantAcid": "malic",
    "phTypical": 3.3,
    "pectinLevel": "high",
-   "tanninLevel": "medium",
+   "tanninLevel": "high",
    "fruitGroup": "pome",
    "uses": [
     "cider",
@@ -130,8 +148,18 @@
    ],
    "description": "The rare varieties carrying both acid and tannin — the ones that can make a complete single-varietal cider.",
    "usageNotes": "Kingston Black is the classic vintage-quality apple; it also ferments notoriously unreliably.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 2
+   "sortOrder": 2,
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 4 bittersharp cultivars measured across the station's run from 1905 to 1975: median 0.64% malic acid (range 0.58-1.91) and median 0.225% tannin (range 0.2-0.31). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid above 0.45% and tannin above 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider.",
+   "titratableAcidityMinGPerL": 5.8,
+   "titratableAcidityMaxGPerL": 19.1,
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar, Brix and juice yield on this record are not from it. The figures are also a class summary across many cultivars, not any one apple: a bittersweet ranges from Ashton Brown Jersey at 0.14% acid to Perthyre at 0.33, and Medaille d'Or carries three times White Jersey's tannin.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apple juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.5, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 11 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-apple-sharp",
@@ -142,7 +170,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.37,
+   "ppg": 4.09,
    "ppgMin": 3.68,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -150,13 +178,13 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.5,
+   "sugarGPer100g": 8.9,
    "sugarGPer100gMax": 13,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
    "juiceBrixMax": 15,
    "juiceYieldPct": 70,
-   "titratableAcidityGPerL": 9,
+   "titratableAcidityGPerL": 7.0,
    "dominantAcid": "malic",
    "phTypical": 3.1,
    "pectinLevel": "high",
@@ -173,8 +201,22 @@
    ],
    "description": "Cooking apples. High malic acid, negligible tannin — a blending component that props up the pH of a bittersweet-heavy blend.",
    "usageNotes": "Useful for correcting a flabby low-acid must without reaching for the acid packet.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 3
+   "sortOrder": 3,
+   "attribution": "Titratable acidity and tannin come from the Long Ashton Research Station's composite juice analyses, 6 sharp cultivars measured across the station's run from 1905 to 1975: median 0.7% malic acid (range 0.6-1.02) and median 0.11% tannin (range 0.07-0.14). Acid is converted to g/L at 1% = 10 g/L. The class itself is Barker's LARS classification of 1903 — malic acid above 0.45% with tannin below 0.2% — which is still the basis of the trade's nomenclature. Compiled by Andrew Lea, formerly of Long Ashton, from Bulmer's Pomona (1987) and Beech and Carr (1977); the acid figures are by alkali titration and the tannin by the Lowenthal permanganate method, on freshly expressed juice rather than finished cider. Sugar is not from Long Ashton and is cited separately below.",
+   "sourceUrl": "http://www.cider.org.uk/appledat.htm",
+   "sourceNote": "LARS tabulated acid and tannin, not sugar or Brix. Sugar here is CoFID's cooking apple, cited under additional sources; Brix and juice yield are still unsourced. The acid and tannin are also a class summary across six sharp cultivars rather than any one apple — Bramley's Seedling at 0.85% acid against Cox at 0.60.",
+   "titratableAcidityMinGPerL": 6.0,
+   "titratableAcidityMaxGPerL": 10.2,
+   "additionalSources": [
+    {
+     "url": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+     "supports": "Total sugars, 8.9 g per 100 g — McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-362, \"Apples, cooking, raw, flesh only, peeled\". A sharp cider apple is a culinary apple, so CoFID's cooking apple is the right class for its sugar; Long Ashton tabulated acid and tannin but not sugar, which is why this record needs both documents."
+    },
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apple juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.5, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-crabapple",
@@ -184,23 +226,23 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.6,
-   "ppgMin": 3.68,
-   "ppgMax": 6.44,
+   "ppg": 6.53,
+   "ppgMin": 2.67,
+   "ppgMax": 7.2,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 8,
-   "sugarGPer100g": 10,
-   "sugarGPer100gMax": 14,
-   "juiceBrixMin": 12,
-   "juiceBrix": 14,
-   "juiceBrixMax": 18,
+   "sugarGPer100gMin": 5.8,
+   "sugarGPer100g": 14.2,
+   "sugarGPer100gMax": 15.65,
+   "juiceBrixMin": 17.46,
+   "juiceBrix": 19.25,
+   "juiceBrixMax": 20.92,
    "juiceYieldPct": 60,
-   "titratableAcidityGPerL": 12,
+   "titratableAcidityGPerL": 11.81,
    "dominantAcid": "malic",
-   "phTypical": 3,
+   "phTypical": 3.51,
    "pectinLevel": "very high",
    "tanninLevel": "high",
    "fruitGroup": "pome",
@@ -216,8 +258,24 @@
    ],
    "description": "Wild or ornamental apple: small, fiercely acidic and astringent, and much higher in pectin than a dessert apple.",
    "usageNotes": "A little goes a long way as a tannin and acid correction. Expect a hard, slow press.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 4
+   "sortOrder": 4,
+   "attribution": "Three wild Malus species - M. pumila 'Saiwaihong', M. prunifolia and M. micromalus - measured alongside 17 cultivated apples in Li and colleagues, \"Effects of Genetic Background and Altitude on Sugars, Malic Acid and Ascorbic Acid in Fruits of Wild and Cultivated Apples (Malus sp.)\", Foods 10(12):2950, 2021 (doi 10.3390/foods10122950, CC BY 4.0), Table 2, on fresh weight without core. Fructose plus glucose plus sucrose comes to 156.5, 147.0 and 122.4 mg/g for the three, so 12.24 to 15.65 g per 100 g with a mean of 14.20; ppg is 46 x that. Sorbitol is deliberately excluded - it is another 1.2 to 1.6 g per 100 g of these fruits and Saccharomyces will not ferment it. Total acid is 5.74, 10.36 and 19.33 g/kg, malic in every case, and pH 3.98, 3.42 and 3.13. Soluble solids are 17.5 to 20.9 Brix, well above the 12 to 18 this record used to claim.",
+   "titratableAcidityMinGPerL": 5.74,
+   "titratableAcidityMaxGPerL": 19.33,
+   "phMin": 3.13,
+   "phMax": 3.98,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701241/",
+   "sourceNote": "\"Crabapple\" is not one fruit and this record should not be read as if it were. The three species above are Chinese ornamental and wild apples; Norway's national food table has a separate entry for European wild crab, Malus sylvestris, at 5.8 g per 100 g, which is where the low end of the sugar range comes from and why that end is a different document. The acid spread here - a threefold difference between the mildest and the sharpest of three wild species - is real, not measurement noise. Juice yield, pectin and tannin are not sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.matvaretabellen.no/en/crab-apple-raw/",
+     "supports": "The lower bound of the sugar range, 5.8 g per 100 g. Matvaretabellen, the Norwegian Food Composition Table (Norwegian Food Safety Authority, Directorate of Health and University of Oslo), food 06.607 \"Crab apple, raw\", Malus sylvestris (L.) Mill. var. sylvestris. This is the European wild crab rather than the Asian species the main citation measures, and the figure is the table's mono- and disaccharide value, derived from carbohydrate by difference rather than measured chromatographically."
+    },
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Crab Apple juice at 15.4 at 20 C. The stored minimum of 17.46 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-pear",
@@ -229,7 +287,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.51,
+   "ppg": 4.49,
    "ppgMin": 3.68,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -237,9 +295,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.8,
+   "sugarGPer100g": 9.75,
    "sugarGPer100gMax": 13,
-   "juiceBrixMin": 10,
+   "juiceBrixMin": 12.0,
    "juiceBrix": 12,
    "juiceBrixMax": 15,
    "juiceYieldPct": 68,
@@ -260,8 +318,16 @@
    ],
    "description": "Eating pear. Contains sorbitol, which yeast cannot ferment — so a pear ferment finishes dry on paper and still tastes sweet.",
    "usageNotes": "The Williams pear is the basis of Poire Williams eau-de-vie. High pH: acidify toward 3.5 before pitching.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 5
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169118",
+   "sortOrder": 5,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pears, raw (SR Legacy, FDC ID 169118), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 24 samples, reported range 8.47-11.79 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Pear juice at 12.0 at 20 C. The stored minimum was 10, below that floor - juice at 10 Brix could not be sold as pear juice - so it has been raised to 12.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 12, which would mean the average pear juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-perry-pear",
@@ -283,7 +349,7 @@
    "sugarGPer100gMin": 9,
    "sugarGPer100g": 11,
    "sugarGPer100gMax": 14,
-   "juiceBrixMin": 11,
+   "juiceBrixMin": 12.0,
    "juiceBrix": 13,
    "juiceBrixMax": 16,
    "juiceYieldPct": 65,
@@ -304,8 +370,15 @@
    ],
    "description": "Traditional perry pears — high tannin, high sorbitol, and often high citric acid, which invites lactic spoilage that apple rarely sees.",
    "usageNotes": "Mill and leave the pomace to stand before pressing; unlike apple, fresh-milled perry pear presses poorly.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 6
+   "sortOrder": 6,
+   "attribution": "No source. USDA publishes dessert pears; perry pears are a distinct group, high in tannin and sorbitol, and their chemistry is in the perry literature rather than any food-composition table. Long Ashton Research Station's cider apple tables, which this catalogue already cites for the three cider apple classes, stop at apples - the compiled data at cider.org.uk contains no perry pear figures. The standing reference is Luckwill and Pollard's Perry Pears (University of Bristol, 1963), which is not online.",
+   "unsourced": true,
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Pear juice at 12.0 at 20 C. The stored minimum was 11, below that floor - juice at 11 Brix could not be sold as pear juice - so it has been raised to 12.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-quince",
@@ -313,7 +386,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.09,
+   "ppg": 2.9,
    "ppgMin": 3.22,
    "ppgMax": 5.06,
    "ppgBasis": "sugar-content",
@@ -321,9 +394,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.9,
+   "sugarGPer100g": 6.3,
    "sugarGPer100gMax": 11,
-   "juiceBrixMin": 10,
+   "juiceBrixMin": 11.2,
    "juiceBrix": 12,
    "juiceBrixMax": 15,
    "juiceYieldPct": 55,
@@ -344,8 +417,16 @@
    ],
    "description": "Hard, aromatic and inedible raw. Enormous pectin load and a perfume that survives fermentation better than most fruit.",
    "usageNotes": "The highest-pectin fruit here — pectic enzyme is mandatory, and a fruit brandy from quince needs careful methanol cuts.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 7
+   "sortOrder": 7,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-241, \"Quinces, flesh only\": 6.3 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Quince juice at 11.2 at 20 C. The stored minimum was 10, below that floor - juice at 10 Brix could not be sold as quince juice - so it has been raised to 11.2. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-peach",
@@ -361,9 +442,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.4,
+   "sugarGPer100g": 8.39,
    "sugarGPer100gMax": 12,
-   "juiceBrixMin": 9,
+   "juiceBrixMin": 10.5,
    "juiceBrix": 11,
    "juiceBrixMax": 15,
    "juiceYieldPct": 62,
@@ -385,8 +466,16 @@
    ],
    "description": "Delicate and easily lost. Most of what reads as peach in a finished beer or wine comes from yeast esters, not fruit.",
    "usageNotes": "Add late and generously — 1–2 kg per 20 L is not excessive. Freeze and thaw first to break down cell walls.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 8
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169928",
+   "sortOrder": 8,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Peaches, yellow, raw (SR Legacy, FDC ID 169928), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 6.48-9.55 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Peach juice at 10.5 at 20 C. The stored minimum was 9, below that floor - juice at 9 Brix could not be sold as peach juice - so it has been raised to 10.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-nectarine",
@@ -402,9 +491,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 7.9,
+   "sugarGPer100g": 7.89,
    "sugarGPer100gMax": 11,
-   "juiceBrixMin": 9,
+   "juiceBrixMin": 10.5,
    "juiceBrix": 11,
    "juiceBrixMax": 15,
    "juiceYieldPct": 62,
@@ -425,8 +514,16 @@
    ],
    "description": "A fuzzless peach, and effectively interchangeable with one in the fermenter.",
    "usageNotes": "Same handling as peach: freeze, thaw, add post-primary.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 9
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169914",
+   "sortOrder": 9,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Nectarines, raw (SR Legacy, FDC ID 169914), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 7.29-8.8 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Nectarine juice at 10.5 at 20 C. The stored minimum was 9, below that floor - juice at 9 Brix could not be sold as nectarine juice - so it has been raised to 10.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-apricot",
@@ -434,7 +531,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.23,
+   "ppg": 4.25,
    "ppgMin": 3.22,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
@@ -442,9 +539,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.2,
+   "sugarGPer100g": 9.24,
    "sugarGPer100gMax": 13,
-   "juiceBrixMin": 10,
+   "juiceBrixMin": 11.5,
    "juiceBrix": 12,
    "juiceBrixMax": 16,
    "juiceYieldPct": 58,
@@ -465,8 +562,16 @@
    ],
    "description": "Much more acidic than peach and with a firmer aromatic signature that survives fermentation.",
    "usageNotes": "Kernels contain amygdalin — do not crush the stones into the must in quantity.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 10
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171697",
+   "sortOrder": 10,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apricots, raw (SR Legacy, FDC ID 171697), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"no derivation at all\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apricot juice at 11.5 at 20 C. The stored minimum was 10, below that floor - juice at 10 Brix could not be sold as apricot juice - so it has been raised to 11.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-plum",
@@ -477,7 +582,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 4.56,
    "ppgMin": 3.68,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -485,9 +590,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 9.92,
    "sugarGPer100gMax": 14,
-   "juiceBrixMin": 11,
+   "juiceBrixMin": 12.0,
    "juiceBrix": 13,
    "juiceBrixMax": 18,
    "juiceYieldPct": 60,
@@ -508,8 +613,16 @@
    ],
    "description": "The base of slivovitz and quetsch. Skins carry real tannin and colour, and the sugar runs high in a good year.",
    "usageNotes": "Ferment on the skins for colour. Destone before fermentation for spirit washes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 11
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169949",
+   "sortOrder": 11,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Plums, raw (SR Legacy, FDC ID 169949), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 8.6-11.59 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Plum juice at 12.0 at 20 C. The stored minimum was 11, below that floor - juice at 11 Brix could not be sold as plum juice - so it has been raised to 12.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-damson",
@@ -551,8 +664,10 @@
    ],
    "description": "A small, astringent, intensely coloured plum. Too sharp to eat, excellent in a ferment.",
    "usageNotes": "Pairs well with a sweeter base — damson alone will finish austere.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 12
+   "sortOrder": 12,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-077, \"Damsons, flesh and skin, raw\": 9.6 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-cherry-sweet",
@@ -594,8 +709,16 @@
    ],
    "description": "Dessert cherry — plenty of sugar, not much acid, and a pH high enough to need watching.",
    "usageNotes": "Less suited to kriek than the tart types; the acid balance ends up flat.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 13
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171719",
+   "sortOrder": 13,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cherries, sweet, raw (SR Legacy, FDC ID 171719), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"no derivation at all\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Sweet Cherry juice at 20.0 at 20 C. That floor sits at or above this record's stored typical Brix of 15, so the two disagree and neither was overwritten: raising the minimum to 20.0 would put it on top of the typical value. Codex's figure is what authentic juice must reach in trade; the stored figures are unsourced curation. Treat the stored Brix as the suspect number."
+    }
+   ]
   },
   {
    "id": "fruit-cherry-tart",
@@ -615,9 +738,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.5,
+   "sugarGPer100g": 8.49,
    "sugarGPer100gMax": 12,
-   "juiceBrixMin": 12,
+   "juiceBrixMin": 14.0,
    "juiceBrix": 14,
    "juiceBrixMax": 18,
    "juiceYieldPct": 62,
@@ -639,8 +762,16 @@
    ],
    "description": "The kriek cherry. Low sugar, high acid, and stone-and-skin tannin that gives a lambic its grip.",
    "usageNotes": "Traditional kriek uses whole cherries with stones, macerated for months — the stones contribute a faint almond note.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 14
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173954",
+   "sortOrder": 14,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cherries, sour, red, raw (SR Legacy, FDC ID 173954), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Calculated\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Sour Cherry juice at 14.0 at 20 C. The stored minimum was 12, below that floor - juice at 12 Brix could not be sold as sour cherry juice - so it has been raised to 14.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 14, which would mean the average sour cherry juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-mango",
@@ -658,7 +789,7 @@
    "sugarGPer100gMin": 11,
    "sugarGPer100g": 13.7,
    "sugarGPer100gMax": 17,
-   "juiceBrixMin": 12,
+   "juiceBrixMin": 13.5,
    "juiceBrix": 15,
    "juiceBrixMax": 20,
    "juiceYieldPct": 55,
@@ -679,8 +810,16 @@
    ],
    "description": "High sugar, low acid, heavy pectin. Pulpy enough that it will not clear without help.",
    "usageNotes": "pH is high enough that acidification is worth considering for a wine. Pectic enzyme essential.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 15
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169910",
+   "sortOrder": 15,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Mangos, raw (SR Legacy, FDC ID 169910), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"no derivation at all\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Mango juice at 13.5 at 20 C. The stored minimum was 12, below that floor - juice at 12 Brix could not be sold as mango juice - so it has been raised to 13.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-strawberry",
@@ -696,9 +835,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 4.89,
    "sugarGPer100gMax": 8,
-   "juiceBrixMin": 6,
+   "juiceBrixMin": 7.5,
    "juiceBrix": 8,
    "juiceBrixMax": 11,
    "juiceYieldPct": 65,
@@ -719,8 +858,16 @@
    ],
    "description": "Very low sugar for its bulk and notoriously fragile aroma — most of the character is lost to fermentation.",
    "usageNotes": "Use at high rates and late. Colour fades to a dull orange-brown within months; this is normal and not spoilage.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 16
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167762",
+   "sortOrder": 16,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Strawberries, raw (SR Legacy, FDC ID 167762), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"no derivation at all\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Strawberry juice at 7.5 at 20 C. The stored minimum was 6, below that floor - juice at 6 Brix could not be sold as strawberry juice - so it has been raised to 7.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-raspberry",
@@ -728,7 +875,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.02,
+   "ppg": 2.03,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -736,7 +883,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.4,
+   "sugarGPer100g": 4.42,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
@@ -759,8 +906,16 @@
    ],
    "description": "Low sugar, high acid, and an aroma that survives fermentation better than almost any other berry.",
    "usageNotes": "The framboise fruit. 1.5–2 kg per 20 L for a clear varietal character.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 17
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167755",
+   "sortOrder": 17,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Raspberries, raw (SR Legacy, FDC ID 167755), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 5 samples, reported range 3.6-5.86 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Red Raspberry juice at 8.0 at 20 C. The stored minimum of 8 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-blackberry",
@@ -770,7 +925,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.25,
+   "ppg": 2.24,
    "ppgMin": 1.84,
    "ppgMax": 3.68,
    "ppgBasis": "sugar-content",
@@ -778,9 +933,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 4.88,
    "sugarGPer100gMax": 8,
-   "juiceBrixMin": 8,
+   "juiceBrixMin": 9.0,
    "juiceBrix": 10,
    "juiceBrixMax": 14,
    "juiceYieldPct": 62,
@@ -801,8 +956,16 @@
    ],
    "description": "Seedy, tannic and deeply coloured. More structure than raspberry and a better candidate for a standalone wine.",
    "usageNotes": "Seeds carry harsh tannin — press gently and avoid grinding them.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 18
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173946",
+   "sortOrder": 18,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Blackberries, raw (SR Legacy, FDC ID 173946), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 4 samples, reported range 3.04-6.35 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Blackberry juice at 9.0 at 20 C. The stored minimum was 8, below that floor - juice at 8 Brix could not be sold as blackberry juice - so it has been raised to 9.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-blueberry",
@@ -810,7 +973,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.6,
+   "ppg": 4.58,
    "ppgMin": 3.68,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
@@ -818,7 +981,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 10,
+   "sugarGPer100g": 9.96,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -839,8 +1002,16 @@
    ],
    "description": "Higher sugar than the cane berries, with skin tannin and anthocyanin that shifts from purple to red as pH drops.",
    "usageNotes": "Freeze before use to rupture the skins; whole blueberries in a fermenter give up very little.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 19
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171711",
+   "sortOrder": 19,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Blueberries, raw (SR Legacy, FDC ID 171711), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 7.67-12.33 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Bilberry/Blueberry juice at 10.0 at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-elderberry",
@@ -850,7 +1021,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.22,
+   "ppg": 3.4,
    "ppgMin": 2.3,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -858,9 +1029,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 7,
+   "sugarGPer100g": 7.4,
    "sugarGPer100gMax": 10,
-   "juiceBrixMin": 10,
+   "juiceBrixMin": 10.5,
    "juiceBrix": 12,
    "juiceBrixMax": 16,
    "juiceYieldPct": 55,
@@ -881,8 +1052,16 @@
    ],
    "description": "The classic English country-wine berry: enormous colour, real tannin, and enough structure to age for years.",
    "usageNotes": "Cook before use. Raw berries, and especially stems, leaves and unripe fruit, contain cyanogenic glycosides — strip the berries from the stems and heat them.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 20
+   "sortOrder": 20,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-089, \"Elderberries, whole fruit\": 7.4 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Elderberry juice at 10.5 at 20 C. The stored minimum was 10, below that floor - juice at 10 Brix could not be sold as elderberry juice - so it has been raised to 10.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-blackcurrant",
@@ -892,7 +1071,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.13,
+   "ppg": 3.04,
    "ppgMin": 2.3,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -900,7 +1079,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 6.8,
+   "sugarGPer100g": 6.6,
    "sugarGPer100gMax": 9,
    "juiceBrixMin": 11,
    "juiceBrix": 14,
@@ -923,8 +1102,16 @@
    ],
    "description": "Ferociously acidic and tannic, with an aroma so strong it dominates anything it is blended into.",
    "usageNotes": "Titratable acidity around 30 g/L means dilution or deacidification is not optional for a drinkable wine.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 21
+   "sortOrder": 21,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-053, \"Blackcurrants, raw\": 6.6 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Black Currant juice at 11.0 at 20 C. The stored minimum of 11 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-redcurrant",
@@ -932,7 +1119,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.25,
+   "ppg": 3.39,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -940,7 +1127,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.9,
+   "sugarGPer100g": 7.37,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 7,
    "juiceBrix": 9,
@@ -962,8 +1149,16 @@
    ],
    "description": "Bright, sharp and pale. Needs both dilution and sugar to reach a fermentable balance.",
    "usageNotes": "Very high pectin — expect a slow press and a stubborn haze.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 22
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173964",
+   "sortOrder": 22,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Currants, red and white, raw (SR Legacy, FDC ID 173964), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA publishes red and white currants as one entry. FoodData Central marks this figure \"Calculated\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Red Currant juice at 10.0 at 20 C. That floor sits at or above this record's stored typical Brix of 9, so the two disagree and neither was overwritten: raising the minimum to 10.0 would put it on top of the typical value. Codex's figure is what authentic juice must reach in trade; the stored figures are unsourced curation. Treat the stored Brix as the suspect number."
+    }
+   ]
   },
   {
    "id": "fruit-gooseberry",
@@ -971,7 +1166,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.02,
+   "ppg": 1.38,
    "ppgMin": 1.84,
    "ppgMax": 3.22,
    "ppgBasis": "sugar-content",
@@ -979,7 +1174,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.4,
+   "sugarGPer100g": 3.0,
    "sugarGPer100gMax": 7,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
@@ -1002,8 +1197,16 @@
    ],
    "description": "Sharp and green-tasting, with a thiol character that overlaps Sauvignon Blanc — which is why the tasting note exists.",
    "usageNotes": "A traditional base for English sparkling country wine, where the high acid is an asset.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 23
+   "sortOrder": 23,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-100, \"Gooseberries, cooking, raw\": 3.0 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Goosberry juice at 7.5 at 20 C. The stored minimum of 8 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-cranberry",
@@ -1011,7 +1214,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.84,
+   "ppg": 1.96,
    "ppgMin": 1.38,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -1019,9 +1222,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 3,
-   "sugarGPer100g": 4,
+   "sugarGPer100g": 4.27,
    "sugarGPer100gMax": 6,
-   "juiceBrixMin": 7,
+   "juiceBrixMin": 7.5,
    "juiceBrix": 8,
    "juiceBrixMax": 11,
    "juiceYieldPct": 55,
@@ -1043,8 +1246,16 @@
    ],
    "description": "The most acidic common berry and among the most tannic. pH 2.5 will stall many yeasts outright.",
    "usageNotes": "Blend or dilute heavily. On its own the must is below the pH most wine yeast will tolerate.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 24
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171722",
+   "sortOrder": 24,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Cranberries, raw (SR Legacy, FDC ID 171722), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 5 samples, reported range 3.55-4.75 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Cranberry juice at 7.5 at 20 C. The stored minimum was 7, below that floor - juice at 7 Brix could not be sold as cranberry juice - so it has been raised to 7.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-aronia",
@@ -1054,23 +1265,23 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.68,
-   "ppgMin": 2.76,
-   "ppgMax": 5.06,
+   "ppg": 2.29,
+   "ppgMin": 2.02,
+   "ppgMax": 2.44,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 6,
-   "sugarGPer100g": 8,
-   "sugarGPer100gMax": 11,
-   "juiceBrixMin": 14,
-   "juiceBrix": 16,
-   "juiceBrixMax": 20,
+   "sugarGPer100gMin": 4.39,
+   "sugarGPer100g": 4.98,
+   "sugarGPer100gMax": 5.31,
+   "juiceBrixMin": 15.25,
+   "juiceBrix": 16.74,
+   "juiceBrixMax": 17.65,
    "juiceYieldPct": 55,
-   "titratableAcidityGPerL": 10,
+   "titratableAcidityGPerL": 8.83,
    "dominantAcid": "malic",
-   "phTypical": 3.4,
+   "phTypical": 3.8,
    "pectinLevel": "medium",
    "tanninLevel": "very high",
    "fruitGroup": "berry",
@@ -1084,8 +1295,14 @@
    ],
    "description": "The most astringent fruit in common use — polyphenol levels several times those of blueberry.",
    "usageNotes": "Use as a colour and tannin adjunct rather than a base. Ages remarkably well.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 25
+   "sortOrder": 25,
+   "attribution": "Three aronia cultivars - 'Nero', 'Viking' and 'Galicjanka' - grown in Spain and measured in Ayuso-Yuste and colleagues, \"Characterization and Classification of Berry (Aronia, Haskap, and Goji) Fruits with High Bioactive Value Grown in Spain\", Foods 13(24):4122, 2024 (doi 10.3390/foods13244122, CC BY 4.0), Tables 1 and 2. Soluble solids 15.25 to 17.65 Brix, pH 3.77 to 3.83, titratable acidity 0.84 to 0.96 percent. Fructose plus glucose is 4.39 to 5.31 g per 100 g fresh weight, mean 4.98, and ppg is 46 x that.",
+   "titratableAcidityMinGPerL": 8.4,
+   "titratableAcidityMaxGPerL": 9.6,
+   "phMin": 3.77,
+   "phMax": 3.83,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11675623/",
+   "sourceNote": "Sorbitol is excluded from the sugar figure on purpose, and for aronia that is a large exclusion: the same table reports 6.1 to 7.9 g per 100 g of it, more than the fermentable sugar. It contributes gravity and sweetness that yeast cannot take, which is why an aronia wine finishes heavier than its starting gravity suggests. Total soluble solids of 16.7 Brix against 5.0 g of fermentable sugar is the same fact seen from the refractometer. The paper's organic-acid table is not used here: it totals 44.8 mg/g fresh weight, five times the titratable acidity printed in its own Table 1, and the two cannot both be right - the titration is the one adopted. Juice yield, pectin and tannin are not sourced."
   },
   {
    "id": "fruit-mulberry",
@@ -1122,8 +1339,10 @@
    ],
    "description": "Soft, sweet and staining. Low tannin and moderate acid make it an easy, if simple, ferment.",
    "usageNotes": "Extremely perishable — freeze on picking.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 26
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169913",
+   "sortOrder": 26,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Mulberries, raw (SR Legacy, FDC ID 169913), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-boysenberry",
@@ -1144,7 +1363,7 @@
    "sugarGPer100gMin": 4,
    "sugarGPer100g": 4.9,
    "sugarGPer100gMax": 8,
-   "juiceBrixMin": 8,
+   "juiceBrixMin": 10.0,
    "juiceBrix": 10,
    "juiceBrixMax": 13,
    "juiceYieldPct": 60,
@@ -1163,8 +1382,15 @@
    ],
    "description": "Raspberry–blackberry hybrids. Behave like blackberry with a touch more aromatic lift.",
    "usageNotes": "Interchangeable with blackberry for planning purposes.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 27
+   "sortOrder": 27,
+   "attribution": "No source. USDA's SR Legacy set is alphabetical and runs straight from \"Blueberries, frozen, sweetened\" to \"Carissa (natal-plum), raw\" - checked entry by entry - so it has no boysenberry in any form, raw or frozen. Norway's national table has blackberry but not boysenberry, and New Zealand's Food Composition Database, which would be the right authority for a berry New Zealand grows commercially, does not resolve from this environment. The numbers here are carried over from earlier curation.",
+   "unsourced": true,
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Boysenberry juice at 10.0 at 20 C. The stored minimum was 8, below that floor - juice at 8 Brix could not be sold as boysenberry juice - so it has been raised to 10.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 10, which would mean the average boysenberry juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-seabuckthorn",
@@ -1174,16 +1400,16 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.52,
-   "ppgMin": 0.92,
-   "ppgMax": 2.3,
+   "ppg": 0.34,
+   "ppgMin": 0.16,
+   "ppgMax": 0.72,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 2,
-   "sugarGPer100g": 3.3,
-   "sugarGPer100gMax": 5,
+   "sugarGPer100gMin": 0.35,
+   "sugarGPer100g": 0.74,
+   "sugarGPer100gMax": 1.56,
    "juiceBrixMin": 8,
    "juiceBrix": 10,
    "juiceBrixMax": 13,
@@ -1205,8 +1431,16 @@
    ],
    "description": "Extraordinarily acidic — roughly the titratable acidity of lemon juice — with an oily, sea-air aroma unlike anything else.",
    "usageNotes": "Cannot be fermented undiluted. Treat as a flavouring at 5–10% of the must.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 28
+   "sortOrder": 28,
+   "attribution": "Four Romanian sea buckthorn varieties - Golden Abundant, SF6, Carmen and Colosal - in Criste and colleagues, \"Phytochemical Composition and Biological Activity of Berries and Leaves from Four Romanian Sea Buckthorn (Hippophae rhamnoides L.) Varieties\", Molecules 25(5):1170, 2020 (doi 10.3390/molecules25051170, CC BY 4.0), Table 1. Fructose runs 0.18 to 1.10 percent, glucose 0.17 to 0.46 and sucrose nil to 0.095, so total sugars are 0.35 to 1.56 g per 100 g with a four-variety mean of 0.74. ppg is 46 x that, which makes this the least fermentable fruit in the catalogue by a wide margin.",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7179145/",
+   "sourceNote": "This corrects a stored 3.3 g per 100 g down to 0.74, and it is worth saying why the two obvious cross-checks disagree with each other. Norway's national food table lists sea buckthorn at 6.2 g per 100 g, but that is available carbohydrate by difference - water, protein, fat and fibre subtracted from 100 - and on a fruit carrying several percent organic acid the acid lands in the carbohydrate figure. The chromatographic measurement above does not have that problem. Nothing else on this record is sourced: Brix, juice yield, titratable acidity, pH, pectin and tannin are not in the paper. The four varieties are Romanian; this is not a bound on cultivated Siberian or Baltic material.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Buckthornberry = Sallow-thornberry (Hippophae rhamnoides L.) juice at 6.0 at 20 C. The stored minimum of 8 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-lingonberry",
@@ -1216,21 +1450,21 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.76,
-   "ppgMin": 1.84,
-   "ppgMax": 3.68,
+   "ppg": 3.17,
+   "ppgMin": 2.85,
+   "ppgMax": 3.31,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 4,
-   "sugarGPer100g": 6,
-   "sugarGPer100gMax": 8,
-   "juiceBrixMin": 9,
+   "sugarGPer100gMin": 6.2,
+   "sugarGPer100g": 6.9,
+   "sugarGPer100gMax": 7.2,
+   "juiceBrixMin": 10.0,
    "juiceBrix": 11,
    "juiceBrixMax": 14,
    "juiceYieldPct": 58,
-   "titratableAcidityGPerL": 25,
+   "titratableAcidityGPerL": 32.0,
    "dominantAcid": "citric",
    "phTypical": 2.7,
    "pectinLevel": "medium",
@@ -1246,27 +1480,38 @@
    ],
    "description": "Nordic bog berry: sharp, tannic and naturally high in benzoic acid, which resists spoilage and also slows yeast.",
    "usageNotes": "The benzoic acid content can inhibit fermentation — pitch heavily and expect a slow start.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 29
+   "sortOrder": 29,
+   "attribution": "Sugars and acids are HPLC measurements on wild Norwegian lingonberries picked at five ripening stages at As in 2020, published as Amundsen and colleagues, \"Composition of Sugars, Organic Acids, Phenolic Compounds, and Volatile Organic Compounds in Lingonberries (Vaccinium vitis-idaea L.) at Five Ripening Stages\", Foods 12(11):2154, 2023 (doi 10.3390/foods12112154, CC BY 4.0), Table 2. Total sugars run 6.2 g per 100 g fresh weight at the fully red stage, 6.9 at fully ripe and 7.2 late season; the record carries the fully ripe figure with the two neighbouring ripe stages as the range, because a picker takes ripe fruit and the green-stage 2.7 is not a lingonberry anyone ferments. ppg is 46 x the sugars per 100 g. Total organic acids fall from 3.2 g per 100 g at fully ripe to 2.7 late season, which is the 32 to 27 g/L here.",
+   "titratableAcidityMinGPerL": 27.0,
+   "titratableAcidityMaxGPerL": 32.0,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10253110/",
+   "sourceNote": "The acid figure is the sum of citric, quinic, malic and shikimic acids by HPLC, not a titration to an endpoint, so it is not strictly the same measurement as a titratable acidity - it is the closest thing the paper publishes and citric at 2.1 g per 100 g is the largest single contributor, which is what dominantAcid records. pH, Brix, juice yield, pectin and tannin are not in the paper and are not sourced. The paper is one site and one season, and lingonberry is a wild crop: it does not bound what a Finnish or Swedish picking will do.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Lingonberry juice at 10.0 at 20 C. The stored minimum was 9, below that floor - juice at 9 Brix could not be sold as lingonberry juice - so it has been raised to 10.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-cloudberry",
    "name": "Cloudberry",
    "aliases": [
-    "Bakeapple"
+    "Bakeapple",
+    "Multer"
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.68,
-   "ppgMin": 2.76,
-   "ppgMax": 5.06,
+   "ppg": 2.02,
+   "ppgMin": null,
+   "ppgMax": null,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 6,
-   "sugarGPer100g": 8,
-   "sugarGPer100gMax": 11,
+   "sugarGPer100gMin": null,
+   "sugarGPer100g": 4.4,
+   "sugarGPer100gMax": null,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
    "juiceBrixMax": 15,
@@ -1287,8 +1532,16 @@
    ],
    "description": "Rare Nordic berry with a distinctive baked-apple and honey aroma.",
    "usageNotes": "Scarce and expensive — usually used as a flavouring fraction rather than a base.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 30
+   "sortOrder": 30,
+   "attribution": "Matvaretabellen, the Norwegian Food Composition Table published by the Norwegian Food Safety Authority with the Directorate of Health and the University of Oslo, food 06.508 \"Multer, molter, ra\" (cloudberry, raw), Rubus chamaemorus L.: 4.4 g of mono- and disaccharides per 100 g, 87 g water, 6 g dietary fibre. ppg is 46 x the sugar figure. Cloudberry is a Nordic wild crop that USDA records without a sugar figure and CoFID does not carry at all, so the Norwegian national table is the nearest thing to an authority on it.",
+   "sourceUrl": "https://www.matvaretabellen.no/en/cloudberries-raw/",
+   "sourceNote": "The table's sugar figure is derived from available carbohydrate rather than measured chromatographically, which on an acidic fruit reads slightly high. The paper publishes a single figure for this, not a range, so the min and max are null rather than invented. Brix, juice yield, titratable acidity, pH, pectin and tannin are not in the table and are not sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Cloudberry juice at 9.0 at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-rosehip",
@@ -1296,22 +1549,22 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 5.52,
-   "ppgMin": 3.68,
-   "ppgMax": 7.36,
+   "ppg": 7.39,
+   "ppgMin": 6.37,
+   "ppgMax": 8.18,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 8,
-   "sugarGPer100g": 12,
-   "sugarGPer100gMax": 16,
+   "sugarGPer100gMin": 13.84,
+   "sugarGPer100g": 16.07,
+   "sugarGPer100gMax": 17.78,
    "juiceBrixMin": 13,
    "juiceBrix": 16,
    "juiceBrixMax": 20,
    "juiceYieldPct": 40,
-   "titratableAcidityGPerL": 15,
-   "dominantAcid": "citric",
+   "titratableAcidityGPerL": 8.93,
+   "dominantAcid": "malic",
    "phTypical": 3.4,
    "pectinLevel": "very high",
    "tanninLevel": "high",
@@ -1327,8 +1580,18 @@
    ],
    "description": "A traditional country-wine base, very high in pectin and vitamin C, with a mild floral-fruit character.",
    "usageNotes": "The internal hairs are a serious irritant — use whole or strained, never crushed and unstrained.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 31
+   "sortOrder": 31,
+   "attribution": "Dog rose (Rosa canina) picked fully ripe from four regions of Bosnia and Herzegovina across the 2014 and 2015 seasons, analysed by HPLC: Akagic and colleagues, \"Geographic Variability of Sugars and Organic Acids in Selected Wild Fruit Species\", Foods 9(4):462, 2020 (doi 10.3390/foods9040462, CC BY 4.0), Tables 3 and 4. Total sugars average 160.7 g/kg fresh mass over the four regional means, with individual region-year values from 138.4 to 177.8 g/kg - the 16.07 g per 100 g here, ranging 13.84 to 17.78. Total organic acids average 8.93 g/kg with region-year values from 5.87 to 12.74. Malic acid, at 4.5 to 8.0 g/kg, is roughly three times the citric, which is why dominantAcid is now malic and not citric.",
+   "titratableAcidityMinGPerL": 5.87,
+   "titratableAcidityMaxGPerL": 12.74,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7230331/",
+   "sourceNote": "Sugars, acid and the dominant acid come from this paper and nothing else does. Brix, juice yield, pH, pectin and tannin are not in it. Norway's national food composition table gives 6.0 g sugar per 100 g for \"Nype, ra\" - roughly a third of the figure above - but that entry is for Rosa L. unspecified at 84 percent water, where a ripe Rosa canina hip is a much denser fruit, and the Norwegian value is available carbohydrate by difference rather than a chromatographic sugar. This record follows the species-explicit measurement.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Rosehip juice at 9.0 at 20 C. The stored minimum of 13 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-grape-table",
@@ -1349,7 +1612,7 @@
    "sugarGPer100gMin": 14,
    "sugarGPer100g": 15.5,
    "sugarGPer100gMax": 20,
-   "juiceBrixMin": 15,
+   "juiceBrixMin": 16.0,
    "juiceBrix": 18,
    "juiceBrixMax": 22,
    "juiceYieldPct": 72,
@@ -1369,8 +1632,16 @@
    ],
    "description": "Eating grapes: less sugar and far less acid and tannin than wine varieties, bred for crunch rather than fermentation.",
    "usageNotes": "Makes a thin wine on its own. Fine as a beer adjunct or a base for a neutral spirit wash.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 32
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174683",
+   "sortOrder": 32,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapes, red or green (European type, such as Thompson seedless), raw (SR Legacy, FDC ID 174683), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 14.63-16.73 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum was 15, below that floor - juice at 15 Brix could not be sold as grape juice - so it has been raised to 16.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-grape-wine-red",
@@ -1380,19 +1651,19 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 10.12,
-   "ppgMin": 8.74,
-   "ppgMax": 11.96,
+   "ppg": 7.18,
+   "ppgMin": 6.7,
+   "ppgMax": 7.65,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 19,
-   "sugarGPer100g": 22,
-   "sugarGPer100gMax": 26,
-   "juiceBrixMin": 21,
-   "juiceBrix": 24,
-   "juiceBrixMax": 28,
+   "sugarGPer100gMin": 14.56,
+   "sugarGPer100g": 15.6,
+   "sugarGPer100gMax": 16.64,
+   "juiceBrixMin": 22.4,
+   "juiceBrix": 24.0,
+   "juiceBrixMax": 25.6,
    "juiceYieldPct": 65,
    "titratableAcidityGPerL": 6.5,
    "dominantAcid": "tartaric",
@@ -1410,8 +1681,16 @@
    ],
    "description": "Generic red vinifera at harvest ripeness. Use the varietal database for a specific grape.",
    "usageNotes": "Ferment on skins for colour and tannin. 24 Brix is roughly 14% potential alcohol.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 33
+   "sortOrder": 33,
+   "attribution": "Degrees Brix at crush is the 2025 Final Grape Crush Report's weighted average for all California red wine varieties: 24.0 statewide over 1,301,690 tons, ranging 22.4 in District 14 to 25.6 in District 2 across the 17 grape pricing districts (Table 1 for the state total, Table 3 for the districts). Every California processor is required by Section 55601.5 of the Food and Agricultural Code to report tonnage and Brix by variety and district, and USDA NASS publishes the aggregate with CDFA, so this is the whole state's red crush rather than anyone's sample. Sugar per 100 g of fruit and ppg follow from that Brix and this record's juice yield, the same derivation the 53 varietal grape records in this catalogue use.",
+   "sourceUrl": "https://www.nass.usda.gov/Statistics_by_State/California/Publications/Specialty_and_Other_Releases/Grapes/Crush/Final/2025/Grape_Crush_2025_Final.pdf",
+   "sourceNote": "The Crush Report publishes Brix and nothing else about the fruit. Titratable acidity, pH, dominant acid, juice yield, pectin and tannin are not from it and are not sourced - and the juice yield feeds the sugar and ppg above, so those inherit its uncertainty. It is also California only, and it is an average across every variety picked for wine in the state, which is a wider spread than any single grape. For a specific grape use the varietal database.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum of 22.4 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-grape-wine-white",
@@ -1421,19 +1700,19 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 9.2,
-   "ppgMin": 7.82,
-   "ppgMax": 11.04,
+   "ppg": 7.08,
+   "ppgMin": 6.86,
+   "ppgMax": 7.53,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 17,
-   "sugarGPer100g": 20,
-   "sugarGPer100gMax": 24,
-   "juiceBrixMin": 19,
-   "juiceBrix": 22,
-   "juiceBrixMax": 26,
+   "sugarGPer100gMin": 14.91,
+   "sugarGPer100g": 15.4,
+   "sugarGPer100gMax": 16.38,
+   "juiceBrixMin": 21.3,
+   "juiceBrix": 22.0,
+   "juiceBrixMax": 23.4,
    "juiceYieldPct": 70,
    "titratableAcidityGPerL": 7,
    "dominantAcid": "tartaric",
@@ -1450,8 +1729,16 @@
    ],
    "description": "Generic white vinifera at harvest ripeness. Use the varietal database for a specific grape.",
    "usageNotes": "Press off the skins immediately unless a skin-contact style is intended.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 34
+   "sortOrder": 34,
+   "attribution": "Degrees Brix at crush is the 2025 Final Grape Crush Report's weighted average for all California white wine varieties: 22.0 statewide over 1,324,465 tons, ranging 21.3 in Districts 13 and 14 to 23.4 in District 8 across the 17 grape pricing districts (Table 1 for the state total, Table 3 for the districts). Every California processor is required by Section 55601.5 of the Food and Agricultural Code to report tonnage and Brix by variety and district, and USDA NASS publishes the aggregate with CDFA, so this is the whole state's white crush rather than anyone's sample. Sugar per 100 g of fruit and ppg follow from that Brix and this record's juice yield, the same derivation the 53 varietal grape records in this catalogue use.",
+   "sourceUrl": "https://www.nass.usda.gov/Statistics_by_State/California/Publications/Specialty_and_Other_Releases/Grapes/Crush/Final/2025/Grape_Crush_2025_Final.pdf",
+   "sourceNote": "The Crush Report publishes Brix and nothing else about the fruit. Titratable acidity, pH, dominant acid, juice yield, pectin and tannin are not from it and are not sourced - and the juice yield feeds the sugar and ppg above, so those inherit its uncertainty. It is also California only, and it is an average across every variety picked for wine in the state, which is a wider spread than any single grape. For a specific grape use the varietal database.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum of 21.3 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-grape-concord",
@@ -1461,7 +1748,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 6.9,
+   "ppg": 7.45,
    "ppgMin": 5.98,
    "ppgMax": 8.74,
    "ppgBasis": "sugar-content",
@@ -1469,9 +1756,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 13,
-   "sugarGPer100g": 15,
+   "sugarGPer100g": 16.2,
    "sugarGPer100gMax": 19,
-   "juiceBrixMin": 15,
+   "juiceBrixMin": 16.0,
    "juiceBrix": 17,
    "juiceBrixMax": 20,
    "juiceYieldPct": 70,
@@ -1492,8 +1779,16 @@
    ],
    "description": "The American native grape. Unmistakable 'foxy' methyl anthranilate aroma, high acid, and low sugar by vinifera standards.",
    "usageNotes": "Almost always chaptalised. The foxy character is a varietal signature, not a fault.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 35
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174682",
+   "sortOrder": 35,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapes, american type (slip skin), raw (SR Legacy, FDC ID 174682), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. Concord is an American slip-skin grape, which is the entry USDA publishes. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum was 15, below that floor - juice at 15 Brix could not be sold as grape juice - so it has been raised to 16.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-orange",
@@ -1504,7 +1799,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.32,
+   "ppg": 4.3,
    "ppgMin": 3.68,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -1512,7 +1807,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.4,
+   "sugarGPer100g": 9.35,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -1536,8 +1831,16 @@
    ],
    "description": "Sweet orange. The juice ferments cleanly; most of the aroma people want is in the peel, not the flesh.",
    "usageNotes": "For witbier and gin the dried bitter-orange peel is the traditional ingredient — see the botanicals catalog.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 36
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169097",
+   "sortOrder": 36,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Oranges, raw, all commercial varieties (SR Legacy, FDC ID 169097), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Orange juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.8-11.2, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-orange-blood",
@@ -1548,21 +1851,21 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.14,
-   "ppgMin": 3.68,
-   "ppgMax": 5.52,
+   "ppg": 4.88,
+   "ppgMin": 4.06,
+   "ppgMax": 5.27,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9,
-   "sugarGPer100gMax": 12,
-   "juiceBrixMin": 10,
-   "juiceBrix": 12,
-   "juiceBrixMax": 14,
+   "sugarGPer100gMin": 8.82,
+   "sugarGPer100g": 10.61,
+   "sugarGPer100gMax": 11.46,
+   "juiceBrixMin": 11.33,
+   "juiceBrix": 12.76,
+   "juiceBrixMax": 15.03,
    "juiceYieldPct": 48,
-   "titratableAcidityGPerL": 11,
+   "titratableAcidityGPerL": 12.76,
    "dominantAcid": "citric",
    "phTypical": 3.5,
    "pectinLevel": "low",
@@ -1578,8 +1881,12 @@
    ],
    "description": "Anthocyanin-pigmented orange with more acid and a raspberry edge to the aroma.",
    "usageNotes": "The red pigment is pH-sensitive and largely lost in fermentation — expect colour disappointment.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 37
+   "sortOrder": 37,
+   "attribution": "Eleven blood orange cultivars at harvest maturity, including Moro, Tarocco Rosso, Tarocco Comune, Tarocco Messina and Sanguinelli, in Legua and colleagues, \"Bioactive compounds, antioxidant activity and fruit quality evaluation of eleven blood orange cultivars\", Journal of the Science of Food and Agriculture 102(7):2960, 2022 (doi 10.1002/jsfa.11636, CC BY 4.0), Tables 1 and 3. Soluble solids 11.33 to 15.03 Brix and titratable acidity 10.75 to 14.17 g citric acid per litre, both means of 60 fruit per cultivar. Sugars are HPLC on the juice: fructose, glucose and sucrose sum to 88.2 to 114.6 g/kg, so 8.82 to 11.46 g per 100 g, and ppg is 46 x that. Citric acid at 9.6 to 20.5 g/kg against malic at 2.0 to 2.7 confirms the dominant acid.",
+   "titratableAcidityMinGPerL": 10.75,
+   "titratableAcidityMaxGPerL": 14.17,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9299091/",
+   "sourceNote": "The sugar figure is measured in the juice and carried across to the fruit on a mass basis, which is a reasonable step for a citrus whose flesh is mostly juice but is a step the paper does not take for you. Juice yield, pH, pectin and tannin are not in the paper. All eleven cultivars were grown in one Spanish trial, so the spread is varietal, not climatic - the same Tarocco in Sicily will not necessarily land in this range."
   },
   {
    "id": "fruit-lemon",
@@ -1597,7 +1904,7 @@
    "sugarGPer100gMin": 2,
    "sugarGPer100g": 2.5,
    "sugarGPer100gMax": 4,
-   "juiceBrixMin": 7,
+   "juiceBrixMin": 8.0,
    "juiceBrix": 8,
    "juiceBrixMax": 10,
    "juiceYieldPct": 45,
@@ -1618,8 +1925,16 @@
    ],
    "description": "Effectively an acid source with a little sugar attached — around 48 g/L citric acid.",
    "usageNotes": "Never a base. Use for acid correction or late aroma; the zest carries the limonene.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 38
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167746",
+   "sortOrder": 38,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Lemons, raw, without peel (SR Legacy, FDC ID 167746), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Taken from another source--other tables of food composition\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Lemon juice at 8.0 at 20 C. The stored minimum was 7, below that floor - juice at 7 Brix could not be sold as lemon juice - so it has been raised to 8.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 8, which would mean the average lemon juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-lime",
@@ -1638,7 +1953,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 1,
-   "sugarGPer100g": 1.7,
+   "sugarGPer100g": 1.69,
    "sugarGPer100gMax": 3,
    "juiceBrixMin": 8,
    "juiceBrix": 9,
@@ -1662,8 +1977,16 @@
    ],
    "description": "Even sharper than lemon. A gose and margarita-adjacent flavouring, not a fermentable.",
    "usageNotes": "Pith turns bitter and vegetal in a long ferment — zest only, added late.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 39
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168155",
+   "sortOrder": 39,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Limes, raw (SR Legacy, FDC ID 168155), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Based on another form of the food or similar food; Concentration adjustment; No adjustment; Retention factors not used\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Lime juice at 8.0 at 20 C. The stored minimum of 8 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-grapefruit",
@@ -1671,7 +1994,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.17,
+   "ppg": 3.21,
    "ppgMin": 2.76,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -1679,9 +2002,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 6.9,
+   "sugarGPer100g": 6.98,
    "sugarGPer100gMax": 9,
-   "juiceBrixMin": 9,
+   "juiceBrixMin": 10.0,
    "juiceBrix": 10,
    "juiceBrixMax": 12,
    "juiceYieldPct": 48,
@@ -1702,8 +2025,16 @@
    ],
    "description": "Bitter as well as sour, from naringin in the pith and membranes — the bitterness carries into the finished drink.",
    "usageNotes": "Overlaps heavily with the thiol character of Citra and Simcoe, which is why grapefruit IPAs work.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 40
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173033",
+   "sortOrder": 40,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Grapefruit, raw, pink and red and white, all areas (SR Legacy, FDC ID 173033), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grapefruit juice at 10.0 at 20 C. The stored minimum was 9, below that floor - juice at 9 Brix could not be sold as grapefruit juice - so it has been raised to 10.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 10, which would mean the average grapefruit juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-mandarin",
@@ -1724,7 +2055,7 @@
    "sugarGPer100gMin": 9,
    "sugarGPer100g": 10.6,
    "sugarGPer100gMax": 13,
-   "juiceBrixMin": 11,
+   "juiceBrixMin": 11.8,
    "juiceBrix": 12,
    "juiceBrixMax": 14,
    "juiceYieldPct": 45,
@@ -1744,8 +2075,16 @@
    ],
    "description": "Sweeter and less acidic than orange, with a distinctly perfumed peel.",
    "usageNotes": "The peel oil is the reason to use it — juice alone is unremarkable.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 41
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169105",
+   "sortOrder": 41,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Tangerines, (mandarin oranges), raw (SR Legacy, FDC ID 169105), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 8.87-15.16 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Mandarine/Tangerine juice at 11.8 at 20 C. The stored minimum was 11, below that floor - juice at 11 Brix could not be sold as mandarine/tangerine juice - so it has been raised to 11.8. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-yuzu",
@@ -1763,11 +2102,11 @@
    "sugarGPer100gMin": 2,
    "sugarGPer100g": 3,
    "sugarGPer100gMax": 5,
-   "juiceBrixMin": 8,
-   "juiceBrix": 9,
-   "juiceBrixMax": 11,
+   "juiceBrixMin": 8.7,
+   "juiceBrix": 9.2,
+   "juiceBrixMax": 10.1,
    "juiceYieldPct": 25,
-   "titratableAcidityGPerL": 45,
+   "titratableAcidityGPerL": 45.4,
    "dominantAcid": "citric",
    "phTypical": 2.4,
    "pectinLevel": "low",
@@ -1785,8 +2124,12 @@
    ],
    "description": "Aromatic Japanese citrus — mostly peel and seed, with a very low juice yield and a floral, grapefruit-mandarin nose.",
    "usageNotes": "Expensive and worth using as zest or juice at low rates. 25% juice yield is optimistic for hand-pressing.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 42
+   "sortOrder": 42,
+   "attribution": "Three yuzu cultivars - Tadanishiki, a native selection and Namhae1 - sampled monthly from July to November and reported in Nam and colleagues, \"Physiochemical properties, dietary fibers, and functional characterization of three yuzu cultivars at five harvesting times\", Food Science and Biotechnology 30(1):117, 2021 (doi 10.1007/s10068-020-00850-3). At the November harvest, which is the commercial one, acidity is 4.48, 4.66 and 4.48 percent - 44.8 to 46.6 g/L - and soluble solids are 8.8, 8.7 and 10.1 degrees Brix. Both confirm the figures this record already carried, which had no citation behind them until now.",
+   "titratableAcidityMinGPerL": 44.8,
+   "titratableAcidityMaxGPerL": 46.6,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7847423/",
+   "sourceNote": "Sugar is not in this paper; its free-sugar results are published as a figure rather than a table, so the 3 g per 100 g here and the ppg from it remain unsourced. Japan's Standard Tables of Food Composition lists yuzu juice at 6.7 g of available carbohydrate per 100 g, but that is by difference and on this fruit it is mostly citric acid - the same table shows lemon juice at 8.6 g total carbohydrate against 1.5 g of measured sugar and 6.7 g of organic acid, which is exactly the trap. Juice yield, pH, pectin and tannin are not sourced."
   },
   {
    "id": "fruit-kumquat",
@@ -1794,7 +2137,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.32,
+   "ppg": 4.31,
    "ppgMin": 3.22,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -1802,7 +2145,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.4,
+   "sugarGPer100g": 9.36,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -1824,8 +2167,10 @@
    ],
    "description": "Eaten whole, peel and all — sweet skin, sour flesh. Fermented whole it gives both oil and acid.",
    "usageNotes": "Halve and freeze before use; whole fruit floats and moulds.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 43
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168154",
+   "sortOrder": 43,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Kumquats, raw (SR Legacy, FDC ID 168154), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-calamansi",
@@ -1867,8 +2212,9 @@
    ],
    "description": "Filipino sour citrus, somewhere between lime and mandarin, extremely acidic.",
    "usageNotes": "Acid source and aromatic, not a fermentable base.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 44
+   "sortOrder": 44,
+   "attribution": "No source. USDA's SR Legacy set has no calamansi entry. The published composition traces back to Zou, Zhang and Zheng, \"Physicochemical characteristics of Citrus microcarpa from Hainan\", Asian Journal of Agricultural Research 2020, which is quoted second-hand in a 2023 Molecules review at 0.37 percent reducing sugars and 6.74 percent total acid in the juice - but reducing sugars are not total sugars, and a review quoting a journal this project cannot retrieve is not a citation. The Philippine Food Composition Tables, which are the right authority, are behind a search form that returns nothing to a plain request.",
+   "unsourced": true
   },
   {
    "id": "fruit-pineapple",
@@ -1876,7 +2222,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 4.53,
    "ppgMin": 3.68,
    "ppgMax": 6.9,
    "ppgBasis": "sugar-content",
@@ -1884,7 +2230,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 8,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 9.85,
    "sugarGPer100gMax": 15,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -1908,8 +2254,16 @@
    ],
    "description": "Sweet, acidic and enzymatically active — the bromelain in fresh pineapple digests protein and will strip head retention from a beer.",
    "usageNotes": "Bromelain also degrades gelatin finings. Heat-treating deactivates it; canned pineapple is already deactivated. The base of tepache.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 45
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169124",
+   "sortOrder": 45,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pineapple, raw, all varieties (SR Legacy, FDC ID 169124), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 13 samples, reported range 6.9-11.45 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Pineapple juice at 10.0 (the Annex's absolute floor; the nominal figure is 12.8, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 11 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-passionfruit",
@@ -1951,8 +2305,16 @@
    ],
    "description": "Intensely aromatic and very acidic, with a low juice yield because so much of the fruit is seed and rind.",
    "usageNotes": "A little carries a long way. Thiol-driven aroma that pairs naturally with modern hops.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 46
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169108",
+   "sortOrder": 46,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Passion-fruit, (granadilla), purple, raw (SR Legacy, FDC ID 169108), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Taken from another source--other tables of food composition\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Passion Fruit juice at 12.0 at 20 C. The stored minimum of 13 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-guava",
@@ -1960,7 +2322,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.09,
+   "ppg": 4.1,
    "ppgMin": 3.22,
    "ppgMax": 5.06,
    "ppgBasis": "sugar-content",
@@ -1968,7 +2330,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 8.9,
+   "sugarGPer100g": 8.92,
    "sugarGPer100gMax": 11,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -1990,8 +2352,16 @@
    ],
    "description": "Musky, floral and heavily pectinous. Pink varieties add colour that survives reasonably well.",
    "usageNotes": "Very high pectin — enzyme treatment is essential or it will never clear.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 47
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173044",
+   "sortOrder": 47,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Guavas, common, raw (SR Legacy, FDC ID 173044), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Guava juice at 8.5 at 20 C. The stored minimum of 9 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-banana",
@@ -2030,8 +2400,10 @@
    ],
    "description": "Not juiceable in any practical sense — it is a starch-to-sugar fruit best mashed or boiled. Ripeness changes the sugar content enormously.",
    "usageNotes": "pH 4.7 is dangerously high for a wine must; acidify. Green bananas are mostly resistant starch and need amylase.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 48
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173944",
+   "sortOrder": 48,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Bananas, raw (SR Legacy, FDC ID 173944), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 7.51-16.21 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-papaya",
@@ -2041,7 +2413,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.59,
+   "ppg": 3.6,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -2049,7 +2421,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 7.8,
+   "sugarGPer100g": 7.82,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -2071,8 +2443,10 @@
    ],
    "description": "Very low acid and high pH — a papaya must sits well outside the range where wine yeast outcompetes bacteria.",
    "usageNotes": "Papain digests protein as bromelain does. Acidify to at least pH 3.6 before pitching.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 49
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169926",
+   "sortOrder": 49,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Papayas, raw (SR Legacy, FDC ID 169926), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 3 samples, reported range 5.19-9.99 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-lychee",
@@ -2113,8 +2487,16 @@
    ],
    "description": "High sugar, very low acid, and a rose-and-muscat aroma driven by the same terpenes found in Gewürztraminer.",
    "usageNotes": "Acidify. The aroma is fragile — add post-fermentation.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 50
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169086",
+   "sortOrder": 50,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Litchis, raw (SR Legacy, FDC ID 169086), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. USDA files lychee under its older spelling, litchi. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Litchi/Lychee juice at 11.2 at 20 C. The stored minimum of 16 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-dragonfruit",
@@ -2124,23 +2506,23 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.68,
-   "ppgMin": 2.76,
-   "ppgMax": 5.06,
+   "ppg": 4.32,
+   "ppgMin": 3.68,
+   "ppgMax": 4.96,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 6,
-   "sugarGPer100g": 8,
-   "sugarGPer100gMax": 11,
-   "juiceBrixMin": 9,
-   "juiceBrix": 11,
-   "juiceBrixMax": 13,
+   "sugarGPer100gMin": 8.01,
+   "sugarGPer100g": 9.4,
+   "sugarGPer100gMax": 10.79,
+   "juiceBrixMin": 9.6,
+   "juiceBrix": 11.54,
+   "juiceBrixMax": 13.47,
    "juiceYieldPct": 60,
    "titratableAcidityGPerL": 1.5,
    "dominantAcid": "citric",
-   "phTypical": 4.8,
+   "phTypical": 4.82,
    "pectinLevel": "medium",
    "tanninLevel": "low",
    "fruitGroup": "tropical",
@@ -2155,8 +2537,12 @@
    ],
    "description": "Mild to the point of blandness, but the red-fleshed type contributes a startling magenta betacyanin colour.",
    "usageNotes": "Used almost entirely for colour. The pigment is more pH-stable than anthocyanin but fades with oxygen.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 51
+   "sortOrder": 51,
+   "attribution": "Red-fleshed Hylocereus polyrhizus and white-fleshed H. undatus compared side by side in Mertoglu and colleagues, \"Comparative analysis of pomological and phytochemical characteristics in white- and red-fleshed pitaya (Hylocereus spp.), with molecular docking insights into key bioactive compounds\", Journal of the Science of Food and Agriculture 106(4):2200, 2025 (doi 10.1002/jsfa.70322, CC BY), Tables 1 and 2. Soluble solids are 13.47 Brix for the red and 9.60 for the white, pH 4.85 and 4.78. Glucose, fructose and sucrose sum to 10.79 g per 100 mL in the red and 8.01 in the white - glucose alone is 8.44 in the red, an unusually lopsided sugar profile - so the record carries 9.40 as the midpoint of the two species with their values as the range, and ppg is 46 x that.",
+   "phMin": 4.78,
+   "phMax": 4.85,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12872244/",
+   "sourceNote": "The paper's organic acids are not adopted. It reports 6.2 to 7.3 mg/mL of malic acid and roughly 8 g/L of total organic acid on fruit it also measures at pH 4.8, and those two cannot describe the same juice - a fruit carrying 8 g/L of malic and citric does not sit near pH 5. The pH is the more robust of the pair and is the one taken; the titratable acidity on this record is still unsourced, as are juice yield, pectin and tannin. Red and white pitaya are different species and this record covers both, which is most of the width of the ranges above."
   },
   {
    "id": "fruit-jackfruit",
@@ -2194,8 +2580,10 @@
    ],
    "description": "The highest-sugar fresh fruit in common use, with a heavy tropical-bubblegum aroma.",
    "usageNotes": "Very low acid — acidification is mandatory. Laborious to process.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 52
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174687",
+   "sortOrder": 52,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Jackfruit, raw (SR Legacy, FDC ID 174687), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 2 samples, reported range 16.61-21.54 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-soursop",
@@ -2216,7 +2604,7 @@
    "sugarGPer100gMin": 11,
    "sugarGPer100g": 13.5,
    "sugarGPer100gMax": 16,
-   "juiceBrixMin": 13,
+   "juiceBrixMin": 14.5,
    "juiceBrix": 15,
    "juiceBrixMax": 18,
    "juiceYieldPct": 50,
@@ -2235,8 +2623,16 @@
    ],
    "description": "Creamy, custard-textured pulp with a pineapple-and-cream aroma and workable natural acidity.",
    "usageNotes": "Pulp is very thick — dilute and treat with pectic enzyme.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 53
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167761",
+   "sortOrder": 53,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Soursop, raw (SR Legacy, FDC ID 167761), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Soursop juice at 14.5 at 20 C. The stored minimum was 13, below that floor - juice at 13 Brix could not be sold as soursop juice - so it has been raised to 14.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-tamarind",
@@ -2276,8 +2672,16 @@
    ],
    "description": "A dried pod pulp, not a fresh fruit: extremely high in both sugar and tartaric acid — around 10% acid by weight.",
    "usageNotes": "One of the very few natural tartaric acid sources outside grapes. Use as a souring agent at low rates.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 54
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167763",
+   "sortOrder": 54,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Tamarinds, raw (SR Legacy, FDC ID 167763), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 1 sample.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Tamarind (Indian date) juice at 13.0 at 20 C. The stored minimum of 25 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-acai",
@@ -2295,11 +2699,11 @@
    "sugarGPer100gMin": 1,
    "sugarGPer100g": 2,
    "sugarGPer100gMax": 3,
-   "juiceBrixMin": 4,
-   "juiceBrix": 5,
-   "juiceBrixMax": 7,
+   "juiceBrixMin": 2.75,
+   "juiceBrix": 3.18,
+   "juiceBrixMax": 3.6,
    "juiceYieldPct": 40,
-   "titratableAcidityGPerL": 3,
+   "titratableAcidityGPerL": 2.4,
    "dominantAcid": "citric",
    "phTypical": 5.2,
    "pectinLevel": "medium",
@@ -2316,8 +2720,12 @@
    ],
    "description": "Almost sugar-free and unusually high in fat for a fruit. Contributes colour and tannin, essentially no fermentables.",
    "usageNotes": "The fat content will destroy head retention in beer. Colour and antioxidant only.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 55
+   "sortOrder": 55,
+   "attribution": "Acai (Euterpe oleracea) harvested at three maturity stages in two Ecuadorian Amazon provinces, Sucumbios and Orellana, in Flor-Unda and colleagues, \"Physicochemical Characterization and Antioxidant Capacity of Acai (Euterpe oleracea) in Ecuadorian Region\", Foods 13(19):3046, 2024 (doi 10.3390/foods13193046, CC BY 4.0), Table 2. Ripe fruit measures 2.75 and 3.6 degrees Brix at the two sites and 0.22 to 0.26 percent titratable acidity as citric acid, which is the 2.2 to 2.6 g/L here. Both figures are lower than this record previously claimed, and the Brix in particular puts a ceiling on how much sugar the fruit can hold.",
+   "titratableAcidityMinGPerL": 2.2,
+   "titratableAcidityMaxGPerL": 2.6,
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11476303/",
+   "sourceNote": "Only Brix and titratable acidity come from this paper. The sugar figure of 2 g per 100 g and the ppg derived from it are still unsourced - the paper's proximate analysis is reported on a dry basis and cannot be converted without a moisture figure it does not give. Total soluble solids of 3.2 Brix do at least bound the sugar from above, so 2 g is not impossible, but it is not measured either. Juice yield, pH, pectin and tannin are not sourced."
   },
   {
    "id": "fruit-coconut-water",
@@ -2333,9 +2741,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.6,
+   "sugarGPer100g": 2.61,
    "sugarGPer100gMax": 4,
-   "juiceBrixMin": 4,
+   "juiceBrixMin": 5.0,
    "juiceBrix": 5,
    "juiceBrixMax": 7,
    "juiceYieldPct": 95,
@@ -2356,8 +2764,16 @@
    ],
    "description": "Very dilute sugar with a high mineral load — potassium in particular.",
    "usageNotes": "Contributes little gravity. Used as a partial water replacement for flavour and mouthfeel.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 56
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170174",
+   "sortOrder": 56,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Nuts, coconut water (liquid from coconuts) (SR Legacy, FDC ID 170174), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Coconut juice at 5.0 at 20 C. The stored minimum was 4, below that floor - juice at 4 Brix could not be sold as coconut juice - so it has been raised to 5.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 5, which would mean the average coconut juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-pricklypear",
@@ -2368,7 +2784,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 4.55,
+   "ppg": 5.29,
    "ppgMin": 3.22,
    "ppgMax": 5.52,
    "ppgBasis": "sugar-content",
@@ -2376,7 +2792,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9.9,
+   "sugarGPer100g": 11.5,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -2400,8 +2816,10 @@
    ],
    "description": "Desert cactus fruit with a brilliant betalain magenta and almost no acid at all.",
    "usageNotes": "pH near 6 — this must be acidified aggressively or it will spoil rather than ferment. Glochids are a hazard when handling.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 57
+   "sortOrder": 57,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-230, \"Prickly pears, flesh and seeds\": 11.5 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-watermelon",
@@ -2419,7 +2837,7 @@
    "sugarGPer100gMin": 5,
    "sugarGPer100g": 6.2,
    "sugarGPer100gMax": 9,
-   "juiceBrixMin": 7,
+   "juiceBrixMin": 8.0,
    "juiceBrix": 9,
    "juiceBrixMax": 12,
    "juiceYieldPct": 60,
@@ -2440,8 +2858,16 @@
    ],
    "description": "Over 90% water, so the gravity contribution per kilogram is among the lowest of any fruit.",
    "usageNotes": "Acidify. The aroma is exceptionally fugitive — expect to lose most of it.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 58
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167765",
+   "sortOrder": 58,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Watermelon, raw (SR Legacy, FDC ID 167765), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 6 samples, reported range 5.74-6.59 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Water Melon juice at 8.0 at 20 C. The stored minimum was 7, below that floor - juice at 7 Brix could not be sold as water melon juice - so it has been raised to 8.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-cantaloupe",
@@ -2452,7 +2878,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.63,
+   "ppg": 3.62,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -2460,7 +2886,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 7.9,
+   "sugarGPer100g": 7.86,
    "sugarGPer100gMax": 10,
    "juiceBrixMin": 9,
    "juiceBrix": 11,
@@ -2482,8 +2908,16 @@
    ],
    "description": "pH above 6 makes this one of the least safe fruits to ferment untreated.",
    "usageNotes": "Acidify to 3.5 or below before pitching, and sulphite — the surface microflora is heavy.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 59
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169092",
+   "sortOrder": 59,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Melons, cantaloupe, raw (SR Legacy, FDC ID 169092), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"no derivation at all\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Melon juice at 8.0 at 20 C. The stored minimum of 9 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-honeydew",
@@ -2491,7 +2925,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.73,
+   "ppg": 3.74,
    "ppgMin": 2.76,
    "ppgMax": 4.6,
    "ppgBasis": "sugar-content",
@@ -2499,9 +2933,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 6,
-   "sugarGPer100g": 8.1,
+   "sugarGPer100g": 8.12,
    "sugarGPer100gMax": 10,
-   "juiceBrixMin": 9,
+   "juiceBrixMin": 10.0,
    "juiceBrix": 11,
    "juiceBrixMax": 14,
    "juiceYieldPct": 55,
@@ -2521,8 +2955,16 @@
    ],
    "description": "As cantaloupe: high sugar for a melon, effectively no acid, and a delicate aroma.",
    "usageNotes": "Same caution — acidify before fermenting.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 60
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169911",
+   "sortOrder": 60,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Melons, honeydew, raw (SR Legacy, FDC ID 169911), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 5.55-13.12 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Honeydew Melon juice at 10.0 at 20 C. The stored minimum was 9, below that floor - juice at 9 Brix could not be sold as honeydew melon juice - so it has been raised to 10.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-raisin",
@@ -2533,7 +2975,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 27.14,
+   "ppg": 29.99,
    "ppgMin": 25.3,
    "ppgMax": 32.2,
    "ppgBasis": "sugar-content",
@@ -2541,7 +2983,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 55,
-   "sugarGPer100g": 59,
+   "sugarGPer100g": 65.2,
    "sugarGPer100gMax": 70,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -2565,8 +3007,10 @@
    ],
    "description": "Dried grape: roughly 60% sugar by weight, plus the tannin, potassium and nitrogen that make it the traditional country-wine nutrient.",
    "usageNotes": "The classic mead and country-wine body additive. Chop or the sugar stays locked inside.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 61
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168165",
+   "sortOrder": 61,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168165), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Nutrient that is based on other nutrient/s; value used directly, ex. Nut.#204 from Nut.#298\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-date",
@@ -2574,7 +3018,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 30.36,
+   "ppg": 30.59,
    "ppgMin": 27.6,
    "ppgMax": 34.5,
    "ppgBasis": "sugar-content",
@@ -2582,7 +3026,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 60,
-   "sugarGPer100g": 66,
+   "sugarGPer100g": 66.5,
    "sugarGPer100gMax": 75,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -2606,8 +3050,10 @@
    ],
    "description": "Among the highest-sugar foods there is — two-thirds sugar by weight, mostly already inverted.",
    "usageNotes": "Ferments fast and clean. Low acid, so blend or acidify. The base of Middle Eastern date arak.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 62
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168191",
+   "sortOrder": 62,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Dates, medjool (SR Legacy, FDC ID 168191), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 2 samples, reported range 65.21-67.72 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-fig-dried",
@@ -2647,8 +3093,10 @@
    ],
    "description": "Concentrated fig sugar with a jammy, slightly resinous character.",
    "usageNotes": "Seeds and skin can add astringency in a long maceration.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 63
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/174665",
+   "sortOrder": 63,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Figs, dried, uncooked (SR Legacy, FDC ID 174665), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 46.12-49.29 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-fig-fresh",
@@ -2666,7 +3114,7 @@
    "sugarGPer100gMin": 13,
    "sugarGPer100g": 16.3,
    "sugarGPer100gMax": 20,
-   "juiceBrixMin": 15,
+   "juiceBrixMin": 18.0,
    "juiceBrix": 18,
    "juiceBrixMax": 21,
    "juiceYieldPct": 55,
@@ -2685,8 +3133,16 @@
    ],
    "description": "Fresh figs are high in sugar and very low in acid, with a soft honeyed character.",
    "usageNotes": "Acidify. Skin and seed give a faint tannin backbone.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 64
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173021",
+   "sortOrder": 64,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Figs, raw (SR Legacy, FDC ID 173021), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Fig juice at 18.0 at 20 C. The stored minimum was 15, below that floor - juice at 15 Brix could not be sold as fig juice - so it has been raised to 18.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 18, which would mean the average fig juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-prune",
@@ -2694,7 +3150,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 17.48,
+   "ppg": 17.66,
    "ppgMin": 14.72,
    "ppgMax": 20.7,
    "ppgBasis": "sugar-content",
@@ -2702,7 +3158,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 32,
-   "sugarGPer100g": 38,
+   "sugarGPer100g": 38.4,
    "sugarGPer100gMax": 45,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -2724,8 +3180,10 @@
    ],
    "description": "Dried plum — high sugar, real acid, and a dark stewed-fruit note that suits fortified and aged styles.",
    "usageNotes": "Contains sorbitol, so a prune ferment retains apparent sweetness.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 65
+   "sortOrder": 65,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 14-231, \"Prunes, flesh and skin\": 38.4 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g. CoFID's prune is the dried fruit, flesh and skin, which is what this record describes. USDA publishes prunes only stewed, canned or dehydrated.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced."
   },
   {
    "id": "fruit-apricot-dried",
@@ -2733,7 +3191,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 24.38,
+   "ppg": 24.56,
    "ppgMin": 20.7,
    "ppgMax": 27.6,
    "ppgBasis": "sugar-content",
@@ -2741,7 +3199,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 45,
-   "sugarGPer100g": 53,
+   "sugarGPer100g": 53.4,
    "sugarGPer100gMax": 60,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -2764,8 +3222,10 @@
    ],
    "description": "Concentrated apricot: high sugar and high acid together.",
    "usageNotes": "Usually sulphited for colour retention — check before use if a wild or unsulphited ferment is intended.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 66
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173941",
+   "sortOrder": 66,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Apricots, dried, sulfured, uncooked (SR Legacy, FDC ID 173941), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 3 samples, reported range 49.11-56.97 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-pomegranate",
@@ -2805,8 +3265,16 @@
    ],
    "description": "Punicalagin tannins give real grip, and the acid and colour are both high. One of the better standalone fruit wines.",
    "usageNotes": "Press the arils only — the white pith is unbearably bitter.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 67
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169134",
+   "sortOrder": 67,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pomegranates, raw (SR Legacy, FDC ID 169134), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 3 samples, reported range 13.2-14.3 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Pomegranate juice at 12.0 at 20 C. The stored minimum of 14 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "fruit-persimmon",
@@ -2849,8 +3317,10 @@
    ],
    "description": "Astringent varieties are almost unusable until fully soft, when the soluble tannin polymerises and the fruit turns sweet.",
    "usageNotes": "Use only fully ripe fruit. pH near 5.5 demands acidification. The base of Korean gamsikcho vinegar and some soju.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 68
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169941",
+   "sortOrder": 68,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Persimmons, japanese, raw (SR Legacy, FDC ID 169941), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. The Japanese persimmon is the one sold as a fruit; USDA's native persimmon entry gives no sugar figure. FoodData Central marks this figure Analytical - measured, not estimated, from 3 samples, reported range 12.07-13.15 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-kiwi",
@@ -2868,7 +3338,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 7,
-   "sugarGPer100g": 9,
+   "sugarGPer100g": 8.99,
    "sugarGPer100gMax": 12,
    "juiceBrixMin": 11,
    "juiceBrix": 13,
@@ -2889,8 +3359,10 @@
    ],
    "description": "Good natural acidity and a clean green-fruit character. Actinidin, another protease, is present.",
    "usageNotes": "Like pineapple, it will attack gelatin finings and beer foam proteins.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 69
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168153",
+   "sortOrder": 69,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Kiwifruit, green, raw (SR Legacy, FDC ID 168153), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure Analytical - measured, not estimated, from 8 samples, reported range 8.37-9.52 g per 100 g.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-rhubarb",
@@ -2929,8 +3401,10 @@
    ],
    "description": "Botanically a stem, traditionally treated as fruit. Almost no sugar and a lot of acid, much of it oxalic.",
    "usageNotes": "Use stalks only — rhubarb leaves contain enough oxalic acid to be genuinely poisonous. Always chaptalised.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 70
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167758",
+   "sortOrder": 70,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Rhubarb, raw (SR Legacy, FDC ID 167758), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Taken from another source--other tables of food composition\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-pumpkin",
@@ -2940,7 +3414,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.29,
+   "ppg": 1.27,
    "ppgMin": 0.92,
    "ppgMax": 1.84,
    "ppgBasis": "sugar-content",
@@ -2948,7 +3422,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.8,
+   "sugarGPer100g": 2.76,
    "sugarGPer100gMax": 4,
    "juiceBrixMin": 6,
    "juiceBrix": 7,
@@ -2971,8 +3445,10 @@
    ],
    "description": "Contributes almost no fermentable sugar — a pumpkin beer tastes of spice and roast, not of pumpkin.",
    "usageNotes": "Roast before use to develop Maillard character. Adds body and a pouring nightmare of pulp.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 71
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168448",
+   "sortOrder": 71,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Pumpkin, raw (SR Legacy, FDC ID 168448), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Based on another form of the food or similar food; Concentration adjustment; Solids; Retention factors not used\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-tomato",
@@ -2980,7 +3456,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.2,
+   "ppg": 1.38,
    "ppgMin": 0.92,
    "ppgMax": 1.84,
    "ppgBasis": "sugar-content",
@@ -2988,9 +3464,9 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 2,
-   "sugarGPer100g": 2.6,
+   "sugarGPer100g": 3.0,
    "sugarGPer100gMax": 4,
-   "juiceBrixMin": 4,
+   "juiceBrixMin": 5.0,
    "juiceBrix": 5,
    "juiceBrixMax": 7,
    "juiceYieldPct": 65,
@@ -3010,8 +3486,16 @@
    ],
    "description": "A traditional if unfashionable country-wine base. Very low sugar, moderate acid.",
    "usageNotes": "Requires heavy chaptalisation. The result is savoury and divides opinion sharply.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 72
+   "sortOrder": 72,
+   "attribution": "Total sugars are McCance & Widdowson's Composition of Foods Integrated Dataset 2021, food code 13-517, \"Tomatoes, standard, raw\": 3.0 g per 100 g. CoFID is the UK's national food composition database, published by Public Health England, and it is cited here because USDA's SR Legacy set either has no entry for this fruit or has one with carbohydrate but no sugar figure. ppg is 46 times the sugars per 100 g. CoFID publishes one standard raw tomato where USDA splits red, green and yellow, which is why USDA could not be used: this record does not say which colour it describes.",
+   "sourceUrl": "https://assets.publishing.service.gov.uk/media/60538b91e90e07527df82ae4/McCance_Widdowsons_Composition_of_Foods_Integrated_Dataset_2021..xlsx",
+   "sourceNote": "CoFID backs the sugar figure and the ppg from it, and nothing else here. Brix, juice yield, titratable acidity, dominant acid, pH, pectin and tannin are not in it and are not yet sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Tomato juice at 5.0 at 20 C. The stored minimum was 4, below that floor - juice at 4 Brix could not be sold as tomato juice - so it has been raised to 5.0. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit. Note what that leaves: the minimum now equals the stored typical of 5, which would mean the average tomato juice sits exactly at the legal floor. That is improbable, so the stored typical is probably low too. It has not been changed, because Codex gives a minimum and no source here gives a typical."
+    }
+   ]
   },
   {
    "id": "fruit-beetroot",
@@ -3021,7 +3505,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 3.13,
+   "ppg": 3.11,
    "ppgMin": 2.3,
    "ppgMax": 4.14,
    "ppgBasis": "sugar-content",
@@ -3029,7 +3513,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 5,
-   "sugarGPer100g": 6.8,
+   "sugarGPer100g": 6.76,
    "sugarGPer100gMax": 9,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -3053,8 +3537,10 @@
    ],
    "description": "Earthy from geosmin, with a deep betalain colour and a pH high enough to be a real spoilage risk.",
    "usageNotes": "Acidify hard. Sugar beet, the industrial relative, is the source of most European beet sugar and neutral spirit.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 73
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169145",
+   "sortOrder": 73,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Beets, raw (SR Legacy, FDC ID 169145), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Other procedure used from imputing\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-carrot",
@@ -3062,7 +3548,7 @@
    "aliases": [],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 2.16,
+   "ppg": 2.18,
    "ppgMin": 1.84,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -3070,7 +3556,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": false,
    "sugarGPer100gMin": 4,
-   "sugarGPer100g": 4.7,
+   "sugarGPer100g": 4.74,
    "sugarGPer100gMax": 6,
    "juiceBrixMin": 7,
    "juiceBrix": 9,
@@ -3093,8 +3579,10 @@
    ],
    "description": "A traditional country wine, often fortified. Low acid, low sugar, faintly sweet and earthy.",
    "usageNotes": "Acidify and chaptalise. Best known as the base of an old-fashioned carrot whisky.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 74
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170393",
+   "sortOrder": 74,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Carrots, raw (SR Legacy, FDC ID 170393), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Calculated\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, Brix, juice yield, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-sweetpotato",
@@ -3104,7 +3592,7 @@
    ],
    "category": "fruit",
    "type": "fruit",
-   "ppg": 1.93,
+   "ppg": 1.92,
    "ppgMin": 1.38,
    "ppgMax": 2.76,
    "ppgBasis": "sugar-content",
@@ -3112,7 +3600,7 @@
    "fermentabilityPct": 95,
    "requiresConversion": true,
    "sugarGPer100gMin": 3,
-   "sugarGPer100g": 4.2,
+   "sugarGPer100g": 4.18,
    "sugarGPer100gMax": 6,
    "juiceBrixMin": null,
    "juiceBrix": null,
@@ -3136,8 +3624,10 @@
    ],
    "description": "Mostly starch rather than sugar — the listed sugar figure understates its potential once converted.",
    "usageNotes": "Needs a cereal mash or added amylase to convert the starch. The base of imo-jochu shochu.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 75
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168482",
+   "sortOrder": 75,
+   "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168482), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Calculated\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
   },
   {
    "id": "fruit-agave",
@@ -3157,9 +3647,9 @@
    "sugarGPer100gMin": 0,
    "sugarGPer100g": 0,
    "sugarGPer100gMax": 0,
-   "juiceBrixMin": 22,
-   "juiceBrix": 26,
-   "juiceBrixMax": 30,
+   "juiceBrixMin": 19.4,
+   "juiceBrix": 22.2,
+   "juiceBrixMax": 24.2,
    "juiceYieldPct": 60,
    "titratableAcidityGPerL": 2,
    "dominantAcid": "citric",
@@ -3176,9 +3666,11 @@
     "inulin"
    ],
    "description": "The sugar in raw agave is inulin, a fructose polymer that yeast cannot ferment. Cooking hydrolyses it to fructose.",
-   "usageNotes": "The whole-fruit sugar figure is zero on purpose: uncooked agave yields nothing. Roast or steam for 24–48 h first, then the juice runs 22–30 Brix.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 76
+   "usageNotes": "The whole-fruit sugar figure is zero on purpose: uncooked agave yields nothing. Roast or steam for 24-48 h first, which hydrolyses the inulin - a six-year plant then gives about 19 percent of its heart weight as reducing sugar and juice at 19-24 Brix. Younger plants give less: 15 percent and 19.4 Brix at four years.",
+   "sortOrder": 76,
+   "attribution": "Agave tequilana Weber blue variety at four, five and six years, processed at industrial scale for 100 percent agave silver tequila: Acosta-Salazar and colleagues, \"Effect of Age of Agave tequilana Weber Blue Variety on Quality and Authenticity Parameters for the Tequila 100% Agave Silver Class\", Foods 10(12):3103, 2021 (doi 10.3390/foods10123103, CC BY 4.0), Table 1. Hearts weigh 18.4 to 25.5 kg and the juice runs 19.4, 23.0 and 24.2 degrees Brix by plant age - the 19.4 to 24.2 here, correcting a stored 22 to 30. Total reducing sugars of the heart are 15.21, 18.84 and 19.21 percent of its weight.",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701365/",
+   "sourceNote": "The Brix above is cooked agave. This record's whole-fruit sugar of zero, and the zero ppg with it, describe the uncooked pina, whose carbohydrate is inulin that Saccharomyces cannot ferment - that is a deliberate modelling choice in this catalogue, not a measurement, and the paper does not test raw material. The paper's 15.2 to 19.2 percent total reducing sugars is what the heart yields after cooking. Juice yield, titratable acidity, pH, pectin and tannin are not sourced."
   },
   {
    "id": "juice-apple",
@@ -3189,15 +3681,15 @@
    ],
    "category": "juice",
    "type": "fruit",
-   "ppg": 5.29,
-   "ppgMin": 4.6,
+   "ppg": 4.43,
+   "ppgMin": 4.3,
    "ppgMax": 6.44,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 10,
-   "sugarGPer100g": 11.5,
+   "sugarGPer100gMin": 9.35,
+   "sugarGPer100g": 9.62,
    "sugarGPer100gMax": 14,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -3221,8 +3713,16 @@
    ],
    "description": "Fresh-pressed or shelf-stable apple juice, ready to pitch. 12 Brix works out around 1.048.",
    "usageNotes": "Check for preservatives: potassium sorbate or benzoate will stop a ferment dead. Ascorbic acid is fine.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 77
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173933",
+   "sortOrder": 77,
+   "attribution": "Sugar is USDA FoodData Central's figure for Apple juice, canned or bottled, unsweetened, without added ascorbic acid (SR Legacy, FDC ID 173933): 9.62 g per 100 g, and ppg is 46 x that. FoodData Central marks it Analytical - measured, not estimated, from 4 samples, reported range 9.35-9.86 g per 100 g, which is the tightest sugar figure in this file. The stored 11.5 was 20% high. The range floor is now USDA's own lowest sample rather than a curated guess. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it. Codex STAN 247-2005 backs the Brix floor, below. Juice yield, titratable acidity, dominant acid, pH, pectin and tannin are carried over from this project's earlier curation and are not sourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Apple juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.5, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-apple-concentrate",
@@ -3232,16 +3732,16 @@
    ],
    "category": "juice",
    "type": "fruit",
-   "ppg": 31.28,
-   "ppgMin": 27.6,
-   "ppgMax": 33.12,
+   "ppg": 25.58,
+   "ppgMin": 24.47,
+   "ppgMax": 27.09,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 60,
-   "sugarGPer100g": 68,
-   "sugarGPer100gMax": 72,
+   "sugarGPer100gMin": 53.2,
+   "sugarGPer100g": 55.6,
+   "sugarGPer100gMax": 58.9,
    "juiceBrixMin": 65,
    "juiceBrix": 68,
    "juiceBrixMax": 72,
@@ -3262,9 +3762,11 @@
     "concentrate"
    ],
    "description": "Roughly 68 Brix — about six times the strength of single-strength juice.",
-   "usageNotes": "Reconstitute at about 1 part concentrate to 5 parts water for a normal cider gravity.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 78
+   "usageNotes": "Reconstitute at about 1 part concentrate to 6 parts water for a normal cider gravity: 7 CFR 52.6322 grades 68 Brix as a six-to-one concentrate, not the five-to-one this record used to advise.",
+   "sourceUrl": "https://www.ams.usda.gov/sites/default/files/media/Frozen_Concentrated_Apple_Juice_Standard%5B1%5D.pdf",
+   "sortOrder": 78,
+   "attribution": "Sugar is derived, not stored as Brix. The record previously set sugar equal to the 68 Brix concentration, which counts the concentrate's organic acid, pectin and minerals as fermentable sugar. USDA FoodData Central measures the gap for single-strength apple juice (SR Legacy, FDC ID 173933, Apple juice, canned or bottled, unsweetened): sugars are 81.8% of total solids there, so a 68 Brix concentrate carries about 55.6 g of sugar per 100 g, not 68. ppg is 46 x that. The minimum and maximum are the same conversion applied to the stored Brix range. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. The Brix concentration is graded: the United States Standards for Grades of Frozen Concentrated Apple Juice, section 52.6322, set the minimum Brix of the finished concentrate at each dilution factor - 22.9 degrees at 1 plus 1, then 33.0, 42.2, 50.8, 58.8, 66.3 and 73.3 at 7 plus 1. Issued by USDA's Agricultural Marketing Service under the Agricultural Marketing Act of 1946, published at 40 FR 13195 and effective 15 May 1975.",
+   "sourceNote": "The reconstitution advice on this record was wrong and the standard is what shows it. It said to reconstitute at about 1 part concentrate to 5 parts water, but section 52.6322 puts 68 Brix between the 6 plus 1 grade (minimum 66.3) and the 7 plus 1 grade (minimum 73.3), so a 68 Brix concentrate is a six-to-one product and diluting it five-to-one overshoots the gravity. The dilution factors are volumetric and the standard's own figures are not linear in Brix - 22.9 at 1 plus 1 against 73.3 at 7 plus 1 - because the concentrate is much denser than water, so do not interpolate them by hand.\n\nTwo limits on this citation. First, the standard is cited to the AMS document rather than to the Code of Federal Regulations, because it is no longer in the Code: 7 CFR part 52 now ends at section 52.3764 and the whole 52.6321-52.6332 subpart for frozen concentrated apple juice has been removed, so an eCFR link would be dead. AMS still publishes it as a voluntary grade standard and that PDF is what was read. Second, the standard grades Brix, which is soluble solids, and says nothing about how much of those solids is sugar; that conversion comes from USDA's measurement of the single-strength juice. Using the single-strength ratio is deliberately conservative - USDA's own concentrate record puts sugars at 90.3% of solids against 81.8% in the juice, so the true figure is likely a few grams higher than the 55.6 stored here. Titratable acidity, pH and pectin remain unsourced curation."
   },
   {
    "id": "juice-grape-white",
@@ -3305,8 +3807,16 @@
    ],
    "description": "Single-strength white must at harvest gravity — around 1.092 at 22 Brix.",
    "usageNotes": "Commercial juice is usually already sulphited; wait 24 h before pitching.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 79
+   "sourceUrl": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+   "sortOrder": 79,
+   "attribution": "The Brix floor is Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex: the minimum Brix for reconstituted grape juice (Vitis vinifera L. or hybrids, Vitis labrusca or hybrids) is 16.0 at 20 C. The stored minimum for white grape juice already sits above it. Sugar and ppg are not sourced - see below.",
+   "sourceNote": "USDA has a record for unsweetened grape juice and it was not used. All three SR Legacy entries (FDC IDs 173042, 173041, 168207) carry the same 14.2 g of sugar per 100 g with no derivation code recorded at all - not analytical, not imputed, simply unattributed - and SR Legacy makes no distinction between white and red juice, so a single figure would have had to serve both records. That figure also implies about 15.5 Brix, which is below the 16.0 Codex sets as the authenticity floor for grape juice, so the one number USDA offers would put its own juice outside the international standard. The stored figures describe juice pressed from wine grapes at 21-24 Brix rather than the roughly 16-17 Brix commercial bottled product; they are unsourced curation and remain so.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum of 19 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-grape-red",
@@ -3346,8 +3856,16 @@
    ],
    "description": "Single-strength red must. Juice alone carries little tannin — that comes from skin contact.",
    "usageNotes": "For structure, ferment on skins or add grape tannin.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 80
+   "sourceUrl": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+   "sortOrder": 80,
+   "attribution": "The Brix floor is Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex: the minimum Brix for reconstituted grape juice (Vitis vinifera L. or hybrids, Vitis labrusca or hybrids) is 16.0 at 20 C. The stored minimum for red grape juice already sits above it. Sugar and ppg are not sourced - see below.",
+   "sourceNote": "USDA has a record for unsweetened grape juice and it was not used. All three SR Legacy entries (FDC IDs 173042, 173041, 168207) carry the same 14.2 g of sugar per 100 g with no derivation code recorded at all - not analytical, not imputed, simply unattributed - and SR Legacy makes no distinction between white and red juice, so a single figure would have had to serve both records. That figure also implies about 15.5 Brix, which is below the 16.0 Codex sets as the authenticity floor for grape juice, so the one number USDA offers would put its own juice outside the international standard. The stored figures describe juice pressed from wine grapes at 21-24 Brix rather than the roughly 16-17 Brix commercial bottled product; they are unsourced curation and remain so.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Grape juice at 16.0 at 20 C. The stored minimum of 21 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-grape-concentrate",
@@ -3357,16 +3875,16 @@
    ],
    "category": "juice",
    "type": "fruit",
-   "ppg": 31.28,
-   "ppgMin": 27.6,
-   "ppgMax": 32.2,
+   "ppg": 28.7,
+   "ppgMin": 27.42,
+   "ppgMax": 29.53,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 60,
-   "sugarGPer100g": 68,
-   "sugarGPer100gMax": 70,
+   "sugarGPer100gMin": 59.6,
+   "sugarGPer100g": 62.4,
+   "sugarGPer100gMax": 64.2,
    "juiceBrixMin": 65,
    "juiceBrix": 68,
    "juiceBrixMax": 70,
@@ -3389,8 +3907,10 @@
    ],
    "description": "About 68 Brix. The standard body-and-sugar addition for kit wines and a common mead adjunct.",
    "usageNotes": "Adds tartaric acid along with the sugar — account for it before making acid corrections.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 81
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/173042",
+   "sortOrder": 81,
+   "attribution": "Sugar is derived, not stored as Brix. The record previously set sugar equal to the 68 Brix concentration, which counts the concentrate's organic acid, pectin and minerals as fermentable sugar. USDA FoodData Central measures the gap for single-strength grape juice (SR Legacy, FDC ID 173042, Grape juice, canned or bottled, unsweetened): sugars are 91.7% of total solids there, so a 68 Brix concentrate carries about 62.4 g of sugar per 100 g, not 68. ppg is 46 x that. The minimum and maximum are the same conversion applied to the stored Brix range. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The 68 Brix concentration itself is not sourced. There is a US grade standard for frozen concentrated grape juice, 7 CFR 52.2453, but it governs *sweetened* concentrate - its Brix figures include added sweetening ingredient - so it cannot bound an unsweetened grape concentrate, and there is no AMS standard for tart cherry concentrate at all. 68 Brix is the commercial trade concentration rather than a graded one, and it is carried over from this project's earlier curation. What is sourced here is the conversion from that Brix to sugar. Note also that USDA measures the sugars-to-solids ratio rising as juice is concentrated - apple goes from 81.8% single-strength to 90.3% in USDA's own concentrate record - so applying the single-strength ratio makes this a conservative figure, low rather than high. Titratable acidity and pH remain unsourced."
   },
   {
    "id": "juice-orange",
@@ -3398,15 +3918,15 @@
    "aliases": [],
    "category": "juice",
    "type": "fruit",
-   "ppg": 5.06,
-   "ppgMin": 4.14,
+   "ppg": 4.03,
+   "ppgMin": 3.9,
    "ppgMax": 5.98,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 9,
-   "sugarGPer100g": 11,
+   "sugarGPer100gMin": 8.48,
+   "sugarGPer100g": 8.76,
    "sugarGPer100gMax": 13,
    "juiceBrixMin": 10,
    "juiceBrix": 12,
@@ -3429,8 +3949,16 @@
    ],
    "description": "Ferments cleanly but loses most of its aroma; the result reads more like a dry citrus wine than orange juice.",
    "usageNotes": "Pasteurised carton juice is reliable; check for added preservatives.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 82
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169099",
+   "sortOrder": 82,
+   "attribution": "Sugar is USDA FoodData Central's figure for Orange juice, canned, unsweetened (SR Legacy, FDC ID 169099): 8.76 g per 100 g, and ppg is 46 x that. FoodData Central marks it Analytical - measured, not estimated, from 3 samples, reported range 8.48-8.96 g per 100 g. The stored 11 was a quarter high. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The canned record is cited rather than the obvious one. FDC ID 169098, \"Orange juice, raw\", is the record a search puts first and it carries 8.4 g of sugar, but USDA derives that one \"Based on another form of the food or similar food\" - it is imputed, not measured. The canned unsweetened juice is the only orange juice in SR Legacy whose sugar is Analytical, and the two figures agree to within 4%, so nothing is lost by preferring the measured one. Everything except sugar, ppg and the Codex Brix floor below is unsourced curation.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Orange juice at 10.0 (the Annex's absolute floor; the nominal figure is 11.8-11.2, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 10 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-pineapple",
@@ -3438,15 +3966,15 @@
    "aliases": [],
    "category": "juice",
    "type": "fruit",
-   "ppg": 5.98,
-   "ppgMin": 5.06,
+   "ppg": 4.59,
+   "ppgMin": 4.59,
    "ppgMax": 6.9,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 11,
-   "sugarGPer100g": 13,
+   "sugarGPer100gMin": 9.98,
+   "sugarGPer100g": 9.98,
    "sugarGPer100gMax": 15,
    "juiceBrixMin": 12,
    "juiceBrix": 14,
@@ -3470,8 +3998,16 @@
    ],
    "description": "Canned or carton juice is heat-treated, so the bromelain problem is already solved.",
    "usageNotes": "Unlike fresh pineapple this will not attack gelatin or beer foam.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 83
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169947",
+   "sortOrder": 83,
+   "attribution": "Sugar is USDA FoodData Central's figure for Pineapple juice, canned or bottled, unsweetened, without added ascorbic acid (SR Legacy, FDC ID 169947): 9.98 g per 100 g, and ppg is 46 x that. FoodData Central marks it Analytical - measured, not estimated, from 1 sample. The stored 13 was 30% high. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "One sample, so the figure is a measurement but not a survey. USDA publishes no range for it, so the stored minimum is now that single measured value rather than a wider guess. Everything except sugar, ppg and the Codex Brix floor below is unsourced.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Pineapple juice at 10.0 (the Annex's absolute floor; the nominal figure is 12.8, but it admits juice down to 10 Brix from countries whose fruit runs consistently lower) at 20 C. The stored minimum of 12 already sits at or above that floor, so Codex bounds this record without changing it. The floor is a trade-authenticity minimum, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-cranberry",
@@ -3489,7 +4025,7 @@
    "sugarGPer100gMin": 6,
    "sugarGPer100g": 7.5,
    "sugarGPer100gMax": 9,
-   "juiceBrixMin": 7,
+   "juiceBrixMin": 7.5,
    "juiceBrix": 8,
    "juiceBrixMax": 10,
    "juiceYieldPct": 100,
@@ -3511,8 +4047,16 @@
    ],
    "description": "Unsweetened cranberry juice is brutally acidic — most retail 'cranberry juice' is a sweetened cocktail at a fraction of the strength.",
    "usageNotes": "Read the label: cocktail blends are typically 25% juice and already contain sugar.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 84
+   "sourceUrl": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+   "sortOrder": 84,
+   "attribution": "The Brix floor is Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex: the minimum Brix for reconstituted cranberry juice (Vaccinium macrocarpon Aiton, V. oxycoccos L.) is 7.5 at 20 C, and the stored minimum of 7 was below it. The sugar figure is not sourced - see below.",
+   "sourceNote": "USDA has a record for this and it was rejected. FDC ID 168117, \"Cranberry juice, unsweetened\", carries 12.1 g of sugar per 100 g, but USDA derives it by \"Other procedure used from imputing\" - no measurement, and its water content is imputed too. It also fails an independent check: 12.1 g of sugar in a juice USDA puts at 12.87 g of total solids would be roughly 12.9 Brix, and Codex sets authentic cranberry juice at a minimum of 7.5 Brix, with commercial single-strength juice sitting near that floor rather than at 13. Two sources cannot both be right and the one with no measurement behind it loses. SR Legacy has no analytical figure for pure unsweetened cranberry juice at all - every analytical cranberry entry in it is a sweetened cocktail or a blend - so the stored 7.5 g stands as unsourced curation, consistent with the Codex floor but not established by it.",
+   "additionalSources": [
+    {
+     "url": "https://www.fao.org/input/download/standards/10154/CXS_247e.pdf",
+     "supports": "Codex Alimentarius CXS 247-2005, General Standard for Fruit Juices and Nectars, Annex, sets the minimum Brix for reconstituted Cranberry juice at 7.5 at 20 C. The stored minimum was 7, below that floor - juice at 7 Brix could not be sold as cranberry juice - so it has been raised to 7.5. This is a trade-authenticity floor, not the lowest Brix ever measured in the fruit."
+    }
+   ]
   },
   {
    "id": "juice-cherry-concentrate",
@@ -3522,16 +4066,16 @@
    ],
    "category": "juice",
    "type": "fruit",
-   "ppg": 31.28,
-   "ppgMin": 27.6,
-   "ppgMax": 32.2,
+   "ppg": 25.76,
+   "ppgMin": 24.66,
+   "ppgMax": 26.54,
    "ppgBasis": "sugar-content",
    "colorLovibond": 1,
    "fermentabilityPct": 95,
    "requiresConversion": false,
-   "sugarGPer100gMin": 60,
-   "sugarGPer100g": 68,
-   "sugarGPer100gMax": 70,
+   "sugarGPer100gMin": 53.6,
+   "sugarGPer100g": 56.0,
+   "sugarGPer100gMax": 57.7,
    "juiceBrixMin": 65,
    "juiceBrix": 68,
    "juiceBrixMax": 70,
@@ -3553,8 +4097,10 @@
    ],
    "description": "About 68 Brix, and the cheapest reliable route to genuine kriek character without sourcing fresh sour cherries.",
    "usageNotes": "Add post-fermentation to preserve aroma. Roughly 1 L per 20 L batch gives a pronounced cherry note.",
-   "sourceUrl": "https://fdc.nal.usda.gov/",
-   "sortOrder": 85
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/167807",
+   "sortOrder": 85,
+   "attribution": "Sugar is derived, not stored as Brix. The record previously set sugar equal to the 68 Brix concentration, which counts the concentrate's organic acid, pectin and minerals as fermentable sugar. USDA FoodData Central measures the gap for single-strength tart cherry juice (SR Legacy, FDC ID 167807, Cherry juice, tart): sugars are 82.4% of total solids there, so a 68 Brix concentrate carries about 56.0 g of sugar per 100 g, not 68. ppg is 46 x that. The minimum and maximum are the same conversion applied to the stored Brix range. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser.",
+   "sourceNote": "The 68 Brix concentration itself is not sourced. There is a US grade standard for frozen concentrated grape juice, 7 CFR 52.2453, but it governs *sweetened* concentrate - its Brix figures include added sweetening ingredient - so it cannot bound an unsweetened tart cherry concentrate, and there is no AMS standard for tart cherry concentrate at all. 68 Brix is the commercial trade concentration rather than a graded one, and it is carried over from this project's earlier curation. What is sourced here is the conversion from that Brix to sugar. Note also that USDA measures the sugars-to-solids ratio rising as juice is concentrated - apple goes from 81.8% single-strength to 90.3% in USDA's own concentrate record - so applying the single-strength ratio makes this a conservative figure, low rather than high. Titratable acidity and pH remain unsourced."
   }
  ]
 }

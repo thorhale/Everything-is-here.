@@ -1,72 +1,2575 @@
 {
-  "set": "world",
-  "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis.",
-  "hops": [
-    {"id":"east-kent-goldings","name":"East Kent Goldings","aliases":["EKG"],"country":"United Kingdom","purpose":"aroma","alphaMin":4,"alphaMax":6.5,"betaMin":2,"betaMax":3.5,"cohumuloneMin":28,"cohumuloneMax":32,"totalOilMin":0.4,"totalOilMax":0.8,"myrcenePct":25,"humulenePct":40,"aromaDescriptors":["honey","floral","earthy","lavender"],"substitutes":["Fuggle","Styrian Goldings"],"styleTags":["english","bitter","esb","porter"],"description":"The protected-origin English aroma hop; delicate honeyed floral character. The defining late hop of English bitter and ESB.","sourceUrl":"https://charlesfaram.com/hop/east-kent-golding/"},
-    {"id":"fuggle","name":"Fuggle","country":"United Kingdom","purpose":"aroma","alphaMin":3.5,"alphaMax":5.5,"betaMin":2,"betaMax":3,"cohumuloneMin":25,"cohumuloneMax":32,"totalOilMin":0.7,"totalOilMax":1.2,"myrcenePct":40,"humulenePct":25,"aromaDescriptors":["earthy","woody","mint","grassy"],"substitutes":["Willamette","Styrian Goldings"],"styleTags":["english","porter","mild","bitter"],"yearReleased":1875,"description":"The other great English hop — earthier and more rustic than Goldings. Parent of Willamette and Styrian Goldings.","sourceUrl":"https://charlesfaram.com/hop/fuggle/"},
-    {"id":"challenger","name":"Challenger","country":"United Kingdom","purpose":"dual","alphaMin":6.5,"alphaMax":8.5,"betaMin":3.5,"betaMax":4.5,"cohumuloneMin":20,"cohumuloneMax":25,"totalOilMin":1,"totalOilMax":1.7,"aromaDescriptors":["cedar","spice","green tea","floral"],"substitutes":["East Kent Goldings","Northern Brewer"],"styleTags":["english","bitter","porter"],"description":"Versatile English dual-purpose hop; cedar and spice with clean bitterness.","sourceUrl":"https://charlesfaram.com/hop/challenger/"},
-    {"id":"target","name":"Target","country":"United Kingdom","purpose":"bittering","alphaMin":9.5,"alphaMax":12.5,"betaMin":4.5,"betaMax":5.5,"cohumuloneMin":30,"cohumuloneMax":38,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["sage","citrus","herbal","spice"],"substitutes":["Challenger","Northdown"],"styleTags":["english","bittering","bitter"],"description":"High-alpha English bittering hop with a distinctive sage and marmalade character.","sourceUrl":"https://charlesfaram.com/hop/target/"},
-    {"id":"bramling-cross","name":"Bramling Cross","country":"United Kingdom","purpose":"aroma","alphaMin":5,"alphaMax":7,"betaMin":2.3,"betaMax":3.3,"cohumuloneMin":33,"cohumuloneMax":38,"totalOilMin":0.7,"totalOilMax":1.2,"aromaDescriptors":["blackcurrant","lemon","spice"],"substitutes":["East Kent Goldings"],"styleTags":["english","winter-ale","bitter"],"description":"Unmistakable blackcurrant and lemon; a Goldings cross with wild Manitoban parentage.","sourceUrl":"https://charlesfaram.com/hop/bramling-cross/"},
-    {"id":"first-gold","name":"First Gold","country":"United Kingdom","purpose":"dual","alphaMin":6.5,"alphaMax":8.5,"betaMin":2.5,"betaMax":3.5,"cohumuloneMin":30,"cohumuloneMax":35,"totalOilMin":0.7,"totalOilMax":1.5,"aromaDescriptors":["marmalade","orange","spice","floral"],"substitutes":["East Kent Goldings","Challenger"],"styleTags":["english","bitter","golden-ale"],"description":"Dwarf Goldings variant with a marmalade-like citrus character.","sourceUrl":"https://charlesfaram.com/hop/first-gold/"},
-    {"id":"jester","name":"Jester","country":"United Kingdom","purpose":"dual","alphaMin":7,"alphaMax":9,"betaMin":4,"betaMax":6,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["grapefruit","blackcurrant","tropical","lychee"],"substitutes":["Cascade","Bramling Cross"],"styleTags":["english","ipa","pale-ale"],"description":"Modern British variety bred for New World-style tropical and grapefruit character.","sourceUrl":"https://charlesfaram.com/hop/jester/"},
-    {"id":"hallertau-mittelfrueh","name":"Hallertau Mittelfrüh","country":"Germany","purpose":"aroma","alphaMin":3,"alphaMax":5.5,"betaMin":3,"betaMax":5,"cohumuloneMin":17,"cohumuloneMax":24,"totalOilMin":0.7,"totalOilMax":1.3,"myrcenePct":30,"humulenePct":45,"aromaDescriptors":["floral","herbal","spice","noble"],"substitutes":["Tettnanger","Spalt","Liberty"],"styleTags":["lager","pilsner","helles","noble"],"description":"The archetypal noble hop — refined, floral, herbal, with very low cohumulone for a soft bitterness. The soul of German lager.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"tettnanger","name":"Tettnanger","country":"Germany","purpose":"aroma","alphaMin":3.5,"alphaMax":5.5,"betaMin":3,"betaMax":5,"cohumuloneMin":22,"cohumuloneMax":28,"totalOilMin":0.5,"totalOilMax":0.9,"aromaDescriptors":["herbal","spice","floral","noble"],"substitutes":["Hallertau Mittelfrüh","Saaz"],"styleTags":["lager","pilsner","wheat","noble"],"description":"Noble variety from the Lake Constance region; slightly spicier than Hallertau.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"spalt","name":"Spalt / Spalter","country":"Germany","purpose":"aroma","alphaMin":2.5,"alphaMax":5.5,"betaMin":3,"betaMax":5,"cohumuloneMin":22,"cohumuloneMax":29,"totalOilMin":0.5,"totalOilMax":0.9,"aromaDescriptors":["noble","spice","herbal","woody"],"substitutes":["Tettnanger","Saaz"],"styleTags":["lager","altbier","kolsch","noble"],"description":"The fourth classic German noble hop, from the small Spalt growing region.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"hersbrucker","name":"Hersbrucker","country":"Germany","purpose":"aroma","alphaMin":2,"alphaMax":5,"betaMin":4,"betaMax":6,"cohumuloneMin":19,"cohumuloneMax":25,"totalOilMin":0.5,"totalOilMax":1,"aromaDescriptors":["floral","hay","fruity","herbal"],"substitutes":["Hallertau Mittelfrüh"],"styleTags":["lager","wheat","noble"],"description":"Gentle floral German aroma hop, common in wheat beers and lagers.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"perle","name":"Perle","country":"Germany","purpose":"dual","alphaMin":6,"alphaMax":9,"betaMin":2.5,"betaMax":4.5,"cohumuloneMin":27,"cohumuloneMax":33,"totalOilMin":0.5,"totalOilMax":1.5,"aromaDescriptors":["mint","spice","floral","herbal"],"substitutes":["Northern Brewer","Hallertau Tradition"],"styleTags":["lager","altbier","kolsch"],"description":"Clean German dual-purpose hop with a minty-spicy edge.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"magnum-de","name":"Magnum (German)","country":"Germany","purpose":"bittering","alphaMin":12,"alphaMax":16,"betaMin":5,"betaMax":7,"cohumuloneMin":24,"cohumuloneMax":28,"totalOilMin":1.6,"totalOilMax":2.6,"aromaDescriptors":["clean","neutral"],"substitutes":["Herkules","Warrior"],"styleTags":["bittering","lager","clean"],"description":"Germany's standard clean high-alpha bittering hop; contributes bitterness with essentially no aroma.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"herkules","name":"Herkules","country":"Germany","purpose":"bittering","alphaMin":12,"alphaMax":17,"betaMin":4,"betaMax":5.5,"cohumuloneMin":32,"cohumuloneMax":38,"totalOilMin":1.6,"totalOilMax":2.4,"aromaDescriptors":["clean","spicy","blackcurrant"],"substitutes":["Magnum","Taurus"],"styleTags":["bittering","lager"],"description":"Very high-alpha German bittering variety, now widely grown for efficiency.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"saphir","name":"Saphir","country":"Germany","purpose":"aroma","alphaMin":2,"alphaMax":4.5,"betaMin":4,"betaMax":7,"cohumuloneMin":12,"cohumuloneMax":17,"totalOilMin":0.8,"totalOilMax":1.4,"aromaDescriptors":["tangerine","citrus","floral","spice"],"substitutes":["Hallertau Mittelfrüh"],"styleTags":["lager","wheat","pilsner"],"description":"Modern German aroma hop with a bright tangerine-citrus lift over a noble base.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"hallertau-blanc","name":"Hallertau Blanc","country":"Germany","purpose":"aroma","alphaMin":9,"alphaMax":12,"betaMin":4,"betaMax":6,"cohumuloneMin":20,"cohumuloneMax":25,"totalOilMin":0.6,"totalOilMax":1.5,"aromaDescriptors":["white wine","gooseberry","passionfruit","lemongrass"],"substitutes":["Nelson Sauvin"],"styleTags":["ipa","wheat","saison","modern-german"],"description":"Part of Germany's 'Flavor Hop' program — an answer to Nelson Sauvin with distinct white-wine character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"huell-melon","name":"Huell Melon","country":"Germany","purpose":"aroma","alphaMin":6.9,"alphaMax":7.5,"betaMin":7,"betaMax":7.9,"cohumuloneMin":25,"cohumuloneMax":29,"totalOilMin":0.8,"totalOilMax":1.3,"aromaDescriptors":["honeydew melon","strawberry","apricot"],"substitutes":["Mandarina Bavaria"],"styleTags":["wheat","saison","modern-german"],"description":"Striking honeydew-and-strawberry aroma; another of the German flavour-hop releases.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"mandarina-bavaria","name":"Mandarina Bavaria","country":"Germany","purpose":"aroma","alphaMin":7,"alphaMax":10,"betaMin":4,"betaMax":6,"cohumuloneMin":30,"cohumuloneMax":35,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["tangerine","citrus","sweet fruit"],"substitutes":["Cascade","Amarillo"],"styleTags":["ipa","wheat","modern-german"],"description":"Cascade-derived German variety with a pronounced tangerine character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"saaz","name":"Saaz","aliases":["Žatec","Zatec"],"country":"Czech Republic","purpose":"aroma","alphaMin":2.5,"alphaMax":4.5,"betaMin":3,"betaMax":4.5,"cohumuloneMin":23,"cohumuloneMax":26,"totalOilMin":0.4,"totalOilMax":1,"myrcenePct":25,"humulenePct":35,"aromaDescriptors":["spicy","earthy","herbal","noble"],"substitutes":["Sladek","Tettnanger","Spalt"],"styleTags":["pilsner","czech-lager","noble"],"description":"The defining hop of Bohemian pilsner — delicate, spicy, and earthy, with very low alpha. Pilsner Urquell's signature.","sourceUrl":"https://www.czhops.cz/"},
-    {"id":"sladek","name":"Sladek","country":"Czech Republic","purpose":"aroma","alphaMin":4.5,"alphaMax":8,"betaMin":3.5,"betaMax":7,"cohumuloneMin":24,"cohumuloneMax":28,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["citrus","herbal","spice","grassy"],"substitutes":["Saaz","Premiant"],"styleTags":["czech-lager","pilsner"],"description":"Modern Czech hybrid with more intensity than Saaz while keeping a Czech character.","sourceUrl":"https://www.czhops.cz/"},
-    {"id":"kazbek","name":"Kazbek","country":"Czech Republic","purpose":"aroma","alphaMin":5,"alphaMax":8,"betaMin":4,"betaMax":6,"totalOilMin":0.8,"totalOilMax":1.6,"aromaDescriptors":["lemon","grapefruit","spice","mint"],"substitutes":["Saaz","Sladek"],"styleTags":["czech-lager","pilsner","saison"],"description":"Czech variety with wild Russian parentage; citrus lift over a noble backbone.","sourceUrl":"https://www.czhops.cz/"},
-    {"id":"lubelski","name":"Lubelski","aliases":["Lublin"],"country":"Poland","purpose":"aroma","alphaMin":3,"alphaMax":5,"betaMin":2.5,"betaMax":4.5,"cohumuloneMin":22,"cohumuloneMax":28,"totalOilMin":0.5,"totalOilMax":1.2,"aromaDescriptors":["noble","herbal","spice","floral"],"substitutes":["Saaz","Tettnanger"],"styleTags":["lager","pilsner","noble"],"description":"Poland's noble-type aroma hop, closely related to Saaz.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"styrian-goldings","name":"Styrian Goldings","aliases":["Savinjski Golding","Celeia"],"country":"Slovenia","purpose":"aroma","alphaMin":2,"alphaMax":5,"betaMin":2,"betaMax":3,"cohumuloneMin":25,"cohumuloneMax":30,"totalOilMin":0.5,"totalOilMax":1,"aromaDescriptors":["earthy","spice","floral","lemon"],"substitutes":["Fuggle","East Kent Goldings"],"styleTags":["belgian","saison","english","noble-adjacent"],"description":"Genetically a Fuggle, grown in Slovenia. A cornerstone of Belgian ales and saisons.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"nelson-sauvin","name":"Nelson Sauvin","country":"New Zealand","purpose":"dual","alphaMin":10,"alphaMax":13,"betaMin":6,"betaMax":8,"cohumuloneMin":22,"cohumuloneMax":26,"totalOilMin":0.8,"totalOilMax":1.5,"aromaDescriptors":["white wine","gooseberry","passionfruit","sauvignon blanc"],"substitutes":["Hallertau Blanc"],"styleTags":["ipa","hazy","pale-ale"],"description":"Named for its uncanny resemblance to Sauvignon Blanc — gooseberry and crushed-grape character unlike any other hop.","usageNotes":"Polarising and powerful; easy to overdo.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"motueka","name":"Motueka","country":"New Zealand","purpose":"aroma","alphaMin":6.5,"alphaMax":8.5,"betaMin":5,"betaMax":5.5,"cohumuloneMin":27,"cohumuloneMax":30,"totalOilMin":0.8,"totalOilMax":1.2,"aromaDescriptors":["lime","lemon","tropical","mojito"],"substitutes":["Saaz","Riwaka"],"styleTags":["pilsner","saison","ipa"],"description":"Saaz-derived NZ hop with a vivid fresh-lime character.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"riwaka","name":"Riwaka","country":"New Zealand","purpose":"aroma","alphaMin":4.5,"alphaMax":6.5,"betaMin":4,"betaMax":5,"cohumuloneMin":29,"cohumuloneMax":34,"totalOilMin":0.8,"totalOilMax":1.5,"aromaDescriptors":["grapefruit","passionfruit","citrus zest"],"substitutes":["Motueka","Citra"],"styleTags":["ipa","pale-ale","hazy"],"description":"Intensely aromatic Saaz-derived NZ hop; grapefruit and passionfruit. Chronically scarce.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"pacific-jade","name":"Pacific Jade","country":"New Zealand","purpose":"dual","alphaMin":12,"alphaMax":14,"betaMin":7,"betaMax":8,"cohumuloneMin":24,"cohumuloneMax":26,"totalOilMin":1,"totalOilMax":1.6,"aromaDescriptors":["black pepper","citrus","herbal"],"substitutes":["Columbus","Chinook"],"styleTags":["ipa","bittering"],"description":"Soft bittering with a peppery, citrus-herbal aroma.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"wai-iti","name":"Wai-iti","country":"New Zealand","purpose":"aroma","alphaMin":2.5,"alphaMax":3.5,"betaMin":4.5,"betaMax":5.5,"totalOilMin":0.7,"totalOilMax":1.2,"aromaDescriptors":["peach","apricot","lime","stone fruit"],"substitutes":["Motueka"],"styleTags":["pale-ale","hazy","lager"],"description":"Low-alpha NZ aroma hop with delicate peach and citrus.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"nectaron","name":"Nectaron","country":"New Zealand","purpose":"dual","alphaMin":11,"alphaMax":15,"betaMin":4,"betaMax":6,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["passionfruit","pineapple","stone fruit","tropical"],"substitutes":["Galaxy","Citra"],"styleTags":["hazy","ipa"],"yearReleased":2021,"description":"Recent NZ release with huge tropical intensity; in high demand for hazy IPA.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"galaxy","name":"Galaxy","country":"Australia","purpose":"dual","alphaMin":11,"alphaMax":16,"betaMin":5,"betaMax":6.9,"cohumuloneMin":32,"cohumuloneMax":40,"totalOilMin":2,"totalOilMax":3,"myrcenePct":60,"aromaDescriptors":["passionfruit","peach","citrus","tropical"],"substitutes":["Citra","Mosaic"],"styleTags":["ipa","hazy","pale-ale"],"description":"Australia's flagship hop and one of the highest oil-content varieties grown; overwhelming passionfruit and peach.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"vic-secret","name":"Vic Secret","country":"Australia","purpose":"dual","alphaMin":14,"alphaMax":21,"betaMin":5.5,"betaMax":7.5,"cohumuloneMin":50,"cohumuloneMax":55,"totalOilMin":2,"totalOilMax":3,"aromaDescriptors":["pineapple","pine","passionfruit","herbal"],"substitutes":["Galaxy","Simcoe"],"styleTags":["ipa","hazy"],"description":"Clean, potent tropical-and-pine Australian variety.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"ella","name":"Ella","country":"Australia","purpose":"dual","alphaMin":13,"alphaMax":16,"betaMin":5,"betaMax":8,"cohumuloneMin":33,"cohumuloneMax":38,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["floral","anise","spice","tropical"],"substitutes":["Galaxy"],"styleTags":["ipa","saison","belgian"],"description":"Aromatic Australian hop; floral and spicy at low rates, tropical when pushed.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"enigma","name":"Enigma","country":"Australia","purpose":"dual","alphaMin":13,"alphaMax":17,"betaMin":4.5,"betaMax":6,"totalOilMin":1.8,"totalOilMax":3,"aromaDescriptors":["raspberry","melon","pinot gris","redcurrant"],"substitutes":["Galaxy","Nelson Sauvin"],"styleTags":["ipa","hazy"],"description":"Distinctive berry and white-wine character; a Tasmanian breeding release.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"topaz","name":"Topaz","country":"Australia","purpose":"dual","alphaMin":15,"alphaMax":18,"betaMin":6,"betaMax":8,"cohumuloneMin":47,"cohumuloneMax":52,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["tropical","grassy","lychee","resin"],"substitutes":["Galaxy"],"styleTags":["ipa","bittering"],"description":"High-alpha Australian hop; clean bittering with a grassy-tropical aroma.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"pride-of-ringwood","name":"Pride of Ringwood","country":"Australia","purpose":"bittering","alphaMin":7,"alphaMax":11,"betaMin":4,"betaMax":6,"cohumuloneMin":33,"cohumuloneMax":36,"totalOilMin":0.8,"totalOilMax":1.8,"aromaDescriptors":["earthy","herbal","woody"],"substitutes":["Cluster","Galena"],"styleTags":["australian-lager","historical"],"description":"For decades the dominant Australian bittering hop, and the signature of classic Australian lager.","sourceUrl":"https://www.hops.com.au/"},
-    {"id":"sorachi-ace","name":"Sorachi Ace","country":"Japan","purpose":"dual","alphaMin":10,"alphaMax":16,"betaMin":6,"betaMax":7,"cohumuloneMin":23,"cohumuloneMax":25,"totalOilMin":2,"totalOilMax":3,"aromaDescriptors":["lemon","dill","coconut","lemongrass"],"substitutes":["Sabro"],"styleTags":["saison","novelty","ipa"],"breeder":"Sapporo Breweries","yearReleased":1984,"description":"Bred by Sapporo; an unmistakable lemon-dill-coconut profile that people either love or find soapy.","sourceUrl":"https://www.yakimachief.com/commercial/hop-varieties/sorachi-ace.html"},
-    {"id":"strisselspalt","name":"Strisselspalt","country":"France","purpose":"aroma","alphaMin":3,"alphaMax":5,"betaMin":3,"betaMax":5.5,"cohumuloneMin":20,"cohumuloneMax":25,"totalOilMin":0.6,"totalOilMax":1,"aromaDescriptors":["floral","herbal","pear","noble"],"substitutes":["Hersbrucker","Hallertau Mittelfrüh"],"styleTags":["lager","pilsner","biere-de-garde","noble"],"description":"Alsatian noble-type aroma hop; delicate, floral, and slightly fruity.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"barbe-rouge","name":"Barbe Rouge","country":"France","purpose":"aroma","alphaMin":7,"alphaMax":10,"betaMin":3,"betaMax":5,"totalOilMin":0.8,"totalOilMax":1.5,"aromaDescriptors":["red berries","strawberry","citrus"],"substitutes":["Bramling Cross"],"styleTags":["saison","biere-de-garde","pale-ale"],"description":"French variety with a distinctive red-fruit character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"southern-passion","name":"Southern Passion","country":"South Africa","purpose":"aroma","alphaMin":9,"alphaMax":12,"betaMin":3,"betaMax":5,"totalOilMin":1,"totalOilMax":2,"aromaDescriptors":["passionfruit","guava","melon","citrus"],"substitutes":["Galaxy","Citra"],"styleTags":["ipa","hazy"],"description":"South African variety bred for the short-daylight Cape climate; intense passionfruit and guava.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"african-queen","name":"African Queen","country":"South Africa","purpose":"dual","alphaMin":10,"alphaMax":14,"betaMin":4,"betaMax":6,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["blackcurrant","tropical","lemongrass","dank"],"substitutes":["Nelson Sauvin","Mosaic"],"styleTags":["ipa","hazy"],"description":"Dark-fruit and tropical South African hop with a dank undertone.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"northdown","name":"Northdown","country":"United Kingdom","purpose":"dual","alphaMin":7,"alphaMax":10,"betaMin":4,"betaMax":5.5,"cohumuloneMin":24,"cohumuloneMax":30,"totalOilMin":1,"totalOilMax":2,"aromaDescriptors":["pine","spice","fruity","floral"],"substitutes":["Challenger","Northern Brewer"],"styleTags":["english","bitter","porter"],"description":"Well-rounded English dual-purpose hop; a refined Northern Brewer descendant good for bittering and late additions alike.","sourceUrl":"https://charlesfaram.com/hop/northdown/"},
-    {"id":"progress","name":"Progress","country":"United Kingdom","purpose":"aroma","alphaMin":5,"alphaMax":7.5,"betaMin":2,"betaMax":2.5,"cohumuloneMin":28,"cohumuloneMax":32,"totalOilMin":0.6,"totalOilMax":1.2,"aromaDescriptors":["earthy","honey","mild spice"],"substitutes":["Fuggle","East Kent Goldings"],"styleTags":["english","bitter","mild"],"description":"A gentle Fuggle-replacement aroma hop; soft, earthy, and honeyed.","sourceUrl":"https://charlesfaram.com/hop/progress/"},
-    {"id":"callista","name":"Callista","country":"Germany","purpose":"aroma","alphaMin":2,"alphaMax":4.5,"betaMin":5,"betaMax":7,"totalOilMin":1,"totalOilMax":2,"aromaDescriptors":["gooseberry","apricot","pineapple","white wine"],"substitutes":["Hallertau Blanc","Nelson Sauvin"],"styleTags":["modern-german","ipa","wheat"],"description":"Low-alpha German flavour hop with a bright fruity-white-wine aroma for late and dry hopping.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"akoya","name":"Akoya","country":"France","purpose":"aroma","alphaMin":8,"alphaMax":12,"betaMin":3,"betaMax":5,"totalOilMin":1,"totalOilMax":2,"aromaDescriptors":["floral","citrus","aniseed","fruity"],"substitutes":["Strisselspalt","Barbe Rouge"],"styleTags":["saison","biere-de-garde","lager"],"description":"Modern French aroma variety with a floral-citrus and subtle anise character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"dr-rudi","name":"Dr. Rudi","aliases":["Super Alpha"],"country":"New Zealand","purpose":"bittering","alphaMin":10,"alphaMax":13,"betaMin":6.5,"betaMax":8,"cohumuloneMin":28,"cohumuloneMax":32,"totalOilMin":1,"totalOilMax":1.7,"aromaDescriptors":["pine","resin","lemongrass"],"substitutes":["Magnum","Pacific Jade"],"styleTags":["bittering","lager","ipa"],"description":"New Zealand's clean bittering standard, with a resinous pine-and-citrus edge when used late.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"wakatu","name":"Wakatu","aliases":["Hallertau Aroma"],"country":"New Zealand","purpose":"aroma","alphaMin":6.5,"alphaMax":8.5,"betaMin":8,"betaMax":8.5,"cohumuloneMin":26,"cohumuloneMax":29,"totalOilMin":1,"totalOilMax":1.5,"aromaDescriptors":["lime","floral","citrus"],"substitutes":["Hallertau Mittelfrüh","Motueka"],"styleTags":["lager","pilsner","pale-ale"],"description":"A NZ Hallertau cross with a soft lime-and-floral character; versatile late hop.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"green-bullet","name":"Green Bullet","country":"New Zealand","purpose":"bittering","alphaMin":11,"alphaMax":14,"betaMin":6.5,"betaMax":7.5,"cohumuloneMin":37,"cohumuloneMax":40,"totalOilMin":1,"totalOilMax":1.6,"aromaDescriptors":["raisin","pepper","pine"],"substitutes":["Styrian Goldings","Dr. Rudi"],"styleTags":["bittering","lager","ipa"],"description":"Dual-purpose NZ hop; clean bittering with a raisin-and-pepper aroma when late-hopped.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"hallertau-tradition","name":"Hallertau Tradition","country":"Germany","purpose":"aroma","alphaMin":4,"alphaMax":7,"betaMin":4,"betaMax":6,"cohumuloneMin":24,"cohumuloneMax":30,"totalOilMin":0.7,"totalOilMax":1.3,"aromaDescriptors":["floral","herbal","noble","spice"],"substitutes":["Hallertau Mittelfrüh","Liberty"],"styleTags":["lager","pilsner","noble","wheat"],"description":"Disease-resistant noble-type replacement for Mittelfrüh; clean, floral, herbal.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"polaris","name":"Polaris","country":"Germany","purpose":"dual","alphaMin":18,"alphaMax":23,"betaMin":4,"betaMax":6,"cohumuloneMin":22,"cohumuloneMax":28,"totalOilMin":4,"totalOilMax":5,"aromaDescriptors":["mint","menthol","pineapple","icy"],"substitutes":["none"],"styleTags":["novelty","ipa","bittering"],"description":"Extremely high alpha and oil with a unique icy mint/menthol aroma — a little goes a very long way.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"styrian-wolf","name":"Styrian Wolf","country":"Slovenia","purpose":"aroma","alphaMin":10,"alphaMax":13,"betaMin":3,"betaMax":5,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["grapefruit","white wine","floral","tropical"],"substitutes":["Nelson Sauvin","Hallertau Blanc"],"styleTags":["ipa","pale-ale","modern"],"description":"Modern Slovenian aroma hop with bright grapefruit and white-wine notes.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"bobek","name":"Bobek","aliases":["Styrian Bobek"],"country":"Slovenia","purpose":"aroma","alphaMin":3.5,"alphaMax":7,"betaMin":4,"betaMax":6,"cohumuloneMin":26,"cohumuloneMax":30,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["floral","citrus","herbal","pine"],"substitutes":["Styrian Goldings","Fuggle"],"styleTags":["belgian","saison","english"],"description":"Slovenian Goldings-type with a lifted floral-citrus character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"cascade-argentina","name":"Cascade (Argentina)","country":"Argentina","purpose":"dual","alphaMin":5,"alphaMax":8,"betaMin":5,"betaMax":7,"cohumuloneMin":33,"cohumuloneMax":38,"totalOilMin":0.8,"totalOilMax":1.5,"aromaDescriptors":["grapefruit","floral","citrus"],"substitutes":["Cascade"],"styleTags":["pale-ale","ipa"],"description":"Patagonian-grown Cascade; the mainstay of Argentina's large craft scene, a touch softer than US Cascade.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"kohatu","name":"Kohatu","country":"New Zealand","purpose":"aroma","alphaMin":6,"alphaMax":8,"betaMin":4,"betaMax":6,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["pine","tropical","citrus"],"substitutes":["Motueka","Riwaka"],"styleTags":["ipa","pale-ale"],"description":"Kohatu — NZ aroma hop with pine and tropical-fruit character for late and dry hopping.","sourceUrl":"https://www.nzhops.co.nz/"},
-    {"id":"saaz-us","name":"Sterling","country":"United States","purpose":"aroma","alphaMin":6,"alphaMax":9,"betaMin":4,"betaMax":6,"cohumuloneMin":21,"cohumuloneMax":28,"totalOilMin":0.6,"totalOilMax":1,"aromaDescriptors":["noble","herbal","citrus","spice"],"substitutes":["Saaz","Mount Hood"],"styleTags":["pilsner","lager","noble-adjacent"],"description":"An American Saaz descendant with noble spice plus a citrus lift; a practical domestic substitute for Czech Saaz.","sourceUrl":"https://www.yakimachief.com/commercial/hop-varieties/sterling.html"},
-    {"id":"liberty","name":"Liberty","country":"United States","purpose":"aroma","alphaMin":3,"alphaMax":6,"betaMin":3,"betaMax":4,"cohumuloneMin":24,"cohumuloneMax":30,"totalOilMin":0.6,"totalOilMax":1.2,"aromaDescriptors":["noble","floral","mild spice","lemon"],"substitutes":["Hallertau Mittelfrüh","Mount Hood"],"styleTags":["lager","pilsner","wheat","noble-adjacent"],"description":"American Hallertau descendant; the closest domestic match to German noble character.","sourceUrl":"https://www.yakimachief.com/commercial/hop-varieties/liberty.html"},
-    {"id":"tettnang-us","name":"Tettnanger (US)","country":"United States","purpose":"aroma","alphaMin":4,"alphaMax":5,"betaMin":3,"betaMax":5,"cohumuloneMin":22,"cohumuloneMax":28,"totalOilMin":0.4,"totalOilMax":0.8,"aromaDescriptors":["noble","spicy","herbal","earthy"],"substitutes":["Tettnanger","Spalt"],"styleTags":["lager","wheat","noble-adjacent"],"description":"American-grown Tettnanger; slightly earthier than the German original but a serviceable stand-in.","sourceUrl":"https://www.yakimachief.com/"},
-    {"id":"hallertau-taurus","name":"Taurus","country":"Germany","purpose":"bittering","alphaMin":12,"alphaMax":17,"betaMin":4,"betaMax":6,"cohumuloneMin":20,"cohumuloneMax":25,"totalOilMin":1.8,"totalOilMax":3,"aromaDescriptors":["clean","spicy","earthy"],"substitutes":["Herkules","Magnum"],"styleTags":["bittering","lager"],"description":"High-alpha German bittering hop with unusually low cohumulone for its strength — smooth bitterness.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"opal","name":"Opal","country":"Germany","purpose":"aroma","alphaMin":5,"alphaMax":8,"betaMin":3.5,"betaMax":5.5,"cohumuloneMin":13,"cohumuloneMax":17,"totalOilMin":0.8,"totalOilMax":1.6,"aromaDescriptors":["spice","aniseed","citrus","floral"],"substitutes":["Saphir","Perle"],"styleTags":["saison","belgian","lager"],"description":"German aroma variety with a distinctive aniseed-and-spice note; very low cohumulone.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"sussex","name":"Admiral","country":"United Kingdom","purpose":"bittering","alphaMin":13,"alphaMax":16,"betaMin":4.8,"betaMax":6.1,"cohumuloneMin":38,"cohumuloneMax":45,"totalOilMin":0.8,"totalOilMax":1.6,"aromaDescriptors":["orange","resin","herbal"],"substitutes":["Target","Northdown"],"styleTags":["english","bittering","bitter"],"description":"High-alpha English bittering hop bred to replace Target; clean and efficient with a marmalade edge.","sourceUrl":"https://charlesfaram.com/hop/admiral/"},
-    {"id":"endeavour","name":"Endeavour","country":"United Kingdom","purpose":"dual","alphaMin":8,"alphaMax":10,"betaMin":4,"betaMax":6,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["blackcurrant","raspberry","citrus"],"substitutes":["Bramling Cross","Jester"],"styleTags":["english","pale-ale","ipa"],"description":"Modern British variety with soft red-berry fruit; a Cascade-adjacent option grown in Kent.","sourceUrl":"https://charlesfaram.com/hop/endeavour/"},
-    {"id":"olicana","name":"Olicana","country":"United Kingdom","purpose":"aroma","alphaMin":8,"alphaMax":10,"betaMin":4,"betaMax":6,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["tropical","mango","grapefruit","elderflower"],"substitutes":["Citra","Jester"],"styleTags":["ipa","hazy","pale-ale"],"description":"British answer to the New World tropical hops — mango and grapefruit with an elderflower lift.","sourceUrl":"https://charlesfaram.com/hop/olicana/"},
-    {"id":"harlequin","name":"Harlequin","country":"United Kingdom","purpose":"dual","alphaMin":8,"alphaMax":11,"betaMin":4,"betaMax":6,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["passionfruit","pineapple","citrus","stone fruit"],"substitutes":["Olicana","Mosaic"],"styleTags":["ipa","hazy"],"description":"Recent Charles Faram release with strong tropical character and high thiol potential.","sourceUrl":"https://charlesfaram.com/hop/harlequin/"},
-    {"id":"lubelski-marynka","name":"Marynka","country":"Poland","purpose":"bittering","alphaMin":9,"alphaMax":12,"betaMin":4,"betaMax":7,"cohumuloneMin":25,"cohumuloneMax":30,"totalOilMin":1.5,"totalOilMax":2.5,"aromaDescriptors":["resin","herbal","spicy"],"substitutes":["Magnum","Northern Brewer"],"styleTags":["bittering","lager"],"description":"Polish high-alpha bittering variety, resinous and herbal.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"premiant","name":"Premiant","country":"Czech Republic","purpose":"dual","alphaMin":7,"alphaMax":10,"betaMin":4,"betaMax":6,"cohumuloneMin":18,"cohumuloneMax":23,"totalOilMin":1,"totalOilMax":1.8,"aromaDescriptors":["noble","spicy","floral","herbal"],"substitutes":["Saaz","Sladek"],"styleTags":["czech-lager","pilsner"],"description":"Czech dual-purpose hop with low cohumulone; refined bitterness with Saaz-like aroma.","sourceUrl":"https://www.czhops.cz/"},
-    {"id":"aurora","name":"Aurora","aliases":["Super Styrian"],"country":"Slovenia","purpose":"dual","alphaMin":7,"alphaMax":12,"betaMin":3,"betaMax":5,"cohumuloneMin":20,"cohumuloneMax":26,"totalOilMin":0.8,"totalOilMax":1.6,"aromaDescriptors":["floral","herbal","citrus","pine"],"substitutes":["Styrian Goldings","Northern Brewer"],"styleTags":["belgian","saison","lager"],"description":"Slovenian dual-purpose hop; more assertive than Styrian Goldings while keeping its character.","sourceUrl":"https://www.barthhaas.com/"},
-    {"id":"cascade-nz","name":"Cascade (New Zealand)","country":"New Zealand","purpose":"aroma","alphaMin":6,"alphaMax":8,"betaMin":5,"betaMax":7,"totalOilMin":0.8,"totalOilMax":1.4,"aromaDescriptors":["citrus","floral","grapefruit"],"substitutes":["Cascade"],"styleTags":["pale-ale","ipa"],"description":"New Zealand-grown Cascade; softer and more floral than the US original thanks to the different growing climate.","sourceUrl":"https://www.nzhops.co.nz/"}
-  ]
+ "set": "world",
+ "attribution": "Alpha/beta acid, cohumulone, and oil figures transcribed from grower and merchant technical data (Charles Faram, BarthHaas, Hopsteiner, Yakima Chief, NZ Hops Ltd, Hop Products Australia, Žatec/Saaz growers). Alpha acid varies by crop year — brew to the lot analysis.",
+ "hops": [
+  {
+   "id": "east-kent-goldings",
+   "name": "East Kent Goldings",
+   "aliases": [
+    "EKG"
+   ],
+   "country": "United Kingdom",
+   "purpose": "aroma",
+   "alphaMin": 4,
+   "alphaMax": 6.5,
+   "betaMin": 1.9,
+   "betaMax": 2.8,
+   "cohumuloneMin": 20,
+   "cohumuloneMax": 25,
+   "totalOilMin": 0.4,
+   "totalOilMax": 0.8,
+   "myrceneMin": 27,
+   "myrceneMax": 33,
+   "humuleneMin": 38,
+   "humuleneMax": 44,
+   "caryophylleneMin": 12,
+   "caryophylleneMax": 16,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "honey",
+    "floral",
+    "earthy",
+    "lavender"
+   ],
+   "substitutes": [
+    "Fuggle",
+    "Styrian Goldings"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "esb",
+    "porter"
+   ],
+   "description": "The protected-origin English aroma hop; delicate honeyed floral character. The defining late hop of English bitter and ESB.",
+   "specSource": "rahrbsg-variety-sheets:UK-East-Kent-Goldings.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-East-Kent-Goldings.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet UK-East-Kent-Goldings.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "fuggle",
+   "name": "Fuggle",
+   "country": "United Kingdom",
+   "purpose": "aroma",
+   "alphaMin": 3.5,
+   "alphaMax": 6.5,
+   "betaMin": 2,
+   "betaMax": 4,
+   "cohumuloneMin": 27,
+   "cohumuloneMax": 33,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.1,
+   "myrceneMin": 25,
+   "myrceneMax": 30,
+   "humuleneMin": 30,
+   "humuleneMax": 38,
+   "farneseneMin": 6,
+   "farneseneMax": 8,
+   "aromaDescriptors": [
+    "earthy",
+    "woody",
+    "mint",
+    "grassy"
+   ],
+   "substitutes": [
+    "Willamette",
+    "Styrian Goldings"
+   ],
+   "styleTags": [
+    "english",
+    "porter",
+    "mild",
+    "bitter"
+   ],
+   "yearReleased": 1875,
+   "description": "The other great English hop — earthier and more rustic than Goldings. Parent of Willamette and Styrian Goldings.",
+   "specSource": "haas-companion-2022:FUGGLE",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 98 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/fuggles, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "challenger",
+   "name": "Challenger",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 6.5,
+   "alphaMax": 8.5,
+   "betaMin": 4,
+   "betaMax": 4.5,
+   "cohumuloneMin": 20,
+   "cohumuloneMax": 25,
+   "totalOilMin": 1,
+   "totalOilMax": 1.7,
+   "aromaDescriptors": [
+    "cedar",
+    "spice",
+    "green tea",
+    "floral"
+   ],
+   "substitutes": [
+    "East Kent Goldings",
+    "Northern Brewer"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "porter"
+   ],
+   "description": "Versatile English dual-purpose hop; cedar and spice with clean bitterness.",
+   "specSource": "rahrbsg-variety-sheets:UK-Challenger.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Challenger.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet UK-Challenger.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "target",
+   "name": "Target",
+   "country": "United Kingdom",
+   "purpose": "bittering",
+   "alphaMin": 9.5,
+   "alphaMax": 12.5,
+   "betaMin": 4.3,
+   "betaMax": 5.7,
+   "cohumuloneMin": 35,
+   "cohumuloneMax": 40,
+   "totalOilMin": 1.2,
+   "totalOilMax": 1.4,
+   "myrceneMin": 45,
+   "myrceneMax": 55,
+   "humuleneMin": 17,
+   "humuleneMax": 23,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 10,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "sage",
+    "citrus",
+    "herbal",
+    "spice"
+   ],
+   "substitutes": [
+    "Challenger",
+    "Northdown"
+   ],
+   "styleTags": [
+    "english",
+    "bittering",
+    "bitter"
+   ],
+   "description": "High-alpha English bittering hop with a distinctive sage and marmalade character.",
+   "specSource": "rahrbsg-variety-sheets:UK-Target.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Target.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet UK-Target.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "bramling-cross",
+   "name": "Bramling Cross",
+   "country": "United Kingdom",
+   "purpose": "aroma",
+   "alphaMin": 6,
+   "alphaMax": 8,
+   "betaMin": 2.3,
+   "betaMax": 3.5,
+   "cohumuloneMin": 34,
+   "cohumuloneMax": 34,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.2,
+   "myrceneMin": 36,
+   "myrceneMax": 36,
+   "humuleneMin": 25,
+   "humuleneMax": 25,
+   "caryophylleneMin": 15,
+   "caryophylleneMax": 19,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "blackcurrant",
+    "lemon",
+    "spice"
+   ],
+   "substitutes": [
+    "East Kent Goldings"
+   ],
+   "styleTags": [
+    "english",
+    "winter-ale",
+    "bitter"
+   ],
+   "description": "Unmistakable blackcurrant and lemon; a Goldings cross with wild Manitoban parentage.",
+   "specSource": "haas-companion-2022:BRAMLING CROSS",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 67 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/bramling-cross, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "first-gold",
+   "name": "First Gold",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 6.5,
+   "alphaMax": 10,
+   "betaMin": 3,
+   "betaMax": 4.5,
+   "cohumuloneMin": 32,
+   "cohumuloneMax": 35,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.7,
+   "myrceneMin": 30,
+   "myrceneMax": 38,
+   "humuleneMin": 20,
+   "humuleneMax": 20,
+   "farneseneMin": 1.5,
+   "farneseneMax": 3,
+   "aromaDescriptors": [
+    "marmalade",
+    "orange",
+    "spice",
+    "floral"
+   ],
+   "substitutes": [
+    "East Kent Goldings",
+    "Challenger"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "golden-ale"
+   ],
+   "description": "Dwarf Goldings variant with a marmalade-like citrus character.",
+   "specSource": "haas-companion-2022:FIRST GOLD",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 97 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/first-gold, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "jester",
+   "name": "Jester",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 7,
+   "alphaMax": 9,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 23,
+   "cohumuloneMax": 28,
+   "totalOilMin": 0.6,
+   "totalOilMax": 1.2,
+   "myrceneMin": 45,
+   "myrceneMax": 50,
+   "humuleneMin": 2,
+   "humuleneMax": 2,
+   "farneseneMin": 0.1,
+   "farneseneMax": 2,
+   "aromaDescriptors": [
+    "grapefruit",
+    "blackcurrant",
+    "tropical",
+    "lychee"
+   ],
+   "substitutes": [
+    "Cascade",
+    "Bramling Cross"
+   ],
+   "styleTags": [
+    "english",
+    "ipa",
+    "pale-ale"
+   ],
+   "description": "Modern British variety bred for New World-style tropical and grapefruit character.",
+   "specSource": "charles-faram-hop-oracle:jester",
+   "sourceUrl": "https://charlesfaram.com/hop-oracle/jester/",
+   "attribution": "Alpha, beta and cohumulone are transcribed from the Charles Faram Hop Oracle page for this variety, the only merchant found that publishes it. Faram's total oil and some of its oil fractions are NOT used: the page prints total oil with a stray digit on many varieties and myrcene sometimes as a fraction and sometimes as a percentage, and this project does not repair another publisher's numbers. data/hops/merchant-specs.json records which fields were refused and why."
+  },
+  {
+   "id": "hallertau-mittelfrueh",
+   "name": "Hallertau Mittelfrüh",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 3,
+   "alphaMax": 5.5,
+   "betaMin": 3,
+   "betaMax": 5,
+   "cohumuloneMin": 18,
+   "cohumuloneMax": 28,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.3,
+   "myrceneMin": 20,
+   "myrceneMax": 28,
+   "humuleneMin": 45,
+   "humuleneMax": 55,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "floral",
+    "herbal",
+    "spice",
+    "noble"
+   ],
+   "substitutes": [
+    "Tettnanger",
+    "Spalt",
+    "Liberty"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "helles",
+    "noble"
+   ],
+   "description": "The archetypal noble hop — refined, floral, herbal, with very low cohumulone for a soft bitterness. The soul of German lager.",
+   "specSource": "haas-companion-2022:HALLERTAUER MITTELFRÜH",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 105 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/hallertauer-mittelfrueh, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "tettnanger",
+   "name": "Tettnanger",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 2.5,
+   "alphaMax": 5.5,
+   "betaMin": 3,
+   "betaMax": 5,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 28,
+   "totalOilMin": 0.5,
+   "totalOilMax": 0.9,
+   "myrceneMin": 20,
+   "myrceneMax": 35,
+   "humuleneMin": 22,
+   "humuleneMax": 32,
+   "caryophylleneMin": 6,
+   "caryophylleneMax": 11,
+   "farneseneMin": 16,
+   "farneseneMax": 24,
+   "aromaDescriptors": [
+    "herbal",
+    "spice",
+    "floral",
+    "noble"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh",
+    "Saaz"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "wheat",
+    "noble"
+   ],
+   "description": "Noble variety from the Lake Constance region; slightly spicier than Hallertau.",
+   "specSource": "haas-companion-2022:TETTNANG TETTNANGER",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 195 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/tettnang-tettnanger, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "spalt",
+   "name": "Spalt / Spalter",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 2.5,
+   "alphaMax": 5.5,
+   "betaMin": 3,
+   "betaMax": 5,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 29,
+   "totalOilMin": 0.5,
+   "totalOilMax": 0.9,
+   "myrceneMin": 20,
+   "myrceneMax": 35,
+   "humuleneMin": 20,
+   "humuleneMax": 30,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 13,
+   "farneseneMin": 12,
+   "farneseneMax": 18,
+   "aromaDescriptors": [
+    "noble",
+    "spice",
+    "herbal",
+    "woody"
+   ],
+   "substitutes": [
+    "Tettnanger",
+    "Saaz"
+   ],
+   "styleTags": [
+    "lager",
+    "altbier",
+    "kolsch",
+    "noble"
+   ],
+   "description": "The fourth classic German noble hop, from the small Spalt growing region.",
+   "specSource": "haas-companion-2022:SPALT SPALTER",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 176 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/spalt-spalter, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "hersbrucker",
+   "name": "Hersbrucker",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 1.5,
+   "alphaMax": 4,
+   "betaMin": 2.5,
+   "betaMax": 6,
+   "cohumuloneMin": 17,
+   "cohumuloneMax": 25,
+   "totalOilMin": 0.5,
+   "totalOilMax": 1,
+   "myrceneMin": 15,
+   "myrceneMax": 30,
+   "humuleneMin": 20,
+   "humuleneMax": 30,
+   "caryophylleneMin": 7,
+   "caryophylleneMax": 14,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "floral",
+    "hay",
+    "fruity",
+    "herbal"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh"
+   ],
+   "styleTags": [
+    "lager",
+    "wheat",
+    "noble"
+   ],
+   "description": "Gentle floral German aroma hop, common in wheat beers and lagers.",
+   "specSource": "rahrbsg-variety-sheets:Hersbrucker.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hersbrucker.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Hersbrucker.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "perle",
+   "name": "Perle",
+   "country": "Germany",
+   "purpose": "dual",
+   "alphaMin": 4,
+   "alphaMax": 8,
+   "betaMin": 2.5,
+   "betaMax": 4.5,
+   "cohumuloneMin": 29,
+   "cohumuloneMax": 35,
+   "totalOilMin": 0.5,
+   "totalOilMax": 1.5,
+   "myrceneMin": 20,
+   "myrceneMax": 35,
+   "humuleneMin": 35,
+   "humuleneMax": 55,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 20,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "mint",
+    "spice",
+    "floral",
+    "herbal"
+   ],
+   "substitutes": [
+    "Northern Brewer",
+    "Hallertau Tradition"
+   ],
+   "styleTags": [
+    "lager",
+    "altbier",
+    "kolsch"
+   ],
+   "description": "Clean German dual-purpose hop with a minty-spicy edge.",
+   "specSource": "rahrbsg-variety-sheets:Perle.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Perle.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Perle.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "magnum-de",
+   "name": "Magnum (German)",
+   "country": "Germany",
+   "purpose": "bittering",
+   "alphaMin": 11,
+   "alphaMax": 16,
+   "betaMin": 5,
+   "betaMax": 7,
+   "cohumuloneMin": 21,
+   "cohumuloneMax": 29,
+   "totalOilMin": 1.6,
+   "totalOilMax": 2.6,
+   "myrceneMin": 30,
+   "myrceneMax": 45,
+   "humuleneMin": 30,
+   "humuleneMax": 45,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "clean",
+    "neutral"
+   ],
+   "substitutes": [
+    "Herkules",
+    "Warrior"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager",
+    "clean"
+   ],
+   "description": "Germany's standard clean high-alpha bittering hop; contributes bitterness with essentially no aroma.",
+   "specSource": "haas-companion-2022:HALLERTAUER MAGNUM",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 104 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/hallertauer-magnum, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "herkules",
+   "name": "Herkules",
+   "country": "Germany",
+   "purpose": "bittering",
+   "alphaMin": 12,
+   "alphaMax": 17,
+   "betaMin": 4,
+   "betaMax": 5.5,
+   "cohumuloneMin": 32,
+   "cohumuloneMax": 38,
+   "totalOilMin": 1.6,
+   "totalOilMax": 2.4,
+   "myrceneMin": 30,
+   "myrceneMax": 50,
+   "humuleneMin": 30,
+   "humuleneMax": 45,
+   "caryophylleneMin": 7,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "clean",
+    "spicy",
+    "blackcurrant"
+   ],
+   "substitutes": [
+    "Magnum",
+    "Taurus"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager"
+   ],
+   "description": "Very high-alpha German bittering variety, now widely grown for efficiency.",
+   "specSource": "haas-companion-2022:HERKULES",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 113 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/herkules, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "saphir",
+   "name": "Saphir",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 2,
+   "alphaMax": 4.5,
+   "betaMin": 4,
+   "betaMax": 7,
+   "cohumuloneMin": 12,
+   "cohumuloneMax": 17,
+   "totalOilMin": 0.8,
+   "totalOilMax": 1.4,
+   "myrceneMin": 25,
+   "myrceneMax": 40,
+   "humuleneMin": 20,
+   "humuleneMax": 30,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "tangerine",
+    "citrus",
+    "floral",
+    "spice"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh"
+   ],
+   "styleTags": [
+    "lager",
+    "wheat",
+    "pilsner"
+   ],
+   "description": "Modern German aroma hop with a bright tangerine-citrus lift over a noble base.",
+   "specSource": "rahrbsg-variety-sheets:Saphir.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Saphir.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Saphir.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "hallertau-blanc",
+   "name": "Hallertau Blanc",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 9,
+   "alphaMax": 11,
+   "betaMin": 4,
+   "betaMax": 7,
+   "cohumuloneMin": 28,
+   "cohumuloneMax": 35,
+   "totalOilMin": 1.2,
+   "totalOilMax": 2.2,
+   "myrceneMin": 50,
+   "myrceneMax": 75,
+   "humuleneMin": 1,
+   "humuleneMax": 3,
+   "caryophylleneMin": 1,
+   "caryophylleneMax": 2,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "white wine",
+    "gooseberry",
+    "passionfruit",
+    "lemongrass"
+   ],
+   "substitutes": [
+    "Nelson Sauvin"
+   ],
+   "styleTags": [
+    "ipa",
+    "wheat",
+    "saison",
+    "modern-german"
+   ],
+   "description": "Part of Germany's 'Flavor Hop' program — an answer to Nelson Sauvin with distinct white-wine character.",
+   "specSource": "rahrbsg-variety-sheets:Hallertau-Blanc.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Blanc.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Hallertau-Blanc.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "huell-melon",
+   "name": "Huell Melon",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 7,
+   "alphaMax": 8,
+   "betaMin": 6,
+   "betaMax": 8,
+   "cohumuloneMin": 25,
+   "cohumuloneMax": 28,
+   "totalOilMin": 0.8,
+   "totalOilMax": 1.2,
+   "myrceneMin": 30,
+   "myrceneMax": 40,
+   "humuleneMin": 10,
+   "humuleneMax": 20,
+   "caryophylleneMin": 5,
+   "caryophylleneMax": 10,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "honeydew melon",
+    "strawberry",
+    "apricot"
+   ],
+   "substitutes": [
+    "Mandarina Bavaria"
+   ],
+   "styleTags": [
+    "wheat",
+    "saison",
+    "modern-german"
+   ],
+   "description": "Striking honeydew-and-strawberry aroma; another of the German flavour-hop releases.",
+   "specSource": "rahrbsg-variety-sheets:Huell-Melon.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Huell-Melon.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Huell-Melon.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "mandarina-bavaria",
+   "name": "Mandarina Bavaria",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 7,
+   "alphaMax": 10,
+   "betaMin": 4,
+   "betaMax": 7,
+   "cohumuloneMin": 31,
+   "cohumuloneMax": 35,
+   "totalOilMin": 1.5,
+   "totalOilMax": 2.2,
+   "myrceneMin": 65,
+   "myrceneMax": 75,
+   "humuleneMin": 5,
+   "humuleneMax": 15,
+   "caryophylleneMin": 1,
+   "caryophylleneMax": 5,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "tangerine",
+    "citrus",
+    "sweet fruit"
+   ],
+   "substitutes": [
+    "Cascade",
+    "Amarillo"
+   ],
+   "styleTags": [
+    "ipa",
+    "wheat",
+    "modern-german"
+   ],
+   "description": "Cascade-derived German variety with a pronounced tangerine character.",
+   "specSource": "rahrbsg-variety-sheets:Mandarina-Bavaria.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Mandarina-Bavaria.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Mandarina-Bavaria.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "saaz",
+   "name": "Saaz",
+   "aliases": [
+    "Žatec",
+    "Zatec"
+   ],
+   "country": "Czech Republic",
+   "purpose": "aroma",
+   "alphaMin": 2.5,
+   "alphaMax": 4.5,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 23,
+   "cohumuloneMax": 26,
+   "totalOilMin": 0.4,
+   "totalOilMax": 0.8,
+   "myrceneMin": 25,
+   "myrceneMax": 40,
+   "humuleneMin": 15,
+   "humuleneMax": 30,
+   "caryophylleneMin": 6,
+   "caryophylleneMax": 9,
+   "farneseneMin": 14,
+   "farneseneMax": 20,
+   "aromaDescriptors": [
+    "spicy",
+    "earthy",
+    "herbal",
+    "noble"
+   ],
+   "substitutes": [
+    "Sladek",
+    "Tettnanger",
+    "Spalt"
+   ],
+   "styleTags": [
+    "pilsner",
+    "czech-lager",
+    "noble"
+   ],
+   "description": "The defining hop of Bohemian pilsner — delicate, spicy, and earthy, with very low alpha. Pilsner Urquell's signature.",
+   "specSource": "haas-companion-2022:SAAZ",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 160 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/saazer, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "sladek",
+   "name": "Sladek",
+   "country": "Czech Republic",
+   "purpose": "aroma",
+   "alphaMin": 4.5,
+   "alphaMax": 8,
+   "betaMin": 4,
+   "betaMax": 7,
+   "cohumuloneMin": 23,
+   "cohumuloneMax": 30,
+   "totalOilMin": 1,
+   "totalOilMax": 2,
+   "myrceneMin": 35,
+   "myrceneMax": 50,
+   "humuleneMin": 20,
+   "humuleneMax": 40,
+   "caryophylleneMin": 9,
+   "caryophylleneMax": 14,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "citrus",
+    "herbal",
+    "spice",
+    "grassy"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Premiant"
+   ],
+   "styleTags": [
+    "czech-lager",
+    "pilsner"
+   ],
+   "description": "Modern Czech hybrid with more intensity than Saaz while keeping a Czech character.",
+   "specSource": "haas-companion-2022:SLÁDEK",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 167 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/sladek, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "kazbek",
+   "name": "Kazbek",
+   "country": "Czech Republic",
+   "purpose": "aroma",
+   "alphaMin": 5,
+   "alphaMax": 8,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 35,
+   "cohumuloneMax": 40,
+   "totalOilMin": 0.9,
+   "totalOilMax": 1.8,
+   "myrceneMin": 40,
+   "myrceneMax": 55,
+   "humuleneMin": 20,
+   "humuleneMax": 35,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "lemon",
+    "grapefruit",
+    "spice",
+    "mint"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Sladek"
+   ],
+   "styleTags": [
+    "czech-lager",
+    "pilsner",
+    "saison"
+   ],
+   "description": "Czech variety with wild Russian parentage; citrus lift over a noble backbone.",
+   "specSource": "rahrbsg-variety-sheets:Czech-Kazbek.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Czech-Kazbek.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Czech-Kazbek.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "lubelski",
+   "name": "Lubelski",
+   "aliases": [
+    "Lublin"
+   ],
+   "country": "Poland",
+   "purpose": "aroma",
+   "alphaMin": 3,
+   "alphaMax": 4.5,
+   "betaMin": 3,
+   "betaMax": 4,
+   "cohumuloneMin": 25,
+   "cohumuloneMax": 28,
+   "totalOilMin": 0.5,
+   "totalOilMax": 1.1,
+   "myrceneMin": 22,
+   "myrceneMax": 29,
+   "humuleneMin": 30,
+   "humuleneMax": 40,
+   "caryophylleneMin": 6,
+   "caryophylleneMax": 11,
+   "farneseneMin": 10,
+   "farneseneMax": 14,
+   "aromaDescriptors": [
+    "noble",
+    "herbal",
+    "spice",
+    "floral"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Tettnanger"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "noble"
+   ],
+   "description": "Poland's noble-type aroma hop, closely related to Saaz.",
+   "specSource": "haas-companion-2022:LUBLIN (LUBELSKI)",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 127 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/lublin, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "styrian-goldings",
+   "name": "Styrian Goldings",
+   "aliases": [
+    "Savinjski Golding",
+    "Celeia"
+   ],
+   "country": "Slovenia",
+   "purpose": "aroma",
+   "alphaMin": 2.8,
+   "alphaMax": 6.1,
+   "betaMin": 1.8,
+   "betaMax": 4.1,
+   "cohumuloneMin": 27,
+   "cohumuloneMax": 33,
+   "totalOilMin": 0.3,
+   "totalOilMax": 1.7,
+   "myrceneMin": 25,
+   "myrceneMax": 38,
+   "humuleneMin": 29,
+   "humuleneMax": 38,
+   "caryophylleneMin": 9,
+   "caryophylleneMax": 12,
+   "farneseneMin": 6,
+   "farneseneMax": 8,
+   "aromaDescriptors": [
+    "earthy",
+    "spice",
+    "floral",
+    "lemon"
+   ],
+   "substitutes": [
+    "Fuggle",
+    "East Kent Goldings"
+   ],
+   "styleTags": [
+    "belgian",
+    "saison",
+    "english",
+    "noble-adjacent"
+   ],
+   "description": "Genetically a Fuggle, grown in Slovenia. A cornerstone of Belgian ales and saisons.",
+   "specSource": "haas-companion-2022:STYRIAN SAVINJSKI GOLDING",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 185 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/celeia, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "nelson-sauvin",
+   "name": "Nelson Sauvin",
+   "country": "New Zealand",
+   "purpose": "dual",
+   "alphaMin": 12,
+   "alphaMax": 13,
+   "betaMin": 6,
+   "betaMax": 8,
+   "cohumuloneMin": 23,
+   "cohumuloneMax": 25,
+   "totalOilMin": 0.9,
+   "totalOilMax": 1.2,
+   "myrceneMin": 20,
+   "myrceneMax": 25,
+   "humuleneMin": 30,
+   "humuleneMax": 40,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "white wine",
+    "gooseberry",
+    "passionfruit",
+    "sauvignon blanc"
+   ],
+   "substitutes": [
+    "Hallertau Blanc"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy",
+    "pale-ale"
+   ],
+   "description": "Named for its uncanny resemblance to Sauvignon Blanc — gooseberry and crushed-grape character unlike any other hop.",
+   "usageNotes": "Polarising and powerful; easy to overdo.",
+   "specSource": "rahrbsg-variety-sheets:Nelson-Sauvin.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Nelson-Sauvin.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Nelson-Sauvin.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "motueka",
+   "name": "Motueka",
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "alphaMin": 6.5,
+   "alphaMax": 7.5,
+   "betaMin": 5,
+   "betaMax": 5.5,
+   "cohumuloneMin": 28,
+   "cohumuloneMax": 30,
+   "totalOilMin": 0.6,
+   "totalOilMax": 1,
+   "myrceneMin": 45,
+   "myrceneMax": 50,
+   "humuleneMin": 2,
+   "humuleneMax": 6,
+   "caryophylleneMin": 1,
+   "caryophylleneMax": 3,
+   "farneseneMin": 10,
+   "farneseneMax": 14,
+   "aromaDescriptors": [
+    "lime",
+    "lemon",
+    "tropical",
+    "mojito"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Riwaka"
+   ],
+   "styleTags": [
+    "pilsner",
+    "saison",
+    "ipa"
+   ],
+   "description": "Saaz-derived NZ hop with a vivid fresh-lime character.",
+   "specSource": "haas-companion-2022:MOTUEKA™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 138 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "riwaka",
+   "name": "Riwaka",
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "alphaMin": 4.5,
+   "alphaMax": 6.5,
+   "betaMin": 4,
+   "betaMax": 5,
+   "cohumuloneMin": 32,
+   "cohumuloneMax": 32,
+   "totalOilMin": 1.5,
+   "totalOilMax": 1.5,
+   "myrceneMin": 68,
+   "myrceneMax": 68,
+   "humuleneMin": 9,
+   "humuleneMax": 9,
+   "caryophylleneMin": 4,
+   "caryophylleneMax": 4,
+   "farneseneMin": 1,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "grapefruit",
+    "passionfruit",
+    "citrus zest"
+   ],
+   "substitutes": [
+    "Motueka",
+    "Citra"
+   ],
+   "styleTags": [
+    "ipa",
+    "pale-ale",
+    "hazy"
+   ],
+   "description": "Intensely aromatic Saaz-derived NZ hop; grapefruit and passionfruit. Chronically scarce.",
+   "specSource": "haas-companion-2022:RIWAKA™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 159 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "pacific-jade",
+   "name": "Pacific Jade",
+   "country": "New Zealand",
+   "purpose": "dual",
+   "alphaMin": 12,
+   "alphaMax": 14,
+   "betaMin": 7,
+   "betaMax": 8,
+   "cohumuloneMin": 23,
+   "cohumuloneMax": 25,
+   "totalOilMin": 1.1,
+   "totalOilMax": 1.5,
+   "myrceneMin": 30,
+   "myrceneMax": 35,
+   "humuleneMin": 30,
+   "humuleneMax": 35,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "black pepper",
+    "citrus",
+    "herbal"
+   ],
+   "substitutes": [
+    "Columbus",
+    "Chinook"
+   ],
+   "styleTags": [
+    "ipa",
+    "bittering"
+   ],
+   "description": "Soft bittering with a peppery, citrus-herbal aroma.",
+   "specSource": "rahrbsg-variety-sheets:Pacific-Jade.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Pacific-Jade.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Pacific-Jade.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "wai-iti",
+   "name": "Wai-iti",
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "alphaMin": 2.5,
+   "alphaMax": 3.5,
+   "betaMin": 4.5,
+   "betaMax": 5.5,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 24,
+   "totalOilMin": 1.6,
+   "totalOilMax": 1.6,
+   "myrceneMin": 30,
+   "myrceneMax": 30,
+   "humuleneMin": 28,
+   "humuleneMax": 28,
+   "caryophylleneMin": 9,
+   "caryophylleneMax": 9,
+   "farneseneMin": 13,
+   "farneseneMax": 13,
+   "aromaDescriptors": [
+    "peach",
+    "apricot",
+    "lime",
+    "stone fruit"
+   ],
+   "substitutes": [
+    "Motueka"
+   ],
+   "styleTags": [
+    "pale-ale",
+    "hazy",
+    "lager"
+   ],
+   "description": "Low-alpha NZ aroma hop with delicate peach and citrus.",
+   "specSource": "haas-companion-2022:WAI-ITI™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 204 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "nectaron",
+   "name": "Nectaron",
+   "country": "New Zealand",
+   "purpose": "dual",
+   "alphaMin": 10.0,
+   "alphaMax": 14.0,
+   "aromaDescriptors": [
+    "passionfruit",
+    "pineapple",
+    "stone fruit",
+    "tropical"
+   ],
+   "substitutes": [
+    "Galaxy",
+    "Citra"
+   ],
+   "styleTags": [
+    "hazy",
+    "ipa"
+   ],
+   "yearReleased": 2021,
+   "description": "Recent NZ release with huge tropical intensity; in high demand for hazy IPA.",
+   "specSource": "nzhops-product-pages:nectaron",
+   "sourceUrl": "https://nzhops.co.nz/products/nectaron",
+   "attribution": "Alpha is the range New Zealand Hops states in its own copy on the variety's product page — '(10-14% AA)'. Nothing else is stored: NZ Hops publishes a Nectaron variety sheet, but it is an image PDF with no text layer, so its beta and oil figures could not be read, and no other merchant in this project's sources carries the variety. The previous record held beta and total oil against a citation to the NZ Hops homepage, which supported neither."
+  },
+  {
+   "id": "galaxy",
+   "name": "Galaxy",
+   "country": "Australia",
+   "purpose": "dual",
+   "alphaMin": 13,
+   "alphaMax": 18.5,
+   "betaMin": 6.1,
+   "betaMax": 11.6,
+   "cohumuloneMin": 32,
+   "cohumuloneMax": 43,
+   "totalOilMin": 1.9,
+   "totalOilMax": 2.9,
+   "myrceneMin": 32,
+   "myrceneMax": 56,
+   "humuleneMin": 0.8,
+   "humuleneMax": 2.2,
+   "caryophylleneMin": 7,
+   "caryophylleneMax": 14.7,
+   "farneseneMin": 2.8,
+   "farneseneMax": 5.1,
+   "aromaDescriptors": [
+    "passionfruit",
+    "peach",
+    "citrus",
+    "tropical"
+   ],
+   "substitutes": [
+    "Citra",
+    "Mosaic"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy",
+    "pale-ale"
+   ],
+   "description": "Australia's flagship hop and one of the highest oil-content varieties grown; overwhelming passionfruit and peach.",
+   "specSource": "haas-companion-2022:GALAXY®",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 99 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/galaxy, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "vic-secret",
+   "name": "Vic Secret",
+   "country": "Australia",
+   "purpose": "dual",
+   "alphaMin": 15.1,
+   "alphaMax": 21.8,
+   "betaMin": 6.4,
+   "betaMax": 8.1,
+   "cohumuloneMin": 51,
+   "cohumuloneMax": 56,
+   "totalOilMin": 2.1,
+   "totalOilMax": 2.8,
+   "myrceneMin": 31,
+   "myrceneMax": 46,
+   "humuleneMin": 9.4,
+   "humuleneMax": 12.2,
+   "caryophylleneMin": 9.8,
+   "caryophylleneMax": 10.7,
+   "farneseneMin": 0,
+   "farneseneMax": 0,
+   "aromaDescriptors": [
+    "pineapple",
+    "pine",
+    "passionfruit",
+    "herbal"
+   ],
+   "substitutes": [
+    "Galaxy",
+    "Simcoe"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy"
+   ],
+   "description": "Clean, potent tropical-and-pine Australian variety.",
+   "specSource": "haas-companion-2022:VIC SECRET™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 203 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/vic-secret, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "ella",
+   "name": "Ella",
+   "country": "Australia",
+   "purpose": "dual",
+   "alphaMin": 13.4,
+   "alphaMax": 19.2,
+   "betaMin": 5.2,
+   "betaMax": 7.5,
+   "cohumuloneMin": 33,
+   "cohumuloneMax": 40,
+   "totalOilMin": 1.2,
+   "totalOilMax": 2.3,
+   "myrceneMin": 34,
+   "myrceneMax": 40,
+   "humuleneMin": 16,
+   "humuleneMax": 19,
+   "caryophylleneMin": 5.9,
+   "caryophylleneMax": 14.1,
+   "farneseneMin": 0.1,
+   "farneseneMax": 0.5,
+   "aromaDescriptors": [
+    "floral",
+    "anise",
+    "spice",
+    "tropical"
+   ],
+   "substitutes": [
+    "Galaxy"
+   ],
+   "styleTags": [
+    "ipa",
+    "saison",
+    "belgian"
+   ],
+   "description": "Aromatic Australian hop; floral and spicy at low rates, tropical when pushed.",
+   "specSource": "haas-companion-2022:ELLA™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 92 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/ella, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "enigma",
+   "name": "Enigma",
+   "country": "Australia",
+   "purpose": "dual",
+   "alphaMin": 16.7,
+   "alphaMax": 19.4,
+   "betaMin": 5.2,
+   "betaMax": 7.1,
+   "cohumuloneMin": 37,
+   "cohumuloneMax": 43,
+   "totalOilMin": 1.9,
+   "totalOilMax": 2.8,
+   "myrceneMin": 23,
+   "myrceneMax": 30,
+   "humuleneMin": 12,
+   "humuleneMax": 19,
+   "caryophylleneMin": 6,
+   "caryophylleneMax": 8,
+   "farneseneMin": 9,
+   "farneseneMax": 11,
+   "aromaDescriptors": [
+    "raspberry",
+    "melon",
+    "pinot gris",
+    "redcurrant"
+   ],
+   "substitutes": [
+    "Galaxy",
+    "Nelson Sauvin"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy"
+   ],
+   "description": "Distinctive berry and white-wine character; a Tasmanian breeding release.",
+   "specSource": "haas-companion-2022:ENIGMA®",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 94 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/enigma, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "topaz",
+   "name": "Topaz",
+   "country": "Australia",
+   "purpose": "dual",
+   "alphaMin": 16.2,
+   "alphaMax": 20.1,
+   "betaMin": 4.9,
+   "betaMax": 6.7,
+   "cohumuloneMin": 47,
+   "cohumuloneMax": 53,
+   "totalOilMin": 1.3,
+   "totalOilMax": 1.8,
+   "myrceneMin": 18,
+   "myrceneMax": 53,
+   "humuleneMin": 8.9,
+   "humuleneMax": 16.6,
+   "caryophylleneMin": 6.7,
+   "caryophylleneMax": 12.5,
+   "farneseneMin": 0,
+   "farneseneMax": 0.9,
+   "aromaDescriptors": [
+    "tropical",
+    "grassy",
+    "lychee",
+    "resin"
+   ],
+   "substitutes": [
+    "Galaxy"
+   ],
+   "styleTags": [
+    "ipa",
+    "bittering"
+   ],
+   "description": "High-alpha Australian hop; clean bittering with a grassy-tropical aroma.",
+   "specSource": "haas-companion-2022:TOPAZ™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 197 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/topaz, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "pride-of-ringwood",
+   "name": "Pride of Ringwood",
+   "country": "Australia",
+   "purpose": "bittering",
+   "alphaMin": 8.6,
+   "alphaMax": 11,
+   "betaMin": 4,
+   "betaMax": 8,
+   "cohumuloneMin": 25,
+   "cohumuloneMax": 34,
+   "totalOilMin": 1,
+   "totalOilMax": 2,
+   "myrceneMin": 30,
+   "myrceneMax": 41,
+   "humuleneMin": 1.6,
+   "humuleneMax": 3,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "earthy",
+    "herbal",
+    "woody"
+   ],
+   "substitutes": [
+    "Cluster",
+    "Galena"
+   ],
+   "styleTags": [
+    "australian-lager",
+    "historical"
+   ],
+   "description": "For decades the dominant Australian bittering hop, and the signature of classic Australian lager.",
+   "specSource": "haas-companion-2022:PRIDE OF RINGWOOD",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 155 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "sorachi-ace",
+   "name": "Sorachi Ace",
+   "country": "Japan",
+   "purpose": "dual",
+   "alphaMin": 12,
+   "alphaMax": 16,
+   "betaMin": 6,
+   "betaMax": 8,
+   "cohumuloneMin": 20,
+   "cohumuloneMax": 25,
+   "totalOilMin": 1,
+   "totalOilMax": 1.5,
+   "myrceneMin": 40,
+   "myrceneMax": 45,
+   "aromaDescriptors": [
+    "lemon",
+    "dill",
+    "coconut",
+    "lemongrass"
+   ],
+   "substitutes": [
+    "Sabro"
+   ],
+   "styleTags": [
+    "saison",
+    "novelty",
+    "ipa"
+   ],
+   "breeder": "Sapporo Breweries",
+   "yearReleased": 1984,
+   "description": "Bred by Sapporo; an unmistakable lemon-dill-coconut profile that people either love or find soapy.",
+   "specSource": "haas-companion-2022:SORACHI ACE",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 170 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/sorachi-ace, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "strisselspalt",
+   "name": "Strisselspalt",
+   "country": "France",
+   "purpose": "aroma",
+   "alphaMin": 1.8,
+   "alphaMax": 2.5,
+   "betaMin": 4,
+   "betaMax": 4.7,
+   "cohumuloneMin": 20,
+   "cohumuloneMax": 23,
+   "totalOilMin": 0.6,
+   "totalOilMax": 0.8,
+   "myrceneMin": 35,
+   "myrceneMax": 52,
+   "humuleneMin": 12.5,
+   "humuleneMax": 21,
+   "caryophylleneMin": 6.1,
+   "caryophylleneMax": 10.2,
+   "aromaDescriptors": [
+    "floral",
+    "herbal",
+    "pear",
+    "noble"
+   ],
+   "substitutes": [
+    "Hersbrucker",
+    "Hallertau Mittelfrüh"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "biere-de-garde",
+    "noble"
+   ],
+   "description": "Alsatian noble-type aroma hop; delicate, floral, and slightly fruity.",
+   "specSource": "haas-companion-2022:STRISSELSPALT",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 180 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/strisselspalt, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "barbe-rouge",
+   "name": "Barbe Rouge",
+   "country": "France",
+   "purpose": "aroma",
+   "alphaMin": 7.5,
+   "alphaMax": 9.5,
+   "betaMin": 3.5,
+   "betaMax": 4.6,
+   "cohumuloneMin": 25,
+   "cohumuloneMax": 28,
+   "totalOilMin": 1.8,
+   "totalOilMax": 2.2,
+   "myrceneMin": 52,
+   "myrceneMax": 58,
+   "humuleneMin": 17,
+   "humuleneMax": 21,
+   "aromaDescriptors": [
+    "red berries",
+    "strawberry",
+    "citrus"
+   ],
+   "substitutes": [
+    "Bramling Cross"
+   ],
+   "styleTags": [
+    "saison",
+    "biere-de-garde",
+    "pale-ale"
+   ],
+   "description": "French variety with a distinctive red-fruit character.",
+   "specSource": "haas-companion-2022:BARBE ROUGE",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 61 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "southern-passion",
+   "name": "Southern Passion",
+   "country": "South Africa",
+   "purpose": "aroma",
+   "alphaMin": 5,
+   "alphaMax": 12,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 16.6,
+   "cohumuloneMax": 20.2,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.3,
+   "myrceneMin": 20,
+   "myrceneMax": 35,
+   "humuleneMin": 17,
+   "humuleneMax": 35,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 13,
+   "farneseneMin": 1,
+   "farneseneMax": 3,
+   "aromaDescriptors": [
+    "passionfruit",
+    "guava",
+    "melon",
+    "citrus"
+   ],
+   "substitutes": [
+    "Galaxy",
+    "Citra"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy"
+   ],
+   "description": "South African variety bred for the short-daylight Cape climate; intense passionfruit and guava.",
+   "specSource": "haas-companion-2022:SOUTHERN PASSION",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 172 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "african-queen",
+   "name": "African Queen",
+   "country": "South Africa",
+   "purpose": "dual",
+   "alphaMin": 10,
+   "alphaMax": 17,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 27,
+   "totalOilMin": 0.7,
+   "totalOilMax": 1.5,
+   "myrceneMin": 25,
+   "myrceneMax": 29,
+   "humuleneMin": 21,
+   "humuleneMax": 30,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 13,
+   "farneseneMin": 5,
+   "farneseneMax": 7,
+   "aromaDescriptors": [
+    "blackcurrant",
+    "tropical",
+    "lemongrass",
+    "dank"
+   ],
+   "substitutes": [
+    "Nelson Sauvin",
+    "Mosaic"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy"
+   ],
+   "description": "Dark-fruit and tropical South African hop with a dank undertone.",
+   "specSource": "haas-companion-2022:AFRICAN QUEEN",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 49 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "northdown",
+   "name": "Northdown",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 6,
+   "alphaMax": 9,
+   "betaMin": 4.5,
+   "betaMax": 6.5,
+   "cohumuloneMin": 24,
+   "cohumuloneMax": 29,
+   "humuleneMin": 37,
+   "humuleneMax": 37,
+   "farneseneMin": 1,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "pine",
+    "spice",
+    "fruity",
+    "floral"
+   ],
+   "substitutes": [
+    "Challenger",
+    "Northern Brewer"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "porter"
+   ],
+   "description": "Well-rounded English dual-purpose hop; a refined Northern Brewer descendant good for bittering and late additions alike.",
+   "specSource": "charles-faram-hop-oracle:northdown",
+   "sourceUrl": "https://charlesfaram.com/hop-oracle/northdown/",
+   "attribution": "Alpha, beta and cohumulone are transcribed from the Charles Faram Hop Oracle page for this variety, the only merchant found that publishes it. Faram's total oil and some of its oil fractions are NOT used: the page prints total oil with a stray digit on many varieties and myrcene sometimes as a fraction and sometimes as a percentage, and this project does not repair another publisher's numbers. data/hops/merchant-specs.json records which fields were refused and why."
+  },
+  {
+   "id": "progress",
+   "name": "Progress",
+   "country": "United Kingdom",
+   "purpose": "aroma",
+   "alphaMin": 5,
+   "alphaMax": 7.5,
+   "betaMin": 1.8,
+   "betaMax": 2.7,
+   "cohumuloneMin": 25,
+   "cohumuloneMax": 27,
+   "totalOilMin": 0.5,
+   "totalOilMax": 0.8,
+   "myrceneMin": 25,
+   "myrceneMax": 30,
+   "humuleneMin": 40,
+   "humuleneMax": 47,
+   "caryophylleneMin": 12,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "earthy",
+    "honey",
+    "mild spice"
+   ],
+   "substitutes": [
+    "Fuggle",
+    "East Kent Goldings"
+   ],
+   "styleTags": [
+    "english",
+    "bitter",
+    "mild"
+   ],
+   "description": "A gentle Fuggle-replacement aroma hop; soft, earthy, and honeyed.",
+   "specSource": "rahrbsg-variety-sheets:UK-Progress.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/UK-Progress.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet UK-Progress.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "callista",
+   "name": "Callista",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 2,
+   "alphaMax": 5,
+   "betaMin": 5,
+   "betaMax": 10,
+   "cohumuloneMin": 15,
+   "cohumuloneMax": 22,
+   "totalOilMin": 1.4,
+   "totalOilMax": 2.1,
+   "myrceneMin": 54,
+   "myrceneMax": 63.5,
+   "aromaDescriptors": [
+    "gooseberry",
+    "apricot",
+    "pineapple",
+    "white wine"
+   ],
+   "substitutes": [
+    "Hallertau Blanc",
+    "Nelson Sauvin"
+   ],
+   "styleTags": [
+    "modern-german",
+    "ipa",
+    "wheat"
+   ],
+   "description": "Low-alpha German flavour hop with a bright fruity-white-wine aroma for late and dry hopping.",
+   "specSource": "haas-companion-2022:CALLISTA",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 71 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/callista, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "akoya",
+   "name": "Akoya",
+   "country": "France",
+   "purpose": "aroma",
+   "alphaMin": 9,
+   "alphaMax": 10,
+   "betaMin": 4,
+   "betaMax": 5,
+   "cohumuloneMin": 27,
+   "cohumuloneMax": 30,
+   "totalOilMin": 1.5,
+   "totalOilMax": 2,
+   "aromaDescriptors": [
+    "floral",
+    "citrus",
+    "aniseed",
+    "fruity"
+   ],
+   "substitutes": [
+    "Strisselspalt",
+    "Barbe Rouge"
+   ],
+   "styleTags": [
+    "saison",
+    "biere-de-garde",
+    "lager"
+   ],
+   "description": "Modern French aroma variety with a floral-citrus and subtle anise character.",
+   "specSource": "haas-companion-2022:AKOYA™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 52 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "dr-rudi",
+   "name": "Dr. Rudi",
+   "aliases": [
+    "Super Alpha"
+   ],
+   "country": "New Zealand",
+   "purpose": "bittering",
+   "alphaMin": 10,
+   "alphaMax": 12,
+   "betaMin": 7,
+   "betaMax": 8.5,
+   "cohumuloneMin": 33,
+   "cohumuloneMax": 33,
+   "totalOilMin": 1.3,
+   "totalOilMax": 1.3,
+   "myrceneMin": 29.2,
+   "myrceneMax": 29.2,
+   "humuleneMin": 33.2,
+   "humuleneMax": 33.2,
+   "caryophylleneMin": 10.1,
+   "caryophylleneMax": 10.1,
+   "farneseneMin": 0.5,
+   "farneseneMax": 0.5,
+   "aromaDescriptors": [
+    "pine",
+    "resin",
+    "lemongrass"
+   ],
+   "substitutes": [
+    "Magnum",
+    "Pacific Jade"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager",
+    "ipa"
+   ],
+   "description": "New Zealand's clean bittering standard, with a resinous pine-and-citrus edge when used late.",
+   "specSource": "haas-companion-2022:DR. RUDI",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 86 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "wakatu",
+   "name": "Wakatu",
+   "aliases": [
+    "Hallertau Aroma"
+   ],
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "alphaMin": 6.5,
+   "alphaMax": 8.5,
+   "betaMin": 8.5,
+   "betaMax": 8.5,
+   "cohumuloneMin": 28,
+   "cohumuloneMax": 30,
+   "totalOilMin": 1,
+   "totalOilMax": 1,
+   "myrceneMin": 35.5,
+   "myrceneMax": 35.5,
+   "humuleneMin": 16.8,
+   "humuleneMax": 16.8,
+   "caryophylleneMin": 8.2,
+   "caryophylleneMax": 8.2,
+   "farneseneMin": 6.7,
+   "farneseneMax": 6.7,
+   "aromaDescriptors": [
+    "lime",
+    "floral",
+    "citrus"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh",
+    "Motueka"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "pale-ale"
+   ],
+   "description": "A NZ Hallertau cross with a soft lime-and-floral character; versatile late hop.",
+   "specSource": "haas-companion-2022:WAKATU™",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 205 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "green-bullet",
+   "name": "Green Bullet",
+   "country": "New Zealand",
+   "purpose": "bittering",
+   "alphaMin": 11,
+   "alphaMax": 14,
+   "betaMin": 6.5,
+   "betaMax": 7,
+   "cohumuloneMin": 38,
+   "cohumuloneMax": 43,
+   "totalOilMin": 1,
+   "totalOilMax": 1.4,
+   "myrceneMin": 35,
+   "myrceneMax": 40,
+   "humuleneMin": 26,
+   "humuleneMax": 32,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "raisin",
+    "pepper",
+    "pine"
+   ],
+   "substitutes": [
+    "Styrian Goldings",
+    "Dr. Rudi"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager",
+    "ipa"
+   ],
+   "description": "Dual-purpose NZ hop; clean bittering with a raisin-and-pepper aroma when late-hopped.",
+   "specSource": "rahrbsg-variety-sheets:12.22.20-Green-Bullet-v1.1.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/12.22.20-Green-Bullet-v1.1.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet 12.22.20-Green-Bullet-v1.1.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "hallertau-tradition",
+   "name": "Hallertau Tradition",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 4,
+   "alphaMax": 7,
+   "betaMin": 3,
+   "betaMax": 6,
+   "cohumuloneMin": 24,
+   "cohumuloneMax": 30,
+   "totalOilMin": 1,
+   "totalOilMax": 1.4,
+   "myrceneMin": 16,
+   "myrceneMax": 32,
+   "humuleneMin": 35,
+   "humuleneMax": 50,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "floral",
+    "herbal",
+    "noble",
+    "spice"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh",
+    "Liberty"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "noble",
+    "wheat"
+   ],
+   "description": "Disease-resistant noble-type replacement for Mittelfrüh; clean, floral, herbal.",
+   "specSource": "rahrbsg-variety-sheets:Hallertau-Tradition.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Hallertau-Tradition.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Hallertau-Tradition.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "polaris",
+   "name": "Polaris",
+   "country": "Germany",
+   "purpose": "dual",
+   "alphaMin": 18,
+   "alphaMax": 24,
+   "betaMin": 5,
+   "betaMax": 6.5,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 29,
+   "totalOilMin": 4.4,
+   "totalOilMax": 4.8,
+   "myrceneMin": 45,
+   "myrceneMax": 55,
+   "humuleneMin": 20,
+   "humuleneMax": 35,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 12,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "mint",
+    "menthol",
+    "pineapple",
+    "icy"
+   ],
+   "substitutes": [
+    "none"
+   ],
+   "styleTags": [
+    "novelty",
+    "ipa",
+    "bittering"
+   ],
+   "description": "Extremely high alpha and oil with a unique icy mint/menthol aroma — a little goes a very long way.",
+   "specSource": "rahrbsg-variety-sheets:Polaris.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/Polaris.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Polaris.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "styrian-wolf",
+   "name": "Styrian Wolf",
+   "country": "Slovenia",
+   "purpose": "aroma",
+   "alphaMin": 13.5,
+   "alphaMax": 18.5,
+   "betaMin": 5,
+   "betaMax": 6,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 23,
+   "totalOilMin": 3,
+   "totalOilMax": 4.5,
+   "myrceneMin": 60,
+   "myrceneMax": 70,
+   "humuleneMin": 5,
+   "humuleneMax": 9,
+   "caryophylleneMin": 2,
+   "caryophylleneMax": 3,
+   "farneseneMin": 4.5,
+   "farneseneMax": 6.5,
+   "aromaDescriptors": [
+    "grapefruit",
+    "white wine",
+    "floral",
+    "tropical"
+   ],
+   "substitutes": [
+    "Nelson Sauvin",
+    "Hallertau Blanc"
+   ],
+   "styleTags": [
+    "ipa",
+    "pale-ale",
+    "modern"
+   ],
+   "description": "Modern Slovenian aroma hop with bright grapefruit and white-wine notes.",
+   "specSource": "haas-companion-2022:STYRIAN WOLF",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 186 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "bobek",
+   "name": "Bobek",
+   "aliases": [
+    "Styrian Bobek"
+   ],
+   "country": "Slovenia",
+   "purpose": "aroma",
+   "alphaMin": 3.5,
+   "alphaMax": 7.8,
+   "betaMin": 4,
+   "betaMax": 6.1,
+   "cohumuloneMin": 28,
+   "cohumuloneMax": 34,
+   "totalOilMin": 0.7,
+   "totalOilMax": 4,
+   "myrceneMin": 49,
+   "myrceneMax": 57,
+   "humuleneMin": 13,
+   "humuleneMax": 19,
+   "caryophylleneMin": 4,
+   "caryophylleneMax": 6,
+   "farneseneMin": 4,
+   "farneseneMax": 7,
+   "aromaDescriptors": [
+    "floral",
+    "citrus",
+    "herbal",
+    "pine"
+   ],
+   "substitutes": [
+    "Styrian Goldings",
+    "Fuggle"
+   ],
+   "styleTags": [
+    "belgian",
+    "saison",
+    "english"
+   ],
+   "description": "Slovenian Goldings-type with a lifted floral-citrus character.",
+   "specSource": "haas-companion-2022:BOBEK",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 63 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/bobek, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "cascade-argentina",
+   "name": "Cascade (Argentina)",
+   "country": "Argentina",
+   "purpose": "dual",
+   "aromaDescriptors": [
+    "grapefruit",
+    "floral",
+    "citrus"
+   ],
+   "substitutes": [
+    "Cascade"
+   ],
+   "styleTags": [
+    "pale-ale",
+    "ipa"
+   ],
+   "description": "Patagonian-grown Cascade; the mainstay of Argentina's large craft scene, a touch softer than US Cascade.",
+   "attribution": "No brewing values are stored for this record, and that is deliberate. The only Cascade sheets found are headed American. An Argentine crop of the same variety is a different analysis, and this record exists precisely because it reads differently. Numbers were previously stored here citing a sheet that describes something else; they have been removed rather than left to look sourced."
+  },
+  {
+   "id": "kohatu",
+   "name": "Kohatu",
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "alphaMin": 6,
+   "alphaMax": 7,
+   "betaMin": 5,
+   "betaMax": 6,
+   "cohumuloneMin": 21,
+   "cohumuloneMax": 23,
+   "totalOilMin": 1,
+   "totalOilMax": 1.5,
+   "myrceneMin": 30,
+   "myrceneMax": 40,
+   "humuleneMin": 30,
+   "humuleneMax": 40,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 14,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "pine",
+    "tropical",
+    "citrus"
+   ],
+   "substitutes": [
+    "Motueka",
+    "Riwaka"
+   ],
+   "styleTags": [
+    "ipa",
+    "pale-ale"
+   ],
+   "description": "Kohatu — NZ aroma hop with pine and tropical-fruit character for late and dry hopping.",
+   "specSource": "rahrbsg-variety-sheets:Kohatu.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Kohatu.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Kohatu.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "saaz-us",
+   "name": "Sterling",
+   "country": "United States",
+   "purpose": "aroma",
+   "alphaMin": 6,
+   "alphaMax": 9,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 28,
+   "totalOilMin": 1.3,
+   "totalOilMax": 1.9,
+   "myrceneMin": 44,
+   "myrceneMax": 48,
+   "humuleneMin": 19,
+   "humuleneMax": 23,
+   "caryophylleneMin": 5,
+   "caryophylleneMax": 7,
+   "farneseneMin": 11,
+   "farneseneMax": 17,
+   "aromaDescriptors": [
+    "noble",
+    "herbal",
+    "citrus",
+    "spice"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Mount Hood"
+   ],
+   "styleTags": [
+    "pilsner",
+    "lager",
+    "noble-adjacent"
+   ],
+   "description": "An American Saaz descendant with noble spice plus a citrus lift; a practical domestic substitute for Czech Saaz.",
+   "specSource": "haas-companion-2022:STERLING",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 178 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page."
+  },
+  {
+   "id": "liberty",
+   "name": "Liberty",
+   "country": "United States",
+   "purpose": "aroma",
+   "alphaMin": 3,
+   "alphaMax": 5,
+   "betaMin": 3,
+   "betaMax": 4,
+   "cohumuloneMin": 24,
+   "cohumuloneMax": 30,
+   "totalOilMin": 0.6,
+   "totalOilMax": 1.8,
+   "myrceneMin": 15,
+   "myrceneMax": 25,
+   "humuleneMin": 35,
+   "humuleneMax": 45,
+   "caryophylleneMin": 10,
+   "caryophylleneMax": 15,
+   "aromaDescriptors": [
+    "noble",
+    "floral",
+    "mild spice",
+    "lemon"
+   ],
+   "substitutes": [
+    "Hallertau Mittelfrüh",
+    "Mount Hood"
+   ],
+   "styleTags": [
+    "lager",
+    "pilsner",
+    "wheat",
+    "noble-adjacent"
+   ],
+   "description": "American Hallertau descendant; the closest domestic match to German noble character.",
+   "specSource": "rahrbsg-variety-sheets:Liberty.pdf",
+   "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/Liberty.pdf",
+   "attribution": "Alpha, beta, co-humulone as a percentage of alpha, total oils in mL/100 g and the oil fractions are transcribed from the RahrBSG product sheet Liberty.pdf, exactly as it prints them. Where the sheet prints \"<1%\", the value is stored as a ceiling of 1 rather than as 1. app/validate-hops.mjs fails the build if these numbers ever stop matching the sheet."
+  },
+  {
+   "id": "tettnang-us",
+   "name": "Tettnanger (US)",
+   "country": "United States",
+   "purpose": "aroma",
+   "aromaDescriptors": [
+    "noble",
+    "spicy",
+    "herbal",
+    "earthy"
+   ],
+   "substitutes": [
+    "Tettnanger",
+    "Spalt"
+   ],
+   "styleTags": [
+    "lager",
+    "wheat",
+    "noble-adjacent"
+   ],
+   "description": "American-grown Tettnanger; slightly earthier than the German original but a serviceable stand-in.",
+   "attribution": "No brewing values are stored for this record, and that is deliberate. The RahrBSG Tettnang sheet and the Haas Tettnang Tettnanger page are both German; neither publishes an analysis of US-grown Tettnanger. Numbers were previously stored here citing a sheet that describes something else; they have been removed rather than left to look sourced."
+  },
+  {
+   "id": "hallertau-taurus",
+   "name": "Taurus",
+   "country": "Germany",
+   "purpose": "bittering",
+   "alphaMin": 12,
+   "alphaMax": 17,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 20,
+   "cohumuloneMax": 25,
+   "totalOilMin": 0.9,
+   "totalOilMax": 1.4,
+   "myrceneMin": 30,
+   "myrceneMax": 50,
+   "humuleneMin": 23,
+   "humuleneMax": 33,
+   "caryophylleneMin": 6,
+   "caryophylleneMax": 11,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "clean",
+    "spicy",
+    "earthy"
+   ],
+   "substitutes": [
+    "Herkules",
+    "Magnum"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager"
+   ],
+   "description": "High-alpha German bittering hop with unusually low cohumulone for its strength — smooth bitterness.",
+   "specSource": "haas-companion-2022:HALLERTAUER TAURUS",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 106 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/hallertauer-taurus, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "opal",
+   "name": "Opal",
+   "country": "Germany",
+   "purpose": "aroma",
+   "alphaMin": 5,
+   "alphaMax": 8,
+   "betaMin": 3.5,
+   "betaMax": 5.5,
+   "cohumuloneMin": 13,
+   "cohumuloneMax": 17,
+   "totalOilMin": 0.8,
+   "totalOilMax": 1.3,
+   "myrceneMin": 20,
+   "myrceneMax": 45,
+   "humuleneMin": 30,
+   "humuleneMax": 50,
+   "caryophylleneMin": 8,
+   "caryophylleneMax": 15,
+   "farneseneMin": 0,
+   "farneseneMax": 1,
+   "aromaDescriptors": [
+    "spice",
+    "aniseed",
+    "citrus",
+    "floral"
+   ],
+   "substitutes": [
+    "Saphir",
+    "Perle"
+   ],
+   "styleTags": [
+    "saison",
+    "belgian",
+    "lager"
+   ],
+   "description": "German aroma variety with a distinctive aniseed-and-spice note; very low cohumulone.",
+   "specSource": "haas-companion-2022:OPAL",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 146 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/opal, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "sussex",
+   "name": "Admiral",
+   "country": "United Kingdom",
+   "purpose": "bittering",
+   "alphaMin": 13,
+   "alphaMax": 16,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 37,
+   "cohumuloneMax": 45,
+   "totalOilMin": 1,
+   "totalOilMax": 1.7,
+   "myrceneMin": 45,
+   "myrceneMax": 45,
+   "humuleneMin": 23,
+   "humuleneMax": 26,
+   "farneseneMin": 2,
+   "farneseneMax": 2,
+   "aromaDescriptors": [
+    "orange",
+    "resin",
+    "herbal"
+   ],
+   "substitutes": [
+    "Target",
+    "Northdown"
+   ],
+   "styleTags": [
+    "english",
+    "bittering",
+    "bitter"
+   ],
+   "description": "High-alpha English bittering hop bred to replace Target; clean and efficient with a marmalade edge.",
+   "specSource": "haas-companion-2022:ADMIRAL",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 48 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/admiral, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "endeavour",
+   "name": "Endeavour",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 8,
+   "alphaMax": 10.5,
+   "betaMin": 3.8,
+   "betaMax": 5.3,
+   "cohumuloneMin": 30,
+   "cohumuloneMax": 36,
+   "totalOilMin": 1.1,
+   "totalOilMax": 1.7,
+   "myrceneMin": 27,
+   "myrceneMax": 37,
+   "humuleneMin": 3,
+   "humuleneMax": 10,
+   "farneseneMin": 5,
+   "farneseneMax": 8,
+   "aromaDescriptors": [
+    "blackcurrant",
+    "raspberry",
+    "citrus"
+   ],
+   "substitutes": [
+    "Bramling Cross",
+    "Jester"
+   ],
+   "styleTags": [
+    "english",
+    "pale-ale",
+    "ipa"
+   ],
+   "description": "Modern British variety with soft red-berry fruit; a Cascade-adjacent option grown in Kent.",
+   "specSource": "haas-companion-2022:ENDEAVOUR",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 93 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/endeavour, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "olicana",
+   "name": "Olicana",
+   "country": "United Kingdom",
+   "purpose": "aroma",
+   "alphaMin": 7,
+   "alphaMax": 9,
+   "betaMin": 4,
+   "betaMax": 6,
+   "cohumuloneMin": 28,
+   "cohumuloneMax": 32,
+   "totalOilMin": 0.5,
+   "totalOilMax": 0.5,
+   "myrceneMin": 19,
+   "myrceneMax": 20,
+   "humuleneMin": 8,
+   "humuleneMax": 9,
+   "aromaDescriptors": [
+    "tropical",
+    "mango",
+    "grapefruit",
+    "elderflower"
+   ],
+   "substitutes": [
+    "Citra",
+    "Jester"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy",
+    "pale-ale"
+   ],
+   "description": "British answer to the New World tropical hops — mango and grapefruit with an elderflower lift.",
+   "specSource": "charles-faram-hop-oracle:olicana-hops",
+   "sourceUrl": "https://charlesfaram.com/hop-oracle/olicana-hops/",
+   "attribution": "Alpha, beta and cohumulone are transcribed from the Charles Faram Hop Oracle page for this variety, the only merchant found that publishes it. Faram's total oil and some of its oil fractions are NOT used: the page prints total oil with a stray digit on many varieties and myrcene sometimes as a fraction and sometimes as a percentage, and this project does not repair another publisher's numbers. data/hops/merchant-specs.json records which fields were refused and why."
+  },
+  {
+   "id": "harlequin",
+   "name": "Harlequin",
+   "country": "United Kingdom",
+   "purpose": "dual",
+   "alphaMin": 9.5,
+   "alphaMax": 12,
+   "betaMin": 7,
+   "betaMax": 9,
+   "cohumuloneMin": 27,
+   "cohumuloneMax": 31,
+   "totalOilMin": 1,
+   "totalOilMax": 1.6,
+   "humuleneMin": 5,
+   "humuleneMax": 5,
+   "farneseneMin": 10,
+   "farneseneMax": 10,
+   "aromaDescriptors": [
+    "passionfruit",
+    "pineapple",
+    "citrus",
+    "stone fruit"
+   ],
+   "substitutes": [
+    "Olicana",
+    "Mosaic"
+   ],
+   "styleTags": [
+    "ipa",
+    "hazy"
+   ],
+   "description": "Recent Charles Faram release with strong tropical character and high thiol potential.",
+   "specSource": "charles-faram-hop-oracle:harlequin",
+   "sourceUrl": "https://charlesfaram.com/hop-oracle/harlequin/",
+   "attribution": "Alpha, beta and cohumulone are transcribed from the Charles Faram Hop Oracle page for this variety, the only merchant found that publishes it. Faram's total oil and some of its oil fractions are NOT used: the page prints total oil with a stray digit on many varieties and myrcene sometimes as a fraction and sometimes as a percentage, and this project does not repair another publisher's numbers. data/hops/merchant-specs.json records which fields were refused and why."
+  },
+  {
+   "id": "lubelski-marynka",
+   "name": "Marynka",
+   "country": "Poland",
+   "purpose": "bittering",
+   "alphaMin": 9,
+   "alphaMax": 12,
+   "betaMin": 10.2,
+   "betaMax": 13,
+   "cohumuloneMin": 26,
+   "cohumuloneMax": 33,
+   "totalOilMin": 1.8,
+   "totalOilMax": 2.2,
+   "myrceneMin": 28,
+   "myrceneMax": 31,
+   "humuleneMin": 26,
+   "humuleneMax": 33,
+   "caryophylleneMin": 11,
+   "caryophylleneMax": 12,
+   "farneseneMin": 1,
+   "farneseneMax": 3,
+   "aromaDescriptors": [
+    "resin",
+    "herbal",
+    "spicy"
+   ],
+   "substitutes": [
+    "Magnum",
+    "Northern Brewer"
+   ],
+   "styleTags": [
+    "bittering",
+    "lager"
+   ],
+   "description": "Polish high-alpha bittering variety, resinous and herbal.",
+   "specSource": "haas-companion-2022:MARYNKA",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 130 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/marynka, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document. The two disagree here and this record keeps the Companion's figures. BarthHaas puts Marynka at 6.2-8.5 per cent alpha and 2.0-2.7 beta against the Companion's 9-12 and 10.2-13.0. Page 130 of the Companion was re-read to rule out a transcription error - it prints 9-12 and 10.2-13.0 - and its own prose says Marynka \"is also characterized by a very high level of beta acids\", which corroborates its numbers and contradicts the other page. BarthHaas describe their figures as the medium range of the last four years from their own contracted crops, so a different growing region or clone is the likely explanation. Treat Marynka's beta as genuinely uncertain."
+  },
+  {
+   "id": "premiant",
+   "name": "Premiant",
+   "country": "Czech Republic",
+   "purpose": "dual",
+   "alphaMin": 7,
+   "alphaMax": 10,
+   "betaMin": 3.5,
+   "betaMax": 5.5,
+   "cohumuloneMin": 18,
+   "cohumuloneMax": 23,
+   "totalOilMin": 1,
+   "totalOilMax": 2,
+   "myrceneMin": 35,
+   "myrceneMax": 45,
+   "humuleneMin": 25,
+   "humuleneMax": 40,
+   "caryophylleneMin": 9,
+   "caryophylleneMax": 13,
+   "farneseneMin": 1,
+   "farneseneMax": 3,
+   "aromaDescriptors": [
+    "noble",
+    "spicy",
+    "floral",
+    "herbal"
+   ],
+   "substitutes": [
+    "Saaz",
+    "Sladek"
+   ],
+   "styleTags": [
+    "czech-lager",
+    "pilsner"
+   ],
+   "description": "Czech dual-purpose hop with low cohumulone; refined bitterness with Saaz-like aroma.",
+   "specSource": "haas-companion-2022:PREMIANT",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 154 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/premiant, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "aurora",
+   "name": "Aurora",
+   "aliases": [
+    "Super Styrian"
+   ],
+   "country": "Slovenia",
+   "purpose": "dual",
+   "alphaMin": 7.2,
+   "alphaMax": 12.6,
+   "betaMin": 2.7,
+   "betaMax": 4.4,
+   "cohumuloneMin": 22,
+   "cohumuloneMax": 26,
+   "totalOilMin": 0.9,
+   "totalOilMax": 1.6,
+   "myrceneMin": 35,
+   "myrceneMax": 53,
+   "humuleneMin": 20,
+   "humuleneMax": 27,
+   "caryophylleneMin": 4,
+   "caryophylleneMax": 8,
+   "farneseneMin": 6,
+   "farneseneMax": 9,
+   "aromaDescriptors": [
+    "floral",
+    "herbal",
+    "citrus",
+    "pine"
+   ],
+   "substitutes": [
+    "Styrian Goldings",
+    "Northern Brewer"
+   ],
+   "styleTags": [
+    "belgian",
+    "saison",
+    "lager"
+   ],
+   "description": "Slovenian dual-purpose hop; more assertive than Styrian Goldings while keeping its character.",
+   "specSource": "haas-companion-2022:AURORA",
+   "sourceUrl": "https://www.johnihaas.com/wp-content/uploads/2021/11/HAAS_HopsCompanion-Final-ForWeb.pdf",
+   "attribution": "Alpha, beta, cohumulone, total oil and the oil fractions are transcribed from page 58 of the John I. Haas Hops Companion (2022), a freely distributed merchant variety guide, exactly as that page prints them. Where the guide prints a single figure rather than a range, a single figure is stored; where it prints \"<1\", the value is stored as a ceiling of 1 rather than as 1. The guide was parsed by page geometry and twenty pages were checked by eye against the parser. app/validate-hops.mjs fails the build if these numbers ever stop matching the page. Cross-checked against BarthHaas's current per-variety analysis at barthhaas.com/hops-and-products/hops/aurora, which prints alpha and beta acids as percentage ranges with the determination method named and total oil in ml/100 g. Across the 62 varieties this project could match, 183 of 186 alpha, beta and total-oil ranges overlap between the two documents. Note what this cross-check is not: John I. Haas is BarthHaas's US arm, so these are two publications of one company, and agreement between them is consistency rather than independent confirmation. BarthHaas's oil fractions were deliberately not used - the page labels caryophyllene, farnesene and geraniol as a percentage of total oil but leaves myrcene, humulene and linalool unqualified, and the magnitudes do not behave consistently across pages (Tettnanger is printed at up to 0.9 per cent myrcene against Hallertauer Mittelfrueh's 50.1), so the unit those three are in cannot be established from the document."
+  },
+  {
+   "id": "cascade-nz",
+   "name": "Cascade (New Zealand)",
+   "country": "New Zealand",
+   "purpose": "aroma",
+   "aromaDescriptors": [
+    "citrus",
+    "floral",
+    "grapefruit"
+   ],
+   "substitutes": [
+    "Cascade"
+   ],
+   "styleTags": [
+    "pale-ale",
+    "ipa"
+   ],
+   "description": "New Zealand-grown Cascade; softer and more floral than the US original thanks to the different growing climate.",
+   "attribution": "No brewing values are stored for this record, and that is deliberate. The only Cascade sheets found are headed American. A New Zealand crop of the same variety is a different analysis, and this record exists precisely because it reads differently. Numbers were previously stored here citing a sheet that describes something else; they have been removed rather than left to look sourced."
+  }
+ ]
 }

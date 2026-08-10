@@ -18,7 +18,7 @@
     "spirits"
    ],
    "doseMinGPerL": 0.1,
-   "doseMaxGPerL": 1,
+   "doseMaxGPerL": 0.96,
    "doseUnit": "g/L",
    "effectMetric": "YAN",
    "effectPerGramPerLitre": 212,
@@ -26,9 +26,10 @@
    "contactTime": null,
    "description": "Pure inorganic nitrogen: 21.2% N by weight, so 1 g/L contributes about 212 mg/L of yeast assimilable nitrogen.",
    "usageNotes": "Cheap and immediately available. Best added in stages rather than all at pitch.",
-   "cautions": "Ammonium alone does not supply the amino acids, sterols and vitamins yeast also need. A large single dose late in fermentation can drive a heat spike and is largely wasted — yeast lose their nitrogen transporters past about the one-third sugar break.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 0
+   "cautions": "Ammonium alone does not supply the amino acids, sterols and vitamins yeast also need. A large single dose late in fermentation can drive a heat spike and is largely wasted — yeast lose their nitrogen transporters past about the one-third sugar break. In the United States the 0.96 g/L ceiling is a legal maximum under 27 CFR 24.246, not a recommendation - and it is a limit on the total added across the whole treatment, not per addition, so staged feeding has to be summed against it.",
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 0,
+   "attribution": "The dose ceiling is law. 27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises ammonium phosphate / diammonium phosphate (mono- and dibasic) for treating wine and juice and states that \"the amount used must not exceed 8 pounds per 1000 gallons (0.96 g/L)\". The stored maximum of 1 g/L was above that, so a US winemaker following this record's upper bound would have exceeded the limit; it is now 0.96. The nitrogen figure is stoichiometry rather than a vendor claim: PubChem CID 24540 gives diammonium hydrogen phosphate as H9N2O4P at 132.06 g/mol, and two nitrogens at 14.007 are 21.21% of that, so 1 g/L contributes 212 mg/L of ammoniacal nitrogen. That confirms the stored 212 exactly."
   },
   {
    "id": "nutrient-fermaid-k",
@@ -42,7 +43,7 @@
     "cider",
     "spirits"
    ],
-   "doseMinGPerL": 0.1,
+   "doseMinGPerL": 0.25,
    "doseMaxGPerL": 0.5,
    "doseUnit": "g/L",
    "effectMetric": "YAN",
@@ -52,8 +53,9 @@
    "description": "A blended nutrient: DAP plus inactivated yeast, amino acids, sterols, thiamine and minerals. About 100 mg/L YAN per g/L.",
    "usageNotes": "The general-purpose complete nutrient. Typical dose 25 g/hL (0.25 g/L) at the one-third sugar break.",
    "cautions": "Contains DAP, so it counts toward any inorganic nitrogen limit you are working to.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 1
+   "sourceUrl": "https://scottlab.com/content/files/documents/handbooks/rev/scott%20laboratories%202025-2026%20winemaking%20handbook%20aug.pdf",
+   "sortOrder": 1,
+   "attribution": "the Scott Laboratories 2025-2026 Winemaking Handbook gives the dosage for this product as 25-50 g/hL (2-4 lb/1000 gal), which is 0.25-0.5 g/L - the stored minimum of 0.1 g/L was below it. The same handbook's nutrient comparison table, whose column header reads \"YAN (in ppm) at 40 g/hL\", puts this product at 40 ppm. 40 g/hL is 0.4 g/L, so 40 divided by 0.4 is 100 mg/L of YAN per g/L, which confirms the stored 100 exactly. Fermaid K is a blend of organic nitrogen (amino acids) and inorganic nitrogen (DAP) with vitamins and minerals. The column header was recovered by page geometry: pdfminer emits it far from the values it governs, and without it the ppm figures have no basis and cannot be used at all."
   },
   {
    "id": "nutrient-fermaid-o",
@@ -69,7 +71,7 @@
     "cider"
    ],
    "doseMinGPerL": 0.1,
-   "doseMaxGPerL": 1,
+   "doseMaxGPerL": 0.4,
    "doseUnit": "g/L",
    "effectMetric": "YAN",
    "effectPerGramPerLitre": 40,
@@ -78,8 +80,9 @@
    "description": "Fully organic nitrogen from autolysed yeast — no DAP. Measured YAN is modest, around 40 mg/L per g/L, but it supports fermentation as though it delivered several times that, because the nitrogen arrives as amino acids the yeast can use directly.",
    "usageNotes": "The nutrient the TOSNA mead protocol is built around: roughly 1 g/L total, split into four equal doses at 24 h, 48 h, 72 h and the one-third sugar break.",
    "cautions": "The gap between measured and effective YAN is well documented but not precisely fixed — treat any single conversion figure, including ours, as approximate.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 2
+   "sourceUrl": "https://scottlab.com/content/files/documents/handbooks/rev/scott%20laboratories%202025-2026%20winemaking%20handbook%20aug.pdf",
+   "sortOrder": 2,
+   "attribution": "the Scott Laboratories 2025-2026 Winemaking Handbook gives the dosage for this product as 10-40 g/hL (0.83-3.3 lb/1000 gal), which is 0.1-0.4 g/L - the stored maximum of 1 g/L was above it. The same handbook's nutrient comparison table, whose column header reads \"YAN (in ppm) at 40 g/hL\", puts this product at 16 ppm. 40 g/hL is 0.4 g/L, so 16 divided by 0.4 is 40 mg/L of YAN per g/L, which confirms the stored 40 exactly. Fermaid O is all organic nitrogen. The handbook prints two numbers for it - measureable YAN 16 and \"YAN equivalents\" 64 - because a laboratory YAN assay under-reads organic nitrogen relative to how the yeast actually use it. The stored figure is the measureable one, which is the conservative choice and the one that matches a YAN measurement taken in the cellar. The column header was recovered by page geometry: pdfminer emits it far from the values it governs, and without it the ppm figures have no basis and cannot be used at all."
   },
   {
    "id": "nutrient-go-ferm",
@@ -95,8 +98,8 @@
     "cider",
     "spirits"
    ],
-   "doseMinGPerL": 0.2,
-   "doseMaxGPerL": 0.4,
+   "doseMinGPerL": 0.3,
+   "doseMaxGPerL": 0.3,
    "doseUnit": "g/L",
    "effectMetric": null,
    "effectPerGramPerLitre": null,
@@ -105,8 +108,9 @@
    "description": "A rehydration nutrient, not a fermentation nutrient. Micronutrients and sterols taken up by dry yeast during the rehydration window, before they meet the must.",
    "usageNotes": "Suspend in water at about 43 °C, cool to 40 °C, then rehydrate the yeast in it. Typical rate is 1.25 g Go-Ferm per gram of yeast.",
    "cautions": "Must go in the rehydration water, never the must — added directly it does nothing useful.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 3
+   "sourceUrl": "https://scottlab.com/content/files/documents/handbooks/rev/scott%20laboratories%202025-2026%20winemaking%20handbook%20aug.pdf",
+   "sortOrder": 3,
+   "attribution": "the Scott Laboratories 2025-2026 Winemaking Handbook gives the dosage for Go-Ferm as a single rate, 30 g/hL (2.5 lb/1000 gal), which is 0.30 g/L. The record stored a range of 0.2-0.4 g/L; the handbook publishes no range, so both bounds are now that one published rate. Go-Ferm is a rehydration nutrient rather than a fermentation nutrient - the handbook's comparison table describes it as autolyzed yeast rich in vitamins and minerals and says it \"contains some nitrogen but is not a significant source of YAN and is not a replacement for fermentation nutrients\", which is why this record carries no YAN contribution. The dose is also computed against the volume of must, not the weight of yeast, and Go-Ferm is added to the rehydration water rather than to the must."
   },
   {
    "id": "nutrient-yeast-hulls",
@@ -124,7 +128,7 @@
     "spirits"
    ],
    "doseMinGPerL": 0.2,
-   "doseMaxGPerL": 0.5,
+   "doseMaxGPerL": 0.36,
    "doseUnit": "g/L",
    "effectMetric": null,
    "effectPerGramPerLitre": null,
@@ -133,8 +137,9 @@
    "description": "Cell wall fragments that adsorb the medium-chain fatty acids which inhibit yeast late in fermentation, and provide sterols and unsaturated fatty acids.",
    "usageNotes": "The standard first intervention for a stuck or sluggish fermentation.",
    "cautions": "Contributes essentially no nitrogen — pair with a nitrogen source if YAN is the actual problem.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 4
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 4,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, authorises \"Yeast, cell wall/membranes of autolyzed yeast\" - which is what yeast hulls are - and states that \"the amount used must not exceed 3 pounds per 1000 gallons (0.36 g/L) of wine or juice\". The stored maximum of 0.5 g/L was above that limit and has been brought down to it. Note that whole autolyzed yeast is a separate entry in the same section and carries no numeric limit at all; the 0.36 g/L applies specifically to the cell-wall preparation."
   },
   {
    "id": "nutrient-thiamine",
@@ -159,8 +164,9 @@
    "description": "An essential yeast cofactor. Deficiency causes sluggish fermentation and elevated volatile acidity.",
    "usageNotes": "Regulatory limits typically cap additions around 0.6 mg/L. Present in most blended nutrients already.",
    "cautions": "Sulphite destroys thiamine, so heavily sulphited musts run short of it.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 5
+   "sourceUrl": "https://www.ecfr.gov/api/versioner/v1/full/2026-08-01/title-27.xml?part=24&section=24.246",
+   "sortOrder": 5,
+   "attribution": "27 CFR 24.246, Materials authorized for the treatment of wine and juice, retrieved from the eCFR versioner API as of 2026-08-01, states that for thiamine hydrochloride \"the amount used must not exceed 0.005 pounds per 1000 gallons (0.6 mg/L) of wine or juice\". The stored maximum of 0.0006 g/L is exactly that 0.6 mg/L, so the record was already at the legal ceiling and is unchanged - but it is worth knowing that the stored maximum is a hard limit rather than a suggestion. The minimum is this project's own guidance; the statute sets no floor."
   },
   {
    "id": "nutrient-yeast-energizer",
@@ -186,8 +192,9 @@
    "description": "The generic homebrew-shop blend — usually DAP, yeast hulls, and some combination of vitamins and minerals.",
    "usageNotes": "Composition varies by brand, so the YAN figure here is indicative only.",
    "cautions": "Read the label. Some 'energizers' are little more than repackaged DAP.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 6
+   "sortOrder": 6,
+   "attribution": "No citation, because there is no document. \"Yeast energizer\" is a shelf category, not a product: every supplier blends its own mix of diammonium phosphate, autolyzed yeast, thiamine and sometimes magnesium sulfate in undisclosed proportions. It has no entry in 27 CFR 24.246 and no product page in either Scott Laboratories handbook, so neither the dose range nor the YAN contribution here is sourced. The record previously cited Scott Laboratories' nutrients category page, which lists no such product. Note that the ingredients are limited even though the blend is not - whatever DAP a blend contains counts against 24.246's 0.96 g/L, and whatever yeast cell wall it contains counts against 0.36 g/L.",
+   "unsourced": true
   },
   {
    "id": "nutrient-beer-nutrient",
@@ -211,8 +218,9 @@
    "description": "Zinc-focused nutrient for wort, which is usually nitrogen-sufficient but zinc-deficient after boiling with stainless.",
    "usageNotes": "Added in the last few minutes of the boil. Zinc target is around 0.15–0.30 mg/L.",
    "cautions": "Wort rarely needs nitrogen — dosing beer with DAP is generally unnecessary and can produce harsh flavours.",
-   "sourceUrl": "https://scottlabs.com/",
-   "sortOrder": 7
+   "sortOrder": 7,
+   "attribution": "No citation, because there is no document. Brewing yeast nutrient is a generic blend with no published specification this project has found. 27 CFR 24.246 governs wine and juice and has nothing to say about beer, and the Scott Laboratories handbooks are winemaking and cidermaking documents with no entry for it. The record previously cited Scott Laboratories' nutrients category page.",
+   "unsourced": true
   }
  ]
 }

@@ -1,5 +1,6 @@
 {
-  "numericOnShallowLink": 347,
-  "note": "Ratchet baseline for numeric claims citing a publisher homepage rather than a specific document. May only ever be lowered. Lower it by replacing homepage citations with deep links to the datasheet, standard or record the figure actually came from, then re-running with --update-budget.",
-  "updated": "2026-07-30"
+  "numericOnShallowLink": 3,
+  "unsourcedRecords": 39,
+  "note": "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims citing a publisher homepage rather than the specific document the figure came from; lower it by finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that their numbers currently rest on no citation at all; lower it by sourcing them or by removing the numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be forgotten, and fails the build if either rises.",
+  "updated": "2026-08-10"
 }

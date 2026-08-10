@@ -29,11 +29,16 @@ const nextConfig = {
       "/recipes/[slug]/beerxml": ["../data/recipes/ingredients/**"],
       "/hops/[name]": ["../data/recipes/archive-rollups.json.gz"],
       "/yeasts/[name]": ["../data/recipes/archive-rollups.json.gz"],
+      "/yeasts/db/[id]": ["../data/yeasts/derived/lineages.json"],
       "/fermentables/[name]": ["../data/recipes/archive-rollups.json.gz"],
       "/ingredients": ["../data/recipes/archive-rollups.json.gz"],
       "/guidelines/[edition]/[code]": ["../data/recipes/archive-rollups.json.gz"],
       "/data-download": ["../data/reference-export.json"],
       "/data": ["../data/reference-export.json"],
+      // Prices are read from disk at request time like the source registry, so
+      // they need tracing in or the column silently renders empty on Vercel.
+      "/water": ["../data/water/prices.json"],
+      "/water/[id]": ["../data/water/prices.json"],
     },
   },
   async headers() {

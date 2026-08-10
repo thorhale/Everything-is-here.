@@ -45,7 +45,7 @@ const DDL = [
     "cellsPerUnit" DOUBLE PRECISION, "unitLabel" TEXT, "optimalPitchNote" TEXT,
     "isBlend" BOOLEAN NOT NULL DEFAULT FALSE,
     "blendComponents" TEXT[] DEFAULT ARRAY[]::TEXT[],
-    "description" TEXT, "flavorNotes" TEXT, "sourceUrl" TEXT NOT NULL,
+    "description" TEXT, "flavorNotes" TEXT, "sourceUrl" TEXT, "withdrawnSourceUrl" TEXT,
     "attribution" TEXT, "sortOrder" INTEGER NOT NULL DEFAULT 0)`,
   `CREATE INDEX IF NOT EXISTS "YeastStrain_labId_idx" ON "YeastStrain"("labId")`,
   `CREATE INDEX IF NOT EXISTS "YeastStrain_name_idx" ON "YeastStrain"("name")`,
@@ -69,7 +69,7 @@ const STRAIN_COLS = [
   "tempMinF", "tempMaxF", "tempMinC", "tempMaxC", "flocculation",
   "alcoholToleranceMin", "alcoholToleranceMax", "cellsPerUnit", "unitLabel",
   "optimalPitchNote", "isBlend", "blendComponents", "description", "flavorNotes",
-  "sourceUrl", "attribution", "sortOrder",
+  "sourceUrl", "withdrawnSourceUrl", "attribution", "sortOrder",
   "specBasis", "sourceId", "sourceNote",
 ];
 
@@ -86,7 +86,7 @@ function strainTuple(s, labId, i, attribution) {
     lit(s.cellsPerUnit ?? null), lit(s.unitLabel ?? null),
     lit(s.optimalPitchNote ?? null), lit(s.isBlend ?? false),
     litArr(s.blendComponents), lit(s.description ?? null),
-    lit(s.flavorNotes ?? null), lit(s.sourceUrl),
+    lit(s.flavorNotes ?? null), lit(s.sourceUrl ?? null), lit(s.withdrawnSourceUrl ?? null),
     lit(s.attribution ?? attribution ?? null), lit(s.sortOrder ?? i),
     lit(s.specBasis ?? null), lit(s.sourceId ?? null), lit(s.sourceNote ?? null),
   ].join(",") + ")";
