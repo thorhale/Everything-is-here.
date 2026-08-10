@@ -1269,7 +1269,7 @@
    ],
    "description": "Rahr's American lager/6-row base — high enzyme, a classic adjunct-lager workhorse.",
    "sourceUrl": "https://rahrmalting.com/",
-   "sourceNote": "The ppg, colour and diastatic power on this record are unsourced and the citation is a homepage that no longer has anything behind it. rahrmalting.com now answers every path with a 114-byte document whose only content is a script redirecting to /lander, and /lander itself carries no text - no product list, no specifications, nothing an automated or a human reader could cite. This is not a bot block; the site has been emptied. No replacement was substituted: a distributor's copy of a maltster's figures is not the maltster's specification, and this project does not cite one as though it were."
+   "sourceNote": "The ppg, colour and diastatic power on this record are unsourced and the citation is a homepage that no longer has anything behind it. rahrmalting.com now answers every path with a 114-byte document whose only content is a script redirecting to /lander, and /lander itself carries no text - no product list, no specifications, nothing an automated or a human reader could cite. This is not a bot block; the site has been emptied. No replacement was substituted: a distributor's copy of a maltster's figures is not the maltster's specification, and this project does not cite one as though it were. The Internet Archive was tried as well, since an archived snapshot is a legitimate citation for a page that has gone: its availability API answered 429 across a backoff and its replay path reset the connection. That is the Archive declining, not a puzzle to solve, so the attempt is recorded here and stops."
   },
   {
    "id": "malt-carapils-weyermann",

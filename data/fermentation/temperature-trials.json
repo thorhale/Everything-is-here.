@@ -91,7 +91,8 @@
    "quantitativeNote": "Real measured figures, openly licensed, and the closest thing in this file to the numbers a quantitative model would need. They are still NOT a curve to read a batch off: they belong to one lager strain at 15.5 °P across a 3 °C band, and every value is the output of a four-parameter optimisation rather than a temperature series. For scale, the flavour threshold for isoamyl acetate in beer is about 1.2 mg/L, so 2.09 is perceptible.",
    "whyItSupportsNoFormula": "The authors could not express their results as a function of temperature. They needed second-order polynomials with interaction terms across all four parameters — which is direct published evidence for what this file argues elsewhere: temperature alone does not determine ester yield, and a single-variable formula would be a misrepresentation of the system rather than a simplification of it.",
    "appliesTo": "Lager fermentation, one strain, high gravity. Nothing here transfers to ale or saison temperatures.",
-   "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769"
+   "sourceUrl": "https://www.mdpi.com/2227-9717/8/7/769",
+   "attribution": "This article is not deposited in PubMed Central and mdpi.com refuses automated requests, so the link cannot be machine-verified. Its DOI is 10.3390/processes8070769, which is the permanent identifier and will outlive any URL."
   }
  ],
  "manufacturerStatements": [

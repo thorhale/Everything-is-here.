@@ -758,6 +758,13 @@
    "note": "The public water association for Oldenburg and East Frisia. Publishes a quarterly Trinkwasseranalyse per waterworks supply area, produced by an accredited external laboratory, giving the full cation and anion panel with hydrogen carbonate stated directly."
   },
   {
+   "host": "www.pa.gov",
+   "name": "Pennsylvania Department of Agriculture",
+   "kind": "government-report",
+   "reliability": "primary",
+   "note": "Publishes the Penn State reports for the NE-1020 multistate wine grape cultivar trial. The reports carry per-cultivar berry quality at harvest - pH, titratable acidity and soluble solids - but as page images rotated to landscape rather than as text, so the tables have to be read by OCR and the column assignment checked against the report's own prose before use."
+  },
+  {
    "host": "www.portland.gov",
    "name": "Portland Water Bureau",
    "kind": "government-report",
@@ -1834,6 +1841,23 @@
    "accessed": "2026-08-10",
    "supports": "Total soluble solids and juice pH across 90 muscadine genotypes measured over three consecutive seasons, 2017-2019, on 50 berries per replicate with three replicates per genotype: TSS averaging 14.4 Brix from 7.9 to 18.1, and pH from 3.11 to 3.85. Published CC BY.",
    "doesNotSupport": "Its acidity figures, which are printed as \"mg tartaric acid/L\" — 3.4 average, 2.6 to 4.8 — a unit that cannot be right, since 3.4 mg/L is three orders of magnitude below any grape juice. The numbers are almost certainly g/L but this project does not reinterpret a published unit, so they are not used. The population is also mostly breeding lines rather than wine cultivars, and the paper places the two standard wine cultivars, Noble and Carlos, in its low-sugar group."
+  },
+  {
+   "id": "ne1020-wine-grape-cultivar-trial-2014",
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/business-industry/agricultural-marketing/documents/2014%20Crassweller%20Grape%20Variety%20Trial%20Report.pdf",
+   "title": "NE-1020 Wine Grape Cultivar Trial 2014 Report",
+   "authors": [
+    "R. Crassweller",
+    "and colleagues, Penn State University"
+   ],
+   "year": 2015,
+   "publisher": "Pennsylvania Department of Agriculture",
+   "kind": "government-report",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-10",
+   "supports": "Table 4: berry quality at harvest for fifteen cultivars at the Lake Erie Grape Research and Extension Center - pH, titratable acidity in g/L and soluble solids as a percentage - covering Chambourcin, Norton, Traminette and Vidal blanc among others. Table 8 gives pH and acidity but no soluble solids for a second site.",
+   "doesNotSupport": "Any range, and nothing about a normal season. It is one vintage at one site, and 2014 brought extensive winter injury along Lake Erie - several cultivars in the same trial set no fruit at all. The tables are page images, so every figure taken from them was read by OCR; the column assignment was verified against the report's own prose, which states that acidity ran 7.6 to 10.6 g/L except for Norton and that Brix was above 20% except for Chancellor, and both reproduce exactly from the columns as read. It gives no juice yield, colour or fermentability."
   }
  ]
 }

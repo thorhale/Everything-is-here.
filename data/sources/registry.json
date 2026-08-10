@@ -13,14 +13,14 @@
   "totals": {
     "distinctSources": 391,
     "backgroundDocuments": 15,
-    "citations": 693,
-    "numericCitations": 578,
-    "numericOnShallowLink": 4,
+    "citations": 695,
+    "numericCitations": 580,
+    "numericOnShallowLink": 3,
     "numericOnTertiary": 0,
-    "fullTextVerified": 38,
+    "fullTextVerified": 39,
     "backgroundFullTextVerified": 12,
     "byReliability": {
-      "primary": 660,
+      "primary": 662,
       "secondary": 27,
       "tertiary": 6
     }
@@ -612,6 +612,36 @@
         "juice-grape-white",
         "juice-grape-red",
         "juice-cranberry"
+      ]
+    },
+    {
+      "id": "ne1020-wine-grape-cultivar-trial-2014",
+      "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/business-industry/agricultural-marketing/documents/2014%20Crassweller%20Grape%20Variety%20Trial%20Report.pdf",
+      "host": "www.pa.gov",
+      "title": "NE-1020 Wine Grape Cultivar Trial 2014 Report",
+      "publisher": "Pennsylvania Department of Agriculture",
+      "authors": [
+        "R. Crassweller",
+        "and colleagues, Penn State University"
+      ],
+      "year": 2015,
+      "kind": "government-report",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Table 4: berry quality at harvest for fifteen cultivars at the Lake Erie Grape Research and Extension Center - pH, titratable acidity in g/L and soluble solids as a percentage - covering Chambourcin, Norton, Traminette and Vidal blanc among others. Table 8 gives pH and acidity but no soluble solids for a second site.",
+      "doesNotSupport": "Any range, and nothing about a normal season. It is one vintage at one site, and 2014 brought extensive winter injury along Lake Erie - several cultivars in the same trial set no fruit at all. The tables are page images, so every figure taken from them was read by OCR; the column assignment was verified against the report's own prose, which states that acidity ran 7.6 to 10.6 g/L except for Norton and that Brix was above 20% except for Chancellor, and both reproduce exactly from the columns as read. It gives no juice yield, colour or fermentability.",
+      "accessed": "2026-08-10",
+      "note": "Publishes the Penn State reports for the NE-1020 multistate wine grape cultivar trial. The reports carry per-cultivar berry quality at harvest - pH, titratable acidity and soluble solids - but as page images rotated to landscape rather than as text, so the tables have to be read by OCR and the column assignment checked against the report's own prose before use.",
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/wine-grapes.json"
+      ],
+      "exampleRecords": [
+        "grape-chambourcin",
+        "grape-vidal-blanc",
+        "grape-norton"
       ]
     },
     {
@@ -5498,31 +5528,6 @@
       ],
       "exampleRecords": [
         "sugar-sorghum-syrup"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.briess.com/",
-      "host": "www.briess.com",
-      "title": null,
-      "publisher": "Briess Malt & Ingredients",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 1,
-      "numericCitations": 1,
-      "usedIn": [
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "sugar-lactose"
       ]
     },
     {
