@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 392,
+    "distinctSources": 391,
     "backgroundDocuments": 15,
-    "citations": 696,
-    "numericCitations": 581,
-    "numericOnShallowLink": 3,
+    "citations": 695,
+    "numericCitations": 580,
+    "numericOnShallowLink": 1,
     "numericOnTertiary": 0,
     "fullTextVerified": 39,
     "backgroundFullTextVerified": 12,
     "byReliability": {
-      "primary": 663,
+      "primary": 662,
       "secondary": 27,
       "tertiary": 6
     }
@@ -560,6 +560,34 @@
     },
     {
       "id": null,
+      "url": "https://fdc.nal.usda.gov/portal-data/external/169655",
+      "host": "fdc.nal.usda.gov",
+      "title": null,
+      "publisher": "USDA FoodData Central",
+      "authors": null,
+      "year": null,
+      "kind": "government-database",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
+      "citations": 3,
+      "numericCitations": 3,
+      "usedIn": [
+        "data/fermentables/cereals-novelty.json",
+        "data/fermentables/sugars-syrups.json"
+      ],
+      "exampleRecords": [
+        "novelty-cotton-candy",
+        "sugar-sucrose",
+        "sugar-candi-clear"
+      ]
+    },
+    {
+      "id": null,
       "url": "http://www.cider.org.uk/appledat.htm",
       "host": "www.cider.org.uk",
       "title": null,
@@ -780,33 +808,6 @@
     },
     {
       "id": null,
-      "url": "https://fdc.nal.usda.gov/portal-data/external/169655",
-      "host": "fdc.nal.usda.gov",
-      "title": null,
-      "publisher": "USDA FoodData Central",
-      "authors": null,
-      "year": null,
-      "kind": "government-database",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": "Per-food records carry an FDC ID; the correct citation is /food-details/<id>/nutrients, not the site root. Underpins the nutrition-label PPG derivations.",
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/cereals-novelty.json",
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "novelty-cotton-candy",
-        "sugar-sucrose"
-      ]
-    },
-    {
-      "id": null,
       "url": "https://fdc.nal.usda.gov/portal-data/external/168482",
       "host": "fdc.nal.usda.gov",
       "title": null,
@@ -856,32 +857,6 @@
       "exampleRecords": [
         "sugar-turbinado",
         "sugar-demerara"
-      ]
-    },
-    {
-      "id": null,
-      "url": "https://www.candisyrup.com/",
-      "host": "www.candisyrup.com",
-      "title": null,
-      "publisher": "Candi Syrup Inc.",
-      "authors": null,
-      "year": null,
-      "kind": "vendor-datasheet",
-      "reliability": "primary",
-      "verification": "unverified",
-      "deepLink": false,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
-      "note": null,
-      "citations": 2,
-      "numericCitations": 2,
-      "usedIn": [
-        "data/fermentables/sugars-syrups.json"
-      ],
-      "exampleRecords": [
-        "sugar-candi-clear",
-        "sugar-candi-syrup-d180"
       ]
     },
     {

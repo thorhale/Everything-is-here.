@@ -307,7 +307,7 @@
    "name": "Belgian Candi Sugar (Clear)",
    "category": "sugar",
    "type": "sugar",
-   "ppg": 46,
+   "ppg": 46.0,
    "colorLovibond": 1,
    "fermentabilityPct": 100,
    "maxBatchPct": 20,
@@ -321,8 +321,9 @@
     "dry"
    ],
    "description": "Crystallised sucrose used to boost gravity in Belgian tripels and golden strongs without adding body.",
-   "sourceUrl": "https://www.candisyrup.com/",
-   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
+   "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169655",
+   "sourceNote": "Sugar is sugar, and that is the whole point of this record: at 46 ppg it is the reference the entire scale is defined against, so there is nothing for a maker to add. What is not sourced is the colour. 1 degree Lovibond is a reasonable description of a colourless crystal but no document here establishes it, and the EU directive expresses sugar colour in ICUMSA units rather than Lovibond, so it cannot be converted across. Note also that \"clear candi sugar\" is sold both as rock-candy crystals and as a pale syrup; this record is the crystallised form. A syrup of the same name carries water and cannot be 46.",
+   "attribution": "Clear Belgian candi sugar is crystallised beet sucrose - the pale grades are sugar, not a caramel - so its extract is the extract of sugar and does not need a vendor to assert it. USDA FoodData Central, Sugars, granulated (SR Legacy, FDC ID 169655): 99.98 g of carbohydrate and 99.8 g of total sugars per 100 g, against 0.02 g of water. The sugars figure is Analytical from 7 samples and the water figure Analytical from 8. This project's method is 46 x available carbohydrate, so 46 x 0.9998 is 46.0 ppg, which confirms the stored 46 exactly. The identity is also fixed in law: Annex A point 2 of EU Directive 2001/111/EC defines sugar as \"purified and crystallised sucrose of sound and fair marketable quality\". The record previously cited the Candi Syrup Inc homepage, which answers automated requests with 429 and in any case says nothing about composition."
   },
   {
    "id": "sugar-candi-syrup-d180",
@@ -345,8 +346,61 @@
    ],
    "description": "Deeply caramelised Belgian syrup contributing dark fruit and burnt-sugar complexity to dubbels and quads.",
    "flavorNotes": "Raisin, fig, dark caramel.",
-   "sourceUrl": "https://www.candisyrup.com/",
-   "sourceNote": "The ppg and colour on this record are unsourced and the citation is a homepage. Candi Syrup Inc's site answers automated requests with HTTP 429 and kept doing so across retries, so its product specifications could not be read. This project does not work around a publisher's rate limiting; the citation stays visibly weak rather than being replaced by a guess or by a retailer's copy of the numbers."
+   "sourceNote": "Extract barely moves across the grades and colour moves a lot, which is the useful thing to know: D-45, D-90 and D-180 are the same sugar at about the same dry matter, browned further each time. Pick the grade for colour and flavour, not for gravity. Note also that browning consumes sugar - the melanoidins and other reaction products are dry matter but not fermentable extract - so all three of these ppg figures are ceilings rather than promises, and the darker the grade the wider that gap is likely to be.",
+   "unsourced": true,
+   "attribution": "No citation for the extract figure, and the reason is worth setting out because the product is simpler than its absence suggests. Dark candi syrup is beet sucrose taken through a browning reaction, so its dry solids are sugar and sugar-derived; the only thing standing between that and a ppg is how much water the syrup carries. The stored 32 implies about 70% dry matter. Law bounds it but does not fix it: Annex A of EU Directive 2001/111/EC requires a sugar solution or invert sugar syrup to be \"not less than 62% by weight\" dry matter, which is 28.5 ppg, and the stored 32 sits above that floor. The directive cannot do more than bound it, because a syrup at 180 Lovibond is far darker than the \"not more than 45 ICUMSA units\" its point 4 allows - a caramelised syrup falls outside the definitions entirely. Candi Syrup Inc answers automated requests with 429 across retries, so their own figure could not be read."
+  },
+  {
+   "id": "sugar-candi-syrup-d45",
+   "name": "Belgian Candi Syrup D-45",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 32,
+   "colorLovibond": 45,
+   "fermentabilityPct": 75,
+   "maxBatchPct": 15,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "dubbel",
+    "quad",
+    "dark-fruit"
+   ],
+   "description": "Amber Belgian candi syrup. Light caramel and faint stone fruit; the grade usually reached for in a dubbel where colour is wanted without the raisin depth of D-180.",
+   "flavorNotes": "Raisin, fig, dark caramel.",
+   "sourceNote": "Extract barely moves across the grades and colour moves a lot, which is the useful thing to know: D-45, D-90 and D-180 are the same sugar at about the same dry matter, browned further each time. Pick the grade for colour and flavour, not for gravity. Note also that browning consumes sugar - the melanoidins and other reaction products are dry matter but not fermentable extract - so all three of these ppg figures are ceilings rather than promises, and the darker the grade the wider that gap is likely to be.",
+   "unsourced": true,
+   "attribution": "No citation. Dark candi syrup is beet sucrose taken through a browning reaction, so its dry solids are sugar and sugar-derived, and the only unknown is water content. Annex A of EU Directive 2001/111/EC requires a sugar solution or invert sugar syrup to be \"not less than 62% by weight\" dry matter, which is 28.5 ppg, so the stored 32 sits above that legal floor - but the directive cannot fix the figure, because a syrup this dark falls outside its definitions (point 4 allows \"not more than 45 ICUMSA units\" of colour). Candi Syrup Inc answers automated requests with 429 across retries, so the maker's own number could not be read.\n\nThe figure carried here is the one every brewing calculator carries, and that is not the same as a source. This catalogue has repeatedly found the universally repeated number to be wrong - Plzen's water, Chico's magnesium at 1 mg/L against a measured 17, Crisp's Crystal 77L at thirty degrees off its own analysis - so a figure everyone agrees on is recorded here as uncited rather than promoted to sourced by popularity.",
+   "sortOrder": 1
+  },
+  {
+   "id": "sugar-candi-syrup-d90",
+   "name": "Belgian Candi Syrup D-90",
+   "category": "syrup",
+   "type": "sugar",
+   "ppg": 32,
+   "colorLovibond": 90,
+   "fermentabilityPct": 75,
+   "maxBatchPct": 15,
+   "ppgBasis": "literature",
+   "uses": [
+    "beer"
+   ],
+   "styleTags": [
+    "belgian",
+    "dubbel",
+    "quad",
+    "dark-fruit"
+   ],
+   "description": "Dark amber Belgian candi syrup. Caramel, dried fig and a touch of toffee - the middle grade, and the most commonly specified of the three in Belgian dark ale recipes.",
+   "flavorNotes": "Raisin, fig, dark caramel.",
+   "sourceNote": "Extract barely moves across the grades and colour moves a lot, which is the useful thing to know: D-45, D-90 and D-180 are the same sugar at about the same dry matter, browned further each time. Pick the grade for colour and flavour, not for gravity. Note also that browning consumes sugar - the melanoidins and other reaction products are dry matter but not fermentable extract - so all three of these ppg figures are ceilings rather than promises, and the darker the grade the wider that gap is likely to be.",
+   "unsourced": true,
+   "attribution": "No citation. Dark candi syrup is beet sucrose taken through a browning reaction, so its dry solids are sugar and sugar-derived, and the only unknown is water content. Annex A of EU Directive 2001/111/EC requires a sugar solution or invert sugar syrup to be \"not less than 62% by weight\" dry matter, which is 28.5 ppg, so the stored 32 sits above that legal floor - but the directive cannot fix the figure, because a syrup this dark falls outside its definitions (point 4 allows \"not more than 45 ICUMSA units\" of colour). Candi Syrup Inc answers automated requests with 429 across retries, so the maker's own number could not be read.\n\nThe figure carried here is the one every brewing calculator carries, and that is not the same as a source. This catalogue has repeatedly found the universally repeated number to be wrong - Plzen's water, Chico's magnesium at 1 mg/L against a measured 17, Crisp's Crystal 77L at thirty degrees off its own analysis - so a figure everyone agrees on is recorded here as uncited rather than promoted to sourced by popularity.",
+   "sortOrder": 2
   },
   {
    "id": "sugar-molasses",
