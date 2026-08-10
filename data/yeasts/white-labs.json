@@ -389,7 +389,8 @@
    "unitLabel": "pack",
    "description": "Neutral high-tolerance champagne strain for dry wines, ciders, meads, and priming.",
    "flavorNotes": "Neutral, crisp, dry.",
-   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=204&type=YEAST"
+   "sourceUrl": "https://www.whitelabs.com/yeast-single?id=204&type=YEAST",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   }
  ]
 }

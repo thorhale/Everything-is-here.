@@ -78,6 +78,20 @@ for (const s of strains) {
   if (typeof an === "number" && typeof ax === "number" && an > ax) {
     errors.push(`${id}: attenuation range is inverted (${an} > ${ax})`);
   }
+  // A missing attenuation must SAY it is missing. Twenty-four strains once had
+  // no figure and nothing explaining it, which is indistinguishable from a
+  // number that fell out in a repair pass — the same quiet failure the
+  // unsourced flag exists to stop everywhere else in this project. Almost all
+  // of them turned out to be legitimate: apparent attenuation is a beer
+  // quantity, and a wine, cider or spirits strain is pitched to go dry, so its
+  // maker publishes alcohol tolerance instead. That is a fine reason and it now
+  // has to be written down rather than inferred by the next reader.
+  if (an == null && ax == null && !/attenuat/i.test(`${s.attribution ?? ""} ${s.sourceNote ?? ""}`)) {
+    errors.push(
+      `${id}: carries no attenuation and never says why. If the maker does not publish one, ` +
+        `say so in sourceNote — an absence has to be declared, not implied.`
+    );
+  }
   for (const [v, label] of [
     [an, "attenuationMin"],
     [ax, "attenuationMax"],

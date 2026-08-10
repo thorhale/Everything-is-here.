@@ -43,7 +43,8 @@
    "flavorNotes": "Neutral, crisp, dry.",
    "withdrawnSourceUrl": "https://redstaryeast.com/yeast-strains/premier-blanc/",
    "attribution": "Red Star took its entire wine-yeast section down; redstaryeast.com is now baking yeast only, and its own search returns nothing for this strain. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "red-star-premier-cuvee",
@@ -79,7 +80,8 @@
    "flavorNotes": "Clean, neutral, bone dry.",
    "withdrawnSourceUrl": "https://redstaryeast.com/yeast-strains/premier-cuvee/",
    "attribution": "Red Star took its entire wine-yeast section down; redstaryeast.com is now baking yeast only, and its own search returns nothing for this strain. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "red-star-cote-des-blancs",
@@ -116,7 +118,8 @@
    "flavorNotes": "Fruity, floral, can finish sweet.",
    "withdrawnSourceUrl": "https://redstaryeast.com/yeast-strains/cote-des-blancs/",
    "attribution": "Red Star took its entire wine-yeast section down; redstaryeast.com is now baking yeast only, and its own search returns nothing for this strain. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "red-star-premier-rouge",
@@ -148,7 +151,8 @@
    "flavorNotes": "Robust red fruit, structured.",
    "withdrawnSourceUrl": "https://redstaryeast.com/yeast-strains/premier-rouge/",
    "attribution": "Red Star took its entire wine-yeast section down; redstaryeast.com is now baking yeast only, and its own search returns nothing for this strain. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   }
  ]
 }

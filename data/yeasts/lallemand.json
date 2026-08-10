@@ -435,7 +435,8 @@
    "unitLabel": "g",
    "description": "The champagne workhorse; ferments dry, very high alcohol tolerance, fast, low foaming, great for restarting stuck ferments.",
    "flavorNotes": "Neutral; lets fruit/honey character show.",
-   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/34/lalvin-ec-1118/"
+   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/34/lalvin-ec-1118/",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "lalvin-71b",
@@ -470,7 +471,8 @@
    "unitLabel": "g",
    "description": "Metabolizes 20–40% of malic acid, softening high-acid fruit wines and meads; produces esters that soften young wines.",
    "flavorNotes": "Fruity esters; rounds sharp acidity.",
-   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/40/lalvin-71b/"
+   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/40/lalvin-71b/",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "lalvin-d47",
@@ -504,7 +506,8 @@
    "unitLabel": "g",
    "description": "Côtes-du-Rhône strain; a mead-maker favorite for full mouthfeel and floral aromatics. Keep in tight temp range to avoid fusel/H2S.",
    "flavorNotes": "Floral, tropical, rounded body.",
-   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/36/lalvin-icv-d47/"
+   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/36/lalvin-icv-d47/",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "lalvin-k1v-1116",
@@ -539,7 +542,8 @@
    "unitLabel": "g",
    "description": "Fast, robust 'killer' strain tolerant of low nutrients and wide temps; good for aromatic whites and difficult musts.",
    "flavorNotes": "Enhances aromatics; low foam.",
-   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/38/lalvin-k1v-1116/"
+   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/38/lalvin-k1v-1116/",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "lalvin-rc212",
@@ -570,7 +574,8 @@
    "unitLabel": "g",
    "description": "Burgundy red strain; preserves color and fruit, good for lighter reds. High nutrient demand.",
    "flavorNotes": "Bright red fruit, structured tannin.",
-   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/42/lalvin-rc212/"
+   "sourceUrl": "https://www.lallemandwine.com/en/products/catalogue/lalvin/42/lalvin-rc212/",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "distilamax-rm",
@@ -602,7 +607,8 @@
    "flavorNotes": "Rich rum esters.",
    "withdrawnSourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/",
    "attribution": "The cited page has gone: lallemandbiofuels.com no longer resolves at all - not a 404, no DNS. Lallemand's distilled-spirits business now trades as Lallemand Biofuels & Distilled Spirits at lallemandbds.com, but that host answers automated requests with 403, so its DistilaMax pages could not be retrieved and confirmed to be the right document. Rather than swap in a URL nobody has read, the dead one is recorded here and the figures stand on it.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   },
   {
    "id": "distilamax-mw",
@@ -633,7 +639,8 @@
    "flavorNotes": "Fruity malt-whisky congeners.",
    "withdrawnSourceUrl": "https://www.lallemandbiofuels.com/products/distilamax/",
    "attribution": "The cited page has gone: lallemandbiofuels.com no longer resolves at all - not a 404, no DNS. Lallemand's distilled-spirits business now trades as Lallemand Biofuels & Distilled Spirits at lallemandbds.com, but that host answers automated requests with 403, so its DistilaMax pages could not be retrieved and confirmed to be the right document. Rather than swap in a URL nobody has read, the dead one is recorded here and the figures stand on it.",
-   "specBasis": "vendor-withdrawn"
+   "specBasis": "vendor-withdrawn",
+   "sourceNote": "No attenuation figure, and that is the maker's choice rather than a gap in this record. Apparent attenuation is a beer number: it says what fraction of the wort sugar a strain will take, which matters because a beer is meant to finish with sugar left in it. A wine, cider or spirit wash is pitched to go dry, so the figure the maker publishes instead is alcohol tolerance - how much ethanol the strain survives - and this record carries that. The pattern holds across the whole catalogue: of the 24 strains here with no attenuation, 22 are wine, cider or distilling yeasts and every one of them has an alcohol tolerance; not one beer strain is missing an attenuation figure."
   }
  ]
 }
