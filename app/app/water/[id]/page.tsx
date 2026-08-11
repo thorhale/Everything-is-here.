@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+// Curated and archived data, rewritten only when a loader runs, so a render
+// per visit bought nothing and kept the Neon compute endpoint awake. Cached
+// and revalidated hourly instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,6 +10,18 @@ import { anchorsForCity } from "@/lib/style-water";
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const w = await getWaterProfile(id);
+  if (!w) return { title: "Water profile not found — WortHogg" };
+  return {
+    title: `${w.name} water — WortHogg`,
+    description:
+      w.description ??
+      `${w.name}: the six brewing ions in ppm, with residual alkalinity and the sulfate-to-chloride balance worked out.`,
+  };
 }
 
 function ppm(v: number | null): string {

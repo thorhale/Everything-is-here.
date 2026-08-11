@@ -25,6 +25,22 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const recipe = await prisma.recipe.findUnique({
+    where: { slug },
+    select: { title: true, styleName: true, isHidden: true },
+  });
+  if (!recipe || recipe.isHidden) return { title: "Recipe not found — WortHogg" };
+  const name = recipe.title ?? "Untitled recipe";
+  return {
+    title: `${name} — WortHogg`,
+    description: recipe.styleName
+      ? `${name}, a ${recipe.styleName} recipe recovered from the BrewToad archive.`
+      : `${name}, recovered from the BrewToad archive.`,
+  };
+}
+
 function waybackUrl(url: string, timestamp: string): string {
   return `https://web.archive.org/web/${timestamp}/${url}`;
 }

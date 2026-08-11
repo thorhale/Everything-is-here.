@@ -1,3 +1,8 @@
+
+export const metadata = {
+  title: "Takedown request received — WortHogg",
+  description: "Your takedown request has been recorded.",
+};
 export default function TakedownSubmittedPage() {
   return (
     <div>

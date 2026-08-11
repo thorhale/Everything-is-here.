@@ -1,3 +1,9 @@
+// Reads the catalogue at request time. This page has no dynamic segment, so
+// `revalidate` would make Next prerender it during `next build` — and the
+// build has no DATABASE_URL, by design: builds must not depend on a live
+// database. The per-request render is cheap because every loader underneath
+// is unstable_cache'd for the same hour. Detail pages under a [param] DO use
+// revalidate, because Next renders those on demand and caches the result.
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
@@ -89,9 +95,13 @@ function PriceCell({ price, estimate }: { price?: WaterPrice; estimate?: WaterPr
 }
 
 export default async function WaterPage() {
-  const byKind = await getWaterByKind();
-  const prices = await cheapestPerGallon();
-  const estimates = await estimatesByProfile();
+  // Three independent reads. Awaited one after another they cost three
+  // round-trips to Neon in series, and none of them needs the others' results.
+  const [byKind, prices, estimates] = await Promise.all([
+    getWaterByKind(),
+    cheapestPerGallon(),
+    estimatesByProfile(),
+  ]);
 
   return (
     <div>

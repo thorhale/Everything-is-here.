@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+// Curated and archived data, rewritten only when a loader runs, so a render
+// per visit bought nothing and kept the Neon compute endpoint awake. Cached
+// and revalidated hourly instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,6 +21,16 @@ import { getArchetypeForCategory, INOCULATION_LABEL } from "@/lib/fermentation";
 
 interface Props {
   params: Promise<{ edition: string; code: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { edition: editionId, code } = await params;
+  const style = await findStyle(editionId, code);
+  if (!style) return { title: "Style not found — WortHogg" };
+  return {
+    title: `${style.name} — ${style.category.edition.title} — WortHogg`,
+    description: `${style.name}: the published gravity, bitterness, colour and alcohol ranges, with malts, hops and yeast that fit them.`,
+  };
 }
 
 // Marker-less range bar: the style's official min-max band drawn on the

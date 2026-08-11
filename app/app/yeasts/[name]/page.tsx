@@ -14,6 +14,15 @@ interface Props {
   params: Promise<{ name: string }>;
 }
 
+export async function generateMetadata({ params }: Props) {
+  const { name: raw } = await params;
+  const name = decodeURIComponent(raw);
+  return {
+    title: `${name} — WortHogg`,
+    description: `How often ${name} appears across the recovered recipe archive, and the recipes using it.`,
+  };
+}
+
 export default async function YeastDetailPage({ params }: Props) {
   const { name: raw } = await params;
   const name = decodeURIComponent(raw);

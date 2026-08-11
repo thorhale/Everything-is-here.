@@ -6,6 +6,11 @@ import { prisma } from "@/lib/db";
 import { srmClass } from "@/components/StatBars";
 import type { Prisma } from "@prisma/client";
 
+export const metadata = {
+  title: "Recipes — WortHogg",
+  description: "The recovered BrewToad recipe archive, searchable by style, brewer and ingredient.",
+};
+
 const PAGE_SIZE = 25;
 
 // The style-chip facet is a full-table groupBy; it barely changes, so cache

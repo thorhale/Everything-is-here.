@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+// Curated and archived data, rewritten only when a loader runs, so a render
+// per visit bought nothing and kept the Neon compute endpoint awake. Cached
+// and revalidated hourly instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -9,6 +12,19 @@ import { getFermentableSubstitutes } from "@/lib/substitutions";
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const f = await getFermentable(id);
+  if (!f) return { title: "Fermentable not found — WortHogg" };
+  const who = f.brand ? `${f.brand} ` : "";
+  return {
+    title: `${who}${f.name} — WortHogg`,
+    description:
+      f.description ??
+      `${f.name}: extract, colour and diastatic power, with the maltster document each figure came from.`,
+  };
 }
 
 export default async function FermentableDetailPage({ params }: Props) {

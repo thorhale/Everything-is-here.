@@ -11,6 +11,19 @@ interface Props {
   params: Promise<{ id: string }>;
 }
 
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const brewer = await prisma.brewer.findUnique({
+    where: { id },
+    select: { originalUsername: true },
+  });
+  if (!brewer) return { title: "Brewer not found — WortHogg" };
+  return {
+    title: `${brewer.originalUsername} — WortHogg`,
+    description: `Recipes archived from ${brewer.originalUsername}.`,
+  };
+}
+
 export default async function BrewerPage({ params }: Props) {
   const { id } = await params;
 

@@ -1,5 +1,10 @@
 import { submitTakedownRequest } from "./actions";
 
+export const metadata = {
+  title: "Takedown request — WortHogg",
+  description: "Ask for a recipe to be removed from the archive.",
+};
+
 interface Props {
   searchParams: Promise<{ recipe?: string; error?: string }>;
 }

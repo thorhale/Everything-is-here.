@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+// Curated and archived data, rewritten only when a loader runs, so a render
+// per visit bought nothing and kept the Neon compute endpoint awake. Cached
+// and revalidated hourly instead.
+export const revalidate = 3600;
 
 import Link from "next/link";
 import { lineageForStrain } from "@/lib/strain-lineages";
@@ -10,6 +13,18 @@ import { assessTemp, tempAtFraction, rangeSummary, schedulesFor } from "@/lib/fe
 
 interface Props {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const s = await getStrain(decodeURIComponent(id));
+  if (!s) return { title: "Yeast strain not found — WortHogg" };
+  return {
+    title: `${s.name} — WortHogg`,
+    description:
+      s.description ??
+      `${s.name}: attenuation, flocculation and the fermentation temperature range its maker publishes.`,
+  };
 }
 
 // What kind of evidence a strain's numbers rest on. Ordered strongest first.
