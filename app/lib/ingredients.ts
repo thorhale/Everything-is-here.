@@ -30,18 +30,6 @@ export async function getMaltsters() {
   return (await getRollups()).maltsters;
 }
 
-export const getStyles = unstable_cache(
-  async () =>
-    prisma.recipe.groupBy({
-      by: ["styleName"],
-      where: { isHidden: false, styleName: { not: null } },
-      _count: true,
-      orderBy: { _count: { styleName: "desc" } },
-    }),
-  ["all-styles"],
-  { revalidate: 3600 }
-);
-
 // Recent recipes using a given ingredient (for the detail pages). The
 // ingredient -> recipe ids mapping comes from the rollups; the recipes
 // themselves are still rows in Postgres.

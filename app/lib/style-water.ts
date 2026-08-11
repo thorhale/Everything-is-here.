@@ -187,4 +187,3 @@ export function anchorsForCity(cityId: string): StyleWaterAnchor[] {
   return ANCHORS.filter((a) => a.classicCityId === cityId);
 }
 
-export const STYLE_WATER_ANCHOR_COUNT = ANCHORS.length;

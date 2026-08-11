@@ -249,6 +249,3 @@ export const OFF_FLAVORS: OffFlavor[] = [
   },
 ];
 
-export function getOffFlavor(id: string): OffFlavor | undefined {
-  return OFF_FLAVORS.find((f) => f.id === id);
-}

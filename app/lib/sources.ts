@@ -143,17 +143,6 @@ export function groupByReliability(sources: Source[]): { tier: Reliability; sour
 }
 
 /**
- * The citations this project itself considers weak: a number resting on a
- * publisher's homepage rather than on the document the number came from.
- * Surfaced rather than hidden — see /sources.
- */
-export function weakNumericCitations(sources: Source[]): Source[] {
-  return sources
-    .filter((s) => s.numericCitations > 0 && !s.deepLink)
-    .sort((a, b) => b.numericCitations - a.numericCitations);
-}
-
-/**
  * Sources grouped by kind, heaviest-cited kind first. The reliability tier says
  * how close a source is to the measurement; the kind says what it actually is,
  * which is what someone scanning a 250-entry bibliography is really looking

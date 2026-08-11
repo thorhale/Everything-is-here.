@@ -123,18 +123,6 @@ export const resolveArchiveStyle = unstable_cache(
 
 // --- Archive-wide leaderboards (the /archive insights page) ---------------
 
-export const getArchiveOverview = unstable_cache(
-  async () => {
-    const [totals] = await prisma.$queryRaw<{ recipes: number; brewers: number; styles: number }[]>`
-      SELECT (SELECT count(*)::int FROM "Recipe" WHERE "isHidden" = false) AS recipes,
-             (SELECT count(*)::int FROM "Brewer") AS brewers,
-             (SELECT count(DISTINCT "styleName")::int FROM "Recipe" WHERE "isHidden" = false AND "styleName" IS NOT NULL) AS styles`;
-    return totals;
-  },
-  ["archive-overview"],
-  { revalidate: 3600 }
-);
-
 export interface RankedStyle {
   styleName: string;
   recipes: number;
@@ -159,25 +147,6 @@ export const getTopStyles = unstable_cache(
   ["archive-top-styles"],
   { revalidate: 3600 }
 );
-
-export interface RankedIngredient {
-  name: string;
-  recipes: number;
-}
-
-export async function getTopIngredients(limit = 20) {
-  const r = await getRollups();
-  const rank = (m: Record<string, number>): RankedIngredient[] =>
-    Object.entries(m)
-      .map(([name, recipes]) => ({ name, recipes }))
-      .sort((a, b) => b.recipes - a.recipes)
-      .slice(0, limit);
-  return {
-    hops: rank(r.recipeCounts.hop),
-    fermentables: rank(r.recipeCounts.fermentable),
-    yeasts: rank(r.recipeCounts.yeast),
-  };
-}
 
 // How the archive's real distribution compares to a guideline's published
 // range: the share of archived examples that actually fall inside spec.

@@ -50,15 +50,6 @@ export async function getAdditive(id: string): Promise<Additive | null> {
   return all.find((a) => a.id === decodeURIComponent(id)) ?? null;
 }
 
-/**
- * The additives that carry a quantified effect — the ones the calculator can
- * actually dose rather than merely list.
- */
-export async function getDosableAdditives(metric: string): Promise<Additive[]> {
-  const all = await getAll();
-  return all.filter((a) => a.effectMetric === metric && a.effectPerGramPerLitre != null);
-}
-
 export async function getAdditiveCounts(): Promise<Record<string, number>> {
   const all = await getAll();
   const out: Record<string, number> = {};

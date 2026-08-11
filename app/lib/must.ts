@@ -229,8 +229,6 @@ export function freeSo2Needed(targetMolecularMgPerL: number, ph: number): number
 
 /** Potassium metabisulfite is 57.6% SO2 by weight; the sodium salt is 67.4%. */
 export const KMS_SO2_FRACTION = 0.576;
-export const SMS_SO2_FRACTION = 0.674;
-
 export interface So2Plan {
   targetMolecular: number;
   requiredFreeSo2MgPerL: number;

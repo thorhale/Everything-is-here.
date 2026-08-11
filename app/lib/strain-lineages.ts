@@ -51,8 +51,3 @@ export async function lineageForStrain(strainId: string): Promise<Lineage | null
   return all.find((g) => g.members.some((m) => m.strainId === strainId)) ?? null;
 }
 
-/** The other products that are the same yeast as this one. */
-export async function equivalentsOf(strainId: string): Promise<LineageMember[]> {
-  const g = await lineageForStrain(strainId);
-  return g ? g.members.filter((m) => m.strainId !== strainId) : [];
-}

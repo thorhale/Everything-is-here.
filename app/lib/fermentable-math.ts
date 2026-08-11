@@ -93,7 +93,3 @@ export function mcuToSrm(mcu: number): number {
   return 1.4922 * Math.pow(mcu, 0.6859);
 }
 
-// A worked example kept as documentation and a sanity check: granulated white
-// sugar is essentially pure sucrose (100 g serving, 100 g carb, no fibre), so
-// this must return 46.
-export const SUCROSE_CHECK: NutritionPanel = { servingSizeG: 100, totalCarbG: 100, fiberG: 0 };

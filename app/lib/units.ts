@@ -24,9 +24,3 @@ export const KG_PER_LB = 0.45359237;
 /** Kilograms in one avoirdupois ounce. Exact. */
 export const KG_PER_OZ = 0.028349523125;
 
-export const litresFromGallons = (gal: number): number => gal * L_PER_GALLON;
-export const gallonsFromLitres = (l: number): number => l / L_PER_GALLON;
-export const gramsFromOunces = (oz: number): number => oz * G_PER_OZ;
-export const ouncesFromGrams = (g: number): number => g / G_PER_OZ;
-export const kilogramsFromPounds = (lb: number): number => lb * KG_PER_LB;
-export const poundsFromKilograms = (kg: number): number => kg / KG_PER_LB;

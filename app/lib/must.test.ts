@@ -115,6 +115,40 @@ test("distilling", () => {
   assert.equal(must.angelsShare(0, 2, 200), 200, "no time, no loss");
 });
 
+test("backsweetening pairs sugar with the stabilisation it requires", () => {
+  const plan = must.planBacksweetening(0.996, 1.01, 20, 3.4);
+  assert.ok(plan.sugarG > 0, "sweetening needs sugar");
+  near(plan.finalSg, 1.01, 0.0005, "lands on the target gravity");
+  // Sorbate at the homebrew rate of 0.2 g/L; the US legal ceiling is 300 mg/L,
+  // so 20 L takes 4 g and stays well inside it.
+  near(plan.sorbateGrams, 4, 1e-9, "sorbate for 20 L");
+  assert.ok(plan.sorbateGrams / 20 <= 0.3, "under the 300 mg/L legal ceiling");
+  // The SO2 figure must be the real pH-dependent one, not a fixed dose: sorbate
+  // without adequate free SO2 lets lactic bacteria turn it into the geranium
+  // fault, which cannot be removed. Higher pH must demand more.
+  near(plan.freeSo2Needed, must.freeSo2Needed(0.8, 3.4), 1e-9, "matches the SO2 model");
+  assert.ok(must.planBacksweetening(0.996, 1.01, 20, 3.7).freeSo2Needed > plan.freeSo2Needed);
+  assert.match(plan.warning, /geranium/i, "the warning must name the fault it prevents");
+});
+
+test("Pearson square blends two components to a target", () => {
+  // Blending a 14% wine with a 6% one to land on 10% takes equal parts.
+  const even = must.pearsonSquare(14, 6, 10);
+  assert.ok(even);
+  near(even.aPct, 50, 1e-9, "equal parts at the midpoint");
+  near(even.bPct, 50, 1e-9, "equal parts at the midpoint");
+  // Nearer one end, the blend leans that way: 12% from 14 and 6 is 3:1.
+  const skew = must.pearsonSquare(14, 6, 12);
+  assert.ok(skew);
+  near(skew.aPct, 75, 1e-9, "three parts strong");
+  near(skew.bPct, 25, 1e-9, "one part weak");
+  // Outside the two components, or with identical components, there is no
+  // blend — and the honest answer is null rather than a plausible ratio.
+  assert.equal(must.pearsonSquare(14, 6, 20), null, "target above both");
+  assert.equal(must.pearsonSquare(14, 6, 2), null, "target below both");
+  assert.equal(must.pearsonSquare(10, 10, 10), null, "nothing to blend");
+});
+
 test("unit helpers are exact", () => {
   assert.equal(must.LB_TO_KG, 0.45359237);
   assert.equal(must.GAL_TO_L, 3.785411784);
