@@ -1,6 +1,6 @@
 {
  "$schema": "https://worthogg.example/reference-export.schema.json",
- "generatedAt": "2026-08-10",
+ "generatedAt": "2026-08-11",
  "source": "WortHogg curated reference databases",
  "license": "Compiled from publicly published manufacturer specifications, national/EU legal standards, and standard brewing literature. Each record carries its own sourceUrl and attribution — check those before redistributing. This export deliberately excludes the recipe archive, which is community-contributed content subject to a takedown policy.",
  "notes": {
@@ -10161,7 +10161,14 @@
    "description": "Higher protein and higher diastatic power than 2-row, lower extract. The classic choice when a grist carries a lot of corn or rice.",
    "usageNotes": "Its enzyme surplus is why American adjunct lagers use it.",
    "withdrawnSourceUrl": "https://www.briess.com/malt/brewers-malt",
-   "attribution": "Briess retired the Brewers Malt page this cited, and its replacement spec sheet is explicit that the malt is 2-row. No maltster reachable from here publishes a 6-row spec sheet: Briess's product index has none, Great Western lists only Premium Two-Row, Rahr's site is a placeholder and Country Malt Group refuses automated requests. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement."
+   "attribution": "Briess retired the Brewers Malt page this cited, and its replacement spec sheet is explicit that the malt is 2-row. The figures here are the maker's own, taken from the withdrawn page while it was up; they are kept, with the dead URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. They remain unverifiable, because no maltster publishes a 6-row analysis matching THESE numbers. An earlier version of this note went further and said no maltster publishes a 6-row spec sheet at all — that was wrong, and it was wrong because the search behind it was bad. Rahr Malting Co. publishes a full analysis for Rahr Standard 6-Row at rahrmaltingco.com, cited on malt-lager-rahr and listed below as a cross-check. It brackets the extract stored here and contradicts the colour: Rahr's 6-row is SRM 2.1-2.6, not 1.8. Rahr publishes no diastatic power for it, so the 160 °Lintner here is still uncorroborated.",
+   "additionalSources": [
+    {
+     "url": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-6-Row.pdf",
+     "supports": "A currently published North American 6-row malt analysis, used here only as a cross-check on the withdrawn Briess figures: extract FG min 79% dry basis (36.5 ppg at 46.2 points per pound-gallon), colour SRM 2.1-2.6, moisture max 4.2%, protein 12.0 ± 1.5%.",
+     "doesNotSupport": "The numbers stored on this record. This is one maltster's branded 6-row, not the generic North American 6-row this record describes, and it publishes no diastatic power — so it cannot stand behind the 35 ppg, 1.8 °L or 160 °Lintner above."
+    }
+   ]
   },
   {
    "id": "malt-maris-otter",
@@ -11363,14 +11370,17 @@
   },
   {
    "id": "malt-lager-rahr",
-   "name": "Standard 6-Row / Lager Malt",
+   "name": "Rahr Standard 6-Row",
+   "aliases": [
+    "Rahr 6-Row",
+    "Standard 6-Row / Lager Malt"
+   ],
    "brand": "Rahr",
    "category": "base-malt",
    "type": "grain",
    "origin": "United States",
    "ppg": 36,
-   "colorLovibond": 1.8,
-   "diastaticPowerLintner": 140,
+   "colorLovibond": 2.35,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -11381,10 +11391,11 @@
     "adjunct-friendly",
     "base"
    ],
-   "description": "Rahr's American lager/6-row base — high enzyme, a classic adjunct-lager workhorse.",
-   "sourceUrl": "https://rahrmalting.com/",
-   "sourceNote": "The ppg, colour and diastatic power on this record are unsourced, and the citation was a homepage that no longer has anything behind it. rahrmalting.com answers every path with a 114-byte document whose only content is a script redirecting to /lander, and /lander carries no text at all. That is not a bot block; the site has been emptied.\n\nAn earlier version of this note said the Internet Archive had declined, and that was wrong — worth correcting, because it would stop the next person looking. The Archive is almost certainly holding snapshots of the old site. What is true is narrower and is about this project's environment, not about the Archive: archive.org itself is reachable from here and is cited elsewhere in this catalogue, but web.archive.org is not reachable at all — curl gets no connection, and the harness fetcher refuses the host outright — while archive.org's wayback availability API returns 429 across hours. Anyone with a browser should go and look; the snapshots are very likely there and this is a limitation of the machine that built this record.\n\nThe distributor route was tried too and is a dead end for specifications. Rahr's own distribution arm, RahrBSG, is live at rahrbsg.com and rahrbsg.ca and already supplies this catalogue with hop data sheets, but its malt pages are a JavaScript storefront: the supplier page for Rahr Malting Co. carries no analysis and no PDF, and the Canadian product sitemap lists Simpsons and Muntons malts without a single Rahr-branded one. No distributor's copy of a maltster's figures was substituted in place of the maltster's.",
-   "attribution": "Extract, colour, and diastatic-power figures transcribed from maltster technical data sheets (Weyermann, Briess, Crisp, Simpsons, Castle, Best Malz, Rahr, Great Western, Muntons, Thomas Fawcett) and standard brewing references. Ranges vary by crop year and maltster — always confirm on the bag."
+   "description": "Rahr's American 6-row base, blended from North American 6-row barley — much higher protein and enzymatic power than 2-row, and the classic adjunct-lager workhorse.",
+   "usageNotes": "Rahr's own note: high proportions of 6-row may require a protein rest in the mash. The enzyme surplus is the point — it is what lets a grist carry a large fraction of wheat malt, specialty malt or unmalted corn, rice or oats.",
+   "sourceUrl": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-6-Row.pdf",
+   "attribution": "Rahr Malting Co.'s own \"Info Sheet\" for Rahr 6-Row, linked from its product page at rahrmaltingco.com/rahr-standard-6-row/. Both were fetched; the page's h1 reads \"Rahr Standard 6-Row\" and the sheet's title block reads \"Rahr 6-Row\", so this is the maltster's document for this malt and not a near neighbour. Published analysis: Extract FG Min 79, Color (SRM) 2.1-2.6, Moisture % Max 4.2, Protein Total 12.0 ± 1.5, Usage Rate up to 100%. Colour here is the midpoint of the published band. PPG is the published minimum fine-grind extract converted at 46.2 points per pound-gallon (pure sucrose): 79% of 46.2 is 36.5, and 36 is kept as the conservative floor, since 79 is a guaranteed minimum rather than a typical.",
+   "sourceNote": "Diastatic power has been REMOVED from this record rather than re-cited. It previously read 140 °Lintner with nothing behind it, and Rahr does not publish a figure for this malt: neither the product page nor the info sheet carries one, though both say the malt has high enzymatic power, and Rahr does print Diastatic Power >110 °L on the equivalent 2-Row sheet. An industry-wide number was not substituted for the maltster's silence — the American Malting Barley Association's Malting Barley Breeding Guidelines (Ideal Commercial Malt Criteria, revised April 2025) were checked and are now two-row only, carrying adjunct-brewing, all-malt and grain-distilling columns with no six-row column at all.\n\nThe previous citation, rahrmalting.com, is dead: it answers every path with a 114-byte script redirecting to /lander, which carries no text. That domain is not the company's site. Rahr Malting Co. publishes at rahrmaltingco.com, which lists every malt with an analysis table and a per-product info-sheet PDF; its product sitemap is at rahrmaltingco.com/product-sitemap.xml. Finding it required nothing more than looking, and this note records where it is so that the next person does not repeat the search that produced the dead link."
   },
   {
    "id": "malt-carapils-weyermann",

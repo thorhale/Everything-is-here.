@@ -39,6 +39,13 @@
    "reliability": "primary"
   },
   {
+   "host": "ambainc.org",
+   "name": "American Malting Barley Association",
+   "kind": "trade-association",
+   "reliability": "primary",
+   "note": "The US malting industry's own body. Publishes the annual Recommended Malting Barley Variety List and the Malting Barley Breeding Guidelines — the target malt specification, by end use, that new barley varieties are bred against. Primary because the guidelines ARE the industry standard rather than a report about it; but they are targets, not measurements of any particular malt."
+  },
+  {
    "host": "annalsmicrobiology.biomedcentral.com",
    "name": "Annals of Microbiology (BMC, peer-reviewed)",
    "kind": "peer-reviewed",
@@ -342,10 +349,11 @@
    "note": "North American ingredient distributor publishing ~100 per-product PDF sheets: hop varieties with full brewing values, Crisp malt specifications, and Fermentis yeast technical data. Valuable here because it is an INDEPENDENT second source on hop chemistry — where it and the Haas guide agree, confidence is real; where they differ, that is a fact about hop data worth recording."
   },
   {
-   "host": "rahrmalting.com",
-   "name": "Rahr Malting",
+   "host": "rahrmaltingco.com",
+   "name": "Rahr Malting Co.",
    "kind": "vendor-datasheet",
-   "reliability": "primary"
+   "reliability": "primary",
+   "note": "The maltster's own site, and the one this catalogue previously failed to find — it had been citing rahrmalting.com, a dead placeholder that redirects every path to an empty /lander. rahrmaltingco.com carries a page per malt with the published analysis in the body (colour, moisture, protein, extract, usage rate) and a per-product \"Info Sheet\" PDF under /wp-content/uploads/. Its product sitemap is at /product-sitemap.xml."
   },
   {
    "host": "redstaryeast.com",
@@ -1666,6 +1674,30 @@
    "accessed": "2026-08-07",
    "supports": "Individual measured concentrations of calcium, magnesium, sodium, chloride, sulfate and bicarbonate in mg/L, each tied to a monitoring site, a sampling date and an analytical method. Queried for Iowa since 2018 and read: 17,702 site/date groups returned, of which 377 carried a complete six-ion panel that balanced on charge.",
    "doesNotSupport": "Anything about what comes out of a tap. These are ambient water bodies — rivers, lakes and wells — sampled before treatment or distribution, so they describe a source and not a supply. They also do not replace the historic city profiles, which are literature reconstructions of water that can no longer be sampled."
+  },
+  {
+   "id": "rahr-standard-6-row",
+   "url": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-6-Row.pdf",
+   "title": "Rahr 6-Row — Rahr Malting Co. info sheet",
+   "publisher": "Rahr Malting Co.",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-11",
+   "supports": "Rahr's published analysis for its Standard 6-Row base malt: Extract FG Min 79, Color (SRM) 2.1-2.6, Moisture % Max 4.2, Protein Total 12.0 ± 1.5, Usage Rate up to 100%. The PDF was fetched and read (title block \"Rahr 6-Row\"), together with the product page that links it, rahrmaltingco.com/rahr-standard-6-row/ (h1 \"Rahr Standard 6-Row\"), which prints the same five figures in its own table.",
+   "doesNotSupport": "Diastatic power. Rahr prints \"Diastatic Power >110 L\" on the equivalent 2-Row sheet and prints no figure of any kind on the 6-Row sheet or page, so nothing here backs an enzyme number for this malt. Nor is it lot-specific: these are typical or guaranteed-limit values, and a delivered lot is certified by its own analysis."
+  },
+  {
+   "id": "amba-malting-barley-breeding-guidelines",
+   "url": "https://ambainc.org/news/amba-guidelines-for-malting-barley-breeders",
+   "title": "AMBA Malting Barley Breeding Guidelines — Ideal Commercial Malt Criteria, revised April 2025",
+   "publisher": "American Malting Barley Association",
+   "kind": "trade-association",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-11",
+   "supports": "The US industry's target malt specification, by end use, for two-row barley. Three columns — Adjunct Brewing, All-Malt Brewing & Distilling, Grain Distillers — each giving Congress-wort extract (FG db), colour in °ASBC, FAN, soluble/total protein, beta-glucan, viscosity, turbidity, diastatic power in °ASBC and alpha amylase in DU. Read in full from the PDF AMBA links from that page.",
+   "doesNotSupport": "Six-row malt. The April 2025 revision is two-row only and has no six-row column, so it cannot supply a six-row diastatic power — which is exactly what it was consulted for. It is also a breeding target rather than a measurement: it states what the industry wants a new variety to achieve, not what any particular malt analysed at."
   },
   {
    "id": "rahrbsg-hop-variety-sheets",

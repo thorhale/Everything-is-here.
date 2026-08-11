@@ -1,7 +1,6 @@
 {
-  "numericOnShallowLink": 1,
+  "numericOnShallowLink": 0,
   "unsourcedRecords": 42,
-  "unsourcedRaisedBecause": "Two new Belgian candi syrup grades, D-45 and D-90, added to close a coverage gap: the catalogue had clear and D-180 and nothing between, so a recipe calling for D-90 could not be expressed. Both arrive declared rather than cited, because the maker rate-limits all automated requests and the figures every brewing calculator carries are an unattributed compilation rather than a source.",
   "note": "Two ratchets, both of which may only ever be lowered. numericOnShallowLink counts numeric claims citing a publisher homepage rather than the specific document the figure came from; lower it by finding that document. unsourcedRecords counts records that declare, with \"unsourced\": true, that their numbers currently rest on no citation at all; lower it by sourcing them or by removing the numbers. validate-sources.mjs rewrites both the moment either improves, so neither can be forgotten, and fails the build if either rises.",
-  "updated": "2026-08-10"
+  "updated": "2026-08-11"
 }
