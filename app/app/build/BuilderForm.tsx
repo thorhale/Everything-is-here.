@@ -270,6 +270,9 @@ export default function BuilderForm({
         colorLovibond: p?.colorLovibond ?? null,
         titratableAcidityGPerL: p?.titratableAcidityGPerL ?? null,
         phTypical: p?.phTypical ?? null,
+        diastaticPowerLintner: p?.diastaticPowerLintner ?? null,
+        diastaticPowerBasis: p?.diastaticPowerBasis ?? null,
+        requiresConversion: p?.requiresConversion ?? false,
       };
     });
     const engineHops: EngineHop[] = hopRows.map((h) => ({
@@ -1053,6 +1056,60 @@ export default function BuilderForm({
           </p>
         )}
       </fieldset>
+
+      {/* ---------------------------------------------- will it convert? ---- */}
+      {engine.conversion && engine.conversion.totalMassG > 0 && (
+        <fieldset style={FS}>
+          <legend style={LEG}>Will it convert?</legend>
+          <table style={{ width: "100%", maxWidth: 520, fontSize: "0.9rem" }}>
+            <tbody>
+              <tr>
+                <td>Diastatic power across the bill</td>
+                <td className="nowrap">
+                  <strong>{engine.conversion.weightedLintnerFloor.toFixed(0)} °Lintner</strong>
+                  {engine.conversion.unknownMassG > 0 && " or better"}
+                </td>
+              </tr>
+              <tr>
+                <td>Enzyme-bearing malt in it</td>
+                <td className="nowrap">
+                  {engine.conversion.maltFractionLintner.toFixed(0)} °Lintner ·{" "}
+                  {engine.conversion.enzymeBearingFractionPct.toFixed(0)}% of the grist
+                </td>
+              </tr>
+              {engine.conversion.unmaltedMassG > 0 && (
+                <tr>
+                  <td>Unmalted starch</td>
+                  <td className="nowrap">{engine.conversion.unmaltedFractionPct.toFixed(0)}% of the grist</td>
+                </tr>
+              )}
+              <tr>
+                <td>{engine.conversion.criteria.label} needs</td>
+                <td className="nowrap">
+                  {engine.conversion.criteria.dpMin}
+                  {engine.conversion.criteria.dpMax ? `–${engine.conversion.criteria.dpMax}` : "+"} °ASBC
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p
+            style={{
+              ...NOTE,
+              borderLeftColor:
+                engine.conversion.verdict === "short" ? "var(--wh-accent)" : "var(--wh-border, #ccc)",
+            }}
+          >
+            {engine.conversion.notes.join(" ")}
+          </p>
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-text-light)", marginTop: "0.4rem" }}>
+            Measured against the American Malting Barley Association&rsquo;s Ideal Commercial Malt Criteria
+            (revised April 2025), which state the diastatic power the US industry asks of a malt for each end
+            use. °ASBC and °Lintner are the same scale. This deliberately does <em>not</em> use the
+            widely-quoted &ldquo;35 °Lintner minimum&rdquo; — nothing better than forum posts and an
+            uncited wiki entry supports it, and quoted values for the same claim run from 30 to 70.
+          </p>
+        </fieldset>
+      )}
 
       {/* ------------------------------------------------ colour rebalance --- */}
       {isBeer && colorBill.length > 0 && (

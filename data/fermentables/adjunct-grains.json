@@ -27,7 +27,10 @@
    "usageNotes": "Needs diastatic base malt to convert — no enzymes of its own.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Yellow-Corn-Flakes-NonGMO.pdf",
    "requiresGelatinization": false,
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-flaked-rice",
@@ -49,7 +52,10 @@
    ],
    "description": "Pre-gelatinised rice; the crispest, most neutral way to lighten a beer. The classic American macro-lager adjunct.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Brown-Rice-Flakes.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-flaked-oats",
@@ -73,7 +79,10 @@
    "description": "Adds silky mouthfeel, body, and haze. Essential in oatmeal stouts and modern hazy IPAs.",
    "usageNotes": "Gummy beta-glucans — use rice hulls above ~20% to protect the sparge.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Oat-Flakes.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-flaked-barley",
@@ -95,7 +104,10 @@
    ],
    "description": "Unmalted flaked barley — big protein contribution for head retention and the creamy body of Irish stout.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Barley-Flakes.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-flaked-wheat",
@@ -118,7 +130,10 @@
    ],
    "description": "Unmalted wheat for witbier and lambic; haze, tang, and dense foam.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Red-Wheat-Flakes.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-torrified-wheat",
@@ -140,7 +155,10 @@
    "description": "Heat-puffed whole wheat; similar to flaked wheat, traditional in English ales.",
    "sourceUrl": "https://crispmalt.com/malts/torrefied-wheat/",
    "attribution": "Crisp Malt's published typical analysis for Torrefied Wheat. Extract is 81.9% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 37.7, against a stored 36. They publish no colour figure for this product, so the stored 2 Lovibond remains unsourced curation. Moisture is given as 10.0% max.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-long-grain",
@@ -170,7 +188,10 @@
    "description": "Ordinary long-grain white rice. High-amylose starch that gelatinises around 158–172°F, so it needs a cereal mash before it will convert.",
    "usageNotes": "Cereal mash: boil with ~20% of the base malt to gelatinise, then combine with the main mash.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-sushi",
@@ -203,7 +224,10 @@
    "description": "Short-grain japonica rice, high in amylopectin so it gelatinises at a lower temperature and goes sticky. The rice class used for sake.",
    "usageNotes": "Lower gelatinisation point than long grain makes it a bit easier to cereal-mash.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no separate sushi-rice entry; this is its short-grain white rice, which is what sushi rice is."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no separate sushi-rice entry; this is its short-grain white rice, which is what sushi rice is.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-arborio",
@@ -230,7 +254,10 @@
    "description": "Italian short-grain risotto rice, unusually high in amylopectin — it releases starch readily and can add a creamy body.",
    "usageNotes": "Its free-starch tendency makes for a thick, gluey cereal mash; keep the volume generous.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168881",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Arborio entry. This cites its short-grain white rice, the class Arborio belongs to — the figures are for the class, not for Arborio specifically."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, short-grain, enriched, uncooked (SR Legacy, FDC ID 168881), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Arborio entry. This cites its short-grain white rice, the class Arborio belongs to — the figures are for the class, not for Arborio specifically.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-jasmine",
@@ -256,7 +283,10 @@
    ],
    "description": "Aromatic Thai long-grain rice; carries a faint floral, popcorn-like aroma that can survive into the beer.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Jasmine entry. This cites its long-grain white rice, the class Jasmine belongs to — the figures are for the class, not for Jasmine specifically."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Jasmine entry. This cites its long-grain white rice, the class Jasmine belongs to — the figures are for the class, not for Jasmine specifically.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-basmati",
@@ -282,7 +312,10 @@
    ],
    "description": "Long-grain aromatic rice with a nutty, tea-like aroma.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169756",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Basmati entry. This cites its long-grain white rice, the class Basmati belongs to — the figures are for the class, not for Basmati specifically."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, long-grain, regular, raw, unenriched (SR Legacy, FDC ID 169756), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser. USDA publishes no Basmati entry. This cites its long-grain white rice, the class Basmati belongs to — the figures are for the class, not for Basmati specifically.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-glutinous",
@@ -312,7 +345,10 @@
    ],
    "description": "Almost pure amylopectin (no gluten despite the name). Used across Asian rice-wine and spirit traditions; very sticky when cooked.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168883",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, glutinous, unenriched, uncooked (SR Legacy, FDC ID 168883), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, white, glutinous, unenriched, uncooked (SR Legacy, FDC ID 168883), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-brown",
@@ -339,7 +375,10 @@
    "description": "Whole-grain rice with the bran intact — nuttier, but the bran oil can hurt head retention and shelf stability.",
    "usageNotes": "The oil content is a real staling risk; keep the percentage modest.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169703",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 169703), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 169703), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-wild",
@@ -364,7 +403,10 @@
    ],
    "description": "Not a true rice (Zizania). Earthy, tea-like, and much higher in fibre, so lower extract.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169726",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Wild rice, raw (SR Legacy, FDC ID 169726), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Wild rice, raw (SR Legacy, FDC ID 169726), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-corn-grits",
@@ -395,7 +437,10 @@
    "description": "Raw milled corn. Cheap extract and a soft sweetness; must be cereal-mashed to gelatinise the starch.",
    "usageNotes": "The traditional pre-Prohibition American lager adjunct, and the backbone of bourbon mashes.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/171670",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cereals, corn grits, yellow, regular and quick, unenriched, dry (SR Legacy, FDC ID 171670), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Cereals, corn grits, yellow, regular and quick, unenriched, dry (SR Legacy, FDC ID 171670), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-cracked-corn",
@@ -418,7 +463,10 @@
    "description": "Coarsely cracked field corn — the base of bourbon and corn whiskey mashes (bourbon requires ≥51% corn).",
    "usageNotes": "Cook to gelatinise, then convert with malted barley or exogenous enzymes.",
    "attribution": "No source. USDA's SR Legacy set has no field or dent corn entry — only sweet corn, regional dried corns and cornmeals, none of which is cracked feed corn — and the ppg stored here was derived from a nutrition panel that was never cited. Rather than keep a number resting on nothing, it is removed. Cracked corn behaves close to flaked maize, which is in this catalogue with a source.",
-   "unsourced": true
+   "unsourced": true,
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-quinoa",
@@ -443,7 +491,10 @@
    ],
    "description": "Gluten-free pseudocereal; nutty and slightly grassy. Rinse well — the natural saponin coating is bitter and soapy.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168874",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Quinoa, uncooked (SR Legacy, FDC ID 168874), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Quinoa, uncooked (SR Legacy, FDC ID 168874), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-millet",
@@ -468,7 +519,10 @@
    ],
    "description": "A staple gluten-free brewing grain, and the traditional base of many African beers. Available malted for gluten-free brewing.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169702",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Millet, raw (SR Legacy, FDC ID 169702), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Millet, raw (SR Legacy, FDC ID 169702), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-sorghum-grain",
@@ -495,7 +549,10 @@
    ],
    "description": "Gluten-free grain used for African sorghum beers and, in China, as the primary grain for baijiu.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/169716",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sorghum grain (SR Legacy, FDC ID 169716), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Sorghum grain (SR Legacy, FDC ID 169716), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-buckwheat",
@@ -520,7 +577,10 @@
    ],
    "description": "Gluten-free pseudocereal with a strong earthy, almost tannic character.",
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/170286",
-   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Buckwheat (SR Legacy, FDC ID 170286), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser."
+   "attribution": "Carbohydrate and fibre are USDA FoodData Central's published figures for Buckwheat (SR Legacy, FDC ID 170286), and ppg is recomputed from them by this project's own formula, 46 x (carbohydrate - fibre) / 100 g. The citation is the data endpoint rather than the portal page: fdc.nal.usda.gov serves its food pages from a client-side router, so the human-facing URL returns 404 to anything that is not a browser.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "adjunct-rice-hulls",

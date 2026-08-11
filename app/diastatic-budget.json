@@ -1,0 +1,5 @@
+{
+  "unknownDiastaticPower": 20,
+  "note": "Records carrying no diastatic power because their maltster publishes none — basis \"unpublished\" or \"published-qualitative\". May only ever be lowered, by finding a maltster who publishes a figure. validate-diastatic.mjs rewrites this the moment it improves and fails the build if it rises.",
+  "updated": "2026-08-11"
+}

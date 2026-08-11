@@ -11,16 +11,16 @@
     "verification": "full-text means the document was retrieved and the figures read out of it. metadata-only means the document's existence and title were confirmed but the figures were taken from a search summary or abstract. unverified means neither — the citation is inherited from earlier work and has not been checked."
   },
   "totals": {
-    "distinctSources": 391,
+    "distinctSources": 394,
     "backgroundDocuments": 16,
-    "citations": 695,
-    "numericCitations": 580,
+    "citations": 699,
+    "numericCitations": 584,
     "numericOnShallowLink": 0,
     "numericOnTertiary": 0,
-    "fullTextVerified": 40,
+    "fullTextVerified": 43,
     "backgroundFullTextVerified": 13,
     "byReliability": {
-      "primary": 662,
+      "primary": 666,
       "secondary": 27,
       "tertiary": 6
     }
@@ -177,23 +177,23 @@
       ]
     },
     {
-      "id": "weyermann-brewery-products-crop2025",
+      "id": "weyermann-diastatic-barley-malt",
       "url": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
       "host": "www.weyermann.de",
-      "title": "Weyermann Specialty Malts — Brewery Products catalogue (Crop 2025)",
-      "publisher": "Weyermann Specialty Malts",
+      "title": "Weyermann® Specialty Malts — Brewery products catalogue, Crop 2025",
+      "publisher": "Mich. Weyermann GmbH & Co. KG",
       "authors": null,
       "year": null,
-      "kind": "vendor-tds",
+      "kind": "vendor-datasheet",
       "reliability": "primary",
       "verification": "full-text",
       "deepLink": true,
-      "supports": "Per-malt typical analysis: moisture (%), extract on dry substance (%), and colour in both EBC and Lovibond, with minimum and maximum for each. Retrieved and read; the CARAAROMA entry was checked against the page directly.",
-      "doesNotSupport": "Diastatic power and protein, which this catalogue does not tabulate, and PPG — the figures this project stores are derived from extract rather than printed here. Crop-year specific: the analysis is labelled Crop 2025 and later crops will differ.",
-      "accessed": "2026-08-07",
+      "supports": "Per-malt typical analysis for the Weyermann range: moisture, extract on dry substance, colour in EBC and Lovibond, protein, Kolbach index, saccharification time, viscosity, friability and glassy kernels. It also carries a qualitative \"Enzyme activity: none | low | medium | high\" line for every malt, which is a citable statement that a caramel or roasted malt has no enzymes. All 63 pages read by geometry.",
+      "doesNotSupport": "A numeric diastatic power for any malt except Weyermann® Diastatic Barley Malt, which the catalogue gives as min 300 WK. Exactly one page in the catalogue carries a \"Diastatic power\" row, and Weyermann's per-product PRODUCT SPECIFICATION PDFs stop at viscosity as well. Eleven records in this catalogue once cited it for a °Lintner figure that is in none of those documents.",
+      "accessed": "2026-08-11",
       "note": null,
-      "citations": 19,
-      "numericCitations": 19,
+      "citations": 20,
+      "numericCitations": 20,
       "usedIn": [
         "data/fermentables/malts.json"
       ],
@@ -4306,20 +4306,20 @@
       ]
     },
     {
-      "id": null,
+      "id": "simpsons-malt-analyses",
       "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-golden-promise/",
       "host": "www.simpsonsmalt.co.uk",
-      "title": null,
-      "publisher": "Simpsons Malt",
+      "title": "Simpsons Malt — Finest Pale Ale Golden Promise analysis (IoB, ASBC and EBC)",
+      "publisher": "Simpsons Malt Ltd",
       "authors": null,
       "year": null,
       "kind": "vendor-datasheet",
       "reliability": "primary",
-      "verification": "unverified",
+      "verification": "full-text",
       "deepLink": true,
-      "supports": null,
-      "doesNotSupport": null,
-      "accessed": null,
+      "supports": "Diastatic power 47-74 °Lintner, together with the same figure on two other scales — IoB 40-65 and 150-244 WK. Simpsons publishing all three at once is what makes the unit conversion in data/fermentables/maltster-specs.json checkable rather than asserted: across their eight malts that carry a diastatic power there are 15 (WK, published °Lintner) pairs, and (WK + 16) / 3.5 reproduces every one to within 0.4.",
+      "doesNotSupport": "Any other maltster's malt. Simpsons' Maris Otter analysis is not Crisp's, and this catalogue's Maris Otter records cite Crisp.",
+      "accessed": "2026-08-11",
       "note": null,
       "citations": 1,
       "numericCitations": 1,
@@ -5378,6 +5378,81 @@
       ],
       "exampleRecords": [
         "malt-dextrapils"
+      ]
+    },
+    {
+      "id": "rahr-distillers-malts",
+      "url": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-High-DP-Distillers-Malt.pdf",
+      "host": "rahrmaltingco.com",
+      "title": "Rahr High DP Distillers Malt — Rahr Malting Co. info sheet",
+      "publisher": "Rahr Malting Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Diastatic Power >220 L, Color (SRM) 2.5-3.0, Moisture % Max 6.5, Protein Total <15.0 and Usage Rate up to 100% for Rahr's High DP distilling malt. Rahr publishes diastatic power in °Lintner directly, so nothing is converted.",
+      "doesNotSupport": "Extract, which this sheet does not print — it appears only on Rahr's product page, and that page in turn disagrees with this sheet on colour (2.6-3.3 SRM) and moisture (max 4.5%). Both figures are recorded on the record rather than one being quietly preferred.",
+      "accessed": "2026-08-11",
+      "note": "The maltster's own site, and the one this catalogue previously failed to find — it had been citing rahrmalting.com, a dead placeholder that redirects every path to an empty /lander. rahrmaltingco.com carries a page per malt with the published analysis in the body (colour, moisture, protein, extract, usage rate) and a per-product \"Info Sheet\" PDF under /wp-content/uploads/. Its product sitemap is at /product-sitemap.xml.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-rahr-high-dp-distillers"
+      ]
+    },
+    {
+      "id": null,
+      "url": "https://rahrmaltingco.com/wp-content/uploads/2025/07/Rahr-GN-Zero-High-Enzyme-Distillers-Malt-Spec-Sheet.pdf",
+      "host": "rahrmaltingco.com",
+      "title": null,
+      "publisher": "Rahr Malting Co.",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "unverified",
+      "deepLink": true,
+      "supports": null,
+      "doesNotSupport": null,
+      "accessed": null,
+      "note": "The maltster's own site, and the one this catalogue previously failed to find — it had been citing rahrmalting.com, a dead placeholder that redirects every path to an empty /lander. rahrmaltingco.com carries a page per malt with the published analysis in the body (colour, moisture, protein, extract, usage rate) and a per-product \"Info Sheet\" PDF under /wp-content/uploads/. Its product sitemap is at /product-sitemap.xml.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-rahr-gn-zero-high-enzyme"
+      ]
+    },
+    {
+      "id": "gwm-high-enzyme-sell-sheet",
+      "url": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM_SellSheets_Distilling-High-Enzyme.pdf",
+      "host": "www.greatwesternmalting.com",
+      "title": "Great Western Malting — American Distillers High-Enzyme Malt sell sheet",
+      "publisher": "Great Western Malting",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "DIASTATIC POWER 260, ALPHA AMYLASE (DU) 110 and MOISTURE (%) 5.5 for Great Western's High-Enzyme distilling malt — the highest diastatic power and the highest alpha amylase in this catalogue. Read with poppler's layout mode and checked by eye against the parse.",
+      "doesNotSupport": "Extract. Great Western publishes no extract figure for this malt on the sheet or the product page, which is why the record carries no ppg rather than a plausible one. Colour and protein come from the product page, not from here.",
+      "accessed": "2026-08-11",
+      "note": "US maltster publishing a per-product sell sheet with a typical analysis. One of only two sources in this catalogue that publish alpha amylase in DU alongside diastatic power. Their sheets need poppler's layout mode to read: pdfminer drops the row labels and leaves a bare column of numbers, which is how a value ends up attached to the wrong label.",
+      "citations": 1,
+      "numericCitations": 1,
+      "usedIn": [
+        "data/fermentables/malts.json"
+      ],
+      "exampleRecords": [
+        "malt-gwm-high-enzyme"
       ]
     },
     {

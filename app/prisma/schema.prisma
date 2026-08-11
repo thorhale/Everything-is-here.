@@ -405,7 +405,39 @@ model Fermentable {
   // How it behaves in the brewhouse
   requiresConversion   Boolean @default(false) // starch needing mash/enzymes
   requiresGelatinization Boolean @default(false) // cereal mash / pre-boil
-  diastaticPowerLintner Float?
+
+  // Diastatic power: the enzyme supply, and the number that decides whether a
+  // mash converts at all. An audit found that 22 of the 23 figures this
+  // catalogue once held were not the figure their cited document printed, so
+  // the published string and its unit are now kept beside the derived value —
+  // the way ppgBasis and the nutrition inputs are kept beside a derived PPG.
+  //
+  // diastaticPowerBasis is the load-bearing field, because a null here is
+  // ambiguous in a way that matters: "has no enzymes" and "nobody published a
+  // figure" both look like an empty column, and a grist calculation has to
+  // treat them completely differently.
+  //   published             a figure in the cited document
+  //   published-zero        the maltster states no enzyme activity, in words
+  //   published-qualitative the maltster publishes only "Enzyme activity: high"
+  //                         or similar — Weyermann does this for all but one malt
+  //   process-zero          stewed or roasted past enzyme survival; the maltster
+  //                         omits the row, which for a crystal or roasted malt is
+  //                         the expected omission rather than a gap
+  //   unmalted              never germinated, so no enzymes of its own
+  //   withdrawn-source      the figure came from a page since taken down
+  //   unpublished           the maltster publishes nothing and the process does
+  //                         not settle it — the only value that means "unknown"
+  diastaticPowerLintner   Float? // derived, code-facing; °Lintner = °ASBC
+  diastaticPowerMin       Float? // maltsters publish ranges: Rahr 2-Row is 110-160
+  diastaticPowerMax       Float?
+  diastaticPowerAtLeast   Boolean @default(false) // published as a floor, ">220 L"
+  diastaticPowerPublished String? // verbatim: ">220 L", "250 WK", "Devoid of enzymes"
+  diastaticPowerUnit      String? // lintner | wk | iob
+  diastaticPowerBasis     String?
+  diastaticPowerNote      String?
+  diastaticSpecSource     String? // "<sourceKey>/<product>" into maltster-specs.json
+  alphaAmylaseDu          Float?  // dextrinizing units, where a maltster prints it
+
   fermentabilityPct    Float? // how much of the extract yeast can take
   maxBatchPct          Float? // recommended ceiling as % of grist
 

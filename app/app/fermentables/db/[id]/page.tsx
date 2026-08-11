@@ -27,7 +27,11 @@ export default async function FermentableDetailPage({ params }: Props) {
     ["Extract (PPG)", f.ppg != null ? `${f.ppg.toFixed(1)} points/lb/gal` : null],
     ["Yield vs sucrose", f.ppg != null ? `${((f.ppg / SUCROSE_PPG) * 100).toFixed(1)}%` : null],
     ["Colour", f.colorLovibond != null ? `${f.colorLovibond} °L` : null],
-    ["Diastatic power", f.diastaticPowerLintner != null ? `${f.diastaticPowerLintner} °Lintner` : null],
+    ["Diastatic power", diastaticPowerLine(f)],
+    [
+      "Alpha amylase",
+      f.alphaAmylaseDu != null ? `${f.alphaAmylaseDu} DU` : null,
+    ],
     ["Fermentability", f.fermentabilityPct != null ? `${f.fermentabilityPct}%` : null],
     ["Suggested max", f.maxBatchPct != null ? `${f.maxBatchPct}% of grist` : null],
     ["Uses", f.uses.length ? f.uses.join(", ") : null],
@@ -166,4 +170,45 @@ async function FermentableSubs({ id }: { id: string }) {
       </ul>
     </>
   );
+}
+
+/**
+ * What to print for diastatic power.
+ *
+ * A bare "0 °Lintner" and a blank cell say almost nothing, and they are the two
+ * cases a brewer most needs told apart: a crystal malt that genuinely brings no
+ * enzymes, versus a malt whose maltster simply never published a figure. So the
+ * line shows the maltster's own printed string and unit where there is one, and
+ * says plainly what the silence means where there is not.
+ */
+function diastaticPowerLine(f: {
+  diastaticPowerLintner: number | null;
+  diastaticPowerPublished: string | null;
+  diastaticPowerUnit: string | null;
+  diastaticPowerBasis: string | null;
+}): string | null {
+  const dp = f.diastaticPowerLintner;
+  const published = f.diastaticPowerPublished;
+  const converted = published && f.diastaticPowerUnit && f.diastaticPowerUnit !== "lintner";
+
+  switch (f.diastaticPowerBasis) {
+    case "published":
+      return converted
+        ? `${dp} °Lintner — published as ${published}`
+        : `${published ?? dp} °Lintner`;
+    case "published-zero":
+      return `None — the maltster's own words: "${published}"`;
+    case "published-qualitative":
+      return `Not published as a figure. The maltster states: "${published}"`;
+    case "process-zero":
+      return "None — stewed or roasted past enzyme survival, and its maltster publishes no figure";
+    case "unmalted":
+      return "None — never malted, so it brings no enzymes of its own";
+    case "withdrawn-source":
+      return `${dp} °Lintner, from a page its maker has since withdrawn`;
+    case "unpublished":
+      return "Not published by its maltster";
+    default:
+      return dp != null ? `${dp} °Lintner` : null;
+  }
 }

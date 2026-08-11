@@ -3,6 +3,12 @@
 import { useState, type ReactNode } from "react";
 import * as calc from "@/lib/brewing-calcs";
 import { residualAlkalinity, mashPhAdvice } from "@/lib/mash-ph";
+import {
+  assessConversion,
+  maltToReachTarget,
+  AMBA_MALT_CRITERIA,
+  type EndUse,
+} from "@/lib/diastatic-power";
 
 function n(s: string): number {
   const v = parseFloat(s);
@@ -26,6 +32,7 @@ export default function Toolbox() {
       <StrikeCard />
       <InfusionCard />
       <MashPhCard />
+      <ConversionCard />
       <ColorCard />
     </div>
   );
@@ -269,6 +276,99 @@ function ColorCard() {
     <Card title="Colour SRM ↔ EBC">
       <Row label="SRM"><input style={inp} value={srm} onChange={(e) => setSrm(e.target.value)} /></Row>
       <Out label="EBC" value={f(calc.srmToEbc(n(srm)))} />
+    </Card>
+  );
+}
+
+/**
+ * Will this mash convert?
+ *
+ * Deliberately the simplest form of the question: how much malt, at what
+ * diastatic power, against how much unmalted grain. A distiller planning a
+ * bourbon mash bill wants that answer without building a whole recipe, and it
+ * is the one calculation on this page where getting it wrong means the mash
+ * does not work at all rather than the beer being a bit off.
+ */
+function ConversionCard() {
+  const [maltKg, setMaltKg] = useState("2");
+  const [maltDp, setMaltDp] = useState("140");
+  const [adjunctKg, setAdjunctKg] = useState("8");
+  const [endUse, setEndUse] = useState<EndUse>("grain-distilling");
+  const [addDp, setAddDp] = useState("220");
+
+  const bill = [
+    {
+      key: "malt",
+      name: "Base malt",
+      massG: n(maltKg) * 1000,
+      diastaticPowerLintner: n(maltDp),
+      diastaticPowerBasis: "published",
+    },
+    {
+      key: "adjunct",
+      name: "Unmalted grain",
+      massG: n(adjunctKg) * 1000,
+      diastaticPowerLintner: 0,
+      diastaticPowerBasis: "unmalted",
+      requiresConversion: true,
+    },
+  ].filter((i) => i.massG > 0);
+
+  const a = assessConversion(bill, { endUse });
+  const need = maltToReachTarget(bill, { diastaticPowerLintner: n(addDp) }, { endUse });
+  const criteria = AMBA_MALT_CRITERIA[endUse];
+
+  return (
+    <Card title="Will it convert?">
+      <Row label="Base malt (kg)">
+        <input style={inp} value={maltKg} onChange={(e) => setMaltKg(e.target.value)} />
+      </Row>
+      <Row label="its °Lintner">
+        <input style={inp} value={maltDp} onChange={(e) => setMaltDp(e.target.value)} />
+      </Row>
+      <Row label="Unmalted grain (kg)">
+        <input style={inp} value={adjunctKg} onChange={(e) => setAdjunctKg(e.target.value)} />
+      </Row>
+      <Row label="End use">
+        <select style={inp} value={endUse} onChange={(e) => setEndUse(e.target.value as EndUse)}>
+          <option value="all-malt">All-malt</option>
+          <option value="adjunct-brewing">Adjunct brewing</option>
+          <option value="grain-distilling">Grain distilling</option>
+        </select>
+      </Row>
+      <Out label="Across the whole bill" value={`${f(a.weightedLintnerFloor, 0)} °L`} />
+      <Out label="Unmalted" value={`${f(a.unmaltedFractionPct, 0)}%`} />
+      <Out
+        label={`${criteria.label} needs`}
+        value={`${criteria.dpMin}${criteria.dpMax ? `–${criteria.dpMax}` : "+"} °ASBC`}
+      />
+      <Out
+        label="Verdict"
+        value={
+          a.verdict === "meets"
+            ? "Meets it"
+            : a.verdict === "short"
+              ? `Short by ${f(Math.abs(a.headroomLintner ?? 0), 0)} °L`
+              : "No enzyme source"
+        }
+      />
+      {a.verdict === "short" && (
+        <>
+          <Row label="Swap in a malt at °L">
+            <input style={inp} value={addDp} onChange={(e) => setAddDp(e.target.value)} />
+          </Row>
+          <Out
+            label="Add this much of it"
+            value={need != null ? `${f(need / 1000, 2)} kg` : "cannot reach it"}
+          />
+        </>
+      )}
+      <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.5rem", marginBottom: 0 }}>
+        Measured against AMBA&rsquo;s Ideal Commercial Malt Criteria (rev. April 2025) — the diastatic
+        power the US industry asks of a malt for each end use. °ASBC and °Lintner are the same scale.
+        The familiar &ldquo;35 °Lintner minimum&rdquo; is not used here: nothing but forum posts
+        supports it, and quoted values for the same claim run from 30 to 70.
+      </p>
     </Card>
   );
 }

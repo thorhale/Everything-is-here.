@@ -50,6 +50,13 @@ const fermentables = [...ref.fermentables]
     juiceYieldPct: n(f.juiceYieldPct),
     titratableAcidityGPerL: n(f.titratableAcidityGPerL),
     phTypical: n(f.phTypical),
+    // The enzyme side of the mash. The basis travels with the number because a
+    // null °Lintner means "nobody published one" while a zero means "this
+    // brings no enzymes at all", and the conversion check has to tell those
+    // two apart — they push the answer in opposite directions.
+    diastaticPowerLintner: n(f.diastaticPowerLintner),
+    diastaticPowerBasis: n(f.diastaticPowerBasis),
+    requiresConversion: !!f.requiresConversion,
     uses: n(f.uses) ?? [],
   }));
 

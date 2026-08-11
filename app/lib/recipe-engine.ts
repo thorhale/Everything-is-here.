@@ -22,6 +22,7 @@
 // point — that is what `measuredBrix` is for.
 
 import { POINTS_PER_G_PER_L, sgFromBrix, abvSimple, abvAlternate, fgFromAttenuation } from "@/lib/must";
+import { assessConversion, type ConversionAssessment, type EndUse } from "@/lib/diastatic-power";
 
 export type Beverage = "beer" | "cider" | "wine" | "mead" | "spirit";
 
@@ -69,6 +70,13 @@ export interface EngineIngredient {
   fermentabilityPct?: number | null;
   titratableAcidityGPerL?: number | null;
   phTypical?: number | null;
+
+  // The enzyme side of the mash. A null °Lintner means nobody published a
+  // figure; a zero means the ingredient genuinely brings none. The basis says
+  // which, and lib/diastatic-power.ts moves in opposite directions on the two.
+  diastaticPowerLintner?: number | null;
+  diastaticPowerBasis?: string | null;
+  requiresConversion?: boolean;
 }
 
 export interface EngineHop {
@@ -90,6 +98,8 @@ export interface EngineInputs {
   ingredients: EngineIngredient[];
   hops: EngineHop[];
   boilVolumeL?: number | null;
+  /** A dosed amylase, if the mash uses one instead of relying on malt enzymes. */
+  dosedEnzyme?: { id: string; name: string; gPerL: number } | null;
 }
 
 export interface Band {
@@ -119,6 +129,8 @@ export interface EngineResult {
   uncertain: boolean;
   /** Set when the yeast will hit its ceiling before the sugar runs out. */
   stallsAt: number | null;
+  /** Whether the grain bill carries enough enzyme to convert its own starch. */
+  conversion: ConversionAssessment | null;
   warnings: string[];
 }
 
@@ -330,6 +342,72 @@ export function computeRecipe(inputs: EngineInputs): EngineResult {
     );
   }
 
+  // --- will the mash convert? -------------------------------------------
+  //
+  // Only the mash path has starch to convert; sugar, honey, juice and fruit
+  // need no enzymes. For an all-malt beer this almost always passes and is
+  // worth a line rather than a warning. For a bourbon or grain-whiskey bill it
+  // is the question that decides whether the mash works at all.
+  const mashed = inputs.ingredients.filter((i) => i.path === "mash" && i.amount > 0);
+  let conversion: ConversionAssessment | null = null;
+  if (mashed.length > 0) {
+    const anyUnmalted = mashed.some(
+      (i) => i.requiresConversion && !(i.diastaticPowerLintner && i.diastaticPowerLintner > 0)
+    );
+    const endUse: EndUse =
+      inputs.beverage === "spirit" && anyUnmalted
+        ? "grain-distilling"
+        : anyUnmalted
+          ? "adjunct-brewing"
+          : "all-malt";
+    conversion = assessConversion(
+      mashed.map((i) => ({
+        key: i.key,
+        name: i.name,
+        massG: i.amountUnit === "g" ? i.amount : i.amount * 1000,
+        diastaticPowerLintner: i.diastaticPowerLintner ?? null,
+        diastaticPowerBasis: i.diastaticPowerBasis ?? null,
+        requiresConversion: i.requiresConversion,
+      })),
+      { endUse, dosedEnzyme: inputs.dosedEnzyme ?? null }
+    );
+
+    if (conversion.verdict === "short") {
+      warnings.push(
+        `This grain bill may not convert. ${conversion.notes[0]} Raise the proportion of a ` +
+          `high-diastatic malt, swap the base malt for a distillers malt, or dose an amylase — ` +
+          `see the conversion panel below for how much.`
+      );
+    } else if (conversion.verdict === "undetermined" && conversion.unmaltedMassG > 0) {
+      warnings.push(
+        "Nothing in this grain bill carries enzymes, and it contains starch that needs converting. " +
+          "As it stands there is nothing to convert it: add a base malt or dose an amylase."
+      );
+    }
+  }
+
+  // A mashed ingredient with no extract figure contributes nothing to the
+  // gravity above, silently. Six records in the catalogue are in that position
+  // — Great Western publish a diastatic power for their High-Enzyme Malt and no
+  // extract at all — and a number quietly missing from a total is exactly the
+  // kind of thing that looks like a working calculation and is not.
+  const noExtract = inputs.ingredients.filter(
+    (i) =>
+      (i.path === "mash" || i.path === "direct") &&
+      i.amount > 0 &&
+      i.ppg == null &&
+      i.ppgMin == null &&
+      i.ppgMax == null
+  );
+  if (noExtract.length) {
+    warnings.push(
+      `${noExtract.map((i) => i.name).join(", ")} ${noExtract.length === 1 ? "has" : "have"} no ` +
+        `published extract figure, so ${noExtract.length === 1 ? "it contributes" : "they contribute"} ` +
+        `nothing to the gravity above. The gravity shown is therefore lower than what you will ` +
+        `actually hit — it is a floor, not a miscalculation.`
+    );
+  }
+
   const spread = og.high - og.low;
   if (spread > 0.010) {
     warnings.push(
@@ -352,6 +430,7 @@ export function computeRecipe(inputs: EngineInputs): EngineResult {
     estimatedPh,
     uncertain: spread > 0.006,
     stallsAt,
+    conversion,
     warnings,
   };
 }

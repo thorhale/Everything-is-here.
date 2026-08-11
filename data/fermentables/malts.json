@@ -15,7 +15,7 @@
    "origin": "United States",
    "ppg": 37,
    "colorLovibond": 1.8,
-   "diastaticPowerLintner": 140,
+   "diastaticPowerLintner": 140.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -29,7 +29,12 @@
    ],
    "description": "The default American base malt. Clean, mildly sweet, plenty of diastatic power to convert itself and a load of adjuncts.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerPublished": "140",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "briess-pisb/malt-2row-pale",
+   "alphaAmylaseDu": 72.0
   },
   {
    "id": "malt-6row-pale",
@@ -62,7 +67,9 @@
      "supports": "A currently published North American 6-row malt analysis, used here only as a cross-check on the withdrawn Briess figures: extract FG min 79% dry basis (36.5 ppg at 46.2 points per pound-gallon), colour SRM 2.1-2.6, moisture max 4.2%, protein 12.0 ± 1.5%.",
      "doesNotSupport": "The numbers stored on this record. This is one maltster's branded 6-row, not the generic North American 6-row this record describes, and it publishes no diastatic power — so it cannot stand behind the 35 ppg, 1.8 °L or 160 °Lintner above."
     }
-   ]
+   ],
+   "diastaticPowerBasis": "withdrawn-source",
+   "diastaticPowerNote": "This figure comes from the maker's own page, recorded before that page was withdrawn — see withdrawnSourceUrl and the attribution. It is kept rather than deleted, but nothing currently published supports it, so it must not be treated as checkable."
   },
   {
    "id": "malt-maris-otter",
@@ -73,7 +80,7 @@
    "origin": "United Kingdom",
    "ppg": 38,
    "colorLovibond": 3,
-   "diastaticPowerLintner": 120,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -88,7 +95,9 @@
    "description": "The benchmark English floor-malted base; rich, biscuity, bready depth that plain pale malt lacks.",
    "flavorNotes": "Biscuit, nutty, gentle toast.",
    "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_FinestMarisOtterAleMalt.pdf",
-   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read.",
+   "diastaticPowerBasis": "unpublished",
+   "diastaticPowerNote": "Crisp's specification sheet for this malt carries extract, colour, TN/TP and the SNR/KI/ST ratio and no diastatic power at all — the 120 °Lintner this record used to hold was not in it."
   },
   {
    "id": "malt-golden-promise",
@@ -99,7 +108,7 @@
    "origin": "United Kingdom",
    "ppg": 37,
    "colorLovibond": 2.5,
-   "diastaticPowerLintner": 120,
+   "diastaticPowerLintner": 60.5,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -112,7 +121,13 @@
     "base"
    ],
    "description": "Scottish base malt, softer and cleaner than Maris Otter. A staple of Scotch whisky distilling as well as brewing.",
-   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-golden-promise/"
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-golden-promise/",
+   "diastaticPowerMin": 47.0,
+   "diastaticPowerMax": 74.0,
+   "diastaticPowerPublished": "47 - 74",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "simpsons-malt/finest-pale-ale-golden-promise"
   },
   {
    "id": "malt-pilsner",
@@ -123,7 +138,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 1.6,
-   "diastaticPowerLintner": 110,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -138,7 +153,11 @@
    "description": "Continental lager base malt, kilned very lightly for a pale, delicate, honeyed malt character.",
    "usageNotes": "High in SMM/DMS precursors — give it a vigorous 90-minute boil.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® PILSNER MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-vienna",
@@ -149,7 +168,7 @@
    "origin": "Germany",
    "ppg": 36,
    "colorLovibond": 3.5,
-   "diastaticPowerLintner": 70,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -163,7 +182,11 @@
    ],
    "description": "Lightly toasted base malt bridging Pilsner and Munich; golden colour with a soft toasty sweetness.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® VIENNA MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-munich-light",
@@ -174,7 +197,7 @@
    "origin": "Germany",
    "ppg": 36,
    "colorLovibond": 8,
-   "diastaticPowerLintner": 50,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -189,7 +212,11 @@
    "description": "Malt-forward base with enough enzyme to convert itself; the backbone of Märzen, bock, and dunkel.",
    "flavorNotes": "Bread crust, toffee, deep malt.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: medium",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® MUNICH MALT TYPE 1",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-munich-dark",
@@ -200,7 +227,7 @@
    "origin": "Germany",
    "ppg": 35,
    "colorLovibond": 18,
-   "diastaticPowerLintner": 40,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 60,
    "ppgBasis": "maltster",
    "uses": [
@@ -213,7 +240,11 @@
    ],
    "description": "Darker, richer Munich; intense malty depth with marginal enzyme reserve.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: medium",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® MUNICH MALT TYPE 2",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-pale-ale",
@@ -224,7 +255,7 @@
    "origin": "Germany",
    "ppg": 38,
    "colorLovibond": 3,
-   "diastaticPowerLintner": 100,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -237,7 +268,11 @@
    ],
    "description": "Slightly darker, fuller-bodied kilned base malt for ales.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® PALE ALE MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-wheat-pale",
@@ -248,7 +283,7 @@
    "origin": "Germany",
    "ppg": 38,
    "colorLovibond": 2,
-   "diastaticPowerLintner": 150,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 70,
    "ppgBasis": "maltster",
    "uses": [
@@ -262,7 +297,11 @@
    ],
    "description": "Malted wheat: boosts body, head retention, and haze. The base of German weissbier at 50–70% of the grist.",
    "usageNotes": "Huskless — pair with rice hulls or barley malt to avoid a stuck sparge.",
-   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-wheat-malt-pale-2/"
+   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-wheat-malt-pale-2/",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® WHEAT MALT PALE",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-wheat-dark",
@@ -273,7 +312,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 7,
-   "diastaticPowerLintner": 100,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 60,
    "ppgBasis": "maltster",
    "uses": [
@@ -285,7 +324,11 @@
    ],
    "description": "Kilned darker for dunkelweizen depth while keeping wheat's protein and head retention.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: medium",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® WHEAT MALT DARK",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-rye",
@@ -296,7 +339,7 @@
    "origin": "Germany",
    "ppg": 36,
    "colorLovibond": 3.5,
-   "diastaticPowerLintner": 75,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 50,
    "ppgBasis": "maltster",
    "uses": [
@@ -311,7 +354,11 @@
    "description": "Malted rye — dry, peppery, spicy, with a silky mouthfeel. Also a whiskey mash staple.",
    "usageNotes": "Very gummy (beta-glucans); rice hulls strongly recommended above ~20%.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® RYE MALT PALE",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-acidulated",
@@ -337,7 +384,12 @@
    ],
    "description": "Malt coated in lactic acid from a natural souring step; used to drop mash pH without mineral additions. Roughly 1% of the grist lowers pH by ~0.1.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: increases enzyme activity by optimal mash ph",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® ACIDULATED MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-carapils",
@@ -363,7 +415,12 @@
    ],
    "description": "Adds unfermentable dextrins for body and head retention with essentially no colour or flavour.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Carapils-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Devoid of enzymes",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "briess-pisb/malt-carapils"
   },
   {
    "id": "malt-crystal-20",
@@ -389,7 +446,10 @@
    ],
    "description": "Light caramel malt; mild sweetness and golden colour without heaviness.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-20L.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-crystal-40",
@@ -417,7 +477,10 @@
    "description": "The workhorse caramel malt — toffee sweetness and amber colour in pale ales and ambers.",
    "flavorNotes": "Toffee, light caramel.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-40L.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-crystal-60",
@@ -444,7 +507,10 @@
    ],
    "description": "Deeper caramel with a hint of raisin; standard in ambers, bitters, and porters.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-60L.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-crystal-120",
@@ -470,7 +536,10 @@
    ],
    "description": "Dark crystal — raisin, burnt sugar, and dried fruit. Heavy-handed above ~5% of the grist.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Caramel-Malt-120L.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-special-b",
@@ -496,7 +565,10 @@
    "flavorNotes": "Raisin, prune, dark toffee.",
    "sourceUrl": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=183&Language=English&FileType=HTML",
    "attribution": "Castle Malting's published typical analysis for Château Special Belgium®, crop year 2025. Extract is specified as not less than 74.0% dry basis, which is 34.0 ppg. The stored 30 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 98.1-120.6 Lovibond (260-320 EBC), so the midpoint is 109.3, against a stored 180. Moisture is given as max 6.0%.",
-   "sourceNote": "The record's citation of Castle Malting was right, though the naming looks wrong at first: Special B® is Dingemans' registered mark. Castle's own specification sheet settles it in a note - \"Château Special B® became Château Special Belgium®\" - so Castle did make a Special B and renamed it, and this is that malt. Dingemans' own Special B® MD is specified at 270-350 EBC and 115.00 Lovibond, which agrees with Castle's 98.1-120.6 to within the width of either range. Two maltsters independently put this malt near 110 Lovibond; the stored 180 was not close to either. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The record's citation of Castle Malting was right, though the naming looks wrong at first: Special B® is Dingemans' registered mark. Castle's own specification sheet settles it in a note - \"Château Special B® became Château Special Belgium®\" - so Castle did make a Special B and renamed it, and this is that malt. Dingemans' own Special B® MD is specified at 270-350 EBC and 115.00 Lovibond, which agrees with Castle's 98.1-120.6 to within the width of either range. Two maltsters independently put this malt near 110 Lovibond; the stored 180 was not close to either. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-melanoidin",
@@ -519,7 +591,12 @@
    ],
    "description": "Intensifies malt aroma and red hues, mimicking the effect of decoction mashing.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: low",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® MELANOIDIN MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-biscuit",
@@ -542,7 +619,10 @@
    "description": "Lightly roasted for warm bread-crust and biscuit character.",
    "sourceUrl": "https://dingemansmout.be/malt/biscuit%C2%AE-50%C2%A0md",
    "attribution": "Dingemans's published typical analysis for Biscuit® 50 MD. Extract is specified as not less than 75.0% dry basis, which is 34.5 ppg. The stored 35 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 20 Lovibond (47-70 EBC, with a nominal 50 EBC quoted as 20.00 Lovibond), taken as printed, against a stored 23. Moisture is given as max 4.5%.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-victory",
@@ -564,7 +644,10 @@
    ],
    "description": "Toasted malt with a nutty, biscuity bite.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Victory-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-aromatic",
@@ -587,7 +670,10 @@
    "description": "Very malt-aromatic, boosts malt intensity in Belgian and malty styles.",
    "sourceUrl": "https://dingemansmout.be/malt/amber-aromatic%C2%AE-md",
    "attribution": "Dingemans's published typical analysis for Amber - Aromatic® MD. Extract is specified as not less than 79.0% dry basis, which is 36.3 ppg. The stored 33 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 20 Lovibond (40-60 EBC, with a nominal 50 EBC quoted as 20.00 Lovibond), taken as printed, against a stored 26. Moisture is given as max 4.5%.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-honey",
@@ -610,7 +696,10 @@
    "description": "Intensely sweet, honeyed malt with no actual honey; a little goes a long way.",
    "sourceUrl": "https://gambrinusmalting.com/gambrinus-honey-malt/",
    "attribution": "Gambrinus Malting's published typical analysis for Gambrinus Honey Malt. Colour is published as 15.3-22.7 Lovibond (39.4-59.1 EBC, 20-30 SRM), so the midpoint is 19.0, against a stored 25. Moisture is given as Max 5%.",
-   "sourceNote": "Gambrinus publish colour, moisture and protein for this malt but no extract figure at all, so the stored ppg of 37 remains unsourced curation. Their colour figures are internally consistent: 20-30 SRM converts to the 15.3-22.7 Lovibond they print, and to the 39.4-59.1 EBC. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "Gambrinus publish colour, moisture and protein for this malt but no extract figure at all, so the stored ppg of 37 remains unsourced curation. Their colour figures are internally consistent: 20-30 SRM converts to the 15.3-22.7 Lovibond they print, and to the 39.4-59.1 EBC. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-chocolate",
@@ -635,7 +724,10 @@
    "description": "Roasted to a smooth cocoa and coffee character; the colour backbone of porters.",
    "flavorNotes": "Cocoa, coffee, light roast bitterness.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Chocolate-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-black-patent",
@@ -658,7 +750,10 @@
    ],
    "description": "Maximum colour with a sharp, acrid roast. Use sparingly for colour correction or dry-stout bite.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Black-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-roasted-barley",
@@ -683,7 +778,10 @@
    "description": "Unmalted barley roasted dark — the defining sharp, coffee-like dryness of Irish dry stout.",
    "flavorNotes": "Espresso, dry roast, faint acidity.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Roasted-Barley.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-carafa-ii",
@@ -708,7 +806,12 @@
    "description": "Dehusked roasted malt: deep colour and cocoa without the astringent bite of husked roast malts.",
    "usageNotes": "The standard way to darken a beer smoothly — ideal for schwarzbier and black IPA.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAFA® TYPE 2"
   },
   {
    "id": "malt-smoked-beech",
@@ -722,7 +825,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 3,
-   "diastaticPowerLintner": 80,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -733,7 +836,11 @@
     "rauchbier"
    ],
    "description": "Kilned over beechwood for the classic Bamberg rauchbier smoke. Can be used as the whole base malt.",
-   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-beech-smoked-barley-malt-2/"
+   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-beech-smoked-barley-malt-2/",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® BEECH SMOKED BARLEY MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-peated",
@@ -757,7 +864,10 @@
    ],
    "description": "Peat-smoked malt — medicinal, earthy smoke. The signature of Islay whisky; use tiny amounts in beer.",
    "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2022/01/SPEC-Crisp-Premium-Peated-Malt.pdf",
-   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "unpublished",
+   "diastaticPowerNote": "Crisp's sheet for this malt carries no diastatic power."
   },
   {
    "id": "malt-brown",
@@ -781,7 +891,10 @@
    "description": "Dry, toasty, coffee-ish English malt central to historical porters.",
    "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/brown-malt/",
    "attribution": "Thomas Fawcett & Sons's published typical analysis for Brown Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 32 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 66-76 Lovibond (140-160 EBC by IoB, 175-200 EBC by the EBC method), so the midpoint is 71.0, against a stored 65.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-amber",
@@ -805,7 +918,10 @@
    "description": "Toasted English malt with a dry biscuit character for milds, browns, and porters.",
    "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/amber-malt/",
    "attribution": "Thomas Fawcett & Sons's published typical analysis for Amber Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 38-48 Lovibond (90-110 EBC by IoB, 110-140 EBC by the EBC method), so the midpoint is 43.0, against a stored 27.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-chit",
@@ -828,7 +944,9 @@
    ],
    "description": "Barely-germinated malt high in protein; improves foam and body, popular in hazy IPAs.",
    "withdrawnSourceUrl": "https://www.weyermann.de/en/chit-malt/",
-   "attribution": "Weyermann's current catalogue no longer lists Chit Malt in any locale — checked against their full sitemap, 119 product pages, none of them this malt. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement."
+   "attribution": "Weyermann's current catalogue no longer lists Chit Malt in any locale — checked against their full sitemap, 119 product pages, none of them this malt. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "unpublished"
   },
   {
    "id": "malt-caramunich-iii",
@@ -851,7 +969,12 @@
     "dubbel"
    ],
    "description": "German caramel malt with intense malty-sweet, light-raisin depth; the continental counterpart to English crystal.",
-   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-caramunich-type-3-2/"
+   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-caramunich-type-3-2/",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAMUNICH® TYPE 3"
   },
   {
    "id": "malt-carahell",
@@ -874,7 +997,12 @@
    ],
    "description": "Light German caramel malt for body and gentle sweetness in Helles, bock, and pale lagers.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAHELL®"
   },
   {
    "id": "malt-carared",
@@ -897,7 +1025,12 @@
    ],
    "description": "Adds a warm red-amber hue and light caramel to red ales and amber lagers.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARARED®"
   },
   {
    "id": "malt-carafa-i",
@@ -920,7 +1053,12 @@
    ],
    "description": "The lightest dehusked Carafa; smooth colour and mild cocoa without husk astringency.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAFA® TYPE 1"
   },
   {
    "id": "malt-golden-naked-oats",
@@ -943,7 +1081,10 @@
     "body"
    ],
    "description": "Huskless malted oat crystal malt; nutty, creamy, silky mouthfeel. A hazy-IPA and oatmeal favourite.",
-   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/special-malts/golden-naked-oats/"
+   "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/special-malts/golden-naked-oats/",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-oat-malt",
@@ -954,7 +1095,7 @@
    "origin": "United Kingdom",
    "ppg": 33,
    "colorLovibond": 2.8,
-   "diastaticPowerLintner": 40,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 40,
    "ppgBasis": "maltster",
    "uses": [
@@ -968,7 +1109,9 @@
    "description": "Malted (rather than flaked) oats — silky body with more enzyme than raw oats, easier to mash.",
    "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/oat-malt/",
    "attribution": "Thomas Fawcett & Sons's published typical analysis for Oat Malt. Extract is specified as not less than 60.0% dry basis, which is 27.6 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 2.3-3.3 Lovibond (4.0-6.0 EBC by IoB, 5.0-7.5 EBC by the EBC method), so the midpoint is 2.8, against a stored 2.",
-   "sourceNote": "Fawcett's extract figure is a floor and a distant one. They guarantee not less than 60.0% coarse-grind extract, which is 27.6 ppg, while the stored 33 implies 71.7%. The stored figure is not refuted - a minimum cannot refute anything above it - but the gap is wide enough to be worth knowing about, and Fawcett publish no typical value to close it. Oat malt genuinely runs low on extract because the husk is a large fraction of the grain. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "Fawcett's extract figure is a floor and a distant one. They guarantee not less than 60.0% coarse-grind extract, which is 27.6 ppg, while the stored 33 implies 71.7%. The stored figure is not refuted - a minimum cannot refute anything above it - but the gap is wide enough to be worth knowing about, and Fawcett publish no typical value to close it. Oat malt genuinely runs low on extract because the husk is a large fraction of the grain. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerBasis": "unpublished",
+   "diastaticPowerNote": "Thomas Fawcett's page says this malt \"has all the enzymes preserved to convert starch to sugar\" but publishes no figure; the 40 °Lintner this record used to hold was not in it."
   },
   {
    "id": "malt-abbey",
@@ -991,7 +1134,12 @@
    ],
    "description": "Malty, bready specialty malt with a hint of dark fruit for Belgian and strong ales.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: low",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® ABBEY MALT® (BISCUIT MALT)",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-cherrywood-smoked",
@@ -1002,7 +1150,7 @@
    "origin": "United States",
    "ppg": 37,
    "colorLovibond": 5,
-   "diastaticPowerLintner": 40,
+   "diastaticPowerLintner": 90.0,
    "maxBatchPct": 60,
    "ppgBasis": "maltster",
    "uses": [
@@ -1014,7 +1162,12 @@
    ],
    "description": "American malt smoked over cherrywood for a sweeter, fruitier smoke than beechwood.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Smoked-Malt-Cherry-Wood.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerPublished": "90",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "briess-pisb/malt-cherrywood-smoked",
+   "alphaAmylaseDu": 45.0
   },
   {
    "id": "malt-pale-chocolate",
@@ -1039,7 +1192,10 @@
    "description": "Lighter than full chocolate malt; deep colour with a softer, less acrid cocoa character.",
    "sourceUrl": "https://www.fawcett-maltsters.co.uk/malt/pale-chocolate-malt/",
    "attribution": "Thomas Fawcett & Sons's published typical analysis for Pale Chocolate Malt. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 29 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 200-260 Lovibond (450-550 EBC by IoB, 560-690 EBC by the EBC method), so the midpoint is 230.0, against a stored 225.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-pilsner-bestmalz",
@@ -1050,7 +1206,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 1.7,
-   "diastaticPowerLintner": 110,
+   "diastaticPowerLintner": 76.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1062,7 +1218,11 @@
     "base"
    ],
    "description": "BestMalz's continental Pilsner base — clean, pale, and honeyed, a widely-used alternative to Weyermann.",
-   "sourceUrl": "https://bestmalz.de/en/malts/best-pilsen-malt/"
+   "sourceUrl": "https://bestmalz.de/en/malts/best-pilsen-malt/",
+   "diastaticPowerPublished": "250 WK",
+   "diastaticPowerUnit": "wk",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "bestmalz/best-pilsen-malt"
   },
   {
    "id": "malt-heidelberg",
@@ -1073,7 +1233,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 1.5,
-   "diastaticPowerLintner": 90,
+   "diastaticPowerLintner": 76.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1087,7 +1247,11 @@
    "description": "A lightly-kilned Munich-adjacent base malt giving gentle malt depth without darkening much.",
    "sourceUrl": "https://bestmalz.de/en/malts/best-heidelberg/",
    "attribution": "BESTMALZ's published specification for BEST Heidelberg. Extract on dry substance is given as not less than 80.5%, which on this project's 46-point scale is 37.0 ppg; the stored 37 sits at that minimum and is unchanged. Wort colour is given as a maximum of 2.9 EBC / 1.5 Lovibond, so the stored 3 has been brought to the maltster's ceiling of 1.5. Diastatic power is specified as not less than 250 WK, which is about 76 degrees Lintner, and the stored 90 sits above that floor. Moisture max 4.9%, protein 9-11.5% dry basis, Kolbach index 36-43%.",
-   "sourceNote": "Almost everything BESTMALZ publish here is a one-sided limit rather than a typical value - a maximum for moisture and colour, a minimum for extract and diastatic power - so the figures bound this record rather than describe an average bag. Colour is set to their maximum because it is the only colour number they give. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance."
+   "sourceNote": "Almost everything BESTMALZ publish here is a one-sided limit rather than a typical value - a maximum for moisture and colour, a minimum for extract and diastatic power - so the figures bound this record rather than describe an average bag. Colour is set to their maximum because it is the only colour number they give. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance.",
+   "diastaticPowerPublished": "250 WK",
+   "diastaticPowerUnit": "wk",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "bestmalz/best-heidelberg"
   },
   {
    "id": "malt-marris-otter-crisp-extra-pale",
@@ -1098,7 +1262,7 @@
    "origin": "United Kingdom",
    "ppg": 38,
    "colorLovibond": 2,
-   "diastaticPowerLintner": 120,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1111,7 +1275,9 @@
    ],
    "description": "A paler-kilned Maris Otter keeping the biscuity depth while allowing very pale beers.",
    "sourceUrl": "https://rahrbsg.ca/wp-content/uploads/2021/12/crisp_ExtraPaleMarisOtterMalt.pdf",
-   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read."
+   "attribution": "Crisp publishes this malt's specification as a PDF distributed by RahrBSG, carrying moisture, soluble extract and colour in EBC. Preferred over the crispmalt.com page: the peated-malt URL 404s and the others were only the site root. Sheet retrieved and read.",
+   "diastaticPowerBasis": "unpublished",
+   "diastaticPowerNote": "Crisp's sheet for this malt carries no diastatic power; the 120 °Lintner this record used to hold was not in it."
   },
   {
    "id": "malt-vienna-castle",
@@ -1122,7 +1288,7 @@
    "origin": "Belgium",
    "ppg": 36.8,
    "colorLovibond": 2.7,
-   "diastaticPowerLintner": 65,
+   "diastaticPowerLintner": 76.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1136,7 +1302,11 @@
    "description": "Belgian Vienna base malt; toasty-golden with a soft sweetness for amber and Belgian styles.",
    "sourceUrl": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=176&Language=English&FileType=HTML",
    "attribution": "Castle Malting's published typical analysis for Château Vienna®, crop year 2025. Extract is specified as not less than 80.0% dry basis, which is 36.8 ppg. The stored 36 was below the maltster's own guaranteed minimum and has been raised to it. Colour is published as 2.1-3.2 Lovibond (4-7 EBC), so the midpoint is 2.7, against a stored 4. Moisture is given as max 4.5%.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerPublished": "250 WK",
+   "diastaticPowerUnit": "wk",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "castle-malting/chateau-vienna"
   },
   {
    "id": "malt-cara-belge",
@@ -1160,7 +1330,12 @@
    "description": "Belgian caramel malt for body and a light amber-caramel note in Belgian ales.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2021/01/Weyermann%C2%AE-CARABELGE%C2%AE_Specification-1.pdf",
    "attribution": "Weyermann's published typical analysis for Weyermann® CARABELGE®, crop 2025. Extract is specified as not less than 74.0% dry basis, which is 34.0 ppg. The stored 34 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 11.8-13.6 Lovibond (30-35 EBC), so the midpoint is 12.7, against a stored 22. Moisture is given as max 9%.",
-   "sourceNote": "This record was pointing at the wrong maltster. CARABELGE® is a registered trademark of Mich. Weyermann GmbH & Co. KG of Bamberg, and the record's name, \"Château CaraBelge\", fuses Weyermann's mark with Castle Malting's Château prefix to make a product nobody sells. Castle's current catalogue has no CaraBelge at all - their caramel range is Cara Blond, Cara Ruby, Cara Gold, Cara Arome, Cara Honey, Cara Crystal, Cara Terra, Cara Cafe and Cara Ultra 60 and 150. The record now cites Weyermann's own product specification and the name has been corrected. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "This record was pointing at the wrong maltster. CARABELGE® is a registered trademark of Mich. Weyermann GmbH & Co. KG of Bamberg, and the record's name, \"Château CaraBelge\", fuses Weyermann's mark with Castle Malting's Château prefix to make a product nobody sells. Castle's current catalogue has no CaraBelge at all - their caramel range is Cara Blond, Cara Ruby, Cara Gold, Cara Arome, Cara Honey, Cara Crystal, Cara Terra, Cara Cafe and Cara Ultra 60 and 150. The record now cites Weyermann's own product specification and the name has been corrected. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARABELGE®"
   },
   {
    "id": "malt-crystal-rye",
@@ -1182,7 +1357,12 @@
     "spicy"
    ],
    "description": "Caramelised rye malt combining crystal sweetness with rye's dry spice.",
-   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-cararye-5/"
+   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-cararye-5/",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARARYE®"
   },
   {
    "id": "malt-midnight-wheat",
@@ -1206,7 +1386,10 @@
    ],
    "description": "The wheat-based counterpart to Carafa; maximum colour with an exceptionally smooth, low-astringency roast for black IPAs and porters.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Midnight-Wheat-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-extra-special",
@@ -1229,7 +1412,10 @@
    ],
    "description": "Dark caramel malt with intense raisin and dark-fruit notes, akin to Special B.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Extra-Special-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-brown-crisp",
@@ -1252,7 +1438,10 @@
     "coffee"
    ],
    "description": "Crisp's dry, coffee-and-toast brown malt for historical porters and milds.",
-   "sourceUrl": "https://crispmalt.com/malts/brown-malt/"
+   "sourceUrl": "https://crispmalt.com/malts/brown-malt/",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-lager-rahr",
@@ -1281,7 +1470,9 @@
    "usageNotes": "Rahr's own note: high proportions of 6-row may require a protein rest in the mash. The enzyme surplus is the point — it is what lets a grist carry a large fraction of wheat malt, specialty malt or unmalted corn, rice or oats.",
    "sourceUrl": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-6-Row.pdf",
    "attribution": "Rahr Malting Co.'s own \"Info Sheet\" for Rahr 6-Row, linked from its product page at rahrmaltingco.com/rahr-standard-6-row/. Both were fetched; the page's h1 reads \"Rahr Standard 6-Row\" and the sheet's title block reads \"Rahr 6-Row\", so this is the maltster's document for this malt and not a near neighbour. Published analysis: Extract FG Min 79, Color (SRM) 2.1-2.6, Moisture % Max 4.2, Protein Total 12.0 ± 1.5, Usage Rate up to 100%. Colour here is the midpoint of the published band. PPG is the published minimum fine-grind extract converted at 46.2 points per pound-gallon (pure sucrose): 79% of 46.2 is 36.5, and 36 is kept as the conservative floor, since 79 is a guaranteed minimum rather than a typical.",
-   "sourceNote": "Diastatic power has been REMOVED from this record rather than re-cited. It previously read 140 °Lintner with nothing behind it, and Rahr does not publish a figure for this malt: neither the product page nor the info sheet carries one, though both say the malt has high enzymatic power, and Rahr does print Diastatic Power >110 °L on the equivalent 2-Row sheet. An industry-wide number was not substituted for the maltster's silence — the American Malting Barley Association's Malting Barley Breeding Guidelines (Ideal Commercial Malt Criteria, revised April 2025) were checked and are now two-row only, carrying adjunct-brewing, all-malt and grain-distilling columns with no six-row column at all.\n\nThe previous citation, rahrmalting.com, is dead: it answers every path with a 114-byte script redirecting to /lander, which carries no text. That domain is not the company's site. Rahr Malting Co. publishes at rahrmaltingco.com, which lists every malt with an analysis table and a per-product info-sheet PDF; its product sitemap is at rahrmaltingco.com/product-sitemap.xml. Finding it required nothing more than looking, and this note records where it is so that the next person does not repeat the search that produced the dead link."
+   "sourceNote": "Diastatic power has been REMOVED from this record rather than re-cited. It previously read 140 °Lintner with nothing behind it, and Rahr does not publish a figure for this malt: neither the product page nor the info sheet carries one, though both say the malt has high enzymatic power, and Rahr does print Diastatic Power >110 °L on the equivalent 2-Row sheet. An industry-wide number was not substituted for the maltster's silence — the American Malting Barley Association's Malting Barley Breeding Guidelines (Ideal Commercial Malt Criteria, revised April 2025) were checked and are now two-row only, carrying adjunct-brewing, all-malt and grain-distilling columns with no six-row column at all.\n\nThe previous citation, rahrmalting.com, is dead: it answers every path with a 114-byte script redirecting to /lander, which carries no text. That domain is not the company's site. Rahr Malting Co. publishes at rahrmaltingco.com, which lists every malt with an analysis table and a per-product info-sheet PDF; its product sitemap is at rahrmaltingco.com/product-sitemap.xml. Finding it required nothing more than looking, and this note records where it is so that the next person does not repeat the search that produced the dead link.",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "unpublished"
   },
   {
    "id": "malt-carapils-weyermann",
@@ -1302,7 +1493,12 @@
     "head-retention"
    ],
    "description": "Weyermann's dextrine malt — body and foam stability with negligible colour or flavour.",
-   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-carafoam/"
+   "sourceUrl": "https://www.weyermann.de/en-us/product/weyermann-carafoam/",
+   "diastaticPowerLintner": null,
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: low",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAPILS®",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-caraaroma",
@@ -1325,7 +1521,12 @@
    ],
    "description": "Intense dark caramel malt; raisin and dark berry with a deep red hue.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAAROMA®"
   },
   {
    "id": "malt-carawheat",
@@ -1348,7 +1549,12 @@
    ],
    "description": "Caramelised wheat malt for colour, body and a bready-caramel note in wheat beers.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0.0,
+   "diastaticPowerPublished": "Enzyme activity: none",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published-zero",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® CARAWHEAT®"
   },
   {
    "id": "malt-sinamar",
@@ -1393,7 +1599,10 @@
    ],
    "description": "Roasted rye — dry cocoa with rye's characteristic pepper. Excellent in roggenbier and dark rye ales.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-crisp-crystal-77",
@@ -1417,7 +1626,10 @@
    "description": "Classic English medium-dark crystal; rich toffee and dried fruit for bitters and old ales.",
    "sourceUrl": "https://crispmalt.com/en-us/malts/crystal-77l/",
    "attribution": "Crisp Malt's published typical analysis for Crystal 77L Malt. Extract is 71.5% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 32.9, against a stored 34. Colour is published as 94-110 Lovibond (225-265 EBC by IoB, 247-291 EBC by the EBC method), so the midpoint is 102.0, against a stored 77. Moisture is given as 3.5% max.",
-   "sourceNote": "The malt's own name disagrees with its maker's analysis and the analysis wins. Crisp sell this as Crystal 77L, and the stored colour was that 77; their typical analysis says 94-110 Lovibond. Their table is internally consistent - the Lovibond column is a correct conversion of the EBC column beside it, 247-291 EBC being 94-110 Lovibond - and the same offset appears on Crystal Extra Dark 120L, specified at 158-181 Lovibond. Crystal Light 45L (38-46) and Crystal 60L (61-69) do match their names, so this is not a systematic error in Crisp's tables; the darker two appear to be named to US market convention rather than to their own analysis. Brew to 102, not 77. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The malt's own name disagrees with its maker's analysis and the analysis wins. Crisp sell this as Crystal 77L, and the stored colour was that 77; their typical analysis says 94-110 Lovibond. Their table is internally consistent - the Lovibond column is a correct conversion of the EBC column beside it, 247-291 EBC being 94-110 Lovibond - and the same offset appears on Crystal Extra Dark 120L, specified at 158-181 Lovibond. Crystal Light 45L (38-46) and Crystal 60L (61-69) do match their names, so this is not a systematic error in Crisp's tables; the darker two appear to be named to US market convention rather than to their own analysis. Brew to 102, not 77. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-crisp-chocolate",
@@ -1441,7 +1653,10 @@
    "description": "English chocolate malt, darker than the US equivalent — smooth cocoa and coffee for porters and stouts.",
    "sourceUrl": "https://crispmalt.com/malts/chocolate-malt/",
    "attribution": "Crisp Malt's published typical analysis for Chocolate Malt. Extract is 72.0% dry basis in their typical analysis, and this project's scale is 46 x extract, so ppg is 33.1, against a stored 28. Colour is published as 353-436 Lovibond (850-1050 EBC by IoB, 930-1155 EBC by the EBC method), so the midpoint is 394.5, against a stored 420. Moisture is given as 2.0% max.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-simpsons-double-roasted",
@@ -1465,7 +1680,10 @@
    "description": "Crystal malt roasted twice; burnt sugar, treacle and dark fruit. Distinctive in English strong ales.",
    "sourceUrl": "https://www.simpsonsmalt.co.uk/our-malts/crystal-malts/simpsons-drc/",
    "attribution": "Simpsons Malt's published typical analysis for Simpsons DRC®. Extract is specified as not less than 70.0% dry basis, which is 32.2 ppg. The stored 33 already sits above that minimum, so the specification bounds it without changing it. Colour is published as 105-120 Lovibond (280-320 EBC by IoB, 308-352 EBC by the EBC method), so the midpoint is 112.5, against a stored 140. Moisture is given as 5% max.",
-   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document."
+   "sourceNote": "The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance, and where a diastatic power is stored it is not from this document.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-briess-bonlander",
@@ -1476,7 +1694,7 @@
    "origin": "United States",
    "ppg": 36,
    "colorLovibond": 10,
-   "diastaticPowerLintner": 40,
+   "diastaticPowerLintner": 60.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1489,7 +1707,12 @@
    ],
    "description": "American Munich malt with enough diastatic power to convert itself; deep bready malt character.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Bonlander-Munich-Malt-10L.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerPublished": "60",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "briess-pisb/malt-briess-bonlander",
+   "alphaAmylaseDu": 35.0
   },
   {
    "id": "malt-briess-special-roast",
@@ -1512,7 +1735,10 @@
    ],
    "description": "Toasted malt with a sharp biscuit-and-tang character; a signature of some American brown and amber ales.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Special-Roast-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-blackprinz",
@@ -1536,7 +1762,10 @@
    ],
    "description": "Dehusked black malt: maximum colour with almost no astringency or roast bitterness — colour without character.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Blackprinz-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-vienna-briess",
@@ -1547,7 +1776,7 @@
    "origin": "United States",
    "ppg": 36,
    "colorLovibond": 3.5,
-   "diastaticPowerLintner": 60,
+   "diastaticPowerLintner": 95.0,
    "maxBatchPct": 100,
    "ppgBasis": "maltster",
    "uses": [
@@ -1560,7 +1789,12 @@
    ],
    "description": "American Vienna base malt; light toast and golden colour.",
    "sourceUrl": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Goldpils-Vienna-Malt.pdf",
-   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written."
+   "attribution": "Briess retired briess.com/malt/<slug> (all 404) and its replacement brewingwithbriess.com/product/<slug>/ 301s to the catalogue rather than a product page — so the citation now points at the Product Information & Specification Bulletin PDF, which is the actual primary datasheet and carries the typical analysis: extract dry basis, colour in SRM, moisture, protein and diastatic power in Lintner. Each PDF was fetched and confirmed before being written.",
+   "diastaticPowerPublished": "95",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "briess-pisb/malt-vienna-briess",
+   "alphaAmylaseDu": 45.0
   },
   {
    "id": "malt-dextrapils",
@@ -1584,7 +1818,10 @@
    "description": "German dextrine malt for foam and mouthfeel in pale lagers.",
    "sourceUrl": "https://bestmalz.de/en/malts/best-caramel-pils/",
    "attribution": "BESTMALZ's published specification for BEST Caramel® Pils. Extract on dry substance is given as not less than 75.0%, which is 34.5 ppg; the stored 33 was below the maltster's own guaranteed minimum and has been raised to it. Wort colour is given as 3.0-7.0 EBC / 1.6-3.1 Lovibond, so the midpoint is 2.35 against a stored 2. Moisture max 4.5%, protein max 12.0% dry basis, wort pH 5.0-5.8.",
-   "sourceNote": "The record's name needs explaining. Carapils® is a Weyermann registered trademark (and separately a Briess one in the US), so \"Carapils DE\" is not a BESTMALZ product name. BEST Caramel® Pils is their malt of that type, and their own description matches what the record is for - it gives \"more full-bodiedness without intensifying their colour\" because the caramel sugars in it cannot be fermented. Its 3.0-7.0 EBC also matches the class. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance."
+   "sourceNote": "The record's name needs explaining. Carapils® is a Weyermann registered trademark (and separately a Briess one in the US), so \"Carapils DE\" is not a BESTMALZ product name. BEST Caramel® Pils is their malt of that type, and their own description matches what the record is for - it gives \"more full-bodiedness without intensifying their colour\" because the caramel sugars in it cannot be fermented. Its 3.0-7.0 EBC also matches the class. The maltster backs extract and colour and nothing else on this record. The maximum batch percentage is this project's own guidance.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "process-zero",
+   "diastaticPowerNote": "Its maltster prints no diastatic power for this malt, and for a malt stewed in the husk or roasted this is the expected omission rather than a gap: the enzymes are denatured by the heat that makes the colour and flavour, which is why crystal and roasted malts are steeped or mashed for extract and never relied on to convert anything. Recorded as zero so that a grist calculation counts its weight against the enzyme supply instead of ignoring it. Any residual activity in the more lightly kilned members of this group is small and unmeasured here, so zero is the conservative figure, not a precise one."
   },
   {
    "id": "malt-spelt",
@@ -1595,7 +1832,7 @@
    "origin": "Germany",
    "ppg": 37,
    "colorLovibond": 2,
-   "diastaticPowerLintner": 60,
+   "diastaticPowerLintner": null,
    "maxBatchPct": 40,
    "ppgBasis": "maltster",
    "uses": [
@@ -1608,7 +1845,11 @@
    ],
    "description": "Malted spelt — an ancient wheat relative giving a silky body and a delicate nutty note.",
    "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
-   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written."
+   "attribution": "Weyermann retired weyermann.de/en/<product>/ (all 404) and its replacement /en-gb/ product pages are JavaScript-rendered, so the citation is the Weyermann Specialty Malts brewery products catalogue PDF (Crop 2025), which carries the per-malt typical analysis: moisture, extract on dry substance, and colour in both EBC and Lovibond. The product was confirmed present in the catalogue before this citation was written.",
+   "diastaticPowerBasis": "published-qualitative",
+   "diastaticPowerPublished": "Enzyme activity: high",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® SPELT MALT",
+   "diastaticPowerNote": "Weyermann publishes no diastatic power for this malt. Exactly one page in its 63-page brewery catalogue carries a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt — and the per-product PRODUCT SPECIFICATION PDFs stop at viscosity too. What Weyermann does state is the qualitative line above. This record previously held a °Lintner figure that appears in none of those documents; it has been removed rather than converted, because there was nothing to convert from."
   },
   {
    "id": "malt-emmer",
@@ -1631,7 +1872,168 @@
    ],
    "description": "Malted emmer, one of the oldest cultivated wheats; earthy and nutty, used in historical and specialty brewing.",
    "withdrawnSourceUrl": "https://www.weyermann.de/en/emmer-malt/",
-   "attribution": "Weyermann's current catalogue no longer lists Emmer Malt in any locale — checked against their full sitemap, 119 product pages, none of them this malt. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement."
+   "attribution": "Weyermann's current catalogue no longer lists Emmer Malt in any locale — checked against their full sitemap, 119 product pages, none of them this malt. The figures below are the maker's own, taken from that page while it was up. They are kept, with the withdrawn URL recorded, rather than deleted or re-pointed at a homepage that would look live while supporting nothing. Treat them as unverifiable until the maker publishes a replacement.",
+   "diastaticPowerBasis": "withdrawn-source",
+   "diastaticPowerNote": "This figure comes from the maker's own page, recorded before that page was withdrawn — see withdrawnSourceUrl and the attribution. It is kept rather than deleted, but nothing currently published supports it, so it must not be treated as checkable."
+  },
+  {
+   "id": "malt-rahr-high-dp-distillers",
+   "name": "High DP Distillers Malt",
+   "brand": "Rahr",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 35,
+   "colorLovibond": 2.75,
+   "diastaticPowerLintner": 220,
+   "diastaticPowerAtLeast": true,
+   "diastaticPowerPublished": ">220 L",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "rahr-2026/Rahr High DP Distillers Malt",
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "distilling",
+    "high-enzyme",
+    "adjunct-friendly",
+    "base"
+   ],
+   "description": "Rahr's distilling malt, kilned to keep the enzymes: over 220 °Lintner, roughly twice a standard 2-row. The malt you reach for when the mash is mostly corn.",
+   "usageNotes": "The point of it is converting somebody else's starch. At 220 °Lintner a 10% charge carries about 22 °Lintner across the whole grist on its own, which is why bourbon mash bills can run 70-80% corn and still convert.",
+   "sourceUrl": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-High-DP-Distillers-Malt.pdf",
+   "attribution": "Rahr Malting Co.'s own info sheet for High DP Distillers Malt, which prints Diastatic Power >220 L, Color (SRM) 2.5-3.0, Moisture % Max 6.5, Protein Total <15.0 and Usage Rate up to 100%. Colour here is the midpoint of the sheet's band. PPG is derived from the extract published on the product page (Extract FG Min 76) at 46.2 points per pound-gallon: 76% of 46.2 is 35.1.",
+   "sourceNote": "Rahr's product page and Rahr's own info sheet for this malt do not agree, and rather than quietly pick one, both are recorded. They agree exactly on the figure that matters here — Diastatic Power >220 L — and on usage rate. They differ on colour (page 2.6-3.3 SRM, sheet 2.5-3.0) and on moisture (page max 4.5%, sheet max 6.5%). The sheet's figures are the ones stored, because the sheet is the analysis document. Extract appears only on the page, and protein only on the sheet, so neither document alone supports this record.",
+   "additionalSources": [
+    {
+     "url": "https://rahrmaltingco.com/rahr-high-dp-distillers-malt/",
+     "supports": "Extract FG Min 76, which the info sheet does not print and from which the ppg on this record is derived.",
+     "doesNotSupport": "Colour and moisture, where it disagrees with Rahr's own info sheet — it prints 2.6-3.3 SRM and max 4.5% moisture against the sheet's 2.5-3.0 and max 6.5%. The sheet's figures are stored."
+    }
+   ],
+   "sortOrder": 1
+  },
+  {
+   "id": "malt-rahr-gn-zero-high-enzyme",
+   "name": "GN Zero High Enzyme Distillers Malt",
+   "brand": "Rahr",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": 36,
+   "colorLovibond": 2.05,
+   "diastaticPowerLintner": 250,
+   "diastaticPowerMin": 200,
+   "diastaticPowerMax": 300,
+   "diastaticPowerPublished": "200 - 300 °L",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "rahr-2026/Rahr GN Zero™ High Enzyme Distillers Malt",
+   "alphaAmylaseDu": 80,
+   "maxBatchPct": 100,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "distilling",
+    "high-enzyme",
+    "bourbon",
+    "base"
+   ],
+   "description": "The highest diastatic power in this catalogue at 200-300 °Lintner, malted to hold glycosidic nitrile below 0.5 g/tonne — Rahr's answer to ethyl carbamate control in bourbon.",
+   "usageNotes": "Two jobs at once: enzyme supply for a heavily adjuncted mash, and a low-GN malt for distillers working to reduce ethyl carbamate in the spirit. Alpha amylase is published separately at >80 DU, which is the figure that matters for liquefying a cereal mash.",
+   "sourceUrl": "https://rahrmaltingco.com/wp-content/uploads/2025/07/Rahr-GN-Zero-High-Enzyme-Distillers-Malt-Spec-Sheet.pdf",
+   "attribution": "Rahr Malting Co.'s own spec sheet for GN Zero High Enzyme Distillers Malt, which prints Diastatic Power (DP) 200 - 300 °L, Alpha Amylase (DU) >80, Extract FG Min 78, Protein Total <15%, Moisture % Max <6.5% and GN (g/tonne) <0.5 ppm. Diastatic power here is the midpoint of the published band. PPG is the published minimum extract at 46.2 points per pound-gallon: 78% of 46.2 is 36.0.",
+   "sourceNote": "Colour is not on the spec sheet. It comes from Rahr's product page for the same malt, which prints Color °Lovibond 1.8 - 2.3; the stored 2.05 is that band's midpoint.",
+   "additionalSources": [
+    {
+     "url": "https://rahrmaltingco.com/rahr-gn-zero-high-enzyme-distillers-malt/",
+     "supports": "Color °Lovibond 1.8 - 2.3, which the spec sheet does not print.",
+     "doesNotSupport": "The diastatic power, extract, protein, moisture and glycosidic-nitrile figures, which are taken from the spec sheet itself."
+    }
+   ],
+   "sortOrder": 2
+  },
+  {
+   "id": "malt-weyermann-diastatic",
+   "name": "Diastatic Barley Malt",
+   "brand": "Weyermann",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "Germany",
+   "ppg": 36,
+   "colorLovibond": 1.7,
+   "diastaticPowerLintner": 90.3,
+   "diastaticPowerAtLeast": true,
+   "diastaticPowerPublished": "min. 300 WK",
+   "diastaticPowerUnit": "wk",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "weyermann-catalogue-2025/WEYERMANN® DIASTATIC BARLEY MALT",
+   "maxBatchPct": 60,
+   "ppgBasis": "maltster",
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "distilling",
+    "high-enzyme",
+    "german",
+    "base"
+   ],
+   "description": "Weyermann's enzyme supplier — the one malt in their brewery catalogue for which they publish a diastatic power at all, at min 300 WK. Sold for whisky, grain spirit and grain vodka.",
+   "usageNotes": "Weyermann recommend up to 60%. Their own description is unusually direct about what it is for: \"the natural and highly effective enzyme supplier for any application that requires large amounts of amylolytic enzymes\".",
+   "sourceUrl": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "attribution": "Weyermann's brewery products catalogue (Crop 2025), page 49 of the PDF. Published analysis: Diastatic power min 300 WK, Extract (dry substance) min 78%, Color 2.5-4 EBC / 1.4-2 Lovibond, Moisture max 7%, Protein 9-12.5%, Kolbach Index 38-45%, Saccharification time max 15 min, Friability min 78%. Colour here is the midpoint of the published Lovibond band. PPG is the published minimum extract at 46.2 points per pound-gallon: 78% of 46.2 is 36.0. The diastatic power is converted from Weyermann's WK figure by (WK + 16) / 3.5 = 90.3 °Lintner — the relation verified in data/fermentables/maltster-specs.json against Simpsons, who publish both scales for the same malt.",
+   "sourceNote": "This is the only malt in Weyermann's 63-page brewery catalogue that carries a \"Diastatic power\" row. Every other Weyermann malt in this catalogue records the qualitative \"Enzyme activity\" line instead, because that is all Weyermann publishes for them.",
+   "sortOrder": 3,
+   "diastaticPowerMin": 300
+  },
+  {
+   "id": "malt-gwm-high-enzyme",
+   "name": "High-Enzyme Malt",
+   "brand": "Great Western",
+   "category": "base-malt",
+   "type": "grain",
+   "origin": "United States",
+   "ppg": null,
+   "colorLovibond": 1.85,
+   "diastaticPowerLintner": 260,
+   "diastaticPowerPublished": "260",
+   "diastaticPowerUnit": "lintner",
+   "diastaticPowerBasis": "published",
+   "diastaticSpecSource": "great-western-sell-sheets/high-enzyme-malt",
+   "alphaAmylaseDu": 110,
+   "maxBatchPct": 100,
+   "uses": [
+    "beer",
+    "whiskey"
+   ],
+   "styleTags": [
+    "distilling",
+    "high-enzyme",
+    "bourbon",
+    "base"
+   ],
+   "description": "Great Western's distilling malt, and the highest alpha amylase published anywhere in this catalogue at 110 DU alongside 260 °Lintner.",
+   "usageNotes": "Alpha amylase is what liquefies a cereal mash, and on a bourbon bill running mostly gelatinised corn it is usually the binding constraint rather than total diastatic power. Great Western publish both, which few maltsters do.",
+   "sourceUrl": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM_SellSheets_Distilling-High-Enzyme.pdf",
+   "attribution": "Great Western Malting's own sell sheet for High-Enzyme Malt, which prints DIASTATIC POWER 260, ALPHA AMYLASE (DU) 110 and MOISTURE (%) 5.5. Colour and protein come from the product page, which prints Color SRM 1.5-2.2 and Protein 14; the stored colour is that band's midpoint.",
+   "sourceNote": "This record carries NO ppg, and that is deliberate rather than an oversight. Great Western publishes no extract figure for this malt — not on the sell sheet, not on the product page — so there is nothing to derive one from, and a plausible number would be an invention. A recipe using this malt will therefore under-count its gravity contribution; the builder warns when an ingredient on the mash path has no extract figure, so that the gap is visible rather than silent.",
+   "additionalSources": [
+    {
+     "url": "https://www.greatwesternmalting.com/product/high-enzyme-malt/",
+     "supports": "Color SRM 1.5-2.2 and Protein 14, which the sell sheet does not print.",
+     "doesNotSupport": "Extract. Neither this page nor the sell sheet publishes one, which is why this record has no ppg."
+    }
+   ],
+   "sortOrder": 4
   }
  ]
 }

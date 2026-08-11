@@ -30,7 +30,12 @@ const DDL = [
     "ppg" DOUBLE PRECISION, "yieldPct" DOUBLE PRECISION, "colorLovibond" DOUBLE PRECISION,
     "requiresConversion" BOOLEAN NOT NULL DEFAULT FALSE,
     "requiresGelatinization" BOOLEAN NOT NULL DEFAULT FALSE,
-    "diastaticPowerLintner" DOUBLE PRECISION, "fermentabilityPct" DOUBLE PRECISION,
+    "diastaticPowerLintner" DOUBLE PRECISION,
+    "diastaticPowerMin" DOUBLE PRECISION, "diastaticPowerMax" DOUBLE PRECISION,
+    "diastaticPowerAtLeast" BOOLEAN NOT NULL DEFAULT FALSE,
+    "diastaticPowerPublished" TEXT, "diastaticPowerUnit" TEXT, "diastaticPowerBasis" TEXT,
+    "diastaticPowerNote" TEXT, "diastaticSpecSource" TEXT, "alphaAmylaseDu" DOUBLE PRECISION,
+    "fermentabilityPct" DOUBLE PRECISION,
     "maxBatchPct" DOUBLE PRECISION, "ppgBasis" TEXT,
     "servingSizeG" DOUBLE PRECISION, "totalCarbG" DOUBLE PRECISION, "fiberG" DOUBLE PRECISION,
     "uses" TEXT[] DEFAULT ARRAY[]::TEXT[], "styleTags" TEXT[] DEFAULT ARRAY[]::TEXT[],
@@ -95,7 +100,8 @@ const DDL = [
 ];
 
 const FERM_COLS = ["id","name","aliases","brand","category","type","origin","ppg","yieldPct","colorLovibond","requiresConversion","requiresGelatinization","diastaticPowerLintner","fermentabilityPct","maxBatchPct","ppgBasis","servingSizeG","totalCarbG","fiberG","uses","styleTags","description","flavorNotes","usageNotes","sourceUrl","withdrawnSourceUrl","sourceNote","additionalSources","unsourced","attribution","sortOrder",
-  "ppgMin","ppgMax","pfundColorMm","sugarGPer100g","sugarGPer100gMin","sugarGPer100gMax","juiceBrix","juiceBrixMin","juiceBrixMax","juiceYieldPct","moisturePct","titratableAcidityGPerL","titratableAcidityMinGPerL","titratableAcidityMaxGPerL","dominantAcid","phTypical","phMin","phMax","pectinLevel","tanninLevel","fruitGroup","species","grapeColor"];
+  "ppgMin","ppgMax","pfundColorMm","sugarGPer100g","sugarGPer100gMin","sugarGPer100gMax","juiceBrix","juiceBrixMin","juiceBrixMax","juiceYieldPct","moisturePct","titratableAcidityGPerL","titratableAcidityMinGPerL","titratableAcidityMaxGPerL","dominantAcid","phTypical","phMin","phMax","pectinLevel","tanninLevel","fruitGroup","species","grapeColor",
+  "diastaticPowerMin","diastaticPowerMax","diastaticPowerAtLeast","diastaticPowerPublished","diastaticPowerUnit","diastaticPowerBasis","diastaticPowerNote","diastaticSpecSource","alphaAmylaseDu"];
 
 const ADD_COLS = ["id","name","aliases","category","subtype","uses","doseMinGPerL","doseMaxGPerL","doseUnit","effectMetric","effectPerGramPerLitre","effectUnit","contactTime","description","usageNotes","cautions","sourceUrl","unsourced","attribution","sortOrder"];
 
@@ -119,6 +125,11 @@ function fermTuple(f, i, attribution) {
     lit(f.phTypical ?? null), lit(f.phMin ?? null), lit(f.phMax ?? null),
     lit(f.pectinLevel ?? null), lit(f.tanninLevel ?? null), lit(f.fruitGroup ?? null),
     lit(f.species ?? null), lit(f.grapeColor ?? null),
+    lit(f.diastaticPowerMin ?? null), lit(f.diastaticPowerMax ?? null),
+    lit(f.diastaticPowerAtLeast ?? false), lit(f.diastaticPowerPublished ?? null),
+    lit(f.diastaticPowerUnit ?? null), lit(f.diastaticPowerBasis ?? null),
+    lit(f.diastaticPowerNote ?? null), lit(f.diastaticSpecSource ?? null),
+    lit(f.alphaAmylaseDu ?? null),
   ].join(",") + ")";
 }
 

@@ -1,0 +1,848 @@
+{
+ "set": "Maltster-published diastatic power",
+ "note": "Every maltster figure behind data/fermentables, transcribed exactly as its publisher prints it, so that app/validate-diastatic.mjs can fail the build the moment a record disagrees with its own citation. This file exists because an audit found that 22 of the 23 diastatic-power figures this catalogue held were not the figure the cited document printed: seven differed from a number that was right there in the sheet, thirteen cited documents that carry no diastatic power at all, and two rested on withdrawn pages. Only Briess Brewers Malt matched. Nothing here is this project's opinion — where a maltster publishes no diastatic power, the malt is absent from this file rather than given a plausible one.",
+ "generated": "2026-08-11",
+ "units": {
+  "diastaticPower": "°Lintner, which is the same scale as °ASBC. Maltsters publish on three scales; the printed figure and its unit are kept verbatim and the °Lintner equivalent is derived, so the arithmetic can be checked.",
+  "alphaAmylase": "DU, dextrinizing units"
+ },
+ "conversions": {
+  "wkToLintner": "°L = (°WK + 16) / 3.5",
+  "iobToWk": "°WK = °IoB x 3.75",
+  "verifiedBy": "Not taken from a homebrewing blog, which is where this relation is usually found and which cannot support a number here. Simpsons Malt publishes diastatic power for the same malt on all three scales, which makes the relation checkable against a maltster's own analysis. Across their eight malts that carry a diastatic power there are 15 (WK, published °Lintner) pairs spanning 75-300 °WK, and (°WK + 16) / 3.5 reproduces every published °Lintner figure to within 0.4. The IoB relation is exact on all four points: 150/40, 244/65, 300/80 and 75/20 are all precisely 3.75."
+ },
+ "shape": "malts[sourceKey][product].diastaticPower is one of {value}, {min,max}, {min,atLeast:true} for a '>n' floor, or {max,atMost:true} for a '<n' ceiling, always alongside the verbatim `published` string and its `unit`. Figures published in WK or IoB also carry lintnerValue/lintnerMin/lintnerMax. statedInWords marks a zero a maltster asserted in prose rather than in its analysis table. enzymeActivity is Weyermann's qualitative line, which is all they publish for all but one malt.",
+ "sources": {
+  "rahr-2026": {
+   "publisher": "Rahr Malting Co.",
+   "title": "Rahr Malting Co. product pages and per-product info sheets",
+   "url": "https://rahrmaltingco.com/products/",
+   "kind": "maltster product pages, each with a downloadable info-sheet PDF",
+   "retrieved": "2026-08-11",
+   "unit": "lintner",
+   "read": "All 17 products enumerated from rahrmaltingco.com/product-sitemap.xml and fetched. Rahr prints diastatic power in °Lintner directly, so nothing here is converted. Six products carry no diastatic power and are recorded as absent rather than as zero."
+  },
+  "great-western-sell-sheets": {
+   "publisher": "Great Western Malting",
+   "title": "Great Western Malting sell sheets (typical analysis)",
+   "url": "https://www.greatwesternmalting.com/products/",
+   "kind": "maltster sell sheets, one PDF per product",
+   "retrieved": "2026-08-11",
+   "unit": "lintner",
+   "read": "19 products enumerated from product-sitemap.xml; each product page's linked sell sheet was downloaded and read. Extracted with poppler's layout mode, NOT pdfminer: pdfminer drops the row labels on these sheets and leaves a bare column of numbers, which is exactly how a value gets attached to the wrong label. Four sheets were then read by eye against the parse. Nine sheets carry no diastatic power row."
+  },
+  "briess-pisb": {
+   "publisher": "Briess Malt & Ingredients Co.",
+   "title": "Briess Product Information & Specification Bulletins",
+   "url": "https://brewingwithbriess.com/products/",
+   "kind": "maltster specification bulletins, one PDF per product",
+   "retrieved": "2026-08-11",
+   "unit": "lintner",
+   "read": "The 17 bulletins this catalogue already cites were re-read. Four print \"Diastatic Power (Lintner)\" and \"Alpha Amylase\"; the other thirteen — the caramel and roasted range — print no diastatic power row at all. Carapils is the one that says so in words: \"Devoid of enzymes and can be steeped in hot water or mashed\"."
+  },
+  "simpsons-malt": {
+   "publisher": "Simpsons Malt Ltd",
+   "title": "Simpsons Malt product pages — IoB, ASBC and EBC analyses",
+   "url": "https://www.simpsonsmalt.co.uk/our-malts/",
+   "kind": "maltster product pages",
+   "retrieved": "2026-08-11",
+   "unit": "lintner",
+   "read": "46 malt pages enumerated from sitemap.xml. Simpsons is the reason the unit conversion in this file can be checked rather than asserted: it publishes diastatic power for the same malt on all three scales at once. Eight malts carry a diastatic power; the specialty range does not."
+  },
+  "bestmalz": {
+   "publisher": "BESTMALZ (Palatia Malz GmbH)",
+   "title": "BESTMALZ malt specifications",
+   "url": "https://bestmalz.de/en/bestmalz-bestmalts-the-best-in-beer/",
+   "kind": "maltster product pages",
+   "retrieved": "2026-08-11",
+   "unit": "wk",
+   "read": "Both malts this catalogue cites were re-read. BESTMALZ prints \"Diastatic Power 250 WK\"."
+  },
+  "castle-malting": {
+   "publisher": "Castle Malting (Château Malts)",
+   "title": "Castle Malting malt specifications",
+   "url": "https://www.castlemalting.com/",
+   "kind": "maltster specification pages",
+   "retrieved": "2026-08-11",
+   "unit": "wk",
+   "read": "Château Vienna's specification page prints \"Diastatic power WK 250\"."
+  },
+  "weyermann-catalogue-2025": {
+   "publisher": "Mich. Weyermann GmbH & Co. KG",
+   "title": "Weyermann® Specialty Malts — Brewery products catalogue, Crop 2025",
+   "url": "https://www.weyermann.de/wp-content/uploads/2023/05/WEYERMANN-PRODUCTS-Brewery-EN.pdf",
+   "kind": "maltster product catalogue",
+   "retrieved": "2026-08-11",
+   "unit": "wk",
+   "read": "All 63 pages read by geometry. THE FINDING THAT MATTERS: exactly one page in the whole catalogue prints a \"Diastatic power\" row — Weyermann® Diastatic Barley Malt, min 300 WK. Every other malt's analysis table stops at viscosity, friability and glassy kernels. The per-product PRODUCT SPECIFICATION PDFs on weyermann.de carry no diastatic power either. What Weyermann does publish for every malt is a qualitative line, \"Enzyme activity: none | low | medium | high\", recorded below. Twenty-six malts are stated to have none, which is a published zero and is used as one."
+  }
+ },
+ "malts": {
+  "rahr-2026": {
+   "Rahr High DP Distillers Malt": {
+    "slug": "rahr-high-dp-distillers-malt",
+    "url": "https://rahrmaltingco.com/rahr-high-dp-distillers-malt/",
+    "diastaticPower": {
+     "published": ">220 L",
+     "unit": "lintner",
+     "min": 220.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-High-DP-Distillers-Malt.pdf"
+   },
+   "Rahr The Brewer’s Standard™ 2-Row": {
+    "slug": "rahr-the-brewers-standard-2-row",
+    "url": "https://rahrmaltingco.com/rahr-the-brewers-standard-2-row/",
+    "diastaticPower": {
+     "published": "110 - 160°L",
+     "unit": "lintner",
+     "min": 110.0,
+     "max": 160.0
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-2-Row.pdf"
+   },
+   "Rahr North Star Pils™": {
+    "slug": "rahr-north-star-pils",
+    "url": "https://rahrmaltingco.com/rahr-north-star-pils/",
+    "diastaticPower": {
+     "published": "110 - 160°L",
+     "unit": "lintner",
+     "min": 110.0,
+     "max": 160.0
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-North-Star-Pils.pdf"
+   },
+   "Rahr The Brewer’s Standard™ Pale Ale": {
+    "slug": "rahr-the-brewers-standard-pale-ale",
+    "url": "https://rahrmaltingco.com/rahr-the-brewers-standard-pale-ale/",
+    "diastaticPower": {
+     "published": "≥90°L",
+     "unit": "lintner",
+     "min": 90.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-Pale-Ale.pdf"
+   },
+   "Rahr GN Zero™ Malt": {
+    "slug": "rahr-gn-zero-malt",
+    "url": "https://rahrmaltingco.com/rahr-gn-zero-malt/",
+    "diastaticPower": {
+     "published": "≥125°L",
+     "unit": "lintner",
+     "min": 125.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2024/02/Rahr-GN-Zero-Malt-Spec-Sheet-2.pdf"
+   },
+   "Rahr Red Wheat": {
+    "slug": "rahr-red-wheat",
+    "url": "https://rahrmaltingco.com/rahr-red-wheat/",
+    "diastaticPower": {
+     "published": "≥120°L",
+     "unit": "lintner",
+     "min": 120.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-Red-Wheat.pdf"
+   },
+   "Rahr White Wheat": {
+    "slug": "rahr-white-wheat",
+    "url": "https://rahrmaltingco.com/rahr-white-wheat/",
+    "diastaticPower": {
+     "published": "≥120°L",
+     "unit": "lintner",
+     "min": 120.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-White-Wheat.pdf"
+   },
+   "Rahr Malted Oats": {
+    "slug": "rahr-malted-oats",
+    "url": "https://rahrmaltingco.com/rahr-malted-oats/",
+    "diastaticPower": {
+     "published": "≥25°L",
+     "unit": "lintner",
+     "min": 25.0,
+     "atLeast": true
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-Malted-Oats.pdf"
+   },
+   "Rahr Premium Pilsner": {
+    "slug": "rahr-premium-pilsner",
+    "url": "https://rahrmaltingco.com/rahr-premium-pilsner/",
+    "diastaticPower": {
+     "published": "110 - 160°L",
+     "unit": "lintner",
+     "min": 110.0,
+     "max": 160.0
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/02/Rahr-Premium-Pilsner-Malt.pdf"
+   },
+   "Rahr Extra Pale White Wheat": {
+    "slug": "rahr-extra-pale-white-wheat",
+    "url": "https://rahrmaltingco.com/rahr-extra-pale-white-wheat/",
+    "diastaticPower": {
+     "published": "≥120°L",
+     "unit": "lintner",
+     "min": 120.0,
+     "atLeast": true
+    }
+   },
+   "Rahr GN Zero™ High Enzyme Distillers Malt": {
+    "slug": "rahr-gn-zero-high-enzyme-distillers-malt",
+    "url": "https://rahrmaltingco.com/rahr-gn-zero-high-enzyme-distillers-malt/",
+    "diastaticPower": {
+     "published": "200 - 300 °L",
+     "unit": "lintner",
+     "min": 200.0,
+     "max": 300.0
+    },
+    "specSheet": "https://rahrmaltingco.com/wp-content/uploads/2025/07/Rahr-GN-Zero-High-Enzyme-Distillers-Malt-Spec-Sheet.pdf",
+    "alphaAmylaseDu": 80.0,
+    "alphaAmylasePublished": "Alpha Amylase (DU) >80"
+   }
+  },
+  "great-western-sell-sheets": {
+   "premium-two-row": {
+    "slug": "premium-two-row",
+    "url": "https://www.greatwesternmalting.com/product/premium-two-row/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Premium-Two-Row.pdf",
+    "diastaticPower": {
+     "published": "120",
+     "unit": "lintner",
+     "value": 120.0
+    }
+   },
+   "pure-oregon-malt": {
+    "slug": "pure-oregon-malt",
+    "url": "https://www.greatwesternmalting.com/product/pure-oregon-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Pure-Oregon.pdf",
+    "diastaticPower": {
+     "published": "120",
+     "unit": "lintner",
+     "value": 120.0
+    }
+   },
+   "pale-high-color": {
+    "slug": "pale-high-color",
+    "url": "https://www.greatwesternmalting.com/product/pale-high-color/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Pale-High-Color.pdf",
+    "diastaticPower": {
+     "published": "115",
+     "unit": "lintner",
+     "value": 115.0
+    }
+   },
+   "high-enzyme-malt": {
+    "slug": "high-enzyme-malt",
+    "url": "https://www.greatwesternmalting.com/product/high-enzyme-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM_SellSheets_Distilling-High-Enzyme.pdf",
+    "diastaticPower": {
+     "published": "260",
+     "unit": "lintner",
+     "value": 260.0
+    },
+    "alphaAmylaseDu": 110.0
+   },
+   "light-munich": {
+    "slug": "light-munich",
+    "url": "https://www.greatwesternmalting.com/product/light-munich/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Light-Munich.pdf",
+    "diastaticPower": {
+     "published": "80",
+     "unit": "lintner",
+     "value": 80.0
+    }
+   },
+   "vienna-malt": {
+    "slug": "vienna-malt",
+    "url": "https://www.greatwesternmalting.com/product/vienna-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Vienna.pdf",
+    "diastaticPower": {
+     "published": "100",
+     "unit": "lintner",
+     "value": 100.0
+    }
+   },
+   "pure-washington-malt": {
+    "slug": "pure-washington-malt",
+    "url": "https://www.greatwesternmalting.com/product/pure-washington-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Pure-Washington.pdf",
+    "diastaticPower": {
+     "published": "120",
+     "unit": "lintner",
+     "value": 120.0
+    }
+   },
+   "white-wheat-malt": {
+    "slug": "white-wheat-malt",
+    "url": "https://www.greatwesternmalting.com/product/white-wheat-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-White-Wheat.pdf",
+    "diastaticPower": {
+     "published": "135",
+     "unit": "lintner",
+     "value": 135.0
+    }
+   },
+   "pure-idaho-pilsner-malt": {
+    "slug": "pure-idaho-pilsner-malt",
+    "url": "https://www.greatwesternmalting.com/product/pure-idaho-pilsner-malt/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/05/GWM-Sell-Sheet-Pure-Idaho.pdf",
+    "diastaticPower": {
+     "published": "125",
+     "unit": "lintner",
+     "value": 125.0
+    }
+   },
+   "superior-pilsen": {
+    "slug": "superior-pilsen",
+    "url": "https://www.greatwesternmalting.com/product/superior-pilsen/",
+    "specSheet": "https://www.greatwesternmalting.com/wp-content/uploads/2025/06/GW-PILS-GWM-Sell-Sheet-Superior-Pilsen.pdf",
+    "diastaticPower": {
+     "published": "125",
+     "unit": "lintner",
+     "value": 125.0
+    }
+   }
+  },
+  "briess-pisb": {
+   "malt-2row-pale": {
+    "record": "malt-2row-pale",
+    "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Brewers-Malt.pdf",
+    "diastaticPower": {
+     "published": "140",
+     "unit": "lintner",
+     "value": 140.0
+    },
+    "alphaAmylaseDu": 72.0
+   },
+   "malt-cherrywood-smoked": {
+    "record": "malt-cherrywood-smoked",
+    "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Smoked-Malt-Cherry-Wood.pdf",
+    "diastaticPower": {
+     "published": "90",
+     "unit": "lintner",
+     "value": 90.0
+    },
+    "alphaAmylaseDu": 45.0
+   },
+   "malt-briess-bonlander": {
+    "record": "malt-briess-bonlander",
+    "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Bonlander-Munich-Malt-10L.pdf",
+    "diastaticPower": {
+     "published": "60",
+     "unit": "lintner",
+     "value": 60.0
+    },
+    "alphaAmylaseDu": 35.0
+   },
+   "malt-vienna-briess": {
+    "record": "malt-vienna-briess",
+    "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Goldpils-Vienna-Malt.pdf",
+    "diastaticPower": {
+     "published": "95",
+     "unit": "lintner",
+     "value": 95.0
+    },
+    "alphaAmylaseDu": 45.0
+   },
+   "malt-carapils": {
+    "record": "malt-carapils",
+    "url": "https://brewingwithbriess.com/wp-content/uploads/documents/Briess-PISB-Carapils-Malt.pdf",
+    "diastaticPower": {
+     "published": "Devoid of enzymes",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   }
+  },
+  "simpsons-malt": {
+   "finest-pale-ale-golden-promise": {
+    "slug": "finest-pale-ale-golden-promise",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-golden-promise/",
+    "diastaticPower": {
+     "published": "47 - 74",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 74.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     244.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     65.0
+    ]
+   },
+   "low-colour-golden-promise": {
+    "slug": "low-colour-golden-promise",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/low-colour-golden-promise/",
+    "diastaticPower": {
+     "published": "47 - 74",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 74.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     244.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     65.0
+    ]
+   },
+   "finest-pale-ale-maris-otter": {
+    "slug": "finest-pale-ale-maris-otter",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-pale-ale-maris-otter/",
+    "diastaticPower": {
+     "published": "47 - 74",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 74.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     244.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     65.0
+    ]
+   },
+   "low-colour-maris-otter": {
+    "slug": "low-colour-maris-otter",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/low-colour-maris-otter/",
+    "diastaticPower": {
+     "published": "47 - 90",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 90.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     300.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     80.0
+    ]
+   },
+   "best-pale-ale-malt": {
+    "slug": "best-pale-ale-malt",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/best-pale-ale-malt/",
+    "diastaticPower": {
+     "published": "47 - 90",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 90.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     300.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     80.0
+    ]
+   },
+   "extra-pale-ale-malt": {
+    "slug": "extra-pale-ale-malt",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/extra-pale-ale-malt/",
+    "diastaticPower": {
+     "published": "47 - 90",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 90.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     300.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     80.0
+    ]
+   },
+   "finest-lager-malt": {
+    "slug": "finest-lager-malt",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/base-malts/finest-lager-malt/",
+    "diastaticPower": {
+     "published": "47 - 90",
+     "unit": "lintner",
+     "min": 47.0,
+     "max": 90.0
+    },
+    "alsoPublishedWk": [
+     150.0,
+     300.0
+    ],
+    "alsoPublishedIob": [
+     40.0,
+     80.0
+    ]
+   },
+   "munich-malt": {
+    "slug": "munich-malt",
+    "url": "https://www.simpsonsmalt.co.uk/our-malts/highly-kilned-malts/munich-malt/",
+    "diastaticPower": {
+     "published": "26",
+     "unit": "lintner",
+     "value": 26.0
+    },
+    "alsoPublishedWk": [
+     75.0
+    ],
+    "alsoPublishedIob": [
+     20.0
+    ]
+   }
+  },
+  "bestmalz": {
+   "best-pilsen-malt": {
+    "url": "https://bestmalz.de/en/malts/best-pilsen-malt/",
+    "diastaticPower": {
+     "published": "250 WK",
+     "unit": "wk",
+     "value": 250.0,
+     "lintnerValue": 76.0
+    }
+   },
+   "best-heidelberg": {
+    "url": "https://bestmalz.de/en/malts/best-heidelberg/",
+    "diastaticPower": {
+     "published": "250 WK",
+     "unit": "wk",
+     "value": 250.0,
+     "lintnerValue": 76.0
+    }
+   }
+  },
+  "castle-malting": {
+   "chateau-vienna": {
+    "url": "https://www.castlemalting.com/CastleMaltingMaltSpecification.asp?Command=SpecificationShow&SpecificationID=176&Language=English&FileType=HTML",
+    "diastaticPower": {
+     "published": "250 WK",
+     "unit": "wk",
+     "value": 250.0,
+     "lintnerValue": 76.0
+    }
+   }
+  },
+  "weyermann-catalogue-2025": {
+   "WEYERMANN® SPECIALTY MALTS": {
+    "page": 0
+   },
+   "WEYERMANN® PILSNER MALT": {
+    "page": 2,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® PALE ALE MALT": {
+    "page": 3,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® VIENNA MALT": {
+    "page": 4,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® MUNICH MALT TYPE 1": {
+    "page": 5,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® MUNICH MALT TYPE 2": {
+    "page": 6,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® OAK SMOKED WHEAT MALT": {
+    "page": 7,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® BEECH SMOKED BARLEY MALT": {
+    "page": 8,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® ACIDULATED MALT": {
+    "page": 9,
+    "enzymeActivity": "increases enzyme activity by optimal mash ph"
+   },
+   "WEYERMANN® MELANOIDIN MALT": {
+    "page": 10,
+    "enzymeActivity": "low"
+   },
+   "WEYERMANN® WHEAT MALT PALE": {
+    "page": 11,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® WHEAT MALT DARK": {
+    "page": 12,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® CARAWHEAT®": {
+    "page": 23,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CHOCOLATE WHEAT MALT": {
+    "page": 45,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAPILS®": {
+    "page": 15,
+    "enzymeActivity": "low"
+   },
+   "WEYERMANN® CARAHELL®": {
+    "page": 16,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARABELGE®": {
+    "page": 36,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARARED®": {
+    "page": 18,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAAMBER®": {
+    "page": 19,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAMUNICH® TYPE 1": {
+    "page": 20,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAMUNICH® TYPE 2": {
+    "page": 21,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAMUNICH® TYPE 3": {
+    "page": 22,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARARYE®": {
+    "page": 50,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARABOHEMIAN®": {
+    "page": 35,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAAROMA®": {
+    "page": 26,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® ERACLEA PILSNER MALT": {
+    "page": 27,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® BARKE® PILSNER MALT": {
+    "page": 28,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® BARKE® VIENNA MALT": {
+    "page": 29,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® BARKE® MUNICH MALT": {
+    "page": 30,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® ISARIA 1924®": {
+    "page": 31,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® BOHEMIAN PILSNER MALT": {
+    "page": 32,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® FLOOR-MALTED BOHEMIAN PILSNER MALT": {
+    "page": 33,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® FLOOR-MALTED BOHEMIAN DARK MALT": {
+    "page": 34,
+    "enzymeActivity": "medium"
+   },
+   "WEYERMANN® ABBEY MALT® (BISCUIT MALT)": {
+    "page": 37,
+    "enzymeActivity": "low"
+   },
+   "WEYERMANN® SPECIAL W®": {
+    "page": 38,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® TYPE 1": {
+    "page": 39,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® TYPE 2": {
+    "page": 40,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® TYPE 3": {
+    "page": 41,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® SPECIAL TYPE 1": {
+    "page": 42,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® SPECIAL TYPE 2": {
+    "page": 43,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CARAFA® SPECIAL TYPE 3": {
+    "page": 44,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® CHOCOLATE RYE MALT": {
+    "page": 51
+   },
+   "WEYERMANN® ROASTED BARLEY": {
+    "page": 47,
+    "enzymeActivity": "none",
+    "diastaticPower": {
+     "published": "Enzyme activity: none",
+     "unit": "lintner",
+     "value": 0.0,
+     "statedInWords": true
+    }
+   },
+   "WEYERMANN® DIASTATIC BARLEY MALT": {
+    "page": 48,
+    "diastaticPower": {
+     "published": "min. 300 WK",
+     "unit": "wk",
+     "min": 300.0,
+     "atLeast": true,
+     "lintnerMin": 90.3
+    }
+   },
+   "WEYERMANN® RYE MALT PALE": {
+    "page": 49,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® SPELT MALT": {
+    "page": 52,
+    "enzymeActivity": "high"
+   },
+   "WEYERMANN® SOUR WORT": {
+    "page": 54
+   }
+  }
+ }
+}

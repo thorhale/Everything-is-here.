@@ -138,6 +138,13 @@ export interface FermentablePick {
   juiceYieldPct: number | null;
   titratableAcidityGPerL: number | null;
   phTypical: number | null;
+  // The enzyme side of the mash, for the conversion check. The basis travels
+  // with the number: a null °Lintner means nobody published one, a zero means
+  // the ingredient genuinely brings no enzymes, and those two push a grist
+  // assessment in opposite directions.
+  diastaticPowerLintner: number | null;
+  diastaticPowerBasis: string | null;
+  requiresConversion: boolean;
   uses: string[];
 }
 
@@ -166,10 +173,13 @@ export const getFermentablePickerList = unstable_cache(
       juiceYieldPct: f.juiceYieldPct,
       titratableAcidityGPerL: f.titratableAcidityGPerL,
       phTypical: f.phTypical,
+      diastaticPowerLintner: f.diastaticPowerLintner,
+      diastaticPowerBasis: f.diastaticPowerBasis,
+      requiresConversion: f.requiresConversion,
       uses: f.uses,
     }));
   },
-  ["fermentable-picker-list-v2"],
+  ["fermentable-picker-list-v3"],
   { revalidate: 3600 }
 );
 

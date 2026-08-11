@@ -3627,7 +3627,10 @@
    "sourceUrl": "https://fdc.nal.usda.gov/portal-data/external/168482",
    "sortOrder": 75,
    "attribution": "Sugar is USDA FoodData Central's published total-sugars figure for Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program) (SR Legacy, FDC ID 168482), and ppg is 46 x that per 100 g. The citation is the data endpoint rather than the portal page, which FDC serves from a client-side router and returns 404 to anything that is not a browser. FoodData Central marks this figure \"Calculated\" rather than Analytical, so it is USDA's published value but not a laboratory measurement of this food - read it as an estimate.",
-   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced."
+   "sourceNote": "USDA backs the sugar figure and the ppg derived from it, and nothing else on this record. It publishes no the sugar range, titratable acidity, dominant acid, pH, pectin or tannin for any food; those fields are carried over from this project's earlier curation and are not yet sourced.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "fruit-agave",
@@ -3670,7 +3673,10 @@
    "sortOrder": 76,
    "attribution": "Agave tequilana Weber blue variety at four, five and six years, processed at industrial scale for 100 percent agave silver tequila: Acosta-Salazar and colleagues, \"Effect of Age of Agave tequilana Weber Blue Variety on Quality and Authenticity Parameters for the Tequila 100% Agave Silver Class\", Foods 10(12):3103, 2021 (doi 10.3390/foods10123103, CC BY 4.0), Table 1. Hearts weigh 18.4 to 25.5 kg and the juice runs 19.4, 23.0 and 24.2 degrees Brix by plant age - the 19.4 to 24.2 here, correcting a stored 22 to 30. Total reducing sugars of the heart are 15.21, 18.84 and 19.21 percent of its weight.",
    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8701365/",
-   "sourceNote": "The Brix above is cooked agave. This record's whole-fruit sugar of zero, and the zero ppg with it, describe the uncooked pina, whose carbohydrate is inulin that Saccharomyces cannot ferment - that is a deliberate modelling choice in this catalogue, not a measurement, and the paper does not test raw material. The paper's 15.2 to 19.2 percent total reducing sugars is what the heart yields after cooking. Juice yield, titratable acidity, pH, pectin and tannin are not sourced."
+   "sourceNote": "The Brix above is cooked agave. This record's whole-fruit sugar of zero, and the zero ppg with it, describe the uncooked pina, whose carbohydrate is inulin that Saccharomyces cannot ferment - that is a deliberate modelling choice in this catalogue, not a measurement, and the paper does not test raw material. The paper's 15.2 to 19.2 percent total reducing sugars is what the heart yields after cooking. Juice yield, titratable acidity, pH, pectin and tannin are not sourced.",
+   "diastaticPowerLintner": 0,
+   "diastaticPowerBasis": "unmalted",
+   "diastaticPowerNote": "Unmalted starch. It has never been germinated, so it brings no meaningful amylase of its own and contributes nothing to the enzyme supply — every point of gravity it yields has to be converted by the diastatic power of the malt beside it. Recorded as zero rather than left blank precisely because it is not unknown: leaving it blank would let a 70%-corn bourbon mash look like a grist whose enzyme balance nobody could assess, when in fact it is the case the assessment exists for."
   },
   {
    "id": "juice-apple",
