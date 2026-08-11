@@ -24,7 +24,11 @@
 //     The `requiresConversion` flag on a fermentable records this.
 // A number here is a ceiling, not a promise.
 
-export const SUCROSE_PPG = 46;
+// Defined once, in lib/must.ts, and re-exported here because this is where
+// callers expect to find it. Two copies of a physical constant is how they
+// eventually stop being equal.
+import { SUCROSE_PPG } from "@/lib/must";
+export { SUCROSE_PPG };
 
 export interface NutritionPanel {
   servingSizeG: number; // grams per serving (use the gram figure, not "1 cup")

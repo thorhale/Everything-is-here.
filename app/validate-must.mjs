@@ -3,9 +3,20 @@
 // output. Run: node validate-must.mjs
 //
 // The formulas are duplicated here from lib/must.ts and lib/recipe-engine.ts
-// deliberately: this file is a second implementation from the source
-// equations, so agreement means the TypeScript is right rather than merely
-// self-consistent.
+// deliberately: this file is a second implementation written from the source
+// equations, so it checks the EQUATIONS against the literature rather than
+// checking code against itself.
+//
+// What it does NOT do is check the shipped TypeScript. An earlier version of
+// this note claimed that "agreement means the TypeScript is right rather than
+// merely self-consistent" — that was never true, because nothing here imports
+// lib/must.ts. The two copies could have drifted apart without a single check
+// going red, and twenty-five exported functions sat in exactly that position.
+//
+// lib/must.test.ts now runs the real exports against these same published
+// values. Together the pair delivers what this file used to claim on its own:
+// this proves the equations match the literature, that proves the code matches
+// the equations. Keep both, and keep them in step.
 
 const POINTS_PER_G_PER_L = 46 / (453.592 / 3.78541);
 

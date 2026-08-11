@@ -466,9 +466,9 @@ export function angelsShare(years: number, annualLossPct: number, startingVolume
 // Unit helpers
 // ---------------------------------------------------------------------------
 
-export const LB_TO_KG = 0.45359237;
-export const GAL_TO_L = 3.785411784;
-export const OZ_TO_G = 28.349523125;
+// Defined once in lib/units.ts; re-exported under this module's own names.
+export { KG_PER_LB as LB_TO_KG, L_PER_GALLON as GAL_TO_L, G_PER_OZ as OZ_TO_G } from "@/lib/units";
+import { L_PER_GALLON as GAL_TO_L } from "@/lib/units";
 export const lbToG = (lb: number) => lb * 453.59237;
 export const gToLb = (g: number) => g / 453.59237;
 export const galToL = (gal: number) => gal * GAL_TO_L;

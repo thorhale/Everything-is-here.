@@ -26,7 +26,7 @@ export function pointsToSg(points: number): number {
 
 // A hydrometer reads true only at its calibration temperature. Correct a
 // reading taken at `readF` °F, calibrated at `calF` °F (usually 60). Standard
-// polynomial (Lyons). Validated: 1.050 read at 80°F, cal 60°F -> ~1.0530.
+// polynomial (Lyons). Validated: 1.050 read at 80°F, cal 60°F -> 1.05245.
 export function correctHydrometer(measuredSg: number, readF: number, calF = 60): number {
   const f = (t: number) =>
     1.00130346 - 0.000134722124 * t + 0.00000204052596 * t * t - 0.00000000232820948 * t * t * t;
@@ -62,13 +62,14 @@ export function refractometerFg(originalBrix: number, finalBrix: number, wcf = 1
 
 // --- Alcohol -------------------------------------------------------------
 
-// Simple ABV — the (OG-FG)*131.25 rule. Fine below ~1.070.
-export function abvSimple(og: number, fg: number): number {
-  return (og - fg) * 131.25;
-}
+// Simple ABV — the (OG-FG)*131.25 rule. Fine below ~1.070. Defined in
+// lib/must.ts and re-exported so the Toolbox's `calc.abvSimple` keeps working:
+// two implementations of one equation is how they eventually disagree.
+export { abvSimple } from "@/lib/must";
 
 // Alternate/advanced ABV (Cutaia/Novotný), more accurate at higher gravity.
-// Validated: 1.060 -> 1.012 gives ~6.3% ABV.
+// Validated: 1.060 -> 1.012 gives 6.51% ABV. (The simple form gives 6.30% on
+// the same numbers; the gap between them is the whole reason both exist.)
 export function abvAdvanced(og: number, fg: number): number {
   return (76.08 * (og - fg)) / (1.775 - og) * (fg / 0.794);
 }
@@ -126,7 +127,9 @@ export function primingSugar(
 }
 
 // Force-carbonation regulator pressure (PSI) for `vols` at keg temp `tempF`.
-// Standard public regression. Validated: 2.4 vols at 38°F -> ~11 PSI.
+// Standard public regression. Validated: 2.4 vols at 38°F -> 10.2 PSI, which
+// agrees with the published force-carbonation charts (38 °F at 10 psi is the
+// chart's 2.4-volume row).
 export function kegPsi(vols: number, tempF: number): number {
   return (
     -16.6999 -
@@ -166,7 +169,7 @@ export function boilDownVolume(sg: number, v1: number, targetSg: number): number
 // Strike water temperature (°F) for a single-infusion mash. `ratio` is the
 // water:grain ratio in quarts per pound; grain enters at `grainTempF`, target
 // mash temp `targetF`. Palmer's formula (0.2 = grain specific heat).
-// Validated: 1.25 qt/lb, grain 68°F, target 152°F -> ~164°F strike.
+// Validated: 1.25 qt/lb, grain 68°F, target 152°F -> 165.4°F strike.
 export function strikeTemp(targetF: number, grainTempF: number, ratioQtPerLb: number): number {
   if (ratioQtPerLb <= 0) return targetF;
   return (0.2 / ratioQtPerLb) * (targetF - grainTempF) + targetF;
@@ -198,9 +201,9 @@ export function ebcToSrm(ebc: number): number {
 
 // --- Small unit helpers --------------------------------------------------
 
-export const ML_PER_GALLON = 3785.411784;
-export const L_PER_GALLON = 3.785411784;
-export const G_PER_OZ = 28.349523125;
+// Defined once in lib/units.ts and re-exported under the names this module
+// has always used, so `calc.L_PER_GALLON` keeps working.
+export { ML_PER_GALLON, L_PER_GALLON, G_PER_OZ } from "@/lib/units";
 export function cToF(c: number): number {
   return (c * 9) / 5 + 32;
 }

@@ -18,7 +18,7 @@
 
 // --- Unit constants -------------------------------------------------------
 
-export const ML_PER_GALLON = 3785.411784;
+export { ML_PER_GALLON } from "@/lib/brewing-calcs";
 export const ML_PER_LITER = 1000;
 
 // --- Target pitch rates ---------------------------------------------------
@@ -37,10 +37,11 @@ export type PitchRateKey = keyof typeof PITCH_RATES;
 
 // --- Gravity -> Plato -----------------------------------------------------
 
-// Standard cubic fit (ASBC). Input is specific gravity (e.g. 1.048).
-export function sgToPlato(sg: number): number {
-  return -616.868 + 1111.14 * sg - 630.272 * sg * sg + 135.997 * sg * sg * sg;
-}
+// Standard cubic fit (ASBC). Defined in lib/brewing-calcs.ts and re-exported:
+// pitch rates are quoted per °Plato, so this module needs it, but a second copy
+// of the same cubic is a correctness risk for no benefit.
+export { sgToPlato } from "@/lib/brewing-calcs";
+import { sgToPlato } from "@/lib/brewing-calcs";
 
 // --- Cells required -------------------------------------------------------
 

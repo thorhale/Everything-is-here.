@@ -14,21 +14,23 @@
 import { prisma } from "@/lib/db";
 import { unstable_cache } from "next/cache";
 import type { WaterProfile } from "@prisma/client";
+import { residualAlkalinity as residualAlkalinityOf } from "@/lib/mash-ph";
 
 export type { WaterProfile };
 
-// Residual alkalinity in ppm as CaCO3 (Kolbach). Alkalinity from bicarbonate,
-// minus the pH-lowering effect of calcium and magnesium hardness.
+// Residual alkalinity (Kolbach) for a stored profile, in ppm as CaCO3.
+//
+// The arithmetic lives once, in lib/mash-ph.ts. This wrapper adds only the part
+// that is specific to a catalogue record: a profile missing all three ions has
+// no residual alkalinity to report, which is different from one that computes
+// to zero, so it returns null rather than 0.
 export function residualAlkalinity(w: {
   calcium?: number | null;
   magnesium?: number | null;
   bicarbonate?: number | null;
 }): number | null {
   if (w.bicarbonate == null && w.calcium == null && w.magnesium == null) return null;
-  const alkalinity = (w.bicarbonate ?? 0) * (50 / 61); // HCO3 ppm -> ppm as CaCO3
-  const ca = w.calcium ?? 0;
-  const mg = w.magnesium ?? 0;
-  return Math.round(alkalinity - (ca / 1.4 + mg / 1.7));
+  return residualAlkalinityOf(w.calcium ?? 0, w.magnesium ?? 0, w.bicarbonate ?? 0);
 }
 
 // Total hardness in ppm as CaCO3.
