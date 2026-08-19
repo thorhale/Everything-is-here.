@@ -9,6 +9,7 @@ import {
   AMBA_MALT_CRITERIA,
   type EndUse,
 } from "@/lib/diastatic-power";
+import { BEER_LINES, balanceLine, type Tubing } from "@/lib/draft-line";
 
 function n(s: string): number {
   const v = parseFloat(s);
@@ -33,6 +34,7 @@ export default function Toolbox() {
       <InfusionCard />
       <MashPhCard />
       <ConversionCard />
+      <LineBalanceCard />
       <ColorCard />
     </div>
   );
@@ -368,6 +370,87 @@ function ConversionCard() {
         power the US industry asks of a malt for each end use. °ASBC and °Lintner are the same scale.
         The familiar &ldquo;35 °Lintner minimum&rdquo; is not used here: nothing but forum posts
         supports it, and quoted values for the same claim run from 30 to 70.
+      </p>
+    </Card>
+  );
+}
+
+/**
+ * Balance a beverage line: how many feet of a given line it takes for a keg at
+ * serving pressure to pour calm at the faucet.
+ *
+ * All figures from the Brewers Association Draught Beer Quality Manual (2019):
+ * line resistance from its Table 4.1, static resistance at 0.5 psi per foot of
+ * rise from the middle of the keg, and its balance identity
+ * dynamic = pressure − static. Pressure comes from the Dynamic Henry's Law
+ * relation, which reduces exactly to the classic carbonation chart at the
+ * chart's stated calibration (4.8% ABV, SG 1.015) and generalises it for
+ * higher-ABV, different-gravity beverages and altitude. See lib/draft-line.ts.
+ */
+function LineBalanceCard() {
+  const [vols, setVols] = useState("2.5");
+  const [temp, setTemp] = useState("38");
+  const [lineIdx, setLineIdx] = useState(0); // 3/16" vinyl — the kegerator default
+  const [rise, setRise] = useState("1");
+  const [abv, setAbv] = useState("4.8");
+  const [sg, setSg] = useState("1.015");
+  const [elev, setElev] = useState("0");
+
+  const line = BEER_LINES[lineIdx];
+  const r = balanceLine({
+    vols: n(vols),
+    tempF: n(temp),
+    tubing: line.tubing as Tubing,
+    size: line.size,
+    riseFt: n(rise),
+    abvPct: n(abv),
+    sg: n(sg),
+    elevationFt: n(elev),
+  });
+
+  return (
+    <Card title="Balance a beverage line">
+      <Row label="Target CO₂ vols"><input style={inp} value={vols} onChange={(e) => setVols(e.target.value)} /></Row>
+      <Row label="Keg temp °F"><input style={inp} value={temp} onChange={(e) => setTemp(e.target.value)} /></Row>
+      <Row label="Beverage line">
+        <select style={{ ...inp, width: 150 }} value={lineIdx} onChange={(e) => setLineIdx(Number(e.target.value))}>
+          {BEER_LINES.map((l, i) => (
+            <option key={i} value={i}>
+              {l.size} {l.bore} {l.tubing}
+            </option>
+          ))}
+        </select>
+      </Row>
+      <Row label="Faucet above keg middle (ft)"><input style={inp} value={rise} onChange={(e) => setRise(e.target.value)} /></Row>
+      <Row label="ABV %"><input style={inp} value={abv} onChange={(e) => setAbv(e.target.value)} /></Row>
+      <Row label="Final gravity"><input style={inp} value={sg} onChange={(e) => setSg(e.target.value)} /></Row>
+      <Row label="Elevation (ft)"><input style={inp} value={elev} onChange={(e) => setElev(e.target.value)} /></Row>
+      {"error" in r ? (
+        <Out label="Result" value={r.error} />
+      ) : (
+        <>
+          <Out label="Regulator pressure" value={`${f(r.psig)} psig`} />
+          {Math.abs(r.psig - r.standardBeerPsig) >= 0.05 && (
+            <Out label="…standard-beer chart says" value={`${f(r.standardBeerPsig)} psig`} />
+          )}
+          <Out label="Gravity (rise) takes" value={`${f(r.staticPsi)} psi`} />
+          <Out label="Line must dissipate" value={`${f(r.dynamicPsi)} psi`} />
+          <Out label="Line length" value={`${f(r.lengthFt)} ft (${f(r.lengthM)} m)`} />
+          <Out label="Beer standing in the line" value={`${f(r.lineVolumeFlOz)} fl oz`} />
+          {r.warnings.map((w, i) => (
+            <p key={i} style={{ fontSize: "0.78rem", color: "var(--wh-accent)", margin: "0.4rem 0 0" }}>{w}</p>
+          ))}
+          {r.notes.map((t, i) => (
+            <p key={i} style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", margin: "0.4rem 0 0" }}>{t}</p>
+          ))}
+        </>
+      )}
+      <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.5rem", marginBottom: 0 }}>
+        Line resistance, the 0.5 psi/ft rise figure (measured from the <em>middle</em> of the keg) and the
+        balance arithmetic are the Brewers Association&rsquo;s Draught Beer Quality Manual (2019), whose own
+        worked kegerator table the tests reproduce. Pours at the industry target of ~1 gal/min. Resistance
+        varies by manufacturer — the manual says so itself — so treat the length as a starting point and
+        trim toward foam.
       </p>
     </Card>
   );

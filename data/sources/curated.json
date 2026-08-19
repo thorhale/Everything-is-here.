@@ -33,17 +33,17 @@
    "reliability": "primary"
   },
   {
-   "host": "americanwinesociety.org",
-   "name": "American Wine Society",
-   "kind": "guideline-publisher",
-   "reliability": "primary"
-  },
-  {
    "host": "ambainc.org",
    "name": "American Malting Barley Association",
    "kind": "trade-association",
    "reliability": "primary",
    "note": "The US malting industry's own body. Publishes the annual Recommended Malting Barley Variety List and the Malting Barley Breeding Guidelines — the target malt specification, by end use, that new barley varieties are bred against. Primary because the guidelines ARE the industry standard rather than a report about it; but they are targets, not measurements of any particular malt."
+  },
+  {
+   "host": "americanwinesociety.org",
+   "name": "American Wine Society",
+   "kind": "guideline-publisher",
+   "reliability": "primary"
   },
   {
    "host": "annalsmicrobiology.biomedcentral.com",
@@ -216,13 +216,6 @@
    "name": "Gambrinus Malting",
    "kind": "vendor-datasheet",
    "reliability": "primary"
-  },
-  {
-   "host": "www.greatwesternmalting.com",
-   "name": "Great Western Malting",
-   "kind": "vendor-datasheet",
-   "reliability": "primary",
-   "note": "US maltster publishing a per-product sell sheet with a typical analysis. One of only two sources in this catalogue that publish alpha amylase in DU alongside diastatic power. Their sheets need poppler's layout mode to read: pdfminer drops the row labels and leaves a bare column of numbers, which is how a value ends up attached to the wrong label."
   },
   {
    "host": "gradplato.com",
@@ -480,6 +473,13 @@
    "reliability": "primary"
   },
   {
+   "host": "www.beveragesensors.com",
+   "name": "BevSense / VitalSensors Technologies",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "Instrument maker for inline dissolved-CO2 measurement. Cited for its published Method of Analysis generalising the ASBC carbonation relation with alcohol, gravity and barometric pressure as variables. A vendor method, not a peer-reviewed one — but it reduces exactly to the classic 1949 chart constant at the chart's own stated calibration, which is a check anyone can redo, and lib/draft-line.test.ts does."
+  },
+  {
    "host": "www.bjcp.org",
    "name": "Beer Judge Certification Program",
    "kind": "guideline-publisher",
@@ -634,6 +634,13 @@
    "name": "UK Government",
    "kind": "regulation",
    "reliability": "primary"
+  },
+  {
+   "host": "www.greatwesternmalting.com",
+   "name": "Great Western Malting",
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "note": "US maltster publishing a per-product sell sheet with a typical analysis. One of only two sources in this catalogue that publish alpha amylase in DU alongside diastatic power. Their sheets need poppler's layout mode to read: pdfminer drops the row labels and leaves a bare column of numbers, which is how a value ends up attached to the wrong label."
   },
   {
    "host": "www.guinness-storehouse.com",
@@ -1952,6 +1959,35 @@
    "accessed": "2026-08-10",
    "supports": "Table 4: berry quality at harvest for fifteen cultivars at the Lake Erie Grape Research and Extension Center - pH, titratable acidity in g/L and soluble solids as a percentage - covering Chambourcin, Norton, Traminette and Vidal blanc among others. Table 8 gives pH and acidity but no soluble solids for a second site.",
    "doesNotSupport": "Any range, and nothing about a normal season. It is one vintage at one site, and 2014 brought extensive winter injury along Lake Erie - several cultivars in the same trial set no fruit at all. The tables are page images, so every figure taken from them was read by OCR; the column assignment was verified against the report's own prose, which states that acidity ran 7.6 to 10.6 g/L except for Norton and that Brix was above 20% except for Chancellor, and both reproduce exactly from the columns as read. It gives no juice yield, colour or fermentability."
+  },
+  {
+   "id": "dbqm-2019",
+   "url": "https://cdn.brewersassociation.org/wp-content/uploads/2019/03/13094643/Draught-Beer-Quality-Manual-2019.pdf",
+   "title": "Draught Beer Quality Manual, 4th edition",
+   "publisher": "Brewers Association",
+   "year": 2019,
+   "kind": "vendor-handbook",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-19",
+   "supports": "Everything lib/draft-line.ts computes: Table 4.1's dynamic resistance values (lb/ft) and internal volumes (fl oz/ft) for vinyl, barrier and stainless beer line by diameter; the static-resistance convention of 0.5 lb per foot of rise measured from the middle of the keg, negative on a drop; the balance identity its Appendix C worked examples use (dynamic resistance = dispensing pressure − static resistance); the ~1 gal/min target pour; and Table 3.3, a worked kegerator balance at 38 °F whose rows are reproduced by lib/draft-line.test.ts. Also states the 1949 ASBC carbonation chart's calibration verbatim: sea level, SG 1.015, 3.8% ABW / 4.8% ABV.",
+   "doesNotSupport": "A quantitative alcohol correction — the manual explicitly declines one, noting ethanol raises CO2 solubility while dissolved solids lower it and that the net effect 'is hard to calculate'. Nor manufacturer-specific line resistance: its own footnote says restriction values vary by manufacturer. Two of Table 3.3's seven printed lengths disagree with the manual's own arithmetic (3'3\" against 9.2 psig and 5'7\" against 15.6 psig, where psig/3.0 gives 3'1\" and 5'2\"); the tests pin the arithmetic, which its other five rows and both Appendix C examples follow exactly."
+  },
+  {
+   "id": "bevsense-dynamic-henrys-law",
+   "url": "https://www.beveragesensors.com/wp-content/uploads/bevsense-methods-of-analysis-for-correcting-co2-content.pdf",
+   "title": "Method of Analysis for correcting dissolved CO2 content for Specific Gravity and Alcohol variations in beer — Creating a Dynamic Henry's Law Equation",
+   "publisher": "BevSense LLC",
+   "authors": [
+    "Robert O'Leary"
+   ],
+   "year": 2019,
+   "kind": "vendor-datasheet",
+   "reliability": "primary",
+   "verification": "full-text",
+   "accessed": "2026-08-19",
+   "supports": "The carbonation relation with composition as variables: volumes CO2 = 5.16 (Pgauge + Pbaro) / [(°F + 12.4) × SG × (1 + ABW/0.789)], equation geometry-extracted from the PDF. Its own claimed validation is an R² of 0.9997 against inline infrared measurement. The checkable part, which the tests verify: at the 1949 ASBC chart calibration (SG 1.015, ABW 3.8%, sea level) the relation collapses to the classic single-constant form V = 4.85(psig + 14.7)/(°F + 12.4) published in Holle's Handbook of Basic Brewing Calculations (MBAA) — 5.16/(1.015 × 1.04816) = 4.850. Also quotes the ASBC altitude convention of ~1 psi per 2,000 ft.",
+   "doesNotSupport": "Peer-reviewed status — this is a vendor-published method proposed to the ASBC, not an adopted MOA. Its alcohol term is a density-form correction; the DBQM's position that the net alcohol effect resists general quantification still stands, which is why the calculator shows this correction beside the uncorrected standard-beer figure rather than silently replacing it."
   }
  ]
 }

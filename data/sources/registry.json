@@ -12,13 +12,13 @@
   },
   "totals": {
     "distinctSources": 394,
-    "backgroundDocuments": 16,
+    "backgroundDocuments": 18,
     "citations": 699,
     "numericCitations": 584,
     "numericOnShallowLink": 0,
     "numericOnTertiary": 0,
     "fullTextVerified": 43,
-    "backgroundFullTextVerified": 13,
+    "backgroundFullTextVerified": 15,
     "byReliability": {
       "primary": 666,
       "secondary": 27,
@@ -10394,6 +10394,40 @@
       "supports": "The origin and meaning of the classic brewing-water types. Sykes's Water chapter tabulates a Burton-on-Trent deep well (Type I, very high calcium sulphate, attributed to Brown's Geology and the Mineral Waters of Burton-on-Trent), a Dublin well water (Type II, low sulphate and high carbonate), a chloride-dominated mild-ale water (Type III) and a chalk water, all in grains per imperial gallon. It supports the qualitative typology, the statement that 40-50 grains per gallon of calcium sulphate captures all the useful effect for pale ale, the observation that Dublin liquor was boiled down to 2-3 grains per gallon of solids before mashing, and the earliest water-treatment recipe this project holds (50 grains gypsum, 6 Epsom salt, 10 calcium chloride per gallon to turn a chalk water into a pale-ale liquor).",
       "doesNotSupport": "Any individual ion figure. The scan is OCR and its table cells are corrupted in places - Dublin's lime reads as \"9379\" and its calcium sulphate as \"SaaS\" - so no number from the tables is transcribed into any record. Only figures that appear in running prose, where the OCR is clean, are used.",
       "accessed": "2026-08-09"
+    },
+    {
+      "id": "dbqm-2019",
+      "url": "https://cdn.brewersassociation.org/wp-content/uploads/2019/03/13094643/Draught-Beer-Quality-Manual-2019.pdf",
+      "host": "cdn.brewersassociation.org",
+      "title": "Draught Beer Quality Manual, 4th edition",
+      "publisher": "Brewers Association",
+      "authors": null,
+      "year": 2019,
+      "kind": "vendor-handbook",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "Everything lib/draft-line.ts computes: Table 4.1's dynamic resistance values (lb/ft) and internal volumes (fl oz/ft) for vinyl, barrier and stainless beer line by diameter; the static-resistance convention of 0.5 lb per foot of rise measured from the middle of the keg, negative on a drop; the balance identity its Appendix C worked examples use (dynamic resistance = dispensing pressure − static resistance); the ~1 gal/min target pour; and Table 3.3, a worked kegerator balance at 38 °F whose rows are reproduced by lib/draft-line.test.ts. Also states the 1949 ASBC carbonation chart's calibration verbatim: sea level, SG 1.015, 3.8% ABW / 4.8% ABV.",
+      "doesNotSupport": "A quantitative alcohol correction — the manual explicitly declines one, noting ethanol raises CO2 solubility while dissolved solids lower it and that the net effect 'is hard to calculate'. Nor manufacturer-specific line resistance: its own footnote says restriction values vary by manufacturer. Two of Table 3.3's seven printed lengths disagree with the manual's own arithmetic (3'3\" against 9.2 psig and 5'7\" against 15.6 psig, where psig/3.0 gives 3'1\" and 5'2\"); the tests pin the arithmetic, which its other five rows and both Appendix C examples follow exactly.",
+      "accessed": "2026-08-19"
+    },
+    {
+      "id": "bevsense-dynamic-henrys-law",
+      "url": "https://www.beveragesensors.com/wp-content/uploads/bevsense-methods-of-analysis-for-correcting-co2-content.pdf",
+      "host": "www.beveragesensors.com",
+      "title": "Method of Analysis for correcting dissolved CO2 content for Specific Gravity and Alcohol variations in beer — Creating a Dynamic Henry's Law Equation",
+      "publisher": "BevSense LLC",
+      "authors": [
+        "Robert O'Leary"
+      ],
+      "year": 2019,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "The carbonation relation with composition as variables: volumes CO2 = 5.16 (Pgauge + Pbaro) / [(°F + 12.4) × SG × (1 + ABW/0.789)], equation geometry-extracted from the PDF. Its own claimed validation is an R² of 0.9997 against inline infrared measurement. The checkable part, which the tests verify: at the 1949 ASBC chart calibration (SG 1.015, ABW 3.8%, sea level) the relation collapses to the classic single-constant form V = 4.85(psig + 14.7)/(°F + 12.4) published in Holle's Handbook of Basic Brewing Calculations (MBAA) — 5.16/(1.015 × 1.04816) = 4.850. Also quotes the ASBC altitude convention of ~1 psi per 2,000 ft.",
+      "doesNotSupport": "Peer-reviewed status — this is a vendor-published method proposed to the ASBC, not an adopted MOA. Its alcohol term is a density-form correction; the DBQM's position that the net alcohol effect resists general quantification still stands, which is why the calculator shows this correction beside the uncorrected standard-beer figure rather than silently replacing it.",
+      "accessed": "2026-08-19"
     }
   ]
 }
