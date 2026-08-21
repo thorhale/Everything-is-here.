@@ -12,13 +12,13 @@
   },
   "totals": {
     "distinctSources": 394,
-    "backgroundDocuments": 18,
+    "backgroundDocuments": 21,
     "citations": 699,
     "numericCitations": 584,
     "numericOnShallowLink": 0,
     "numericOnTertiary": 0,
     "fullTextVerified": 43,
-    "backgroundFullTextVerified": 15,
+    "backgroundFullTextVerified": 17,
     "byReliability": {
       "primary": 666,
       "secondary": 27,
@@ -10428,6 +10428,56 @@
       "supports": "The carbonation relation with composition as variables: volumes CO2 = 5.16 (Pgauge + Pbaro) / [(°F + 12.4) × SG × (1 + ABW/0.789)], equation geometry-extracted from the PDF. Its own claimed validation is an R² of 0.9997 against inline infrared measurement. The checkable part, which the tests verify: at the 1949 ASBC chart calibration (SG 1.015, ABW 3.8%, sea level) the relation collapses to the classic single-constant form V = 4.85(psig + 14.7)/(°F + 12.4) published in Holle's Handbook of Basic Brewing Calculations (MBAA) — 5.16/(1.015 × 1.04816) = 4.850. Also quotes the ASBC altitude convention of ~1 psi per 2,000 ft.",
       "doesNotSupport": "Peer-reviewed status — this is a vendor-published method proposed to the ASBC, not an adopted MOA. Its alcohol term is a density-form correction; the DBQM's position that the net alcohol effect resists general quantification still stands, which is why the calculator shows this correction beside the uncorrected standard-beer figure rather than silently replacing it.",
       "accessed": "2026-08-19"
+    },
+    {
+      "id": "world-cooperage-barrel-dimensions-2020",
+      "url": "https://www.worldcooperage.com/wp-content/uploads/2020/06/World-Cooperage-Barrel-Dimensions-2020.pdf",
+      "host": "www.worldcooperage.com",
+      "title": "World Cooperage Barrel Dimensions",
+      "publisher": "World Cooperage (Independent Stave Company)",
+      "authors": null,
+      "year": 2020,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": true,
+      "supports": "External dimensions and nominal capacities of the wine-barrel presets: 225 L Bordeaux Export and 240 L (both head diameter 58 cm, belly diameter 71 cm, height 89 cm, bung 50 mm) and 200 L (head 54 cm, belly 65 cm, height 89 cm). These externals fix each preset's shape; the barrel calculator then scales internal radii so the model's total equals the cooperage's nominal volume.",
+      "doesNotSupport": "Internal dimensions or any claim that external dimensions determine capacity — the sheet itself is the proof they do not: its 240 L and 225 L barrels share IDENTICAL external dimensions. That is why the presets calibrate to nominal volume rather than trusting outside measurements, and why the tape-measure mode is labelled an uncalibrated estimate.",
+      "accessed": "2026-08-21"
+    },
+    {
+      "id": "barrel-mill-53-gallon-specs",
+      "url": "https://thebarrelmill.com/barrels/",
+      "host": "thebarrelmill.com",
+      "title": "Barrels — The Barrel Mill (product specifications)",
+      "publisher": "The Barrel Mill",
+      "authors": null,
+      "year": null,
+      "kind": "vendor-datasheet",
+      "reliability": "primary",
+      "verification": "full-text",
+      "deepLink": false,
+      "supports": "External dimensions of the American 53-gallon whiskey barrel preset: 35 in height, 25.5 in bilge diameter, 20.625 in head diameter. Used the same way as the World Cooperage sheet: shape from externals, capacity calibrated to the nominal 53 gallons.",
+      "doesNotSupport": "Internal dimensions, stave thickness, or capacity tolerance — none published. The tape-measure sanity test in barrel.test.ts checks only that these externals with an assumed ~1 in stave land within a plausibility corridor of 53 gallons, not on it.",
+      "accessed": "2026-08-21"
+    },
+    {
+      "id": "kepler-nova-stereometria-1615",
+      "url": "https://archive.org/details/den-kbd-pil-21009000066F-001",
+      "host": "archive.org",
+      "title": "Nova stereometria doliorum vinariorum",
+      "publisher": "Johannes Plank, Linz (scan hosted by the Internet Archive)",
+      "authors": [
+        "Johannes Kepler"
+      ],
+      "year": 1615,
+      "kind": "book",
+      "reliability": "secondary",
+      "verification": "metadata-only",
+      "deepLink": true,
+      "supports": "The historical claim the barrel card makes: Kepler, doubting the wine merchant's gauging rod at his own wedding, wrote the 'new solid geometry of wine barrels' (1615), computing barrel volumes by summing thin slices — the pre-calculus method this calculator's Simpson integration descends from, later formalised by Newton and Leibniz. Cited as the historical reference only.",
+      "doesNotSupport": "Any numeric value in the app. The scan is period Latin; no figure was extracted from it and none rests on it. The parabolic stave profile and closed form used here are the classical gauging model verified independently by CAS (data/math-verified.json), not transcribed from this text.",
+      "accessed": "2026-08-21"
     }
   ]
 }

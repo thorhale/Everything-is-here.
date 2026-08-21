@@ -10,6 +10,16 @@ import {
   type EndUse,
 } from "@/lib/diastatic-power";
 import { BEER_LINES, balanceLine, type Tubing } from "@/lib/draft-line";
+import {
+  BARREL_PRESETS,
+  geometryForPreset,
+  geometryFromTape,
+  totalVolumeM3,
+  gaugeFromDipstick,
+  gaugeFromFace,
+  portHeightForRemaining,
+} from "@/lib/barrel";
+import { L_PER_GALLON } from "@/lib/units";
 
 function n(s: string): number {
   const v = parseFloat(s);
@@ -35,6 +45,7 @@ export default function Toolbox() {
       <MashPhCard />
       <ConversionCard />
       <LineBalanceCard />
+      <BarrelCard />
       <ColorCard />
     </div>
   );
@@ -451,6 +462,122 @@ function LineBalanceCard() {
         worked kegerator table the tests reproduce. Pours at the industry target of ~1 gal/min. Resistance
         varies by manufacturer — the manual says so itself — so treat the length as a starting point and
         trim toward foam.
+      </p>
+    </Card>
+  );
+}
+
+function BarrelCard() {
+  const [presetIdx, setPresetIdx] = useState(0); // 225 L Bordeaux export
+  const [inches, setInches] = useState(false);
+  const [belly, setBelly] = useState("71");
+  const [head, setHead] = useState("58");
+  const [height, setHeight] = useState("89");
+  const [stave, setStave] = useState("25");
+  const [mode, setMode] = useState<"dipstick" | "face">("dipstick");
+  const [level, setLevel] = useState("30");
+  const [heel, setHeel] = useState("20");
+
+  const custom = presetIdx < 0;
+  const toCm = (s: string) => n(s) * (inches ? 2.54 : 1);
+  const u = inches ? "in" : "cm";
+  const cmOut = (v: number) => (inches ? `${f(v / 2.54, 2)} in` : `${f(v, 1)} cm`);
+
+  const g = custom
+    ? geometryFromTape({
+        bellyDiaCm: toCm(belly),
+        headDiaCm: toCm(head),
+        heightCm: toCm(height),
+        staveThicknessMm: n(stave),
+      })
+    : geometryForPreset(BARREL_PRESETS[presetIdx]);
+  const valid = g.bilgeRadiusM > 0.01 && g.headRadiusM > 0.005 && g.lengthM > 0.05 && g.headRadiusM <= g.bilgeRadiusM;
+
+  const r = valid
+    ? mode === "dipstick"
+      ? gaugeFromDipstick(g, toCm(level))
+      : gaugeFromFace(g, toCm(level))
+    : null;
+  const port = valid ? portHeightForRemaining(g, n(heel)) : null;
+  const totalL = valid ? totalVolumeM3(g) * 1000 : 0;
+
+  return (
+    <Card title="Barrel gauge (Kepler's problem)">
+      <Row label="Barrel">
+        <select
+          style={{ ...inp, width: 170 }}
+          value={presetIdx}
+          onChange={(e) => setPresetIdx(Number(e.target.value))}
+        >
+          {BARREL_PRESETS.map((p, i) => (
+            <option key={p.id} value={i}>{p.name}</option>
+          ))}
+          <option value={-1}>Custom (tape measure)</option>
+        </select>
+      </Row>
+      <Row label="Units">
+        <select style={{ ...inp, width: 90 }} value={inches ? "in" : "cm"} onChange={(e) => setInches(e.target.value === "in")}>
+          <option value="cm">cm</option>
+          <option value="in">inches</option>
+        </select>
+      </Row>
+      {custom && (
+        <>
+          <Row label={`Belly Ø outside (${u})`}><input style={inp} value={belly} onChange={(e) => setBelly(e.target.value)} /></Row>
+          <Row label={`Head Ø outside (${u})`}><input style={inp} value={head} onChange={(e) => setHead(e.target.value)} /></Row>
+          <Row label={`Head-to-head height (${u})`}><input style={inp} value={height} onChange={(e) => setHeight(e.target.value)} /></Row>
+          <Row label="Stave thickness (mm)"><input style={inp} value={stave} onChange={(e) => setStave(e.target.value)} /></Row>
+        </>
+      )}
+      <Row label="Measured on">
+        <select style={{ ...inp, width: 170 }} value={mode} onChange={(e) => setMode(e.target.value as "dipstick" | "face")}>
+          <option value="dipstick">Dipstick through the bung</option>
+          <option value="face">Face, from its bottom edge</option>
+        </select>
+      </Row>
+      <Row label={mode === "dipstick" ? `Wet length on the stick (${u})` : `Liquid height on the face (${u})`}>
+        <input style={inp} value={level} onChange={(e) => setLevel(e.target.value)} />
+      </Row>
+      {!valid || !r ? (
+        <Out label="Result" value="Measurements don't make a barrel — check belly ≥ head and thickness." />
+      ) : (
+        <>
+          <Out label="In the barrel" value={`${f(r.volumeL)} L (${f(r.volumeL / L_PER_GALLON)} gal)`} />
+          <Out label="Fill" value={`${f(r.fillPct)} % of ${f(r.totalL, 0)} L`} />
+          <Out
+            label="Same plane on the face"
+            value={r.faceHeightM >= 0 ? cmOut(r.faceHeightM * 100) : "below the face circle"}
+          />
+          <Out label={`1 ${u} of level here ≈`} value={`${f(r.litresPerCm * (inches ? 2.54 : 1))} L`} />
+        </>
+      )}
+      <Row label="Sampling port: heel to keep (L)">
+        <input style={inp} value={heel} onChange={(e) => setHeel(e.target.value)} />
+      </Row>
+      {port &&
+        ("error" in port ? (
+          <p style={{ fontSize: "0.78rem", color: "var(--wh-accent)", margin: "0.4rem 0 0" }}>{port.error}</p>
+        ) : (
+          <Out label="Drill on the face, up from its bottom" value={cmOut(port.faceCm)} />
+        ))}
+      {custom && valid && (
+        <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", margin: "0.4rem 0 0" }}>
+          Tape mode is an uncalibrated estimate: outside measurements minus an assumed {n(stave) || 25} mm of
+          oak (model total {f(totalL, 0)} L). If you know what the barrel actually holds, use a preset — or
+          calibrate the stick yourself with a bucket, which beats any formula.
+        </p>
+      )}
+      <p style={{ fontSize: "0.75rem", color: "var(--wh-text-light)", marginTop: "0.5rem", marginBottom: 0 }}>
+        Johannes Kepler distrusted the gauging rod pricing the wine at his own wedding and answered with{" "}
+        <em>Nova stereometria doliorum vinariorum</em> (1615) — the new solid geometry of wine barrels,
+        whose slice-and-sum method is a direct ancestor of the calculus Newton and Leibniz later formalised.
+        This card does what the book does: the classical parabolic-stave barrel, sliced and summed, checked
+        against a 50-digit computer-algebra oracle. Presets take their shape from the cooperage&rsquo;s
+        published external dimensions but are calibrated to its <em>nominal</em> volume, because externals
+        don&rsquo;t determine capacity — World Cooperage&rsquo;s own sheet lists identical outside dimensions
+        for its 225 L and 240 L barrels. Face heights are measured from the bottom edge of the face, not the
+        ground, so the answer doesn&rsquo;t change with the rack. Drill sampling ports through the{" "}
+        <em>head</em> (the flat face, between the hoops), never through a stave under hoop tension.
       </p>
     </Card>
   );
