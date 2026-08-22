@@ -572,7 +572,10 @@ function BarrelCard() {
         <em>Nova stereometria doliorum vinariorum</em> (1615) — the new solid geometry of wine barrels,
         whose slice-and-sum method is a direct ancestor of the calculus Newton and Leibniz later formalised.
         This card does what the book does: the classical parabolic-stave barrel, sliced and summed, checked
-        against a 50-digit computer-algebra oracle. Presets take their shape from the cooperage&rsquo;s
+        against two independent computer-algebra systems at 50 digits. Coopers bend staves, not parabolas —
+        assuming the other classical curve, a circular arc through the same head and bilge, shifts the total
+        by 0.12 % (about a quarter-litre on a 227 L cask), which is less than one centimetre of stick, so the
+        curve you assume matters far less than how carefully you read the level. Presets take their shape from the cooperage&rsquo;s
         published external dimensions but are calibrated to its <em>nominal</em> volume, because externals
         don&rsquo;t determine capacity — World Cooperage&rsquo;s own sheet lists identical outside dimensions
         for its 225 L and 240 L barrels. Face heights are measured from the bottom edge of the face, not the

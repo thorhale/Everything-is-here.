@@ -124,6 +124,31 @@ test("the sampling-port helper round-trips and refuses the impossible", () => {
   if ("error" in tiny) assert.match(tiny.error, /below the bottom of the face/);
 });
 
+test("the choice of stave curve is worth the 0.117% the card claims", () => {
+  // The card tells the reader that assuming a circular-arc stave instead of the
+  // parabolic one moves the answer by about a tenth of a percent. That is a
+  // factual claim about this geometry, so it is held to the CAS rather than
+  // asserted in prose: the arc through the same head and bilge radii, by the
+  // sagitta relation R = ((Rb-Rh)^2 + (L/2)^2) / (2(Rb-Rh)).
+  const { lengthM: L, bilgeRadiusM: Rb, headRadiusM: Rh } = CANON;
+  const sag = Rb - Rh;
+  const R = (sag * sag + (L / 2) ** 2) / (2 * sag);
+  const n = 4000;
+  const dx = L / n;
+  const at = (x: number) => Math.PI * (Rb - R + Math.sqrt(R * R - x * x)) ** 2;
+  let sum = at(-L / 2) + at(L / 2);
+  for (let i = 1; i < n; i++) sum += at(-L / 2 + i * dx) * (i % 2 === 0 ? 2 : 4);
+  const circular = (sum * dx) / 3;
+
+  const parabolic = totalVolumeM3(CANON);
+  const spreadPct = (100 * (circular - parabolic)) / parabolic;
+  const f = fx("barrel-stave-profile-model-spread-pct");
+  near(spreadPct, f.value, f.tol, "circular-vs-parabolic model spread");
+  // And the headline the copy rests on: a quarter of a litre on a 227 L cask,
+  // which is less than one centimetre of dipstick.
+  assert.ok((circular - parabolic) * 1000 < 0.3, "model spread under 0.3 L");
+});
+
 test("tape-measure mode produces a plausible barrel from published externals", () => {
   // The Barrel Mill's 53-gallon externals with its ~1 inch staves should land
   // within a few percent of 53 gallons — tape mode is uncalibrated, so this is

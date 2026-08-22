@@ -1,118 +1,195 @@
 {
  "generated": "by scripts/derive-math-fixtures.py \u2014 do not edit values by hand; re-run the script",
- "note": "Independently derived reference values for the calculation corpus. Each value was computed symbolically (SymPy) or at 50-digit precision (mpmath) from the stated expression \u2014 a second implementation in a different language on a different numeric stack from the shipped TypeScript, which app/lib/math-verified.test.ts pins to these values. The `oracle` field records who has computed each value; when the Wolfram Alpha connector is available, the same expressions are evaluated there and agreeing entries are upgraded to sympy+wolfram. A value that CHANGED under a second oracle is a finding to investigate, never a quiet update.",
+ "note": "Independently derived reference values for the calculation corpus. Each value was computed symbolically (SymPy) or at 50-digit precision (mpmath) from the stated expression \u2014 a second implementation in a different language on a different numeric stack from the shipped TypeScript, which app/lib/math-verified.test.ts pins to these values. The `oracle` field records who has computed each value. Entries reading sympy+wolfram were also evaluated in a Wolfram Language kernel; `wolframValue` is what it returned, transcribed verbatim, and the generating script re-checks that agreement on every run and refuses to write a file where the two oracles disagree. A value that CHANGED under a second oracle is a finding to investigate, never a quiet update.",
  "fixtures": [
   {
    "id": "barrel-total-coefficient",
    "expression": "Integrate[Pi*(Rh + (Rb - Rh)*(1 - (2*x/L)^2))^2, {x, -L/2, L/2}] == Pi*L*(8*Rb^2 + 4*Rb*Rh + 3*Rh^2)/15; value is the coefficient sum at Rb=1, Rh=1, L=1: 15/15",
    "value": "3.141592653589793238462643",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "The closed-form total volume of the parabolic-stave barrel, verified symbolically: V = piL(8Rb^2 + 4RbRh + 3Rh^2)/15. At Rb=Rh=L=1 it must equal a unit cylinder, pi."
+   "note": "The closed-form total volume of the parabolic-stave barrel, verified symbolically: V = piL(8Rb^2 + 4RbRh + 3Rh^2)/15. At Rb=Rh=L=1 it must equal a unit cylinder, pi.",
+   "wolframValue": "3.141592653589793238462643"
   },
   {
    "id": "barrel-canonical-total-m3",
    "expression": "Pi*0.8*(8*0.32^2 + 4*0.32*0.26 + 3*0.26^2)/15",
    "value": "0.2269989187777841002383568",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "Total volume in m^3 of the canonical test barrel (L=0.8 m, Rb=0.32 m, Rh=0.26 m)."
+   "note": "Total volume in m^3 of the canonical test barrel (L=0.8 m, Rb=0.32 m, Rh=0.26 m).",
+   "wolframValue": "0.2269989187777841002383567603022437604"
   },
   {
    "id": "barrel-canonical-fill-0.1",
    "expression": "NIntegrate over x in [-0.4, 0.4] of the circular-segment area of radius r(x) = 0.26 + 0.06*(1 - (x/0.4)^2) at liquid height h = 0.064 m above the bilge bottom",
    "value": "0.008043499415482372804375974",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 5e-07,
-   "note": "Partial volume (m^3) of the canonical barrel filled to 0.1 of its bilge diameter. The TS Simpson integrator must reproduce this."
+   "note": "Partial volume (m^3) of the canonical barrel filled to 0.1 of its bilge diameter. The TS Simpson integrator must reproduce this.",
+   "wolframValue": "0.00804349941548237280437597426191016209"
   },
   {
    "id": "barrel-canonical-fill-0.25",
    "expression": "NIntegrate over x in [-0.4, 0.4] of the circular-segment area of radius r(x) = 0.26 + 0.06*(1 - (x/0.4)^2) at liquid height h = 0.16 m above the bilge bottom",
    "value": "0.04053254208816476901199397",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 5e-07,
-   "note": "Partial volume (m^3) of the canonical barrel filled to 0.25 of its bilge diameter. The TS Simpson integrator must reproduce this."
+   "note": "Partial volume (m^3) of the canonical barrel filled to 0.25 of its bilge diameter. The TS Simpson integrator must reproduce this.",
+   "wolframValue": "0.04053254208816476901199396619443798838"
   },
   {
    "id": "barrel-canonical-fill-0.5",
    "expression": "NIntegrate over x in [-0.4, 0.4] of the circular-segment area of radius r(x) = 0.26 + 0.06*(1 - (x/0.4)^2) at liquid height h = 0.32 m above the bilge bottom",
    "value": "0.1134994593888920501191784",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 5e-07,
-   "note": "Partial volume (m^3) of the canonical barrel filled to 0.5 of its bilge diameter. The TS Simpson integrator must reproduce this."
+   "note": "Partial volume (m^3) of the canonical barrel filled to 0.5 of its bilge diameter. The TS Simpson integrator must reproduce this.",
+   "wolframValue": "0.1134994593888920501191783801511218802"
   },
   {
    "id": "barrel-canonical-fill-0.75",
    "expression": "NIntegrate over x in [-0.4, 0.4] of the circular-segment area of radius r(x) = 0.26 + 0.06*(1 - (x/0.4)^2) at liquid height h = 0.48 m above the bilge bottom",
    "value": "0.1864663766896193312263628",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 5e-07,
-   "note": "Partial volume (m^3) of the canonical barrel filled to 0.75 of its bilge diameter. The TS Simpson integrator must reproduce this."
+   "note": "Partial volume (m^3) of the canonical barrel filled to 0.75 of its bilge diameter. The TS Simpson integrator must reproduce this.",
+   "wolframValue": "0.18646637668961933122636279410780577202"
   },
   {
    "id": "barrel-canonical-fill-0.9",
    "expression": "NIntegrate over x in [-0.4, 0.4] of the circular-segment area of radius r(x) = 0.26 + 0.06*(1 - (x/0.4)^2) at liquid height h = 0.576 m above the bilge bottom",
    "value": "0.2189554193623017274339808",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 5e-07,
-   "note": "Partial volume (m^3) of the canonical barrel filled to 0.9 of its bilge diameter. The TS Simpson integrator must reproduce this."
+   "note": "Partial volume (m^3) of the canonical barrel filled to 0.9 of its bilge diameter. The TS Simpson integrator must reproduce this.",
+   "wolframValue": "0.21895541936230172743398078604033359831"
+  },
+  {
+   "id": "barrel-stave-profile-model-spread-pct",
+   "expression": "100*(NIntegrate[Pi*(rb - R + Sqrt[R^2 - x^2])^2, {x, -L/2, L/2}] - Pi*L*(8rb^2+4rb*rh+3rh^2)/15) / (Pi*L*(8rb^2+4rb*rh+3rh^2)/15) with R = ((rb-rh)^2 + (L/2)^2)/(2(rb-rh)), rb=0.32, rh=0.26, L=0.8",
+   "value": "0.1169157690087718791278725",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-06,
+   "note": "Percentage by which a circular-arc stave profile exceeds the parabolic one on the canonical barrel: 0.117%, about a quarter of a litre on 227 L. This is the gauging model's own uncertainty \u2014 smaller than one centimetre of dipstick reading \u2014 and the barrel card quotes it.",
+   "wolframValue": "0.1169157690087718791"
   },
   {
    "id": "wk-to-lintner-simpsons-244",
    "expression": "(244 + 16)/3.5",
    "value": "74.28571428571428571428571",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "Simpsons publishes Golden Promise at 150-244 WK and 47-74 Lintner; (244+16)/3.5 must land on ~74.3."
+   "note": "Simpsons publishes Golden Promise at 150-244 WK and 47-74 Lintner; (244+16)/3.5 must land on ~74.3.",
+   "wolframValue": "74.28571428571428571428571428571428571429"
   },
   {
    "id": "iob-to-wk-ratio",
    "expression": "150/40",
    "value": "3.75",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "The IoB-to-WK ratio, exact on all four Simpsons pairs: 3.75."
+   "note": "The IoB-to-WK ratio, exact on all four Simpsons pairs: 3.75.",
+   "wolframValue": "3.75"
   },
   {
    "id": "bevsense-reduction-to-classic",
    "expression": "5.16/(1.015*(1 + 0.038/0.789))",
    "value": "4.850149808495303220733734",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "The Dynamic Henry's Law relation at the 1949 ASBC chart calibration collapses to the classic constant: must be 4.850 to three decimals."
+   "note": "The Dynamic Henry's Law relation at the 1949 ASBC chart calibration collapses to the classic constant: must be 4.850 to three decimals.",
+   "wolframValue": "4.85014980849530322073373401397418409469"
   },
   {
    "id": "dispense-psig-2.4-38F",
    "expression": "2.4*(38 + 12.4)*(1.015 + 0.048)/5.16 - 14.7",
    "value": "10.21869767441860465116279",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "Standard-beer gauge pressure for 2.4 volumes at 38 F, with ABW derived from ABV as the shipped default does: SG*(1 + ABW/0.789) with ABW = (ABV/100)*0.789/SG collapses exactly to SG + ABV/100. DBQM Table 3.3 prints 10.3."
+   "note": "Standard-beer gauge pressure for 2.4 volumes at 38 F, with ABW derived from ABV as the shipped default does: SG*(1 + ABW/0.789) with ABW = (ABV/100)*0.789/SG collapses exactly to SG + ABV/100. DBQM Table 3.3 prints 10.3.",
+   "wolframValue": "10.21869767441860465116279069767441860465"
   },
   {
    "id": "kegpsi-regression-2.4-38F",
    "expression": "-16.6999 - 0.0101059*38 + 0.00116512*38^2 + 0.173354*38*2.4 + 4.24267*2.4 - 0.0684226*2.4^2",
    "value": "10.196687704",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "The kegPsi regression recomputed independently \u2014 guards against coefficient typos in the TS."
+   "note": "The kegPsi regression recomputed independently \u2014 guards against coefficient typos in the TS.",
+   "wolframValue": "10.196687704"
   },
   {
    "id": "sg-to-plato-1.048",
    "expression": "-616.868 + 1111.14*1.048 - 630.272*1.048^2 + 135.997*1.048^3",
    "value": "11.912080756224",
-   "oracle": "sympy",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-09,
-   "note": "The ASBC cubic at the classic 1.048 reference point."
+   "note": "The ASBC cubic at the classic 1.048 reference point.",
+   "wolframValue": "11.912080756224"
   },
   {
    "id": "chaptalise-20L-1.045-to-1.090-grams",
-   "expression": "Solve[(cur + x)/(20 + 0.000625 x) == conc, x] with cur = 45*20/P, conc = 90/P, P = 46/(453.592/3.78541)",
-   "value": "2746.92793715491",
-   "oracle": "sympy",
+   "expression": "Solve[(cur + x)/(20 + 0.000625 x) == conc, x] with cur = 45*20/P, conc = 90/P, P = 46/(453.592/3.78541); exact rational 1316880000/479401",
+   "value": "2746.927937154907895477898",
+   "oracle": "sympy+wolfram",
    "toleranceForTs": 1e-06,
-   "note": "Sugar in grams to raise 20 L from 1.045 to 1.090 including the volume the sugar adds. The TS chaptalise() must agree; the naive answer ignoring displacement is ~15% low."
+   "note": "Sugar in grams to raise 20 L from 1.045 to 1.090 including the volume the sugar adds. Both oracles reduce it to the exact rational 1316880000/479401. The TS chaptalise() must agree; the naive answer ignoring displacement is ~15% low.",
+   "wolframValue": "2746.92793715490789547789846078752443153018"
+  },
+  {
+   "id": "us-gallon-litres",
+   "expression": "231 * (2.54 cm)^3 / 1000  ==  UnitConvert[Quantity[1, \"Gallons\"], \"Liters\"]",
+   "value": "3.785411784",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-12,
+   "note": "Litres in one US liquid gallon, exact by the 1959 definition: L_PER_GALLON in lib/units.ts.",
+   "wolframValue": "3.785411784"
+  },
+  {
+   "id": "avoirdupois-pound-grams",
+   "expression": "UnitConvert[Quantity[1, \"Pounds\"], \"Grams\"]",
+   "value": "453.59237",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-12,
+   "note": "Grams in one avoirdupois pound, exact by definition: KG_PER_LB in lib/units.ts.",
+   "wolframValue": "453.59237"
+  },
+  {
+   "id": "avoirdupois-ounce-grams",
+   "expression": "453.59237/16  ==  UnitConvert[Quantity[1, \"Ounces\"], \"Grams\"]",
+   "value": "28.349523125",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-12,
+   "note": "Grams in one avoirdupois ounce, exact: G_PER_OZ in lib/units.ts.",
+   "wolframValue": "28.349523125"
+  },
+  {
+   "id": "us-fluid-ounce-millilitres",
+   "expression": "231 * 2.54^3 / 128  ==  UnitConvert[Quantity[1, \"FluidOunces\"], \"Milliliters\"]",
+   "value": "29.5735295625",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-12,
+   "note": "Millilitres in one US fluid ounce, exact \u2014 the unit the draught-line card reports the beer standing in the line in.",
+   "wolframValue": "29.5735295625"
+  },
+  {
+   "id": "standard-atmosphere-psi",
+   "expression": "UnitConvert[Quantity[1, \"Atmospheres\"], \"PoundsForce\"/\"Inches\"^2]",
+   "value": "14.69594877551344872550347",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 1e-09,
+   "note": "One standard atmosphere in psi: 14.6959. The carbonation code uses the ASBC's conventional 14.7 psia at sea level, which is this rounded \u2014 a 0.04 psi convention, not an error, and recorded here so the difference is visible rather than assumed.",
+   "wolframValue": "14.69594877551344872550347215715472968922"
+  },
+  {
+   "id": "ethanol-density-g-per-ml",
+   "expression": "Entity[\"Chemical\", \"Ethanol\"][\"Density\"] in g/mL",
+   "value": "0.789",
+   "oracle": "sympy+wolfram",
+   "toleranceForTs": 0.001,
+   "note": "Ethanol density at room temperature, the 0.789 g/mL constant in the Dynamic Henry's Law ABW/ABV relation. A rounded physical measurement, not a definition: Wolfram's chemical data returns the same 0.789 the BevSense method uses.",
+   "wolframValue": "0.789"
   }
  ]
 }
